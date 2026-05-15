@@ -1,0 +1,86 @@
+baseURL: "https://urayasu-portal.github.io/urayasu-portal/"
+languageCode: ja
+title: 浦安ぽーたる
+theme: PaperMod
+hasCJKLanguage: true
+defaultContentLanguage: ja
+
+pagination:
+  pagerSize: 10
+
+params:
+  description: 浦安市のローカルニュース・グルメ・イベント・子育て情報まとめ
+  author: 浦安ぽーたる
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowToc: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+
+  homeInfoParams:
+    Title: 浦安ぽーたる
+    Content: 浦安市のローカルニュース・グルメ・イベント・子育て情報まとめ
+
+  socialIcons: []
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+menu:
+  main:
+    - name: 開店・閉店
+      url: /categories/open-closed/
+      weight: 10
+    - name: ニュース
+      url: /categories/topics/
+      weight: 20
+    - name: イベント
+      url: /categories/event/
+      weight: 30
+    - name: グルメ・カフェ
+      url: /categories/gourmet/
+      weight: 40
+    - name: 子育て・教育
+      url: /categories/education/
+      weight: 50
+    - name: スポーツ
+      url: /categories/sports/
+      weight: 60
+    - name: お問い合わせ
+      url: /contact/
+      weight: 70
+
+taxonomies:
+  category: categories
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+minify:
+  disableHTML: true
+  disableJS: true
+  disableJSON: true
+  disableCSS: true
+  disableSVG: true
+  disableXML: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+ignoreLogs:
+  - warning-goldmark-raw-html

@@ -1,0 +1,21 @@
+﻿---
+title: "【浦安】浦安D-Rocks Official Brew Pubが祭醸造とコラボ開設"
+date: 2026-04-19T11:03:13+09:00
+categories:
+  - "スポーツ"
+cover:
+  image: "https://urayasu1889.net/wp-content/uploads/2026/04/d-rocks-logo.png"
+  alt: "【浦安】浦安D-Rocks Official Brew Pubが祭醸造とコラボ開設"
+---
+
+<p>浦安D-Rocksと地元の醸造所・祭醸造が連携し、「浦安D-Rocks Official Brew Pub」が開設されることが発表されました。ラグビー観戦とクラフトビールを一緒に楽しめる、浦安ならではの新スポットとして注目を集めています。</p>
+
+<h3>概要</h3>
+
+<ul><li>発表日：2026年4月10日</li><li>展開元：浦安D-Rocks × 祭醸造</li><li>形式：公式Brew Pub（詳細な常設店舗情報は現時点では未確認）</li><li>アクセス：詳細は浦安D-Rocks公式サイトまたはSNSにてご確認ください</li></ul>
+
+<p>ラグビーとビールという組み合わせは観戦文化にもなじみ深く、試合シーズン中の4〜5月は特に盛り上がりが期待されます。4月24日（金）・5月1日（金）には秩父宮ラグビー場でのホストゲームも控えており、地元ファンにとって嬉しいニュースが続いています。</p>
+
+<p>※上記内容は2026年4月19日現在の情報です。最新情報は公式Webサイトまたは公式SNSにてご確認ください。</p>
+
+<p>参考：<a href="https://urayasu-d-rocks.com/" target="_blank" rel="noreferrer noopener">浦安D-Rocks公式サイト</a></p>
