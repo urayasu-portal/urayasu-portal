@@ -311,6 +311,29 @@ body.list { --main-width: 1160px; }
 .footer a { color: rgba(255,255,255,.65) !important; }
 .footer a:hover { color: #fff !important; }
 
+/* ---------- リストページヘッダー ---------- */
+.list-page-header {
+  margin-bottom: 24px;
+}
+.list-page-title {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: var(--up-text) !important;
+  margin: 4px 0 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.list-page-desc {
+  font-size: 13px;
+  color: var(--up-muted);
+  margin: 6px 0 0;
+}
+.list-count {
+  font-size: 12px;
+  color: var(--up-muted);
+  font-weight: 500;
+}
+
 /* ---------- レスポンシブ (トップ) ---------- */
 @media (max-width: 900px) {
   .home-hero { grid-template-columns: 1fr; grid-template-rows: auto; }
