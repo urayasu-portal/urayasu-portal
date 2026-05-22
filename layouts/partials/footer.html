@@ -1,0 +1,113 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+  <div style="max-width:1160px;margin:0 auto;padding:32px 24px 20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;">
+
+    <div>
+      <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:8px;">⚓ 浦安ぽーたる</div>
+      <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.6);margin:0;">
+        浦安市のローカルニュース・グルメ・<br>イベント・子育て情報をお届けします。
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;">カテゴリ</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;">
+        <li><a href="/categories/開店閉店/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">開店・閉店</a></li>
+        <li><a href="/categories/ニュース/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">ニュース</a></li>
+        <li><a href="/categories/イベント/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">イベント</a></li>
+        <li><a href="/categories/グルメカフェ/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">グルメ・カフェ</a></li>
+        <li><a href="/categories/子育て教育/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">子育て・教育</a></li>
+        <li><a href="/categories/スポーツ/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">スポーツ</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;">サイト情報</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;">
+        <li><a href="/contact/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">お問い合わせ</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.1);padding:16px 24px;text-align:center;">
+    <span style="font-size:12px;color:rgba(255,255,255,.4);">
+      &copy; {{ now.Year }} 浦安ぽーたる ·
+      Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank" style="color:rgba(255,255,255,.5);">Hugo</a> &amp;
+      <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank" style="color:rgba(255,255,255,.5);">PaperMod</a>
+    </span>
+  </div>
+</footer>
+{{- end }}
+
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+{{- end }}
+
+{{- partial "extend_footer.html" . }}
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+
+{{- if (not site.Params.disableScrollToTop) }}
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+</script>
+{{- end }}
+
+{{- if (not site.Params.disableThemeToggle) }}
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+</script>
+{{- end }}
