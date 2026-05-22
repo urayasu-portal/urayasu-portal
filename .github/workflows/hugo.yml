@@ -32,14 +32,17 @@ jobs:
           hugo-version: latest
           extended: true
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
         run: hugo --minify --baseURL "https://urayasu-portal.com/"
 
       - name: Add CNAME
         run: echo "urayasu-portal.com" > ./public/CNAME
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
