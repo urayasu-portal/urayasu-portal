@@ -1,0 +1,107 @@
+{{- define "main" }}
+
+{{- $catClass := dict
+  "開店・閉店" "cat-open"
+  "開店閉店"   "cat-open"
+  "ニュース"   "cat-news"
+  "イベント"   "cat-event"
+  "グルメ・カフェ" "cat-gourmet"
+  "グルメカフェ"   "cat-gourmet"
+  "子育て・教育" "cat-edu"
+  "子育て教育"   "cat-edu"
+  "スポーツ"   "cat-sports"
+  "お知らせ"   "cat-notice"
+}}
+
+{{- $cat := index .Params.categories 0 | default "" }}
+{{- $cls := index $catClass $cat | default "cat-default" }}
+
+{{- $coverImg := (.Param "cover.image") }}
+{{- if not $coverImg }}{{- with .Params.images }}{{- $coverImg = index . 0 }}{{- end }}{{- end }}
+
+<article class="post-single">
+
+  <header class="post-header">
+    {{- partial "breadcrumbs.html" . }}
+    <div class="post-meta-line">
+      {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+    </div>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Description }}
+    <p class="post-description">{{ . }}</p>
+    {{- end }}
+  </header>
+
+  {{- if $coverImg }}
+  <div class="post-cover">
+    <img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy">
+  </div>
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content md-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  {{- partial "extend_post_content.html" . }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    {{- with $.GetTerms $tags }}
+    <ul class="post-tags">
+      {{- range . }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+  </footer>
+
+</article>
+
+{{- if $cat }}
+{{- $related := slice }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- if and (ne .Permalink $.Permalink) (in .Params.categories $cat) }}
+    {{- $related = $related | append . }}
+  {{- end }}
+{{- end }}
+{{- $related = first 3 $related }}
+{{- if $related }}
+<div class="related-posts">
+  <div class="section-head">
+    <h2>関連記事</h2>
+  </div>
+  <div class="article-grid">
+    {{- range $related }}
+    {{- $rcat := index .Params.categories 0 | default "" }}
+    {{- $rcls := index $catClass $rcat | default "cat-default" }}
+    {{- $rimg := (.Param "cover.image") }}
+    {{- if not $rimg }}{{- with .Params.images }}{{- $rimg = index . 0 }}{{- end }}{{- end }}
+    <a class="article-card" href="{{ .RelPermalink }}">
+      <div class="article-thumb{{- if not $rimg }} article-no-img{{- end }}">
+        {{- if $rimg }}
+        <img src="{{ $rimg }}" alt="{{ .Title }}" loading="lazy">
+        {{- else }}
+        <span>{{ $rcat }}</span>
+        {{- end }}
+      </div>
+      <div class="article-body">
+        {{- if $rcat }}<span class="cat-badge cat-badge-sm {{ $rcls }}">{{ $rcat }}</span>{{- end }}
+        <h3>{{ .Title }}</h3>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+      </div>
+    </a>
+    {{- end }}
+  </div>
+</div>
+{{- end }}
+{{- end }}
+
+{{- end }}
