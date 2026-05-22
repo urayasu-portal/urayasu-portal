@@ -1,0 +1,9 @@
+{{- $q := .Get "q" | default "" -}}
+{{- if $q -}}
+<div class="map-embed">
+  <iframe
+    src="https://maps.google.com/maps?q={{ $q | urlize }}&output=embed"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</div>
+{{- end -}}
