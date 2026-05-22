@@ -307,7 +307,7 @@ body.list { --main-width: 1160px; }
 .tag-item:hover { background: var(--up-teal); color: #fff !important; border-color: var(--up-teal); }
 
 /* ---------- フッター ---------- */
-.footer { background: #1a2a3a !important; color: rgba(255,255,255,.65) !important; }
+.footer { max-width: 100% !important; padding: 0 !important; background: #1a2a3a !important; color: rgba(255,255,255,.65) !important; }
 .footer a { color: rgba(255,255,255,.65) !important; }
 .footer a:hover { color: #fff !important; }
 
