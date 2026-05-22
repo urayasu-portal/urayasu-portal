@@ -1,0 +1,178 @@
+{{- define "main" }}
+
+{{/* カテゴリ → CSSクラスのマッピング */}}
+{{- $catClass := dict
+  "開店・閉店" "cat-open"
+  "開店閉店"   "cat-open"
+  "ニュース"   "cat-news"
+  "イベント"   "cat-event"
+  "グルメ・カフェ" "cat-gourmet"
+  "グルメカフェ"   "cat-gourmet"
+  "子育て・教育" "cat-edu"
+  "子育て教育"   "cat-edu"
+  "スポーツ"   "cat-sports"
+  "お知らせ"   "cat-notice"
+}}
+
+{{/* 全記事 (新しい順) */}}
+{{- $allPosts := where site.RegularPages "Section" "posts" }}
+
+{{/* 速報ティッカー: 最新1件 */}}
+{{- with (index $allPosts 0) }}
+<div class="home-ticker">
+  <span class="ticker-label">最新</span>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</div>
+{{- end }}
+
+{{/* ヒーローセクション */}}
+{{- $heroPosts := first 3 $allPosts }}
+{{- if ge (len $heroPosts) 1 }}
+<div class="home-hero">
+  {{/* メイン (左大) */}}
+  {{- with (index $heroPosts 0) }}
+  {{- $cat := index .Params.categories 0 | default "" }}
+  {{- $cls := index $catClass $cat | default "cat-default" }}
+  <a class="hero-card hero-main" href="{{ .RelPermalink }}">
+    <div class="hero-thumb{{- if not .Params.images }} hero-no-img{{- end }}">
+      {{- if .Params.images }}
+      <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" loading="lazy">
+      {{- else }}
+      <span>🗞</span>
+      {{- end }}
+    </div>
+    <div class="hero-body">
+      {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
+      <h2>{{ .Title }}</h2>
+      {{- with .Description }}<p>{{ . }}</p>{{- end }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+    </div>
+  </a>
+  {{- end }}
+
+  {{/* サブ (右2枚) */}}
+  {{- range (after 1 $heroPosts) }}
+  {{- $cat := index .Params.categories 0 | default "" }}
+  {{- $cls := index $catClass $cat | default "cat-default" }}
+  <a class="hero-card hero-sub" href="{{ .RelPermalink }}">
+    <div class="hero-thumb{{- if not .Params.images }} hero-no-img{{- end }}">
+      {{- if .Params.images }}
+      <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" loading="lazy">
+      {{- else }}
+      <span>🗞</span>
+      {{- end }}
+    </div>
+    <div class="hero-body">
+      {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
+      <h3>{{ .Title }}</h3>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+    </div>
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+
+{{/* 2カラムレイアウト: メイン + サイドバー */}}
+<div class="home-layout">
+  <div class="home-main">
+
+    {{/* 最新記事グリッド (ページネーション付き) */}}
+    <div class="section-head">
+      <h2>最新記事</h2>
+    </div>
+
+    {{- $paginator := .Paginate $allPosts 9 }}
+    <div class="article-grid">
+      {{- range $paginator.Pages }}
+      {{- $cat := index .Params.categories 0 | default "" }}
+      {{- $cls := index $catClass $cat | default "cat-default" }}
+      <a class="article-card" href="{{ .RelPermalink }}">
+        <div class="article-thumb{{- if not .Params.images }} article-no-img{{- end }}">
+          {{- if .Params.images }}
+          <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" loading="lazy">
+          {{- else }}
+          <span>{{ $cat }}</span>
+          {{- end }}
+        </div>
+        <div class="article-body">
+          {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
+          <h3>{{ .Title }}</h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+
+    {{/* ページネーション */}}
+    {{- if gt $paginator.TotalPages 1 }}
+    <div class="home-pagination">
+      {{- if $paginator.HasPrev }}
+      <a class="page-btn" href="{{ $paginator.Prev.URL }}">← 新しい記事</a>
+      {{- end }}
+      <span class="page-info">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+      {{- if $paginator.HasNext }}
+      <a class="page-btn" href="{{ $paginator.Next.URL }}">古い記事 →</a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+  </div>
+
+  {{/* サイドバー */}}
+  <aside class="home-sidebar">
+
+    {{/* カテゴリ一覧 */}}
+    <div class="sidebar-widget">
+      <div class="widget-title">📂 カテゴリ</div>
+      <ul class="cat-list">
+        {{- range site.Taxonomies.categories.ByCount }}
+        {{- $name := .Page.Title }}
+        {{- $cls := index $catClass $name | default "cat-default" }}
+        <li>
+          <a class="cat-item" href="{{ .Page.RelPermalink }}">
+            <span class="cat-badge cat-badge-sm {{ $cls }}">{{ $name }}</span>
+            <span class="cat-count">{{ .Count }}</span>
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+
+    {{/* 最近の記事 */}}
+    <div class="sidebar-widget">
+      <div class="widget-title">🕐 最近の記事</div>
+      <div class="recent-list">
+        {{- range first 5 $allPosts }}
+        <a class="recent-item" href="{{ .RelPermalink }}">
+          <div class="recent-thumb">
+            {{- if .Params.images }}
+            <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" loading="lazy">
+            {{- else }}
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#c8dff0,#a8cce0);display:flex;align-items:center;justify-content:center;font-size:20px;">🗞</div>
+            {{- end }}
+          </div>
+          <div class="recent-body">
+            <h4>{{ .Title }}</h4>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          </div>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+
+    {{/* タグクラウド */}}
+    {{- if site.Taxonomies.tags }}
+    <div class="sidebar-widget">
+      <div class="widget-title">🏷 タグ</div>
+      <div class="tag-cloud">
+        {{- range site.Taxonomies.tags.ByCount }}
+        <a class="tag-item" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}({{ .Count }})</a>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+
+  </aside>
+</div>
+
+{{- end }}
