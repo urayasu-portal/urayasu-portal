@@ -1,5 +1,5 @@
-baseURL: "https://urayasu-portal.pages.dev/"
-languageCode: ja
+baseURL: "https://urayasu-portal.com/"
+locale: ja
 title: 浦安ぽーたる
 theme: PaperMod
 hasCJKLanguage: true
@@ -39,24 +39,31 @@ params:
 menu:
   main:
     - name: 開店・閉店
-      url: /categories/open-closed/
+      identifier: open-closed
+      url: /categories/開店閉店/
       weight: 10
     - name: ニュース
-      url: /categories/topics/
+      identifier: topics
+      url: /categories/ニュース/
       weight: 20
     - name: イベント
-      url: /categories/event/
+      identifier: event
+      url: /categories/イベント/
       weight: 30
     - name: グルメ・カフェ
-      url: /categories/gourmet/
+      identifier: gourmet
+      url: /categories/グルメカフェ/
       weight: 40
     - name: 子育て・教育
-      url: /categories/education/
+      identifier: education
+      url: /categories/子育て教育/
       weight: 50
     - name: スポーツ
-      url: /categories/sports/
+      identifier: sports
+      url: /categories/スポーツ/
       weight: 60
     - name: お問い合わせ
+      identifier: contact
       url: /contact/
       weight: 70
 
