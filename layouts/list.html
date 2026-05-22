@@ -43,8 +43,7 @@
       {{- range $paginator.Pages }}
       {{- $cat := index .Params.categories 0 | default "" }}
       {{- $cls := index $catClass $cat | default "cat-default" }}
-      {{- $img := (.Param "cover.image") }}
-      {{- if not $img }}{{- with .Params.images }}{{- $img = index . 0 }}{{- end }}{{- end }}
+      {{- $img := partial "cover-image.html" . }}
       <a class="article-card" href="{{ .RelPermalink }}">
         <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
           {{- if $img }}

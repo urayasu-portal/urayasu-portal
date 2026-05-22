@@ -1,0 +1,29 @@
+{{/*
+  カバー画像を返すpartial
+  使い方: {{ partial "cover-image.html" . }}
+  優先順位:
+    1. 記事の cover.image
+    2. 記事の images[0]
+    3. カテゴリーのデフォルト画像
+*/}}
+
+{{- $catDefaultImg := dict
+  "開店・閉店"   "/images/categories/cat-open.jpg"
+  "開店閉店"     "/images/categories/cat-open.jpg"
+  "ニュース"     "/images/categories/cat-news.jpg"
+  "イベント"     "/images/categories/cat-event.jpg"
+  "グルメ・カフェ" "/images/categories/cat-gourmet.jpg"
+  "グルメカフェ"   "/images/categories/cat-gourmet.jpg"
+  "子育て・教育"  "/images/categories/cat-edu.jpg"
+  "子育て教育"   "/images/categories/cat-edu.jpg"
+  "スポーツ"     "/images/categories/cat-sports.jpg"
+  "お知らせ"     "/images/categories/cat-notice.jpg"
+}}
+
+{{- $img := (.Param "cover.image") }}
+{{- if not $img }}{{- with .Params.images }}{{- $img = index . 0 }}{{- end }}{{- end }}
+{{- if not $img }}
+  {{- $cat := index .Params.categories 0 | default "" }}
+  {{- $img = index $catDefaultImg $cat | default "" }}
+{{- end }}
+{{- return $img }}

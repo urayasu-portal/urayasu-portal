@@ -16,8 +16,7 @@
 {{- $cat := index .Params.categories 0 | default "" }}
 {{- $cls := index $catClass $cat | default "cat-default" }}
 
-{{- $coverImg := (.Param "cover.image") }}
-{{- if not $coverImg }}{{- with .Params.images }}{{- $coverImg = index . 0 }}{{- end }}{{- end }}
+{{- $coverImg := partial "cover-image.html" . }}
 
 <article class="post-single">
 
@@ -82,8 +81,7 @@
     {{- range $related }}
     {{- $rcat := index .Params.categories 0 | default "" }}
     {{- $rcls := index $catClass $rcat | default "cat-default" }}
-    {{- $rimg := (.Param "cover.image") }}
-    {{- if not $rimg }}{{- with .Params.images }}{{- $rimg = index . 0 }}{{- end }}{{- end }}
+    {{- $rimg := partial "cover-image.html" . }}
     <a class="article-card" href="{{ .RelPermalink }}">
       <div class="article-thumb{{- if not $rimg }} article-no-img{{- end }}">
         {{- if $rimg }}
