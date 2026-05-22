@@ -1,4 +1,4 @@
-baseURL: "https://urayasu-portal.pages.dev/"
+baseURL: "https://urayasu-portal.com/"
 languageCode: ja
 title: 浦安ぽーたる
 theme: PaperMod
@@ -9,7 +9,16 @@ pagination:
   pagerSize: 10
 
 params:
+  env: production
   description: 浦安市のローカルニュース・グルメ・イベント・子育て情報まとめ
+  keywords:
+    - 浦安
+    - 浦安市
+    - ローカルニュース
+    - グルメ
+    - イベント
+    - 子育て
+    - 浦安ぽーたる
   author: 浦安ぽーたる
   ShowReadingTime: false
   ShowShareButtons: false
