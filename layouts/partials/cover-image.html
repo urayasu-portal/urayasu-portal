@@ -4,20 +4,20 @@
   優先順位:
     1. 記事の cover.image
     2. 記事の images[0]
-    3. カテゴリーのデフォルト画像
+    3. カテゴリーのデフォルト画像 (SVG)
 */}}
 
 {{- $catDefaultImg := dict
-  "開店・閉店"   "/images/categories/cat-open.svg"
-  "開店閉店"     "/images/categories/cat-open.svg"
-  "ニュース"     "/images/categories/cat-news.svg"
-  "イベント"     "/images/categories/cat-event.svg"
+  "開店・閉店"    "/images/categories/cat-open.svg"
+  "開店閉店"      "/images/categories/cat-open.svg"
+  "ニュース"      "/images/categories/cat-news.svg"
+  "イベント"      "/images/categories/cat-event.svg"
   "グルメ・カフェ" "/images/categories/cat-gourmet.svg"
   "グルメカフェ"   "/images/categories/cat-gourmet.svg"
-  "子育て・教育"  "/images/categories/cat-edu.svg"
-  "子育て教育"   "/images/categories/cat-edu.svg"
-  "スポーツ"     "/images/categories/cat-sports.svg"
-  "お知らせ"     "/images/categories/cat-notice.svg"
+  "子育て・教育"   "/images/categories/cat-edu.svg"
+  "子育て教育"    "/images/categories/cat-edu.svg"
+  "スポーツ"      "/images/categories/cat-sports.svg"
+  "お知らせ"      "/images/categories/cat-notice.svg"
 }}
 
 {{- $img := (.Param "cover.image") }}
