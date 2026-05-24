@@ -1,6 +1,6 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>開店 - 浦安ぽーたる OGP アイキャッチ画像</title>
-  <desc>赤を基調とした開店カテゴリーのアイキャッチ画像。浦安市の地域情報サイト「浦安ぽーたる」のデザイン。</desc>
+  <title>閉店 - 浦安ぽーたる OGP アイキャッチ画像</title>
+  <desc>赤を基調とした閉店カテゴリーのアイキャッチ画像。浦安市の地域情報サイト「浦安ぽーたる」のデザイン。</desc>
 
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
@@ -70,10 +70,10 @@
   <rect x="72" y="322" width="166" height="42" rx="21" fill="none" stroke="#EC7063" stroke-width="1.5" opacity="0.6"/>
   <text x="155" y="349" font-family="'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="18" font-weight="700" fill="#F1948A" text-anchor="middle" letter-spacing="4">CATEGORY</text>
 
-  <text x="620" y="310" font-family="'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="158" font-weight="900" fill="none" stroke="#922B21" stroke-width="1.5" text-anchor="middle" opacity="0.25" letter-spacing="8">開店</text>
-  <text x="620" y="310" font-family="'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="158" font-weight="900" fill="#FEF5F4" text-anchor="middle" letter-spacing="8">開店</text>
+  <text x="620" y="310" font-family="'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="158" font-weight="900" fill="none" stroke="#922B21" stroke-width="1.5" text-anchor="middle" opacity="0.25" letter-spacing="8">閉店</text>
+  <text x="620" y="310" font-family="'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="158" font-weight="900" fill="#FEF5F4" text-anchor="middle" letter-spacing="8">閉店</text>
 
-  <text x="620" y="390" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="38" font-weight="600" fill="#EC7063" text-anchor="middle" letter-spacing="14" opacity="0.9">NEW OPEN</text>
+  <text x="620" y="390" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="38" font-weight="600" fill="#EC7063" text-anchor="middle" letter-spacing="20" opacity="0.9">CLOSED</text>
 
   <rect x="390" y="420" width="460" height="2" rx="1" fill="url(#accentBar)" opacity="0.7"/>
 
