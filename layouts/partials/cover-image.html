@@ -8,7 +8,12 @@
     "thumb" → トップページ・グリッド・サイドバー → カテゴリーデフォルトは SVG
     "full"  → 記事個別ページのメイン画像         → カテゴリーデフォルトは PNG
 
-  個別アイキャッチ (cover.image / images[]) は size に関係なく常にそのまま使用
+  優先順位:
+    1. cover.image  → 個別写真。size に関係なく常にそのまま使用
+    2. cover.catimg → カテゴリー画像のバリアント指定 (例: cat-open / cat-close)
+                      size=thumb → /images/categories/{catimg}.svg
+                      size=full  → /images/categories/{catimg}.png
+    3. categories[0] → カテゴリーに応じたデフォルト画像 (SVG or PNG)
 */}}
 
 {{- $page := .page }}
@@ -40,17 +45,25 @@
   "お知らせ"      "/images/categories/cat-notice.png"
 }}
 
-{{/* 結果を格納する変数 (return は末尾で一度だけ) */}}
 {{- $result := "" }}
 
 {{- $img := ($page.Param "cover.image") }}
 {{- if not $img }}{{- with $page.Params.images }}{{- $img = index . 0 }}{{- end }}{{- end }}
 
+{{- $catimgBase := ($page.Param "cover.catimg") }}
+
 {{- if $img }}
-  {{/* 個別アイキャッチ: size に関係なくそのまま使用 */}}
+  {{/* 優先度1: 個別写真 — size に関係なくそのまま使用 */}}
   {{- $result = $img }}
+{{- else if $catimgBase }}
+  {{/* 優先度2: カテゴリー画像バリアント — size に応じて SVG / PNG を切り替え */}}
+  {{- if eq $size "full" }}
+    {{- $result = printf "/images/categories/%s.png" $catimgBase }}
+  {{- else }}
+    {{- $result = printf "/images/categories/%s.svg" $catimgBase }}
+  {{- end }}
 {{- else }}
-  {{/* カテゴリーデフォルト: size に応じて SVG / PNG を切り替え */}}
+  {{/* 優先度3: カテゴリーデフォルト — size に応じて SVG / PNG を切り替え */}}
   {{- $cat := index $page.Params.categories 0 | default "" }}
   {{- if eq $size "full" }}
     {{- $result = index $catPng $cat | default "" }}
