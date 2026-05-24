@@ -27,15 +27,3 @@ draft: false
 
 - [ベイちばinfo](https://www.baychiba.info/blog/news/71466/)
 
-<!--
-編集者メモ（pushする前に削除すること）
-
-推奨画像：ogp-gourmet-1.jpg（グルメ汎用）またはInstagram @ms_urayasu から取得
-画像取得候補：Instagram @ms_urayasu（店舗公式アカウントと思われる）
-地図：{{< map q="浦安市猫実3丁目" >}}（番地不明のため丁目単位）
-追加確認事項：
-  - 正確な住所（番地）の確認
-  - 営業時間・定休日の確認（@ms_urayasu Instagram参照）
-  - 店舗電話番号の確認
-注意点：baychiba.infoのページ取得ができなかったため、検索スニペット情報をもとに作成。公開前に一次情報（@ms_urayasu）を確認し、住所・営業時間を補足すること。
--->
