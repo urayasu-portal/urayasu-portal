@@ -1,13 +1,20 @@
 {{/*
   カバー画像を返すpartial
-  使い方: {{ partial "cover-image.html" . }}
-  優先順位:
-    1. 記事の cover.image
-    2. 記事の images[0]
-    3. カテゴリーのデフォルト画像 (SVG)
+  使い方:
+    {{ partial "cover-image.html" (dict "page" . "size" "thumb") }}
+    {{ partial "cover-image.html" (dict "page" . "size" "full") }}
+
+  size:
+    "thumb" → トップページ・グリッド・サイドバー → カテゴリーデフォルトは SVG
+    "full"  → 記事個別ページのメイン画像         → カテゴリーデフォルトは PNG
+
+  個別アイキャッチ (cover.image / images[]) は size に関係なく常にそのまま使用
 */}}
 
-{{- $catDefaultImg := dict
+{{- $page := .page }}
+{{- $size := .size | default "thumb" }}
+
+{{- $catSvg := dict
   "開店・閉店"    "/images/categories/cat-open-close.svg"
   "開店閉店"      "/images/categories/cat-open-close.svg"
   "ニュース"      "/images/categories/cat-news.svg"
@@ -20,10 +27,36 @@
   "お知らせ"      "/images/categories/cat-notice.svg"
 }}
 
-{{- $img := (.Param "cover.image") }}
-{{- if not $img }}{{- with .Params.images }}{{- $img = index . 0 }}{{- end }}{{- end }}
-{{- if not $img }}
-  {{- $cat := index .Params.categories 0 | default "" }}
-  {{- $img = index $catDefaultImg $cat | default "" }}
+{{- $catPng := dict
+  "開店・閉店"    "/images/categories/cat-open-close.png"
+  "開店閉店"      "/images/categories/cat-open-close.png"
+  "ニュース"      "/images/categories/cat-news.png"
+  "イベント"      "/images/categories/cat-event.png"
+  "グルメ・カフェ" "/images/categories/cat-gourmet.png"
+  "グルメカフェ"   "/images/categories/cat-gourmet.png"
+  "子育て・教育"   "/images/categories/cat-edu.png"
+  "子育て教育"    "/images/categories/cat-edu.png"
+  "スポーツ"      "/images/categories/cat-sports.png"
+  "お知らせ"      "/images/categories/cat-notice.png"
+}}
+
+{{/* 結果を格納する変数 (return は末尾で一度だけ) */}}
+{{- $result := "" }}
+
+{{- $img := ($page.Param "cover.image") }}
+{{- if not $img }}{{- with $page.Params.images }}{{- $img = index . 0 }}{{- end }}{{- end }}
+
+{{- if $img }}
+  {{/* 個別アイキャッチ: size に関係なくそのまま使用 */}}
+  {{- $result = $img }}
+{{- else }}
+  {{/* カテゴリーデフォルト: size に応じて SVG / PNG を切り替え */}}
+  {{- $cat := index $page.Params.categories 0 | default "" }}
+  {{- if eq $size "full" }}
+    {{- $result = index $catPng $cat | default "" }}
+  {{- else }}
+    {{- $result = index $catSvg $cat | default "" }}
+  {{- end }}
 {{- end }}
-{{- return $img }}
+
+{{- return $result }}

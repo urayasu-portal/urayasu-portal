@@ -33,7 +33,7 @@
   {{- with (index $heroPosts 0) }}
   {{- $cat := index .Params.categories 0 | default "" }}
   {{- $cls := index $catClass $cat | default "cat-default" }}
-  {{- $img := partial "cover-image.html" . }}
+  {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
   <a class="hero-card hero-main" href="{{ .RelPermalink }}">
     <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
       {{- if $img }}
@@ -55,7 +55,7 @@
   {{- range (after 1 $heroPosts) }}
   {{- $cat := index .Params.categories 0 | default "" }}
   {{- $cls := index $catClass $cat | default "cat-default" }}
-  {{- $img := partial "cover-image.html" . }}
+  {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
   <a class="hero-card hero-sub" href="{{ .RelPermalink }}">
     <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
       {{- if $img }}
@@ -88,7 +88,7 @@
       {{- range $paginator.Pages }}
       {{- $cat := index .Params.categories 0 | default "" }}
       {{- $cls := index $catClass $cat | default "cat-default" }}
-      {{- $img := partial "cover-image.html" . }}
+      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
       <a class="article-card" href="{{ .RelPermalink }}">
         <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
           {{- if $img }}
@@ -146,7 +146,7 @@
       <div class="widget-title">🕐 最近の記事</div>
       <div class="recent-list">
         {{- range first 5 $allPosts }}
-        {{- $img := partial "cover-image.html" . }}
+        {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
         <a class="recent-item" href="{{ .RelPermalink }}">
           <div class="recent-thumb">
             {{- if $img }}

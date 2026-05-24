@@ -16,7 +16,7 @@
 {{- $cat := index .Params.categories 0 | default "" }}
 {{- $cls := index $catClass $cat | default "cat-default" }}
 
-{{- $coverImg := partial "cover-image.html" . }}
+{{- $coverImg := partial "cover-image.html" (dict "page" . "size" "full") }}
 
 <article class="post-single">
 
@@ -81,7 +81,7 @@
     {{- range $related }}
     {{- $rcat := index .Params.categories 0 | default "" }}
     {{- $rcls := index $catClass $rcat | default "cat-default" }}
-    {{- $rimg := partial "cover-image.html" . }}
+    {{- $rimg := partial "cover-image.html" (dict "page" . "size" "thumb") }}
     <a class="article-card" href="{{ .RelPermalink }}">
       <div class="article-thumb{{- if not $rimg }} article-no-img{{- end }}">
         {{- if $rimg }}
