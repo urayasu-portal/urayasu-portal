@@ -13,6 +13,9 @@ tags:
 description: "浦安D-Rocksが5月30日（土）、江東区夢の島競技場でD1/D2入替戦第2戦を開催。浦安市在住・勤務者限定でA自由席が1,000円になる優待企画も実施。申込は5月20日（水）12時から。"
 images:
   - "/images/2026/05/d-rocks-d1d2-2026-0530.png"
+cover:
+  image: "https://urayasu1889.net/wp-content/uploads/2026/04/d-rocks-logo.png"
+  alt: "【浦安D-Rocks】5/30 D1/D2入替戦ホストゲーム｜浦安市在住・勤務者は1,000円優待あり"
 draft: false
 ---
 
