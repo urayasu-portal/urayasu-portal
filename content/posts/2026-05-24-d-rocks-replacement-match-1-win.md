@@ -10,6 +10,9 @@ tags:
   - "リーグワン"
   - "入替戦"
 description: "5月23日、NTTジャパンラグビー リーグワン2025-26 D1/D2入替戦 第1戦が行われ、浦安D-Rocksが清水建設江東ブルーシャークスに37-15で勝利。D1残留へ大きく前進しました。"
+cover:
+  image: /images/posts/d-rocks.png
+  alt: "浦安D-Rocks、入替戦第1戦を37-15で制しD1残留へ前進"
 draft: false
 ---
 
