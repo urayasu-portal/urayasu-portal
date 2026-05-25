@@ -4,6 +4,8 @@ date: 2026-05-24T07:00:00+09:00
 slug: "briobecca-jflcup-final-2026"
 categories:
   - "スポーツ"
+cover:
+  image: /images/posts/burio.jpg
 tags:
   - "ブリオベッカ浦安・市川"
   - "サッカー"
