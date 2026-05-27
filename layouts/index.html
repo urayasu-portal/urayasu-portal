@@ -83,7 +83,7 @@
       <h2>最新記事</h2>
     </div>
 
-    {{- $paginator := .Paginate $allPosts 9 }}
+    {{- $paginator := .Paginate (after 3 $allPosts) 9 }}
     <div class="article-grid">
       {{- range $paginator.Pages }}
       {{- $cat := index .Params.categories 0 | default "" }}
