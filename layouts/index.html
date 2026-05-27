@@ -17,7 +17,21 @@
 {{/* 全記事 (新しい順) */}}
 {{- $allPosts := where site.RegularPages "Section" "posts" }}
 
-{{/* 速報ティッカー: 最新1件 */}}
+{{/* ───── ポータルヒーロー ───── */}}
+<div class="portal-hero">
+  <h1 class="portal-hero-title">浦安・新浦安・舞浜のローカル情報をお届け</h1>
+  <p class="portal-hero-subtitle">開店・閉店、イベント、グルメ、子育て、スポーツまで。浦安と周辺エリアの気になる話題を、地域密着でわかりやすくまとめます。</p>
+  <div class="hero-actions">
+    <a class="hero-action-btn" href="/categories/イベント/">今週末のイベント</a>
+    <a class="hero-action-btn" href="/categories/開店閉店/">開店・閉店情報</a>
+    <a class="hero-action-btn" href="/categories/グルメカフェ/">グルメ・カフェ</a>
+    <a class="hero-action-btn" href="/categories/子育て教育/">子育て・教育</a>
+    <a class="hero-action-btn" href="/categories/スポーツ/">スポーツ</a>
+    <a class="hero-action-btn btn-contact" href="/contact/">情報提供はこちら</a>
+  </div>
+</div>
+
+{{/* ───── 速報ティッカー: 最新1件 ───── */}}
 {{- with (index $allPosts 0) }}
 <div class="home-ticker">
   <span class="ticker-label">最新</span>
@@ -25,7 +39,7 @@
 </div>
 {{- end }}
 
-{{/* ヒーローセクション */}}
+{{/* ───── ヒーローカード ───── */}}
 {{- $heroPosts := first 3 $allPosts }}
 {{- if ge (len $heroPosts) 1 }}
 <div class="home-hero">
@@ -36,11 +50,8 @@
   {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
   <a class="hero-card hero-main" href="{{ .RelPermalink }}">
     <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
-      {{- if $img }}
-      <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-      {{- else }}
-      <span>🗞</span>
-      {{- end }}
+      {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+      {{- else }}<span>🗞</span>{{- end }}
     </div>
     <div class="hero-body">
       {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
@@ -50,7 +61,6 @@
     </div>
   </a>
   {{- end }}
-
   {{/* サブ (右2枚) */}}
   {{- range (after 1 $heroPosts) }}
   {{- $cat := index .Params.categories 0 | default "" }}
@@ -58,11 +68,8 @@
   {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
   <a class="hero-card hero-sub" href="{{ .RelPermalink }}">
     <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
-      {{- if $img }}
-      <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-      {{- else }}
-      <span>🗞</span>
-      {{- end }}
+      {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+      {{- else }}<span>🗞</span>{{- end }}
     </div>
     <div class="hero-body">
       {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
@@ -74,15 +81,14 @@
 </div>
 {{- end }}
 
-{{/* 2カラムレイアウト: メイン + サイドバー */}}
+{{/* ───── 2カラムレイアウト ───── */}}
 <div class="home-layout">
   <div class="home-main">
 
-    {{/* 最新記事グリッド (ページネーション付き) */}}
+    {{/* 最新記事グリッド (ヒーロー3件を除外してページネーション) */}}
     <div class="section-head">
       <h2>最新記事</h2>
     </div>
-
     {{- $paginator := .Paginate (after 3 $allPosts) 9 }}
     <div class="article-grid">
       {{- range $paginator.Pages }}
@@ -91,11 +97,8 @@
       {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
       <a class="article-card" href="{{ .RelPermalink }}">
         <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
-          {{- if $img }}
-          <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-          {{- else }}
-          <span>{{ $cat }}</span>
-          {{- end }}
+          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+          {{- else }}<span>{{ $cat }}</span>{{- end }}
         </div>
         <div class="article-body">
           {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
@@ -119,14 +122,137 @@
     </div>
     {{- end }}
 
+    {{/* ページ1のみ: カテゴリ別ピックアップ + 保存版まとめ */}}
+    {{- if eq $paginator.PageNumber 1 }}
+
+    {{/* 新着の開店・閉店 */}}
+    {{- $openClosePosts := where $allPosts "Params.categories" "intersect" (slice "開店・閉店" "開店閉店") }}
+    {{- $openClosePosts = first 6 $openClosePosts }}
+    {{- if $openClosePosts }}
+    <div class="section-head" style="margin-top:36px;">
+      <h2>新着の開店・閉店</h2>
+      <a class="section-more" href="/categories/開店閉店/">一覧を見る →</a>
+    </div>
+    <div class="article-grid">
+      {{- range $openClosePosts }}
+      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+      <a class="article-card" href="{{ .RelPermalink }}">
+        <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
+          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+          {{- else }}<span>開店・閉店</span>{{- end }}
+        </div>
+        <div class="article-body">
+          <span class="cat-badge cat-badge-sm cat-open">開店・閉店</span>
+          <h3>{{ .Title }}</h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{/* イベント情報 */}}
+    {{- $eventPosts := where $allPosts "Params.categories" "intersect" (slice "イベント") }}
+    {{- $eventPosts = first 6 $eventPosts }}
+    {{- if $eventPosts }}
+    <div class="section-head" style="margin-top:36px;">
+      <h2>イベント情報</h2>
+      <a class="section-more" href="/categories/イベント/">一覧を見る →</a>
+    </div>
+    <div class="article-grid">
+      {{- range $eventPosts }}
+      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+      <a class="article-card" href="{{ .RelPermalink }}">
+        <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
+          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+          {{- else }}<span>イベント</span>{{- end }}
+        </div>
+        <div class="article-body">
+          <span class="cat-badge cat-badge-sm cat-event">イベント</span>
+          <h3>{{ .Title }}</h3>
+          {{- with .Params.eventDate }}
+          <time datetime="{{ . }}">📅 {{ . }}</time>
+          {{- else }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          {{- end }}
+        </div>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{/*
+      保存版まとめ — フロントマターに summary: true を持つ記事が存在する場合のみ表示。
+      まとめ記事に summary: true を追加すれば自動でここに表示されます。
+    */}}
+    {{- $summaryPosts := where $allPosts "Params.summary" true }}
+    {{- if $summaryPosts }}
+    <div class="section-head" style="margin-top:36px;">
+      <h2>保存版まとめ</h2>
+    </div>
+    <div class="guide-grid">
+      {{- range first 6 $summaryPosts }}
+      <a class="guide-card" href="{{ .RelPermalink }}">
+        <span class="guide-tag">まとめ</span>
+        <span class="guide-title">{{ .Title }}</span>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{- end }}{{/* end PageNumber == 1 */}}
+
   </div>
 
-  {{/* サイドバー */}}
+  {{/* ───── サイドバー ───── */}}
   <aside class="home-sidebar">
 
-    {{/* カテゴリ一覧 */}}
+    {{/* エリアから探す */}}
+    <div class="area-nav-section">
+      <div class="widget-title">📍 エリアから探す</div>
+      <div class="area-chips">
+        <a class="area-chip" href="/tags/浦安駅/">浦安駅</a>
+        <a class="area-chip" href="/tags/新浦安/">新浦安</a>
+        <a class="area-chip" href="/tags/舞浜/">舞浜</a>
+        <a class="area-chip" href="/tags/イクスピアリ/">イクスピアリ</a>
+        <a class="area-chip" href="/tags/葛西/">葛西</a>
+        <a class="area-chip" href="/tags/西葛西/">西葛西</a>
+        <a class="area-chip" href="/tags/行徳/">行徳</a>
+        <a class="area-chip" href="/tags/妙典/">妙典</a>
+      </div>
+    </div>
+
+    {{/* ジャンルから探す */}}
     <div class="sidebar-widget">
-      <div class="widget-title">📂 カテゴリ</div>
+      <div class="widget-title">📂 ジャンルから探す</div>
+      <div class="genre-nav">
+        <a class="genre-card" href="/categories/開店閉店/">
+          <span class="genre-dot" style="background:#e74c3c;"></span>開店・閉店
+        </a>
+        <a class="genre-card" href="/categories/イベント/">
+          <span class="genre-dot" style="background:#8e44ad;"></span>イベント
+        </a>
+        <a class="genre-card" href="/categories/グルメカフェ/">
+          <span class="genre-dot" style="background:#e67e22;"></span>グルメ・カフェ
+        </a>
+        <a class="genre-card" href="/categories/子育て教育/">
+          <span class="genre-dot" style="background:#27ae60;"></span>子育て・教育
+        </a>
+        <a class="genre-card" href="/categories/スポーツ/">
+          <span class="genre-dot" style="background:#16a085;"></span>スポーツ
+        </a>
+        <a class="genre-card" href="/categories/ニュース/">
+          <span class="genre-dot" style="background:#2980b9;"></span>ニュース
+        </a>
+        <a class="genre-card" href="/categories/お知らせ/">
+          <span class="genre-dot" style="background:#7f8c8d;"></span>お知らせ
+        </a>
+      </div>
+    </div>
+
+    {{/* カテゴリ別記事数 */}}
+    <div class="sidebar-widget">
+      <div class="widget-title">📊 カテゴリ別記事数</div>
       <ul class="cat-list">
         {{- range site.Taxonomies.categories.ByCount }}
         {{- $name := .Page.Title }}
@@ -149,11 +275,8 @@
         {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
         <a class="recent-item" href="{{ .RelPermalink }}">
           <div class="recent-thumb">
-            {{- if $img }}
-            <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-            {{- else }}
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#c8dff0,#a8cce0);display:flex;align-items:center;justify-content:center;font-size:20px;">🗞</div>
-            {{- end }}
+            {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+            {{- else }}<div style="width:100%;height:100%;background:linear-gradient(135deg,#c8dff0,#a8cce0);display:flex;align-items:center;justify-content:center;font-size:20px;">🗞</div>{{- end }}
           </div>
           <div class="recent-body">
             <h4>{{ .Title }}</h4>

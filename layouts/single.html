@@ -15,93 +15,253 @@
 
 {{- $cat := index .Params.categories 0 | default "" }}
 {{- $cls := index $catClass $cat | default "cat-default" }}
-
 {{- $coverImg := partial "cover-image.html" (dict "page" . "size" "full") }}
+{{- $allPosts := where site.RegularPages "Section" "posts" }}
 
-<article class="post-single">
+{{/* ───── 2カラムレイアウト ───── */}}
+<div class="home-layout">
 
-  <header class="post-header">
-    {{- partial "breadcrumbs.html" . }}
-    <div class="post-meta-line">
-      {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
-      {{- if not (.Param "noDate") }}
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+  {{/* メインカラム: 記事本体 + 関連記事 */}}
+  <div class="home-main">
+
+    <article class="post-single">
+
+      <header class="post-header">
+        {{- partial "breadcrumbs.html" . }}
+        <div class="post-meta-line">
+          {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
+          {{- if not (.Param "noDate") }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          {{- end }}
+        </div>
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{- with .Description }}
+        <p class="post-description">{{ . }}</p>
+        {{- end }}
+      </header>
+
+      {{- if $coverImg }}
+      <div class="post-cover">
+        <img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy">
+      </div>
       {{- end }}
-    </div>
-    <h1 class="post-title">{{ .Title }}</h1>
-    {{- with .Description }}
-    <p class="post-description">{{ . }}</p>
-    {{- end }}
-  </header>
 
-  {{- if $coverImg }}
-  <div class="post-cover">
-    <img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy">
-  </div>
-  {{- end }}
-
-  {{- if .Content }}
-  <div class="post-content md-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
-  {{- end }}
-
-  {{- partial "extend_post_content.html" . }}
-
-  <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    {{- with $.GetTerms $tags }}
-    <ul class="post-tags">
-      {{- range . }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{/*
+        フロントマター情報ボックス — 店舗情報
+        shopName / openDate / closeDate / address / mapUrl / officialUrl
+        いずれか1つ以上が設定されている場合のみ表示。既存記事には影響なし。
+      */}}
+      {{- if or .Params.shopName .Params.openDate .Params.closeDate .Params.address }}
+      <div class="info-box frontmatter-infobox">
+        <h2>店舗情報</h2>
+        <dl>
+          {{- with .Params.shopName }}<dt>店名</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.address }}<dt>場所</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.openDate }}<dt>オープン日</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.closeDate }}<dt>閉店日</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.officialUrl }}<dt>公式情報</dt><dd><a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></dd>{{- end }}
+          {{- with .Params.mapUrl }}<dt>地図</dt><dd><a href="{{ . }}" rel="noopener" target="_blank">Google マップで見る</a></dd>{{- end }}
+        </dl>
+      </div>
       {{- end }}
-    </ul>
-    {{- end }}
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
-  </footer>
 
-</article>
+      {{/*
+        フロントマター情報ボックス — イベント情報
+        eventDate / eventLocation いずれか1つ以上が設定されている場合のみ表示。
+      */}}
+      {{- if or .Params.eventDate .Params.eventLocation }}
+      <div class="info-box frontmatter-infobox">
+        <h2>イベント概要</h2>
+        <dl>
+          {{- with .Params.eventDate }}<dt>開催日</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.eventEndDate }}<dt>終了日</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.eventLocation }}<dt>会場</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.eventFee }}<dt>料金</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.eventUrl }}<dt>公式情報</dt><dd><a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></dd>{{- end }}
+        </dl>
+      </div>
+      {{- end }}
 
-{{- if $cat }}
-{{- $related := slice }}
-{{- range where site.RegularPages "Section" "posts" }}
-  {{- if and (ne .Permalink $.Permalink) (in .Params.categories $cat) }}
-    {{- $related = $related | append . }}
-  {{- end }}
-{{- end }}
-{{- $related = first 3 $related }}
-{{- if $related }}
-<div class="related-posts">
-  <div class="section-head">
-    <h2>関連記事</h2>
-  </div>
-  <div class="article-grid">
-    {{- range $related }}
-    {{- $rcat := index .Params.categories 0 | default "" }}
-    {{- $rcls := index $catClass $rcat | default "cat-default" }}
-    {{- $rimg := partial "cover-image.html" (dict "page" . "size" "thumb") }}
-    <a class="article-card" href="{{ .RelPermalink }}">
-      <div class="article-thumb{{- if not $rimg }} article-no-img{{- end }}">
-        {{- if $rimg }}
-        <img src="{{ $rimg }}" alt="{{ .Title }}" loading="lazy">
-        {{- else }}
-        <span>{{ $rcat }}</span>
+      {{- if .Content }}
+      <div class="post-content md-content">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+        {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}{{ .Content }}{{ end }}
+      </div>
+      {{- end }}
+
+      {{- partial "extend_post_content.html" . }}
+
+      {{/* 情報提供CTA */}}
+      {{- partial "info-cta.html" . }}
+
+      <footer class="post-footer">
+        {{/* タグ表示 */}}
+        {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+        {{- with $.GetTerms $tags }}
+        <div style="margin-bottom:4px;">
+          <span class="post-tag-label">🏷 タグ：</span>
+        </div>
+        <ul class="post-tags">
+          {{- range . }}
+          <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          {{- end }}
+        </ul>
+        {{- end }}
+
+        {{/* カテゴリ表示 */}}
+        {{- if $cat }}
+        <div style="margin-top:12px;margin-bottom:4px;">
+          <span class="post-tag-label">📂 カテゴリ：</span>
+          <a href="/categories/{{ $cat | urlize }}/" style="text-decoration:none;">
+            <span class="cat-badge {{ $cls }}">{{ $cat }}</span>
+          </a>
+        </div>
+        {{- end }}
+
+        {{- if (.Param "ShowPostNavLinks") }}
+        {{- partial "post_nav_links.html" . }}
+        {{- end }}
+      </footer>
+
+    </article>
+
+    {{/* 関連記事 (同カテゴリから最大6件) */}}
+    {{- if $cat }}
+    {{- $related := slice }}
+    {{- range where site.RegularPages "Section" "posts" }}
+      {{- if and (ne .Permalink $.Permalink) (in .Params.categories $cat) }}
+        {{- $related = $related | append . }}
+      {{- end }}
+    {{- end }}
+    {{- $related = first 6 $related }}
+    {{- if $related }}
+    <div class="related-posts">
+      <div class="section-head">
+        <h2>関連記事</h2>
+        <a class="section-more" href="/categories/{{ $cat | urlize }}/">{{ $cat }}の記事一覧 →</a>
+      </div>
+      <div class="article-grid">
+        {{- range $related }}
+        {{- $rcat := index .Params.categories 0 | default "" }}
+        {{- $rcls := index $catClass $rcat | default "cat-default" }}
+        {{- $rimg := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+        <a class="article-card" href="{{ .RelPermalink }}">
+          <div class="article-thumb{{- if not $rimg }} article-no-img{{- end }}">
+            {{- if $rimg }}<img src="{{ $rimg }}" alt="{{ .Title }}" loading="lazy">
+            {{- else }}<span>{{ $rcat }}</span>{{- end }}
+          </div>
+          <div class="article-body">
+            {{- if $rcat }}<span class="cat-badge cat-badge-sm {{ $rcls }}">{{ $rcat }}</span>{{- end }}
+            <h3>{{ .Title }}</h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          </div>
+        </a>
         {{- end }}
       </div>
-      <div class="article-body">
-        {{- if $rcat }}<span class="cat-badge cat-badge-sm {{ $rcls }}">{{ $rcat }}</span>{{- end }}
-        <h3>{{ .Title }}</h3>
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
-      </div>
-    </a>
+    </div>
     {{- end }}
-  </div>
-</div>
-{{- end }}
-{{- end }}
+    {{- end }}
+
+  </div>{{/* end home-main */}}
+
+  {{/* ───── サイドバー ───── */}}
+  <aside class="home-sidebar">
+
+    {{/* エリアから探す */}}
+    <div class="area-nav-section">
+      <div class="widget-title">📍 エリアから探す</div>
+      <div class="area-chips">
+        <a class="area-chip" href="/tags/浦安駅/">浦安駅</a>
+        <a class="area-chip" href="/tags/新浦安/">新浦安</a>
+        <a class="area-chip" href="/tags/舞浜/">舞浜</a>
+        <a class="area-chip" href="/tags/イクスピアリ/">イクスピアリ</a>
+        <a class="area-chip" href="/tags/葛西/">葛西</a>
+        <a class="area-chip" href="/tags/西葛西/">西葛西</a>
+        <a class="area-chip" href="/tags/行徳/">行徳</a>
+        <a class="area-chip" href="/tags/妙典/">妙典</a>
+      </div>
+    </div>
+
+    {{/* ジャンルから探す */}}
+    <div class="sidebar-widget">
+      <div class="widget-title">📂 ジャンルから探す</div>
+      <div class="genre-nav">
+        <a class="genre-card" href="/categories/開店閉店/">
+          <span class="genre-dot" style="background:#e74c3c;"></span>開店・閉店
+        </a>
+        <a class="genre-card" href="/categories/イベント/">
+          <span class="genre-dot" style="background:#8e44ad;"></span>イベント
+        </a>
+        <a class="genre-card" href="/categories/グルメカフェ/">
+          <span class="genre-dot" style="background:#e67e22;"></span>グルメ・カフェ
+        </a>
+        <a class="genre-card" href="/categories/子育て教育/">
+          <span class="genre-dot" style="background:#27ae60;"></span>子育て・教育
+        </a>
+        <a class="genre-card" href="/categories/スポーツ/">
+          <span class="genre-dot" style="background:#16a085;"></span>スポーツ
+        </a>
+        <a class="genre-card" href="/categories/ニュース/">
+          <span class="genre-dot" style="background:#2980b9;"></span>ニュース
+        </a>
+        <a class="genre-card" href="/categories/お知らせ/">
+          <span class="genre-dot" style="background:#7f8c8d;"></span>お知らせ
+        </a>
+      </div>
+    </div>
+
+    {{/* カテゴリ別記事数 */}}
+    <div class="sidebar-widget">
+      <div class="widget-title">📊 カテゴリ別記事数</div>
+      <ul class="cat-list">
+        {{- range site.Taxonomies.categories.ByCount }}
+        {{- $name := .Page.Title }}
+        {{- $cls2 := index $catClass $name | default "cat-default" }}
+        <li>
+          <a class="cat-item" href="{{ .Page.RelPermalink }}">
+            <span class="cat-badge cat-badge-sm {{ $cls2 }}">{{ $name }}</span>
+            <span class="cat-count">{{ .Count }}</span>
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+
+    {{/* 最近の記事 */}}
+    <div class="sidebar-widget">
+      <div class="widget-title">🕐 最近の記事</div>
+      <div class="recent-list">
+        {{- range first 5 $allPosts }}
+        {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+        <a class="recent-item" href="{{ .RelPermalink }}">
+          <div class="recent-thumb">
+            {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+            {{- else }}<div style="width:100%;height:100%;background:linear-gradient(135deg,#c8dff0,#a8cce0);display:flex;align-items:center;justify-content:center;font-size:20px;">🗞</div>{{- end }}
+          </div>
+          <div class="recent-body">
+            <h4>{{ .Title }}</h4>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          </div>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+
+    {{/* タグクラウド */}}
+    {{- if site.Taxonomies.tags }}
+    <div class="sidebar-widget">
+      <div class="widget-title">🏷 タグ</div>
+      <div class="tag-cloud">
+        {{- range site.Taxonomies.tags.ByCount }}
+        <a class="tag-item" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}({{ .Count }})</a>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+
+  </aside>
+
+</div>{{/* end home-layout */}}
 
 {{- end }}

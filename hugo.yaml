@@ -10,16 +10,27 @@ pagination:
 
 params:
   env: production
-  description: 浦安市のローカルニュース・グルメ・イベント・子育て情報まとめ
+  description: 浦安・新浦安・舞浜の開店・閉店、イベント、グルメ、子育て・教育、スポーツ、ニュースなど地域情報をお届けするローカルメディアです。
   keywords:
     - 浦安
     - 浦安市
-    - ローカルニュース
-    - グルメ
-    - イベント
-    - 子育て
+    - 新浦安
+    - 舞浜
     - 浦安ぽーたる
+    - ローカルニュース
+    - 開店
+    - 閉店
+    - イベント
+    - グルメ
+    - カフェ
+    - 子育て
+    - スポーツ
+    - 行徳
+    - 妙典
+    - 葛西
   author: 浦安ぽーたる
+  images:
+    - /images/categories/cat-open-close.png
   ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
