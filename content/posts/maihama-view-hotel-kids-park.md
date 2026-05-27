@@ -26,6 +26,8 @@ draft: false
 
 舞浜ビューホテル by HULICの住所は浦安市舞浜1番地34号、電話番号は047-355-1222（代表）です。
 
+{{< map q="舞浜ビューホテル 浦安市舞浜1番地34" >}}
+
 ## 参考情報
 
 - 参考：[舞浜ビューホテル by HULIC 公式サイト](https://www.viewhotels.co.jp/maihama/news/2026/kids-space.html)
