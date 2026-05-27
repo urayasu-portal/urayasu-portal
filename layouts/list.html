@@ -103,8 +103,7 @@
       <div class="widget-title">🕐 最近の記事</div>
       <div class="recent-list">
         {{- range first 5 $allPosts }}
-        {{- $img := (.Param "cover.image") }}
-        {{- if not $img }}{{- with .Params.images }}{{- $img = index . 0 }}{{- end }}{{- end }}
+        {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
         <a class="recent-item" href="{{ .RelPermalink }}">
           <div class="recent-thumb">
             {{- if $img }}
