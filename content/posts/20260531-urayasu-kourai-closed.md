@@ -2,7 +2,10 @@
 title: "【浦安市】ハマグリ出汁の「浦安そば」が名物の「浦安 幸来」が5月29日に閉店"
 date: 2026-06-01T07:00:00+09:00
 slug: "urayasu-kourai-closed"
-categories: ["cat-close"]
+categories:
+  - "開店・閉店"
+cover:
+  catimg: cat-close
 tags: ["閉店", "浦安駅", "当代島", "ラーメン", "和食", "浦安そば"]
 description: "浦安市当代島の祭醸造に移転していた和食・ラーメン店「浦安 幸来」が2026年5月29日をもって閉店しました。浦安名物「浦安そば」で親しまれた約6年10か月の営業に幕を下ろしました。"
 draft: false
