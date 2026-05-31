@@ -4,6 +4,7 @@
   "開店・閉店" "cat-open"
   "開店閉店"   "cat-open"
   "ニュース"   "cat-news"
+  "ニュース・事件事故" "cat-news"
   "イベント"   "cat-event"
   "グルメ・カフェ" "cat-gourmet"
   "グルメカフェ"   "cat-gourmet"
@@ -11,36 +12,51 @@
   "子育て教育"   "cat-edu"
   "スポーツ"   "cat-sports"
   "お知らせ"   "cat-notice"
-  "ニュース・事件事故" "cat-news"
 }}
+
+{{/* ── 全記事データを Hugo ビルド時にインライン埋め込み ── */}}
+{{- $allPosts := where site.RegularPages "Section" "posts" }}
+{{- $postsData := slice }}
+{{- range $allPosts }}
+  {{- $thumb := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+  {{- $cat   := index .Params.categories 0 | default "" }}
+  {{- $postsData = $postsData | append (dict
+    "title"      .Title
+    "url"        .RelPermalink
+    "date"       (.Date.Format "2006-01-02")
+    "eventDate"  (.Params.eventDate | default "")
+    "category"   $cat
+    "description" .Description
+    "thumb"      $thumb
+  ) }}
+{{- end }}
 
 <div class="home-layout">
   <div class="home-main">
 
     <div class="list-page-header">
       <div class="list-page-header-inner">
-        <h1 class="list-page-title" id="daily-title">記事を読み込み中…</h1>
+        <h1 class="list-page-title" id="daily-title">読み込み中…</h1>
         <p class="list-page-desc" id="daily-desc"></p>
       </div>
     </div>
 
-    <div id="daily-results" class="article-grid" style="min-height:200px;"></div>
-    <div id="daily-empty" style="display:none;padding:40px 0;text-align:center;color:#888;">
-      <p>この日付の記事・注目の日はありません。</p>
-      <a href="/" style="color:#1a4f8b;">← トップへ戻る</a>
+    <div id="daily-results" class="article-grid"></div>
+    <div id="daily-empty" style="display:none;padding:48px 0;text-align:center;color:#888;">
+      <p style="margin-bottom:16px;">この日に投稿された記事、この日に関連するイベントはありません。</p>
+      <a href="/" style="color:#1a4f8b;font-weight:600;">← トップへ戻る</a>
     </div>
 
   </div>
 
-  {{/* サイドバー（カテゴリリスト＋最近の記事） */}}
-  {{- $allPosts := where site.RegularPages "Section" "posts" }}
+  {{/* ── サイドバー ── */}}
   <aside class="home-sidebar">
     <div class="sidebar-widget">
       <div class="widget-title">📊 カテゴリ別記事数</div>
       <ul class="cat-list">
         {{- range site.Taxonomies.categories.ByCount }}
         {{- $name := .Page.Title }}
-        {{- $cls := index $catClass $name | default "cat-default" }}
+        {{- $cls  := index $catClass $name | default "cat-default" }}
         <li>
           <a class="cat-item" href="{{ .Page.RelPermalink }}">
             <span class="cat-badge cat-badge-sm {{ $cls }}">{{ $name }}</span>
@@ -62,7 +78,7 @@
           </div>
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+            <time>{{ .Date.Format "2006年1月2日" }}</time>
           </div>
         </a>
         {{- end }}
@@ -73,72 +89,51 @@
 
 <script>
 (function(){
-  const CAT_CLASS = {{ dict
-    "開店・閉店" "cat-open"
-    "開店閉店"   "cat-open"
-    "ニュース"   "cat-news"
-    "イベント"   "cat-event"
-    "グルメ・カフェ" "cat-gourmet"
-    "グルメカフェ"   "cat-gourmet"
-    "子育て・教育" "cat-edu"
-    "子育て教育"   "cat-edu"
-    "スポーツ"   "cat-sports"
-    "お知らせ"   "cat-notice"
-    "ニュース・事件事故" "cat-news"
-  | jsonify | safeJS }};
+  const ALL_POSTS = {{ $postsData | jsonify | safeJS }};
+  const CAT_CLASS = {{ $catClass | jsonify | safeJS }};
 
-  const params = new URLSearchParams(window.location.search);
-  const date = params.get('date') || '';
+  const params   = new URLSearchParams(window.location.search);
+  const date     = params.get('date') || '';
 
   if (!date) {
     document.getElementById('daily-title').textContent = '日付が指定されていません';
     return;
   }
 
-  // 日付を読みやすい形式に
-  const [y, m, d] = date.split('-');
-  const dispDate = `${y}年${parseInt(m)}月${parseInt(d)}日`;
+  const [y, m, d]  = date.split('-');
+  const dispDate   = y + '年' + parseInt(m) + '月' + parseInt(d) + '日';
   document.getElementById('daily-title').textContent = dispDate + ' の記事';
 
-  fetch('/index.json')
-    .then(r => r.json())
-    .then(posts => {
-      const matched = posts.filter(p => p.date === date || p.eventDate === date);
+  const matched = ALL_POSTS.filter(p => p.date === date || p.eventDate === date);
 
-      if (matched.length === 0) {
-        document.getElementById('daily-results').style.display = 'none';
-        document.getElementById('daily-empty').style.display = 'block';
-        document.getElementById('daily-title').textContent = dispDate + ' の記事';
-        return;
-      }
+  if (matched.length === 0) {
+    document.getElementById('daily-empty').style.display = 'block';
+    return;
+  }
 
-      document.getElementById('daily-desc').textContent = matched.length + '件の記事があります';
+  document.getElementById('daily-desc').textContent = matched.length + '件の記事があります';
 
-      const grid = document.getElementById('daily-results');
-      grid.innerHTML = matched.map(p => {
-        const cls = CAT_CLASS[p.category] || 'cat-default';
-        const thumb = p.thumb
-          ? `<img src="${p.thumb}" alt="${p.title}" loading="lazy">`
-          : `<span>${p.category || ''}</span>`;
-        const badge = p.category
-          ? `<span class="cat-badge cat-badge-sm ${cls}">${p.category}</span>` : '';
-        const isEvent = p.eventDate === date;
-        const eventNote = isEvent && p.date !== date
-          ? `<span style="font-size:11px;color:#b85c00;">📅 注目の日</span>` : '';
-        return `
-          <a class="article-card" href="${p.url}">
-            <div class="article-thumb${p.thumb ? '' : ' article-no-img'}">${thumb}</div>
-            <div class="article-body">
-              ${badge}${eventNote}
-              <h3>${p.title}</h3>
-              <time datetime="${p.date}">${p.date.replace(/-/g, '/').replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1年$2月$3日').replace(/月0/, '月').replace(/日$/, '日')}</time>
-            </div>
-          </a>`;
-      }).join('');
-    })
-    .catch(() => {
-      document.getElementById('daily-title').textContent = 'データの読み込みに失敗しました';
-    });
+  const fmtDate = s => s.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_, y, m, d) =>
+    y + '年' + parseInt(m) + '月' + parseInt(d) + '日');
+
+  document.getElementById('daily-results').innerHTML = matched.map(p => {
+    const cls       = CAT_CLASS[p.category] || 'cat-default';
+    const thumbHtml = p.thumb
+      ? `<img src="${p.thumb}" alt="" loading="lazy">`
+      : `<span>${p.category}</span>`;
+    const badge     = p.category
+      ? `<span class="cat-badge cat-badge-sm ${cls}">${p.category}</span>` : '';
+    const eventNote = (p.eventDate === date && p.date !== date)
+      ? `<span style="font-size:11px;color:#b85c00;display:block;margin-bottom:3px;">📅 注目の日</span>` : '';
+    return `<a class="article-card" href="${p.url}">
+      <div class="article-thumb${p.thumb ? '' : ' article-no-img'}">${thumbHtml}</div>
+      <div class="article-body">
+        ${badge}${eventNote}
+        <h3>${p.title}</h3>
+        <time>${fmtDate(p.date)}</time>
+      </div>
+    </a>`;
+  }).join('');
 })();
 </script>
 
