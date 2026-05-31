@@ -96,6 +96,7 @@ outputs:
   home:
     - HTML
     - RSS
+    - JSON
 
 minify:
   disableHTML: true

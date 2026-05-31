@@ -276,8 +276,7 @@
       window.portalCalPrev = function(){ month--; if(month<0){month=11;year--;} render(year,month); };
       window.portalCalNext = function(){ month++; if(month>11){month=0;year++;} render(year,month); };
       window.portalCalClick = function(ds){
-        const el = document.querySelector('#sidebar-search .pagefind-ui__search-input');
-        if(el){ el.value = ds; el.dispatchEvent(new Event('input',{bubbles:true})); document.getElementById('sidebar-search').scrollIntoView({behavior:'smooth'}); }
+        window.location.href = '/daily/?date=' + ds;
       };
 
       render(today.getFullYear(), today.getMonth());
