@@ -41,6 +41,9 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: hugo --minify --buildFuture --baseURL "https://urayasu-portal.com/"
 
+      - name: Run Pagefind (search index)
+        run: npx pagefind --site public
+
       - name: Add CNAME
         run: echo "urayasu-portal.com" > ./public/CNAME
 

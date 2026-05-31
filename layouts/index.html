@@ -207,48 +207,82 @@
   {{/* ───── サイドバー ───── */}}
   <aside class="home-sidebar">
 
-    {{/* エリアから探す */}}
-    <div class="area-nav-section">
-      <div class="widget-title">📍 エリアから探す</div>
-      <div class="area-chips">
-        <a class="area-chip" href="/tags/浦安駅/">浦安駅</a>
-        <a class="area-chip" href="/tags/新浦安/">新浦安</a>
-        <a class="area-chip" href="/tags/舞浜/">舞浜</a>
-        <a class="area-chip" href="/tags/イクスピアリ/">イクスピアリ</a>
-        <a class="area-chip" href="/tags/葛西/">葛西</a>
-        <a class="area-chip" href="/tags/西葛西/">西葛西</a>
-        <a class="area-chip" href="/tags/行徳/">行徳</a>
-        <a class="area-chip" href="/tags/妙典/">妙典</a>
+    {{/* 検索 */}}
+    <div class="sidebar-widget">
+      <div class="widget-title">🔍 記事を検索</div>
+      <div class="widget-body">
+        <div id="sidebar-search"></div>
       </div>
     </div>
 
-    {{/* ジャンルから探す */}}
+    {{/* カレンダー */}}
+    {{- $postDates := slice }}
+    {{- range $allPosts }}
+      {{- $postDates = $postDates | append (.Date.Format "2006-01-02") }}
+    {{- end }}
+    {{- $eventDates := slice }}
+    {{- range where $allPosts "Params.eventDate" "ne" nil }}
+      {{- $eventDates = $eventDates | append .Params.eventDate }}
+    {{- end }}
     <div class="sidebar-widget">
-      <div class="widget-title">📂 ジャンルから探す</div>
-      <div class="genre-nav">
-        <a class="genre-card" href="/categories/開店閉店/">
-          <span class="genre-dot" style="background:#e74c3c;"></span>開店・閉店
-        </a>
-        <a class="genre-card" href="/categories/イベント/">
-          <span class="genre-dot" style="background:#8e44ad;"></span>イベント
-        </a>
-        <a class="genre-card" href="/categories/グルメカフェ/">
-          <span class="genre-dot" style="background:#e67e22;"></span>グルメ・カフェ
-        </a>
-        <a class="genre-card" href="/categories/子育て教育/">
-          <span class="genre-dot" style="background:#27ae60;"></span>子育て・教育
-        </a>
-        <a class="genre-card" href="/categories/スポーツ/">
-          <span class="genre-dot" style="background:#16a085;"></span>スポーツ
-        </a>
-        <a class="genre-card" href="/categories/ニュース/">
-          <span class="genre-dot" style="background:#2980b9;"></span>ニュース
-        </a>
-        <a class="genre-card" href="/categories/お知らせ/">
-          <span class="genre-dot" style="background:#7f8c8d;"></span>お知らせ
-        </a>
+      <div class="widget-title">📅 カレンダーで探す</div>
+      <div class="widget-body">
+        <div id="portal-calendar"></div>
+        <div class="cal-legend">
+          <span><span class="cal-legend-underline">15</span> 記事あり</span>
+          <span><span class="cal-legend-event"></span> 注目の日</span>
+        </div>
       </div>
     </div>
+    <script>
+    (function(){
+      const POST_DATES  = new Set({{ $postDates | jsonify }});
+      const EVENT_DATES = new Set({{ $eventDates | jsonify }});
+      let year, month;
+      const today = new Date();
+
+      function render(y, m) {
+        year = y; month = m;
+        const wrap = document.getElementById('portal-calendar');
+        const firstDay = new Date(y, m, 1).getDay();
+        const daysInMonth = new Date(y, m + 1, 0).getDate();
+        const mn = (m + 1).toString().padStart(2, '0');
+        const dows = ['日','月','火','水','木','金','土'];
+        let html = `<div class="cal-header">
+          <button class="cal-nav" onclick="portalCalPrev()">‹</button>
+          <span class="cal-month">${y}年${m+1}月</span>
+          <button class="cal-nav" onclick="portalCalNext()">›</button>
+        </div><div class="cal-grid">`;
+        dows.forEach((d,i) => {
+          html += `<div class="cal-dow${i===0?' cal-sun':i===6?' cal-sat':''}">${d}</div>`;
+        });
+        for (let i = 0; i < firstDay; i++) html += `<div class="cal-day"></div>`;
+        for (let d = 1; d <= daysInMonth; d++) {
+          const ds = `${y}-${mn}-${d.toString().padStart(2,'0')}`;
+          const hasPost  = POST_DATES.has(ds);
+          const hasEvent = EVENT_DATES.has(ds);
+          const isToday  = (y === today.getFullYear() && m === today.getMonth() && d === today.getDate());
+          let cls = 'cal-day';
+          if (isToday)  cls += ' cal-today';
+          if (hasEvent) cls += ' cal-event';
+          if (hasPost)  cls += ' cal-has-post';
+          const clickable = hasPost || hasEvent;
+          html += `<div class="${cls}"${clickable ? ` onclick="portalCalClick('${ds}')" title="${ds}の記事"` : ''}>${d}</div>`;
+        }
+        html += '</div>';
+        wrap.innerHTML = html;
+      }
+
+      window.portalCalPrev = function(){ month--; if(month<0){month=11;year--;} render(year,month); };
+      window.portalCalNext = function(){ month++; if(month>11){month=0;year++;} render(year,month); };
+      window.portalCalClick = function(ds){
+        const el = document.querySelector('#sidebar-search .pagefind-ui__search-input');
+        if(el){ el.value = ds; el.dispatchEvent(new Event('input',{bubbles:true})); document.getElementById('sidebar-search').scrollIntoView({behavior:'smooth'}); }
+      };
+
+      render(today.getFullYear(), today.getMonth());
+    })();
+    </script>
 
     {{/* カテゴリ別記事数 */}}
     <div class="sidebar-widget">
@@ -301,5 +335,22 @@
 
   </aside>
 </div>
+
+{{/* Pagefind 検索 UI 初期化 */}}
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  new PagefindUI({
+    element: '#sidebar-search',
+    showImages: false,
+    showEmptyFilters: false,
+    resetStyles: false,
+    translations: {
+      placeholder: 'キーワードを入力…',
+      zero_results: '「[QUERY]」の検索結果はありません',
+    }
+  });
+});
+</script>
 
 {{- end }}
