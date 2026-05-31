@@ -22,6 +22,9 @@ body { background: var(--up-bg) !important; }
 
 /* ---------- ヘッダー ---------- */
 .header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
   background: var(--up-sea) !important;
   border-bottom: none !important;
   box-shadow: 0 2px 12px rgba(0,0,0,.25) !important;
@@ -561,53 +564,43 @@ body:not(.list) { --main-width: 1108px; }
 .portal-hero {
   background: linear-gradient(135deg, #1a5c8a 0%, #0e7a6a 100%);
   border-radius: 12px;
-  padding: 40px 36px;
+  padding: 20px 28px;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+.portal-hero-text { flex: 1; min-width: 0; }
 .portal-hero-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
-  line-height: 1.45;
-  margin: 0 0 10px;
+  line-height: 1.4;
+  margin: 0 0 6px;
   color: #fff;
 }
 .portal-hero-subtitle {
-  font-size: 14px;
-  line-height: 1.85;
+  font-size: 13px;
+  line-height: 1.75;
   color: rgba(255,255,255,.88);
-  margin: 0 0 22px;
+  margin: 0;
   max-width: 640px;
 }
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.hero-action-btn {
+.hero-contact-link {
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px;
+  padding: 8px 14px;
   background: rgba(255,255,255,.15);
-  border: 1px solid rgba(255,255,255,.35);
+  border: 1px solid rgba(255,255,255,.4);
   border-radius: 20px;
   color: #fff !important;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none !important;
-  transition: background .18s, border-color .18s;
-  white-space: nowrap;
-}
-.hero-action-btn:hover {
-  background: rgba(255,255,255,.28);
-  border-color: rgba(255,255,255,.65);
-}
-.hero-action-btn.btn-contact {
-  background: rgba(255,255,255,.92);
-  color: var(--portal-blue) !important;
-  border-color: transparent;
+  font-size: 12px;
   font-weight: 700;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background .18s;
 }
-.hero-action-btn.btn-contact:hover { background: #fff; }
+.hero-contact-link:hover { background: rgba(255,255,255,.28); }
 
 /* ---------- エリアナビ ---------- */
 .area-nav-section {
@@ -1107,9 +1100,9 @@ body:not(.list) { --main-width: 1108px; }
   .category-hub-footer { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 560px) {
-  .portal-hero { padding: 22px 16px; }
-  .portal-hero-title { font-size: 18px; }
-  .portal-hero-subtitle { font-size: 13px; }
-  .hero-action-btn { font-size: 12px; padding: 6px 12px; }
+  .portal-hero { padding: 16px 18px; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .portal-hero-title { font-size: 17px; }
+  .portal-hero-subtitle { font-size: 12px; }
+  .hero-contact-link { font-size: 11px; padding: 6px 12px; }
   .guide-grid { grid-template-columns: 1fr; }
 }
