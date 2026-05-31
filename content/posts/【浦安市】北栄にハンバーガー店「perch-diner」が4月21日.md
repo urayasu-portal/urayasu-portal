@@ -1,6 +1,7 @@
-﻿---
+---
 title: "【浦安市】北栄にハンバーガー店「PERCH DINER」が4月21日オープン"
 date: 2026-04-22T07:20:24+09:00
+eventDate: "2026-04-21"
 categories:
   - "開店・閉店"
 cover:

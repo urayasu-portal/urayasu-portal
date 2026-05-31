@@ -1,6 +1,7 @@
-﻿---
+---
 title: "【浦安D-Rocks】4/24（金）秩父宮でFRI D-NIGHT開催！浦安市民優待あり"
 date: 2026-04-23T06:12:35+09:00
+eventDate: "2026-04-24"
 categories:
   - "スポーツ"
 cover:
