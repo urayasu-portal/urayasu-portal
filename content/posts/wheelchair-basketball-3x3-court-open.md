@@ -12,6 +12,9 @@ tags:
   - 運動公園
   - 浦安市
 description: "浦安市内に車いすバスケットボール3×3コートが2026年5月1日にオープンしました。予約不要・無料で誰でも利用できる屋外コートです。"
+cover:
+  image: /images/posts/wheelchair-basketball-3x3-court-open.png
+  alt: '浦安市に車いすバスケットボール3×3コートが5月1日オープン'
 draft: false
 ---
 
