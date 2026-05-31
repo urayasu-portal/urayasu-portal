@@ -12,7 +12,8 @@ tags:
   - "開店情報"
 description: "浦安駅高架下の「マーヴ浦安」西口エリアが整備中で、2026年6〜7月にかけて周辺にも飲食・専門店が続々オープン予定。焼肉きんぐ、洋麺屋五右衛門、ら～めんきんとうん、リンツなど注目の新店をまとめました。"
 cover:
-  catimg: cat-open
+  image: /images/posts/urayasu-station-new-open-2026.png
+  alt: '浦安駅周辺ニューオープンまとめ 2026年6〜7月注目の新店'
 draft: false
 ---
 
