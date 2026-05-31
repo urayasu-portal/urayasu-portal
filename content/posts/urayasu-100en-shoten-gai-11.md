@@ -5,6 +5,9 @@ slug: "urayasu-100en-shoten-gai-11"
 categories: ["イベント"]
 tags: ["浦安百縁商店街", "浦安駅", "イベント", "グルメ", "商店街"]
 description: "第11回 浦安百縁商店街が2026年6月6日（土）・7日（日）に浦安駅周辺で開催されます。地元グルメや雑貨、特設ステージでのパフォーマンスなど2日間にわたる恒例イベントです。"
+cover:
+  image: /images/posts/urayasu-100en-shoten-gai-11.jpg
+  alt: '第11回 浦安百縁商店街 2026年6月6日・7日開催'
 draft: false
 ---
 
