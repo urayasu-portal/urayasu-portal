@@ -2,9 +2,19 @@
 title: "【浦安市】浦安D-Rocksのファン感謝祭「D-Rocks Fes 2026」が6月6日に開催！"
 date: 2026-05-31T07:00:00+09:00
 slug: "d-rocks-fes-2026"
-categories: ["cat-event"]
-tags: ["浦安D-Rocks", "ラグビー", "イベント", "ファン感謝祭", "浦安Dパーク", "高洲"]
+categories:
+  - "スポーツ"
+tags:
+  - "浦安D-Rocks"
+  - "ラグビー"
+  - "イベント"
+  - "ファン感謝祭"
+  - "浦安Dパーク"
+  - "高洲"
 description: "浦安D-Rocksのファン感謝祭「D-Rocks Fes 2026」が6月6日（土）に浦安Dパークで開催。選手によるD-Rocks合戦やラグビー体験、サイン会など盛りだくさんの内容です。申込は6月2日まで。"
+cover:
+  image: /images/posts/d-rocks-fes-2026.png
+  alt: 'D-Rocks Fes 2026 6月6日（土）浦安Dパーク開催'
 draft: false
 ---
 
