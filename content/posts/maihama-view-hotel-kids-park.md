@@ -13,6 +13,9 @@ tags:
   - "舞浜"
   - "オフィシャルホテル"
 description: "舞浜の東京ディズニーリゾート・オフィシャルホテル「舞浜ビューホテル by HULIC」に、宿泊者専用の全天候型キッズパーク「ウミエール」が8月1日（土）から夏季限定でオープンします。0歳から小学生まで楽しめる3ゾーン構成です。"
+cover:
+  image: /images/posts/maihama-view-hotel-kids-park.png
+  alt: '舞浜ビューホテル by HULICの夏季限定キッズパーク「ウミエール」'
 draft: false
 ---
 
