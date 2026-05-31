@@ -12,6 +12,9 @@ tags:
   - "舞浜"
   - "浦安市"
 description: "浦安市は、運動公園野球場のネーミングライツ・パートナーに京葉瓦斯株式会社が決定したと発表しました。新愛称は「京葉ガス クラシモスタジアム浦安」で、2026年6月1日から使用が始まります。"
+cover:
+  image: /images/posts/keiyo-gas-classimo-stadium-urayasu.png
+  alt: '浦安市運動公園野球場の新愛称「京葉ガス クラシモスタジアム浦安」'
 draft: false
 ---
 
