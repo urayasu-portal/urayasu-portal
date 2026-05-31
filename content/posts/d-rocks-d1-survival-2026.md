@@ -13,7 +13,7 @@ tags:
   - "石井魁"
 description: "浦安D-Rocksがリーグワン2025-26 D1/D2入替戦を2連勝で制し、ディビジョン1残留を確定。第2戦では石井魁が4トライの活躍を見せ57-19で圧勝しました。"
 cover:
-  catimg: cat-sports
+  image: /images/posts/d-rocks.png
 draft: false
 ---
 
