@@ -2,6 +2,7 @@
 title: "【浦安市】運動公園野球場の新愛称は「京葉ガス クラシモスタジアム浦安」6月1日から"
 date: 2026-05-27T07:00:00+09:00
 slug: "keiyo-gas-classimo-stadium-urayasu"
+eventDate: "2026-06-01"
 categories:
   - "お知らせ"
 tags:

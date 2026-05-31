@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
   {{- $mk := .Date.Format "2006-01" }}
   {{- $monthCounts = merge $monthCounts (dict $mk (add (index $monthCounts $mk | default 0) 1)) }}
 {{- end }}
-{{- range where $allPosts "Params.eventDate" "ne" nil }}
-  {{- $eventDates = $eventDates | append .Params.eventDate }}
+{{- range $allPosts }}
+  {{- with .Params.eventDate  }}{{- $eventDates = $eventDates | append . }}{{- end }}
+  {{- range .Params.eventDates }}{{- $eventDates = $eventDates | append . }}{{- end }}
 {{- end }}
 
 {{/* 検索ウィジェット */}}

@@ -20,11 +20,14 @@
 {{- range $allPosts }}
   {{- $thumb := partial "cover-image.html" (dict "page" . "size" "thumb") }}
   {{- $cat   := index .Params.categories 0 | default "" }}
+  {{- $evDates := slice }}
+  {{- with .Params.eventDate  }}{{- $evDates = $evDates | append . }}{{- end }}
+  {{- range .Params.eventDates }}{{- $evDates = $evDates | append . }}{{- end }}
   {{- $postsData = $postsData | append (dict
     "title"      .Title
     "url"        .RelPermalink
     "date"       (.Date.Format "2006-01-02")
-    "eventDate"  (.Params.eventDate | default "")
+    "eventDates" $evDates
     "category"   $cat
     "description" .Description
     "thumb"      $thumb
@@ -103,16 +106,16 @@
 
   let dispTitle, matched;
 
+  const hasEvent = (p, key) => (p.eventDates || []).some(d => d === key || d.startsWith(key));
+
   if (month) {
-    // 月別モード
     const [y, m] = month.split('-');
     dispTitle = y + '年' + parseInt(m) + '月の記事';
-    matched = ALL_POSTS.filter(p => p.date.startsWith(month) || p.eventDate.startsWith(month));
+    matched = ALL_POSTS.filter(p => p.date.startsWith(month) || hasEvent(p, month));
   } else {
-    // 日別モード
     const [y, m, d] = date.split('-');
     dispTitle = y + '年' + parseInt(m) + '月' + parseInt(d) + '日の記事';
-    matched = ALL_POSTS.filter(p => p.date === date || p.eventDate === date);
+    matched = ALL_POSTS.filter(p => p.date === date || hasEvent(p, date));
   }
 
   document.getElementById('daily-title').textContent = dispTitle;
@@ -134,8 +137,8 @@
       : `<span>${p.category}</span>`;
     const badge     = p.category
       ? `<span class="cat-badge cat-badge-sm ${cls}">${p.category}</span>` : '';
-    // 注目の日バッジ：日別モードのみ表示。eventDateがあり、かつ投稿日とは別にeventDateで一致した場合のみ
-    const eventNote = (!month && p.eventDate && p.eventDate === date && p.date !== date)
+    // 注目の日バッジ：日別モードのみ・eventDatesに一致・投稿日とは別の場合
+    const eventNote = (!month && hasEvent(p, date) && p.date !== date)
       ? `<span style="font-size:11px;color:#b85c00;display:block;margin-bottom:3px;">📅 注目の日</span>` : '';
     return `<a class="article-card" href="${p.url}">
       <div class="article-thumb${p.thumb ? '' : ' article-no-img'}">${thumbHtml}</div>

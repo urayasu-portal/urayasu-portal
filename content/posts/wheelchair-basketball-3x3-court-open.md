@@ -15,6 +15,7 @@ description: "浦安市内に車いすバスケットボール3×3コートが20
 cover:
   image: /images/posts/wheelchair-basketball-3x3-court-open.png
   alt: '浦安市に車いすバスケットボール3×3コートが5月1日オープン'
+eventDate: "2026-05-01"
 draft: false
 ---
 

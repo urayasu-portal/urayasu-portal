@@ -2,6 +2,7 @@
 title: "【浦安市舞浜】舞浜ビューホテル by HULICに夏季限定キッズパーク「ウミエール」8月1日オープン"
 date: 2026-05-27T07:00:00+09:00
 slug: "maihama-view-hotel-kids-park"
+eventDate: "2026-08-01"
 categories:
   - "お知らせ"
 tags:
