@@ -2,6 +2,7 @@
 title: "バルドラール浦安、Fリーグ新シーズン開幕戦は5/30ホームゲーム！"
 date: 2026-05-24T07:00:00+09:00
 slug: "bardral-fleague-2026-27-opener"
+eventDate: "2026-05-30"
 categories:
   - "スポーツ"
 tags:
