@@ -93,18 +93,29 @@
   const CAT_CLASS = {{ $catClass | jsonify | safeJS }};
 
   const params   = new URLSearchParams(window.location.search);
-  const date     = params.get('date') || '';
+  const date     = params.get('date')  || '';
+  const month    = params.get('month') || '';
 
-  if (!date) {
+  if (!date && !month) {
     document.getElementById('daily-title').textContent = '日付が指定されていません';
     return;
   }
 
-  const [y, m, d]  = date.split('-');
-  const dispDate   = y + '年' + parseInt(m) + '月' + parseInt(d) + '日';
-  document.getElementById('daily-title').textContent = dispDate + ' の記事';
+  let dispTitle, matched;
 
-  const matched = ALL_POSTS.filter(p => p.date === date || p.eventDate === date);
+  if (month) {
+    // 月別モード
+    const [y, m] = month.split('-');
+    dispTitle = y + '年' + parseInt(m) + '月の記事';
+    matched = ALL_POSTS.filter(p => p.date.startsWith(month) || p.eventDate.startsWith(month));
+  } else {
+    // 日別モード
+    const [y, m, d] = date.split('-');
+    dispTitle = y + '年' + parseInt(m) + '月' + parseInt(d) + '日の記事';
+    matched = ALL_POSTS.filter(p => p.date === date || p.eventDate === date);
+  }
+
+  document.getElementById('daily-title').textContent = dispTitle;
 
   if (matched.length === 0) {
     document.getElementById('daily-empty').style.display = 'block';

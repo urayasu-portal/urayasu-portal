@@ -224,20 +224,27 @@
     {{- range where $allPosts "Params.eventDate" "ne" nil }}
       {{- $eventDates = $eventDates | append .Params.eventDate }}
     {{- end }}
+    {{/* 月別記事数 */}}
+    {{- $monthCounts := dict }}
+    {{- range $allPosts }}
+      {{- $mk := .Date.Format "2006-01" }}
+      {{- $monthCounts = merge $monthCounts (dict $mk (add (index $monthCounts $mk | default 0) 1)) }}
+    {{- end }}
     <div class="sidebar-widget">
       <div class="widget-title">📅 カレンダーで探す</div>
       <div class="widget-body">
         <div id="portal-calendar"></div>
         <div class="cal-legend">
-          <span><span class="cal-legend-underline">15</span> 記事あり</span>
+          <a id="cal-month-link" class="cal-month-link" href="/daily/"><span id="cal-month-count">0</span>件の記事を見る →</a>
           <span><span class="cal-legend-event"></span> 注目の日</span>
         </div>
       </div>
     </div>
     <script>
     (function(){
-      const POST_DATES  = new Set({{ $postDates | jsonify | safeJS }});
-      const EVENT_DATES = new Set({{ $eventDates | jsonify | safeJS }});
+      const POST_DATES   = new Set({{ $postDates  | jsonify | safeJS }});
+      const EVENT_DATES  = new Set({{ $eventDates | jsonify | safeJS }});
+      const MONTH_COUNTS = {{ $monthCounts | jsonify | safeJS }};
       let year, month;
       const today = new Date();
 
@@ -247,6 +254,7 @@
         const firstDay = new Date(y, m, 1).getDay();
         const daysInMonth = new Date(y, m + 1, 0).getDate();
         const mn = (m + 1).toString().padStart(2, '0');
+        const mk = `${y}-${mn}`;
         const dows = ['日','月','火','水','木','金','土'];
         let html = `<div class="cal-header">
           <button class="cal-nav" onclick="portalCalPrev()">‹</button>
@@ -271,6 +279,10 @@
         }
         html += '</div>';
         wrap.innerHTML = html;
+        // 月別記事数リンクを更新
+        const count = MONTH_COUNTS[mk] || 0;
+        document.getElementById('cal-month-count').textContent = count;
+        document.getElementById('cal-month-link').href = '/daily/?month=' + mk;
       }
 
       window.portalCalPrev = function(){ month--; if(month<0){month=11;year--;} render(year,month); };
