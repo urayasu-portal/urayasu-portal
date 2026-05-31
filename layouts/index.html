@@ -207,93 +207,8 @@
   {{/* ───── サイドバー ───── */}}
   <aside class="home-sidebar">
 
-    {{/* 検索 */}}
-    <div class="sidebar-widget">
-      <div class="widget-title">🔍 記事を検索</div>
-      <div class="widget-body">
-        <div id="sidebar-search"></div>
-      </div>
-    </div>
-
-    {{/* カレンダー */}}
-    {{- $postDates := slice }}
-    {{- range $allPosts }}
-      {{- $postDates = $postDates | append (.Date.Format "2006-01-02") }}
-    {{- end }}
-    {{- $eventDates := slice }}
-    {{- range where $allPosts "Params.eventDate" "ne" nil }}
-      {{- $eventDates = $eventDates | append .Params.eventDate }}
-    {{- end }}
-    {{/* 月別記事数 */}}
-    {{- $monthCounts := dict }}
-    {{- range $allPosts }}
-      {{- $mk := .Date.Format "2006-01" }}
-      {{- $monthCounts = merge $monthCounts (dict $mk (add (index $monthCounts $mk | default 0) 1)) }}
-    {{- end }}
-    <div class="sidebar-widget">
-      <div class="widget-title">📅 カレンダーで探す</div>
-      <div class="widget-body">
-        <div id="portal-calendar"></div>
-        <div class="cal-legend">
-          <a id="cal-month-link" class="cal-month-link" href="/daily/"><span id="cal-month-count">0</span>件の記事を見る →</a>
-          <span><span class="cal-legend-event"></span> 注目の日</span>
-        </div>
-      </div>
-    </div>
-    <script>
-    (function(){
-      const POST_DATES   = new Set({{ $postDates  | jsonify | safeJS }});
-      const EVENT_DATES  = new Set({{ $eventDates | jsonify | safeJS }});
-      const MONTH_COUNTS = {{ $monthCounts | jsonify | safeJS }};
-      let year, month;
-      const today = new Date();
-
-      function render(y, m) {
-        year = y; month = m;
-        const wrap = document.getElementById('portal-calendar');
-        const firstDay = new Date(y, m, 1).getDay();
-        const daysInMonth = new Date(y, m + 1, 0).getDate();
-        const mn = (m + 1).toString().padStart(2, '0');
-        const mk = `${y}-${mn}`;
-        const dows = ['日','月','火','水','木','金','土'];
-        let html = `<div class="cal-header">
-          <button class="cal-nav" onclick="portalCalPrev()">‹</button>
-          <span class="cal-month">${y}年${m+1}月</span>
-          <button class="cal-nav" onclick="portalCalNext()">›</button>
-        </div><div class="cal-grid">`;
-        dows.forEach((d,i) => {
-          html += `<div class="cal-dow${i===0?' cal-sun':i===6?' cal-sat':''}">${d}</div>`;
-        });
-        for (let i = 0; i < firstDay; i++) html += `<div class="cal-day"></div>`;
-        for (let d = 1; d <= daysInMonth; d++) {
-          const ds = `${y}-${mn}-${d.toString().padStart(2,'0')}`;
-          const hasPost  = POST_DATES.has(ds);
-          const hasEvent = EVENT_DATES.has(ds);
-          const isToday  = (y === today.getFullYear() && m === today.getMonth() && d === today.getDate());
-          let cls = 'cal-day';
-          if (isToday)  cls += ' cal-today';
-          if (hasEvent) cls += ' cal-event';
-          if (hasPost)  cls += ' cal-has-post';
-          const clickable = hasPost || hasEvent;
-          html += `<div class="${cls}"${clickable ? ` onclick="portalCalClick('${ds}')" title="${ds}の記事"` : ''}>${d}</div>`;
-        }
-        html += '</div>';
-        wrap.innerHTML = html;
-        // 月別記事数リンクを更新
-        const count = MONTH_COUNTS[mk] || 0;
-        document.getElementById('cal-month-count').textContent = count;
-        document.getElementById('cal-month-link').href = '/daily/?month=' + mk;
-      }
-
-      window.portalCalPrev = function(){ month--; if(month<0){month=11;year--;} render(year,month); };
-      window.portalCalNext = function(){ month++; if(month>11){month=0;year++;} render(year,month); };
-      window.portalCalClick = function(ds){
-        window.location.href = '/daily/?date=' + ds;
-      };
-
-      render(today.getFullYear(), today.getMonth());
-    })();
-    </script>
+    {{/* 検索 + カレンダー */}}
+    {{- partial "sidebar-calendar.html" . }}
 
     {{/* カテゴリ別記事数 */}}
     <div class="sidebar-widget">
@@ -347,21 +262,5 @@
   </aside>
 </div>
 
-{{/* Pagefind 検索 UI 初期化 */}}
-<script src="/pagefind/pagefind-ui.js"></script>
-<script>
-window.addEventListener('DOMContentLoaded', function() {
-  new PagefindUI({
-    element: '#sidebar-search',
-    showImages: false,
-    showEmptyFilters: false,
-    resetStyles: false,
-    translations: {
-      placeholder: 'キーワードを入力…',
-      zero_results: '「[QUERY]」の検索結果はありません',
-    }
-  });
-});
-</script>
 
 {{- end }}

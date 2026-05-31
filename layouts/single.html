@@ -168,48 +168,8 @@
   {{/* ───── サイドバー ───── */}}
   <aside class="home-sidebar">
 
-    {{/* エリアから探す */}}
-    <div class="area-nav-section">
-      <div class="widget-title">📍 エリアから探す</div>
-      <div class="area-chips">
-        <a class="area-chip" href="/tags/浦安駅/">浦安駅</a>
-        <a class="area-chip" href="/tags/新浦安/">新浦安</a>
-        <a class="area-chip" href="/tags/舞浜/">舞浜</a>
-        <a class="area-chip" href="/tags/イクスピアリ/">イクスピアリ</a>
-        <a class="area-chip" href="/tags/葛西/">葛西</a>
-        <a class="area-chip" href="/tags/西葛西/">西葛西</a>
-        <a class="area-chip" href="/tags/行徳/">行徳</a>
-        <a class="area-chip" href="/tags/妙典/">妙典</a>
-      </div>
-    </div>
-
-    {{/* ジャンルから探す */}}
-    <div class="sidebar-widget">
-      <div class="widget-title">📂 ジャンルから探す</div>
-      <div class="genre-nav">
-        <a class="genre-card" href="/categories/開店閉店/">
-          <span class="genre-dot" style="background:#e74c3c;"></span>開店・閉店
-        </a>
-        <a class="genre-card" href="/categories/イベント/">
-          <span class="genre-dot" style="background:#8e44ad;"></span>イベント
-        </a>
-        <a class="genre-card" href="/categories/グルメカフェ/">
-          <span class="genre-dot" style="background:#e67e22;"></span>グルメ・カフェ
-        </a>
-        <a class="genre-card" href="/categories/子育て教育/">
-          <span class="genre-dot" style="background:#27ae60;"></span>子育て・教育
-        </a>
-        <a class="genre-card" href="/categories/スポーツ/">
-          <span class="genre-dot" style="background:#16a085;"></span>スポーツ
-        </a>
-        <a class="genre-card" href="/categories/ニュース/">
-          <span class="genre-dot" style="background:#2980b9;"></span>ニュース
-        </a>
-        <a class="genre-card" href="/categories/お知らせ/">
-          <span class="genre-dot" style="background:#7f8c8d;"></span>お知らせ
-        </a>
-      </div>
-    </div>
+    {{/* 検索 + カレンダー */}}
+    {{- partial "sidebar-calendar.html" . }}
 
     {{/* カテゴリ別記事数 */}}
     <div class="sidebar-widget">

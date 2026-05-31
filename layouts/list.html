@@ -116,20 +116,8 @@
   {{- $allPosts := where site.RegularPages "Section" "posts" }}
   <aside class="home-sidebar">
 
-    {{/* エリアから探す */}}
-    <div class="area-nav-section">
-      <div class="widget-title">📍 エリアから探す</div>
-      <div class="area-chips">
-        <a class="area-chip" href="/tags/浦安駅/">浦安駅</a>
-        <a class="area-chip" href="/tags/新浦安/">新浦安</a>
-        <a class="area-chip" href="/tags/舞浜/">舞浜</a>
-        <a class="area-chip" href="/tags/イクスピアリ/">イクスピアリ</a>
-        <a class="area-chip" href="/tags/葛西/">葛西</a>
-        <a class="area-chip" href="/tags/西葛西/">西葛西</a>
-        <a class="area-chip" href="/tags/行徳/">行徳</a>
-        <a class="area-chip" href="/tags/妙典/">妙典</a>
-      </div>
-    </div>
+    {{/* 検索 + カレンダー */}}
+    {{- partial "sidebar-calendar.html" . }}
 
     {{/* カテゴリ一覧 */}}
     <div class="sidebar-widget">
