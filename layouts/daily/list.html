@@ -54,6 +54,10 @@
 
   {{/* ── サイドバー ── */}}
   <aside class="home-sidebar">
+
+    {{/* 検索 + カレンダー */}}
+    {{- partial "sidebar-calendar.html" . }}
+
     <div class="sidebar-widget">
       <div class="widget-title">📊 カテゴリ別記事数</div>
       <ul class="cat-list">
