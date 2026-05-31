@@ -236,8 +236,8 @@
     </div>
     <script>
     (function(){
-      const POST_DATES  = new Set({{ $postDates | jsonify }});
-      const EVENT_DATES = new Set({{ $eventDates | jsonify }});
+      const POST_DATES  = new Set({{ $postDates | jsonify | safeJS }});
+      const EVENT_DATES = new Set({{ $eventDates | jsonify | safeJS }});
       let year, month;
       const today = new Date();
 
