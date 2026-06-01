@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://urayasu-portal.com/sitemap.xml
