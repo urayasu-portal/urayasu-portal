@@ -68,7 +68,7 @@
 <div class="home-layout">
   <div class="home-main">
 
-    {{- $pages := union .RegularPages .Sections }}
+    {{- $pages := .Pages }}
     {{- $paginator := .Paginate $pages 12 }}
 
     {{- if $paginator.Pages }}
