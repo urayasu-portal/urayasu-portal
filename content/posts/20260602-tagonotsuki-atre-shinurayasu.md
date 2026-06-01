@@ -5,6 +5,9 @@ draft: false
 categories: ["イベント"]
 tags: ["新浦安", "アトレ新浦安", "期間限定", "和菓子", "静岡"]
 description: "静岡・富士市の老舗「御菓子庵 田子の月」がアトレ新浦安1階ガーデンテラスに6月1日〜14日の期間限定出店。名物の田子の月もなかや富士山頂などを販売します。"
+cover:
+  image: /images/posts/tagonotsuki-atre-shinurayasu.jpg
+  alt: "田子の月がアトレ新浦安に期間限定出店 6/1〜6/14"
 eventDate: "2026-06-01/2026-06-14"
 ---
 
