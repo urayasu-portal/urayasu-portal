@@ -22,6 +22,11 @@ draft: false
 
 <p>三枚堂さんは浦安市出身のプロ棋士で、現在も第一線で活躍しています。浦安ゆかりの人物が引き続き市の魅力発信に関わる、地域にとってうれしいトピックスです。</p>
 
+<figure>
+  <img src="/images/posts/urayasu-pr-ambassador-sanmaido-tatsuya-2026.jpg" alt="三枚堂達也さんへのPR大使委嘱状交付式の様子" style="max-width:100%;height:auto;">
+  <figcaption>委嘱状交付式の様子（左：三枚堂達也さん、右：浦安市長）</figcaption>
+</figure>
+
 <h2>参考情報</h2>
 <ul>
   <li><a href="https://www.city.urayasu.lg.jp/shisei/koho/topics/1047507/1048657/1048658.html">浦安市公式サイト：浦安市PR大使委嘱状交付式</a></li>
