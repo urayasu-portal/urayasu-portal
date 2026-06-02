@@ -11,9 +11,6 @@ tags:
   - "将棋"
   - "プロ棋士"
 description: "浦安市出身のプロ棋士・三枚堂達也さんに、浦安市PR大使2期目の委嘱状が交付されました。任期は令和8年度から3年間です。"
-cover:
-  image: "/images/posts/urayasu-pr-ambassador-sanmaido-tatsuya-2026.jpg"
-  alt: "三枚堂達也さんへのPR大使委嘱状交付式の様子"
 eventDate: "2026-06-01"
 draft: false
 ---
