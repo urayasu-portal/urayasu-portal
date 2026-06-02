@@ -12,7 +12,7 @@ tags:
   - "浦安市花火大会"
 description: "浦安市は、2026年の納涼盆踊り大会を8月14日・15日に、浦安市花火大会を10月17日に開催予定と発表しました。詳細は今後案内される予定です。"
 cover:
-  image: "/images/posts/urayasu-bonodori-fireworks-2026.jpg"
+  image: "/images/posts/urayasu-bonodori-fireworks-2026.png"
   alt: "浦安市 盆踊り大会・花火大会2026 日程発表"
 eventDates:
   - "2026-08-14"

@@ -11,6 +11,9 @@ tags:
   - "サッカー"
   - "天皇杯"
 description: "ブリオベッカ浦安・市川が、天皇杯出場を報告するため浦安市長を訪問しました。千葉県代表として2年ぶりに全国大会へ出場します。"
+cover:
+  image: "/images/posts/briobecca-emperors-cup-2026.jpg"
+  alt: "ブリオベッカ浦安・市川が天皇杯出場を市長に報告"
 eventDate: "2026-05-09"
 draft: false
 ---
