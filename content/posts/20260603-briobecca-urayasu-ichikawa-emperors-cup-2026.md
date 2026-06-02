@@ -12,7 +12,7 @@ tags:
   - "天皇杯"
 description: "ブリオベッカ浦安・市川が、天皇杯出場を報告するため浦安市長を訪問しました。千葉県代表として2年ぶりに全国大会へ出場します。"
 cover:
-  image: "/images/posts/briobecca-emperors-cup-2026.jpg"
+  image: "/images/posts/burio.jpg"
   alt: "ブリオベッカ浦安・市川が天皇杯出場を市長に報告"
 eventDate: "2026-05-09"
 draft: false
@@ -24,6 +24,11 @@ draft: false
 <p>浦安市公式サイトによると、内田市長はチームを激励し、キャプテンの橋本選手も千葉県代表、浦安代表として勝利を目指す意気込みを語ったとのことです。</p>
 
 <p>地域に根ざしたクラブの全国大会での戦いに、浦安からも注目が集まりそうです。試合日程や詳細は、チーム公式サイトなどでご確認ください。</p>
+
+<figure>
+  <img src="/images/posts/briobecca-emperors-cup-2026.jpg" alt="天皇杯出場を報告するブリオベッカ浦安・市川の選手と浦安市長" style="max-width:100%;height:auto;">
+  <figcaption>天皇杯出場報告のため浦安市長を訪問したブリオベッカ浦安・市川の選手たち</figcaption>
+</figure>
 
 <h2>参考情報</h2>
 <ul>
