@@ -48,6 +48,12 @@
 浦安市周辺の話題だが、浦安市民への直接的な関係が弱い情報
 公式情報が未確認だが、今後記事化できる可能性がある情報
 【情報源①：定期巡回サイト】
+■ 毎日巡回
+＜行政＞
+浦安市公式HP（新着情報）
+https://www.city.urayasu.lg.jp/whatsnew.html
+※行政の新着情報・お知らせ・イベント情報を毎日確認すること。
+
 ■ 週2〜3回巡回：高頻度
 ＜地域情報メディア＞
 浦安いちの！
@@ -71,10 +77,14 @@ SOCOLA南行徳
 https://minami-gyotoku.socola-sc.jp/news/
 アリオ葛西
 https://kasai.ario.jp/news/
-■ 週1回巡回：通常頻度
+
+■ 週1〜2回巡回：通常頻度
+＜文化・ホール＞
+浦安文化会館
+https://www.urayasu-zaidan.or.jp/urayasu-bunka/
+J:COM浦安音楽ホール
+https://www.urayasu-zaidan.or.jp/jcom-hall/
 ＜行政・観光＞
-浦安市公式HP
-https://www.city.urayasu.lg.jp/
 浦安市観光協会
 https://www.urayasu-kanko.jp/
 ＜スポーツチーム公式＞
@@ -85,6 +95,15 @@ https://www.bardral-urayasu.com/
 ブリオベッカ浦安公式
 https://briobecca.jp/
 ※試合がある週は、試合翌日に優先して確認すること。
+＜求人サイト（新店オープン情報）＞
+タウンワーク
+https://townwork.net/
+Indeed
+https://jp.indeed.com/
+バイトル
+https://www.baitoru.com/
+※「浦安」「葛西」「行徳」「妙典」エリアの新規オープン・オープニングスタッフ募集を確認すること。
+※詳細な検索クエリは【情報源④：求人サイト】を参照。
 【スポーツ順位表確認先】
 スポーツ試合結果を取得した場合は、可能な限り最新順位も確認してください。
 リーグワン順位表
