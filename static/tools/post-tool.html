@@ -8,99 +8,65 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Hiragino Sans', 'Meiryo', 'Yu Gothic', sans-serif;
-      background: #eef2f7;
-      color: #333;
-      line-height: 1.6;
-      min-height: 100vh;
+      background: #eef2f7; color: #333; line-height: 1.6; min-height: 100vh;
     }
     .container { max-width: 760px; margin: 0 auto; padding: 28px 16px 60px; }
 
-    /* Header */
     .app-header { margin-bottom: 24px; }
     .app-header h1 { font-size: 1.35rem; color: #1a4f7a; margin-bottom: 4px; }
     .app-header p  { font-size: 0.85rem; color: #666; }
 
-    /* Card */
     .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px 22px;
-      margin-bottom: 14px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      background: #fff; border-radius: 12px; padding: 20px 22px;
+      margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.07);
     }
-    .card-title {
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 12px;
-    }
+    .card-title { font-size: 0.9rem; font-weight: bold; color: #333; margin-bottom: 12px; }
     .hint { font-size: 0.78rem; color: #888; margin-top: 6px; }
 
-    /* Form controls */
-    input[type="text"],
-    input[type="password"],
-    textarea {
-      width: 100%;
-      padding: 10px 12px;
-      border: 1px solid #d5dbe3;
-      border-radius: 8px;
-      font-size: 16px; /* iOSズーム防止 */
-      font-family: inherit;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      background: #fafbfc;
+    input[type="text"], input[type="password"], textarea {
+      width: 100%; padding: 10px 12px; border: 1px solid #d5dbe3; border-radius: 8px;
+      font-size: 16px; font-family: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s; background: #fafbfc;
     }
-    input[type="text"]:focus,
-    input[type="password"]:focus,
-    textarea:focus {
-      outline: none;
-      border-color: #2980b9;
-      box-shadow: 0 0 0 3px rgba(41,128,185,0.12);
-      background: #fff;
+    input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+      outline: none; border-color: #2980b9;
+      box-shadow: 0 0 0 3px rgba(41,128,185,0.12); background: #fff;
     }
     textarea {
-      resize: vertical;
-      font-family: 'SFMono-Regular', 'Consolas', 'Menlo', monospace;
-      font-size: 0.83rem;
-      line-height: 1.55;
+      resize: vertical; font-family: 'SFMono-Regular','Consolas','Menlo',monospace;
+      font-size: 0.83rem; line-height: 1.55;
     }
 
-    /* Buttons */
     .btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-      padding: 9px 15px;
-      border: none; border-radius: 7px;
+      padding: 9px 15px; border: none; border-radius: 7px;
       cursor: pointer; font-size: 0.85rem; font-weight: bold;
-      transition: background 0.18s, transform 0.1s;
-      white-space: nowrap;
+      transition: background 0.18s, transform 0.1s; white-space: nowrap;
     }
     .btn:active { transform: scale(0.97); }
-    .btn-ghost  { background: #edf0f3; color: #555; }
-    .btn-ghost:hover  { background: #dde2e8; }
-    .btn-blue   { background: #2980b9; color: #fff; }
-    .btn-blue:hover   { background: #2471a3; }
+    .btn-ghost { background: #edf0f3; color: #555; }
+    .btn-ghost:hover { background: #dde2e8; }
+    .btn-blue  { background: #2980b9; color: #fff; }
+    .btn-blue:hover  { background: #2471a3; }
+    .btn-orange { background: #e67e22; color: #fff; }
+    .btn-orange:hover { background: #ca6f1e; }
+    .btn-orange:disabled { background: #aaa; cursor: not-allowed; }
     .btn-submit {
-      width: 100%; padding: 15px;
-      background: #27ae60; color: #fff;
-      font-size: 1.05rem; font-weight: bold;
-      border: none; border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.18s, transform 0.1s, box-shadow 0.18s;
+      width: 100%; padding: 15px; background: #27ae60; color: #fff;
+      font-size: 1.05rem; font-weight: bold; border: none; border-radius: 10px;
+      cursor: pointer; transition: background 0.18s, transform 0.1s, box-shadow 0.18s;
       box-shadow: 0 4px 14px rgba(39,174,96,0.25);
     }
     .btn-submit:hover   { background: #229954; box-shadow: 0 6px 18px rgba(39,174,96,0.3); }
     .btn-submit:active  { transform: scale(0.98); }
     .btn-submit:disabled { background: #aaa; box-shadow: none; cursor: not-allowed; }
 
-    /* Row layout */
     .row { display: flex; gap: 8px; align-items: flex-start; }
     .row input { flex: 1; }
 
-    /* PAT section */
     details summary {
-      cursor: pointer;
-      font-size: 0.88rem; font-weight: bold; color: #555;
-      user-select: none;
-      list-style: none;
+      cursor: pointer; font-size: 0.88rem; font-weight: bold; color: #555;
+      user-select: none; list-style: none;
     }
     details summary::before { content: '▶ '; font-size: 0.7rem; }
     details[open] summary::before { content: '▼ '; }
@@ -109,29 +75,70 @@
 
     /* Status */
     #status {
-      margin-top: 18px;
-      padding: 15px 18px;
-      border-radius: 10px;
-      font-size: 0.9rem;
-      line-height: 1.7;
-      display: none;
+      margin-top: 18px; padding: 15px 18px; border-radius: 10px;
+      font-size: 0.9rem; line-height: 1.7; display: none;
     }
     #status.success { background: #d5f5e3; color: #186a3b; border: 1px solid #a9dfbf; display: block; }
     #status.error   { background: #fadbd8; color: #922b21; border: 1px solid #f1948a; display: block; }
     #status.loading { background: #d6eaf8; color: #1a5276; border: 1px solid #a9cce3; display: block; }
     #status a { color: inherit; font-weight: bold; }
 
-    /* Preview badge */
     .badge {
-      display: inline-block;
-      padding: 2px 8px; border-radius: 20px;
+      display: inline-block; padding: 2px 8px; border-radius: 20px;
       font-size: 0.75rem; font-weight: bold;
-      background: #eaf3fb; color: #2980b9;
-      margin-left: 8px; vertical-align: middle;
+      background: #eaf3fb; color: #2980b9; margin-left: 8px; vertical-align: middle;
     }
-    .badge.green { background: #d5f5e3; color: #1e8449; }
 
-    /* スマートフォン対応 */
+    #parsedInfo {
+      margin-top: 10px; padding: 10px 14px; background: #f0f7ff;
+      border-radius: 8px; font-size: 0.82rem; color: #2c5f8a; display: none;
+    }
+    #parsedInfo strong { color: #1a4f7a; }
+
+    /* ── 画像機能 ── */
+    .toggle-label {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.88rem; font-weight: bold; color: #444; cursor: pointer;
+    }
+    .toggle-label input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; }
+
+    .img-section { margin-top: 14px; }
+
+    .img-drop-area {
+      border: 2px dashed #c5d5e8; border-radius: 10px;
+      padding: 22px 16px; text-align: center; cursor: pointer;
+      background: #f7fafd; transition: border-color 0.2s, background 0.2s;
+    }
+    .img-drop-area:hover, .img-drop-area.dragover {
+      border-color: #2980b9; background: #ebf5fb;
+    }
+    .img-drop-area p { font-size: 0.85rem; color: #888; pointer-events: none; }
+    .img-drop-area input[type="file"] { display: none; }
+
+    .img-preview-wrap {
+      display: none; margin-top: 12px; gap: 12px;
+      align-items: flex-start; flex-wrap: wrap;
+    }
+    .img-preview-wrap.visible { display: flex; }
+    .img-thumb {
+      width: 100px; height: 72px; object-fit: cover;
+      border-radius: 6px; border: 1px solid #ddd; flex-shrink: 0;
+    }
+    .img-info { flex: 1; min-width: 180px; }
+    .img-info label { display: block; font-size: 0.78rem; color: #666; margin-bottom: 4px; }
+
+    /* 記事内画像リスト */
+    .inline-img-list { margin-top: 10px; }
+    .inline-img-item {
+      display: flex; gap: 10px; align-items: flex-start;
+      padding: 12px; background: #f8f9fa; border-radius: 8px;
+      margin-bottom: 10px; flex-wrap: wrap;
+    }
+    .inline-img-item .img-thumb { width: 80px; height: 60px; }
+    .inline-img-item .img-info { flex: 1; min-width: 160px; }
+    .inline-img-item .item-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+    .upload-ok { font-size: 0.78rem; color: #27ae60; margin-top: 4px; display: none; }
+
     @media (max-width: 480px) {
       .app-header h1 { font-size: 1.15rem; }
       .card { padding: 16px; }
@@ -141,18 +148,6 @@
       .row .btn { width: 100%; }
       textarea { font-size: 14px; }
     }
-
-    /* Parsed info */
-    #parsedInfo {
-      margin-top: 10px;
-      padding: 10px 14px;
-      background: #f0f7ff;
-      border-radius: 8px;
-      font-size: 0.82rem;
-      color: #2c5f8a;
-      display: none;
-    }
-    #parsedInfo strong { color: #1a4f7a; }
   </style>
 </head>
 <body>
@@ -175,7 +170,7 @@
           <button class="btn btn-blue" onclick="savePat()">保存</button>
         </div>
         <p class="hint">
-          GitHub → Settings → Developer settings → Personal access tokens (Fine-grained tokens) で発行。<br>
+          GitHub → Settings → Developer settings → Personal access tokens (Fine-grained) で発行。<br>
           権限：<strong>Contents: Read and write</strong> のみ必要。設定はこのブラウザにのみ保存されます。
         </p>
         <div class="pat-ok" id="patOk">✅ トークンが保存されています</div>
@@ -189,7 +184,7 @@
       📋 .md ファイル内容
       <span class="badge">フロントマター＋本文をそのまま貼り付け</span>
     </div>
-    <textarea id="content" rows="22"
+    <textarea id="content" rows="20"
       placeholder="---
 title: &quot;記事タイトル&quot;
 date: 2026-06-03T07:00:00+09:00
@@ -208,6 +203,45 @@ draft: false
     <div id="parsedInfo"></div>
   </div>
 
+  <!-- ① アイキャッチ画像 -->
+  <div class="card">
+    <label class="toggle-label">
+      <input type="checkbox" id="useEyecatch" onchange="toggleEyecatch()">
+      🖼️ アイキャッチ画像を変更する（任意）
+    </label>
+    <p class="hint" style="margin-top:6px;">チェックなしの場合はカテゴリのデフォルト画像が使われます。</p>
+
+    <div class="img-section" id="eyecatchSection" style="display:none;">
+      <div class="img-drop-area" id="eyecatchDrop" onclick="document.getElementById('eyecatchFile').click()"
+           ondragover="handleDragOver(event,'eyecatchDrop')" ondragleave="handleDragLeave('eyecatchDrop')"
+           ondrop="handleDrop(event,'eyecatchFile','eyecatch')">
+        <input type="file" id="eyecatchFile" accept="image/*" onchange="onEyecatchSelected(this)">
+        <p>📂 クリックまたは画像をドラッグ＆ドロップ</p>
+      </div>
+      <div class="img-preview-wrap" id="eyecatchPreviewWrap">
+        <img class="img-thumb" id="eyecatchThumb" src="" alt="">
+        <div class="img-info">
+          <label>保存ファイル名（static/images/posts/ に保存されます）</label>
+          <input type="text" id="eyecatchFilename" placeholder="burio.jpg">
+          <p class="hint">英数字・ハイフン・アンダースコアのみ。拡張子（.jpg / .png / .webp）必須。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ② 記事内画像 -->
+  <div class="card">
+    <div class="card-title">📷 記事内に画像を追加する（任意）</div>
+    <div class="img-drop-area" id="inlineDrop" onclick="document.getElementById('inlineFile').click()"
+         ondragover="handleDragOver(event,'inlineDrop')" ondragleave="handleDragLeave('inlineDrop')"
+         ondrop="handleDrop(event,'inlineFile','inline')">
+      <input type="file" id="inlineFile" accept="image/*" multiple onchange="onInlineSelected(this)">
+      <p>📂 クリックまたは画像をドラッグ＆ドロップ（複数可）</p>
+    </div>
+    <div class="inline-img-list" id="inlineImgList"></div>
+    <p class="hint">アップロード後、生成された &lt;img&gt; タグを本文テキストエリアの任意の位置に挿入できます。</p>
+  </div>
+
   <!-- ファイル名 -->
   <div class="card">
     <div class="card-title">📄 ファイル名</div>
@@ -223,14 +257,12 @@ draft: false
     🚀 GitHub に投稿する
   </button>
 
-  <!-- ステータス -->
   <div id="status"></div>
 
-</div><!-- /container -->
-
+</div>
 <script>
-  const OWNER = 'urayasu-portal';
-  const REPO  = 'urayasu-portal';
+  const OWNER  = 'urayasu-portal';
+  const REPO   = 'urayasu-portal';
   const BRANCH = 'main';
 
   /* ── 初期化 ── */
@@ -242,11 +274,10 @@ draft: false
     } else {
       document.getElementById('patDetails').open = true;
     }
-    // 内容が変わるたびにパース情報を更新
     document.getElementById('content').addEventListener('input', updateParsedInfo);
   });
 
-  /* ── PAT保存 ── */
+  /* ── PAT ── */
   function savePat() {
     const pat = document.getElementById('patInput').value.trim();
     if (!pat) { showStatus('error', '⚠️ トークンを入力してください'); return; }
@@ -256,19 +287,18 @@ draft: false
     showStatus('success', '✅ トークンを保存しました');
   }
 
-  /* ── フロントマターのパース ── */
+  /* ── フロントマターパース ── */
   function parseFrontmatter(text) {
     const dateMatch  = text.match(/^date:\s*["']?(\d{4})-(\d{2})-(\d{2})/m);
     const slugMatch  = text.match(/^slug:\s*["']?([a-z0-9][a-z0-9-]*)["']?/m);
     const titleMatch = text.match(/^title:\s*["'](.+?)["']\s*$/m);
     return {
       date:  dateMatch  ? `${dateMatch[1]}${dateMatch[2]}${dateMatch[3]}` : null,
-      slug:  slugMatch  ? slugMatch[1]  : null,
+      slug:  slugMatch  ? slugMatch[1] : null,
       title: titleMatch ? titleMatch[1] : null,
     };
   }
 
-  /* ── パース情報の表示 ── */
   function updateParsedInfo() {
     const content = document.getElementById('content').value;
     const info = document.getElementById('parsedInfo');
@@ -293,130 +323,347 @@ draft: false
       document.getElementById('filename').value = `${date}-${slug}.md`;
     } else if (slug) {
       document.getElementById('filename').value = `${slug}.md`;
-      showStatus('error', '⚠️ date が見つからなかったため slug のみでファイル名を設定しました。日付プレフィックスを手動で追加してください');
+      showStatus('error', '⚠️ date が見つからなかったため slug のみでファイル名を設定しました');
     } else {
-      showStatus('error', '⚠️ slug / date が見つかりませんでした。フロントマターが含まれているか確認してください');
+      showStatus('error', '⚠️ slug / date が見つかりませんでした');
     }
   }
 
-  /* ── Base64エンコード（日本語対応） ── */
-  function toBase64(str) {
-    return btoa(unescape(encodeURIComponent(str)));
+  /* ── アイキャッチ toggle ── */
+  function toggleEyecatch() {
+    const show = document.getElementById('useEyecatch').checked;
+    document.getElementById('eyecatchSection').style.display = show ? 'block' : 'none';
   }
 
-  /* ── HTMLエスケープ ── */
-  function escHtml(str) {
-    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  /* ── アイキャッチ画像選択 ── */
+  function onEyecatchSelected(input) {
+    const file = input.files[0];
+    if (!file) return;
+    showImagePreview(file, 'eyecatchThumb', 'eyecatchPreviewWrap');
+    if (!document.getElementById('eyecatchFilename').value) {
+      document.getElementById('eyecatchFilename').value = sanitizeFilename(file.name);
+    }
   }
 
-  /* ── GitHub投稿 ── */
-  async function submitArticle() {
+  /* ── 記事内画像選択 ── */
+  function onInlineSelected(input) {
+    Array.from(input.files).forEach(file => addInlineItem(file));
+    input.value = ''; // 同じファイルを再選択できるようリセット
+  }
+
+  let inlineCounter = 0;
+  function addInlineItem(file) {
+    const id = ++inlineCounter;
+    const listEl = document.getElementById('inlineImgList');
+    const item = document.createElement('div');
+    item.className = 'inline-img-item';
+    item.id = `inlineItem${id}`;
+    const reader = new FileReader();
+    reader.onload = e => {
+      item.innerHTML = `
+        <img class="img-thumb" src="${e.target.result}" alt="">
+        <div class="img-info">
+          <label>保存ファイル名</label>
+          <input type="text" id="inlineFilename${id}" value="${sanitizeFilename(file.name)}"
+                 placeholder="image.jpg">
+          <div class="item-actions">
+            <button class="btn btn-orange" id="inlineUploadBtn${id}"
+                    onclick="uploadInlineImage(${id})">⬆️ アップロードして本文に挿入</button>
+            <button class="btn btn-ghost" onclick="removeInlineItem(${id})">✕ 削除</button>
+          </div>
+          <div class="upload-ok" id="inlineOk${id}"></div>
+        </div>`;
+      item._file = file;
+      listEl.appendChild(item);
+    };
+    reader.readAsDataURL(file);
+    item._file = file;
+    listEl.appendChild(item); // プレビュー前に追加（FileReader は非同期）
+  }
+
+  function removeInlineItem(id) {
+    const el = document.getElementById(`inlineItem${id}`);
+    if (el) el.remove();
+  }
+
+  /* ── 記事内画像：アップロード＆挿入 ── */
+  async function uploadInlineImage(id) {
     const pat      = localStorage.getItem('urayasu_gh_pat');
-    const filename = document.getElementById('filename').value.trim();
-    const content  = document.getElementById('content').value;
-    const btn      = document.getElementById('submitBtn');
+    const filename = document.getElementById(`inlineFilename${id}`).value.trim();
+    const item     = document.getElementById(`inlineItem${id}`);
+    const btn      = document.getElementById(`inlineUploadBtn${id}`);
+    const okEl     = document.getElementById(`inlineOk${id}`);
 
-    // バリデーション
-    if (!pat) {
-      showStatus('error', '⚠️ GitHubトークンが未設定です。⚙️ トークン設定を開いて保存してください');
-      document.getElementById('patDetails').open = true;
-      return;
-    }
-    if (!filename) {
-      showStatus('error', '⚠️ ファイル名を入力してください（「自動入力」ボタンも使えます）');
-      return;
-    }
-    if (!filename.endsWith('.md')) {
-      showStatus('error', '⚠️ ファイル名は .md で終わる必要があります');
-      return;
-    }
-    if (!/^\d{8}-/.test(filename)) {
-      showStatus('error', '⚠️ ファイル名は YYYYMMDD- で始まる必要があります（例：20260603-article-slug.md）');
-      return;
-    }
-    if (!content.trim()) {
-      showStatus('error', '⚠️ .mdファイル内容を入力してください');
-      return;
-    }
-    if (!content.includes('---')) {
-      showStatus('error', '⚠️ フロントマター（---）が含まれていません。記事化プロンプトの「■ .mdファイル内容」をそのまま貼り付けてください');
+    if (!pat)      { showStatus('error', '⚠️ トークンが未設定です'); return; }
+    if (!filename) { showStatus('error', '⚠️ ファイル名を入力してください'); return; }
+    if (!isValidImageFilename(filename)) {
+      showStatus('error', '⚠️ ファイル名は英数字・ハイフン・アンダースコアのみ。拡張子（.jpg/.png/.webp）必須');
       return;
     }
 
     btn.disabled = true;
-    showStatus('loading', '⏳ GitHubに投稿しています...');
+    btn.textContent = '⏳ アップロード中...';
+    try {
+      const file    = item._file || item.querySelector('img')._file;
+      const b64     = await readFileAsBase64(file);
+      const imgPath = await uploadImageToGitHub(pat, filename, b64, file.type);
+      // 本文テキストエリアにタグを挿入
+      const tag = `\n<figure style="margin:1.5em 0;">\n  <img src="${imgPath}" alt="" style="width:100%;border-radius:8px;">\n</figure>\n`;
+      insertAtCursor(document.getElementById('content'), tag);
+      okEl.textContent = `✅ アップロード完了 → ${imgPath}`;
+      okEl.style.display = 'block';
+      btn.textContent = '✅ 挿入済み';
+    } catch(e) {
+      showStatus('error', `❌ 画像アップロードエラー：${e.message}`);
+      btn.disabled = false;
+      btn.textContent = '⬆️ アップロードして本文に挿入';
+    }
+  }
 
-    const path   = `content/posts/${filename}`;
+  /* ── フロントマターの cover.image を更新 ── */
+  function updateCoverInFrontmatter(content, imagePath, altText) {
+    const alt = altText.replace(/"/g, '\\"');
+    const coverBlock = `cover:\n  image: ${imagePath}\n  alt: "${alt}"`;
+
+    // 既存の cover: ブロックがある場合
+    if (/^cover:/m.test(content)) {
+      // image: 行を更新（または追加）
+      if (/^  image:/m.test(content)) {
+        content = content.replace(/^  image:.*$/m, `  image: ${imagePath}`);
+      } else {
+        content = content.replace(/^cover:/m, `cover:\n  image: ${imagePath}`);
+      }
+      // alt: 行を更新（または追加）
+      if (/^  alt:/m.test(content)) {
+        content = content.replace(/^  alt:.*$/m, `  alt: "${alt}"`);
+      } else {
+        content = content.replace(/^  image:.*$/m, m => `${m}\n  alt: "${alt}"`);
+      }
+      return content;
+    }
+
+    // cover: ブロックがない場合 → draft: の前に挿入
+    if (/^draft:/m.test(content)) {
+      return content.replace(/^draft:/m, `${coverBlock}\ndraft:`);
+    }
+
+    // フォールバック：2つ目の --- の直前に挿入
+    return content.replace(/(---\n[\s\S]*?)(^---)/m, (_, fm, close) => {
+      return `${fm}${coverBlock}\n${close}`;
+    });
+  }
+
+  /* ── GitHub API: 画像アップロード ── */
+  async function uploadImageToGitHub(pat, filename, base64Content, mimeType) {
+    const path   = `static/images/posts/${filename}`;
     const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
-    const headers = {
+    const hdrs   = makeHeaders(pat);
+
+    let sha;
+    const check = await fetch(apiUrl, { headers: hdrs });
+    if (check.ok) { sha = (await check.json()).sha; }
+
+    const body = { message: `feat: 画像を追加 (${filename})`, content: base64Content, branch: BRANCH };
+    if (sha) body.sha = sha;
+
+    const res = await fetch(apiUrl, { method: 'PUT', headers: hdrs, body: JSON.stringify(body) });
+    if (!res.ok) {
+      const err = await res.json().catch(()=>({}));
+      throw new Error(`${res.status}: ${err.message || '不明なエラー'}`);
+    }
+    return `/images/posts/${filename}`;
+  }
+
+  /* ── GitHub API ヘッダー ── */
+  function makeHeaders(pat) {
+    return {
       'Authorization': `Bearer ${pat}`,
       'Accept': 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28',
       'Content-Type': 'application/json',
     };
+  }
 
-    // タイトルをコミットメッセージに
-    const { title } = parseFrontmatter(content);
-    const commitMsg = title ? `feat: ${title}` : `feat: ${filename.replace('.md','')}を追加`;
+  /* ── 記事（.md）投稿 ── */
+  async function submitArticle() {
+    const pat      = localStorage.getItem('urayasu_gh_pat');
+    let   content  = document.getElementById('content').value;
+    const filename = document.getElementById('filename').value.trim();
+    const btn      = document.getElementById('submitBtn');
+
+    if (!pat) {
+      showStatus('error', '⚠️ GitHubトークンが未設定です');
+      document.getElementById('patDetails').open = true;
+      return;
+    }
+    if (!filename || !filename.endsWith('.md')) {
+      showStatus('error', '⚠️ ファイル名を確認してください（YYYYMMDD-slug.md 形式）');
+      return;
+    }
+    if (!/^\d{8}-/.test(filename)) {
+      showStatus('error', '⚠️ ファイル名は YYYYMMDD- で始まる必要があります');
+      return;
+    }
+    if (!content.trim() || !content.includes('---')) {
+      showStatus('error', '⚠️ .mdファイル内容を確認してください（フロントマターが必要）');
+      return;
+    }
+
+    btn.disabled = true;
 
     try {
-      // 既存ファイル確認（更新時にSHAが必要）
-      let sha;
-      const checkRes = await fetch(apiUrl, { headers });
-      if (checkRes.ok) {
-        const existing = await checkRes.json();
-        sha = existing.sha;
+      // ① アイキャッチ画像のアップロード（チェックがある場合）
+      if (document.getElementById('useEyecatch').checked) {
+        const eyeFile = document.getElementById('eyecatchFile').files[0];
+        const eyeName = document.getElementById('eyecatchFilename').value.trim();
+
+        if (eyeFile && eyeName) {
+          if (!isValidImageFilename(eyeName)) {
+            showStatus('error', '⚠️ アイキャッチ画像のファイル名が正しくありません（英数字・ハイフン・アンダースコア＋拡張子）');
+            btn.disabled = false;
+            return;
+          }
+          showStatus('loading', '⏳ アイキャッチ画像をアップロード中...');
+          const b64 = await readFileAsBase64(eyeFile);
+          const imgPath = await uploadImageToGitHub(pat, eyeName, b64, eyeFile.type);
+          // フロントマターを更新
+          const { title } = parseFrontmatter(content);
+          content = updateCoverInFrontmatter(content, imgPath, title || eyeName);
+          // テキストエリアにも反映
+          document.getElementById('content').value = content;
+        } else if (document.getElementById('useEyecatch').checked) {
+          showStatus('error', '⚠️ アイキャッチ画像が選択されていないか、ファイル名が未入力です');
+          btn.disabled = false;
+          return;
+        }
       }
 
-      // PUT でファイル作成 or 更新
+      // ② .md ファイルのアップロード
+      showStatus('loading', '⏳ 記事ファイルをGitHubに投稿しています...');
+      const path   = `content/posts/${filename}`;
+      const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
+      const hdrs   = makeHeaders(pat);
+      const { title } = parseFrontmatter(content);
+      const commitMsg = title ? `feat: ${title}` : `feat: ${filename.replace('.md','')}を追加`;
+
+      let sha;
+      const check = await fetch(apiUrl, { headers: hdrs });
+      if (check.ok) { sha = (await check.json()).sha; }
+
       const body = { message: commitMsg, content: toBase64(content), branch: BRANCH };
       if (sha) body.sha = sha;
 
-      const res = await fetch(apiUrl, {
-        method: 'PUT',
-        headers,
-        body: JSON.stringify(body),
-      });
+      const res = await fetch(apiUrl, { method: 'PUT', headers: hdrs, body: JSON.stringify(body) });
 
       if (res.ok) {
-        const action   = sha ? '更新' : '新規投稿';
-        const slug     = filename.replace(/^\d{8}-/, '').replace('.md', '');
-        const ghUrl    = `https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}`;
-        const siteUrl  = `https://urayasu-portal.com/posts/${slug}/`;
+        const action  = sha ? '更新' : '新規投稿';
+        const slug    = filename.replace(/^\d{8}-/, '').replace('.md', '');
+        const ghUrl   = `https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}`;
+        const siteUrl = `https://urayasu-portal.com/posts/${slug}/`;
         showStatus('success',
           `✅ ${action}しました！\n` +
           `📄 <strong>${filename}</strong>\n` +
-          `🔗 <a href="${ghUrl}" target="_blank" rel="noopener">GitHub で確認する</a>\n` +
+          `🔗 <a href="${ghUrl}" target="_blank" rel="noopener">GitHubで確認する</a>\n` +
           `🌐 ビルド完了後（約1〜2分）：<a href="${siteUrl}" target="_blank" rel="noopener">記事ページを開く</a>`
         );
         // フォームリセット
         document.getElementById('filename').value = '';
         document.getElementById('content').value  = '';
         document.getElementById('parsedInfo').style.display = 'none';
+        document.getElementById('useEyecatch').checked = false;
+        toggleEyecatch();
+        document.getElementById('inlineImgList').innerHTML = '';
 
       } else {
-        const err = await res.json().catch(() => ({}));
-        if (res.status === 401) {
-          showStatus('error', '❌ 認証エラー（401）：トークンが無効または期限切れです。⚙️ 設定から再設定してください');
-        } else if (res.status === 403) {
-          showStatus('error', '❌ 権限エラー（403）：トークンに <strong>Contents: Read and write</strong> 権限があるか確認してください');
-        } else if (res.status === 404) {
-          showStatus('error', `❌ リポジトリまたはパスが見つかりません（404）。トークンの権限とリポジトリ名を確認してください`);
-        } else if (res.status === 422) {
-          showStatus('error', `❌ バリデーションエラー（422）：${err.message || 'ファイル内容またはファイル名に問題があります'}`);
-        } else {
-          showStatus('error', `❌ エラー（${res.status}）：${err.message || '投稿に失敗しました'}`);
-        }
+        const err = await res.json().catch(()=>({}));
+        const msgs = {
+          401: '❌ 認証エラー（401）：トークンが無効または期限切れです',
+          403: '❌ 権限エラー（403）：Contents: Read and write 権限を確認してください',
+          404: '❌ 見つかりません（404）：リポジトリ名・トークン権限を確認してください',
+          422: `❌ バリデーションエラー（422）：${err.message || ''}`,
+        };
+        showStatus('error', msgs[res.status] || `❌ エラー（${res.status}）：${err.message || '投稿に失敗しました'}`);
       }
 
-    } catch (e) {
-      showStatus('error', `❌ 通信エラー：${e.message}\nインターネット接続を確認してください`);
+    } catch(e) {
+      showStatus('error', `❌ 通信エラー：${e.message}`);
     } finally {
       btn.disabled = false;
     }
   }
 
-  /* ── ステータス表示 ── */
+  /* ── ユーティリティ ── */
+
+  // ファイルをBase64として読む（バイナリ対応）
+  function readFileAsBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload  = e => resolve(e.target.result.split(',')[1]);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // テキストをBase64エンコード（日本語対応）
+  function toBase64(str) { return btoa(unescape(encodeURIComponent(str))); }
+
+  // HTMLエスケープ
+  function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  // ファイル名の正規化
+  function sanitizeFilename(name) {
+    return name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w.\-]/g, '');
+  }
+
+  // 画像ファイル名のバリデーション
+  function isValidImageFilename(name) {
+    return /^[\w\-]+\.(jpg|jpeg|png|gif|webp|svg)$/i.test(name);
+  }
+
+  // テキストエリアのカーソル位置に挿入
+  function insertAtCursor(textarea, text) {
+    const s = textarea.selectionStart;
+    const e = textarea.selectionEnd;
+    const val = textarea.value;
+    textarea.value = val.slice(0, s) + text + val.slice(e);
+    textarea.selectionStart = textarea.selectionEnd = s + text.length;
+    textarea.focus();
+    textarea.dispatchEvent(new Event('input'));
+  }
+
+  // 画像プレビュー表示
+  function showImagePreview(file, thumbId, wrapId) {
+    const reader = new FileReader();
+    reader.onload = e => {
+      document.getElementById(thumbId).src = e.target.result;
+      document.getElementById(wrapId).classList.add('visible');
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // ドラッグ＆ドロップ
+  function handleDragOver(e, dropId) {
+    e.preventDefault();
+    document.getElementById(dropId).classList.add('dragover');
+  }
+  function handleDragLeave(dropId) {
+    document.getElementById(dropId).classList.remove('dragover');
+  }
+  function handleDrop(e, inputId, mode) {
+    e.preventDefault();
+    const dropId = mode === 'eyecatch' ? 'eyecatchDrop' : 'inlineDrop';
+    document.getElementById(dropId).classList.remove('dragover');
+    const files = e.dataTransfer.files;
+    if (!files.length) return;
+    const input = document.getElementById(inputId);
+    // DataTransfer を使って input に files をセット
+    const dt = new DataTransfer();
+    Array.from(files).forEach(f => dt.items.add(f));
+    input.files = dt.files;
+    input.dispatchEvent(new Event('change'));
+  }
+
+  // ステータス表示
   function showStatus(type, message) {
     const el = document.getElementById('status');
     el.className = `status ${type}`;
