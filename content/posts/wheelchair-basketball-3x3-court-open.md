@@ -1,4 +1,4 @@
----
+﻿---
 title: "浦安市に車いすバスケットボール3×3コートがオープン！誰でも無料で利用できます"
 date: 2026-05-26T07:00:00+09:00
 slug: wheelchair-basketball-3x3-court-open
@@ -16,6 +16,7 @@ cover:
   image: /images/posts/wheelchair-basketball-3x3-court-open.png
   alt: '浦安市に車いすバスケットボール3×3コートが5月1日オープン'
 eventDate: "2026-05-01"
+hideEventBox: true
 draft: false
 ---
 

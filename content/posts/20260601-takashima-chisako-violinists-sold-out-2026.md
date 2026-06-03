@@ -1,4 +1,4 @@
----
+﻿---
 title: "【浦安市】高嶋ちさ子コンサートはチケット完売"
 date: 2026-06-01T07:00:00+09:00
 slug: "takashima-chisako-violinists-sold-out-2026"
@@ -13,6 +13,7 @@ tags:
   - "イベント"
 description: "浦安市文化会館で6月24日に開催予定の「高嶋ちさ子 12人のヴァイオリニスト」公演はチケット完売。当日券販売はありません。"
 eventDate: "2026-06-24"
+hideEventBox: true
 draft: false
 ---
 <figure style="margin: 0 0 1.5em;">

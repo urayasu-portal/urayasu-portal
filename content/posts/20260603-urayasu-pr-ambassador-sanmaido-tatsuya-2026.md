@@ -1,4 +1,4 @@
----
+﻿---
 title: "【浦安市】三枚堂達也さんがPR大使2期目へ"
 date: 2026-06-03T07:00:00+09:00
 slug: "urayasu-pr-ambassador-sanmaido-tatsuya-2026"
@@ -12,6 +12,7 @@ tags:
   - "プロ棋士"
 description: "浦安市出身のプロ棋士・三枚堂達也さんに、浦安市PR大使2期目の委嘱状が交付されました。任期は令和8年度から3年間です。"
 eventDate: "2026-06-01"
+hideEventBox: true
 draft: false
 ---
 <p>浦安市出身のプロ棋士・三枚堂達也さんに、浦安市PR大使2期目の委嘱状が交付されました。</p>

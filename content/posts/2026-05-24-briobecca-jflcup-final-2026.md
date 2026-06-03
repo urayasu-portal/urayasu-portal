@@ -1,8 +1,9 @@
----
+﻿---
 title: "ブリオベッカ浦安・市川、JFL CUP最終節は0-2で敗戦——秋春制新シーズンへ"
 date: 2026-05-24T07:00:00+09:00
 slug: "briobecca-jflcup-final-2026"
 eventDate: "2026-05-17"
+hideEventBox: true
 categories:
   - "スポーツ"
 cover:

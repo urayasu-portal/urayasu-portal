@@ -1,8 +1,9 @@
----
+﻿---
 title: "【浦安市】浦安D-Rocksのファン感謝祭「D-Rocks Fes 2026」が6月6日に開催！"
 date: 2026-05-31T07:00:00+09:00
 slug: "d-rocks-fes-2026"
 eventDate: "2026-06-06"
+hideEventBox: true
 categories:
   - "スポーツ"
 tags:

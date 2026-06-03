@@ -1,7 +1,8 @@
----
+﻿---
 title: "浦安D-Rocks、首位・埼玉WKを逆転撃破！第17節で連敗12でストップ"
 date: 2026-05-02T22:00:00+09:00
 eventDate: "2026-05-01"
+hideEventBox: true
 categories:
   - "スポーツ"
 cover:

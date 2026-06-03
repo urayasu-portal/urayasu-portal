@@ -1,4 +1,4 @@
----
+﻿---
 title: "ドローンにボードゲームも！「浦安おもちゃゆうえんち2026」5月23日（土）開催【浦安】"
 date: 2026-05-23T07:00:00+09:00
 slug: urayasu-omocha-yuenchi-2026
@@ -10,6 +10,7 @@ cover:
   image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-event.jpg"
   alt: "ドローンにボードゲームも！「浦安おもちゃゆうえんち2026」5月23日（土）開催【浦安】"
 eventDate: "2026-05-23"
+hideEventBox: true
 draft: false
 ---
 

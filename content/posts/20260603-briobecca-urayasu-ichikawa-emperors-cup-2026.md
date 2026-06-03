@@ -1,4 +1,4 @@
----
+﻿---
 title: "【浦安市】ブリオベッカが天皇杯出場を報告"
 date: 2026-06-03T07:00:00+09:00
 slug: "briobecca-urayasu-ichikawa-emperors-cup-2026"
@@ -15,6 +15,7 @@ cover:
   image: "/images/posts/burio.jpg"
   alt: "ブリオベッカ浦安・市川が天皇杯出場を市長に報告"
 eventDate: "2026-05-09"
+hideEventBox: true
 draft: false
 ---
 <p>浦安市をホームタウンとして活動するサッカーチーム「ブリオベッカ浦安・市川」の監督や選手たちが、天皇杯出場を報告するため浦安市長を訪問しました。</p>

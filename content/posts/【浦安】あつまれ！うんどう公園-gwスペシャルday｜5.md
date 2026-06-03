@@ -1,7 +1,8 @@
----
+﻿---
 title: "【浦安】あつまれ！うんどう公園 GWスペシャルDAY｜5月5日(こどもの日)開催"
 date: 2026-04-27T06:22:50+09:00
 eventDate: "2026-05-05"
+hideEventBox: true
 categories:
   - "イベント"
 cover:

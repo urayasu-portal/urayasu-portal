@@ -1,7 +1,8 @@
----
+﻿---
 title: "【浦安市】MONA新浦安2FにDENBAラウンジ4月25日オープン｜リラクゼーション体験スペース"
 date: 2026-04-24T07:16:17+09:00
 eventDate: "2026-04-25"
+hideEventBox: true
 categories:
   - "開店・閉店"
 cover:

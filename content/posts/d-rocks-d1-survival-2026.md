@@ -1,8 +1,9 @@
----
+﻿---
 title: "【浦安市】浦安D-Rocks、入替戦2連勝でD1残留確定！石井魁が4トライの活躍"
 date: 2026-05-31T07:00:00+09:00
 slug: "d-rocks-d1-survival-2026"
 eventDate: "2026-05-30"
+hideEventBox: true
 categories:
   - "スポーツ"
 tags:

@@ -1,8 +1,9 @@
----
+﻿---
 title: "【浦安D-Rocks】5/30 D1/D2入替戦ホストゲーム｜浦安市在住・勤務者は1,000円優待あり"
 date: 2026-05-19T07:00:00+09:00
 slug: "d-rocks-d1d2-host-game-0530"
 eventDate: "2026-05-30"
+hideEventBox: true
 categories:
   - "スポーツ"
 tags:

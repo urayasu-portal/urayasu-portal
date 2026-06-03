@@ -1,8 +1,9 @@
----
+﻿---
 title: "浦安D-Rocks、入替戦第1戦を37-15で制しD1残留へ前進"
 date: 2026-05-24T07:00:00+09:00
 slug: "d-rocks-replacement-match-1-win"
 eventDate: "2026-05-23"
+hideEventBox: true
 categories:
   - "スポーツ"
 tags:
