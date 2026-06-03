@@ -12,6 +12,9 @@ tags:
   - "市長訪問"
   - "スポーツ"
 description: "浦安D-Rocksが2025-26シーズン終了報告のため、6月5日に浦安市長を訪問予定。選手や関係者が出席します。"
+cover:
+  image: /images/posts/d-rocks.png
+  alt: "浦安D-Rocks ロゴ"
 eventDate: "2026-06-05"
 draft: false
 ---
