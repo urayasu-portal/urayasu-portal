@@ -68,8 +68,9 @@
       {{/*
         フロントマター情報ボックス — イベント情報
         eventDate / eventLocation いずれか1つ以上が設定されている場合のみ表示。
+        hideEventBox: true を指定するとボックスを非表示にできる（カレンダー反映は維持）。
       */}}
-      {{- if or .Params.eventDate .Params.eventLocation }}
+      {{- if and (or .Params.eventDate .Params.eventLocation) (not .Params.hideEventBox) }}
       <div class="info-box frontmatter-infobox">
         <h2>イベント概要</h2>
         <dl>
