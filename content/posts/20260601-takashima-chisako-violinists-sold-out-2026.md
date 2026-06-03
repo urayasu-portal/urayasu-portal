@@ -12,9 +12,6 @@ tags:
   - "コンサート"
   - "イベント"
 description: "浦安市文化会館で6月24日に開催予定の「高嶋ちさ子 12人のヴァイオリニスト」公演はチケット完売。当日券販売はありません。"
-cover:
-  image: /images/posts/takashima-chisako-violinists-2026.jpg
-  alt: "高嶋ちさ子 12人のヴァイオリニスト コンサートツアー2026〜2027 チラシ"
 eventDate: "2026-06-24"
 draft: false
 ---
