@@ -370,6 +370,7 @@ tags:
   - "{タグ3}"
 description: "{抜粋テキスト}"
 eventDate: "{YYYY-MM-DD（注目の日がある場合のみ。なければこの行ごと削除）}"
+hideEventBox: true
 draft: false
 ---
 
@@ -386,6 +387,7 @@ draft: false
 eventDates:
   - "YYYY-MM-DD"
   - "YYYY-MM-DD"
+hideEventBox: true
 
 設定しないケース：
 ・オープン予定日が不確定（「〇月下旬予定」など）
@@ -424,4 +426,5 @@ Hugo用フロントマターのdraftがfalseになっているか。
 施設名または住所が判明している場合、本文HTMLに {{< map q="..." >}} が含まれているか（qは平文・URLエンコード不要）。
 開店・閉店記事で内容が明確な場合、cat-open / cat-close の指定があるか（編集者メモのアイキャッチ設定欄に記載）。
 タイトル・本文に具体的な日付がある場合、eventDate / eventDates が設定されているか。
+eventDate または eventDates を設定した場合、hideEventBox: true が含まれているか。
 抜粋は100〜120文字程度か。タグは3〜6個か。
