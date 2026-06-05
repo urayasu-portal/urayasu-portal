@@ -5,155 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>浦安ぽーたる 記事投稿ツール</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Hiragino Sans', 'Meiryo', 'Yu Gothic', sans-serif;
-      background: #eef2f7; color: #333; line-height: 1.6; min-height: 100vh;
-    }
-    .container { max-width: 760px; margin: 0 auto; padding: 28px 16px 60px; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Hiragino Sans','Meiryo','Yu Gothic',sans-serif;background:#eef2f7;color:#333;line-height:1.6;min-height:100vh}
+    .container{max-width:760px;margin:0 auto;padding:28px 16px 60px}
+    .app-header{margin-bottom:24px}
+    .app-header h1{font-size:1.35rem;color:#1a4f7a;margin-bottom:4px}
+    .app-header p{font-size:.85rem;color:#666}
+    .card{background:#fff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+    .card-title{font-size:.9rem;font-weight:700;color:#333;margin-bottom:12px}
+    .hint{font-size:.78rem;color:#888;margin-top:6px}
+    input[type=text],input[type=password],textarea{width:100%;padding:10px 12px;border:1px solid #d5dbe3;border-radius:8px;font-size:16px;font-family:inherit;transition:border-color .2s,box-shadow .2s;background:#fafbfc}
+    input[type=text]:focus,input[type=password]:focus,textarea:focus{outline:none;border-color:#2980b9;box-shadow:0 0 0 3px rgba(41,128,185,.12);background:#fff}
+    textarea{resize:vertical;font-family:'SFMono-Regular','Consolas','Menlo',monospace;font-size:.83rem;line-height:1.55}
+    select{width:100%;padding:10px 12px;border:1px solid #d5dbe3;border-radius:8px;font-size:15px;font-family:inherit;background:#fafbfc;cursor:pointer}
+    select:focus{outline:none;border-color:#2980b9}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 15px;border:none;border-radius:7px;cursor:pointer;font-size:.85rem;font-weight:700;transition:background .18s,transform .1s;white-space:nowrap}
+    .btn:active{transform:scale(.97)}
+    .btn-ghost{background:#edf0f3;color:#555}.btn-ghost:hover{background:#dde2e8}
+    .btn-blue{background:#2980b9;color:#fff}.btn-blue:hover{background:#2471a3}
+    .btn-orange{background:#e67e22;color:#fff}.btn-orange:hover{background:#ca6f1e}
+    .btn-orange:disabled{background:#aaa;cursor:not-allowed}
+    .btn-submit{width:100%;padding:15px;background:#27ae60;color:#fff;font-size:1.05rem;font-weight:700;border:none;border-radius:10px;cursor:pointer;transition:background .18s,transform .1s,box-shadow .18s;box-shadow:0 4px 14px rgba(39,174,96,.25)}
+    .btn-submit:hover{background:#229954;box-shadow:0 6px 18px rgba(39,174,96,.3)}
+    .btn-submit:active{transform:scale(.98)}
+    .btn-submit:disabled{background:#aaa;box-shadow:none;cursor:not-allowed}
+    .row{display:flex;gap:8px;align-items:flex-start}.row input{flex:1}
+    details summary{cursor:pointer;font-size:.88rem;font-weight:700;color:#555;user-select:none;list-style:none}
+    details summary::before{content:'▶ ';font-size:.7rem}
+    details[open] summary::before{content:'▼ '}
+    .pat-body{margin-top:14px}
+    .pat-ok{font-size:.8rem;color:#27ae60;margin-top:6px;display:none}
+    #status{margin-top:18px;padding:15px 18px;border-radius:10px;font-size:.9rem;line-height:1.7;display:none}
+    #status.success{background:#d5f5e3;color:#186a3b;border:1px solid #a9dfbf;display:block}
+    #status.error{background:#fadbd8;color:#922b21;border:1px solid #f1948a;display:block}
+    #status.loading{background:#d6eaf8;color:#1a5276;border:1px solid #a9cce3;display:block}
+    #status a{color:inherit;font-weight:700}
+    .badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:.75rem;font-weight:700;background:#eaf3fb;color:#2980b9;margin-left:8px;vertical-align:middle}
+    #parsedInfo{margin-top:10px;padding:10px 14px;background:#f0f7ff;border-radius:8px;font-size:.82rem;color:#2c5f8a;display:none}
+    #parsedInfo strong{color:#1a4f7a}
 
-    .app-header { margin-bottom: 24px; }
-    .app-header h1 { font-size: 1.35rem; color: #1a4f7a; margin-bottom: 4px; }
-    .app-header p  { font-size: 0.85rem; color: #666; }
+    /* ── 画像セクション共通 ── */
+    .img-divider{border:none;border-top:1px solid #eef0f3;margin:16px 0}
+    .toggle-label{display:flex;align-items:center;gap:8px;font-size:.88rem;font-weight:700;color:#444;cursor:pointer}
+    .toggle-label input[type=checkbox]{width:16px;height:16px;cursor:pointer}
+    .subsection{margin-top:14px;padding:14px;background:#f8fafc;border-radius:10px;border:1px solid #e4eaf2}
+    .radio-group{display:flex;flex-wrap:wrap;gap:6px 16px;margin-bottom:12px}
+    .radio-group label{display:flex;align-items:center;gap:5px;font-size:.87rem;cursor:pointer}
+    .preset-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .preset-row select{flex:1;min-width:180px}
+    .preset-preview{width:80px;height:56px;object-fit:contain;border-radius:6px;border:1px solid #ddd;background:#f5f5f5;display:none}
+    .img-drop-area{border:2px dashed #c5d5e8;border-radius:10px;padding:18px 16px;text-align:center;cursor:pointer;background:#f7fafd;transition:border-color .2s,background .2s;margin-top:10px}
+    .img-drop-area:hover,.img-drop-area.dragover{border-color:#2980b9;background:#ebf5fb}
+    .img-drop-area p{font-size:.85rem;color:#888;pointer-events:none}
+    .img-drop-area input[type=file]{display:none}
+    .img-preview-wrap{display:none;margin-top:10px;gap:12px;align-items:flex-start;flex-wrap:wrap}
+    .img-preview-wrap.visible{display:flex}
+    .img-thumb{width:90px;height:64px;object-fit:cover;border-radius:6px;border:1px solid #ddd;flex-shrink:0}
+    .img-info{flex:1;min-width:160px}
+    .img-info label{display:block;font-size:.78rem;color:#666;margin-bottom:4px}
+    .same-info{font-size:.8rem;color:#27ae60;padding:8px 10px;background:#eafaf1;border-radius:6px;display:none}
 
-    .card {
-      background: #fff; border-radius: 12px; padding: 20px 22px;
-      margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-    }
-    .card-title { font-size: 0.9rem; font-weight: bold; color: #333; margin-bottom: 12px; }
-    .hint { font-size: 0.78rem; color: #888; margin-top: 6px; }
+    /* 記事内画像 */
+    .inline-img-list{margin-top:10px}
+    .inline-img-item{display:flex;gap:10px;align-items:flex-start;padding:12px;background:#f8f9fa;border-radius:8px;margin-bottom:10px;flex-wrap:wrap}
+    .inline-img-item .img-thumb{width:80px;height:60px}
+    .inline-img-item .img-info{flex:1;min-width:160px}
+    .item-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+    .upload-ok{font-size:.78rem;color:#27ae60;margin-top:4px;display:none}
 
-    input[type="text"], input[type="password"], textarea {
-      width: 100%; padding: 10px 12px; border: 1px solid #d5dbe3; border-radius: 8px;
-      font-size: 16px; font-family: inherit;
-      transition: border-color 0.2s, box-shadow 0.2s; background: #fafbfc;
-    }
-    input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
-      outline: none; border-color: #2980b9;
-      box-shadow: 0 0 0 3px rgba(41,128,185,0.12); background: #fff;
-    }
-    textarea {
-      resize: vertical; font-family: 'SFMono-Regular','Consolas','Menlo',monospace;
-      font-size: 0.83rem; line-height: 1.55;
-    }
-
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-      padding: 9px 15px; border: none; border-radius: 7px;
-      cursor: pointer; font-size: 0.85rem; font-weight: bold;
-      transition: background 0.18s, transform 0.1s; white-space: nowrap;
-    }
-    .btn:active { transform: scale(0.97); }
-    .btn-ghost { background: #edf0f3; color: #555; }
-    .btn-ghost:hover { background: #dde2e8; }
-    .btn-blue  { background: #2980b9; color: #fff; }
-    .btn-blue:hover  { background: #2471a3; }
-    .btn-orange { background: #e67e22; color: #fff; }
-    .btn-orange:hover { background: #ca6f1e; }
-    .btn-orange:disabled { background: #aaa; cursor: not-allowed; }
-    .btn-submit {
-      width: 100%; padding: 15px; background: #27ae60; color: #fff;
-      font-size: 1.05rem; font-weight: bold; border: none; border-radius: 10px;
-      cursor: pointer; transition: background 0.18s, transform 0.1s, box-shadow 0.18s;
-      box-shadow: 0 4px 14px rgba(39,174,96,0.25);
-    }
-    .btn-submit:hover   { background: #229954; box-shadow: 0 6px 18px rgba(39,174,96,0.3); }
-    .btn-submit:active  { transform: scale(0.98); }
-    .btn-submit:disabled { background: #aaa; box-shadow: none; cursor: not-allowed; }
-
-    .row { display: flex; gap: 8px; align-items: flex-start; }
-    .row input { flex: 1; }
-
-    details summary {
-      cursor: pointer; font-size: 0.88rem; font-weight: bold; color: #555;
-      user-select: none; list-style: none;
-    }
-    details summary::before { content: '▶ '; font-size: 0.7rem; }
-    details[open] summary::before { content: '▼ '; }
-    .pat-body { margin-top: 14px; }
-    .pat-ok { font-size: 0.8rem; color: #27ae60; margin-top: 6px; display: none; }
-
-    /* Status */
-    #status {
-      margin-top: 18px; padding: 15px 18px; border-radius: 10px;
-      font-size: 0.9rem; line-height: 1.7; display: none;
-    }
-    #status.success { background: #d5f5e3; color: #186a3b; border: 1px solid #a9dfbf; display: block; }
-    #status.error   { background: #fadbd8; color: #922b21; border: 1px solid #f1948a; display: block; }
-    #status.loading { background: #d6eaf8; color: #1a5276; border: 1px solid #a9cce3; display: block; }
-    #status a { color: inherit; font-weight: bold; }
-
-    .badge {
-      display: inline-block; padding: 2px 8px; border-radius: 20px;
-      font-size: 0.75rem; font-weight: bold;
-      background: #eaf3fb; color: #2980b9; margin-left: 8px; vertical-align: middle;
-    }
-
-    #parsedInfo {
-      margin-top: 10px; padding: 10px 14px; background: #f0f7ff;
-      border-radius: 8px; font-size: 0.82rem; color: #2c5f8a; display: none;
-    }
-    #parsedInfo strong { color: #1a4f7a; }
-
-    /* ── 画像機能 ── */
-    .toggle-label {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 0.88rem; font-weight: bold; color: #444; cursor: pointer;
-    }
-    .toggle-label input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; }
-
-    .img-section { margin-top: 14px; }
-
-    .img-drop-area {
-      border: 2px dashed #c5d5e8; border-radius: 10px;
-      padding: 22px 16px; text-align: center; cursor: pointer;
-      background: #f7fafd; transition: border-color 0.2s, background 0.2s;
-    }
-    .img-drop-area:hover, .img-drop-area.dragover {
-      border-color: #2980b9; background: #ebf5fb;
-    }
-    .img-drop-area p { font-size: 0.85rem; color: #888; pointer-events: none; }
-    .img-drop-area input[type="file"] { display: none; }
-
-    .img-preview-wrap {
-      display: none; margin-top: 12px; gap: 12px;
-      align-items: flex-start; flex-wrap: wrap;
-    }
-    .img-preview-wrap.visible { display: flex; }
-    .img-thumb {
-      width: 100px; height: 72px; object-fit: cover;
-      border-radius: 6px; border: 1px solid #ddd; flex-shrink: 0;
-    }
-    .img-info { flex: 1; min-width: 180px; }
-    .img-info label { display: block; font-size: 0.78rem; color: #666; margin-bottom: 4px; }
-
-    /* 記事内画像リスト */
-    .inline-img-list { margin-top: 10px; }
-    .inline-img-item {
-      display: flex; gap: 10px; align-items: flex-start;
-      padding: 12px; background: #f8f9fa; border-radius: 8px;
-      margin-bottom: 10px; flex-wrap: wrap;
-    }
-    .inline-img-item .img-thumb { width: 80px; height: 60px; }
-    .inline-img-item .img-info { flex: 1; min-width: 160px; }
-    .inline-img-item .item-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-    .upload-ok { font-size: 0.78rem; color: #27ae60; margin-top: 4px; display: none; }
-
-    @media (max-width: 480px) {
-      .app-header h1 { font-size: 1.15rem; }
-      .card { padding: 16px; }
-      .btn-submit { font-size: 0.95rem; padding: 14px; }
-      .row { flex-wrap: wrap; }
-      .row input { min-width: 0; }
-      .row .btn { width: 100%; }
-      textarea { font-size: 14px; }
+    @media(max-width:480px){
+      .app-header h1{font-size:1.15rem}
+      .card{padding:16px}
+      .btn-submit{font-size:.95rem;padding:14px}
+      .row{flex-wrap:wrap}.row input{min-width:0}.row .btn{width:100%}
+      textarea{font-size:14px}
+      .radio-group{gap:8px}
     }
   </style>
 </head>
 <body>
 <div class="container">
 
-  <!-- Header -->
   <div class="app-header">
     <h1>📝 浦安ぽーたる 記事投稿ツール</h1>
     <p>AIが生成した .md ファイル内容を貼り付けて、GitHubに直接投稿します</p>
@@ -166,13 +98,10 @@
       <div class="pat-body">
         <label class="card-title" style="margin-bottom:8px;">Personal Access Token</label>
         <div class="row">
-          <input type="password" id="patInput" placeholder="github_pat_xxxxxxxxxxxx または ghp_xxxxxxxxxxxx">
+          <input type="password" id="patInput" placeholder="github_pat_xxxx または ghp_xxxx">
           <button class="btn btn-blue" onclick="savePat()">保存</button>
         </div>
-        <p class="hint">
-          GitHub → Settings → Developer settings → Personal access tokens (Fine-grained) で発行。<br>
-          権限：<strong>Contents: Read and write</strong> のみ必要。設定はこのブラウザにのみ保存されます。
-        </p>
+        <p class="hint">GitHub → Settings → Developer settings → Personal access tokens (Fine-grained) で発行。<br>権限：<strong>Contents: Read and write</strong> のみ必要。</p>
         <div class="pat-ok" id="patOk">✅ トークンが保存されています</div>
       </div>
     </details>
@@ -180,63 +109,132 @@
 
   <!-- .md内容 -->
   <div class="card">
-    <div class="card-title">
-      📋 .md ファイル内容
-      <span class="badge">フロントマター＋本文をそのまま貼り付け</span>
-    </div>
-    <textarea id="content" rows="20"
-      placeholder="---
+    <div class="card-title">📋 .md ファイル内容 <span class="badge">フロントマター＋本文をそのまま貼り付け</span></div>
+    <textarea id="content" rows="20" placeholder="---
 title: &quot;記事タイトル&quot;
 date: 2026-06-03T07:00:00+09:00
 slug: &quot;example-slug&quot;
 categories:
   - &quot;イベント&quot;
-tags:
-  - &quot;浦安市&quot;
 description: &quot;説明文&quot;
-eventDate: &quot;2026-06-03&quot;
-hideEventBox: true
 draft: false
 ---
-&lt;p&gt;本文HTML...&lt;/p&gt;"></textarea>
-    <p class="hint">記事化プロンプトの「■ .mdファイル内容（フロントマター＋本文HTML）」ブロックをそのまま貼り付けてください。</p>
+&lt;p&gt;本文...&lt;/p&gt;"></textarea>
+    <p class="hint">記事化プロンプトの「■ .mdファイル内容（フロントマター＋本文HTML）」をそのまま貼り付けてください。</p>
     <div id="parsedInfo"></div>
   </div>
 
-  <!-- ① アイキャッチ画像 -->
+  <!-- ===== 画像設定 ===== -->
   <div class="card">
-    <label class="toggle-label">
-      <input type="checkbox" id="useEyecatch" onchange="toggleEyecatch()">
-      🖼️ アイキャッチ画像を変更する（任意）
-    </label>
-    <p class="hint" style="margin-top:6px;">チェックなしの場合はカテゴリのデフォルト画像が使われます。</p>
+    <div class="card-title">🖼️ 画像設定（任意）</div>
 
-    <div class="img-section" id="eyecatchSection" style="display:none;">
-      <div class="img-drop-area" id="eyecatchDrop" onclick="document.getElementById('eyecatchFile').click()"
-           ondragover="handleDragOver(event,'eyecatchDrop')" ondragleave="handleDragLeave('eyecatchDrop')"
-           ondrop="handleDrop(event,'eyecatchFile','eyecatch')">
-        <input type="file" id="eyecatchFile" accept="image/*" onchange="onEyecatchSelected(this)">
-        <p>📂 クリックまたは画像をドラッグ＆ドロップ</p>
+    <!-- ① サムネイル -->
+    <label class="toggle-label">
+      <input type="checkbox" id="useThumb" onchange="onThumbToggle()">
+      サムネイルを変更する（トップページ・一覧のカード画像）
+    </label>
+    <p class="hint" style="margin-top:4px;">チェックなしの場合はカテゴリのデフォルト画像が使われます。</p>
+
+    <div id="thumbSection" class="subsection" style="display:none;">
+      <div class="radio-group">
+        <label><input type="radio" name="thumbType" value="preset" checked onchange="onThumbTypeChange()"> 定番画像から選ぶ</label>
+        <label><input type="radio" name="thumbType" value="upload" onchange="onThumbTypeChange()"> 画像をアップロード</label>
       </div>
-      <div class="img-preview-wrap" id="eyecatchPreviewWrap">
-        <img class="img-thumb" id="eyecatchThumb" src="" alt="">
-        <div class="img-info">
-          <label>保存ファイル名（static/images/posts/ に保存されます）</label>
-          <input type="text" id="eyecatchFilename" placeholder="burio.jpg">
-          <p class="hint">英数字・ハイフン・アンダースコアのみ。拡張子（.jpg / .png / .webp）必須。</p>
+      <!-- 定番 -->
+      <div id="thumbPresetArea">
+        <div class="preset-row">
+          <select id="thumbPresetSelect" onchange="onThumbPresetChange()">
+            <option value="">-- 画像を選択 --</option>
+            <option value="drocks">浦安D-Rocksロゴ</option>
+            <option value="burio">ブリオベッカ浦安・市川ロゴ</option>
+            <option value="bardral">バルドラール浦安ロゴ</option>
+            <option value="cat-open">開店のみ（cat-open.svg）</option>
+            <option value="cat-close">閉店のみ（cat-close.svg）</option>
+          </select>
+          <img id="thumbPresetPreview" class="preset-preview" alt="プレビュー">
+        </div>
+      </div>
+      <!-- アップロード -->
+      <div id="thumbUploadArea" style="display:none;">
+        <div class="img-drop-area" id="thumbDrop"
+             onclick="document.getElementById('thumbFile').click()"
+             ondragover="handleDragOver(event,'thumbDrop')" ondragleave="handleDragLeave('thumbDrop')"
+             ondrop="handleDrop(event,'thumbFile','thumbSelected')">
+          <input type="file" id="thumbFile" accept="image/*" onchange="thumbSelected(this)">
+          <p>📂 クリックまたはドラッグ＆ドロップ</p>
+        </div>
+        <div class="img-preview-wrap" id="thumbPreviewWrap">
+          <img class="img-thumb" id="thumbThumb" alt="">
+          <div class="img-info">
+            <label>保存ファイル名（static/images/posts/ に保存）</label>
+            <input type="text" id="thumbFilename" placeholder="burio.jpg" oninput="onThumbFilenameChange()">
+            <p class="hint">英数字・ハイフン・アンダースコア＋拡張子（.jpg/.png/.webp）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="img-divider">
+
+    <!-- ② 記事冒頭画像 -->
+    <label class="toggle-label">
+      <input type="checkbox" id="useBody" onchange="onBodyToggle()">
+      記事の冒頭画像を変更する（個別記事ページ上部）
+    </label>
+    <p class="hint" style="margin-top:4px;">チェックなしの場合はカテゴリのデフォルト画像が使われます。サムネイルを変更した場合は同じ画像が初期設定されます。</p>
+
+    <div id="bodySection" class="subsection" style="display:none;">
+      <div class="radio-group">
+        <label><input type="radio" name="bodyType" value="same-as-thumb" id="bodyTypeSame" checked onchange="onBodyTypeChange()"> サムネイルと同じ</label>
+        <label><input type="radio" name="bodyType" value="preset" onchange="onBodyTypeChange()"> 定番画像から選ぶ</label>
+        <label><input type="radio" name="bodyType" value="upload" onchange="onBodyTypeChange()"> 画像をアップロード</label>
+      </div>
+      <!-- same-as-thumb info -->
+      <div class="same-info" id="bodySameInfo"></div>
+      <!-- 定番 -->
+      <div id="bodyPresetArea" style="display:none;">
+        <div class="preset-row">
+          <select id="bodyPresetSelect" onchange="onBodyPresetChange()">
+            <option value="">-- 画像を選択 --</option>
+            <option value="drocks">浦安D-Rocksロゴ</option>
+            <option value="burio">ブリオベッカ浦安・市川ロゴ</option>
+            <option value="bardral">バルドラール浦安ロゴ</option>
+            <option value="cat-open">開店のみ（cat-open.png）</option>
+            <option value="cat-close">閉店のみ（cat-close.png）</option>
+          </select>
+          <img id="bodyPresetPreview" class="preset-preview" alt="プレビュー">
+        </div>
+      </div>
+      <!-- アップロード -->
+      <div id="bodyUploadArea" style="display:none;">
+        <div class="img-drop-area" id="bodyDrop"
+             onclick="document.getElementById('bodyFile').click()"
+             ondragover="handleDragOver(event,'bodyDrop')" ondragleave="handleDragLeave('bodyDrop')"
+             ondrop="handleDrop(event,'bodyFile','bodySelected')">
+          <input type="file" id="bodyFile" accept="image/*" onchange="bodySelected(this)">
+          <p>📂 クリックまたはドラッグ＆ドロップ</p>
+        </div>
+        <div class="img-preview-wrap" id="bodyPreviewWrap">
+          <img class="img-thumb" id="bodyThumb" alt="">
+          <div class="img-info">
+            <label>保存ファイル名（static/images/posts/ に保存）</label>
+            <input type="text" id="bodyFilename" placeholder="burio.jpg">
+            <p class="hint">英数字・ハイフン・アンダースコア＋拡張子（.jpg/.png/.webp）</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ② 記事内画像 -->
+  <!-- 記事内画像 -->
   <div class="card">
     <div class="card-title">📷 記事内に画像を追加する（任意）</div>
-    <div class="img-drop-area" id="inlineDrop" onclick="document.getElementById('inlineFile').click()"
+    <div class="img-drop-area" id="inlineDrop"
+         onclick="document.getElementById('inlineFile').click()"
          ondragover="handleDragOver(event,'inlineDrop')" ondragleave="handleDragLeave('inlineDrop')"
-         ondrop="handleDrop(event,'inlineFile','inline')">
-      <input type="file" id="inlineFile" accept="image/*" multiple onchange="onInlineSelected(this)">
-      <p>📂 クリックまたは画像をドラッグ＆ドロップ（複数可）</p>
+         ondrop="handleDrop(event,'inlineFile','inlineSelected')">
+      <input type="file" id="inlineFile" accept="image/*" multiple onchange="inlineSelected(this)">
+      <p>📂 クリックまたはドラッグ＆ドロップ（複数可）</p>
     </div>
     <div class="inline-img-list" id="inlineImgList"></div>
     <p class="hint">アップロード後、生成された &lt;img&gt; タグを本文テキストエリアの任意の位置に挿入できます。</p>
@@ -249,427 +247,424 @@ draft: false
       <input type="text" id="filename" placeholder="20260603-example-slug.md">
       <button class="btn btn-ghost" onclick="autoFillFilename()">🔄 自動入力</button>
     </div>
-    <p class="hint">形式：YYYYMMDD-slug.md　上の内容を貼り付けてから「自動入力」を押すと date と slug から自動生成されます。</p>
+    <p class="hint">形式：YYYYMMDD-slug.md　上の内容を貼り付けてから「自動入力」で自動生成されます。</p>
   </div>
 
-  <!-- 投稿ボタン -->
-  <button class="btn-submit" id="submitBtn" onclick="submitArticle()">
-    🚀 GitHub に投稿する
-  </button>
-
+  <button class="btn-submit" id="submitBtn" onclick="submitArticle()">🚀 GitHub に投稿する</button>
   <div id="status"></div>
 
 </div>
 <script>
-  const OWNER  = 'urayasu-portal';
-  const REPO   = 'urayasu-portal';
-  const BRANCH = 'main';
+const OWNER  = 'urayasu-portal';
+const REPO   = 'urayasu-portal';
+const BRANCH = 'main';
+const BASE   = 'https://urayasu-portal.com';
 
-  /* ── 初期化 ── */
-  window.addEventListener('DOMContentLoaded', () => {
-    const saved = localStorage.getItem('urayasu_gh_pat');
-    if (saved) {
-      document.getElementById('patInput').value = saved;
-      document.getElementById('patOk').style.display = 'block';
-    } else {
-      document.getElementById('patDetails').open = true;
-    }
-    document.getElementById('content').addEventListener('input', updateParsedInfo);
-  });
+/* 定番画像マスター */
+const PRESETS = {
+  drocks:    { thumb: '/images/posts/d-rocks.png',        body: '/images/posts/d-rocks.png',        preview: `${BASE}/images/posts/d-rocks.png` },
+  burio:     { thumb: '/images/posts/burio.jpg',          body: '/images/posts/burio.jpg',          preview: `${BASE}/images/posts/burio.jpg` },
+  bardral:   { thumb: '/images/posts/bardral.jpg',        body: '/images/posts/bardral.jpg',        preview: `${BASE}/images/posts/bardral.jpg` },
+  'cat-open':  { thumb: '/images/categories/cat-open.svg',  body: '/images/categories/cat-open.png',  catimg: 'cat-open',  preview: `${BASE}/images/categories/cat-open.png` },
+  'cat-close': { thumb: '/images/categories/cat-close.svg', body: '/images/categories/cat-close.png', catimg: 'cat-close', preview: `${BASE}/images/categories/cat-close.png` },
+};
 
-  /* ── PAT ── */
-  function savePat() {
-    const pat = document.getElementById('patInput').value.trim();
-    if (!pat) { showStatus('error', '⚠️ トークンを入力してください'); return; }
-    localStorage.setItem('urayasu_gh_pat', pat);
+/* ── 初期化 ── */
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('urayasu_gh_pat');
+  if (saved) {
+    document.getElementById('patInput').value = saved;
     document.getElementById('patOk').style.display = 'block';
-    document.getElementById('patDetails').open = false;
-    showStatus('success', '✅ トークンを保存しました');
+  } else {
+    document.getElementById('patDetails').open = true;
+  }
+  document.getElementById('content').addEventListener('input', updateParsedInfo);
+});
+
+/* ── PAT ── */
+function savePat() {
+  const pat = document.getElementById('patInput').value.trim();
+  if (!pat) { showStatus('error','⚠️ トークンを入力してください'); return; }
+  localStorage.setItem('urayasu_gh_pat', pat);
+  document.getElementById('patOk').style.display = 'block';
+  document.getElementById('patDetails').open = false;
+  showStatus('success','✅ トークンを保存しました');
+}
+
+/* ── フロントマターパース ── */
+function parseFrontmatter(text) {
+  return {
+    date:  (text.match(/^date:\s*["']?(\d{4})-(\d{2})-(\d{2})/m) || [,'','','']  ).slice(1,4).join('') || null,
+    slug:  (text.match(/^slug:\s*["']?([a-z0-9][a-z0-9-]*)["']?/m)||[])[1] || null,
+    title: (text.match(/^title:\s*["'](.+?)["']\s*$/m)||[])[1] || null,
+  };
+}
+function updateParsedInfo() {
+  const content = document.getElementById('content').value;
+  const info = document.getElementById('parsedInfo');
+  if (!content.includes('---')) { info.style.display='none'; return; }
+  const {date,slug,title} = parseFrontmatter(content);
+  if (!date&&!slug&&!title) { info.style.display='none'; return; }
+  const p = [];
+  if (title) p.push(`<strong>タイトル：</strong>${escHtml(title)}`);
+  if (date)  p.push(`<strong>日付：</strong>${date.slice(0,4)}-${date.slice(4,6)}-${date.slice(6,8)}`);
+  if (slug)  p.push(`<strong>スラッグ：</strong>${escHtml(slug)}`);
+  if (date&&slug) p.push(`<strong>推奨ファイル名：</strong>${date}-${slug}.md`);
+  info.innerHTML = p.join('　　');
+  info.style.display = 'block';
+}
+function autoFillFilename() {
+  const content = document.getElementById('content').value.trim();
+  if (!content) { showStatus('error','⚠️ 先に .md 内容を貼り付けてください'); return; }
+  const {date,slug} = parseFrontmatter(content);
+  if (date&&slug) document.getElementById('filename').value = `${date}-${slug}.md`;
+  else if (slug)  { document.getElementById('filename').value = `${slug}.md`; showStatus('error','⚠️ date が見つからなかったため slug のみ設定しました'); }
+  else showStatus('error','⚠️ slug / date が見つかりません');
+}
+
+/* ── サムネイル toggle ── */
+function onThumbToggle() {
+  const on = document.getElementById('useThumb').checked;
+  document.getElementById('thumbSection').style.display = on ? 'block' : 'none';
+  if (on) {
+    // 冒頭画像も自動チェックして「サムネイルと同じ」に
+    document.getElementById('useBody').checked = true;
+    document.getElementById('bodySection').style.display = 'block';
+    document.getElementById('bodyTypeSame').checked = true;
+    onBodyTypeChange();
+  }
+  updateBodySameInfo();
+}
+function onThumbTypeChange() {
+  const v = getRadio('thumbType');
+  document.getElementById('thumbPresetArea').style.display  = v==='preset' ? 'block' : 'none';
+  document.getElementById('thumbUploadArea').style.display  = v==='upload' ? 'block' : 'none';
+  updateBodySameInfo();
+}
+function onThumbPresetChange() {
+  const key = document.getElementById('thumbPresetSelect').value;
+  const p = PRESETS[key];
+  const img = document.getElementById('thumbPresetPreview');
+  if (p) { img.src = p.preview; img.style.display = 'block'; }
+  else   { img.style.display = 'none'; }
+  updateBodySameInfo();
+}
+function onThumbFilenameChange() {
+  updateBodySameInfo();
+}
+function thumbSelected(input) {
+  const f = input.files[0]; if (!f) return;
+  showImgPreview(f, 'thumbThumb', 'thumbPreviewWrap');
+  if (!document.getElementById('thumbFilename').value)
+    document.getElementById('thumbFilename').value = sanitize(f.name);
+  updateBodySameInfo();
+}
+
+/* ── 冒頭画像 toggle ── */
+function onBodyToggle() {
+  const on = document.getElementById('useBody').checked;
+  document.getElementById('bodySection').style.display = on ? 'block' : 'none';
+  if (on) updateBodySameInfo();
+}
+function onBodyTypeChange() {
+  const v = getRadio('bodyType');
+  document.getElementById('bodySameInfo').style.display  = v==='same-as-thumb' ? 'block' : 'none';
+  document.getElementById('bodyPresetArea').style.display = v==='preset'        ? 'block' : 'none';
+  document.getElementById('bodyUploadArea').style.display = v==='upload'        ? 'block' : 'none';
+  if (v==='same-as-thumb') updateBodySameInfo();
+}
+function onBodyPresetChange() {
+  const key = document.getElementById('bodyPresetSelect').value;
+  const p = PRESETS[key];
+  const img = document.getElementById('bodyPresetPreview');
+  if (p) { img.src = p.preview; img.style.display = 'block'; }
+  else   { img.style.display = 'none'; }
+}
+function bodySelected(input) {
+  const f = input.files[0]; if (!f) return;
+  showImgPreview(f, 'bodyThumb', 'bodyPreviewWrap');
+  if (!document.getElementById('bodyFilename').value)
+    document.getElementById('bodyFilename').value = sanitize(f.name);
+}
+
+/* サムネイルと同じ → 説明文を更新 */
+function updateBodySameInfo() {
+  if (getRadio('bodyType') !== 'same-as-thumb') return;
+  const el = document.getElementById('bodySameInfo');
+  const thumbType = getRadio('thumbType');
+  if (thumbType === 'preset') {
+    const key = document.getElementById('thumbPresetSelect').value;
+    const p = PRESETS[key];
+    el.textContent = p ? `→ ${p.body} が設定されます（${document.getElementById('thumbPresetSelect').options[document.getElementById('thumbPresetSelect').selectedIndex].text}）` : '→ 上でサムネイル画像を選択してください';
+  } else if (thumbType === 'upload') {
+    const fn = document.getElementById('thumbFilename').value.trim();
+    el.textContent = fn ? `→ /images/posts/${fn} が設定されます` : '→ 上でサムネイル画像を選択・ファイル名を入力してください';
+  } else {
+    el.textContent = '→ サムネイルを先に設定してください';
+  }
+  el.style.display = 'block';
+}
+
+/* ── カバーブロックを生成 ── */
+function buildCoverBlock() {
+  const thumbEnabled = document.getElementById('useThumb').checked;
+  const bodyEnabled  = document.getElementById('useBody').checked;
+  if (!thumbEnabled && !bodyEnabled) return null;
+
+  const thumbType = thumbEnabled ? getRadio('thumbType') : 'default';
+  const bodyType  = bodyEnabled  ? getRadio('bodyType')  : 'default';
+
+  // thumb パス解決
+  let thumbPath = null, thumbCatimg = null;
+  if (thumbType === 'preset') {
+    const key = document.getElementById('thumbPresetSelect').value;
+    if (key && PRESETS[key]) { thumbPath = PRESETS[key].thumb; thumbCatimg = PRESETS[key].catimg || null; }
+  } else if (thumbType === 'upload') {
+    const fn = document.getElementById('thumbFilename').value.trim();
+    if (fn) thumbPath = `/images/posts/${fn}`;
   }
 
-  /* ── フロントマターパース ── */
-  function parseFrontmatter(text) {
-    const dateMatch  = text.match(/^date:\s*["']?(\d{4})-(\d{2})-(\d{2})/m);
-    const slugMatch  = text.match(/^slug:\s*["']?([a-z0-9][a-z0-9-]*)["']?/m);
-    const titleMatch = text.match(/^title:\s*["'](.+?)["']\s*$/m);
-    return {
-      date:  dateMatch  ? `${dateMatch[1]}${dateMatch[2]}${dateMatch[3]}` : null,
-      slug:  slugMatch  ? slugMatch[1] : null,
-      title: titleMatch ? titleMatch[1] : null,
-    };
+  // body パス解決
+  let bodyPath = null;
+  const effBodyType = bodyType === 'same-as-thumb' ? thumbType : bodyType;
+  const effBodyPresetKey = bodyType === 'same-as-thumb'
+    ? document.getElementById('thumbPresetSelect').value
+    : document.getElementById('bodyPresetSelect').value;
+  const effBodyFilename = bodyType === 'same-as-thumb'
+    ? document.getElementById('thumbFilename').value.trim()
+    : document.getElementById('bodyFilename').value.trim();
+
+  if (effBodyType === 'preset') {
+    if (effBodyPresetKey && PRESETS[effBodyPresetKey]) bodyPath = PRESETS[effBodyPresetKey].body;
+  } else if (effBodyType === 'upload') {
+    if (effBodyFilename) bodyPath = `/images/posts/${effBodyFilename}`;
   }
 
-  function updateParsedInfo() {
-    const content = document.getElementById('content').value;
-    const info = document.getElementById('parsedInfo');
-    if (!content.includes('---')) { info.style.display = 'none'; return; }
-    const { date, slug, title } = parseFrontmatter(content);
-    if (!date && !slug && !title) { info.style.display = 'none'; return; }
-    const parts = [];
-    if (title) parts.push(`<strong>タイトル：</strong>${escHtml(title)}`);
-    if (date)  parts.push(`<strong>日付：</strong>${date.slice(0,4)}-${date.slice(4,6)}-${date.slice(6,8)}`);
-    if (slug)  parts.push(`<strong>スラッグ：</strong>${escHtml(slug)}`);
-    if (date && slug) parts.push(`<strong>推奨ファイル名：</strong>${date}-${slug}.md`);
-    info.innerHTML = parts.join('　　');
-    info.style.display = 'block';
+  if (!thumbPath && !bodyPath) return null;
+
+  const {title} = parseFrontmatter(document.getElementById('content').value);
+  const altLine = title ? `\n  alt: "${title.replace(/"/g,'\\"')}"` : '';
+
+  // catimg ケース（サムネイルと冒頭が同じカテゴリ変種）
+  if (thumbCatimg && bodyType === 'same-as-thumb') {
+    return `cover:\n  catimg: ${thumbCatimg}${altLine}`;
+  }
+  // thumb と body が同一パス
+  if (thumbPath && bodyPath && thumbPath === bodyPath) {
+    return `cover:\n  image: ${bodyPath}${altLine}`;
   }
 
-  /* ── ファイル名自動入力 ── */
-  function autoFillFilename() {
-    const content = document.getElementById('content').value.trim();
-    if (!content) { showStatus('error', '⚠️ 先に .md ファイル内容を貼り付けてください'); return; }
-    const { date, slug } = parseFrontmatter(content);
-    if (date && slug) {
-      document.getElementById('filename').value = `${date}-${slug}.md`;
-    } else if (slug) {
-      document.getElementById('filename').value = `${slug}.md`;
-      showStatus('error', '⚠️ date が見つからなかったため slug のみでファイル名を設定しました');
-    } else {
-      showStatus('error', '⚠️ slug / date が見つかりませんでした');
-    }
-  }
+  const lines = ['cover:'];
+  if (thumbPath && thumbPath !== bodyPath) lines.push(`  thumb: ${thumbPath}`);
+  if (bodyPath)                            lines.push(`  image: ${bodyPath}`);
+  else if (thumbPath && !bodyPath)         lines.push(`  thumb: ${thumbPath}`);
+  if (title) lines.push(`  alt: "${title.replace(/"/g,'\\"')}"`);
+  return lines.join('\n');
+}
 
-  /* ── アイキャッチ toggle ── */
-  function toggleEyecatch() {
-    const show = document.getElementById('useEyecatch').checked;
-    document.getElementById('eyecatchSection').style.display = show ? 'block' : 'none';
+/* カバーブロックをフロントマターに適用 */
+function applyCoverBlock(content, coverBlock) {
+  if (!coverBlock) return content;
+  // フロントマターを分離
+  const m = content.match(/^(---\n)([\s\S]*?)(\n---)/m);
+  if (!m) return content;
+  let fm   = m[2];
+  const rest = content.slice(m[0].length);
+  // 既存 cover: ブロック除去
+  fm = fm.replace(/\ncover:(\n {2}[^\n]*)*/g, '');
+  fm = fm.replace(/^cover:(\n {2}[^\n]*)*/m, '');
+  // draft: の前に挿入、なければ末尾に
+  if (/\ndraft:/.test(fm) || /^draft:/m.test(fm)) {
+    fm = fm.replace(/(\n|^)(draft:)/, `\n${coverBlock}\n$2`);
+  } else {
+    fm = fm.trimEnd() + '\n' + coverBlock;
   }
+  return `---\n${fm.trim()}\n---${rest}`;
+}
 
-  /* ── アイキャッチ画像選択 ── */
-  function onEyecatchSelected(input) {
-    const file = input.files[0];
-    if (!file) return;
-    showImagePreview(file, 'eyecatchThumb', 'eyecatchPreviewWrap');
-    if (!document.getElementById('eyecatchFilename').value) {
-      document.getElementById('eyecatchFilename').value = sanitizeFilename(file.name);
-    }
-  }
-
-  /* ── 記事内画像選択 ── */
-  function onInlineSelected(input) {
-    Array.from(input.files).forEach(file => addInlineItem(file));
-    input.value = ''; // 同じファイルを再選択できるようリセット
-  }
-
-  let inlineCounter = 0;
-  function addInlineItem(file) {
-    const id = ++inlineCounter;
-    const listEl = document.getElementById('inlineImgList');
-    const item = document.createElement('div');
-    item.className = 'inline-img-item';
-    item.id = `inlineItem${id}`;
-    const reader = new FileReader();
-    reader.onload = e => {
-      item.innerHTML = `
-        <img class="img-thumb" src="${e.target.result}" alt="">
-        <div class="img-info">
-          <label>保存ファイル名</label>
-          <input type="text" id="inlineFilename${id}" value="${sanitizeFilename(file.name)}"
-                 placeholder="image.jpg">
-          <div class="item-actions">
-            <button class="btn btn-orange" id="inlineUploadBtn${id}"
-                    onclick="uploadInlineImage(${id})">⬆️ アップロードして本文に挿入</button>
-            <button class="btn btn-ghost" onclick="removeInlineItem(${id})">✕ 削除</button>
-          </div>
-          <div class="upload-ok" id="inlineOk${id}"></div>
-        </div>`;
-      item._file = file;
-      listEl.appendChild(item);
-    };
-    reader.readAsDataURL(file);
+/* ── 記事内画像 ── */
+let inlineCounter = 0;
+function inlineSelected(input) {
+  Array.from(input.files).forEach(addInlineItem);
+  input.value = '';
+}
+function addInlineItem(file) {
+  const id = ++inlineCounter;
+  const list = document.getElementById('inlineImgList');
+  const item = document.createElement('div');
+  item.className = 'inline-img-item'; item.id = `inlineItem${id}`;
+  const reader = new FileReader();
+  reader.onload = e => {
+    item.innerHTML = `
+      <img class="img-thumb" src="${e.target.result}" alt="">
+      <div class="img-info">
+        <label>保存ファイル名</label>
+        <input type="text" id="inlineFn${id}" value="${sanitize(file.name)}" placeholder="image.jpg">
+        <div class="item-actions">
+          <button class="btn btn-orange" id="inlineBtn${id}" onclick="uploadInline(${id})">⬆️ アップロードして本文に挿入</button>
+          <button class="btn btn-ghost" onclick="document.getElementById('inlineItem${id}').remove()">✕</button>
+        </div>
+        <div class="upload-ok" id="inlineOk${id}"></div>
+      </div>`;
     item._file = file;
-    listEl.appendChild(item); // プレビュー前に追加（FileReader は非同期）
+    list.appendChild(item);
+  };
+  reader.readAsDataURL(file);
+  item._file = file;
+  list.appendChild(item);
+}
+async function uploadInline(id) {
+  const pat  = localStorage.getItem('urayasu_gh_pat');
+  const fn   = document.getElementById(`inlineFn${id}`).value.trim();
+  const item = document.getElementById(`inlineItem${id}`);
+  const btn  = document.getElementById(`inlineBtn${id}`);
+  const ok   = document.getElementById(`inlineOk${id}`);
+  if (!pat)     { showStatus('error','⚠️ トークンが未設定です'); return; }
+  if (!fn)      { showStatus('error','⚠️ ファイル名を入力してください'); return; }
+  if (!isValidImgFn(fn)) { showStatus('error','⚠️ ファイル名形式が正しくありません（英数字＋拡張子）'); return; }
+  btn.disabled = true; btn.textContent = '⏳...';
+  try {
+    const b64  = await fileToBase64(item._file);
+    const path = await uploadImage(pat, fn, b64);
+    const tag  = `\n<figure style="margin:1.5em 0;">\n  <img src="${path}" alt="" style="width:100%;border-radius:8px;">\n</figure>\n`;
+    insertAtCursor(document.getElementById('content'), tag);
+    ok.textContent = `✅ ${path}`; ok.style.display = 'block';
+    btn.textContent = '✅ 挿入済み';
+  } catch(e) {
+    showStatus('error', `❌ ${e.message}`);
+    btn.disabled = false; btn.textContent = '⬆️ アップロードして本文に挿入';
   }
+}
 
-  function removeInlineItem(id) {
-    const el = document.getElementById(`inlineItem${id}`);
-    if (el) el.remove();
-  }
+/* ── GitHub API ── */
+function ghHeaders(pat) {
+  return { 'Authorization':`Bearer ${pat}`, 'Accept':'application/vnd.github+json', 'X-GitHub-Api-Version':'2022-11-28', 'Content-Type':'application/json' };
+}
+async function uploadImage(pat, filename, b64) {
+  const path   = `static/images/posts/${filename}`;
+  const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
+  const hdrs   = ghHeaders(pat);
+  let sha; const c = await fetch(apiUrl,{headers:hdrs}); if(c.ok) sha=(await c.json()).sha;
+  const body = {message:`feat: 画像を追加 (${filename})`,content:b64,branch:BRANCH};
+  if(sha) body.sha=sha;
+  const r = await fetch(apiUrl,{method:'PUT',headers:hdrs,body:JSON.stringify(body)});
+  if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(`${r.status}: ${e.message||'不明'}`);}
+  return `/images/posts/${filename}`;
+}
 
-  /* ── 記事内画像：アップロード＆挿入 ── */
-  async function uploadInlineImage(id) {
-    const pat      = localStorage.getItem('urayasu_gh_pat');
-    const filename = document.getElementById(`inlineFilename${id}`).value.trim();
-    const item     = document.getElementById(`inlineItem${id}`);
-    const btn      = document.getElementById(`inlineUploadBtn${id}`);
-    const okEl     = document.getElementById(`inlineOk${id}`);
+/* ── 記事投稿 ── */
+async function submitArticle() {
+  const pat     = localStorage.getItem('urayasu_gh_pat');
+  let   content = document.getElementById('content').value;
+  const fn      = document.getElementById('filename').value.trim();
+  const btn     = document.getElementById('submitBtn');
 
-    if (!pat)      { showStatus('error', '⚠️ トークンが未設定です'); return; }
-    if (!filename) { showStatus('error', '⚠️ ファイル名を入力してください'); return; }
-    if (!isValidImageFilename(filename)) {
-      showStatus('error', '⚠️ ファイル名は英数字・ハイフン・アンダースコアのみ。拡張子（.jpg/.png/.webp）必須');
-      return;
+  if (!pat)  { showStatus('error','⚠️ トークンが未設定です'); document.getElementById('patDetails').open=true; return; }
+  if (!fn || !fn.endsWith('.md')) { showStatus('error','⚠️ ファイル名を確認してください（YYYYMMDD-slug.md）'); return; }
+  if (!/^\d{8}-/.test(fn))        { showStatus('error','⚠️ ファイル名は YYYYMMDD- で始まる必要があります'); return; }
+  if (!content.trim()||!content.includes('---')) { showStatus('error','⚠️ .mdファイル内容を確認してください'); return; }
+
+  btn.disabled = true;
+
+  try {
+    // ① サムネイル画像アップロード
+    if (document.getElementById('useThumb').checked && getRadio('thumbType')==='upload') {
+      const f  = document.getElementById('thumbFile').files[0];
+      const tfn = document.getElementById('thumbFilename').value.trim();
+      if (!f || !tfn) { showStatus('error','⚠️ サムネイル画像またはファイル名が未設定です'); btn.disabled=false; return; }
+      if (!isValidImgFn(tfn)) { showStatus('error','⚠️ サムネイルのファイル名形式が正しくありません'); btn.disabled=false; return; }
+      showStatus('loading','⏳ サムネイル画像をアップロード中...');
+      await uploadImage(pat, tfn, await fileToBase64(f));
     }
-
-    btn.disabled = true;
-    btn.textContent = '⏳ アップロード中...';
-    try {
-      const file    = item._file || item.querySelector('img')._file;
-      const b64     = await readFileAsBase64(file);
-      const imgPath = await uploadImageToGitHub(pat, filename, b64, file.type);
-      // 本文テキストエリアにタグを挿入
-      const tag = `\n<figure style="margin:1.5em 0;">\n  <img src="${imgPath}" alt="" style="width:100%;border-radius:8px;">\n</figure>\n`;
-      insertAtCursor(document.getElementById('content'), tag);
-      okEl.textContent = `✅ アップロード完了 → ${imgPath}`;
-      okEl.style.display = 'block';
-      btn.textContent = '✅ 挿入済み';
-    } catch(e) {
-      showStatus('error', `❌ 画像アップロードエラー：${e.message}`);
-      btn.disabled = false;
-      btn.textContent = '⬆️ アップロードして本文に挿入';
-    }
-  }
-
-  /* ── フロントマターの cover.image を更新 ── */
-  function updateCoverInFrontmatter(content, imagePath, altText) {
-    const alt = altText.replace(/"/g, '\\"');
-    const coverBlock = `cover:\n  image: ${imagePath}\n  alt: "${alt}"`;
-
-    // 既存の cover: ブロックがある場合
-    if (/^cover:/m.test(content)) {
-      // image: 行を更新（または追加）
-      if (/^  image:/m.test(content)) {
-        content = content.replace(/^  image:.*$/m, `  image: ${imagePath}`);
-      } else {
-        content = content.replace(/^cover:/m, `cover:\n  image: ${imagePath}`);
+    // ② 冒頭画像アップロード（別ファイルの場合のみ）
+    if (document.getElementById('useBody').checked && getRadio('bodyType')==='upload') {
+      const f  = document.getElementById('bodyFile').files[0];
+      const bfn = document.getElementById('bodyFilename').value.trim();
+      const tfn = document.getElementById('thumbFilename').value.trim();
+      if (!f || !bfn) { showStatus('error','⚠️ 冒頭画像またはファイル名が未設定です'); btn.disabled=false; return; }
+      if (!isValidImgFn(bfn)) { showStatus('error','⚠️ 冒頭画像のファイル名形式が正しくありません'); btn.disabled=false; return; }
+      if (bfn !== tfn) { // サムネイルと同じファイル名なら既にアップ済み
+        showStatus('loading','⏳ 冒頭画像をアップロード中...');
+        await uploadImage(pat, bfn, await fileToBase64(f));
       }
-      // alt: 行を更新（または追加）
-      if (/^  alt:/m.test(content)) {
-        content = content.replace(/^  alt:.*$/m, `  alt: "${alt}"`);
-      } else {
-        content = content.replace(/^  image:.*$/m, m => `${m}\n  alt: "${alt}"`);
-      }
-      return content;
     }
-
-    // cover: ブロックがない場合 → draft: の前に挿入
-    if (/^draft:/m.test(content)) {
-      return content.replace(/^draft:/m, `${coverBlock}\ndraft:`);
+    // ③ カバーブロックをフロントマターに適用
+    const coverBlock = buildCoverBlock();
+    if (coverBlock) {
+      content = applyCoverBlock(content, coverBlock);
+      document.getElementById('content').value = content;
     }
-
-    // フォールバック：2つ目の --- の直前に挿入
-    return content.replace(/(---\n[\s\S]*?)(^---)/m, (_, fm, close) => {
-      return `${fm}${coverBlock}\n${close}`;
-    });
-  }
-
-  /* ── GitHub API: 画像アップロード ── */
-  async function uploadImageToGitHub(pat, filename, base64Content, mimeType) {
-    const path   = `static/images/posts/${filename}`;
+    // ④ .md ファイルを投稿
+    showStatus('loading','⏳ 記事ファイルをGitHubに投稿しています...');
+    const path   = `content/posts/${fn}`;
     const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
-    const hdrs   = makeHeaders(pat);
-
-    let sha;
-    const check = await fetch(apiUrl, { headers: hdrs });
-    if (check.ok) { sha = (await check.json()).sha; }
-
-    const body = { message: `feat: 画像を追加 (${filename})`, content: base64Content, branch: BRANCH };
-    if (sha) body.sha = sha;
-
-    const res = await fetch(apiUrl, { method: 'PUT', headers: hdrs, body: JSON.stringify(body) });
-    if (!res.ok) {
-      const err = await res.json().catch(()=>({}));
-      throw new Error(`${res.status}: ${err.message || '不明なエラー'}`);
+    const hdrs   = ghHeaders(pat);
+    const {title} = parseFrontmatter(content);
+    const msg = title ? `feat: ${title}` : `feat: ${fn.replace('.md','')}を追加`;
+    let sha; const c = await fetch(apiUrl,{headers:hdrs}); if(c.ok) sha=(await c.json()).sha;
+    const body = {message:msg, content:toBase64(content), branch:BRANCH};
+    if(sha) body.sha=sha;
+    const res = await fetch(apiUrl,{method:'PUT',headers:hdrs,body:JSON.stringify(body)});
+    if (res.ok) {
+      const action = sha?'更新':'新規投稿';
+      const slug   = fn.replace(/^\d{8}-/,'').replace('.md','');
+      showStatus('success',
+        `✅ ${action}しました！\n📄 <strong>${fn}</strong>\n` +
+        `🔗 <a href="https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}" target="_blank">GitHubで確認</a>\n` +
+        `🌐 ビルド完了後：<a href="https://urayasu-portal.com/posts/${slug}/" target="_blank">記事ページを開く</a>`
+      );
+      // リセット
+      document.getElementById('filename').value = '';
+      document.getElementById('content').value  = '';
+      document.getElementById('parsedInfo').style.display = 'none';
+      document.getElementById('useThumb').checked = false; onThumbToggle();
+      document.getElementById('useBody').checked  = false; onBodyToggle();
+      document.getElementById('inlineImgList').innerHTML = '';
+    } else {
+      const e = await res.json().catch(()=>({}));
+      const msgs = {401:'❌ 認証エラー：トークンを確認してください',403:'❌ 権限エラー：Contents: Read and write 権限を確認してください',404:'❌ 404：リポジトリ名・権限を確認してください'};
+      showStatus('error', msgs[res.status] || `❌ エラー（${res.status}）：${e.message||''}`);
     }
-    return `/images/posts/${filename}`;
+  } catch(e) {
+    showStatus('error',`❌ 通信エラー：${e.message}`);
+  } finally {
+    btn.disabled = false;
   }
+}
 
-  /* ── GitHub API ヘッダー ── */
-  function makeHeaders(pat) {
-    return {
-      'Authorization': `Bearer ${pat}`,
-      'Accept': 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      'Content-Type': 'application/json',
-    };
-  }
-
-  /* ── 記事（.md）投稿 ── */
-  async function submitArticle() {
-    const pat      = localStorage.getItem('urayasu_gh_pat');
-    let   content  = document.getElementById('content').value;
-    const filename = document.getElementById('filename').value.trim();
-    const btn      = document.getElementById('submitBtn');
-
-    if (!pat) {
-      showStatus('error', '⚠️ GitHubトークンが未設定です');
-      document.getElementById('patDetails').open = true;
-      return;
-    }
-    if (!filename || !filename.endsWith('.md')) {
-      showStatus('error', '⚠️ ファイル名を確認してください（YYYYMMDD-slug.md 形式）');
-      return;
-    }
-    if (!/^\d{8}-/.test(filename)) {
-      showStatus('error', '⚠️ ファイル名は YYYYMMDD- で始まる必要があります');
-      return;
-    }
-    if (!content.trim() || !content.includes('---')) {
-      showStatus('error', '⚠️ .mdファイル内容を確認してください（フロントマターが必要）');
-      return;
-    }
-
-    btn.disabled = true;
-
-    try {
-      // ① アイキャッチ画像のアップロード（チェックがある場合）
-      if (document.getElementById('useEyecatch').checked) {
-        const eyeFile = document.getElementById('eyecatchFile').files[0];
-        const eyeName = document.getElementById('eyecatchFilename').value.trim();
-
-        if (eyeFile && eyeName) {
-          if (!isValidImageFilename(eyeName)) {
-            showStatus('error', '⚠️ アイキャッチ画像のファイル名が正しくありません（英数字・ハイフン・アンダースコア＋拡張子）');
-            btn.disabled = false;
-            return;
-          }
-          showStatus('loading', '⏳ アイキャッチ画像をアップロード中...');
-          const b64 = await readFileAsBase64(eyeFile);
-          const imgPath = await uploadImageToGitHub(pat, eyeName, b64, eyeFile.type);
-          // フロントマターを更新
-          const { title } = parseFrontmatter(content);
-          content = updateCoverInFrontmatter(content, imgPath, title || eyeName);
-          // テキストエリアにも反映
-          document.getElementById('content').value = content;
-        } else if (document.getElementById('useEyecatch').checked) {
-          showStatus('error', '⚠️ アイキャッチ画像が選択されていないか、ファイル名が未入力です');
-          btn.disabled = false;
-          return;
-        }
-      }
-
-      // ② .md ファイルのアップロード
-      showStatus('loading', '⏳ 記事ファイルをGitHubに投稿しています...');
-      const path   = `content/posts/${filename}`;
-      const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
-      const hdrs   = makeHeaders(pat);
-      const { title } = parseFrontmatter(content);
-      const commitMsg = title ? `feat: ${title}` : `feat: ${filename.replace('.md','')}を追加`;
-
-      let sha;
-      const check = await fetch(apiUrl, { headers: hdrs });
-      if (check.ok) { sha = (await check.json()).sha; }
-
-      const body = { message: commitMsg, content: toBase64(content), branch: BRANCH };
-      if (sha) body.sha = sha;
-
-      const res = await fetch(apiUrl, { method: 'PUT', headers: hdrs, body: JSON.stringify(body) });
-
-      if (res.ok) {
-        const action  = sha ? '更新' : '新規投稿';
-        const slug    = filename.replace(/^\d{8}-/, '').replace('.md', '');
-        const ghUrl   = `https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}`;
-        const siteUrl = `https://urayasu-portal.com/posts/${slug}/`;
-        showStatus('success',
-          `✅ ${action}しました！\n` +
-          `📄 <strong>${filename}</strong>\n` +
-          `🔗 <a href="${ghUrl}" target="_blank" rel="noopener">GitHubで確認する</a>\n` +
-          `🌐 ビルド完了後（約1〜2分）：<a href="${siteUrl}" target="_blank" rel="noopener">記事ページを開く</a>`
-        );
-        // フォームリセット
-        document.getElementById('filename').value = '';
-        document.getElementById('content').value  = '';
-        document.getElementById('parsedInfo').style.display = 'none';
-        document.getElementById('useEyecatch').checked = false;
-        toggleEyecatch();
-        document.getElementById('inlineImgList').innerHTML = '';
-
-      } else {
-        const err = await res.json().catch(()=>({}));
-        const msgs = {
-          401: '❌ 認証エラー（401）：トークンが無効または期限切れです',
-          403: '❌ 権限エラー（403）：Contents: Read and write 権限を確認してください',
-          404: '❌ 見つかりません（404）：リポジトリ名・トークン権限を確認してください',
-          422: `❌ バリデーションエラー（422）：${err.message || ''}`,
-        };
-        showStatus('error', msgs[res.status] || `❌ エラー（${res.status}）：${err.message || '投稿に失敗しました'}`);
-      }
-
-    } catch(e) {
-      showStatus('error', `❌ 通信エラー：${e.message}`);
-    } finally {
-      btn.disabled = false;
-    }
-  }
-
-  /* ── ユーティリティ ── */
-
-  // ファイルをBase64として読む（バイナリ対応）
-  function readFileAsBase64(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload  = e => resolve(e.target.result.split(',')[1]);
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-  }
-
-  // テキストをBase64エンコード（日本語対応）
-  function toBase64(str) { return btoa(unescape(encodeURIComponent(str))); }
-
-  // HTMLエスケープ
-  function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
-  // ファイル名の正規化
-  function sanitizeFilename(name) {
-    return name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w.\-]/g, '');
-  }
-
-  // 画像ファイル名のバリデーション
-  function isValidImageFilename(name) {
-    return /^[\w\-]+\.(jpg|jpeg|png|gif|webp|svg)$/i.test(name);
-  }
-
-  // テキストエリアのカーソル位置に挿入
-  function insertAtCursor(textarea, text) {
-    const s = textarea.selectionStart;
-    const e = textarea.selectionEnd;
-    const val = textarea.value;
-    textarea.value = val.slice(0, s) + text + val.slice(e);
-    textarea.selectionStart = textarea.selectionEnd = s + text.length;
-    textarea.focus();
-    textarea.dispatchEvent(new Event('input'));
-  }
-
-  // 画像プレビュー表示
-  function showImagePreview(file, thumbId, wrapId) {
-    const reader = new FileReader();
-    reader.onload = e => {
-      document.getElementById(thumbId).src = e.target.result;
-      document.getElementById(wrapId).classList.add('visible');
-    };
-    reader.readAsDataURL(file);
-  }
-
-  // ドラッグ＆ドロップ
-  function handleDragOver(e, dropId) {
-    e.preventDefault();
-    document.getElementById(dropId).classList.add('dragover');
-  }
-  function handleDragLeave(dropId) {
-    document.getElementById(dropId).classList.remove('dragover');
-  }
-  function handleDrop(e, inputId, mode) {
-    e.preventDefault();
-    const dropId = mode === 'eyecatch' ? 'eyecatchDrop' : 'inlineDrop';
-    document.getElementById(dropId).classList.remove('dragover');
-    const files = e.dataTransfer.files;
-    if (!files.length) return;
-    const input = document.getElementById(inputId);
-    // DataTransfer を使って input に files をセット
-    const dt = new DataTransfer();
-    Array.from(files).forEach(f => dt.items.add(f));
-    input.files = dt.files;
-    input.dispatchEvent(new Event('change'));
-  }
-
-  // ステータス表示
-  function showStatus(type, message) {
-    const el = document.getElementById('status');
-    el.className = `status ${type}`;
-    el.innerHTML = message.replace(/\n/g, '<br>');
-    el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
+/* ── ユーティリティ ── */
+function getRadio(name) {
+  const el = document.querySelector(`input[name="${name}"]:checked`);
+  return el ? el.value : '';
+}
+function fileToBase64(file) {
+  return new Promise((res,rej)=>{ const r=new FileReader(); r.onload=e=>res(e.target.result.split(',')[1]); r.onerror=rej; r.readAsDataURL(file); });
+}
+function toBase64(str) { return btoa(unescape(encodeURIComponent(str))); }
+function escHtml(s)    { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function sanitize(n)   { return n.toLowerCase().replace(/\s+/g,'-').replace(/[^\w.\-]/g,''); }
+function isValidImgFn(n) { return /^[\w\-]+\.(jpg|jpeg|png|gif|webp|svg)$/i.test(n); }
+function showImgPreview(file, thumbId, wrapId) {
+  const r=new FileReader(); r.onload=e=>{ document.getElementById(thumbId).src=e.target.result; document.getElementById(wrapId).classList.add('visible'); }; r.readAsDataURL(file);
+}
+function insertAtCursor(ta, text) {
+  const s=ta.selectionStart, e=ta.selectionEnd, v=ta.value;
+  ta.value=v.slice(0,s)+text+v.slice(e); ta.selectionStart=ta.selectionEnd=s+text.length; ta.focus(); ta.dispatchEvent(new Event('input'));
+}
+function handleDragOver(ev, id) { ev.preventDefault(); document.getElementById(id).classList.add('dragover'); }
+function handleDragLeave(id)    { document.getElementById(id).classList.remove('dragover'); }
+function handleDrop(ev, inputId, handlerName) {
+  ev.preventDefault();
+  const dropId = inputId.replace('File','Drop');
+  document.getElementById(dropId).classList.remove('dragover');
+  const dt = new DataTransfer();
+  Array.from(ev.dataTransfer.files).forEach(f=>dt.items.add(f));
+  const input = document.getElementById(inputId); input.files=dt.files;
+  window[handlerName](input);
+}
+function showStatus(type, msg) {
+  const el=document.getElementById('status'); el.className=`status ${type}`; el.innerHTML=msg.replace(/\n/g,'<br>'); el.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
 </script>
 </body>
 </html>

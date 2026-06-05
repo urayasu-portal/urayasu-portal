@@ -9,7 +9,8 @@
     "full"  → 記事個別ページのメイン画像         → カテゴリーデフォルトは PNG
 
   優先順位:
-    1. cover.image  → 個別写真。size に関係なく常にそのまま使用
+    0. cover.thumb  → サムネイル専用画像（size=thumb のみ適用）
+    1. cover.image  → 記事冒頭・個別写真。size に関係なく使用
     2. cover.catimg → カテゴリー画像のバリアント指定 (例: cat-open / cat-close)
                       size=thumb → /images/categories/{catimg}.svg
                       size=full  → /images/categories/{catimg}.png
@@ -47,12 +48,16 @@
 
 {{- $result := "" }}
 
+{{- $thumbImg  := ($page.Param "cover.thumb") }}
 {{- $img := ($page.Param "cover.image") }}
 {{- if not $img }}{{- with $page.Params.images }}{{- $img = index . 0 }}{{- end }}{{- end }}
 
 {{- $catimgBase := ($page.Param "cover.catimg") }}
 
-{{- if $img }}
+{{- if and (eq $size "thumb") $thumbImg }}
+  {{/* 優先度0: サムネイル専用画像 (cover.thumb) — thumb サイズのみ適用 */}}
+  {{- $result = $thumbImg }}
+{{- else if $img }}
   {{/* 優先度1: 個別写真 — size に関係なくそのまま使用 */}}
   {{- $result = $img }}
 {{- else if $catimgBase }}
