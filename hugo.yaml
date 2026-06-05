@@ -11,6 +11,8 @@ pagination:
 
 params:
   env: production
+  # ★SEO: トップページの <title> タグ専用（site.Title はブランド名のまま各記事の接尾辞に使用）
+  homeTitle: 浦安ぽーたる｜浦安・新浦安・舞浜のローカル情報メディア
   description: 浦安・新浦安・舞浜の開店・閉店、イベント、グルメ、子育て・教育、スポーツ、ニュースなど地域情報をお届けするローカルメディアです。
   keywords:
     - 浦安
@@ -30,8 +32,9 @@ params:
     - 妙典
     - 葛西
   author: 浦安ぽーたる
+  # ★SEO: SNSシェア時の既定OG画像（1200×630ブランド画像）。個別記事は各自の画像が優先される。
   images:
-    - /images/categories/cat-open-close.png
+    - /images/og-default.png
   ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true

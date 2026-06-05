@@ -9,3 +9,76 @@
   gtag('config', 'G-8S20X6BDPW');
 </script>
 {{- end }}
+
+{{/* ───── イベント構造化データ (schema.org/Event) ─────
+  eventDate を持つ単一記事に出力。Googleのイベントリッチリザルト用。
+  日付の正規化:
+    - クォート付きISO文字列 "2026-06-06"          → そのまま
+    - クォートなし (YAMLが time.Time として解釈)   → 文字列化して先頭10文字
+    - 期間指定 "2026-06-01/2026-06-14"            → "/" で start / end に分割
+*/}}
+{{- if and .IsPage .Params.eventDate }}
+  {{- $edStr := printf "%v" .Params.eventDate }}
+  {{- $start := substr $edStr 0 10 }}
+  {{- $end := "" }}
+  {{- if in $edStr "/" }}
+    {{- $end = substr (index (split $edStr "/") 1) 0 10 }}
+  {{- else if .Params.eventEndDate }}
+    {{- $end = substr (printf "%v" .Params.eventEndDate) 0 10 }}
+  {{- end }}
+  {{- $loc := .Params.eventLocation | default "浦安市" }}
+  {{- $ev := dict
+      "@context" "https://schema.org"
+      "@type" "Event"
+      "name" .Title
+      "startDate" $start
+      "eventStatus" "https://schema.org/EventScheduled"
+      "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"
+      "url" .Permalink
+      "location" (dict
+        "@type" "Place"
+        "name" $loc
+        "address" (dict
+          "@type" "PostalAddress"
+          "addressLocality" "浦安市"
+          "addressRegion" "千葉県"
+          "addressCountry" "JP"))
+      "organizer" (dict
+        "@type" "Organization"
+        "name" "浦安ぽーたる"
+        "url" site.BaseURL)
+  }}
+  {{- if $end }}{{- $ev = merge $ev (dict "endDate" $end) }}{{- end }}
+  {{- with .Description }}{{- $ev = merge $ev (dict "description" .) }}{{- end }}
+  {{- $evImg := partial "cover-image.html" (dict "page" . "size" "full") }}
+  {{- with $evImg }}{{- $ev = merge $ev (dict "image" (slice (. | absURL))) }}{{- end }}
+<script type="application/ld+json">
+{{ $ev | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
+
+{{/* ───── 店舗構造化データ (schema.org/LocalBusiness) ─────
+  shopName を持つ単一記事に出力。開店・閉店記事の補強用。
+*/}}
+{{- if and .IsPage .Params.shopName }}
+  {{- $lb := dict
+      "@context" "https://schema.org"
+      "@type" "LocalBusiness"
+      "name" .Params.shopName
+      "url" .Permalink
+  }}
+  {{- with .Params.address }}
+    {{- $lb = merge $lb (dict "address" (dict
+        "@type" "PostalAddress"
+        "streetAddress" .
+        "addressLocality" "浦安市"
+        "addressRegion" "千葉県"
+        "addressCountry" "JP")) }}
+  {{- end }}
+  {{- with .Params.officialUrl }}{{- $lb = merge $lb (dict "sameAs" (slice .)) }}{{- end }}
+  {{- $lbImg := partial "cover-image.html" (dict "page" . "size" "full") }}
+  {{- with $lbImg }}{{- $lb = merge $lb (dict "image" (slice (. | absURL))) }}{{- end }}
+<script type="application/ld+json">
+{{ $lb | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
