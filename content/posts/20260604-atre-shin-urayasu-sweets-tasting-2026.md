@@ -3,7 +3,7 @@ title: "【浦安】アトレ新浦安でスイーツ試食会開催"
 date: 2026-06-04T07:00:00+09:00
 slug: "atre-shin-urayasu-sweets-tasting-2026"
 categories:
-  - "グルメ・カフェ"
+  - "イベント"
 tags:
   - "浦安市"
   - "新浦安"
