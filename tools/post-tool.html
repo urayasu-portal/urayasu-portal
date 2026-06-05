@@ -449,15 +449,26 @@ function buildCoverBlock() {
   if (thumbCatimg && bodyType === 'same-as-thumb') {
     return `cover:\n  catimg: ${thumbCatimg}${altLine}`;
   }
-  // thumb と body が同一パス
-  if (thumbPath && bodyPath && thumbPath === bodyPath) {
-    return `cover:\n  image: ${bodyPath}${altLine}`;
-  }
 
   const lines = ['cover:'];
-  if (thumbPath && thumbPath !== bodyPath) lines.push(`  thumb: ${thumbPath}`);
-  if (bodyPath)                            lines.push(`  image: ${bodyPath}`);
-  else if (thumbPath && !bodyPath)         lines.push(`  thumb: ${thumbPath}`);
+
+  if (thumbPath && bodyPath) {
+    if (thumbPath === bodyPath) {
+      // 同じ画像 → cover.image で両方に適用
+      lines.push(`  image: ${bodyPath}`);
+    } else {
+      // 別々の画像 → thumb=サムネイル専用、image=記事冒頭
+      lines.push(`  thumb: ${thumbPath}`);
+      lines.push(`  image: ${bodyPath}`);
+    }
+  } else if (thumbPath && !bodyPath) {
+    // サムネイルのみ変更 → cover.thumb（冒頭はカテゴリデフォルト）
+    lines.push(`  thumb: ${thumbPath}`);
+  } else if (!thumbPath && bodyPath) {
+    // 冒頭画像のみ変更 → cover.bodyImage（サムネイルはカテゴリデフォルトのまま）
+    lines.push(`  bodyImage: ${bodyPath}`);
+  }
+
   if (title) lines.push(`  alt: "${title.replace(/"/g,'\\"')}"`);
   return lines.join('\n');
 }
@@ -617,8 +628,7 @@ async function submitArticle() {
       document.getElementById('filename').value = '';
       document.getElementById('content').value  = '';
       document.getElementById('parsedInfo').style.display = 'none';
-      document.getElementById('useThumb').checked = false; onThumbToggle();
-      document.getElementById('useBody').checked  = false; onBodyToggle();
+      resetImageSections();
       document.getElementById('inlineImgList').innerHTML = '';
     } else {
       const e = await res.json().catch(()=>({}));
@@ -664,6 +674,33 @@ function handleDrop(ev, inputId, handlerName) {
 }
 function showStatus(type, msg) {
   const el=document.getElementById('status'); el.className=`status ${type}`; el.innerHTML=msg.replace(/\n/g,'<br>'); el.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+/* ── 画像セクション全リセット ── */
+function resetImageSections() {
+  // サムネイル
+  document.getElementById('useThumb').checked = false;
+  document.getElementById('thumbSection').style.display = 'none';
+  document.getElementById('thumbFile').value = '';
+  document.getElementById('thumbThumb').src  = '';
+  document.getElementById('thumbPreviewWrap').classList.remove('visible');
+  document.getElementById('thumbFilename').value = '';
+  document.getElementById('thumbPresetSelect').value = '';
+  document.getElementById('thumbPresetPreview').style.display = 'none';
+  document.querySelector('input[name="thumbType"][value="preset"]').checked = true;
+  onThumbTypeChange();
+  // 冒頭画像
+  document.getElementById('useBody').checked = false;
+  document.getElementById('bodySection').style.display = 'none';
+  document.getElementById('bodyFile').value = '';
+  document.getElementById('bodyThumb').src  = '';
+  document.getElementById('bodyPreviewWrap').classList.remove('visible');
+  document.getElementById('bodyFilename').value = '';
+  document.getElementById('bodyPresetSelect').value = '';
+  document.getElementById('bodyPresetPreview').style.display = 'none';
+  document.getElementById('bodyTypeSame').checked = true;
+  document.getElementById('bodySameInfo').style.display = 'none';
+  onBodyTypeChange();
 }
 </script>
 </body>
