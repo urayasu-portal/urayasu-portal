@@ -1083,6 +1083,408 @@ body:not(.list) { --main-width: 1108px; }
 }
 /* 将来: .ad-section { ... } 広告・PR掲載依頼セクション */
 
+/* ===================================================
+   便利ガイドページ (life-guide) スタイル
+   =================================================== */
+
+/* ── ヒーロー ── */
+.lg-hero {
+  display: grid;
+  grid-template-columns: 1fr 268px;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+.lg-hero-main {
+  background: linear-gradient(135deg, #1a5c8a 0%, #0e7a6a 100%);
+  border-radius: 12px;
+  padding: 26px 28px;
+}
+.lg-hero-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  background: rgba(255,255,255,.15);
+  color: rgba(255,255,255,.9);
+  border-radius: 20px;
+  padding: 3px 12px;
+  margin-bottom: 10px;
+}
+.lg-hero-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 10px;
+  color: #fff;
+  line-height: 1.35;
+}
+.lg-hero-lead {
+  font-size: 13px;
+  line-height: 1.85;
+  color: rgba(255,255,255,.88);
+  margin: 0 0 18px;
+}
+.lg-hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.lg-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 18px;
+  background: #fff;
+  color: var(--portal-blue) !important;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background .15s;
+}
+.lg-btn-primary:hover { background: #e8f4fb; }
+.lg-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 18px;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.4);
+  color: #fff !important;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background .15s;
+}
+.lg-btn-secondary:hover { background: rgba(255,255,255,.28); }
+
+/* 急いで確認したい方へ */
+.lg-hero-side { display: flex; flex-direction: column; }
+.lg-urgent {
+  flex: 1;
+  background: var(--up-card);
+  border: 1.5px solid #f5c0b0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.lg-urgent-title {
+  background: var(--up-coral);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 9px 14px;
+  margin: 0;
+}
+.lg-urgent-list {
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+}
+.lg-urgent-list li { border-bottom: 1px solid var(--up-border); }
+.lg-urgent-list li:last-child { border-bottom: none; }
+.lg-urgent-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--up-text) !important;
+  text-decoration: none !important;
+  transition: background .15s;
+  line-height: 1.5;
+}
+.lg-urgent-list a:hover { background: var(--up-bg); color: var(--portal-blue) !important; }
+.lg-urgent-arrow { margin-left: auto; color: var(--up-muted); flex-shrink: 0; font-size: 16px; }
+
+/* ── ショートカットタグ ── */
+.lg-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 24px;
+  background: var(--up-card);
+  border-radius: 10px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+}
+.lg-shortcut-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  background: var(--up-bg);
+  border: 1.5px solid var(--up-border);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--portal-blue) !important;
+  text-decoration: none !important;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.lg-shortcut-tag:hover {
+  background: var(--portal-blue);
+  border-color: var(--portal-blue);
+  color: #fff !important;
+}
+
+/* ── よく見られるガイド（大カード） ── */
+.lg-popular-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.lg-popular-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--up-card);
+  border: 1.5px solid var(--up-border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  text-decoration: none !important;
+  color: var(--up-text) !important;
+  transition: border-color .15s, box-shadow .15s, transform .18s;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.lg-popular-card:hover {
+  border-color: var(--up-teal);
+  box-shadow: 0 6px 18px rgba(0,0,0,.1);
+  transform: translateY(-2px);
+}
+.lg-popular-icon { font-size: 28px; margin-bottom: 10px; line-height: 1; }
+.lg-popular-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--portal-blue);
+  line-height: 1.5;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.lg-popular-desc { font-size: 12px; color: var(--up-muted); line-height: 1.7; flex: 1; }
+.lg-popular-meta {
+  font-size: 11px;
+  color: var(--up-muted);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 準備中バッジ */
+.lg-wip-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  background: #aab4c0;
+  border-radius: 3px;
+  padding: 1px 5px;
+  vertical-align: middle;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── 目的から探す ── */
+.lg-purpose-block { margin-bottom: 20px; }
+.lg-purpose-heading {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--portal-blue);
+  margin: 0 0 10px;
+  padding: 7px 12px;
+  background: var(--portal-light-blue);
+  border-left: 3px solid var(--portal-blue);
+  border-radius: 0 6px 6px 0;
+}
+.lg-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.lg-guide-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 10px;
+  padding: 13px 14px;
+  text-decoration: none !important;
+  color: var(--up-text) !important;
+  transition: border-color .15s, background .15s;
+}
+.lg-guide-card:hover { border-color: var(--up-teal); background: #f0fbf9; }
+.lg-guide-card-icon { font-size: 22px; flex-shrink: 0; line-height: 1; margin-top: 1px; }
+.lg-guide-card-body { flex: 1; min-width: 0; }
+.lg-guide-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--portal-blue);
+  line-height: 1.45;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.lg-guide-card-desc { font-size: 11px; color: var(--up-muted); line-height: 1.65; }
+
+/* ── こんなときに見る ── */
+.lg-situation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  margin-bottom: 28px;
+}
+.lg-situation-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 8px;
+  padding: 11px 13px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--up-text) !important;
+  text-decoration: none !important;
+  transition: background .15s, border-color .15s, color .15s;
+  line-height: 1.45;
+}
+.lg-situation-card::before {
+  content: "→";
+  color: var(--up-teal);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.lg-situation-card:hover {
+  background: #e8f4fb;
+  border-color: var(--portal-blue);
+  color: var(--portal-blue) !important;
+}
+
+/* ── 更新されたガイド ── */
+.lg-updates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  background: var(--up-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+}
+.lg-updates-list li { border-bottom: 1px solid var(--up-border); }
+.lg-updates-list li:last-child { border-bottom: none; }
+.lg-update-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--up-text) !important;
+  text-decoration: none !important;
+  transition: background .15s;
+}
+.lg-update-item:hover { background: var(--up-bg); }
+.lg-update-date {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--up-teal);
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: #e8f8f5;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+.lg-update-text { flex: 1; }
+.lg-update-arrow { color: var(--up-muted); flex-shrink: 0; font-size: 16px; }
+
+/* ── トップページ 便利ガイド導線バナー ── */
+.lg-home-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: linear-gradient(135deg, #e8f4fb 0%, #f0fbf9 100%);
+  border: 1.5px solid var(--portal-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 28px 0;
+}
+.lg-home-banner-body { flex: 1; min-width: 0; }
+.lg-home-banner-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--portal-blue);
+  margin: 0 0 5px;
+}
+.lg-home-banner-desc {
+  font-size: 12px;
+  color: var(--up-muted);
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+.lg-home-banner-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.lg-home-banner-chips a {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  background: #fff;
+  border: 1px solid var(--portal-border);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--portal-blue) !important;
+  text-decoration: none !important;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.lg-home-banner-chips a:hover {
+  background: var(--portal-blue);
+  border-color: var(--portal-blue);
+  color: #fff !important;
+}
+.lg-home-banner-cta {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px 20px;
+  background: var(--portal-blue);
+  color: #fff !important;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+  flex-shrink: 0;
+  transition: background .15s;
+}
+.lg-home-banner-cta:hover { background: #155079; }
+
+/* ── レスポンシブ ── */
+@media (max-width: 900px) {
+  .lg-hero { grid-template-columns: 1fr; }
+  .lg-hero-side { margin-top: 0; }
+}
+@media (max-width: 768px) {
+  .lg-popular-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .lg-popular-grid { grid-template-columns: 1fr; }
+  .lg-guide-grid { grid-template-columns: 1fr; }
+  .lg-situation-grid { grid-template-columns: repeat(2, 1fr); }
+  .lg-home-banner { flex-direction: column; align-items: flex-start; }
+  .lg-home-banner-cta { width: 100%; justify-content: center; }
+  .lg-hero-title { font-size: 18px; }
+}
+@media (max-width: 480px) {
+  .lg-situation-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- タグラベル (記事フッター) ---------- */
 .post-tag-label {
   font-size: 11px;

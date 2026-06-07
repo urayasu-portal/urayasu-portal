@@ -86,6 +86,10 @@ menu:
       identifier: sports
       url: /categories/スポーツ/
       weight: 60
+    - name: 便利ガイド
+      identifier: life-guide
+      url: /life-guide/
+      weight: 65
     - name: お問い合わせ
       identifier: contact
       url: /contact/

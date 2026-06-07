@@ -1,0 +1,153 @@
+# 浦安市くらしの便利ガイド — データ定義
+# 各ガイドの追加・更新はこのファイルを編集するだけでOK。
+# published: true のガイドは実際の記事ページへリンク、false は「準備中」バッジを表示。
+
+urgent:
+  - text: "休日・夜間診療、急病時の相談先を確認する"
+    url: "/guides/holiday-night-medical/"
+  - text: "避難所・ハザードマップなど防災情報を見る"
+    url: "/guides/disaster-prevention/"
+  - text: "ごみ分別・粗大ごみの出し方を調べる"
+    url: "/guides/trash-recycling/"
+
+shortcuts:
+  - text: "子育て"
+    anchor: "#kosodate"
+  - text: "医療"
+    anchor: "#iryo"
+  - text: "ごみ"
+    anchor: "#tetsuzuki"
+  - text: "防災"
+    anchor: "#iryo"
+  - text: "遊び場"
+    anchor: "#odekake"
+  - text: "公共施設"
+    anchor: "#odekake"
+  - text: "手続き"
+    anchor: "#tetsuzuki"
+  - text: "スポーツ"
+    anchor: "#enjoy"
+  - text: "駅別"
+    anchor: "#enjoy"
+
+popular:
+  - title: "浦安市の子育て支援・手当・助成まとめ"
+    desc: "出産・育児・保育・教育に関する支援制度を、目的別に整理。"
+    icon: "👶"
+    url: "/posts/urayasu-kosodate-shien-matome/"
+    updated: "2026年6月"
+    published: true
+  - title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
+    desc: "夜間や休日に体調を崩したときの相談先・受診先を確認。"
+    icon: "🏥"
+    url: "/guides/holiday-night-medical/"
+    updated: "2026年6月"
+    published: false
+  - title: "浦安市のごみ分別・収集日・粗大ごみガイド"
+    desc: "ごみの出し方、収集日、粗大ごみの申し込み先を整理。"
+    icon: "🗑️"
+    url: "/guides/trash-recycling/"
+    updated: "2026年6月"
+    published: false
+  - title: "浦安市の防災・避難所・ハザードマップまとめ"
+    desc: "台風・地震・大雨に備えて確認したい情報をまとめて案内。"
+    icon: "🎒"
+    url: "/guides/disaster-prevention/"
+    updated: "2026年6月"
+    published: false
+
+categories:
+  - name: "子育て・教育"
+    id: "kosodate"
+    guides:
+      - title: "浦安市の子育て支援・手当・助成まとめ"
+        desc: "妊娠・出産、育児、保育、教育費などの支援制度を整理。"
+        icon: "👶"
+        url: "/posts/urayasu-kosodate-shien-matome/"
+        published: true
+      - title: "浦安市の子ども向け屋内・公共の遊び場まとめ"
+        desc: "雨の日や暑い日に使いやすい屋内・公共施設を紹介。"
+        icon: "🧸"
+        url: "/guides/indoor-playgrounds/"
+        published: false
+
+  - name: "医療・安心"
+    id: "iryo"
+    guides:
+      - title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
+        desc: "小児・大人の急病時に確認したい相談先と受診先を案内。"
+        icon: "🏥"
+        url: "/guides/holiday-night-medical/"
+        published: false
+      - title: "浦安市の防災・避難所・ハザードマップまとめ"
+        desc: "避難所、備蓄、ハザードマップなど、災害時の確認先を整理。"
+        icon: "🎒"
+        url: "/guides/disaster-prevention/"
+        published: false
+
+  - name: "暮らしの手続き"
+    id: "tetsuzuki"
+    guides:
+      - title: "浦安市のごみ分別・収集日・粗大ごみガイド"
+        desc: "分別、収集日、粗大ごみ、持ち込みなどをわかりやすく整理。"
+        icon: "🗑️"
+        url: "/guides/trash-recycling/"
+        published: false
+      - title: "浦安市の行政サービスセンター・市役所手続きガイド"
+        desc: "住民票、証明書、引っ越し関連などの窓口情報を確認。"
+        icon: "🏢"
+        url: "/guides/city-hall-procedures/"
+        published: false
+
+  - name: "おでかけ・公共施設"
+    id: "odekake"
+    guides:
+      - title: "浦安市の公園・遊び場ガイド"
+        desc: "子ども連れで行きやすい公園や遊び場をエリア別に紹介。"
+        icon: "🛝"
+        url: "/guides/parks-playgrounds/"
+        published: false
+      - title: "浦安市の図書館・公共施設一覧ガイド"
+        desc: "図書館、公民館、文化施設、体育施設などを目的別に整理。"
+        icon: "📚"
+        url: "/guides/libraries-public-facilities/"
+        published: false
+
+  - name: "まちを楽しむ"
+    id: "enjoy"
+    guides:
+      - title: "浦安3大スポーツチーム観戦ガイド"
+        desc: "D-Rocks、バルドラール、ブリオベッカの観戦情報を紹介。"
+        icon: "⚽"
+        url: "/guides/sports-teams/"
+        published: false
+      - title: "浦安市の駅別生活ガイド：浦安・新浦安・舞浜"
+        desc: "駅ごとの買い物、交通、雰囲気、暮らしやすさを比較。"
+        icon: "🚉"
+        url: "/guides/station-life/"
+        published: false
+
+situations:
+  - text: "子どもが急に熱を出した"
+    url: "/guides/holiday-night-medical/"
+  - text: "浦安市に引っ越してきた"
+    url: "/guides/city-hall-procedures/"
+  - text: "週末に子どもと遊びたい"
+    url: "/guides/parks-playgrounds/"
+  - text: "粗大ごみを出したい"
+    url: "/guides/trash-recycling/"
+  - text: "台風や大雨に備えたい"
+    url: "/guides/disaster-prevention/"
+  - text: "浦安のチームを応援したい"
+    url: "/guides/sports-teams/"
+
+updates:
+  - text: "子育て支援・手当・助成まとめを更新"
+    date: "2026.06"
+    url: "/posts/urayasu-kosodate-shien-matome/"
+  - text: "休日・夜間診療まとめを更新"
+    date: "2026.06"
+    url: "/guides/holiday-night-medical/"
+  - text: "ごみ分別・粗大ごみガイドを公開"
+    date: "2026.06"
+    url: "/guides/trash-recycling/"

@@ -120,6 +120,22 @@
     {{/* ページ1のみ: カテゴリ別ピックアップ + 保存版まとめ */}}
     {{- if eq $paginator.PageNumber 1 }}
 
+    {{/* ── 便利ガイド導線バナー ── */}}
+    <div class="lg-home-banner">
+      <div class="lg-home-banner-body">
+        <h2 class="lg-home-banner-title">📖 浦安市くらしの便利ガイド</h2>
+        <p class="lg-home-banner-desc">子育て、医療、防災、ごみ、公共施設など、浦安市で暮らす人向けの保存版ガイドをまとめました。</p>
+        <div class="lg-home-banner-chips">
+          <a href="/life-guide/#kosodate">子育て支援</a>
+          <a href="/guides/holiday-night-medical/">休日・夜間診療</a>
+          <a href="/guides/trash-recycling/">ごみ分別</a>
+          <a href="/guides/disaster-prevention/">防災</a>
+          <a href="/guides/parks-playgrounds/">公園・遊び場</a>
+        </div>
+      </div>
+      <a class="lg-home-banner-cta" href="/life-guide/">便利ガイドを見る →</a>
+    </div>
+
     {{/* 新着の開店・閉店 */}}
     {{- $openClosePosts := where $allPosts "Params.categories" "intersect" (slice "開店・閉店" "開店閉店") }}
     {{- $openClosePosts = first 6 $openClosePosts }}
