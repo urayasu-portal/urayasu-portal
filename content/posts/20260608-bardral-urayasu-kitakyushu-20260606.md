@@ -11,7 +11,9 @@ tags:
   - "Fリーグ"
   - "試合結果"
 description: "バルドラール浦安が、6月6日のFリーグ第2節でボルクバレット北九州に5-2で勝利。次節は6月13日に浦安で開催予定です。"
-eventDate: "2026-06-06"
+eventDate:
+  - "2026-06-06"
+  - "2026-06-13"
 hideEventBox: true
 cover:
   image: /images/posts/bardral.jpg
