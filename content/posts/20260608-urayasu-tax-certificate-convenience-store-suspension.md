@@ -1,5 +1,5 @@
 ---
-title: "【浦安市】課税証明書のコンビニ交付が一時停止"
+title: "【浦安市】6月7日～9日 課税証明書のコンビニ交付が一時停止"
 date: 2026-06-08T07:00:00+09:00
 slug: "urayasu-tax-certificate-convenience-store-suspension"
 categories:
