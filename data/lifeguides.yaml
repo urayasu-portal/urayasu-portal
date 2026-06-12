@@ -48,7 +48,7 @@ popular:
     icon: "🗑️"
     url: "/guides/trash-recycling/"
     updated: "2026年6月"
-    published: false
+    published: true
   - title: "浦安市の防災・避難所・ハザードマップまとめ"
     desc: "台風・地震・大雨に備えて確認したい情報をまとめて案内。"
     icon: "🎒"
@@ -92,7 +92,7 @@ categories:
         desc: "分別、収集日、粗大ごみ、持ち込みなどをわかりやすく整理。"
         icon: "🗑️"
         url: "/guides/trash-recycling/"
-        published: false
+        published: true
       - title: "浦安市の行政サービスセンター・市役所手続きガイド"
         desc: "住民票、証明書、引っ越し関連などの窓口情報を確認。"
         icon: "🏢"
