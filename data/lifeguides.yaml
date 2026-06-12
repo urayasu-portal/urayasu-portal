@@ -42,7 +42,7 @@ popular:
     icon: "🏥"
     url: "/guides/holiday-night-medical/"
     updated: "2026年6月"
-    published: false
+    published: true
   - title: "浦安市のごみ分別・収集日・粗大ごみガイド"
     desc: "ごみの出し方、収集日、粗大ごみの申し込み先を整理。"
     icon: "🗑️"
@@ -78,7 +78,7 @@ categories:
         desc: "小児・大人の急病時に確認したい相談先と受診先を案内。"
         icon: "🏥"
         url: "/guides/holiday-night-medical/"
-        published: false
+        published: true
       - title: "浦安市の防災・避難所・ハザードマップまとめ"
         desc: "避難所、備蓄、ハザードマップなど、災害時の確認先を整理。"
         icon: "🎒"
