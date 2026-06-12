@@ -69,7 +69,7 @@ categories:
         desc: "雨の日や暑い日に使いやすい屋内・公共施設を紹介。"
         icon: "🧸"
         url: "/guides/indoor-playgrounds/"
-        published: false
+        published: true
 
   - name: "医療・安心"
     id: "iryo"
