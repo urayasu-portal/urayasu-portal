@@ -54,7 +54,7 @@ popular:
     icon: "🎒"
     url: "/guides/disaster-prevention/"
     updated: "2026年6月"
-    published: false
+    published: true
 
 categories:
   - name: "子育て・教育"
@@ -83,7 +83,7 @@ categories:
         desc: "避難所、備蓄、ハザードマップなど、災害時の確認先を整理。"
         icon: "🎒"
         url: "/guides/disaster-prevention/"
-        published: false
+        published: true
 
   - name: "暮らしの手続き"
     id: "tetsuzuki"
