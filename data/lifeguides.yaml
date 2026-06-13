@@ -120,7 +120,7 @@ categories:
         desc: "D-Rocks、バルドラール、ブリオベッカの観戦情報を紹介。"
         icon: "⚽"
         url: "/guides/sports-teams/"
-        published: false
+        published: true
       - title: "浦安市の駅別生活ガイド：浦安・新浦安・舞浜"
         desc: "駅ごとの買い物、交通、雰囲気、暮らしやすさを比較。"
         icon: "🚉"
