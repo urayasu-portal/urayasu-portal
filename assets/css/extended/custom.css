@@ -477,6 +477,56 @@ body:not(.list) { --main-width: 1108px; }
 
 .related-posts { margin-top: 32px; }
 
+/* ---------- 記事コンテキスト補強ブロック ---------- */
+.article-context {
+  margin: 28px 0 4px;
+  background: var(--up-bg);
+  border: 1px solid var(--up-border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.ac-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.ac-icon {
+  font-size: 22px;
+  line-height: 1.3;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.ac-body { flex: 1; min-width: 0; }
+.ac-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--up-muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom: 4px;
+}
+.ac-text {
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--up-text);
+  margin: 0 0 6px;
+}
+.ac-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--up-teal);
+  text-decoration: none;
+}
+.ac-link:hover { text-decoration: underline; }
+.ac-divider {
+  border: none;
+  border-top: 1px solid var(--up-border);
+  margin: 14px 0;
+}
+
 /* ---------- くらしの便利ガイドへの導線 ---------- */
 .related-guides { margin-top: 32px; }
 .rg-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
