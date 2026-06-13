@@ -28,8 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
   {{- $monthCounts = merge $monthCounts (dict $mk (add (index $monthCounts $mk | default 0) 1)) }}
 {{- end }}
 {{- range $allPosts }}
-  {{- with .Params.eventDate  }}{{- $eventDates = $eventDates | append . }}{{- end }}
-  {{- range .Params.eventDates }}{{- $eventDates = $eventDates | append . }}{{- end }}
+  {{- with .Params.eventDate    }}{{- $eventDates = $eventDates | append . }}{{- end }}
+  {{- range .Params.eventDates  }}{{- $eventDates = $eventDates | append . }}{{- end }}
+  {{- with .Params.notableDate  }}{{- $eventDates = $eventDates | append . }}{{- end }}
+  {{- range .Params.notableDates }}{{- $eventDates = $eventDates | append . }}{{- end }}
+  {{- with .Params.openDate     }}{{- $eventDates = $eventDates | append . }}{{- end }}
+  {{- with .Params.closeDate    }}{{- $eventDates = $eventDates | append . }}{{- end }}
 {{- end }}
 
 {{/* 検索ウィジェット */}}
