@@ -234,15 +234,18 @@
       </div>
     </div>
 
-    {{/* タグクラウド */}}
+    {{/* タグクラウド (3件以上のみ表示) */}}
     {{- if site.Taxonomies.tags }}
     <div class="sidebar-widget">
       <div class="widget-title">🏷 タグ</div>
       <div class="tag-cloud">
         {{- range site.Taxonomies.tags.ByCount }}
+        {{- if ge .Count 3 }}
         <a class="tag-item" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}({{ .Count }})</a>
         {{- end }}
+        {{- end }}
       </div>
+      <a class="tag-more-link" href="/tags/">すべてのタグを見る →</a>
     </div>
     {{- end }}
 

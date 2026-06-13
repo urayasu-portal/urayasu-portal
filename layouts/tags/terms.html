@@ -1,0 +1,81 @@
+{{- define "main" }}
+<div class="home-layout">
+  <div class="home-main">
+
+    <div class="post-single">
+      <header class="post-header" style="margin-bottom:24px;">
+        <h1 class="post-title" style="font-size:1.5em;">🏷 タグ一覧</h1>
+        <p style="font-size:0.9em;color:var(--up-muted);margin:6px 0 0;">
+          全 {{ len site.Taxonomies.tags }} 件のタグ。クリックすると関連記事の一覧に移動します。
+        </p>
+      </header>
+
+      {{/* ── 件数の多いタグ (3件以上) ── */}}
+      {{- $popular := slice }}
+      {{- $others  := slice }}
+      {{- range site.Taxonomies.tags.ByCount }}
+        {{- if ge .Count 3 }}
+          {{- $popular = $popular | append . }}
+        {{- else }}
+          {{- $others = $others | append . }}
+        {{- end }}
+      {{- end }}
+
+      {{- if $popular }}
+      <section style="margin-bottom:32px;">
+        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);">よく使われているタグ（3件以上）</h2>
+        <div class="tag-cloud tag-cloud-all">
+          {{- range $popular }}
+          <a class="tag-item tag-item-popular" href="{{ .Page.RelPermalink }}">
+            {{ .Page.Title }}<span class="tag-count">{{ .Count }}</span>
+          </a>
+          {{- end }}
+        </div>
+      </section>
+      {{- end }}
+
+      {{/* ── その他のタグ (1〜2件) ── */}}
+      {{- if $others }}
+      <section>
+        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);">その他のタグ（1〜2件）</h2>
+        <div class="tag-cloud tag-cloud-all">
+          {{- range $others }}
+          <a class="tag-item" href="{{ .Page.RelPermalink }}">
+            {{ .Page.Title }}<span class="tag-count">{{ .Count }}</span>
+          </a>
+          {{- end }}
+        </div>
+      </section>
+      {{- end }}
+
+    </div>
+  </div>
+
+  {{/* サイドバー */}}
+  <aside class="home-sidebar">
+    {{- partial "sidebar-calendar.html" . }}
+
+    <div class="sidebar-widget">
+      <div class="widget-title">📂 カテゴリ</div>
+      <ul class="cat-list">
+        {{- $catClass := dict
+          "開店・閉店" "cat-open" "開店閉店" "cat-open"
+          "ニュース" "cat-news" "イベント" "cat-event"
+          "グルメ・カフェ" "cat-gourmet" "グルメカフェ" "cat-gourmet"
+          "子育て・教育" "cat-edu" "子育て教育" "cat-edu"
+          "スポーツ" "cat-sports" "お知らせ" "cat-notice" }}
+        {{- range site.Taxonomies.categories.ByCount }}
+        {{- $name := .Page.Title }}
+        {{- $cls  := index $catClass $name | default "cat-default" }}
+        <li>
+          <a class="cat-item" href="{{ .Page.RelPermalink }}">
+            <span class="cat-badge cat-badge-sm {{ $cls }}">{{ $name }}</span>
+            <span class="cat-count">{{ .Count }}</span>
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </aside>
+</div>
+{{- end }}
