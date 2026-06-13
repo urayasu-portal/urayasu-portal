@@ -477,6 +477,32 @@ body:not(.list) { --main-width: 1108px; }
 
 .related-posts { margin-top: 32px; }
 
+/* ---------- くらしの便利ガイドへの導線 ---------- */
+.related-guides { margin-top: 32px; }
+.rg-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.rg-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-left: 4px solid var(--up-teal);
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-decoration: none !important;
+  color: var(--up-text) !important;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.rg-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.12); border-left-color: var(--up-sea); }
+.rg-emoji { font-size: 26px; line-height: 1; flex-shrink: 0; }
+.rg-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.rg-title { font-weight: 700; font-size: 14px; line-height: 1.4; }
+.rg-go { font-size: 12px; color: var(--up-muted); }
+@media (max-width: 560px) {
+  .rg-list { grid-template-columns: 1fr; }
+}
+
 /* ---------- お問い合わせフォーム ---------- */
 .contact-form {
   max-width: 560px;

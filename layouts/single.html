@@ -127,12 +127,34 @@
 
     </article>
 
-    {{/* 関連記事 (同カテゴリから最大6件) */}}
+    {{/* 関連記事 (共有タグ数×3＋同カテゴリ×1でスコアリングし、関連度順に最大6件) */}}
     {{- if $cat }}
+    {{- $curTags := .Params.tags | default slice }}
+    {{- $scored := slice }}
+    {{- range $allPosts }}
+      {{- if ne .Permalink $.Permalink }}
+        {{- $shared := 0 }}
+        {{- $pt := .Params.tags | default slice }}
+        {{- range $t := $curTags }}
+          {{- if in $pt $t }}{{ $shared = add $shared 1 }}{{ end }}
+        {{- end }}
+        {{- $sameCat := cond (in .Params.categories $cat) 1 0 }}
+        {{- $score := add (mul $shared 3) $sameCat }}
+        {{- if gt $score 0 }}
+          {{/* key = score を上位桁、投稿日時(Unix秒)を下位桁にした複合ソートキー */}}
+          {{- $key := add (mul $score 10000000000) .Date.Unix }}
+          {{- $scored = $scored | append (dict "p" . "k" $key) }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- $scored = sort $scored "k" "desc" }}
     {{- $related := slice }}
-    {{- range where site.RegularPages "Section" "posts" }}
-      {{- if and (ne .Permalink $.Permalink) (in .Params.categories $cat) }}
-        {{- $related = $related | append . }}
+    {{- $seen := slice }}
+    {{- range $scored }}
+      {{- $pl := .p.Permalink }}
+      {{- if not (in $seen $pl) }}
+        {{- $seen = $seen | append $pl }}
+        {{- $related = $related | append .p }}
       {{- end }}
     {{- end }}
     {{- $related = first 6 $related }}
@@ -163,6 +185,9 @@
     </div>
     {{- end }}
     {{- end }}
+
+    {{/* くらしの便利ガイドへの導線 (posts セクションのみ表示) */}}
+    {{- partial "related-guides.html" . }}
 
   </div>{{/* end home-main */}}
 

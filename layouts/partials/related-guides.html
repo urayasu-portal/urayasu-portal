@@ -1,0 +1,85 @@
+{{- /*
+  ニュース／イベント記事 → 常設「くらしの便利ガイド」への橋渡し。
+  記事のカテゴリ・タグに応じて関連ガイドをスコアリングし、最大2件を表示。
+  一致するガイドが無い場合は、ガイド一覧（ハブ）への導線にフォールバック。
+  posts セクションの記事でのみ表示する。
+*/ -}}
+{{- if eq .Section "posts" }}
+{{- $cat := index .Params.categories 0 | default "" }}
+{{- $tags := .Params.tags | default slice }}
+
+{{- $guides := slice
+  (dict "url" "/guides/sports-teams/" "emoji" "🏉" "title" "浦安3大スポーツチーム観戦ガイド"
+        "cats" (slice "スポーツ")
+        "tags" (slice "スポーツ" "ラグビー" "サッカー" "フットサル" "Fリーグ" "リーグワン" "浦安D-Rocks" "バルドラール浦安" "ブリオベッカ浦安・市川" "運動公園" "試合結果" "入替戦"))
+  (dict "url" "/guides/indoor-playgrounds/" "emoji" "🧸" "title" "子ども向け屋内・公共の遊び場まとめ"
+        "cats" (slice "子育て・教育")
+        "tags" (slice "子育て" "親子" "屋内"))
+  (dict "url" "/guides/parks-playgrounds/" "emoji" "🛝" "title" "公園・遊び場ガイド"
+        "cats" (slice)
+        "tags" (slice "公園" "自然観察" "親子" "運動公園" "水遊び"))
+  (dict "url" "/guides/libraries-public-facilities/" "emoji" "📚" "title" "図書館・公共施設一覧ガイド"
+        "cats" (slice)
+        "tags" (slice "文化会館" "コンサート" "クラシック" "Wave101" "図書館" "公民館" "音楽ホール" "郷土博物館"))
+  (dict "url" "/guides/station-life/" "emoji" "🚉" "title" "駅別生活ガイド"
+        "cats" (slice "開店・閉店" "グルメ・カフェ")
+        "tags" (slice "新浦安" "浦安駅" "舞浜" "アトレ新浦安" "グルメ" "開店" "閉店" "猫実" "行徳"))
+  (dict "url" "/guides/city-hall-procedures/" "emoji" "🏢" "title" "市役所手続き・行政サービスセンターガイド"
+        "cats" (slice)
+        "tags" (slice "行政" "手続き" "マイナンバー" "住民票" "市役所"))
+  (dict "url" "/guides/disaster-prevention/" "emoji" "🛟" "title" "防災・避難所・ハザードマップまとめ"
+        "cats" (slice)
+        "tags" (slice "防災" "地震" "水害" "液状化" "ハザードマップ" "避難所"))
+  (dict "url" "/guides/trash-recycling/" "emoji" "♻️" "title" "ごみ分別・収集日ガイド"
+        "cats" (slice)
+        "tags" (slice "ごみ" "リサイクル" "粗大ごみ" "分別"))
+  (dict "url" "/guides/holiday-night-medical/" "emoji" "🏥" "title" "休日・夜間診療ガイド"
+        "cats" (slice)
+        "tags" (slice "医療" "救急" "診療" "急病" "病院"))
+}}
+
+{{- $matched := slice }}
+{{- range $g := $guides }}
+  {{- $s := 0 }}
+  {{- if in $g.cats $cat }}{{ $s = add $s 2 }}{{ end }}
+  {{- range $t := $tags }}
+    {{- if in $g.tags $t }}{{ $s = add $s 1 }}{{ end }}
+  {{- end }}
+  {{- if gt $s 0 }}
+    {{- $matched = $matched | append (dict "g" $g "s" $s) }}
+  {{- end }}
+{{- end }}
+{{- $matched = sort $matched "s" "desc" }}
+{{- $matched = first 2 $matched }}
+
+<div class="related-guides">
+  <div class="section-head">
+    <h2>📖 くらしに役立つガイド</h2>
+    <a class="section-more" href="/life-guide/">便利ガイド一覧 →</a>
+  </div>
+  {{- if $matched }}
+  <div class="rg-list">
+    {{- range $matched }}
+    {{- $g := .g }}
+    <a class="rg-card" href="{{ $g.url }}">
+      <span class="rg-emoji">{{ $g.emoji }}</span>
+      <span class="rg-body">
+        <span class="rg-title">{{ $g.title }}</span>
+        <span class="rg-go">記事を読む →</span>
+      </span>
+    </a>
+    {{- end }}
+  </div>
+  {{- else }}
+  <div class="rg-list">
+    <a class="rg-card" href="/life-guide/">
+      <span class="rg-emoji">🗂️</span>
+      <span class="rg-body">
+        <span class="rg-title">浦安市くらしの便利ガイド一覧</span>
+        <span class="rg-go">ごみ・防災・医療・子育てなどをまとめてチェック →</span>
+      </span>
+    </a>
+  </div>
+  {{- end }}
+</div>
+{{- end }}
