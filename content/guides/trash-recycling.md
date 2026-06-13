@@ -337,8 +337,9 @@ images: ["/images/og-guides.png"]
   <div style="font-weight:700;font-size:1em;color:#1e2b3a;margin-bottom:8px;">📱 ごみ分別アプリ「クルなび」</div>
   <p style="font-size:0.85em;color:#475569;margin:0 0 14px;line-height:1.6;">収集日カレンダー、分別辞典、出し忘れ防止アラート、市からのお知らせを確認できます。</p>
   <div style="display:flex;gap:8px;flex-wrap:wrap;">
-    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">App Store</a>
-    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">Google Play</a>
+    <a href="https://itunes.apple.com/jp/app/pu-shigomi-fen-bieapuri-kurunabi/id915229339?mt=8" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">🍎 App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=jp.gomisuke.app.Gomisuke0004" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">🤖 Google Play</a>
+    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1005796.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">アプリの詳細（市公式）</a>
   </div>
 </div>
 
