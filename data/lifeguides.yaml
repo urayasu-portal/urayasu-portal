@@ -106,7 +106,7 @@ categories:
         desc: "子ども連れで行きやすい公園や遊び場をエリア別に紹介。"
         icon: "🛝"
         url: "/guides/parks-playgrounds/"
-        published: false
+        published: true
       - title: "浦安市の図書館・公共施設一覧ガイド"
         desc: "図書館、公民館、文化施設、体育施設などを目的別に整理。"
         icon: "📚"
