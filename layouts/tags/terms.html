@@ -10,37 +10,51 @@
         </p>
       </header>
 
-      {{/* ── 件数の多いタグ (3件以上) ── */}}
-      {{- $popular := slice }}
-      {{- $others  := slice }}
+      {{/* ── タグ名 → Hugo タクソノミーオブジェクトのマップを作る ── */}}
+      {{- $tagMap := dict }}
       {{- range site.Taxonomies.tags.ByCount }}
-        {{- if ge .Count 3 }}
-          {{- $popular = $popular | append . }}
-        {{- else }}
-          {{- $others = $others | append . }}
-        {{- end }}
+        {{- $tagMap = merge $tagMap (dict .Page.Title .) }}
       {{- end }}
 
-      {{- if $popular }}
+      {{/* ── グループ表示 ── */}}
+      {{- $usedTags := slice }}
+      {{- range hugo.Data.tagGroups }}
+      {{- $group := . }}
+      {{- $groupTags := slice }}
+      {{- range $group.tags }}
+        {{- $t := index $tagMap . }}
+        {{- if $t }}
+          {{- $groupTags = $groupTags | append $t }}
+          {{- $usedTags = $usedTags | append $t.Page.Title }}
+        {{- end }}
+      {{- end }}
+      {{- if $groupTags }}
       <section style="margin-bottom:32px;">
-        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);">よく使われているタグ（3件以上）</h2>
+        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);">{{ $group.name }}</h2>
         <div class="tag-cloud tag-cloud-all">
-          {{- range $popular }}
-          <a class="tag-item tag-item-popular" href="{{ .Page.RelPermalink }}">
+          {{- range $groupTags }}
+          <a class="tag-item{{- if ge .Count 3 }} tag-item-popular{{- end }}" href="{{ .Page.RelPermalink }}">
             {{ .Page.Title }}<span class="tag-count">{{ .Count }}</span>
           </a>
           {{- end }}
         </div>
       </section>
       {{- end }}
+      {{- end }}
 
-      {{/* ── その他のタグ (1〜2件) ── */}}
-      {{- if $others }}
-      <section>
-        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);">その他のタグ（1〜2件）</h2>
+      {{/* ── どのグループにも属さないタグ (その他) ── */}}
+      {{- $otherTags := slice }}
+      {{- range site.Taxonomies.tags.ByCount }}
+        {{- if not (in $usedTags .Page.Title) }}
+          {{- $otherTags = $otherTags | append . }}
+        {{- end }}
+      {{- end }}
+      {{- if $otherTags }}
+      <section style="margin-bottom:32px;">
+        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);">🔖 その他</h2>
         <div class="tag-cloud tag-cloud-all">
-          {{- range $others }}
-          <a class="tag-item" href="{{ .Page.RelPermalink }}">
+          {{- range $otherTags }}
+          <a class="tag-item{{- if ge .Count 3 }} tag-item-popular{{- end }}" href="{{ .Page.RelPermalink }}">
             {{ .Page.Title }}<span class="tag-count">{{ .Count }}</span>
           </a>
           {{- end }}
