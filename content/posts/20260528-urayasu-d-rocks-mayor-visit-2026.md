@@ -1,7 +1,7 @@
 ﻿---
 title: "【浦安市】浦安D-Rocksが市長を訪問へ"
 date: 2026-05-28T07:00:00+09:00
-slug: "urayasu-d-rocks-mayor-visit-2026"
+slug: "urayasu-d-rocks-mayor-visit-preview-2026"
 categories:
   - "スポーツ"
 tags:
