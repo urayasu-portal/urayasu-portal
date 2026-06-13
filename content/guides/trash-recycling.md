@@ -132,7 +132,7 @@ description: "浦安市でごみを出すときに必要な、町名別の収集
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#e8f4fb;color:#1a5c8a;font-weight:700;">資源：火ほか</span>
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#fff0ed;color:#ab3e30;font-weight:700;">不燃・有害：第1・3火</span>
   </div>
-  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
+  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
 </div>
 
 <div style="border:1px solid #dde6f0;border-radius:12px;background:#fff;padding:18px;position:relative;overflow:hidden;">
@@ -144,7 +144,7 @@ description: "浦安市でごみを出すときに必要な、町名別の収集
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#e8f4fb;color:#1a5c8a;font-weight:700;">資源：木ほか</span>
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#fff0ed;color:#ab3e30;font-weight:700;">不燃・有害：第1・3木</span>
   </div>
-  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
+  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
 </div>
 
 <div style="border:1px solid #dde6f0;border-radius:12px;background:#fff;padding:18px;position:relative;overflow:hidden;">
@@ -156,25 +156,25 @@ description: "浦安市でごみを出すときに必要な、町名別の収集
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#e8f4fb;color:#1a5c8a;font-weight:700;">資源：水ほか</span>
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#fff0ed;color:#ab3e30;font-weight:700;">不燃・有害：第1・3水</span>
   </div>
-  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
+  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
 </div>
 
 <div style="border:1px solid #dde6f0;border-radius:12px;background:#fff;padding:18px;position:relative;overflow:hidden;">
   <div style="position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,#0e9e8e,#4cae74);"></div>
-  <div style="font-weight:700;font-size:1em;color:#1e2b3a;margin:4px 0 4px;">富岡・今川・弁天・高洲・港・千鳥ほか</div>
+  <div style="font-weight:700;font-size:1em;color:#1e2b3a;margin:4px 0 4px;">富岡・今川・弁天・高洲・鉄鋼通り一丁目・二丁目・港・千鳥</div>
   <div style="font-size:0.8em;color:#6b7a8d;margin-bottom:10px;">新町・工業ゾーンを含むエリア</div>
   <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;">
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#e7f7f3;color:#0f806c;font-weight:700;">燃やせる：火・木・土</span>
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#e8f4fb;color:#1a5c8a;font-weight:700;">資源：金ほか</span>
     <span style="font-size:0.78em;border-radius:999px;padding:4px 9px;background:#fff0ed;color:#ab3e30;font-weight:700;">不燃・有害：第1・3金</span>
   </div>
-  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
+  <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#f0faf7;border:1px solid #c0e8d8;border-radius:6px;padding:7px 12px;font-size:0.8em;font-weight:700;color:#0f806c;text-decoration:none;">📅 公式カレンダーを見る</a>
 </div>
 
 </div>
 
 <div style="background:#fff8e8;border-left:3px solid #f0a500;border-radius:0 6px 6px 0;padding:10px 14px;font-size:0.83em;color:#6b7a8d;">
-  収集日の詳細・年度カレンダーは<a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="color:#0e9e8e;font-weight:600;">浦安市公式サイト</a>でご確認ください。
+  収集日の詳細・年度カレンダーは<a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="color:#0e9e8e;font-weight:600;">浦安市公式サイト</a>でご確認ください。
 </div>
 
 ---
@@ -327,8 +327,8 @@ description: "浦安市でごみを出すときに必要な、町名別の収集
   <div style="font-weight:700;font-size:1em;color:#1e2b3a;margin-bottom:8px;">📱 ごみ分別アプリ「クルなび」</div>
   <p style="font-size:0.85em;color:#475569;margin:0 0 14px;line-height:1.6;">収集日カレンダー、分別辞典、出し忘れ防止アラート、市からのお知らせを確認できます。</p>
   <div style="display:flex;gap:8px;flex-wrap:wrap;">
-    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">App Store</a>
-    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">Google Play</a>
+    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">App Store</a>
+    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #c0e8d8;color:#0f806c;padding:8px 14px;border-radius:999px;font-size:0.82em;font-weight:700;text-decoration:none;">Google Play</a>
   </div>
 </div>
 
@@ -559,7 +559,7 @@ description: "浦安市でごみを出すときに必要な、町名別の収集
 <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:18px;margin-bottom:8px;">
   <div style="font-weight:700;color:#1e2b3a;margin-bottom:12px;">主な公式リンク</div>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;">
-    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002008.html" target="_blank" rel="noopener" style="background:#fff;border:1px solid #dbeafe;border-radius:8px;padding:10px 12px;font-weight:700;color:#1d4ed8;font-size:0.83em;text-decoration:none;display:block;">📅 ごみ収集カレンダー</a>
+    <a href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener" style="background:#fff;border:1px solid #dbeafe;border-radius:8px;padding:10px 12px;font-weight:700;color:#1d4ed8;font-size:0.83em;text-decoration:none;display:block;">📅 ごみ収集カレンダー</a>
     <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002009.html" target="_blank" rel="noopener" style="background:#fff;border:1px solid #dbeafe;border-radius:8px;padding:10px 12px;font-weight:700;color:#1d4ed8;font-size:0.83em;text-decoration:none;display:block;">🔍 ごみ分別辞典</a>
     <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002012.html" target="_blank" rel="noopener" style="background:#fff;border:1px solid #dbeafe;border-radius:8px;padding:10px 12px;font-weight:700;color:#1d4ed8;font-size:0.83em;text-decoration:none;display:block;">🛋️ 粗大ごみの申し込み</a>
     <a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002013.html" target="_blank" rel="noopener" style="background:#fff;border:1px solid #dbeafe;border-radius:8px;padding:10px 12px;font-weight:700;color:#1d4ed8;font-size:0.83em;text-decoration:none;display:block;">🚗 クリーンセンター持ち込み</a>

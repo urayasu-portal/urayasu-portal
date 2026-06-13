@@ -205,7 +205,7 @@ description: "浦安市で住民票・戸籍・印鑑証明・転入転出・マ
     <div style="font-weight:700;color:#1e2b3a;margin-top:10px;margin-bottom:2px;">電話</div>
     <div style="font-size:1.15em;font-weight:900;color:#0e9e8e;">047-354-2721</div>
     <div style="font-weight:700;color:#1e2b3a;margin-top:10px;margin-bottom:2px;">開所時間</div>
-    <div>平日 8:30〜17:00</div>
+    <div>平日 8:30〜17:00<br><span style="font-size:0.9em;color:#6b7a8d;">土日・祝日・年末年始（12/29〜1/3）は閉所</span></div>
   </div>
 </div>
 
@@ -220,7 +220,7 @@ description: "浦安市で住民票・戸籍・印鑑証明・転入転出・マ
     <div style="font-weight:700;color:#1e2b3a;margin-top:10px;margin-bottom:2px;">電話</div>
     <div style="font-size:1.15em;font-weight:900;color:#0e9e8e;">047-390-6276</div>
     <div style="font-weight:700;color:#1e2b3a;margin-top:10px;margin-bottom:2px;">開所時間</div>
-    <div>平日 8:30〜17:00</div>
+    <div>平日 8:30〜17:00<br><span style="font-size:0.9em;color:#6b7a8d;">土日・祝日・年末年始（12/29〜1/3）は閉所</span></div>
   </div>
 </div>
 
@@ -235,7 +235,7 @@ description: "浦安市で住民票・戸籍・印鑑証明・転入転出・マ
     <div style="font-weight:700;color:#1e2b3a;margin-top:10px;margin-bottom:2px;">電話</div>
     <div style="font-size:1.15em;font-weight:900;color:#0e9e8e;">047-390-6396</div>
     <div style="font-weight:700;color:#1e2b3a;margin-top:10px;margin-bottom:2px;">開所時間</div>
-    <div>平日 8:30〜17:00</div>
+    <div>平日 8:30〜17:00<br><span style="font-size:0.9em;color:#6b7a8d;">土日・祝日・年末年始（12/29〜1/3）は閉所</span></div>
   </div>
 </div>
 
