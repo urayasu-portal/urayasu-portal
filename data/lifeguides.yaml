@@ -43,8 +43,8 @@ popular:
     url: "/guides/holiday-night-medical/"
     updated: "2026年6月"
     published: true
-  - title: "浦安市のごみ分別・収集日・粗大ごみガイド"
-    desc: "ごみの出し方、収集日、粗大ごみの申し込み先を整理。"
+  - title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド"
+    desc: "ごみの出し方、町名別収集日カレンダー、粗大ごみの申し込み先を整理。"
     icon: "🗑️"
     url: "/guides/trash-recycling/"
     updated: "2026年6月"
@@ -88,7 +88,7 @@ categories:
   - name: "暮らしの手続き"
     id: "tetsuzuki"
     guides:
-      - title: "浦安市のごみ分別・収集日・粗大ごみガイド"
+      - title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド"
         desc: "分別、収集日、粗大ごみ、持ち込みなどをわかりやすく整理。"
         icon: "🗑️"
         url: "/guides/trash-recycling/"

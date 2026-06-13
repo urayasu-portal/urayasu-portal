@@ -296,4 +296,14 @@ faq:
 <div><h3>地域情報を募集しています</h3><p>浦安・新浦安・舞浜周辺のスポーツ、イベント、地域情報をご存じの方は、ぜひ情報提供フォームからお知らせください。</p></div>
 </div>
 
+<h2 class="sg-h2" id="related">関連ガイド</h2>
+<p class="sg-lead">観戦前後の浦安お出かけ情報にご活用ください。</p>
+
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0">
+<a href="/guides/parks-playgrounds/" style="display:block;border:1px solid #dfe8e6;border-radius:12px;background:#fff;padding:14px;text-align:center;color:#31454b;font-weight:900;font-size:14px;text-decoration:none;">🛝 浦安市の公園・遊び場ガイド<br>子どもと行きたい公園まとめ</a>
+<a href="/guides/indoor-playgrounds/" style="display:block;border:1px solid #dfe8e6;border-radius:12px;background:#fff;padding:14px;text-align:center;color:#31454b;font-weight:900;font-size:14px;text-decoration:none;">🧸 屋内・公共の遊び場まとめ<br>雨の日・暑い日のおでかけに</a>
+<a href="/guides/station-life/" style="display:block;border:1px solid #dfe8e6;border-radius:12px;background:#fff;padding:14px;text-align:center;color:#31454b;font-weight:900;font-size:14px;text-decoration:none;">🚉 駅別生活ガイド<br>浦安・新浦安・舞浜エリア比較</a>
+<a href="/life-guide/" style="display:block;border:1px solid #dfe8e6;border-radius:12px;background:#fff;padding:14px;text-align:center;color:#31454b;font-weight:900;font-size:14px;text-decoration:none;">📖 浦安市くらしの便利ガイド<br>暮らしに役立つ情報まとめ</a>
+</div>
+
 <div class="sg-tags"><span>浦安D-Rocks</span><span>ブリオベッカ浦安・市川</span><span>バルドラール浦安</span><span>スポーツ観戦</span><span>子連れ観戦</span><span>舞浜</span><span>浦安市運動公園</span></div>
