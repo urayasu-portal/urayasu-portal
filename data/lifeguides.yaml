@@ -111,7 +111,7 @@ categories:
         desc: "図書館、公民館、文化施設、体育施設などを目的別に整理。"
         icon: "📚"
         url: "/guides/libraries-public-facilities/"
-        published: false
+        published: true
 
   - name: "まちを楽しむ"
     id: "enjoy"
