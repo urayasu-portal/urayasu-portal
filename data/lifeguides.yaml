@@ -97,7 +97,7 @@ categories:
         desc: "住民票、証明書、引っ越し関連などの窓口情報を確認。"
         icon: "🏢"
         url: "/guides/city-hall-procedures/"
-        published: false
+        published: true
 
   - name: "おでかけ・公共施設"
     id: "odekake"
