@@ -125,7 +125,7 @@ categories:
         desc: "駅ごとの買い物、交通、雰囲気、暮らしやすさを比較。"
         icon: "🚉"
         url: "/guides/station-life/"
-        published: false
+        published: true
 
 situations:
   - text: "子どもが急に熱を出した"
