@@ -1,0 +1,6 @@
+# Google AdSense
+# AdSense承認後、以下の行をGoogleから発行されたパブリッシャーIDで更新してください。
+# 例: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# 現在は承認申請中のため、IDが発行されたら下記の行を追記・有効化します。
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
