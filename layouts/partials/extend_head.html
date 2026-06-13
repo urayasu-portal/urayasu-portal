@@ -82,3 +82,5 @@
 {{ $lb | jsonify (dict "indent" "  ") | safeJS }}
 </script>
 {{- end }}
+
+{{- partial "faq-jsonld.html" . }}

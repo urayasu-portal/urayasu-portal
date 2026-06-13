@@ -1,0 +1,23 @@
+{{- /*
+  FAQ 構造化データ (schema.org/FAQPage)
+  フロントマターに faq: リストがある記事に JSON-LD を出力。
+  各項目: { q: "質問文", a: "回答文" }
+*/ -}}
+{{- with .Params.faq }}
+  {{- $items := slice }}
+  {{- range . }}
+    {{- $items = $items | append (dict
+        "@type" "Question"
+        "name" .q
+        "acceptedAnswer" (dict
+            "@type" "Answer"
+            "text" .a)) }}
+  {{- end }}
+  {{- $schema := dict
+      "@context" "https://schema.org"
+      "@type" "FAQPage"
+      "mainEntity" $items }}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
