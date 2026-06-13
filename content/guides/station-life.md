@@ -136,8 +136,8 @@ images: ["/images/og-guides.png"]
 <p class="sl-lead">知りたい情報から、該当する駅・エリアへ進めます。</p>
 
 <div class="sl-jump">
-<a href="#urayasu">都心通勤を重視したい<span>浦安駅・新浦安駅を比較</span></a>
-<a href="#urayasu">買い物を便利にしたい<span>浦安駅・新浦安駅が中心</span></a>
+<a href="#compare">都心通勤を重視したい<span>交通・通勤比較表で確認</span></a>
+<a href="#shinurayasu">買い物を便利にしたい<span>新浦安・浦安の商業施設情報</span></a>
 <a href="#shinurayasu">子育て環境を見たい<span>学校区・公園・医療を確認</span></a>
 <a href="#maihama">公園・海辺で過ごしたい<span>新町・舞浜方面もチェック</span></a>
 <a href="#urayasu">飲食店を楽しみたい<span>浦安駅周辺に注目</span></a>

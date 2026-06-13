@@ -115,7 +115,8 @@ images: ["/images/og-guides.png"]
 <h3>浦安D-Rocks</h3>
 <p style="font-size:14px;color:#4b5d64;margin:0 0 4px">迫力あるコンタクト、スピード感、スタジアム演出を楽しみたい人向け。</p>
 <ul class="sg-meta">
-<li><b>主な時期</b><span>冬〜春</span></li>
+<li><b>リーグ</b><span>NTTジャパンラグビー リーグワン</span></li>
+<li><b>主な時期</b><span>冬〜春（1〜5月ごろ）</span></li>
 <li><b>観戦タイプ</b><span>屋外中心</span></li>
 <li><b>おすすめ</b><span>迫力重視</span></li>
 </ul>
@@ -125,7 +126,8 @@ images: ["/images/og-guides.png"]
 <h3>ブリオベッカ浦安・市川</h3>
 <p style="font-size:14px;color:#4b5d64;margin:0 0 4px">地域密着感が強く、親子で気軽に屋外スポーツ観戦を楽しみたい人向け。</p>
 <ul class="sg-meta">
-<li><b>主な時期</b><span>春〜秋</span></li>
+<li><b>リーグ</b><span>JFL（日本フットボールリーグ）</span></li>
+<li><b>主な時期</b><span>春〜秋（3〜11月ごろ）</span></li>
 <li><b>観戦タイプ</b><span>屋外中心</span></li>
 <li><b>おすすめ</b><span>家族観戦</span></li>
 </ul>
@@ -135,7 +137,8 @@ images: ["/images/og-guides.png"]
 <h3>バルドラール浦安</h3>
 <p style="font-size:14px;color:#4b5d64;margin:0 0 4px">屋内アリーナで、天候に左右されにくく、スピーディーな展開を楽しめます。</p>
 <ul class="sg-meta">
-<li><b>主な時期</b><span>夏〜冬</span></li>
+<li><b>リーグ</b><span>Fリーグ（フットサル最高峰）</span></li>
+<li><b>主な時期</b><span>夏〜冬（8〜3月ごろ）</span></li>
 <li><b>観戦タイプ</b><span>屋内中心</span></li>
 <li><b>おすすめ</b><span>初観戦・雨の日</span></li>
 </ul>
@@ -222,20 +225,20 @@ images: ["/images/og-guides.png"]
 
 <div class="sg-venues">
 <div class="sg-venue">
-<h3>🏉 浦安Dパーク</h3>
-<p>浦安D-Rocksの拠点。公開練習やイベント、試合関連情報は公式サイトで確認してください。</p>
+<h3>🏉 浦安D-Rocks ホームゲーム会場</h3>
+<p>リーグワンの試合は試合ごとに会場が変わる場合があります。<strong>練習拠点・浦安Dパーク</strong>（千葉県浦安市北栄1-1-1）はファン向けイベントや公開練習の会場として使用されます。試合会場・日程は公式サイトで必ずご確認ください。</p>
 </div>
 <div class="sg-venue">
 <h3>⚽ ブリオベッカ浦安競技場</h3>
-<p>浦安市運動公園内の競技場。舞浜駅方面からのアクセスや駐車場情報を公式サイトで確認。</p>
+<p><strong>浦安市運動公園 陸上競技場</strong>（千葉県浦安市舞浜2-27）がホーム会場の目安です。JR京葉線・舞浜駅南口から徒歩約15〜18分。駐車場あり（台数は公式確認）。試合ごとに会場が変わる場合もあります。</p>
 </div>
 <div class="sg-venue">
 <h3>🥅 バルドラール浦安アリーナ</h3>
-<p>屋内フットサル観戦の中心会場。天候に左右されにくく、子連れにも検討しやすいです。</p>
+<p><strong>浦安市運動公園 総合体育館</strong>（千葉県浦安市舞浜2-27）がホームアリーナ。JR京葉線・舞浜駅南口から徒歩約15〜18分。屋内のため天候不問。最寄りの駐車場も公式で確認を。</p>
 </div>
 <div class="sg-venue">
 <h3>🗺️ その他の開催会場</h3>
-<p>リーグ戦・カップ戦では市外会場や中立地開催もあります。試合ごとの会場確認が必須です。</p>
+<p>リーグ戦・カップ戦では市外会場や中立地開催もあります。試合ごとに会場が指定されるため、観戦前に各チーム公式サイト・公式SNSで最新情報をご確認ください。</p>
 </div>
 </div>
 
