@@ -1,0 +1,70 @@
+{{- /*
+  イベント構造化データ (schema.org/Event)
+  フロントマターに eventDate がある記事に JSON-LD を出力。
+  推奨フィールド:
+    eventDate       : 開催日 (required)
+    eventEndDate    : 終了日 (endDate 警告対策)
+    eventLocation   : 会場名
+    eventFee        : 料金 (例: "無料", "500円")
+    eventUrl        : 公式URL
+    performer       : 出演者・チーム名 (文字列 or リスト)
+    organizer       : 主催者名
+*/ -}}
+{{- if and (eq .Section "posts") .Params.eventDate }}
+
+{{- $name   := .Title | plainify }}
+{{- $start  := .Params.eventDate }}
+{{- $end    := .Params.eventEndDate | default .Params.eventDate }}
+{{- $loc    := .Params.eventLocation | default "浦安市" }}
+{{- $desc   := .Summary | plainify | truncate 120 }}
+{{- with .Description }}{{- $desc = . | plainify }}{{- end }}
+{{- $img    := partial "cover-image.html" (dict "page" . "size" "full") }}
+{{- $url    := .Permalink }}
+{{- $evUrl  := .Params.eventUrl | default .Permalink }}
+{{- $fee    := .Params.eventFee | default "詳細は公式情報をご確認ください" }}
+{{- $org    := .Params.organizer | default "浦安市" }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "{{ $name }}",
+  "startDate": "{{ $start }}",
+  "endDate": "{{ $end }}",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "{{ $loc }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "浦安市",
+      "addressRegion": "千葉県",
+      "addressCountry": "JP"
+    }
+  },
+  "description": "{{ $desc }}",
+  {{- if $img }}
+  "image": "{{ $img | absURL }}",
+  {{- end }}
+  "url": "{{ $url }}",
+  "offers": {
+    "@type": "Offer",
+    "name": "{{ $fee }}",
+    "url": "{{ $evUrl }}",
+    "availability": "https://schema.org/InStock"
+  },
+  {{- with .Params.performer }}
+  "performer": {{ if (reflect.IsSlice .) }}[
+    {{- range $i, $p := . }}{{ if $i }},{{ end }}
+    {"@type": "PerformingGroup", "name": "{{ $p }}"}
+    {{- end }}
+  ],{{ else }}{"@type": "PerformingGroup", "name": "{{ . }}"},{{ end }}
+  {{- end }}
+  "organizer": {
+    "@type": "Organization",
+    "name": "{{ $org }}"
+  }
+}
+</script>
+{{- end }}
