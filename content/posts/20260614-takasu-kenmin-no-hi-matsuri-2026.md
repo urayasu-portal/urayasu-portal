@@ -3,7 +3,7 @@ title: "【浦安市】高洲児童センターで県民の日まつり"
 date: 2026-06-14T07:00:00+09:00
 slug: "takasu-kenmin-no-hi-matsuri-2026"
 categories:
-  - "子育て・教育"
+  - "イベント"
 tags:
   - "浦安市"
   - "高洲"
