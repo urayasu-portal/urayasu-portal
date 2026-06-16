@@ -3,7 +3,7 @@ title: "【浦安市】浦安中で避難所運営体験を実施"
 date: 2026-06-17T07:00:00+09:00
 slug: "urayasu-junior-high-school-shelter-training"
 categories:
-  - "ニュース・事件事故"
+  - "ニュース"
 tags:
   - "浦安市"
   - "浦安中学校"
