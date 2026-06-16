@@ -1,0 +1,157 @@
+{{- define "main" }}
+
+{{- $hotels := hugo.Data.hotels }}
+
+{{/* ────────────────────────────────────────
+     セクションヘッド
+     ──────────────────────────────────────── */}}
+<div class="tg-hotels-header">
+  <p class="tg-hero-eyebrow">旅行ガイド › ホテル</p>
+  <h1 class="tg-hotels-title">浦安・舞浜エリアのホテルガイド</h1>
+  <p class="tg-hotels-lead">東京ディズニーリゾート周辺の浦安・舞浜エリアには、TDR直営から格安ビジネスホテルまで全40軒のホテルがあります。シーン別比較記事と施設一覧で、あなたに合った一軒を見つけましょう。</p>
+</div>
+
+{{/* ────────────────────────────────────────
+     シーン別ピラー記事
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>シーン別に選ぶ</h2>
+</div>
+<div class="tg-scene-grid">
+
+  <a class="tg-scene-card" href="/travel-guide/hotels/kids/">
+    <div class="tg-scene-band tg-scene-band-kids">👶</div>
+    <div class="tg-scene-body">
+      <h3>子連れ向け徹底比較</h3>
+      <p>大浴場・広い部屋・館内コンビニ・パークへの近さ。子連れ旅で本当に大切な5つの軸で比較。</p>
+      <p class="tg-scene-go">記事を読む →</p>
+    </div>
+  </a>
+
+  <a class="tg-scene-card" href="/travel-guide/hotels/budget/">
+    <div class="tg-scene-band tg-scene-band-budget">💰</div>
+    <div class="tg-scene-body">
+      <h3>格安ホテル徹底比較</h3>
+      <p>2名1万円前後〜。「安い宿には理由がある」と正直に伝えつつ、コスパ最強の一軒を紹介。</p>
+      <p class="tg-scene-go">記事を読む →</p>
+    </div>
+  </a>
+
+  <a class="tg-scene-card" href="/travel-guide/hotels/access/">
+    <div class="tg-scene-band tg-scene-band-access">🚃</div>
+    <div class="tg-scene-body">
+      <h3>アクセス完全比較</h3>
+      <p>パーク・JR駅・空港・都心への行きやすさを4軸で整理。地元ならではの盲点情報も。</p>
+      <p class="tg-scene-go">記事を読む →</p>
+    </div>
+  </a>
+
+</div>
+
+{{/* ────────────────────────────────────────
+     エリア早わかり
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>エリア早わかり</h2>
+</div>
+<div class="tg-area-grid">
+  {{- range $hotels.areas }}
+  <div class="tg-area-card">
+    <p class="tg-area-label">エリア {{ .tag }}</p>
+    <p class="tg-area-name">{{ .name }}</p>
+    <p class="tg-area-count">{{ .count }}<span> 軒</span></p>
+    <p class="tg-area-desc">{{ .note }}</p>
+  </div>
+  {{- end }}
+</div>
+
+{{/* ────────────────────────────────────────
+     価格帯ピラミッド
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>価格帯ピラミッド</h2>
+  <span style="font-size:11px;color:var(--up-muted);">2名1室・通常期の目安</span>
+</div>
+<div class="tg-pyramid-wrap">
+  <div class="tg-pyramid">
+    <div class="tg-pyr-row">
+      <div class="tg-pyr-bar" style="background:#a52020;">直営（ラグジュアリー） <span style="margin-left:auto;font-size:0.78rem;">¥80,000〜</span></div>
+    </div>
+    <div class="tg-pyr-row">
+      <div class="tg-pyr-bar" style="background:#c05a10;">オフィシャルホテル <span style="margin-left:auto;font-size:0.78rem;">¥30,000〜</span></div>
+    </div>
+    <div class="tg-pyr-row">
+      <div class="tg-pyr-bar" style="background:var(--up-sea);">パートナーホテル <span style="margin-left:auto;font-size:0.78rem;">¥15,000〜</span></div>
+    </div>
+    <div class="tg-pyr-row">
+      <div class="tg-pyr-bar" style="background:#2a7a9a;">一般ホテル（上） <span style="margin-left:auto;font-size:0.78rem;">¥10,000〜</span></div>
+    </div>
+    <div class="tg-pyr-row">
+      <div class="tg-pyr-bar" style="background:var(--up-teal);">一般ホテル（格安） <span style="margin-left:auto;font-size:0.78rem;">〜¥10,000台</span></div>
+    </div>
+  </div>
+  <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:4px;">※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします</p>
+</div>
+
+{{/* ────────────────────────────────────────
+     全施設一覧表
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>全施設一覧</h2>
+</div>
+<div style="background:#fff8e8;border-left:4px solid #f0a500;border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:18px;font-size:0.84em;color:#5e6f7e;line-height:1.7;">
+  <strong>⚠️ 料金・施設情報について</strong>: 価格帯は2名1室・通常期の目安です。繁忙期は大きく変動します。最新料金は各予約サイトでご確認ください。
+</div>
+<div class="tg-hotel-table-wrap">
+  <table class="tg-hotel-table">
+    <thead>
+      <tr>
+        <th>施設名</th>
+        <th>エリア</th>
+        <th>区分</th>
+        <th>価格帯目安</th>
+        <th>特徴メモ</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $hotels.areas }}
+      {{- $areaTag := .tag }}
+      {{- $areaName := .name }}
+      {{- range .hotels }}
+      <tr{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
+        <td>
+          {{- if and .individual_page (eq .policy "normal") }}
+          <a href="/travel-guide/hotels/{{ .slug }}/">{{ .name }}</a>
+          {{- else }}
+          {{ .name }}
+          {{- end }}
+          {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
+        </td>
+        <td><span class="tg-area-tag tg-area-{{ $areaTag | lower }}">{{ $areaTag }}</span> {{ $areaName }}</td>
+        <td style="font-size:0.82em;">{{ .category }}</td>
+        <td style="white-space:nowrap;">
+          {{- if .price_guide }}{{ .price_guide }}{{- else }}&mdash;{{- end }}
+        </td>
+        <td style="font-size:0.82em;color:var(--up-muted);">
+          {{- if .feature }}{{ .feature }}{{- end }}
+        </td>
+      </tr>
+      {{- end }}
+      {{- end }}
+    </tbody>
+  </table>
+  <p style="font-size:0.8em;color:var(--up-muted);margin-top:8px;">※ 印の施設は名称・エリア・カテゴリのみ掲載しています。</p>
+</div>
+
+{{/* ────────────────────────────────────────
+     ナビゲーション
+     ──────────────────────────────────────── */}}
+<div class="tg-cross-link" style="margin-top:32px;">
+  <div>
+    <h3>浦安市民向けの生活情報はこちら</h3>
+    <p>子育て・医療・ごみ・防災など、浦安に住む人向けの保存版ガイドも公開しています。</p>
+  </div>
+  <a class="tg-cross-btn" href="/life-guide/">くらしの便利ガイドへ →</a>
+</div>
+
+{{- end }}

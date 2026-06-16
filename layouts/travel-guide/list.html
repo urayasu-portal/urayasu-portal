@@ -1,0 +1,157 @@
+{{- define "main" }}
+
+{{- $allPosts := where site.RegularPages "Section" "posts" }}
+
+{{/* ────────────────────────────────────────
+     ヒーロー
+     ──────────────────────────────────────── */}}
+<div class="tg-hero">
+  <p class="tg-hero-eyebrow">観光客向け ガイド</p>
+  <h1>浦安・舞浜<br>旅行ガイド</h1>
+  <p class="tg-hero-lead">東京ディズニーリゾートへの旅を地元メディアがサポート。市内40軒のホテル選びから、エリア別の観光・グルメ・アクセス情報まで、実情を踏まえて紹介します。</p>
+  <div class="tg-hero-stats">
+    <div class="stat">
+      <span class="stat-num">40</span>
+      <span class="stat-label">市内ホテル数</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">4</span>
+      <span class="stat-label">エリア区分</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">3</span>
+      <span class="stat-label">シーン別ガイド</span>
+    </div>
+  </div>
+</div>
+
+{{/* ────────────────────────────────────────
+     テーマカードグリッド
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>テーマから探す</h2>
+</div>
+<div class="tg-theme-grid">
+
+  {{/* メインカード: ホテル（公開中） */}}
+  <a class="tg-theme-card" href="/travel-guide/hotels/">
+    <div class="tg-card-band tg-card-band-hotels">
+      <span class="tg-card-tag">公開中</span>
+    </div>
+    <div class="tg-card-body">
+      <h2>🏨 ホテルガイド</h2>
+      <p>市内全40軒をエリア・価格帯・シーン別に整理。子連れ・格安・アクセス重視の3つのシーン別比較記事と施設一覧。</p>
+      <p class="tg-card-go">ホテルを比較する →</p>
+    </div>
+  </a>
+
+  {{/* サブカード: 準備中 */}}
+  <div class="tg-cards-mini">
+    <span class="tg-theme-card tg-soon">
+      <div class="tg-card-band" style="background:linear-gradient(135deg,#a0aab8,#8090a0);">
+        <span class="tg-card-tag">準備中</span>
+      </div>
+      <div class="tg-card-body">
+        <h3>🗺️ 観光ガイド</h3>
+        <p>舞浜・浦安・新浦安エリアの観光スポット、テーマパーク周辺の過ごし方。</p>
+      </div>
+    </span>
+
+    <span class="tg-theme-card tg-soon">
+      <div class="tg-card-band" style="background:linear-gradient(135deg,#a0aab8,#8090a0);">
+        <span class="tg-card-tag">準備中</span>
+      </div>
+      <div class="tg-card-body">
+        <h3>🍜 グルメ・お土産</h3>
+        <p>地元のおすすめランチ・カフェ・お土産スポット。</p>
+      </div>
+    </span>
+
+    <span class="tg-theme-card tg-soon">
+      <div class="tg-card-band" style="background:linear-gradient(135deg,#a0aab8,#8090a0);">
+        <span class="tg-card-tag">準備中</span>
+      </div>
+      <div class="tg-card-body">
+        <h3>🚃 アクセスガイド</h3>
+        <p>羽田・成田空港、東京駅から浦安・舞浜への行き方まとめ。</p>
+      </div>
+    </span>
+  </div>
+
+</div>
+
+{{/* ────────────────────────────────────────
+     地元メディアの強み
+     ──────────────────────────────────────── */}}
+<div class="section-head" style="margin-top:8px;">
+  <h2>地元メディアが作る旅行ガイド</h2>
+</div>
+<div class="tg-why">
+  <div class="tg-why-item">
+    <h3><span class="tg-why-icon">40</span>全40軒を網羅</h3>
+    <p>TDR直営からビジネスホテルまで、浦安市内全40軒のホテルデータを収集。「この宿に関する情報がない」を解消します。</p>
+  </div>
+  <div class="tg-why-item">
+    <h3><span class="tg-why-icon">📍</span>現地情報を重視</h3>
+    <p>シャトルの混雑時間、近くのコンビニ、リムジンバスの停車有無など、現地を知る視点で書いています。</p>
+  </div>
+  <div class="tg-why-item">
+    <h3><span class="tg-why-icon">✓</span>正直な評価</h3>
+    <p>「おすすめしない人」も明示するなど、すべてのホテルを均等に持ち上げない正直な視点を心がけています。</p>
+  </div>
+</div>
+
+{{/* ────────────────────────────────────────
+     便利ガイドへのクロスリンク
+     ──────────────────────────────────────── */}}
+<div class="tg-cross-link">
+  <div>
+    <h3>浦安市民向けの生活情報はこちら</h3>
+    <p>子育て・医療・ごみ・防災・公共施設など、浦安に住む人向けの保存版ガイドを別途まとめています。</p>
+  </div>
+  <a class="tg-cross-btn" href="/life-guide/">くらしの便利ガイドへ →</a>
+</div>
+
+{{/* ────────────────────────────────────────
+     関連する最新記事
+     ──────────────────────────────────────── */}}
+{{- $relatedPosts := where $allPosts "Params.categories" "intersect" (slice "ニュース" "イベント" "グルメ・カフェ" "グルメカフェ") }}
+{{- $relatedPosts = first 6 $relatedPosts }}
+{{- if $relatedPosts }}
+<div class="section-head">
+  <h2>浦安の最新情報</h2>
+  <a class="section-more" href="/">すべての記事 →</a>
+</div>
+<div class="article-grid">
+  {{- $catClass := dict
+    "開店・閉店" "cat-open"
+    "開店閉店"   "cat-open"
+    "ニュース"   "cat-news"
+    "イベント"   "cat-event"
+    "グルメ・カフェ" "cat-gourmet"
+    "グルメカフェ"   "cat-gourmet"
+    "子育て・教育" "cat-edu"
+    "子育て教育"   "cat-edu"
+    "スポーツ"   "cat-sports"
+    "お知らせ"   "cat-notice"
+  }}
+  {{- range $relatedPosts }}
+  {{- $cat := index .Params.categories 0 | default "" }}
+  {{- $cls := index $catClass $cat | default "cat-default" }}
+  {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+  <a class="article-card" href="{{ .RelPermalink }}">
+    <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
+      {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+      {{- else }}<span>{{ $cat }}</span>{{- end }}
+    </div>
+    <div class="article-body">
+      {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
+      <h3>{{ .Title }}</h3>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+    </div>
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+
+{{- end }}

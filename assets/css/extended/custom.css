@@ -1184,6 +1184,347 @@ body:not(.list) { --main-width: 1108px; }
 /* 将来: .ad-section { ... } 広告・PR掲載依頼セクション */
 
 /* ===================================================
+   旅行ガイド (.tg-* プレフィックス)
+   =================================================== */
+
+/* ---------- ヒーロー ---------- */
+.tg-hero {
+  background: linear-gradient(140deg, #0d2235, var(--up-sea) 60%, #1a7a8a);
+  color: #fff;
+  border-radius: 16px;
+  padding: 44px 38px 50px;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.tg-hero::after {
+  content: "";
+  position: absolute;
+  right: -30px; top: -30px;
+  width: 260px; height: 260px;
+  background: radial-gradient(circle, rgba(255,255,255,.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+.tg-hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--up-coral);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tg-hero h1 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.3;
+  color: #fff;
+  margin: 0 0 14px;
+}
+.tg-hero-lead {
+  font-size: 0.92rem;
+  color: #c4d8ea;
+  line-height: 1.8;
+  max-width: 580px;
+  margin-bottom: 28px;
+}
+.tg-hero-stats { display: flex; gap: 28px; flex-wrap: wrap; }
+.tg-hero-stats .stat { display: flex; flex-direction: column; }
+.tg-hero-stats .stat-num { font-size: 1.7rem; font-weight: 800; line-height: 1; color: #fff; }
+.tg-hero-stats .stat-label { font-size: 0.72rem; color: #90b4cc; margin-top: 2px; }
+
+/* ---------- テーマカードグリッド ---------- */
+.tg-theme-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.tg-theme-card {
+  display: block;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.tg-theme-card:not(.tg-soon):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px -12px rgba(26,92,138,.3);
+  border-color: var(--up-teal);
+}
+.tg-theme-card.tg-soon { pointer-events: none; opacity: .58; }
+.tg-card-band {
+  height: 88px;
+  display: flex;
+  align-items: flex-end;
+  padding: 12px 16px;
+}
+.tg-theme-card:first-child .tg-card-band { height: 130px; }
+.tg-card-band-hotels { background: linear-gradient(135deg, #0d2235, var(--up-sea)); }
+.tg-card-tag {
+  background: rgba(255,255,255,.9);
+  color: var(--up-sea);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.tg-card-body { padding: 14px 16px 16px; }
+.tg-card-body h2, .tg-card-body h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--up-sea);
+  margin: 0 0 6px;
+  padding: 0; border: none; background: none;
+}
+.tg-theme-card:first-child .tg-card-body h2 { font-size: 1.1rem; }
+.tg-card-body p { font-size: 0.83rem; color: var(--up-muted); line-height: 1.6; margin: 0 0 6px; }
+.tg-card-go { font-size: 0.8rem; font-weight: 700; color: var(--up-coral); }
+.tg-cards-mini { display: grid; gap: 14px; }
+
+/* ---------- 地元メディアの強み ---------- */
+.tg-why {
+  background: var(--up-bg);
+  border-radius: 12px;
+  padding: 24px 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.tg-why-item h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--up-sea);
+  margin: 0 0 6px;
+  padding: 0; border: none; background: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.tg-why-icon {
+  width: 26px; height: 26px;
+  border-radius: 7px;
+  background: var(--up-sea);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.tg-why-item p { font-size: 0.82rem; color: var(--up-muted); line-height: 1.65; margin: 0; }
+
+/* ---------- クロスリンク ---------- */
+.tg-cross-link {
+  background: var(--up-sea);
+  border-radius: 12px;
+  color: #fff;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.tg-cross-link h3 { font-size: 0.95rem; font-weight: 700; margin: 0 0 4px; }
+.tg-cross-link p { font-size: 0.83rem; color: #aac8e0; margin: 0; }
+.tg-cross-btn {
+  background: #fff;
+  color: var(--up-sea) !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background .2s, color .2s;
+  flex-shrink: 0;
+}
+.tg-cross-btn:hover { background: var(--up-coral); color: #fff !important; }
+
+/* ---------- ホテルハブ ヘッダー ---------- */
+.tg-hotels-header {
+  background: linear-gradient(135deg, #ebf5fc 0%, #eafaf7 100%);
+  border: 1px solid #c4dff4;
+  border-left: 4px solid var(--up-sea);
+  border-radius: 10px;
+  padding: 22px 26px;
+  margin-bottom: 28px;
+}
+.tg-hotels-title {
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  color: var(--up-sea) !important;
+  margin: 8px 0 10px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.tg-hotels-lead { font-size: 0.88rem; color: var(--up-muted); line-height: 1.8; margin: 0; }
+
+/* ---------- シーン別カードグリッド ---------- */
+.tg-scene-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.tg-scene-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.tg-scene-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px -10px rgba(26,92,138,.3);
+  border-color: var(--up-teal);
+}
+.tg-scene-band {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+.tg-scene-band-kids   { background: linear-gradient(135deg, #1a5c8a, #2a8a9a); }
+.tg-scene-band-budget { background: linear-gradient(135deg, #1a7a3a, #0e9e8e); }
+.tg-scene-band-access { background: linear-gradient(135deg, #7a4a10, #e8593a); }
+.tg-scene-body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; }
+.tg-scene-body h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--up-sea);
+  margin: 0 0 6px;
+  padding: 0; border: none; background: none;
+}
+.tg-scene-body p { font-size: 0.82rem; color: var(--up-muted); line-height: 1.6; margin: 0 0 6px; }
+.tg-scene-go { font-size: 0.8rem; font-weight: 700; color: var(--up-coral); margin-top: auto; }
+
+/* ---------- エリアカードグリッド ---------- */
+.tg-area-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.tg-area-card {
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 10px;
+  padding: 14px 12px;
+  text-align: center;
+}
+.tg-area-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--up-muted);
+  letter-spacing: .06em;
+  margin: 0 0 3px;
+}
+.tg-area-name { font-size: 0.9rem; font-weight: 800; color: var(--up-sea); margin: 0 0 5px; }
+.tg-area-count { font-size: 1.5rem; font-weight: 800; color: var(--up-sea); margin: 0; line-height: 1; }
+.tg-area-count span { font-size: 0.72rem; font-weight: 500; color: var(--up-muted); }
+.tg-area-desc { font-size: 0.72rem; color: var(--up-muted); margin: 5px 0 0; line-height: 1.5; }
+
+/* ---------- 価格帯ピラミッド ---------- */
+.tg-pyramid-wrap { margin-bottom: 28px; }
+.tg-pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tg-pyr-row { display: flex; justify-content: center; width: 100%; }
+.tg-pyr-row:nth-child(1) .tg-pyr-bar { width: 28%; }
+.tg-pyr-row:nth-child(2) .tg-pyr-bar { width: 46%; }
+.tg-pyr-row:nth-child(3) .tg-pyr-bar { width: 64%; }
+.tg-pyr-row:nth-child(4) .tg-pyr-bar { width: 82%; }
+.tg-pyr-row:nth-child(5) .tg-pyr-bar { width: 100%; }
+.tg-pyr-bar {
+  display: flex;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  min-height: 38px;
+}
+
+/* ---------- 施設一覧テーブル ---------- */
+.tg-hotel-table-wrap { overflow-x: auto; margin-bottom: 28px; }
+.tg-hotel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background: var(--up-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,.07);
+}
+.tg-hotel-table thead th {
+  background: var(--up-sea);
+  color: #fff;
+  padding: 10px 13px;
+  text-align: left;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.tg-hotel-table tbody tr { border-bottom: 1px solid var(--up-border); }
+.tg-hotel-table tbody tr:last-child { border-bottom: none; }
+.tg-hotel-table tbody tr:hover { background: var(--up-bg); }
+.tg-hotel-table tbody td { padding: 9px 13px; vertical-align: middle; }
+.tg-hotel-table tbody td a { color: var(--up-sea); font-weight: 600; text-decoration: none; }
+.tg-hotel-table tbody td a:hover { text-decoration: underline; }
+.tg-row-nameonly { opacity: .7; }
+.tg-nameonly-note { font-size: 0.75rem; color: var(--up-muted); }
+.tg-area-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  color: #fff;
+  background: var(--up-sea);
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-right: 3px;
+}
+
+/* ---------- レスポンシブ ---------- */
+@media (max-width: 900px) {
+  .tg-theme-grid { grid-template-columns: 1fr; }
+  .tg-why { grid-template-columns: 1fr; }
+  .tg-area-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .tg-hero { padding: 28px 20px 34px; }
+  .tg-hero h1 { font-size: 1.4rem; }
+  .tg-scene-grid { grid-template-columns: 1fr; }
+  .tg-cross-link { flex-direction: column; align-items: flex-start; }
+  .tg-cross-btn { width: 100%; text-align: center; justify-content: center; }
+  .tg-pyr-row:nth-child(1) .tg-pyr-bar { width: 40%; font-size: 0.72rem; }
+  .tg-pyr-row:nth-child(2) .tg-pyr-bar { width: 56%; font-size: 0.72rem; }
+  .tg-pyr-row:nth-child(3) .tg-pyr-bar { width: 72%; font-size: 0.72rem; }
+  .tg-pyr-row:nth-child(4) .tg-pyr-bar { width: 86%; font-size: 0.72rem; }
+  .tg-pyr-row:nth-child(5) .tg-pyr-bar { font-size: 0.72rem; }
+}
+@media (max-width: 480px) {
+  .tg-area-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===================================================
    便利ガイドページ (life-guide) スタイル
    =================================================== */
 

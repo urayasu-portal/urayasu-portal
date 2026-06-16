@@ -90,6 +90,10 @@ menu:
       identifier: life-guide
       url: /life-guide/
       weight: 65
+    - name: 旅行ガイド
+      identifier: travel-guide
+      url: /travel-guide/
+      weight: 66
     - name: お問い合わせ
       identifier: contact
       url: /contact/
