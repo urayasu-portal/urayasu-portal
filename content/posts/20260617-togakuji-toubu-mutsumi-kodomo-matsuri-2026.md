@@ -40,3 +40,6 @@ draft: false
 <ul>
   <li><a href="https://www.instagram.com/p/DZgmowgS8tG/" target="_blank" rel="noopener">浦安 東部睦会 Instagram</a></li>
 </ul>
+<figure style="margin:1.5em 0;">
+  <img src="/images/posts/img_0373.jpeg" alt="" style="width:100%;border-radius:8px;">
+</figure>
