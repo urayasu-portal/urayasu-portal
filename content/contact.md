@@ -21,7 +21,15 @@ noDate: true
 
 <!-- 将来: 広告・PR掲載の詳細ページへのリンクをここに追加予定 -->
 
-<form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form class="contact-form" action="https://formsubmit.co/kadohira@gmail.com" method="POST">
+  <!-- formsubmit.co 設定 -->
+  <input type="hidden" name="_subject" value="【浦安ぽーたる】お問い合わせ">
+  <input type="hidden" name="_next" value="https://urayasu-portal.com/thanks/">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <!-- スパム対策ハニーポット -->
+  <input type="text" name="_honey" style="display:none">
+
   <div class="form-group">
     <label for="name">お名前 <span class="required">*</span></label>
     <input type="text" id="name" name="name" required placeholder="例：浦安 太郎">
@@ -31,12 +39,20 @@ noDate: true
     <input type="email" id="email" name="email" required placeholder="例：info@example.com">
   </div>
   <div class="form-group">
-    <label for="subject">題名</label>
-    <input type="text" id="subject" name="subject" placeholder="例：イベント情報の提供について">
+    <label for="subject">お問い合わせの種類</label>
+    <select id="subject" name="subject">
+      <option value="">選択してください</option>
+      <option value="開店・閉店情報の提供">📢 開店・閉店情報を知らせる</option>
+      <option value="イベント掲載の依頼">🎪 イベント掲載を依頼する</option>
+      <option value="店舗・サービス掲載の相談">🏪 店舗・サービス掲載について相談する</option>
+      <option value="誤りの報告">✏️ 誤りを報告する</option>
+      <option value="広告・PR掲載の相談">📣 広告・PR掲載について相談する</option>
+      <option value="その他">その他</option>
+    </select>
   </div>
   <div class="form-group">
-    <label for="message">メッセージ本文</label>
-    <textarea id="message" name="message" rows="6" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+    <label for="message">メッセージ本文 <span class="required">*</span></label>
+    <textarea id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください。"></textarea>
   </div>
-  <button type="submit">送信する</button>
+  <button type="submit" class="contact-submit-btn">送信する →</button>
 </form>
