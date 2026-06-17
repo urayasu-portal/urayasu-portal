@@ -37,6 +37,3 @@ draft: false
 <ul>
   <li><a href="https://www.u-shimin.genki365.net/G0000254/system/event/3781.html" target="_blank" rel="noopener">浦安市市民活動センター｜たなばたマルシェ</a></li>
 </ul>
-<figure style="margin:1.5em 0;">
-  <img src="/images/posts/img_0395.jpeg" alt="" style="width:100%;border-radius:8px;">
-</figure>
