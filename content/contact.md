@@ -21,7 +21,7 @@ noDate: true
 
 <!-- 将来: 広告・PR掲載の詳細ページへのリンクをここに追加予定 -->
 
-<form class="contact-form" action="https://formsubmit.co/kadohira@gmail.com" method="POST">
+<form class="contact-form" action="https://formsubmit.co/urayasu.portal@gmail.com" method="POST">
   <!-- formsubmit.co 設定 -->
   <input type="hidden" name="_subject" value="【浦安ぽーたる】お問い合わせ">
   <input type="hidden" name="_next" value="https://urayasu-portal.com/thanks/">
