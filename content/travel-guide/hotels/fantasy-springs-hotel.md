@@ -23,7 +23,7 @@ noDate: true
 | エリア | 舞浜エリア（TDRディズニーホテル） |
 | 客室数 | 475室（グランドシャトー56室／ファンタジーシャトー419室） |
 | チェックイン／アウト | 15:00／12:00 |
-| 公式サイト | tokyodisneyresort.jp/hotel/fsh.html |
+| 公式サイト | [tokyodisneyresort.jp/hotel/fsh.html](https://tokyodisneyresort.jp/hotel/fsh.html) |
 
 ---
 

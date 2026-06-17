@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-381-1188 |
 | エリア | 新浦安エリア（TDRバリュータイプのディズニーホテル） |
 | チェックイン／アウト | 15:00〜24:00／11:00 |
-| 公式サイト | tokyodisneyresort.jp/hotel/dch.html |
+| 公式サイト | [tokyodisneyresort.jp/hotel/dch.html](https://tokyodisneyresort.jp/hotel/dch.html) |
 
 ---
 

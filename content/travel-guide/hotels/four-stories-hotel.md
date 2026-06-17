@@ -23,7 +23,7 @@ noDate: true
 | エリア | 舞浜エリア（宿泊特化型） |
 | 客室数 | 26室 |
 | チェックイン／アウト | 15:00〜24:00／10:00（レイトアウト：1時間1,500円） |
-| 公式サイト | hpdsp.jp/fourstorieshotel/ |
+| 公式サイト | [hpdsp.jp/fourstorieshotel/](https://hpdsp.jp/fourstorieshotel/) |
 
 ---
 

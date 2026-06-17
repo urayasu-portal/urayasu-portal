@@ -23,7 +23,7 @@ noDate: true
 | エリア | 舞浜エリア（TDRディズニーホテル） |
 | 客室数 | 706室 |
 | チェックイン／アウト | 15:00／12:00 |
-| 公式サイト | tokyodisneyresort.jp/hotel/tdh.html |
+| 公式サイト | [tokyodisneyresort.jp/hotel/tdh.html](https://tokyodisneyresort.jp/hotel/tdh.html) |
 
 ---
 

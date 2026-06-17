@@ -23,7 +23,7 @@ noDate: true
 | エリア | 新浦安エリア（TDRパートナーホテル） |
 | 客室数 | 511室 |
 | チェックイン／アウト | 15:00（オリエンタルフロアは14:00〜）／12:00 |
-| 公式サイト | oriental-hotel.co.jp |
+| 公式サイト | [oriental-hotel.co.jp](https://oriental-hotel.co.jp) |
 
 ---
 

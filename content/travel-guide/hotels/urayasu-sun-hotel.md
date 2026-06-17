@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-382-8811 |
 | エリア | 浦安駅エリア（ビジネスホテル） |
 | チェックイン／アウト | 15:00／10:00（最終チェックイン0:30） |
-| 公式サイト | urayasu-sun-hotel.com/ |
+| 公式サイト | [urayasu-sun-hotel.com/](https://urayasu-sun-hotel.com/) |
 
 ---
 

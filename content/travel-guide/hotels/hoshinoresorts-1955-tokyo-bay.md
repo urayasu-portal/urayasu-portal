@@ -23,7 +23,7 @@ noDate: true
 | エリア | 新浦安エリア（一般リゾートホテル・個性派コンセプトホテル） |
 | 客室数 | 638室（23タイプ） |
 | チェックイン／アウト | 15:00／11:00 |
-| 公式サイト | hoshinoresorts.com/ja/hotels/1955tokyobay/ |
+| 公式サイト | [hoshinoresorts.com/ja/hotels/1955tokyobay/](https://hoshinoresorts.com/ja/hotels/1955tokyobay/) |
 
 ---
 

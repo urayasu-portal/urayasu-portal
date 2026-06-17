@@ -23,7 +23,7 @@ noDate: true
 | エリア | 舞浜エリア（ビジネスホテル） |
 | 客室数 | 90室 |
 | チェックイン／アウト | 15:00／10:00 |
-| 公式サイト | mystays.com/hotel-maihama/ |
+| 公式サイト | [mystays.com/hotel-maihama/](https://mystays.com/hotel-maihama/) |
 
 ---
 

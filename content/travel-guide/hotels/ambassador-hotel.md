@@ -23,7 +23,7 @@ noDate: true
 | エリア | 舞浜エリア（TDRディズニーホテル） |
 | 客室数 | 503室 |
 | チェックイン／アウト | 15:00／12:00 |
-| 公式サイト | tokyodisneyresort.jp/hotel/dah.html |
+| 公式サイト | [tokyodisneyresort.jp/hotel/dah.html](https://tokyodisneyresort.jp/hotel/dah.html) |
 
 ---
 

@@ -26,7 +26,7 @@ noDate: true
 | 電話 | 047-382-3331 |
 | エリア | 新浦安エリア（TDRパートナーホテル） |
 | チェックイン／アウト | 15:00／12:00（プランにより異なる場合あり） |
-| 公式サイト | gardenhotels.co.jp/prana-tokyobay/ |
+| 公式サイト | [gardenhotels.co.jp/prana-tokyobay/](https://gardenhotels.co.jp/prana-tokyobay/) |
 
 ---
 

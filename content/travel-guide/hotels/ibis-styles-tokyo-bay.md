@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-381-6775 |
 | エリア | 新浦安エリア（ビジネスホテル・アコーホテルズ系列） |
 | チェックイン／アウト | 14:00／11:00 |
-| 公式サイト | ibisstylestokyobay.com |
+| 公式サイト | [ibisstylestokyobay.com](https://ibisstylestokyobay.com) |
 
 ---
 

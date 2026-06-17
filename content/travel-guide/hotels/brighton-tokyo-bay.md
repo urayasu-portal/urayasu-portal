@@ -23,7 +23,7 @@ noDate: true
 | エリア | 新浦安エリア（TDRパートナーホテル） |
 | 客室数 | 189室（地上22階建て） |
 | チェックイン／アウト | 15:00／12:00 |
-| 公式サイト | urayasu.brightonhotels.co.jp |
+| 公式サイト | [urayasu.brightonhotels.co.jp](https://urayasu.brightonhotels.co.jp) |
 
 ---
 

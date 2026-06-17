@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-700-7000 |
 | エリア | 舞浜エリア（舞浜ユーラシアの別館） |
 | チェックイン／アウト | 15:00〜24:00／11:00 |
-| 公式サイト | annex.hotel-eurasia.jp |
+| 公式サイト | [annex.hotel-eurasia.jp](https://annex.hotel-eurasia.jp) |
 
 ---
 

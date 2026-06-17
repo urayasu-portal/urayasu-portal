@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-381-8201 |
 | エリア | 新浦安エリア（長期滞在型ホテル） |
 | チェックイン／アウト | 14:00／10:00 |
-| 公式サイト | flexstay.com/shinurayasu/ |
+| 公式サイト | [flexstay.com/shinurayasu/](https://flexstay.com/shinurayasu/) |
 
 ---
 

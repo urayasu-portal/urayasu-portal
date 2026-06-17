@@ -23,7 +23,7 @@ noDate: true
 | エリア | 舞浜エリア（TDRグッドネイバーホテル） |
 | 客室数 | 100室 |
 | チェックイン／アウト | 15:00／11:00 |
-| 公式サイト | hennnahotel.com/maihama/ |
+| 公式サイト | [hennnahotel.com/maihama/](https://hennnahotel.com/maihama/) |
 
 ---
 

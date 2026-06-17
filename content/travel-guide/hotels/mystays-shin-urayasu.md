@@ -23,7 +23,7 @@ noDate: true
 | エリア | 新浦安エリア（ビジネスホテル） |
 | 客室数 | 175室 |
 | チェックイン／アウト | 15:00／10:00 |
-| 公式サイト | mystays.com/hotel-shin-urayasu/ |
+| 公式サイト | [mystays.com/hotel-shin-urayasu/](https://mystays.com/hotel-shin-urayasu/) |
 
 ---
 

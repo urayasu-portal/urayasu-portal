@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-355-1222 |
 | エリア | 舞浜エリア（TDRオフィシャルホテル） |
 | チェックイン／アウト | 15:00（要最終確認）／12:00（要最終確認） |
-| 公式サイト | viewhotels.co.jp/maihama/ |
+| 公式サイト | [viewhotels.co.jp/maihama/](https://viewhotels.co.jp/maihama/) |
 
 ---
 

@@ -23,7 +23,7 @@ noDate: true
 | エリア | 舞浜エリア（一般リゾートホテル） |
 | 客室数 | 750室 |
 | チェックイン／アウト | 15:00／11:00 |
-| 公式サイト | royalparkhotels.co.jp/the/maihama/ |
+| 公式サイト | [royalparkhotels.co.jp/the/maihama/](https://royalparkhotels.co.jp/the/maihama/) |
 
 ---
 

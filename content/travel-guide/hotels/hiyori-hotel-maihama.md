@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-390-7300 |
 | エリア | 新浦安エリア（東野地区・宿泊特化型） |
 | チェックイン／アウト | 15:00／11:00 |
-| 公式サイト | maihama.hiyori-hotel.jp/ |
+| 公式サイト | [maihama.hiyori-hotel.jp/](https://maihama.hiyori-hotel.jp/) |
 
 ---
 

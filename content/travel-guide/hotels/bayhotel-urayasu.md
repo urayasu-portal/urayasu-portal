@@ -22,7 +22,7 @@ noDate: true
 | 電話 | 047-702-8091 |
 | エリア | 浦安駅エリア（アパートメントタイプホテル） |
 | チェックイン／アウト | 15:00／10:00 |
-| 公式サイト | bay-hotel.jp/urayasu/ |
+| 公式サイト | [bay-hotel.jp/urayasu/](https://bay-hotel.jp/urayasu/) |
 
 ---
 
