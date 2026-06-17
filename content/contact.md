@@ -11,13 +11,34 @@ noDate: true
     新店舗のオープン、閉店、イベント、地域ニュース、店舗・サービスの掲載相談などがありましたら、以下のフォームよりお気軽にお知らせください。
   </p>
   <ul class="contact-type-list">
-    <li>📢 開店・閉店情報を知らせる</li>
-    <li>🎪 イベント掲載を依頼する</li>
-    <li>🏪 店舗・サービス掲載について相談する</li>
-    <li>✏️ 誤りを報告する</li>
-    <li>📣 広告・PR掲載について相談する</li>
+    <li><button type="button" class="contact-type-btn" data-value="開店・閉店情報の提供">📢 開店・閉店情報を知らせる</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="イベント掲載の依頼">🎪 イベント掲載を依頼する</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="店舗・サービス掲載の相談">🏪 店舗・サービス掲載について相談する</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="誤りの報告">✏️ 誤りを報告する</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="広告・PR掲載の相談">📣 広告・PR掲載について相談する</button></li>
   </ul>
 </div>
+
+<script>
+document.querySelectorAll('.contact-type-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var val = this.getAttribute('data-value');
+    var sel = document.getElementById('subject');
+    if (sel) {
+      sel.value = val;
+      sel.dispatchEvent(new Event('change'));
+    }
+    document.querySelectorAll('.contact-type-btn').forEach(function(b) {
+      b.classList.remove('contact-type-btn--active');
+    });
+    this.classList.add('contact-type-btn--active');
+    var form = document.querySelector('.contact-form');
+    if (form) {
+      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
 
 <!-- 将来: 広告・PR掲載の詳細ページへのリンクをここに追加予定 -->
 

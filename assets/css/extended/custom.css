@@ -1241,13 +1241,31 @@ body:not(.list) { --main-width: 1108px; }
 .contact-type-list li {
   display: inline-flex;
   align-items: center;
-  padding: 5px 12px;
+  padding: 0;
+}
+.contact-type-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
   background: #fff;
-  border: 1px solid #b8d9f0;
+  border: 1.5px solid #b8d9f0;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
-  color: var(--portal-blue);
+  color: var(--up-sea);
+  cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s, transform .1s;
+  font-family: inherit;
+}
+.contact-type-btn:hover {
+  background: #e8f4fb;
+  border-color: var(--up-sea);
+  transform: translateY(-1px);
+}
+.contact-type-btn--active {
+  background: var(--up-sea);
+  border-color: var(--up-sea);
+  color: #fff;
 }
 /* 将来: .ad-section { ... } 広告・PR掲載依頼セクション */
 
