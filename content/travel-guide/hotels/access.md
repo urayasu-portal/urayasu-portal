@@ -138,5 +138,6 @@ noDate: true
 <nav style="margin-top:32px;padding:16px 20px;background:#e8f4fb;border-radius:8px;font-size:0.88em;">
 🏨 <a href="/travel-guide/hotels/">ホテルガイド トップ</a> ／
 👶 <a href="/travel-guide/hotels/kids/">子連れ向け比較</a> ／
-💰 <a href="/travel-guide/hotels/budget/">格安ホテル比較</a>
+💰 <a href="/travel-guide/hotels/budget/">格安ホテル比較</a> ／
+🚃 <a href="/travel-guide/urayasu-maihama-access-guide/">空港・東京駅からの行き方</a>
 </nav>
