@@ -337,5 +337,6 @@ noDate: true
     <li><a href="/travel-guide/hotels/access/">ホテル別アクセス比較（パーク・駅・空港・都心）</a></li>
     <li><a href="/travel-guide/hotels/kids/">子連れ向けホテル比較</a></li>
     <li><a href="/travel-guide/hotels/budget/">格安ホテル徹底比較</a></li>
+    <li><a href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/">浦安市内のタクシー乗り場・空港定額タクシーガイド</a></li>
   </ul>
 </div>
