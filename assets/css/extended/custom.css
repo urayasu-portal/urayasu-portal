@@ -447,6 +447,8 @@ body:not(.list) { --main-width: 1108px; }
   color: var(--up-muted);
 }
 .post-single .post-content hr { border: none; border-top: 1px solid var(--up-border); margin: 32px 0; }
+.post-single .post-content .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 20px; }
+.post-single .post-content .table-scroll table { margin-bottom: 0; }
 .post-single .post-content table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 20px; }
 .post-single .post-content th,
 .post-single .post-content td { padding: 8px 12px; border: 1px solid var(--up-border); text-align: left; }
