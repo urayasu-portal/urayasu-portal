@@ -12,6 +12,7 @@ tags:
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
+tgNav: true
 ---
 
 東京ディズニーリゾートの旅は、チケットや park 内での出費がかさむぶん、「宿代はできるだけ抑えたい」という家族も多いはずです。うれしいことに、浦安市内には2名1万円前後から泊まれるホテルがたくさんあります。
@@ -123,12 +124,6 @@ GWや夏休み、年末年始は、コスパの良い宿から先に満室にな
 
 ---
 
-<div style="background:#f4f7fb;border-radius:8px;padding:14px 18px;margin:20px 0;font-size:0.85em;color:#5e6f7e;">
+<div class="tg-notice-info">
 ⚠️ <strong>料金・施設情報について</strong>: 宿泊料金・サービス内容は変動します。最新情報は各ホテルの公式サイトや予約サイトでご確認ください。
 </div>
-
-<nav style="margin-top:32px;padding:16px 20px;background:#e8f4fb;border-radius:8px;font-size:0.88em;">
-🏨 <a href="/travel-guide/hotels/">ホテルガイド トップ</a> ／
-👶 <a href="/travel-guide/hotels/kids/">子連れ向け比較</a> ／
-🚃 <a href="/travel-guide/hotels/access/">アクセス比較</a>
-</nav>

@@ -12,11 +12,14 @@ tags:
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
+tgNav: true
 ---
 
 ディズニー旅のホテル選びで、料金と並んで重要なのが「アクセス」です。ただ、ひとくちにアクセスといっても、**パークへの近さ・JR駅からの行きやすさ・空港からの移動・都心への出やすさ**は、それぞれ別の話。「ディズニーに近い」だけで選ぶと、空港からの移動で苦労したり、逆に「都心観光も」と思ったら不便だったり、ということが起こります。
 
 この記事では、浦安市内40軒のホテルを4つの行き先ごとに整理し、地元メディアの視点で「どこへ行きやすいか」を比較します。所要時間・料金は2025〜2026年の調査時点の目安です。
+
+空港や東京駅から浦安・舞浜への来かたは、[空港・東京駅からのアクセスガイド](/travel-guide/urayasu-maihama-access-guide/)で別途まとめています。
 
 ---
 
@@ -131,13 +134,6 @@ noDate: true
 
 ---
 
-<div style="background:#f4f7fb;border-radius:8px;padding:14px 18px;margin:20px 0;font-size:0.85em;color:#5e6f7e;">
+<div class="tg-notice-info">
 ⚠️ <strong>料金・施設情報について</strong>: リムジンバス料金・運行状況・停車有無は変更になる場合があります。乗車前に各バス会社の公式サイトや時刻表でご確認ください。
 </div>
-
-<nav style="margin-top:32px;padding:16px 20px;background:#e8f4fb;border-radius:8px;font-size:0.88em;">
-🏨 <a href="/travel-guide/hotels/">ホテルガイド トップ</a> ／
-👶 <a href="/travel-guide/hotels/kids/">子連れ向け比較</a> ／
-💰 <a href="/travel-guide/hotels/budget/">格安ホテル比較</a> ／
-🚃 <a href="/travel-guide/urayasu-maihama-access-guide/">空港・東京駅からの行き方</a>
-</nav>

@@ -17,6 +17,7 @@ description: "舞浜・新浦安・浦安駅周辺で観光や散策を楽しみ
 images:
   - "/images/og-travel-urayasu.png"
 noDate: true
+tgNav: true
 draft: false
 faq:
   - q: "ディズニーパーク以外に半日過ごせる場所はありますか？"
@@ -33,7 +34,7 @@ faq:
     a: "はい。グルメ・お土産ガイドのページでエリア別のおすすめ店舗をまとめています（/travel-guide/urayasu-gourmet-souvenir-guide/）。"
 ---
 
-<div style="background:#fff8e1;border-left:4px solid #f0a500;border-radius:6px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:#5a4800;">
+<div class="tg-notice-warn">
   <strong>ℹ️ ご注意</strong>　営業時間、休館日、料金、交通情報、ホテルシャトルや空港リムジンバスの運行状況は変更される場合があります。訪問前に各施設・交通機関の公式サイトで最新情報をご確認ください。
 </div>
 
@@ -721,10 +722,3 @@ faq:
 
 <p style="font-size:12px;color:#6b7a8d;">※本記事は公開情報をもとにまとめたものです。施設情報・料金・営業時間は変更になる場合があります。最新情報は各施設の公式サイトでご確認ください。（2026年6月時点）</p>
 
-<nav style="margin-top:32px;padding:16px 20px;background:#e8f4fb;border-radius:8px;font-size:0.88em;">
-🗺️ <a href="/travel-guide/">旅行ガイド トップ</a> ／
-🏨 <a href="/travel-guide/hotels/">ホテルガイド</a> ／
-🚃 <a href="/travel-guide/urayasu-maihama-access-guide/">アクセスガイド</a> ／
-🍜 <a href="/travel-guide/urayasu-gourmet-souvenir-guide/">グルメ・お土産</a> ／
-🚕 <a href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/">タクシーガイド</a>
-</nav>

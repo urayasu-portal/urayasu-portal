@@ -14,6 +14,7 @@ tags:
   - ホテルグルメ
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
+tgNav: true
 ---
 
 浦安・新浦安・舞浜エリアには、地元の普段使いランチから、東京ディズニーリゾート前後に立ち寄りやすいカフェ・レストラン、帰省や差し入れに使える手土産スポット、宿泊者以外も使えるホテルレストランまで、用途ごとに向くエリアが分かれています。
@@ -288,13 +289,3 @@ Grand Café・Galleria Café・日本料理「飛鳥」・Maihama Teppanyaki+・
   <a class="tg-cross-btn" href="/travel-guide/hotels/">ホテルガイドを見る →</a>
 </div>
 
-<div style="margin-top:16px;padding:20px 24px;background:var(--up-card);border:1px solid var(--up-border);border-radius:12px;">
-  <p style="font-size:0.85em;color:var(--up-muted);margin:0 0 12px;">関連記事</p>
-  <ul style="margin:0;padding-left:1.4em;font-size:0.95em;line-height:2;">
-    <li><a href="/travel-guide/">旅行ガイド トップ</a></li>
-    <li><a href="/travel-guide/hotels/">浦安・舞浜エリアのホテルガイド</a></li>
-    <li><a href="/travel-guide/urayasu-maihama-access-guide/">空港・東京駅からのアクセスガイド</a></li>
-    <li><a href="/travel-guide/hotels/kids/">子連れ向けホテル比較</a></li>
-    <li><a href="/travel-guide/hotels/budget/">格安ホテル徹底比較</a></li>
-  </ul>
-</div>

@@ -1590,6 +1590,71 @@ body:not(.list) { --main-width: 1108px; }
   margin-right: 3px;
 }
 
+/* ---------- 旅行ガイド 横断ナビ ---------- */
+.tg-section-nav {
+  margin-top: 40px;
+  padding: 20px 24px;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 12px;
+}
+.tg-snav-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 36px;
+  margin-bottom: 14px;
+}
+.tg-snav-group { flex: 1; min-width: 130px; }
+.tg-snav-label {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--up-muted);
+  margin-bottom: 8px;
+}
+.tg-snav-links { display: flex; flex-direction: column; gap: 5px; }
+.tg-snav-links a { font-size: 0.88em; color: var(--up-teal); text-decoration: none; }
+.tg-snav-links a:hover { text-decoration: underline; }
+.tg-snav-links a.tg-snav-cur { font-weight: 700; color: var(--content); pointer-events: none; }
+.tg-snav-top {
+  display: inline-block;
+  font-size: 0.82em;
+  color: var(--up-muted);
+  border-top: 1px solid var(--up-border);
+  padding-top: 10px;
+  width: 100%;
+  text-decoration: none;
+}
+.tg-snav-top:hover { text-decoration: underline; }
+
+/* ---------- 注意書きボックス ---------- */
+.tg-notice-warn {
+  background: #fff8e1;
+  border-left: 4px solid #f0a500;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #5a4800;
+}
+.tg-notice-info {
+  background: #f4f7fb;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 20px 0;
+  font-size: 0.85em;
+  color: #5e6f7e;
+}
+
+/* ---------- ハブ グループラベル ---------- */
+.tg-group-label {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--up-muted);
+  margin: 0 0 8px 2px;
+  letter-spacing: 0.03em;
+}
+
 /* ---------- レスポンシブ ---------- */
 @media (max-width: 900px) {
   .tg-theme-grid { grid-template-columns: 1fr; }

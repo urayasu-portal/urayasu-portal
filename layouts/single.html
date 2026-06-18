@@ -96,6 +96,11 @@
       {{/* 情報提供CTA */}}
       {{- partial "info-cta.html" . }}
 
+      {{/* 旅行ガイド 横断ナビ */}}
+      {{- if and (eq .Section "travel-guide") (.Params.tgNav) }}
+      {{- partial "travel-guide-nav.html" . }}
+      {{- end }}
+
       <footer class="post-footer">
         {{/* タグ表示 */}}
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}

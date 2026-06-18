@@ -17,6 +17,7 @@ tags:
   - 福祉タクシー
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
+tgNav: true
 faq:
   - q: "浦安駅・新浦安駅・舞浜駅にタクシー乗り場はありますか？"
     a: "各駅前にタクシー乗り場があります。詳細な位置は駅の案内表示でご確認ください。"
@@ -341,13 +342,3 @@ UDタクシーは車いす利用者・高齢者・ベビーカー利用者にも
   <a class="tg-cross-btn" href="/travel-guide/hotels/access/">ホテルアクセス比較を見る →</a>
 </div>
 
-<div style="margin-top:16px;padding:20px 24px;background:var(--up-card);border:1px solid var(--up-border);border-radius:12px;">
-  <p style="font-size:0.85em;color:var(--up-muted);margin:0 0 12px;">関連記事</p>
-  <ul style="margin:0;padding-left:1.4em;font-size:0.95em;line-height:2;">
-    <li><a href="/travel-guide/">旅行ガイド トップ</a></li>
-    <li><a href="/travel-guide/urayasu-maihama-access-guide/">空港・東京駅からのアクセスガイド</a></li>
-    <li><a href="/travel-guide/hotels/">浦安・舞浜エリアのホテルガイド</a></li>
-    <li><a href="/travel-guide/hotels/access/">ホテル別アクセス比較（パーク・駅・空港・都心）</a></li>
-    <li><a href="/travel-guide/urayasu-gourmet-souvenir-guide/">グルメ＆お土産ガイド</a></li>
-  </ul>
-</div>

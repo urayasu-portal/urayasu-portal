@@ -17,6 +17,7 @@ tags:
   - バリアフリー
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
+tgNav: true
 faq:
   - q: "羽田空港から舞浜へは電車とリムジンバスのどちらが便利ですか？"
     a: "荷物が多い、子ども連れ、ホテルへ直行したい場合はリムジンバスが便利です。道路渋滞を避けたい場合や時間を読みたい場合は電車も候補になります。"
@@ -41,6 +42,8 @@ faq:
 東京ディズニーリゾートへ行く方、新浦安エリアのホテルに泊まる方、浦安駅周辺を利用する方では、便利な交通手段が少しずつ異なります。この記事では**電車・空港リムジンバス・タクシー**を比較しながら、各駅・TDR・主要ホテルへの行き方を紹介します。
 
 車いす・ベビーカー・大きなスーツケースがある方向けの注意点も整理しています。
+
+ホテルごとのパーク・駅・空港・都心への所要時間を比べたい方は、[ホテル別アクセス比較](/travel-guide/hotels/access/)をあわせてご覧ください。
 
 > **ご注意ください**
 > 運賃・所要時間・運行本数・停留所・ホテルシャトルの有無は変更される場合があります。出発前に、鉄道会社・空港リムジンバス・タクシー会社・宿泊ホテル・東京ディズニーリゾート公式サイトなどで最新情報をご確認ください。
@@ -346,14 +349,3 @@ faq:
   <a class="tg-cross-btn" href="/travel-guide/hotels/">ホテルガイドを見る →</a>
 </div>
 
-<div style="margin-top:16px;padding:20px 24px;background:var(--up-card);border:1px solid var(--up-border);border-radius:12px;">
-  <p style="font-size:0.85em;color:var(--up-muted);margin:0 0 12px;">関連記事</p>
-  <ul style="margin:0;padding-left:1.4em;font-size:0.95em;line-height:2;">
-    <li><a href="/travel-guide/">旅行ガイド トップ</a></li>
-    <li><a href="/travel-guide/hotels/">浦安・舞浜エリアのホテルガイド</a></li>
-    <li><a href="/travel-guide/hotels/access/">ホテル別アクセス比較（パーク・駅・空港・都心）</a></li>
-    <li><a href="/travel-guide/hotels/kids/">子連れ向けホテル比較</a></li>
-    <li><a href="/travel-guide/hotels/budget/">格安ホテル徹底比較</a></li>
-    <li><a href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/">浦安市内のタクシー乗り場・空港定額タクシーガイド</a></li>
-  </ul>
-</div>
