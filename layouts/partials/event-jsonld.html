@@ -21,7 +21,6 @@
 {{- $img    := partial "cover-image.html" (dict "page" . "size" "full") }}
 {{- $url    := .Permalink }}
 {{- $evUrl  := .Params.eventUrl | default .Permalink }}
-{{- $fee    := .Params.eventFee | default "詳細は公式情報をご確認ください" }}
 {{- $org    := .Params.organizer | default "浦安市" }}
 
 <script type="application/ld+json">
@@ -48,12 +47,16 @@
   "image": "{{ $img | absURL }}",
   {{- end }}
   "url": "{{ $url }}",
+  {{- with .Params.eventFee }}
   "offers": {
     "@type": "Offer",
-    "name": "{{ $fee }}",
+    "name": "{{ . }}",
+    "price": "{{ cond (eq . "無料") "0" . }}",
+    "priceCurrency": "JPY",
     "url": "{{ $evUrl }}",
     "availability": "https://schema.org/InStock"
   },
+  {{- end }}
   {{- with .Params.performer }}
   "performer": {{ if (reflect.IsSlice .) }}[
     {{- range $i, $p := . }}{{ if $i }},{{ end }}
