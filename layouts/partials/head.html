@@ -1,14 +1,20 @@
 {{- /*
   ⚠️ PaperMod テーマの themes/PaperMod/layouts/_partials/head.html のコピー。
-  変更点は【1箇所のみ】: <title> 行（下記「★SEO」コメント参照）。
-  ホームページのタイトルを site.Params.homeTitle で上書きできるようにした。
-  テーマ更新時は元ファイルと diff を取り、この1行だけ再適用すれば良い。
+  変更点:
+    1. <title> 行: site.Params.homeTitle でホームを上書き（★SEO参照）
+    2. robots: 薄いタグページ（記事2件以下）は noindex, follow に設定
+  テーマ更新時は元ファイルと diff を取り、これらの変更点だけ再適用する。
 */ -}}
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
+{{- /* ★SEO: 記事2件以下のタグページは薄いコンテンツとして noindex に設定 */}}
+{{- $isProd := hugo.IsProduction | or (eq site.Params.env "production") }}
+{{- $isThinTag := and (eq .Kind "term") (eq .Data.Plural "tags") (lt (len .Pages) 3) }}
+{{- if and $isProd (ne .Params.robotsNoIndex true) (not $isThinTag) }}
 <meta name="robots" content="index, follow">
+{{- else if $isThinTag }}
+<meta name="robots" content="noindex, follow">
 {{- else }}
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
@@ -24,7 +30,10 @@
     {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
     {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
 {{- end }}
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
+{{- /* ★SEO: タクソノミーtermページは _index.md の description が .Description に入らない場合があるため
+         .Params.description も参照してサイト共通フォールバックを防ぐ */}}
+{{- $metaDesc := .Description | default .Params.description }}
+<meta name="description" content="{{- with $metaDesc }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
     {{- .Summary | default (printf "%s - %s" .Title  site.Title) }}{{- else }}
     {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
 <meta name="author" content="{{ (partial "author.html" . ) }}">

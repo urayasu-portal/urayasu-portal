@@ -1,3 +1,15 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3372468923504472" crossorigin="anonymous"></script>
 {{- partial "event-jsonld.html" . -}}
 {{- partial "faq-jsonld.html" . -}}
+{{- /* ★SEO: WebSite スキーマ（ホームのみ）。Googleのサイトリンク検索に有効。 */}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.Title }}",
+  "url": "{{ site.BaseURL | strings.TrimRight "/" }}/",
+  "description": "{{ site.Params.description | plainify }}"
+}
+</script>
+{{- end }}
