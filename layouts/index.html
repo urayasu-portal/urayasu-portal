@@ -17,16 +17,22 @@
 {{/* 全記事 (新しい順) */}}
 {{- $allPosts := where site.RegularPages "Section" "posts" }}
 
-{{/* ───── ポータルヒーロー ───── */}}
+{{/* ═══ 1. ファーストビュー ═══ */}}
 <div class="portal-hero">
   <div class="portal-hero-text">
-    <h1 class="portal-hero-title">浦安・新浦安・舞浜のローカル情報をお届け</h1>
-    <p class="portal-hero-subtitle">開店・閉店、イベント、グルメ、子育て、スポーツまで。浦安と周辺エリアの気になる話題を、地域密着でわかりやすくまとめます。</p>
+    <h1 class="portal-hero-title">浦安・新浦安・舞浜の<br>地域情報メディア</h1>
+    <p class="portal-hero-subtitle">開店・閉店、イベント、グルメ、子育て、スポーツまで。浦安と周辺エリアの気になる話題を地域密着でお届けします。</p>
+    <nav class="portal-quick-links" aria-label="主要カテゴリへのリンク">
+      <a class="portal-quick-link" href="/categories/イベント/">📅 イベント</a>
+      <a class="portal-quick-link" href="/categories/開店閉店/">🏪 開店・閉店</a>
+      <a class="portal-quick-link" href="/life-guide/">📖 便利ガイド</a>
+      <a class="portal-quick-link" href="/travel-guide/">✈️ 旅行ガイド</a>
+    </nav>
   </div>
-  <a class="hero-contact-link" href="/contact/">情報提供はこちら</a>
+  <a class="hero-contact-link" href="/contact/" aria-label="地域情報の提供フォームへ">情報提供はこちら</a>
 </div>
 
-{{/* ───── 速報ティッカー: 最新1件 ───── */}}
+{{/* ═══ 2. 速報ティッカー: 最新1件 ═══ */}}
 {{- with (index $allPosts 0) }}
 <div class="home-ticker">
   <span class="ticker-label">最新</span>
@@ -34,18 +40,18 @@
 </div>
 {{- end }}
 
-{{/* ───── ヒーローカード ───── */}}
+{{/* ═══ 3. 注目記事 (ヒーローカード 3枚) ═══ */}}
 {{- $heroPosts := first 3 $allPosts }}
 {{- if ge (len $heroPosts) 1 }}
 <div class="home-hero">
-  {{/* メイン (左大) */}}
+  {{/* メイン (左大) — ファーストビュー内のため eager loading */}}
   {{- with (index $heroPosts 0) }}
   {{- $cat := index .Params.categories 0 | default "" }}
   {{- $cls := index $catClass $cat | default "cat-default" }}
   {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
   <a class="hero-card hero-main" href="{{ .RelPermalink }}">
     <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
-      {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+      {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="eager">
       {{- else }}<span>🗞</span>{{- end }}
     </div>
     <div class="hero-body">
@@ -76,15 +82,51 @@
 </div>
 {{- end }}
 
-{{/* ───── 2カラムレイアウト ───── */}}
+{{/* ═══ 2カラムレイアウト ═══ */}}
 <div class="home-layout">
   <div class="home-main">
 
-    {{/* 最新記事グリッド (ヒーロー3件を除外してページネーション) */}}
+    {{- $paginator := .Paginate (after 3 $allPosts) 6 }}
+
+    {{/* ─ 4. 目的別ナビ (page 1 only) ─ */}}
+    {{- if eq $paginator.PageNumber 1 }}
+    <nav class="top-purpose-nav" aria-label="目的から探す">
+      <div class="section-head">
+        <h2>目的から探す</h2>
+      </div>
+      <div class="top-purpose-grid">
+        <a class="top-purpose-item" href="/categories/子育て教育/">
+          <span class="top-purpose-icon">👶</span><span>子育て</span>
+        </a>
+        <a class="top-purpose-item" href="/guides/holiday-night-medical/">
+          <span class="top-purpose-icon">🏥</span><span>医療</span>
+        </a>
+        <a class="top-purpose-item" href="/guides/disaster-prevention/">
+          <span class="top-purpose-icon">🛡️</span><span>防災</span>
+        </a>
+        <a class="top-purpose-item" href="/guides/trash-recycling/">
+          <span class="top-purpose-icon">♻️</span><span>ごみ</span>
+        </a>
+        <a class="top-purpose-item" href="/guides/parks-playgrounds/">
+          <span class="top-purpose-icon">🌳</span><span>公園</span>
+        </a>
+        <a class="top-purpose-item" href="/travel-guide/hotels/">
+          <span class="top-purpose-icon">🏨</span><span>ホテル</span>
+        </a>
+        <a class="top-purpose-item" href="/travel-guide/urayasu-maihama-access-guide/">
+          <span class="top-purpose-icon">🚃</span><span>アクセス</span>
+        </a>
+        <a class="top-purpose-item" href="/categories/イベント/">
+          <span class="top-purpose-icon">📅</span><span>イベント</span>
+        </a>
+      </div>
+    </nav>
+    {{- end }}
+
+    {{/* ─ 5. 最新記事 ─ */}}
     <div class="section-head">
       <h2>最新記事</h2>
     </div>
-    {{- $paginator := .Paginate (after 3 $allPosts) 9 }}
     <div class="article-grid">
       {{- range $paginator.Pages }}
       {{- partial "article-card.html" . }}
@@ -104,28 +146,12 @@
     </div>
     {{- end }}
 
-    {{/* ページ1のみ: カテゴリ別ピックアップ + 保存版まとめ */}}
+    {{/* ページ1のみ: カテゴリ別ピックアップ・ガイド・エリア・CTA */}}
     {{- if eq $paginator.PageNumber 1 }}
 
-    {{/* ── 便利ガイド導線バナー ── */}}
-    <div class="lg-home-banner">
-      <div class="lg-home-banner-body">
-        <h2 class="lg-home-banner-title">📖 浦安市くらしの便利ガイド</h2>
-        <p class="lg-home-banner-desc">子育て、医療、防災、ごみ、公共施設など、浦安市で暮らす人向けの保存版ガイドをまとめました。</p>
-        <div class="lg-home-banner-chips">
-          <a href="/life-guide/#kosodate">子育て支援</a>
-          <a href="/guides/holiday-night-medical/">休日・夜間診療</a>
-          <a href="/guides/trash-recycling/">ごみ分別</a>
-          <a href="/guides/disaster-prevention/">防災</a>
-          <a href="/guides/parks-playgrounds/">公園・遊び場</a>
-        </div>
-      </div>
-      <a class="lg-home-banner-cta" href="/life-guide/">便利ガイドを見る →</a>
-    </div>
-
-    {{/* 新着の開店・閉店 */}}
+    {{/* ─ 6. 新着の開店・閉店 (3件) ─ */}}
     {{- $openClosePosts := where $allPosts "Params.categories" "intersect" (slice "開店・閉店" "開店閉店") }}
-    {{- $openClosePosts = first 6 $openClosePosts }}
+    {{- $openClosePosts = first 3 $openClosePosts }}
     {{- if $openClosePosts }}
     <div class="section-head" style="margin-top:36px;">
       <h2>新着の開店・閉店</h2>
@@ -138,9 +164,9 @@
     </div>
     {{- end }}
 
-    {{/* イベント情報 */}}
+    {{/* ─ 7. イベント情報 (3件・開催日表示) ─ */}}
     {{- $eventPosts := where $allPosts "Params.categories" "intersect" (slice "イベント") }}
-    {{- $eventPosts = first 6 $eventPosts }}
+    {{- $eventPosts = first 3 $eventPosts }}
     {{- if $eventPosts }}
     <div class="section-head" style="margin-top:36px;">
       <h2>イベント情報</h2>
@@ -153,13 +179,69 @@
     </div>
     {{- end }}
 
-    {{/*
-      保存版まとめ — フロントマターに summary: true を持つ記事が存在する場合のみ表示。
-      まとめ記事に summary: true を追加すれば自動でここに表示されます。
-    */}}
+    {{/* ─ 8. 保存版ガイド ─ */}}
+    <div class="section-head" style="margin-top:36px;">
+      <h2>保存版ガイド</h2>
+    </div>
+    <div class="top-guide-cards">
+      <a class="top-guide-card" href="/life-guide/">
+        <span class="top-guide-card-icon">📖</span>
+        <div class="top-guide-card-body">
+          <div class="top-guide-card-label">くらし</div>
+          <div class="top-guide-card-title">浦安市くらしの便利ガイド</div>
+          <div class="top-guide-card-desc">子育て・医療・防災・ごみ・公共施設</div>
+        </div>
+      </a>
+      <a class="top-guide-card" href="/travel-guide/">
+        <span class="top-guide-card-icon">✈️</span>
+        <div class="top-guide-card-body">
+          <div class="top-guide-card-label">旅行</div>
+          <div class="top-guide-card-title">浦安・舞浜 旅行ガイド</div>
+          <div class="top-guide-card-desc">ホテル・アクセス・グルメ・観光</div>
+        </div>
+      </a>
+    </div>
+
+    {{/* ─ 9. エリア別導線 (タグが存在する場合のみ表示) ─ */}}
+    {{- $areaLinks := slice }}
+    {{- with index site.Taxonomies.tags "浦安市" }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/浦安市/" "emoji" "🏙️" "label" "浦安") }}
+    {{- end }}
+    {{- with index site.Taxonomies.tags "新浦安" }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/新浦安/" "emoji" "🌊" "label" "新浦安") }}
+    {{- end }}
+    {{- with index site.Taxonomies.tags "舞浜" }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/舞浜/" "emoji" "🎡" "label" "舞浜") }}
+    {{- end }}
+    {{- with index site.Taxonomies.tags "行徳" }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/行徳/" "emoji" "🐟" "label" "行徳・妙典") }}
+    {{- end }}
+    {{- if $areaLinks }}
+    <div class="section-head">
+      <h2>エリアから探す</h2>
+    </div>
+    <div class="top-area-nav">
+      {{- range $areaLinks }}
+      <a class="top-area-item" href="{{ .href }}">
+        <span class="area-emoji">{{ .emoji }}</span><span>{{ .label }}</span>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{/* ─ 10. 情報提供CTA ─ */}}
+    <div class="top-info-cta">
+      <div class="top-info-cta-text">
+        <p class="top-info-cta-title">地域の情報をお持ちですか？</p>
+        <p class="top-info-cta-desc">開店・閉店、イベント、地域のニュースなど、情報提供をお待ちしています。</p>
+      </div>
+      <a class="top-info-cta-btn" href="/contact/">情報を提供する →</a>
+    </div>
+
+    {{/* 保存版まとめ記事 (summary: true を持つ記事がある場合のみ) */}}
     {{- $summaryPosts := where $allPosts "Params.summary" true }}
     {{- if $summaryPosts }}
-    <div class="section-head" style="margin-top:36px;">
+    <div class="section-head">
       <h2>保存版まとめ</h2>
     </div>
     <div class="guide-grid">
@@ -236,6 +318,5 @@
 
   </aside>
 </div>
-
 
 {{- end }}

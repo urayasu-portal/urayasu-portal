@@ -2176,6 +2176,151 @@ body:not(.list) { --main-width: 1108px; }
   margin-right: 4px;
 }
 
+/* ══════════════════════════════════════════
+   Step 4-3: トップページ専用コンポーネント
+   ══════════════════════════════════════════ */
+
+/* ── ファーストビュー クイックリンク ── */
+.portal-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.portal-quick-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: var(--r-pill);
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background .15s;
+  white-space: nowrap;
+}
+.portal-quick-link:hover { background: rgba(255,255,255,.28); }
+
+/* ── 目的別ナビ ── */
+.top-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.top-purpose-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 6px;
+  background: var(--up-surface);
+  border: 0.5px solid var(--up-border);
+  border-radius: var(--r-md);
+  text-decoration: none !important;
+  color: var(--up-text-2) !important;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  transition: border-color .15s, color .15s, box-shadow .15s;
+}
+.top-purpose-item:hover {
+  border-color: var(--up-teal);
+  color: var(--up-teal) !important;
+  box-shadow: var(--up-shadow-sm);
+}
+.top-purpose-icon { font-size: 22px; line-height: 1; }
+
+/* ── 保存版ガイドカード ── */
+.top-guide-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.top-guide-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  background: var(--up-surface);
+  border: 0.5px solid var(--up-border);
+  border-radius: var(--r-lg);
+  text-decoration: none !important;
+  color: var(--up-text-1) !important;
+  transition: border-color .15s, box-shadow .15s;
+}
+.top-guide-card:hover { border-color: var(--up-teal); box-shadow: var(--up-shadow-md); }
+.top-guide-card-icon { font-size: 30px; flex-shrink: 0; line-height: 1; }
+.top-guide-card-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--up-teal);
+  margin-bottom: 3px;
+  letter-spacing: .04em;
+}
+.top-guide-card-title { font-size: 13px; font-weight: 700; line-height: 1.45; margin-bottom: 4px; }
+.top-guide-card-desc { font-size: 11px; color: var(--up-text-3); line-height: 1.55; }
+
+/* ── エリア別導線 ── */
+.top-area-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.top-area-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 6px;
+  background: var(--up-surface);
+  border: 0.5px solid var(--up-border);
+  border-radius: var(--r-md);
+  text-decoration: none !important;
+  color: var(--up-text-2) !important;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  transition: border-color .15s, color .15s;
+}
+.top-area-item:hover { border-color: var(--up-navy); color: var(--up-navy) !important; }
+.top-area-item .area-emoji { font-size: 18px; line-height: 1; }
+
+/* ── 情報提供CTA ── */
+.top-info-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--up-surface-2);
+  border: 0.5px solid var(--up-border);
+  border-radius: var(--r-lg);
+  padding: 20px 22px;
+  margin-bottom: 24px;
+}
+.top-info-cta-text { flex: 1; min-width: 0; }
+.top-info-cta-title { font-size: 14px; font-weight: 700; color: var(--up-text-1); margin: 0 0 4px; }
+.top-info-cta-desc { font-size: 12px; color: var(--up-text-3); margin: 0; line-height: 1.6; }
+.top-info-cta-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 18px;
+  background: var(--up-navy);
+  color: #fff !important;
+  border-radius: var(--r-sm);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background .15s;
+}
+.top-info-cta-btn:hover { background: #144D76; }
+
 /* ---------- レスポンシブ補足 ---------- */
 @media (max-width: 900px) {
   .portal-hero { padding: 28px 22px; }
@@ -2189,5 +2334,11 @@ body:not(.list) { --main-width: 1108px; }
   .portal-hero-title { font-size: 17px; }
   .portal-hero-subtitle { font-size: 12px; }
   .hero-contact-link { font-size: 11px; padding: 6px 12px; }
+  .portal-quick-links { gap: 6px; }
+  .portal-quick-link { font-size: 11px; padding: 5px 11px; }
   .guide-grid { grid-template-columns: 1fr; }
+  .top-guide-cards { grid-template-columns: 1fr; }
+  .top-area-nav { grid-template-columns: repeat(2, 1fr); }
+  .top-info-cta { flex-direction: column; align-items: flex-start; }
+  .top-info-cta-btn { width: 100%; justify-content: center; }
 }
