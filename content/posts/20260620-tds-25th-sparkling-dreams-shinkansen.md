@@ -14,6 +14,9 @@ tags:
 description: "東京ディズニーシー25周年をテーマにした東海道新幹線の特別編成「Sparkling Dreams Shinkansen」が6月19日から運行を開始しました。"
 eventDate: "2026-06-19"
 hideEventBox: true
+cover:
+  bodyImage: /images/posts/img_0400.jpeg
+  alt: "【舞浜】TDS25周年新幹線が運行開始"
 draft: false
 ---
 <p>東京ディズニーシー25周年をテーマにした東海道新幹線の特別編成「Sparkling Dreams Shinkansen」が、2026年6月19日（金）から運行を開始しました。</p>
@@ -35,6 +38,3 @@ draft: false
   <li><a href="https://www.tokyodisneyresort.jp/dream/event/2026_s25_jrc.html" target="_blank" rel="noopener">東京ディズニーリゾート公式サイト</a></li>
   <li><a href="https://jr-central.co.jp/news/release/nws000001_00481.html" target="_blank" rel="noopener">JR東海公式サイト</a></li>
 </ul>
-<figure style="margin:1.5em 0;">
-  <img src="/images/posts/img_0400.jpeg" alt="" style="width:100%;border-radius:8px;">
-</figure>
