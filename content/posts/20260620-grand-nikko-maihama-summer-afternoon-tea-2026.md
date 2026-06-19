@@ -27,6 +27,9 @@ eventDates:
   - "2026-08-01"
   - "2026-08-02"
 hideEventBox: true
+cover:
+  bodyImage: /images/posts/img_0398.jpeg
+  alt: "【舞浜】グランドニッコーで夏アフタヌーンティー"
 draft: false
 ---
 <p>グランドニッコー東京ベイ 舞浜で、「サマーバケーションアフタヌーンティー」が期間限定で提供されます。</p>
@@ -52,10 +55,3 @@ draft: false
   <li><a href="https://tokyobay.grandnikko.com/news/498/" target="_blank" rel="noopener">グランドニッコー東京ベイ 舞浜公式サイト</a></li>
   <li><a href="https://sumitai.ne.jp/urayasu/2026-06-17/157475.html" target="_blank" rel="noopener">浦安に住みたい！web</a></li>
 </ul>
-<figure style="margin:1.5em 0;">
-  <img src="/images/posts/img_0398.jpeg" alt="" style="width:100%;border-radius:8px;">
-</figure>
-
-<figure style="margin:1.5em 0;">
-  <img src="/images/posts/img_0398.jpeg" alt="" style="width:100%;border-radius:8px;">
-</figure>
