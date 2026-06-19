@@ -35,9 +35,5 @@ draft: false
   <li><a href="https://urayasu.keizai.biz/headline/453/" target="_blank" rel="noopener">浦安経済新聞</a></li>
 </ul>
 <figure style="margin:1.5em 0;">
-  <img src="/images/posts/img_0401.jpeg" alt="" style="width:100%;border-radius:8px;">
-</figure>
-
-<figure style="margin:1.5em 0;">
   <img src="/images/posts/img_0402.jpeg" alt="" style="width:100%;border-radius:8px;">
 </figure>
