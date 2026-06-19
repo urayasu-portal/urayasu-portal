@@ -1,0 +1,41 @@
+{{- /*
+  同エリアの記事セクション
+  記事のタグからエリアタグを検出し、同エリアの最新記事を最大4件表示する。
+  posts セクションのみ対象。エリアタグを持たない記事では何も出力しない。
+*/ -}}
+{{- if eq .Section "posts" }}
+{{- $curTags  := .Params.tags | default slice }}
+{{- $allPosts := where site.RegularPages "Section" "posts" }}
+
+{{- $areaTags := slice "新浦安" "浦安駅" "舞浜" "行徳" "妙典" "浦安市"
+                       "高洲" "明海" "日の出" "猫実" "堀江" "当代島" "弁天" }}
+{{- $areaTag := "" }}
+{{- range $areaTags }}
+  {{- if and (not $areaTag) (in $curTags .) }}
+    {{- $areaTag = . }}
+  {{- end }}
+{{- end }}
+
+{{- if $areaTag }}
+{{- $areaArticles := slice }}
+{{- range $allPosts }}
+  {{- if and (ne .Permalink $.Permalink) (in (.Params.tags | default slice) $areaTag) }}
+    {{- $areaArticles = $areaArticles | append . }}
+  {{- end }}
+{{- end }}
+{{- $areaArticles = first 4 $areaArticles }}
+{{- if $areaArticles }}
+<div class="area-posts">
+  <div class="section-head">
+    <h2>📍 {{ $areaTag }}の記事</h2>
+    <a class="section-more" href="/tags/{{ $areaTag | urlize }}/">{{ $areaTag }}の記事一覧 →</a>
+  </div>
+  <div class="article-grid">
+    {{- range $areaArticles }}
+    {{- partial "article-card.html" . }}
+    {{- end }}
+  </div>
+</div>
+{{- end }}
+{{- end }}
+{{- end }}

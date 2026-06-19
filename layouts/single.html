@@ -33,6 +33,9 @@
           {{- if not (.Param "noDate") }}
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
           {{- end }}
+          {{- if gt .Lastmod .Date }}
+          <span class="post-updated-badge">🔄 {{ .Lastmod.Format "2006年1月2日" }}更新</span>
+          {{- end }}
         </div>
         <h1 class="post-title">{{ .Title }}</h1>
         {{- with .Description }}
@@ -83,6 +86,24 @@
       </div>
       {{- end }}
 
+      {{- with .Params.eventDate }}
+      {{- /* eventDate は文字列・スラッシュ範囲・リストのいずれかを許容する */}}
+      {{- $endDateStr := "" }}
+      {{- if reflect.IsSlice . }}
+        {{- $endDateStr = index (last 1 .) 0 }}
+      {{- else }}
+        {{- $endDateStr = index (last 1 (split (printf "%s" .) "/")) 0 }}
+      {{- end }}
+      {{- if $endDateStr }}
+        {{- $evTime := time $endDateStr }}
+        {{- if $evTime.Before now }}
+        <div class="event-ended-warn">
+          ⚠️ <strong>このイベントは終了しました</strong>（{{ $endDateStr }}）。掲載内容は開催当時の情報です。最新情報は公式サイトをご確認ください。
+        </div>
+        {{- end }}
+      {{- end }}
+      {{- end }}
+
       {{- if .Content }}
       <div class="post-content md-content">
         {{- if not (.Param "disableAnchoredHeadings") }}
@@ -124,6 +145,8 @@
           </a>
         </div>
         {{- end }}
+
+        {{- partial "source-info.html" . }}
 
         {{- if (.Param "ShowPostNavLinks") }}
         {{- partial "post_nav_links.html" . }}
@@ -177,6 +200,9 @@
     </div>
     {{- end }}
     {{- end }}
+
+    {{/* 同エリアの関連記事 */}}
+    {{- partial "area-posts.html" . }}
 
     {{/* くらしの便利ガイドへの導線 (posts セクションのみ表示) */}}
     {{- partial "related-guides.html" . }}
