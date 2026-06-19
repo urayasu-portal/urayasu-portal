@@ -15,7 +15,7 @@ tags:
   - "ホテル宿泊"
 description: "舞浜・新浦安・浦安駅周辺で観光や散策を楽しみたい方向けに、ディズニー周辺の過ごし方、観光スポット、雨の日・子連れ向け情報、ホテル宿泊者向けの立ち寄り先をまとめます。"
 images:
-  - "/images/og-travel-urayasu.png"
+  - "/images/og-tourism.png"
 noDate: true
 tgNav: true
 draft: false

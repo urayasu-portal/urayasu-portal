@@ -15,7 +15,7 @@ tags:
   - 東京ディズニーリゾート
   - UDタクシー
   - 福祉タクシー
-images: ["/images/og-travel-urayasu.png"]
+images: ["/images/og-taxi.png"]
 noDate: true
 tgNav: true
 faq:

@@ -15,7 +15,7 @@ tags:
   - リムジンバス
   - アクセス
   - バリアフリー
-images: ["/images/og-travel-urayasu.png"]
+images: ["/images/og-access.png"]
 noDate: true
 tgNav: true
 faq:

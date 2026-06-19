@@ -12,7 +12,7 @@ tags:
   - 手土産
   - お土産
   - ホテルグルメ
-images: ["/images/og-travel-urayasu.png"]
+images: ["/images/og-gourmet.png"]
 noDate: true
 tgNav: true
 ---
