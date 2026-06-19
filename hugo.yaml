@@ -35,6 +35,9 @@ params:
   # ★SEO: SNSシェア時の既定OG画像（1200×630ブランド画像）。個別記事は各自の画像が優先される。
   images:
     - /images/og-default.png
+  schema:
+    # ★SEO: Organization/BlogPosting publisher の logo（512×512px 正方形）
+    logo: /images/logo-square.png
   ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
