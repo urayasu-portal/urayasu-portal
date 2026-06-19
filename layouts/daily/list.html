@@ -81,7 +81,7 @@
         <a class="recent-item" href="{{ .RelPermalink }}">
           <div class="recent-thumb">
             {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-            {{- else }}<div style="width:100%;height:100%;background:linear-gradient(135deg,#c8dff0,#a8cce0);display:flex;align-items:center;justify-content:center;font-size:18px;">🗞</div>{{- end }}
+            {{- else }}<div class="recent-thumb-no-img">🗞</div>{{- end }}
           </div>
           <div class="recent-body">
             <h4>{{ .Title }}</h4>

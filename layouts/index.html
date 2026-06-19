@@ -87,20 +87,7 @@
     {{- $paginator := .Paginate (after 3 $allPosts) 9 }}
     <div class="article-grid">
       {{- range $paginator.Pages }}
-      {{- $cat := index .Params.categories 0 | default "" }}
-      {{- $cls := index $catClass $cat | default "cat-default" }}
-      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
-      <a class="article-card" href="{{ .RelPermalink }}">
-        <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
-          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-          {{- else }}<span>{{ $cat }}</span>{{- end }}
-        </div>
-        <div class="article-body">
-          {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
-          <h3>{{ .Title }}</h3>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
-        </div>
-      </a>
+      {{- partial "article-card.html" . }}
       {{- end }}
     </div>
 
@@ -146,18 +133,7 @@
     </div>
     <div class="article-grid">
       {{- range $openClosePosts }}
-      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
-      <a class="article-card" href="{{ .RelPermalink }}">
-        <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
-          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-          {{- else }}<span>開店・閉店</span>{{- end }}
-        </div>
-        <div class="article-body">
-          <span class="cat-badge cat-badge-sm cat-open">開店・閉店</span>
-          <h3>{{ .Title }}</h3>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
-        </div>
-      </a>
+      {{- partial "article-card.html" . }}
       {{- end }}
     </div>
     {{- end }}
@@ -172,22 +148,7 @@
     </div>
     <div class="article-grid">
       {{- range $eventPosts }}
-      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
-      <a class="article-card" href="{{ .RelPermalink }}">
-        <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
-          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-          {{- else }}<span>イベント</span>{{- end }}
-        </div>
-        <div class="article-body">
-          <span class="cat-badge cat-badge-sm cat-event">イベント</span>
-          <h3>{{ .Title }}</h3>
-          {{- with .Params.eventDate }}
-          <time datetime="{{ . }}">📅 {{ . }}</time>
-          {{- else }}
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
-          {{- end }}
-        </div>
-      </a>
+      {{- partial "article-card.html" . }}
       {{- end }}
     </div>
     {{- end }}
@@ -247,7 +208,7 @@
         <a class="recent-item" href="{{ .RelPermalink }}">
           <div class="recent-thumb">
             {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-            {{- else }}<div style="width:100%;height:100%;background:linear-gradient(135deg,#c8dff0,#a8cce0);display:flex;align-items:center;justify-content:center;font-size:20px;">🗞</div>{{- end }}
+            {{- else }}<div class="recent-thumb-no-img">🗞</div>{{- end }}
           </div>
           <div class="recent-body">
             <h4>{{ .Title }}</h4>

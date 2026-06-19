@@ -53,7 +53,7 @@
     <p class="tg-group-label">🗺️ エリアを楽しむ</p>
     <div class="tg-cards-mini" style="margin-bottom:20px;">
       <a class="tg-theme-card" href="/travel-guide/urayasu-maihama-shinurayasu-tourism/">
-        <div class="tg-card-band" style="background:linear-gradient(135deg,#1a7a4a,#2a9a5a);">
+        <div class="tg-card-band tg-card-band-tourism">
           <span class="tg-card-tag">公開中</span>
         </div>
         <div class="tg-card-body">
@@ -64,7 +64,7 @@
       </a>
 
       <a class="tg-theme-card" href="/travel-guide/urayasu-gourmet-souvenir-guide/">
-        <div class="tg-card-band" style="background:linear-gradient(135deg,#c05a10,#d4752a);">
+        <div class="tg-card-band tg-card-band-gourmet">
           <span class="tg-card-tag">公開中</span>
         </div>
         <div class="tg-card-body">
@@ -78,7 +78,7 @@
     <p class="tg-group-label">✈️ 移動する</p>
     <div class="tg-cards-mini">
       <a class="tg-theme-card" href="/travel-guide/urayasu-maihama-access-guide/">
-        <div class="tg-card-band" style="background:linear-gradient(135deg,#1e7a9a,#2a9ab4);">
+        <div class="tg-card-band tg-card-band-access">
           <span class="tg-card-tag">公開中</span>
         </div>
         <div class="tg-card-body">
@@ -89,7 +89,7 @@
       </a>
 
       <a class="tg-theme-card" href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/">
-        <div class="tg-card-band" style="background:linear-gradient(135deg,#5a4a8a,#7a5aa8);">
+        <div class="tg-card-band tg-card-band-taxi">
           <span class="tg-card-tag">公開中</span>
         </div>
         <div class="tg-card-body">
@@ -146,33 +146,8 @@
   <a class="section-more" href="/">すべての記事 →</a>
 </div>
 <div class="article-grid">
-  {{- $catClass := dict
-    "開店・閉店" "cat-open"
-    "開店閉店"   "cat-open"
-    "ニュース"   "cat-news"
-    "イベント"   "cat-event"
-    "グルメ・カフェ" "cat-gourmet"
-    "グルメカフェ"   "cat-gourmet"
-    "子育て・教育" "cat-edu"
-    "子育て教育"   "cat-edu"
-    "スポーツ"   "cat-sports"
-    "お知らせ"   "cat-notice"
-  }}
   {{- range $relatedPosts }}
-  {{- $cat := index .Params.categories 0 | default "" }}
-  {{- $cls := index $catClass $cat | default "cat-default" }}
-  {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
-  <a class="article-card" href="{{ .RelPermalink }}">
-    <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
-      {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-      {{- else }}<span>{{ $cat }}</span>{{- end }}
-    </div>
-    <div class="article-body">
-      {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
-      <h3>{{ .Title }}</h3>
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
-    </div>
-  </a>
+  {{- partial "article-card.html" . }}
   {{- end }}
 </div>
 {{- end }}
