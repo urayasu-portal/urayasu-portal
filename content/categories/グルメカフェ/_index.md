@@ -1,4 +1,6 @@
 ---
 title: "グルメ・カフェ"
 description: "浦安・新浦安・舞浜周辺のグルメ、カフェ、レストラン、ラーメン、居酒屋などの話題をまとめています。"
+images:
+  - /images/og-gourmet.png
 ---

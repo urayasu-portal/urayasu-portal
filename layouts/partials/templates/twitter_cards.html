@@ -1,0 +1,50 @@
+{{- /*
+  PaperMod の twitter_cards.html を上書き。
+  変更点:
+    1. twitter:title: ホームページのみ site.Params.homeTitle を使用する。
+    2. twitter:description: タクソノミーtermページ向けに .Params.description も参照。
+  テーマ更新時は元ファイルと diff を取り、これらの変更点だけ再適用する。
+*/ -}}
+{{- if .Params.cover.image -}}
+<meta name="twitter:card" content="summary_large_image">
+{{- if (ne $.Params.cover.relative true) }}
+<meta name="twitter:image" content="{{ .Params.cover.image | absURL }}">
+{{- else }}
+<meta name="twitter:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | absURL }}">
+{{- end}}
+{{- else }}
+{{- $images := partial "templates/_funcs/get-page-images" . }}
+{{- with index $images 0 }}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ .Permalink }}">
+{{- else }}
+  <meta name="twitter:card" content="summary">
+{{- end }}
+{{- end }}
+
+{{- /* ★SEO: ホームは homeTitle を優先 */}}
+{{- if .IsHome }}
+  <meta name="twitter:title" content="{{ site.Params.homeTitle | default site.Title | plainify }}">
+{{- else }}
+  {{- with or .Title site.Title site.Params.title | plainify }}
+    <meta name="twitter:title" content="{{ . }}">
+  {{- end }}
+{{- end }}
+
+{{- /* ★SEO: タクソノミーtermページは .Params.description も参照 */}}
+{{- with or .Description .Params.description .Summary site.Params.description | plainify | htmlUnescape }}
+  <meta name="twitter:description" content="{{ trim . "\n\r\t " }}">
+{{- end }}
+
+{{- $twitterSite := "" }}
+{{- with site.Params.social }}
+  {{- if reflect.IsMap . }}
+    {{- with .twitter }}
+      {{- $content := . }}
+      {{- if not (strings.HasPrefix . "@") }}
+        {{- $content = printf "@%v" . }}
+      {{- end }}
+      <meta name="twitter:site" content="{{ $content }}">
+    {{- end }}
+  {{- end }}
+{{- end }}
