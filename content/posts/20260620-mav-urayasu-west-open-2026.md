@@ -15,7 +15,7 @@ description: "浦安駅高架下の商業施設「M’av浦安」が6月30日に
 eventDate: "2026-06-30"
 hideEventBox: true
 cover:
-  catimg: cat-open
+  bodyImage: /images/posts/img_0397.png
   alt: "【浦安】M’av浦安WESTが6月30日開業へ"
 draft: false
 ---
