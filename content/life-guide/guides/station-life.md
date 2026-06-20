@@ -16,6 +16,8 @@ faq:
   - q: "引っ越し先の手続きはどこで行えますか？"
     a: "転入届などの手続きは市役所または駅前行政サービスセンターで行えます。詳細は市役所手続きガイドをご覧ください。"
 images: ["/images/og-guides.png"]
+aliases:
+  - /guides/station-life/
 ---
 
 <style>
