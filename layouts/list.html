@@ -73,7 +73,7 @@
 
     {{- if $paginator.Pages }}
     <div class="section-head">
-      <h2>{{ if .Title }}{{ .Title }}の記事{{ else }}記事一覧{{ end }}</h2>
+      <h2>{{ if and .Title (ne .Title "記事一覧") }}{{ .Title }}の記事{{ else }}新着記事{{ end }}</h2>
       <span class="list-count">全{{ len $pages }}件</span>
     </div>
 

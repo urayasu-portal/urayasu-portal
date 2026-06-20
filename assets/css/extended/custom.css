@@ -1575,6 +1575,7 @@ body:not(.list) { --main-width: 1108px; }
 .tg-scene-band-kids   { background: linear-gradient(135deg, #1a5c8a, #2a8a9a); }
 .tg-scene-band-budget { background: linear-gradient(135deg, #1a7a3a, #0e9e8e); }
 .tg-scene-band-access { background: linear-gradient(135deg, #7a4a10, #e8593a); }
+.tg-scene-band-rainy  { background: linear-gradient(135deg, #2d4a7a, #4a7ab0); }
 .tg-scene-body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; }
 .tg-scene-body h3 {
   font-size: 0.9rem;
@@ -2446,3 +2447,89 @@ body:not(.list) { --main-width: 1108px; }
 
 /* ---------- 同エリアの記事 ---------- */
 .area-posts { margin-top: 32px; }
+
+/* ===================================================
+   記事ページ改善 v2 — ブレッドクラム・本文幅・見出し
+   =================================================== */
+
+/* ---------- ブレッドクラム ---------- */
+.post-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px 4px;
+  font-size: 12px;
+  color: var(--up-text-3);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.post-breadcrumb a {
+  color: var(--up-text-3) !important;
+  text-decoration: none !important;
+  transition: color .15s;
+}
+.post-breadcrumb a:hover { color: var(--up-teal) !important; }
+.bc-sep {
+  color: var(--up-border-2);
+  font-size: 11px;
+  user-select: none;
+  margin: 0 2px;
+}
+.bc-current {
+  color: var(--up-text-2);
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+@media (max-width: 640px) {
+  .bc-current { max-width: 140px; }
+}
+
+/* ---------- 記事本文の最大幅制限 ---------- */
+/* 640-1160px（1列表示）でテキスト幅が広がりすぎるのを防ぐ */
+@media (min-width: 641px) and (max-width: 1160px) {
+  body:not(.list) .home-main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ---------- 見出しアンカーリンク ---------- */
+/* PaperMod anchored_headings が生成する # リンクのスタイル */
+.post-content .anchor {
+  opacity: 0;
+  margin-left: 6px;
+  font-size: .75em;
+  color: var(--up-teal) !important;
+  text-decoration: none !important;
+  transition: opacity .15s;
+  vertical-align: middle;
+}
+.post-content h2:hover .anchor,
+.post-content h3:hover .anchor,
+.post-content h4:hover .anchor { opacity: 1; }
+
+/* ---------- 記事本文 h2 視認性強化 ---------- */
+/* スクロール時のアンカー位置ずれ防止 */
+.post-content h2[id],
+.post-content h3[id] {
+  scroll-margin-top: calc(var(--header-height, 56px) + 12px);
+}
+
+/* ---------- リード文（最初の p）を少し目立たせる ---------- */
+.post-content > p:first-of-type {
+  font-size: 15.5px;
+  line-height: 2;
+  color: var(--up-text-2);
+}
+
+/* ---------- source-block をフッター内に自然に収める ---------- */
+/* post-footer 直下に置いた場合の余白調整 */
+.post-footer .source-block {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+}

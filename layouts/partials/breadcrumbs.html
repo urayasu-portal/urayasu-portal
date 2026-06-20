@@ -1,0 +1,18 @@
+{{- /*
+  カスタムブレッドクラム — PaperMod の ShowBreadCrumbs に依存しない。
+  posts セクションの記事では「トップ › カテゴリ名 › 記事タイトル」を表示。
+  その他ページでは「トップ › ページタイトル」を表示。
+*/ -}}
+{{- $cat := index .Params.categories 0 | default "" }}
+<nav class="post-breadcrumb" aria-label="パンくずリスト">
+  <a href="/">トップ</a>
+  {{- if and (eq .Section "posts") $cat }}
+  <span class="bc-sep" aria-hidden="true">›</span>
+  <a href="/categories/{{ $cat | urlize }}/">{{ $cat }}</a>
+  {{- else if .Parent }}
+  <span class="bc-sep" aria-hidden="true">›</span>
+  <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+  {{- end }}
+  <span class="bc-sep" aria-hidden="true">›</span>
+  <span class="bc-current" aria-current="page">{{ .Title | truncate 28 "…" }}</span>
+</nav>

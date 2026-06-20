@@ -65,42 +65,22 @@ params:
 
 menu:
   main:
-    - name: 開店・閉店
-      identifier: open-closed
-      url: /categories/開店閉店/
-      weight: 10
-    - name: ニュース
-      identifier: topics
-      url: /categories/ニュース/
-      weight: 20
-    - name: イベント
-      identifier: event
-      url: /categories/イベント/
-      weight: 30
-    - name: グルメ・カフェ
-      identifier: gourmet
-      url: /categories/グルメカフェ/
-      weight: 40
-    - name: 子育て・教育
-      identifier: education
-      url: /categories/子育て教育/
-      weight: 50
-    - name: スポーツ
-      identifier: sports
-      url: /categories/スポーツ/
-      weight: 60
     - name: 便利ガイド
       identifier: life-guide
       url: /life-guide/
-      weight: 65
+      weight: 10
+    - name: 街のトピックス
+      identifier: topics
+      url: https://urayasu-portal.com/
+      weight: 20
     - name: 旅行ガイド
       identifier: travel-guide
       url: /travel-guide/
-      weight: 66
+      weight: 30
     - name: お問い合わせ
       identifier: contact
       url: /contact/
-      weight: 70
+      weight: 40
 
 taxonomies:
   category: categories
