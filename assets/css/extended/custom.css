@@ -266,7 +266,7 @@ body.list { --main-width: 1160px; }
 .section-head h2::before {
   content: '';
   width: 4px; height: 18px;
-  background: var(--up-teal);
+  background: var(--accent);
   border-radius: 2px;
   flex-shrink: 0;
 }
@@ -961,7 +961,7 @@ body:not(.list) { --main-width: 1108px; }
 /* ---------- セクション「もっと見る」リンク ---------- */
 .section-more {
   font-size: 12px;
-  color: var(--portal-blue) !important;
+  color: var(--accent) !important;
   text-decoration: none !important;
   font-weight: 600;
 }
@@ -1020,8 +1020,8 @@ body:not(.list) { --main-width: 1108px; }
 /* ---------- 記事末尾 CTA ---------- */
 .cta-box {
   margin: 32px 32px 0;
-  background: var(--cat-news-bg);
-  border: 1px solid var(--portal-border);
+  background: var(--accent-bg);
+  border: 1px solid var(--up-border);
   border-radius: var(--r-md);
   overflow: hidden;
 }
@@ -1036,7 +1036,7 @@ body:not(.list) { --main-width: 1108px; }
   display: block;
   font-size: 14px;
   font-weight: 800;
-  color: var(--portal-blue);
+  color: var(--accent-ink);
   margin-bottom: 6px;
 }
 .cta-box-text p {
@@ -1050,7 +1050,7 @@ body:not(.list) { --main-width: 1108px; }
   align-items: center;
   white-space: nowrap;
   padding: 10px 20px;
-  background: var(--up-teal);
+  background: var(--accent);
   color: #fff !important;
   border-radius: var(--r-sm);
   font-size: 13px;
@@ -1059,7 +1059,7 @@ body:not(.list) { --main-width: 1108px; }
   flex-shrink: 0;
   transition: background .15s;
 }
-.cta-box-btn:hover { background: #0B8A7C; }
+.cta-box-btn:hover { background: var(--accent-ink); }
 @media (max-width: 640px) {
   .cta-box { margin: 24px 16px 0; }
   .cta-box-inner { flex-direction: column; align-items: flex-start; }
