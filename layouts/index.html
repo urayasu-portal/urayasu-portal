@@ -20,7 +20,8 @@
 {{/* ═══ 1. ファーストビュー ═══ */}}
 <div class="portal-hero">
   <div class="portal-hero-text">
-    <h1 class="portal-hero-title">浦安・新浦安・舞浜の<br>地域情報メディア</h1>
+    <span class="portal-hero-label">街のトピックス</span>
+    <h1 class="portal-hero-title">浦安の、いまを知る。</h1>
     <p class="portal-hero-subtitle">開店・閉店、イベント、グルメ、子育て、スポーツまで。浦安と周辺エリアの気になる話題を地域密着でお届けします。</p>
     <nav class="portal-quick-links" aria-label="カテゴリから探す">
       <a class="portal-quick-link" href="/categories/開店閉店/">🏪 開店・閉店</a>
@@ -181,12 +182,20 @@
     </div>
     {{- end }}
 
-    {{/* ─ 8. 保存版ガイド ─ */}}
+    {{/* ─ 8. 3つの入口から探す ─ */}}
     <div class="section-head" style="margin-top:36px;">
-      <h2>保存版ガイド</h2>
+      <h2>3つの入口から探す</h2>
     </div>
-    <div class="top-guide-cards">
-      <a class="top-guide-card" href="/life-guide/">
+    <div class="top-guide-cards top-guide-cards--3">
+      <a class="top-guide-card tg-topics" href="/posts/">
+        <span class="top-guide-card-icon">📰</span>
+        <div class="top-guide-card-body">
+          <div class="top-guide-card-label">トピックス</div>
+          <div class="top-guide-card-title">街のトピックス・記事一覧</div>
+          <div class="top-guide-card-desc">毎日の地域ニュース・イベント・グルメ</div>
+        </div>
+      </a>
+      <a class="top-guide-card tg-life" href="/life-guide/">
         <span class="top-guide-card-icon">📖</span>
         <div class="top-guide-card-body">
           <div class="top-guide-card-label">くらし</div>
@@ -194,7 +203,7 @@
           <div class="top-guide-card-desc">子育て・医療・防災・ごみ・公共施設</div>
         </div>
       </a>
-      <a class="top-guide-card" href="/travel-guide/">
+      <a class="top-guide-card tg-travel" href="/travel-guide/">
         <span class="top-guide-card-icon">✈️</span>
         <div class="top-guide-card-body">
           <div class="top-guide-card-label">旅行</div>

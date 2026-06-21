@@ -864,6 +864,14 @@ body:not(.list) { --main-width: 1108px; }
   gap: 20px;
 }
 .portal-hero-text { flex: 1; min-width: 0; }
+.portal-hero-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: rgba(255,255,255,.78);
+  margin-bottom: 6px;
+}
 .portal-hero-title {
   font-size: 20px;
   font-weight: 800;
@@ -2293,6 +2301,18 @@ body:not(.list) { --main-width: 1108px; }
   transition: border-color .15s, box-shadow .15s;
 }
 .top-guide-card:hover { border-color: var(--up-teal); box-shadow: var(--up-shadow-md); }
+
+/* 3つの入口: 柱ごとの上アクセント＋ラベル色 */
+.top-guide-cards--3 { grid-template-columns: repeat(3, 1fr); }
+.top-guide-card.tg-topics { border-top: 3px solid #1A5C8A; }
+.top-guide-card.tg-life   { border-top: 3px solid #0D9A88; }
+.top-guide-card.tg-travel { border-top: 3px solid #E05535; }
+.tg-topics .top-guide-card-label { color: #1A5C8A; }
+.tg-life   .top-guide-card-label { color: #0D9A88; }
+.tg-travel .top-guide-card-label { color: #E05535; }
+.top-guide-card.tg-topics:hover { border-color: #1A5C8A; }
+.top-guide-card.tg-life:hover   { border-color: #0D9A88; }
+.top-guide-card.tg-travel:hover { border-color: #E05535; }
 .top-guide-card-icon { font-size: 30px; flex-shrink: 0; line-height: 1; }
 .top-guide-card-label {
   font-size: 10px;
