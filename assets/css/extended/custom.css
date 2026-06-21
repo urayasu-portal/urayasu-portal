@@ -855,7 +855,7 @@ body:not(.list) { --main-width: 1108px; }
 
 /* ---------- ポータルヒーロー ---------- */
 .portal-hero {
-  background: var(--up-navy);
+  background: var(--accent, var(--up-navy));
   border-radius: 12px;
   padding: 20px 28px;
   margin-bottom: 24px;

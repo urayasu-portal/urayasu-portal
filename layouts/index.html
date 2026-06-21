@@ -89,10 +89,9 @@
 <div class="home-layout">
   <div class="home-main">
 
-    {{- $paginator := .Paginate (after 3 $allPosts) 6 }}
+    {{- $latestPosts := first 6 (after 3 $allPosts) }}
 
-    {{/* ─ 4. 目的別ナビ (page 1 only) ─ */}}
-    {{- if eq $paginator.PageNumber 1 }}
+    {{/* ─ 4. 目的別ナビ ─ */}}
     <nav class="top-purpose-nav" aria-label="目的から探す">
       <div class="section-head">
         <h2>目的から探す</h2>
@@ -124,33 +123,17 @@
         </a>
       </div>
     </nav>
-    {{- end }}
 
     {{/* ─ 5. 最新記事 ─ */}}
     <div class="section-head">
       <h2>最新記事</h2>
+      <a class="section-more" href="/posts/">一覧を見る →</a>
     </div>
     <div class="article-grid">
-      {{- range $paginator.Pages }}
+      {{- range $latestPosts }}
       {{- partial "article-card.html" . }}
       {{- end }}
     </div>
-
-    {{/* ページネーション */}}
-    {{- if gt $paginator.TotalPages 1 }}
-    <div class="home-pagination">
-      {{- if $paginator.HasPrev }}
-      <a class="page-btn" href="{{ $paginator.Prev.URL }}">← 新しい記事</a>
-      {{- end }}
-      <span class="page-info">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
-      {{- if $paginator.HasNext }}
-      <a class="page-btn" href="{{ $paginator.Next.URL }}">古い記事 →</a>
-      {{- end }}
-    </div>
-    {{- end }}
-
-    {{/* ページ1のみ: カテゴリ別ピックアップ・ガイド・エリア・CTA */}}
-    {{- if eq $paginator.PageNumber 1 }}
 
     {{/* ─ 6. 新着の開店・閉店 (3件) ─ */}}
     {{- $openClosePosts := where $allPosts "Params.categories" "intersect" (slice "開店・閉店" "開店閉店") }}
@@ -265,7 +248,6 @@
     </div>
     {{- end }}
 
-    {{- end }}{{/* end PageNumber == 1 */}}
 
   </div>
 
