@@ -114,6 +114,44 @@ body { background: var(--up-bg) !important; color: var(--up-text); line-height: 
   text-decoration-color: rgba(255,255,255,.6) !important;
 }
 
+/* ---------- 柱アクセント (1システム3アクセント) ---------- */
+:root             { --accent: #1A5C8A; --accent-ink: #0F2C44; --accent-bg: #EAF1F7; }
+body.pillar-topics { --accent: #1A5C8A; --accent-ink: #0F2C44; --accent-bg: #EAF1F7; }
+body.pillar-life   { --accent: #0D9A88; --accent-ink: #0A3F39; --accent-bg: #E6F7F4; }
+body.pillar-travel { --accent: #E05535; --accent-ink: #7A2A14; --accent-bg: #FCEEE9; }
+
+/* ---------- ピラー・スイッチャー ---------- */
+.pillar-switcher {
+  background: #fff;
+  border-bottom: 1px solid var(--up-border);
+}
+.pillar-switcher-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.pillar-switcher-inner::-webkit-scrollbar { display: none; }
+.pillar-tab {
+  flex: 0 0 auto;
+  padding: 13px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--up-text-3);
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .15s;
+}
+.pillar-tab:hover { color: var(--up-text-1); }
+.pillar-tab.is-active { font-weight: 700; }
+.pillar-tab--topics.is-active { color: #1A5C8A; border-bottom-color: #1A5C8A; }
+.pillar-tab--life.is-active   { color: #0D9A88; border-bottom-color: #0D9A88; }
+.pillar-tab--travel.is-active { color: #E05535; border-bottom-color: #E05535; }
+
 /* ---------- リストページ幅拡大 ---------- */
 body.list { --main-width: 1160px; }
 

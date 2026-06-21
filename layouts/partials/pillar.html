@@ -1,0 +1,4 @@
+{{- /* 現在ページが属する柱を返す: topics / life / travel。テンプレ・CSSの柱判定の単一ソース。 */ -}}
+{{- $p := "topics" -}}
+{{- if in .RelPermalink "/travel-guide" }}{{ $p = "travel" }}{{ else if in .RelPermalink "/life-guide" }}{{ $p = "life" }}{{ end -}}
+{{- return $p -}}
