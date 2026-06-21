@@ -95,7 +95,7 @@ body { background: var(--up-bg) !important; color: var(--up-text); line-height: 
 }
 .header-nav { max-width: calc(1160px + 48px) !important; }
 .logo a, .logo a span { color: #fff !important; font-weight: 800 !important; }
-.logo a::before { content: "⚓ "; font-size: .9em; }
+.logo a::before { content: "⚓"; font-size: .9em; margin-right: 7px; }
 .theme-toggle svg, .theme-toggle {
   color: rgba(255,255,255,.8) !important;
   fill: rgba(255,255,255,.8) !important;
