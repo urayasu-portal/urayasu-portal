@@ -3,7 +3,7 @@ title: "【浦安市】税務課をかたる不審メールに注意"
 date: 2026-06-21T07:00:00+09:00
 slug: "urayasu-tax-spoofing-email-alert-2026"
 categories:
-  - "ニュース・事件事故"
+  - "ニュース"
 tags:
   - "浦安市"
   - "税務課"

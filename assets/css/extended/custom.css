@@ -305,6 +305,13 @@ body.list { --main-width: 1160px; }
   height: 100%;
 }
 .article-card:hover { transform: translateY(-2px); box-shadow: var(--up-shadow-md); }
+.article-card.cat-open    { border-left: 4px solid var(--cat-open);    background: var(--up-surface); }
+.article-card.cat-news    { border-left: 4px solid var(--cat-news);    background: var(--up-surface); }
+.article-card.cat-event   { border-left: 4px solid var(--cat-event);   background: var(--up-surface); }
+.article-card.cat-gourmet { border-left: 4px solid var(--cat-gourmet); background: var(--up-surface); }
+.article-card.cat-edu     { border-left: 4px solid var(--cat-edu);     background: var(--up-surface); }
+.article-card.cat-sports  { border-left: 4px solid var(--cat-sports);  background: var(--up-surface); }
+.article-card.cat-notice  { border-left: 4px solid var(--cat-notice);  background: var(--up-surface); }
 .article-thumb { height: 140px; overflow: hidden; background: var(--up-surface-2); flex-shrink: 0; }
 .article-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; display: block; }
 .article-card:hover .article-thumb img { transform: scale(1.04); }
@@ -944,7 +951,7 @@ body:not(.list) { --main-width: 1108px; }
 
 /* ---------- ポータルヒーロー ---------- */
 .portal-hero {
-  background: var(--accent, var(--up-navy));
+  background: #EAF1F7;
   border-radius: 12px;
   padding: 20px 28px;
   margin-bottom: 24px;
@@ -958,7 +965,7 @@ body:not(.list) { --main-width: 1108px; }
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .08em;
-  color: rgba(255,255,255,.78);
+  color: var(--up-navy);
   margin-bottom: 6px;
 }
 .portal-hero-title {
@@ -966,12 +973,12 @@ body:not(.list) { --main-width: 1108px; }
   font-weight: 800;
   line-height: 1.4;
   margin: 0 0 6px;
-  color: #fff;
+  color: #0F2C44;
 }
 .portal-hero-subtitle {
   font-size: 13px;
   line-height: 1.75;
-  color: rgba(255,255,255,.88);
+  color: #475569;
   margin: 0;
   max-width: 640px;
 }
@@ -980,8 +987,8 @@ body:not(.list) { --main-width: 1108px; }
   display: inline-flex;
   align-items: center;
   padding: 8px 14px;
-  background: rgba(255,255,255,.15);
-  border: 1px solid rgba(255,255,255,.4);
+  background: var(--up-navy);
+  border: 1px solid var(--up-navy);
   border-radius: 20px;
   color: #fff !important;
   font-size: 12px;
@@ -990,7 +997,7 @@ body:not(.list) { --main-width: 1108px; }
   white-space: nowrap;
   transition: background .18s;
 }
-.hero-contact-link:hover { background: rgba(255,255,255,.28); }
+.hero-contact-link:hover { background: #0F2C44; }
 
 /* ---------- エリアナビ ---------- */
 .area-nav-section {
@@ -2466,17 +2473,17 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   align-items: center;
   gap: 4px;
   padding: 6px 14px;
-  background: rgba(255,255,255,.15);
-  border: 1px solid rgba(255,255,255,.35);
+  background: #fff;
+  border: 1px solid var(--up-border);
   border-radius: var(--r-pill);
-  color: #fff !important;
+  color: var(--up-text-2) !important;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none !important;
-  transition: background .15s;
+  transition: background .15s, border-color .15s;
   white-space: nowrap;
 }
-.portal-quick-link:hover { background: rgba(255,255,255,.28); }
+.portal-quick-link:hover { background: var(--up-navy); border-color: var(--up-navy); color: #fff !important; }
 
 /* ── 目的別ナビ ── */
 .top-purpose-grid {
@@ -2517,9 +2524,9 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 }
 .top-guide-card {
   display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 18px 20px;
+  flex-direction: column;
+  gap: 0;
+  padding: 22px 20px 20px;
   background: var(--up-surface);
   border: 0.5px solid var(--up-border);
   border-radius: var(--r-lg);
@@ -2527,29 +2534,19 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   color: var(--up-text-1) !important;
   transition: border-color .15s, box-shadow .15s;
 }
-.top-guide-card:hover { border-color: var(--up-teal); box-shadow: var(--up-shadow-md); }
+.top-guide-card:hover { box-shadow: var(--up-shadow-md); }
 
-/* 3つの入口: 柱ごとの上アクセント＋ラベル色 */
+/* 3つの入口: 柱ごとの上アクセント */
 .top-guide-cards--3 { grid-template-columns: repeat(3, 1fr); }
 .top-guide-card.tg-topics { border-top: 3px solid #1A5C8A; }
 .top-guide-card.tg-life   { border-top: 3px solid #0D9A88; }
 .top-guide-card.tg-travel { border-top: 3px solid #E05535; }
-.tg-topics .top-guide-card-label { color: #1A5C8A; }
-.tg-life   .top-guide-card-label { color: #0D9A88; }
-.tg-travel .top-guide-card-label { color: #E05535; }
 .top-guide-card.tg-topics:hover { border-color: #1A5C8A; }
 .top-guide-card.tg-life:hover   { border-color: #0D9A88; }
 .top-guide-card.tg-travel:hover { border-color: #E05535; }
-.top-guide-card-icon { font-size: 30px; flex-shrink: 0; line-height: 1; }
-.top-guide-card-label {
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--up-teal);
-  margin-bottom: 3px;
-  letter-spacing: .04em;
-}
-.top-guide-card-title { font-size: 13px; font-weight: 700; line-height: 1.45; margin-bottom: 4px; }
-.top-guide-card-desc { font-size: 11px; color: var(--up-text-3); line-height: 1.55; }
+.top-guide-card-icon { font-size: 34px; line-height: 1; margin-bottom: 14px; }
+.top-guide-card-title { font-size: 15px; font-weight: 700; color: var(--up-text-1); line-height: 1.4; margin-bottom: 6px; }
+.top-guide-card-desc { font-size: 12px; color: var(--up-text-3); line-height: 1.6; }
 
 /* ── エリア別導線 ── */
 .top-area-nav {
@@ -2576,6 +2573,34 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 }
 .top-area-item:hover { border-color: var(--up-navy); color: var(--up-navy) !important; }
 .top-area-item .area-emoji { font-size: 18px; line-height: 1; }
+
+/* ── タブナビ ── */
+.top-tab-nav {
+  display: flex;
+  gap: 0;
+  border-bottom: 1.5px solid var(--up-border);
+  margin: 32px 0 24px;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  box-shadow: var(--up-shadow-sm);
+}
+.top-tab-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 14px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--up-text-3);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.top-tab-item i { font-size: 17px; }
+.top-tab-item:hover { color: var(--up-navy); }
+.top-tab-active { font-weight: 700; color: var(--up-navy); border-bottom-color: var(--up-navy); }
 
 /* ── 情報提供CTA ── */
 .top-info-cta {
