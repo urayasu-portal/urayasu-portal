@@ -24,6 +24,7 @@ faq:
     a: "テレビ・冷蔵庫・洗濯機・エアコンは家電リサイクル対象品のため、市の粗大ごみには出せません。家電量販店などの販売店、または指定引取場所を利用します。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/trash-recycling/
   - /guides/trash-recycling/
 ---
 
@@ -596,7 +597,7 @@ aliases:
     <a href="/guides/holiday-night-medical/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">🏥 浦安市の休日・夜間診療、急病時の相談先まとめ</a>
   </li>
   <li style="border-bottom:1px solid #e2e8f0;padding:10px 0;">
-    <a href="/posts/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
+    <a href="/life-guide/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
   </li>
   <li style="padding:10px 0;">
     <a href="/life-guide/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">📖 浦安市くらしの便利ガイド一覧に戻る</a>

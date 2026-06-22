@@ -19,19 +19,19 @@
 
 {{- if or (in $tags "新浦安") (in $tags "アトレ新浦安") (in $tags "高洲") (in $tags "日の出") (in $tags "明海") }}
   {{- $areaName = "新浦安エリア" }}
-  {{- $areaUrl  = "/life-guide/guides/station-life/#shinurayasu" }}
+  {{- $areaUrl  = "/life-guide/station-life/#shinurayasu" }}
   {{- $areaDesc = "新浦安駅（JR京葉線）を中心とした中町・新町エリアです。アトレ新浦安・イオン・Wave101・J:COM浦安音楽ホールなど商業・文化施設が充実し、ファミリー層の多い閑静な住宅地としても知られています。" }}
 {{- else if or (in $tags "浦安駅") (in $tags "猫実") (in $tags "堀江") (in $tags "当代島") (in $tags "弁天") }}
   {{- $areaName = "浦安駅エリア" }}
-  {{- $areaUrl  = "/life-guide/guides/station-life/#urayasu" }}
+  {{- $areaUrl  = "/life-guide/station-life/#urayasu" }}
   {{- $areaDesc = "東京メトロ東西線・浦安駅周辺の元町エリアです。駅前商店街・飲食店・クリニックが集まり、市役所・中央図書館・文化会館など主要公共施設も徒歩圏内に揃っています。" }}
 {{- else if or (in $tags "舞浜") (in $tags "運動公園") }}
   {{- $areaName = "舞浜エリア" }}
-  {{- $areaUrl  = "/life-guide/guides/station-life/#maihama" }}
+  {{- $areaUrl  = "/life-guide/station-life/#maihama" }}
   {{- $areaDesc = "JR京葉線・舞浜駅周辺の新町エリアです。浦安市運動公園・総合体育館・舞浜駅前行政サービスセンターがあり、スポーツ観戦や屋外レジャーの拠点としても親しまれています。" }}
 {{- else if in $tags "行徳" }}
   {{- $areaName = "行徳・妙典エリア" }}
-  {{- $areaUrl  = "/life-guide/guides/station-life/" }}
+  {{- $areaUrl  = "/life-guide/station-life/" }}
   {{- $areaDesc = "東京メトロ東西線・行徳駅・妙典駅周辺エリアです。浦安市に隣接し、通勤・買い物で浦安市エリアと密接につながっています。" }}
 {{- end }}
 
@@ -46,42 +46,42 @@
 {{- if or (in $tags "ごみ") (in $tags "ゴミ") (in $tags "リサイクル") (in $tags "廃食油") (in $tags "粗大ごみ") (in $tags "古着") (in $tags "古布") }}
   {{- $guideEmoji = "ti-trash" }}
   {{- $guideTitle = "浦安市のごみ分別・収集日ガイド" }}
-  {{- $guideUrl   = "/life-guide/guides/trash-recycling/" }}
+  {{- $guideUrl   = "/life-guide/trash-recycling/" }}
   {{- $guideDesc  = "ごみの分別ルール・収集日カレンダー・粗大ごみの申込方法・有害ごみ・資源回収の情報を町名別・品目別にまとめています。" }}
 {{- else if or (in $tags "防災") (in $tags "地震") (in $tags "水害") (in $tags "液状化") (in $tags "ハザードマップ") (in $tags "避難所") (in $tags "避難") }}
   {{- $guideEmoji = "ti-shield-half" }}
   {{- $guideTitle = "浦安市の防災・避難所・ハザードマップまとめ" }}
-  {{- $guideUrl   = "/life-guide/guides/disaster-prevention/" }}
+  {{- $guideUrl   = "/life-guide/disaster-prevention/" }}
   {{- $guideDesc  = "浦安市の地震・水害・液状化リスク、避難所の場所と収容人数、ハザードマップの見方を保存版ガイドとしてまとめています。" }}
 {{- else if or (in $tags "医療") (in $tags "救急") (in $tags "診療") (in $tags "急病") (in $tags "病院") }}
   {{- $guideEmoji = "ti-stethoscope" }}
   {{- $guideTitle = "浦安市の休日・夜間診療ガイド" }}
-  {{- $guideUrl   = "/life-guide/guides/holiday-night-medical/" }}
+  {{- $guideUrl   = "/life-guide/holiday-night-medical/" }}
   {{- $guideDesc  = "急病時の相談先（#7119・#8000）、休日夜間診療、救急・小児救急の使い分けを状況別フローでまとめています。" }}
 {{- else if eq $cat "スポーツ" }}
   {{- $guideEmoji = "ti-ball-american-football" }}
   {{- $guideTitle = "浦安3大スポーツチーム観戦ガイド" }}
-  {{- $guideUrl   = "/life-guide/guides/sports-teams/" }}
+  {{- $guideUrl   = "/life-guide/sports-teams/" }}
   {{- $guideDesc  = "浦安D-Rocks（ラグビー）・ブリオベッカ浦安・市川（サッカー）・バルドラール浦安（フットサル）の試合日程・会場・チケット・アクセス情報を初観戦の方向けにまとめています。" }}
 {{- else if eq $cat "子育て・教育" }}
   {{- $guideEmoji = "ti-building-carousel" }}
   {{- $guideTitle = "浦安市の子ども向け屋内・公共の遊び場まとめ" }}
-  {{- $guideUrl   = "/life-guide/guides/indoor-playgrounds/" }}
+  {{- $guideUrl   = "/life-guide/indoor-playgrounds/" }}
   {{- $guideDesc  = "雨の日・暑い日でも使える屋内遊び場・児童センター・子育て支援センターを年齢別・エリア別に一覧でまとめています。" }}
 {{- else if or (in $tags "文化会館") (in $tags "コンサート") (in $tags "クラシック") (in $tags "Wave101") (in $tags "音楽ホール") (in $tags "図書館") (in $tags "公民館") (in $tags "郷土博物館") }}
   {{- $guideEmoji = "ti-books" }}
   {{- $guideTitle = "浦安市の図書館・公共施設一覧ガイド" }}
-  {{- $guideUrl   = "/life-guide/guides/libraries-public-facilities/" }}
+  {{- $guideUrl   = "/life-guide/libraries-public-facilities/" }}
   {{- $guideDesc  = "文化会館・Wave101・J:COM浦安音楽ホール・図書館・公民館など、浦安市内の公共施設を目的別・エリア別に検索できるようにまとめています。" }}
 {{- else if or (in $tags "公園") (in $tags "自然観察") (in $tags "水遊び") (in $tags "交通公園") }}
   {{- $guideEmoji = "ti-windmill" }}
   {{- $guideTitle = "浦安市の公園・遊び場ガイド" }}
-  {{- $guideUrl   = "/life-guide/guides/parks-playgrounds/" }}
+  {{- $guideUrl   = "/life-guide/parks-playgrounds/" }}
   {{- $guideDesc  = "大型公園・水遊び場・交通公園など、浦安市内の主な公園・遊び場を子どもの年齢やシーンごとにまとめています。" }}
 {{- else if or (eq $cat "開店・閉店") (eq $cat "グルメ・カフェ") }}
   {{- $guideEmoji = "ti-train" }}
   {{- $guideTitle = "浦安市の駅別生活ガイド" }}
-  {{- $guideUrl   = "/life-guide/guides/station-life/" }}
+  {{- $guideUrl   = "/life-guide/station-life/" }}
   {{- $guideDesc  = "浦安駅・新浦安駅・舞浜駅周辺の商業施設・飲食店・交通・子育て環境を駅ごとに比較したガイドです。引っ越し検討中の方や、街の全体像を知りたい方にも。" }}
 {{- else if or (eq $cat "お知らせ") (eq $cat "ニュース") }}
   {{- $guideEmoji = "ti-folders" }}

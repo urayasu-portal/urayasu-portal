@@ -25,6 +25,7 @@ faq:
     a: "対象施設は浦安市公共施設予約システムから予約できます。利用者登録（個人・団体）が必要な場合があり、抽選予約・随時予約・支払い期限などのルールに注意が必要です。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/libraries-public-facilities/
   - /guides/libraries-public-facilities/
 ---
 

@@ -17,6 +17,7 @@ faq:
     a: "転入届などの手続きは市役所または駅前行政サービスセンターで行えます。詳細は市役所手続きガイドをご覧ください。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/station-life/
   - /guides/station-life/
 ---
 
@@ -239,7 +240,7 @@ aliases:
 <p class="sl-lead">駅別ガイドで気になった項目は、詳しい便利ガイドで確認できます。</p>
 
 <div class="sl-related">
-<a href="/posts/urayasu-kosodate-shien-matome/">浦安市の子育て支援・手当・助成まとめ</a>
+<a href="/life-guide/urayasu-kosodate-shien-matome/">浦安市の子育て支援・手当・助成まとめ</a>
 <a href="/guides/parks-playgrounds/">浦安市の公園・遊び場ガイド</a>
 <a href="/guides/holiday-night-medical/">浦安市の休日・夜間診療、急病時の相談先まとめ</a>
 <a href="/guides/libraries-public-facilities/">浦安市の図書館・公共施設一覧ガイド</a>

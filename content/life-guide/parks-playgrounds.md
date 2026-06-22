@@ -25,6 +25,7 @@ faq:
     a: "市内の公園では原則として火気・バーベキューは禁止されています。最新ルールは浦安市公式サイトや各施設の案内板でご確認ください。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/parks-playgrounds/
   - /guides/parks-playgrounds/
 ---
 
@@ -571,7 +572,7 @@ aliases:
     <a href="/guides/indoor-playgrounds/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">🧸 浦安市の子ども向け屋内・公共の遊び場まとめ</a>
   </li>
   <li style="border-bottom:1px solid #e2e8f0;padding:10px 0;">
-    <a href="/posts/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
+    <a href="/life-guide/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
   </li>
   <li style="border-bottom:1px solid #e2e8f0;padding:10px 0;">
     <a href="/guides/holiday-night-medical/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">🏥 浦安市の休日・夜間診療、急病時の相談先まとめ</a>

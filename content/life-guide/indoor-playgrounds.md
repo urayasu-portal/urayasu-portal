@@ -22,6 +22,7 @@ faq:
     a: "図書館の閲覧・読書スペースや公共施設の自由利用エリアは、他市民でも利用できる場合が多いです。ただし、図書カードの発行や有料プログラムへの参加については各自治体のルールがあります。詳細は施設に直接お問い合わせください。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/indoor-playgrounds/
   - /guides/indoor-playgrounds/
 ---
 
@@ -470,7 +471,7 @@ aliases:
 
 <ul style="list-style:none;padding:0;margin:0 0 16px;">
   <li style="border-bottom:1px solid #e2e8f0;padding:10px 0;">
-    <a href="/posts/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
+    <a href="/life-guide/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
   </li>
   <li style="border-bottom:1px solid #e2e8f0;padding:10px 0;">
     <a href="/guides/parks-playgrounds/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">🛝 浦安市の公園・遊び場ガイド（屋外）</a>

@@ -25,6 +25,7 @@ faq:
     a: "マイナンバーカードの受け取りは、原則として市役所へご本人が来庁します。申請はスマートフォンや郵送でも可能ですが、受け取り時には暗証番号の設定のため来庁が必要です。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/city-hall-procedures/
   - /guides/city-hall-procedures/
 ---
 
