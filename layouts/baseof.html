@@ -24,7 +24,13 @@
 <body class="pillar-{{ $pillar }}" id="top">
 {{- end }}
     {{ partialCached "header.html" . .Page -}}
+    {{- if eq .Lang "en" }}
+    {{ partial "travel-subnav-en.html" . }}
+    {{- else }}
+    {{ partial "pillar-switcher.html" . }}
+    {{- end }}
     <main class="main">
+        {{- if eq .Lang "en" }}{{ partial "mt-banner.html" . }}{{ end }}
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}

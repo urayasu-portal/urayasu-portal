@@ -1,101 +1,108 @@
 {{- define "main" }}
 
 {{- $allPosts := where site.RegularPages "Section" "posts" }}
+{{- $isEN := eq .Lang "en" }}
 
 {{/* ────────────────────────────────────────
-     ヒーロー
+     ヒーロー / Hero
      ──────────────────────────────────────── */}}
 <div class="tg-hero">
+  {{- if $isEN }}
+  <p class="tg-hero-eyebrow">Visitor's Travel Guide</p>
+  <h1>Urayasu &amp; Maihama<br>Travel Guide</h1>
+  <p class="tg-hero-lead">Your local guide to Urayasu and Maihama. Covering all 40 hotels near Tokyo Disney Resort, access routes from airports and Tokyo Station, sightseeing, food, and taxi information — from a local media perspective.</p>
+  {{- else }}
   <p class="tg-hero-eyebrow">観光客向け ガイド</p>
   <h1>浦安・舞浜<br>旅行ガイド</h1>
   <p class="tg-hero-lead">東京ディズニーリゾートへの旅を地元メディアがサポート。市内40軒のホテル選びから、エリア別の観光・グルメ・アクセス情報まで、実情を踏まえて紹介します。</p>
+  {{- end }}
   <div class="tg-hero-stats">
     <div class="stat">
       <span class="stat-num">40</span>
-      <span class="stat-label">市内ホテル数</span>
+      <span class="stat-label">{{- if $isEN }}Hotels{{- else }}市内ホテル数{{- end }}</span>
     </div>
     <div class="stat">
       <span class="stat-num">4</span>
-      <span class="stat-label">エリア区分</span>
+      <span class="stat-label">{{- if $isEN }}Districts{{- else }}エリア区分{{- end }}</span>
     </div>
     <div class="stat">
       <span class="stat-num">3</span>
-      <span class="stat-label">シーン別ガイド</span>
+      <span class="stat-label">{{- if $isEN }}Guide Types{{- else }}シーン別ガイド{{- end }}</span>
     </div>
   </div>
 </div>
 
 {{/* ────────────────────────────────────────
-     テーマカードグリッド
+     テーマカードグリッド / Theme Cards
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>テーマから探す</h2>
+  <h2>{{- if $isEN }}Browse by Category{{- else }}テーマから探す{{- end }}</h2>
 </div>
 <div class="tg-theme-grid">
 
-  {{/* グループ: ホテルを選ぶ */}}
+  {{/* ホテル / Hotels */}}
   <div>
-    <p class="tg-group-label">🏨 ホテルを選ぶ</p>
-    <a class="tg-theme-card" href="/travel-guide/hotels/">
+    <p class="tg-group-label">{{- if $isEN }}🏨 Hotels{{- else }}🏨 ホテルを選ぶ{{- end }}</p>
+    <a class="tg-theme-card" href="{{ "/travel-guide/hotels/" | absLangURL }}">
       <div class="tg-card-band tg-card-band-hotels">
-        <span class="tg-card-tag">公開中</span>
+        <span class="tg-card-tag">{{- if $isEN }}Available{{- else }}公開中{{- end }}</span>
       </div>
       <div class="tg-card-body">
-        <h2>ホテルガイド</h2>
-        <p>市内全40軒をエリア・価格帯・シーン別に整理。子連れ・格安・アクセス重視の3つのシーン別比較記事と施設一覧。</p>
-        <p class="tg-card-go">ホテルを比較する →</p>
+        <h2>{{- if $isEN }}Hotel Guide{{- else }}ホテルガイド{{- end }}</h2>
+        <p>{{- if $isEN }}All 40 hotels organized by area, price range, and travel type. Compare hotels for families, budget travelers, and access priorities.{{- else }}市内全40軒をエリア・価格帯・シーン別に整理。子連れ・格安・アクセス重視の3つのシーン別比較記事と施設一覧。{{- end }}</p>
+        <p class="tg-card-go">{{- if $isEN }}Compare hotels →{{- else }}ホテルを比較する →{{- end }}</p>
       </div>
     </a>
   </div>
 
-  {{/* グループ: エリアを楽しむ + 移動する */}}
+  {{/* 観光・移動 / Sightseeing & Transit */}}
   <div>
-    <p class="tg-group-label">🗺️ エリアを楽しむ</p>
+    <p class="tg-group-label">{{- if $isEN }}🗺️ Explore the Area{{- else }}🗺️ エリアを楽しむ{{- end }}</p>
     <div class="tg-cards-mini" style="margin-bottom:20px;">
-      <a class="tg-theme-card" href="/travel-guide/urayasu-maihama-shinurayasu-tourism/">
+      <a class="tg-theme-card" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
         <div class="tg-card-band tg-card-band-tourism">
-          <span class="tg-card-tag">公開中</span>
+          <span class="tg-card-tag">{{- if $isEN }}Available{{- else }}公開中{{- end }}</span>
         </div>
         <div class="tg-card-body">
-          <h3>🗺️ 観光ガイド</h3>
-          <p>舞浜・浦安・新浦安エリアの観光スポット、テーマパーク周辺の過ごし方。</p>
-          <p class="tg-card-go">記事を読む →</p>
+          <h3>🗺️ {{- if $isEN }}Sightseeing Guide{{- else }}観光ガイド{{- end }}</h3>
+          <p>{{- if $isEN }}Tourist spots in Maihama, Urayasu, and Shin-Urayasu. Shopping, history walks, and tips for spending time around the theme parks.{{- else }}舞浜・浦安・新浦安エリアの観光スポット、テーマパーク周辺の過ごし方。{{- end }}</p>
+          <p class="tg-card-go">{{- if $isEN }}Read guide →{{- else }}記事を読む →{{- end }}</p>
         </div>
       </a>
 
-      <a class="tg-theme-card" href="/travel-guide/urayasu-gourmet-souvenir-guide/">
+      <a class="tg-theme-card" href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">
         <div class="tg-card-band tg-card-band-gourmet">
-          <span class="tg-card-tag">公開中</span>
+          <span class="tg-card-tag">{{- if $isEN }}Available{{- else }}公開中{{- end }}</span>
         </div>
         <div class="tg-card-body">
-          <h3>🍜 グルメ・お土産</h3>
-          <p>地元のおすすめランチ・カフェ・お土産スポット。</p>
-          <p class="tg-card-go">記事を読む →</p>
+          <h3>🍜 {{- if $isEN }}Food &amp; Souvenirs{{- else }}グルメ・お土産{{- end }}</h3>
+          <p>{{- if $isEN }}Recommended lunch spots, cafes, souvenir shops, and hotel restaurants by area.{{- else }}地元のおすすめランチ・カフェ・お土産スポット。{{- end }}</p>
+          <p class="tg-card-go">{{- if $isEN }}Read guide →{{- else }}記事を読む →{{- end }}</p>
         </div>
       </a>
     </div>
 
-    <p class="tg-group-label">✈️ 移動する</p>
+    <p class="tg-group-label">{{- if $isEN }}✈️ Getting Around{{- else }}✈️ 移動する{{- end }}</p>
     <div class="tg-cards-mini">
-      <a class="tg-theme-card" href="/travel-guide/urayasu-maihama-access-guide/">
+      <a class="tg-theme-card" href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">
         <div class="tg-card-band tg-card-band-access">
-          <span class="tg-card-tag">公開中</span>
+          <span class="tg-card-tag">{{- if $isEN }}Available{{- else }}公開中{{- end }}</span>
         </div>
         <div class="tg-card-body">
-          <h3>🚃 アクセスガイド</h3>
-          <p>羽田・成田空港、東京駅から浦安・舞浜への行き方まとめ。</p>
-          <p class="tg-card-go">記事を読む →</p>
+          <h3>🚃 {{- if $isEN }}Access Guide{{- else }}アクセスガイド{{- end }}</h3>
+          <p>{{- if $isEN }}How to get from Haneda/Narita airports and Tokyo Station to Urayasu and Maihama.{{- else }}羽田・成田空港、東京駅から浦安・舞浜への行き方まとめ。{{- end }}</p>
+          <p class="tg-card-go">{{- if $isEN }}Read guide →{{- else }}記事を読む →{{- end }}</p>
         </div>
       </a>
 
-      <a class="tg-theme-card" href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/">
+      <a class="tg-theme-card" href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">
         <div class="tg-card-band tg-card-band-taxi">
-          <span class="tg-card-tag">公開中</span>
+          <span class="tg-card-tag">{{- if $isEN }}Available{{- else }}公開中{{- end }}</span>
         </div>
         <div class="tg-card-body">
-          <h3>🚕 タクシーガイド</h3>
-          <p>駅別の乗り場、空港定額タクシー、福祉タクシーの確認ポイント。</p>
-          <p class="tg-card-go">記事を読む →</p>
+          <h3>🚕 {{- if $isEN }}Taxi Guide{{- else }}タクシーガイド{{- end }}</h3>
+          <p>{{- if $isEN }}Taxi stands by station, flat-rate airport taxis, and tips for accessible/welfare taxis.{{- else }}駅別の乗り場、空港定額タクシー、福祉タクシーの確認ポイント。{{- end }}</p>
+          <p class="tg-card-go">{{- if $isEN }}Read guide →{{- else }}記事を読む →{{- end }}</p>
         </div>
       </a>
     </div>
@@ -104,62 +111,63 @@
 </div>
 
 {{/* ────────────────────────────────────────
-     シーン別ガイド
+     シーン別 / Browse by Purpose
      ──────────────────────────────────────── */}}
 <div class="section-head" style="margin-top:8px;">
-  <h2>シーン別で選ぶ</h2>
+  <h2>{{- if $isEN }}Browse by Purpose{{- else }}シーン別で選ぶ{{- end }}</h2>
 </div>
 <div class="tg-scene-grid">
-  <a class="tg-scene-card" href="/travel-guide/hotels/kids/">
+  <a class="tg-scene-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
     <div class="tg-scene-band tg-scene-band-kids">👨‍👩‍👧</div>
     <div class="tg-scene-body">
-      <h3>子連れ旅行</h3>
-      <p>ディズニーホテル・ベビー設備・子ども料金など、家族で来る人向けに整理。</p>
-      <span class="tg-scene-go">ガイドを見る →</span>
+      <h3>{{- if $isEN }}Family Travel{{- else }}子連れ旅行{{- end }}</h3>
+      <p>{{- if $isEN }}Disney hotels, baby facilities, children's rates — organized for families visiting TDR.{{- else }}ディズニーホテル・ベビー設備・子ども料金など、家族で来る人向けに整理。{{- end }}</p>
+      <span class="tg-scene-go">{{- if $isEN }}View guide →{{- else }}ガイドを見る →{{- end }}</span>
     </div>
   </a>
-  <a class="tg-scene-card" href="/travel-guide/hotels/budget/">
+  <a class="tg-scene-card" href="{{ "/travel-guide/hotels/budget/" | absLangURL }}">
     <div class="tg-scene-band tg-scene-band-budget">💴</div>
     <div class="tg-scene-body">
-      <h3>格安で泊まる</h3>
-      <p>コスパ重視で探す浦安・舞浜のホテル。予算別の比較と節約ポイント。</p>
-      <span class="tg-scene-go">ガイドを見る →</span>
+      <h3>{{- if $isEN }}Budget Stays{{- else }}格安で泊まる{{- end }}</h3>
+      <p>{{- if $isEN }}Budget hotels in Urayasu and Maihama. Price comparisons and honest value assessments.{{- else }}コスパ重視で探す浦安・舞浜のホテル。予算別の比較と節約ポイント。{{- end }}</p>
+      <span class="tg-scene-go">{{- if $isEN }}View guide →{{- else }}ガイドを見る →{{- end }}</span>
     </div>
   </a>
-  <a class="tg-scene-card" href="/travel-guide/urayasu-maihama-shinurayasu-tourism/">
+  <a class="tg-scene-card" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
     <div class="tg-scene-band tg-scene-band-rainy">🌧️</div>
     <div class="tg-scene-body">
-      <h3>雨の日の過ごし方</h3>
-      <p>雨天でも楽しめる屋内スポット・ショッピング・グルメを浦安エリアから厳選。</p>
-      <span class="tg-scene-go">スポットを探す →</span>
+      <h3>{{- if $isEN }}Rainy Day Activities{{- else }}雨の日の過ごし方{{- end }}</h3>
+      <p>{{- if $isEN }}Indoor spots, shopping, and restaurants in the Urayasu area for rainy days.{{- else }}雨天でも楽しめる屋内スポット・ショッピング・グルメを浦安エリアから厳選。{{- end }}</p>
+      <span class="tg-scene-go">{{- if $isEN }}Find spots →{{- else }}スポットを探す →{{- end }}</span>
     </div>
   </a>
 </div>
 
 {{/* ────────────────────────────────────────
-     地元メディアの強み
+     地元メディアの強み / Why local media
      ──────────────────────────────────────── */}}
 <div class="section-head" style="margin-top:8px;">
-  <h2>地元メディアが作る旅行ガイド</h2>
+  <h2>{{- if $isEN }}Why a Local Guide?{{- else }}地元メディアが作る旅行ガイド{{- end }}</h2>
 </div>
 <div class="tg-why">
   <div class="tg-why-item">
-    <h3><span class="tg-why-icon">40</span>全40軒を網羅</h3>
-    <p>TDR直営からビジネスホテルまで、浦安市内全40軒のホテルデータを収集。「この宿に関する情報がない」を解消します。</p>
+    <h3><span class="tg-why-icon">40</span>{{- if $isEN }}All 40 Hotels{{- else }}全40軒を網羅{{- end }}</h3>
+    <p>{{- if $isEN }}From TDR luxury hotels to ¥5,000 business hotels — we cover all 40 hotels in Urayasu. No gaps in our coverage.{{- else }}TDR直営からビジネスホテルまで、浦安市内全40軒のホテルデータを収集。「この宿に関する情報がない」を解消します。{{- end }}</p>
   </div>
   <div class="tg-why-item">
-    <h3><span class="tg-why-icon">📍</span>現地情報を重視</h3>
-    <p>シャトルの混雑時間、近くのコンビニ、リムジンバスの停車有無など、現地を知る視点で書いています。</p>
+    <h3><span class="tg-why-icon">📍</span>{{- if $isEN }}On-the-Ground Knowledge{{- else }}現地情報を重視{{- end }}</h3>
+    <p>{{- if $isEN }}Shuttle bus congestion times, nearby convenience stores, limousine bus stops — written from a local media perspective.{{- else }}シャトルの混雑時間、近くのコンビニ、リムジンバスの停車有無など、現地を知る視点で書いています。{{- end }}</p>
   </div>
   <div class="tg-why-item">
-    <h3><span class="tg-why-icon">✓</span>正直な評価</h3>
-    <p>「おすすめしない人」も明示するなど、すべてのホテルを均等に持ち上げない正直な視点を心がけています。</p>
+    <h3><span class="tg-why-icon">✓</span>{{- if $isEN }}Honest Reviews{{- else }}正直な評価{{- end }}</h3>
+    <p>{{- if $isEN }}We write "who shouldn't stay here" sections too. Not every hotel gets equal praise — we give balanced, honest assessments.{{- else }}「おすすめしない人」も明示するなど、すべてのホテルを均等に持ち上げない正直な視点を心がけています。{{- end }}</p>
   </div>
 </div>
 
 {{/* ────────────────────────────────────────
-     便利ガイドへのクロスリンク
+     クロスリンク (日本語のみ) / Cross-link (JP only)
      ──────────────────────────────────────── */}}
+{{- if not $isEN }}
 <div class="tg-cross-link">
   <div>
     <h3>浦安市民向けの生活情報はこちら</h3>
@@ -168,9 +176,7 @@
   <a class="tg-cross-btn" href="/life-guide/">くらしの便利ガイドへ →</a>
 </div>
 
-{{/* ────────────────────────────────────────
-     関連する最新記事
-     ──────────────────────────────────────── */}}
+{{/* 関連する最新記事 (日本語のみ) / Latest articles (JP only) */}}
 {{- $relatedPosts := where $allPosts "Params.categories" "intersect" (slice "ニュース" "イベント" "グルメ・カフェ" "グルメカフェ") }}
 {{- $relatedPosts = first 6 $relatedPosts }}
 {{- if $relatedPosts }}
@@ -183,6 +189,7 @@
   {{- partial "article-card.html" . }}
   {{- end }}
 </div>
+{{- end }}
 {{- end }}
 
 {{- end }}

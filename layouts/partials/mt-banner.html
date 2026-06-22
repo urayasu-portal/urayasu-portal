@@ -1,0 +1,11 @@
+<div class="mt-banner" role="note" aria-label="Translation notice">
+  <div class="mt-banner-inner">
+    <span class="mt-banner-icon">🌐</span>
+    <div class="mt-banner-text">
+      <strong>Machine-translated content.</strong> This page has been automatically translated from Japanese. Some details may be inaccurate — please verify with official sources before making decisions.
+      {{- with .Translations }}{{- range . }}{{- if eq .Lang "ja" }}
+      <a class="mt-banner-link" href="{{ .Permalink }}">日本語版を見る →</a>
+      {{- end }}{{- end }}{{- end }}
+    </div>
+  </div>
+</div>

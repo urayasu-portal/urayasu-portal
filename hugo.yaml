@@ -5,6 +5,21 @@ title: 浦安ぽーたる
 theme: PaperMod
 hasCJKLanguage: true
 defaultContentLanguage: ja
+defaultContentLanguageInSubdir: false
+
+languages:
+  ja:
+    languageName: 日本語
+    languageCode: ja
+    weight: 1
+  en:
+    languageName: English
+    languageCode: en-US
+    weight: 2
+    title: Urayasu Portal
+    params:
+      homeTitle: "Urayasu Portal | Urayasu & Maihama Travel Guide"
+      description: "A local travel guide for Urayasu and Maihama area near Tokyo Disney Resort. Hotels, access, sightseeing, food, and taxi information."
 
 pagination:
   pagerSize: 10
