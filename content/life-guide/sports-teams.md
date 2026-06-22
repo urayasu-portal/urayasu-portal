@@ -17,6 +17,7 @@ faq:
     a: "各チームの公式サイトや公式SNSで最新情報を確認してください。この記事内の公式リンク集もご活用ください。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/sports-teams/
   - /guides/sports-teams/
 ---
 

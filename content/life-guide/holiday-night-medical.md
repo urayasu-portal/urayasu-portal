@@ -25,6 +25,7 @@ faq:
     a: "急病診療所は内科・小児科の応急診療が中心です。切り傷・骨折・やけど・目の病気などは2次救急医療機関などの案内に従います。迷う場合は#7119へ相談してください。"
 images: ["/images/og-guides.png"]
 aliases:
+  - /life-guide/guides/holiday-night-medical/
   - /guides/holiday-night-medical/
 ---
 
@@ -554,7 +555,7 @@ aliases:
 
 <ul style="list-style:none;padding:0;margin:0 0 16px;">
   <li style="border-bottom:1px solid #e2e8f0;padding:10px 0;">
-    <a href="/posts/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
+    <a href="/life-guide/urayasu-kosodate-shien-matome/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">👶 浦安市の子育て支援・手当・助成まとめ</a>
   </li>
   <li style="border-bottom:1px solid #e2e8f0;padding:10px 0;">
     <a href="/guides/indoor-playgrounds/" style="color:#1a5c8a;font-weight:600;text-decoration:none;font-size:0.9em;">🧸 浦安市の子ども向け屋内・公共の遊び場まとめ</a>

@@ -14,6 +14,8 @@ tags:
   - 就学援助
   - ひとり親
 summary: true
+aliases:
+  - /posts/urayasu-kosodate-shien-matome/
 description: "浦安市で子育てをしていると使える主な支援制度を、妊娠・出産から小中学生まで年齢別・目的別にわかりやすくまとめました。"
 cover:
   image: ""
