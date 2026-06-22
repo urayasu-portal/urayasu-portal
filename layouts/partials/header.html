@@ -13,6 +13,8 @@
             </a>
             {{- end }}
 
+            <span class="logo-subtitle">URAYASU PORTAL</span>
+
             {{- $lsenabled := (or (not site.Params.disableThemeToggle) (and (not site.Params.disableLangToggle) (hugo.IsMultilingual))) }}
             {{- if $lsenabled }}
             <div class="logo-switches">
@@ -37,30 +39,6 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                {{- end }}
-
-                {{- if (not site.Params.disableLangToggle) }}
-                    {{- $lang := .Lang}}
-                    {{- with site.Home.Translations }}
-                    {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                    {{- if $separator }}<span class="nav-sep">|</span>{{ end }}
-                    <ul class="lang-menu">
-                        {{- range . -}}
-                        {{- if ne $lang .Lang }}
-                        <li>
-                            <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                                aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                                {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                                {{- .Language.LanguageName | emojify -}}
-                                {{- else }}
-                                {{- .Lang | title -}}
-                                {{- end -}}
-                            </a>
-                        </li>
-                        {{- end -}}
-                        {{- end}}
-                    </ul>
-                    {{- end }}
                 {{- end }}
             </div>
             {{- end }}

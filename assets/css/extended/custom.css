@@ -94,8 +94,18 @@ body { background: var(--up-bg) !important; color: var(--up-text); line-height: 
   box-shadow: 0 2px 12px rgba(0,0,0,.25) !important;
 }
 .header-nav { max-width: calc(1160px + 48px) !important; }
-.logo a, .logo a span { color: #fff !important; font-weight: 800 !important; }
-.logo a::before { content: "⚓"; font-size: .9em; margin-right: 7px; }
+.logo { display: flex; align-items: center; gap: 0; flex: 1; }
+.logo > a, .logo > a span { color: #fff !important; font-weight: 800 !important; }
+.logo-subtitle { color: #fff; font-size: 15px; font-weight: 600; opacity: 0.85; white-space: nowrap; padding: 0 12px; margin-left: 8px; align-self: flex-end; }
+.logo-switches { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.logo-switches a { color: rgba(255,255,255,0.8) !important; text-decoration: none; }
+.nav-sep { display: none; }
+.header-search-link { display: flex; align-items: center; gap: 5px; color: rgba(255,255,255,0.75) !important; text-decoration: none; font-size: 12px; font-weight: 500; padding: 2px 6px; border-radius: 3px; transition: all 0.15s; white-space: nowrap; }
+.header-search-link:hover { color: #fff !important; background: rgba(255,255,255,0.1); }
+.header-search-link svg { width: 18px; height: 18px; stroke-width: 2; }
+.lang-menu { list-style: none; display: flex; gap: 0; }
+.lang-menu li a { color: rgba(255,255,255,0.75) !important; font-size: 12px; font-weight: 500; padding: 2px 0; text-decoration: none; }
+.logo > a::before { content: "⚓"; font-size: .9em; margin-right: 7px; }
 .theme-toggle svg, .theme-toggle {
   color: rgba(255,255,255,.8) !important;
   fill: rgba(255,255,255,.8) !important;

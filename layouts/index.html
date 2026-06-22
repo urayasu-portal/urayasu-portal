@@ -35,13 +35,11 @@
   <a class="hero-contact-link" href="/contact/" aria-label="地域情報の提供フォームへ">情報提供はこちら</a>
 </div>
 
-{{/* ═══ 2. 速報ティッカー: 最新1件 ═══ */}}
-{{- with (index $allPosts 0) }}
-<div class="home-ticker">
-  <span class="ticker-label">最新</span>
-  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{/* ═══ 2. 新着トピックス見出し ═══ */}}
+<div class="section-head">
+  <h2>新着トピックス</h2>
+  <a class="section-more" href="/posts/">一覧を見る →</a>
 </div>
-{{- end }}
 
 {{/* ═══ 3. 注目記事 (ヒーローカード 3枚) ═══ */}}
 {{- $heroPosts := first 3 $allPosts }}
@@ -89,13 +87,9 @@
 <div class="home-layout">
   <div class="home-main">
 
-    {{- $latestPosts := first 6 (after 3 $allPosts) }}
+    {{- $latestPosts := first 9 (after 3 $allPosts) }}
 
     {{/* ─ 4. 最新記事 ─ */}}
-    <div class="section-head">
-      <h2>最新記事</h2>
-      <a class="section-more" href="/posts/">一覧を見る →</a>
-    </div>
     <div class="article-grid">
       {{- range $latestPosts }}
       {{- partial "article-card.html" . }}
@@ -103,93 +97,6 @@
     </div>
 
     {{/* ─ 6. 新着の開店・閉店 (3件) ─ */}}
-    {{- $openClosePosts := where $allPosts "Params.categories" "intersect" (slice "開店・閉店" "開店閉店") }}
-    {{- $openClosePosts = first 3 $openClosePosts }}
-    {{- if $openClosePosts }}
-    <div class="section-head" style="margin-top:36px;">
-      <h2>新着の開店・閉店</h2>
-      <a class="section-more" href="/categories/開店閉店/">一覧を見る →</a>
-    </div>
-    <div class="article-grid">
-      {{- range $openClosePosts }}
-      {{- partial "article-card.html" . }}
-      {{- end }}
-    </div>
-    {{- end }}
-
-    {{/* ─ 7. イベント情報 (3件・開催日表示) ─ */}}
-    {{- $eventPosts := where $allPosts "Params.categories" "intersect" (slice "イベント") }}
-    {{- $eventPosts = first 3 $eventPosts }}
-    {{- if $eventPosts }}
-    <div class="section-head" style="margin-top:36px;">
-      <h2>イベント情報</h2>
-      <a class="section-more" href="/categories/イベント/">一覧を見る →</a>
-    </div>
-    <div class="article-grid">
-      {{- range $eventPosts }}
-      {{- partial "article-card.html" . }}
-      {{- end }}
-    </div>
-    {{- end }}
-
-    {{/* ─ 8. 3つの入口から探す ─ */}}
-    <div class="section-head" style="margin-top:36px;">
-      <h2>3つの入口から探す</h2>
-    </div>
-    <div class="top-guide-cards top-guide-cards--3">
-      <a class="top-guide-card tg-topics" href="/posts/">
-        <span class="top-guide-card-icon" style="color:#1A5C8A"><i class="ti ti-news" aria-hidden="true"></i></span>
-        <div class="top-guide-card-body">
-          <div class="top-guide-card-label">トピックス</div>
-          <div class="top-guide-card-title">街のトピックス・記事一覧</div>
-          <div class="top-guide-card-desc">毎日の地域ニュース・イベント・グルメ</div>
-        </div>
-      </a>
-      <a class="top-guide-card tg-life" href="/life-guide/">
-        <span class="top-guide-card-icon" style="color:#0D9A88"><i class="ti ti-home-2" aria-hidden="true"></i></span>
-        <div class="top-guide-card-body">
-          <div class="top-guide-card-label">くらし</div>
-          <div class="top-guide-card-title">浦安市くらしの便利ガイド</div>
-          <div class="top-guide-card-desc">子育て・医療・防災・ごみ・公共施設</div>
-        </div>
-      </a>
-      <a class="top-guide-card tg-travel" href="/travel-guide/">
-        <span class="top-guide-card-icon" style="color:#E05535"><i class="ti ti-plane" aria-hidden="true"></i></span>
-        <div class="top-guide-card-body">
-          <div class="top-guide-card-label">旅行</div>
-          <div class="top-guide-card-title">浦安・舞浜 旅行ガイド</div>
-          <div class="top-guide-card-desc">ホテル・アクセス・グルメ・観光</div>
-        </div>
-      </a>
-    </div>
-
-    {{/* ─ 9. エリア別導線 (タグが存在する場合のみ表示) ─ */}}
-    {{- $areaLinks := slice }}
-    {{- with index site.Taxonomies.tags "浦安市" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/浦安市/" "icon" "ti-building" "label" "浦安") }}
-    {{- end }}
-    {{- with index site.Taxonomies.tags "新浦安" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/新浦安/" "icon" "ti-beach" "label" "新浦安") }}
-    {{- end }}
-    {{- with index site.Taxonomies.tags "舞浜" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/舞浜/" "icon" "ti-ferris-wheel" "label" "舞浜") }}
-    {{- end }}
-    {{- with index site.Taxonomies.tags "行徳" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/行徳/" "icon" "ti-fish" "label" "行徳・妙典") }}
-    {{- end }}
-    {{- if $areaLinks }}
-    <div class="section-head">
-      <h2>エリアから探す</h2>
-    </div>
-    <div class="top-area-nav">
-      {{- range $areaLinks }}
-      <a class="top-area-item" href="{{ .href }}">
-        <span class="area-emoji"><i class="ti {{ .icon }}" aria-hidden="true"></i></span><span>{{ .label }}</span>
-      </a>
-      {{- end }}
-    </div>
-    {{- end }}
-
     {{/* ─ 10. 情報提供CTA ─ */}}
     <div class="top-info-cta">
       <div class="top-info-cta-text">
