@@ -26,6 +26,9 @@ pagination:
 
 params:
   env: production
+  # リニューアル: 明色専用デザイン（モックアップ準拠）。auto時のダーク崩れを防ぐためライト固定＋トグル非表示。
+  defaultTheme: light
+  disableThemeToggle: true
   # ★SEO: トップページの <title> タグ専用（site.Title はブランド名のまま各記事の接尾辞に使用）
   homeTitle: 浦安ぽーたる｜浦安と周辺エリアのローカル情報メディア
   description: 浦安と周辺エリアの開店・閉店、イベント、グルメ、子育て・教育、スポーツ、ニュースなど地域情報をお届けするローカルメディアです。
