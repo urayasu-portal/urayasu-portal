@@ -2,7 +2,7 @@
 <nav class="tg-section-nav">
   <div class="tg-snav-groups">
     <div class="tg-snav-group">
-      <span class="tg-snav-label">🏨 {{- if eq .Lang "en" }}Hotels{{- else }}ホテルを選ぶ{{- end }}</span>
+      <span class="tg-snav-label"><i class="ti ti-bed" aria-hidden="true"></i> {{- if eq .Lang "en" }}Hotels{{- else }}ホテルを選ぶ{{- end }}</span>
       <div class="tg-snav-links">
         <a href="{{ "/travel-guide/hotels/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}All 40 hotels{{- else }}全40軒一覧{{- end }}</a>
         <a href="{{ "/travel-guide/hotels/kids/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/kids/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Family{{- else }}子連れ向け{{- end }}</a>
@@ -11,14 +11,14 @@
       </div>
     </div>
     <div class="tg-snav-group">
-      <span class="tg-snav-label">🗺️ {{- if eq .Lang "en" }}Explore{{- else }}エリアを楽しむ{{- end }}</span>
+      <span class="tg-snav-label"><i class="ti ti-map" aria-hidden="true"></i> {{- if eq .Lang "en" }}Explore{{- else }}エリアを楽しむ{{- end }}</span>
       <div class="tg-snav-links">
         <a href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-maihama-shinurayasu-tourism/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Sightseeing{{- else }}観光ガイド{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-gourmet-souvenir-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Food & Souvenirs{{- else }}グルメ・お土産{{- end }}</a>
       </div>
     </div>
     <div class="tg-snav-group">
-      <span class="tg-snav-label">✈️ {{- if eq .Lang "en" }}Getting Around{{- else }}移動する{{- end }}</span>
+      <span class="tg-snav-label"><i class="ti ti-plane" aria-hidden="true"></i> {{- if eq .Lang "en" }}Getting Around{{- else }}移動する{{- end }}</span>
       <div class="tg-snav-links">
         <a href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-maihama-access-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}From airports / Tokyo Station{{- else }}空港・東京駅から{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Taxi guide{{- else }}タクシーガイド{{- end }}</a>

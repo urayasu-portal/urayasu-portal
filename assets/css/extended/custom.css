@@ -143,6 +143,9 @@ body.pillar-travel { --accent: #E05535; --accent-ink: #7A2A14; --accent-bg: #FCE
   color: var(--up-text-3);
   border-bottom: 3px solid transparent;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   white-space: nowrap;
   transition: color .15s;
 }
@@ -384,7 +387,7 @@ body.list { --main-width: 1160px; }
   font-weight: 800 !important;
   margin-bottom: 12px !important;
   padding-bottom: 10px !important;
-  border-bottom: 2px solid var(--up-teal) !important;
+  border-bottom: 2px solid var(--accent) !important;
   color: var(--up-text) !important;
   display: flex;
   align-items: center;

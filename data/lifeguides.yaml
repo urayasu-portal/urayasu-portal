@@ -33,25 +33,25 @@ shortcuts:
 popular:
   - title: "浦安市の子育て支援・手当・助成まとめ"
     desc: "出産・育児・保育・教育に関する支援制度を、目的別に整理。"
-    icon: "👶"
+    icon: "ti-baby-carriage"
     url: "/posts/urayasu-kosodate-shien-matome/"
     updated: "2026年6月"
     published: true
   - title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
     desc: "夜間や休日に体調を崩したときの相談先・受診先を確認。"
-    icon: "🏥"
+    icon: "ti-stethoscope"
     url: "/life-guide/guides/holiday-night-medical/"
     updated: "2026年6月"
     published: true
   - title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド"
     desc: "ごみの出し方、町名別収集日カレンダー、粗大ごみの申し込み先を整理。"
-    icon: "🗑️"
+    icon: "ti-trash"
     url: "/life-guide/guides/trash-recycling/"
     updated: "2026年6月"
     published: true
   - title: "浦安市の防災・避難所・ハザードマップまとめ"
     desc: "台風・地震・大雨に備えて確認したい情報をまとめて案内。"
-    icon: "🎒"
+    icon: "ti-shield-half"
     url: "/life-guide/guides/disaster-prevention/"
     updated: "2026年6月"
     published: true
@@ -62,12 +62,12 @@ categories:
     guides:
       - title: "浦安市の子育て支援・手当・助成まとめ"
         desc: "妊娠・出産、育児、保育、教育費などの支援制度を整理。"
-        icon: "👶"
+        icon: "ti-baby-carriage"
         url: "/posts/urayasu-kosodate-shien-matome/"
         published: true
       - title: "浦安市の子ども向け屋内・公共の遊び場まとめ"
         desc: "雨の日や暑い日に使いやすい屋内・公共施設を紹介。"
-        icon: "🧸"
+        icon: "ti-building-carousel"
         url: "/life-guide/guides/indoor-playgrounds/"
         published: true
 
@@ -76,12 +76,12 @@ categories:
     guides:
       - title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
         desc: "小児・大人の急病時に確認したい相談先と受診先を案内。"
-        icon: "🏥"
+        icon: "ti-stethoscope"
         url: "/life-guide/guides/holiday-night-medical/"
         published: true
       - title: "浦安市の防災・避難所・ハザードマップまとめ"
         desc: "避難所、備蓄、ハザードマップなど、災害時の確認先を整理。"
-        icon: "🎒"
+        icon: "ti-shield-half"
         url: "/life-guide/guides/disaster-prevention/"
         published: true
 
@@ -90,12 +90,12 @@ categories:
     guides:
       - title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド"
         desc: "分別、収集日、粗大ごみ、持ち込みなどをわかりやすく整理。"
-        icon: "🗑️"
+        icon: "ti-trash"
         url: "/life-guide/guides/trash-recycling/"
         published: true
       - title: "浦安市の行政サービスセンター・市役所手続きガイド"
         desc: "住民票、証明書、引っ越し関連などの窓口情報を確認。"
-        icon: "🏢"
+        icon: "ti-building-bank"
         url: "/life-guide/guides/city-hall-procedures/"
         published: true
 
@@ -104,12 +104,12 @@ categories:
     guides:
       - title: "浦安市の公園・遊び場ガイド"
         desc: "子ども連れで行きやすい公園や遊び場をエリア別に紹介。"
-        icon: "🛝"
+        icon: "ti-windmill"
         url: "/life-guide/guides/parks-playgrounds/"
         published: true
       - title: "浦安市の図書館・公共施設一覧ガイド"
         desc: "図書館、公民館、文化施設、体育施設などを目的別に整理。"
-        icon: "📚"
+        icon: "ti-books"
         url: "/life-guide/guides/libraries-public-facilities/"
         published: true
 
@@ -118,12 +118,12 @@ categories:
     guides:
       - title: "浦安3大スポーツチーム観戦ガイド"
         desc: "D-Rocks、バルドラール、ブリオベッカの観戦情報を紹介。"
-        icon: "⚽"
+        icon: "ti-ball-american-football"
         url: "/life-guide/guides/sports-teams/"
         published: true
       - title: "浦安市の駅別生活ガイド：浦安・新浦安・舞浜"
         desc: "駅ごとの買い物、交通、雰囲気、暮らしやすさを比較。"
-        icon: "🚉"
+        icon: "ti-train"
         url: "/life-guide/guides/station-life/"
         published: true
 

@@ -35,7 +35,7 @@
   {{/* 右カラム: 急いで確認したい方へ */}}
   <aside class="lg-hero-side" aria-label="急いで確認したい方へ">
     <div class="lg-urgent">
-      <p class="lg-urgent-title">🚨 急いで確認したい方へ</p>
+      <p class="lg-urgent-title"><i class="ti ti-urgent" aria-hidden="true"></i> 急いで確認したい方へ</p>
       <ul class="lg-urgent-list" role="list">
         {{- range $guides.urgent }}
         <li>
@@ -75,11 +75,11 @@
   <div class="lg-popular-grid">
     {{- range $guides.popular }}
     <a class="lg-popular-card" href="{{ .url }}">
-      <div class="lg-popular-icon" role="img" aria-label="{{ .title }}">{{ .icon }}</div>
+      <div class="lg-popular-icon" role="img" aria-label="{{ .title }}"><i class="ti {{ .icon }}" aria-hidden="true"></i></div>
       <div class="lg-popular-title">{{ .title }}{{- if not .published }}<span class="lg-wip-badge" aria-label="準備中">準備中</span>{{- end }}</div>
       <div class="lg-popular-desc">{{ .desc }}</div>
       <div class="lg-popular-meta">
-        <span aria-hidden="true">🕐</span> 最終更新：{{ .updated }}
+        <i class="ti ti-clock" aria-hidden="true"></i> 最終更新：{{ .updated }}
       </div>
     </a>
     {{- end }}
@@ -99,7 +99,7 @@
       {{- range .guides }}
       <a class="lg-guide-card" href="{{ .url }}"
          {{- if not .published }} aria-label="{{ .title }}（準備中）"{{- end }}>
-        <span class="lg-guide-card-icon" role="img" aria-hidden="true">{{ .icon }}</span>
+        <span class="lg-guide-card-icon" role="img" aria-hidden="true"><i class="ti {{ .icon }}" aria-hidden="true"></i></span>
         <div class="lg-guide-card-body">
           <div class="lg-guide-card-title">
             {{ .title }}
@@ -182,7 +182,7 @@
 
   {{/* ガイド一覧 */}}
   <div class="sidebar-widget">
-    <div class="widget-title">📖 ガイド一覧</div>
+    <div class="widget-title"><i class="ti ti-book-2" aria-hidden="true"></i> ガイド一覧</div>
     <ul class="cat-list" style="padding:6px 14px 10px;">
       {{- range $guides.categories }}
       <li style="padding:5px 0;border-bottom:1px solid var(--up-border);">
@@ -197,7 +197,7 @@
 
   {{/* カテゴリ別記事数 */}}
   <div class="sidebar-widget">
-    <div class="widget-title">📊 カテゴリ別記事数</div>
+    <div class="widget-title"><i class="ti ti-chart-bar" aria-hidden="true"></i> カテゴリ別記事数</div>
     <ul class="cat-list">
       {{- range site.Taxonomies.categories.ByCount }}
       {{- $name := .Page.Title }}
@@ -214,14 +214,14 @@
 
   {{/* 最近の記事 */}}
   <div class="sidebar-widget">
-    <div class="widget-title">🕐 最近の記事</div>
+    <div class="widget-title"><i class="ti ti-clock" aria-hidden="true"></i> 最近の記事</div>
     <div class="recent-list">
       {{- range first 5 $allPosts }}
       {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
       <a class="recent-item" href="{{ .RelPermalink }}">
         <div class="recent-thumb">
           {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-          {{- else }}<div class="recent-thumb-no-img">🗞</div>{{- end }}
+          {{- else }}<div class="recent-thumb-no-img"><i class="ti ti-photo" aria-hidden="true"></i></div>{{- end }}
         </div>
         <div class="recent-body">
           <h4>{{ .Title }}</h4>

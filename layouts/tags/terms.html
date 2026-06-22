@@ -4,7 +4,7 @@
 
     <div class="post-single">
       <header class="post-header" style="margin-bottom:24px;">
-        <h1 class="post-title" style="font-size:1.5em;">🏷 タグ一覧</h1>
+        <h1 class="post-title" style="font-size:1.5em;"><i class="ti ti-tag" aria-hidden="true"></i> タグ一覧</h1>
         <p style="font-size:0.9em;color:var(--up-muted);margin:6px 0 0;">
           全 {{ len site.Taxonomies.tags }} 件のタグ。クリックすると関連記事の一覧に移動します。
         </p>
@@ -51,7 +51,7 @@
       {{- end }}
       {{- if $otherTags }}
       <section style="margin-bottom:32px;">
-        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);">🔖 その他</h2>
+        <h2 style="font-size:1em;font-weight:800;color:var(--up-text);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--up-border);"><i class="ti ti-bookmark" aria-hidden="true"></i> その他</h2>
         <div class="tag-cloud tag-cloud-all">
           {{- range $otherTags }}
           <a class="tag-item{{- if ge .Count 3 }} tag-item-popular{{- end }}" href="{{ .Page.RelPermalink }}">
@@ -70,7 +70,7 @@
     {{- partial "sidebar-calendar.html" . }}
 
     <div class="sidebar-widget">
-      <div class="widget-title">📂 カテゴリ</div>
+      <div class="widget-title"><i class="ti ti-folder" aria-hidden="true"></i> カテゴリ</div>
       <ul class="cat-list">
         {{- $catClass := dict
           "開店・閉店" "cat-open" "開店閉店" "cat-open"

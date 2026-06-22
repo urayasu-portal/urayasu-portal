@@ -10,10 +10,10 @@
 {{- if or .Params.sources .Params.checkDate }}
 <div class="source-block">
   {{- with .Params.checkDate }}
-  <p class="source-header">📅 この記事は<strong>{{ . }}時点</strong>の情報をもとにしています。制度・営業時間・料金等は変更される場合があります。最新情報は各公式サイト等でご確認ください。</p>
+  <p class="source-header"><i class="ti ti-calendar" aria-hidden="true"></i> この記事は<strong>{{ . }}時点</strong>の情報をもとにしています。制度・営業時間・料金等は変更される場合があります。最新情報は各公式サイト等でご確認ください。</p>
   {{- end }}
   {{- with .Params.sources }}
-  <p class="source-list-label">📎 参照・出典</p>
+  <p class="source-list-label"><i class="ti ti-paperclip" aria-hidden="true"></i> 参照・出典</p>
   <ul class="source-list">
     {{- range . }}
     {{- if .url }}
