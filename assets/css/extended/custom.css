@@ -1486,11 +1486,12 @@ body:not(.list) { --main-width: 1108px; }
    =================================================== */
 
 /* ---------- ヒーロー ---------- */
+/* ヒーロー：モックアップF準拠（淡いコーラル背景＋濃いコーラル文字） */
 .tg-hero {
-  background: linear-gradient(140deg, #0d2235, var(--up-sea) 60%, #1a7a8a);
-  color: #fff;
+  background: #FCEEE9;
+  border: 0.5px solid #F6D8CD;
   border-radius: 16px;
-  padding: 44px 38px 50px;
+  padding: 40px 34px 34px;
   margin-bottom: 32px;
   position: relative;
   overflow: hidden;
@@ -1498,37 +1499,137 @@ body:not(.list) { --main-width: 1108px; }
 .tg-hero::after {
   content: "";
   position: absolute;
-  right: -30px; top: -30px;
+  right: -40px; top: -40px;
   width: 260px; height: 260px;
-  background: radial-gradient(circle, rgba(255,255,255,.06) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(224,85,53,.07) 0%, transparent 65%);
   pointer-events: none;
 }
 .tg-hero-eyebrow {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: .12em;
-  color: var(--up-coral);
-  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #C2421F;
   margin-bottom: 10px;
 }
 .tg-hero h1 {
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-size: clamp(1.45rem, 4vw, 2rem);
   font-weight: 800;
-  line-height: 1.3;
-  color: #fff;
-  margin: 0 0 14px;
+  line-height: 1.4;
+  color: #7A2A14;
+  margin: 0 0 12px;
 }
 .tg-hero-lead {
   font-size: 0.92rem;
-  color: #c4d8ea;
-  line-height: 1.8;
-  max-width: 580px;
-  margin-bottom: 28px;
+  color: #8A4A38;
+  line-height: 1.75;
+  max-width: 560px;
+  margin-bottom: 18px;
 }
-.tg-hero-stats { display: flex; gap: 28px; flex-wrap: wrap; }
-.tg-hero-stats .stat { display: flex; flex-direction: column; }
-.tg-hero-stats .stat-num { font-size: 1.7rem; font-weight: 800; line-height: 1; color: #fff; }
-.tg-hero-stats .stat-label { font-size: 0.72rem; color: #90b4cc; margin-top: 2px; }
+/* 言語切替 */
+.tg-lang-switch { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.tg-lang-label { font-size: 11px; color: #B5705E; margin-right: 2px; }
+.tg-lang-pill {
+  font-size: 12px; font-weight: 600; padding: 5px 13px; border-radius: 8px;
+  text-decoration: none; background: #fff; border: 0.5px solid #F0C4B6; color: #C2421F;
+}
+.tg-lang-pill.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+a.tg-lang-pill:hover { background: #FBE3DA; }
+a.tg-lang-pill.is-active:hover { background: var(--accent); }
+/* 未対応言語（簡体中文・한국어）：リンクなし・操作不可・準備中表示なし */
+.tg-lang-pill--disabled { cursor: default; }
+.tg-lang-pill--disabled:hover { background: #fff; }
+
+/* ---------- F: 旅の目的から探す（6カード） ---------- */
+.tg-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.tg-purpose-card {
+  display: block;
+  background: #fff;
+  border: 0.5px solid var(--up-border);
+  border-top: 4px solid var(--accent);
+  border-radius: 0 0 12px 12px;
+  padding: 15px 13px;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+}
+.tg-purpose-card:hover { transform: translateY(-3px); box-shadow: 0 8px 22px -12px rgba(224,85,53,.35); }
+.tg-purpose-card > i { font-size: 26px; color: var(--accent); }
+.tg-purpose-title { font-size: 14px; font-weight: 700; color: var(--up-text); margin: 8px 0 4px; }
+.tg-purpose-desc { font-size: 11px; color: var(--up-muted); line-height: 1.5; }
+.tg-purpose-card--feature {
+  background: var(--accent-bg);
+  border: 0.5px solid #F6D8CD;
+  border-radius: 12px;
+}
+.tg-purpose-card--feature .tg-purpose-title { color: var(--accent-ink); }
+
+/* ---------- F: ホテルを目的で選ぶ（3カード） ---------- */
+.tg-section-sub { font-size: 12px; color: var(--up-muted); margin: 0 0 13px; }
+.tg-hotelneed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.tg-hotelneed-card {
+  background: #fff;
+  border: 0.5px solid var(--up-border);
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.tg-hotelneed-card:hover { transform: translateY(-3px); box-shadow: 0 8px 22px -12px rgba(224,85,53,.35); border-color: var(--accent); }
+.tg-hotelneed-card > i { font-size: 28px; color: var(--accent); }
+.tg-hotelneed-title { font-size: 13px; font-weight: 700; color: var(--up-text); margin: 8px 0 4px; }
+.tg-hotelneed-desc { font-size: 11px; color: var(--up-muted); line-height: 1.5; }
+
+/* ---------- F: 注目のホテル（3カード） ---------- */
+.tg-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 36px;
+}
+.tg-featured-card {
+  background: #fff;
+  border: 0.5px solid var(--up-border);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  transition: transform .2s, box-shadow .2s;
+}
+.tg-featured-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px -12px rgba(0,0,0,.2); }
+.tg-featured-band {
+  height: 84px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.tg-featured-band > i { font-size: 24px; opacity: .5; }
+.tg-featured-band--official { background: #FBDED4; color: var(--accent); }
+.tg-featured-band--budget { background: #E8EDF2; color: var(--up-text-3); }
+.tg-featured-badge {
+  position: absolute; top: 7px; left: 7px;
+  color: #fff; font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 4px;
+}
+.tg-featured-badge--official { background: var(--accent); }
+.tg-featured-badge--budget { background: var(--up-text-3); }
+.tg-featured-body { padding: 11px; }
+.tg-featured-name { font-size: 12px; font-weight: 700; color: var(--up-text); line-height: 1.4; }
+.tg-featured-meta { font-size: 10px; color: var(--up-text-3); margin: 5px 0 6px; }
+.tg-featured-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tg-featured-tags > span {
+  background: var(--accent-bg); color: var(--accent-ink);
+  font-size: 9px; padding: 2px 6px; border-radius: 4px;
+}
+.tg-featured-tags--budget > span { background: #F1F5F9; color: #475569; }
 
 /* ---------- テーマカードグリッド ---------- */
 .tg-theme-grid {
@@ -1877,9 +1978,12 @@ body:not(.list) { --main-width: 1108px; }
   .tg-area-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
-  .tg-hero { padding: 28px 20px 34px; }
+  .tg-hero { padding: 28px 20px 24px; }
   .tg-hero h1 { font-size: 1.4rem; }
   .tg-scene-grid { grid-template-columns: 1fr; }
+  .tg-purpose-grid { grid-template-columns: repeat(2, 1fr); }
+  .tg-hotelneed-grid { grid-template-columns: 1fr; }
+  .tg-featured-grid { grid-template-columns: 1fr; }
   .tg-cross-link { flex-direction: column; align-items: flex-start; }
   .tg-cross-btn { width: 100%; text-align: center; justify-content: center; }
   .tg-pyr-row:nth-child(1) .tg-pyr-bar { width: 40%; font-size: 0.72rem; }
