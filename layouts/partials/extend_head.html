@@ -1,4 +1,8 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3372468923504472" crossorigin="anonymous"></script>
+{{- /* リニューアル: Tablerアイコン webfont（モックアップ準拠の統一アイコン）。font-display:swapで描画ブロックを回避。 */}}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+<style>.ti{font-display:swap}</style>
 {{- partial "event-jsonld.html" . -}}
 {{- partial "faq-jsonld.html" . -}}
 {{- /* ★SEO: WebSite スキーマ（ホームのみ）。Googleのサイトリンク検索に有効。 */}}

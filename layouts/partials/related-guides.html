@@ -9,34 +9,34 @@
 {{- $tags := .Params.tags | default slice }}
 
 {{- $guides := slice
-  (dict "url" "/life-guide/guides/sports-teams/" "emoji" "🏉" "title" "浦安3大スポーツチーム観戦ガイド"
+  (dict "url" "/life-guide/guides/sports-teams/" "icon" "ti-ball-american-football" "title" "浦安3大スポーツチーム観戦ガイド"
         "cats" (slice "スポーツ")
         "tags" (slice "スポーツ" "ラグビー" "サッカー" "フットサル" "Fリーグ" "リーグワン" "浦安D-Rocks" "バルドラール浦安" "ブリオベッカ浦安・市川" "運動公園" "試合結果" "入替戦"))
-  (dict "url" "/life-guide/guides/indoor-playgrounds/" "emoji" "🧸" "title" "子ども向け屋内・公共の遊び場まとめ"
+  (dict "url" "/life-guide/guides/indoor-playgrounds/" "icon" "ti-building-carousel" "title" "子ども向け屋内・公共の遊び場まとめ"
         "cats" (slice "子育て・教育")
         "tags" (slice "子育て" "親子" "屋内"))
-  (dict "url" "/life-guide/guides/parks-playgrounds/" "emoji" "🛝" "title" "公園・遊び場ガイド"
+  (dict "url" "/life-guide/guides/parks-playgrounds/" "icon" "ti-windmill" "title" "公園・遊び場ガイド"
         "cats" (slice)
         "tags" (slice "公園" "自然観察" "親子" "運動公園" "水遊び"))
-  (dict "url" "/life-guide/guides/libraries-public-facilities/" "emoji" "📚" "title" "図書館・公共施設一覧ガイド"
+  (dict "url" "/life-guide/guides/libraries-public-facilities/" "icon" "ti-books" "title" "図書館・公共施設一覧ガイド"
         "cats" (slice)
         "tags" (slice "文化会館" "コンサート" "クラシック" "Wave101" "図書館" "公民館" "音楽ホール" "郷土博物館"))
-  (dict "url" "/life-guide/guides/station-life/" "emoji" "🚉" "title" "駅別生活ガイド"
+  (dict "url" "/life-guide/guides/station-life/" "icon" "ti-train" "title" "駅別生活ガイド"
         "cats" (slice "開店・閉店" "グルメ・カフェ")
         "tags" (slice "新浦安" "浦安駅" "舞浜" "アトレ新浦安" "グルメ" "開店" "閉店" "猫実" "行徳"))
-  (dict "url" "/life-guide/guides/city-hall-procedures/" "emoji" "🏢" "title" "市役所手続き・行政サービスセンターガイド"
+  (dict "url" "/life-guide/guides/city-hall-procedures/" "icon" "ti-building-bank" "title" "市役所手続き・行政サービスセンターガイド"
         "cats" (slice)
         "tags" (slice "行政" "手続き" "マイナンバー" "住民票" "市役所"))
-  (dict "url" "/life-guide/guides/disaster-prevention/" "emoji" "🛟" "title" "防災・避難所・ハザードマップまとめ"
+  (dict "url" "/life-guide/guides/disaster-prevention/" "icon" "ti-shield-half" "title" "防災・避難所・ハザードマップまとめ"
         "cats" (slice)
         "tags" (slice "防災" "地震" "水害" "液状化" "ハザードマップ" "避難所"))
-  (dict "url" "/life-guide/guides/trash-recycling/" "emoji" "♻️" "title" "ごみ分別・収集日ガイド"
+  (dict "url" "/life-guide/guides/trash-recycling/" "icon" "ti-trash" "title" "ごみ分別・収集日ガイド"
         "cats" (slice)
         "tags" (slice "ごみ" "リサイクル" "粗大ごみ" "分別"))
-  (dict "url" "/life-guide/guides/holiday-night-medical/" "emoji" "🏥" "title" "休日・夜間診療ガイド"
+  (dict "url" "/life-guide/guides/holiday-night-medical/" "icon" "ti-stethoscope" "title" "休日・夜間診療ガイド"
         "cats" (slice)
         "tags" (slice "医療" "救急" "診療" "急病" "病院"))
-  (dict "url" "/travel-guide/" "emoji" "🏨" "title" "舞浜・浦安 旅行ガイド"
+  (dict "url" "/travel-guide/" "icon" "ti-plane" "title" "舞浜・浦安 旅行ガイド"
         "cats" (slice "グルメ・カフェ")
         "tags" (slice "舞浜" "ディズニー" "ホテル" "東京ディズニーリゾート" "観光" "宿泊" "旅行"))
 }}
@@ -57,7 +57,7 @@
 
 <div class="related-guides">
   <div class="section-head">
-    <h2>📖 くらしに役立つガイド</h2>
+    <h2><i class="ti ti-book-2" aria-hidden="true"></i> くらしに役立つガイド</h2>
     <a class="section-more" href="/life-guide/">便利ガイド一覧 →</a>
   </div>
   {{- if $matched }}
@@ -65,7 +65,7 @@
     {{- range $matched }}
     {{- $g := .g }}
     <a class="rg-card" href="{{ $g.url }}">
-      <span class="rg-emoji">{{ $g.emoji }}</span>
+      <span class="rg-emoji"><i class="ti {{ $g.icon }}" aria-hidden="true"></i></span>
       <span class="rg-body">
         <span class="rg-title">{{ $g.title }}</span>
         <span class="rg-go">記事を読む →</span>
@@ -76,7 +76,7 @@
   {{- else }}
   <div class="rg-list">
     <a class="rg-card" href="/life-guide/">
-      <span class="rg-emoji">🗂️</span>
+      <span class="rg-emoji"><i class="ti ti-folders" aria-hidden="true"></i></span>
       <span class="rg-body">
         <span class="rg-title">浦安市くらしの便利ガイド一覧</span>
         <span class="rg-go">ごみ・防災・医療・子育てなどをまとめてチェック →</span>

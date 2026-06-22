@@ -1,0 +1,178 @@
+{{- define "main" }}
+
+{{- $catClass := dict
+  "開店・閉店" "cat-open"
+  "開店閉店"   "cat-open"
+  "ニュース"   "cat-news"
+  "イベント"   "cat-event"
+  "グルメ・カフェ" "cat-gourmet"
+  "グルメカフェ"   "cat-gourmet"
+  "子育て・教育" "cat-edu"
+  "子育て教育"   "cat-edu"
+  "スポーツ"   "cat-sports"
+  "お知らせ"   "cat-notice"
+}}
+
+{{/* 全記事 (新しい順) */}}
+{{- $allPosts := .Pages }}
+{{- $paginator := .Paginate $allPosts 12 }}
+
+{{/* ═══ ページヘッダー ═══ */}}
+<div class="portal-hero posts-list-hero">
+  <div class="portal-hero-text">
+    <span class="portal-hero-label">街のトピックス</span>
+    <h1 class="portal-hero-title">記事一覧</h1>
+    <p class="portal-hero-subtitle">浦安と周辺エリアの最新ニュース・イベント・グルメなど、地域情報を毎日お届けしています。</p>
+    <nav class="portal-quick-links" aria-label="カテゴリから探す">
+      <a class="portal-quick-link" href="/categories/開店閉店/"><i class="ti ti-building-store" aria-hidden="true"></i>開店・閉店</a>
+      <a class="portal-quick-link" href="/categories/ニュース/"><i class="ti ti-news" aria-hidden="true"></i>ニュース</a>
+      <a class="portal-quick-link" href="/categories/イベント/"><i class="ti ti-calendar-event" aria-hidden="true"></i>イベント</a>
+      <a class="portal-quick-link" href="/categories/グルメカフェ/"><i class="ti ti-coffee" aria-hidden="true"></i>グルメ・カフェ</a>
+      <a class="portal-quick-link" href="/categories/子育て教育/"><i class="ti ti-school" aria-hidden="true"></i>子育て・教育</a>
+      <a class="portal-quick-link" href="/categories/スポーツ/"><i class="ti ti-ball-football" aria-hidden="true"></i>スポーツ</a>
+    </nav>
+  </div>
+</div>
+
+{{/* ═══ 2カラムレイアウト ═══ */}}
+<div class="home-layout">
+  <div class="home-main">
+
+    {{/* ─── page/1 のみ: 最新3件ヒーロー ─── */}}
+    {{- if eq $paginator.PageNumber 1 }}
+    {{- $heroPosts := first 3 $paginator.Pages }}
+    {{- if $heroPosts }}
+    <div class="home-hero">
+      {{- with (index $heroPosts 0) }}
+      {{- $cat := index .Params.categories 0 | default "" }}
+      {{- $cls := index $catClass $cat | default "cat-default" }}
+      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+      <a class="hero-card hero-main" href="{{ .RelPermalink }}">
+        <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
+          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="eager">
+          {{- else }}<span><i class="ti ti-photo" aria-hidden="true"></i></span>{{- end }}
+        </div>
+        <div class="hero-body">
+          {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
+          <h2>{{ .Title }}</h2>
+          {{- with .Description }}<p>{{ . }}</p>{{- end }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+        </div>
+      </a>
+      {{- end }}
+      {{- range after 1 $heroPosts }}
+      {{- $cat := index .Params.categories 0 | default "" }}
+      {{- $cls := index $catClass $cat | default "cat-default" }}
+      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+      <a class="hero-card hero-sub" href="{{ .RelPermalink }}">
+        <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
+          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+          {{- else }}<span><i class="ti ti-photo" aria-hidden="true"></i></span>{{- end }}
+        </div>
+        <div class="hero-body">
+          {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
+          <h3>{{ .Title }}</h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+    {{- end }}{{/* end page/1 hero */}}
+
+    {{/* ─── 記事グリッド ─── */}}
+    <div class="section-head" style="margin-top:{{ if eq $paginator.PageNumber 1 }}32px{{ else }}0{{ end }};">
+      <h2>{{ if eq $paginator.PageNumber 1 }}最新記事{{ else }}記事一覧{{ end }}</h2>
+      <span class="list-count">全{{ len $allPosts }}件</span>
+    </div>
+
+    {{- if eq $paginator.PageNumber 1 }}
+    {{- $gridPosts := after 3 $paginator.Pages }}
+    {{- if $gridPosts }}
+    <div class="article-grid">
+      {{- range $gridPosts }}
+      {{- partial "article-card.html" . }}
+      {{- end }}
+    </div>
+    {{- end }}
+    {{- else }}
+    <div class="article-grid">
+      {{- range $paginator.Pages }}
+      {{- partial "article-card.html" . }}
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{/* ─── ページネーション ─── */}}
+    {{- if gt $paginator.TotalPages 1 }}
+    <div class="home-pagination">
+      {{- if $paginator.HasPrev }}
+      <a class="page-btn" href="{{ $paginator.Prev.URL }}">← 新しい記事</a>
+      {{- end }}
+      <span class="page-info">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+      {{- if $paginator.HasNext }}
+      <a class="page-btn" href="{{ $paginator.Next.URL }}">古い記事 →</a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+  </div>
+
+  {{/* ─── サイドバー ─── */}}
+  <aside class="home-sidebar">
+
+    {{- partial "sidebar-calendar.html" . }}
+
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-folder" aria-hidden="true"></i> カテゴリ</div>
+      <ul class="cat-list">
+        {{- range site.Taxonomies.categories.ByCount }}
+        {{- $name := .Page.Title }}
+        {{- $cls := index $catClass $name | default "cat-default" }}
+        <li>
+          <a class="cat-item" href="{{ .Page.RelPermalink }}">
+            <span class="cat-badge cat-badge-sm {{ $cls }}">{{ $name }}</span>
+            <span class="cat-count">{{ .Count }}</span>
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-clock" aria-hidden="true"></i> 最近の記事</div>
+      <div class="recent-list">
+        {{- range first 5 .Pages }}
+        {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+        <a class="recent-item" href="{{ .RelPermalink }}">
+          <div class="recent-thumb">
+            {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+            {{- else }}<div class="recent-thumb-no-img"><i class="ti ti-photo" aria-hidden="true"></i></div>{{- end }}
+          </div>
+          <div class="recent-body">
+            <h4>{{ .Title }}</h4>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          </div>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+
+    {{- if site.Taxonomies.tags }}
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-tag" aria-hidden="true"></i> タグ</div>
+      <div class="tag-cloud">
+        {{- range site.Taxonomies.tags.ByCount }}
+        {{- if ge .Count 3 }}
+        <a class="tag-item" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}({{ .Count }})</a>
+        {{- end }}
+        {{- end }}
+      </div>
+      <a class="tag-more-link" href="/tags/">すべてのタグを見る →</a>
+    </div>
+    {{- end }}
+
+  </aside>
+</div>
+
+{{- end }}

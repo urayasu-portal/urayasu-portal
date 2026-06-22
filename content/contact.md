@@ -11,11 +11,11 @@ noDate: true
     新店舗のオープン、閉店、イベント、地域ニュース、店舗・サービスの掲載相談などがありましたら、以下のフォームよりお気軽にお知らせください。
   </p>
   <ul class="contact-type-list">
-    <li><button type="button" class="contact-type-btn" data-value="開店・閉店情報の提供">📢 開店・閉店情報を知らせる</button></li>
-    <li><button type="button" class="contact-type-btn" data-value="イベント掲載の依頼">🎪 イベント掲載を依頼する</button></li>
-    <li><button type="button" class="contact-type-btn" data-value="店舗・サービス掲載の相談">🏪 店舗・サービス掲載について相談する</button></li>
-    <li><button type="button" class="contact-type-btn" data-value="誤りの報告">✏️ 誤りを報告する</button></li>
-    <li><button type="button" class="contact-type-btn" data-value="広告・PR掲載の相談">📣 広告・PR掲載について相談する</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="開店・閉店情報の提供"><i class="ti ti-building-store" aria-hidden="true"></i> 開店・閉店情報を知らせる</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="イベント掲載の依頼"><i class="ti ti-calendar-event" aria-hidden="true"></i> イベント掲載を依頼する</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="店舗・サービス掲載の相談"><i class="ti ti-building-community" aria-hidden="true"></i> 店舗・サービス掲載について相談する</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="誤りの報告"><i class="ti ti-flag-2" aria-hidden="true"></i> 誤りを報告する</button></li>
+    <li><button type="button" class="contact-type-btn" data-value="広告・PR掲載の相談"><i class="ti ti-speakerphone" aria-hidden="true"></i> 広告・PR掲載について相談する</button></li>
   </ul>
 </div>
 
@@ -63,11 +63,11 @@ document.querySelectorAll('.contact-type-btn').forEach(function(btn) {
     <label for="subject">お問い合わせの種類</label>
     <select id="subject" name="subject">
       <option value="">選択してください</option>
-      <option value="開店・閉店情報の提供">📢 開店・閉店情報を知らせる</option>
-      <option value="イベント掲載の依頼">🎪 イベント掲載を依頼する</option>
-      <option value="店舗・サービス掲載の相談">🏪 店舗・サービス掲載について相談する</option>
-      <option value="誤りの報告">✏️ 誤りを報告する</option>
-      <option value="広告・PR掲載の相談">📣 広告・PR掲載について相談する</option>
+      <option value="開店・閉店情報の提供">開店・閉店情報を知らせる</option>
+      <option value="イベント掲載の依頼">イベント掲載を依頼する</option>
+      <option value="店舗・サービス掲載の相談">店舗・サービス掲載について相談する</option>
+      <option value="誤りの報告">誤りを報告する</option>
+      <option value="広告・PR掲載の相談">広告・PR掲載について相談する</option>
       <option value="その他">その他</option>
     </select>
   </div>

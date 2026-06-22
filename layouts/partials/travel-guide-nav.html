@@ -1,29 +1,29 @@
-{{- $cur := .RelPermalink -}}
+{{- $cur := .RelPermalink | strings.TrimPrefix "/en" -}}
 <nav class="tg-section-nav">
   <div class="tg-snav-groups">
     <div class="tg-snav-group">
-      <span class="tg-snav-label">🏨 ホテルを選ぶ</span>
+      <span class="tg-snav-label"><i class="ti ti-bed" aria-hidden="true"></i> {{- if eq .Lang "en" }}Hotels{{- else }}ホテルを選ぶ{{- end }}</span>
       <div class="tg-snav-links">
-        <a href="/travel-guide/hotels/"{{- if eq $cur "/travel-guide/hotels/" }} class="tg-snav-cur"{{- end }}>全40軒一覧</a>
-        <a href="/travel-guide/hotels/kids/"{{- if eq $cur "/travel-guide/hotels/kids/" }} class="tg-snav-cur"{{- end }}>子連れ向け</a>
-        <a href="/travel-guide/hotels/budget/"{{- if eq $cur "/travel-guide/hotels/budget/" }} class="tg-snav-cur"{{- end }}>格安比較</a>
-        <a href="/travel-guide/hotels/access/"{{- if eq $cur "/travel-guide/hotels/access/" }} class="tg-snav-cur"{{- end }}>ホテル別アクセス</a>
+        <a href="{{ "/travel-guide/hotels/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}All 40 hotels{{- else }}全40軒一覧{{- end }}</a>
+        <a href="{{ "/travel-guide/hotels/kids/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/kids/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Family{{- else }}子連れ向け{{- end }}</a>
+        <a href="{{ "/travel-guide/hotels/budget/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/budget/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Budget{{- else }}格安比較{{- end }}</a>
+        <a href="{{ "/travel-guide/hotels/access/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/access/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Access{{- else }}ホテル別アクセス{{- end }}</a>
       </div>
     </div>
     <div class="tg-snav-group">
-      <span class="tg-snav-label">🗺️ エリアを楽しむ</span>
+      <span class="tg-snav-label"><i class="ti ti-map" aria-hidden="true"></i> {{- if eq .Lang "en" }}Explore{{- else }}エリアを楽しむ{{- end }}</span>
       <div class="tg-snav-links">
-        <a href="/travel-guide/urayasu-maihama-shinurayasu-tourism/"{{- if eq $cur "/travel-guide/urayasu-maihama-shinurayasu-tourism/" }} class="tg-snav-cur"{{- end }}>観光ガイド</a>
-        <a href="/travel-guide/urayasu-gourmet-souvenir-guide/"{{- if eq $cur "/travel-guide/urayasu-gourmet-souvenir-guide/" }} class="tg-snav-cur"{{- end }}>グルメ・お土産</a>
+        <a href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-maihama-shinurayasu-tourism/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Sightseeing{{- else }}観光ガイド{{- end }}</a>
+        <a href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-gourmet-souvenir-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Food & Souvenirs{{- else }}グルメ・お土産{{- end }}</a>
       </div>
     </div>
     <div class="tg-snav-group">
-      <span class="tg-snav-label">✈️ 移動する</span>
+      <span class="tg-snav-label"><i class="ti ti-plane" aria-hidden="true"></i> {{- if eq .Lang "en" }}Getting Around{{- else }}移動する{{- end }}</span>
       <div class="tg-snav-links">
-        <a href="/travel-guide/urayasu-maihama-access-guide/"{{- if eq $cur "/travel-guide/urayasu-maihama-access-guide/" }} class="tg-snav-cur"{{- end }}>空港・東京駅から</a>
-        <a href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/"{{- if eq $cur "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" }} class="tg-snav-cur"{{- end }}>タクシーガイド</a>
+        <a href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-maihama-access-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}From airports / Tokyo Station{{- else }}空港・東京駅から{{- end }}</a>
+        <a href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Taxi guide{{- else }}タクシーガイド{{- end }}</a>
       </div>
     </div>
   </div>
-  <a class="tg-snav-top" href="/travel-guide/">旅行ガイド トップ →</a>
+  <a class="tg-snav-top" href="{{ "/travel-guide/" | absLangURL }}">{{- if eq .Lang "en" }}Travel Guide Top →{{- else }}旅行ガイド トップ →{{- end }}</a>
 </nav>

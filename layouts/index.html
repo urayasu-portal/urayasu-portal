@@ -20,15 +20,16 @@
 {{/* ═══ 1. ファーストビュー ═══ */}}
 <div class="portal-hero">
   <div class="portal-hero-text">
-    <h1 class="portal-hero-title">浦安・新浦安・舞浜の<br>地域情報メディア</h1>
+    <span class="portal-hero-label">街のトピックス</span>
+    <h1 class="portal-hero-title">浦安の、いまを知る。</h1>
     <p class="portal-hero-subtitle">開店・閉店、イベント、グルメ、子育て、スポーツまで。浦安と周辺エリアの気になる話題を地域密着でお届けします。</p>
     <nav class="portal-quick-links" aria-label="カテゴリから探す">
-      <a class="portal-quick-link" href="/categories/開店閉店/">🏪 開店・閉店</a>
-      <a class="portal-quick-link" href="/categories/ニュース/">📰 ニュース</a>
-      <a class="portal-quick-link" href="/categories/イベント/">📅 イベント</a>
-      <a class="portal-quick-link" href="/categories/グルメカフェ/">🍜 グルメ・カフェ</a>
-      <a class="portal-quick-link" href="/categories/子育て教育/">👶 子育て・教育</a>
-      <a class="portal-quick-link" href="/categories/スポーツ/">⚽ スポーツ</a>
+      <a class="portal-quick-link" href="/categories/開店閉店/"><i class="ti ti-building-store" aria-hidden="true"></i>開店・閉店</a>
+      <a class="portal-quick-link" href="/categories/ニュース/"><i class="ti ti-news" aria-hidden="true"></i>ニュース</a>
+      <a class="portal-quick-link" href="/categories/イベント/"><i class="ti ti-calendar-event" aria-hidden="true"></i>イベント</a>
+      <a class="portal-quick-link" href="/categories/グルメカフェ/"><i class="ti ti-coffee" aria-hidden="true"></i>グルメ・カフェ</a>
+      <a class="portal-quick-link" href="/categories/子育て教育/"><i class="ti ti-school" aria-hidden="true"></i>子育て・教育</a>
+      <a class="portal-quick-link" href="/categories/スポーツ/"><i class="ti ti-ball-football" aria-hidden="true"></i>スポーツ</a>
     </nav>
   </div>
   <a class="hero-contact-link" href="/contact/" aria-label="地域情報の提供フォームへ">情報提供はこちら</a>
@@ -54,7 +55,7 @@
   <a class="hero-card hero-main" href="{{ .RelPermalink }}">
     <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
       {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="eager">
-      {{- else }}<span>🗞</span>{{- end }}
+      {{- else }}<span><i class="ti ti-photo" aria-hidden="true"></i></span>{{- end }}
     </div>
     <div class="hero-body">
       {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
@@ -72,7 +73,7 @@
   <a class="hero-card hero-sub" href="{{ .RelPermalink }}">
     <div class="hero-thumb{{- if not $img }} hero-no-img{{- end }}">
       {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-      {{- else }}<span>🗞</span>{{- end }}
+      {{- else }}<span><i class="ti ti-photo" aria-hidden="true"></i></span>{{- end }}
     </div>
     <div class="hero-body">
       {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
@@ -88,68 +89,51 @@
 <div class="home-layout">
   <div class="home-main">
 
-    {{- $paginator := .Paginate (after 3 $allPosts) 6 }}
+    {{- $latestPosts := first 6 (after 3 $allPosts) }}
 
-    {{/* ─ 4. 目的別ナビ (page 1 only) ─ */}}
-    {{- if eq $paginator.PageNumber 1 }}
+    {{/* ─ 4. 目的別ナビ ─ */}}
     <nav class="top-purpose-nav" aria-label="目的から探す">
       <div class="section-head">
         <h2>目的から探す</h2>
       </div>
       <div class="top-purpose-grid">
         <a class="top-purpose-item" href="/categories/子育て教育/">
-          <span class="top-purpose-icon">👶</span><span>子育て</span>
+          <span class="top-purpose-icon"><i class="ti ti-baby-carriage" aria-hidden="true"></i></span><span>子育て</span>
         </a>
         <a class="top-purpose-item" href="/life-guide/guides/holiday-night-medical/">
-          <span class="top-purpose-icon">🏥</span><span>医療</span>
+          <span class="top-purpose-icon"><i class="ti ti-stethoscope" aria-hidden="true"></i></span><span>医療</span>
         </a>
         <a class="top-purpose-item" href="/life-guide/guides/disaster-prevention/">
-          <span class="top-purpose-icon">🛡️</span><span>防災</span>
+          <span class="top-purpose-icon"><i class="ti ti-shield-half" aria-hidden="true"></i></span><span>防災</span>
         </a>
         <a class="top-purpose-item" href="/life-guide/guides/trash-recycling/">
-          <span class="top-purpose-icon">♻️</span><span>ごみ</span>
+          <span class="top-purpose-icon"><i class="ti ti-trash" aria-hidden="true"></i></span><span>ごみ</span>
         </a>
         <a class="top-purpose-item" href="/life-guide/guides/parks-playgrounds/">
-          <span class="top-purpose-icon">🌳</span><span>公園</span>
+          <span class="top-purpose-icon"><i class="ti ti-tree" aria-hidden="true"></i></span><span>公園</span>
         </a>
         <a class="top-purpose-item" href="/travel-guide/hotels/">
-          <span class="top-purpose-icon">🏨</span><span>ホテル</span>
+          <span class="top-purpose-icon"><i class="ti ti-bed" aria-hidden="true"></i></span><span>ホテル</span>
         </a>
         <a class="top-purpose-item" href="/travel-guide/urayasu-maihama-access-guide/">
-          <span class="top-purpose-icon">🚃</span><span>アクセス</span>
+          <span class="top-purpose-icon"><i class="ti ti-route" aria-hidden="true"></i></span><span>アクセス</span>
         </a>
         <a class="top-purpose-item" href="/categories/イベント/">
-          <span class="top-purpose-icon">📅</span><span>イベント</span>
+          <span class="top-purpose-icon"><i class="ti ti-calendar-event" aria-hidden="true"></i></span><span>イベント</span>
         </a>
       </div>
     </nav>
-    {{- end }}
 
     {{/* ─ 5. 最新記事 ─ */}}
     <div class="section-head">
       <h2>最新記事</h2>
+      <a class="section-more" href="/posts/">一覧を見る →</a>
     </div>
     <div class="article-grid">
-      {{- range $paginator.Pages }}
+      {{- range $latestPosts }}
       {{- partial "article-card.html" . }}
       {{- end }}
     </div>
-
-    {{/* ページネーション */}}
-    {{- if gt $paginator.TotalPages 1 }}
-    <div class="home-pagination">
-      {{- if $paginator.HasPrev }}
-      <a class="page-btn" href="{{ $paginator.Prev.URL }}">← 新しい記事</a>
-      {{- end }}
-      <span class="page-info">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
-      {{- if $paginator.HasNext }}
-      <a class="page-btn" href="{{ $paginator.Next.URL }}">古い記事 →</a>
-      {{- end }}
-    </div>
-    {{- end }}
-
-    {{/* ページ1のみ: カテゴリ別ピックアップ・ガイド・エリア・CTA */}}
-    {{- if eq $paginator.PageNumber 1 }}
 
     {{/* ─ 6. 新着の開店・閉店 (3件) ─ */}}
     {{- $openClosePosts := where $allPosts "Params.categories" "intersect" (slice "開店・閉店" "開店閉店") }}
@@ -181,21 +165,29 @@
     </div>
     {{- end }}
 
-    {{/* ─ 8. 保存版ガイド ─ */}}
+    {{/* ─ 8. 3つの入口から探す ─ */}}
     <div class="section-head" style="margin-top:36px;">
-      <h2>保存版ガイド</h2>
+      <h2>3つの入口から探す</h2>
     </div>
-    <div class="top-guide-cards">
-      <a class="top-guide-card" href="/life-guide/">
-        <span class="top-guide-card-icon">📖</span>
+    <div class="top-guide-cards top-guide-cards--3">
+      <a class="top-guide-card tg-topics" href="/posts/">
+        <span class="top-guide-card-icon" style="color:#1A5C8A"><i class="ti ti-news" aria-hidden="true"></i></span>
+        <div class="top-guide-card-body">
+          <div class="top-guide-card-label">トピックス</div>
+          <div class="top-guide-card-title">街のトピックス・記事一覧</div>
+          <div class="top-guide-card-desc">毎日の地域ニュース・イベント・グルメ</div>
+        </div>
+      </a>
+      <a class="top-guide-card tg-life" href="/life-guide/">
+        <span class="top-guide-card-icon" style="color:#0D9A88"><i class="ti ti-home-2" aria-hidden="true"></i></span>
         <div class="top-guide-card-body">
           <div class="top-guide-card-label">くらし</div>
           <div class="top-guide-card-title">浦安市くらしの便利ガイド</div>
           <div class="top-guide-card-desc">子育て・医療・防災・ごみ・公共施設</div>
         </div>
       </a>
-      <a class="top-guide-card" href="/travel-guide/">
-        <span class="top-guide-card-icon">✈️</span>
+      <a class="top-guide-card tg-travel" href="/travel-guide/">
+        <span class="top-guide-card-icon" style="color:#E05535"><i class="ti ti-plane" aria-hidden="true"></i></span>
         <div class="top-guide-card-body">
           <div class="top-guide-card-label">旅行</div>
           <div class="top-guide-card-title">浦安・舞浜 旅行ガイド</div>
@@ -207,16 +199,16 @@
     {{/* ─ 9. エリア別導線 (タグが存在する場合のみ表示) ─ */}}
     {{- $areaLinks := slice }}
     {{- with index site.Taxonomies.tags "浦安市" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/浦安市/" "emoji" "🏙️" "label" "浦安") }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/浦安市/" "icon" "ti-building" "label" "浦安") }}
     {{- end }}
     {{- with index site.Taxonomies.tags "新浦安" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/新浦安/" "emoji" "🌊" "label" "新浦安") }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/新浦安/" "icon" "ti-beach" "label" "新浦安") }}
     {{- end }}
     {{- with index site.Taxonomies.tags "舞浜" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/舞浜/" "emoji" "🎡" "label" "舞浜") }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/舞浜/" "icon" "ti-ferris-wheel" "label" "舞浜") }}
     {{- end }}
     {{- with index site.Taxonomies.tags "行徳" }}
-    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/行徳/" "emoji" "🐟" "label" "行徳・妙典") }}
+    {{- $areaLinks = $areaLinks | append (dict "href" "/tags/行徳/" "icon" "ti-fish" "label" "行徳・妙典") }}
     {{- end }}
     {{- if $areaLinks }}
     <div class="section-head">
@@ -225,7 +217,7 @@
     <div class="top-area-nav">
       {{- range $areaLinks }}
       <a class="top-area-item" href="{{ .href }}">
-        <span class="area-emoji">{{ .emoji }}</span><span>{{ .label }}</span>
+        <span class="area-emoji"><i class="ti {{ .icon }}" aria-hidden="true"></i></span><span>{{ .label }}</span>
       </a>
       {{- end }}
     </div>
@@ -256,7 +248,6 @@
     </div>
     {{- end }}
 
-    {{- end }}{{/* end PageNumber == 1 */}}
 
   </div>
 
@@ -268,7 +259,7 @@
 
     {{/* カテゴリ別記事数 */}}
     <div class="sidebar-widget">
-      <div class="widget-title">📊 カテゴリ別記事数</div>
+      <div class="widget-title"><i class="ti ti-chart-bar" aria-hidden="true"></i> カテゴリ別記事数</div>
       <ul class="cat-list">
         {{- range site.Taxonomies.categories.ByCount }}
         {{- $name := .Page.Title }}
@@ -285,14 +276,14 @@
 
     {{/* 最近の記事 */}}
     <div class="sidebar-widget">
-      <div class="widget-title">🕐 最近の記事</div>
+      <div class="widget-title"><i class="ti ti-clock" aria-hidden="true"></i> 最近の記事</div>
       <div class="recent-list">
         {{- range first 5 $allPosts }}
         {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
         <a class="recent-item" href="{{ .RelPermalink }}">
           <div class="recent-thumb">
             {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-            {{- else }}<div class="recent-thumb-no-img">🗞</div>{{- end }}
+            {{- else }}<div class="recent-thumb-no-img"><i class="ti ti-photo" aria-hidden="true"></i></div>{{- end }}
           </div>
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
@@ -306,7 +297,7 @@
     {{/* タグクラウド (3件以上のみ表示) */}}
     {{- if site.Taxonomies.tags }}
     <div class="sidebar-widget">
-      <div class="widget-title">🏷 タグ</div>
+      <div class="widget-title"><i class="ti ti-tag" aria-hidden="true"></i> タグ</div>
       <div class="tag-cloud">
         {{- range site.Taxonomies.tags.ByCount }}
         {{- if ge .Count 3 }}

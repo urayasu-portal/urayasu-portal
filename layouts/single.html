@@ -34,7 +34,7 @@
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
           {{- end }}
           {{- if gt .Lastmod .Date }}
-          <span class="post-updated-badge">🔄 {{ .Lastmod.Format "2006年1月2日" }}更新</span>
+          <span class="post-updated-badge"><i class="ti ti-refresh" aria-hidden="true"></i> {{ .Lastmod.Format "2006年1月2日" }}更新</span>
           {{- end }}
         </div>
         <h1 class="post-title">{{ .Title }}</h1>
@@ -54,7 +54,7 @@
         shopName / openDate / closeDate / address / mapUrl / officialUrl
         いずれか1つ以上が設定されている場合のみ表示。既存記事には影響なし。
       */}}
-      {{- if or .Params.shopName .Params.openDate .Params.closeDate .Params.address }}
+      {{- if .Params.shopName }}
       <div class="info-box frontmatter-infobox">
         <h2>店舗情報</h2>
         <dl>
@@ -63,7 +63,6 @@
           {{- with .Params.openDate }}<dt>オープン日</dt><dd>{{ . }}</dd>{{- end }}
           {{- with .Params.closeDate }}<dt>閉店日</dt><dd>{{ . }}</dd>{{- end }}
           {{- with .Params.officialUrl }}<dt>公式情報</dt><dd><a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></dd>{{- end }}
-          {{- with .Params.mapUrl }}<dt>地図</dt><dd><a href="{{ . }}" rel="noopener" target="_blank">Google マップで見る</a></dd>{{- end }}
         </dl>
       </div>
       {{- end }}
@@ -73,7 +72,7 @@
         eventDate / eventLocation いずれか1つ以上が設定されている場合のみ表示。
         hideEventBox: true を指定するとボックスを非表示にできる（カレンダー反映は維持）。
       */}}
-      {{- if and (or .Params.eventDate .Params.eventLocation) (not .Params.hideEventBox) }}
+      {{- if and .Params.eventDate (not .Params.hideEventBox) }}
       <div class="info-box frontmatter-infobox">
         <h2>イベント概要</h2>
         <dl>
@@ -98,7 +97,7 @@
         {{- $evTime := time $endDateStr }}
         {{- if $evTime.Before now }}
         <div class="event-ended-warn">
-          ⚠️ <strong>このイベントは終了しました</strong>（{{ $endDateStr }}）。掲載内容は開催当時の情報です。最新情報は公式サイトをご確認ください。
+          <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>このイベントは終了しました</strong>（{{ $endDateStr }}）。掲載内容は開催当時の情報です。最新情報は公式サイトをご確認ください。
         </div>
         {{- end }}
       {{- end }}
@@ -127,7 +126,7 @@
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         {{- with $.GetTerms $tags }}
         <div style="margin-bottom:4px;">
-          <span class="post-tag-label">🏷 タグ：</span>
+          <span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> タグ：</span>
         </div>
         <ul class="post-tags">
           {{- range . }}
@@ -139,7 +138,7 @@
         {{/* カテゴリ表示 */}}
         {{- if $cat }}
         <div style="margin-top:12px;margin-bottom:4px;">
-          <span class="post-tag-label">📂 カテゴリ：</span>
+          <span class="post-tag-label"><i class="ti ti-folder" aria-hidden="true"></i> カテゴリ：</span>
           <a href="/categories/{{ $cat | urlize }}/" style="text-decoration:none;">
             <span class="cat-badge {{ $cls }}">{{ $cat }}</span>
           </a>
@@ -217,7 +216,7 @@
 
     {{/* カテゴリ別記事数 */}}
     <div class="sidebar-widget">
-      <div class="widget-title">📊 カテゴリ別記事数</div>
+      <div class="widget-title"><i class="ti ti-chart-bar" aria-hidden="true"></i> カテゴリ別記事数</div>
       <ul class="cat-list">
         {{- range site.Taxonomies.categories.ByCount }}
         {{- $name := .Page.Title }}
@@ -234,14 +233,14 @@
 
     {{/* 最近の記事 */}}
     <div class="sidebar-widget">
-      <div class="widget-title">🕐 最近の記事</div>
+      <div class="widget-title"><i class="ti ti-clock" aria-hidden="true"></i> 最近の記事</div>
       <div class="recent-list">
         {{- range first 5 $allPosts }}
         {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
         <a class="recent-item" href="{{ .RelPermalink }}">
           <div class="recent-thumb">
             {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-            {{- else }}<div class="recent-thumb-no-img">🗞</div>{{- end }}
+            {{- else }}<div class="recent-thumb-no-img"><i class="ti ti-photo" aria-hidden="true"></i></div>{{- end }}
           </div>
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
@@ -255,7 +254,7 @@
     {{/* タグクラウド (3件以上のみ表示) */}}
     {{- if site.Taxonomies.tags }}
     <div class="sidebar-widget">
-      <div class="widget-title">🏷 タグ</div>
+      <div class="widget-title"><i class="ti ti-tag" aria-hidden="true"></i> タグ</div>
       <div class="tag-cloud">
         {{- range site.Taxonomies.tags.ByCount }}
         {{- if ge .Count 3 }}

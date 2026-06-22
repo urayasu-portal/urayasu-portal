@@ -5,15 +5,33 @@ title: 浦安ぽーたる
 theme: PaperMod
 hasCJKLanguage: true
 defaultContentLanguage: ja
+defaultContentLanguageInSubdir: false
+
+languages:
+  ja:
+    languageName: 日本語
+    languageCode: ja
+    weight: 1
+  en:
+    languageName: English
+    languageCode: en-US
+    weight: 2
+    title: Urayasu Portal
+    params:
+      homeTitle: "Urayasu Portal | Urayasu & Maihama Travel Guide"
+      description: "A local travel guide for Urayasu and Maihama area near Tokyo Disney Resort. Hotels, access, sightseeing, food, and taxi information."
 
 pagination:
   pagerSize: 10
 
 params:
   env: production
+  # リニューアル: 明色専用デザイン（モックアップ準拠）。auto時のダーク崩れを防ぐためライト固定＋トグル非表示。
+  defaultTheme: light
+  disableThemeToggle: true
   # ★SEO: トップページの <title> タグ専用（site.Title はブランド名のまま各記事の接尾辞に使用）
-  homeTitle: 浦安ぽーたる｜浦安・新浦安・舞浜のローカル情報メディア
-  description: 浦安・新浦安・舞浜の開店・閉店、イベント、グルメ、子育て・教育、スポーツ、ニュースなど地域情報をお届けするローカルメディアです。
+  homeTitle: 浦安ぽーたる｜浦安と周辺エリアのローカル情報メディア
+  description: 浦安と周辺エリアの開店・閉店、イベント、グルメ、子育て・教育、スポーツ、ニュースなど地域情報をお届けするローカルメディアです。
   keywords:
     - 浦安
     - 浦安市

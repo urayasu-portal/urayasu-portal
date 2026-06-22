@@ -47,11 +47,11 @@ noDate: true
 
 以下のご要望はお問い合わせフォームよりお気軽にどうぞ。
 
-- 📢 開店・閉店・移転情報のご提供
-- 🎪 イベント掲載のご依頼
-- 🏪 店舗・サービスの掲載相談
-- ✏️ 掲載情報の誤りのご指摘
-- 📣 広告・PR掲載のご相談
+- <i class="ti ti-building-store" aria-hidden="true"></i> 開店・閉店・移転情報のご提供
+- <i class="ti ti-calendar-event" aria-hidden="true"></i> イベント掲載のご依頼
+- <i class="ti ti-building-community" aria-hidden="true"></i> 店舗・サービスの掲載相談
+- <i class="ti ti-flag-2" aria-hidden="true"></i> 掲載情報の誤りのご指摘
+- <i class="ti ti-speakerphone" aria-hidden="true"></i> 広告・PR掲載のご相談
 
 [お問い合わせフォームへ →](/contact/)
 

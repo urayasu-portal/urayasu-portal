@@ -1,0 +1,132 @@
+{{- define "main" }}
+
+{{- /* 便利ガイド個別記事レイアウト（モックアップE準拠）。柱=life（teal）。 */ -}}
+{{- $guides := hugo.Data.lifeguides }}
+{{- $cur := .RelPermalink }}
+{{- $coverImg := partial "cover-image.html" (dict "page" . "size" "full") }}
+
+{{/* data/lifeguides.yaml から全ガイドを集約し、現在ページのカテゴリ名・関連ガイドを求める */}}
+{{- $allGuides := slice }}
+{{- $curCatName := "" }}
+{{- range $guides.categories }}
+  {{- $catName := .name }}
+  {{- range .guides }}
+    {{- $allGuides = $allGuides | append (dict "url" .url "title" .title "desc" .desc "icon" .icon "cat" $catName) }}
+    {{- if eq .url $cur }}{{ $curCatName = $catName }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- $related := slice }}
+{{- range $allGuides }}{{- if ne .url $cur }}{{ $related = $related | append . }}{{- end }}{{- end }}
+{{- $related = first 3 $related }}
+
+<div class="home-layout">
+
+  <div class="home-main">
+    <article class="post-single">
+
+      <header class="post-header">
+        {{- partial "breadcrumbs.html" . }}
+        <div class="post-meta-line">
+          <span class="cat-badge lg-pillar-badge">便利ガイド{{- with $curCatName }} ・ {{ . }}{{- end }}</span>
+          {{- if .Lastmod }}
+          <span class="post-updated-badge"><i class="ti ti-refresh" aria-hidden="true"></i> {{ .Lastmod.Format "2006年1月2日" }}更新</span>
+          {{- end }}
+          <span class="lg-saved-badge"><i class="ti ti-bookmark" aria-hidden="true"></i> 保存版ガイド</span>
+        </div>
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{- with .Description }}<p class="post-description">{{ . }}</p>{{- end }}
+      </header>
+
+      {{- if $coverImg }}
+      <div class="post-cover"><img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy"></div>
+      {{- end }}
+
+      {{- if .Content }}
+      <div class="post-content md-content">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+        {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}{{ .Content }}{{ end }}
+      </div>
+      {{- end }}
+
+      {{/* 出典・確認時点 */}}
+      {{- partial "source-info.html" . }}
+
+      {{/* 注意書き（保存版ガイド共通） */}}
+      <div class="lg-disclaimer">
+        <i class="ti ti-info-circle" aria-hidden="true"></i>
+        <span>掲載情報は変更される場合があります。ご利用前に各機関の公式情報をご確認ください。誤り・更新のご連絡は<a href="/contact/">お問い合わせフォーム</a>から。</span>
+      </div>
+
+      {{/* あわせて読みたいガイド */}}
+      {{- if $related }}
+      <div class="lg-related">
+        <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>あわせて読みたいガイド</h2></div>
+        <div class="lg-guide-grid">
+          {{- range $related }}
+          <a class="lg-guide-card" href="{{ .url }}">
+            <span class="lg-guide-card-icon" aria-hidden="true"><i class="ti {{ .icon }}"></i></span>
+            <div class="lg-guide-card-body">
+              <div class="lg-guide-card-title">{{ .title }}</div>
+              <div class="lg-guide-card-desc">{{ .desc }}</div>
+            </div>
+          </a>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+
+      <footer class="post-footer">
+        {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+        {{- with $.GetTerms $tags }}
+        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> タグ：</span></div>
+        <ul class="post-tags">
+          {{- range . }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{- end }}
+        </ul>
+        {{- end }}
+      </footer>
+
+    </article>
+  </div>{{/* end home-main */}}
+
+  {{/* ───── サイドバー ───── */}}
+  <aside class="home-sidebar">
+
+    {{/* 目次（見出しがある場合のみ） */}}
+    {{- with .TableOfContents }}
+    {{- if ne . "<nav id=\"TableOfContents\"></nav>" }}
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> 目次</div>
+      <div class="lg-toc">{{ . }}</div>
+    </div>
+    {{- end }}
+    {{- end }}
+
+    {{/* 便利ガイド トップへ戻る */}}
+    <div class="lg-side-cta">
+      <i class="ti ti-home-2" aria-hidden="true"></i>
+      <div class="lg-side-cta-title">便利ガイド トップ</div>
+      <div class="lg-side-cta-desc">暮らしの情報をまとめて探す</div>
+      <a class="lg-side-cta-btn" href="/life-guide/">一覧へ戻る</a>
+    </div>
+
+    {{/* 人気のガイド */}}
+    {{- with $guides.popular }}
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-bookmarks" aria-hidden="true"></i> 人気のガイド</div>
+      <ol class="lg-pop-rank">
+        {{- range $i, $g := first 3 . }}
+        <li><a href="{{ $g.url }}"><span class="lg-pop-num">{{ add $i 1 }}</span><span>{{ $g.title }}</span></a></li>
+        {{- end }}
+      </ol>
+    </div>
+    {{- end }}
+
+    {{/* 検索 + カレンダー */}}
+    {{- partial "sidebar-calendar.html" . }}
+
+  </aside>
+
+</div>{{/* end home-layout */}}
+
+{{- end }}

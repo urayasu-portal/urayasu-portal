@@ -1,0 +1,17 @@
+{{- $cur := .RelPermalink -}}
+<nav class="pillar-switcher pillar-switcher--travel-en" aria-label="Travel Guide navigation">
+  <div class="pillar-switcher-inner">
+    <a class="pillar-tab pillar-tab--travel{{ if or (eq $cur "/en/travel-guide/") (eq $cur "/en/") }} is-active{{ end }}"
+       href="{{ "/travel-guide/" | absLangURL }}">Travel Guide</a>
+    <a class="pillar-tab pillar-tab--travel{{ if in $cur "/travel-guide/hotels/" }} is-active{{ end }}"
+       href="{{ "/travel-guide/hotels/" | absLangURL }}"><i class="ti ti-bed" aria-hidden="true"></i>Hotels</a>
+    <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-maihama-access-guide" }} is-active{{ end }}"
+       href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}"><i class="ti ti-route" aria-hidden="true"></i>Access</a>
+    <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-maihama-shinurayasu-tourism" }} is-active{{ end }}"
+       href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}"><i class="ti ti-camera" aria-hidden="true"></i>Sightseeing</a>
+    <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-gourmet-souvenir-guide" }} is-active{{ end }}"
+       href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Food</a>
+    <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-taxi-airport-flat-rate-guide" }} is-active{{ end }}"
+       href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}"><i class="ti ti-taxi" aria-hidden="true"></i>Taxi</a>
+  </div>
+</nav>
