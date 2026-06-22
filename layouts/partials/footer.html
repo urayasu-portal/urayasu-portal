@@ -1,41 +1,52 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-  <div style="max-width:1160px;margin:0 auto;padding:32px 24px 20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;">
+  <div class="ft-inner">
 
+    {{- /* 列1: ブランド + サイト情報 */ -}}
     <div>
-      <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:8px;">⚓ 浦安ぽーたる</div>
-      <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.6);margin:0;">
-        浦安市のローカルニュース・グルメ・<br>イベント・子育て情報をお届けします。
-      </p>
-    </div>
-
-    <div>
-      <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;">カテゴリ</div>
-      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;">
-        <li><a href="/categories/開店閉店/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">開店・閉店</a></li>
-        <li><a href="/categories/ニュース/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">ニュース</a></li>
-        <li><a href="/categories/イベント/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">イベント</a></li>
-        <li><a href="/categories/グルメカフェ/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">グルメ・カフェ</a></li>
-        <li><a href="/categories/子育て教育/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">子育て・教育</a></li>
-        <li><a href="/categories/スポーツ/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">スポーツ</a></li>
+      <div class="ft-logo">⚓ 浦安ぽーたる</div>
+      <p class="ft-desc">浦安と周辺エリアのローカル情報メディア。<br>街のニュース・便利ガイド・観光情報をお届けします。</p>
+      <ul class="ft-site-links">
+        <li><a href="/about/">運営者情報</a></li>
+        <li><a href="/contact/">お問い合わせ</a></li>
+        <li><a href="/privacy/">プライバシーポリシー</a></li>
       </ul>
     </div>
 
+    {{- /* 列2: 街のトピックス */ -}}
     <div>
-      <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;">サイト情報</div>
-      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;">
-        <li><a href="/about/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">運営者情報</a></li>
-        <li><a href="/contact/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">お問い合わせ</a></li>
-        <li><a href="/privacy/" style="font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;">プライバシーポリシー</a></li>
+      <div class="ft-col-heading">街のトピックス</div>
+      <ul class="ft-links">
+        <li><a href="/categories/開店閉店/">開店・閉店</a></li>
+        <li><a href="/categories/ニュース/">ニュース</a></li>
+        <li><a href="/categories/イベント/">イベント</a></li>
+        <li><a href="/categories/グルメカフェ/">グルメ・カフェ</a></li>
+        <li><a href="/categories/子育て教育/">子育て・教育</a></li>
+        <li><a href="/categories/スポーツ/">スポーツ</a></li>
+      </ul>
+    </div>
+
+    {{- /* 列3: ガイド */ -}}
+    <div>
+      <div class="ft-col-heading">便利ガイド</div>
+      <ul class="ft-links">
+        <li><a href="/life-guide/">ガイドトップ</a></li>
+      </ul>
+      <div class="ft-col-heading">観光ガイド</div>
+      <ul class="ft-links">
+        <li><a href="/travel-guide/">ガイドトップ</a></li>
+        <li><a href="/travel-guide/hotels/">ホテル</a></li>
+        <li><a href="/travel-guide/access/">アクセス</a></li>
+        <li><a href="/en/travel-guide/">English</a></li>
       </ul>
     </div>
 
   </div>
-  <div style="border-top:1px solid rgba(255,255,255,.1);padding:16px 24px;text-align:center;">
-    <span style="font-size:12px;color:rgba(255,255,255,.4);">
+  <div class="ft-bottom">
+    <span class="ft-bottom-text">
       &copy; {{ now.Year }} 浦安ぽーたる ·
-      Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank" style="color:rgba(255,255,255,.5);">Hugo</a> &amp;
-      <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank" style="color:rgba(255,255,255,.5);">PaperMod</a>
+      Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> &amp;
+      <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
   </div>
 </footer>
