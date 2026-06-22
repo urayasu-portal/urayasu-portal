@@ -2704,3 +2704,41 @@ body:not(.list) { --main-width: 1108px; }
   margin-right: 0;
   margin-top: 20px;
 }
+
+/* ---------- 便利ガイド個別(E) ---------- */
+.lg-pillar-badge { background: var(--accent) !important; color: #fff !important; }
+.lg-saved-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; font-weight: 700; color: var(--accent);
+  background: var(--accent-bg); padding: 3px 9px; border-radius: 6px;
+}
+.lg-disclaimer {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: var(--accent-bg); border: 0.5px solid var(--up-border);
+  border-radius: 12px; padding: 14px; margin: 22px 0;
+  font-size: 12px; line-height: 1.7; color: var(--up-muted);
+}
+.lg-disclaimer > i { color: var(--accent); font-size: 20px; flex-shrink: 0; }
+.lg-disclaimer a { color: var(--accent); font-weight: 600; }
+.lg-related { margin-top: 24px; }
+.lg-related-bar {
+  display: inline-block; width: 4px; height: 17px;
+  background: var(--accent); border-radius: 2px; margin-right: 8px; vertical-align: -2px;
+}
+.lg-side-cta {
+  background: var(--accent-bg); border: 0.5px solid var(--up-border);
+  border-radius: 12px; padding: 16px 14px; text-align: center;
+}
+.lg-side-cta > i { font-size: 24px; color: var(--accent); }
+.lg-side-cta-title { font-size: 13px; font-weight: 700; color: var(--accent-ink); margin: 7px 0 3px; }
+.lg-side-cta-desc { font-size: 11px; color: var(--up-muted); line-height: 1.6; margin-bottom: 11px; }
+.lg-side-cta-btn {
+  display: block; background: var(--accent); color: #fff;
+  font-size: 12px; font-weight: 700; padding: 9px; border-radius: 8px; text-decoration: none;
+}
+.lg-pop-rank { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 11px; }
+.lg-pop-rank a { display: flex; gap: 9px; align-items: flex-start; text-decoration: none; font-size: 12px; color: var(--up-text); line-height: 1.5; font-weight: 500; }
+.lg-pop-num { color: var(--accent); font-size: 15px; font-weight: 800; flex-shrink: 0; }
+.lg-toc nav#TableOfContents ul { margin: 0; padding-left: 18px; }
+.lg-toc a { font-size: 12px; color: var(--up-text-3); text-decoration: none; line-height: 1.9; }
+.lg-toc a:hover { color: var(--accent); }
