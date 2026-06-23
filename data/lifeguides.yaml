@@ -4,10 +4,19 @@
 
 urgent:
   - text: "休日・夜間診療、急病時の相談先を確認する"
+    short: "休日・夜間診療"
+    icon: "ti-stethoscope"
+    tone: "danger"
     url: "/life-guide/holiday-night-medical/"
   - text: "避難所・ハザードマップなど防災情報を見る"
+    short: "防災・避難所"
+    icon: "ti-shield-half"
+    tone: "warning"
     url: "/life-guide/disaster-prevention/"
   - text: "ごみ分別・粗大ごみの出し方を調べる"
+    short: "ごみの出し方"
+    icon: "ti-trash"
+    tone: "success"
     url: "/life-guide/trash-recycling/"
 
 shortcuts:
@@ -59,6 +68,7 @@ popular:
 categories:
   - name: "子育て・教育"
     id: "kosodate"
+    icon: "ti-baby-carriage"
     guides:
       - title: "浦安市の子育て支援・手当・助成まとめ"
         desc: "妊娠・出産、育児、保育、教育費などの支援制度を整理。"
@@ -73,6 +83,7 @@ categories:
 
   - name: "医療・安心"
     id: "iryo"
+    icon: "ti-heartbeat"
     guides:
       - title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
         desc: "小児・大人の急病時に確認したい相談先と受診先を案内。"
@@ -87,6 +98,7 @@ categories:
 
   - name: "暮らしの手続き"
     id: "tetsuzuki"
+    icon: "ti-clipboard-text"
     guides:
       - title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド"
         desc: "分別、収集日、粗大ごみ、持ち込みなどをわかりやすく整理。"
@@ -101,6 +113,7 @@ categories:
 
   - name: "おでかけ・公共施設"
     id: "odekake"
+    icon: "ti-tree"
     guides:
       - title: "浦安市の公園・遊び場ガイド"
         desc: "子ども連れで行きやすい公園や遊び場をエリア別に紹介。"
@@ -115,6 +128,7 @@ categories:
 
   - name: "まちを楽しむ"
     id: "enjoy"
+    icon: "ti-confetti"
     guides:
       - title: "浦安3大スポーツチーム観戦ガイド"
         desc: "D-Rocks、バルドラール、ブリオベッカの観戦情報を紹介。"
@@ -129,16 +143,22 @@ categories:
 
 situations:
   - text: "子どもが急に熱を出した"
+    icon: "ti-mood-sick"
     url: "/life-guide/holiday-night-medical/"
   - text: "浦安市に引っ越してきた"
+    icon: "ti-truck-delivery"
     url: "/life-guide/city-hall-procedures/"
   - text: "週末に子どもと遊びたい"
+    icon: "ti-ball-football"
     url: "/life-guide/parks-playgrounds/"
   - text: "粗大ごみを出したい"
+    icon: "ti-sofa"
     url: "/life-guide/trash-recycling/"
   - text: "台風や大雨に備えたい"
+    icon: "ti-cloud-storm"
     url: "/life-guide/disaster-prevention/"
   - text: "浦安のチームを応援したい"
+    icon: "ti-ball-american-football"
     url: "/life-guide/sports-teams/"
 
 updates:

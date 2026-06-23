@@ -1,105 +1,56 @@
 {{- define "main" }}
 
-{{- $catClass := dict
-  "開店・閉店" "cat-open"
-  "開店閉店"   "cat-open"
-  "ニュース"   "cat-news"
-  "イベント"   "cat-event"
-  "グルメ・カフェ" "cat-gourmet"
-  "グルメカフェ"   "cat-gourmet"
-  "子育て・教育" "cat-edu"
-  "子育て教育"   "cat-edu"
-  "スポーツ"   "cat-sports"
-  "お知らせ"   "cat-notice"
-}}
+{{- $guides := hugo.Data.lifeguides }}
 
-{{- $guides   := hugo.Data.lifeguides }}
-{{- $allPosts := where site.RegularPages "Section" "posts" }}
+{{/* ════════════════════════════════════════
+     1. ティール・ヒーロー（全幅）＋ 緊急時ボックス
+     ════════════════════════════════════════ */}}
+<div class="lg-hub-hero">
+  <p class="lg-hub-eyebrow">浦安市くらしの便利ガイド</p>
+  <h1 class="lg-hub-title">浦安で暮らす人の、<br>「困った」を解決する。</h1>
+  <p class="lg-hub-lead">子育て・医療・防災・ごみ・手続き・公共施設まで。浦安市での暮らしに必要な情報を、保存版ガイドにまとめました。</p>
 
-{{/* ────────────────────────────────────────
-     1. ヒーローエリア
-     ──────────────────────────────────────── */}}
-<div class="lg-hero">
-
-  {{/* 左カラム: タイトル + CTA */}}
-  <div class="lg-hero-main">
-    <p class="lg-hero-label" aria-hidden="true">保存版まとめ｜浦安で暮らす人向け</p>
-    <h1 class="lg-hero-title">浦安市くらしの便利ガイド</h1>
-    <p class="lg-hero-lead">子育て、医療、防災、ごみ、公共施設、スポーツ観戦まで。浦安市で暮らす人が知っておきたい情報を、テーマ別にまとめました。</p>
-    <div class="lg-hero-btns">
-      <a class="lg-btn-primary" href="#popular">よく見られるガイドを見る</a>
-      <a class="lg-btn-secondary" href="#purpose">目的から探す</a>
+  <div class="lg-urgent-box">
+    <p class="lg-urgent-box-title"><i class="ti ti-urgent" aria-hidden="true"></i> 緊急時・すぐ確認したいとき</p>
+    <div class="lg-urgent-chips">
+      {{- range $guides.urgent }}
+      <a class="lg-urgent-chip lg-tone-{{ .tone | default "danger" }}" href="{{ .url }}">
+        <i class="ti {{ .icon | default "ti-alert-circle" }}" aria-hidden="true"></i>{{ .short | default .text }}
+      </a>
+      {{- end }}
     </div>
   </div>
-
-  {{/* 右カラム: 急いで確認したい方へ */}}
-  <aside class="lg-hero-side" aria-label="急いで確認したい方へ">
-    <div class="lg-urgent">
-      <p class="lg-urgent-title"><i class="ti ti-urgent" aria-hidden="true"></i> 急いで確認したい方へ</p>
-      <ul class="lg-urgent-list" role="list">
-        {{- range $guides.urgent }}
-        <li>
-          <a href="{{ .url }}">
-            <span>{{ .text }}</span>
-            <span class="lg-urgent-arrow" aria-hidden="true">›</span>
-          </a>
-        </li>
-        {{- end }}
-      </ul>
-    </div>
-  </aside>
-
 </div>
 
-{{/* ────────────────────────────────────────
-     2. タグ型ショートカット
-     ──────────────────────────────────────── */}}
-<nav class="lg-shortcuts" aria-label="テーマ別ショートカット">
-  {{- range $guides.shortcuts }}
-  <a class="lg-shortcut-tag" href="{{ .anchor }}">{{ .text }}</a>
-  {{- end }}
-</nav>
-
-{{/* ────────────────────────────────────────
-     2カラムレイアウト (メイン + サイドバー)
-     ──────────────────────────────────────── */}}
-<div class="home-layout">
-<div class="home-main">
-
-  {{/* ──────────────────────────────────────
-       3. よく見られるガイド
-       ────────────────────────────────────── */}}
-  <div id="popular" class="section-head">
-    <h2>よく見られるガイド</h2>
-  </div>
-  <div class="lg-popular-grid">
-    {{- range $guides.popular }}
-    <a class="lg-popular-card" href="{{ .url }}">
-      <div class="lg-popular-icon" role="img" aria-label="{{ .title }}"><i class="ti {{ .icon }}" aria-hidden="true"></i></div>
-      <div class="lg-popular-title">{{ .title }}{{- if not .published }}<span class="lg-wip-badge" aria-label="準備中">準備中</span>{{- end }}</div>
-      <div class="lg-popular-desc">{{ .desc }}</div>
-      <div class="lg-popular-meta">
-        <i class="ti ti-clock" aria-hidden="true"></i> 最終更新：{{ .updated }}
-      </div>
+{{/* ════════════════════════════════════════
+     2. こんなときに
+     ════════════════════════════════════════ */}}
+<section class="lg-hub-section" aria-labelledby="lg-situations">
+  <h2 id="lg-situations" class="lg-hub-h2"><span class="lg-hub-bar" aria-hidden="true"></span>こんなときに</h2>
+  <div class="lg-sit-grid">
+    {{- range $guides.situations }}
+    <a class="lg-sit-card" href="{{ .url }}">
+      <i class="ti {{ .icon | default "ti-pin" }}" aria-hidden="true"></i>
+      <span>{{ .text }}</span>
     </a>
     {{- end }}
   </div>
+</section>
 
-  {{/* ──────────────────────────────────────
-       4. 目的から探す
-       ────────────────────────────────────── */}}
-  <div id="purpose" class="section-head" style="margin-top:12px;">
-    <h2>目的から探す</h2>
-  </div>
+{{/* ════════════════════════════════════════
+     3. カテゴリから探す
+     ════════════════════════════════════════ */}}
+<section class="lg-hub-section" aria-labelledby="lg-categories">
+  <h2 id="lg-categories" class="lg-hub-h2"><span class="lg-hub-bar" aria-hidden="true"></span>カテゴリから探す</h2>
 
   {{- range $guides.categories }}
-  <section id="{{ .id }}" class="lg-purpose-block" aria-labelledby="cat-{{ .id }}">
-    <h3 id="cat-{{ .id }}" class="lg-purpose-heading">{{ .name }}</h3>
+  <div id="{{ .id }}" class="lg-cat-block">
+    <h3 class="lg-cat-heading"><i class="ti {{ .icon | default "ti-folder" }}" aria-hidden="true"></i>{{ .name }}</h3>
     <div class="lg-guide-grid">
       {{- range .guides }}
       <a class="lg-guide-card" href="{{ .url }}"
          {{- if not .published }} aria-label="{{ .title }}（準備中）"{{- end }}>
-        <span class="lg-guide-card-icon" role="img" aria-hidden="true"><i class="ti {{ .icon }}" aria-hidden="true"></i></span>
+        <span class="lg-guide-card-icon" aria-hidden="true"><i class="ti {{ .icon }}"></i></span>
         <div class="lg-guide-card-body">
           <div class="lg-guide-card-title">
             {{ .title }}
@@ -110,129 +61,23 @@
       </a>
       {{- end }}
     </div>
-  </section>
+  </div>
   {{- end }}
+</section>
 
-  {{/* ──────────────────────────────────────
-       5. こんなときに見る
-       ────────────────────────────────────── */}}
-  <div class="section-head" style="margin-top:12px;">
-    <h2>こんなときに見る</h2>
-  </div>
-  <div class="lg-situation-grid">
-    {{- range $guides.situations }}
-    <a class="lg-situation-card" href="{{ .url }}">{{ .text }}</a>
-    {{- end }}
-  </div>
-
-  {{/* ──────────────────────────────────────
-       6. 更新されたガイド
-       ────────────────────────────────────── */}}
-  <div class="section-head">
-    <h2>更新されたガイド</h2>
-  </div>
-  <ul class="lg-updates-list" role="list">
+{{/* ════════════════════════════════════════
+     4. 最近の更新（グレー帯）
+     ════════════════════════════════════════ */}}
+<div class="lg-recent-band">
+  <h2 class="lg-recent-title"><i class="ti ti-refresh" aria-hidden="true"></i> 最近の更新</h2>
+  <div class="lg-recent-list">
     {{- range $guides.updates }}
-    <li>
-      <a class="lg-update-item" href="{{ .url }}">
-        <span class="lg-update-date">{{ .date }}</span>
-        <span class="lg-update-text">{{ .text }}</span>
-        <span class="lg-update-arrow" aria-hidden="true">›</span>
-      </a>
-    </li>
-    {{- end }}
-  </ul>
-
-  {{/* ──────────────────────────────────────
-       7. 旅行ガイドへのクロスリンク
-       ────────────────────────────────────── */}}
-  <div class="tg-cross-link">
-    <div>
-      <h3>浦安・舞浜への旅行情報はこちら</h3>
-      <p>ホテル選び、観光・グルメ、アクセスなど、観光客向けの旅行ガイドを別途まとめています。</p>
-    </div>
-    <a class="tg-cross-btn" href="/travel-guide/">旅行ガイドへ →</a>
-  </div>
-
-  {{/* ──────────────────────────────────────
-       8. 関連する最新記事
-       ────────────────────────────────────── */}}
-  {{- $relatedPosts := where $allPosts "Params.categories" "intersect" (slice "子育て・教育" "子育て教育" "ニュース" "イベント" "スポーツ" "お知らせ") }}
-  {{- $relatedPosts = first 6 $relatedPosts }}
-  {{- if $relatedPosts }}
-  <div class="section-head">
-    <h2>関連する最新記事</h2>
-  </div>
-  <div class="article-grid">
-    {{- range $relatedPosts }}
-    {{- partial "article-card.html" . }}
+    <a class="lg-recent-item" href="{{ .url }}">
+      <span class="lg-recent-date">{{ .date }}</span>
+      <span class="lg-recent-text">{{ .text }}</span>
+    </a>
     {{- end }}
   </div>
-  {{- end }}
-
-</div>{{/* end home-main */}}
-
-{{/* ────────────────────────────────────────
-     サイドバー
-     ──────────────────────────────────────── */}}
-<aside class="home-sidebar">
-
-  {{/* 検索 + カレンダー */}}
-  {{- partial "sidebar-calendar.html" . }}
-
-  {{/* ガイド一覧 */}}
-  <div class="sidebar-widget">
-    <div class="widget-title"><i class="ti ti-book-2" aria-hidden="true"></i> ガイド一覧</div>
-    <ul class="cat-list" style="padding:6px 14px 10px;">
-      {{- range $guides.categories }}
-      <li style="padding:5px 0;border-bottom:1px solid var(--up-border);">
-        <a href="#{{ .id }}"
-           style="font-size:13px;color:var(--portal-blue);font-weight:600;text-decoration:none;display:flex;align-items:center;gap:6px;">
-          {{ .name }}
-        </a>
-      </li>
-      {{- end }}
-    </ul>
-  </div>
-
-  {{/* カテゴリ別記事数 */}}
-  <div class="sidebar-widget">
-    <div class="widget-title"><i class="ti ti-chart-bar" aria-hidden="true"></i> カテゴリ別記事数</div>
-    <ul class="cat-list">
-      {{- range site.Taxonomies.categories.ByCount }}
-      {{- $name := .Page.Title }}
-      {{- $cls  := index $catClass $name | default "cat-default" }}
-      <li>
-        <a class="cat-item" href="{{ .Page.RelPermalink }}">
-          <span class="cat-badge cat-badge-sm {{ $cls }}">{{ $name }}</span>
-          <span class="cat-count">{{ .Count }}</span>
-        </a>
-      </li>
-      {{- end }}
-    </ul>
-  </div>
-
-  {{/* 最近の記事 */}}
-  <div class="sidebar-widget">
-    <div class="widget-title"><i class="ti ti-clock" aria-hidden="true"></i> 最近の記事</div>
-    <div class="recent-list">
-      {{- range first 5 $allPosts }}
-      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
-      <a class="recent-item" href="{{ .RelPermalink }}">
-        <div class="recent-thumb">
-          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-          {{- else }}<div class="recent-thumb-no-img"><i class="ti ti-photo" aria-hidden="true"></i></div>{{- end }}
-        </div>
-        <div class="recent-body">
-          <h4>{{ .Title }}</h4>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
-        </div>
-      </a>
-      {{- end }}
-    </div>
-  </div>
-
-</aside>
-</div>{{/* end home-layout */}}
+</div>
 
 {{- end }}

@@ -2457,6 +2457,175 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 }
 .lg-guide-card-desc { font-size: 11px; color: var(--up-muted); line-height: 1.65; }
 
+/* ════════ 便利ガイド ハブ（モックアップD・全幅） ════════ */
+/* 1. ティール・ヒーロー */
+.lg-hub-hero {
+  background: var(--accent-bg);
+  border: 1px solid #CFEDE6;
+  border-radius: var(--r-md);
+  padding: 26px 24px 22px;
+  margin-bottom: 26px;
+}
+.lg-hub-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0B7A6C;
+  letter-spacing: 1px;
+  margin: 0 0 8px;
+}
+.lg-hub-title {
+  font-size: 25px !important;
+  font-weight: 800 !important;
+  color: var(--accent-ink) !important;
+  line-height: 1.45 !important;
+  margin: 0 0 9px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.lg-hub-lead {
+  font-size: 13px;
+  color: #3F6660;
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 0 16px;
+}
+.lg-urgent-box {
+  background: #fff;
+  border: 1px solid #CFEDE6;
+  border-radius: 12px;
+  padding: 13px 15px;
+}
+.lg-urgent-box-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #C2410C;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.lg-urgent-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.lg-urgent-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 13px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: filter .15s;
+}
+.lg-urgent-chip:hover { filter: brightness(0.96); }
+.lg-tone-danger  { background: #FEF2F2; color: #B91C1C !important; }
+.lg-tone-warning { background: #FFF7ED; color: #C2410C !important; }
+.lg-tone-success { background: #F0FDF4; color: #047857 !important; }
+
+/* 2/3. セクション見出し */
+.lg-hub-section { margin-bottom: 26px; }
+.lg-hub-h2 {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  color: var(--up-text) !important;
+  margin: 0 0 13px !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lg-hub-bar {
+  width: 4px;
+  height: 18px;
+  background: var(--accent);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* 2. こんなときに（アイコンカード 3×2） */
+.lg-sit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+}
+.lg-sit-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 11px;
+  padding: 13px;
+  text-decoration: none !important;
+  transition: border-color .15s, background .15s;
+}
+.lg-sit-card i { font-size: 22px; color: var(--accent); flex-shrink: 0; }
+.lg-sit-card span { font-size: 12px; font-weight: 600; color: var(--up-text-2); line-height: 1.4; }
+.lg-sit-card:hover { border-color: var(--accent); background: var(--accent-bg); }
+
+/* 3. カテゴリから探す */
+.lg-cat-block { margin-bottom: 18px; }
+.lg-cat-heading {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0B7A6C;
+  margin: 0 0 9px;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.lg-cat-heading i { font-size: 16px; }
+.lg-cat-block .lg-guide-card { border-left: 4px solid var(--accent); }
+.lg-cat-block .lg-guide-card-title { color: var(--up-text); }
+
+/* 4. 最近の更新（グレー帯） */
+.lg-recent-band {
+  background: var(--up-bg);
+  border: 1px solid var(--up-border);
+  border-radius: var(--r-md);
+  padding: 16px 20px;
+  margin-bottom: 8px;
+}
+.lg-recent-title {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: var(--up-text-2) !important;
+  margin: 0 0 11px !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.lg-recent-title i { color: var(--accent); font-size: 15px; }
+.lg-recent-list { display: flex; flex-direction: column; gap: 4px; }
+.lg-recent-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  padding: 5px 0;
+  text-decoration: none !important;
+  transition: color .15s;
+}
+.lg-recent-date { color: var(--up-text-3); font-size: 11px; flex-shrink: 0; min-width: 48px; }
+.lg-recent-text { color: var(--up-text-2); }
+.lg-recent-item:hover .lg-recent-text { color: var(--accent); }
+
+@media (max-width: 700px) {
+  .lg-sit-grid { grid-template-columns: repeat(2, 1fr); }
+  .lg-hub-title { font-size: 21px !important; }
+}
+@media (max-width: 520px) {
+  .lg-sit-grid { grid-template-columns: 1fr; }
+  .lg-guide-grid { grid-template-columns: 1fr; }
+}
+
 /* ── こんなときに見る ── */
 .lg-situation-grid {
   display: grid;
