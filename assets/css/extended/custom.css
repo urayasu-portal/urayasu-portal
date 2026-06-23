@@ -3426,6 +3426,72 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 }
 .post-content .lg-art-btn:hover { background: var(--accent-ink); }
 
+/* ════════ 観光ガイド ホテル個別（モックアップG・コーラル） ════════ */
+.hg-bc { color: #C2421F !important; font-weight: 600; text-decoration: none !important; }
+.hg-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.hg-badge { background: #E05535; color: #fff; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 6px; }
+.hg-badge-sub { background: #FCEEE9; color: #C2421F; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 6px; }
+.hg-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--up-text-3); margin-top: 4px; }
+.hg-meta span { display: inline-flex; align-items: center; gap: 4px; }
+
+/* 基本情報ボックス */
+.post-content .hg-info {
+  background: #FFF4F0; border: 1px solid #F6D8CD; border-left: 4px solid #E05535;
+  border-radius: 12px; padding: 15px; margin: 0 0 22px;
+}
+.post-content .hg-info-title { font-size: 13px; font-weight: 700; color: #9A3412; margin: 0 0 11px; display: flex; align-items: center; gap: 7px; }
+.post-content .hg-info dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; margin: 0; font-size: 12px; }
+.post-content .hg-info dt { color: #C2421F; font-weight: 600; margin: 0; }
+.post-content .hg-info dd { color: #334155; margin: 0; }
+.post-content .hg-info-btn {
+  display: inline-flex; align-items: center; gap: 5px; margin-top: 13px;
+  background: #E05535; color: #fff !important; font-size: 12px; font-weight: 700;
+  padding: 7px 14px; border-radius: 8px; text-decoration: none !important;
+}
+.post-content .hg-info-btn:hover { background: #C2421F; }
+
+/* おすすめ／向かない 2カラム */
+.post-content .hg-fit { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 22px; }
+.post-content .hg-fit-card { border-radius: 10px; padding: 13px; }
+.post-content .hg-fit-card.is-yes { background: #F0FDF4; border: 1px solid #C5E9CF; }
+.post-content .hg-fit-card.is-no { background: var(--up-bg); border: 1px solid var(--up-border); }
+.post-content .hg-fit-title { font-size: 12px; font-weight: 700; margin: 0 0 9px; display: flex; align-items: center; gap: 6px; }
+.post-content .hg-fit-card.is-yes .hg-fit-title { color: #16794C; }
+.post-content .hg-fit-card.is-no .hg-fit-title { color: var(--up-text-3); }
+.post-content .hg-fit-card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.post-content .hg-fit-card li { font-size: 11.5px; line-height: 1.5; margin: 0; }
+.post-content .hg-fit-card.is-yes li { color: #3A5A48; }
+.post-content .hg-fit-card.is-no li { color: var(--up-text-2); }
+
+/* 設備・サービス アイコングリッド */
+.post-content .hg-facilities { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin: 0 0 24px; }
+.post-content .hg-fac { background: #fff; border: 1px solid var(--up-border); border-radius: 9px; padding: 11px 8px; text-align: center; }
+.post-content .hg-fac > i { font-size: 20px; color: #E05535; }
+.post-content .hg-fac-label { font-size: 10px; color: var(--up-text-2); margin-top: 5px; line-height: 1.3; }
+
+/* 地元メモ */
+.post-content .hg-memo { background: #FFF4F0; border-radius: 12px; padding: 15px; margin: 0 0 22px; }
+.post-content .hg-memo-title { font-size: 13px; font-weight: 700; color: #9A3412; margin: 0 0 8px; display: flex; align-items: center; gap: 7px; }
+.post-content .hg-memo p { font-size: 12px; color: #7A4334; line-height: 1.8; margin: 0; }
+
+/* 近隣の似たホテル */
+.hg-related { margin-top: 28px; }
+.hg-hotel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; }
+.hg-hotel-card { background: var(--up-surface); border: 1px solid var(--up-border); border-radius: 10px; overflow: hidden; text-decoration: none !important; transition: border-color .15s, box-shadow .15s; }
+.hg-hotel-card:hover { border-color: #E05535; box-shadow: 0 4px 14px rgba(224,85,53,.1); }
+.hg-hotel-thumb { height: 64px; background: #FBDED4; display: flex; align-items: center; justify-content: center; color: #E05535; }
+.hg-hotel-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hg-hotel-no-img i { font-size: 20px; opacity: .5; }
+.hg-hotel-body { padding: 9px 10px; }
+.hg-hotel-name { font-size: 11px; font-weight: 700; color: var(--up-text); line-height: 1.4; }
+.hg-hotel-area { font-size: 10px; color: var(--up-text-3); margin-top: 3px; }
+
+@media (max-width: 560px) {
+  .post-content .hg-fit { grid-template-columns: 1fr; }
+  .post-content .hg-facilities { grid-template-columns: repeat(2, 1fr); }
+  .hg-hotel-grid { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 560px) {
   .post-content .lg-art-cards { grid-template-columns: 1fr; }
   .post-content .lg-art-cols, .post-content .lg-art-links { grid-template-columns: 1fr; }

@@ -1,0 +1,167 @@
+{{- define "main" }}
+
+{{- /* 観光ガイド ホテル個別レイアウト（モックアップG準拠）。柱=travel（coral）。 */ -}}
+{{- $cur := .RelPermalink }}
+{{- $coverImg := partial "cover-image.html" (dict "page" . "size" "full") }}
+
+{{/* エリア判定（バッジ・メタ・関連ホテル用） */}}
+{{- $areaTags := slice "舞浜" "新浦安" "浦安" "浦安駅" "ベイエリア" "東京ベイ" }}
+{{- $area := .Params.area | default "" }}
+{{- if not $area }}
+  {{- range .Params.tags }}{{- if in $areaTags . }}{{ $area = . }}{{ end }}{{- end }}
+{{- end }}
+
+{{/* ホテル一覧（タグ「ホテル」を持つ travel-guide ページ） */}}
+{{- $hotels := where (where site.RegularPages "Section" "travel-guide") "Params.tags" "intersect" (slice "ホテル") }}
+
+{{/* 近隣の似たホテル：同エリアタグ優先、不足分は他ホテルで補完、最大3件 */}}
+{{- $related := slice }}
+{{- if $area }}
+  {{- range $hotels }}{{- if ne .RelPermalink $cur }}{{- if in .Params.tags $area }}{{ $related = $related | append . }}{{- end }}{{- end }}{{- end }}
+{{- end }}
+{{- range $hotels }}{{- if ne .RelPermalink $cur }}{{- if not (in $related .) }}{{ $related = $related | append . }}{{- end }}{{- end }}{{- end }}
+{{- $related = first 3 $related }}
+
+{{/* 目次生成 + 見出しID付与（生HTML <h2> も Markdown ## も対応） */}}
+{{- $content := .Content }}
+{{- $toc := slice }}
+{{- range $i, $h := findRE `(?is)<h2[^>]*>.*?</h2>` $content -1 }}
+  {{- $title := $h | replaceRE `(?is)<[^>]+>` "" | replaceRE `^\s+|\s+$` "" }}
+  {{- if $title }}
+    {{- $id := "" }}
+    {{- with findRE `id="[^"]+"` $h 1 }}
+      {{- $id = index . 0 | replaceRE `id="|"` "" }}
+    {{- else }}
+      {{- $id = printf "sec-%d" (add $i 1) }}
+      {{- $content = replace $content $h (replaceRE `^<h2` (printf `<h2 id="%s"` $id) $h) 1 }}
+    {{- end }}
+    {{- $toc = $toc | append (dict "id" $id "title" $title) }}
+  {{- end }}
+{{- end }}
+
+<div class="home-layout">
+
+  <div class="home-main">
+    <article class="post-single">
+
+      <header class="post-header">
+        <nav class="post-breadcrumb" aria-label="パンくずリスト">
+          <a href="/">ホーム</a>
+          <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+          <a href="/travel-guide/">観光ガイド</a>
+          <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+          <a class="hg-bc" href="/travel-guide/hotels/">ホテル</a>
+          <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+          <span class="bc-current" aria-current="page">{{ .Title | truncate 24 "…" }}</span>
+        </nav>
+
+        <div class="hg-badges">
+          <span class="hg-badge">ホテル</span>
+          {{- with .Params.badge }}<span class="hg-badge-sub">{{ . }}</span>{{- end }}
+          {{- if in .Params.tags "オフィシャルホテル" }}<span class="hg-badge-sub">TDRオフィシャル</span>{{- end }}
+        </div>
+
+        <h1 class="post-title">{{ .Title }}</h1>
+
+        <div class="hg-meta">
+          {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ .Lastmod.Format "2006年1月2日" }}更新</span>{{- end }}
+          {{- with $area }}<span><i class="ti ti-map-pin" aria-hidden="true"></i> {{ . }}</span>{{- end }}
+        </div>
+      </header>
+
+      {{- if $coverImg }}
+      <div class="post-cover"><img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy"></div>
+      {{- end }}
+
+      {{- if $content }}
+      <div class="post-content md-content">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+        {{- partial "anchored_headings.html" $content -}}
+        {{- else }}{{ $content | safeHTML }}{{ end }}
+      </div>
+      {{- end }}
+
+      {{/* 出典・確認時点 */}}
+      {{- partial "source-info.html" . }}
+
+      {{/* 注意書き（コーラル＝accent追従） */}}
+      <div class="lg-disclaimer">
+        <i class="ti ti-info-circle" aria-hidden="true"></i>
+        <span>掲載の料金・サービス内容は変動します。最新の空室・料金・各種条件は、必ず各ホテルの公式サイトでご確認ください。</span>
+      </div>
+
+      {{/* 近隣の似たホテル */}}
+      {{- if $related }}
+      <div class="hg-related">
+        <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>近隣の似たホテル</h2></div>
+        <div class="hg-hotel-grid">
+          {{- range $related }}
+          {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+          {{- $rarea := "" }}
+          {{- range .Params.tags }}{{- if in $areaTags . }}{{ $rarea = . }}{{ end }}{{- end }}
+          <a class="hg-hotel-card" href="{{ .RelPermalink }}">
+            <div class="hg-hotel-thumb{{ if not $img }} hg-hotel-no-img{{ end }}">
+              {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+              {{- else }}<i class="ti ti-building-skyscraper" aria-hidden="true"></i>{{- end }}
+            </div>
+            <div class="hg-hotel-body">
+              <div class="hg-hotel-name">{{ .Title | truncate 22 "…" }}</div>
+              {{- with $rarea }}<div class="hg-hotel-area">{{ . }}</div>{{- end }}
+            </div>
+          </a>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+
+      <footer class="post-footer">
+        {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+        {{- with $.GetTerms $tags }}
+        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> タグ：</span></div>
+        <ul class="post-tags">
+          {{- range . }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{- end }}
+        </ul>
+        {{- end }}
+      </footer>
+
+    </article>
+  </div>{{/* end home-main */}}
+
+  {{/* ───── サイドバー ───── */}}
+  <aside class="home-sidebar">
+
+    {{/* 目次 */}}
+    {{- if ge (len $toc) 2 }}
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> 目次</div>
+      <nav class="lg-toc-list">
+        {{- range $toc }}
+        <a href="#{{ .id }}">{{ .title }}</a>
+        {{- end }}
+      </nav>
+    </div>
+    {{- end }}
+
+    {{/* ホテルを比較して選ぶ */}}
+    <div class="lg-side-cta">
+      <i class="ti ti-checklist" aria-hidden="true"></i>
+      <div class="lg-side-cta-title">ホテルを比較して選ぶ</div>
+      <div class="lg-side-cta-desc">子連れ・格安・アクセスで絞る</div>
+      <a class="lg-side-cta-btn" href="/travel-guide/hotels/">比較ページへ</a>
+    </div>
+
+    {{/* 人気のホテル記事 */}}
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-star" aria-hidden="true"></i> 人気のホテル記事</div>
+      <ol class="lg-pop-rank">
+        <li><a href="/travel-guide/hotels/kids/"><span class="lg-pop-num">1</span><span>子連れ向けホテル比較</span></a></li>
+        <li><a href="/travel-guide/hotels/budget/"><span class="lg-pop-num">2</span><span>格安ホテルの選び方</span></a></li>
+        <li><a href="/travel-guide/hotels/access/"><span class="lg-pop-num">3</span><span>アクセスで選ぶホテル比較</span></a></li>
+      </ol>
+    </div>
+
+  </aside>
+
+</div>{{/* end home-layout */}}
+
+{{- end }}
