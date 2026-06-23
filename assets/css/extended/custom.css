@@ -1155,13 +1155,6 @@ body:not(.list) { --main-width: 1108px; }
 }
 .infobox-btn:hover { background: #FFF1E0; }
 
-/* ---------- イベント情報ボックス — 青系（ボタンを上書き） ---------- */
-.info-box.infobox-event .infobox-btn {
-  border-color: #b8d9f0;
-  color: var(--portal-blue) !important;
-}
-.info-box.infobox-event .infobox-btn:hover { background: #EEF6FC; }
-
 /* ---------- イベント情報ボックス (イベント) — パープル系 ---------- */
 .info-box.infobox-event {
   background: var(--cat-event-bg);

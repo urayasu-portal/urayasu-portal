@@ -13,6 +13,17 @@
   "お知らせ"   "cat-notice"
 }}
 
+{{/* カテゴリ → アイコン */}}
+{{- $catIcon := dict
+  "開店・閉店"   "ti-building-store"
+  "ニュース"     "ti-news"
+  "イベント"     "ti-calendar-event"
+  "グルメ・カフェ" "ti-coffee"
+  "子育て・教育"  "ti-school"
+  "スポーツ"     "ti-ball-football"
+  "お知らせ"     "ti-bell"
+}}
+
 {{/* カテゴリ説明文 (テンプレート内フォールバック) */}}
 {{- $catDescs := dict
   "開店・閉店"   "浦安市内と周辺エリアの開店・閉店情報をまとめています。浦安駅、新浦安、舞浜、イクスピアリ、葛西、西葛西、行徳、妙典など、生活圏で気になる新店舗・閉店・リニューアル情報を随時更新しています。"
@@ -26,28 +37,37 @@
 
 {{/* カテゴリページかどうか判定 */}}
 {{- $isCategoryTerm := and (eq .Kind "term") (eq .Data.Plural "categories") }}
+{{- $cls := index $catClass .Title | default "cat-default" }}
+{{- $icon := index $catIcon .Title | default "ti-folder" }}
 
-{{/* カテゴリページ: ハブヘッダー */}}
+{{/* カテゴリページ: カテゴリ色ハブヘッダー */}}
 {{- if $isCategoryTerm }}
 {{- $desc := .Description | default (index $catDescs .Title) | default "" }}
-<div class="category-hub-header">
-  <h1>{{ .Title }}</h1>
-  {{- if $desc }}
-  <p class="category-hub-desc">{{ $desc }}</p>
-  {{- end }}
-  <div class="category-hub-footer">
-    <div class="related-cats">
-      <span class="related-cats-label">他のカテゴリ：</span>
-      {{- range site.Taxonomies.categories.ByCount }}
-      {{- if ne .Page.Title $.Title }}
-      <a class="related-cat-link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-      {{- end }}
+<div class="category-hub-header {{ $cls }}">
+  {{- partial "breadcrumbs.html" . }}
+  <div class="chub-main">
+    <span class="chub-icon"><i class="ti {{ $icon }}" aria-hidden="true"></i></span>
+    <div class="chub-text">
+      <div class="chub-titlerow">
+        <h1>{{ .Title }}</h1>
+        <span class="chub-count">{{ len .Pages }}件の記事</span>
+      </div>
+      {{- if $desc }}
+      <p class="category-hub-desc">{{ $desc }}</p>
       {{- end }}
     </div>
-    <a class="category-hub-cta" href="/contact/">情報提供はこちら</a>
   </div>
 </div>
-{{- partial "breadcrumbs.html" . }}
+
+{{/* カテゴリ切替ピル */}}
+<nav class="cat-pill-nav" aria-label="カテゴリから探す">
+  <span class="cat-pill-label">カテゴリ</span>
+  {{- range site.Taxonomies.categories.ByCount }}
+  {{- $name := .Page.Title }}
+  {{- $pcls := index $catClass $name | default "cat-default" }}
+  <a class="cat-pill {{ $pcls }}{{ if eq $name $.Title }} is-active{{ end }}" href="{{ .Page.RelPermalink }}">{{ $name }}</a>
+  {{- end }}
+</nav>
 
 {{- else }}
 {{/* タグページ・その他のリストページ: 通常ヘッダー */}}
@@ -71,6 +91,49 @@
     {{- $pages := .Pages }}
     {{- $paginator := .Paginate $pages 12 }}
 
+    {{- if $isCategoryTerm }}
+    {{/* ─ カテゴリ term: 新着(大カード) + これまで(グリッド) ─ */}}
+    {{- $featured := slice }}
+    {{- $rest := $paginator.Pages }}
+    {{- if eq $paginator.PageNumber 1 }}
+      {{- $featured = first 3 $paginator.Pages }}
+      {{- $rest = after (len $featured) $paginator.Pages }}
+    {{- end }}
+
+    {{- if $featured }}
+    <div class="list-section-label {{ $cls }}"><i class="ti ti-sparkles" aria-hidden="true"></i> 新着の{{ .Title }}情報</div>
+    <div class="list-feature-list">
+      {{- range $featured }}
+      {{- $fcat := index .Params.categories 0 | default "" }}
+      {{- $fcls := index $catClass $fcat | default "cat-default" }}
+      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
+      <a class="list-feature-card {{ $fcls }}" href="{{ .RelPermalink }}">
+        <div class="lfc-thumb{{ if not $img }} lfc-no-img{{ end }}">
+          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+          {{- else }}<span><i class="ti ti-photo" aria-hidden="true"></i></span>{{- end }}
+        </div>
+        <div class="lfc-body">
+          {{- if $fcat }}<span class="cat-badge cat-badge-sm {{ $fcls }}">{{ $fcat }}</span>{{- end }}
+          <h3 class="lfc-title">{{ .Title }}</h3>
+          {{- with .Description }}<p class="lfc-desc">{{ . }}</p>{{- end }}
+          <time class="lfc-date" datetime="{{ .Date.Format "2006-01-02" }}"><i class="ti ti-clock" aria-hidden="true"></i> {{ .Date.Format "2006年1月2日" }}</time>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{- if $rest }}
+    <div class="list-section-label list-section-label--sub"><i class="ti ti-history" aria-hidden="true"></i> {{ if eq $paginator.PageNumber 1 }}これまでの{{ .Title }}情報{{ else }}{{ .Title }}の記事（{{ $paginator.PageNumber }}ページ目）{{ end }}</div>
+    <div class="article-grid">
+      {{- range $rest }}
+      {{- partial "article-card.html" . }}
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{- else }}
+    {{/* ─ タグ・その他: 従来どおりのグリッド ─ */}}
     {{- if $paginator.Pages }}
     <div class="section-head">
       <h2>{{ if and .Title (ne .Title "記事一覧") }}{{ .Title }}の記事{{ else }}新着記事{{ end }}</h2>
@@ -83,10 +146,11 @@
       {{- end }}
     </div>
     {{- end }}
+    {{- end }}
 
     {{/* ページネーション */}}
     {{- if gt $paginator.TotalPages 1 }}
-    <div class="home-pagination">
+    <div class="home-pagination {{ if $isCategoryTerm }}{{ $cls }}{{ end }}">
       {{- if $paginator.HasPrev }}
       <a class="page-btn" href="{{ $paginator.Prev.URL }}">← 新しい記事</a>
       {{- end }}
@@ -106,22 +170,41 @@
     {{/* 検索 + カレンダー */}}
     {{- partial "sidebar-calendar.html" . }}
 
-    {{/* カテゴリ一覧 */}}
+    {{- if $isCategoryTerm }}
+    {{/* 関連タグ (このカテゴリ内の記事で使われているタグ) */}}
+    {{- $catTags := slice }}
+    {{- range .Pages }}
+      {{- range .Params.tags }}{{ $catTags = $catTags | append . }}{{ end }}
+    {{- end }}
+    {{- $catTags = $catTags | uniq }}
+    {{- if $catTags }}
+    <div class="sidebar-widget">
+      <div class="widget-title"><i class="ti ti-tags" aria-hidden="true"></i> 関連タグ</div>
+      <div class="tag-cloud">
+        {{- range first 14 $catTags }}
+        <a class="tag-item" href="/tags/{{ . | urlize }}/"># {{ . }}</a>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+    {{- else }}
+    {{/* カテゴリ一覧 (タグ・その他ページ) */}}
     <div class="sidebar-widget">
       <div class="widget-title"><i class="ti ti-folder" aria-hidden="true"></i> カテゴリ</div>
       <ul class="cat-list">
         {{- range site.Taxonomies.categories.ByCount }}
         {{- $name := .Page.Title }}
-        {{- $cls := index $catClass $name | default "cat-default" }}
+        {{- $ccls := index $catClass $name | default "cat-default" }}
         <li>
           <a class="cat-item" href="{{ .Page.RelPermalink }}">
-            <span class="cat-badge cat-badge-sm {{ $cls }}">{{ $name }}</span>
+            <span class="cat-badge cat-badge-sm {{ $ccls }}">{{ $name }}</span>
             <span class="cat-count">{{ .Count }}</span>
           </a>
         </li>
         {{- end }}
       </ul>
     </div>
+    {{- end }}
 
     {{/* 最近の記事 */}}
     <div class="sidebar-widget">
