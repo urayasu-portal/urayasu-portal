@@ -3413,6 +3413,19 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .post-content .lg-art-link:hover { background: var(--accent-bg); }
 .post-content .lg-art-link span { display: block; font-size: 11px; font-weight: 500; color: var(--up-text-3); margin-top: 4px; }
 
+/* ステータス記号（○/×/△） */
+.post-content .lg-art-ok { color: #0f7b42; font-weight: 800; }
+.post-content .lg-art-ng { color: #a33a34; font-weight: 800; }
+.post-content .lg-art-part { color: #8a5a00; font-weight: 700; font-size: 11px; }
+/* 本文内の小さなティールボタン */
+.post-content .lg-art-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--accent); color: #fff !important;
+  font-size: 12px; font-weight: 700; padding: 8px 16px; border-radius: 8px;
+  text-decoration: none !important;
+}
+.post-content .lg-art-btn:hover { background: var(--accent-ink); }
+
 @media (max-width: 560px) {
   .post-content .lg-art-cards { grid-template-columns: 1fr; }
   .post-content .lg-art-cols, .post-content .lg-art-links { grid-template-columns: 1fr; }
