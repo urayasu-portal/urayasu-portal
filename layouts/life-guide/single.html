@@ -1,9 +1,9 @@
 {{- define "main" }}
 
-{{- /* 便利ガイド個別記事レイアウト（モックアップE準拠）。柱=life（teal）。 */ -}}
+{{- /* 便利ガイド個別記事レイアウト（モックアップE準拠）。柱=life（teal）。
+       カバー画像は出さない（保存版ガイドはタイトル直後に本文へ入る構成）。 */ -}}
 {{- $guides := hugo.Data.lifeguides }}
 {{- $cur := .RelPermalink }}
-{{- $coverImg := partial "cover-image.html" (dict "page" . "size" "full") }}
 
 {{/* data/lifeguides.yaml から全ガイドを集約し、現在ページのカテゴリ名・関連ガイドを求める */}}
 {{- $allGuides := slice }}
@@ -18,6 +18,23 @@
 {{- $related := slice }}
 {{- range $allGuides }}{{- if ne .url $cur }}{{ $related = $related | append . }}{{- end }}{{- end }}
 {{- $related = first 3 $related }}
+
+{{/* 目次生成 + 見出しID付与（生HTML <h2> も対応） */}}
+{{- $content := .Content }}
+{{- $toc := slice }}
+{{- range $i, $h := findRE `(?is)<h2[^>]*>.*?</h2>` $content -1 }}
+  {{- $title := $h | replaceRE `(?is)<[^>]+>` "" | replaceRE `^\s+|\s+$` "" }}
+  {{- if $title }}
+    {{- $id := "" }}
+    {{- with findRE `id="[^"]+"` $h 1 }}
+      {{- $id = index . 0 | replaceRE `id="|"` "" }}
+    {{- else }}
+      {{- $id = printf "sec-%d" (add $i 1) }}
+      {{- $content = replace $content $h (replaceRE `^<h2` (printf `<h2 id="%s"` $id) $h) 1 }}
+    {{- end }}
+    {{- $toc = $toc | append (dict "id" $id "title" $title) }}
+  {{- end }}
+{{- end }}
 
 <div class="home-layout">
 
@@ -37,15 +54,11 @@
         {{- with .Description }}<p class="post-description">{{ . }}</p>{{- end }}
       </header>
 
-      {{- if $coverImg }}
-      <div class="post-cover"><img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy"></div>
-      {{- end }}
-
-      {{- if .Content }}
+      {{- if $content }}
       <div class="post-content md-content">
         {{- if not (.Param "disableAnchoredHeadings") }}
-        {{- partial "anchored_headings.html" .Content -}}
-        {{- else }}{{ .Content }}{{ end }}
+        {{- partial "anchored_headings.html" $content -}}
+        {{- else }}{{ $content | safeHTML }}{{ end }}
       </div>
       {{- end }}
 
@@ -92,14 +105,16 @@
   {{/* ───── サイドバー ───── */}}
   <aside class="home-sidebar">
 
-    {{/* 目次（見出しがある場合のみ） */}}
-    {{- with .TableOfContents }}
-    {{- if ne . "<nav id=\"TableOfContents\"></nav>" }}
+    {{/* 目次（生HTML見出しから生成。2件以上で表示） */}}
+    {{- if ge (len $toc) 2 }}
     <div class="sidebar-widget">
       <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> 目次</div>
-      <div class="lg-toc">{{ . }}</div>
+      <nav class="lg-toc-list">
+        {{- range $toc }}
+        <a href="#{{ .id }}">{{ .title }}</a>
+        {{- end }}
+      </nav>
     </div>
-    {{- end }}
     {{- end }}
 
     {{/* 便利ガイド トップへ戻る */}}

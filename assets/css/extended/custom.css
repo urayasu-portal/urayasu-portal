@@ -3237,3 +3237,126 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .lg-toc nav#TableOfContents ul { margin: 0; padding-left: 18px; }
 .lg-toc a { font-size: 12px; color: var(--up-text-3); text-decoration: none; line-height: 1.9; }
 .lg-toc a:hover { color: var(--accent); }
+/* サイドバー目次（生HTML見出しから生成） */
+.lg-toc-list { display: flex; flex-direction: column; gap: 8px; }
+.lg-toc-list a {
+  font-size: 12px; color: var(--up-text-3) !important;
+  border-left: 2px solid var(--up-border); padding-left: 9px;
+  text-decoration: none !important; line-height: 1.45;
+  transition: color .15s, border-color .15s;
+}
+.lg-toc-list a:hover { color: var(--accent) !important; border-left-color: var(--accent); }
+
+/* ════════ 便利ガイド本文コンポーネント（モックアップE・ティール） ════════ */
+.post-content .lg-art-alert {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: #FEF2F2; border: 1px solid #F5C9C2; border-left: 4px solid #DC2626;
+  border-radius: 0 10px 10px 0; padding: 13px 15px; margin: 0 0 20px;
+}
+.post-content .lg-art-alert > i { font-size: 20px; color: #DC2626; flex-shrink: 0; margin-top: 1px; }
+.post-content .lg-art-alert p { font-size: 12.5px; color: #7F1D1D; line-height: 1.7; margin: 0; }
+
+.post-content .lg-art-keypoints {
+  background: var(--accent-bg); border: 1px solid #CFEDE6;
+  border-radius: 12px; padding: 15px; margin: 0 0 22px;
+}
+.post-content .lg-art-keypoints-title {
+  font-size: 13px; font-weight: 700; color: #0B7A6C;
+  margin: 0 0 10px; display: flex; align-items: center; gap: 7px;
+}
+.post-content .lg-art-keypoints ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 7px; }
+.post-content .lg-art-keypoints li {
+  font-size: 12.5px; color: #33524D; line-height: 1.6; margin: 0;
+  display: flex; align-items: flex-start; gap: 8px;
+}
+.post-content .lg-art-keypoints li::before {
+  content: "\ea4c"; font-family: "tabler-icons"; color: var(--accent);
+  font-size: 13px; flex-shrink: 0; margin-top: 2px;
+}
+
+.post-content .lg-art-contacts {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 24px;
+}
+.post-content .lg-art-contact {
+  background: #fff; border: 1px solid var(--up-border);
+  border-top: 3px solid var(--up-border-2); border-radius: 0 0 10px 10px;
+  padding: 12px; text-align: center;
+}
+.post-content .lg-art-contact.is-danger { border-color: #F5C9C2; border-top-color: #DC2626; }
+.post-content .lg-art-contact.is-info   { border-color: #BFD3E6; border-top-color: var(--up-navy); }
+.post-content .lg-art-contact.is-teal   { border-color: #CFEDE6; border-top-color: var(--accent); }
+.post-content .lg-art-contact-label { font-size: 10px; font-weight: 700; color: var(--up-text-3); }
+.post-content .lg-art-contact-num { font-size: 26px; font-weight: 900; letter-spacing: -.02em; margin: 5px 0; line-height: 1; }
+.post-content .lg-art-contact.is-danger .lg-art-contact-num { color: #DC2626; }
+.post-content .lg-art-contact.is-info   .lg-art-contact-num { color: var(--up-navy); }
+.post-content .lg-art-contact.is-teal   .lg-art-contact-num { color: var(--accent); }
+.post-content .lg-art-contact-sub { font-size: 10px; color: var(--up-text-2); line-height: 1.5; }
+/* 補足カード（番号なし・左罫） */
+.post-content .lg-art-contact--plain {
+  border: 1px solid var(--up-border); border-left: 4px solid var(--accent);
+  border-radius: 10px; text-align: left;
+}
+.post-content .lg-art-contact--plain .lg-art-contact-name { font-size: 11px; font-weight: 700; color: var(--up-text); margin-bottom: 3px; }
+.post-content .lg-art-contact--plain .lg-art-contact-sub { font-size: 11px; line-height: 1.6; }
+
+/* テーブル（ティールヘッダー） */
+.post-content .lg-art-table-wrap { overflow-x: auto; margin: 0 0 24px; }
+.post-content table.lg-art-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 0; min-width: 480px; }
+.post-content table.lg-art-table thead th {
+  background: var(--accent); color: #fff; font-weight: 700;
+  padding: 9px 12px; text-align: left; border: none;
+}
+.post-content table.lg-art-table td { padding: 9px 12px; border: none; border-bottom: 1px solid #F1F5F9; color: var(--up-text-2); line-height: 1.5; }
+.post-content table.lg-art-table tbody tr:nth-child(even) { background: #F8FAFC; }
+
+/* 情報ボックス（施設情報 dl） */
+.post-content .lg-art-infobox {
+  background: var(--up-bg); border: 1px solid var(--up-border);
+  border-radius: 10px; padding: 14px 16px; margin: 0 0 14px;
+  display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; font-size: 12px;
+}
+.post-content .lg-art-infobox dt { color: #0B7A6C; font-weight: 600; margin: 0; }
+.post-content .lg-art-infobox dd { color: var(--up-text-2); margin: 0; }
+
+/* 注意（オレンジ） */
+.post-content .lg-art-note {
+  background: #FFF7ED; border: 1px solid #FBD9A8; border-radius: 8px;
+  padding: 11px 14px; margin: 0 0 24px; font-size: 12px; color: #9A3412; line-height: 1.7;
+}
+
+/* チェックリスト */
+.post-content .lg-art-checklist {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 0 0 24px; list-style: none; padding: 0;
+}
+.post-content .lg-art-checklist li {
+  background: #fff; border: 1px solid var(--up-border); border-radius: 8px;
+  padding: 11px 13px; display: flex; align-items: flex-start; gap: 9px;
+  font-size: 12.5px; color: var(--up-text-2); line-height: 1.5; margin: 0;
+}
+.post-content .lg-art-checklist li::before {
+  content: "\ea5e"; font-family: "tabler-icons"; color: var(--accent); font-size: 15px; flex-shrink: 0;
+}
+
+/* FAQ */
+.post-content .lg-art-faq { display: flex; flex-direction: column; gap: 9px; margin: 0 0 8px; }
+.post-content .lg-art-faq-item { background: #fff; border: 1px solid var(--up-border); border-radius: 10px; padding: 13px; }
+.post-content .lg-art-q { font-size: 13px; font-weight: 700; color: var(--up-text); display: flex; gap: 8px; align-items: flex-start; }
+.post-content .lg-art-q::before { content: "Q"; color: var(--accent); font-weight: 800; flex-shrink: 0; }
+.post-content .lg-art-a { font-size: 12px; color: var(--up-text-2); line-height: 1.7; margin: 7px 0 0; padding-left: 18px; }
+
+/* 地図・汎用ティールコールアウト */
+.post-content .lg-art-map { background: var(--up-bg); border: 1px solid var(--up-border); border-radius: 10px; padding: 18px 20px; margin: 0 0 20px; text-align: center; }
+.post-content .lg-art-map-name { font-size: 13px; font-weight: 700; color: var(--up-text); margin: 0 0 6px; }
+.post-content .lg-art-map-addr { font-size: 12px; color: var(--up-text-3); margin: 0 0 12px; }
+.post-content .lg-art-map-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: #fff !important; padding: 9px 20px; border-radius: 8px; font-size: 12px; font-weight: 700; text-decoration: none !important; }
+.post-content .lg-art-callout {
+  display: flex; gap: 12px; align-items: center; background: #EAF7F4;
+  border-radius: 12px; padding: 16px; margin: 0 0 22px;
+}
+.post-content .lg-art-callout > i { font-size: 26px; color: var(--accent); flex-shrink: 0; }
+.post-content .lg-art-callout p { font-size: 12px; color: #33524D; line-height: 1.7; margin: 0; }
+
+@media (max-width: 560px) {
+  .post-content .lg-art-contacts { grid-template-columns: 1fr 1fr; }
+  .post-content .lg-art-checklist { grid-template-columns: 1fr; }
+}
