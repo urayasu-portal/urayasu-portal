@@ -3308,6 +3308,11 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 }
 .post-content table.lg-art-table td { padding: 9px 12px; border: none; border-bottom: 1px solid #F1F5F9; color: var(--up-text-2); line-height: 1.5; }
 .post-content table.lg-art-table tbody tr:nth-child(even) { background: #F8FAFC; }
+.post-content table.lg-art-table tbody th {
+  background: var(--accent-bg); color: #0B7A6C; font-weight: 700;
+  text-align: left; padding: 9px 12px; white-space: nowrap; vertical-align: top;
+  border: none; border-bottom: 1px solid #F1F5F9;
+}
 
 /* 情報ボックス（施設情報 dl） */
 .post-content .lg-art-infobox {
@@ -3359,4 +3364,55 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 @media (max-width: 560px) {
   .post-content .lg-art-contacts { grid-template-columns: 1fr 1fr; }
   .post-content .lg-art-checklist { grid-template-columns: 1fr; }
+}
+
+/* ── 汎用カードグリッド（番号/見出し/説明/バッジ・ティール左罫） ── */
+.post-content .lg-art-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 24px;
+}
+.post-content .lg-art-cards.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.post-content .lg-art-card {
+  background: #fff; border: 1px solid var(--up-border); border-left: 4px solid var(--accent);
+  border-radius: 10px; padding: 15px;
+}
+.post-content .lg-art-card-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--accent-bg); color: var(--accent); font-weight: 800; font-size: 13px; margin-bottom: 9px;
+}
+.post-content .lg-art-card-ic { display: block; font-size: 24px; color: var(--accent); margin-bottom: 8px; line-height: 1; }
+.post-content .lg-art-card-meta { list-style: none; padding: 0; margin: 8px 0 0; font-size: 11.5px; color: var(--up-text-2); }
+.post-content .lg-art-card-meta li { padding: 4px 0; border-top: 1px dashed var(--up-border); display: flex; justify-content: space-between; gap: 8px; line-height: 1.5; margin: 0; }
+.post-content .lg-art-card-meta b { color: var(--up-text); font-weight: 700; white-space: nowrap; }
+.post-content .lg-art-card-title, .post-content .lg-art-card h3 {
+  font-size: 14px; font-weight: 700; color: var(--up-text); margin: 0 0 5px; padding: 0; border: none; line-height: 1.4;
+}
+.post-content .lg-art-card-desc, .post-content .lg-art-card p { font-size: 12px; color: var(--up-text-2); line-height: 1.65; margin: 0 0 9px; }
+.post-content .lg-art-card p:last-child, .post-content .lg-art-card-desc:last-child { margin-bottom: 0; }
+.post-content .lg-art-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.post-content .lg-art-badge { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: var(--up-bg); color: var(--up-text-2); }
+.post-content .lg-art-badge.is-teal { background: var(--accent-bg); color: var(--accent); }
+
+/* ── 2カラム情報ボックス（見出し＋説明） ── */
+.post-content .lg-art-cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 0 0 24px; }
+.post-content .lg-art-col { background: var(--up-bg); border: 1px solid var(--up-border); border-radius: 10px; padding: 13px 15px; }
+.post-content .lg-art-col-title { display: block; font-size: 12.5px; font-weight: 700; color: #0B7A6C; margin-bottom: 5px; }
+.post-content .lg-art-col p { font-size: 12px; color: var(--up-text-2); line-height: 1.65; margin: 0; }
+.post-content .lg-art-col ul { margin: 0; padding-left: 1.2em; }
+.post-content .lg-art-col li { font-size: 12px; color: var(--up-text-2); line-height: 1.7; }
+
+/* ── リンクグリッド（タイトル＋補足） ── */
+.post-content .lg-art-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 11px; margin: 0 0 24px; }
+.post-content .lg-art-link {
+  display: block; background: #fff; border: 1px solid var(--up-border); border-left: 4px solid var(--accent);
+  border-radius: 10px; padding: 13px 14px; text-decoration: none !important;
+  font-size: 13px; font-weight: 700; color: var(--up-text) !important; line-height: 1.4;
+  transition: background .15s, border-color .15s;
+}
+.post-content .lg-art-link:hover { background: var(--accent-bg); }
+.post-content .lg-art-link span { display: block; font-size: 11px; font-weight: 500; color: var(--up-text-3); margin-top: 4px; }
+
+@media (max-width: 560px) {
+  .post-content .lg-art-cards { grid-template-columns: 1fr; }
+  .post-content .lg-art-cols, .post-content .lg-art-links { grid-template-columns: 1fr; }
 }
