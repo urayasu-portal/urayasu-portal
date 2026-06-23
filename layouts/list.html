@@ -40,6 +40,13 @@
 {{- $cls := index $catClass .Title | default "cat-default" }}
 {{- $icon := index $catIcon .Title | default "ti-folder" }}
 
+{{/* カテゴリ所属記事をタイトルで直接フィルタ（taxonomy term の .Pages はHugoのバージョンや
+     ブランチバンドルのディレクトリ名差異で不安定なため、site.RegularPages から確実に収集する） */}}
+{{- $catPages := slice }}
+{{- if $isCategoryTerm }}
+{{- $catPages = where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" (slice .Title) }}
+{{- end }}
+
 {{/* カテゴリページ: カテゴリ色ハブヘッダー */}}
 {{- if $isCategoryTerm }}
 {{- $desc := .Description | default (index $catDescs .Title) | default "" }}
@@ -50,7 +57,7 @@
     <div class="chub-text">
       <div class="chub-titlerow">
         <h1>{{ .Title }}</h1>
-        <span class="chub-count">{{ len .Pages }}件の記事</span>
+        <span class="chub-count">{{ len $catPages }}件の記事</span>
       </div>
       {{- if $desc }}
       <p class="category-hub-desc">{{ $desc }}</p>
@@ -88,7 +95,7 @@
 <div class="home-layout">
   <div class="home-main">
 
-    {{- $pages := .Pages }}
+    {{- $pages := cond $isCategoryTerm $catPages .Pages }}
     {{- $paginator := .Paginate $pages 12 }}
 
     {{- if $isCategoryTerm }}
@@ -173,7 +180,7 @@
     {{- if $isCategoryTerm }}
     {{/* 関連タグ (このカテゴリ内の記事で使われているタグ) */}}
     {{- $catTags := slice }}
-    {{- range .Pages }}
+    {{- range $catPages }}
       {{- range .Params.tags }}{{ $catTags = $catTags | append . }}{{ end }}
     {{- end }}
     {{- $catTags = $catTags | uniq }}
