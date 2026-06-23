@@ -3,16 +3,29 @@
   posts セクションの記事では「トップ › カテゴリ名 › 記事タイトル」を表示。
   その他ページでは「トップ › ページタイトル」を表示。
 */ -}}
+{{- $catClass := dict
+  "開店・閉店" "cat-open"
+  "開店閉店"   "cat-open"
+  "ニュース"   "cat-news"
+  "イベント"   "cat-event"
+  "グルメ・カフェ" "cat-gourmet"
+  "グルメカフェ"   "cat-gourmet"
+  "子育て・教育" "cat-edu"
+  "子育て教育"   "cat-edu"
+  "スポーツ"   "cat-sports"
+  "お知らせ"   "cat-notice"
+}}
 {{- $cat := index .Params.categories 0 | default "" }}
+{{- $cls := index $catClass $cat | default "" }}
 <nav class="post-breadcrumb" aria-label="パンくずリスト">
-  <a href="/">トップ</a>
+  <a href="/">ホーム</a>
   {{- if and (eq .Section "posts") $cat }}
-  <span class="bc-sep" aria-hidden="true">›</span>
-  <a href="/categories/{{ $cat | urlize }}/">{{ $cat }}</a>
+  <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+  <a class="bc-cat {{ $cls }}" href="/categories/{{ $cat | urlize }}/">{{ $cat }}</a>
   {{- else if .Parent }}
-  <span class="bc-sep" aria-hidden="true">›</span>
+  <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
   <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
   {{- end }}
-  <span class="bc-sep" aria-hidden="true">›</span>
+  <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
   <span class="bc-current" aria-current="page">{{ .Title | truncate 28 "…" }}</span>
 </nav>

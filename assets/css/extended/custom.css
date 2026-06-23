@@ -380,7 +380,7 @@ body.list { --main-width: 1160px; }
 .cat-default { background: var(--cat-notice); }
 
 /* ---------- ページネーション ---------- */
-.home-pagination { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 8px; padding: 20px 0; }
+.home-pagination { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 8px; padding: 20px 0; background: none; }
 .page-btn {
   display: inline-flex;
   align-items: center;
@@ -634,14 +634,16 @@ body:not(.list) { --main-width: 1108px; }
 .post-single .post-content { padding: 8px 32px 32px; font-size: 15px; line-height: 1.9; color: var(--up-text); }
 
 .post-single .post-content h2 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 800;
-  margin: 32px 0 12px;
-  padding: 8px 12px;
-  background: var(--up-bg);
-  border-left: 4px solid var(--up-teal);
-  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+  margin: 28px 0 12px;
+  padding: 2px 0 2px 12px;
+  background: none;
+  border-left: 4px solid var(--accent);
+  border-radius: 0;
   color: var(--up-text);
+  scroll-margin-top: 80px;
 }
 .post-single .post-content h3 {
   font-size: 15px;
@@ -696,6 +698,7 @@ body:not(.list) { --main-width: 1108px; }
   text-decoration: none !important;
   transition: background .15s, color .15s, border-color .15s;
 }
+.post-single .post-tags li a::before { content: "# "; }
 .post-single .post-tags li a:hover { background: var(--up-teal); color: #fff !important; border-color: var(--up-teal); }
 
 .paginav { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
@@ -1121,6 +1124,64 @@ body:not(.list) { --main-width: 1108px; }
 .frontmatter-infobox { margin: 0 32px 24px; }
 @media (max-width: 640px) { .frontmatter-infobox { margin: 0 16px 20px; } }
 
+/* ---------- 店舗情報ボックス (開店・閉店) — オレンジ系 ---------- */
+.info-box.infobox-shop {
+  background: #FFF7ED;
+  border: 1px solid #FBD9A8;
+  border-left: 4px solid var(--cat-open);
+}
+.info-box.infobox-shop h2 {
+  color: #9A3412 !important;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.info-box.infobox-shop dt { color: #A16207; }
+.info-box.infobox-shop dd { color: #334155; }
+.infobox-actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.infobox-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff;
+  border: 1px solid #FBD9A8;
+  color: #9A3412 !important;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 13px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background .15s;
+}
+.infobox-btn:hover { background: #FFF1E0; }
+
+/* ---------- イベント情報ボックス — 青系（ボタンを上書き） ---------- */
+.info-box.infobox-event .infobox-btn {
+  border-color: #b8d9f0;
+  color: var(--portal-blue) !important;
+}
+.info-box.infobox-event .infobox-btn:hover { background: #EEF6FC; }
+
+/* ---------- イベント情報ボックス (イベント) — パープル系 ---------- */
+.info-box.infobox-event {
+  background: var(--cat-event-bg);
+  border: 1px solid #DDD0F7;
+  border-left: 4px solid var(--cat-event);
+}
+.info-box.infobox-event h2 {
+  color: #5B21B6 !important;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.info-box.infobox-event dt { color: #6D28D9; }
+.info-box.infobox-event dd { color: #334155; }
+.info-box.infobox-event .infobox-btn {
+  border: 1px solid #DDD0F7;
+  color: #5B21B6 !important;
+}
+.info-box.infobox-event .infobox-btn:hover { background: #EFE9FB; }
+
 /* ---------- 記事末尾 CTA ---------- */
 .cta-box {
   margin: 32px 32px 0;
@@ -1193,78 +1254,186 @@ body:not(.list) { --main-width: 1108px; }
 .guide-title { font-size: 13px; font-weight: 700; line-height: 1.5; }
 
 /* ---------- カテゴリページ ハブヘッダー ---------- */
+/* カテゴリ別アクセント（ローカル変数で着せ替え） */
+.category-hub-header.cat-open    { --chub: var(--cat-open);    --chub-bg: var(--cat-open-bg); }
+.category-hub-header.cat-news    { --chub: var(--cat-news);    --chub-bg: var(--cat-news-bg); }
+.category-hub-header.cat-event   { --chub: var(--cat-event);   --chub-bg: var(--cat-event-bg); }
+.category-hub-header.cat-gourmet { --chub: var(--cat-gourmet); --chub-bg: var(--cat-gourmet-bg); }
+.category-hub-header.cat-edu     { --chub: var(--cat-edu);     --chub-bg: var(--cat-edu-bg); }
+.category-hub-header.cat-sports  { --chub: var(--cat-sports);  --chub-bg: var(--cat-sports-bg); }
+.category-hub-header.cat-notice  { --chub: var(--cat-notice);  --chub-bg: var(--cat-notice-bg); }
+
 .category-hub-header {
-  background: var(--cat-news-bg);
+  background: var(--chub-bg, var(--cat-news-bg));
   border: 1px solid var(--portal-border);
-  border-left: 4px solid var(--portal-blue);
+  border-left: 4px solid var(--chub, var(--portal-blue));
   border-radius: var(--r-md);
-  padding: 22px 26px;
-  margin-bottom: 24px;
+  padding: 18px 22px;
+  margin-bottom: 16px;
 }
+.category-hub-header .post-breadcrumb { margin-bottom: 12px; }
+.chub-main { display: flex; align-items: center; gap: 14px; }
+.chub-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--chub, var(--portal-blue));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.chub-text { min-width: 0; }
+.chub-titlerow { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .category-hub-header h1 {
-  font-size: 20px !important;
+  font-size: 21px !important;
   font-weight: 800 !important;
-  color: var(--portal-blue) !important;
-  margin: 0 0 10px !important;
+  color: var(--chub, var(--portal-blue)) !important;
+  margin: 0 !important;
   padding: 0 !important;
   border: none !important;
 }
+.chub-count { font-size: 12px; color: var(--up-text-3); font-weight: 600; }
 .category-hub-desc {
   font-size: 13px;
-  color: var(--up-muted);
-  line-height: 1.85;
-  margin: 0 0 16px;
+  color: var(--up-text-2);
+  line-height: 1.75;
+  margin: 5px 0 0;
 }
-.category-hub-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.category-hub-cta {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 16px;
-  background: var(--portal-blue);
-  color: #fff !important;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 700;
-  text-decoration: none !important;
-  transition: background .15s;
-  white-space: nowrap;
-}
-.category-hub-cta:hover { background: #155079; }
-.related-cats {
+
+/* カテゴリ切替ピル */
+.cat-pill-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
   align-items: center;
-}
-.related-cats-label {
-  font-size: 12px;
-  color: var(--up-muted);
-  font-weight: 600;
-  flex-shrink: 0;
-}
-.related-cat-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 11px;
+  gap: 7px;
   background: #fff;
   border: 1px solid var(--up-border);
-  border-radius: 20px;
-  font-size: 12px;
-  color: var(--up-text) !important;
-  text-decoration: none !important;
-  transition: background .15s, border-color .15s;
+  border-radius: var(--r-md);
+  padding: 11px 14px;
+  margin-bottom: 24px;
 }
-.related-cat-link:hover {
-  background: var(--portal-blue);
-  border-color: var(--portal-blue);
+.cat-pill-label { font-size: 11px; color: var(--up-text-3); margin-right: 2px; }
+.cat-pill.cat-open    { --pc: var(--cat-open);    --pcb: var(--cat-open-bg); }
+.cat-pill.cat-news    { --pc: var(--cat-news);    --pcb: var(--cat-news-bg); }
+.cat-pill.cat-event   { --pc: var(--cat-event);   --pcb: var(--cat-event-bg); }
+.cat-pill.cat-gourmet { --pc: var(--cat-gourmet); --pcb: var(--cat-gourmet-bg); }
+.cat-pill.cat-edu     { --pc: var(--cat-edu);     --pcb: var(--cat-edu-bg); }
+.cat-pill.cat-sports  { --pc: var(--cat-sports);  --pcb: var(--cat-sports-bg); }
+.cat-pill.cat-notice  { --pc: var(--cat-notice);  --pcb: var(--cat-notice-bg); }
+.cat-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 13px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--pcb, var(--up-bg));
+  color: var(--pc, var(--up-text)) !important;
+  text-decoration: none !important;
+  transition: filter .15s;
+}
+.cat-pill:hover { filter: brightness(0.96); }
+.cat-pill.is-active {
+  background: var(--pc, var(--portal-blue));
   color: #fff !important;
 }
+
+/* 一覧セクションラベル（新着 / これまで） */
+.list-section-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  background: none;
+  color: var(--chub-label, var(--cat-open));
+  margin: 0 0 12px;
+}
+.list-section-label.cat-open    { --chub-label: var(--cat-open); }
+.list-section-label.cat-news    { --chub-label: var(--cat-news); }
+.list-section-label.cat-event   { --chub-label: var(--cat-event); }
+.list-section-label.cat-gourmet { --chub-label: var(--cat-gourmet); }
+.list-section-label.cat-edu     { --chub-label: var(--cat-edu); }
+.list-section-label.cat-sports  { --chub-label: var(--cat-sports); }
+.list-section-label.cat-notice  { --chub-label: var(--cat-notice); }
+.list-section-label--sub {
+  color: var(--up-text-2);
+  border-top: 1px solid var(--up-border);
+  padding-top: 16px;
+  margin-top: 22px;
+}
+
+/* 新着 横長フィーチャーカード */
+.list-feature-list { display: flex; flex-direction: column; gap: 13px; margin-bottom: 8px; }
+.list-feature-card {
+  display: flex;
+  gap: 14px;
+  background: var(--up-surface);
+  border: 1px solid var(--up-border);
+  border-left: 4px solid var(--up-border);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none !important;
+  transition: border-color .15s, box-shadow .15s;
+}
+.list-feature-card.cat-open    { border-left-color: var(--cat-open); }
+.list-feature-card.cat-news    { border-left-color: var(--cat-news); }
+.list-feature-card.cat-event   { border-left-color: var(--cat-event); }
+.list-feature-card.cat-gourmet { border-left-color: var(--cat-gourmet); }
+.list-feature-card.cat-edu     { border-left-color: var(--cat-edu); }
+.list-feature-card.cat-sports  { border-left-color: var(--cat-sports); }
+.list-feature-card.cat-notice  { border-left-color: var(--cat-notice); }
+.list-feature-card:hover { box-shadow: 0 4px 14px rgba(15,42,68,.08); }
+.lfc-thumb {
+  width: 150px;
+  align-self: stretch;
+  min-height: 108px;
+  background: #E2E8F0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94A3B8;
+}
+.lfc-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lfc-no-img span { font-size: 30px; opacity: .55; }
+.lfc-body { padding: 12px 14px 12px 2px; flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; }
+.lfc-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--up-text);
+  line-height: 1.45;
+  margin: 6px 0;
+}
+.lfc-desc {
+  font-size: 11px;
+  color: var(--up-text-2);
+  line-height: 1.6;
+  margin: 0 0 7px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.lfc-date { font-size: 11px; color: var(--up-text-3); display: inline-flex; align-items: center; gap: 4px; margin-top: auto; }
+@media (max-width: 520px) {
+  .lfc-thumb { width: 108px; min-height: 92px; }
+  .lfc-title { font-size: 14px; }
+  .lfc-desc { display: none; }
+}
+
+/* カテゴリ色ページネーション */
+.home-pagination.cat-open    .page-btn { background: var(--cat-open); }
+.home-pagination.cat-news    .page-btn { background: var(--cat-news); }
+.home-pagination.cat-event   .page-btn { background: var(--cat-event); }
+.home-pagination.cat-gourmet .page-btn { background: var(--cat-gourmet); }
+.home-pagination.cat-edu     .page-btn { background: var(--cat-edu); }
+.home-pagination.cat-sports  .page-btn { background: var(--cat-sports); }
+.home-pagination.cat-notice  .page-btn { background: var(--cat-notice); }
+.home-pagination[class*="cat-"] .page-btn:hover { filter: brightness(0.92); }
 
 /* ---------- PR・アフィリエイト関連 ---------- */
 .pr-note {
@@ -2785,6 +2954,15 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   user-select: none;
   margin: 0 2px;
 }
+i.bc-sep { margin: 0 1px; line-height: 1; }
+.post-breadcrumb .bc-cat { font-weight: 600; background: none !important; padding: 0; border-radius: 0; }
+.bc-cat.cat-open    { color: var(--cat-open)    !important; }
+.bc-cat.cat-news    { color: var(--cat-news)    !important; }
+.bc-cat.cat-event   { color: var(--cat-event)   !important; }
+.bc-cat.cat-gourmet { color: var(--cat-gourmet) !important; }
+.bc-cat.cat-edu     { color: var(--cat-edu)     !important; }
+.bc-cat.cat-sports  { color: var(--cat-sports)  !important; }
+.bc-cat.cat-notice  { color: var(--cat-notice)  !important; }
 .bc-current {
   color: var(--up-text-2);
   font-weight: 600;
@@ -2795,6 +2973,22 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 }
 @media (max-width: 640px) {
   .bc-current { max-width: 140px; }
+}
+
+/* ---------- サイドバー目次 ---------- */
+.sidebar-toc .toc-list { display: flex; flex-direction: column; gap: 8px; }
+.sidebar-toc .toc-list a {
+  font-size: 12px;
+  color: var(--up-text-3) !important;
+  border-left: 2px solid var(--up-border);
+  padding-left: 9px;
+  text-decoration: none !important;
+  line-height: 1.5;
+  transition: color .15s, border-color .15s;
+}
+.sidebar-toc .toc-list a:hover {
+  color: var(--accent) !important;
+  border-left-color: var(--accent);
 }
 
 /* ---------- 記事本文の最大幅制限 ---------- */

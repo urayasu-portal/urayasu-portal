@@ -55,15 +55,20 @@
         いずれか1つ以上が設定されている場合のみ表示。既存記事には影響なし。
       */}}
       {{- if .Params.shopName }}
-      <div class="info-box frontmatter-infobox">
-        <h2>店舗情報</h2>
+      <div class="info-box frontmatter-infobox infobox-shop">
+        <h2><i class="ti ti-building-store" aria-hidden="true"></i> 店舗情報</h2>
         <dl>
           {{- with .Params.shopName }}<dt>店名</dt><dd>{{ . }}</dd>{{- end }}
-          {{- with .Params.address }}<dt>場所</dt><dd>{{ . }}</dd>{{- end }}
-          {{- with .Params.openDate }}<dt>オープン日</dt><dd>{{ . }}</dd>{{- end }}
-          {{- with .Params.closeDate }}<dt>閉店日</dt><dd>{{ . }}</dd>{{- end }}
-          {{- with .Params.officialUrl }}<dt>公式情報</dt><dd><a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></dd>{{- end }}
+          {{- with .Params.openDate }}<dt>オープン</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.closeDate }}<dt>閉店</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.address }}<dt>住所</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with .Params.access }}<dt>アクセス</dt><dd>{{ . }}</dd>{{- end }}
         </dl>
+        {{- with .Params.officialUrl }}
+        <div class="infobox-actions">
+          <a class="infobox-btn" href="{{ . }}" rel="noopener" target="_blank"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
+        </div>
+        {{- end }}
       </div>
       {{- end }}
 
@@ -73,15 +78,19 @@
         hideEventBox: true を指定するとボックスを非表示にできる（カレンダー反映は維持）。
       */}}
       {{- if and .Params.eventDate (not .Params.hideEventBox) }}
-      <div class="info-box frontmatter-infobox">
-        <h2>イベント概要</h2>
+      <div class="info-box frontmatter-infobox infobox-event">
+        <h2><i class="ti ti-calendar-star" aria-hidden="true"></i> イベント情報</h2>
         <dl>
           {{- with .Params.eventDate }}<dt>開催日</dt><dd>{{ . }}</dd>{{- end }}
           {{- with .Params.eventEndDate }}<dt>終了日</dt><dd>{{ . }}</dd>{{- end }}
           {{- with .Params.eventLocation }}<dt>会場</dt><dd>{{ . }}</dd>{{- end }}
           {{- with .Params.eventFee }}<dt>料金</dt><dd>{{ . }}</dd>{{- end }}
-          {{- with .Params.eventUrl }}<dt>公式情報</dt><dd><a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></dd>{{- end }}
         </dl>
+        {{- with .Params.eventUrl }}
+        <div class="infobox-actions">
+          <a class="infobox-btn" href="{{ . }}" rel="noopener" target="_blank"><i class="ti ti-external-link" aria-hidden="true"></i> イベント公式サイト</a>
+        </div>
+        {{- end }}
       </div>
       {{- end }}
 
@@ -103,11 +112,28 @@
       {{- end }}
       {{- end }}
 
-      {{- if .Content }}
+      {{/* ─ 目次生成 + 見出しID付与（生HTML <h2> も対応） ─ */}}
+      {{- $content := .Content }}
+      {{- $toc := slice }}
+      {{- range $i, $h := findRE `(?is)<h2[^>]*>.*?</h2>` $content -1 }}
+        {{- $title := $h | replaceRE `(?is)<[^>]+>` "" | replaceRE `^\s+|\s+$` "" }}
+        {{- if $title }}
+          {{- $id := "" }}
+          {{- with findRE `id="[^"]+"` $h 1 }}
+            {{- $id = index . 0 | replaceRE `id="|"` "" }}
+          {{- else }}
+            {{- $id = printf "sec-%d" (add $i 1) }}
+            {{- $content = replace $content $h (replaceRE `^<h2` (printf `<h2 id="%s"` $id) $h) 1 }}
+          {{- end }}
+          {{- $toc = $toc | append (dict "id" $id "title" $title) }}
+        {{- end }}
+      {{- end }}
+
+      {{- if $content }}
       <div class="post-content md-content">
         {{- if not (.Param "disableAnchoredHeadings") }}
-        {{- partial "anchored_headings.html" .Content -}}
-        {{- else }}{{ .Content }}{{ end }}
+        {{- partial "anchored_headings.html" $content -}}
+        {{- else }}{{ $content | safeHTML }}{{ end }}
       </div>
       {{- end }}
 
@@ -210,6 +236,18 @@
 
   {{/* ───── サイドバー ───── */}}
   <aside class="home-sidebar">
+
+    {{/* 目次 */}}
+    {{- if ge (len $toc) 2 }}
+    <div class="sidebar-widget sidebar-toc">
+      <div class="widget-title"><i class="ti ti-list" aria-hidden="true"></i> 目次</div>
+      <nav class="toc-list">
+        {{- range $toc }}
+        <a href="#{{ .id }}">{{ .title }}</a>
+        {{- end }}
+      </nav>
+    </div>
+    {{- end }}
 
     {{/* 検索 + カレンダー */}}
     {{- partial "sidebar-calendar.html" . }}
