@@ -3434,14 +3434,22 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .hg-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--up-text-3); margin-top: 4px; }
 .hg-meta span { display: inline-flex; align-items: center; gap: 4px; }
 
+/* ヒーロー（コーラルのプレースホルダー） */
+.hg-hero {
+  height: 210px; margin: 4px 32px 18px; border-radius: 12px;
+  background: #FBDED4; display: flex; align-items: center; justify-content: center; color: #E05535;
+}
+.hg-hero i { font-size: 42px; opacity: .5; }
+@media (max-width: 640px) { .hg-hero { margin: 4px 16px 16px; height: 160px; } }
+
 /* 基本情報ボックス */
 .post-content .hg-info {
   background: #FFF4F0; border: 1px solid #F6D8CD; border-left: 4px solid #E05535;
   border-radius: 12px; padding: 15px; margin: 0 0 22px;
 }
 .post-content .hg-info-title { font-size: 13px; font-weight: 700; color: #9A3412; margin: 0 0 11px; display: flex; align-items: center; gap: 7px; }
-.post-content .hg-info dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; margin: 0; font-size: 12px; }
-.post-content .hg-info dt { color: #C2421F; font-weight: 600; margin: 0; }
+.post-content .hg-info dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 14px; margin: 0; font-size: 12px; align-items: start; }
+.post-content .hg-info dt { color: #C2421F; font-weight: 600; margin: 0; white-space: nowrap; }
 .post-content .hg-info dd { color: #334155; margin: 0; }
 .post-content .hg-info-btn {
   display: inline-flex; align-items: center; gap: 5px; margin-top: 13px;

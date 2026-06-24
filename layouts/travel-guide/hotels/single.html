@@ -1,8 +1,9 @@
 {{- define "main" }}
 
-{{- /* 観光ガイド ホテル個別レイアウト（モックアップG準拠）。柱=travel（coral）。 */ -}}
+{{- /* 観光ガイド ホテル個別レイアウト（モックアップG準拠）。柱=travel（coral）。
+       ヒーローはホテル個別写真(cover.image)があれば表示、無ければコーラルのプレースホルダー。 */ -}}
 {{- $cur := .RelPermalink }}
-{{- $coverImg := partial "cover-image.html" (dict "page" . "size" "full") }}
+{{- $hotelPhoto := .Params.cover.image | default "" }}
 
 {{/* エリア判定（バッジ・メタ・関連ホテル用） */}}
 {{- $areaTags := slice "舞浜" "新浦安" "浦安" "浦安駅" "ベイエリア" "東京ベイ" }}
@@ -69,8 +70,10 @@
         </div>
       </header>
 
-      {{- if $coverImg }}
-      <div class="post-cover"><img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy"></div>
+      {{- if $hotelPhoto }}
+      <div class="post-cover"><img src="{{ $hotelPhoto }}" alt="{{ .Title }}" loading="lazy"></div>
+      {{- else }}
+      <div class="hg-hero" aria-hidden="true"><i class="ti ti-photo"></i></div>
       {{- end }}
 
       {{- if $content }}
