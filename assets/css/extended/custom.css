@@ -2015,9 +2015,23 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   border: 0.5px solid var(--up-border);
   border-radius: 11px;
   padding: 13px 12px;
-  transition: transform .2s, box-shadow .2s, border-color .2s;
+  transition: transform .2s, box-shadow .2s, border-color .2s, background .2s;
+  /* button reset */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
 }
 .tg-area-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -12px rgba(224,85,53,.35); border-color: var(--accent); }
+.tg-area-card.is-active {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  box-shadow: 0 0 0 1.5px var(--accent) inset;
+}
 .tg-area-name {
   font-size: 0.85rem; font-weight: 700; color: var(--up-text); margin: 0 0 7px;
   display: flex; align-items: center; gap: 6px;
@@ -2054,7 +2068,15 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   font-weight: 700;
   color: #fff;
   min-height: 38px;
+  /* button reset */
+  border: none;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: filter .15s, box-shadow .15s;
 }
+.tg-pyr-bar:hover { filter: brightness(1.06); }
+.tg-pyr-bar.is-active { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--accent-ink); }
 .tg-pyr-price { margin-left: auto; font-size: 0.78rem; font-weight: 600; padding-left: 10px; }
 
 /* ---------- 施設一覧テーブル ---------- */

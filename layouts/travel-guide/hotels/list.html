@@ -65,16 +65,16 @@
 <div class="section-head">
   <h2>{{- if $isEN }}Find by Area{{- else }}エリアで探す{{- end }}</h2>
 </div>
-<p class="tg-section-sub">{{- if $isEN }}Urayasu and Maihama are split into 4 areas.{{- else }}浦安・舞浜は4つのエリアに分かれます。{{- end }}</p>
+<p class="tg-section-sub">{{- if $isEN }}Urayasu and Maihama are split into 4 areas. Tap a card to filter the list below.{{- else }}浦安・舞浜は4つのエリアに分かれます。カードをクリックすると下のホテル一覧を絞り込めます。{{- end }}</p>
 <div class="tg-area-grid">
   {{- range $hotels.areas }}
   {{- $icon := "ti-map-pin" }}
   {{- if eq .tag "A" }}{{ $icon = "ti-building-castle" }}{{ else if eq .tag "B" }}{{ $icon = "ti-anchor" }}{{ else if eq .tag "C" }}{{ $icon = "ti-train" }}{{ else if eq .tag "D" }}{{ $icon = "ti-building" }}{{ end }}
-  <div class="tg-area-card">
-    <p class="tg-area-name"><i class="ti {{ $icon }}" aria-hidden="true"></i>{{ .name | replaceRE "エリア$" "" }}</p>
-    <p class="tg-area-desc">{{ .note }}</p>
-    <p class="tg-area-count">{{ .count }}<span>{{- if $isEN }} hotels{{- else }} 軒{{- end }}</span></p>
-  </div>
+  <button type="button" class="tg-area-card" data-filter-type="area" data-filter-val="{{ .tag }}" aria-label="{{ .name }}（{{ .count }}{{ if $isEN }} hotels{{ else }}軒{{ end }}）で絞り込む">
+    <span class="tg-area-name"><i class="ti {{ $icon }}" aria-hidden="true"></i>{{ .name | replaceRE "エリア$" "" }}</span>
+    <span class="tg-area-desc">{{ .note }}</span>
+    <span class="tg-area-count">{{ .count }}<span>{{- if $isEN }} hotels{{- else }} 軒{{- end }}</span></span>
+  </button>
   {{- end }}
 </div>
 
@@ -85,25 +85,26 @@
   <h2>{{- if $isEN }}Price Range Guide{{- else }}価格帯の目安{{- end }}</h2>
   <span style="font-size:11px;color:var(--up-muted);">{{- if $isEN }}2 guests/room, off-peak estimate{{- else }}2名1室・通常期の目安{{- end }}</span>
 </div>
+<p class="tg-section-sub">{{- if $isEN }}Tap a bar to filter the list below by hotel type.{{- else }}バーをクリックすると下のホテル一覧を区分で絞り込めます。{{- end }}</p>
 <div class="tg-pyramid-wrap">
   <div class="tg-pyramid">
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar">{{- if $isEN }}TDR Owned (Luxury){{- else }}直営（ラグジュアリー）{{- end }} <span class="tg-pyr-price">¥60,000〜</span></div>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="chokuei">{{- if $isEN }}TDR Owned (Luxury){{- else }}直営（ラグジュアリー）{{- end }} <span class="tg-pyr-price">¥60,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar">{{- if $isEN }}TDR Owned (Value){{- else }}直営（バリュー）{{- end }} <span class="tg-pyr-price">¥30,000〜</span></div>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="chokuei">{{- if $isEN }}TDR Owned (Value){{- else }}直営（バリュー）{{- end }} <span class="tg-pyr-price">¥30,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar">{{- if $isEN }}Official Hotels{{- else }}オフィシャルホテル{{- end }} <span class="tg-pyr-price">¥15,000〜</span></div>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="official">{{- if $isEN }}Official Hotels{{- else }}オフィシャルホテル{{- end }} <span class="tg-pyr-price">¥15,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar">{{- if $isEN }}Partner Hotels{{- else }}パートナーホテル{{- end }} <span class="tg-pyr-price">¥18,000〜</span></div>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="partner">{{- if $isEN }}Partner Hotels{{- else }}パートナーホテル{{- end }} <span class="tg-pyr-price">¥18,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar">{{- if $isEN }}General Hotels (Upper){{- else }}一般ホテル（上）{{- end }} <span class="tg-pyr-price">¥10,000〜</span></div>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="general">{{- if $isEN }}General Hotels (Upper){{- else }}一般ホテル（上）{{- end }} <span class="tg-pyr-price">¥10,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar">{{- if $isEN }}General Hotels (Budget){{- else }}一般ホテル（格安）{{- end }} <span class="tg-pyr-price">¥5,000〜</span></div>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="general">{{- if $isEN }}General Hotels (Budget){{- else }}一般ホテル（格安）{{- end }} <span class="tg-pyr-price">¥5,000〜</span></button>
     </div>
   </div>
   <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:6px;">{{- if $isEN }}※ Prices rise significantly during peak seasons (Golden Week, summer, year-end){{- else }}※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします{{- end }}</p>
@@ -125,10 +126,10 @@
 
 {{- if not $isEN }}
 <div class="tg-hotel-filter" role="group" aria-label="ホテルの区分で絞り込む">
-  <button type="button" class="tg-hotel-chip is-active" data-filter="all">すべて</button>
-  <button type="button" class="tg-hotel-chip" data-filter="tdr">直営・オフィシャル</button>
-  <button type="button" class="tg-hotel-chip" data-filter="partner">パートナー</button>
-  <button type="button" class="tg-hotel-chip" data-filter="value">一般・格安</button>
+  <button type="button" class="tg-hotel-chip is-active" data-filter-type="group" data-filter-val="all">すべて</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="group" data-filter-val="tdr">直営・オフィシャル</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="group" data-filter-val="partner">パートナー</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="group" data-filter-val="value">一般・格安</button>
 </div>
 {{- end }}
 
@@ -148,13 +149,18 @@
       {{- $areaTag := .tag }}
       {{- $areaName := .name }}
       {{- range .hotels }}
-      {{- $grp := "value" }}
-      {{- if hasPrefix .category "直営" }}{{ $grp = "tdr" }}
-      {{- else if eq .category "オフィシャルホテル" }}{{ $grp = "tdr" }}
-      {{- else if eq .category "パートナーホテル" }}{{ $grp = "partner" }}
-      {{- else if hasPrefix .category "ファッション" }}{{ $grp = "other" }}
+      {{- $cat := "general" }}
+      {{- if hasPrefix .category "直営" }}{{ $cat = "chokuei" }}
+      {{- else if eq .category "オフィシャルホテル" }}{{ $cat = "official" }}
+      {{- else if eq .category "パートナーホテル" }}{{ $cat = "partner" }}
+      {{- else if hasPrefix .category "ファッション" }}{{ $cat = "fashion" }}
       {{- end }}
-      <tr data-group="{{ $grp }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
+      {{- $grp := "value" }}
+      {{- if or (eq $cat "chokuei") (eq $cat "official") }}{{ $grp = "tdr" }}
+      {{- else if eq $cat "partner" }}{{ $grp = "partner" }}
+      {{- else if eq $cat "fashion" }}{{ $grp = "other" }}
+      {{- end }}
+      <tr data-group="{{ $grp }}" data-cat="{{ $cat }}" data-area="{{ $areaTag }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
         <td>
           {{- if and .individual_page (eq .policy "normal") (not $isEN) }}
           <a href="/travel-guide/hotels/{{ .slug }}/">{{ .name }}</a>
@@ -190,24 +196,51 @@
   </div>
   <a class="tg-cross-btn" href="/life-guide/">くらしの便利ガイドへ →</a>
 </div>
+{{- end }}
 
+{{/* ────────────────────────────────────────
+     一覧フィルタ（チップ・エリアカード・価格バー共通） / Unified list filter
+     ──────────────────────────────────────── */}}
 <script>
 (function () {
-  var chips = document.querySelectorAll('.tg-hotel-chip');
   var rows = document.querySelectorAll('#tg-hotel-table tbody tr');
-  if (!chips.length || !rows.length) return;
-  chips.forEach(function (chip) {
-    chip.addEventListener('click', function () {
-      var f = chip.getAttribute('data-filter');
-      chips.forEach(function (c) { c.classList.remove('is-active'); });
-      chip.classList.add('is-active');
-      rows.forEach(function (row) {
-        row.style.display = (f === 'all' || row.getAttribute('data-group') === f) ? '' : 'none';
-      });
+  var ctrls = document.querySelectorAll('[data-filter-type]');
+  if (!rows.length || !ctrls.length) return;
+  var table = document.getElementById('tg-hotel-table');
+  var active = { type: 'group', val: 'all' };
+
+  function apply() {
+    rows.forEach(function (row) {
+      var show = active.val === 'all' || row.getAttribute('data-' + active.type) === active.val;
+      row.style.display = show ? '' : 'none';
+    });
+    ctrls.forEach(function (c) {
+      var on = c.getAttribute('data-filter-type') === active.type
+            && c.getAttribute('data-filter-val') === active.val;
+      c.classList.toggle('is-active', on);
+    });
+  }
+
+  ctrls.forEach(function (c) {
+    c.addEventListener('click', function () {
+      var t = c.getAttribute('data-filter-type');
+      var v = c.getAttribute('data-filter-val');
+      // 同じ絞り込みを再クリックで全表示に戻す（トグル）
+      if (active.type === t && active.val === v && v !== 'all') {
+        active = { type: 'group', val: 'all' };
+      } else {
+        active = { type: t, val: v };
+      }
+      apply();
+      // 表より上のコントロール（エリア・価格バー）は一覧へスクロール
+      if (t !== 'group' && active.val !== 'all') {
+        table.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
+
+  apply();
 })();
 </script>
-{{- end }}
 
 {{- end }}
