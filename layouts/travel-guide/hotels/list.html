@@ -2,124 +2,138 @@
 
 {{- $hotels := hugo.Data.hotels }}
 {{- $isEN := eq .Lang "en" }}
+{{- $total := 0 }}{{- range $hotels.areas }}{{- $total = add $total .count }}{{- end }}
+{{- $areaCount := len $hotels.areas }}
 
 {{/* ────────────────────────────────────────
-     セクションヘッド / Section Header
+     ヒーロー（モックアップH準拠・コーラル） / Hero
      ──────────────────────────────────────── */}}
-<div class="tg-hotels-header">
+<div class="tg-hotels-hero">
+  <div class="tg-hotels-eyebrows">
+    {{- if $isEN }}
+    <span class="tg-hotels-eyebrow is-solid">Hotels</span>
+    <span class="tg-hotels-eyebrow">Maihama / Urayasu / Shin-Urayasu</span>
+    {{- else }}
+    <span class="tg-hotels-eyebrow is-solid">ホテル一覧</span>
+    <span class="tg-hotels-eyebrow">舞浜・浦安・新浦安</span>
+    {{- end }}
+  </div>
   {{- if $isEN }}
-  <p class="tg-hero-eyebrow">Travel Guide › Hotels</p>
-  <h1 class="tg-hotels-title">Hotel Guide: Urayasu &amp; Maihama Area</h1>
-  <p class="tg-hotels-lead">The Urayasu and Maihama area near Tokyo Disney Resort has 40 hotels ranging from TDR luxury properties (¥60,000+) to budget business hotels from around ¥5,000. Three new properties opened between 2024–2026. Use our scene-based comparison guides and the full hotel list to find the right hotel for you.</p>
+  <h1 class="tg-hotels-title">Choosing a Hotel in the Maihama &amp; Urayasu Area</h1>
+  <p class="tg-hotels-lead">From TDR-owned luxury properties to budget hotels, we have organized all <strong>{{ $total }} hotels</strong> in the area from a local perspective — including 3 new properties opened in 2024–2026. Find the right one for your trip by purpose, area, or price.</p>
   {{- else }}
-  <p class="tg-hero-eyebrow">旅行ガイド › ホテル</p>
-  <h1 class="tg-hotels-title">浦安・舞浜エリアのホテルガイド</h1>
-  <p class="tg-hotels-lead">東京ディズニーリゾート周辺の浦安・舞浜エリアには、TDR直営ラグジュアリー（¥60,000〜）から¥5,000台の格安ビジネスホテルまで全40軒のホテルがあります。2024〜2026年に3施設が新規開業し、選択肢はさらに広がりました。シーン別比較記事と施設一覧で、あなたに合った一軒を見つけましょう。</p>
+  <h1 class="tg-hotels-title">舞浜・浦安エリアのホテルを選ぶ</h1>
+  <p class="tg-hotels-lead">TDR直営からオフィシャル、格安ホテルまで、エリア内の<strong>全{{ $total }}軒</strong>を地元目線で整理しました。2024〜2026年に開業した新しい施設も掲載。目的・エリア・価格帯から、あなたの旅に合う一軒を見つけてください。</p>
   {{- end }}
+  <div class="tg-hotels-stats">
+    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $total }}</span><span class="tg-hotels-stat-label">{{ if $isEN }}hotels{{ else }}軒掲載{{ end }}</span></div>
+    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $areaCount }}</span><span class="tg-hotels-stat-label">{{ if $isEN }}areas{{ else }}エリア{{ end }}</span></div>
+    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">¥5,000</span><span class="tg-hotels-stat-label">{{ if $isEN }}and up{{ else }}〜の宿も{{ end }}</span></div>
+  </div>
 </div>
 
 {{/* ────────────────────────────────────────
-     シーン別ピラー記事 (日本語のみ) / Scene articles (JP only)
+     目的から絞り込む (日本語のみ) / Filter by purpose (JP only)
      ──────────────────────────────────────── */}}
 {{- if not $isEN }}
 <div class="section-head">
-  <h2>シーン別に選ぶ</h2>
+  <h2>目的から絞り込む</h2>
 </div>
-<div class="tg-scene-grid">
-
-  <a class="tg-scene-card" href="/travel-guide/hotels/kids/">
-    <div class="tg-scene-band tg-scene-band-kids"><i class="ti ti-mood-kid" aria-hidden="true"></i></div>
-    <div class="tg-scene-body">
-      <h3>子連れ向け徹底比較</h3>
-      <p>大浴場・広い部屋・館内コンビニ・パークへの近さ。子連れ旅で本当に大切な5つの軸で比較。</p>
-      <p class="tg-scene-go">記事を読む →</p>
-    </div>
+<p class="tg-section-sub">迷ったら、まずは旅のスタイルから。</p>
+<div class="tg-hotelneed-grid">
+  <a class="tg-hotelneed-card" href="/travel-guide/hotels/kids/">
+    <i class="ti ti-mood-kid" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">子連れ向け</div>
+    <div class="tg-hotelneed-desc">大浴場・客室・設備で選ぶ家族の宿</div>
   </a>
-
-  <a class="tg-scene-card" href="/travel-guide/hotels/budget/">
-    <div class="tg-scene-band tg-scene-band-budget"><i class="ti ti-coin" aria-hidden="true"></i></div>
-    <div class="tg-scene-body">
-      <h3>格安ホテル徹底比較</h3>
-      <p>¥5,000台〜の宿も。「安い宿には理由がある」と正直に伝えつつ、隠れコストを含めたコスパを比較。</p>
-      <p class="tg-scene-go">記事を読む →</p>
-    </div>
+  <a class="tg-hotelneed-card" href="/travel-guide/hotels/budget/">
+    <i class="ti ti-coin" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">格安</div>
+    <div class="tg-hotelneed-desc">1泊5,000円台〜コスパ重視で泊まる</div>
   </a>
-
-  <a class="tg-scene-card" href="/travel-guide/hotels/access/">
-    <div class="tg-scene-band tg-scene-band-access"><i class="ti ti-route" aria-hidden="true"></i></div>
-    <div class="tg-scene-body">
-      <h3>アクセス完全比較</h3>
-      <p>パーク・JR駅・空港・都心への行きやすさを4軸で整理。地元ならではの盲点情報も。</p>
-      <p class="tg-scene-go">記事を読む →</p>
-    </div>
+  <a class="tg-hotelneed-card" href="/travel-guide/hotels/access/">
+    <i class="ti ti-walk" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">アクセス重視</div>
+    <div class="tg-hotelneed-desc">パーク・駅・空港に近い宿で選ぶ</div>
   </a>
-
 </div>
 {{- end }}
 
 {{/* ────────────────────────────────────────
-     エリア早わかり / Area Overview
+     エリアで探す / Area Overview
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{- if $isEN }}Hotel Areas at a Glance{{- else }}エリア早わかり{{- end }}</h2>
+  <h2>{{- if $isEN }}Find by Area{{- else }}エリアで探す{{- end }}</h2>
 </div>
+<p class="tg-section-sub">{{- if $isEN }}Urayasu and Maihama are split into 4 areas.{{- else }}浦安・舞浜は4つのエリアに分かれます。{{- end }}</p>
 <div class="tg-area-grid">
   {{- range $hotels.areas }}
+  {{- $icon := "ti-map-pin" }}
+  {{- if eq .tag "A" }}{{ $icon = "ti-building-castle" }}{{ else if eq .tag "B" }}{{ $icon = "ti-anchor" }}{{ else if eq .tag "C" }}{{ $icon = "ti-train" }}{{ else if eq .tag "D" }}{{ $icon = "ti-building" }}{{ end }}
   <div class="tg-area-card">
-    <p class="tg-area-label">{{- if $isEN }}Area {{- else }}エリア {{- end }}{{ .tag }}</p>
-    <p class="tg-area-name">{{ .name }}</p>
-    <p class="tg-area-count">{{ .count }}<span>{{- if $isEN }} hotels{{- else }} 軒{{- end }}</span></p>
+    <p class="tg-area-name"><i class="ti {{ $icon }}" aria-hidden="true"></i>{{ .name | replaceRE "エリア$" "" }}</p>
     <p class="tg-area-desc">{{ .note }}</p>
+    <p class="tg-area-count">{{ .count }}<span>{{- if $isEN }} hotels{{- else }} 軒{{- end }}</span></p>
   </div>
   {{- end }}
 </div>
 
 {{/* ────────────────────────────────────────
-     価格帯ピラミッド / Price Pyramid
+     価格帯の目安 / Price Pyramid
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{- if $isEN }}Price Range Guide{{- else }}価格帯ピラミッド{{- end }}</h2>
+  <h2>{{- if $isEN }}Price Range Guide{{- else }}価格帯の目安{{- end }}</h2>
   <span style="font-size:11px;color:var(--up-muted);">{{- if $isEN }}2 guests/room, off-peak estimate{{- else }}2名1室・通常期の目安{{- end }}</span>
 </div>
 <div class="tg-pyramid-wrap">
   <div class="tg-pyramid">
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar" style="background:#a52020;">{{- if $isEN }}TDR Owned (Luxury){{- else }}直営（ラグジュアリー）{{- end }} <span style="margin-left:auto;font-size:0.78rem;">¥60,000〜</span></div>
+      <div class="tg-pyr-bar">{{- if $isEN }}TDR Owned (Luxury){{- else }}直営（ラグジュアリー）{{- end }} <span class="tg-pyr-price">¥60,000〜</span></div>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar" style="background:#b83018;">{{- if $isEN }}TDR Owned (Value){{- else }}直営（バリュー）{{- end }} <span style="margin-left:auto;font-size:0.78rem;">¥30,000〜</span></div>
+      <div class="tg-pyr-bar">{{- if $isEN }}TDR Owned (Value){{- else }}直営（バリュー）{{- end }} <span class="tg-pyr-price">¥30,000〜</span></div>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar" style="background:#c05a10;">{{- if $isEN }}Official Hotels{{- else }}オフィシャルホテル{{- end }} <span style="margin-left:auto;font-size:0.78rem;">¥15,000〜</span></div>
+      <div class="tg-pyr-bar">{{- if $isEN }}Official Hotels{{- else }}オフィシャルホテル{{- end }} <span class="tg-pyr-price">¥15,000〜</span></div>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar" style="background:var(--up-sea);">{{- if $isEN }}Partner Hotels{{- else }}パートナーホテル{{- end }} <span style="margin-left:auto;font-size:0.78rem;">¥18,000〜</span></div>
+      <div class="tg-pyr-bar">{{- if $isEN }}Partner Hotels{{- else }}パートナーホテル{{- end }} <span class="tg-pyr-price">¥18,000〜</span></div>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar" style="background:#2a7a9a;">{{- if $isEN }}General Hotels (Upper){{- else }}一般ホテル（上）{{- end }} <span style="margin-left:auto;font-size:0.78rem;">¥10,000〜</span></div>
+      <div class="tg-pyr-bar">{{- if $isEN }}General Hotels (Upper){{- else }}一般ホテル（上）{{- end }} <span class="tg-pyr-price">¥10,000〜</span></div>
     </div>
     <div class="tg-pyr-row">
-      <div class="tg-pyr-bar" style="background:var(--up-teal);">{{- if $isEN }}General Hotels (Budget){{- else }}一般ホテル（格安）{{- end }} <span style="margin-left:auto;font-size:0.78rem;">¥5,000〜</span></div>
+      <div class="tg-pyr-bar">{{- if $isEN }}General Hotels (Budget){{- else }}一般ホテル（格安）{{- end }} <span class="tg-pyr-price">¥5,000〜</span></div>
     </div>
   </div>
-  <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:4px;">{{- if $isEN }}※ Prices rise significantly during peak seasons (Golden Week, summer, year-end){{- else }}※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします{{- end }}</p>
+  <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:6px;">{{- if $isEN }}※ Prices rise significantly during peak seasons (Golden Week, summer, year-end){{- else }}※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします{{- end }}</p>
 </div>
 
 {{/* ────────────────────────────────────────
-     全施設一覧表 / Full Hotel List
+     全施設一覧表（フィルタ付き） / Full Hotel List (filterable)
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{- if $isEN }}Full Hotel List{{- else }}全施設一覧{{- end }}</h2>
+  <h2>{{- if $isEN }}Full Hotel List{{- else }}ホテル一覧（全{{ $total }}軒）{{- end }}</h2>
 </div>
-<div style="background:#fff8e8;border-left:4px solid #f0a500;border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:18px;font-size:0.84em;color:#5e6f7e;line-height:1.7;">
+<div class="tg-notice-warn">
   {{- if $isEN }}
   <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> About pricing and information:</strong> Price ranges are estimates for 2 guests/room during off-peak periods. Rates vary significantly during busy seasons. Always check the latest prices on booking sites. Individual hotel detail pages are available in Japanese.
   {{- else }}
-  <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> 料金・施設情報について</strong>: 価格帯は2名1室・通常期の目安です。繁忙期は大きく変動します。最新料金は各予約サイトでご確認ください。
+  <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> 料金・施設情報について</strong>：価格帯は2名1室・通常期の目安です。繁忙期は大きく変動します。最新料金は各予約サイトでご確認ください。
   {{- end }}
 </div>
+
+{{- if not $isEN }}
+<div class="tg-hotel-filter" role="group" aria-label="ホテルの区分で絞り込む">
+  <button type="button" class="tg-hotel-chip is-active" data-filter="all">すべて</button>
+  <button type="button" class="tg-hotel-chip" data-filter="tdr">直営・オフィシャル</button>
+  <button type="button" class="tg-hotel-chip" data-filter="partner">パートナー</button>
+  <button type="button" class="tg-hotel-chip" data-filter="value">一般・格安</button>
+</div>
+{{- end }}
+
 <div class="tg-hotel-table-wrap">
-  <table class="tg-hotel-table">
+  <table class="tg-hotel-table" id="tg-hotel-table">
     <thead>
       <tr>
         <th>{{- if $isEN }}Hotel Name{{- else }}施設名{{- end }}</th>
@@ -134,7 +148,13 @@
       {{- $areaTag := .tag }}
       {{- $areaName := .name }}
       {{- range .hotels }}
-      <tr{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
+      {{- $grp := "value" }}
+      {{- if hasPrefix .category "直営" }}{{ $grp = "tdr" }}
+      {{- else if eq .category "オフィシャルホテル" }}{{ $grp = "tdr" }}
+      {{- else if eq .category "パートナーホテル" }}{{ $grp = "partner" }}
+      {{- else if hasPrefix .category "ファッション" }}{{ $grp = "other" }}
+      {{- end }}
+      <tr data-group="{{ $grp }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
         <td>
           {{- if and .individual_page (eq .policy "normal") (not $isEN) }}
           <a href="/travel-guide/hotels/{{ .slug }}/">{{ .name }}</a>
@@ -143,7 +163,7 @@
           {{- end }}
           {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
         </td>
-        <td><span class="tg-area-tag tg-area-{{ $areaTag | lower }}">{{ $areaTag }}</span> {{ $areaName }}</td>
+        <td><span class="tg-area-tag">{{ $areaTag }}</span> {{ $areaName }}</td>
         <td style="font-size:0.82em;">{{ .category }}</td>
         <td style="white-space:nowrap;">
           {{- if .price_guide }}{{ .price_guide }}{{- else }}&mdash;{{- end }}
@@ -170,6 +190,24 @@
   </div>
   <a class="tg-cross-btn" href="/life-guide/">くらしの便利ガイドへ →</a>
 </div>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.tg-hotel-chip');
+  var rows = document.querySelectorAll('#tg-hotel-table tbody tr');
+  if (!chips.length || !rows.length) return;
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) { c.classList.remove('is-active'); });
+      chip.classList.add('is-active');
+      rows.forEach(function (row) {
+        row.style.display = (f === 'all' || row.getAttribute('data-group') === f) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
 {{- end }}
 
 {{- end }}
