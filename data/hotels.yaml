@@ -1,7 +1,8 @@
-# 浦安・舞浜エリア ホテルデータ
-# policy: normal | name-only (ファッションホテル3施設は名称・カテゴリのみ掲載)
-# individual_page: true = 個別ページあり | false = 一覧掲載のみ
-# price_guide: 2名1室・通常期の目安。「要確認」は非表示。
+# === 自動生成ファイル / DO NOT EDIT ===
+# マスター: hotel-database-full.csv
+# 生成:     scripts/build-hotels.ps1
+# 区分・カテゴリ・特徴・価格を変えるときはCSVを編集して本スクリプトで再生成すること。
+# policy: normal | name-only（名称・カテゴリのみ掲載）
 
 areas:
   - id: a
