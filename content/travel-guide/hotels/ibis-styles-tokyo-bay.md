@@ -64,23 +64,23 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（11歳まで添い寝無料）</div>
-    <div class="hg-fac-body">アコーホテルズのデザインブランドのインテリア。11歳まで添い寝無料。部屋タイプにより定員は要確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食</div>
-    <div class="hg-fac-body">和洋食ビュッフェを提供。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー・荷物預かり</div>
-    <div class="hg-fac-body">館内コインランドリーあり（有料）。荷物預かりあり（チェックイン前・チェックアウト後当日中）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">敷地内36台（先着順・チェックイン〜チェックアウト）。館内・客室Wi-Fi無料。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">11歳まで<br>添い寝無料</div></div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">和洋食<br>朝食ビュッフェ</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">敷地内<br>駐車場36台</div></div>
 </div>
+
+**客室（11歳まで添い寝無料）**　アコーホテルズのデザインブランドのインテリア。11歳まで添い寝無料。部屋タイプにより定員は要確認です。
+
+**朝食**　和洋食ビュッフェを提供。
+
+**コインランドリー**　館内コインランドリーあり（有料）。
+
+**荷物預かり**　チェックイン前・チェックアウト後当日中の荷物預かりに対応。
+
+**駐車場**　敷地内36台（先着順・チェックイン〜チェックアウト）。
+
+**Wi-Fi**　館内・客室Wi-Fi無料。
 
 ## 地元メモ・価格の目安
 

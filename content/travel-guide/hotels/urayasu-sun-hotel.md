@@ -63,23 +63,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 無料朝食</div>
-    <div class="hg-fac-body">毎朝6:00〜1Fサニールームにてコンチネンタルブレックファスト（パン・サラダ・コーヒー・ジュース等）を無料提供。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室</div>
-    <div class="hg-fac-body">部屋タイプ・定員は公式サイト要確認。客室内に無料Wi-FiのID・パスワード案内あり。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー</div>
-    <div class="hg-fac-body">2Fに洗濯機2台・乾燥機2台あり（有料・洗剤販売あり）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・その他</div>
-    <div class="hg-fac-body">先着順10台・1泊900円。周辺コンビニあり。デイユースプラン（8,800円〜）・ウィークリープランあり。フロントにて荷物預かり対応。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">無料<br>朝食</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">周辺<br>コンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>10台900円</div></div>
 </div>
+
+**無料朝食**　毎朝6:00〜1Fサニールームでコンチネンタルブレックファスト（パン・サラダ・コーヒー・ジュース等）を無料提供。
+
+**客室**　部屋タイプ・定員は公式サイト要確認。
+
+**コインランドリー**　2Fに洗濯機2台・乾燥機2台（有料・洗剤販売あり）。
+
+**コンビニ**　周辺にコンビニあり。
+
+**駐車場**　先着順10台・1泊900円。
+
+**プラン・荷物預かり**　デイユースプラン（8,800円〜）・ウィークリープランあり。フロントにて荷物預かり対応。
+
+**Wi-Fi**　客室内に無料Wi-FiのID・パスワード案内あり。
 
 ## 地元メモ・価格の目安
 

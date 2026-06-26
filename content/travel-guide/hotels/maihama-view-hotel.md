@@ -65,23 +65,27 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-ripple"></i> 大浴場「スパ ローズ」・宿泊者特典</div>
-    <div class="hg-fac-body">宿泊者特典として利用できる大浴場。オフィシャルホテルで大浴場を持つ数少ない選択肢のひとつ。全ディズニーホテル特典「ハッピーエントリー」（一般入園15分前）付き。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（最大3〜6名対応）</div>
-    <div class="hg-fac-body">客室タイプにより最大3〜6名まで対応。旧東京ベイ舞浜ホテルの施設をHULICがリブランドした施設。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・コインランドリー</div>
-    <div class="hg-fac-body">ブッフェ形式の予定（要最終確認）。コインランドリーは2F新設工事中（調査時点では未稼働）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">立体駐車場（エレベーターなし）。平日チェックアウト後14:00〜24:00の延長は追加1,700円。客室内Wi-Fi無料。バゲッジデリバリー無料（舞浜駅→ホテル方向）。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">大浴場<br>スパローズ</div></div>
+  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">最大<br>3〜6名</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">立体<br>駐車場</div></div>
 </div>
+
+**大浴場「スパ ローズ」**　宿泊者特典として利用できる大浴場。オフィシャルホテルで大浴場を持つ数少ない選択肢のひとつです。
+
+**宿泊者特典**　全ディズニーホテル特典「ハッピーエントリー」（一般入園15分前）付き。
+
+**客室（最大3〜6名対応）**　客室タイプにより最大3〜6名まで対応。旧東京ベイ舞浜ホテルの施設をHULICがリブランドした施設です。
+
+**朝食**　ブッフェ形式の予定（要最終確認）。
+
+**コインランドリー**　2Fに新設工事中（調査時点では未稼働）。
+
+**駐車場**　立体駐車場（エレベーターなし）。平日チェックアウト後14:00〜24:00の延長は追加1,700円。
+
+**荷物預かり**　バゲッジデリバリー無料（舞浜駅→ホテル方向）。
+
+**Wi-Fi**　客室内Wi-Fi無料。
 
 ## 地元メモ・価格の目安
 

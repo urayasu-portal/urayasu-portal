@@ -64,25 +64,27 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室・宿泊者特典</div>
-    <div class="hg-fac-body">本館・アネックス2棟構成。全室洗い場付きバスルーム、6歳まで添い寝無料。グッドネイバーホテル特典「ハッピーエントリー」（一般入園15分前）付き。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食</div>
-    <div class="hg-fac-body">1F「サイゼリヤ」でブッフェ形式の朝食を提供。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー</div>
-    <div class="hg-fac-body">本館・アネックス各3台。客室のTV画面から使用状況と残り時間を確認できる機能付き。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-shopping-bag"></i> コンビニ・駐車場</div>
-    <div class="hg-fac-body">館内2FにNewDays舞浜（6:30〜23:00）直結。駐車場は本館・アネックス共有37台（1泊2,000円）。コインロッカーあり。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">舞浜駅<br>直結</div></div>
+  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>NewDays</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>37台</div></div>
 </div>
 
-Wi-Fiは客室内で利用可。宿泊者専用コインロッカーでチェックイン前後の荷物預かりにも対応しています。
+**客室**　本館・アネックスの2棟構成。全室洗い場付きバスルームで、6歳まで添い寝無料。
+
+**宿泊者特典**　グッドネイバーホテル特典「ハッピーエントリー」（一般入園15分前）付き。
+
+**朝食**　1F「サイゼリヤ」でブッフェ形式の朝食を提供。
+
+**コインランドリー**　本館・アネックス各3台。客室のTV画面から使用状況と残り時間を確認できます。
+
+**コンビニ**　館内2Fに「NewDays舞浜」（6:30〜23:00）直結。
+
+**駐車場**　本館・アネックス共有37台（1泊2,000円）。
+
+**荷物預かり**　宿泊者専用コインロッカーでチェックイン前後の荷物預かりに対応。
+
+**Wi-Fi**　客室内で利用可。
 
 ## 地元メモ・価格の目安
 

@@ -64,23 +64,23 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（312室）</div>
-    <div class="hg-fac-body">全312室。洗い場別バスルームを備えたビジネス・ファミリー向けの広めの客室。小学6年生まで添い寝無料（1室2名まで）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食</div>
-    <div class="hg-fac-body">朝食ビュッフェを提供（詳細・営業時間は公式サイト要確認）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー・駐車場</div>
-    <div class="hg-fac-body">館内コインランドリーあり（有料）。駐車場あり（満車時は近隣駐車場を案内）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wifi"></i> Wi-Fi・その他</div>
-    <div class="hg-fac-body">全館無料Wi-Fi（FREESPOTも利用可）。館内コンビニあり（営業時間要確認）。セルフクローク無料。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全312室<br>洗い場別バス</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>コンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全館<br>無料Wi-Fi</div></div>
 </div>
+
+**客室（312室）**　全312室。洗い場別バスルームを備えたビジネス・ファミリー向けの広めの客室。小学6年生まで添い寝無料（1室2名まで）。
+
+**朝食**　朝食ビュッフェを提供（詳細・営業時間は公式サイト要確認）。
+
+**館内コンビニ**　館内にコンビニあり（営業時間は公式サイト要確認）。
+
+**コインランドリー**　館内コインランドリーあり（有料）。
+
+**駐車場**　駐車場あり（満車時は近隣駐車場を案内）。
+
+**Wi-Fi・その他**　全館無料Wi-Fi（FREESPOTも利用可）。セルフクローク無料。
 
 ## 地元メモ・価格の目安
 

@@ -64,23 +64,23 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-tool-kitchen-2"></i> 客室（全室ミニキッチン付き）</div>
-    <div class="hg-fac-body">全室ミニキッチン完備の長期滞在型設計。客室定員・部屋タイプは公式サイト要確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-shopping-bag"></i> 周辺の買い物</div>
-    <div class="hg-fac-body">徒歩約2分にコンビニあり。スーパーは要確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー・駐車場</div>
-    <div class="hg-fac-body">館内コインランドリーあり（有料）。駐車場は予約制（1泊チェックアウトまで1,630円税込）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wifi"></i> Wi-Fi・朝食</div>
-    <div class="hg-fac-body">全室無料Wi-Fi・有線LAN利用可能。朝食提供状況は公式サイト要確認。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">全室<br>ミニキッチン</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">徒歩2分<br>コンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全室<br>無料Wi-Fi</div></div>
 </div>
+
+**客室（全室ミニキッチン付き）**　全室ミニキッチン完備の長期滞在型設計。客室定員・部屋タイプは公式サイト要確認です。
+
+**周辺の買い物**　徒歩約2分にコンビニあり。スーパーは要確認。
+
+**コインランドリー**　館内コインランドリーあり（有料）。
+
+**駐車場**　予約制（1泊チェックアウトまで1,630円税込）。
+
+**朝食**　提供状況は公式サイト要確認。
+
+**Wi-Fi**　全室無料Wi-Fi・有線LAN利用可。
 
 ## 地元メモ・価格の目安
 

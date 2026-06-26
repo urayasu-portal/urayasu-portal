@@ -63,23 +63,21 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> ビュッフェ朝食</div>
-    <div class="hg-fac-body">毎朝7:00〜9:30にビュッフェ朝食を提供。焼きたてクロワッサンが名物として口コミでも高評価。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室・Wi-Fi</div>
-    <div class="hg-fac-body">コンパクトなビジネスホテルサイズ。客室タイプ・定員は予約サイト要確認。全室無料Wi-Fi対応。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-building-store"></i> 周辺コンビニ</div>
-    <div class="hg-fac-body">ホテル裏手にコンビニあり。深夜・早朝の食料・日用品調達に便利。館内自販機も設置。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場</div>
-    <div class="hg-fac-body">1泊1,100円（事前電話予約制・車高制限1.55m）。第2駐車場は徒歩約3分。台数・満車状況は事前に電話確認を推奨。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">ビュッフェ<br>朝食</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">裏手<br>コンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全室<br>無料Wi-Fi</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>1泊1,100円</div></div>
 </div>
+
+**朝食**　毎朝7:00〜9:30にビュッフェ朝食を提供。焼きたてクロワッサンが名物として口コミでも高評価です。
+
+**客室**　コンパクトなビジネスホテルサイズ。客室タイプ・定員は予約サイト要確認。
+
+**コンビニ**　ホテル裏手にコンビニあり。深夜・早朝の食料・日用品調達に便利。館内自販機も設置。
+
+**駐車場**　1泊1,100円（事前電話予約制・車高制限1.55m）。第2駐車場は徒歩約3分。台数・満車状況は事前に電話確認を推奨。
+
+**Wi-Fi**　全室無料Wi-Fi対応。
 
 ## 地元メモ・価格の目安
 

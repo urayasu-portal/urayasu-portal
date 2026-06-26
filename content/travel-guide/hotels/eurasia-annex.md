@@ -64,23 +64,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-ripple"></i> 本館温泉の割引利用</div>
-    <div class="hg-fac-body">アネックス宿泊者は本館（スパ＆ホテル舞浜ユーラシア）の天然温泉を割引価格で利用可能。2026年4〜7月は半額キャンペーン実施（最新情報は公式要確認）。本館へは無料シャトルで移動。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室</div>
-    <div class="hg-fac-body">南仏・ニースをイメージしたインテリアデザイン。未就学児の添い寝は1室2名まで可能（基本定員は要確認）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・コインランドリー</div>
-    <div class="hg-fac-body">朝食提供あり（詳細は公式要確認）。館内コインランドリーあり。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">42台・完全予約制（車長5m以下・車幅2m以下）。満車時は本館駐車場利用可。館内小型売店あり。Wi-Fi接続可能。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">本館温泉<br>割引利用</div></div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">南仏<br>デザイン客室</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>42台予約制</div></div>
 </div>
+
+**本館温泉の割引利用**　アネックス宿泊者は本館（スパ＆ホテル舞浜ユーラシア）の天然温泉を割引価格で利用できます。2026年4〜7月は半額キャンペーンを実施（最新情報は公式要確認）。本館へは無料シャトルで移動します。
+
+**客室**　南仏・ニースをイメージしたインテリアデザイン。未就学児の添い寝は1室2名まで可能（基本定員は要確認）。
+
+**朝食**　朝食提供あり（詳細は公式サイト要確認）。
+
+**コインランドリー**　館内コインランドリーあり。
+
+**売店**　館内に小型売店あり。
+
+**駐車場**　42台・完全予約制（車長5m以下・車幅2m以下）。満車時は本館駐車場を利用できます。
+
+**Wi-Fi**　Wi-Fi接続可能。
 
 ## 地元メモ・価格の目安
 

@@ -64,25 +64,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-home"></i> 客室設備</div>
-    <div class="hg-fac-body">全室30㎡・ダブルベッド2台で最大4名。キッチン・冷蔵庫・オーブンレンジ・洗濯機・トイレ浴室別完備。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-shopping-cart"></i> 周辺の買い物環境</div>
-    <div class="hg-fac-body">ホテル真向かいに24時間営業スーパー西友。ホテル1階にコンビニあり。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-package"></i> 荷物預かり・駐車場</div>
-    <div class="hg-fac-body">荷物預かりあり（当日預かり・郵送対応）。駐車場は公式サイト要確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wifi"></i> Wi-Fi・その他</div>
-    <div class="hg-fac-body">全室無料Wi-Fi完備。朝食提供なし（全室キッチン自炊スタイル）。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-home" aria-hidden="true"></i><div class="hg-fac-label">全室30㎡<br>最大4名</div></div>
+  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">全室<br>キッチン</div></div>
+  <div class="hg-fac"><i class="ti ti-shopping-cart" aria-hidden="true"></i><div class="hg-fac-label">向かい<br>24h西友</div></div>
+  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全室<br>無料Wi-Fi</div></div>
 </div>
 
-コインランドリーは全室に洗濯機が付いているため不要です。長期滞在・グループ利用にも対応した客室設計になっています。
+**客室設備**　全室30㎡・ダブルベッド2台で最大4名。キッチン・冷蔵庫・オーブンレンジ・洗濯機・トイレ浴室別を完備。長期滞在・グループ利用にも対応した客室設計です。
+
+**周辺の買い物環境**　ホテル真向かいに24時間営業スーパー「西友」。ホテル1階にもコンビニがあります。
+
+**朝食**　提供なし（全室キッチンの自炊スタイル）。
+
+**コインランドリー**　全室に洗濯機が付いているため、館内コインランドリーはありません。
+
+**荷物預かり**　当日預かり・郵送に対応。
+
+**駐車場**　公式サイト要確認。
+
+**Wi-Fi**　全室無料Wi-Fi完備。
 
 ## 地元メモ・価格の目安
 

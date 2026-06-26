@@ -64,23 +64,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（175室）</div>
-    <div class="hg-fac-body">ビジネスホテルとして清潔感のある客室175室。コンファレンスセンター（会議施設）を併設しており出張利用にも対応。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食</div>
-    <div class="hg-fac-body">1Fレストラン「旬彩ダイニング四季菜」にて和洋ビュッフェ（7:00〜9:30）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー</div>
-    <div class="hg-fac-body">館内コインランドリーあり（有料200円/回・24時間利用可）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">駐車場あり（詳細・料金は公式要問い合わせ）。館内は自販機のみ（パン・カップ麺等）。全客室Wi-Fi・有線LAN利用可。フロントにて荷物預かり対応。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全175室<br>会議施設併設</div></div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">和洋<br>朝食ビュッフェ</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">24h<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>あり</div></div>
 </div>
+
+**客室（175室）**　ビジネスホテルとして清潔感のある客室175室。コンファレンスセンター（会議施設）を併設し、出張利用にも対応します。
+
+**朝食**　1Fレストラン「旬彩ダイニング四季菜」で和洋ビュッフェ（7:00〜9:30）。
+
+**コインランドリー**　館内コインランドリーあり（有料200円/回・24時間利用可）。
+
+**コンビニ**　館内は自販機のみ（パン・カップ麺等）。
+
+**駐車場**　駐車場あり（詳細・料金は公式要問い合わせ）。
+
+**荷物預かり**　フロントにて荷物預かり対応。
+
+**Wi-Fi**　全客室Wi-Fi・有線LAN利用可。
 
 ## 地元メモ・価格の目安
 

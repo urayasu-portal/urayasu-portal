@@ -65,23 +65,27 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室・宿泊者特典</div>
-    <div class="hg-fac-body">豊富なコンセプトルーム展開。全ディズニーホテル宿泊者特典「ハッピーエントリー」（一般入園15分前）付き。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・館内ショップ</div>
-    <div class="hg-fac-body">レストランでビュッフェ形式（詳細は公式要確認）。「ファーストショップ」は複数棟に設置（7:00〜23:00）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー・荷物</div>
-    <div class="hg-fac-body">サウスサイドアヴェニュー1Fにコインランドリーあり（洗濯500円・乾燥200円/15分、洗剤・柔軟剤自動投入）。ベルデスクで荷物預かり、バゲッジデリバリー対応。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">立体駐車場（1F 高さ2.6m、2〜3F 2.1m）。1泊目3,000円、2泊目以降1,200円ずつ加算。客室Wi-Fiはプレジャールーム・プレミアムが無料、他は有料レンタル（1泊500円）。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>ショップ</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">立体<br>駐車場</div></div>
 </div>
+
+**客室**　豊富なコンセプトルームを展開。
+
+**宿泊者特典**　ディズニーホテル宿泊者特典「ハッピーエントリー」（一般入園15分前）付き。
+
+**朝食**　レストランでビュッフェ形式（詳細は公式要確認）。
+
+**館内ショップ**　「ファーストショップ」を複数棟に設置（7:00〜23:00）。
+
+**コインランドリー**　サウスサイドアヴェニュー1Fにあり（洗濯500円・乾燥200円/15分、洗剤・柔軟剤自動投入）。
+
+**荷物預かり**　ベルデスクで荷物預かり、バゲッジデリバリーに対応。
+
+**駐車場**　立体駐車場（1F 高さ2.6m、2〜3F 2.1m）。1泊目3,000円、2泊目以降1,200円ずつ加算。
+
+**Wi-Fi**　プレジャールーム・プレミアムは無料、その他は有料レンタル（1泊500円）。
 
 ## 地元メモ・価格の目安
 

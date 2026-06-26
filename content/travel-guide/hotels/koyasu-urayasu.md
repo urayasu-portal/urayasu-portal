@@ -64,23 +64,21 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-ripple"></i> 大浴場・温泉</div>
-    <div class="hg-fac-body">「温泉宿」の表記あり。温泉・大浴場の設備が存在する可能性あり（要電話確認）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室</div>
-    <div class="hg-fac-body">詳細は要電話確認。小規模旅館タイプとみられる。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・食事</div>
-    <div class="hg-fac-body">朝食・夕食の有無・料金は要電話確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wifi"></i> 駐車場・設備</div>
-    <div class="hg-fac-body">駐車場なし（最寄り有料駐車場利用）。Wi-Fi・コインランドリー等の設備は要電話確認。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">温泉宿<br>表記あり</div></div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">小規模<br>旅館タイプ</div></div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">朝食<br>要確認</div></div>
+  <div class="hg-fac"><i class="ti ti-parking-off" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>なし</div></div>
 </div>
+
+**大浴場・温泉**　「温泉宿」の表記があり、温泉・大浴場の設備が存在する可能性があります（要電話確認）。
+
+**客室**　詳細は要電話確認。小規模旅館タイプとみられます。
+
+**朝食・食事**　朝食・夕食の有無・料金は要電話確認。
+
+**駐車場**　駐車場なし（最寄りの有料駐車場を利用）。
+
+**Wi-Fi・コインランドリー**　設備の有無は要電話確認。
 
 ## 地元メモ・価格の目安
 

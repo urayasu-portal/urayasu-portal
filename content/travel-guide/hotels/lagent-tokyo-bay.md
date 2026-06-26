@@ -64,23 +64,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（全室ハリウッドツイン・禁煙）</div>
-    <div class="hg-fac-body">最大6名対応の大部屋あり、未就学児添い寝無料。全室ハリウッドツイン・全室禁煙（1Fに喫煙コーナー）。全室に加湿機能付き空気清浄機・シューズドライヤー完備。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・ラウンジ</div>
-    <div class="hg-fac-body">朝食BOX形式（お弁当）。ラウンジでドリンクバー無料（14:00〜23時または24時・要最終確認）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー・コンビニ</div>
-    <div class="hg-fac-body">館内に洗濯乾燥機4台（有料）。ホテル隣接に24時間コンビニあり。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">190台（先着順）。料金は1泊1,000〜1,650円（要最終確認）。全客室で無料Wi-Fi。荷物預かりあり。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全室ツイン<br>最大6名</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">隣接<br>24hコンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">洗濯乾燥機<br>4台</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>190台</div></div>
 </div>
+
+**客室（全室ハリウッドツイン・禁煙）**　最大6名対応の大部屋あり、未就学児添い寝無料。全室ハリウッドツイン・全室禁煙（1Fに喫煙コーナー）。全室に加湿機能付き空気清浄機・シューズドライヤーを完備。
+
+**朝食・ラウンジ**　朝食はBOX形式（お弁当）。ラウンジでドリンクバー無料（14:00〜23時または24時・要最終確認）。
+
+**コインランドリー**　館内に洗濯乾燥機4台（有料）。
+
+**コンビニ**　ホテル隣接に24時間コンビニあり。
+
+**駐車場**　190台（先着順）。料金は1泊1,000〜1,650円（要最終確認）。
+
+**荷物預かり**　荷物預かりあり。
+
+**Wi-Fi**　全客室で無料Wi-Fi。
 
 ## 地元メモ・価格の目安
 

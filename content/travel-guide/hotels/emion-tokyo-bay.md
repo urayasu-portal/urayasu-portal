@@ -65,23 +65,27 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-ripple"></i> 天然温泉（最大の特徴）</div>
-    <div class="hg-fac-body">TDR提携ホテルで唯一の天然温泉（ナトリウム・塩化物強塩泉）。大浴場・サウナ・露天風呂（エミオンタワー館のみ）。5:30〜10:00／17:00〜25:00。有料施設。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（全584室）</div>
-    <div class="hg-fac-body">和室を含む約20種類。全室バス・トイレ別・洗い場付き。最大6名ファミリールーム（56㎡）、和洋室（5名対応）、コネクティングルーム（最大8名）。未就学児1名添い寝無料。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・コインランドリー</div>
-    <div class="hg-fac-body">和洋中ビュッフェ（地元特産品も）。コインランドリーあり（有料）。無料レンタサイクルあり（事前予約制）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">平面駐車場338台・1泊2,000円（2026年10月以降料金改定予定）。高さ制限2.5m。全室Wi-Fi利用可。館内ファミリーマートあり（24時間外）。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">天然温泉<br>大浴場</div></div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全584室<br>最大8名</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>338台</div></div>
 </div>
+
+**天然温泉（最大の特徴）**　TDR提携ホテルで唯一の天然温泉（ナトリウム・塩化物強塩泉）。大浴場・サウナ・露天風呂（エミオンタワー館のみ）。5:30〜10:00／17:00〜25:00。有料施設です。
+
+**客室（全584室）**　和室を含む約20種類。全室バス・トイレ別・洗い場付き。最大6名のファミリールーム（56㎡）、和洋室（5名対応）、コネクティングルーム（最大8名）。未就学児1名添い寝無料。
+
+**朝食**　和洋中ビュッフェ（地元特産品も並びます）。
+
+**コインランドリー**　館内コインランドリーあり（有料）。
+
+**レンタサイクル**　無料レンタサイクルあり（事前予約制）。
+
+**コンビニ**　館内にファミリーマートあり（24時間営業ではない点に注意）。
+
+**駐車場**　平面駐車場338台・1泊2,000円（2026年10月以降料金改定予定）。高さ制限2.5m。
+
+**Wi-Fi**　全室Wi-Fi利用可。
 
 ## 地元メモ・価格の目安
 

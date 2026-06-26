@@ -64,23 +64,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（全90室・全室フットマッサージ）</div>
-    <div class="hg-fac-body">全90室。ツイン・トリプル・ファミリールームを展開。全室にフットマッサージ機を完備。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bread"></i> 朝食</div>
-    <div class="hg-fac-body">毎朝ホテルで焼き上げる焼き立てパンの朝食が名物。レストランは朝食のみの提供。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-shopping-bag"></i> コンビニ・コインランドリー</div>
-    <div class="hg-fac-body">館内に売店あり（品数限定）。外部コンビニは徒歩約5分圏内。コインランドリーの詳細は公式サイト要確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">40台（2,000円/泊・完全予約制）。コインロッカー無料（チェックイン前後の荷物預かり対応）。ネット接続可能。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全90室<br>フットマッサージ</div></div>
+  <div class="hg-fac"><i class="ti ti-bread" aria-hidden="true"></i><div class="hg-fac-label">焼き立て<br>パン朝食</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>40台</div></div>
 </div>
+
+**客室（全90室・全室フットマッサージ）**　全90室。ツイン・トリプル・ファミリールームを展開。全室にフットマッサージ機を完備。
+
+**朝食**　毎朝ホテルで焼き上げる焼き立てパンの朝食が名物。レストランは朝食のみの提供です。
+
+**コンビニ・売店**　館内に売店あり（品数限定）。外部コンビニは徒歩約5分圏内。
+
+**コインランドリー**　詳細は公式サイト要確認。
+
+**駐車場**　40台（2,000円/泊・完全予約制）。
+
+**荷物預かり**　コインロッカー無料（チェックイン前後の荷物預かりに対応）。
+
+**Wi-Fi**　ネット接続可能。
 
 ## 地元メモ・価格の目安
 

@@ -67,23 +67,27 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-ripple"></i> 展望大浴場（最上階・宿泊者無料）</div>
-    <div class="hg-fac-body">最上階に海を一望できる展望大浴場。宿泊者無料。利用時間は18:00〜翌9:00（一部時期に終夜営業あり）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（標準30㎡以上・最大6名）</div>
-    <div class="hg-fac-body">標準客室は30㎡以上・バス・トイレ別（洗い場付き）にリニューアル。最大6名対応の大部屋あり。南の島リゾート風のトロピカルな内装。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・館内コンビニ</div>
-    <div class="hg-fac-body">和洋ビュッフェ（キッズメニュー・専用コーナーあり。朝食料金は2026年9月11日宿泊分より改定予定）。館内に24時間コンビニあり。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">1泊2,000円前後（車高2.3m・車幅1.8m・車長5m制限）。コインランドリーあり（有料）。バゲッジデリバリーサービスあり。全館無料Wi-Fi。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">最上階<br>展望大浴場</div></div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">30㎡以上<br>最大6名</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>24hコンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>1泊2,000円</div></div>
 </div>
+
+**展望大浴場（最上階・宿泊者無料）**　最上階に海を一望できる展望大浴場。宿泊者無料。利用時間は18:00〜翌9:00（一部時期に終夜営業あり）。
+
+**客室（標準30㎡以上・最大6名）**　標準客室は30㎡以上・バス・トイレ別（洗い場付き）にリニューアル。最大6名対応の大部屋あり。南の島リゾート風のトロピカルな内装です。
+
+**朝食**　和洋ビュッフェ（キッズメニュー・専用コーナーあり。朝食料金は2026年9月11日宿泊分より改定予定）。
+
+**館内コンビニ**　館内に24時間コンビニあり。
+
+**コインランドリー**　あり（有料）。
+
+**駐車場**　1泊2,000円前後（車高2.3m・車幅1.8m・車長5m制限）。
+
+**荷物預かり**　バゲッジデリバリーサービスあり。
+
+**Wi-Fi**　全館無料Wi-Fi。
 
 ## 地元メモ・価格の目安
 

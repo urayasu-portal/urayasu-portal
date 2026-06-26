@@ -64,23 +64,23 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（31室・和室あり）</div>
-    <div class="hg-fac-body">全31室の小規模ホテル。和室あり（4名利用可）。ユニットバス（トイレ・浴室一体型）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食</div>
-    <div class="hg-fac-body">詳細は公式・電話にて要確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-shopping-bag"></i> コンビニ・その他</div>
-    <div class="hg-fac-body">ホテル下にコンビニあり。1階にビール自動販売機あり。カード利用不可（現金のみ）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">8台無料（普通車のみ・先着順・予約不可）。駐車場が駅への抜け道になっているため出入りに注意。館内無料Wi-Fi利用可。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全31室<br>和室あり</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">ホテル下<br>コンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-cash" aria-hidden="true"></i><div class="hg-fac-label">支払い<br>現金のみ</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>8台無料</div></div>
 </div>
+
+**客室（31室・和室あり）**　全31室の小規模ホテル。和室あり（4名利用可）。ユニットバス（トイレ・浴室一体型）。
+
+**朝食**　詳細は公式・電話にて要確認。
+
+**コンビニ・その他**　ホテル下にコンビニあり。1階にビール自動販売機あり。
+
+**支払い**　カード利用不可（現金のみ）。
+
+**駐車場**　8台無料（普通車のみ・先着順・予約不可）。駐車場が駅への抜け道になっているため出入りに注意。
+
+**Wi-Fi**　館内無料Wi-Fi利用可。
 
 ## 地元メモ・価格の目安
 

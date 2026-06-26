@@ -64,23 +64,23 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（全室特別設備完備）</div>
-    <div class="hg-fac-body">全室に靴乾燥機・フットマッサージ器・洗い場付きバスルーム・フルーツウォーターサーバー（無料）を標準装備。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食</div>
-    <div class="hg-fac-body">和洋ビュッフェ（30種類以上）。詳細・営業時間は公式サイト要確認。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー</div>
-    <div class="hg-fac-body">館内コインランドリーあり（有料）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">40台・先着順・予約不可・1泊1,000円。ホテル内コンビニなし（チェックイン時に周辺マップ配布）。Wi-Fiは公式サイト要確認。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">全室<br>洗い場付バス</div></div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">和洋<br>30種朝食</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>40台</div></div>
 </div>
+
+**客室（全室特別設備完備）**　全室に靴乾燥機・フットマッサージ器・洗い場付きバスルーム・フルーツウォーターサーバー（無料）を標準装備。
+
+**朝食**　和洋ビュッフェ（30種類以上）。詳細・営業時間は公式サイト要確認。
+
+**コインランドリー**　館内コインランドリーあり（有料）。
+
+**コンビニ**　館内コンビニなし（チェックイン時に周辺マップを配布）。
+
+**駐車場**　40台・先着順・予約不可・1泊1,000円。
+
+**Wi-Fi**　公式サイト要確認。
 
 ## 地元メモ・価格の目安
 

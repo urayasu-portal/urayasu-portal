@@ -63,23 +63,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-bed"></i> 客室（638室・23タイプ）</div>
-    <div class="hg-fac-body">スタンダードタイプで最大3名（ソファベッド利用）対応。23種類の客室タイプ。アメニティはOSAJI。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・フリースペース</div>
-    <div class="hg-fac-body">レストランでバイキング形式の朝食。「2nd Room」（Food&Drink Station）のフリースペースあり。夕食は食事処にて対応。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー・コンビニ</div>
-    <div class="hg-fac-body">館内コインランドリーあり。館内にローソンあり。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">339台（宿泊者のみ12時間毎500円）。館内ロッカー（無料）あり。全客室・共用エリアで無料Wi-Fi。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全638室<br>23タイプ</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>ローソン</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>339台</div></div>
 </div>
+
+**客室（638室・23タイプ）**　スタンダードタイプで最大3名（ソファベッド利用）対応。23種類の客室タイプ。アメニティはOSAJI。
+
+**朝食・フリースペース**　レストランでバイキング形式の朝食。「2nd Room」（Food&Drink Station）のフリースペースあり。夕食は食事処で対応。
+
+**コインランドリー**　館内コインランドリーあり。
+
+**コンビニ**　館内にローソンあり。
+
+**ロッカー**　館内ロッカー（無料）あり。
+
+**駐車場**　339台（宿泊者のみ12時間毎500円）。
+
+**Wi-Fi**　全客室・共用エリアで無料Wi-Fi。
 
 ## 地元メモ・価格の目安
 

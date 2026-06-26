@@ -65,23 +65,25 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-robot"></i> 客室（ロボホン全室設置・全100室）</div>
-    <div class="hg-fac-body">全室にコミュニケーションロボット「ロボホン」設置。全室バス・トイレ別で広く深い浴槽あり。ツインタイプ中心。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食・宿泊者特典</div>
-    <div class="hg-fac-body">レストラン「ジュラシックダイナー」で朝食提供（口コミ評価高め）。グッドネイバーホテル特典「ハッピーエントリー」（一般入園15分前）付き。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-shopping-bag"></i> コンビニ・コインランドリー</div>
-    <div class="hg-fac-body">館内コンビニなし（1Fに電子レンジ・製氷機・自販機のみ）。最寄りコンビニは徒歩約10分。ホテル隣接にドラッグストア「ウェルシア」あり（深夜まで営業）。館内コインランドリーなし（徒歩2分の「雪だるま」が最寄り）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">事前予約15台・当日受付14台。1泊2,000円（平日）・2,500円（土日祝）。客室・ロビーWi-Fi無料。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-robot" aria-hidden="true"></i><div class="hg-fac-label">全室<br>ロボホン</div></div>
+  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">バス・トイレ<br>別</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>事前予約可</div></div>
 </div>
+
+**客室（ロボホン全室設置・全100室）**　全室にコミュニケーションロボット「ロボホン」を設置。全室バス・トイレ別で、広く深い浴槽があります。ツインタイプ中心です。
+
+**朝食**　レストラン「ジュラシックダイナー」で朝食を提供（口コミ評価高め）。
+
+**宿泊者特典**　グッドネイバーホテル特典「ハッピーエントリー」（一般入園15分前）付き。
+
+**コンビニ**　館内コンビニなし（1Fに電子レンジ・製氷機・自販機のみ）。最寄りコンビニは徒歩約10分。ホテル隣接にドラッグストア「ウェルシア」あり（深夜まで営業）。
+
+**コインランドリー**　館内コインランドリーなし（徒歩2分の「雪だるま」が最寄り）。
+
+**駐車場**　事前予約15台・当日受付14台。1泊2,000円（平日）・2,500円（土日祝）。
+
+**Wi-Fi**　客室・ロビーWi-Fi無料。
 
 ## 地元メモ・価格の目安
 

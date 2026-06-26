@@ -64,23 +64,23 @@ noDate: true
 ## 設備・サービス
 
 <div class="hg-facilities">
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-ripple"></i> 天然温泉「スパ」（宿泊者・日帰り共通）</div>
-    <div class="hg-fac-body">舞浜リゾートエリア唯一の天然温泉。男女別浴場で露天風呂・寝湯・洞窟風呂・サウナ・岩盤浴・足湯完備。日帰り利用も可能。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-coffee"></i> 朝食</div>
-    <div class="hg-fac-body">3Fレストラン「オアシス」にて朝食ビュッフェ（約2,000円）。事前購入で割引になるプランあり。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-wash-machine"></i> コインランドリー・コンビニ</div>
-    <div class="hg-fac-body">館内コインランドリーあり（有料）。館内コンビニなし（最寄りはデイリーヤマザキ浦安千鳥店・徒歩約10分）。</div>
-  </div>
-  <div class="hg-fac">
-    <div class="hg-fac-title"><i class="ti ti-parking"></i> 駐車場・Wi-Fi</div>
-    <div class="hg-fac-body">約200〜210台。宿泊1泊2,000円（チェックイン日11:00〜チェックアウト日11:00）。スパのみ利用は6時間無料。客室・館内Wi-Fi利用可。</div>
-  </div>
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">天然温泉<br>露天・サウナ</div></div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">朝食<br>ビュッフェ</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>約200台</div></div>
 </div>
+
+**天然温泉「スパ」（宿泊者・日帰り共通）**　舞浜リゾートエリア唯一の天然温泉。男女別浴場で露天風呂・寝湯・洞窟風呂・サウナ・岩盤浴・足湯を完備。日帰り利用も可能です。
+
+**朝食**　3Fレストラン「オアシス」で朝食ビュッフェ（約2,000円）。事前購入で割引になるプランあり。
+
+**コインランドリー**　館内コインランドリーあり（有料）。
+
+**コンビニ**　館内コンビニなし（最寄りはデイリーヤマザキ浦安千鳥店・徒歩約10分）。
+
+**駐車場**　約200〜210台。宿泊1泊2,000円（チェックイン日11:00〜チェックアウト日11:00）。スパのみ利用は6時間無料。
+
+**Wi-Fi**　客室・館内Wi-Fi利用可。
 
 ## 地元メモ・価格の目安
 
