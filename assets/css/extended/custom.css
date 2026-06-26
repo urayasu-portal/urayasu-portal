@@ -2096,9 +2096,11 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 .tg-pyr-price { margin-left: auto; font-size: 0.78rem; font-weight: 600; padding-left: 10px; }
 
 /* ---------- 施設一覧テーブル ---------- */
-.tg-hotel-table-wrap { overflow-x: auto; margin-bottom: 28px; }
+.tg-hotel-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 28px; }
 .tg-hotel-table {
   width: 100%;
+  /* モバイルで列が潰れず横スクロールできるよう最小幅を確保（5列：施設名/エリア/区分/価格/特徴） */
+  min-width: 640px;
   border-collapse: collapse;
   font-size: 0.85rem;
   background: var(--up-card);
