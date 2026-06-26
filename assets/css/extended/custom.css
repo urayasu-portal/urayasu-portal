@@ -3560,9 +3560,10 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .post-content .hg-memo p { font-size: 12px; color: #7A4334; line-height: 1.8; margin: 0; }
 
 /* 地図カード（地図・アクセス） */
-.post-content .hg-map { border: 0.5px solid #F6D8CD; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px -12px rgba(224,85,53,.35); margin: 0 0 24px; }
+.post-content .hg-map { position: relative; isolation: isolate; border: 0.5px solid #F6D8CD; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px -12px rgba(224,85,53,.35); margin: 0 0 24px; }
 .post-content .hg-map-embed { position: relative; aspect-ratio: 16 / 9; background: #e9eef0; }
-.post-content .hg-map-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.post-content .hg-map-embed iframe, .post-content .hg-map-embed > div { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.post-content .hg-map-embed .leaflet-container { border-radius: 0; font-family: inherit; }
 .post-content .hg-map-head { display: flex; align-items: center; gap: 9px; padding: 11px 14px; border-bottom: 0.5px solid #F3E2DB; }
 .post-content .hg-map-head > i { font-size: 18px; color: var(--accent); }
 .post-content .hg-map-name { font-size: 12.5px; font-weight: 700; color: var(--up-text); line-height: 1.3; }
