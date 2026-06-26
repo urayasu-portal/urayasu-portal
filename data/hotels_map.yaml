@@ -217,8 +217,8 @@ hotels:
     name: "変なホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見5-3-23"
   - slug: "four-stories-hotel"
-    lat: 35.6507
-    lng: 139.8925
+    lat: 35.650735
+    lng: 139.891043
     price_min: 10000
     flags: []
     name: "フォーストーリーズホテル舞浜 東京ベイ"
@@ -238,8 +238,8 @@ hotels:
     name: "こやす"
     address: "〒279-0042 千葉県浦安市東野1-11-28"
   - slug: "viewfort-urayasu"
-    lat: 35.6650
-    lng: 139.8925
+    lat: 35.66471
+    lng: 139.892687
     price_min: 9000
     flags: [station]
     name: "浦安ビューフォートホテル"
@@ -259,8 +259,8 @@ hotels:
     name: "BAYHOTEL浦安駅前"
     address: "〒279-0002 千葉県浦安市北栄1-15-28"
   - slug: "urayasu-sun-hotel"
-    lat: 35.6662
-    lng: 139.8910
+    lat: 35.665574
+    lng: 139.890164
     price_min: 8000
     flags: [station]
     name: "浦安サンホテル"
