@@ -1,12 +1,11 @@
-# 比較マップ用追加データ（hotels.yaml を上書きせず、slug でジョイン）
-# 座標出典: OpenStreetMap（Nominatim / Overpass API の実測ノード）。
-#   ※印 = OSM未登録のため、地名（丁目）アンカー・番地から近似推計した座標。
+# === 自動生成ファイル / DO NOT EDIT ===
+# マスター: hotel-database-full.csv
+# 生成:     scripts/build-hotels-map.ps1
+# 座標・フラグ・最低価格を変えるときはCSVを編集して本スクリプトで再生成すること。
 # flags: shuttle=TDRシャトル, bath=大浴場, convenience=館内コンビニ,
-#         limousine=空港リムジン停留所ホテル前, station=駅直結/徒歩1分, kitchen=ミニキッチン付き
-# price_min: ソート用の数値（円）。0 = 要確認・非表示。
+#         limousine=空港リムジン, station=駅直結/徒歩1分, kitchen=ミニキッチン
 
 hotels:
-  # ── エリア A: 舞浜エリア ─────────────────────────────
   - slug: "tdl-hotel"
     lat: 35.6368
     lng: 139.8783
@@ -38,7 +37,7 @@ hotels:
     price_min: 20000
     flags: [shuttle, limousine]
   - slug: "celebration-discover"
-    lat: 35.6384    # ※ウィッシュ隣接（同一敷地）
+    lat: 35.6384
     lng: 139.9308
     price_min: 20000
     flags: [shuttle, limousine]
@@ -77,7 +76,6 @@ hotels:
     lng: 139.8739
     price_min: 12000
     flags: [shuttle, bath, limousine]
-  # ── エリア B: 千鳥エリア ─────────────────────────────
   - slug: "royal-park-maihama"
     lat: 35.6267
     lng: 139.8972
@@ -98,7 +96,6 @@ hotels:
     lng: 139.9028
     price_min: 8000
     flags: [shuttle, bath]
-  # ── エリア C: 新浦安エリア ───────────────────────────
   - slug: "hyatt-regency-tokyo-bay"
     lat: 35.6377
     lng: 139.9259
@@ -150,7 +147,7 @@ hotels:
     price_min: 7500
     flags: []
   - slug: "flexstay-shin-urayasu"
-    lat: 35.6504    # ※入船4丁目（OSM地名アンカー）
+    lat: 35.6504
     lng: 139.9205
     price_min: 7800
     flags: [shuttle, kitchen]
@@ -160,40 +157,37 @@ hotels:
     price_min: 8000
     flags: [shuttle]
   - slug: "four-stories-hotel"
-    lat: 35.6328    # ※鉄鋼通り3丁目・マイステイズ舞浜至近（OSM未登録）
+    lat: 35.6328
     lng: 139.8932
     price_min: 10000
     flags: []
   - slug: "hiyori-hotel-maihama"
-    lat: 35.6332    # ※鉄鋼通り3丁目（OSM未登録）
+    lat: 35.6332
     lng: 139.8928
     price_min: 10000
     flags: [shuttle]
   - slug: "koyasu-urayasu"
-    lat: 35.6455    # ※新浦安エリア・住所要確認（OSM未登録）
+    lat: 35.6455
     lng: 139.9150
     price_min: 0
     flags: [bath]
-  # ── エリア D: 浦安駅エリア ───────────────────────────
-  # 浦安駅（東京メトロ東西線）= 35.6655, 139.8928。各ホテルはOSM未登録のため
-  # 住所（北栄1丁目／当代島1丁目）と駅からの徒歩位置で配置。
   - slug: "viewfort-urayasu"
-    lat: 35.6650    # ※北栄1-13・浦安駅徒歩1分（駅南西）
+    lat: 35.6650
     lng: 139.8919
     price_min: 9000
     flags: [station]
   - slug: "hotel-daigo-urayasu"
-    lat: 35.6667    # ※当代島1-3・浦安駅徒歩約3分（駅北）
+    lat: 35.6667
     lng: 139.8914
     price_min: 8000
     flags: [station]
   - slug: "bayhotel-urayasu"
-    lat: 35.6652    # ※北栄1-12・浦安駅前
+    lat: 35.6652
     lng: 139.8924
     price_min: 14000
     flags: [station, kitchen]
   - slug: "urayasu-sun-hotel"
-    lat: 35.6660    # ※当代島1-1・浦安駅徒歩約5分（駅北）
+    lat: 35.6660
     lng: 139.8917
     price_min: 8000
     flags: [station]
