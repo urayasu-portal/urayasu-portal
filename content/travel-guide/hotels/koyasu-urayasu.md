@@ -61,6 +61,36 @@ noDate: true
 
 新浦安駅から徒歩約16分、浦安駅（東西線）からは約22分と、主要駅からはやや距離があります。路線バスの活用が現実的です。
 
+## 地図・アクセス
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<div class="hg-map">
+<div class="hg-map-head"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="hg-map-name">こやす</div><div class="hg-map-addr">〒279-0042 千葉県浦安市東野1-11-28</div></div></div>
+<div class="hg-map-embed"><div id="hotel-map"></div></div>
+<div class="hg-map-actions">
+<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&query=%E3%81%93%E3%82%84%E3%81%99%20%E3%80%92279-0042%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E6%9D%B1%E9%87%8E1-11-28" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>Googleマップで開く</a>
+<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&destination=%E3%81%93%E3%82%84%E3%81%99%20%E3%80%92279-0042%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E6%9D%B1%E9%87%8E1-11-28" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>経路を調べる</a>
+</div></div>
+<script>
+(function(){
+  var LAT = 35.6456229, LNG = 139.8964600;
+  var map = L.map('hotel-map', { scrollWheelZoom: false, zoomControl: true }).setView([LAT, LNG], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  }).addTo(map);
+  var pin = L.divIcon({
+    html: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 52" width="36" height="52"><path fill="#E05535" stroke="#fff" stroke-width="2.5" d="M18 1C9 1 1.5 8.5 1.5 17.5c0 6.5 3.7 12.2 9.1 15.2L18 51l7.4-18.3c5.4-3 9.1-8.7 9.1-15.2C34.5 8.5 27 1 18 1z"/><circle fill="#fff" cx="18" cy="17.5" r="7"/></svg>',
+    className: '',
+    iconSize: [36, 52], iconAnchor: [18, 52], popupAnchor: [0, -54]
+  });
+  L.marker([LAT, LNG], { icon: pin }).addTo(map)
+    .bindPopup('<strong style="font-size:13px">' + 'こやす' + '</strong><br><span style="font-size:11px;color:#666">' + '〒279-0042 千葉県浦安市東野1-11-28' + '</span>')
+    .openPopup();
+})();
+</script>
+
 ## 設備・サービス
 
 <div class="hg-facilities">

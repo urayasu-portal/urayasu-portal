@@ -61,6 +61,36 @@ noDate: true
 
 新浦安エリアのホテルの中では「明海五丁目」バス停（徒歩1分）を共有するハイアットリージェンシー東京ベイ・三井ガーデンホテルプラナと同じ立地エリアです。空港リムジンバスはベイサイドホテルエリアバス停が最寄りとなります。
 
+## 地図・アクセス
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<div class="hg-map">
+<div class="hg-map-head"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="hg-map-name">コンフォートスイーツ東京ベイ</div><div class="hg-map-addr">〒279-0014 千葉県浦安市明海5-8-15</div></div></div>
+<div class="hg-map-embed"><div id="hotel-map"></div></div>
+<div class="hg-map-actions">
+<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%88%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84%E6%9D%B1%E4%BA%AC%E3%83%99%E3%82%A4%20%E3%80%92279-0014%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E6%98%8E%E6%B5%B75-8-15" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>Googleマップで開く</a>
+<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&destination=%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%88%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84%E6%9D%B1%E4%BA%AC%E3%83%99%E3%82%A4%20%E3%80%92279-0014%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E6%98%8E%E6%B5%B75-8-15" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>経路を調べる</a>
+</div></div>
+<script>
+(function(){
+  var LAT = 35.6385421, LNG = 139.9273014;
+  var map = L.map('hotel-map', { scrollWheelZoom: false, zoomControl: true }).setView([LAT, LNG], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  }).addTo(map);
+  var pin = L.divIcon({
+    html: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 52" width="36" height="52"><path fill="#E05535" stroke="#fff" stroke-width="2.5" d="M18 1C9 1 1.5 8.5 1.5 17.5c0 6.5 3.7 12.2 9.1 15.2L18 51l7.4-18.3c5.4-3 9.1-8.7 9.1-15.2C34.5 8.5 27 1 18 1z"/><circle fill="#fff" cx="18" cy="17.5" r="7"/></svg>',
+    className: '',
+    iconSize: [36, 52], iconAnchor: [18, 52], popupAnchor: [0, -54]
+  });
+  L.marker([LAT, LNG], { icon: pin }).addTo(map)
+    .bindPopup('<strong style="font-size:13px">' + 'コンフォートスイーツ東京ベイ' + '</strong><br><span style="font-size:11px;color:#666">' + '〒279-0014 千葉県浦安市明海5-8-15' + '</span>')
+    .openPopup();
+})();
+</script>
+
 ## 設備・サービス
 
 <div class="hg-facilities">

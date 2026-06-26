@@ -175,23 +175,25 @@ hotels:
     price_min: 0
     flags: [bath]
   # ── エリア D: 浦安駅エリア ───────────────────────────
+  # 浦安駅（東京メトロ東西線）= 35.6655, 139.8928。各ホテルはOSM未登録のため
+  # 住所（北栄1丁目／当代島1丁目）と駅からの徒歩位置で配置。
   - slug: "viewfort-urayasu"
-    lat: 35.6558
-    lng: 139.8926
+    lat: 35.6650    # ※北栄1-13・浦安駅徒歩1分（駅南西）
+    lng: 139.8919
     price_min: 9000
     flags: [station]
   - slug: "hotel-daigo-urayasu"
-    lat: 35.6554    # ※当代島1丁目・浦安駅前（OSM未登録）
-    lng: 139.8919
+    lat: 35.6667    # ※当代島1-3・浦安駅徒歩約3分（駅北）
+    lng: 139.8914
     price_min: 8000
     flags: [station]
   - slug: "bayhotel-urayasu"
-    lat: 35.6561    # ※北栄1丁目・浦安駅前（OSM未登録）
-    lng: 139.8917
+    lat: 35.6652    # ※北栄1-12・浦安駅前
+    lng: 139.8924
     price_min: 14000
     flags: [station, kitchen]
   - slug: "urayasu-sun-hotel"
-    lat: 35.6554
-    lng: 139.8913
+    lat: 35.6660    # ※当代島1-1・浦安駅徒歩約5分（駅北）
+    lng: 139.8917
     price_min: 8000
     flags: [station]

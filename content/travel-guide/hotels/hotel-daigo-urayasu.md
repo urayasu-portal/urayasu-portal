@@ -61,6 +61,36 @@ noDate: true
 
 浦安駅周辺の飲食店にも近く、ホテル下にコンビニもあります。東西線快速停車駅徒歩3分という立地は都内観光との組み合わせにも便利です。
 
+## 地図・アクセス
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<div class="hg-map">
+<div class="hg-map-head"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="hg-map-name">ホテル醍醐</div><div class="hg-map-addr">〒279-0002 千葉県浦安市北栄1-11-1</div></div></div>
+<div class="hg-map-embed"><div id="hotel-map"></div></div>
+<div class="hg-map-actions">
+<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E9%86%8D%E9%86%90%20%E3%80%92279-0002%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E5%8C%97%E6%A0%841-11-1" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>Googleマップで開く</a>
+<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&destination=%E3%83%9B%E3%83%86%E3%83%AB%E9%86%8D%E9%86%90%20%E3%80%92279-0002%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E5%8C%97%E6%A0%841-11-1" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>経路を調べる</a>
+</div></div>
+<script>
+(function(){
+  var LAT = 35.6658954, LNG = 139.8949774;
+  var map = L.map('hotel-map', { scrollWheelZoom: false, zoomControl: true }).setView([LAT, LNG], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  }).addTo(map);
+  var pin = L.divIcon({
+    html: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 52" width="36" height="52"><path fill="#E05535" stroke="#fff" stroke-width="2.5" d="M18 1C9 1 1.5 8.5 1.5 17.5c0 6.5 3.7 12.2 9.1 15.2L18 51l7.4-18.3c5.4-3 9.1-8.7 9.1-15.2C34.5 8.5 27 1 18 1z"/><circle fill="#fff" cx="18" cy="17.5" r="7"/></svg>',
+    className: '',
+    iconSize: [36, 52], iconAnchor: [18, 52], popupAnchor: [0, -54]
+  });
+  L.marker([LAT, LNG], { icon: pin }).addTo(map)
+    .bindPopup('<strong style="font-size:13px">' + 'ホテル醍醐' + '</strong><br><span style="font-size:11px;color:#666">' + '〒279-0002 千葉県浦安市北栄1-11-1' + '</span>')
+    .openPopup();
+})();
+</script>
+
 ## 設備・サービス
 
 <div class="hg-facilities">
