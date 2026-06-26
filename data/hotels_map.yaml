@@ -1,4 +1,5 @@
 # 比較マップ用追加データ（hotels.yaml を上書きせず、slug でジョイン）
+# 座標出典: OpenStreetMap Nominatim API（実測値）および近似推計（※印）
 # flags: shuttle=TDRシャトル, bath=大浴場, convenience=館内コンビニ,
 #         limousine=空港リムジン停留所ホテル前, station=駅直結/徒歩1分, kitchen=ミニキッチン付き
 # price_min: ソート用の数値（円）。0 = 要確認・非表示。
@@ -6,169 +7,169 @@
 hotels:
   # ── エリア A: 舞浜エリア ─────────────────────────────
   - slug: "tdl-hotel"
-    lat: 35.6329
-    lng: 139.8852
+    lat: 35.6368
+    lng: 139.8783
     price_min: 80000
     flags: [limousine]
   - slug: "miracosta"
-    lat: 35.6271
-    lng: 139.8869
+    lat: 35.6269
+    lng: 139.8881
     price_min: 80000
     flags: [limousine]
   - slug: "fantasy-springs-hotel"
-    lat: 35.6249
-    lng: 139.8895
+    lat: 35.6284    # ※TDS Fantasy Springs エリア北側（2024年開業）
+    lng: 139.8880
     price_min: 80000
     flags: [limousine]
   - slug: "ambassador-hotel"
-    lat: 35.6309
-    lng: 139.8803
+    lat: 35.6334
+    lng: 139.8878
     price_min: 60000
     flags: [shuttle, limousine]
   - slug: "toy-story-hotel"
-    lat: 35.6256
-    lng: 139.8907
+    lat: 35.6259
+    lng: 139.8746
     price_min: 30000
     flags: [shuttle, limousine]
   - slug: "celebration-wish"
-    lat: 35.6358
-    lng: 139.9016
+    lat: 35.6388
+    lng: 139.9305
     price_min: 20000
     flags: [shuttle, limousine]
   - slug: "celebration-discover"
-    lat: 35.6362
-    lng: 139.9027
+    lat: 35.6384    # ※ウィッシュ隣接
+    lng: 139.9308
     price_min: 20000
     flags: [shuttle, limousine]
   - slug: "hotel-okura-tokyo-bay"
-    lat: 35.6248
-    lng: 139.8879
+    lat: 35.6259
+    lng: 139.8760
     price_min: 50000
     flags: [shuttle, limousine]
   - slug: "grand-nikko-tokyo-bay"
-    lat: 35.6245
-    lng: 139.8871
+    lat: 35.6293
+    lng: 139.8740
     price_min: 40000
     flags: [shuttle, limousine]
   - slug: "sheraton-grande-tokyo-bay"
-    lat: 35.6242
-    lng: 139.8886
+    lat: 35.6257
+    lng: 139.8782
     price_min: 35000
     flags: [shuttle, bath, limousine]
   - slug: "hilton-tokyo-bay"
-    lat: 35.6245
-    lng: 139.8862
+    lat: 35.6272
+    lng: 139.8737
     price_min: 30000
     flags: [shuttle, convenience, limousine]
   - slug: "maihama-hotel-first-resort"
-    lat: 35.6243
-    lng: 139.8832
+    lat: 35.6315
+    lng: 139.8739
     price_min: 20000
     flags: [shuttle, limousine]
   - slug: "dreamgate-maihama"
-    lat: 35.6337
-    lng: 139.8797
+    lat: 35.6354
+    lng: 139.8860
     price_min: 15000
     flags: [shuttle, station, convenience]
   - slug: "maihama-view-hotel"
-    lat: 35.6291
-    lng: 139.8824
+    lat: 35.6307
+    lng: 139.8739
     price_min: 12000
     flags: [shuttle, bath, limousine]
   # ── エリア B: 千鳥エリア ─────────────────────────────
   - slug: "royal-park-maihama"
-    lat: 35.6282
-    lng: 139.9007
+    lat: 35.6314    # ※千鳥2丁目
+    lng: 139.9012
     price_min: 18000
     flags: [shuttle, convenience]
   - slug: "mystays-maihama"
-    lat: 35.6270
-    lng: 139.8982
+    lat: 35.6281    # ※千鳥エリア
+    lng: 139.8978
     price_min: 5000
     flags: [shuttle]
   - slug: "maihama-eurasia"
-    lat: 35.6277
-    lng: 139.9016
+    lat: 35.6294    # ※千鳥2丁目
+    lng: 139.9005
     price_min: 10000
     flags: [shuttle, bath]
   - slug: "eurasia-annex"
-    lat: 35.6279
-    lng: 139.9033
+    lat: 35.6291    # ※ユーラシア隣接
+    lng: 139.9017
     price_min: 8000
     flags: [shuttle, bath]
   # ── エリア C: 新浦安エリア ───────────────────────────
   - slug: "hyatt-regency-tokyo-bay"
-    lat: 35.6432
-    lng: 139.9043
+    lat: 35.6376
+    lng: 139.9261
     price_min: 25000
     flags: [shuttle, limousine]
   - slug: "comfort-suites-tokyo-bay"
-    lat: 35.6428
-    lng: 139.9044
+    lat: 35.6385
+    lng: 139.9273
     price_min: 15000
     flags: [shuttle]
   - slug: "brighton-tokyo-bay"
-    lat: 35.6484
-    lng: 139.8974
+    lat: 35.6500
+    lng: 139.9117
     price_min: 20000
     flags: [shuttle, station, limousine]
   - slug: "oriental-tokyo-bay"
-    lat: 35.6487
-    lng: 139.8965
+    lat: 35.6509
+    lng: 139.9128
     price_min: 18000
     flags: [shuttle, station, convenience, limousine]
   - slug: "emion-tokyo-bay"
-    lat: 35.6380
-    lng: 139.9048
+    lat: 35.6477
+    lng: 139.9202
     price_min: 22000
     flags: [shuttle, bath, limousine]
   - slug: "mitsui-garden-prana"
-    lat: 35.6425
-    lng: 139.9010
+    lat: 35.6361
+    lng: 139.9243
     price_min: 18000
     flags: [shuttle, bath, convenience, limousine]
   - slug: "hoshinoresorts-1955-tokyo-bay"
-    lat: 35.6367
-    lng: 139.9049
+    lat: 35.6433    # ※明海エリア（旧OMO7東京ベイ）
+    lng: 139.9211
     price_min: 15000
     flags: [shuttle, convenience]
   - slug: "lagent-tokyo-bay"
-    lat: 35.6393
-    lng: 139.9022
+    lat: 35.6408
+    lng: 139.9297
     price_min: 8000
     flags: [shuttle]
   - slug: "ibis-styles-tokyo-bay"
-    lat: 35.6417
-    lng: 139.9013
+    lat: 35.6490
+    lng: 139.9217
     price_min: 10000
     flags: [shuttle, limousine]
   - slug: "mystays-shin-urayasu"
-    lat: 35.6434
-    lng: 139.9002
+    lat: 35.6440
+    lng: 139.9156
     price_min: 7500
     flags: []
   - slug: "flexstay-shin-urayasu"
-    lat: 35.6512
-    lng: 139.8932
+    lat: 35.6509    # ※日の出エリア・新浦安駅周辺
+    lng: 139.8935
     price_min: 7800
     flags: [shuttle, kitchen]
   - slug: "henna-hotel-maihama"
-    lat: 35.6454
-    lng: 139.8867
+    lat: 35.6449
+    lng: 139.8877
     price_min: 8000
     flags: [shuttle]
   - slug: "four-stories-hotel"
-    lat: 35.6474
-    lng: 139.8853
+    lat: 35.6472    # ※日の出エリア
+    lng: 139.8843
     price_min: 10000
     flags: []
   - slug: "hiyori-hotel-maihama"
-    lat: 35.6479
-    lng: 139.8859
+    lat: 35.6477    # ※日の出エリア
+    lng: 139.8852
     price_min: 10000
     flags: [shuttle]
   - slug: "koyasu-urayasu"
-    lat: 35.6486
+    lat: 35.6490    # ※日の出エリア・温泉旅館
     lng: 139.8847
     price_min: 0
     flags: [bath]
