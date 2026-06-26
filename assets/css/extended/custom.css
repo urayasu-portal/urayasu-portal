@@ -3577,6 +3577,324 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .post-content .hg-map-btn:hover { background: var(--accent-ink); }
 .post-content .hg-map-btn--out { background: #fff; border: 0.5px solid #F0C4B6; color: var(--accent-ink) !important; }
 .post-content .hg-map-btn--out:hover { background: #FBE3DA; }
+
+/* ========================================
+   ホテル比較マップ (.hcm-*)
+   /travel-guide/hotels/compare/
+   ======================================== */
+
+/* ── ホテル一覧ページ → 比較マップへのバナーリンク ── */
+.hcm-list-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background: var(--accent-bg);
+  border: 1px solid #F0C4B6;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color .15s, background .15s;
+}
+.hcm-list-banner:hover { border-color: var(--accent); background: #FAE2DA; }
+.hcm-list-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-ink);
+}
+.hcm-list-banner-left > i { font-size: 22px; flex-shrink: 0; }
+.hcm-list-banner-left strong { font-size: 14px; display: block; }
+.hcm-list-banner-sub { font-size: 12px; color: var(--up-muted); }
+.hcm-list-banner-cta {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.hcm-back-link {
+  font-size: 12px;
+  color: var(--accent-ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.hcm-back-link:hover { text-decoration: underline; }
+
+/* ── フィルターコントロール ── */
+.hcm-controls {
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.hcm-sort-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.hcm-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 7px;
+}
+
+.hcm-filter-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--up-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 38px;
+}
+
+.hcm-count-inline {
+  font-size: 12px;
+  color: var(--up-muted);
+  margin-left: 4px;
+}
+.hcm-count-inline strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent-ink);
+}
+
+.hcm-sort {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--up-border-2);
+  background: var(--up-bg);
+  color: var(--up-text);
+  cursor: pointer;
+}
+
+.hcm-clear-btn {
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 0.5px solid var(--up-border-2);
+  background: var(--up-bg);
+  color: var(--up-muted);
+  cursor: pointer;
+  margin-left: auto;
+  white-space: nowrap;
+  transition: border-color .15s, color .15s;
+}
+.hcm-clear-btn:hover { border-color: var(--accent); color: var(--accent-ink); }
+
+/* ── チップ ── */
+.hcm-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 0.5px solid var(--up-border-2);
+  background: var(--up-bg);
+  color: var(--up-text-2);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .15s, color .15s, border-color .15s;
+  line-height: 1.4;
+}
+.hcm-chip:hover { border-color: var(--accent); color: var(--accent-ink); }
+.hcm-chip.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.hcm-chip i { font-size: 13px; }
+
+/* ── 2カラムレイアウト ── */
+.hcm-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 16px;
+  align-items: start;
+}
+
+.hcm-list-col { min-width: 0; }
+
+.hcm-map-col {
+  position: sticky;
+  top: 80px;
+}
+
+#hcm-map {
+  width: 100%;
+  height: 560px;
+  border-radius: 12px;
+  border: 1px solid var(--up-border);
+  z-index: 1;
+}
+
+/* ── マップ凡例 ── */
+.hcm-map-legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: var(--up-card);
+  border: 1px solid var(--up-border);
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--up-muted);
+}
+.hcm-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hcm-legend-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: inline-block;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+  flex-shrink: 0;
+}
+
+.hcm-map-note {
+  font-size: 11px;
+  color: var(--up-muted);
+  margin-top: 8px;
+  line-height: 1.7;
+  display: flex;
+  gap: 4px;
+}
+.hcm-map-note i { flex-shrink: 0; margin-top: 1px; }
+
+/* ── ホテルカード ── */
+.hcm-card {
+  border: 1px solid var(--up-border);
+  border-radius: 10px;
+  padding: 11px 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+.hcm-card:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(224,85,53,.08); }
+.hcm-card.is-highlighted {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  box-shadow: 0 2px 12px rgba(224,85,53,.15);
+}
+
+.hcm-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.hcm-card-name { font-size: 13px; font-weight: 600; min-width: 0; }
+
+.hcm-card-name-link {
+  color: var(--accent-ink);
+  text-decoration: none;
+}
+.hcm-card-name-link:hover { text-decoration: underline; }
+
+.hcm-card-price {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-ink);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.hcm-card-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px 0 0;
+}
+
+.hcm-area-badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hcm-card-cat {
+  font-size: 11px;
+  color: var(--up-muted);
+}
+
+.hcm-card-feat {
+  font-size: 11px;
+  color: var(--up-text-3);
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+.hcm-card-flags {
+  display: flex;
+  gap: 4px;
+  margin-top: 7px;
+  flex-wrap: wrap;
+}
+
+.hcm-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 0.5px solid var(--up-border);
+  background: var(--up-bg);
+  color: var(--up-muted);
+  white-space: nowrap;
+}
+.hcm-flag i { font-size: 11px; }
+
+/* ── 空状態 ── */
+.hcm-empty {
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--up-muted);
+}
+.hcm-empty i { font-size: 36px; display: block; margin-bottom: 10px; }
+.hcm-empty p { font-size: 14px; margin: 4px 0; }
+
+/* ── レスポンシブ ── */
+@media (max-width: 900px) {
+  .hcm-layout {
+    grid-template-columns: 1fr;
+  }
+  .hcm-map-col {
+    position: static;
+  }
+  #hcm-map { height: 300px; }
+}
+
+@media (max-width: 600px) {
+  .hcm-controls { padding: 10px 12px; }
+  .hcm-sort-row { gap: 6px; }
+  .hcm-count-inline { display: none; }
+  #hcm-map { height: 260px; }
+}
 @media (max-width: 640px) { .post-content .hg-map-actions { flex-direction: column; } }
 
 /* 近隣の似たホテル */

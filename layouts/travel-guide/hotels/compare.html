@@ -1,0 +1,425 @@
+{{- define "main" }}
+
+{{- /* ── データ読み込み ─────────────────────────── */}}
+{{- $hotels  := hugo.Data.hotels }}
+{{- $mapData := hugo.Data.hotels_map }}
+
+{{- /* slug → マップデータ のインデックス構築 */}}
+{{- $mapIndex := dict }}
+{{- if $mapData }}
+  {{- range $mapData.hotels }}
+    {{- $mapIndex = merge $mapIndex (dict .slug .) }}
+  {{- end }}
+{{- end }}
+
+{{- /* ── ホテルJSON配列の構築 ─────────────────── */}}
+{{- $hotelData := slice }}
+{{- range $hotels.areas }}
+  {{- $areaTag  := .tag }}
+  {{- $areaName := .name }}
+  {{- range .hotels }}
+    {{- if ne .policy "name-only" }}
+      {{- $md := index $mapIndex .slug | default dict }}
+      {{- /* カテゴリ分類 */}}
+      {{- $cat := "general" }}
+      {{- if hasPrefix .category "直営" }}{{- $cat = "chokuei" }}
+      {{- else if eq .category "オフィシャルホテル" }}{{- $cat = "official" }}
+      {{- else if eq .category "パートナーホテル" }}{{- $cat = "partner" }}
+      {{- end }}
+      {{- $grp := "general" }}
+      {{- if or (eq $cat "chokuei") (eq $cat "official") }}{{- $grp = "tdr" }}
+      {{- else if eq $cat "partner" }}{{- $grp = "partner" }}
+      {{- end }}
+      {{- $entry := dict
+          "id"          .slug
+          "name"        .name
+          "area"        $areaTag
+          "areaName"    $areaName
+          "cat"         $cat
+          "grp"         $grp
+          "category"    .category
+          "price_guide" .price_guide
+          "price_min"   ($md.price_min | default 0)
+          "feature"     .feature
+          "lat"         ($md.lat | default 0)
+          "lng"         ($md.lng | default 0)
+          "flags"       ($md.flags | default slice)
+          "url"         (printf "/travel-guide/hotels/%s/" .slug)
+      }}
+      {{- $hotelData = $hotelData | append $entry }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- /* ── ヒーロー ─────────────────────────────── */}}
+<div class="tg-hotels-hero" style="margin-bottom:24px">
+  <div class="tg-hotels-eyebrows">
+    <span class="tg-hotels-eyebrow is-solid"><i class="ti ti-map-2" aria-hidden="true"></i> 比較マップ</span>
+    <span class="tg-hotels-eyebrow">舞浜・新浦安・浦安エリア</span>
+  </div>
+  <h1 class="tg-hotels-title">ホテル比較マップ</h1>
+  <p class="tg-hotels-lead">全 <strong>{{ len $hotelData }}</strong> 軒をマップと一覧で同時確認。エリア・設備・価格で絞り込むとリストとマップが同時に更新されます。</p>
+  <div style="margin-top:10px">
+    <a href="/travel-guide/hotels/" class="hcm-back-link"><i class="ti ti-arrow-left" aria-hidden="true"></i> ホテル一覧（シーン別ガイド）に戻る</a>
+  </div>
+</div>
+
+{{- /* ── フィルターコントロール ─────────────────── */}}
+<div class="hcm-controls" id="hcm-controls">
+  <div class="hcm-sort-row">
+    <label for="hcm-sort" class="hcm-filter-label">並び替え</label>
+    <select class="hcm-sort" id="hcm-sort" onchange="hcmSortChange(this.value)">
+      <option value="default">エリア順（デフォルト）</option>
+      <option value="price-asc">価格が安い順</option>
+      <option value="price-desc">価格が高い順</option>
+      <option value="name">ホテル名順（50音）</option>
+    </select>
+    <span class="hcm-count-inline"><strong id="hcm-count">{{ len $hotelData }}</strong> 軒 表示中</span>
+    <button class="hcm-clear-btn" id="hcm-clear" onclick="hcmClearFilters()" style="display:none" aria-label="絞り込みをリセット">すべて表示 ×</button>
+  </div>
+  <div class="hcm-filter-row">
+    <span class="hcm-filter-label">エリア</span>
+    <button class="hcm-chip is-active" data-chip-type="area" data-chip-val="*" onclick="hcmChipClick('area','*')">すべて</button>
+    {{- range $hotels.areas }}
+    <button class="hcm-chip" data-chip-type="area" data-chip-val="{{ .tag }}" onclick="hcmChipClick('area','{{ .tag }}')">{{ .tag }} {{ .name | replaceRE "エリア$" "" }}</button>
+    {{- end }}
+  </div>
+  <div class="hcm-filter-row">
+    <span class="hcm-filter-label">区分</span>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="tdr" onclick="hcmChipClick('grp','tdr')"><i class="ti ti-building-castle" aria-hidden="true"></i> 直営・オフィシャル</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="partner" onclick="hcmChipClick('grp','partner')"><i class="ti ti-star" aria-hidden="true"></i> パートナー</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="general" onclick="hcmChipClick('grp','general')"><i class="ti ti-home" aria-hidden="true"></i> 一般</button>
+  </div>
+  <div class="hcm-filter-row">
+    <span class="hcm-filter-label">設備</span>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="shuttle" onclick="hcmChipClick('flag','shuttle')"><i class="ti ti-bus" aria-hidden="true"></i> シャトル</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="bath" onclick="hcmChipClick('flag','bath')"><i class="ti ti-ripple" aria-hidden="true"></i> 大浴場</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="convenience" onclick="hcmChipClick('flag','convenience')"><i class="ti ti-building-store" aria-hidden="true"></i> 館内コンビニ</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="limousine" onclick="hcmChipClick('flag','limousine')"><i class="ti ti-plane" aria-hidden="true"></i> 空港リムジン</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="station" onclick="hcmChipClick('flag','station')"><i class="ti ti-train" aria-hidden="true"></i> 駅直結/1分</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="kitchen" onclick="hcmChipClick('flag','kitchen')"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i> ミニキッチン</button>
+  </div>
+</div>
+
+{{- /* ── 2カラムレイアウト ──────────────────────── */}}
+<div class="hcm-layout">
+  <div class="hcm-list-col">
+    <div id="hcm-list">
+      {{- /* 初期表示（JS有効時に上書き）*/}}
+      {{- range $hotelData }}
+      <div class="hcm-card" id="hcm-card-{{ .id }}" data-id="{{ .id }}" onclick="hcmCardClick('{{ .id }}')">
+        <div class="hcm-card-head">
+          <div class="hcm-card-name"><a href="{{ .url }}" class="hcm-card-name-link" onclick="event.stopPropagation()">{{ .name }}</a></div>
+          {{- if gt .price_min 0 }}<span class="hcm-card-price">{{ .price_guide }}</span>{{- end }}
+        </div>
+        <div class="hcm-card-meta">
+          <span class="hcm-area-badge hcm-area-{{ .area | lower }}">{{ .area }} {{ .areaName | replaceRE "エリア$" "" }}</span>
+          <span class="hcm-card-cat">{{ .category }}</span>
+        </div>
+        {{- if .feature }}<div class="hcm-card-feat">{{ .feature }}</div>{{- end }}
+        {{- if .flags }}
+        <div class="hcm-card-flags">
+          {{- range .flags }}
+          <span class="hcm-flag"><i class="ti ti-{{ if eq . "shuttle" }}bus{{ else if eq . "bath" }}ripple{{ else if eq . "convenience" }}building-store{{ else if eq . "limousine" }}plane{{ else if eq . "station" }}train{{ else if eq . "kitchen" }}tools-kitchen-2{{ else }}star{{ end }}" aria-hidden="true"></i>{{ if eq . "shuttle" }}シャトル{{ else if eq . "bath" }}大浴場{{ else if eq . "convenience" }}館内コンビニ{{ else if eq . "limousine" }}空港リムジン{{ else if eq . "station" }}駅直結/1分{{ else if eq . "kitchen" }}ミニキッチン{{ end }}</span>
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+
+  <div class="hcm-map-col">
+    <div id="hcm-map" aria-label="ホテル位置マップ（Leaflet / OpenStreetMap）"></div>
+    <div class="hcm-map-legend">
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#C2421F"></span>直営</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E05535"></span>オフィシャル</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E8A020"></span>パートナー</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>一般</span>
+    </div>
+    <p class="hcm-map-note"><i class="ti ti-info-circle" aria-hidden="true"></i> ピンをクリックするとカードがハイライトします。絞り込み外のピンは薄く表示されます。座標は近似値です。</p>
+  </div>
+</div>
+
+{{- /* ── データ埋め込み ───────────────────────── */}}
+<script>var HOTELS_DATA = {{ $hotelData | jsonify | safeJS }};</script>
+
+{{- /* ── Leaflet CDN ──────────────────────────── */}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
+
+{{- /* ── インタラクション JS ───────────────────── */}}
+<script>
+(function () {
+  'use strict';
+
+  var state = { area: '*', grp: '*', flags: [], sort: 'default' };
+  var leafletMap, markers = {};
+  var initialized = false;
+
+  var CAT_COLORS = {
+    chokuei:  '#C2421F',
+    official: '#E05535',
+    partner:  '#E8A020',
+    general:  '#1A5C8A'
+  };
+
+  var AREA_STYLE = {
+    A: { bg: '#FEE2E2', color: '#991B1B' },
+    B: { bg: '#FEF3C7', color: '#92400E' },
+    C: { bg: '#FCEEE9', color: '#7A2A14' },
+    D: { bg: '#EDE9FE', color: '#4C1D95' }
+  };
+
+  var FLAG_META = {
+    shuttle:     { label: 'シャトル',     icon: 'bus' },
+    bath:        { label: '大浴場',       icon: 'ripple' },
+    convenience: { label: '館内コンビニ', icon: 'building-store' },
+    limousine:   { label: '空港リムジン', icon: 'plane' },
+    station:     { label: '駅直結/1分',  icon: 'train' },
+    kitchen:     { label: 'ミニキッチン', icon: 'tools-kitchen-2' }
+  };
+
+  /* ── フィルター・ソート ── */
+
+  function getFiltered() {
+    return HOTELS_DATA.filter(function (h) {
+      if (state.area !== '*' && h.area !== state.area) return false;
+      if (state.grp !== '*' && h.grp !== state.grp) return false;
+      for (var i = 0; i < state.flags.length; i++) {
+        if (h.flags.indexOf(state.flags[i]) < 0) return false;
+      }
+      return true;
+    });
+  }
+
+  function getSorted(list) {
+    var arr = list.slice();
+    if (state.sort === 'price-asc') {
+      arr.sort(function (a, b) {
+        return (a.price_min || 9999999) - (b.price_min || 9999999);
+      });
+    } else if (state.sort === 'price-desc') {
+      arr.sort(function (a, b) { return (b.price_min || 0) - (a.price_min || 0); });
+    } else if (state.sort === 'name') {
+      arr.sort(function (a, b) { return a.name.localeCompare(b.name, 'ja'); });
+    }
+    return arr;
+  }
+
+  /* ── カード HTML 生成 ── */
+
+  function esc(s) {
+    return String(s || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function buildCard(h) {
+    var as = AREA_STYLE[h.area] || { bg: '#f5f5f5', color: '#555' };
+
+    var flagsHtml = h.flags.map(function (f) {
+      var m = FLAG_META[f];
+      if (!m) return '';
+      var isActive = state.flags.indexOf(f) >= 0;
+      var st = isActive ? ' style="background:#FCEEE9;border-color:#E05535;color:#7A2A14"' : '';
+      return '<span class="hcm-flag"' + st + '>'
+        + '<i class="ti ti-' + m.icon + '" aria-hidden="true"></i>'
+        + m.label + '</span>';
+    }).join('');
+
+    var priceHtml = h.price_min > 0
+      ? '<span class="hcm-card-price">' + esc(h.price_guide) + '</span>'
+      : '';
+
+    var nameHtml = '<a href="' + esc(h.url) + '" class="hcm-card-name-link"'
+      + ' onclick="event.stopPropagation()">' + esc(h.name) + '</a>';
+
+    var featHtml = h.feature
+      ? '<div class="hcm-card-feat">' + esc(h.feature) + '</div>'
+      : '';
+
+    var flagsWrap = h.flags.length > 0
+      ? '<div class="hcm-card-flags">' + flagsHtml + '</div>'
+      : '';
+
+    return '<div class="hcm-card" id="hcm-card-' + h.id
+      + '" data-id="' + h.id + '" onclick="hcmCardClick(\'' + h.id + '\')">'
+      + '<div class="hcm-card-head">'
+      + '<div class="hcm-card-name">' + nameHtml + '</div>'
+      + priceHtml
+      + '</div>'
+      + '<div class="hcm-card-meta">'
+      + '<span class="hcm-area-badge" style="background:' + as.bg + ';color:' + as.color + '">'
+      + esc(h.area) + ' ' + esc(h.areaName.replace('エリア', ''))
+      + '</span>'
+      + '<span class="hcm-card-cat">' + esc(h.category) + '</span>'
+      + '</div>'
+      + featHtml
+      + flagsWrap
+      + '</div>';
+  }
+
+  /* ── マーカー表示制御 ── */
+
+  function syncMarkers(visibleIds) {
+    Object.keys(markers).forEach(function (id) {
+      var on = visibleIds.indexOf(id) >= 0;
+      markers[id].setStyle({
+        opacity:      on ? 1    : 0.18,
+        fillOpacity:  on ? 0.85 : 0.12
+      });
+    });
+  }
+
+  /* ── チップ状態更新 ── */
+
+  function updateChips() {
+    document.querySelectorAll('[data-chip-type]').forEach(function (el) {
+      var t = el.getAttribute('data-chip-type');
+      var v = el.getAttribute('data-chip-val');
+      var on = (t === 'area'  && state.area === v)
+             || (t === 'grp'  && state.grp === v)
+             || (t === 'flag' && state.flags.indexOf(v) >= 0);
+      el.classList.toggle('is-active', on);
+    });
+    var hasFilter = state.area !== '*' || state.grp !== '*' || state.flags.length > 0;
+    var clearBtn = document.getElementById('hcm-clear');
+    if (clearBtn) clearBtn.style.display = hasFilter ? '' : 'none';
+  }
+
+  /* ── メインレンダー ── */
+
+  function render() {
+    var filtered = getFiltered();
+    var sorted   = getSorted(filtered);
+
+    var countEl = document.getElementById('hcm-count');
+    if (countEl) countEl.textContent = sorted.length;
+
+    var listEl = document.getElementById('hcm-list');
+    if (!listEl) return;
+
+    if (sorted.length === 0) {
+      listEl.innerHTML = '<div class="hcm-empty">'
+        + '<i class="ti ti-search-off" aria-hidden="true"></i>'
+        + '<p>該当するホテルがありません</p>'
+        + '<p style="font-size:12px">絞り込み条件を変更してください</p>'
+        + '</div>';
+    } else {
+      listEl.innerHTML = sorted.map(buildCard).join('');
+    }
+
+    syncMarkers(sorted.map(function (h) { return h.id; }));
+    updateChips();
+  }
+
+  /* ── カードクリック ── */
+
+  function highlightCard(id) {
+    document.querySelectorAll('.hcm-card').forEach(function (el) {
+      el.classList.remove('is-highlighted');
+    });
+    var card = document.getElementById('hcm-card-' + id);
+    if (card) {
+      card.classList.add('is-highlighted');
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  window.hcmCardClick = function (id) {
+    var hotel = HOTELS_DATA.find(function (h) { return h.id === id; });
+    if (!hotel || !hotel.lat) return;
+    if (markers[id]) {
+      leafletMap.setView([hotel.lat, hotel.lng], 15, { animate: true });
+      markers[id].openPopup();
+    }
+    highlightCard(id);
+  };
+
+  /* ── フィルター操作 ── */
+
+  window.hcmChipClick = function (type, val) {
+    if (type === 'area') {
+      state.area = (val === '*') ? '*' : (state.area === val ? '*' : val);
+    } else if (type === 'grp') {
+      state.grp = (state.grp === val) ? '*' : val;
+    } else if (type === 'flag') {
+      var idx = state.flags.indexOf(val);
+      if (idx >= 0) state.flags.splice(idx, 1);
+      else state.flags.push(val);
+    }
+    render();
+  };
+
+  window.hcmSortChange = function (val) {
+    state.sort = val;
+    render();
+  };
+
+  window.hcmClearFilters = function () {
+    state.area = '*';
+    state.grp  = '*';
+    state.flags = [];
+    var sel = document.getElementById('hcm-sort');
+    if (sel) { sel.value = state.sort; }
+    render();
+  };
+
+  /* ── Leaflet マップ初期化 ── */
+
+  function initMap() {
+    if (typeof L === 'undefined') return;
+    if (initialized) return;
+    initialized = true;
+
+    leafletMap = L.map('hcm-map', { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(leafletMap);
+
+    var bounds = [];
+    HOTELS_DATA.forEach(function (h) {
+      if (!h.lat || !h.lng) return;
+      var color  = CAT_COLORS[h.cat] || '#888';
+      var marker = L.circleMarker([h.lat, h.lng], {
+        radius:      9,
+        fillColor:   color,
+        color:       '#fff',
+        weight:      2,
+        opacity:     1,
+        fillOpacity: 0.85
+      });
+
+      var popup = '<div style="min-width:160px;font-family:sans-serif;line-height:1.5">'
+        + '<strong style="font-size:13px;display:block;margin-bottom:2px">' + esc(h.name) + '</strong>'
+        + '<span style="font-size:11px;color:#666">' + esc(h.area) + ' ' + esc(h.areaName) + '</span>'
+        + (h.price_guide ? '<div style="font-size:12px;color:#E05535;font-weight:700;margin-top:2px">' + esc(h.price_guide) + '</div>' : '')
+        + (h.url ? '<a href="' + esc(h.url) + '" style="display:block;margin-top:6px;font-size:11px;color:#1A5C8A">詳細を見る →</a>' : '')
+        + '</div>';
+
+      marker.bindPopup(popup, { maxWidth: 240 });
+      markers[h.id] = marker;
+      marker.addTo(leafletMap);
+      marker.on('click', (function (hid) {
+        return function () { highlightCard(hid); };
+      }(h.id)));
+      bounds.push([h.lat, h.lng]);
+    });
+
+    if (bounds.length > 0) {
+      leafletMap.fitBounds(L.latLngBounds(bounds), { padding: [24, 24] });
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    initMap();
+    render();
+  });
+}());
+</script>
+
+{{- end }}
