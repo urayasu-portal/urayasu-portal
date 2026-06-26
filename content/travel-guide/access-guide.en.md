@@ -3,6 +3,7 @@ title: "How to Get to Urayasu & Maihama from Haneda, Narita & Tokyo Station"
 date: 2026-06-18T10:00:00+09:00
 lastmod: 2026-06-19
 slug: "urayasu-maihama-access-guide"
+badge: "Access"
 description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort. Includes notes for guests with wheelchairs, strollers, or heavy luggage."
 tags:
   - Urayasu
