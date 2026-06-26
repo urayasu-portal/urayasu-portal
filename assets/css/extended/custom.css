@@ -3559,6 +3559,23 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .post-content .hg-memo-title { font-size: 13px; font-weight: 700; color: #9A3412; margin: 0 0 8px; display: flex; align-items: center; gap: 7px; }
 .post-content .hg-memo p { font-size: 12px; color: #7A4334; line-height: 1.8; margin: 0; }
 
+/* 地図カード（地図・アクセス） */
+.post-content .hg-map { border: 0.5px solid #F6D8CD; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px -12px rgba(224,85,53,.35); margin: 0 0 24px; }
+.post-content .hg-map-embed { position: relative; aspect-ratio: 16 / 9; background: #e9eef0; }
+.post-content .hg-map-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.post-content .hg-map-head { display: flex; align-items: center; gap: 9px; padding: 11px 14px; border-bottom: 0.5px solid #F3E2DB; }
+.post-content .hg-map-head > i { font-size: 18px; color: var(--accent); }
+.post-content .hg-map-name { font-size: 12.5px; font-weight: 700; color: var(--up-text); line-height: 1.3; }
+.post-content .hg-map-addr { font-size: 11px; color: var(--up-muted); line-height: 1.3; }
+.post-content .hg-map-credit { font-size: 10px; color: var(--up-text-3); text-align: right; padding: 0 12px 10px; }
+.post-content .hg-map-credit a { color: var(--up-text-3); }
+.post-content .hg-map-actions { display: flex; gap: 9px; padding: 12px 14px; }
+.post-content .hg-map-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 700; padding: 9px; border-radius: 9px; text-decoration: none !important; background: var(--accent); color: #fff !important; }
+.post-content .hg-map-btn:hover { background: var(--accent-ink); }
+.post-content .hg-map-btn--out { background: #fff; border: 0.5px solid #F0C4B6; color: var(--accent-ink) !important; }
+.post-content .hg-map-btn--out:hover { background: #FBE3DA; }
+@media (max-width: 640px) { .post-content .hg-map-actions { flex-direction: column; } }
+
 /* 近隣の似たホテル */
 .hg-related { margin-top: 28px; }
 .hg-hotel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; }

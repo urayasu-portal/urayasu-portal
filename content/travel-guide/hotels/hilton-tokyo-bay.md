@@ -69,6 +69,20 @@ noDate: true
 
 ホテルはベイサイド・ステーションの向かいにあり、無料シャトル「ディズニーリゾートクルーザー」（約6〜8分間隔）で駅へ出て、ディズニーリゾートライン（モノレール）でパークへ向かうのが基本です。「徒歩で直結」ではない点は押さえておきましょう。空港リムジンバスは大人1,300円で、<strong>事前予約が必要</strong>（座席定員制）。乗り降りがホテル前で完結するので、大きな荷物があっても移動が楽です。
 
+## 地図・アクセス
+
+<div class="hg-map">
+<div class="hg-map-head"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="hg-map-name">ヒルトン東京ベイ</div><div class="hg-map-addr">〒279-0031 千葉県浦安市舞浜1-8</div></div></div>
+<div class="hg-map-embed">
+<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=139.8697,35.6252,139.8777,35.6292&layer=mapnik&marker=35.6271803,139.8736971" loading="lazy" title="ヒルトン東京ベイの地図"></iframe>
+</div>
+<div class="hg-map-actions">
+<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&query=%E3%83%92%E3%83%AB%E3%83%88%E3%83%B3%E6%9D%B1%E4%BA%AC%E3%83%99%E3%82%A4%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E8%88%9E%E6%B5%9C1-8" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>Googleマップで開く</a>
+<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&destination=%E3%83%92%E3%83%AB%E3%83%88%E3%83%B3%E6%9D%B1%E4%BA%AC%E3%83%99%E3%82%A4%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%B5%A6%E5%AE%89%E5%B8%82%E8%88%9E%E6%B5%9C1-8" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>経路を調べる</a>
+</div>
+<div class="hg-map-credit">地図：<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a></div>
+</div>
+
 ## 設備・サービス
 
 <div class="hg-facilities">
