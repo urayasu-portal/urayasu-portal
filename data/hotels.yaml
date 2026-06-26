@@ -46,14 +46,14 @@ areas:
         individual_page: true
         slug: "toy-story-hotel"
       - name: "東京ディズニーセレブレーションホテル（ウィッシュ）"
-        category: "パートナーホテル"
+        category: "直営（バリュー）"
         price_guide: "¥20,000〜"
         feature: "ハッピーエントリー特典付き"
         policy: normal
         individual_page: true
         slug: "celebration-wish"
       - name: "東京ディズニーセレブレーションホテル（ディスカバー）"
-        category: "パートナーホテル"
+        category: "直営（バリュー）"
         price_guide: "¥20,000〜"
         feature: "ハッピーエントリー特典付き"
         policy: normal
