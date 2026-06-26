@@ -147,8 +147,8 @@ hotels:
     price_min: 7500
     flags: []
   - slug: "flexstay-shin-urayasu"
-    lat: 35.6504
-    lng: 139.9205
+    lat: 35.6413
+    lng: 139.9046
     price_min: 7800
     flags: [shuttle, kitchen]
   - slug: "henna-hotel-maihama"
@@ -157,37 +157,37 @@ hotels:
     price_min: 8000
     flags: [shuttle]
   - slug: "four-stories-hotel"
-    lat: 35.6328
-    lng: 139.8932
+    lat: 35.6507
+    lng: 139.8925
     price_min: 10000
     flags: []
   - slug: "hiyori-hotel-maihama"
-    lat: 35.6332
-    lng: 139.8928
+    lat: 35.6492
+    lng: 139.8952
     price_min: 10000
     flags: [shuttle]
   - slug: "koyasu-urayasu"
-    lat: 35.6455
-    lng: 139.9150
+    lat: 35.6510
+    lng: 139.8996
     price_min: 0
     flags: [bath]
   - slug: "viewfort-urayasu"
     lat: 35.6650
-    lng: 139.8919
+    lng: 139.8925
     price_min: 9000
     flags: [station]
   - slug: "hotel-daigo-urayasu"
-    lat: 35.6667
-    lng: 139.8914
+    lat: 35.6658
+    lng: 139.8938
     price_min: 8000
     flags: [station]
   - slug: "bayhotel-urayasu"
-    lat: 35.6652
-    lng: 139.8924
+    lat: 35.6655
+    lng: 139.8942
     price_min: 14000
     flags: [station, kitchen]
   - slug: "urayasu-sun-hotel"
-    lat: 35.6660
-    lng: 139.8917
+    lat: 35.6662
+    lng: 139.8910
     price_min: 8000
     flags: [station]
