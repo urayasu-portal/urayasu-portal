@@ -179,7 +179,7 @@
           {{- end }}
           {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
         </td>
-        <td><span class="tg-area-tag">{{ $areaTag }}</span> {{ $areaName }}</td>
+        <td>{{ $areaName }}</td>
         <td style="font-size:0.82em;">{{ .category }}</td>
         <td style="white-space:nowrap;">
           {{- if .price_guide }}{{ .price_guide }}{{- else }}&mdash;{{- end }}
