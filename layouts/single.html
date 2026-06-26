@@ -94,6 +94,8 @@
       </div>
       {{- end }}
 
+      {{- /* 終了通知は「イベント」カテゴリの記事だけに表示する */}}
+      {{- if in (.Params.categories | default slice) "イベント" }}
       {{- with .Params.eventDate }}
       {{- /* eventDate は文字列・スラッシュ範囲・リストのいずれかを許容する */}}
       {{- $endDateStr := "" }}
@@ -109,6 +111,7 @@
           <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>このイベントは終了しました</strong>（{{ $endDateStr }}）。掲載内容は開催当時の情報です。最新情報は公式サイトをご確認ください。
         </div>
         {{- end }}
+      {{- end }}
       {{- end }}
       {{- end }}
 
