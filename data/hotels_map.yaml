@@ -203,8 +203,8 @@ hotels:
     name: "マイステイズ新浦安コンファレンスセンター"
     address: "〒279-0014 千葉県浦安市明海2-1-4"
   - slug: "flexstay-shin-urayasu"
-    lat: 35.6413
-    lng: 139.9046
+    lat: 35.642556
+    lng: 139.904282
     price_min: 7800
     flags: [shuttle, kitchen]
     name: "フレックステイイン新浦安"
@@ -224,8 +224,8 @@ hotels:
     name: "フォーストーリーズホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見1-11-31"
   - slug: "hiyori-hotel-maihama"
-    lat: 35.6492
-    lng: 139.8952
+    lat: 35.646345
+    lng: 139.897186
     price_min: 10000
     flags: [shuttle]
     name: "日和ホテル舞浜"
@@ -245,15 +245,15 @@ hotels:
     name: "浦安ビューフォートホテル"
     address: "〒279-0004 千葉県浦安市猫実4-18-28"
   - slug: "hotel-daigo-urayasu"
-    lat: 35.6658
-    lng: 139.8938
+    lat: 35.666597
+    lng: 139.895219
     price_min: 8000
     flags: [station]
     name: "ホテル醍醐"
     address: "〒279-0002 千葉県浦安市北栄1-11-1"
   - slug: "bayhotel-urayasu"
-    lat: 35.6655
-    lng: 139.8942
+    lat: 35.665547
+    lng: 139.894629
     price_min: 14000
     flags: [station, kitchen]
     name: "BAYHOTEL浦安駅前"
