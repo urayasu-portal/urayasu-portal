@@ -63,6 +63,8 @@ foreach ($r in $csv) {
   [void]$sb.AppendLine("    lng: $lng")
   [void]$sb.AppendLine("    price_min: $pm")
   [void]$sb.AppendLine("    flags: [$flags]")
+  [void]$sb.AppendLine("    name: ""$($r.'施設名')""")
+  [void]$sb.AppendLine("    address: ""$($r.'住所')""")
   $count++
 }
 
