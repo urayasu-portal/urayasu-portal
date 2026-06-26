@@ -2096,7 +2096,14 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 .tg-pyr-price { margin-left: auto; font-size: 0.78rem; font-weight: 600; padding-left: 10px; }
 
 /* ---------- 施設一覧テーブル ---------- */
-.tg-hotel-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 28px; }
+/* 角丸・影・クリップはスクロールするラッパー側に付ける。
+   表自体に overflow:hidden を付けると min-width で固定された箱より右の内容が
+   クリップされ、右スクロールしても価格・特徴列が見えなくなるため付けない。 */
+.tg-hotel-table-wrap {
+  overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 28px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.07);
+}
 .tg-hotel-table {
   width: 100%;
   /* モバイルで列が潰れず横スクロールできるよう最小幅を確保（5列：施設名/エリア/区分/価格/特徴） */
@@ -2104,9 +2111,9 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   border-collapse: collapse;
   font-size: 0.85rem;
   background: var(--up-card);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 1px 6px rgba(0,0,0,.07);
+  /* overflow を visible に固定。auto/hidden だと表自身がスクロール箱になり、
+     min-width で固定された箱より右（価格・特徴列）がラッパーから辿れなくなる */
+  overflow: visible;
 }
 .tg-hotel-table thead th {
   background: var(--accent);
