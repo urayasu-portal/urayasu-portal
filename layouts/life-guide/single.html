@@ -15,9 +15,16 @@
     {{- if eq .url $cur }}{{ $curCatName = $catName }}{{ end }}
   {{- end }}
 {{- end }}
-{{- $related := slice }}
-{{- range $allGuides }}{{- if ne .url $cur }}{{ $related = $related | append . }}{{- end }}{{- end }}
-{{- $related = first 3 $related }}
+{{/* 関連ガイドは同カテゴリを優先し、足りなければ他カテゴリで補う */}}
+{{- $sameCat := slice }}
+{{- $otherCat := slice }}
+{{- range $allGuides }}
+  {{- if ne .url $cur }}
+    {{- if and $curCatName (eq .cat $curCatName) }}{{ $sameCat = $sameCat | append . }}
+    {{- else }}{{ $otherCat = $otherCat | append . }}{{- end }}
+  {{- end }}
+{{- end }}
+{{- $related := first 3 ($sameCat | append $otherCat) }}
 
 {{/* 目次生成 + 見出しID付与（生HTML <h2> も対応） */}}
 {{- $content := .Content }}

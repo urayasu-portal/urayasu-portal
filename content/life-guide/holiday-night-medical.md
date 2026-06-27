@@ -70,6 +70,7 @@ aliases:
 
 <p>「相談する」「初期診療を受ける」「専門的な救急に対応する」の3段階で考えると、選択肢が整理しやすくなります。</p>
 
+<div class="lg-art-table-wrap">
 <table class="lg-art-table">
 <thead><tr><th>段階</th><th>窓口・行き先</th><th>使う場面</th></tr></thead>
 <tbody>
@@ -83,6 +84,7 @@ aliases:
 <tr><td>翌日以降</td><td>かかりつけ医・専門医</td><td>応急処置後は通常診療へ。</td></tr>
 </tbody>
 </table>
+</div>
 
 <h2 id="flow">状況別「まずどうする？」フローチャート</h2>
 
