@@ -13,35 +13,35 @@ areas:
     hotels:
       - name: "東京ディズニーランドホテル"
         category: "直営（ラグジュアリー）"
-        price_guide: "¥80,000〜"
+        price_guide: "¥55,000〜"
         feature: "TDL徒歩約1分"
         policy: normal
         individual_page: true
         slug: "tdl-hotel"
       - name: "東京ディズニーシー・ホテルミラコスタ"
         category: "直営（ラグジュアリー）"
-        price_guide: "¥80,000〜"
+        price_guide: "¥83,000〜"
         feature: "TDS内・専用入口"
         policy: normal
         individual_page: true
         slug: "miracosta"
       - name: "ファンタジースプリングスホテル"
         category: "直営（ラグジュアリー）"
-        price_guide: "¥80,000〜"
+        price_guide: "¥50,000〜"
         feature: "TDS新エリア直結（2024年開業）"
         policy: normal
         individual_page: true
         slug: "fantasy-springs-hotel"
       - name: "ディズニーアンバサダーホテル"
         category: "直営（ラグジュアリー）"
-        price_guide: "¥60,000〜"
+        price_guide: "¥40,000〜"
         feature: "舞浜駅徒歩約8分"
         policy: normal
         individual_page: true
         slug: "ambassador-hotel"
       - name: "トイ・ストーリーホテル"
         category: "直営（バリュー）"
-        price_guide: "¥30,000〜"
+        price_guide: "¥45,000〜"
         feature: "ベイサイド・ステーション徒歩約3分"
         policy: normal
         individual_page: true
@@ -62,21 +62,21 @@ areas:
         slug: "celebration-discover"
       - name: "ホテルオークラ東京ベイ"
         category: "オフィシャルホテル"
-        price_guide: "¥50,000〜"
+        price_guide: "¥30,000〜"
         feature: "専用シャトル運行"
         policy: normal
         individual_page: true
         slug: "hotel-okura-tokyo-bay"
       - name: "グランドニッコー東京ベイ舞浜"
         category: "オフィシャルホテル"
-        price_guide: "¥40,000〜"
+        price_guide: "¥30,000〜"
         feature: "専用シャトル運行"
         policy: normal
         individual_page: true
         slug: "grand-nikko-tokyo-bay"
       - name: "シェラトン・グランデ・トーキョーベイ"
         category: "オフィシャルホテル"
-        price_guide: "¥35,000〜"
+        price_guide: "¥30,000〜"
         feature: "大浴場「舞湯」・大型プール"
         policy: normal
         individual_page: true
@@ -104,7 +104,7 @@ areas:
         slug: "dreamgate-maihama"
       - name: "舞浜ビューホテル by HULIC"
         category: "一般ホテル"
-        price_guide: "¥12,000〜"
+        price_guide: "¥20,000〜"
         feature: "大浴場「スパ ローズ」"
         policy: normal
         individual_page: true
@@ -118,15 +118,15 @@ areas:
     hotels:
       - name: "ザロイヤルパークホテル舞浜リゾート東京ベイ"
         category: "一般ホテル"
-        price_guide: "¥18,000〜"
+        price_guide: "¥25,000〜"
         feature: "2026年2月開業・最大6名対応"
         policy: normal
         individual_page: true
         slug: "royal-park-maihama"
       - name: "ホテルマイステイズ舞浜"
         category: "一般ホテル"
-        price_guide: "¥5,000〜"
-        feature: "TDS徒歩約6分・エリア最安"
+        price_guide: "¥8,000〜"
+        feature: "TDS徒歩6分・エリア最安クラスのコスパビジネスホテル"
         policy: normal
         individual_page: true
         slug: "mystays-maihama"
@@ -173,21 +173,21 @@ areas:
         slug: "comfort-suites-tokyo-bay"
       - name: "浦安ブライトンホテル"
         category: "パートナーホテル"
-        price_guide: "¥20,000〜"
+        price_guide: "¥15,000〜"
         feature: "新浦安駅直結"
         policy: normal
         individual_page: true
         slug: "brighton-tokyo-bay"
       - name: "オリエンタルホテル東京ベイ"
         category: "パートナーホテル"
-        price_guide: "¥18,000〜"
+        price_guide: "¥16,500〜"
         feature: "新浦安駅直結"
         policy: normal
         individual_page: true
         slug: "oriental-tokyo-bay"
       - name: "ホテルエミオン東京ベイ"
         category: "パートナーホテル"
-        price_guide: "¥22,000〜"
+        price_guide: "¥18,000〜"
         feature: "天然温泉・露天風呂"
         policy: normal
         individual_page: true
@@ -201,7 +201,7 @@ areas:
         slug: "mitsui-garden-prana"
       - name: "星野リゾート 1955 東京ベイ"
         category: "一般ホテル"
-        price_guide: "¥15,000〜"
+        price_guide: "¥18,000〜"
         feature: "館内ローソン・2024年開業"
         policy: normal
         individual_page: true
@@ -236,7 +236,7 @@ areas:
         slug: "flexstay-shin-urayasu"
       - name: "変なホテル舞浜"
         category: "一般ホテル"
-        price_guide: "¥8,000〜"
+        price_guide: "¥11,000〜"
         feature: "舞浜駅シャトル運行（2026年7月減便）"
         policy: normal
         individual_page: true
@@ -290,7 +290,7 @@ areas:
         slug: "viewfort-urayasu"
       - name: "ホテル醍醐"
         category: "一般ホテル"
-        price_guide: "¥8,000〜"
+        price_guide: "¥11,000〜"
         feature: "年中均一料金・繁忙期も値上げなし"
         policy: normal
         individual_page: true

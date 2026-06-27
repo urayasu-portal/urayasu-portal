@@ -9,35 +9,35 @@ hotels:
   - slug: "tdl-hotel"
     lat: 35.6368
     lng: 139.8783
-    price_min: 80000
+    price_min: 55000
     flags: [limousine]
     name: "東京ディズニーランドホテル"
     address: "〒279-8505 千葉県浦安市舞浜29-1"
   - slug: "miracosta"
     lat: 35.6269
     lng: 139.8881
-    price_min: 80000
+    price_min: 83000
     flags: [limousine]
     name: "東京ディズニーシー・ホテルミラコスタ"
     address: "〒279-8519 千葉県浦安市舞浜1-13"
   - slug: "fantasy-springs-hotel"
     lat: 35.6289
     lng: 139.8764
-    price_min: 80000
+    price_min: 50000
     flags: [limousine]
     name: "東京ディズニーシー・ファンタジースプリングスホテル"
     address: "〒279-8526 千葉県浦安市舞浜1-2"
   - slug: "ambassador-hotel"
     lat: 35.6334
     lng: 139.8878
-    price_min: 60000
+    price_min: 40000
     flags: [shuttle, limousine]
     name: "ディズニーアンバサダーホテル"
     address: "〒279-8522 千葉県浦安市舞浜2-11"
   - slug: "toy-story-hotel"
     lat: 35.6259
     lng: 139.8746
-    price_min: 30000
+    price_min: 45000
     flags: [shuttle, limousine]
     name: "トイ・ストーリーホテル"
     address: "〒279-8506 千葉県浦安市舞浜1-47"
@@ -58,21 +58,21 @@ hotels:
   - slug: "hotel-okura-tokyo-bay"
     lat: 35.6259
     lng: 139.8760
-    price_min: 50000
+    price_min: 30000
     flags: [shuttle, limousine]
     name: "ホテルオークラ東京ベイ"
     address: "千葉県浦安市舞浜1-8"
   - slug: "grand-nikko-tokyo-bay"
     lat: 35.6293
     lng: 139.8740
-    price_min: 40000
+    price_min: 30000
     flags: [shuttle, limousine]
     name: "グランドニッコー東京ベイ舞浜"
     address: "千葉県浦安市舞浜1-7"
   - slug: "sheraton-grande-tokyo-bay"
     lat: 35.6257
     lng: 139.8782
-    price_min: 35000
+    price_min: 30000
     flags: [shuttle, bath, limousine]
     name: "シェラトン・グランデ・トーキョーベイ"
     address: "千葉県浦安市舞浜1-9"
@@ -100,21 +100,21 @@ hotels:
   - slug: "maihama-view-hotel"
     lat: 35.6307
     lng: 139.8739
-    price_min: 12000
+    price_min: 20000
     flags: [shuttle, bath, limousine]
     name: "舞浜ビューホテル by HULIC"
     address: "〒279-0031 千葉県浦安市舞浜1-34"
   - slug: "royal-park-maihama"
     lat: 35.6267
     lng: 139.8972
-    price_min: 18000
+    price_min: 25000
     flags: [shuttle, convenience]
     name: "ザ ロイヤルパークホテル 舞浜リゾート 東京ベイ"
     address: "〒279-0032 千葉県浦安市千鳥13-1"
   - slug: "mystays-maihama"
     lat: 35.6328
     lng: 139.8924
-    price_min: 5000
+    price_min: 8000
     flags: [shuttle]
     name: "ホテルマイステイズ舞浜"
     address: "〒279-0025 千葉県浦安市鉄鋼通り3-5-1"
@@ -149,21 +149,21 @@ hotels:
   - slug: "brighton-tokyo-bay"
     lat: 35.6500
     lng: 139.9116
-    price_min: 20000
+    price_min: 15000
     flags: [shuttle, station, limousine]
     name: "浦安ブライトンホテル東京ベイ"
     address: "千葉県浦安市美浜1-9"
   - slug: "oriental-tokyo-bay"
     lat: 35.6509
     lng: 139.9127
-    price_min: 18000
+    price_min: 16500
     flags: [shuttle, station, convenience, limousine]
     name: "オリエンタルホテル東京ベイ"
     address: "千葉県浦安市美浜1-8-2"
   - slug: "emion-tokyo-bay"
     lat: 35.6477
     lng: 139.9203
-    price_min: 22000
+    price_min: 18000
     flags: [shuttle, bath, limousine]
     name: "ホテルエミオン東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出1-1-1"
@@ -177,7 +177,7 @@ hotels:
   - slug: "hoshinoresorts-1955-tokyo-bay"
     lat: 35.6375
     lng: 139.9320
-    price_min: 15000
+    price_min: 18000
     flags: [shuttle, convenience]
     name: "星野リゾート 1955 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出7-2-3"
@@ -212,7 +212,7 @@ hotels:
   - slug: "henna-hotel-maihama"
     lat: 35.6450
     lng: 139.8877
-    price_min: 8000
+    price_min: 11000
     flags: [shuttle]
     name: "変なホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見5-3-23"
@@ -247,7 +247,7 @@ hotels:
   - slug: "hotel-daigo-urayasu"
     lat: 35.666597
     lng: 139.895219
-    price_min: 8000
+    price_min: 11000
     flags: [station]
     name: "ホテル醍醐"
     address: "〒279-0002 千葉県浦安市北栄1-11-1"

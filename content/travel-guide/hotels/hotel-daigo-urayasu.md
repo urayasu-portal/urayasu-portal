@@ -20,7 +20,7 @@ noDate: true
   <dl>
     <dt>チェックイン</dt><dd>16:00</dd>
     <dt>チェックアウト</dt><dd>10:00</dd>
-    <dt>価格の目安</dt><dd>年中均一料金（4名1室 約25,000円+税の口コミ例あり）</dd>
+    <dt>価格の目安</dt><dd>年中均一料金（2名1室 約11,000円〜・4名1室 約25,000円／税込）</dd>
   </dl>
   <a class="hg-info-btn" href="https://www.google.com/search?q=ホテル醍醐+浦安">予約サイトで確認</a>
 </div>
