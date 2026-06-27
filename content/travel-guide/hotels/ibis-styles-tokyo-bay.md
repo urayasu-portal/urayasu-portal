@@ -39,7 +39,7 @@ noDate: true
   <div class="hg-fit-card is-no">
     <div class="hg-fit-head"><i class="ti ti-circle-minus"></i> 向かないかもしれない人</div>
     <ul>
-      <li>大浴場でリフレッシュしたい人 — 大浴場・温泉の設置は確認できず（要最終確認）</li>
+      <li>大浴場でリフレッシュしたい人 — 大浴場・温泉なし（客室バスのみ）</li>
       <li>深夜に確実なコンビニが必要な人 — 最寄りコンビニの詳細は要確認</li>
       <li>TDRオフィシャル特典を使いたい人 — 一般ホテルのためハッピーエントリー等の対象外</li>
     </ul>

@@ -113,7 +113,7 @@ areas:
   - id: b
     tag: "B"
     name: "千鳥エリア"
-    count: 4
+    count: 5
     note: "マイステイズ舞浜はTDS徒歩6分・最安値クラス。"
     hotels:
       - name: "ザロイヤルパークホテル舞浜リゾート東京ベイ"
@@ -144,6 +144,12 @@ areas:
         policy: normal
         individual_page: true
         slug: "eurasia-annex"
+      - name: "GRAND MONday Resort 東京ベイ舞浜"
+        category: "一般リゾートホテル"
+        price_guide: ""
+        feature: "2026年7月18日開業予定・全室オーシャンフロント"
+        policy: name-only
+        individual_page: false
 
   - id: c
     tag: "C"
@@ -223,7 +229,7 @@ areas:
         slug: "mystays-shin-urayasu"
       - name: "フレックステイイン新浦安"
         category: "一般ホテル"
-        price_guide: "¥7,800〜"
+        price_guide: "¥7,000〜"
         feature: "全室ミニキッチン・長期滞在型"
         policy: normal
         individual_page: true
@@ -231,7 +237,7 @@ areas:
       - name: "変なホテル舞浜"
         category: "一般ホテル"
         price_guide: "¥8,000〜"
-        feature: "2026年7月よりシャトル減便予定"
+        feature: "舞浜駅シャトル運行（2026年7月減便）"
         policy: normal
         individual_page: true
         slug: "henna-hotel-maihama"
@@ -298,7 +304,7 @@ areas:
         slug: "bayhotel-urayasu"
       - name: "浦安サンホテル"
         category: "一般ホテル"
-        price_guide: "¥8,000〜"
+        price_guide: "¥5,000〜"
         feature: "無料朝食・24時間フロント"
         policy: normal
         individual_page: true
@@ -307,5 +313,60 @@ areas:
         category: "ファッションホテル"
         price_guide: ""
         feature: ""
+        policy: name-only
+        individual_page: false
+
+  - id: e
+    tag: "E"
+    name: "浦安近郊"
+    count: 8
+    note: "葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。"
+    hotels:
+      - name: "Premium hotel MONday 舞浜ビューⅠ"
+        category: "一般ホテル"
+        price_guide: "¥11,000〜"
+        feature: "2025年12月開業・TDR無料シャトル"
+        policy: name-only
+        individual_page: false
+      - name: "ホテルシーサイド江戸川"
+        category: "一般リゾートホテル"
+        price_guide: "¥16,000〜"
+        feature: "葛西臨海公園内・駅徒歩3分・和室あり"
+        policy: name-only
+        individual_page: false
+      - name: "CVS・BAY HOTEL"
+        category: "一般ホテル"
+        price_guide: "¥5,610〜"
+        feature: "市川塩浜駅隣接・舞浜2駅6分"
+        policy: name-only
+        individual_page: false
+      - name: "ホテルイルフィオーレ葛西"
+        category: "一般ホテル"
+        price_guide: "¥7,860〜"
+        feature: "葛西駅徒歩3分・最大5名対応"
+        policy: name-only
+        individual_page: false
+      - name: "ホテルイルフィオーレ葛西 ANNEX"
+        category: "一般ホテル"
+        price_guide: "¥5,500〜"
+        feature: "葛西駅徒歩3分・イルフィオーレ別館"
+        policy: name-only
+        individual_page: false
+      - name: "ホテルルミエール葛西"
+        category: "一般ホテル"
+        price_guide: "¥9,700〜"
+        feature: "葛西駅徒歩2分のビジネスホテル"
+        policy: name-only
+        individual_page: false
+      - name: "ホテルリブマックス葛西駅前"
+        category: "一般ホテル"
+        price_guide: "¥5,000〜"
+        feature: "葛西駅徒歩3分・TDRバス約20分"
+        policy: name-only
+        individual_page: false
+      - name: "スーパーホテル 市川・妙典駅前"
+        category: "一般ホテル"
+        price_guide: "¥7,400〜"
+        feature: "妙典駅前・東西線で浦安へ"
         policy: name-only
         individual_page: false

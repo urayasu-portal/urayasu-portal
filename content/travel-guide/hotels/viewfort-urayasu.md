@@ -20,7 +20,7 @@ noDate: true
   <dl>
     <dt>チェックイン</dt><dd>15:00</dd>
     <dt>チェックアウト</dt><dd>11:00</dd>
-    <dt>価格の目安</dt><dd>予約サイトで要確認（変動制）</dd>
+    <dt>価格の目安</dt><dd>2名 約9,000円〜（変動制）</dd>
   </dl>
   <a class="hg-info-btn" href="https://www.google.com/search?q=浦安ビューフォートホテル+予約">予約・空室状況を検索</a>
 </div>

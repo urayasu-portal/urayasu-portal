@@ -38,7 +38,7 @@ Hiyori Hotel Maihama is a hotel in the Higashino district offering some genuinel
 
 - **Guests who want to walk from Maihama Station** — Hotel shuttle is the practical option (approx. 10 min from South Exit C3); walkable distance not confirmed
 - **Guests wanting a 24-hour convenience store nearby** — Nearest convenience store distance requires confirmation
-- **Guests wanting a large communal bath or natural hot spring** — Availability requires confirmation
+- **Guests wanting a large communal bath or natural hot spring** — No large bath (in-room wash-area baths only)
 
 ---
 

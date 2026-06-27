@@ -205,7 +205,7 @@ hotels:
   - slug: "flexstay-shin-urayasu"
     lat: 35.642556
     lng: 139.904282
-    price_min: 7800
+    price_min: 7000
     flags: [shuttle, kitchen]
     name: "フレックステイイン新浦安"
     address: "〒279-0022 千葉県浦安市今川4-1-29"
@@ -261,7 +261,7 @@ hotels:
   - slug: "urayasu-sun-hotel"
     lat: 35.665574
     lng: 139.890164
-    price_min: 8000
+    price_min: 5000
     flags: [station]
     name: "浦安サンホテル"
     address: "〒279-0001 千葉県浦安市当代島1-19-13"

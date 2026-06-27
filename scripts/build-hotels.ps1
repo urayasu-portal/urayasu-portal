@@ -39,6 +39,7 @@ $areas = @(
   [ordered]@{ id="b"; tag="B"; name="千鳥エリア";   note="マイステイズ舞浜はTDS徒歩6分・最安値クラス。" }
   [ordered]@{ id="c"; tag="C"; name="新浦安エリア"; note="パートナーホテル集中。空港リムジンも便利。" }
   [ordered]@{ id="d"; tag="D"; name="浦安駅エリア"; note="東西線直通で都心1本。パークへはバス25〜30分。" }
+  [ordered]@{ id="e"; tag="E"; name="浦安近郊";   note="葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。" }
 )
 
 # CSVカテゴリ → 表示用カテゴリ

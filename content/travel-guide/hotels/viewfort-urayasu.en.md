@@ -36,7 +36,7 @@ A business hotel about 1-minute walk from Urayasu Station on the Tokyo Metro Toz
 ## May Not Suit
 
 - **Guests wanting a direct shuttle to TDR** — No free shuttle (approx. 25–30 min by local bus; bus stop about 2 min from Urayasu Station)
-- **Guests looking for a large communal bath** — Availability of a large bath requires confirmation
+- **Guests looking for a large communal bath** — No large bath
 - **Guests arriving in tall SUVs or minivans** — Hotel parking has a 1.55m height limit (confirm before booking)
 
 ---

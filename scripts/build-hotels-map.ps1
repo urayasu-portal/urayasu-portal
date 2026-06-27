@@ -45,6 +45,7 @@ $sb = New-Object System.Text.StringBuilder
 
 $count = 0
 foreach ($r in $csv) {
+  if ($r."掲載区分" -eq "名称・カテゴリのみ掲載") { continue }  # 名称のみ掲載は地図対象外（座標があっても出さない）
   $slug = ($r.slug).Trim()
   if (-not $slug) { continue }                 # slug無し（name-only等）はスキップ
   $lat = ($r."緯度").Trim()

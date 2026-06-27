@@ -20,21 +20,21 @@ Maihama View Hotel (formerly Tokyo Bay Maihama Hotel, rebranded and reopened in 
 | Item | Details |
 |---|---|
 | Address | 1-6 Maihama, Urayasu, Chiba |
-| Phone | Confirm on official website |
+| Phone | 047-355-1222 |
 | Area | Maihama (TDR Official Hotel) |
-| Check-in / Check-out | Confirm on official website |
+| Check-in / Check-out | 15:00 / 12:00 |
 | Official Website | Confirm on official website (Maihama View Hotel) |
 
 ---
 
 ## Best For
 
-- **Guests who want both Official Hotel Disney benefits AND a large communal bath** — "Spa Rose" large bath is available (uncommon among Official Hotels); a combination hard to find elsewhere in this tier
+- **Guests who want both Official Hotel Disney benefits AND a large communal bath** — "Spa Rose" large bath is available (paid; uncommon among Official Hotels); a combination hard to find elsewhere in this tier
 - **Guests wanting quick shuttle access to Maihama, Ikspiari, and Bayside** — Free shuttle in approx. 5 min; the fastest connection to Maihama Station and Ikspiari among this hotel's peer group
 
 ## May Not Suit
 
-- **Guests who rely on coin laundry** — Coin laundry was under construction or unavailable during the research period; confirm current status on the official website before booking
+- **Guests who rely on coin laundry** — Coin laundry is being newly installed on 2F (men's powder room side); confirm completion status on the official website before booking
 - **Guests who rely on the airport limousine stop** — Limousine stop location post-rebrand requires confirmation on the official website
 - **Guests who want the most established Official Hotel with the longest track record** — Rebrand is recent (2025); some services are still settling in
 
@@ -59,16 +59,16 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 
 **Large Bath "Spa Rose"**
-An uncommon feature for TDR Official Hotels. Confirm hours and access details on the official website. Availability of natural hot spring: not confirmed — check the official website.
+An uncommon feature for TDR Official Hotels. Paid use: ¥3,300 for 1 night / ¥4,700 for 2 nights / ¥6,100 for 3+ nights (available from arrival day 0:00 to departure day 14:00).
 
 **Guest Rooms**
 Details on room types and capacity: confirm on official website (rebrand may have updated room layouts).
 
 **Breakfast**
-Available (confirm details and hours on official website).
+Buffet (Japanese and Western) at restaurant "Fine Terrace," 7:00–10:00 (last order 9:30).
 
 **Coin Laundry**
-Under construction or unavailable during research period — **confirm current status before booking.**
+Being newly installed on 2F (men's powder room side) — **confirm completion status before booking.**
 
 **Shuttle**
 Free shuttle to Maihama Station, Ikspiari, and Bayside in approx. 5 min. One of the quickest shuttle connections in the Official Hotel lineup.

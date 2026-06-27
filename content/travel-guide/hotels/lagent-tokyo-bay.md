@@ -19,7 +19,7 @@ noDate: true
 <div class="hg-info">
   <dl>
     <dt>チェックイン</dt><dd>15:00</dd>
-    <dt>チェックアウト</dt><dd>11:00（情報源により12:00の表記あり・要最終確認）</dd>
+    <dt>チェックアウト</dt><dd>12:00</dd>
     <dt>価格の目安</dt><dd>2名1室 8,000〜20,000円（変動制）</dd>
   </dl>
   <a class="hg-info-btn" href="https://lagent.jp/tokyo-bay/">公式サイトで空室確認</a>

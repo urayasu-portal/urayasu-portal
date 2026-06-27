@@ -22,7 +22,7 @@ LAGENT HOTEL Tokyo Bay won the Rakuten Travel Silver Award in 2024 with consiste
 | Address | Maihama/Shin-Urayasu area, Urayasu, Chiba (confirm exact address on official website) |
 | Phone | Confirm on official website |
 | Area | Shin-Urayasu area (Business Hotel) |
-| Check-in / Check-out | 15:00 / 11:00 |
+| Check-in / Check-out | 15:00 / 12:00 |
 | Official Website | Confirm on official website (LAGENT HOTEL) |
 
 ---

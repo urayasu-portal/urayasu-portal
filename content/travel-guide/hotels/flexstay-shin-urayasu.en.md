@@ -37,7 +37,7 @@ Flexstay Inn Shin-Urayasu (MyStays group) is an extended-stay hotel where every 
 
 - **Guests planning to rely on a TDR shuttle** — A free shuttle operates, but frequency and schedule need verification; the MyStays shared bus is a possibility
 - **Guests wanting to walk from Shin-Urayasu Station** — Approximately 15 minutes on foot from Shin-Urayasu Station North Exit; local bus (approx. 5 min) is the practical option
-- **Guests looking for a breakfast-included plan** — Breakfast availability should be confirmed on the official website
+- **Guests looking for a breakfast-included plan** — Mostly room-only (breakfast-included plans are limited)
 
 ---
 
@@ -63,7 +63,7 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 All rooms equipped with mini kitchen for extended stays. Room types and capacity: confirm on the official website.
 
 **Breakfast**
-Availability: confirm on the official website.
+Mostly room-only; breakfast-included plans are limited.
 
 **Coin Laundry**
 Available in-house (fee applies).

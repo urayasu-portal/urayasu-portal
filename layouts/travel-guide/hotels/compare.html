@@ -81,7 +81,11 @@
     <span class="hcm-filter-label">エリア</span>
     <button class="hcm-chip is-active" data-chip-type="area" data-chip-val="*" onclick="hcmChipClick('area','*')">すべて</button>
     {{- range $hotels.areas }}
+    {{- $hasMap := false }}
+    {{- range .hotels }}{{- if ne .policy "name-only" }}{{ $hasMap = true }}{{- end }}{{- end }}
+    {{- if $hasMap }}
     <button class="hcm-chip" data-chip-type="area" data-chip-val="{{ .tag }}" onclick="hcmChipClick('area','{{ .tag }}')">{{ .name | replaceRE "エリア$" "" }}</button>
+    {{- end }}
     {{- end }}
   </div>
   <div class="hcm-filter-row">
