@@ -14,6 +14,12 @@ tags:
   - 浦安市
 summary: true
 description: "浦安市内の図書館・公民館・文化施設・行政サービスセンター・スポーツ施設を「やりたいこと」から探せるようにまとめました。本を借りたい、会議室を使いたい、証明書を取りたいときの入口として使える保存版ガイドです。"
+checkDate: "2026年6月"
+sources:
+  - name: "浦安市公式サイト 図書館"
+    url: "https://www.city.urayasu.lg.jp/shisetsu/bunka/toshokan/index.html"
+  - name: "浦安市公式サイト 公民館"
+    url: "https://www.city.urayasu.lg.jp/shisetsu/bunka/kouminkan/index.html"
 faq:
   - q: "浦安市で自習できる図書館はどこですか？"
     a: "中央図書館の学習室・閲覧席などを中心に確認しましょう。利用条件（学習室の有無・飲食可否など）は公式案内をご確認ください。各分館でも閲覧スペースを設けている館があります。"
@@ -169,7 +175,7 @@ aliases:
   <div class="lg-art-card"><span class="lg-art-badge is-teal">STEP 3</span><div class="lg-art-card-title" style="margin-top:8px">支払い・キャンセル</div><p class="lg-art-card-desc">支払い方法、期限、キャンセル時の扱いは施設ごとに確認が必要です。</p></div>
 </div>
 
-<div class="lg-art-note">予約システムの詳細は<a href="https://www.city.urayasu.lg.jp/shisetsu/bunka/bunka/1047607.html" target="_blank" rel="noopener">浦安市公共施設予約システム</a>からご確認ください。</div>
+<div class="lg-art-note">予約システムの詳細は<a href="https://www.city.urayasu.lg.jp/shisei/keikaku/joho/shimin/index.html" target="_blank" rel="noopener">浦安市公共施設予約システム</a>からご確認ください。</div>
 
 <h2 id="family">子連れ・高齢者・バリアフリー視点で探す</h2>
 
@@ -191,7 +197,7 @@ aliases:
   <div class="lg-art-faq-item"><div class="lg-art-q">浦安市で自習できる図書館はどこですか？</div><p class="lg-art-a"><strong>中央図書館</strong>の学習室・閲覧席などを中心に確認しましょう。利用条件（学習室の有無・飲食可否など）は公式案内をご確認ください。各分館でも閲覧スペースを設けている館があります。</p></div>
   <div class="lg-art-faq-item"><div class="lg-art-q">公民館の会議室は誰でも借りられますか？</div><p class="lg-art-a">利用資格や<strong>利用登録</strong>が必要な場合があります。営利目的や政治・宗教活動への制限もあるため、各公民館の利用規定をご確認の上、事前に申し込んでください。</p></div>
   <div class="lg-art-faq-item"><div class="lg-art-q">駅前で証明書を取れる場所はありますか？</div><p class="lg-art-a"><strong>浦安駅前・新浦安駅前・舞浜駅前</strong>の行政サービスセンターがあります。取扱業務は窓口ごとに異なり、転入・転出など一部手続きは市役所のみの受付となります。詳細は<a href="/life-guide/city-hall-procedures/">市役所手続きガイド</a>もご覧ください。</p></div>
-  <div class="lg-art-faq-item"><div class="lg-art-q">公共施設の予約はどこからできますか？</div><p class="lg-art-a">対象施設は<a href="https://www.city.urayasu.lg.jp/shisetsu/bunka/bunka/1047607.html" target="_blank" rel="noopener">浦安市公共施設予約システム</a>から予約できます。利用者登録（個人・団体）が必要な場合があり、抽選予約・随時予約・支払い期限などのルールに注意が必要です。</p></div>
+  <div class="lg-art-faq-item"><div class="lg-art-q">公共施設の予約はどこからできますか？</div><p class="lg-art-a">対象施設は<a href="https://www.city.urayasu.lg.jp/shisei/keikaku/joho/shimin/index.html" target="_blank" rel="noopener">浦安市公共施設予約システム</a>から予約できます。利用者登録（個人・団体）が必要な場合があり、抽選予約・随時予約・支払い期限などのルールに注意が必要です。</p></div>
 </div>
 
 <h2 id="links">公式リンク集</h2>
@@ -202,5 +208,5 @@ aliases:
   <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/shisetsu/bunka/bunka/index.html" target="_blank" rel="noopener">浦安市の文化施設</a>
   <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/shisetsu/shikanren/shiyakusho/index.html" target="_blank" rel="noopener">市役所・サービスセンター</a>
   <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/shisetsu/sports/index.html" target="_blank" rel="noopener">浦安市のスポーツ施設</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/shisetsu/bunka/bunka/1047607.html" target="_blank" rel="noopener">公共施設予約システム</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/shisei/keikaku/joho/shimin/index.html" target="_blank" rel="noopener">公共施設予約システム</a>
 </div>

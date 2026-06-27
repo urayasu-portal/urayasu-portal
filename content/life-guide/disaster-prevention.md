@@ -14,6 +14,12 @@ tags:
   - 浦安市
 summary: true
 description: "浦安市で暮らす人に向けて、水害ハザードマップ、地震・液状化リスク、避難場所・避難所の違い、防災アプリ、家庭の備えをわかりやすく整理しました。"
+checkDate: "2026年6月"
+sources:
+  - name: "浦安市公式サイト 防災"
+    url: "https://www.city.urayasu.lg.jp/todokede/anzen/1002080.html"
+  - name: "浦安市公式サイト 防災（避難所・ハザードマップ等）"
+    url: "https://www.city.urayasu.lg.jp/todokede/anzen/bousai/index.html"
 faq:
   - q: "避難所と避難場所は違いますか？"
     a: "違います。指定緊急避難場所は命を守るために一時的に逃げる場所、指定避難所は自宅で生活できない人が一定期間過ごす施設です。役割が異なるため、どちらをいつ使うか事前に確認しておきましょう。"

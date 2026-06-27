@@ -14,6 +14,14 @@ tags:
   - 医療
 summary: true
 description: "浦安市で休日・夜間に急病やけがで困ったときの相談先、急病診療所、休日救急歯科、子どもの急病時の電話相談を、状況別にわかりやすくまとめました。"
+checkDate: "2026年6月"
+sources:
+  - name: "浦安市公式サイト 救急（医療健康相談・急病診療所）"
+    url: "https://www.city.urayasu.lg.jp/todokede/anzen/kyukyu/index.html"
+  - name: "浦安市公式サイト 急病診療所"
+    url: "https://www.city.urayasu.lg.jp/shisetsu/hoken/hoken/1005500.html"
+  - name: "浦安市公式サイト 休日救急歯科診療"
+    url: "https://www.city.urayasu.lg.jp/todokede/anzen/kyukyu/1002082.html"
 faq:
   - q: "浦安市で夜間に内科を受診できますか？"
     a: "浦安市急病診療所で毎日20:00〜23:00に内科診療があります（診療時間中のみ電話がつながります）。受診前に047-381-9999へ電話で症状を伝えましょう。"
@@ -214,5 +222,3 @@ aliases:
     <p class="lg-art-a">急病診療所は内科・小児科の応急診療が中心です。切り傷・骨折・やけど・目の病気などは2次救急医療機関などの案内に従います。迷う場合は#7119へ相談してください。</p>
   </div>
 </div>
-
-<div class="lg-art-note"><strong>公式情報・更新方針：</strong>本ページの情報は、浦安市公式サイト・千葉県公式サイト・日本小児科学会・浦安市歯科医師会などの一次情報をもとに確認しています。医療機関の診療時間・受付方法は変更される場合があるため、年末年始・大型連休前には再確認します。</div>

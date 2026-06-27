@@ -15,6 +15,12 @@ tags:
   - 就学援助
   - ひとり親
 summary: true
+checkDate: "2026年6月"
+sources:
+  - name: "浦安市公式サイト 子育て・教育"
+    url: "https://www.city.urayasu.lg.jp/kodomo/index.html"
+  - name: "浦安市公式サイト 子育て支援"
+    url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/index.html"
 aliases:
   - /posts/urayasu-kosodate-shien-matome/
 description: "浦安市で子育てをしていると使える主な支援制度を、妊娠・出産から小中学生まで年齢別・目的別にわかりやすくまとめました。"

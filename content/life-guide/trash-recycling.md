@@ -13,6 +13,12 @@ tags:
   - 浦安市
 summary: true
 description: "浦安市でごみを出すときに必要な、町名別の収集日、分別ルール、粗大ごみの申し込み、クリーンセンターへの持ち込み方法を、生活シーン別にわかりやすくまとめました。"
+checkDate: "2026年6月"
+sources:
+  - name: "浦安市公式サイト ごみ・リサイクル情報"
+    url: "https://www.city.urayasu.lg.jp/todokede/gomi/index.html"
+  - name: "浦安市公式サイト ごみ収集カレンダー"
+    url: "https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html"
 faq:
   - q: "浦安市のごみは何時までに出せばいいですか？"
     a: "収集日当日の午前7時から午前8時までに出します。前日夜の排出は避けましょう。"

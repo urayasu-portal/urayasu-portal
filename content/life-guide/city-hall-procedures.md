@@ -14,6 +14,10 @@ tags:
   - 浦安市
 summary: true
 description: "浦安市で住民票・戸籍・印鑑証明・転入転出・マイナンバーカードなどの手続きをする際に、市役所・駅前行政サービスセンター・コンビニ・オンラインのどれを使えばよいかを目的別にまとめたガイドです。"
+checkDate: "2026年6月"
+sources:
+  - name: "浦安市公式サイト 市役所・行政サービスセンター"
+    url: "https://www.city.urayasu.lg.jp/shisetsu/shikanren/shiyakusho/index.html"
 faq:
   - q: "行政サービスセンターで転入届はできますか？"
     a: "住民異動届（転入・転出・転居など）は行政サービスセンターでは受け付けができないため、市役所市民課で確認します。"
@@ -120,8 +124,8 @@ aliases:
 <p>平日昼間に窓口へ行きにくい場合の選択肢です。マイナンバーカードがあれば、より多くの手続きをカバーできます。</p>
 
 <div class="lg-art-cards cols-2">
-  <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-building-store" aria-hidden="true"></i> コンビニ交付</div><p class="lg-art-card-desc">マイナンバーカードと4桁の暗証番号を使い、住民票の写し・印鑑登録証明書・戸籍証明書などを取得できる場合があります。利用時間が長く、平日の日中に窓口へ行きにくい方に便利です。</p><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/todokede/shomei/1036688.html" target="_blank" rel="noopener">コンビニ交付サービスを確認する</a></div>
-  <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-world" aria-hidden="true"></i> オンライン・郵送申請</div><p class="lg-art-card-desc">住民票や戸籍証明書などは、オンライン申請や郵送請求を利用できる場合があります。来庁せずに済む一方、郵送日数がかかるため急ぎの場合は窓口やコンビニ交付も検討しましょう。</p><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/todokede/shomei/index.html" target="_blank" rel="noopener">申請方法の詳細を見る</a></div>
+  <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-building-store" aria-hidden="true"></i> コンビニ交付</div><p class="lg-art-card-desc">マイナンバーカードと4桁の暗証番号を使い、住民票の写し・印鑑登録証明書・戸籍証明書などを取得できる場合があります。利用時間が長く、平日の日中に窓口へ行きにくい方に便利です。</p><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/todokede/testuduki/shomei/1019766.html" target="_blank" rel="noopener">コンビニ交付サービスを確認する</a></div>
+  <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-world" aria-hidden="true"></i> オンライン・郵送申請</div><p class="lg-art-card-desc">住民票や戸籍証明書などは、オンライン申請や郵送請求を利用できる場合があります。来庁せずに済む一方、郵送日数がかかるため急ぎの場合は窓口やコンビニ交付も検討しましょう。</p><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/todokede/testuduki/shomei/index.html" target="_blank" rel="noopener">申請方法の詳細を見る</a></div>
 </div>
 
 <div class="lg-art-note">マイナポータルから転出届の手続きができる場合があります（マイナンバーカード・スマートフォンが必要）。詳細は<a href="https://myna.go.jp/" target="_blank" rel="noopener">マイナポータル公式サイト</a>でご確認ください。</div>
@@ -145,9 +149,9 @@ aliases:
 </div>
 
 <div class="lg-art-links">
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/shomei/1002198.html" target="_blank" rel="noopener">駅前行政サービスセンターの業務</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/shomei/1002195.html" target="_blank" rel="noopener">住民票などの証明書</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/shomei/1036688.html" target="_blank" rel="noopener">コンビニ交付サービス</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/shomei/1002204.html" target="_blank" rel="noopener">日曜日の市役所窓口</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/shisei/soshiki/shimin/index.html" target="_blank" rel="noopener">浦安市 市民課</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/testuduki/shomei/1005847.html" target="_blank" rel="noopener">駅前行政サービスセンターの業務</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/testuduki/shomei/1022586.html" target="_blank" rel="noopener">住民票などの証明書</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/testuduki/shomei/1019766.html" target="_blank" rel="noopener">コンビニ交付サービス</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/shisetsu/shikanren/shiyakusho/1026889/index.html" target="_blank" rel="noopener">日曜日の市役所窓口</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/testuduki/1020999/index.html" target="_blank" rel="noopener">マイナンバーカード</a>
 </div>

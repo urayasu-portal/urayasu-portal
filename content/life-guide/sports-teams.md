@@ -6,6 +6,14 @@ description: "浦安市を拠点に活動するラグビー・サッカー・フ
 categories: ["お知らせ"]
 tags: ["浦安D-Rocks", "ブリオベッカ浦安・市川", "バルドラール浦安", "スポーツ観戦", "子連れ観戦", "舞浜", "浦安市運動公園"]
 summary: true
+checkDate: "2026年6月"
+sources:
+  - name: "浦安D-Rocks 公式サイト"
+    url: "https://urayasu-d-rocks.com/"
+  - name: "ブリオベッカ浦安 公式サイト"
+    url: "https://briobecca.jp/"
+  - name: "バルドラール浦安 公式サイト"
+    url: "https://www.bardral-urayasu.com/"
 faq:
   - q: "浦安でスポーツ観戦できる主なチームはどこですか？"
     a: "ラグビーの浦安D-Rocks、サッカーのブリオベッカ浦安・市川、フットサルのバルドラール浦安が代表的です。"
