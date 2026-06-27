@@ -84,6 +84,9 @@ cover:
 
 <h2 id="birth">妊娠・出産時の支援</h2>
 
+<p>健診助成・給付金・産後ケアなど、妊娠から産後までの支援を、すべて浦安市公式の確認先リンク付きで専用ページにまとめています。</p>
+<p><a class="lg-art-btn" href="/life-guide/urayasu-ninshin-shussan-shien/"><i class="ti ti-arrow-right" aria-hidden="true"></i> 妊娠・出産時の支援ガイド（専用ページ）</a></p>
+
 <h3>母子健康手帳の交付</h3>
 <p>妊娠が確認されたら、まず母子健康手帳を受け取りましょう。浦安市では市役所（子育て支援課）または各保健センターで交付しています。手帳の交付と同時に、妊婦健診の受診票や各種サービスの案内を受け取れます。</p>
 
@@ -107,6 +110,9 @@ cover:
 </dl>
 
 <h2 id="infant">乳幼児期の支援</h2>
+
+<p>健診・予防接種・子育て支援センター・一時預かりなど、乳幼児期の支援を、すべて浦安市公式の確認先リンク付きで専用ページにまとめています。</p>
+<p><a class="lg-art-btn" href="/life-guide/urayasu-nyuyoji-shien/"><i class="ti ti-arrow-right" aria-hidden="true"></i> 乳幼児期の子育て支援ガイド（専用ページ）</a></p>
 
 <h3>乳幼児健診</h3>
 <p>浦安市では、乳幼児の発育・発達を確認するために次の健診を無料で実施しています。</p>
