@@ -1,0 +1,97 @@
+---
+title: "CVS BAY HOTEL | Next to Ichikawa-Shiohama Station, 2 Stops (6 Min) to Maihama, Large Bath & Women's Capsules"
+date: 2026-06-27T10:00:00+09:00
+lastmod: 2026-06-28
+description: "Local review of CVS BAY HOTEL (Ichikawa-Shiohama). Adjacent to JR Keiyo Line Ichikawa-Shiohama Station, 2 stops (~6 min) to Maihama. About 256 rooms across Main, Bay Tower and Annex buildings, including women-only capsules. Large bath, 1F convenience store, breakfast buffet."
+tags:
+  - Hotel
+  - Disney
+  - Urayasu
+images: ["/images/og-travel-urayasu.png"]
+noDate: true
+---
+
+CVS BAY HOTEL is adjacent to JR Keiyo Line Ichikawa-Shiohama Station — just 2 stops (about 6 minutes) from Maihama (Tokyo Disney Resort). It is a large hotel with about 256 rooms across its Main, Bay Tower and Annex buildings, ranging from singles and family rooms to women-only capsule (unit) rooms. Practical facilities include a large bath, a 1F convenience store and a breakfast buffet. Prices and times are estimates based on 2025–2026 research.
+
+---
+
+## Basic Information
+
+| Item | Details |
+|---|---|
+| Address | 2-33-1 Shiohama, Ichikawa, Chiba (Main building) |
+| Phone | 047-390-3300 |
+| Area | Urayasu Vicinity (Ichikawa-Shiohama) |
+| Check-in / Check-out | 15:00–25:00 / 10:00 |
+| Price Guide | from approx. ¥5,610 / 2 guests (capsule from ¥3,600; dynamic) |
+| Official Website | [cvs-bay-hotel.com](https://cvs-bay-hotel.com/) |
+
+---
+
+## Best For
+
+- **Guests who want the cheapest base for TDR** — Capsules from ¥3,600; 2 stops (6 min) to Maihama
+- **Guests traveling mainly by train** — Adjacent to Ichikawa-Shiohama Station
+- **Guests who want a large bath / in-house convenience store** — Large bath available, convenience store on 1F
+
+## May Not Suit
+
+- **Guests who want a direct free TDR shuttle** — No direct shuttle (2 stops on the JR Keiyo Line)
+- **Guests who need on-site parking** — No dedicated lot; uses a partner Times parking
+
+---
+
+## Access
+
+### To the Parks (TDL / TDS)
+2 stops (~6 min) to Maihama on the JR Keiyo Line, then the Disney Resort Line to the parks (no direct shuttle).
+
+### To the Nearest Station
+Adjacent to JR Keiyo Line Ichikawa-Shiohama Station (right by the south exit).
+
+### To the Airport
+About 65 min to Haneda Airport.
+
+### To Central Tokyo
+About 22 min to Tokyo Station on the JR Keiyo Line.
+
+---
+
+## Facilities & Services
+
+**Guest Rooms**
+About 256 rooms across Main, Bay Tower and Annex. Singles to family rooms, plus women-only capsule (unit) rooms.
+
+**Large Bath**
+Available.
+
+**Breakfast**
+Breakfast buffet available (depending on plan).
+
+**Parking**
+No dedicated lot; partner Times parking (around ¥1,500, discount tickets provided).
+
+**Wi-Fi**
+Wired LAN / Wi-Fi in all rooms.
+
+**Coin Laundry / Luggage Storage**
+Confirm on the official website.
+
+---
+
+## Local Notes
+
+Adjacent to Ichikawa-Shiohama Station and just 2 stops (6 min) from Maihama, with a wide price range from capsules to family rooms. A large bath and 1F convenience store make it a good fit for travelers who want to keep costs down without sacrificing practicality.
+
+---
+
+## Price Guide
+
+From approx. ¥5,610 for 2 guests (capsule from ¥3,600; dynamic pricing). Check the latest availability and rates on booking sites.
+
+---
+
+## Related
+
+- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
+- [Access Comparison]({{ "/travel-guide/hotels/access/" | absLangURL }})

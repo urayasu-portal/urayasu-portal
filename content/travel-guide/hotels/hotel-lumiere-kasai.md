@@ -1,0 +1,87 @@
+---
+title: "ホテル ルミエール葛西｜葛西駅徒歩2分・無料朝食付き、ミニキッチン付き客室もあるビジネスホテル【地元レビュー】"
+date: 2026-06-27T10:00:00+09:00
+lastmod: 2026-06-28
+description: "ホテル ルミエール葛西を地元メディアがレビュー。東京メトロ東西線・葛西駅から徒歩約2分。1Fラウンジで無料朝食(6:30〜10:00)、電子レンジ・ミニキッチン付きのツイン、各階のコインランドリー、立体駐車場50台。東西線で浦安へ1駅・大手町へ約20分。"
+area: "浦安近郊"
+tags:
+  - ホテル
+  - ディズニー
+images: ["/images/og-travel-urayasu.png"]
+noDate: true
+---
+
+<p>東京メトロ東西線・葛西駅から徒歩約2分のホテル ルミエール葛西。1Fラウンジでの無料朝食（6:30〜10:00）が付き、電子レンジ・ミニキッチン付きのツインルームや各階のコインランドリーなど、長めの滞在にも便利な設備を備えたビジネスホテルです。東西線で浦安へ1駅・大手町へ約20分と、都心アクセスも良好です。</p>
+
+## 基本情報
+
+<div class="hg-info">
+  <dl>
+    <dt>チェックイン</dt><dd>15:00</dd>
+    <dt>チェックアウト</dt><dd>10:00</dd>
+    <dt>価格の目安</dt><dd>2名 約9,700円〜（朝食付・変動制）</dd>
+  </dl>
+  <a class="hg-info-btn" href="https://www.hotel-lumiere.jp/kasai/">公式サイトで空室確認</a>
+</div>
+
+## おすすめな人・向かない人
+
+<div class="hg-fit">
+  <div class="hg-fit-card is-yes">
+    <div class="hg-fit-head"><i class="ti ti-circle-check"></i> こんな人におすすめ</div>
+    <ul>
+      <li>朝しっかり食べてから出発したい人 — 1Fラウンジで無料朝食（6:30〜10:00）</li>
+      <li>駅近で探している人 — 東西線葛西駅から徒歩約2分</li>
+      <li>連泊・自炊もしたい人 — ミニキッチン付きツイン、各階にコインランドリー</li>
+    </ul>
+  </div>
+  <div class="hg-fit-card is-no">
+    <div class="hg-fit-head"><i class="ti ti-circle-minus"></i> 向かないかもしれない人</div>
+    <ul>
+      <li>大浴場でリフレッシュしたい人 — 大浴場なし（客室バスのみ）</li>
+      <li>背の高い車で駐車したい人 — 機械式立体駐車場で車両サイズ制限あり（高さ2m05cm等）</li>
+    </ul>
+  </div>
+</div>
+
+## アクセス：4つの行き先で見る
+
+<div class="lg-art-table">
+
+| 行き先 | 方法・時間 |
+|---|---|
+| パーク（TDL／TDS） | 葛西駅から京成バスでTDRへ約20分（車で約15分） |
+| 最寄り駅 | 東京メトロ東西線 葛西駅から徒歩約2分 |
+| 空港 | 電車・バス乗継で羽田空港まで約50〜60分 |
+| 都心 | 東西線で大手町まで約20分・日本橋まで約18分（浦安駅へは1駅） |
+
+</div>
+
+## 地図・アクセス
+
+{{< hotel-map >}}
+
+## 設備・サービス
+
+<div class="hg-facilities">
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">無料<br>朝食</div></div>
+  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">ミニ<br>キッチン</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">立体<br>50台</div></div>
+</div>
+
+**客室**　シングル／ダブル／ツイン（電子レンジ・ミニキッチン付き）。
+
+**朝食**　1Fラウンジで無料朝食（6:30〜10:00）。パン・卵料理・サラダ・スープなど。
+
+**コインランドリー**　5F・8F・11Fに設置（洗濯機300円／乾燥機200円/1時間）。
+
+**駐車場**　機械式立体駐車場50台・1,500円/泊（予約制・車両サイズ制限あり）。
+
+**荷物預かり**　チェックイン前・チェックアウト後も対応。
+
+**Wi-Fi**　全館無料。
+
+**大浴場**　なし。
+
+葛西駅徒歩2分で無料朝食付き、ミニキッチン付き客室やコインランドリーもそろう実用的なビジネスホテルです。東西線で浦安・都心へのアクセスも良好です。

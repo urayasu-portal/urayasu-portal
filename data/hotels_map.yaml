@@ -230,13 +230,6 @@ hotels:
     flags: [shuttle]
     name: "日和ホテル舞浜"
     address: "〒279-0042 千葉県浦安市東野2-25-8"
-  - slug: "koyasu-urayasu"
-    lat: 35.6510
-    lng: 139.8996
-    price_min: 0
-    flags: [bath]
-    name: "こやす"
-    address: "〒279-0042 千葉県浦安市東野1-11-28"
   - slug: "viewfort-urayasu"
     lat: 35.66471
     lng: 139.892687
@@ -265,3 +258,59 @@ hotels:
     flags: [station]
     name: "浦安サンホテル"
     address: "〒279-0001 千葉県浦安市当代島1-19-13"
+  - slug: "premium-monday-maihama-view-1"
+    lat: 35.644359
+    lng: 139.877470
+    price_min: 11000
+    flags: [shuttle, bath]
+    name: "Premium hotel MONday 舞浜ビューⅠ"
+    address: "〒134-0085 東京都江戸川区南葛西6-2-22"
+  - slug: "hotel-seaside-edogawa"
+    lat: 35.642820
+    lng: 139.859376
+    price_min: 16000
+    flags: [bath]
+    name: "ホテルシーサイド江戸川"
+    address: "〒134-0086 東京都江戸川区臨海町6-2-2（葛西臨海公園内）"
+  - slug: "cvs-bay-hotel"
+    lat: 35.666803
+    lng: 139.923990
+    price_min: 5610
+    flags: [bath, convenience]
+    name: "CVS・BAY HOTEL"
+    address: "〒272-0127 千葉県市川市塩浜2-33-1（本館）"
+  - slug: "hotel-ilfiore-kasai"
+    lat: 35.662815
+    lng: 139.874746
+    price_min: 7860
+    flags: []
+    name: "ホテルイルフィオーレ葛西"
+    address: "〒134-0084 東京都江戸川区東葛西6-5-8"
+  - slug: "hotel-ilfiore-kasai-annex"
+    lat: 35.661294
+    lng: 139.873346
+    price_min: 5500
+    flags: []
+    name: "ホテルイルフィオーレ葛西 ANNEX"
+    address: "〒134-0084 東京都江戸川区東葛西6-1-7"
+  - slug: "hotel-lumiere-kasai"
+    lat: 35.661161
+    lng: 139.872502
+    price_min: 9700
+    flags: []
+    name: "ホテルルミエール葛西"
+    address: "〒134-0083 東京都江戸川区中葛西5-41-20"
+  - slug: "livemax-kasai-ekimae"
+    lat: 35.660810
+    lng: 139.873359
+    price_min: 5000
+    flags: []
+    name: "ホテルリブマックス葛西駅前"
+    address: "〒134-0084 東京都江戸川区東葛西6-1-3"
+  - slug: "superhotel-myoden"
+    lat: 35.691631
+    lng: 139.926597
+    price_min: 7400
+    flags: []
+    name: "スーパーホテル東西線・市川・妙典駅前"
+    address: "〒272-0111 千葉県市川市妙典4-4-27 妙典センタービル"

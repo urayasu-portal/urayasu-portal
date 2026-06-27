@@ -1,0 +1,85 @@
+---
+title: "CVS・BAY HOTEL｜市川塩浜駅隣接・舞浜まで2駅6分、大浴場＆女性カプセルもある大型ベイホテル【地元レビュー】"
+date: 2026-06-27T10:00:00+09:00
+lastmod: 2026-06-28
+description: "CVS・BAY HOTEL（市川塩浜）を地元メディアがレビュー。JR京葉線・市川塩浜駅に隣接し、舞浜まで2駅約6分。本館・ベイタワー・新館で約256室、女性専用カプセル(ユニット)もあり。大浴場・1Fコンビニ・無料朝食ビュッフェ。"
+area: "浦安近郊"
+tags:
+  - ホテル
+  - ディズニー
+images: ["/images/og-travel-urayasu.png"]
+noDate: true
+---
+
+<p>JR京葉線・市川塩浜駅に隣接する CVS・BAY HOTEL。舞浜（東京ディズニーリゾート）まで2駅・約6分という近さで、本館・ベイタワー・新館を合わせて約256室の大型ホテルです。シングルからファミリー、女性専用のカプセル(ユニット)タイプまで幅広い客室をそろえ、大浴場や1Fのコンビニ、無料朝食ビュッフェなど実用的な設備が整っています。</p>
+
+## 基本情報
+
+<div class="hg-info">
+  <dl>
+    <dt>チェックイン</dt><dd>15:00〜25:00</dd>
+    <dt>チェックアウト</dt><dd>10:00</dd>
+    <dt>価格の目安</dt><dd>2名 約5,610円〜（カプセル3,600円〜・変動制）</dd>
+  </dl>
+  <a class="hg-info-btn" href="https://cvs-bay-hotel.com/">公式サイトで空室確認</a>
+</div>
+
+## おすすめな人・向かない人
+
+<div class="hg-fit">
+  <div class="hg-fit-card is-yes">
+    <div class="hg-fit-head"><i class="ti ti-circle-check"></i> こんな人におすすめ</div>
+    <ul>
+      <li>とにかく安く泊まってTDRへ向かいたい人 — カプセル3,600円〜、舞浜まで2駅6分</li>
+      <li>電車移動が中心の人 — 市川塩浜駅に隣接、駅から濡れずにアクセスしやすい</li>
+      <li>大浴場・館内コンビニを使いたい人 — 大浴場あり、1Fにコンビニ</li>
+    </ul>
+  </div>
+  <div class="hg-fit-card is-no">
+    <div class="hg-fit-head"><i class="ti ti-circle-minus"></i> 向かないかもしれない人</div>
+    <ul>
+      <li>TDR直通の無料シャトルを使いたい人 — 直通シャトルなし（JR京葉線2駅）</li>
+      <li>専用駐車場に停めたい人 — 専用駐車場はなく提携タイムズ駐車場の利用</li>
+    </ul>
+  </div>
+</div>
+
+## アクセス：4つの行き先で見る
+
+<div class="lg-art-table">
+
+| 行き先 | 方法・時間 |
+|---|---|
+| パーク（TDL／TDS） | JR京葉線で舞浜まで2駅・約6分。舞浜駅からリゾートラインでパークへ（直通シャトルなし） |
+| 最寄り駅 | JR京葉線 市川塩浜駅に隣接（改札南口直近） |
+| 空港 | 羽田空港まで約65分 |
+| 都心 | JR京葉線で東京駅まで約22分 |
+
+</div>
+
+## 地図・アクセス
+
+{{< hotel-map >}}
+
+## 設備・サービス
+
+<div class="hg-facilities">
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">大浴場<br>あり</div></div>
+  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">1F<br>コンビニ</div></div>
+  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">市川塩浜駅<br>隣接</div></div>
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">朝食<br>ビュッフェ</div></div>
+</div>
+
+**客室**　本館・ベイタワー・新館で計約256室。シングル〜ファミリー、女性専用カプセル(ユニット)タイプもあり。
+
+**大浴場**　あり。
+
+**朝食**　朝食ビュッフェあり（プランによる）。
+
+**駐車場**　専用駐車場なし。提携タイムズ駐車場を利用（1,500円目安・割引券配布）。
+
+**Wi-Fi**　全室LAN／Wi-Fi。
+
+**コインランドリー・荷物預かり**　公式サイトにて要確認。
+
+市川塩浜駅に隣接し、舞浜まで2駅6分という近さと、カプセルからファミリーまでの幅広い価格帯が魅力です。大浴場と1Fコンビニも備え、コストを抑えつつ実用性も確保したい人に向いています。

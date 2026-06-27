@@ -1,0 +1,87 @@
+---
+title: "スーパーホテル東西線・市川・妙典駅前｜妙典駅徒歩2分・無料健康朝食、東西線で浦安へ出やすいビジネスホテル【地元レビュー】"
+date: 2026-06-27T10:00:00+09:00
+lastmod: 2026-06-28
+description: "スーパーホテル東西線・市川・妙典駅前を地元メディアがレビュー。東京メトロ東西線・妙典駅から徒歩約2分。有機野菜と焼きたてパンの無料朝食ビュッフェ、コインランドリー、駐車場50台(先着)、荷物預かり。東西線で浦安・大手町方面へアクセス良好。"
+area: "浦安近郊"
+tags:
+  - ホテル
+  - ディズニー
+images: ["/images/og-travel-urayasu.png"]
+noDate: true
+---
+
+<p>東京メトロ東西線・妙典駅から徒歩約2分のスーパーホテル東西線・市川・妙典駅前。スーパーホテル系列ならではの、有機野菜と焼きたてパンを中心とした無料朝食ビュッフェが付き、コインランドリーや駐車場、荷物預かりなど実用的な設備が整っています。東西線で浦安・大手町方面へ出やすく、TDRへは舞浜方面へ乗り継いでアクセスします。</p>
+
+## 基本情報
+
+<div class="hg-info">
+  <dl>
+    <dt>チェックイン</dt><dd>15:00</dd>
+    <dt>チェックアウト</dt><dd>10:00</dd>
+    <dt>価格の目安</dt><dd>1名 約7,400円〜（朝食付・変動制）</dd>
+  </dl>
+  <a class="hg-info-btn" href="https://www.superhotel.co.jp/s_hotels/myoden/">公式サイトで空室確認</a>
+</div>
+
+## おすすめな人・向かない人
+
+<div class="hg-fit">
+  <div class="hg-fit-card is-yes">
+    <div class="hg-fit-head"><i class="ti ti-circle-check"></i> こんな人におすすめ</div>
+    <ul>
+      <li>朝食にこだわりたい人 — 有機野菜・焼きたてパンの無料朝食ビュッフェ</li>
+      <li>駅近で探している人 — 東西線妙典駅から徒歩約2分</li>
+      <li>東西線で浦安・都心へ動きたい人 — 浦安へ約7分、大手町へ約25分</li>
+    </ul>
+  </div>
+  <div class="hg-fit-card is-no">
+    <div class="hg-fit-head"><i class="ti ti-circle-minus"></i> 向かないかもしれない人</div>
+    <ul>
+      <li>大浴場でリフレッシュしたい人 — 大浴場なし（全室ユニットバス）</li>
+      <li>TDR直通の無料シャトルを使いたい人 — 直通シャトルなし（西船橋経由で舞浜へ）</li>
+    </ul>
+  </div>
+</div>
+
+## アクセス：4つの行き先で見る
+
+<div class="lg-art-table">
+
+| 行き先 | 方法・時間 |
+|---|---|
+| パーク（TDL／TDS） | 妙典駅→西船橋→JR京葉線で舞浜へ。舞浜駅からリゾートラインでパークへ（直通シャトルなし） |
+| 最寄り駅 | 東京メトロ東西線 妙典駅から徒歩約2分 |
+| 空港 | 羽田空港まで約60分 |
+| 都心 | 東西線で大手町まで約25分（浦安駅へは約7分） |
+
+</div>
+
+## 地図・アクセス
+
+{{< hotel-map >}}
+
+## 設備・サービス
+
+<div class="hg-facilities">
+  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">無料<br>健康朝食</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>50台</div></div>
+  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">妙典駅<br>徒歩2分</div></div>
+</div>
+
+**客室**　全室ユニットバス（部屋タイプは公式サイト要確認）。
+
+**朝食**　無料朝食ビュッフェ（月〜土6:30〜8:30／日・祝〜9:00）。有機野菜・焼きたてパンなど日替わり。
+
+**コインランドリー**　あり。
+
+**駐車場**　50台・先着順。
+
+**荷物預かり**　宿泊当日・チェックアウト当日中に対応。
+
+**Wi-Fi**　あり。
+
+**大浴場**　なし（全室ユニットバス）。
+
+妙典駅徒歩2分で無料の健康朝食が付き、東西線で浦安・都心へ出やすいビジネスホテルです。TDRへは西船橋・舞浜経由でのアクセスになります。

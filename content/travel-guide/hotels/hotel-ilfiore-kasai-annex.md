@@ -1,0 +1,83 @@
+---
+title: "ホテルイルフィオーレ葛西 ANNEX｜葛西駅徒歩3分・最大6名のデラックスルーム、TDRまで約20分の別館【地元レビュー】"
+date: 2026-06-27T10:00:00+09:00
+lastmod: 2026-06-28
+description: "ホテルイルフィオーレ葛西 ANNEXを地元メディアがレビュー。東京メトロ東西線・葛西駅から徒歩3分のイルフィオーレ別館。ダブルからスタンダードツイン(最大4名)、最大6名のデラックスルームまで対応。1Fコインランドリー・フリードリンク・全室Wi-Fi。TDRまで約20分。"
+area: "浦安近郊"
+tags:
+  - ホテル
+  - ディズニー
+images: ["/images/og-travel-urayasu.png"]
+noDate: true
+---
+
+<p>ホテルイルフィオーレ葛西の別館にあたる ANNEX。東京メトロ東西線・葛西駅から徒歩約3分で、ダブルやハリウッドツイン、最大4名のスタンダードツイン、さらに最大6名のデラックスルームまで対応し、大人数のグループにも使いやすいのが特徴です。1Fにコインランドリーやフリードリンクコーナーを備え、東京ディズニーリゾートへは約20分でアクセスできます。</p>
+
+## 基本情報
+
+<div class="hg-info">
+  <dl>
+    <dt>チェックイン</dt><dd>15:00〜24:00</dd>
+    <dt>チェックアウト</dt><dd>10:00</dd>
+    <dt>価格の目安</dt><dd>2名 約5,500円〜（変動制）</dd>
+  </dl>
+  <a class="hg-info-btn" href="https://hotelilfiore-annex.com/">公式サイトで空室確認</a>
+</div>
+
+## おすすめな人・向かない人
+
+<div class="hg-fit">
+  <div class="hg-fit-card is-yes">
+    <div class="hg-fit-head"><i class="ti ti-circle-check"></i> こんな人におすすめ</div>
+    <ul>
+      <li>大人数のグループ — 最大6名対応のデラックスルームあり</li>
+      <li>駅近・低価格で探している人 — 葛西駅徒歩約3分、2名5,500円〜</li>
+      <li>連泊で洗濯したい人 — 1Fにコインランドリー、フリードリンクコーナーも</li>
+    </ul>
+  </div>
+  <div class="hg-fit-card is-no">
+    <div class="hg-fit-head"><i class="ti ti-circle-minus"></i> 向かないかもしれない人</div>
+    <ul>
+      <li>大浴場でリフレッシュしたい人 — 大浴場なし（客室バスのみ）</li>
+      <li>TDR直通の無料シャトルを使いたい人 — 直通シャトルなし（京成バス・電車利用）</li>
+    </ul>
+  </div>
+</div>
+
+## アクセス：4つの行き先で見る
+
+<div class="lg-art-table">
+
+| 行き先 | 方法・時間 |
+|---|---|
+| パーク（TDL／TDS） | 葛西駅から京成バスでTDRへ約20分（東京ディズニーリゾートまで約20分） |
+| 最寄り駅 | 東京メトロ東西線 葛西駅から徒歩約3分 |
+| 空港 | 電車・バス乗継で羽田空港まで約50〜60分 |
+| 都心 | 東西線で大手町まで約20分・日本橋まで約18分（浦安駅へは1駅） |
+
+</div>
+
+## 地図・アクセス
+
+{{< hotel-map >}}
+
+## 設備・サービス
+
+<div class="hg-facilities">
+  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">最大<br>6名</div></div>
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
+  <div class="hg-fac"><i class="ti ti-glass-full" aria-hidden="true"></i><div class="hg-fac-label">フリー<br>ドリンク</div></div>
+  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">葛西駅<br>徒歩3分</div></div>
+</div>
+
+**客室**　ダブル／ハリウッドツイン／スタンダードツイン（最大4名）／デラックスルーム（最大6名）。
+
+**コインランドリー**　1Fに完備。
+
+**Wi-Fi**　全室無料（1Fにフリードリンクコーナー・電子レンジ・自販機）。
+
+**大浴場**　なし。
+
+**朝食・駐車場・荷物預かり**　公式サイトにて要確認。
+
+イルフィオーレ葛西の別館で、最大6名のデラックスルームまでそろう点が強みです。葛西駅徒歩3分・低価格で、大人数の子連れ・グループ旅行に向いています。

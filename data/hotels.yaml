@@ -154,7 +154,7 @@ areas:
   - id: c
     tag: "C"
     name: "新浦安エリア"
-    count: 17
+    count: 16
     note: "パートナーホテル集中。空港リムジンも便利。"
     hotels:
       - name: "ハイアットリージェンシー東京ベイ"
@@ -255,13 +255,6 @@ areas:
         policy: normal
         individual_page: true
         slug: "hiyori-hotel-maihama"
-      - name: "こやす"
-        category: "旅館・民宿"
-        price_guide: ""
-        feature: "温泉設備の可能性あり・要電話確認"
-        policy: normal
-        individual_page: true
-        slug: "koyasu-urayasu"
       - name: "M4 design hotel"
         category: "ファッションホテル"
         price_guide: ""
@@ -326,47 +319,55 @@ areas:
         category: "一般ホテル"
         price_guide: "¥11,000〜"
         feature: "2025年12月開業・TDR無料シャトル"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "premium-monday-maihama-view-1"
       - name: "ホテルシーサイド江戸川"
         category: "一般リゾートホテル"
         price_guide: "¥16,000〜"
         feature: "葛西臨海公園内・駅徒歩3分・和室あり"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "hotel-seaside-edogawa"
       - name: "CVS・BAY HOTEL"
         category: "一般ホテル"
         price_guide: "¥5,610〜"
         feature: "市川塩浜駅隣接・舞浜2駅6分"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "cvs-bay-hotel"
       - name: "ホテルイルフィオーレ葛西"
         category: "一般ホテル"
         price_guide: "¥7,860〜"
         feature: "葛西駅徒歩3分・最大5名対応"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "hotel-ilfiore-kasai"
       - name: "ホテルイルフィオーレ葛西 ANNEX"
         category: "一般ホテル"
         price_guide: "¥5,500〜"
         feature: "葛西駅徒歩3分・イルフィオーレ別館"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "hotel-ilfiore-kasai-annex"
       - name: "ホテルルミエール葛西"
         category: "一般ホテル"
         price_guide: "¥9,700〜"
         feature: "葛西駅徒歩2分のビジネスホテル"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "hotel-lumiere-kasai"
       - name: "ホテルリブマックス葛西駅前"
         category: "一般ホテル"
         price_guide: "¥5,000〜"
         feature: "葛西駅徒歩3分・TDRバス約20分"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "livemax-kasai-ekimae"
       - name: "スーパーホテル 市川・妙典駅前"
         category: "一般ホテル"
         price_guide: "¥7,400〜"
         feature: "妙典駅前・東西線で浦安へ"
-        policy: name-only
-        individual_page: false
+        policy: normal
+        individual_page: true
+        slug: "superhotel-myoden"

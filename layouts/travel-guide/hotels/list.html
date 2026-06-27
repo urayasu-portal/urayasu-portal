@@ -128,7 +128,7 @@
 </div>
 <div class="tg-notice-warn">
   {{- if $isEN }}
-  <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> About pricing and information:</strong> Price ranges are estimates for 2 guests/room during off-peak periods. Rates vary significantly during busy seasons. Always check the latest prices on booking sites. Individual hotel detail pages are available in Japanese.
+  <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> About pricing and information:</strong> Price ranges are estimates for 2 guests/room during off-peak periods. Rates vary significantly during busy seasons. Always check the latest prices on booking sites. Tap a hotel name to open its detail page.
   {{- else }}
   <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> 料金・施設情報について</strong>：価格帯は2名1室・通常期の目安です。繁忙期は大きく変動します。最新料金は各予約サイトでご確認ください。
   {{- end }}
@@ -172,8 +172,10 @@
       {{- end }}
       <tr data-group="{{ $grp }}" data-cat="{{ $cat }}" data-area="{{ $areaTag }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
         <td>
-          {{- if and .individual_page (eq .policy "normal") (not $isEN) }}
-          <a href="/travel-guide/hotels/{{ .slug }}/">{{ .name }}</a>
+          {{- if and .individual_page (eq .policy "normal") }}
+          {{- $href := printf "/travel-guide/hotels/%s/" .slug }}
+          {{- if $isEN }}{{ $href = printf "/en/travel-guide/hotels/%s/" .slug }}{{ end }}
+          <a href="{{ $href }}">{{ .name }}</a>
           {{- else }}
           {{ .name }}
           {{- end }}

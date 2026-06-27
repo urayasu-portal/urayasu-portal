@@ -1,0 +1,85 @@
+---
+title: "ホテルシーサイド江戸川｜葛西臨海公園内・駅徒歩3分、和室もあるベイサイドのアーバンリゾート【地元レビュー】"
+date: 2026-06-27T10:00:00+09:00
+lastmod: 2026-06-28
+description: "ホテルシーサイド江戸川を地元メディアがレビュー。24万坪の葛西臨海公園内に建つアーバンリゾート。全29室でベイエリアでは希少な和室14室あり。男女別の大浴場、葛西臨海公園駅徒歩3分・舞浜まで1駅。宿泊者は公園駐車場を無料利用。"
+area: "浦安近郊"
+tags:
+  - ホテル
+  - ディズニー
+images: ["/images/og-travel-urayasu.png"]
+noDate: true
+---
+
+<p>24万坪の葛西臨海公園内に建つアーバンリゾート、ホテルシーサイド江戸川。全29室と小規模ながら、ベイエリアでは希少な和室を14室そろえ、家族やグループでも利用しやすいのが特徴です。男女別の大浴場を備え、JR京葉線・葛西臨海公園駅から徒歩約3分。舞浜（東京ディズニーリゾート）へは京葉線で1駅という立地です。</p>
+
+## 基本情報
+
+<div class="hg-info">
+  <dl>
+    <dt>チェックイン</dt><dd>14:00〜22:00</dd>
+    <dt>チェックアウト</dt><dd>10:00</dd>
+    <dt>価格の目安</dt><dd>2名 約16,000円〜（変動制）</dd>
+  </dl>
+  <a class="hg-info-btn" href="https://www.h-seaside.jp/">公式サイトで空室確認</a>
+</div>
+
+## おすすめな人・向かない人
+
+<div class="hg-fit">
+  <div class="hg-fit-card is-yes">
+    <div class="hg-fit-head"><i class="ti ti-circle-check"></i> こんな人におすすめ</div>
+    <ul>
+      <li>和室に泊まりたい家族・グループ — ベイエリアでは希少な和室14室</li>
+      <li>大浴場でリフレッシュしたい人 — 男女別の大浴場あり</li>
+      <li>公園と海辺の環境を楽しみたい人 — 葛西臨海公園内のアーバンリゾート、駅徒歩約3分</li>
+    </ul>
+  </div>
+  <div class="hg-fit-card is-no">
+    <div class="hg-fit-head"><i class="ti ti-circle-minus"></i> 向かないかもしれない人</div>
+    <ul>
+      <li>深夜まで買い物をしたい人 — 公園内立地のため周辺コンビニ等は事前確認を推奨</li>
+      <li>多彩な客室から選びたい人 — 全29室の小規模ホテル</li>
+    </ul>
+  </div>
+</div>
+
+## アクセス：4つの行き先で見る
+
+<div class="lg-art-table">
+
+| 行き先 | 方法・時間 |
+|---|---|
+| パーク（TDL／TDS） | JR京葉線で舞浜まで1駅。舞浜駅からリゾートラインでパークへ |
+| 最寄り駅 | JR京葉線 葛西臨海公園駅から徒歩約3分 |
+| 空港 | 東京駅経由で羽田空港まで約60分 |
+| 都心 | 葛西臨海公園駅からJR京葉線で東京駅まで約15分 |
+
+</div>
+
+## 地図・アクセス
+
+{{< hotel-map >}}
+
+## 設備・サービス
+
+<div class="hg-facilities">
+  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">男女別<br>大浴場</div></div>
+  <div class="hg-fac"><i class="ti ti-tea" aria-hidden="true"></i><div class="hg-fac-label">和室<br>14室</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">公園<br>駐車場</div></div>
+  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">駅徒歩<br>3分</div></div>
+</div>
+
+**客室**　全29室。特別／一般の洋室・和室。ベイエリアで希少な和室14室。
+
+**大浴場**　男女各1の大浴場あり。
+
+**朝食**　7:30〜9:00。
+
+**駐車場**　葛西臨海公園駐車場を利用（宿泊者はフロントで駐車券を無料処理・予約不可）。
+
+**荷物預かり**　フロント／クロークで預かり（貴重品・前金などの高価品は対象外）。
+
+**コインランドリー・Wi-Fi**　公式サイトにて要確認。
+
+葛西臨海公園の緑と潮風に囲まれた立地で、和室と大浴場を備えた数少ないベイサイドの宿です。舞浜へ京葉線1駅というアクセスの良さも魅力です。

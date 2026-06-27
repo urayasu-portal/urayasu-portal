@@ -1,0 +1,87 @@
+---
+title: "ホテルリブマックス葛西駅前｜葛西駅徒歩3分・全57室、コインランドリー併設カフェのあるチェーン系ビジネスホテル【地元レビュー】"
+date: 2026-06-27T10:00:00+09:00
+lastmod: 2026-06-28
+description: "ホテルリブマックス葛西駅前を地元メディアがレビュー。東京メトロ東西線・葛西駅から徒歩約3分、全57室。電子レンジ・シャワートイレ完備の客室、カフェ併設のコインランドリー「MAX WASH & CAFE」、無料Wi-Fi。TDRへ京成バス約20分、羽田空港まで約35分。"
+area: "浦安近郊"
+tags:
+  - ホテル
+  - ディズニー
+images: ["/images/og-travel-urayasu.png"]
+noDate: true
+---
+
+<p>東京メトロ東西線・葛西駅から徒歩約3分のホテルリブマックス葛西駅前。リブマックス系列のビジネスホテルで、全57室。電子レンジ・シャワートイレを備えた客室に、カフェを併設したコインランドリー「MAX WASH & CAFE」や無料Wi-Fiなど、シンプルで実用的な設備が整っています。東京ディズニーリゾートへは京成バスで約20分、羽田空港までは約35分です。</p>
+
+## 基本情報
+
+<div class="hg-info">
+  <dl>
+    <dt>チェックイン</dt><dd>15:00</dd>
+    <dt>チェックアウト</dt><dd>10:00</dd>
+    <dt>価格の目安</dt><dd>2名 約5,000円〜（変動制）</dd>
+  </dl>
+  <a class="hg-info-btn" href="https://www.hotel-livemax.com/tokyo/kasaist/">公式サイトで空室確認</a>
+</div>
+
+## おすすめな人・向かない人
+
+<div class="hg-fit">
+  <div class="hg-fit-card is-yes">
+    <div class="hg-fit-head"><i class="ti ti-circle-check"></i> こんな人におすすめ</div>
+    <ul>
+      <li>とにかく安く泊まりたい人 — 2名5,000円〜のチェーン系ビジネスホテル</li>
+      <li>駅近で探している人 — 東西線葛西駅から徒歩約3分</li>
+      <li>連泊で洗濯したい人 — カフェ併設のコインランドリー「MAX WASH & CAFE」</li>
+    </ul>
+  </div>
+  <div class="hg-fit-card is-no">
+    <div class="hg-fit-head"><i class="ti ti-circle-minus"></i> 向かないかもしれない人</div>
+    <ul>
+      <li>ホテルで朝食をとりたい人 — 朝食は一時休止中（要確認）</li>
+      <li>大浴場でリフレッシュしたい人 — 大浴場なし（客室シャワー中心）</li>
+    </ul>
+  </div>
+</div>
+
+## アクセス：4つの行き先で見る
+
+<div class="lg-art-table">
+
+| 行き先 | 方法・時間 |
+|---|---|
+| パーク（TDL／TDS） | 葛西駅から京成バスでTDRへ約20分（車で約13分） |
+| 最寄り駅 | 東京メトロ東西線 葛西駅から徒歩約3分 |
+| 空港 | 羽田空港まで約35分 |
+| 都心 | 東西線で大手町まで約20分・日本橋まで約18分（浦安駅へは1駅） |
+
+</div>
+
+## 地図・アクセス
+
+{{< hotel-map >}}
+
+## 設備・サービス
+
+<div class="hg-facilities">
+  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">ランドリー<br>＋カフェ</div></div>
+  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>20台</div></div>
+  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">無料<br>Wi-Fi</div></div>
+  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">葛西駅<br>徒歩3分</div></div>
+</div>
+
+**客室**　全57室（シングル49／ツイン8）・11〜23㎡。電子レンジ・シャワートイレ完備。
+
+**コインランドリー**　カフェ併設の「MAX WASH & CAFE」。
+
+**駐車場**　ホテル裏手のコインパーキング20台（最大2,100円/24時間）。
+
+**Wi-Fi**　無料Wi-Fiあり。
+
+**大浴場**　なし。
+
+**朝食**　一時休止中（要確認）。
+
+**荷物預かり**　公式サイトにて要確認。
+
+葛西駅徒歩3分・低価格で、カフェ併設のコインランドリーが使えるチェーン系ビジネスホテルです。羽田空港まで約35分と空港アクセスも比較的良好です。
