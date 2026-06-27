@@ -121,6 +121,16 @@ categories:
         url: "/life-guide/station-life/"
         published: true
 
+  - name: "高齢者・介護"
+    id: "koreisha"
+    icon: "ti-old"
+    guides:
+      - title: "浦安市の高齢者・介護ガイド"
+        desc: "地域包括支援センター「ともづな」と介護保険サービスの使い方を整理。"
+        icon: "ti-old"
+        url: "/life-guide/urayasu-koreisha-kaigo/"
+        published: true
+
 situations:
   - text: "子どもが急に熱を出した"
     icon: "ti-mood-sick"
@@ -140,8 +150,14 @@ situations:
   - text: "浦安のチームを応援したい"
     icon: "ti-ball-american-football"
     url: "/life-guide/sports-teams/"
+  - text: "親の介護が心配になった"
+    icon: "ti-old"
+    url: "/life-guide/urayasu-koreisha-kaigo/"
 
 updates:
+  - text: "高齢者・介護ガイドを公開"
+    date: "2026.06"
+    url: "/life-guide/urayasu-koreisha-kaigo/"
   - text: "公園・遊び場ガイドを最新の施設情報に更新"
     date: "2026.06"
     url: "/life-guide/parks-playgrounds/"
