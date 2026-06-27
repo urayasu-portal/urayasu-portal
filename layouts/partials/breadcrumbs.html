@@ -24,7 +24,14 @@
   <a class="bc-cat {{ $cls }}" href="/categories/{{ $cat | urlize }}/">{{ $cat }}</a>
   {{- else if .Parent }}
   <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-  <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+  <a href="{{ .Parent.RelPermalink }}">{{ .Parent.LinkTitle }}</a>
+  {{- end }}
+  {{- /* ピラー構造: guideParent を持つ子ページは、まとめ(ハブ)ページを中間階層に挟む */ -}}
+  {{- with .Params.guideParent }}
+  {{- with site.GetPage . }}
+  <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  {{- end }}
   {{- end }}
   <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
   <span class="bc-current" aria-current="page">{{ .Title | truncate 28 "…" }}</span>

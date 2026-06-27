@@ -1,0 +1,3 @@
+{{- /* gov-link: 浦安市公式など行政ページへの導線ボタン。url必須、ラベルはInner（省略時は既定文言） */ -}}
+{{- $url := .Get "url" -}}
+<a class="gov-link" href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ .Inner | default "詳しくは浦安市公式へ" }}<span class="gov-link__arrow" aria-hidden="true">→</span></a>

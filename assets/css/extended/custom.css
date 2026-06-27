@@ -3113,6 +3113,30 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 .post-content .warn-box p:last-child,
 .post-content .note-box p:last-child { margin-bottom: 0; }
 
+/* ---------- gov-link: 行政公式ページへの導線ボタン（柱アクセント追従） ---------- */
+.post-content .gov-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  margin: 10px 0 18px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--accent-ink) !important;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background .15s ease, border-color .15s ease;
+}
+.post-content .gov-link:hover {
+  background: var(--accent);
+  color: #fff !important;
+  border-color: var(--accent);
+}
+.post-content .gov-link__arrow { font-weight: 800; }
+
 /* ---------- テーブル モバイル自動スクロール ---------- */
 @media (max-width: 640px) {
   .post-content table {
