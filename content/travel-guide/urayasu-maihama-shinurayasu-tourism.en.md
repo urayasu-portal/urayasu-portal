@@ -105,8 +105,8 @@ faq:
     <tr>
       <td><strong>Shin-Urayasu</strong></td>
       <td>JR Shin-Urayasu Station (Keiyo Line)</td>
-      <td>Atre, Aeon, Wave101, many partner hotels. Everyday commercial area</td>
-      <td>Hotel guests, shopping, concert / sports events</td>
+      <td>Atre, MONA, Aeon, New Coast and other shopping facilities; many partner hotels. Everyday commercial area</td>
+      <td>Hotel guests, shopping, concert-going</td>
     </tr>
     <tr>
       <td><strong>Urayasu Station</strong></td>
@@ -242,8 +242,8 @@ faq:
     </tr>
     <tr>
       <td>10:00 onwards</td>
-      <td>Browse <strong>Aeon Style Shin-Urayasu</strong> or <strong>Wave101</strong></td>
-      <td>Urayasu City Plaza Wave101 (multipurpose hall, community facility) and J:COM Urayasu Music Hall are nearby</td>
+      <td>Shop at <strong>Aeon Style Shin-Urayasu</strong> or <strong>New Coast Shin-Urayasu</strong></td>
+      <td>Convenient for groceries, daily goods, and souvenirs. Stores open around 10:00</td>
     </tr>
   </tbody>
 </table>
@@ -326,11 +326,18 @@ faq:
 <h2 id="shinurayasu">Shin-Urayasu Area: Sightseeing & Stops</h2>
 
 <h3>Atre Shin-Urayasu</h3>
-<p>A 5-floor shopping facility directly connected to JR Shin-Urayasu Station. A supermarket (Kinokuniya), restaurants, fashion, pharmacy, and goods are all here — used by both local residents and hotel guests.</p>
+<p>A 5-floor shopping facility directly connected to JR Shin-Urayasu Station. A supermarket (Seijo Ishii), restaurants, fashion, pharmacy, and goods are all here — used by both local residents and hotel guests.</p>
 <ul>
   <li><strong>Access:</strong> Directly connected to JR Shin-Urayasu Station</li>
   <li><strong>Hours:</strong> 10:00–21:00 (some restaurants until 22:00)</li>
   <li><strong>Tip:</strong> The basement deli and prepared food section is convenient for souvenirs. Drug stores for daily supplies are also here.</li>
+</ul>
+
+<h3>MONA Shin-Urayasu</h3>
+<p>A shopping center directly connected to JR Shin-Urayasu Station. Alongside Atre, this is one of the two station-front facilities, with fashion, goods, restaurants, and services. Being station-connected makes it handy on a rainy day or between trains.</p>
+<ul>
+  <li><strong>Access:</strong> Directly connected to JR Shin-Urayasu Station</li>
+  <li><strong>Hours:</strong> Varies by store (check the official website)</li>
 </ul>
 
 <h3>Aeon Style Shin-Urayasu</h3>
@@ -340,12 +347,16 @@ faq:
   <li><strong>Hours:</strong> 10:00–21:00 (varies by facility)</li>
 </ul>
 
-<h3>Wave101 and J:COM Urayasu Music Hall</h3>
-<p><strong>Urayasu City Plaza Wave101</strong> is a community plaza inside the Aeon Shin-Urayasu shopping center with a multipurpose hall, community gallery, and rehearsal rooms. <strong>J:COM Urayasu Music Hall</strong> is a separate music venue on the south side of Shin-Urayasu Station where classical and pop concerts are held. Both are accessible from Shin-Urayasu Station by bus or on foot, and can be an option for hotel guests who have free time in the evening.</p>
+<h3>New Coast Shin-Urayasu</h3>
+<p>A large shopping mall in the Akemi district. With a food supermarket (Yaoko), Nitori, and around 60 stores, it suits bulk buying of groceries, daily goods, and homeware. Ample parking makes it convenient by car.</p>
 <ul>
-  <li><strong>Access:</strong> About 15 minutes walk from JR Shin-Urayasu Station, or by bus</li>
-  <li><strong>Note:</strong> Hours and facilities are subject to change — check the official website in advance</li>
+  <li><strong>Access:</strong> About 15–20 minutes walk from JR Shin-Urayasu Station, or by local bus</li>
+  <li><strong>Hours:</strong> Varies by store (check the official website)</li>
 </ul>
+
+<div class="tg-notice-warn">
+  <strong>ℹ️ About the concert halls</strong>　Shin-Urayasu has the <strong>J:COM Urayasu Music Hall</strong> (about 1 minute walk from the south exit of Shin-Urayasu Station) and <strong>Urayasu City Plaza Wave101</strong> (a multipurpose hall on the 4th floor of Aeon Shin-Urayasu). Both are ticketed venues used during performances and events, not sightseeing spots you can freely tour. If a performance interests you, check each hall's official website for the schedule.
+</div>
 
 <h3>Urayasu Seaside Park / Promenade</h3>
 <p>The Shin-Urayasu area is built on reclaimed land, with promenades running along the sea and canals. The coastlines of the Akemi and Hinode districts are pleasant spots for a morning walk or evening views.</p>
@@ -357,7 +368,7 @@ faq:
 <div class="info-box">
   <h2>Shin-Urayasu Area Overview</h2>
   <dl>
-    <dt>Main Spots</dt><dd>Atre Shin-Urayasu, Aeon Style Shin-Urayasu, Wave101, J:COM Urayasu Music Hall, Seaside Park / Promenade</dd>
+    <dt>Main Spots</dt><dd>Atre Shin-Urayasu, MONA Shin-Urayasu, Aeon Style Shin-Urayasu, New Coast Shin-Urayasu, Seaside Park / Promenade</dd>
     <dt>Nearest Station</dt><dd>JR Keiyo Line, Shin-Urayasu Station</dd>
     <dt>Notes</dt><dd>Maihama / TDR: by hotel shuttle (varies) or 1 stop on the Keiyo Line. Transport to TDR varies by hotel.</dd>
   </dl>
@@ -385,18 +396,17 @@ faq:
   <li><strong>Time needed:</strong> At least 1 hour for a quick look; combine with the Local History Museum for a half-day course</li>
 </ul>
 
-<h3>Urayasu Fish Market</h3>
-<p>A local fish market handling fresh seafood from the city. Open to the public only on Monday, Wednesday, and Friday mornings. A spot to experience the local daily life rather than a formal tourist attraction.</p>
+<h3>Shopping near Urayasu Station (Seiyu, etc.)</h3>
+<p>The Moto-machi area is mostly small everyday shops; for larger shopping, <strong>Seiyu Urayasu</strong> in front of Urayasu Station is convenient, carrying everything from groceries to daily goods.</p>
 <ul>
-  <li><strong>Open days:</strong> Monday, Wednesday, Friday (mornings only)</li>
-  <li><strong>Access:</strong> About 10–15 minutes walk from Urayasu Station</li>
-  <li><strong>Note:</strong> This is not a tourist facility — please visit respectfully</li>
+  <li><strong>Access:</strong> A short walk from Tokyo Metro Tozai Line Urayasu Station</li>
+  <li><strong>Note:</strong> Seiyu Urayasu has been partly closed for renovation since the end of May 2026 and is scheduled to reopen as "Trial Seiyu Urayasu" in summer 2026 (some specialty shops remain open). Available sections vary by visit timing — check the official website for the latest status.</li>
 </ul>
 
 <div class="info-box">
   <h2>Urayasu Station Area Overview</h2>
   <dl>
-    <dt>Main Spots</dt><dd>Urayasu City Local History Museum, former Udagawa &amp; Otsuka residences, Sakaigawa promenade &amp; shopping street, Urayasu Fish Market</dd>
+    <dt>Main Spots</dt><dd>Urayasu City Local History Museum, former Udagawa &amp; Otsuka residences, Sakaigawa promenade &amp; shopping street</dd>
     <dt>Nearest Station</dt><dd>Tokyo Metro Tozai Line, Urayasu Station</dd>
     <dt>To TDR</dt><dd>About 30–40 minutes from Maihama Station including transfer; about 25–30 minutes by local bus</dd>
   </dl>
@@ -442,10 +452,16 @@ faq:
       <td>5–7 min walk from JR Shin-Urayasu Station</td>
     </tr>
     <tr>
-      <td><strong>Wave101</strong></td>
+      <td><strong>MONA Shin-Urayasu</strong></td>
       <td>Shin-Urayasu</td>
-      <td>Multipurpose hall, community gallery, rehearsal rooms</td>
-      <td>15 min walk from JR Shin-Urayasu, or by bus</td>
+      <td>Station-connected shopping center. Fashion, goods, dining</td>
+      <td>JR Shin-Urayasu Station (connected)</td>
+    </tr>
+    <tr>
+      <td><strong>New Coast Shin-Urayasu</strong></td>
+      <td>Shin-Urayasu</td>
+      <td>Large mall. Supermarket, Nitori, and around 60 stores</td>
+      <td>15–20 min walk from JR Shin-Urayasu, or by bus</td>
     </tr>
     <tr>
       <td><strong>Local History Museum</strong></td>
@@ -706,7 +722,9 @@ faq:
   <li>Ikspiari official website (hours, facility info)</li>
   <li>Bon Voyage (Tokyo Disney Resort official)</li>
   <li>Atre Shin-Urayasu official website</li>
+  <li>MONA Shin-Urayasu official website</li>
   <li>Aeon Style Shin-Urayasu official website</li>
+  <li>New Coast Shin-Urayasu official website</li>
   <li>Urayasu City Local History Museum (Urayasu City official)</li>
   <li>Historic buildings and cultural properties (Urayasu City official)</li>
   <li>Urayasu City General Gymnasium / Sports Park (Urayasu City official)</li>
