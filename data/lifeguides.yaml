@@ -90,6 +90,16 @@ categories:
         icon: "ti-building-bank"
         url: "/life-guide/city-hall-procedures/"
         published: true
+      - title: "浦安市の国民健康保険・年金・税金ガイド"
+        desc: "国保・後期高齢者医療・年金・市県民税の手続き窓口を整理。"
+        icon: "ti-receipt"
+        url: "/life-guide/urayasu-hoken-nenkin-zei/"
+        published: true
+      - title: "浦安市のペットガイド"
+        desc: "犬の登録・狂犬病予防注射・飼い方のマナーやドッグランを案内。"
+        icon: "ti-dog"
+        url: "/life-guide/urayasu-pet/"
+        published: true
 
   - name: "おでかけ・公共施設"
     id: "odekake"
@@ -104,6 +114,11 @@ categories:
         desc: "図書館、公民館、文化施設、体育施設などを目的別に整理。"
         icon: "ti-books"
         url: "/life-guide/libraries-public-facilities/"
+        published: true
+      - title: "浦安市の交通・バスガイド"
+        desc: "おさんぽバスの路線・運賃や、市内の移動手段を整理。"
+        icon: "ti-bus"
+        url: "/life-guide/urayasu-bus-kotsu/"
         published: true
 
   - name: "まちを楽しむ"
@@ -153,8 +168,26 @@ situations:
   - text: "親の介護が心配になった"
     icon: "ti-old"
     url: "/life-guide/urayasu-koreisha-kaigo/"
+  - text: "保険や年金の手続きをしたい"
+    icon: "ti-receipt"
+    url: "/life-guide/urayasu-hoken-nenkin-zei/"
+  - text: "犬を飼い始めた"
+    icon: "ti-dog"
+    url: "/life-guide/urayasu-pet/"
+  - text: "市内をバスで移動したい"
+    icon: "ti-bus"
+    url: "/life-guide/urayasu-bus-kotsu/"
 
 updates:
+  - text: "国民健康保険・年金・税金ガイドを公開"
+    date: "2026.06"
+    url: "/life-guide/urayasu-hoken-nenkin-zei/"
+  - text: "ペットガイドを公開"
+    date: "2026.06"
+    url: "/life-guide/urayasu-pet/"
+  - text: "交通・バスガイドを公開"
+    date: "2026.06"
+    url: "/life-guide/urayasu-bus-kotsu/"
   - text: "高齢者・介護ガイドを公開"
     date: "2026.06"
     url: "/life-guide/urayasu-koreisha-kaigo/"
@@ -164,6 +197,3 @@ updates:
   - text: "屋内・公共の遊び場まとめを最新の施設情報に更新"
     date: "2026.06"
     url: "/life-guide/indoor-playgrounds/"
-  - text: "便利ガイド各ページに「参照・確認時点」を追加"
-    date: "2026.06"
-    url: "/life-guide/holiday-night-medical/"
