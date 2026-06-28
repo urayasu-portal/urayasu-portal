@@ -124,18 +124,19 @@
         <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>{{ if $isEN }}Nearby similar hotels{{ else }}近隣の似たホテル{{ end }}</h2></div>
         <div class="hg-hotel-grid">
           {{- range $related }}
-          {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
           {{- $rarea := "" }}
           {{- if not $isEN }}{{- with index $areaNameIdx .File.ContentBaseName }}{{ $rarea = . }}{{- end }}{{- end }}
-          <a class="hg-hotel-card" href="{{ .RelPermalink }}">
-            <div class="hg-hotel-thumb{{ if not $img }} hg-hotel-no-img{{ end }}">
-              {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-              {{- else }}<i class="ti ti-building-skyscraper" aria-hidden="true"></i>{{- end }}
-            </div>
-            <div class="hg-hotel-body">
-              <div class="hg-hotel-name">{{ .Title | truncate 22 "…" }}</div>
-              {{- with $rarea }}<div class="hg-hotel-area">{{ . }}</div>{{- end }}
-            </div>
+          {{- $rcat := index $catIdx .File.ContentBaseName | default "" }}
+          {{- $ckey := "other" }}{{- $clabel := cond $isEN "Other" "その他" }}
+          {{- if eq $rcat "ディズニーホテル" }}{{ $ckey = "disney" }}{{ $clabel = cond $isEN "Disney" "ディズニー" }}
+          {{- else if eq $rcat "オフィシャルホテル" }}{{ $ckey = "official" }}{{ $clabel = cond $isEN "Official" "オフィシャル" }}
+          {{- else if eq $rcat "パートナーホテル" }}{{ $ckey = "partner" }}{{ $clabel = cond $isEN "Partner" "パートナー" }}
+          {{- else if eq $rcat "ファッションホテル" }}{{ $ckey = "fashion" }}{{ $clabel = "" }}{{- end }}
+          {{- $nm := .Title | replaceRE "\\s*[｜|].*$" "" }}
+          <a class="hg-hotel-card hg-cat-{{ $ckey }}" href="{{ .RelPermalink }}">
+            {{- with $clabel }}<span class="hg-hotel-badge">{{ . }}</span>{{- end }}
+            <div class="hg-hotel-name">{{ $nm }}</div>
+            {{- with $rarea }}<div class="hg-hotel-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</div>{{- end }}
           </a>
           {{- end }}
         </div>
