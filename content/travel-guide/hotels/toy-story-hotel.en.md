@@ -65,6 +65,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms (595 rooms, Andy's room theme)**
 All rooms designed from the perspective of toys in Andy's bedroom — oversized furniture, crayon-colored walls, Woody/Buzz/Rex and other Toy Story characters in the decor. A distinctive immersion that no other Disney Hotel replicates. Room types include standard (up to 4 guests), deluxe, and suites.
 

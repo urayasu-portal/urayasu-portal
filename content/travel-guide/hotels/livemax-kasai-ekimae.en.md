@@ -62,6 +62,8 @@ About 20 min to Otemachi / 18 min to Nihonbashi on the Tozai Line (one stop to U
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms**
 57 rooms (49 singles / 8 twins), 11–23㎡. Microwave and shower toilet.
 

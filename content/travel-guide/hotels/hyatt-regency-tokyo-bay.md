@@ -72,12 +72,7 @@ TDR間で無料シャトルバスを毎日運行（約20分、ハッピーエン
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-plane-departure" aria-hidden="true"></i><div class="hg-fac-label">空港リムジン<br>徒歩0分</div></div>
-  <div class="hg-fac"><i class="ti ti-glass-cocktail" aria-hidden="true"></i><div class="hg-fac-label">クラブ<br>ラウンジ</div></div>
-  <div class="hg-fac"><i class="ti ti-stretching" aria-hidden="true"></i><div class="hg-fac-label">フィット<br>ネス</div></div>
-  <div class="hg-fac"><i class="ti ti-device-tv" aria-hidden="true"></i><div class="hg-fac-label">全室<br>Chromecast</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（全室洗い場付きバスルーム）**　12歳以下添い寝無料。全室洗い場付きバスルーム完備。部屋タイプにより定員が異なります（詳細は公式サイト要確認）。
 

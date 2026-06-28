@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">11歳まで<br>添い寝無料</div></div>
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">和洋食<br>朝食ビュッフェ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">敷地内<br>駐車場36台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（11歳まで添い寝無料）**　アコーホテルズのデザインブランドのインテリア。11歳まで添い寝無料。部屋タイプにより定員は要確認です。
 

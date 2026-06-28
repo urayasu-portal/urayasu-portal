@@ -74,12 +74,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全室<br>44㎡以上</div></div>
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">総大理石<br>バス</div></div>
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">朝6時〜<br>朝食</div></div>
-  <div class="hg-fac"><i class="ti ti-cake" aria-hidden="true"></i><div class="hg-fac-label">記念日<br>対応</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（全室44㎡以上・総大理石バスルーム）**　全427室が44㎡以上で、オフィシャルホテル9軒の中でも広めの客室が標準。バスルームは総大理石造りで、非日常感を重視するゲストに評価されています。
 

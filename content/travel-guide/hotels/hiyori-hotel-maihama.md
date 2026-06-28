@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">全室<br>洗い場付バス</div></div>
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">和洋<br>30種朝食</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>40台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（全室特別設備完備）**　全室に靴乾燥機・フットマッサージ器・洗い場付きバスルーム・フルーツウォーターサーバー（無料）を標準装備。
 

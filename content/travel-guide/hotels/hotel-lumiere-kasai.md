@@ -64,12 +64,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">無料<br>朝食</div></div>
-  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">ミニ<br>キッチン</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">立体<br>50台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　シングル／ダブル／ツイン（電子レンジ・ミニキッチン付き）。
 

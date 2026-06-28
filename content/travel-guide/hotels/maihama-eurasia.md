@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">天然温泉<br>露天・サウナ</div></div>
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">朝食<br>ビュッフェ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>約200台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **天然温泉「スパ」（宿泊者・日帰り共通）**　舞浜リゾートエリア唯一の天然温泉。男女別浴場で露天風呂・寝湯・洞窟風呂・サウナ・岩盤浴・足湯を完備。日帰り利用も可能です。
 

@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全175室<br>会議施設併設</div></div>
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">和洋<br>朝食ビュッフェ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">24h<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>あり</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（175室）**　ビジネスホテルとして清潔感のある客室175室。コンファレンスセンター（会議施設）を併設し、出張利用にも対応します。
 

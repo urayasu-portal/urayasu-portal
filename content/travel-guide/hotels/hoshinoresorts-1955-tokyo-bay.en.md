@@ -65,6 +65,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **1955 America Vintage Theme**
 The entire hotel is styled around a 1955 American diner/roadside Americana concept. 638 rooms across 23 types with varied layouts and capacities — a wider range than most competitor hotels. Food and drink areas reflect the same theme.
 

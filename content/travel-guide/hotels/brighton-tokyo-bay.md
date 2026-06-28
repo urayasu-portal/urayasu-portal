@@ -75,12 +75,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">駅デッキ<br>直結1分</div></div>
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">42㎡<br>中心客室</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">至近<br>24hコンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全室<br>無料Wi-Fi</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（個性的なタイプが揃う）**　地上22階建ての全189室で42㎡中心。夜景を眺める「ビューバス」、靴を脱いでくつろぐ「ルーム・だんらん」など個性的なタイプが選べます。最大5名対応のお部屋もあり、家族・少人数グループに対応します。
 

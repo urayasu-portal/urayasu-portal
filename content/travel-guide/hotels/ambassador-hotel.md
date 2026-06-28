@@ -75,12 +75,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">シェフ・<br>ミッキー</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">イクスピ<br>アリ隣接</div></div>
-  <div class="hg-fac"><i class="ti ti-users" aria-hidden="true"></i><div class="hg-fac-label">大人数<br>対応</div></div>
-  <div class="hg-fac"><i class="ti ti-luggage" aria-hidden="true"></i><div class="hg-fac-label">荷物<br>配送</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **キャラクターダイニング「シェフ・ミッキー」（最大の特徴）**　ミッキーマウスをはじめキャラクターが登場する朝食ビュッフェ（6:30〜10:00）。宿泊者優先席があり、体験のハードルが比較的低いとの声も。時期によって登場キャラクターが変わります。
 

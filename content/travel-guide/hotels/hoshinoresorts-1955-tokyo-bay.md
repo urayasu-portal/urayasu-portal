@@ -67,12 +67,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全638室<br>23タイプ</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>ローソン</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>339台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（638室・23タイプ）**　スタンダードタイプで最大3名（ソファベッド利用）対応。23種類の客室タイプ。アメニティはOSAJI。
 

@@ -62,6 +62,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Natural Hot Spring (the defining feature)**
 The only natural hot spring hotel in the Maihama resort zone. Varieties include outdoor bath, cave bath, stone bath, foot bath, and sauna. Hot spring water quality: confirm on official website. Day-trip hot spring use also available (fee applies; confirm on official website).
 

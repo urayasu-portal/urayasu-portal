@@ -63,6 +63,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms (312 rooms, separate wash area in bathroom)**
 312 rooms with a separate wash area in the bathroom. Children through 6th grade sleep free (up to 2 per room).
 

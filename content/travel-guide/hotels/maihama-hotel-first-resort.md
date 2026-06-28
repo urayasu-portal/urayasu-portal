@@ -69,12 +69,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>ショップ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">立体<br>駐車場</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　豊富なコンセプトルームを展開。
 

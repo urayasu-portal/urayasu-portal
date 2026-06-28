@@ -72,12 +72,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-building-arch" aria-hidden="true"></i><div class="hg-fac-label">国内最大級<br>アトリウム</div></div>
-  <div class="hg-fac"><i class="ti ti-charging-pile" aria-hidden="true"></i><div class="hg-fac-label">EV充電<br>319台</div></div>
-  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">実演<br>朝食</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（南欧テーマ・多彩なタイプ）**　客室タイプが豊富で、南欧の街並みをモチーフにしたインテリアが統一感を生み出しています。定員は客室タイプにより異なります。
 

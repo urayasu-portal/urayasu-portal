@@ -75,12 +75,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-building-castle" aria-hidden="true"></i><div class="hg-fac-label">TDS<br>パーク内</div></div>
-  <div class="hg-fac"><i class="ti ti-ripple" aria-hidden="true"></i><div class="hg-fac-label">ハーバー<br>眺望</div></div>
-  <div class="hg-fac"><i class="ti ti-swimming" aria-hidden="true"></i><div class="hg-fac-label">スパ&<br>プール</div></div>
-  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">ハーバー<br>朝食</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **ロケーション（最大の特徴）**　TDS「パーク内」に建つ世界的にも希少なホテル。トスカーナ・ヴェネツィア・ポルトパラディーゾの3サイドがあり、サイドによって窓からの景色が異なります。
 

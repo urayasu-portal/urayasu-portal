@@ -1,0 +1,42 @@
+{{- /* 設備・サービスのアイコンカード。CSVの機能フラグ由来 data/hotels_map.yaml の
+       facilities（key + 任意note）を slug（=ファイル名）で引いてデータ駆動で描画する。
+       比較マップのフィルタと同一の統制語彙なので、アイコン＝マップ＝本文が必ず一致する。
+       該当する設備だけを全部表示（4枚固定にしない）。 */ -}}
+{{- $slug := .Page.File.ContentBaseName }}
+{{- $isEN := eq .Page.Language.Lang "en" }}
+{{- $h := false }}
+{{- range .Site.Data.hotels_map.hotels }}
+  {{- if eq .slug $slug }}{{ $h = . }}{{ end }}
+{{- end }}
+{{- $icon := dict
+    "bath" "ti-bath" "pool" "ti-swimming" "laundry" "ti-wash-machine"
+    "convenience" "ti-building-store" "shuttle" "ti-bus" "station" "ti-train"
+    "limousine" "ti-plane" "kitchen" "ti-tools-kitchen-2" }}
+{{- $labJP := dict
+    "bath" "大浴場・温泉" "pool" "室内プール" "laundry" "コインランドリー"
+    "convenience" "館内コンビニ" "shuttle" "無料シャトル" "station" "駅直結・駅近"
+    "limousine" "空港リムジン" "kitchen" "ミニキッチン" }}
+{{- $labEN := dict
+    "bath" "Public bath" "pool" "Indoor pool" "laundry" "Coin laundry"
+    "convenience" "Convenience store" "shuttle" "Free shuttle" "station" "By the station"
+    "limousine" "Airport limousine" "kitchen" "In-room kitchen" }}
+{{- $noteEN := dict
+    "有料" "Paid" "無料" "Free" "天然温泉" "Hot spring" "サウナ" "Sauna"
+    "温水" "Heated" "屋内外" "In/outdoor" "展望" "View" "無料・展望" "Free / view" }}
+{{- with $h }}
+{{- if .facilities }}
+<div class="hg-facilities">
+  {{- range .facilities }}
+  {{- $ti := index $icon .key }}
+  {{- $label := index $labJP .key }}{{ if $isEN }}{{ $label = index $labEN .key }}{{ end }}
+  {{- if $ti }}
+  <div class="hg-fac">
+    <i class="ti {{ $ti }}" aria-hidden="true"></i>
+    <div class="hg-fac-label">{{ $label }}</div>
+    {{- with .note }}<div class="hg-fac-note">{{ if $isEN }}{{ with index $noteEN . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else }}{{ . }}{{ end }}</div>{{- end }}
+  </div>
+  {{- end }}
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}

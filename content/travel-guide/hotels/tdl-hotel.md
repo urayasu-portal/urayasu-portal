@@ -75,12 +75,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-walk" aria-hidden="true"></i><div class="hg-fac-label">ゲート<br>徒歩1分</div></div>
-  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">最大5名<br>ファミリー室</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **宿泊者特典「ハッピーエントリー」（最大のポイント）**　対象パークに一般ゲストより15分早く入園できます。人気アトラクションの待ち時間が少ない早朝に先手を打てるため、TDLリピーターに特に評価が高い特典です。
 

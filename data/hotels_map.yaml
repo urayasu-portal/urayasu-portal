@@ -2,29 +2,41 @@
 # マスター: hotel-database-full.csv
 # 生成:     scripts/build-hotels-map.ps1
 # 座標・フラグ・最低価格を変えるときはCSVを編集して本スクリプトで再生成すること。
-# flags: shuttle=TDRシャトル, bath=大浴場, convenience=館内コンビニ,
-#         limousine=空港リムジン, station=駅直結/徒歩1分, kitchen=ミニキッチン
+# flags: bath=大浴場・温泉, pool=室内プール, laundry=コインランドリー,
+#         convenience=館内コンビニ, shuttle=無料シャトル, station=駅直結/徒歩1分,
+#         limousine=空港リムジン, kitchen=ミニキッチン
+# facilities: 個別ページの設備アイコン用（key + 任意のnote）。CSV機能フラグの key:note を展開。
 
 hotels:
   - slug: "tdl-hotel"
     lat: 35.6368
     lng: 139.8783
     price_min: 55000
-    flags: [limousine]
+    flags: [laundry, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "limousine"
     name: "東京ディズニーランドホテル"
     address: "〒279-8505 千葉県浦安市舞浜29-1"
   - slug: "miracosta"
     lat: 35.6269
     lng: 139.8881
     price_min: 83000
-    flags: [limousine]
+    flags: [pool, limousine]
+    facilities:
+      - key: "pool"
+        note: "有料"
+      - key: "limousine"
     name: "東京ディズニーシー・ホテルミラコスタ"
     address: "〒279-8519 千葉県浦安市舞浜1-13"
   - slug: "fantasy-springs-hotel"
     lat: 35.6289
     lng: 139.8764
     price_min: 50000
-    flags: [limousine]
+    flags: [laundry, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "limousine"
     name: "東京ディズニーシー・ファンタジースプリングスホテル"
     address: "〒279-8526 千葉県浦安市舞浜1-2"
   - slug: "ambassador-hotel"
@@ -32,27 +44,42 @@ hotels:
     lng: 139.8878
     price_min: 40000
     flags: [shuttle, limousine]
+    facilities:
+      - key: "shuttle"
+      - key: "limousine"
     name: "ディズニーアンバサダーホテル"
     address: "〒279-8522 千葉県浦安市舞浜2-11"
   - slug: "toy-story-hotel"
     lat: 35.6259
     lng: 139.8746
     price_min: 45000
-    flags: [shuttle, limousine]
+    flags: [laundry, shuttle, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "トイ・ストーリーホテル"
     address: "〒279-8506 千葉県浦安市舞浜1-47"
   - slug: "celebration-wish"
     lat: 35.6388
     lng: 139.9305
     price_min: 20000
-    flags: [shuttle, limousine]
+    flags: [laundry, shuttle, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "東京ディズニーセレブレーションホテル：ウィッシュ"
     address: "千葉県浦安市明海7丁目1-1"
   - slug: "celebration-discover"
     lat: 35.6384
     lng: 139.9308
     price_min: 20000
-    flags: [shuttle, limousine]
+    flags: [laundry, shuttle, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "東京ディズニーセレブレーションホテル：ディスカバー"
     address: "千葉県浦安市日の出7-1-1"
   - slug: "hotel-okura-tokyo-bay"
@@ -60,55 +87,95 @@ hotels:
     lng: 139.8760
     price_min: 30000
     flags: [shuttle, limousine]
+    facilities:
+      - key: "shuttle"
+      - key: "limousine"
     name: "ホテルオークラ東京ベイ"
     address: "千葉県浦安市舞浜1-8"
   - slug: "grand-nikko-tokyo-bay"
     lat: 35.6293
     lng: 139.8740
     price_min: 30000
-    flags: [shuttle, limousine]
+    flags: [laundry, shuttle, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "グランドニッコー東京ベイ舞浜"
     address: "千葉県浦安市舞浜1-7"
   - slug: "sheraton-grande-tokyo-bay"
     lat: 35.6257
     lng: 139.8782
     price_min: 30000
-    flags: [shuttle, bath, limousine]
+    flags: [bath, pool, laundry, shuttle, limousine]
+    facilities:
+      - key: "bath"
+        note: "サウナ"
+      - key: "pool"
+        note: "温水"
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "シェラトン・グランデ・トーキョーベイ"
     address: "千葉県浦安市舞浜1-9"
   - slug: "hilton-tokyo-bay"
     lat: 35.6272
     lng: 139.8739
     price_min: 30000
-    flags: [shuttle, convenience, limousine]
+    flags: [pool, laundry, convenience, shuttle, limousine]
+    facilities:
+      - key: "pool"
+        note: "有料"
+      - key: "laundry"
+      - key: "convenience"
+      - key: "shuttle"
+      - key: "limousine"
     name: "ヒルトン東京ベイ"
     address: "〒279-0031 千葉県浦安市舞浜1-8"
   - slug: "maihama-hotel-first-resort"
     lat: 35.6317
     lng: 139.8739
     price_min: 20000
-    flags: [shuttle, limousine]
+    flags: [laundry, shuttle, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "東京ベイ舞浜ホテル ファーストリゾート"
     address: "千葉県浦安市舞浜1-6"
   - slug: "dreamgate-maihama"
     lat: 35.6357
     lng: 139.8850
     price_min: 15000
-    flags: [shuttle, station, convenience]
+    flags: [laundry, convenience, shuttle, station]
+    facilities:
+      - key: "laundry"
+      - key: "convenience"
+      - key: "shuttle"
+      - key: "station"
     name: "ホテルドリームゲート舞浜"
     address: "千葉県浦安市舞浜26-5"
   - slug: "maihama-view-hotel"
     lat: 35.6307
     lng: 139.8739
     price_min: 20000
-    flags: [shuttle, bath, limousine]
+    flags: [bath, shuttle, limousine]
+    facilities:
+      - key: "bath"
+        note: "有料"
+      - key: "shuttle"
+      - key: "limousine"
     name: "舞浜ビューホテル by HULIC"
     address: "〒279-0031 千葉県浦安市舞浜1-34"
   - slug: "royal-park-maihama"
     lat: 35.6267
     lng: 139.8972
     price_min: 25000
-    flags: [shuttle, convenience]
+    flags: [laundry, convenience, shuttle]
+    facilities:
+      - key: "laundry"
+      - key: "convenience"
+      - key: "shuttle"
     name: "ザ ロイヤルパークホテル 舞浜リゾート 東京ベイ"
     address: "〒279-0032 千葉県浦安市千鳥13-1"
   - slug: "mystays-maihama"
@@ -116,34 +183,52 @@ hotels:
     lng: 139.8924
     price_min: 8000
     flags: [shuttle]
+    facilities:
+      - key: "shuttle"
     name: "ホテルマイステイズ舞浜"
     address: "〒279-0025 千葉県浦安市鉄鋼通り3-5-1"
   - slug: "maihama-eurasia"
     lat: 35.6272
     lng: 139.8957
     price_min: 10000
-    flags: [shuttle, bath]
+    flags: [bath, laundry, shuttle]
+    facilities:
+      - key: "bath"
+        note: "天然温泉"
+      - key: "laundry"
+      - key: "shuttle"
     name: "スパ＆ホテル 舞浜ユーラシア"
     address: "千葉県浦安市千鳥13-20"
   - slug: "eurasia-annex"
     lat: 35.6236
     lng: 139.9028
     price_min: 8000
-    flags: [shuttle, bath]
+    flags: [laundry, shuttle]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
     name: "HOTELユーラシア舞浜ANNEX"
     address: "〒279-0032 千葉県浦安市千鳥10-5"
   - slug: "hyatt-regency-tokyo-bay"
     lat: 35.6377
     lng: 139.9259
     price_min: 25000
-    flags: [shuttle, limousine]
+    flags: [pool, shuttle, limousine]
+    facilities:
+      - key: "pool"
+        note: "屋内外"
+      - key: "shuttle"
+      - key: "limousine"
     name: "ハイアット リージェンシー 東京ベイ"
     address: "千葉県浦安市明海5-8-23"
   - slug: "comfort-suites-tokyo-bay"
     lat: 35.6386
     lng: 139.9274
     price_min: 15000
-    flags: [shuttle]
+    flags: [laundry, shuttle]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
     name: "コンフォートスイーツ東京ベイ"
     address: "〒279-0014 千葉県浦安市明海5-8-15"
   - slug: "brighton-tokyo-bay"
@@ -151,62 +236,102 @@ hotels:
     lng: 139.9116
     price_min: 15000
     flags: [shuttle, station, limousine]
+    facilities:
+      - key: "shuttle"
+      - key: "station"
+      - key: "limousine"
     name: "浦安ブライトンホテル東京ベイ"
     address: "千葉県浦安市美浜1-9"
   - slug: "oriental-tokyo-bay"
     lat: 35.6509
     lng: 139.9127
     price_min: 16500
-    flags: [shuttle, station, convenience, limousine]
+    flags: [laundry, convenience, shuttle, station, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "convenience"
+      - key: "shuttle"
+      - key: "station"
+      - key: "limousine"
     name: "オリエンタルホテル東京ベイ"
     address: "千葉県浦安市美浜1-8-2"
   - slug: "emion-tokyo-bay"
     lat: 35.6477
     lng: 139.9203
     price_min: 18000
-    flags: [shuttle, bath, limousine]
+    flags: [bath, laundry, shuttle, limousine]
+    facilities:
+      - key: "bath"
+        note: "天然温泉"
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "ホテルエミオン東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出1-1-1"
   - slug: "mitsui-garden-prana"
     lat: 35.6361
     lng: 139.9243
     price_min: 18000
-    flags: [shuttle, bath, convenience, limousine]
+    flags: [bath, laundry, convenience, shuttle, limousine]
+    facilities:
+      - key: "bath"
+        note: "無料・展望"
+      - key: "laundry"
+      - key: "convenience"
+      - key: "shuttle"
+      - key: "limousine"
     name: "三井ガーデンホテルプラナ東京ベイ"
     address: "千葉県浦安市明海6-2-1"
   - slug: "hoshinoresorts-1955-tokyo-bay"
     lat: 35.6375
     lng: 139.9320
     price_min: 18000
-    flags: [shuttle, convenience]
+    flags: [laundry, convenience, shuttle]
+    facilities:
+      - key: "laundry"
+      - key: "convenience"
+      - key: "shuttle"
     name: "星野リゾート 1955 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出7-2-3"
   - slug: "lagent-tokyo-bay"
     lat: 35.6407
     lng: 139.9296
     price_min: 8000
-    flags: [shuttle]
+    flags: [laundry, shuttle]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
     name: "ラ・ジェント・ホテル東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出5-7-1"
   - slug: "ibis-styles-tokyo-bay"
     lat: 35.6490
     lng: 139.9217
     price_min: 10000
-    flags: [shuttle, limousine]
+    flags: [laundry, shuttle, limousine]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "limousine"
     name: "イビス スタイルズ 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出2-1-1"
   - slug: "mystays-shin-urayasu"
     lat: 35.6440
     lng: 139.9156
     price_min: 7500
-    flags: []
+    flags: [laundry]
+    facilities:
+      - key: "laundry"
     name: "マイステイズ新浦安コンファレンスセンター"
     address: "〒279-0014 千葉県浦安市明海2-1-4"
   - slug: "flexstay-shin-urayasu"
     lat: 35.642556
     lng: 139.904282
     price_min: 7000
-    flags: [shuttle, kitchen]
+    flags: [laundry, shuttle, kitchen]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
+      - key: "kitchen"
     name: "フレックステイイン新浦安"
     address: "〒279-0022 千葉県浦安市今川4-1-29"
   - slug: "henna-hotel-maihama"
@@ -214,20 +339,27 @@ hotels:
     lng: 139.8877
     price_min: 11000
     flags: [shuttle]
+    facilities:
+      - key: "shuttle"
     name: "変なホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見5-3-23"
   - slug: "four-stories-hotel"
     lat: 35.650735
     lng: 139.891043
     price_min: 10000
-    flags: []
+    flags: [laundry]
+    facilities:
+      - key: "laundry"
     name: "フォーストーリーズホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見1-11-31"
   - slug: "hiyori-hotel-maihama"
     lat: 35.646345
     lng: 139.897186
     price_min: 10000
-    flags: [shuttle]
+    flags: [laundry, shuttle]
+    facilities:
+      - key: "laundry"
+      - key: "shuttle"
     name: "日和ホテル舞浜"
     address: "〒279-0042 千葉県浦安市東野2-25-8"
   - slug: "viewfort-urayasu"
@@ -235,6 +367,8 @@ hotels:
     lng: 139.892687
     price_min: 9000
     flags: [station]
+    facilities:
+      - key: "station"
     name: "浦安ビューフォートホテル"
     address: "〒279-0004 千葉県浦安市猫実4-18-28"
   - slug: "hotel-daigo-urayasu"
@@ -242,6 +376,8 @@ hotels:
     lng: 139.895219
     price_min: 11000
     flags: [station]
+    facilities:
+      - key: "station"
     name: "ホテル醍醐"
     address: "〒279-0002 千葉県浦安市北栄1-11-1"
   - slug: "bayhotel-urayasu"
@@ -249,20 +385,30 @@ hotels:
     lng: 139.894629
     price_min: 14000
     flags: [station, kitchen]
+    facilities:
+      - key: "station"
+      - key: "kitchen"
     name: "BAYHOTEL浦安駅前"
     address: "〒279-0002 千葉県浦安市北栄1-15-28"
   - slug: "urayasu-sun-hotel"
     lat: 35.665574
     lng: 139.890164
     price_min: 5000
-    flags: [station]
+    flags: [laundry, station]
+    facilities:
+      - key: "laundry"
+      - key: "station"
     name: "浦安サンホテル"
     address: "〒279-0001 千葉県浦安市当代島1-19-13"
   - slug: "premium-monday-maihama-view-1"
     lat: 35.644359
     lng: 139.877470
     price_min: 11000
-    flags: [shuttle, bath]
+    flags: [bath, shuttle]
+    facilities:
+      - key: "bath"
+        note: "サウナ"
+      - key: "shuttle"
     name: "Premium hotel MONday 舞浜ビューⅠ"
     address: "〒134-0085 東京都江戸川区南葛西6-2-22"
   - slug: "hotel-seaside-edogawa"
@@ -270,6 +416,8 @@ hotels:
     lng: 139.859376
     price_min: 16000
     flags: [bath]
+    facilities:
+      - key: "bath"
     name: "ホテルシーサイド江戸川"
     address: "〒134-0086 東京都江戸川区臨海町6-2-2（葛西臨海公園内）"
   - slug: "cvs-bay-hotel"
@@ -277,40 +425,52 @@ hotels:
     lng: 139.923990
     price_min: 5610
     flags: [convenience]
+    facilities:
+      - key: "convenience"
     name: "CVS・BAY HOTEL"
     address: "〒272-0127 千葉県市川市塩浜2-33-1（本館）"
   - slug: "hotel-ilfiore-kasai"
     lat: 35.662815
     lng: 139.874746
     price_min: 7860
-    flags: []
+    flags: [laundry]
+    facilities:
+      - key: "laundry"
     name: "ホテルイルフィオーレ葛西"
     address: "〒134-0084 東京都江戸川区東葛西6-5-8"
   - slug: "hotel-ilfiore-kasai-annex"
     lat: 35.661294
     lng: 139.873346
     price_min: 5500
-    flags: []
+    flags: [laundry]
+    facilities:
+      - key: "laundry"
     name: "ホテルイルフィオーレ葛西 ANNEX"
     address: "〒134-0084 東京都江戸川区東葛西6-1-7"
   - slug: "hotel-lumiere-kasai"
     lat: 35.661161
     lng: 139.872502
     price_min: 9700
-    flags: []
+    flags: [laundry]
+    facilities:
+      - key: "laundry"
     name: "ホテルルミエール葛西"
     address: "〒134-0083 東京都江戸川区中葛西5-41-20"
   - slug: "livemax-kasai-ekimae"
     lat: 35.660810
     lng: 139.873359
     price_min: 5000
-    flags: []
+    flags: [laundry]
+    facilities:
+      - key: "laundry"
     name: "ホテルリブマックス葛西駅前"
     address: "〒134-0084 東京都江戸川区東葛西6-1-3"
   - slug: "superhotel-myoden"
     lat: 35.691631
     lng: 139.926597
     price_min: 7400
-    flags: []
+    flags: [laundry]
+    facilities:
+      - key: "laundry"
     name: "スーパーホテル東西線・市川・妙典駅前"
     address: "〒272-0111 千葉県市川市妙典4-4-27 妙典センタービル"

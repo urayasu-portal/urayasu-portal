@@ -38,8 +38,10 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("# マスター: hotel-database-full.csv")
 [void]$sb.AppendLine("# 生成:     scripts/build-hotels-map.ps1")
 [void]$sb.AppendLine("# 座標・フラグ・最低価格を変えるときはCSVを編集して本スクリプトで再生成すること。")
-[void]$sb.AppendLine("# flags: shuttle=TDRシャトル, bath=大浴場, convenience=館内コンビニ,")
-[void]$sb.AppendLine("#         limousine=空港リムジン, station=駅直結/徒歩1分, kitchen=ミニキッチン")
+[void]$sb.AppendLine("# flags: bath=大浴場・温泉, pool=室内プール, laundry=コインランドリー,")
+[void]$sb.AppendLine("#         convenience=館内コンビニ, shuttle=無料シャトル, station=駅直結/徒歩1分,")
+[void]$sb.AppendLine("#         limousine=空港リムジン, kitchen=ミニキッチン")
+[void]$sb.AppendLine("# facilities: 個別ページの設備アイコン用（key + 任意のnote）。CSV機能フラグの key:note を展開。")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("hotels:")
 
@@ -55,15 +57,35 @@ foreach ($r in $csv) {
   $pm = 0
   if (($r."最低価格").Trim() -match '^[0-9]+$') { $pm = [int]($r."最低価格").Trim() }
 
-  $flags = ""
+  # 機能フラグを key / key:note の配列にパース
+  $items = @()
   $fraw = ($r."機能フラグ").Trim()
-  if ($fraw) { $flags = (($fraw -split ';' | Where-Object { $_ }) -join ', ') }
+  if ($fraw) {
+    foreach ($f in ($fraw -split ';' | Where-Object { $_.Trim() })) {
+      $kv = $f.Trim() -split ':', 2
+      $note = ""
+      if ($kv.Count -gt 1) { $note = $kv[1].Trim() }
+      $items += [pscustomobject]@{ key = $kv[0].Trim(); note = $note }
+    }
+  }
+  # flags: note を外した素のキー配列（比較マップ・フィルタ用）
+  $flags = (($items | ForEach-Object { $_.key }) -join ', ')
 
   [void]$sb.AppendLine("  - slug: ""$slug""")
   [void]$sb.AppendLine("    lat: $lat")
   [void]$sb.AppendLine("    lng: $lng")
   [void]$sb.AppendLine("    price_min: $pm")
   [void]$sb.AppendLine("    flags: [$flags]")
+  # facilities: 個別ページの設備アイコン用（key + 任意note）
+  if ($items.Count -gt 0) {
+    [void]$sb.AppendLine("    facilities:")
+    foreach ($it in $items) {
+      [void]$sb.AppendLine("      - key: ""$($it.key)""")
+      if ($it.note) { [void]$sb.AppendLine("        note: ""$($it.note)""") }
+    }
+  } else {
+    [void]$sb.AppendLine("    facilities: []")
+  }
   [void]$sb.AppendLine("    name: ""$($r.'施設名')""")
   [void]$sb.AppendLine("    address: ""$($r.'住所')""")
   $count++

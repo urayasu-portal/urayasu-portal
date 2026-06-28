@@ -61,6 +61,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Large Bath "Spa Rose"**
 An uncommon feature for TDR Official Hotels. Paid use: ¥3,300 for 1 night / ¥4,700 for 2 nights / ¥6,100 for 3+ nights (available from arrival day 0:00 to departure day 14:00).
 

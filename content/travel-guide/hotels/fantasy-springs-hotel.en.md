@@ -64,6 +64,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Grand Chateau (56 rooms — the most exclusive option)**
 - Direct access passageway into the Fantasy Springs area (accessible at specific hours; confirm on official website)
 - 8 attraction tickets (for Fantasy Springs attractions) included per room stay

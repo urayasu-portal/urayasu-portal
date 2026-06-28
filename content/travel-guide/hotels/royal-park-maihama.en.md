@@ -65,6 +65,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms (750 rooms, 4-seas theme)**
 Four ocean themes across the rooms — Pacific, Atlantic, Indian, and Arctic — each with distinct design language. 750 rooms is the largest count among hotels near TDR (surpassing Hilton Tokyo Bay at 828 on a "newly built" comparison), though the full room range needs confirmation on the official website.
 

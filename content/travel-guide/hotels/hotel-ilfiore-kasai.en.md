@@ -61,6 +61,8 @@ About 20 min to Otemachi / 18 min to Nihonbashi on the Tozai Line (one stop to U
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms**
 128 rooms. Hollywood twin / twin / family rooms (up to 4). Free co-sleeping for elementary-age children and under.
 

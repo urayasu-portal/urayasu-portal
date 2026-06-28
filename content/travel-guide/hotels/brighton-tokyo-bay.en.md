@@ -67,6 +67,8 @@ From Shin-Urayasu Station, about 17 min to Tokyo Station on the JR Keiyo Line ex
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms (distinctive room types)**
 189 rooms across 22 floors at a core size of 42 m². Unique options include the "View Bath" (soaking tub with views of Urayasu at night) and "Room Danran" (floor-sitting style for relaxed stays). Up to 5 guests in Room Forest (42 m²). 189 rooms means less congestion in hallways and elevators.
 

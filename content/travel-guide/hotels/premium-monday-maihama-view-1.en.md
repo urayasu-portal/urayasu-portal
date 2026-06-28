@@ -61,6 +61,8 @@ About 15 min from Kasai-Rinkai-Koen Station to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms**
 57 rooms, up to ~56㎡. Spacious apartment-style rooms for 4–6 guests.
 

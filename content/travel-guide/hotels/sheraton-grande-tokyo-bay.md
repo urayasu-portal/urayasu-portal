@@ -73,12 +73,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">大浴場<br>「舞湯」</div></div>
-  <div class="hg-fac"><i class="ti ti-swimming" aria-hidden="true"></i><div class="hg-fac-label">室内温水<br>プール</div></div>
-  <div class="hg-fac"><i class="ti ti-device-gamepad-2" aria-hidden="true"></i><div class="hg-fac-label">OASIS<br>遊戯施設</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（全室36㎡以上・バルコニー付き）**　全室36㎡以上で、バルコニー付きが標準。定員は客室タイプにより異なります。
 

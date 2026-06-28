@@ -75,12 +75,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-mood-smile" aria-hidden="true"></i><div class="hg-fac-label">トイストー<br>リー客室</div></div>
-  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>売店</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（トイ・ストーリーの世界に泊まる）**　全595室がアンディの部屋をモチーフにしたデザイン。スタンダードルームは28㎡で4名まで対応（小学生以下は添い寝最大2名）。コンパクトながら機能的にまとまった客室です。
 

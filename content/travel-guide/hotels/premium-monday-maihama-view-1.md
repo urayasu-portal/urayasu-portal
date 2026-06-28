@@ -64,12 +64,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">大浴場<br>サウナ付</div></div>
-  <div class="hg-fac"><i class="ti ti-bus" aria-hidden="true"></i><div class="hg-fac-label">TDR<br>無料シャトル</div></div>
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">最大<br>4〜6名</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>6台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　全57室・最大約56㎡。4〜6名対応のゆとりあるアパートメントタイプ。
 

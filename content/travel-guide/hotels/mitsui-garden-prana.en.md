@@ -62,6 +62,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Rooftop Large Bath with Sea Views (free for guests, 18:00–9:00)**
 The panoramic ocean view from the rooftop large bath is a scene that competes with any paid spa facility. Available to all guests during operating hours (18:00–9:00, separate men's and women's baths). Not a natural hot spring but a large bath with sea views — a strong candidate for the "best bath after parks" experience among Partner Hotels.
 

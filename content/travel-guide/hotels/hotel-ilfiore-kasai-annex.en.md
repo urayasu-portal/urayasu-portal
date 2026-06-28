@@ -62,6 +62,8 @@ About 20 min to Otemachi / 18 min to Nihonbashi on the Tozai Line (one stop to U
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms**
 Double / Hollywood twin / standard twin (up to 4) / deluxe room (up to 6).
 

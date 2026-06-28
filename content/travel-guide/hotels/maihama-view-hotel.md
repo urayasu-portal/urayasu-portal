@@ -69,12 +69,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">大浴場<br>スパローズ</div></div>
-  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">最大<br>3〜6名</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">立体<br>駐車場</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **大浴場「スパ ローズ」**　宿泊者が利用できる大浴場（有料：1泊3,300円／2泊4,700円／3泊以上6,100円、到着日0:00〜出発日14:00）。オフィシャルホテルで大浴場を持つ数少ない選択肢のひとつです。
 

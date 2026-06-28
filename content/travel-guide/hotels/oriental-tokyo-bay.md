@@ -74,12 +74,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-arrows-transfer-up" aria-hidden="true"></i><div class="hg-fac-label">シャトル<br>1日69便</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">24h館内<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-shopping-cart" aria-hidden="true"></i><div class="hg-fac-label">駅直結<br>商業施設</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（511室・ディズニーの世界観）**　全511室。シンデレラ城をイメージした客室や、アメニティを選べる「TIROIR」システムを採用。フロント吹き抜けには高さ8.5mのプロジェクションマッピングがあります。オリエンタルフロア宿泊者はチェックイン14:00からと早め。
 

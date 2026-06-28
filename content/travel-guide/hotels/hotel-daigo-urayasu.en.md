@@ -66,6 +66,8 @@ Urayasu Station → Tokyo Metro Tozai Line: approx. 16–18 min to Nihonbashi/Ot
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Year-Round Flat Rate (the defining feature)**
 Hotel Daigo Urayasu does not use dynamic pricing. The rate is the same regardless of whether it's a summer holiday, Golden Week, or year-end. For 4 people: reference rate ¥25,000. A family of 4 in peak summer pays the same as in February.
 

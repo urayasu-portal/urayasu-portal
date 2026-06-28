@@ -76,12 +76,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">24h<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-swimming" aria-hidden="true"></i><div class="hg-fac-label">屋内外<br>プール</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">24h<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">レスト<br>ラン多数</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **館内コンビニ（24時間・最大の実用ポイント）**　1階に24時間営業の「生活彩家」があり、深夜でも飲み物・軽食・日用品を買えます（医薬品販売は8:00〜22:00）。同フロアに「Sローソン」（17:00〜23:00）も併設。<strong>浦安のオフィシャルホテルで唯一の館内24時間コンビニ</strong>で、隣接するオークラやシェラトンの宿泊者がここまで買いに来るほど頼れる存在です。
 

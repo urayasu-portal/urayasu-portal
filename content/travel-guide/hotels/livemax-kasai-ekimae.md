@@ -64,12 +64,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">ランドリー<br>＋カフェ</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>20台</div></div>
-  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">無料<br>Wi-Fi</div></div>
-  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">葛西駅<br>徒歩3分</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　全57室（シングル49／ツイン8）・11〜23㎡。電子レンジ・シャワートイレ完備。
 

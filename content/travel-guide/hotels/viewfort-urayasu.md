@@ -67,12 +67,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">ビュッフェ<br>朝食</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">裏手<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全室<br>無料Wi-Fi</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>1泊1,100円</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **朝食**　毎朝7:00〜9:30にビュッフェ朝食を提供。焼きたてクロワッサンが名物として口コミでも高評価です。
 

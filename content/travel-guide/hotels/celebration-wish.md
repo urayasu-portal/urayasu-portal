@@ -73,12 +73,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">ベッド<br>4台標準</div></div>
-  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">隣接<br>ローソン</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（4台ベッドが標準）**　「夢・ファンタジー」をテーマに、壁一面にディズニーキャラクターが描かれています。スタンダード・スーペリアルームはレギュラーベッド2台＋デイベッド2台で4名のベッド利用が可能（小学生以下は添い寝2名まで）。グループで1室にまとまりたい場合の実用性が高い設計です。
 

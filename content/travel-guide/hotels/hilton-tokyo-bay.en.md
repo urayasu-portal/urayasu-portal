@@ -66,6 +66,8 @@ From Maihama Station, about 15–20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **In-House Convenience Store (24-Hour — the biggest practical advantage)**
 "Seikatsu Saika" on the 1st floor is open 24 hours for drinks, snacks, and daily goods (pharmaceuticals sold 8:00–22:00). "S-Lawson" is also on the same floor (17:00–23:00). **The only 24-hour in-house convenience store among Official Hotels in the Urayasu area** — guests from neighboring Okura and Sheraton come here to shop, a well-known fact locally.
 

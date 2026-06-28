@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">本館温泉<br>割引利用</div></div>
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">南仏<br>デザイン客室</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>42台予約制</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **本館温泉の割引利用**　アネックス宿泊者は本館（スパ＆ホテル舞浜ユーラシア）の天然温泉を割引価格で利用できます。2026年4〜7月は半額キャンペーンを実施（最新情報は公式要確認）。本館へは無料シャトルで移動します。
 

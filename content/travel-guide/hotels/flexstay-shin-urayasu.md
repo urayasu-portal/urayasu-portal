@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">全室<br>ミニキッチン</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">徒歩2分<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全室<br>無料Wi-Fi</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（全室ミニキッチン付き）**　全室ミニキッチン完備の長期滞在型設計。客室定員・部屋タイプは公式サイト要確認です。
 

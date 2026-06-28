@@ -63,6 +63,8 @@ Urayasu Station → Tokyo Metro Tozai Line: approx. 16–18 min to Nihonbashi/Ot
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Free Continental Breakfast (from 6:00am)**
 Complimentary continental breakfast from 6:00am. One of the earlier breakfast options in the Urayasu area, useful for guests who need to leave early for the parks.
 

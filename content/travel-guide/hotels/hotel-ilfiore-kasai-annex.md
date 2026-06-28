@@ -64,12 +64,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">最大<br>6名</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-glass-full" aria-hidden="true"></i><div class="hg-fac-label">フリー<br>ドリンク</div></div>
-  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">葛西駅<br>徒歩3分</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　ダブル／ハリウッドツイン／スタンダードツイン（最大4名）／デラックスルーム（最大6名）。
 

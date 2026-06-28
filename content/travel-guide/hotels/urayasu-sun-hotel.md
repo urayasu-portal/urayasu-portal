@@ -67,12 +67,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">無料<br>朝食</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">周辺<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>10台900円</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **無料朝食**　毎朝6:00〜1Fサニールームでコンチネンタルブレックファスト（パン・サラダ・コーヒー・ジュース等）を無料提供。
 

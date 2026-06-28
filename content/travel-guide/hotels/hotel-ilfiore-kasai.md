@@ -64,12 +64,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">最大<br>4名</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>10台</div></div>
-  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">葛西駅<br>徒歩3分</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　全128室。ハリウッドツイン／ツイン／ファミリールーム（最大4名）。小学生以下の添い寝無料。
 

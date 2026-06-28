@@ -71,12 +71,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">最上階<br>展望大浴場</div></div>
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">30㎡以上<br>最大6名</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>24hコンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>1泊2,000円</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **展望大浴場（最上階・宿泊者無料）**　最上階に海を一望できる展望大浴場。宿泊者無料。利用時間は18:00〜翌9:00（一部時期に終夜営業あり）。
 

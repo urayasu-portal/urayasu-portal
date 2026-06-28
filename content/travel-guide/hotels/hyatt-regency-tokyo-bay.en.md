@@ -63,6 +63,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms (all rooms with separate wash area)**
 All rooms with a separated wash area and bathroom — a thoughtful setup for couples and families (bathroom and wash area can be used simultaneously). Chromecast installed in every room.
 

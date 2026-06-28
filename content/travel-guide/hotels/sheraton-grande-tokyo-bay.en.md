@@ -63,6 +63,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Large Bath "Maiyu" (marble interior, sauna)**
 "Maiyu" large communal bath with marble-clad interior and sauna. Available to hotel guests (fee may apply; confirm on official website). Separate men's and women's baths.
 

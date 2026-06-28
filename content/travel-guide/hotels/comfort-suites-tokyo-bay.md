@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全312室<br>洗い場別バス</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全館<br>無料Wi-Fi</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（312室）**　全312室。洗い場別バスルームを備えたビジネス・ファミリー向けの広めの客室。小学6年生まで添い寝無料（1室2名まで）。
 

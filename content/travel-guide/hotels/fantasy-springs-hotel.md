@@ -75,12 +75,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-building-castle" aria-hidden="true"></i><div class="hg-fac-label">新エリア<br>直結</div></div>
-  <div class="hg-fac"><i class="ti ti-ticket" aria-hidden="true"></i><div class="hg-fac-label">利用券<br>付（GC）</div></div>
-  <div class="hg-fac"><i class="ti ti-clock-hour-7" aria-hidden="true"></i><div class="hg-fac-label">15分<br>早入園</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">24h<br>ランドリー</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **2タイプのシャトー構成（最大の特徴）**　ラグジュアリーの「グランドシャトー」（56室）とデラックスの「ファンタジーシャトー」（419室）の2棟。グランドは宿泊料金にアトラクション利用券8枚・ショー鑑賞券4枚が含まれ、専用入口からTDSへ直接入れる点が最大の違いです。
 

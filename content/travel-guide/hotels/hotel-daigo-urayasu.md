@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全31室<br>和室あり</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">ホテル下<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-cash" aria-hidden="true"></i><div class="hg-fac-label">支払い<br>現金のみ</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>8台無料</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（31室・和室あり）**　全31室の小規模ホテル。和室あり（4名利用可）。ユニットバス（トイレ・浴室一体型）。
 

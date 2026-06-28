@@ -62,6 +62,8 @@ Urayasu Station → Tokyo Metro Tozai Line express: approx. 16 min to Nihonbashi
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms**
 Clean, well-maintained business hotel rooms. Room types: confirm on official website.
 

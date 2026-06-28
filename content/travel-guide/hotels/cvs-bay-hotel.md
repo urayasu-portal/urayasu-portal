@@ -65,12 +65,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">大浴場<br>※休止中</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">1F<br>コンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">市川塩浜駅<br>隣接</div></div>
-  <div class="hg-fac"><i class="ti ti-coffee" aria-hidden="true"></i><div class="hg-fac-label">朝食<br>ビュッフェ</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　本館・ベイタワー・新館で計約256室。シングル〜ファミリー、女性専用カプセル(ユニット)タイプもあり。
 

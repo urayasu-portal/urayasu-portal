@@ -63,6 +63,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Natural Hot Spring "Emion Onsen" (the defining advantage)**
 The only natural hot spring among the four Partner Hotels. A saline spring producing amber-colored water — believed to promote circulation and skin softness. Separate men's and women's baths with indoor and outdoor tubs. Included in the room rate.
 

@@ -63,6 +63,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Coin Laundry (24-hour, ¥200/cycle)**
 24-hour coin laundry at ¥200 per wash/dry cycle — among the cheapest in the area. Budget stays involving daily laundry become practical at this rate.
 

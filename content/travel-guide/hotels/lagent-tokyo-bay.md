@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全室ツイン<br>最大6名</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">隣接<br>24hコンビニ</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">洗濯乾燥機<br>4台</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>190台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（全室ハリウッドツイン・禁煙）**　最大6名対応の大部屋あり、未就学児添い寝無料。全室ハリウッドツイン・全室禁煙（1Fに喫煙コーナー）。全室に加湿機能付き空気清浄機・シューズドライヤーを完備。
 

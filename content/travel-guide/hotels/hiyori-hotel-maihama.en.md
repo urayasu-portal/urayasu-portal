@@ -63,6 +63,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **In-Room Amenities (foot massager + shoe dryer in all rooms)**
 Every guest room includes a foot massager and shoe dryer — genuinely unusual features in this category. After a full day of walking at the parks, access to a foot massager without going to a spa is a real comfort.
 

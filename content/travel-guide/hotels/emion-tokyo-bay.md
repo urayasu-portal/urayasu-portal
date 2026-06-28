@@ -69,12 +69,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">天然温泉<br>大浴場</div></div>
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全584室<br>最大8名</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>338台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **天然温泉（最大の特徴）**　TDR提携ホテルで唯一の天然温泉（ナトリウム・塩化物強塩泉）。大浴場・サウナ・露天風呂（エミオンタワー館のみ）。5:30〜10:00／17:00〜25:00。有料施設です。
 

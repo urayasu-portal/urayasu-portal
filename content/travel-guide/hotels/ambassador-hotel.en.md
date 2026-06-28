@@ -65,6 +65,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Character Dining "Chef Mickey" (the defining attraction)**
 Mickey Mouse and friends appear at this breakfast buffet (6:30–10:00). Hotel guests have priority seating. Character appearances vary by time period — confirm the schedule on the official website. (July–September 2026: Stitch scheduled to appear.)
 

@@ -69,12 +69,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-robot" aria-hidden="true"></i><div class="hg-fac-label">全室<br>ロボホン</div></div>
-  <div class="hg-fac"><i class="ti ti-award" aria-hidden="true"></i><div class="hg-fac-label">ギネス<br>認定</div></div>
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">バス・トイレ<br>別</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>事前予約可</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（ロボホン全室設置・全100室）**　全室にコミュニケーションロボット「ロボホン」を設置。全室バス・トイレ別で、広く深い浴槽があります。ツインタイプ中心です。
 

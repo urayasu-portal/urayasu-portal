@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-home" aria-hidden="true"></i><div class="hg-fac-label">全室30㎡<br>最大4名</div></div>
-  <div class="hg-fac"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i><div class="hg-fac-label">全室<br>キッチン</div></div>
-  <div class="hg-fac"><i class="ti ti-shopping-cart" aria-hidden="true"></i><div class="hg-fac-label">向かい<br>24h西友</div></div>
-  <div class="hg-fac"><i class="ti ti-wifi" aria-hidden="true"></i><div class="hg-fac-label">全室<br>無料Wi-Fi</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室設備**　全室30㎡・ダブルベッド2台で最大4名。キッチン・冷蔵庫・オーブンレンジ・洗濯機・トイレ浴室別を完備。長期滞在・グループ利用にも対応した客室設計です。
 

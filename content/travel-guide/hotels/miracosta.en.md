@@ -66,6 +66,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Location (the defining feature)**
 A globally rare hotel set inside the park itself. Three sides — Toscana, Venezia, and Porto Paradiso — offer different views from the windows. Porto Paradiso Side overlooks the canal; Venezia Side commands a panoramic view of the Mediterranean Harbor.
 

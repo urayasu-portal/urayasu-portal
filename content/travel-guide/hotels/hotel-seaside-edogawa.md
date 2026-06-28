@@ -64,12 +64,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bath" aria-hidden="true"></i><div class="hg-fac-label">男女別<br>大浴場</div></div>
-  <div class="hg-fac"><i class="ti ti-tea" aria-hidden="true"></i><div class="hg-fac-label">和室<br>14室</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">公園<br>駐車場</div></div>
-  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">駅徒歩<br>3分</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　全29室。特別／一般の洋室・和室。ベイエリアで希少な和室14室。
 

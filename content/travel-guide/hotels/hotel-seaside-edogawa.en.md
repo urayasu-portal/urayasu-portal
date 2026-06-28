@@ -62,6 +62,8 @@ About 15 min from Kasai-Rinkai-Koen Station to Tokyo Station on the JR Keiyo Lin
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms**
 29 rooms; special/standard Western and Japanese-style rooms, including 14 Japanese-style rooms rare for the bay area.
 

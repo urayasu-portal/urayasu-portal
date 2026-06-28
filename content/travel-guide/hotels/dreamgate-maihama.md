@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-train" aria-hidden="true"></i><div class="hg-fac-label">舞浜駅<br>直結</div></div>
-  <div class="hg-fac"><i class="ti ti-mood-kid" aria-hidden="true"></i><div class="hg-fac-label">6歳まで<br>添い寝無料</div></div>
-  <div class="hg-fac"><i class="ti ti-building-store" aria-hidden="true"></i><div class="hg-fac-label">館内<br>NewDays</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>37台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室**　本館・アネックスの2棟構成。全室洗い場付きバスルームで、6歳まで添い寝無料。
 

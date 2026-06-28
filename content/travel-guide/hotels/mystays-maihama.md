@@ -68,12 +68,7 @@ noDate: true
 
 ## 設備・サービス
 
-<div class="hg-facilities">
-  <div class="hg-fac"><i class="ti ti-bed" aria-hidden="true"></i><div class="hg-fac-label">全90室<br>フットマッサージ</div></div>
-  <div class="hg-fac"><i class="ti ti-bread" aria-hidden="true"></i><div class="hg-fac-label">焼き立て<br>パン朝食</div></div>
-  <div class="hg-fac"><i class="ti ti-wash-machine" aria-hidden="true"></i><div class="hg-fac-label">コイン<br>ランドリー</div></div>
-  <div class="hg-fac"><i class="ti ti-parking" aria-hidden="true"></i><div class="hg-fac-label">駐車場<br>40台</div></div>
-</div>
+{{< hotel-facilities >}}
 
 **客室（全90室・全室フットマッサージ）**　全90室。ツイン・トリプル・ファミリールームを展開。全室にフットマッサージ機を完備。
 

@@ -63,6 +63,8 @@ About 22 min to Tokyo Station on the JR Keiyo Line.
 
 ## Facilities & Services
 
+{{< hotel-facilities >}}
+
 **Guest Rooms**
 About 256 rooms across Main, Bay Tower and Annex. Singles to family rooms, plus women-only capsule (unit) rooms.
 
