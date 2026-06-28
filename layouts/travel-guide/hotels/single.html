@@ -12,16 +12,41 @@
   {{- range .Params.tags }}{{- if in $areaTags . }}{{ $area = . }}{{ end }}{{- end }}
 {{- end }}
 
-{{/* ホテル一覧（タグ「ホテル」を持つ travel-guide ページ） */}}
-{{- $hotels := where (where site.RegularPages "Section" "travel-guide") "Params.tags" "intersect" (slice "ホテル") }}
+{{- $isEN := eq site.Language.Lang "en" }}
 
-{{/* 近隣の似たホテル：同エリアタグ優先、不足分は他ホテルで補完、最大3件 */}}
-{{- $related := slice }}
-{{- if $area }}
-  {{- range $hotels }}{{- if ne .RelPermalink $cur }}{{- if in .Params.tags $area }}{{ $related = $related | append . }}{{- end }}{{- end }}{{- end }}
+{{/* 近隣の似たホテル：エリア区分ではなく「実座標の距離」を主軸に、区分・価格帯の近さを加点して
+     上位3件を選定する。浦安近郊のようにエリア内でも施設間が離れるケースに対応するため距離ベースとし、
+     同区分(−3km相当)・価格近接(±1万=−1.5 / ±2万=−0.7km相当)を“近さ”として割り引く。
+     座標・区分・価格は data/hotels_map.yaml・data/hotels.yaml（マスター=CSV）を参照。 */}}
+{{- $curSlug := .File.ContentBaseName }}
+{{- $mapIdx := dict }}
+{{- range hugo.Data.hotels_map.hotels }}{{ $mapIdx = merge $mapIdx (dict .slug .) }}{{- end }}
+{{- $catIdx := dict }}{{- $areaNameIdx := dict }}
+{{- range hugo.Data.hotels.areas }}{{- $an := .name }}{{- range .hotels }}{{- if .slug }}{{ $catIdx = merge $catIdx (dict .slug .category) }}{{ $areaNameIdx = merge $areaNameIdx (dict .slug $an) }}{{- end }}{{- end }}{{- end }}
+{{- $cur2 := index $mapIdx $curSlug }}
+{{- $curCat := index $catIdx $curSlug | default "" }}
+{{- $curPrice := 0 }}{{- with $cur2 }}{{ $curPrice = .price_min | default 0 }}{{- end }}
+{{- $scored := slice }}
+{{- if $cur2 }}
+  {{- range hugo.Data.hotels_map.hotels }}
+    {{- if ne .slug $curSlug }}
+      {{- $dlat := mul (sub $cur2.lat .lat) 111.0 }}
+      {{- $dlng := mul (sub $cur2.lng .lng) 90.0 }}
+      {{- $score := math.Sqrt (add (mul $dlat $dlat) (mul $dlng $dlng)) }}
+      {{- $cCat := index $catIdx .slug | default "" }}
+      {{- if and (ne $curCat "") (eq $curCat $cCat) }}{{ $score = sub $score 3.0 }}{{- end }}
+      {{- $cPrice := .price_min | default 0 }}
+      {{- if and (gt $curPrice 0) (gt $cPrice 0) }}
+        {{- $pd := cond (gt $curPrice $cPrice) (sub $curPrice $cPrice) (sub $cPrice $curPrice) }}
+        {{- if lt $pd 10000 }}{{ $score = sub $score 1.5 }}{{- else if lt $pd 20000 }}{{ $score = sub $score 0.7 }}{{- end }}
+      {{- end }}
+      {{- $scored = $scored | append (dict "slug" .slug "score" $score) }}
+    {{- end }}
+  {{- end }}
 {{- end }}
-{{- range $hotels }}{{- if ne .RelPermalink $cur }}{{- if not (in $related .) }}{{ $related = $related | append . }}{{- end }}{{- end }}{{- end }}
-{{- $related = first 3 $related }}
+{{- $scored = sort $scored "score" "asc" }}
+{{- $related := slice }}
+{{- range first 3 $scored }}{{- with $.Site.GetPage (printf "/travel-guide/hotels/%s" .slug) }}{{ $related = $related | append . }}{{- end }}{{- end }}
 
 {{/* 目次生成 + 見出しID付与（生HTML <h2> も Markdown ## も対応） */}}
 {{- $content := .Content }}
@@ -96,12 +121,12 @@
       {{/* 近隣の似たホテル */}}
       {{- if $related }}
       <div class="hg-related">
-        <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>近隣の似たホテル</h2></div>
+        <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>{{ if $isEN }}Nearby similar hotels{{ else }}近隣の似たホテル{{ end }}</h2></div>
         <div class="hg-hotel-grid">
           {{- range $related }}
           {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
           {{- $rarea := "" }}
-          {{- range .Params.tags }}{{- if in $areaTags . }}{{ $rarea = . }}{{ end }}{{- end }}
+          {{- if not $isEN }}{{- with index $areaNameIdx .File.ContentBaseName }}{{ $rarea = . }}{{- end }}{{- end }}
           <a class="hg-hotel-card" href="{{ .RelPermalink }}">
             <div class="hg-hotel-thumb{{ if not $img }} hg-hotel-no-img{{ end }}">
               {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
