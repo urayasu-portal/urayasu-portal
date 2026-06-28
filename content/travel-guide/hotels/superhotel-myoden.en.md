@@ -43,8 +43,11 @@ Super Hotel Tozai Line Ichikawa-Myoden is about a 2-minute walk from Tokyo Metro
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Myoden → Nishi-Funabashi → JR Keiyo Line to Maihama, then the Disney Resort Line to the parks (no direct shuttle).
+### To Tokyo Disneyland (TDL)
+Myoden to Nishi-Funabashi to the JR Keiyo Line to Maihama, then Disney Resort Line to Tokyo Disneyland Station (no direct shuttle).
+
+### To Tokyo DisneySea (TDS)
+Myoden to Nishi-Funabashi to the JR Keiyo Line to Maihama, then Disney Resort Line to Tokyo DisneySea Station (no direct shuttle).
 
 ### To the Nearest Station
 About 2 min on foot from Tokyo Metro Tozai Line Myoden Station.

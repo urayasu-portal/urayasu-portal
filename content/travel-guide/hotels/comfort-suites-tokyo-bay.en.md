@@ -44,8 +44,11 @@ Comfort Suites Tokyo Bay (Choice Hotels). A free shuttle to TDL and TDS runs dai
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free shuttle daily. When park closes by 22:00, shuttle runs until 30 min after closing (confirm schedule for closings after 22:00).
+### To Tokyo Disneyland (TDL)
+Free hotel shuttle bus (runs until ~30 min after park closing).
+
+### To Tokyo DisneySea (TDS)
+Free hotel shuttle bus (runs until ~30 min after park closing).
 
 ### To JR Station
 From Shin-Urayasu Station South Exit bus terminal, stop D: Tokyo Baycity Bus Routes 3 or 23 (bound for Sogo Koen), approx. 10 min to "Akemi 5-chome" stop, then 1 min on foot.

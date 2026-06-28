@@ -43,8 +43,11 @@ Mitsui Garden Hotel Prana Tokyo Bay is a TDR Partner Hotel offering a combinatio
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Partner Hotel shuttle. Approx. 20 min to TDR. Shuttle from Shin-Urayasu Station at up to 10-minute intervals (one of the highest frequencies among Partner Hotels).
+### To Tokyo Disneyland (TDL)
+Partner Hotel free shuttle (no reservation), approx. 20 min (up to every 10 min).
+
+### To Tokyo DisneySea (TDS)
+Partner Hotel free shuttle (no reservation), approx. 20 min (up to every 10 min).
 
 ### To JR Station
 Shuttle from Shin-Urayasu Station: approx. 20 min to the hotel (confirm schedule and stop location on official website). Or local bus from Shin-Urayasu Station South Exit.

@@ -45,8 +45,11 @@ Fantasy Springs Hotel, which opened in June 2024 alongside the Fantasy Springs e
 
 ## Access
 
-### To the Parks (TDS / TDL)
-The hotel is **adjacent to Tokyo DisneySea's Fantasy Springs** expansion area. Happy Entry allows guests into the park 15 minutes before general admission. Direct hotel access to Fantasy Springs is a Grand Chateau exclusive (via a dedicated passageway). For TDL, use the Disney Resort Line (paid).
+### To Tokyo Disneyland (TDL)
+Via the Disney Resort Line (15-min early entry, all rooms).
+
+### To Tokyo DisneySea (TDS)
+Direct from the private 'Grand Chateau Gateway' entrance (Grand guests); 15-min early entry.
 
 ### To JR Station
 To Maihama Station: the Disney Resort Line (paid) to Resort Gateway Station. No practical walking route.

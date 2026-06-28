@@ -44,8 +44,11 @@ MyStays Hotel Maihama is a compact 90-room hotel with a distinctive advantage: a
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Approximately **6 minutes on foot to Tokyo DisneySea** entrance. To TDL: local bus or shuttle. Disney Resort Line from Bayside Station also reachable on foot.
+### To Tokyo Disneyland (TDL)
+Free shuttle bus, or via Maihama Station (schedule on the official PC site).
+
+### To Tokyo DisneySea (TDS)
+~6-min walk to the TDS main gate; a free shuttle bus also runs daily.
 
 ### To JR Station
 Maihama Station: approx. 10–15 min on foot or by local transport.

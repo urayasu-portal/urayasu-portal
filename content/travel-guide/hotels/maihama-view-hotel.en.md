@@ -42,8 +42,11 @@ Maihama View Hotel (formerly Tokyo Bay Maihama Hotel, rebranded and reopened in 
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Official Hotel shuttle bus to both parks. Happy Entry lets hotel guests enter 15 minutes before general admission (confirm parks and conditions on official website). Shuttle to Bayside Station (approx. 5 min) also connects via Disney Resort Cruiser.
+### To Tokyo Disneyland (TDL)
+~18-min walk to TDL, or free shuttle + monorail; 15-min early entry.
+
+### To Tokyo DisneySea (TDS)
+Free shuttle (~5 min) + Disney Resort Line from Bayside Station to Tokyo DisneySea Station; 15-min early entry.
 
 ### To JR Station
 Free shuttle to Maihama Station: approx. 5 min (also to Bayside Station and Ikspiari on the same shuttle).

@@ -47,8 +47,11 @@ Urayasu Brighton Hotel Tokyo Bay is a Tokyo Disney Resort Partner Hotel connecte
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Partner Hotel shuttle (no reservation needed): approx. 15 min to both parks, **up to 34 buses per day** from before opening to after closing. Drop-off at TDL Bus Terminal East 7, TDS Bus Terminal North 8. The frequency and late departures are especially appreciated by families with children.
+### To Tokyo Disneyland (TDL)
+Free Partner Hotel shuttle (up to 34/day), approx. 15 min.
+
+### To Tokyo DisneySea (TDS)
+Free Partner Hotel shuttle (up to 34/day), approx. 15 min.
 
 ### To JR Station
 **Covered deck connection to Shin-Urayasu Station: approx. 1 min (approx. 80m)**. The closest station connection among all four Partner Hotels; no umbrella needed even in heavy rain. Very practical for guests with large suitcases.

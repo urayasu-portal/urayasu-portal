@@ -47,8 +47,11 @@ Among all Disney Hotels at Tokyo Disney Resort, Tokyo DisneySea Hotel MiraCosta 
 
 ## Access
 
-### To the Parks (TDS)
-The hotel is **inside TDS**. Guests can access the park directly via the "Hotel & Park Gateway" entrance (**available from 1 hour after opening**; exit at any time). Happy Entry lets guests enter via the main gate 15 minutes before general admission. Access to TDL requires the Disney Resort Line (paid) to Bayside Station.
+### To Tokyo Disneyland (TDL)
+Via the Disney Resort Line.
+
+### To Tokyo DisneySea (TDS)
+Direct from the in-park private entrance (entry from 1 hour after opening).
 
 ### To JR Station
 To Maihama Station: the Disney Resort Line (paid) to Resort Gateway Station is the standard route. No walking route is officially provided.

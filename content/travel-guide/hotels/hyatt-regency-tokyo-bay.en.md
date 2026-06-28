@@ -44,8 +44,11 @@ Hyatt Regency Tokyo Bay is a Shin-Urayasu hotel from the Hyatt brand, carrying t
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free shuttle to TDR: approx. 20 min. Multiple departures daily.
+### To Tokyo Disneyland (TDL)
+Free shuttle bus (not eligible for TDR official benefits), approx. 20 min.
+
+### To Tokyo DisneySea (TDS)
+Free shuttle bus (not eligible for TDR official benefits), approx. 20 min.
 
 ### To JR Station
 About 10 min on foot to Shin-Urayasu Station. Also accessible by hotel shuttle (confirm schedule). Covered walkway access to the Shin-Urayasu Station area via the deck (confirm exact route at front desk).

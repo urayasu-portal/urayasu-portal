@@ -44,8 +44,11 @@ Hotel Emion Tokyo Bay is the only Tokyo Disney Resort Partner Hotel with a natur
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Partner Hotel shuttle (no reservation needed): approx. 15–20 min to the parks. Multiple departures daily.
+### To Tokyo Disneyland (TDL)
+Partner Hotel free shuttle, approx. 15 min (every 10-20 min in the morning).
+
+### To Tokyo DisneySea (TDS)
+Partner Hotel free shuttle, approx. 15 min (every 10-20 min in the morning).
 
 ### To JR Station
 Hotel shuttle to Shin-Urayasu Station: approx. 7 min. Or approx. 15 min on foot from the station's North Exit A2.

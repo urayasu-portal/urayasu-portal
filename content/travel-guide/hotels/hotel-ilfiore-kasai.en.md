@@ -42,8 +42,11 @@ Hotel Il Fiore Kasai is a 3-minute walk from Tokyo Metro Tozai Line Kasai Statio
 
 ## Access
 
-### To the Parks (TDL / TDS)
-About 20 min by Keisei bus from Kasai Station to TDR (about 25 min to Tokyo Disney Resort).
+### To Tokyo Disneyland (TDL)
+Keisei bus from Kasai Station, approx. 20-25 min.
+
+### To Tokyo DisneySea (TDS)
+Keisei bus from Kasai Station, approx. 20-25 min.
 
 ### To the Nearest Station
 About 3 min on foot from Tokyo Metro Tozai Line Kasai Station.

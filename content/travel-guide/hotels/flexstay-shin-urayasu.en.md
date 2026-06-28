@@ -43,8 +43,11 @@ Flexstay Inn Shin-Urayasu (MyStays group) is an extended-stay hotel where every 
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free shuttle bus from Maihama Station (schedule and frequency require confirmation on the official website). Local buses from Maihama Station also reach the area in about 10–15 minutes.
+### To Tokyo Disneyland (TDL)
+Free shuttle bus (schedule on official website), or local bus ~10-15 min from Maihama Station.
+
+### To Tokyo DisneySea (TDS)
+Free shuttle bus (schedule on official website), or local bus ~10-15 min from Maihama Station.
 
 ### To JR Station
 About 15 minutes on foot from Shin-Urayasu Station North Exit A2 (approx. 1.2 km). Or take a local bus from the A2 exit (approx. 5 min, "Shin-Urayasu Station North Exit" stop). From Maihama Station by local bus: approx. 10–15 min to "Sankopo Nishiguchi" stop, then 2 min on foot.

@@ -43,8 +43,11 @@ Maihama Eurasia is uniquely positioned as the **only hotel in the Maihama resort
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Hotel shuttle to Maihama Station area. From Maihama Station, Disney Resort Cruiser or Disney Resort Line to the parks.
+### To Tokyo Disneyland (TDL)
+Hotel-Maihama Station (C-3) free shuttle ~5 min (every ~20 min), then Disney Resort Line to Tokyo Disneyland Station.
+
+### To Tokyo DisneySea (TDS)
+Hotel-Maihama Station (C-3) free shuttle ~5 min (every ~20 min), then Disney Resort Line to Tokyo DisneySea Station.
 
 ### To JR Station
 Shuttle from Maihama Station (approx. 10–15 min). Also from Urayasu Station and Shin-Urayasu Station (shuttle route serves all three).

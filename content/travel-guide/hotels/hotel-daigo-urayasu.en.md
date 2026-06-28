@@ -47,8 +47,11 @@ Hotel Daigo Urayasu is a small 31-room inn approximately 3 minutes on foot from 
 
 ## Access
 
-### To the Parks (TDL / TDS)
-From Urayasu Station bus stop (approx. 2 min via pedestrian overpass), Tokyo Baycity Bus Route 9 to Maihama Station area: approx. 25–30 min (¥240 adults / ¥120 children). No free shuttle.
+### To Tokyo Disneyland (TDL)
+Local bus from Urayasu Station to Maihama Station ~25-30 min (Y240), then Disney Resort Line to Tokyo Disneyland Station (no dedicated shuttle).
+
+### To Tokyo DisneySea (TDS)
+Local bus from Urayasu Station to Maihama Station ~25-30 min (Y240), then Disney Resort Line to Tokyo DisneySea Station (no dedicated shuttle).
 
 ### To JR Station
 About 3 min on foot from Urayasu Station (Tokyo Metro Tozai Line). Transfer to JR lines via Nihonbashi, Otemachi (Tokyo Station area), and connecting stations. For Maihama/TDR, the bus from Urayasu Station is the practical route.

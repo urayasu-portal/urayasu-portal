@@ -44,8 +44,11 @@ Hotel Okura Tokyo Bay is a Tokyo Disney Resort Official Hotel with 427 rooms, al
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Official Hotel shuttle bus to both parks. Happy Entry lets hotel guests enter 15 minutes before general admission (confirm parks and conditions on official website). Breakfast from 6:00am allows you to eat before the shuttle and be at the park for Happy Entry comfortably.
+### To Tokyo Disneyland (TDL)
+Free shuttle + Disney Resort Line to Tokyo Disneyland Station (Bayside Station ~3-min walk).
+
+### To Tokyo DisneySea (TDS)
+Free shuttle + Disney Resort Line to Tokyo DisneySea Station (Bayside Station ~3-min walk).
 
 ### To JR Station
 Free shuttle to Maihama Station (approx. 7–10 min).

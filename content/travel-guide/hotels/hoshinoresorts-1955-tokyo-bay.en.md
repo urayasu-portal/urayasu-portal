@@ -46,8 +46,11 @@ Hoshino Resorts BEB5 Tokyo Bay opened in June 2024 as Hoshino Resorts' first pro
 
 ## Access
 
-### To the Parks (TDL / TDS)
-**"Bus Number 1955" shuttle** to TDR: approximately 30 min (confirm schedule and frequency on official website).
+### To Tokyo Disneyland (TDL)
+Dedicated free shuttle '1955' to TDR, approx. 30 min (daily; schedule on official website).
+
+### To Tokyo DisneySea (TDS)
+Dedicated free shuttle '1955' to TDR, approx. 30 min (daily; schedule on official website).
 
 ### To JR Station
 Confirm walking distance and bus options from Shin-Urayasu Station on the official website.

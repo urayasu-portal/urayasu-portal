@@ -44,8 +44,11 @@ Hotel Oriental Tokyo Bay is a TDR Partner Hotel offering an exceptional shuttle 
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Partner Hotel shuttle (no reservation needed): **69 buses per day** to both parks — by far the highest frequency among the four Partner Hotels. You can leave for the parks almost any time with minimal waiting.
+### To Tokyo Disneyland (TDL)
+Free shuttle bus (up to 69/day, first bus 7:00), approx. 15 min.
+
+### To Tokyo DisneySea (TDS)
+Free shuttle bus (up to 69/day, first bus 7:00), approx. 15 min.
 
 ### To JR Station
 **Deck connection to Shin-Urayasu Station: approx. 1 min (deck bridge)**. Same as Brighton — both are directly deck-connected to the station. Convenient for train travelers even in rain.

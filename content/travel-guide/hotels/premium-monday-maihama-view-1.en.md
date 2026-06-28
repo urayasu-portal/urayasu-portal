@@ -42,8 +42,11 @@ Premium hotel MONday Maihama View I opened in December 2025. All 57 rooms are sp
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free shuttle bus to Tokyo Disney Resort. From Kasai-Rinkai-Koen Station, about 7 min by bus (get off at "Minami-Kasai Chugakko-mae," then ~4 min on foot).
+### To Tokyo Disneyland (TDL)
+Free shuttle bus to TDR (bus ~7 min from Kasai-Rinkai-Koen Station).
+
+### To Tokyo DisneySea (TDS)
+Free shuttle bus to TDR (bus ~7 min from Kasai-Rinkai-Koen Station).
 
 ### To the Nearest Station
 JR Keiyo Line Kasai-Rinkai-Koen Station (by bus). Maihama is close on the Keiyo Line.

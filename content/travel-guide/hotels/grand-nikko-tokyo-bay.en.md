@@ -44,8 +44,11 @@ Grand Nikko Tokyo Bay Maihama (Tokyo Disney Resort Official Hotel) is instantly 
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Official Hotel shuttle bus to both parks. Happy Entry lets hotel guests enter 15 minutes before general admission (confirm parks and conditions on official website). Frequent shuttle service as an Official Hotel.
+### To Tokyo Disneyland (TDL)
+Free shuttle + Disney Resort Line to Tokyo Disneyland Station (shuttle approx. 2-3 min).
+
+### To Tokyo DisneySea (TDS)
+Free shuttle + Disney Resort Line to Tokyo DisneySea Station (shuttle approx. 2-3 min).
 
 ### To JR Station
 Free shuttle to Maihama Station (approx. 7–10 min). Shuttle also connects to Bayside Station (Disney Resort Line). The pink hotel exterior is visible from the Keiyo Line — a recognizable landmark.

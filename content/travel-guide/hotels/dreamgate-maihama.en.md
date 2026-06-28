@@ -44,8 +44,11 @@ Dreamgate Maihama has an access advantage that stands alone in the area: **both 
 
 ## Access
 
-### To the Parks (TDL / TDS)
-**Directly connected to Maihama Station** → Disney Resort Cruiser (free) or Disney Resort Line monorail to the parks. The station connection means zero distance from train to hotel to park transit.
+### To Tokyo Disneyland (TDL)
+Directly connected to JR Maihama Station, then Disney Resort Line to Tokyo Disneyland Station.
+
+### To Tokyo DisneySea (TDS)
+Directly connected to JR Maihama Station, then Disney Resort Line to Tokyo DisneySea Station.
 
 ### To JR Station
 **Direct connection** to JR Maihama Station. Main building left of the ticket gate, Annex right of the ticket gate. No exterior walk needed even in rain.

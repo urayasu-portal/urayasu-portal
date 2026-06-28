@@ -46,8 +46,11 @@ Disney Ambassador Hotel, the first Disney Hotel at Tokyo Disney Resort (opened 2
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free "Disney Resort Cruiser" shuttle to both parks. Happy Entry lets guests enter 15 minutes before general admission (confirm parks and conditions on official website). Allow time to board early if you plan to rush for popular attractions at opening.
+### To Tokyo Disneyland (TDL)
+Free shuttle 'Disney Resort Cruiser' (15-min early entry).
+
+### To Tokyo DisneySea (TDS)
+Disney Resort Cruiser + Disney Resort Line (15-min early entry).
 
 ### To JR Station
 About 8 minutes on foot to Maihama Station (official estimate). Part of the route via Ikspiari has roof coverage, making rainy days more manageable. A realistic walking distance if you aren't carrying much luggage.

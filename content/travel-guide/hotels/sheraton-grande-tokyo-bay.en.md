@@ -44,8 +44,11 @@ Sheraton Grande Tokyo Bay Hotel is a Tokyo Disney Resort Official Hotel uniquely
 
 ## Access
 
-### To the Parks (TDL / TDS)
-**Bayside Station: 1-minute walk** from the hotel. Disney Resort Line from Bayside Station → TDL Entrance Station (approx. 5–7 min, paid). Happy Entry currently applies to TDL (confirm TDS Happy Entry status on official website). Free shuttle to TDS is also available (confirm schedule).
+### To Tokyo Disneyland (TDL)
+Bayside Station + Disney Resort Line to Tokyo Disneyland Station (1-min walk to station).
+
+### To Tokyo DisneySea (TDS)
+Bayside Station + Disney Resort Line to Tokyo DisneySea Station (1-min walk to station).
 
 ### To JR Station
 Via Disney Resort Line from Bayside Station to Resort Gateway Station, then to Maihama Station. Or free shuttle bus (confirm schedule on official website).

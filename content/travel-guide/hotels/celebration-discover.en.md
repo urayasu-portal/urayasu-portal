@@ -45,8 +45,11 @@ Tokyo Disneyland Celebration Hotel: Discover is one of two value-type Disney Hot
 
 ## Access
 
-### To the Parks (TDL / TDS)
-**Free shuttle bus to both TDL and TDS in approx. 20 minutes**, running daily primarily toward the parks. Guests may enter 15 minutes before general admission with the Happy Entry benefit (confirm parks and conditions on the official website).
+### To Tokyo Disneyland (TDL)
+Free shuttle bus, approx. 20 min (15-min early entry, all rooms).
+
+### To Tokyo DisneySea (TDS)
+Free shuttle bus, approx. 20 min (15-min early entry, all rooms).
 
 ### To JR Station
 From **Shin-Urayasu Station South Exit stop D, take Route 11 "Symbol Road Line" (bound for Sogo Koen) to "Bayside Hotel Area" stop**, then 2 min on foot. Approx. 15 min, ¥147 IC / ¥150 cash. Bus is essential as walking is far.

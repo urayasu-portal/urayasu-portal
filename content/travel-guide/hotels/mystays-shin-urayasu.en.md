@@ -44,8 +44,11 @@ MyStays Hotel Shin-Urayasu Conference Center is a 175-room business hotel in the
 
 ## Access
 
-### To the Parks (TDL / TDS)
-**TDR shuttle: evening only** (approx. 3 departures between 21:00–22:00, returning to the hotel; shared with MyStays properties). For morning/afternoon access to TDR: local bus from Shin-Urayasu Station South Exit (approx. 15–20 min to Maihama area). This is not an all-day shuttle hotel.
+### To Tokyo Disneyland (TDL)
+Free shuttle has only ~3 evening departures; for the outbound trip, Tokyo Baycity Bus or taxi is practical.
+
+### To Tokyo DisneySea (TDS)
+Free shuttle has only ~3 evening departures; for the outbound trip, Tokyo Baycity Bus or taxi is practical.
 
 ### To JR Station
 About 10–15 min on foot from Shin-Urayasu Station. Local bus also available (confirm stop from official website).

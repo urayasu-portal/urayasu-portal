@@ -44,8 +44,11 @@ Maihama Hotel First Resort holds a historic distinction: it was the **first Offi
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free Official Hotel shuttle bus to both parks. Happy Entry lets hotel guests enter 15 minutes before general admission (confirm parks on official website). Walking to TDL: approximately 15 min (the longest among Official Hotels — shuttle is strongly recommended for most guests).
+### To Tokyo Disneyland (TDL)
+~15-min walk (~800m) to the TDL entrance, or free shuttle + Disney Resort Line; 15-min early entry.
+
+### To Tokyo DisneySea (TDS)
+Bayside Station free shuttle + Disney Resort Line to Tokyo DisneySea Station; 15-min early entry.
 
 ### To JR Station
 Free shuttle to Maihama Station (schedule: confirm on official website).

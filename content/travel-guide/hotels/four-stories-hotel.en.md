@@ -44,8 +44,11 @@ Four Stories Hotel is a small boutique hotel with 26 rooms across 4 floors, each
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Hotel shuttle service available (last return bus to hotel: 23:00 — this is the most critical detail). For park closings after 23:00, plan a taxi or alternative return.
+### To Tokyo Disneyland (TDL)
+Local bus from 'Horie-Chugakko-mae' to Maihama Station ~7 min (Y170), then Disney Resort Line to Tokyo Disneyland Station (no direct shuttle; last bus 23:00).
+
+### To Tokyo DisneySea (TDS)
+Local bus from 'Horie-Chugakko-mae' to Maihama Station ~7 min (Y170), then Disney Resort Line to Tokyo DisneySea Station (no direct shuttle; last bus 23:00).
 
 ### To JR Station
 Access from Maihama Station or Shin-Urayasu Station (confirm route on official website or at check-in).

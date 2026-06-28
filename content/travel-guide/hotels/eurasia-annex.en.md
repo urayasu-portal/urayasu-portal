@@ -43,8 +43,11 @@ Maihama Eurasia Annex is designed around the atmosphere of Nice and the Côte d'
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Hotel shuttle to Maihama Station area: approx. 15 min, then Disney Resort Line or walking to the parks. Free shuttle (schedule and frequency: confirm on official website).
+### To Tokyo Disneyland (TDL)
+Hotel-Maihama Station free shuttle ~15 min, then Disney Resort Line to Tokyo Disneyland Station.
+
+### To Tokyo DisneySea (TDS)
+Hotel-Maihama Station free shuttle ~15 min, then Disney Resort Line to Tokyo DisneySea Station.
 
 ### To JR Station
 Hotel shuttle to Maihama Station: approx. 15 min.

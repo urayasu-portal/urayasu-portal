@@ -46,8 +46,11 @@ Toy Story Hotel is a Disney Hotel opened in 2022 with a theme based on the inter
 
 ## Access
 
-### To TDS / TDL
-Happy Entry via the main gate (15 min before general admission). Dedicated Fantasy Springs hotel entrance accessible from 10:00 (1 hour after park opening). TDL access via Disney Resort Line from adjacent Bayside Station (paid, approx. 5–7 min to Entrance Station).
+### To Tokyo Disneyland (TDL)
+Bayside Station + Disney Resort Line to Tokyo Disneyland Station (15-min early entry, all rooms).
+
+### To Tokyo DisneySea (TDS)
+Bayside Station + Disney Resort Line to Tokyo DisneySea Station (15-min early entry, all rooms).
 
 ### To JR Station
 Via Disney Resort Line from Bayside Station to Resort Gateway Station, then to Maihama Station, approx. 10–15 min total.

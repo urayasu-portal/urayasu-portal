@@ -46,8 +46,11 @@ Hilton Tokyo Bay is a Tokyo Disney Resort Official Hotel with 828 rooms, located
 
 ## Access
 
-### To the Parks (TDL / TDS)
-The hotel faces Bayside Station. The free Disney Resort Cruiser shuttle (runs every 6–8 minutes) takes you to the station, from which the Disney Resort Line monorail reaches the parks. The hotel is one of the closest Official Hotels to the parks, but "direct walkway access" is not available. Shuttles get crowded just before opening and after closing.
+### To Tokyo Disneyland (TDL)
+Free shuttle + Disney Resort Line to Tokyo Disneyland Station, approx. 10 min.
+
+### To Tokyo DisneySea (TDS)
+Free shuttle + Disney Resort Line to Tokyo DisneySea Station, approx. 10 min.
 
 ### To JR Station
 A free shuttle bus runs to Maihama Station in about 7 minutes. The stop is at the rotary to the right of Maihama Station South Exit. Walking is not practical; the shuttle or a taxi is the realistic option.

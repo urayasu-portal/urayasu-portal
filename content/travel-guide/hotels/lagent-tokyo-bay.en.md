@@ -44,8 +44,11 @@ LAGENT HOTEL Tokyo Bay won the Rakuten Travel Silver Award in 2024 with consiste
 
 ## Access
 
-### To the Parks (TDL / TDS)
-Free shuttle to TDR. Return shuttle from parks runs until approximately 21:00 (confirm current schedule on official website or at front desk). Plan park closing time versus shuttle timing.
+### To Tokyo Disneyland (TDL)
+Free hotel shuttle, approx. 25 min (return service until ~21:00).
+
+### To Tokyo DisneySea (TDS)
+Free hotel shuttle, approx. 25 min (return service until ~21:00).
 
 ### To JR Station
 Confirm walking distance and bus options from Shin-Urayasu Station on the official website.

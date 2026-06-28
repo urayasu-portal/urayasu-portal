@@ -43,8 +43,11 @@ A business hotel about 1-minute walk from Urayasu Station on the Tokyo Metro Toz
 
 ## Access
 
-### To the Parks (TDL / TDS)
-From Urayasu Station bus stop (approx. 2 min via pedestrian overpass), Tokyo Baycity Bus Route 9 to Maihama Station area: approx. 25–30 min (¥240 adults / ¥120 children). Not eligible for TDR official benefits.
+### To Tokyo Disneyland (TDL)
+Keiseibus Chiba West from Urayasu Station, approx. 25-30 min (no dedicated shuttle).
+
+### To Tokyo DisneySea (TDS)
+Keiseibus Chiba West from Urayasu Station, approx. 25-30 min (no dedicated shuttle).
 
 ### To JR Station
 About 1-minute walk to Urayasu Station (Tokyo Metro Tozai Line). Transfer to JR lines via Nihonbashi, Otemachi, and connecting stations.
