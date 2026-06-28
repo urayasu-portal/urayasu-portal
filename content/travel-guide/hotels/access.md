@@ -41,7 +41,7 @@ tgNav: true
 浦安のホテルは、パークまでの行き方で大きく6タイプに分かれます。
 
 **① 直結・隣接（最強）**
-[東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/)（TDL徒歩約1分）、[ホテル[ミラコスタ](/travel-guide/hotels/miracosta/)](/travel-guide/hotels/miracosta/)（TDS内）、[ファンタジースプリングスホテル](/travel-guide/hotels/fantasy-springs-hotel/)（TDS内直結）。シャトルすら不要で、移動の手間はゼロです。
+[東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/)（TDL徒歩約1分）、[ホテルミラコスタ](/travel-guide/hotels/miracosta/)（TDS内）、[ファンタジースプリングスホテル](/travel-guide/hotels/fantasy-springs-hotel/)（TDS内直結）。シャトルすら不要で、移動の手間はゼロです。
 
 **② モノレール駅から徒歩圏**
 [シェラトン・グランデ・トーキョーベイ](/travel-guide/hotels/sheraton-grande-tokyo-bay/)（ベイサイド・ステーション徒歩1分）、[トイ・ストーリーホテル](/travel-guide/hotels/toy-story-hotel/)（徒歩約3分）。駅が近く、ディズニーリゾートライン（モノレール）でパークへ。
@@ -80,7 +80,7 @@ tgNav: true
 羽田空港からのアクセスで知っておきたいのが、**リムジンバスの料金はどのホテルでも大人1,300円で一律**ということ（東京空港交通・京成バス千葉ウエストの共同運行）。エリアによる料金差はありません。違うのは「ホテルから乗り場までの距離」と「所要時間」だけです。
 
 **ホテル前に専用停留所がある（徒歩0分）施設**
-[東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/)、[ディズニーアンバサダーホテル](/travel-guide/hotels/ambassador-hotel/)、[ホテル[ミラコスタ](/travel-guide/hotels/miracosta/)](/travel-guide/hotels/miracosta/)、[ファンタジースプリングスホテル](/travel-guide/hotels/fantasy-springs-hotel/)、[ヒルトン東京ベイ](/travel-guide/hotels/hilton-tokyo-bay/)、[ホテルオークラ東京ベイ](/travel-guide/hotels/hotel-okura-tokyo-bay/)、[シェラトン](/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[グランドニッコー](/travel-guide/hotels/grand-nikko-tokyo-bay/)、[東京ベイ舞浜ホテル ファーストリゾート](/travel-guide/hotels/maihama-hotel-first-resort/)（予約制）。
+[東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/)、[ディズニーアンバサダーホテル](/travel-guide/hotels/ambassador-hotel/)、[ホテルミラコスタ](/travel-guide/hotels/miracosta/)、[ファンタジースプリングスホテル](/travel-guide/hotels/fantasy-springs-hotel/)、[ヒルトン東京ベイ](/travel-guide/hotels/hilton-tokyo-bay/)、[ホテルオークラ東京ベイ](/travel-guide/hotels/hotel-okura-tokyo-bay/)、[シェラトン](/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[グランドニッコー](/travel-guide/hotels/grand-nikko-tokyo-bay/)、[東京ベイ舞浜ホテル ファーストリゾート](/travel-guide/hotels/maihama-hotel-first-resort/)（予約制）。
 舞浜エリアの主要ホテルは、ホテルの目の前からリムジンバスに乗れる施設が多く、空港アクセスは非常にラクです（所要約40〜50分）。
 
 **新浦安エリアにも「ホテル前停留所」がある2軒**

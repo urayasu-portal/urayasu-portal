@@ -36,7 +36,7 @@ In other words, the smart move is to budget "room + transport + food" as a set. 
 
 First, the overall price picture (all for 2 guests/room, off-peak estimates).
 
-- **Cheapest class (¥5,000–¥10,000s)** … **Hotel MyStays Maihama**, **MyStays Shin-Urayasu**, **FlexStay Inn Shin-Urayasu**, **La'gent Hotel Tokyo Bay**, **Hotel Eurasia Maihama Annex**, and various business hotels in the Urayasu Station area
+- **Cheapest class (¥5,000–¥10,000s)** … **Hotel MyStays Maihama**, **MyStays Shin-Urayasu**, **FlexStay Inn Shin-Urayasu**, **La'gent Hotel Tokyo Bay**, **Hotel Eurasia Maihama Annex**, Urayasu Sun Hotel, and various business hotels in the Urayasu Station area
 - **Low ¥10,000s zone** … **Ibis Styles Tokyo Bay**, **Maihama Eurasia**, **BAYHOTEL Urayasu Station**
 - **The cheapest Disney hotel tier** … **Tokyo Disney Celebration Hotel** (from around ¥20,000 for three)
 
@@ -69,11 +69,14 @@ From around ¥10,000. A design hotel in the Accor group, balancing style and aff
 
 The Tozai Line / Urayasu Station area has no free TDR shuttle, but its appeal is **one train ride to central Tokyo.** It suits "Disney on day one, Asakusa or Ginza on day two," with reasonable rates.
 
+**Urayasu Sun Hotel**
+From around ¥5,000s, 3 min from Urayasu Station — one of the cheapest options in Urayasu. It offers a free breakfast from 6:00 (bread, salad, coffee), a 2F coin laundry, and a 24-hour front desk (last check-in 0:30), supporting longer and business stays. A strong pick for families who simply want to keep the room rate down.
+
 **Urayasu Viewfort Hotel**
 From around ¥9,000, 1 min from Urayasu Station. About 16 minutes direct to Nihonbashi.
 
 **Hotel Daigo**
-From around ¥8,000, 3 min from Urayasu Station. Its biggest feature is a **flat rate all year that does not rise in peak season** (as researched) — a real advantage for families staying during Golden Week or summer. Japanese-style rooms available. Rates may change; confirm on the official site.
+From around ¥11,000 for two, 3 min from Urayasu Station. Its biggest feature is a **flat rate all year that does not rise in peak season** (as researched) — a real advantage for families staying during Golden Week or summer. Japanese-style rooms available. Rates may change; confirm on the official site.
 
 **BAYHOTEL Urayasu Station**
 From around ¥14,000, which looks higher, but it is an apartment type with **a kitchen, fridge, and washing machine in every room.** Cooking for yourself cuts food costs, so over multiple nights it works out very economical.
@@ -113,7 +116,7 @@ If you drive, many hotels charge around ¥2,000 per night for parking even when 
 - **Cheapest, and close to the parks** → Hotel MyStays Maihama (6 min walk to TDS, from ¥5,000s)
 - **Cheap stay plus an onsen** → Hotel Eurasia Maihama Annex (discounted main-building hot spring)
 - **Balance of price and facilities** → La'gent Hotel Tokyo Bay (up to 6 guests, 24-hour store next door)
-- **Disney plus Tokyo sightseeing** → the Urayasu Station area (Viewfort / Hotel Daigo / BAYHOTEL Urayasu Station)
+- **Disney plus Tokyo sightseeing** → the Urayasu Station area (Urayasu Sun Hotel / Viewfort / Hotel Daigo / BAYHOTEL Urayasu Station)
 - **Cheap in peak season** → Hotel Daigo (flat year-round rate)
 - **Disney magic, affordably** → Tokyo Disney Celebration Hotel
 

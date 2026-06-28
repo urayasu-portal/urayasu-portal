@@ -1950,7 +1950,7 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   flex-wrap: wrap;
   margin-bottom: 28px;
 }
-.tg-cross-link h3 { font-size: 0.95rem; font-weight: 700; margin: 0 0 4px; }
+.tg-cross-link h3 { font-size: 0.95rem; font-weight: 700; margin: 0 0 4px; color: #fff; }
 .tg-cross-link p { font-size: 0.83rem; color: #aac8e0; margin: 0; }
 .tg-cross-btn {
   background: #fff;

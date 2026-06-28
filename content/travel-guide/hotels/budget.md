@@ -37,7 +37,7 @@ tgNav: true
 
 まず価格の全体像を押さえましょう（いずれも2名1室・通常期の目安）。
 
-- **最安クラス（5,000〜1万円台）** … [ホテルマイステイズ舞浜](/travel-guide/hotels/mystays-maihama/)、[マイステイズ新浦安](/travel-guide/hotels/mystays-shin-urayasu/)、[フレックステイイン新浦安](/travel-guide/hotels/flexstay-shin-urayasu/)、[ラ・ジェント・ホテル東京ベイ](/travel-guide/hotels/lagent-tokyo-bay/)、[ホテルユーラシア舞浜アネックス](/travel-guide/hotels/eurasia-annex/)、浦安駅エリアのビジネスホテル各種
+- **最安クラス（5,000〜1万円台）** … [ホテルマイステイズ舞浜](/travel-guide/hotels/mystays-maihama/)、[マイステイズ新浦安](/travel-guide/hotels/mystays-shin-urayasu/)、[フレックステイイン新浦安](/travel-guide/hotels/flexstay-shin-urayasu/)、[ラ・ジェント・ホテル東京ベイ](/travel-guide/hotels/lagent-tokyo-bay/)、[ホテルユーラシア舞浜アネックス](/travel-guide/hotels/eurasia-annex/)、[浦安サンホテル](/travel-guide/hotels/urayasu-sun-hotel/)など浦安駅エリアのビジネスホテル各種
 - **1万円台前半ゾーン** … [イビススタイルズ東京ベイ](/travel-guide/hotels/ibis-styles-tokyo-bay/)、[舞浜ユーラシア](/travel-guide/hotels/maihama-eurasia/)、[BAYHOTEL浦安駅前](/travel-guide/hotels/bayhotel-urayasu/)
 - **ディズニーホテルの最安格** … [東京ディズニーセレブレーションホテル](/travel-guide/hotels/celebration-wish/)（3名2万円前後〜）
 
@@ -70,11 +70,14 @@ tgNav: true
 
 東西線・浦安駅周辺は、TDRへの無料シャトルこそありませんが、**都心まで電車1本**という立地が魅力。「1日目はディズニー、2日目は浅草や銀座へ」という旅にぴったりで、宿代も手頃です。
 
+**[浦安サンホテル](/travel-guide/hotels/urayasu-sun-hotel/)**
+5,000円台〜、浦安駅徒歩3分。浦安市内では最安クラスの一軒です。毎朝6:00からの無料朝食（パン・サラダ・コーヒー）、2Fのコインランドリー、24時間対応フロント（最終チェックイン0:30）と、連泊やビジネス利用を支える設備が揃います。「とにかく宿代を抑えたい」家族の有力候補です。
+
 **[浦安ビューフォートホテル](/travel-guide/hotels/viewfort-urayasu/)**
 9,000円台〜、浦安駅徒歩1分。日本橋まで直通約16分という近さです。
 
 **[ホテル醍醐](/travel-guide/hotels/hotel-daigo-urayasu/)**
-8,000円台〜、浦安駅徒歩3分。**繁忙期も値上げしない年中均一料金**（調査時点）が最大の特徴で、GWや夏休みに泊まる家族には大きな武器になります。和室もあり。料金は変更される場合があります。最新情報は公式サイトでご確認ください。
+2名1室11,000円台〜、浦安駅徒歩3分。**繁忙期も値上げしない年中均一料金**（調査時点）が最大の特徴で、GWや夏休みに泊まる家族には大きな武器になります。和室もあり。料金は変更される場合があります。最新情報は公式サイトでご確認ください。
 
 **[BAYHOTEL浦安駅前](/travel-guide/hotels/bayhotel-urayasu/)**
 14,000円台〜とやや高めに見えますが、**全室にキッチン・冷蔵庫・洗濯機を完備**したアパートメントタイプ。自炊で食費を抑えられ、連泊や長めの滞在では結果的にコスパが高くなります。
@@ -114,7 +117,7 @@ GWや夏休み、年末年始は、コスパの良い宿から先に満室にな
 - **とにかく安く、かつパークに近く** → [ホテルマイステイズ舞浜](/travel-guide/hotels/mystays-maihama/)（TDS徒歩6分・5,000円台〜）
 - **安く泊まって温泉も** → [ホテルユーラシア舞浜アネックス](/travel-guide/hotels/eurasia-annex/)（本館温泉を割引利用）
 - **安さと設備のバランス** → [ラ・ジェント・ホテル東京ベイ](/travel-guide/hotels/lagent-tokyo-bay/)（最大6名・24時間コンビニ隣接）
-- **ディズニーと東京観光を両取り** → 浦安駅エリア（[浦安ビューフォート](/travel-guide/hotels/viewfort-urayasu/)／[ホテル醍醐](/travel-guide/hotels/hotel-daigo-urayasu/)／[BAYHOTEL浦安駅前](/travel-guide/hotels/bayhotel-urayasu/)）
+- **ディズニーと東京観光を両取り** → 浦安駅エリア（[浦安サンホテル](/travel-guide/hotels/urayasu-sun-hotel/)／[浦安ビューフォート](/travel-guide/hotels/viewfort-urayasu/)／[ホテル醍醐](/travel-guide/hotels/hotel-daigo-urayasu/)／[BAYHOTEL浦安駅前](/travel-guide/hotels/bayhotel-urayasu/)）
 - **繁忙期に安く泊まりたい** → [ホテル醍醐](/travel-guide/hotels/hotel-daigo-urayasu/)（年中均一料金）
 - **ディズニーの世界観を手頃に** → [東京ディズニーセレブレーションホテル](/travel-guide/hotels/celebration-wish/)
 

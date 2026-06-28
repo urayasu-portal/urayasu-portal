@@ -44,7 +44,7 @@ The only TDR Partner Hotel with a natural hot spring, including an open-air bath
 The only natural hot spring in the Maihama resort area. A serious facility with open-air baths, lying baths, a cave bath, sauna, and stone spa. Free shuttles from all three stations (Maihama, Urayasu, Shin-Urayasu) mean you can get there without a car.
 
 **Mitsui Garden Hotel Prana Tokyo Bay (Shin-Urayasu area)**
-A top-floor observation bath with bay views, open long hours (6:00–9:00 morning, 18:00–01:00 night). It is free and guests-only — a nice touch. Rooms for up to six suit three-generation trips.
+A top-floor observation bath with bay views, open long hours (18:00 to 9:00 the next morning; overnight in some seasons). It is free and guests-only — a nice touch. Rooms for up to six suit three-generation trips.
 
 **Sheraton Grande Tokyo Bay (Maihama area)**
 The marble-clad "Maiyu" large bath with sauna. The in-house "OASIS" recreation complex (kids' area, mini golf, and more) keeps children entertained on rainy or rest days.

@@ -172,7 +172,7 @@
           {{- end }}
           {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
         </td>
-        <td>{{ $areaName }}</td>
+        <td>{{ $areaName | replaceRE "エリア$" "" }}</td>
         <td style="font-size:0.82em;">
           {{- if $isEN }}
           {{- if eq .category "ディズニーホテル" }}Disney Hotels
