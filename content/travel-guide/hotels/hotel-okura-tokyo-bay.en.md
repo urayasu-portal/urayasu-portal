@@ -97,7 +97,7 @@ Hotel Okura Tokyo Bay has a clear identity: **traditional Japanese hotel luxury 
 
 The 6:00am breakfast is the most practical differentiator in the lineup. For early park days — especially days when you want to be at the gate for Happy Entry — the ability to have a proper hot breakfast before 7:00am is genuinely valuable and not something all Official Hotels can offer.
 
-The practical trade-offs are no in-house convenience store (Hilton's 24-hour "Seikatsu Saika" is famously superior here) and no coin laundry. If these matter, plan accordingly — or choose Hilton instead. If what you need is space, luxury, marble, and an early breakfast, Okura delivers those without compromise.
+The practical trade-offs are no in-house convenience store (Hilton's 24-hour Lawson is famously superior here) and no coin laundry. If these matter, plan accordingly — or choose Hilton instead. If what you need is space, luxury, marble, and an early breakfast, Okura delivers those without compromise.
 
 ---
 

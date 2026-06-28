@@ -69,7 +69,7 @@ From Maihama Station, about 15–20 minutes to Tokyo Station on the JR Keiyo Lin
 {{< hotel-facilities >}}
 
 **In-House Convenience Store (24-Hour — the biggest practical advantage)**
-"Seikatsu Saika" on the 1st floor is open 24 hours for drinks, snacks, and daily goods (pharmaceuticals sold 8:00–22:00). "S-Lawson" is also on the same floor (17:00–23:00). **The only 24-hour in-house convenience store among Official Hotels in the Urayasu area** — guests from neighboring Okura and Sheraton come here to shop, a well-known fact locally.
+A 24-hour "Lawson" on the 1st floor sells drinks, snacks, and daily goods (pharmaceuticals 8:00–22:00; bank ATM and color copier on site). A limited-hours "Lawson S Hilton Tokyo Bay" is also on the same floor (17:00–23:00; no pharmaceuticals). **The only 24-hour in-house convenience store among Official Hotels in the Urayasu area** — guests from neighboring Okura and Sheraton come here to shop, a well-known fact locally. (The former "Seikatsu Saika" has closed and been converted to a Lawson.)
 
 **Guest Rooms**
 828 rooms with a wide variety of types. Beyond the Hilton Room (40 m²), Family Happy Magic Rooms (35–40 m², 2 beds + bunk) accommodate 2–6 guests. Bed guards, baby cots, and children's amenities are available at no extra charge.
