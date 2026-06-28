@@ -26,7 +26,7 @@ noDate: true
     <dt>IN / OUT</dt><dd>15:00（オリエンタルフロアは14:00〜） / 12:00</dd>
     <dt>価格の目安</dt><dd>2名1室1泊 16,500円〜（時期により変動）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://oriental-hotel.co.jp" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイトで料金を見る</a>
+  <a class="hg-info-btn" href="https://oriental-hotel.co.jp" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人

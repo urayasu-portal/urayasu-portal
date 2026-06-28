@@ -22,7 +22,7 @@ noDate: true
     <dt>チェックアウト</dt><dd>10:00</dd>
     <dt>価格の目安</dt><dd>最安 約5,000円〜（通常期8,000〜20,000円・変動制）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://mystays.com/hotel-maihama/">公式サイトで空室確認</a>
+  <a class="hg-info-btn" href="https://mystays.com/hotel-maihama/">公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人

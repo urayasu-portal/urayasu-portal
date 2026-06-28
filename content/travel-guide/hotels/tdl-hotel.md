@@ -26,7 +26,7 @@ noDate: true
     <dt>IN / OUT</dt><dd>15:00 / 12:00</dd>
     <dt>価格の目安</dt><dd>2名1室1泊 55,000円〜（時期により変動）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://tokyodisneyresort.jp/hotel/tdh.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイトで料金を見る</a>
+  <a class="hg-info-btn" href="https://tokyodisneyresort.jp/hotel/tdh.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人
@@ -68,7 +68,9 @@ noDate: true
 
 屋根付き通路でTDL正面エントランスまで徒歩約1分。全TDR周辺ホテルで最もパークに近く、宿泊者はハッピーエントリー特典で一般入園の15分前にパークへ入れます（対象パーク・条件は公式要確認）。TDSへはディズニーリゾートライン（有料モノレール）で移動。空港リムジンは羽田1,300円・成田2,900円、繁忙期は事前予約を推奨します。
 
-## 地図・アクセス  {{< hotel-map >}}
+## 地図・アクセス
+
+{{< hotel-map >}}
 
 ## 設備・サービス
 

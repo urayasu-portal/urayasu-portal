@@ -22,7 +22,7 @@ noDate: true
     <dt>チェックアウト</dt><dd>10:00</dd>
     <dt>価格の目安</dt><dd>1室 約5,000円〜（変動制／デイユース 8,800円〜）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://urayasu-sun-hotel.com/">公式サイトで空室確認</a>
+  <a class="hg-info-btn" href="https://urayasu-sun-hotel.com/">公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人

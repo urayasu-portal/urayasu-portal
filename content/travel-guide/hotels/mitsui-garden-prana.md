@@ -26,7 +26,7 @@ noDate: true
     <dt>チェックアウト</dt><dd>12:00</dd>
     <dt>価格の目安</dt><dd>2名1室 18,000円〜（変動制）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://gardenhotels.co.jp/prana-tokyobay/">公式サイトで空室確認</a>
+  <a class="hg-info-btn" href="https://gardenhotels.co.jp/prana-tokyobay/">公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人

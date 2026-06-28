@@ -25,7 +25,7 @@ noDate: true
     <dt>IN / OUT</dt><dd>15:00〜24:00 / 11:00</dd>
     <dt>価格の目安</dt><dd>3名1室1泊 20,000円台〜（時期により変動）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://tokyodisneyresort.jp/hotel/dch.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイトで料金を見る</a>
+  <a class="hg-info-btn" href="https://tokyodisneyresort.jp/hotel/dch.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人
