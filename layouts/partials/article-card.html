@@ -17,15 +17,8 @@
 }}
 {{- $cat := index .Params.categories 0 | default "" }}
 {{- $cls := index $catClass $cat | default "cat-default" }}
-{{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
 <a class="article-card {{ $cls }}" href="{{ .RelPermalink }}">
-  <div class="article-thumb{{- if not $img }} article-no-img{{- end }}">
-    {{- if $img }}
-    <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-    {{- else }}
-    <span>{{ if $cat }}{{ $cat }}{{ else }}記事{{ end }}</span>
-    {{- end }}
-  </div>
+  {{- partial "article-thumb.html" (dict "page" . "size" "thumb") }}
   <div class="article-body">
     {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
     <h3 class="article-title">{{ .Title }}</h3>

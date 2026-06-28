@@ -81,4 +81,11 @@
   {{- end }}
 {{- end }}
 
+{{/* real=true: 記事固有の実写真のみ返す。カテゴリ既定イラストや汎用OGP（ogp- / og- 接頭辞）は空にする */}}
+{{- if and (.real) $result }}
+  {{- if or (strings.Contains $result "/categories/") (strings.Contains $result "ogp-") (strings.Contains $result "/og-") }}
+    {{- $result = "" }}
+  {{- end }}
+{{- end }}
+
 {{- return $result }}

@@ -328,6 +328,25 @@ body.list { --main-width: 1160px; }
   text-align: center;
   flex-shrink: 0;
 }
+/* ---------- 区分色の軽量サムネ・プレースホルダー（重い既定イラストの置換） ---------- */
+.up-ph { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; text-align: center; padding: 8px; }
+.up-ph i { font-size: 32px; line-height: 1; }
+.up-ph-label { font-size: 11px; font-weight: 700; letter-spacing: .06em; }
+.up-ph.cat-open    { background: linear-gradient(135deg, rgba(220,38,38,.13),  rgba(220,38,38,.04));  color: var(--cat-open); }
+.up-ph.cat-news    { background: linear-gradient(135deg, rgba(29,111,184,.13), rgba(29,111,184,.04)); color: var(--cat-news); }
+.up-ph.cat-event   { background: linear-gradient(135deg, rgba(124,58,237,.13), rgba(124,58,237,.04)); color: var(--cat-event); }
+.up-ph.cat-gourmet { background: linear-gradient(135deg, rgba(217,119,6,.15),  rgba(217,119,6,.04));  color: var(--cat-gourmet); }
+.up-ph.cat-edu     { background: linear-gradient(135deg, rgba(5,150,105,.14),  rgba(5,150,105,.04));  color: var(--cat-edu); }
+.up-ph.cat-sports  { background: linear-gradient(135deg, rgba(13,148,136,.14), rgba(13,148,136,.04)); color: var(--cat-sports); }
+.up-ph.cat-notice,
+.up-ph.cat-default { background: linear-gradient(135deg, rgba(100,116,139,.14), rgba(100,116,139,.04)); color: var(--cat-notice); }
+/* コンテキスト別サイズ調整 */
+.hero-main .hero-thumb.up-ph i { font-size: 54px; }
+.hero-main .hero-thumb.up-ph .up-ph-label { font-size: 14px; }
+.hero-sub  .hero-thumb.up-ph i { font-size: 34px; }
+.recent-thumb.up-ph { gap: 0; padding: 0; }
+.recent-thumb.up-ph i { font-size: 20px; }
+.recent-thumb.up-ph .up-ph-label { display: none; }
 .article-body { padding: 12px 14px 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
 .article-body h3, .article-title {
   font-size: 13px;

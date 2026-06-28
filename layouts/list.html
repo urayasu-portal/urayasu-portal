@@ -113,12 +113,8 @@
       {{- range $featured }}
       {{- $fcat := index .Params.categories 0 | default "" }}
       {{- $fcls := index $catClass $fcat | default "cat-default" }}
-      {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
       <a class="list-feature-card {{ $fcls }}" href="{{ .RelPermalink }}">
-        <div class="lfc-thumb{{ if not $img }} lfc-no-img{{ end }}">
-          {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-          {{- else }}<span><i class="ti ti-photo" aria-hidden="true"></i></span>{{- end }}
-        </div>
+        {{- partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "lfc-thumb") }}
         <div class="lfc-body">
           {{- if $fcat }}<span class="cat-badge cat-badge-sm {{ $fcls }}">{{ $fcat }}</span>{{- end }}
           <h3 class="lfc-title">{{ .Title }}</h3>
@@ -218,12 +214,8 @@
       <div class="widget-title"><i class="ti ti-clock" aria-hidden="true"></i> 最近の記事</div>
       <div class="recent-list">
         {{- range first 5 $allPosts }}
-        {{- $img := partial "cover-image.html" (dict "page" . "size" "thumb") }}
         <a class="recent-item" href="{{ .RelPermalink }}">
-          <div class="recent-thumb">
-            {{- if $img }}<img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
-            {{- else }}<div class="recent-thumb-no-img"><i class="ti ti-photo" aria-hidden="true"></i></div>{{- end }}
-          </div>
+          {{- partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "recent-thumb") }}
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>

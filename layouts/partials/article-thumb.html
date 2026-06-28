@@ -1,0 +1,36 @@
+{{/*
+  article-thumb.html — 記事サムネイル共通Partial
+  実写真があれば <img>、無ければ区分色の軽量プレースホルダー（アイコン＋ラベル）を表示。
+  呼び出し: {{ partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "article-thumb" "eager" false) }}
+    wrap  : ラッパーのclass（article-thumb / hero-thumb / recent-thumb）。既定 article-thumb
+    eager : true で loading=eager（ファーストビュー用）
+*/}}
+{{- $page := .page }}
+{{- $size := .size | default "thumb" }}
+{{- $wrap := .wrap | default "article-thumb" }}
+{{- $eager := .eager | default false }}
+{{- $catClass := dict
+  "開店・閉店" "cat-open" "開店閉店" "cat-open"
+  "ニュース" "cat-news"
+  "イベント" "cat-event"
+  "グルメ・カフェ" "cat-gourmet" "グルメカフェ" "cat-gourmet"
+  "子育て・教育" "cat-edu" "子育て教育" "cat-edu"
+  "スポーツ" "cat-sports"
+  "お知らせ" "cat-notice" }}
+{{- $catIcon := dict
+  "開店・閉店" "ti-building-store" "開店閉店" "ti-building-store"
+  "ニュース" "ti-news"
+  "イベント" "ti-calendar-event"
+  "グルメ・カフェ" "ti-coffee" "グルメカフェ" "ti-coffee"
+  "子育て・教育" "ti-school" "子育て教育" "ti-school"
+  "スポーツ" "ti-ball-football"
+  "お知らせ" "ti-bell" }}
+{{- $cat := index $page.Params.categories 0 | default "" }}
+{{- $cls := index $catClass $cat | default "cat-default" }}
+{{- $icon := index $catIcon $cat | default "ti-photo" }}
+{{- $real := partial "cover-image.html" (dict "page" $page "size" $size "real" true) }}
+{{- if $real }}
+<div class="{{ $wrap }}"><img src="{{ $real }}" alt="{{ $page.Title }}" loading="{{ if $eager }}eager{{ else }}lazy{{ end }}"></div>
+{{- else }}
+<div class="{{ $wrap }} up-ph {{ $cls }}"><i class="ti {{ $icon }}" aria-hidden="true"></i><span class="up-ph-label">{{ if $cat }}{{ $cat }}{{ else }}記事{{ end }}</span></div>
+{{- end }}
