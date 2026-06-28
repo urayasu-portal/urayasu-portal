@@ -5,9 +5,6 @@ eventDate: "2026-04-24"
 hideEventBox: true
 categories:
   - "スポーツ"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/d_rocks_25-26_round16-17_kv_base_rectangle_260319.jpg"
-  alt: "【浦安D-Rocks】4/24（金）秩父宮でFRI D-NIGHT開催！浦安市民優待あり"
 ---
 
 <p>浦安D-Rocksの今シーズン最後のホストゲーム2連戦「FRI D-NIGHT」が、4月24日（金）・5月1日（金）の2夜、秩父宮ラグビー場（東京都港区）で開催されます。金曜の夜、スタジアムが浦安D-Rocksブルーに染まるお祭りナイターは、ラグビーを初めて見る人も大歓迎のイベントです。</p>

@@ -5,9 +5,6 @@ eventDate: "2026-05-01"
 hideEventBox: true
 categories:
   - "スポーツ"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/d-rocks-logo.png"
-  alt: "浦安D-Rocks、首位・埼玉WKを逆転撃破！第17節で連敗12でストップ"
 ---
 
 <!-- タイトル：浦安D-Rocks、首位・埼玉WKを逆転撃破！第17節で連敗12でストップ -->

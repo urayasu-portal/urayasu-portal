@@ -3,9 +3,6 @@ title: "「バーバーショップスタイルVagabonds」ライブ開催"
 date: 2025-06-10T00:44:52+09:00
 categories:
   - "イベント"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-event.jpg"
-  alt: "「バーバーショップスタイルVagabonds」ライブ開催"
 ---
 
 <p>6月8日（日）16:00-18:30、新浦安駅前プラザ1F「Cellar＆Tap Origins Table」で、アカペラグループ「Vagabonds」のライブが開催されました。入場無料（ドリンク代・チップ制）。多彩なハーモニーが会場を盛り上げ、音楽好きが集いました。</p>

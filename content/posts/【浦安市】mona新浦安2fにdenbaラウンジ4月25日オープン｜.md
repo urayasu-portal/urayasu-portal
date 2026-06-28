@@ -5,9 +5,6 @@ eventDate: "2026-04-25"
 hideEventBox: true
 categories:
   - "開店・閉店"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-open-1.jpg"
-  alt: "【浦安市】MONA新浦安2FにDENBAラウンジ4月25日オープン｜リラクゼーション体験スペース"
 ---
 
 <p>新浦安のショッピングモール「MONA新浦安」2階に、2026年4月25日（土）、リラクゼーション体験スペース「DENBAラウンジ」がオープンします。これまで同フロアで営業していた「アロマブルーム」がリニューアルオープンする形での登場です。</p>

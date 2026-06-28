@@ -6,9 +6,6 @@ hideEventBox: true
 categories:
   - "グルメ・カフェ"
   - "開店・閉店"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-open-1.jpg"
-  alt: "稲庭うどん×丼めし「金子半之助」がイクスピアリに！千葉県初出店・4月21日グランドオープン"
 ---
 
 <p>日本橋で人気の「日本橋 稲庭うどんと丼めし 金子半之助」が、舞浜・イクスピアリ3Fに4月21日（火）オープンします。千葉県内への出店はこれが初めてです。</p>

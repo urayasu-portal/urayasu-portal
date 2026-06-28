@@ -5,9 +5,6 @@ eventDate: "2026-05-05"
 hideEventBox: true
 categories:
   - "イベント"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/17892966-6fba-475e-8786-9367614b3843.jpg"
-  alt: "【浦安】あつまれ！うんどう公園 GWスペシャルDAY｜5月5日(こどもの日)開催"
 ---
 
 <p>2026年5月5日（火・祝）こどもの日に、浦安市運動公園・総合体育館（舞浜2）周辺で「あつまれ！うんどう公園 GWスペシャルDAY」が開催されます。GW後半の締めくくりを浦安の運動公園で楽しみましょう。</p>

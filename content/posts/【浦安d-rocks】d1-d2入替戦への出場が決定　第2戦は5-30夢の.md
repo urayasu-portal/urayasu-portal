@@ -5,9 +5,6 @@ eventDate: "2026-05-30"
 hideEventBox: true
 categories:
   - "スポーツ"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/d-rocks-logo.png"
-  alt: "【浦安D-Rocks】D1/D2入替戦への出場が決定　第2戦は5/30夢の島競技場でホスト開催"
 ---
 
 <!-- タイトル：【浦安D-Rocks】D1/D2入替戦への出場が決定　第2戦は5/30夢の島競技場でホスト開催 -->

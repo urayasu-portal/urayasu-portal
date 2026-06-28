@@ -6,9 +6,6 @@ categories:
   - "イベント"
 tags: ["浦安おもちゃゆうえんち", "子ども", "親子", "ドローン", "ボードゲーム", "ワークショップ", "浦安市"]
 description: "2026年5月23日（土）、浦安市でドローン体験やボードゲーム、謎解きウォークラリーなど多彩な遊びが集まるイベント「浦安おもちゃゆうえんち2026」が開催されます。"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-event.jpg"
-  alt: "ドローンにボードゲームも！「浦安おもちゃゆうえんち2026」5月23日（土）開催【浦安】"
 eventDate: "2026-05-23"
 hideEventBox: true
 draft: false

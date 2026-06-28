@@ -3,9 +3,6 @@ title: "アトレ新浦安「POP！Prism Summer」海テーマの夏プロモー
 date: 2025-06-28T06:28:59+09:00
 categories:
   - "イベント"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-event.jpg"
-  alt: "アトレ新浦安「POP！Prism Summer」海テーマの夏プロモーション開幕"
 ---
 
 <p>アトレ新浦安で6月27日から8月17日まで、海をモチーフにした館内装飾とギフト企画を実施。光と色が弾けるディスプレーの中で限定スイーツや手土産を展開し、夏気分を満喫できます。</p>

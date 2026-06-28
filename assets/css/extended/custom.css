@@ -649,6 +649,9 @@ body:not(.list) { --main-width: 1108px; }
 
 .post-cover { margin: 20px 32px; border-radius: 8px; overflow: hidden; background: #d8e8f0; }
 .post-cover img { width: 100%; display: block; border-radius: 8px; max-height: 420px; object-fit: cover; }
+.post-cover.up-ph { height: 150px; background: none; }
+.post-cover.up-ph i { font-size: 46px; }
+.post-cover.up-ph .up-ph-label { font-size: 13px; }
 
 .post-single .post-content { padding: 8px 32px 32px; font-size: 15px; line-height: 1.9; color: var(--up-text); }
 

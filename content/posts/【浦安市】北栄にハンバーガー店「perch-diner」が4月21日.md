@@ -5,9 +5,6 @@ eventDate: "2026-04-21"
 hideEventBox: true
 categories:
   - "開店・閉店"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/bb176f433f579b9cffa0a4d0136a63f1.jpg"
-  alt: "【浦安市】北栄にハンバーガー店「PERCH DINER」が4月21日オープン"
 ---
 
 浦安市北栄2丁目に、ハンバーガー専門店「PERCH DINER（パーチダイナー）」が2026年4月21日（火）にオープンしました。

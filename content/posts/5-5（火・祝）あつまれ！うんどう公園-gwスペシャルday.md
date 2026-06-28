@@ -5,9 +5,6 @@ eventDate: "2026-05-05"
 hideEventBox: true
 categories:
   - "イベント"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-event-1.jpg"
-  alt: "5/5（火・祝）あつまれ！うんどう公園 GWスペシャルDAY！プール無料開放・キッチンカーも【浦安市運動公園】"
 ---
 
 <!-- タイトル：5/5（火・祝）あつまれ！うんどう公園 GWスペシャルDAY！プール無料開放・キッチンカーも【浦安市運動公園】 -->

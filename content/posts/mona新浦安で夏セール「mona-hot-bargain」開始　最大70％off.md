@@ -3,9 +3,6 @@ title: "MONA新浦安で夏セール「MONA Hot Bargain」開始　最大70％OF
 date: 2025-06-21T16:54:19+09:00
 categories:
   - "イベント"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-event.jpg"
-  alt: "MONA新浦安で夏セール「MONA Hot Bargain」開始　最大70％OFF"
 ---
 
 <p>6月20日、MONA新浦安で夏の大規模セール「MONA Hot Bargain」がスタート。7月6日まで開催され、ファッション・雑貨・食品など館内の様々なショップが最大70％OFFのバーゲン価格に。浦安新聞6月20日号の折込チラシには期間中使える地域限定クーポンもあり。</p>

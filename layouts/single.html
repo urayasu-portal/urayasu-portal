@@ -12,10 +12,20 @@
   "スポーツ"   "cat-sports"
   "お知らせ"   "cat-notice"
 }}
+{{- $catIcon := dict
+  "開店・閉店" "ti-building-store" "開店閉店" "ti-building-store"
+  "ニュース" "ti-news"
+  "イベント" "ti-calendar-event"
+  "グルメ・カフェ" "ti-coffee" "グルメカフェ" "ti-coffee"
+  "子育て・教育" "ti-school" "子育て教育" "ti-school"
+  "スポーツ" "ti-ball-football"
+  "お知らせ" "ti-bell"
+}}
 
 {{- $cat := index .Params.categories 0 | default "" }}
 {{- $cls := index $catClass $cat | default "cat-default" }}
-{{- $coverImg := partial "cover-image.html" (dict "page" . "size" "full") }}
+{{- $icon := index $catIcon $cat | default "ti-photo" }}
+{{- $coverReal := partial "cover-image.html" (dict "page" . "size" "full" "real" true) }}
 {{- $allPosts := where site.RegularPages "Section" "posts" }}
 
 {{/* ───── 2カラムレイアウト ───── */}}
@@ -43,9 +53,14 @@
         {{- end }}
       </header>
 
-      {{- if $coverImg }}
+      {{- if $coverReal }}
       <div class="post-cover">
-        <img src="{{ $coverImg }}" alt="{{ .Title }}" loading="lazy">
+        <img src="{{ $coverReal }}" alt="{{ .Title }}" loading="lazy">
+      </div>
+      {{- else }}
+      <div class="post-cover up-ph {{ $cls }}">
+        <i class="ti {{ $icon }}" aria-hidden="true"></i>
+        <span class="up-ph-label">{{ if $cat }}{{ $cat }}{{ else }}記事{{ end }}</span>
       </div>
       {{- end }}
 

@@ -3,9 +3,6 @@ title: "Salon de Sweets（イクスピアリ内）で「ストロベリーフェ
 date: 2025-06-06T12:53:00+09:00
 categories:
   - "グルメ・カフェ"
-cover:
-  image: "https://urayasu1889.net/wp-content/uploads/2026/04/ogp-gourmet.jpg"
-  alt: "Salon de Sweets（イクスピアリ内）で「ストロベリーフェア」開催中"
 ---
 
 <p>イクスピアリ4階の「Salon de Sweets」では、旬のいちごを使ったスイーツビュッフェ「ストロベリーフェア」を6月30日まで開催中。平日・土日祝ともにランチ・ディナーで楽しめ、家族連れや友人同士で賑わっています。</p>
