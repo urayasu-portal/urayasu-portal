@@ -1,0 +1,27 @@
+{{/*
+  sidebar-cat-counts.html — 「カテゴリ別記事数」ウィジェットの <li> 群を出力。
+  街のトピックス(posts)の記事のみ集計する。site.Taxonomies は全セクション横断のため、
+  便利ガイド(life-guide)の「生活ガイド」「お知らせ」等が混入してしまうのを防ぐ目的で、
+  各カテゴリの posts セクション記事数だけを数え、0件のカテゴリ（生活ガイド等）は表示しない。
+*/}}
+{{- $catClass := dict
+  "開店・閉店" "cat-open" "開店閉店" "cat-open"
+  "ニュース" "cat-news" "イベント" "cat-event"
+  "グルメ・カフェ" "cat-gourmet" "グルメカフェ" "cat-gourmet"
+  "子育て・教育" "cat-edu" "子育て教育" "cat-edu"
+  "スポーツ" "cat-sports" "お知らせ" "cat-notice" }}
+{{- $rows := slice }}
+{{- range site.Taxonomies.categories.ByCount }}
+  {{- $n := len (where .Pages "Section" "posts") }}
+  {{- if gt $n 0 }}
+    {{- $rows = $rows | append (dict "name" .Page.Title "url" .Page.RelPermalink "count" $n) }}
+  {{- end }}
+{{- end }}
+{{- range sort $rows "count" "desc" }}
+<li>
+  <a class="cat-item" href="{{ .url }}">
+    <span class="cat-badge cat-badge-sm {{ index $catClass .name | default "cat-default" }}">{{ .name }}</span>
+    <span class="cat-count">{{ .count }}</span>
+  </a>
+</li>
+{{- end }}

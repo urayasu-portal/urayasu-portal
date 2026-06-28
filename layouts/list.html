@@ -195,16 +195,7 @@
     <div class="sidebar-widget">
       <div class="widget-title"><i class="ti ti-folder" aria-hidden="true"></i> カテゴリ</div>
       <ul class="cat-list">
-        {{- range site.Taxonomies.categories.ByCount }}
-        {{- $name := .Page.Title }}
-        {{- $ccls := index $catClass $name | default "cat-default" }}
-        <li>
-          <a class="cat-item" href="{{ .Page.RelPermalink }}">
-            <span class="cat-badge cat-badge-sm {{ $ccls }}">{{ $name }}</span>
-            <span class="cat-count">{{ .Count }}</span>
-          </a>
-        </li>
-        {{- end }}
+        {{- partial "sidebar-cat-counts.html" . }}
       </ul>
     </div>
     {{- end }}

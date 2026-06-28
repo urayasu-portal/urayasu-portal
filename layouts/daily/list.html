@@ -70,16 +70,7 @@
     <div class="sidebar-widget">
       <div class="widget-title"><i class="ti ti-chart-bar" aria-hidden="true"></i> カテゴリ別記事数</div>
       <ul class="cat-list">
-        {{- range site.Taxonomies.categories.ByCount }}
-        {{- $name := .Page.Title }}
-        {{- $cls  := index $catClass $name | default "cat-default" }}
-        <li>
-          <a class="cat-item" href="{{ .Page.RelPermalink }}">
-            <span class="cat-badge cat-badge-sm {{ $cls }}">{{ $name }}</span>
-            <span class="cat-count">{{ .Count }}</span>
-          </a>
-        </li>
-        {{- end }}
+        {{- partial "sidebar-cat-counts.html" . }}
       </ul>
     </div>
     <div class="sidebar-widget">
