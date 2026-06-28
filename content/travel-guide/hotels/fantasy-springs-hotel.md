@@ -52,13 +52,14 @@ noDate: true
   </div>
 </div>
 
-## アクセス：4つの行き先で見る
+## アクセス：5つの行き先で見る
 
 <div class="lg-art-table-wrap">
 <table class="lg-art-table">
 <thead><tr><th>行き先</th><th>手段</th><th>目安</th></tr></thead>
 <tbody>
-<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> パーク</td><td>グランドは専用入口で直接（TDLはモノレール）</td><td>全室15分早入園</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーランド（TDL）</td><td>ディズニーリゾートライン経由</td><td>全室15分早入園</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーシー（TDS）</td><td>専用入口「グランシャトー・ゲートウェイ」から直接（グランド宿泊者）</td><td>全室15分早入園</td></tr>
 <tr><td><i class="ti ti-train" aria-hidden="true"></i> JR駅</td><td>リゾートライン経由（公式に徒歩案内なし）</td><td>—</td></tr>
 <tr><td><i class="ti ti-plane" aria-hidden="true"></i> 空港</td><td>ホテル前からリムジンバス</td><td>羽田約40〜50分／成田約82〜87分</td></tr>
 <tr><td><i class="ti ti-building" aria-hidden="true"></i> 都心</td><td>舞浜駅からJR京葉線</td><td>東京駅約15分</td></tr>

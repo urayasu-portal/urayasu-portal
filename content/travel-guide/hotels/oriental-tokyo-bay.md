@@ -51,13 +51,14 @@ noDate: true
   </div>
 </div>
 
-## アクセス：4つの行き先で見る
+## アクセス：5つの行き先で見る
 
 <div class="lg-art-table-wrap">
 <table class="lg-art-table">
 <thead><tr><th>行き先</th><th>手段</th><th>目安</th></tr></thead>
 <tbody>
-<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> パーク</td><td>無料シャトルバス（1日最大69便・始発7時）</td><td>約15分</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーランド（TDL）</td><td>無料シャトルバス（1日最大69便・始発7時）</td><td>約15分</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーシー（TDS）</td><td>無料シャトルバス（1日最大69便・始発7時）</td><td>約15分</td></tr>
 <tr><td><i class="ti ti-train" aria-hidden="true"></i> JR駅</td><td>新浦安駅へ屋根付きデッキ直結</td><td>徒歩約1分（舞浜まで1駅3分）</td></tr>
 <tr><td><i class="ti ti-plane" aria-hidden="true"></i> 空港</td><td>新浦安駅バス停（徒歩1分）からリムジン</td><td>羽田約40〜45分／成田約60分</td></tr>
 <tr><td><i class="ti ti-building" aria-hidden="true"></i> 都心</td><td>新浦安駅からJR京葉線</td><td>東京駅約20分</td></tr>
