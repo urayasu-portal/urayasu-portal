@@ -9,52 +9,52 @@ areas:
     tag: "A"
     name: "舞浜エリア"
     count: 14
-    note: "TDR直営・オフィシャル集中。パーク最至近。"
+    note: "ディズニーホテル・オフィシャル集中。パーク最至近。"
     hotels:
       - name: "東京ディズニーランドホテル"
-        category: "直営（ラグジュアリー）"
+        category: "ディズニーホテル"
         price_guide: "¥55,000〜"
         feature: "TDL徒歩約1分"
         policy: normal
         individual_page: true
         slug: "tdl-hotel"
       - name: "東京ディズニーシー・ホテルミラコスタ"
-        category: "直営（ラグジュアリー）"
+        category: "ディズニーホテル"
         price_guide: "¥83,000〜"
         feature: "TDS内・専用入口"
         policy: normal
         individual_page: true
         slug: "miracosta"
       - name: "ファンタジースプリングスホテル"
-        category: "直営（ラグジュアリー）"
+        category: "ディズニーホテル"
         price_guide: "¥50,000〜"
         feature: "TDS新エリア直結（2024年開業）"
         policy: normal
         individual_page: true
         slug: "fantasy-springs-hotel"
       - name: "ディズニーアンバサダーホテル"
-        category: "直営（ラグジュアリー）"
+        category: "ディズニーホテル"
         price_guide: "¥40,000〜"
         feature: "舞浜駅徒歩約8分"
         policy: normal
         individual_page: true
         slug: "ambassador-hotel"
       - name: "トイ・ストーリーホテル"
-        category: "直営（バリュー）"
+        category: "ディズニーホテル"
         price_guide: "¥45,000〜"
         feature: "ベイサイド・ステーション徒歩約3分"
         policy: normal
         individual_page: true
         slug: "toy-story-hotel"
       - name: "東京ディズニーセレブレーションホテル（ウィッシュ）"
-        category: "直営（バリュー）"
+        category: "ディズニーホテル"
         price_guide: "¥20,000〜"
         feature: "ハッピーエントリー特典付き"
         policy: normal
         individual_page: true
         slug: "celebration-wish"
       - name: "東京ディズニーセレブレーションホテル（ディスカバー）"
-        category: "直営（バリュー）"
+        category: "ディズニーホテル"
         price_guide: "¥20,000〜"
         feature: "ハッピーエントリー特典付き"
         policy: normal
@@ -96,14 +96,14 @@ areas:
         individual_page: true
         slug: "maihama-hotel-first-resort"
       - name: "ホテルドリームゲート舞浜"
-        category: "オフィシャルホテル"
+        category: "その他のホテル"
         price_guide: "¥15,000〜"
         feature: "JR舞浜駅改札直結"
         policy: normal
         individual_page: true
         slug: "dreamgate-maihama"
       - name: "舞浜ビューホテル by HULIC"
-        category: "一般ホテル"
+        category: "オフィシャルホテル"
         price_guide: "¥20,000〜"
         feature: "大浴場「スパ ローズ」"
         policy: normal
@@ -117,35 +117,35 @@ areas:
     note: "マイステイズ舞浜はTDS徒歩6分・最安値クラス。"
     hotels:
       - name: "ザロイヤルパークホテル舞浜リゾート東京ベイ"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥25,000〜"
         feature: "2026年2月開業・最大6名対応"
         policy: normal
         individual_page: true
         slug: "royal-park-maihama"
       - name: "ホテルマイステイズ舞浜"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥8,000〜"
         feature: "TDS徒歩6分・エリア最安クラスのコスパビジネスホテル"
         policy: normal
         individual_page: true
         slug: "mystays-maihama"
       - name: "舞浜ユーラシア（SPA&HOTEL）"
-        category: "一般ホテル（温泉）"
+        category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "天然温泉・露天風呂・サウナ"
         policy: normal
         individual_page: true
         slug: "maihama-eurasia"
       - name: "ホテルユーラシア舞浜アネックス"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥8,000〜"
         feature: "本館温泉を割引利用可"
         policy: normal
         individual_page: true
         slug: "eurasia-annex"
       - name: "GRAND MONday Resort 東京ベイ舞浜"
-        category: "一般リゾートホテル"
+        category: "その他のホテル"
         price_guide: ""
         feature: "2026年7月18日開業予定・全室オーシャンフロント"
         policy: name-only
@@ -158,14 +158,14 @@ areas:
     note: "パートナーホテル集中。空港リムジンも便利。"
     hotels:
       - name: "ハイアットリージェンシー東京ベイ"
-        category: "一般リゾートホテル"
+        category: "その他のホテル"
         price_guide: "¥25,000〜"
         feature: "ホテル前リムジン停留所（2024年新設）"
         policy: normal
         individual_page: true
         slug: "hyatt-regency-tokyo-bay"
       - name: "コンフォートスイーツ東京ベイ"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥15,000〜"
         feature: "閉園後30分シャトル・小学6年生まで添い寝無料"
         policy: normal
@@ -200,69 +200,69 @@ areas:
         individual_page: true
         slug: "mitsui-garden-prana"
       - name: "星野リゾート 1955 東京ベイ"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥18,000〜"
         feature: "館内ローソン・2024年開業"
         policy: normal
         individual_page: true
         slug: "hoshinoresorts-1955-tokyo-bay"
       - name: "ラ・ジェント・ホテル東京ベイ"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥8,000〜"
         feature: "最大6名対応・24時間コンビニ隣接"
         policy: normal
         individual_page: true
         slug: "lagent-tokyo-bay"
       - name: "イビススタイルズ東京ベイ"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "アコーホテルズ系デザインホテル"
         policy: normal
         individual_page: true
         slug: "ibis-styles-tokyo-bay"
       - name: "マイステイズ新浦安コンファレンスセンター"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥7,500〜"
         feature: "安定した低価格帯"
         policy: normal
         individual_page: true
         slug: "mystays-shin-urayasu"
       - name: "フレックステイイン新浦安"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥7,000〜"
         feature: "全室ミニキッチン・長期滞在型"
         policy: normal
         individual_page: true
         slug: "flexstay-shin-urayasu"
       - name: "変なホテル舞浜"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥11,000〜"
         feature: "舞浜駅シャトル運行（2026年7月減便）"
         policy: normal
         individual_page: true
         slug: "henna-hotel-maihama"
       - name: "フォーストーリーズホテル舞浜"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "路線バス利用（最終23:00）"
         policy: normal
         individual_page: true
         slug: "four-stories-hotel"
       - name: "日和ホテル舞浜"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "全室フットマッサージ器・靴乾燥機"
         policy: normal
         individual_page: true
         slug: "hiyori-hotel-maihama"
       - name: "M4 design hotel"
-        category: "ファッションホテル"
+        category: "—"
         price_guide: ""
         feature: ""
         policy: name-only
         individual_page: false
       - name: "ホテルリバーサイド東京ベイ"
-        category: "ファッションホテル"
+        category: "—"
         price_guide: ""
         feature: ""
         policy: name-only
@@ -275,35 +275,35 @@ areas:
     note: "東西線直通で都心1本。パークへはバス25〜30分。"
     hotels:
       - name: "浦安ビューフォートホテル"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥9,000〜"
         feature: "浦安駅徒歩1分・ビュッフェ朝食"
         policy: normal
         individual_page: true
         slug: "viewfort-urayasu"
       - name: "ホテル醍醐"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥11,000〜"
         feature: "年中均一料金・繁忙期も値上げなし"
         policy: normal
         individual_page: true
         slug: "hotel-daigo-urayasu"
       - name: "BAYHOTEL浦安駅前"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥14,000〜"
         feature: "全室キッチン・冷蔵庫・洗濯機付き"
         policy: normal
         individual_page: true
         slug: "bayhotel-urayasu"
       - name: "浦安サンホテル"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥5,000〜"
         feature: "無料朝食・24時間フロント"
         policy: normal
         individual_page: true
         slug: "urayasu-sun-hotel"
       - name: "ホテルダイヤモンド"
-        category: "ファッションホテル"
+        category: "—"
         price_guide: ""
         feature: ""
         policy: name-only
@@ -316,56 +316,56 @@ areas:
     note: "葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。"
     hotels:
       - name: "Premium hotel MONday 舞浜ビューⅠ"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥11,000〜"
         feature: "2025年12月開業・TDR無料シャトル"
         policy: normal
         individual_page: true
         slug: "premium-monday-maihama-view-1"
       - name: "ホテルシーサイド江戸川"
-        category: "一般リゾートホテル"
+        category: "その他のホテル"
         price_guide: "¥16,000〜"
         feature: "葛西臨海公園内・駅徒歩3分・和室あり"
         policy: normal
         individual_page: true
         slug: "hotel-seaside-edogawa"
       - name: "CVS・BAY HOTEL"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥5,610〜"
         feature: "市川塩浜駅隣接・舞浜2駅6分"
         policy: normal
         individual_page: true
         slug: "cvs-bay-hotel"
       - name: "ホテルイルフィオーレ葛西"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥7,860〜"
         feature: "葛西駅徒歩3分・最大5名対応"
         policy: normal
         individual_page: true
         slug: "hotel-ilfiore-kasai"
       - name: "ホテルイルフィオーレ葛西 ANNEX"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥5,500〜"
         feature: "葛西駅徒歩3分・イルフィオーレ別館"
         policy: normal
         individual_page: true
         slug: "hotel-ilfiore-kasai-annex"
       - name: "ホテルルミエール葛西"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥9,700〜"
         feature: "葛西駅徒歩2分のビジネスホテル"
         policy: normal
         individual_page: true
         slug: "hotel-lumiere-kasai"
       - name: "ホテルリブマックス葛西駅前"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥5,000〜"
         feature: "葛西駅徒歩3分・TDRバス約20分"
         policy: normal
         individual_page: true
         slug: "livemax-kasai-ekimae"
       - name: "スーパーホテル 市川・妙典駅前"
-        category: "一般ホテル"
+        category: "その他のホテル"
         price_guide: "¥7,400〜"
         feature: "妙典駅前・東西線で浦安へ"
         policy: normal

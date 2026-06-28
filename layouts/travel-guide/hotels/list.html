@@ -23,7 +23,7 @@
   <p class="tg-hotels-lead">From TDR-owned luxury properties to budget hotels, we have organized all <strong>{{ $total }} hotels</strong> in the area from a local perspective — including 3 new properties opened in 2024–2026. Find the right one for your trip by purpose, area, or price.</p>
   {{- else }}
   <h1 class="tg-hotels-title">舞浜・浦安エリアのホテルを選ぶ</h1>
-  <p class="tg-hotels-lead">TDR直営からオフィシャル、格安ホテルまで、エリア内の<strong>全{{ $total }}軒</strong>を地元目線で整理しました。2024〜2026年に開業した新しい施設も掲載。目的・エリア・価格帯から、あなたの旅に合う一軒を見つけてください。</p>
+  <p class="tg-hotels-lead">ディズニーホテルからオフィシャル・パートナー、その他のホテルまで、エリア内の<strong>全{{ $total }}軒</strong>を地元目線で整理しました。2024〜2026年に開業した新しい施設も掲載。目的・エリア・価格帯から、あなたの旅に合う一軒を見つけてください。</p>
   {{- end }}
   <div class="tg-hotels-stats">
     <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $total }}</span><span class="tg-hotels-stat-label">{{ if $isEN }}hotels{{ else }}軒掲載{{ end }}</span></div>
@@ -92,29 +92,23 @@
      価格帯の目安 / Price Pyramid
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{- if $isEN }}Price Range Guide{{- else }}価格帯の目安{{- end }}</h2>
+  <h2>{{- if $isEN }}Hotel Types & Price Guide{{- else }}区分と価格帯の目安{{- end }}</h2>
   <span style="font-size:11px;color:var(--up-muted);">{{- if $isEN }}2 guests/room, off-peak estimate{{- else }}2名1室・通常期の目安{{- end }}</span>
 </div>
 <p class="tg-section-sub">{{- if $isEN }}Tap a bar to filter the list below by hotel type.{{- else }}バーをクリックすると下のホテル一覧を区分で絞り込めます。{{- end }}</p>
 <div class="tg-pyramid-wrap">
   <div class="tg-pyramid">
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="chokuei">{{- if $isEN }}TDR Owned (Luxury){{- else }}直営（ラグジュアリー）{{- end }} <span class="tg-pyr-price">¥40,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="disney">{{- if $isEN }}Disney Hotels{{- else }}ディズニーホテル{{- end }} <span class="tg-pyr-price">¥20,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="chokuei">{{- if $isEN }}TDR Owned (Value){{- else }}直営（バリュー）{{- end }} <span class="tg-pyr-price">¥20,000〜</span></button>
-    </div>
-    <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="official">{{- if $isEN }}Official Hotels{{- else }}オフィシャルホテル{{- end }} <span class="tg-pyr-price">¥15,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="official">{{- if $isEN }}Official Hotels{{- else }}オフィシャルホテル{{- end }} <span class="tg-pyr-price">¥20,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
       <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="partner">{{- if $isEN }}Partner Hotels{{- else }}パートナーホテル{{- end }} <span class="tg-pyr-price">¥15,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="general">{{- if $isEN }}General Hotels (Upper){{- else }}一般ホテル（上）{{- end }} <span class="tg-pyr-price">¥10,000〜</span></button>
-    </div>
-    <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="general">{{- if $isEN }}General Hotels (Budget){{- else }}一般ホテル（格安）{{- end }} <span class="tg-pyr-price">¥5,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="other">{{- if $isEN }}Other Hotels{{- else }}その他のホテル{{- end }} <span class="tg-pyr-price">¥5,000〜</span></button>
     </div>
   </div>
   <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:6px;">{{- if $isEN }}※ Prices rise significantly during peak seasons (Golden Week, summer, year-end){{- else }}※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします{{- end }}</p>
@@ -137,9 +131,10 @@
 {{- if not $isEN }}
 <div class="tg-hotel-filter" role="group" aria-label="ホテルの区分で絞り込む">
   <button type="button" class="tg-hotel-chip is-active" data-filter-type="group" data-filter-val="all">すべて</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="group" data-filter-val="tdr">直営・オフィシャル</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="group" data-filter-val="partner">パートナー</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="group" data-filter-val="value">一般・格安</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="disney">ディズニー</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="official">オフィシャル</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="partner">パートナー</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="other">その他</button>
 </div>
 {{- end }}
 
@@ -159,18 +154,14 @@
       {{- $areaTag := .tag }}
       {{- $areaName := .name }}
       {{- range .hotels }}
-      {{- $cat := "general" }}
-      {{- if hasPrefix .category "直営" }}{{ $cat = "chokuei" }}
+      {{- $cat := "other" }}
+      {{- if eq .category "ディズニーホテル" }}{{ $cat = "disney" }}
       {{- else if eq .category "オフィシャルホテル" }}{{ $cat = "official" }}
       {{- else if eq .category "パートナーホテル" }}{{ $cat = "partner" }}
-      {{- else if hasPrefix .category "ファッション" }}{{ $cat = "fashion" }}
+      {{- else if eq .category "グッドネイバーホテル" }}{{ $cat = "goodneighbor" }}
+      {{- else if eq .category "—" }}{{ $cat = "fashion" }}
       {{- end }}
-      {{- $grp := "value" }}
-      {{- if or (eq $cat "chokuei") (eq $cat "official") }}{{ $grp = "tdr" }}
-      {{- else if eq $cat "partner" }}{{ $grp = "partner" }}
-      {{- else if eq $cat "fashion" }}{{ $grp = "other" }}
-      {{- end }}
-      <tr data-group="{{ $grp }}" data-cat="{{ $cat }}" data-area="{{ $areaTag }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
+      <tr data-cat="{{ $cat }}" data-area="{{ $areaTag }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
         <td>
           {{- if and .individual_page (eq .policy "normal") }}
           {{- $href := printf "/travel-guide/hotels/%s/" .slug }}
@@ -182,7 +173,16 @@
           {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
         </td>
         <td>{{ $areaName }}</td>
-        <td style="font-size:0.82em;">{{ .category }}</td>
+        <td style="font-size:0.82em;">
+          {{- if $isEN }}
+          {{- if eq .category "ディズニーホテル" }}Disney Hotels
+          {{- else if eq .category "オフィシャルホテル" }}Official Hotels
+          {{- else if eq .category "パートナーホテル" }}Partner Hotels
+          {{- else if eq .category "グッドネイバーホテル" }}Good Neighbor Hotels
+          {{- else if eq .category "その他のホテル" }}Other Hotels
+          {{- else }}{{ .category }}{{- end }}
+          {{- else }}{{ .category }}{{- end }}
+        </td>
         <td style="white-space:nowrap;">
           {{- if .price_guide }}{{ .price_guide }}{{- else }}&mdash;{{- end }}
         </td>

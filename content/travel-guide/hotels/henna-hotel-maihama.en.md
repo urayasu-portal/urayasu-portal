@@ -1,8 +1,8 @@
 ---
 title: "Henn na Hotel Maihama Tokyo Bay | World's First Robot Hotel (Guinness Record), Dinosaur Check-In, Deep Bathtub in All Rooms"
 date: 2026-06-17T10:00:00+09:00
-lastmod: 2026-06-17
-description: "Local review of Henn na Hotel Maihama Tokyo Bay (Good Neighbor Hotel). Guinness World Record for world's first robot hotel. Dinosaur robot at front desk; Henn na robot in all rooms. All rooms with bath/toilet separate and deep soaking tub. Shuttle to Maihama Station: approx. 7–10 min. Price range ¥11,200–¥79,600."
+lastmod: 2026-06-28
+description: "Local review of Henn na Hotel Maihama Tokyo Bay. Guinness World Record for world's first robot hotel. Dinosaur robot at front desk; Henn na robot in all rooms. All rooms with bath/toilet separate and deep soaking tub. Shuttle to Maihama Station: approx. 7–10 min. Price range ¥11,200–¥79,600."
 tags:
   - Hotel
   - Disney
@@ -11,7 +11,7 @@ images: ["/images/og-travel-urayasu.png"]
 noDate: true
 ---
 
-Henn na Hotel Maihama Tokyo Bay is a TDR Good Neighbor Hotel certified by Guinness World Records as the **world's first robot hotel**. Dinosaur-shaped robots handle check-in, and a "Henn na" robot in each guest room responds to voice commands. All rooms feature a separate bath and toilet with a deep soaking tub — an unusually complete bathroom setup for a budget/mid-range hotel. This review covers strengths, weaknesses, and access from a local perspective. Prices and times are estimates based on 2025–2026 research.
+Henn na Hotel Maihama Tokyo Bay is certified by Guinness World Records as the **world's first robot hotel**. Dinosaur-shaped robots handle check-in, and a "Henn na" robot in each guest room responds to voice commands. All rooms feature a separate bath and toilet with a deep soaking tub — an unusually complete bathroom setup for a budget/mid-range hotel. This review covers strengths, weaknesses, and access from a local perspective. Prices and times are estimates based on 2025–2026 research.
 
 Note: From July 2026, the TDR shuttle service from this hotel is being reduced — confirm current schedule before booking.
 
@@ -23,7 +23,7 @@ Note: From July 2026, the TDR shuttle service from this hotel is being reduced �
 |---|---|
 | Address | Maihama area, Urayasu, Chiba (confirm exact address on official website) |
 | Phone | Confirm on official website |
-| Area | Maihama (TDR Good Neighbor Hotel) |
+| Area | Maihama area |
 | Rooms | 100 |
 | Check-in / Check-out | 15:00 / 10:00 |
 | Official Website | Confirm on official website (Henn na Hotel) |
@@ -34,7 +34,7 @@ Note: From July 2026, the TDR shuttle service from this hotel is being reduced �
 
 - **Guests who want to experience the novelty of the world's first robot hotel** — Dinosaur check-in, in-room robot assistant — a memorable story to bring home
 - **Guests who prioritize a high-quality bath experience** — All 100 rooms have a separate bath and toilet with a deep soaking tub; uncommon at this price point
-- **Guests looking for a Good Neighbor Hotel near Maihama at a mid-range price** — Happy Entry benefit included; approachable pricing relative to Official Hotels
+- **Guests looking for a unique robot-hotel experience at a mid-range price** — Approachable pricing relative to Official Hotels
 
 ## May Not Suit
 
@@ -47,7 +47,7 @@ Note: From July 2026, the TDR shuttle service from this hotel is being reduced �
 ## Access
 
 ### To the Parks (TDL / TDS)
-Hotel shuttle (Good Neighbor Hotel benefit). Note: shuttle service is being **reduced from July 2026 — confirm the current schedule before booking.** Disney Resort Cruiser (free) from Maihama Station is a reliable alternative.
+Hotel shuttle. Note: shuttle service is being **reduced from July 2026 — confirm the current schedule before booking.** Disney Resort Cruiser (free) from Maihama Station is a reliable alternative.
 
 ### To JR Station
 Hotel shuttle to Maihama Station: approx. 7–10 min. Hotel is not within walkable distance of Maihama Station.

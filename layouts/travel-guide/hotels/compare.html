@@ -21,15 +21,13 @@
     {{- if ne .policy "name-only" }}
       {{- $md := index $mapIndex .slug | default dict }}
       {{- /* カテゴリ分類 */}}
-      {{- $cat := "general" }}
-      {{- if hasPrefix .category "直営" }}{{- $cat = "chokuei" }}
+      {{- $cat := "other" }}
+      {{- if eq .category "ディズニーホテル" }}{{- $cat = "disney" }}
       {{- else if eq .category "オフィシャルホテル" }}{{- $cat = "official" }}
       {{- else if eq .category "パートナーホテル" }}{{- $cat = "partner" }}
+      {{- else if eq .category "グッドネイバーホテル" }}{{- $cat = "goodneighbor" }}
       {{- end }}
-      {{- $grp := "general" }}
-      {{- if or (eq $cat "chokuei") (eq $cat "official") }}{{- $grp = "tdr" }}
-      {{- else if eq $cat "partner" }}{{- $grp = "partner" }}
-      {{- end }}
+      {{- $grp := $cat }}
       {{- $entry := dict
           "id"          .slug
           "name"        .name
@@ -90,9 +88,10 @@
   </div>
   <div class="hcm-filter-row">
     <span class="hcm-filter-label">区分</span>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="tdr" onclick="hcmChipClick('grp','tdr')"><i class="ti ti-building-castle" aria-hidden="true"></i> 直営・オフィシャル</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="disney" onclick="hcmChipClick('grp','disney')"><i class="ti ti-building-castle" aria-hidden="true"></i> ディズニー</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="official" onclick="hcmChipClick('grp','official')"><i class="ti ti-building-skyscraper" aria-hidden="true"></i> オフィシャル</button>
     <button class="hcm-chip" data-chip-type="grp" data-chip-val="partner" onclick="hcmChipClick('grp','partner')"><i class="ti ti-star" aria-hidden="true"></i> パートナー</button>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="general" onclick="hcmChipClick('grp','general')"><i class="ti ti-home" aria-hidden="true"></i> 一般</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="other" onclick="hcmChipClick('grp','other')"><i class="ti ti-home" aria-hidden="true"></i> その他</button>
   </div>
   <div class="hcm-filter-row">
     <span class="hcm-filter-label">設備</span>
@@ -136,10 +135,10 @@
   <div class="hcm-map-col">
     <div id="hcm-map" aria-label="ホテル位置マップ（Leaflet / OpenStreetMap）"></div>
     <div class="hcm-map-legend">
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#C2421F"></span>直営</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#C2421F"></span>ディズニー</span>
       <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E05535"></span>オフィシャル</span>
       <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E8A020"></span>パートナー</span>
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>一般</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>その他</span>
     </div>
     <p class="hcm-map-note"><i class="ti ti-info-circle" aria-hidden="true"></i> ピンをクリックするとカードがハイライトします。絞り込み外のピンは薄く表示されます。座標は近似値です。</p>
   </div>
@@ -162,10 +161,11 @@
   var initialized = false;
 
   var CAT_COLORS = {
-    chokuei:  '#C2421F',
-    official: '#E05535',
-    partner:  '#E8A020',
-    general:  '#1A5C8A'
+    disney:       '#C2421F',
+    official:     '#E05535',
+    partner:      '#E8A020',
+    goodneighbor: '#2E8B57',
+    other:        '#1A5C8A'
   };
 
   var AREA_STYLE = {

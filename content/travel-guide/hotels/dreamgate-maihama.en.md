@@ -1,8 +1,8 @@
 ---
-title: "Dreamgate Maihama | Directly Connected to JR Maihama Station, Good Neighbor Hotel, NewDays Inside, Children 6 and Under Sleep Free"
+title: "Dreamgate Maihama | Directly Connected to JR Maihama Station, NewDays Inside, Children 6 and Under Sleep Free"
 date: 2026-06-17T10:00:00+09:00
-lastmod: 2026-06-17
-description: "Local review of Dreamgate Maihama (TDR Good Neighbor Hotel). Main building: directly connected left of Maihama Station ticket gate. Annex: directly connected right. NewDays convenience store inside (6:30–23:00). Children 6 and under sleep free. 3 coin laundry machines per building (room status viewable on TV). Ground-floor Saizeriya for breakfast. Price range ¥15,000–¥35,000."
+lastmod: 2026-06-28
+description: "Local review of Dreamgate Maihama. Main building: directly connected left of Maihama Station ticket gate. Annex: directly connected right. NewDays convenience store inside (6:30–23:00). Children 6 and under sleep free. 3 coin laundry machines per building (room status viewable on TV). Ground-floor Saizeriya for breakfast. Price range ¥15,000–¥35,000."
 tags:
   - Hotel
   - Disney
@@ -11,7 +11,7 @@ images: ["/images/og-travel-urayasu.png"]
 noDate: true
 ---
 
-Dreamgate Maihama is a Tokyo Disney Resort Good Neighbor Hotel with an access advantage that stands alone in the area: **both the Main building and Annex are directly connected to JR Maihama Station** — Main to the left of the ticket gate, Annex to the right. A NewDays convenience store is inside the hotel (6:30–23:00). Children 6 and under sleep free. Both buildings have 3 coin laundry machines (with room availability viewable on the in-room TV). Ground-floor Saizeriya is available for breakfast. This review covers the hotel's strengths, weaknesses, and access. Prices and times are estimates based on 2025–2026 research.
+Dreamgate Maihama has an access advantage that stands alone in the area: **both the Main building and Annex are directly connected to JR Maihama Station** — Main to the left of the ticket gate, Annex to the right. A NewDays convenience store is inside the hotel (6:30–23:00). Children 6 and under sleep free. Both buildings have 3 coin laundry machines (with room availability viewable on the in-room TV). Ground-floor Saizeriya is available for breakfast. This review covers the hotel's strengths, weaknesses, and access. Prices and times are estimates based on 2025–2026 research.
 
 ---
 
@@ -21,7 +21,7 @@ Dreamgate Maihama is a Tokyo Disney Resort Good Neighbor Hotel with an access ad
 |---|---|
 | Address | 1 Maihama, Urayasu, Chiba (directly connected to JR Maihama Station) |
 | Phone | Confirm on official website |
-| Area | Maihama Station direct connection (TDR Good Neighbor Hotel) |
+| Area | Maihama Station (direct connection) |
 | Check-in / Check-out | 15:00 / 11:00 |
 | Official Website | Confirm on official website (Dreamgate Maihama) |
 
@@ -32,7 +32,7 @@ Dreamgate Maihama is a Tokyo Disney Resort Good Neighbor Hotel with an access ad
 - **Guests arriving by JR Keiyo Line who don't want to haul luggage through crowds** — Directly connected to Maihama Station; step off the train, walk through the gate, enter the hotel with heavy suitcases
 - **Guests who want the fastest possible Maihama Station connection** — Among all hotels in the area, no hotel is more directly integrated with Maihama Station
 - **Families with children 6 and under** — Children 6 and under sleep free (same room, sharing existing beds)
-- **Guests who want a Good Neighbor Hotel's Happy Entry benefit at a non-Disney-Hotel price** — TDR Good Neighbor Hotel status confirmed; Happy Entry included (confirm current parks and scope on official website)
+- **Families who value being steps from the station and a convenience store** — NewDays inside the hotel plus a direct station connection make arrivals and supply runs effortless
 
 ## May Not Suit
 
@@ -45,7 +45,7 @@ Dreamgate Maihama is a Tokyo Disney Resort Good Neighbor Hotel with an access ad
 ## Access
 
 ### To the Parks (TDL / TDS)
-**Directly connected to Maihama Station** → Disney Resort Cruiser (free) or Disney Resort Line monorail to the parks. Happy Entry via Good Neighbor Hotel benefit (confirm parks and conditions on official website). The station connection means zero distance from train to hotel to park transit.
+**Directly connected to Maihama Station** → Disney Resort Cruiser (free) or Disney Resort Line monorail to the parks. The station connection means zero distance from train to hotel to park transit.
 
 ### To JR Station
 **Direct connection** to JR Maihama Station. Main building left of the ticket gate, Annex right of the ticket gate. No exterior walk needed even in rain.
@@ -66,8 +66,8 @@ Main building: directly connected to the left of Maihama Station's ticket gate. 
 **NewDays In-House (6:30–23:00)**
 JR East's NewDays convenience store inside the hotel (hours 6:30–23:00). Covers morning coffee and breakfast pickup before the parks, and post-park snacks on return. Not 24-hour — note the 23:00 closing.
 
-**Good Neighbor Hotel (Happy Entry)**
-TDR Good Neighbor Hotel certification provides Happy Entry early admission benefit (15 min before general opening). Confirm current scope on official website.
+**Operated by JR-East Hotels**
+Run by the JR-East hotel group and built directly into Maihama Station — the defining convenience of this hotel.
 
 **Children 6 and Under Sleep Free**
 Children in 1st grade and below sleep free in the same room (sharing existing beds). Practical for families with young children.
