@@ -19,12 +19,16 @@
 $ErrorActionPreference = "Stop"
 $dir = $PSScriptRoot
 
-Write-Output "[1/2] data/hotels.yaml を生成中..."
+Write-Output "[1/3] data/hotels.yaml を生成中..."
 powershell -ExecutionPolicy Bypass -File (Join-Path $dir "build-hotels.ps1")
 
 Write-Output ""
-Write-Output "[2/2] data/hotels_map.yaml を生成中..."
+Write-Output "[2/3] data/hotels_map.yaml を生成中..."
 powershell -ExecutionPolicy Bypass -File (Join-Path $dir "build-hotels-map.ps1")
+
+Write-Output ""
+Write-Output "[3/3] data/facilities.yaml を生成中..."
+powershell -ExecutionPolicy Bypass -File (Join-Path $dir "build-facilities.ps1")
 
 Write-Output ""
 Write-Output "===================================================="
