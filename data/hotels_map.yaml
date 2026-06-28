@@ -276,7 +276,7 @@ hotels:
     lat: 35.666803
     lng: 139.923990
     price_min: 5610
-    flags: [bath, convenience]
+    flags: [convenience]
     name: "CVS・BAY HOTEL"
     address: "〒272-0127 千葉県市川市塩浜2-33-1（本館）"
   - slug: "hotel-ilfiore-kasai"

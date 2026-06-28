@@ -1,8 +1,8 @@
 ---
-title: "CVS BAY HOTEL | Next to Ichikawa-Shiohama Station, 2 Stops (6 Min) to Maihama, Large Bath & Women's Capsules"
+title: "CVS BAY HOTEL | Next to Ichikawa-Shiohama Station, 2 Stops (6 Min) to Maihama, Women's Capsules"
 date: 2026-06-27T10:00:00+09:00
 lastmod: 2026-06-28
-description: "Local review of CVS BAY HOTEL (Ichikawa-Shiohama). Adjacent to JR Keiyo Line Ichikawa-Shiohama Station, 2 stops (~6 min) to Maihama. About 256 rooms across Main, Bay Tower and Annex buildings, including women-only capsules. Large bath, 1F convenience store, breakfast buffet."
+description: "Local review of CVS BAY HOTEL (Ichikawa-Shiohama). Adjacent to JR Keiyo Line Ichikawa-Shiohama Station, 2 stops (~6 min) to Maihama. About 256 rooms across Main, Bay Tower and Annex buildings, including women-only capsules. 1F convenience store, breakfast buffet (large bath currently closed)."
 tags:
   - Hotel
   - Disney
@@ -11,7 +11,7 @@ images: ["/images/og-travel-urayasu.png"]
 noDate: true
 ---
 
-CVS BAY HOTEL is adjacent to JR Keiyo Line Ichikawa-Shiohama Station — just 2 stops (about 6 minutes) from Maihama (Tokyo Disney Resort). It is a large hotel with about 256 rooms across its Main, Bay Tower and Annex buildings, ranging from singles and family rooms to women-only capsule (unit) rooms. Practical facilities include a large bath, a 1F convenience store and a breakfast buffet. Prices and times are estimates based on 2025–2026 research.
+CVS BAY HOTEL is adjacent to JR Keiyo Line Ichikawa-Shiohama Station — just 2 stops (about 6 minutes) from Maihama (Tokyo Disney Resort). It is a large hotel with about 256 rooms across its Main, Bay Tower and Annex buildings, ranging from singles and family rooms to women-only capsule (unit) rooms. Practical facilities include a 1F convenience store and a breakfast buffet. Note: the large bath was previously available but is currently closed. Prices and times are estimates based on 2025–2026 research.
 
 ---
 
@@ -32,10 +32,11 @@ CVS BAY HOTEL is adjacent to JR Keiyo Line Ichikawa-Shiohama Station — just 2 
 
 - **Guests who want the cheapest base for TDR** — Capsules from ¥3,600; 2 stops (6 min) to Maihama
 - **Guests traveling mainly by train** — Adjacent to Ichikawa-Shiohama Station
-- **Guests who want a large bath / in-house convenience store** — Large bath available, convenience store on 1F
+- **Guests who want an in-house convenience store and breakfast** — Convenience store on 1F, breakfast buffet
 
 ## May Not Suit
 
+- **Guests who want a large bath** — The large bath is currently closed (in-room bath only)
 - **Guests who want a direct free TDR shuttle** — No direct shuttle (2 stops on the JR Keiyo Line)
 - **Guests who need on-site parking** — No dedicated lot; uses a partner Times parking
 
@@ -63,7 +64,7 @@ About 22 min to Tokyo Station on the JR Keiyo Line.
 About 256 rooms across Main, Bay Tower and Annex. Singles to family rooms, plus women-only capsule (unit) rooms.
 
 **Large Bath**
-Available.
+Previously available, but currently closed (check the official website for reopening). If you are coming for the large bath, please note this.
 
 **Breakfast**
 Breakfast buffet available (depending on plan).
@@ -81,7 +82,7 @@ Confirm on the official website.
 
 ## Local Notes
 
-Adjacent to Ichikawa-Shiohama Station and just 2 stops (6 min) from Maihama, with a wide price range from capsules to family rooms. A large bath and 1F convenience store make it a good fit for travelers who want to keep costs down without sacrificing practicality.
+Adjacent to Ichikawa-Shiohama Station and just 2 stops (6 min) from Maihama, with a wide price range from capsules to family rooms. A 1F convenience store and breakfast buffet make it a good fit for travelers who want to keep costs down without sacrificing practicality. Note: the former large bath is currently closed, so do not count on it.
 
 ---
 
