@@ -70,9 +70,11 @@
 <nav class="cat-pill-nav" aria-label="カテゴリから探す">
   <span class="cat-pill-label">カテゴリ</span>
   {{- range site.Taxonomies.categories.ByCount }}
+  {{- if gt (len (where .Pages "Section" "posts")) 0 }}
   {{- $name := .Page.Title }}
   {{- $pcls := index $catClass $name | default "cat-default" }}
   <a class="cat-pill {{ $pcls }}{{ if eq $name $.Title }} is-active{{ end }}" href="{{ .Page.RelPermalink }}">{{ $name }}</a>
+  {{- end }}
   {{- end }}
 </nav>
 
