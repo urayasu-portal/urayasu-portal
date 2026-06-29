@@ -1,4 +1,145 @@
 {{- define "main" }}
+{{- if eq .Lang "en" }}
+
+{{/* ═══════════════════════════════════════════
+     英語トップ：観光ガイド特化ランディング (EN home LP)
+     既存 travel-guide の tg-* / hcm-* スタイルを流用
+     ═══════════════════════════════════════════ */}}
+<div class="tg-hero">
+  <p class="tg-hero-eyebrow">Urayasu · Maihama Travel Guide</p>
+  <h1>Your local guide to<br>Tokyo Disney Resort &amp; Urayasu</h1>
+  <p class="tg-hero-lead">From choosing a hotel near the parks to getting in from the airport, dining and souvenirs — practical, hand-checked guides written by a local editorial team based in Urayasu, Japan.</p>
+</div>
+
+{{/* Plan your trip — 5 sections */}}
+<div class="section-head">
+  <h2>Plan your trip</h2>
+</div>
+<div class="tg-purpose-grid">
+  <a class="tg-purpose-card" href="{{ "/travel-guide/hotels/" | absLangURL }}">
+    <i class="ti ti-bed" aria-hidden="true"></i>
+    <div class="tg-purpose-title">Hotels</div>
+    <div class="tg-purpose-desc">All 48 hotels, compared by area &amp; price</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">
+    <i class="ti ti-route" aria-hidden="true"></i>
+    <div class="tg-purpose-title">Access</div>
+    <div class="tg-purpose-desc">From the airports &amp; Tokyo Station</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
+    <i class="ti ti-camera" aria-hidden="true"></i>
+    <div class="tg-purpose-title">Sightseeing</div>
+    <div class="tg-purpose-desc">Maihama · Urayasu · Shin-Urayasu</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">
+    <i class="ti ti-gift" aria-hidden="true"></i>
+    <div class="tg-purpose-title">Food &amp; Souvenirs</div>
+    <div class="tg-purpose-desc">Local eats &amp; gifts to take home</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">
+    <i class="ti ti-taxi" aria-hidden="true"></i>
+    <div class="tg-purpose-title">Taxi</div>
+    <div class="tg-purpose-desc">Fixed-fare airport taxis</div>
+  </a>
+  <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/" | absLangURL }}">
+    <i class="ti ti-map-search" aria-hidden="true"></i>
+    <div class="tg-purpose-title">Full guide</div>
+    <div class="tg-purpose-desc">See the complete travel guide</div>
+  </a>
+</div>
+
+{{/* Hotel comparison map banner */}}
+<a href="{{ "/travel-guide/hotels/compare/" | absLangURL }}" class="hcm-list-banner">
+  <span class="hcm-list-banner-left">
+    <i class="ti ti-map-2" aria-hidden="true"></i>
+    <span>
+      <strong>Hotel Comparison Map</strong>
+      <span class="hcm-list-banner-sub">Filter the area's hotels by location, facilities and price on one map</span>
+    </span>
+  </span>
+  <span class="hcm-list-banner-cta">Compare on map →</span>
+</a>
+
+{{/* Choose a hotel by need */}}
+<div class="section-head" style="margin-bottom:6px;">
+  <h2>Choose a hotel by need</h2>
+</div>
+<p class="tg-section-sub">Find the right stay from 40+ hotels near the parks.</p>
+<div class="tg-hotelneed-grid">
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
+    <i class="ti ti-mood-kid" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">Family-friendly</div>
+    <div class="tg-hotelneed-desc">Rooms &amp; amenities for kids</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/budget/" | absLangURL }}">
+    <i class="ti ti-coin" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">Budget</div>
+    <div class="tg-hotelneed-desc">Best value for money</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/access/" | absLangURL }}">
+    <i class="ti ti-walk" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">Best access</div>
+    <div class="tg-hotelneed-desc">Close to parks, stations, airports</div>
+  </a>
+</div>
+
+{{/* Featured hotels */}}
+<div class="section-head">
+  <h2>Featured hotels</h2>
+  <a class="section-more" href="{{ "/travel-guide/hotels/" | absLangURL }}">See all →</a>
+</div>
+<div class="tg-featured-grid">
+  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/hilton-tokyo-bay/" | absLangURL }}">
+    <div class="tg-featured-band tg-featured-band--official">
+      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
+      <span class="tg-featured-badge tg-featured-badge--official">OFFICIAL</span>
+    </div>
+    <div class="tg-featured-body">
+      <div class="tg-featured-name">Hilton Tokyo Bay</div>
+      <div class="tg-featured-meta">Maihama · 828 rooms</div>
+      <div class="tg-featured-tags">
+        <span>Family</span><span>24h store</span>
+      </div>
+    </div>
+  </a>
+  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/grand-nikko-tokyo-bay/" | absLangURL }}">
+    <div class="tg-featured-band tg-featured-band--official">
+      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
+      <span class="tg-featured-badge tg-featured-badge--official">OFFICIAL</span>
+    </div>
+    <div class="tg-featured-body">
+      <div class="tg-featured-name">Grand Nikko Tokyo Bay</div>
+      <div class="tg-featured-meta">Maihama · 770 rooms</div>
+      <div class="tg-featured-tags">
+        <span>By station</span><span>Onsen</span>
+      </div>
+    </div>
+  </a>
+  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/mystays-shin-urayasu/" | absLangURL }}">
+    <div class="tg-featured-band tg-featured-band--budget">
+      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
+      <span class="tg-featured-badge tg-featured-badge--budget">BUDGET</span>
+    </div>
+    <div class="tg-featured-body">
+      <div class="tg-featured-name">MyStays Shin-Urayasu</div>
+      <div class="tg-featured-meta">Shin-Urayasu · Free shuttle</div>
+      <div class="tg-featured-tags tg-featured-tags--budget">
+        <span>Value</span><span>Long stay</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+{{/* Japanese site cross-link */}}
+<div class="tg-cross-link" style="margin-top:32px;">
+  <div>
+    <h3>Looking for the Japanese edition?</h3>
+    <p>This guide is part of Urayasu Portal, a local-media site run by a team in Urayasu. The full Japanese site also covers city news, dining and life in the area.</p>
+  </div>
+  <a class="tg-cross-btn" href="/">日本語サイトへ →</a>
+</div>
+
+{{- else }}
 
 {{/* カテゴリ → CSSクラスのマッピング */}}
 {{- $catClass := dict
@@ -192,4 +333,5 @@
   </aside>
 </div>
 
+{{- end }}{{/* end JA home */}}
 {{- end }}
