@@ -23,14 +23,16 @@
 - ✅ **welcia-maihama-area**（削除・誤りを是正）→ 新規 `seims-maihama`(**ドラッグセイムス舞浜店** 富士見5-7-40・8:00-23:45)。**「隣接ウェルシア」は誤り**で、記事本文(henna-hotel-maihama.md)・CSV売店列も訂正。富士見にウエルシアは存在しない
 - ✅ **seiyu-urayasu-ekimae**（住所是正）→ 西友浦安店 住所を「当代島」→**北栄1-14-1**に訂正・24時間・改装中。**将来トライアルに転換予定**（転換時にユーザー指示で更新）
 
-## C. 新たに判明したホテル館内/隣接店（ホテルリンクの拡充候補）
-新リストで初めて特定できたホテル併設店。必要ならホテルCSVの施設リンク列に追加可能。
+## C. 新たに判明したホテル館内/隣接店 → 館内店舗IDに紐付け済み（2026-06-29）
+新リストで初めて特定できたホテル併設店を、各ホテルCSVの「館内店舗ID」にリンク。
 
-- **poi-002** ローソン オリエンタルホテル東京ベイ店 → oriental-tokyo-bay
-- **poi-006** ナチュラルローソン プラナ東京ベイ店 → mitsui-garden-prana
-- **poi-008** ローソン コンフォートスイーツ東京ベイ店 → comfort-suites-tokyo-bay
-- **poi-063** ファミリーマート エミオン東京ベイ／S店 → emion-tokyo-bay（emion-familymartの別店舗）
-- **poi-072** ファーストセレクト（東京ベイ舞浜ホテル内）→ maihama-hotel-first-resort
+- ✅ **poi-002** ローソン オリエンタルホテル東京ベイ店 → oriental-tokyo-bay（館内店舗ID。brightonの最寄でもある＝共用）
+- ✅ **poi-006** ナチュラルローソン プラナ東京ベイ店 → mitsui-garden-prana（館内店舗ID）
+- ✅ **poi-008** ローソン コンフォートスイーツ東京ベイ店 → comfort-suites-tokyo-bay（館内店舗ID。celebration-wishの最寄でもある＝共用）
+- ✅ **poi-063** ファミリーマート エミオン東京ベイ／S店 → emion-tokyo-bay（emion-familymart;poi-063 の2店）
+- ✅ **poi-072** ファーストセレクト（東京ベイ舞浜ホテル内）→ maihama-hotel-first-resort（館内店舗ID）
+
+→ 館内店舗IDを持つホテル 26軒。逆引き例 `check-facilities.ps1 -Facility poi-002` で brighton(最寄)＋oriental(館内) の共用関係を確認可能。
 
 ## D. 同一チェーンで複数店舗（参考・重複ではなく別店舗）
 
