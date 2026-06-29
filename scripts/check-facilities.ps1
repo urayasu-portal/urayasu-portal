@@ -142,11 +142,11 @@ foreach ($f in $facs) {
 }
 if ($stale.Count -eq 0) { Write-Host "   OK（なし）" -ForegroundColor Green } else { $stale | ForEach-Object { Write-Host "   ⚠ $_" -ForegroundColor Yellow }; $issues += $stale.Count }
 
-# 4) どのホテルからもリンクされていない施設（情報）
-Write-Host "[4] 未リンク施設（情報・記事本文のみで参照の可能性）"
+# 4) どのホテルからもリンクされていない施設（情報。地域POIは大半が未リンクで正常）
+Write-Host "[4] 未リンク施設（情報・地域参照POIは未リンクが通常）"
 $orphan = @()
 foreach ($f in $facs) { $id = $f.id.Trim(); if ($f.status.Trim() -ne 'closed' -and -not $refByFac.ContainsKey($id)) { $orphan += $id } }
-if ($orphan.Count -eq 0) { Write-Host "   なし" -ForegroundColor Green } else { Write-Host ("   " + ($orphan -join ', ')) -ForegroundColor DarkGray }
+Write-Host ("   未リンク {0} 件（うちホテル併設候補はレポート参照）" -f $orphan.Count) -ForegroundColor DarkGray
 
 Write-Host "==================================================================="
 Write-Host ("施設 {0} 件 / 紐付け列を持つホテル {1} 軒 / 要対応 {2} 件" -f $facs.Count, (($hotels | Where-Object { $_.'館内店舗ID' -or $_.'最寄コンビニID' -or $_.'最寄ドラッグID' -or $_.'最寄スーパーID' }).Count), $issues)
