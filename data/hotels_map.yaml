@@ -487,6 +487,8 @@ hotels:
     flags: [bath]
     facilities:
       - key: "bath"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F129892%2F129892.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルシーサイド江戸川"
     address: "〒134-0086 東京都江戸川区臨海町6-2-2（葛西臨海公園内）"
   - slug: "cvs-bay-hotel"
@@ -507,6 +509,8 @@ hotels:
     flags: [laundry]
     facilities:
       - key: "laundry"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F165087%2F165087.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルイルフィオーレ葛西"
     address: "〒134-0084 東京都江戸川区東葛西6-5-8"
   - slug: "hotel-ilfiore-kasai-annex"
@@ -516,6 +520,8 @@ hotels:
     flags: [laundry]
     facilities:
       - key: "laundry"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F189226%2F189226.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルイルフィオーレ葛西 ANNEX"
     address: "〒134-0084 東京都江戸川区東葛西6-1-7"
   - slug: "hotel-lumiere-kasai"
@@ -525,6 +531,8 @@ hotels:
     flags: [laundry]
     facilities:
       - key: "laundry"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F20242%2F20242.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルルミエール葛西"
     address: "〒134-0083 東京都江戸川区中葛西5-41-20"
   - slug: "livemax-kasai-ekimae"
@@ -534,6 +542,8 @@ hotels:
     flags: [laundry]
     facilities:
       - key: "laundry"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F153534%2F153534.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルリブマックス葛西駅前"
     address: "〒134-0084 東京都江戸川区東葛西6-1-3"
   - slug: "superhotel-myoden"
