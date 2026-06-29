@@ -98,12 +98,12 @@ Listed in the Chiba Taxi Association's station directory:
 
 | Company | Phone |
 |---|---|
-| Hinode Daiichi Kotsu | 047-328-4530 |
-| Urayasu Taxi | 047-701-2000 |
-| Kunugiyama Kotsu | 047-442-1515 |
-| Mitsuya Emitas Taxi | 0120-566-678 |
-| Toyo Taxi | 047-397-3222 |
-| Keisei Taxi Central | 047-495-5519 |
+| <a href="https://chiba.0152.jp/" target="_blank" rel="noopener">Hinode Daiichi Kotsu</a> | 047-328-4530 |
+| <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">Urayasu Taxi</a> | 047-701-2000 |
+| <a href="https://kunugiyama.net/" target="_blank" rel="noopener">Kunugiyama Kotsu</a> | 047-442-1515 |
+| <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">Mitsuya Emitas Taxi</a> | 0120-566-678 |
+| <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">Toyo Taxi</a> | 047-397-3222 |
+| <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">Keisei Taxi Central</a> | 047-495-5519 |
 
 ※ Dispatch availability, booking conditions, and fares vary by company — confirm directly.
 
@@ -123,11 +123,11 @@ This JR Keiyo / Musashino Line station is the nearest for bay-area hotels in the
 
 | Company | Phone |
 |---|---|
-| Keisei Taxi Central | 047-495-5519 |
-| Toyo Taxi | 047-397-3222 |
-| Hinode Daiichi Kotsu | 047-328-4530 |
-| Mitsuya Emitas Taxi | 0120-566-678 |
-| Urayasu Taxi | 047-701-2000 |
+| <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">Keisei Taxi Central</a> | 047-495-5519 |
+| <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">Toyo Taxi</a> | 047-397-3222 |
+| <a href="https://chiba.0152.jp/" target="_blank" rel="noopener">Hinode Daiichi Kotsu</a> | 047-328-4530 |
+| <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">Mitsuya Emitas Taxi</a> | 0120-566-678 |
+| <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">Urayasu Taxi</a> | 047-701-2000 |
 | RUN DO | 047-701-3005 |
 
 ※ Dispatch availability, booking conditions, and fares vary by company — confirm directly.
@@ -148,13 +148,13 @@ This is the gateway to Tokyo Disney Resort. Demand spikes sharply after park clo
 
 | Company | Phone |
 |---|---|
-| Hinode Daiichi Kotsu | 047-328-4530 |
-| Yahatakotsu | 047-334-1166 |
-| Mitsuya Emitas Taxi | 0120-566-678 |
-| Urayasu Taxi | 047-701-2000 |
-| Toyo Taxi | 047-397-3222 |
-| Yachiyo Taxi | 047-483-1234 |
-| Keisei Taxi Central | 047-495-5519 |
+| <a href="https://chiba.0152.jp/" target="_blank" rel="noopener">Hinode Daiichi Kotsu</a> | 047-328-4530 |
+| <a href="https://yawatakotsu.jp/" target="_blank" rel="noopener">Yahatakotsu</a> | 047-334-1166 |
+| <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">Mitsuya Emitas Taxi</a> | 0120-566-678 |
+| <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">Urayasu Taxi</a> | 047-701-2000 |
+| <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">Toyo Taxi</a> | 047-397-3222 |
+| <a href="https://ytaxi.jp/" target="_blank" rel="noopener">Yachiyo Taxi</a> | 047-483-1234 |
+| <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">Keisei Taxi Central</a> | 047-495-5519 |
 
 ※ Dispatch availability, booking conditions, and fares vary by company — confirm directly.
 
