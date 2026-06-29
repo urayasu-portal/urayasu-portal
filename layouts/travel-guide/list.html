@@ -158,21 +158,6 @@
   </div>
   <a class="tg-cross-btn" href="/life-guide/">くらしの便利ガイドへ →</a>
 </div>
-
-{{/* 関連する最新記事 (日本語のみ) / Latest articles (JP only) */}}
-{{- $relatedPosts := where $allPosts "Params.categories" "intersect" (slice "ニュース" "イベント" "グルメ・カフェ" "グルメカフェ") }}
-{{- $relatedPosts = first 6 $relatedPosts }}
-{{- if $relatedPosts }}
-<div class="section-head">
-  <h2>浦安の最新情報</h2>
-  <a class="section-more" href="/">すべての記事 →</a>
-</div>
-<div class="article-grid">
-  {{- range $relatedPosts }}
-  {{- partial "article-card.html" . }}
-  {{- end }}
-</div>
-{{- end }}
 {{- end }}
 
 {{- end }}
