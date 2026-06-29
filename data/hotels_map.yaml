@@ -242,6 +242,8 @@ hotels:
     facilities:
       - key: "laundry"
       - key: "shuttle"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F172068%2F172068.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "HOTELユーラシア舞浜ANNEX"
     address: "〒279-0032 千葉県浦安市千鳥10-5"
   - slug: "hyatt-regency-tokyo-bay"
