@@ -23,7 +23,7 @@ An apartment-style hotel just 1–2 minutes on foot from Urayasu Station (Tokyo 
 | Phone | 047-702-8091 |
 | Area | Urayasu Station area (Apartment-style Hotel) |
 | Check-in / Check-out | 15:00 / 10:00 |
-| Official Website | [bay-hotel.jp/urayasu/](https://bay-hotel.jp/urayasu/) |
+| Official Website | [bay-hotel.jp (EN)](https://www.bay-hotel.jp/eng/) |
 
 ---
 
@@ -60,8 +60,11 @@ Urayasu Station → Tokyo Metro Tozai Line express: approx. 18 min to Otemachi (
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (30 m², up to 4 guests)**

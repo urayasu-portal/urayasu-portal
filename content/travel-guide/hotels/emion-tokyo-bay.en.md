@@ -24,7 +24,7 @@ Hotel Emion Tokyo Bay is the only Tokyo Disney Resort Partner Hotel with a natur
 | Area | Shin-Urayasu (TDR Partner Hotel) |
 | Rooms | 584 |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [hotel-emion.jp](https://hotel-emion.jp) |
+| Official Website | [hotel-emion.jp (EN)](https://www.hotel-emion.jp/english/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Natural Hot Spring "Emion Onsen" (the defining advantage)**

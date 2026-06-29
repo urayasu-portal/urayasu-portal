@@ -59,8 +59,11 @@ About 20 min to Otemachi / 18 min to Nihonbashi on the Tozai Line (one stop to U
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms**

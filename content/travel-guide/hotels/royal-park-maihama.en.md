@@ -25,7 +25,7 @@ Royal Park Hotel The Maihama opened on February 13, 2026 — the largest new hot
 | Rooms | 750 |
 | Check-in / Check-out | 15:00 / 12:00 |
 | Opened | February 13, 2026 |
-| Official Website | Confirm on official website (Royal Park Hotel The Maihama) |
+| Official Website | [royalparkhotels.co.jp (EN)](https://www.royalparkhotels.co.jp/en/the/maihama/index.html) |
 
 ---
 
@@ -63,8 +63,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (750 rooms, 4-seas theme)**

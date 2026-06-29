@@ -26,6 +26,9 @@ pagination:
 
 params:
   env: production
+  # ヘッダーロゴの主表示。英語サイトでもブランド名は「浦安ぽーたる」で統一（site.Title はSEOの<title>接尾辞用に言語別のまま）
+  label:
+    text: 浦安ぽーたる
   # リニューアル: 明色専用デザイン（モックアップ準拠）。auto時のダーク崩れを防ぐためライト固定＋トグル非表示。
   defaultTheme: light
   disableThemeToggle: true

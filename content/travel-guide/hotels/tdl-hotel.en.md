@@ -24,7 +24,7 @@ Tokyo Disneyland Hotel is the highest-prestige Disney Hotel at Tokyo Disneyland.
 | Area | Maihama (TDR Disney Hotel) |
 | Rooms | 706 |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [tokyodisneyresort.jp/hotel/tdh.html](https://tokyodisneyresort.jp/hotel/tdh.html) |
+| Official Website | [tokyodisneyresort.jp (EN)](https://www.tokyodisneyresort.jp/en/hotel/tdh.html) |
 
 ---
 
@@ -62,8 +62,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Walkway Connection to TDL (the defining feature)**

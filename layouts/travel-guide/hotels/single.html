@@ -71,26 +71,34 @@
     <article class="post-single">
 
       <header class="post-header">
-        <nav class="post-breadcrumb" aria-label="パンくずリスト">
+        <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else }}パンくずリスト{{ end }}">
+          {{- if $isEN }}
+          <a href="/en/">Home</a>
+          <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+          <a href="/en/travel-guide/">Travel Guide</a>
+          <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+          <a class="hg-bc" href="/en/travel-guide/hotels/">Hotels</a>
+          {{- else }}
           <a href="/">ホーム</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <a href="/travel-guide/">観光ガイド</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <a class="hg-bc" href="/travel-guide/hotels/">ホテル</a>
+          {{- end }}
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <span class="bc-current" aria-current="page">{{ .Title | truncate 24 "…" }}</span>
         </nav>
 
         <div class="hg-badges">
-          <span class="hg-badge">ホテル</span>
+          <span class="hg-badge">{{ if $isEN }}Hotel{{ else }}ホテル{{ end }}</span>
           {{- with .Params.badge }}<span class="hg-badge-sub">{{ . }}</span>{{- end }}
-          {{- if in .Params.tags "オフィシャルホテル" }}<span class="hg-badge-sub">TDRオフィシャル</span>{{- end }}
+          {{- if or (in .Params.tags "オフィシャルホテル") (in .Params.tags "Official Hotel") }}<span class="hg-badge-sub">{{ if $isEN }}TDR Official{{ else }}TDRオフィシャル{{ end }}</span>{{- end }}
         </div>
 
         <h1 class="post-title">{{ .Title }}</h1>
 
         <div class="hg-meta">
-          {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ .Lastmod.Format "2006年1月2日" }}更新</span>{{- end }}
+          {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ if $isEN }}Updated {{ .Lastmod.Format "Jan 2, 2006" }}{{ else }}{{ .Lastmod.Format "2006年1月2日" }}更新{{ end }}</span>{{- end }}
           {{- with $area }}<span><i class="ti ti-map-pin" aria-hidden="true"></i> {{ . }}</span>{{- end }}
         </div>
       </header>
@@ -115,7 +123,7 @@
       {{/* 注意書き（コーラル＝accent追従） */}}
       <div class="lg-disclaimer">
         <i class="ti ti-info-circle" aria-hidden="true"></i>
-        <span>掲載の料金・サービス内容は変動します。最新の空室・料金・各種条件は、必ず各ホテルの公式サイトでご確認ください。</span>
+        <span>{{ if $isEN }}Rates and services listed here are subject to change. Always confirm the latest availability, prices and conditions on each hotel's official website.{{ else }}掲載の料金・サービス内容は変動します。最新の空室・料金・各種条件は、必ず各ホテルの公式サイトでご確認ください。{{ end }}</span>
       </div>
 
       {{/* 近隣の似たホテル */}}
@@ -146,7 +154,7 @@
       <footer class="post-footer">
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         {{- with $.GetTerms $tags }}
-        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> タグ：</span></div>
+        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> {{ if $isEN }}Tags:{{ else }}タグ：{{ end }}</span></div>
         <ul class="post-tags">
           {{- range . }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{- end }}
         </ul>
@@ -159,10 +167,10 @@
   {{/* ───── サイドバー ───── */}}
   <aside class="home-sidebar">
 
-    {{/* 目次 */}}
+    {{/* 目次 / Contents */}}
     {{- if ge (len $toc) 2 }}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> 目次</div>
+      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> {{ if $isEN }}Contents{{ else }}目次{{ end }}</div>
       <nav class="lg-toc-list">
         {{- range $toc }}
         <a href="#{{ .id }}">{{ .title }}</a>
@@ -190,22 +198,36 @@
     </div>
     {{- end }}
 
-    {{/* ホテルを比較して選ぶ */}}
+    {{/* ホテルを比較して選ぶ / Compare hotels */}}
     <div class="lg-side-cta">
       <i class="ti ti-checklist" aria-hidden="true"></i>
+      {{- if $isEN }}
+      <div class="lg-side-cta-title">Compare &amp; choose a hotel</div>
+      <div class="lg-side-cta-desc">Filter by family, budget &amp; access</div>
+      <a class="lg-side-cta-btn" href="/en/travel-guide/hotels/compare/">Open comparison map</a>
+      {{- else }}
       <div class="lg-side-cta-title">ホテルを比較して選ぶ</div>
       <div class="lg-side-cta-desc">子連れ・格安・アクセスで絞る</div>
       <a class="lg-side-cta-btn" href="/travel-guide/hotels/compare/">比較ページへ</a>
+      {{- end }}
     </div>
 
-    {{/* 人気のホテル記事 */}}
+    {{/* 人気のホテル記事 / Popular hotel guides */}}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-star" aria-hidden="true"></i> 人気のホテル記事</div>
+      <div class="widget-title"><i class="ti ti-star" aria-hidden="true"></i> {{ if $isEN }}Popular hotel guides{{ else }}人気のホテル記事{{ end }}</div>
+      {{- if $isEN }}
+      <ol class="lg-pop-rank">
+        <li><a href="/en/travel-guide/hotels/kids/"><span class="lg-pop-num">1</span><span>Family-friendly hotels compared</span></a></li>
+        <li><a href="/en/travel-guide/hotels/budget/"><span class="lg-pop-num">2</span><span>How to choose a budget hotel</span></a></li>
+        <li><a href="/en/travel-guide/hotels/access/"><span class="lg-pop-num">3</span><span>Hotels compared by access</span></a></li>
+      </ol>
+      {{- else }}
       <ol class="lg-pop-rank">
         <li><a href="/travel-guide/hotels/kids/"><span class="lg-pop-num">1</span><span>子連れ向けホテル比較</span></a></li>
         <li><a href="/travel-guide/hotels/budget/"><span class="lg-pop-num">2</span><span>格安ホテルの選び方</span></a></li>
         <li><a href="/travel-guide/hotels/access/"><span class="lg-pop-num">3</span><span>アクセスで選ぶホテル比較</span></a></li>
       </ol>
+      {{- end }}
     </div>
 
   </aside>

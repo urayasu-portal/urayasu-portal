@@ -60,8 +60,11 @@ About 25 min to Otemachi on the Tozai Line (about 7 min to Urayasu).
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms**

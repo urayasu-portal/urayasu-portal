@@ -23,7 +23,7 @@ Urayasu Sun Hotel is a compact business hotel approximately 3 minutes on foot fr
 | Phone | 047-355-2611 |
 | Area | Urayasu Station area (Business Hotel) |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | Confirm on official website (Urayasu Sun Hotel) |
+| Official Website | [urayasu-sun-hotel.com (EN)](https://www.urayasu-sun-hotel.com/english/) |
 
 ---
 
@@ -61,8 +61,11 @@ Urayasu Station → Tokyo Metro Tozai Line: approx. 16–18 min to Nihonbashi/Ot
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Free Continental Breakfast (from 6:00am)**

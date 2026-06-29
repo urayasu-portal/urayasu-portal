@@ -23,7 +23,7 @@ Dreamgate Maihama has an access advantage that stands alone in the area: **both 
 | Phone | Confirm on official website |
 | Area | Maihama Station (direct connection) |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | Confirm on official website (Dreamgate Maihama) |
+| Official Website | [hdgm.jp (EN)](https://www.hdgm.jp/en/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line (di
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Direct Station Connection (the defining feature)**

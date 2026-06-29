@@ -24,7 +24,7 @@ Hotel Oriental Tokyo Bay is a TDR Partner Hotel offering an exceptional shuttle 
 | Area | Shin-Urayasu (TDR Partner Hotel) |
 | Rooms | 511 |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [hhotels.co.jp/oriental-tokyobay/](https://hhotels.co.jp/oriental-tokyobay/) |
+| Official Website | [oriental-hotel.co.jp (EN)](https://www.oriental-hotel.co.jp/en/) |
 
 ---
 
@@ -62,8 +62,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **TDR Shuttle (69 buses/day — the area's highest frequency)**

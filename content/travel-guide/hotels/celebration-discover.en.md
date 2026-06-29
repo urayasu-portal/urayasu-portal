@@ -23,7 +23,7 @@ Tokyo Disneyland Celebration Hotel: Discover is one of two value-type Disney Hot
 | Phone | 047-381-1188 |
 | Area | Shin-Urayasu (TDR Value-Type Disney Hotel) |
 | Check-in / Check-out | 15:00–24:00 / 11:00 |
-| Official Website | [tokyodisneyresort.jp/hotel/dch.html](https://tokyodisneyresort.jp/hotel/dch.html) |
+| Official Website | [tokyodisneyresort.jp (EN)](https://www.tokyodisneyresort.jp/en/hotel/dch.html) |
 
 ---
 
@@ -62,8 +62,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (4 beds standard)**

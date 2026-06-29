@@ -23,7 +23,7 @@ ibis Styles Tokyo Bay is an Accor design hotel in the Shin-Urayasu area. The 14:
 | Phone | Confirm on official website |
 | Area | Shin-Urayasu (Design Hotel) |
 | Check-in / Check-out | 14:00 / 12:00 |
-| Official Website | [all.accor.com (ibis Styles Tokyo Bay)](https://all.accor.com) |
+| Official Website | [ibisstylestokyobay.com (EN)](https://ibisstylestokyobay.com/en/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Check-In (14:00 — 1 hour earlier than typical)**

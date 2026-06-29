@@ -3,6 +3,7 @@
 {{- /* ── データ読み込み ─────────────────────────── */}}
 {{- $hotels  := hugo.Data.hotels }}
 {{- $mapData := hugo.Data.hotels_map }}
+{{- $isEN := eq .Lang "en" }}
 
 {{- /* slug → マップデータ のインデックス構築 */}}
 {{- $mapIndex := dict }}
@@ -12,37 +13,44 @@
   {{- end }}
 {{- end }}
 
+{{- /* ── 全掲載軒数（name-only含む。一覧ページと一致させる） */}}
+{{- $total := 0 }}{{- range $hotels.areas }}{{- $total = add $total .count }}{{- end }}
+
 {{- /* ── ホテルJSON配列の構築 ─────────────────── */}}
 {{- $hotelData := slice }}
 {{- range $hotels.areas }}
   {{- $areaTag  := .tag }}
-  {{- $areaName := .name }}
+  {{- $areaName := cond $isEN .name_en .name }}
   {{- range .hotels }}
     {{- if ne .policy "name-only" }}
       {{- $md := index $mapIndex .slug | default dict }}
       {{- /* カテゴリ分類 */}}
       {{- $cat := "other" }}
-      {{- if eq .category "ディズニーホテル" }}{{- $cat = "disney" }}
-      {{- else if eq .category "オフィシャルホテル" }}{{- $cat = "official" }}
-      {{- else if eq .category "パートナーホテル" }}{{- $cat = "partner" }}
-      {{- else if eq .category "グッドネイバーホテル" }}{{- $cat = "goodneighbor" }}
+      {{- $catLabel := .category }}
+      {{- if eq .category "ディズニーホテル" }}{{- $cat = "disney" }}{{ if $isEN }}{{ $catLabel = "Disney Hotel" }}{{ end }}
+      {{- else if eq .category "オフィシャルホテル" }}{{- $cat = "official" }}{{ if $isEN }}{{ $catLabel = "Official Hotel" }}{{ end }}
+      {{- else if eq .category "パートナーホテル" }}{{- $cat = "partner" }}{{ if $isEN }}{{ $catLabel = "Partner Hotel" }}{{ end }}
+      {{- else if eq .category "グッドネイバーホテル" }}{{- $cat = "goodneighbor" }}{{ if $isEN }}{{ $catLabel = "Good Neighbor Hotel" }}{{ end }}
+      {{- else if and $isEN (eq .category "その他のホテル") }}{{ $catLabel = "Other Hotel" }}
       {{- end }}
       {{- $grp := $cat }}
+      {{- $url := printf "/travel-guide/hotels/%s/" .slug }}
+      {{- if $isEN }}{{ $url = printf "/en/travel-guide/hotels/%s/" .slug }}{{ end }}
       {{- $entry := dict
           "id"          .slug
-          "name"        .name
+          "name"        (cond $isEN .name_en .name)
           "area"        $areaTag
           "areaName"    $areaName
           "cat"         $cat
           "grp"         $grp
-          "category"    .category
+          "category"    $catLabel
           "price_guide" .price_guide
           "price_min"   ($md.price_min | default 0)
-          "feature"     .feature
+          "feature"     (cond $isEN .feature_en .feature)
           "lat"         ($md.lat | default 0)
           "lng"         ($md.lng | default 0)
           "flags"       ($md.flags | default slice)
-          "url"         (printf "/travel-guide/hotels/%s/" .slug)
+          "url"         $url
       }}
       {{- $hotelData = $hotelData | append $entry }}
     {{- end }}
@@ -52,57 +60,61 @@
 {{- /* ── ヒーロー ─────────────────────────────── */}}
 <div class="tg-hotels-hero" style="margin-bottom:24px">
   <div class="tg-hotels-eyebrows">
-    <span class="tg-hotels-eyebrow is-solid"><i class="ti ti-map-2" aria-hidden="true"></i> 比較マップ</span>
-    <span class="tg-hotels-eyebrow">舞浜・新浦安・浦安エリア</span>
+    <span class="tg-hotels-eyebrow is-solid"><i class="ti ti-map-2" aria-hidden="true"></i> {{ if $isEN }}Comparison Map{{ else }}比較マップ{{ end }}</span>
+    <span class="tg-hotels-eyebrow">{{ if $isEN }}Maihama / Shin-Urayasu / Urayasu{{ else }}舞浜・新浦安・浦安エリア{{ end }}</span>
   </div>
-  <h1 class="tg-hotels-title">ホテル比較マップ</h1>
-  <p class="tg-hotels-lead">全 <strong>{{ len $hotelData }}</strong> 軒をマップと一覧で同時確認。エリア・設備・価格で絞り込むとリストとマップが同時に更新されます。</p>
+  <h1 class="tg-hotels-title">{{ if $isEN }}Hotel Comparison Map{{ else }}ホテル比較マップ{{ end }}</h1>
+  {{- if $isEN }}
+  <p class="tg-hotels-lead">Of all <strong>{{ $total }}</strong> hotels in the area, the <strong>{{ len $hotelData }}</strong> with detailed data are shown together on a map and list. Filter by area, facilities and price and both the list and the map update at once.</p>
+  {{- else }}
+  <p class="tg-hotels-lead">全 <strong>{{ $total }}</strong> 軒のうち、詳細データのある <strong>{{ len $hotelData }}</strong> 軒をマップと一覧で同時確認。エリア・設備・価格で絞り込むとリストとマップが同時に更新されます。</p>
+  {{- end }}
   <div style="margin-top:10px">
-    <a href="/travel-guide/hotels/" class="hcm-back-link"><i class="ti ti-arrow-left" aria-hidden="true"></i> ホテル一覧（シーン別ガイド）に戻る</a>
+    <a href="{{ if $isEN }}/en/travel-guide/hotels/{{ else }}/travel-guide/hotels/{{ end }}" class="hcm-back-link"><i class="ti ti-arrow-left" aria-hidden="true"></i> {{ if $isEN }}Back to the hotel guide{{ else }}ホテル一覧（シーン別ガイド）に戻る{{ end }}</a>
   </div>
 </div>
 
 {{- /* ── フィルターコントロール ─────────────────── */}}
 <div class="hcm-controls" id="hcm-controls">
   <div class="hcm-sort-row">
-    <label for="hcm-sort" class="hcm-filter-label">並び替え</label>
+    <label for="hcm-sort" class="hcm-filter-label">{{ if $isEN }}Sort{{ else }}並び替え{{ end }}</label>
     <select class="hcm-sort" id="hcm-sort" onchange="hcmSortChange(this.value)">
-      <option value="default">エリア順（デフォルト）</option>
-      <option value="price-asc">価格が安い順</option>
-      <option value="price-desc">価格が高い順</option>
-      <option value="name">ホテル名順（50音）</option>
+      <option value="default">{{ if $isEN }}By area (default){{ else }}エリア順（デフォルト）{{ end }}</option>
+      <option value="price-asc">{{ if $isEN }}Price: low to high{{ else }}価格が安い順{{ end }}</option>
+      <option value="price-desc">{{ if $isEN }}Price: high to low{{ else }}価格が高い順{{ end }}</option>
+      <option value="name">{{ if $isEN }}Hotel name (A–Z){{ else }}ホテル名順（50音）{{ end }}</option>
     </select>
-    <span class="hcm-count-inline"><strong id="hcm-count">{{ len $hotelData }}</strong> 軒 表示中</span>
-    <button class="hcm-clear-btn" id="hcm-clear" onclick="hcmClearFilters()" style="display:none" aria-label="絞り込みをリセット">すべて表示 ×</button>
+    <span class="hcm-count-inline"><strong id="hcm-count">{{ len $hotelData }}</strong> {{ if $isEN }}shown{{ else }}軒 表示中{{ end }}</span>
+    <button class="hcm-clear-btn" id="hcm-clear" onclick="hcmClearFilters()" style="display:none" aria-label="{{ if $isEN }}Reset filters{{ else }}絞り込みをリセット{{ end }}">{{ if $isEN }}Clear all ×{{ else }}すべて表示 ×{{ end }}</button>
   </div>
   <div class="hcm-filter-row">
-    <span class="hcm-filter-label">エリア</span>
-    <button class="hcm-chip is-active" data-chip-type="area" data-chip-val="*" onclick="hcmChipClick('area','*')">すべて</button>
+    <span class="hcm-filter-label">{{ if $isEN }}Area{{ else }}エリア{{ end }}</span>
+    <button class="hcm-chip is-active" data-chip-type="area" data-chip-val="*" onclick="hcmChipClick('area','*')">{{ if $isEN }}All{{ else }}すべて{{ end }}</button>
     {{- range $hotels.areas }}
     {{- $hasMap := false }}
     {{- range .hotels }}{{- if ne .policy "name-only" }}{{ $hasMap = true }}{{- end }}{{- end }}
     {{- if $hasMap }}
-    <button class="hcm-chip" data-chip-type="area" data-chip-val="{{ .tag }}" onclick="hcmChipClick('area','{{ .tag }}')">{{ .name | replaceRE "エリア$" "" }}</button>
+    <button class="hcm-chip" data-chip-type="area" data-chip-val="{{ .tag }}" onclick="hcmChipClick('area','{{ .tag }}')">{{ if $isEN }}{{ .name_en }}{{ else }}{{ .name | replaceRE "エリア$" "" }}{{ end }}</button>
     {{- end }}
     {{- end }}
   </div>
   <div class="hcm-filter-row">
-    <span class="hcm-filter-label">区分</span>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="disney" onclick="hcmChipClick('grp','disney')"><i class="ti ti-building-castle" aria-hidden="true"></i> ディズニー</button>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="official" onclick="hcmChipClick('grp','official')"><i class="ti ti-building-skyscraper" aria-hidden="true"></i> オフィシャル</button>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="partner" onclick="hcmChipClick('grp','partner')"><i class="ti ti-star" aria-hidden="true"></i> パートナー</button>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="other" onclick="hcmChipClick('grp','other')"><i class="ti ti-home" aria-hidden="true"></i> その他</button>
+    <span class="hcm-filter-label">{{ if $isEN }}Type{{ else }}区分{{ end }}</span>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="disney" onclick="hcmChipClick('grp','disney')"><i class="ti ti-building-castle" aria-hidden="true"></i> {{ if $isEN }}Disney{{ else }}ディズニー{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="official" onclick="hcmChipClick('grp','official')"><i class="ti ti-building-skyscraper" aria-hidden="true"></i> {{ if $isEN }}Official{{ else }}オフィシャル{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="partner" onclick="hcmChipClick('grp','partner')"><i class="ti ti-star" aria-hidden="true"></i> {{ if $isEN }}Partner{{ else }}パートナー{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="other" onclick="hcmChipClick('grp','other')"><i class="ti ti-home" aria-hidden="true"></i> {{ if $isEN }}Other{{ else }}その他{{ end }}</button>
   </div>
   <div class="hcm-filter-row">
-    <span class="hcm-filter-label">設備</span>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="shuttle" onclick="hcmChipClick('flag','shuttle')"><i class="ti ti-bus" aria-hidden="true"></i> シャトル</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="bath" onclick="hcmChipClick('flag','bath')"><i class="ti ti-ripple" aria-hidden="true"></i> 大浴場</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="pool" onclick="hcmChipClick('flag','pool')"><i class="ti ti-swimming" aria-hidden="true"></i> 室内プール</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="laundry" onclick="hcmChipClick('flag','laundry')"><i class="ti ti-wash-machine" aria-hidden="true"></i> ランドリー</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="convenience" onclick="hcmChipClick('flag','convenience')"><i class="ti ti-building-store" aria-hidden="true"></i> 館内コンビニ</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="limousine" onclick="hcmChipClick('flag','limousine')"><i class="ti ti-plane" aria-hidden="true"></i> 空港リムジン</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="station" onclick="hcmChipClick('flag','station')"><i class="ti ti-train" aria-hidden="true"></i> 駅直結/1分</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="kitchen" onclick="hcmChipClick('flag','kitchen')"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i> ミニキッチン</button>
+    <span class="hcm-filter-label">{{ if $isEN }}Facilities{{ else }}設備{{ end }}</span>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="shuttle" onclick="hcmChipClick('flag','shuttle')"><i class="ti ti-bus" aria-hidden="true"></i> {{ if $isEN }}Shuttle{{ else }}シャトル{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="bath" onclick="hcmChipClick('flag','bath')"><i class="ti ti-ripple" aria-hidden="true"></i> {{ if $isEN }}Public bath{{ else }}大浴場{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="pool" onclick="hcmChipClick('flag','pool')"><i class="ti ti-swimming" aria-hidden="true"></i> {{ if $isEN }}Indoor pool{{ else }}室内プール{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="laundry" onclick="hcmChipClick('flag','laundry')"><i class="ti ti-wash-machine" aria-hidden="true"></i> {{ if $isEN }}Laundry{{ else }}ランドリー{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="convenience" onclick="hcmChipClick('flag','convenience')"><i class="ti ti-building-store" aria-hidden="true"></i> {{ if $isEN }}In-house store{{ else }}館内コンビニ{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="limousine" onclick="hcmChipClick('flag','limousine')"><i class="ti ti-plane" aria-hidden="true"></i> {{ if $isEN }}Airport limo{{ else }}空港リムジン{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="station" onclick="hcmChipClick('flag','station')"><i class="ti ti-train" aria-hidden="true"></i> {{ if $isEN }}By station{{ else }}駅直結/1分{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="kitchen" onclick="hcmChipClick('flag','kitchen')"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i> {{ if $isEN }}Kitchen{{ else }}ミニキッチン{{ end }}</button>
   </div>
 </div>
 
@@ -125,7 +137,7 @@
         {{- if .flags }}
         <div class="hcm-card-flags">
           {{- range .flags }}
-          <span class="hcm-flag"><i class="ti ti-{{ if eq . "shuttle" }}bus{{ else if eq . "bath" }}ripple{{ else if eq . "pool" }}swimming{{ else if eq . "laundry" }}wash-machine{{ else if eq . "convenience" }}building-store{{ else if eq . "limousine" }}plane{{ else if eq . "station" }}train{{ else if eq . "kitchen" }}tools-kitchen-2{{ else }}star{{ end }}" aria-hidden="true"></i>{{ if eq . "shuttle" }}シャトル{{ else if eq . "bath" }}大浴場{{ else if eq . "pool" }}室内プール{{ else if eq . "laundry" }}ランドリー{{ else if eq . "convenience" }}館内コンビニ{{ else if eq . "limousine" }}空港リムジン{{ else if eq . "station" }}駅直結/1分{{ else if eq . "kitchen" }}ミニキッチン{{ end }}</span>
+          <span class="hcm-flag"><i class="ti ti-{{ if eq . "shuttle" }}bus{{ else if eq . "bath" }}ripple{{ else if eq . "pool" }}swimming{{ else if eq . "laundry" }}wash-machine{{ else if eq . "convenience" }}building-store{{ else if eq . "limousine" }}plane{{ else if eq . "station" }}train{{ else if eq . "kitchen" }}tools-kitchen-2{{ else }}star{{ end }}" aria-hidden="true"></i>{{ if $isEN }}{{ if eq . "shuttle" }}Shuttle{{ else if eq . "bath" }}Public bath{{ else if eq . "pool" }}Indoor pool{{ else if eq . "laundry" }}Laundry{{ else if eq . "convenience" }}In-house store{{ else if eq . "limousine" }}Airport limo{{ else if eq . "station" }}By station{{ else if eq . "kitchen" }}Kitchen{{ end }}{{ else }}{{ if eq . "shuttle" }}シャトル{{ else if eq . "bath" }}大浴場{{ else if eq . "pool" }}室内プール{{ else if eq . "laundry" }}ランドリー{{ else if eq . "convenience" }}館内コンビニ{{ else if eq . "limousine" }}空港リムジン{{ else if eq . "station" }}駅直結/1分{{ else if eq . "kitchen" }}ミニキッチン{{ end }}{{ end }}</span>
           {{- end }}
         </div>
         {{- end }}
@@ -135,14 +147,14 @@
   </div>
 
   <div class="hcm-map-col">
-    <div id="hcm-map" aria-label="ホテル位置マップ（Leaflet / OpenStreetMap）"></div>
+    <div id="hcm-map" aria-label="{{ if $isEN }}Hotel location map (Leaflet / OpenStreetMap){{ else }}ホテル位置マップ（Leaflet / OpenStreetMap）{{ end }}"></div>
     <div class="hcm-map-legend">
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#7B1FA2"></span>ディズニー</span>
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E05535"></span>オフィシャル</span>
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E8A020"></span>パートナー</span>
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>その他</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#7B1FA2"></span>{{ if $isEN }}Disney{{ else }}ディズニー{{ end }}</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E05535"></span>{{ if $isEN }}Official{{ else }}オフィシャル{{ end }}</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E8A020"></span>{{ if $isEN }}Partner{{ else }}パートナー{{ end }}</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>{{ if $isEN }}Other{{ else }}その他{{ end }}</span>
     </div>
-    <p class="hcm-map-note"><i class="ti ti-info-circle" aria-hidden="true"></i> ピンをクリックするとカードがハイライトします。絞り込み外のピンは薄く表示されます。座標は近似値です。</p>
+    <p class="hcm-map-note"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if $isEN }}Click a pin to highlight its card. Pins outside the current filter are dimmed. Coordinates are approximate.{{ else }}ピンをクリックするとカードがハイライトします。絞り込み外のピンは薄く表示されます。座標は近似値です。{{ end }}</p>
   </div>
 </div>
 
@@ -180,14 +192,14 @@
   };
 
   var FLAG_META = {
-    shuttle:     { label: 'シャトル',     icon: 'bus' },
-    bath:        { label: '大浴場',       icon: 'ripple' },
-    pool:        { label: '室内プール',   icon: 'swimming' },
-    laundry:     { label: 'ランドリー',   icon: 'wash-machine' },
-    convenience: { label: '館内コンビニ', icon: 'building-store' },
-    limousine:   { label: '空港リムジン', icon: 'plane' },
-    station:     { label: '駅直結/1分',  icon: 'train' },
-    kitchen:     { label: 'ミニキッチン', icon: 'tools-kitchen-2' }
+    shuttle:     { label: {{ if $isEN }}'Shuttle'{{ else }}'シャトル'{{ end }},     icon: 'bus' },
+    bath:        { label: {{ if $isEN }}'Public bath'{{ else }}'大浴場'{{ end }},       icon: 'ripple' },
+    pool:        { label: {{ if $isEN }}'Indoor pool'{{ else }}'室内プール'{{ end }},   icon: 'swimming' },
+    laundry:     { label: {{ if $isEN }}'Laundry'{{ else }}'ランドリー'{{ end }},   icon: 'wash-machine' },
+    convenience: { label: {{ if $isEN }}'In-house store'{{ else }}'館内コンビニ'{{ end }}, icon: 'building-store' },
+    limousine:   { label: {{ if $isEN }}'Airport limo'{{ else }}'空港リムジン'{{ end }}, icon: 'plane' },
+    station:     { label: {{ if $isEN }}'By station'{{ else }}'駅直結/1分'{{ end }},  icon: 'train' },
+    kitchen:     { label: {{ if $isEN }}'Kitchen'{{ else }}'ミニキッチン'{{ end }}, icon: 'tools-kitchen-2' }
   };
 
   /* ── フィルター・ソート ── */
@@ -212,7 +224,7 @@
     } else if (state.sort === 'price-desc') {
       arr.sort(function (a, b) { return (b.price_min || 0) - (a.price_min || 0); });
     } else if (state.sort === 'name') {
-      arr.sort(function (a, b) { return a.name.localeCompare(b.name, 'ja'); });
+      arr.sort(function (a, b) { return a.name.localeCompare(b.name, '{{ if $isEN }}en{{ else }}ja{{ end }}'); });
     }
     return arr;
   }
@@ -315,8 +327,9 @@
     if (sorted.length === 0) {
       listEl.innerHTML = '<div class="hcm-empty">'
         + '<i class="ti ti-search-off" aria-hidden="true"></i>'
-        + '<p>該当するホテルがありません</p>'
-        + '<p style="font-size:12px">絞り込み条件を変更してください</p>'
+        + {{ if $isEN }}'<p>No hotels match your filters</p>'
+        + '<p style="font-size:12px">Try changing the filter conditions</p>'{{ else }}'<p>該当するホテルがありません</p>'
+        + '<p style="font-size:12px">絞り込み条件を変更してください</p>'{{ end }}
         + '</div>';
     } else {
       listEl.innerHTML = sorted.map(buildCard).join('');
@@ -408,7 +421,7 @@
         + '<strong style="font-size:13px;display:block;margin-bottom:2px">' + esc(h.name) + '</strong>'
         + '<span style="font-size:11px;color:#666">' + esc(h.area) + ' ' + esc(h.areaName) + '</span>'
         + (h.price_guide ? '<div style="font-size:12px;color:#E05535;font-weight:700;margin-top:2px">' + esc(h.price_guide) + '</div>' : '')
-        + (h.url ? '<a href="' + esc(h.url) + '" style="display:block;margin-top:6px;font-size:11px;color:#1A5C8A">詳細を見る →</a>' : '')
+        + (h.url ? '<a href="' + esc(h.url) + '" style="display:block;margin-top:6px;font-size:11px;color:#1A5C8A">{{ if $isEN }}View details →{{ else }}詳細を見る →{{ end }}</a>' : '')
         + '</div>';
 
       marker.bindPopup(popup, { maxWidth: 240 });

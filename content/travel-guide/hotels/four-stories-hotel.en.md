@@ -24,7 +24,7 @@ Four Stories Hotel is a small boutique hotel with 26 rooms across 4 floors, each
 | Area | Near Maihama (Boutique Hotel) |
 | Rooms | 26 |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | Confirm on official website |
+| Official Website | [hpdsp.jp (EN)](https://hpdsp.jp/fourstorieshotel/en/) |
 
 ---
 
@@ -61,8 +61,11 @@ Via Maihama Station (JR Keiyo Line) or Shin-Urayasu Station (JR Keiyo Line), app
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (26 rooms, 4 floor themes)**

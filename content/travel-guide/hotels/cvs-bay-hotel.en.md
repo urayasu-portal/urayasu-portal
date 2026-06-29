@@ -61,8 +61,11 @@ About 22 min to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms**

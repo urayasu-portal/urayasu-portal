@@ -23,7 +23,7 @@ Mitsui Garden Hotel Prana Tokyo Bay is a TDR Partner Hotel offering a combinatio
 | Phone | 047-381-1131 |
 | Area | Shin-Urayasu (TDR Partner Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [gardenhotels.co.jp/prana-tokyo-bay/](https://gardenhotels.co.jp/prana-tokyo-bay/) |
+| Official Website | [gardenhotels.co.jp (EN)](https://www.gardenhotels.co.jp/prana-tokyobay/eng/) |
 
 ---
 
@@ -60,8 +60,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Rooftop Large Bath with Sea Views (free for guests, 18:00–9:00)**

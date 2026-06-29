@@ -24,7 +24,7 @@ Hotel Okura Tokyo Bay is a Tokyo Disney Resort Official Hotel with 427 rooms, al
 | Area | Maihama (TDR Official Hotel) |
 | Rooms | 427 |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [okura-tokyobay.co.jp](https://okura-tokyobay.co.jp) |
+| Official Website | [okuratokyobay.net (EN)](https://www.okuratokyobay.net/en/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (all 44 m²+, marble bathroom)**

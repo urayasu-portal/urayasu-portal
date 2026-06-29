@@ -26,7 +26,7 @@ Hilton Tokyo Bay is a Tokyo Disney Resort Official Hotel with 828 rooms, located
 | Area | Maihama (TDR Official Hotel) |
 | Rooms | 828 |
 | Check-in / Check-out | 15:00 (15:00–24:00) / 12:00 |
-| Official Website | [hilton.com (Hilton Tokyo Bay)](https://hilton.com) |
+| Official Website | [hilton.com (EN)](https://www.hilton.com/en/hotels/tyotbtw-hilton-tokyo-bay/) |
 
 ---
 
@@ -64,8 +64,11 @@ From Maihama Station, about 15–20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **In-House Convenience Store (24-Hour — the biggest practical advantage)**

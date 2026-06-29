@@ -33,41 +33,48 @@
 </div>
 
 {{/* ────────────────────────────────────────
-     目的から絞り込む (日本語のみ) / Filter by purpose (JP only)
+     比較マップへの導線 ＋ 目的から絞り込む / Compare banner + Filter by purpose
      ──────────────────────────────────────── */}}
-{{- if not $isEN }}
-<a href="/travel-guide/hotels/compare/" class="hcm-list-banner">
+{{- $compareURL := cond $isEN "/en/travel-guide/hotels/compare/" "/travel-guide/hotels/compare/" }}
+{{- $kidsURL := cond $isEN "/en/travel-guide/hotels/kids/" "/travel-guide/hotels/kids/" }}
+{{- $budgetURL := cond $isEN "/en/travel-guide/hotels/budget/" "/travel-guide/hotels/budget/" }}
+{{- $accessURL := cond $isEN "/en/travel-guide/hotels/access/" "/travel-guide/hotels/access/" }}
+<a href="{{ $compareURL }}" class="hcm-list-banner">
   <span class="hcm-list-banner-left">
     <i class="ti ti-map-2" aria-hidden="true"></i>
     <span>
+      {{- if $isEN }}
+      <strong>Hotel Comparison Map</strong>
+      <span class="hcm-list-banner-sub">Filter the list and map together by area, facilities and price</span>
+      {{- else }}
       <strong>ホテル比較マップ</strong>
       <span class="hcm-list-banner-sub">エリア・設備・価格で一覧と地図を同時に絞り込む</span>
+      {{- end }}
     </span>
   </span>
-  <span class="hcm-list-banner-cta">マップで比較 →</span>
+  <span class="hcm-list-banner-cta">{{ if $isEN }}Compare on map →{{ else }}マップで比較 →{{ end }}</span>
 </a>
 <div class="section-head">
-  <h2>目的から絞り込む</h2>
+  <h2>{{ if $isEN }}Find by Purpose{{ else }}目的から絞り込む{{ end }}</h2>
 </div>
-<p class="tg-section-sub">迷ったら、まずは旅のスタイルから。</p>
+<p class="tg-section-sub">{{ if $isEN }}Not sure where to start? Begin with your travel style.{{ else }}迷ったら、まずは旅のスタイルから。{{ end }}</p>
 <div class="tg-hotelneed-grid">
-  <a class="tg-hotelneed-card" href="/travel-guide/hotels/kids/">
+  <a class="tg-hotelneed-card" href="{{ $kidsURL }}">
     <i class="ti ti-mood-kid" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">子連れ向け</div>
-    <div class="tg-hotelneed-desc">大浴場・客室・設備で選ぶ家族の宿</div>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Family{{ else }}子連れ向け{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Family-friendly stays: baths, spacious rooms, in-house stores{{ else }}大浴場・客室・設備で選ぶ家族の宿{{ end }}</div>
   </a>
-  <a class="tg-hotelneed-card" href="/travel-guide/hotels/budget/">
+  <a class="tg-hotelneed-card" href="{{ $budgetURL }}">
     <i class="ti ti-coin" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">格安</div>
-    <div class="tg-hotelneed-desc">1泊5,000円台〜コスパ重視で泊まる</div>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Budget{{ else }}格安{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Value-focused stays from around ¥5,000 a night{{ else }}1泊5,000円台〜コスパ重視で泊まる{{ end }}</div>
   </a>
-  <a class="tg-hotelneed-card" href="/travel-guide/hotels/access/">
+  <a class="tg-hotelneed-card" href="{{ $accessURL }}">
     <i class="ti ti-walk" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">アクセス重視</div>
-    <div class="tg-hotelneed-desc">パーク・駅・空港に近い宿で選ぶ</div>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Access{{ else }}アクセス重視{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Hotels close to the parks, stations or airports{{ else }}パーク・駅・空港に近い宿で選ぶ{{ end }}</div>
   </a>
 </div>
-{{- end }}
 
 {{/* ────────────────────────────────────────
      エリアで探す / Area Overview
@@ -80,9 +87,11 @@
   {{- range $hotels.areas }}
   {{- $icon := "ti-map-pin" }}
   {{- if eq .tag "A" }}{{ $icon = "ti-building-castle" }}{{ else if eq .tag "B" }}{{ $icon = "ti-anchor" }}{{ else if eq .tag "C" }}{{ $icon = "ti-building-skyscraper" }}{{ else if eq .tag "D" }}{{ $icon = "ti-building" }}{{ else if eq .tag "E" }}{{ $icon = "ti-ripple" }}{{ else if eq .tag "F" }}{{ $icon = "ti-train" }}{{ else if eq .tag "G" }}{{ $icon = "ti-map-pin" }}{{ end }}
-  <button type="button" class="tg-area-card" data-filter-type="area" data-filter-val="{{ .tag }}" aria-label="{{ .name }}（{{ .count }}{{ if $isEN }} hotels{{ else }}軒{{ end }}）で絞り込む">
-    <span class="tg-area-name"><i class="ti {{ $icon }}" aria-hidden="true"></i>{{ .name | replaceRE "エリア$" "" }}</span>
-    <span class="tg-area-desc">{{ .note }}</span>
+  {{- $an := cond $isEN .name_en (.name | replaceRE "エリア$" "") }}
+  {{- $anote := cond $isEN .note_en .note }}
+  <button type="button" class="tg-area-card" data-filter-type="area" data-filter-val="{{ .tag }}" aria-label="{{ if $isEN }}Filter by {{ $an }} ({{ .count }} hotels){{ else }}{{ .name }}（{{ .count }}軒）で絞り込む{{ end }}">
+    <span class="tg-area-name"><i class="ti {{ $icon }}" aria-hidden="true"></i>{{ $an }}</span>
+    <span class="tg-area-desc">{{ $anote }}</span>
     <span class="tg-area-count">{{ .count }}<span>{{- if $isEN }} hotels{{- else }} 軒{{- end }}</span></span>
   </button>
   {{- end }}
@@ -128,15 +137,13 @@
   {{- end }}
 </div>
 
-{{- if not $isEN }}
-<div class="tg-hotel-filter" role="group" aria-label="ホテルの区分で絞り込む">
-  <button type="button" class="tg-hotel-chip is-active" data-filter-type="group" data-filter-val="all">すべて</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="disney">ディズニー</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="official">オフィシャル</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="partner">パートナー</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="other">その他</button>
+<div class="tg-hotel-filter" role="group" aria-label="{{ if $isEN }}Filter hotels by type{{ else }}ホテルの区分で絞り込む{{ end }}">
+  <button type="button" class="tg-hotel-chip is-active" data-filter-type="group" data-filter-val="all">{{ if $isEN }}All{{ else }}すべて{{ end }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="disney">{{ if $isEN }}Disney{{ else }}ディズニー{{ end }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="official">{{ if $isEN }}Official{{ else }}オフィシャル{{ end }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="partner">{{ if $isEN }}Partner{{ else }}パートナー{{ end }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="other">{{ if $isEN }}Other{{ else }}その他{{ end }}</button>
 </div>
-{{- end }}
 
 <div class="tg-hotel-table-wrap">
   <table class="tg-hotel-table" id="tg-hotel-table">
@@ -153,6 +160,7 @@
       {{- range $hotels.areas }}
       {{- $areaTag := .tag }}
       {{- $areaName := .name }}
+      {{- $areaNameEN := .name_en }}
       {{- range .hotels }}
       {{- $cat := "other" }}
       {{- if eq .category "ディズニーホテル" }}{{ $cat = "disney" }}
@@ -162,17 +170,18 @@
       {{- else if eq .category "—" }}{{ $cat = "fashion" }}
       {{- end }}
       <tr data-cat="{{ $cat }}" data-area="{{ $areaTag }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
+        {{- $hname := cond $isEN .name_en .name }}
         <td>
           {{- if and .individual_page (eq .policy "normal") }}
           {{- $href := printf "/travel-guide/hotels/%s/" .slug }}
           {{- if $isEN }}{{ $href = printf "/en/travel-guide/hotels/%s/" .slug }}{{ end }}
-          <a href="{{ $href }}">{{ .name }}</a>
+          <a href="{{ $href }}">{{ $hname }}</a>
           {{- else }}
-          {{ .name }}
+          {{ $hname }}
           {{- end }}
           {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
         </td>
-        <td>{{ $areaName | replaceRE "エリア$" "" }}</td>
+        <td>{{ if $isEN }}{{ $areaNameEN }}{{ else }}{{ $areaName | replaceRE "エリア$" "" }}{{ end }}</td>
         <td style="font-size:0.82em;">
           {{- if $isEN }}
           {{- if eq .category "ディズニーホテル" }}Disney Hotels
@@ -187,7 +196,7 @@
           {{- if .price_guide }}{{ .price_guide }}{{- else }}&mdash;{{- end }}
         </td>
         <td style="font-size:0.82em;color:var(--up-muted);">
-          {{- if .feature }}{{ .feature }}{{- end }}
+          {{- if $isEN }}{{ with .feature_en }}{{ . }}{{ end }}{{- else }}{{ with .feature }}{{ . }}{{ end }}{{- end }}
         </td>
       </tr>
       {{- end }}

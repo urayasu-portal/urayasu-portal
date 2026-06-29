@@ -21,6 +21,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F74732%2F74732.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーランドホテル"
     address: "〒279-8505 千葉県浦安市舞浜29-1"
+    name_en: "Tokyo Disneyland Hotel"
   - slug: "miracosta"
     lat: 35.6269
     lng: 139.8881
@@ -34,6 +35,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F74733%2F74733.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーシー・ホテルミラコスタ"
     address: "〒279-8519 千葉県浦安市舞浜1-13"
+    name_en: "Tokyo DisneySea Hotel MiraCosta"
   - slug: "fantasy-springs-hotel"
     lat: 35.6289
     lng: 139.8764
@@ -46,6 +48,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F189000%2F189000.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーシー・ファンタジースプリングスホテル"
     address: "〒279-8526 千葉県浦安市舞浜1-2"
+    name_en: "Tokyo DisneySea Fantasy Springs Hotel"
   - slug: "ambassador-hotel"
     lat: 35.6334
     lng: 139.8878
@@ -58,6 +61,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F72737%2F72737.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ディズニーアンバサダーホテル"
     address: "〒279-8522 千葉県浦安市舞浜2-11"
+    name_en: "Disney Ambassador Hotel"
   - slug: "toy-story-hotel"
     lat: 35.6259
     lng: 139.8746
@@ -71,6 +75,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F183493%2F183493.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "トイ・ストーリーホテル"
     address: "〒279-8506 千葉県浦安市舞浜1-47"
+    name_en: "Tokyo Disney Resort Toy Story Hotel"
   - slug: "celebration-wish"
     lat: 35.6388
     lng: 139.9305
@@ -84,6 +89,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F151431%2F151431.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーセレブレーションホテル：ウィッシュ"
     address: "千葉県浦安市明海7丁目1-1"
+    name_en: "Tokyo Disney Celebration Hotel: Wish"
   - slug: "celebration-discover"
     lat: 35.6384
     lng: 139.9308
@@ -97,6 +103,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F151431%2F151431.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーセレブレーションホテル：ディスカバー"
     address: "千葉県浦安市日の出7-1-1"
+    name_en: "Tokyo Disney Celebration Hotel: Discover"
   - slug: "hotel-okura-tokyo-bay"
     lat: 35.6259
     lng: 139.8760
@@ -109,6 +116,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1304%2F1304.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルオークラ東京ベイ"
     address: "千葉県浦安市舞浜1-8"
+    name_en: "Hotel Okura Tokyo Bay"
   - slug: "grand-nikko-tokyo-bay"
     lat: 35.6293
     lng: 139.8740
@@ -122,6 +130,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F179245%2F179245.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "グランドニッコー東京ベイ舞浜"
     address: "千葉県浦安市舞浜1-7"
+    name_en: "Grand Nikko Tokyo Bay Maihama"
   - slug: "sheraton-grande-tokyo-bay"
     lat: 35.6257
     lng: 139.8782
@@ -139,6 +148,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F27896%2F27896.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "シェラトン・グランデ・トーキョーベイ"
     address: "千葉県浦安市舞浜1-9"
+    name_en: "Sheraton Grande Tokyo Bay Hotel"
   - slug: "hilton-tokyo-bay"
     lat: 35.6272
     lng: 139.8739
@@ -155,6 +165,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1405%2F1405.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ヒルトン東京ベイ"
     address: "〒279-0031 千葉県浦安市舞浜1-8"
+    name_en: "Hilton Tokyo Bay"
   - slug: "maihama-hotel-first-resort"
     lat: 35.6317
     lng: 139.8739
@@ -168,6 +179,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F27929%2F27929.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ベイ舞浜ホテル ファーストリゾート"
     address: "千葉県浦安市舞浜1-6"
+    name_en: "Tokyo Bay Maihama Hotel First Resort"
   - slug: "dreamgate-maihama"
     lat: 35.6357
     lng: 139.8850
@@ -182,6 +194,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F19901%2F19901.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルドリームゲート舞浜"
     address: "千葉県浦安市舞浜26-5"
+    name_en: "Hotel Dream Gate Maihama"
   - slug: "maihama-view-hotel"
     lat: 35.6307
     lng: 139.8739
@@ -196,6 +209,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F54127%2F54127.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "舞浜ビューホテル by HULIC"
     address: "〒279-0031 千葉県浦安市舞浜1-34"
+    name_en: "Maihama View Hotel by HULIC"
   - slug: "royal-park-maihama"
     lat: 35.6267
     lng: 139.8972
@@ -209,6 +223,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F196513%2F196513.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ザ ロイヤルパークホテル 舞浜リゾート 東京ベイ"
     address: "〒279-0032 千葉県浦安市千鳥13-1"
+    name_en: "The Royal Park Hotel Maihama Resort Tokyo Bay"
   - slug: "mystays-maihama"
     lat: 35.6328
     lng: 139.8924
@@ -220,6 +235,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F39203%2F39203.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルマイステイズ舞浜"
     address: "〒279-0025 千葉県浦安市鉄鋼通り3-5-1"
+    name_en: "HOTEL MYSTAYS Maihama"
   - slug: "maihama-eurasia"
     lat: 35.6272
     lng: 139.8957
@@ -234,6 +250,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F67868%2F67868.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "スパ＆ホテル 舞浜ユーラシア"
     address: "千葉県浦安市千鳥13-20"
+    name_en: "SPA & HOTEL Maihama Eurasia"
   - slug: "eurasia-annex"
     lat: 35.6236
     lng: 139.9028
@@ -246,6 +263,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F172068%2F172068.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "HOTELユーラシア舞浜ANNEX"
     address: "〒279-0032 千葉県浦安市千鳥10-5"
+    name_en: "Hotel Eurasia Maihama Annex"
   - slug: "hyatt-regency-tokyo-bay"
     lat: 35.6377
     lng: 139.9259
@@ -260,6 +278,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F172919%2F172919.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ハイアット リージェンシー 東京ベイ"
     address: "千葉県浦安市明海5-8-23"
+    name_en: "Hyatt Regency Tokyo Bay"
   - slug: "comfort-suites-tokyo-bay"
     lat: 35.6386
     lng: 139.9274
@@ -272,6 +291,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F165869%2F165869.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "コンフォートスイーツ東京ベイ"
     address: "〒279-0014 千葉県浦安市明海5-8-15"
+    name_en: "Comfort Suites Tokyo Bay"
   - slug: "brighton-tokyo-bay"
     lat: 35.6500
     lng: 139.9116
@@ -285,6 +305,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F978%2F978.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "浦安ブライトンホテル東京ベイ"
     address: "千葉県浦安市美浜1-9"
+    name_en: "Urayasu Brighton Hotel Tokyo Bay"
   - slug: "oriental-tokyo-bay"
     lat: 35.6509
     lng: 139.9127
@@ -300,6 +321,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1238%2F1238.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "オリエンタルホテル東京ベイ"
     address: "千葉県浦安市美浜1-8-2"
+    name_en: "Oriental Hotel Tokyo Bay"
   - slug: "emion-tokyo-bay"
     lat: 35.6477
     lng: 139.9203
@@ -315,6 +337,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F38529%2F38529.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルエミオン東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出1-1-1"
+    name_en: "Hotel Emion Tokyo Bay"
   - slug: "mitsui-garden-prana"
     lat: 35.6361
     lng: 139.9243
@@ -331,6 +354,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F67046%2F67046.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "三井ガーデンホテルプラナ東京ベイ"
     address: "千葉県浦安市明海6-2-1"
+    name_en: "Mitsui Garden Hotel Prana Tokyo Bay"
   - slug: "hoshinoresorts-1955-tokyo-bay"
     lat: 35.6375
     lng: 139.9320
@@ -344,6 +368,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F188799%2F188799.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "星野リゾート 1955 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出7-2-3"
+    name_en: "1955 Tokyo Bay by Hoshino Resorts"
   - slug: "lagent-tokyo-bay"
     lat: 35.6407
     lng: 139.9296
@@ -356,6 +381,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F158612%2F158612.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ラ・ジェント・ホテル東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出5-7-1"
+    name_en: "La'gent Hotel Tokyo Bay"
   - slug: "ibis-styles-tokyo-bay"
     lat: 35.6490
     lng: 139.9217
@@ -369,6 +395,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F167677%2F167677.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "イビス スタイルズ 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出2-1-1"
+    name_en: "ibis Styles Tokyo Bay"
   - slug: "mystays-shin-urayasu"
     lat: 35.6440
     lng: 139.9156
@@ -380,6 +407,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F76849%2F76849.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "マイステイズ新浦安コンファレンスセンター"
     address: "〒279-0014 千葉県浦安市明海2-1-4"
+    name_en: "HOTEL MYSTAYS Shin Urayasu Conference Center"
   - slug: "flexstay-shin-urayasu"
     lat: 35.642556
     lng: 139.904282
@@ -393,6 +421,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F30925%2F30925.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "フレックステイイン新浦安"
     address: "〒279-0022 千葉県浦安市今川4-1-29"
+    name_en: "FLEXSTAY INN Shin Urayasu"
   - slug: "henna-hotel-maihama"
     lat: 35.6450
     lng: 139.8877
@@ -404,6 +433,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F160670%2F160670.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "変なホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見5-3-23"
+    name_en: "Henn na Hotel Maihama Tokyo Bay"
   - slug: "four-stories-hotel"
     lat: 35.650735
     lng: 139.891043
@@ -415,6 +445,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F182605%2F182605.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "フォーストーリーズホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見1-11-31"
+    name_en: "Four Stories Hotel Maihama Tokyo Bay"
   - slug: "hiyori-hotel-maihama"
     lat: 35.646345
     lng: 139.897186
@@ -427,6 +458,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F161050%2F161050.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "日和ホテル舞浜"
     address: "〒279-0042 千葉県浦安市東野2-25-8"
+    name_en: "HIYORI HOTEL Maihama"
   - slug: "viewfort-urayasu"
     lat: 35.66471
     lng: 139.892687
@@ -438,6 +470,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1199%2F1199.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "浦安ビューフォートホテル"
     address: "〒279-0004 千葉県浦安市猫実4-18-28"
+    name_en: "Urayasu Beaufort Hotel"
   - slug: "hotel-daigo-urayasu"
     lat: 35.666597
     lng: 139.895219
@@ -447,6 +480,7 @@ hotels:
       - key: "station"
     name: "ホテル醍醐"
     address: "〒279-0002 千葉県浦安市北栄1-11-1"
+    name_en: "Hotel Daigo"
   - slug: "bayhotel-urayasu"
     lat: 35.665547
     lng: 139.894629
@@ -459,6 +493,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F167313%2F167313.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "BAYHOTEL浦安駅前"
     address: "〒279-0002 千葉県浦安市北栄1-15-28"
+    name_en: "BAY HOTEL Urayasu-ekimae"
   - slug: "urayasu-sun-hotel"
     lat: 35.665574
     lng: 139.890164
@@ -471,6 +506,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F143299%2F143299.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "浦安サンホテル"
     address: "〒279-0001 千葉県浦安市当代島1-19-13"
+    name_en: "Urayasu Sun Hotel"
   - slug: "premium-monday-maihama-view-1"
     lat: 35.644359
     lng: 139.877470
@@ -482,6 +518,7 @@ hotels:
       - key: "shuttle"
     name: "Premium hotel MONday 舞浜ビューⅠ"
     address: "〒134-0085 東京都江戸川区南葛西6-2-22"
+    name_en: "Premium hotel MONday Maihama View I"
   - slug: "hotel-seaside-edogawa"
     lat: 35.642820
     lng: 139.859376
@@ -493,6 +530,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F129892%2F129892.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルシーサイド江戸川"
     address: "〒134-0086 東京都江戸川区臨海町6-2-2（葛西臨海公園内）"
+    name_en: "Hotel Seaside Edogawa"
   - slug: "cvs-bay-hotel"
     lat: 35.666803
     lng: 139.923990
@@ -504,6 +542,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F84838%2F84838.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "CVS・BAY HOTEL"
     address: "〒272-0127 千葉県市川市塩浜2-33-1（本館）"
+    name_en: "CVS BAY HOTEL"
   - slug: "hotel-ilfiore-kasai"
     lat: 35.662815
     lng: 139.874746
@@ -515,6 +554,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F165087%2F165087.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルイルフィオーレ葛西"
     address: "〒134-0084 東京都江戸川区東葛西6-5-8"
+    name_en: "Hotel Il Fiore Kasai"
   - slug: "hotel-ilfiore-kasai-annex"
     lat: 35.661294
     lng: 139.873346
@@ -526,6 +566,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F189226%2F189226.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルイルフィオーレ葛西 ANNEX"
     address: "〒134-0084 東京都江戸川区東葛西6-1-7"
+    name_en: "Hotel Il Fiore Kasai ANNEX"
   - slug: "hotel-lumiere-kasai"
     lat: 35.661161
     lng: 139.872502
@@ -537,6 +578,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F20242%2F20242.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルルミエール葛西"
     address: "〒134-0083 東京都江戸川区中葛西5-41-20"
+    name_en: "Hotel Lumiere Kasai"
   - slug: "livemax-kasai-ekimae"
     lat: 35.660810
     lng: 139.873359
@@ -548,6 +590,7 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F153534%2F153534.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルリブマックス葛西駅前"
     address: "〒134-0084 東京都江戸川区東葛西6-1-3"
+    name_en: "HOTEL LiVEMAX Kasai-Ekimae"
   - slug: "superhotel-myoden"
     lat: 35.691631
     lng: 139.926597
@@ -559,3 +602,4 @@ hotels:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F40250%2F40250.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "スーパーホテル東西線・市川・妙典駅前"
     address: "〒272-0111 千葉県市川市妙典4-4-27 妙典センタービル"
+    name_en: "Super Hotel Tozai Line Ichikawa-Myoden"

@@ -23,7 +23,7 @@ Grand Nikko Tokyo Bay Maihama (Tokyo Disney Resort Official Hotel) is instantly 
 | Phone | 047-354-1111 |
 | Area | Maihama (TDR Official Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [grannikkohotels.com/tokyo-bay-maihama/](https://grannikkohotels.com/tokyo-bay-maihama/) |
+| Official Website | [tokyobay.grandnikko.com (EN)](https://tokyobay.grandnikko.com/en/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Atrium (Japan's largest — the defining visual experience)**

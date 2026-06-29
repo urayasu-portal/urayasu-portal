@@ -23,7 +23,7 @@ A business hotel about 1-minute walk from Urayasu Station on the Tokyo Metro Toz
 | Phone | 047-355-8888 |
 | Area | Urayasu Station area (Business Hotel) |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | Confirm on official website |
+| Official Website | [urayasubeaufort.jp (EN)](https://www.urayasubeaufort.jp/en/) |
 
 ---
 
@@ -60,8 +60,11 @@ Urayasu Station → Tokyo Metro Tozai Line express: approx. 16 min to Nihonbashi
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms**

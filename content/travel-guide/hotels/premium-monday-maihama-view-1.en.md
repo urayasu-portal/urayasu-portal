@@ -23,7 +23,7 @@ Premium hotel MONday Maihama View I opened in December 2025. All 57 rooms are sp
 | Area | Urayasu Vicinity (Minami-Kasai, Edogawa) |
 | Check-in / Check-out | 15:00–26:00 / 11:00 |
 | Price Guide | from approx. ¥11,000 / 2 guests (dynamic) |
-| Official Website | [hotel-monday.com/maihama1](https://hotel-monday.com/maihama1/) |
+| Official Website | [hotel-monday.com (EN)](https://hotel-monday.com/maihama1/?wovn=en) |
 
 ---
 
@@ -59,8 +59,11 @@ About 15 min from Kasai-Rinkai-Koen Station to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms**

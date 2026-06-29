@@ -24,7 +24,7 @@ Fantasy Springs Hotel, which opened in June 2024 alongside the Fantasy Springs e
 | Area | Maihama (TDR Disney Hotel, 2024 newest opening) |
 | Rooms | Grand Chateau: 56 / Fantasy Chateau: 419 (total 475) |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [tokyodisneyresort.jp/hotel/fsh.html](https://tokyodisneyresort.jp/hotel/fsh.html) |
+| Official Website | [tokyodisneyresort.jp (EN)](https://www.tokyodisneyresort.jp/en/hotel/fsh.html) |
 
 ---
 
@@ -62,8 +62,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Grand Chateau (56 rooms — the most exclusive option)**

@@ -99,6 +99,9 @@ foreach ($r in $csv) {
   }
   [void]$sb.AppendLine("    name: ""$($r.'施設名')""")
   [void]$sb.AppendLine("    address: ""$($r.'住所')""")
+  $nameEn = ($r.'英語表記').Trim()
+  if (-not $nameEn) { $nameEn = ($r.'施設名').Trim() }
+  [void]$sb.AppendLine("    name_en: ""$nameEn""")
   $count++
 }
 

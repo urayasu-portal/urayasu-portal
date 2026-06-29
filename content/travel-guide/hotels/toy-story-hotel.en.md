@@ -25,7 +25,7 @@ Toy Story Hotel is a Disney Hotel opened in 2022 with a theme based on the inter
 | Rooms | 595 |
 | Check-in / Check-out | 15:00 / 12:00 |
 | Opened | 2022 |
-| Official Website | [tokyodisneyresort.jp/hotel/tsh.html](https://tokyodisneyresort.jp/hotel/tsh.html) |
+| Official Website | [tokyodisneyresort.jp (EN)](https://www.tokyodisneyresort.jp/en/hotel/tsh.html) |
 
 ---
 
@@ -63,8 +63,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (595 rooms, Andy's room theme)**

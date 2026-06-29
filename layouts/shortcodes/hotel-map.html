@@ -6,15 +6,17 @@
 {{- range .Site.Data.hotels_map.hotels }}
   {{- if eq .slug $slug }}{{ $h = . }}{{ end }}
 {{- end }}
+{{- $isEN := eq .Page.Language.Lang "en" }}
 {{- with $h }}
+{{- $dispName := cond $isEN (.name_en | default .name) .name }}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <div class="hg-map">
-<div class="hg-map-head"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="hg-map-name">{{ .name }}</div><div class="hg-map-addr">{{ .address }}</div></div></div>
+<div class="hg-map-head"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="hg-map-name">{{ $dispName }}</div><div class="hg-map-addr">{{ .address }}</div></div></div>
 <div class="hg-map-embed"><div id="hotel-map"></div></div>
 <div class="hg-map-actions">
-<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&{{ querify "query" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>Googleマップで開く</a>
-<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&{{ querify "destination" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>経路を調べる</a>
+<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&{{ querify "query" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>{{ if $isEN }}Open in Google Maps{{ else }}Googleマップで開く{{ end }}</a>
+<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&{{ querify "destination" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>{{ if $isEN }}Get directions{{ else }}経路を調べる{{ end }}</a>
 </div></div>
 <script>
 (function(){
@@ -30,7 +32,7 @@
     iconSize: [36, 52], iconAnchor: [18, 52], popupAnchor: [0, -54]
   });
   L.marker([LAT, LNG], { icon: pin }).addTo(map)
-    .bindPopup('<strong style="font-size:13px">' + {{ .name | jsonify }} + '</strong><br><span style="font-size:11px;color:#666">' + {{ .address | jsonify }} + '</span>')
+    .bindPopup('<strong style="font-size:13px">' + {{ $dispName | jsonify }} + '</strong><br><span style="font-size:11px;color:#666">' + {{ .address | jsonify }} + '</span>')
     .openPopup();
 })();
 </script>

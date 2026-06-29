@@ -26,7 +26,7 @@ Note: From July 2026, the TDR shuttle service from this hotel is being reduced â
 | Area | Maihama area |
 | Rooms | 100 |
 | Check-in / Check-out | 15:00 / 10:00 |
-| Official Website | Confirm on official website (Henn na Hotel) |
+| Official Website | [global.hennnahotel.com (EN)](https://global.hennnahotel.com/en/maihama/) |
 
 ---
 
@@ -63,8 +63,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (Guinness robot + deep soaking tub in all rooms)**

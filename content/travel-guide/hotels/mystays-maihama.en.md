@@ -24,7 +24,7 @@ MyStays Hotel Maihama is a compact 90-room hotel with a distinctive advantage: a
 | Area | Maihama Area B (Budget Hotel) |
 | Rooms | 90 |
 | Check-in / Check-out | 15:00 / 10:00 |
-| Official Website | [mystays.com/maihama/](https://mystays.com/maihama/) |
+| Official Website | [cm.mystays.com (EN)](https://cm.mystays.com/en-us/location-hotel-mystays-maihama-chiba/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (foot massager in all rooms)**

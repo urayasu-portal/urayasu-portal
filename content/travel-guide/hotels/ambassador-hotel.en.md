@@ -24,7 +24,7 @@ Disney Ambassador Hotel, the first Disney Hotel at Tokyo Disney Resort (opened 2
 | Area | Maihama (TDR Disney Hotel) |
 | Rooms | 503 |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [tokyodisneyresort.jp/hotel/dah.html](https://tokyodisneyresort.jp/hotel/dah.html) |
+| Official Website | [tokyodisneyresort.jp (EN)](https://www.tokyodisneyresort.jp/en/hotel/dah.html) |
 
 ---
 
@@ -63,8 +63,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Character Dining "Chef Mickey" (the defining attraction)**

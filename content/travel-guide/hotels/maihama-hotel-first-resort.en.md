@@ -23,7 +23,7 @@ Maihama Hotel First Resort holds a historic distinction: it was the **first Offi
 | Phone | Confirm on official website |
 | Area | Maihama (TDR Official Hotel, opened 1983) |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | Confirm on official website (Maihama Hotel First Resort) |
+| Official Website | [maihamahotel-firstresort.jp (EN)](https://www.maihamahotel-firstresort.jp/en/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Themed Concept Rooms**

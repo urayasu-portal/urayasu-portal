@@ -24,7 +24,7 @@ Urayasu Brighton Hotel Tokyo Bay is a Tokyo Disney Resort Partner Hotel connecte
 | Area | Shin-Urayasu (TDR Partner Hotel) |
 | Rooms | 189 (22-floor building) |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [urayasu.brightonhotels.co.jp](https://urayasu.brightonhotels.co.jp) |
+| Official Website | [urayasu.brightonhotels.co.jp (EN)](https://urayasu.brightonhotels.co.jp/global/english/index.html) |
 
 ---
 
@@ -65,8 +65,11 @@ From Shin-Urayasu Station, about 17 min to Tokyo Station on the JR Keiyo Line ex
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (distinctive room types)**

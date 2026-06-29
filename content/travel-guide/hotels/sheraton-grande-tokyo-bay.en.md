@@ -23,7 +23,7 @@ Sheraton Grande Tokyo Bay Hotel is a Tokyo Disney Resort Official Hotel uniquely
 | Phone | 047-355-5555 |
 | Area | Maihama (TDR Official Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [sheratontokyobay.co.jp](https://sheratontokyobay.co.jp) |
+| Official Website | [marriott.com (EN)](https://www.marriott.com/en-us/hotels/tyosi-sheraton-grande-tokyo-bay-hotel/overview/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Large Bath "Maiyu" (marble interior, sauna)**

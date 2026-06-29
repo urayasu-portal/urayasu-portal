@@ -24,7 +24,7 @@ Comfort Suites Tokyo Bay (Choice Hotels). A free shuttle to TDL and TDS runs dai
 | Area | Shin-Urayasu (Business Hotel) |
 | Rooms | 312 |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | [choice-hotels.jp/suites/tokyobay/](https://choice-hotels.jp/suites/tokyobay/) |
+| Official Website | [choicehotels.com (EN)](https://www.choicehotels.com/japan/urayasu-city/comfort-suites-hotels/jp085) |
 
 ---
 
@@ -61,8 +61,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (312 rooms, separate wash area in bathroom)**

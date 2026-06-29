@@ -23,7 +23,7 @@ Hiyori Hotel Maihama is a hotel in the Higashino district offering some genuinel
 | Phone | Confirm on official website |
 | Area | Higashino (Business Hotel) |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | Confirm on official website |
+| Official Website | [maihama.hiyori-hotel.jp (EN)](https://maihama.hiyori-hotel.jp/lang_en/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **In-Room Amenities (foot massager + shoe dryer in all rooms)**

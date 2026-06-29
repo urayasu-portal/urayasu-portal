@@ -24,7 +24,7 @@ Among all Disney Hotels at Tokyo Disney Resort, Tokyo DisneySea Hotel MiraCosta 
 | Area | Maihama (TDR Disney Hotel) |
 | Rooms | 502 |
 | Check-in / Check-out | 15:00 / 12:00 |
-| Official Website | [tokyodisneyresort.jp/hotel/dhm.html](https://tokyodisneyresort.jp/hotel/dhm.html) |
+| Official Website | [tokyodisneyresort.jp (EN)](https://www.tokyodisneyresort.jp/en/hotel/dhm.html) |
 
 ---
 
@@ -64,8 +64,11 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Location (the defining feature)**

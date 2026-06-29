@@ -23,7 +23,7 @@ Flexstay Inn Shin-Urayasu (MyStays group) is an extended-stay hotel where every 
 | Phone | 047-381-8201 |
 | Area | Shin-Urayasu (Extended-Stay Hotel) |
 | Check-in / Check-out | 14:00 / 10:00 |
-| Official Website | [flexstay.com/shinurayasu/](https://flexstay.com/shinurayasu/) |
+| Official Website | [iconia.co.jp (EN)](https://iconia.co.jp/en-us/hotel-flexstay-inn-shin-urayasu-chiba/) |
 
 ---
 
@@ -60,8 +60,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Guest Rooms (mini kitchen in all rooms)**

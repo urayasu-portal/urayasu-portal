@@ -24,7 +24,7 @@ MyStays Hotel Shin-Urayasu Conference Center is a 175-room business hotel in the
 | Area | Shin-Urayasu (Business Hotel with Conference Center) |
 | Rooms | 175 |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | [mystays.com/shin-urayasu-cc/](https://mystays.com/shin-urayasu-cc/) |
+| Official Website | [mystays.com (EN)](https://www.mystays.com/en-us/facilities-hotel-mystays-shin-urayasu-cc-chiba/) |
 
 ---
 
@@ -61,8 +61,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Coin Laundry (24-hour, ¥200/cycle)**

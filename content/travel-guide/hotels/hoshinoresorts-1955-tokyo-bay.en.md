@@ -25,7 +25,7 @@ Hoshino Resorts BEB5 Tokyo Bay opened in June 2024 as Hoshino Resorts' first pro
 | Rooms | 638 (23 types) |
 | Check-in / Check-out | 15:00 / 11:00 |
 | Opened | June 2024 |
-| Official Website | Confirm on official website (Hoshino Resorts BEB5 Tokyo Bay) |
+| Official Website | [hoshinoresorts.com (EN)](https://hoshinoresorts.com/en/hotels/1955tokyobay/) |
 
 ---
 
@@ -63,8 +63,11 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **1955 America Vintage Theme**

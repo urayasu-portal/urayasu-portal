@@ -64,8 +64,11 @@ Urayasu Station → Tokyo Metro Tozai Line: approx. 16–18 min to Nihonbashi/Ot
 
 ---
 
-## Facilities & Services
+## Map
 
+{{< hotel-map >}}
+
+## Facilities & Services
 {{< hotel-facilities >}}
 
 **Year-Round Flat Rate (the defining feature)**
