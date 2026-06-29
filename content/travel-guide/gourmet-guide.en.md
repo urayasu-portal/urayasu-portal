@@ -285,5 +285,5 @@ When sharing information, please include the shop name, address, official URL, o
     <h3>Looking for the right hotel?</h3>
     <p>Scene-based comparison guides for families, budget travelers, and access-focused guests, plus a full list of all 40 hotels.</p>
   </div>
-  <a class="tg-cross-btn" href="{{ "/travel-guide/hotels/" | absLangURL }}">View Hotel Guide →</a>
+  <a class="tg-cross-btn" href="/en/travel-guide/hotels/">View Hotel Guide →</a>
 </div>

@@ -106,5 +106,5 @@ Budget price range. Check the latest availability and rates on booking sites.
 
 ## Related
 
-- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
-- [Access Comparison]({{ "/travel-guide/hotels/access/" | absLangURL }})
+- [Hotel Guide Top](/en/travel-guide/hotels/)
+- [Access Comparison](/en/travel-guide/hotels/access/)

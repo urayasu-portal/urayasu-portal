@@ -4,6 +4,7 @@
     <nav class="header-nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
+            {{- if eq .Lang "en" }}{{ $label_text = "Urayasu Portal" }}{{ end }}
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if hasPrefix site.Params.label.iconSVG "<svg" }}
@@ -13,7 +14,7 @@
             </a>
             {{- end }}
 
-            <span class="logo-subtitle">URAYASU PORTAL</span>
+            {{- if ne .Lang "en" }}<span class="logo-subtitle">URAYASU PORTAL</span>{{- end }}
 
             {{- $lsenabled := (or (not site.Params.disableThemeToggle) (and (not site.Params.disableLangToggle) (hugo.IsMultilingual))) }}
             {{- if $lsenabled }}

@@ -109,5 +109,5 @@ Standard period: approx. ¥18,000+ per room (dynamic pricing). Check the latest 
 
 ## Related
 
-- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
-- [Access Comparison]({{ "/travel-guide/hotels/access/" | absLangURL }})
+- [Hotel Guide Top](/en/travel-guide/hotels/)
+- [Access Comparison](/en/travel-guide/hotels/access/)

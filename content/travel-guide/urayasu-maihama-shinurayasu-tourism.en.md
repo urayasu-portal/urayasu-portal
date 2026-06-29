@@ -557,7 +557,7 @@ faq:
     </tr>
     <tr>
       <td>Taxi / Welfare taxi</td>
-      <td>Multiple welfare taxi operators in the city, including vehicles that can board in wheelchair. See our <a href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">Taxi Guide</a> for the operator list.</td>
+      <td>Multiple welfare taxi operators in the city, including vehicles that can board in wheelchair. See our <a href="/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/">Taxi Guide</a> for the operator list.</td>
     </tr>
     <tr>
       <td>TDR</td>
@@ -614,7 +614,7 @@ faq:
 
 <h2 id="access">Getting Around Maihama, Shin-Urayasu & Urayasu</h2>
 
-<p>For detailed access from airports and Tokyo Station, see our <a href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">Access Guide</a>. Here are the basics for sightseeing.</p>
+<p>For detailed access from airports and Tokyo Station, see our <a href="/en/travel-guide/urayasu-maihama-access-guide/">Access Guide</a>. Here are the basics for sightseeing.</p>
 
 <div style="overflow-x:auto;margin-bottom:20px;">
 <table>
@@ -653,7 +653,7 @@ faq:
 </table>
 </div>
 
-<p>For area transport and taxis, also see our <a href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">Taxi & Airport Flat-Rate Guide</a>.</p>
+<p>For area transport and taxis, also see our <a href="/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/">Taxi & Airport Flat-Rate Guide</a>.</p>
 
 <hr>
 
@@ -672,10 +672,10 @@ faq:
 <p>For young children, <strong>Ikspiari (Maihama)</strong> and <strong>Atre Shin-Urayasu</strong> are good indoor options. The <strong>Urayasu City Local History Museum</strong> has hands-on exhibits popular with elementary-school-age children.</p>
 
 <h3>Is the area accessible by wheelchair?</h3>
-<p>Ikspiari, Atre Shin-Urayasu, and JR stations are barrier-free. The Local History Museum has some steps in outdoor exhibit areas — contact the facility in advance. Welfare taxis are also available in the city (see <a href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">Taxi Guide</a>).</p>
+<p>Ikspiari, Atre Shin-Urayasu, and JR stations are barrier-free. The Local History Museum has some steps in outdoor exhibit areas — contact the facility in advance. Welfare taxis are also available in the city (see <a href="/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/">Taxi Guide</a>).</p>
 
 <h3>Is there a food and souvenir guide?</h3>
-<p>Yes. Our <a href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">Food &amp; Souvenir Guide</a> covers recommended spots by area.</p>
+<p>Yes. Our <a href="/en/travel-guide/urayasu-gourmet-souvenir-guide/">Food &amp; Souvenir Guide</a> covers recommended spots by area.</p>
 
 <hr>
 
@@ -683,28 +683,28 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
-    <a class="rg-card" href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">
+    <a class="rg-card" href="/en/travel-guide/urayasu-maihama-access-guide/">
       <span class="rg-emoji">🚃</span>
       <span class="rg-body">
         <span class="rg-title">Urayasu &amp; Maihama Access Guide</span>
         <span class="rg-go">Routes from Haneda, Narita &amp; Tokyo Station →</span>
       </span>
     </a>
-    <a class="rg-card" href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">
+    <a class="rg-card" href="/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/">
       <span class="rg-emoji">🚕</span>
       <span class="rg-body">
         <span class="rg-title">Urayasu Taxi &amp; Airport Flat-Rate Guide</span>
         <span class="rg-go">Stands by station, welfare taxis, flat-rate fares →</span>
       </span>
     </a>
-    <a class="rg-card" href="{{ "/travel-guide/hotels/" | absLangURL }}">
+    <a class="rg-card" href="/en/travel-guide/hotels/">
       <span class="rg-emoji">🏨</span>
       <span class="rg-body">
         <span class="rg-title">Urayasu Hotel Guide — All 40 Hotels</span>
         <span class="rg-go">Compare all 40 hotels by area and price →</span>
       </span>
     </a>
-    <a class="rg-card" href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">
+    <a class="rg-card" href="/en/travel-guide/urayasu-gourmet-souvenir-guide/">
       <span class="rg-emoji">🍜</span>
       <span class="rg-body">
         <span class="rg-title">Food &amp; Souvenir Guide</span>

@@ -362,5 +362,5 @@ Taxi demand is high these days, and you may have to wait at stands or for a hote
     <h3>Want to compare hotel access to the park and airports?</h3>
     <p>We compare travel convenience from each Urayasu hotel to the park, stations, airports, and central Tokyo.</p>
   </div>
-  <a class="tg-cross-btn" href="{{ "/travel-guide/hotels/access/" | absLangURL }}">View Hotel Access Comparison →</a>
+  <a class="tg-cross-btn" href="/en/travel-guide/hotels/access/">View Hotel Access Comparison →</a>
 </div>

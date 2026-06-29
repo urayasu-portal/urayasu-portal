@@ -104,5 +104,5 @@ From approx. ¥5,000 for 2 guests (dynamic pricing). Check the latest availabili
 
 ## Related
 
-- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
-- [Access Comparison]({{ "/travel-guide/hotels/access/" | absLangURL }})
+- [Hotel Guide Top](/en/travel-guide/hotels/)
+- [Access Comparison](/en/travel-guide/hotels/access/)

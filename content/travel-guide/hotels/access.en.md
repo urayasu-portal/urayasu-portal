@@ -18,7 +18,7 @@ When choosing a hotel for a Disney trip, "access" matters as much as price. But 
 
 This guide organizes all 40 hotels in Urayasu by four destinations and compares "what is easy to reach from where" from a local perspective. Times and fares are estimates based on 2025–2026 research.
 
-For getting to Urayasu/Maihama from the airports or Tokyo Station, see our separate [Airport & Tokyo Station Access Guide]({{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}).
+For getting to Urayasu/Maihama from the airports or Tokyo Station, see our separate [Airport & Tokyo Station Access Guide](/en/travel-guide/urayasu-maihama-access-guide/).
 
 ---
 
@@ -129,7 +129,7 @@ As a geographic exception, **Henn na Hotel Maihama and Four Stories Hotel Maiham
 
 The best answer changes with "where you want to go." Pick the hotel that fits your itinerary.
 
-A full list of all 40 hotels and area-by-area characteristics is on the [Hotel Guide top page]({{ "/travel-guide/hotels/" | absLangURL }}). For choosing with kids, see the [Family Disney Hotel Guide]({{ "/travel-guide/hotels/kids/" | absLangURL }}); to choose on price, see the [Budget Hotel Comparison]({{ "/travel-guide/hotels/budget/" | absLangURL }}).
+A full list of all 40 hotels and area-by-area characteristics is on the [Hotel Guide top page](/en/travel-guide/hotels/). For choosing with kids, see the [Family Disney Hotel Guide](/en/travel-guide/hotels/kids/); to choose on price, see the [Budget Hotel Comparison](/en/travel-guide/hotels/budget/).
 
 ---
 
@@ -139,7 +139,7 @@ A full list of all 40 hotels and area-by-area characteristics is on the [Hotel G
 
 ## Related
 
-- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
-- [Family Disney Hotel Guide]({{ "/travel-guide/hotels/kids/" | absLangURL }})
-- [Budget Hotel Comparison]({{ "/travel-guide/hotels/budget/" | absLangURL }})
-- [Airport & Tokyo Station Access Guide]({{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }})
+- [Hotel Guide Top](/en/travel-guide/hotels/)
+- [Family Disney Hotel Guide](/en/travel-guide/hotels/kids/)
+- [Budget Hotel Comparison](/en/travel-guide/hotels/budget/)
+- [Airport & Tokyo Station Access Guide](/en/travel-guide/urayasu-maihama-access-guide/)

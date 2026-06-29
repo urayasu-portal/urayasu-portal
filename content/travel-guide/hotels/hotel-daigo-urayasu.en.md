@@ -109,5 +109,5 @@ Year-round flat rate: approx. ¥25,000 for 4 people (reference). Rates do not in
 
 ## Related
 
-- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
-- [Access Comparison]({{ "/travel-guide/hotels/access/" | absLangURL }})
+- [Hotel Guide Top](/en/travel-guide/hotels/)
+- [Access Comparison](/en/travel-guide/hotels/access/)

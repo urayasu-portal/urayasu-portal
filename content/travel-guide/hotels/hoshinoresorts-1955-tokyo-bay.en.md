@@ -111,5 +111,5 @@ Standard period: approx. ¥18,000–¥50,000 (dynamic pricing). Hoshino Resorts 
 
 ## Related
 
-- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
-- [Access Comparison]({{ "/travel-guide/hotels/access/" | absLangURL }})
+- [Hotel Guide Top](/en/travel-guide/hotels/)
+- [Access Comparison](/en/travel-guide/hotels/access/)

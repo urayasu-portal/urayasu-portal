@@ -113,8 +113,8 @@ Standard rate: approx. ¥30,000–60,000 per room for 2 guests. Peak periods can
 
 ## Related
 
-- [Hotel Guide Top]({{ "/travel-guide/hotels/" | absLangURL }})
-- [Access Comparison]({{ "/travel-guide/hotels/access/" | absLangURL }})
+- [Hotel Guide Top](/en/travel-guide/hotels/)
+- [Access Comparison](/en/travel-guide/hotels/access/)
 
 <div style="background:#f4f7fb;border-radius:8px;padding:14px 18px;margin:20px 0;font-size:0.85em;color:#5e6f7e;">
 ⚠️ <strong>About prices and facilities:</strong> Room rates and services are subject to change. Please verify the latest details on the official website, especially for pool/bath eligibility (Hilton Honors tier) and parking plan inclusions.

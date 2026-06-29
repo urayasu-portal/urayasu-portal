@@ -1,10 +1,10 @@
-<div class="mt-banner" role="note" aria-label="Translation notice">
+<div class="mt-banner" role="note" aria-label="Editorial notice">
   <div class="mt-banner-inner">
-    <span class="mt-banner-icon"><i class="ti ti-language" aria-hidden="true"></i></span>
+    <span class="mt-banner-icon"><i class="ti ti-circle-check" aria-hidden="true"></i></span>
     <div class="mt-banner-text">
-      <strong>Machine-translated content.</strong> This page has been automatically translated from Japanese. Some details may be inaccurate — please verify with official sources before making decisions.
+      <strong>Reviewed by our local editorial team.</strong> Written and checked by hand in Urayasu, Japan. We work to keep everything accurate, but prices, hours and availability can change — please confirm with the official source before you book.
       {{- with .Translations }}{{- range . }}{{- if eq .Lang "ja" }}
-      <a class="mt-banner-link" href="{{ .Permalink }}">日本語版を見る →</a>
+      <a class="mt-banner-link" href="{{ .Permalink }}">View in Japanese →</a>
       {{- end }}{{- end }}{{- end }}
     </div>
   </div>

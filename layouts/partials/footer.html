@@ -1,6 +1,44 @@
+{{- $isEN := eq site.Language.Lang "en" }}
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
   <div class="ft-inner">
+  {{- if $isEN }}
+
+    {{- /* EN col1: brand + site info */ -}}
+    <div>
+      <div class="ft-logo"><i class="ti ti-anchor" aria-hidden="true"></i> Urayasu Portal</div>
+      <p class="ft-desc">Your local guide to Tokyo Disney Resort, Urayasu &amp; Maihama.<br>Written and reviewed by a local editorial team in Japan.</p>
+      <ul class="ft-site-links">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy Policy</a></li>
+        <li><a href="/">日本語サイト / Japanese</a></li>
+      </ul>
+    </div>
+
+    {{- /* EN col2: travel guide */ -}}
+    <div>
+      <div class="ft-col-heading">Travel Guide</div>
+      <ul class="ft-links">
+        <li><a href="/en/travel-guide/hotels/">Hotels</a></li>
+        <li><a href="/en/travel-guide/urayasu-maihama-access-guide/">Access</a></li>
+        <li><a href="/en/travel-guide/urayasu-maihama-shinurayasu-tourism/">Sightseeing</a></li>
+        <li><a href="/en/travel-guide/urayasu-gourmet-souvenir-guide/">Food &amp; Souvenirs</a></li>
+        <li><a href="/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/">Taxi</a></li>
+      </ul>
+    </div>
+
+    {{- /* EN col3: plan your stay */ -}}
+    <div>
+      <div class="ft-col-heading">Plan your stay</div>
+      <ul class="ft-links">
+        <li><a href="/en/travel-guide/hotels/compare/">Hotel comparison map</a></li>
+        <li><a href="/en/travel-guide/hotels/kids/">Family hotels</a></li>
+        <li><a href="/en/travel-guide/hotels/budget/">Budget hotels</a></li>
+        <li><a href="/en/travel-guide/hotels/access/">Hotels by access</a></li>
+      </ul>
+    </div>
+
+  {{- else }}
 
     {{- /* 列1: ブランド + サイト情報 */ -}}
     <div>
@@ -41,10 +79,11 @@
       </ul>
     </div>
 
+  {{- end }}
   </div>
   <div class="ft-bottom">
     <span class="ft-bottom-text">
-      &copy; {{ now.Year }} 浦安ぽーたる ·
+      &copy; {{ now.Year }} {{ if $isEN }}Urayasu Portal{{ else }}浦安ぽーたる{{ end }} ·
       Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> &amp;
       <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
