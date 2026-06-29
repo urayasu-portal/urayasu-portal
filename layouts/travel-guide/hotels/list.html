@@ -75,11 +75,11 @@
 <div class="section-head">
   <h2>{{- if $isEN }}Find by Area{{- else }}エリアで探す{{- end }}</h2>
 </div>
-<p class="tg-section-sub">{{- if $isEN }}Urayasu, Maihama and nearby areas are split into 5 areas. Tap a card to filter the list below.{{- else }}浦安・舞浜と近郊は5つのエリアに分かれます。カードをクリックすると下のホテル一覧を絞り込めます。{{- end }}</p>
+<p class="tg-section-sub">{{- if $isEN }}Urayasu, Maihama and nearby areas are split into {{ $areaCount }} areas. Tap a card to filter the list below.{{- else }}浦安・舞浜と近郊は{{ $areaCount }}つのエリアに分かれます。カードをクリックすると下のホテル一覧を絞り込めます。{{- end }}</p>
 <div class="tg-area-grid">
   {{- range $hotels.areas }}
   {{- $icon := "ti-map-pin" }}
-  {{- if eq .tag "A" }}{{ $icon = "ti-building-castle" }}{{ else if eq .tag "B" }}{{ $icon = "ti-anchor" }}{{ else if eq .tag "C" }}{{ $icon = "ti-train" }}{{ else if eq .tag "D" }}{{ $icon = "ti-building" }}{{ end }}
+  {{- if eq .tag "A" }}{{ $icon = "ti-building-castle" }}{{ else if eq .tag "B" }}{{ $icon = "ti-anchor" }}{{ else if eq .tag "C" }}{{ $icon = "ti-building-skyscraper" }}{{ else if eq .tag "D" }}{{ $icon = "ti-building" }}{{ else if eq .tag "E" }}{{ $icon = "ti-ripple" }}{{ else if eq .tag "F" }}{{ $icon = "ti-train" }}{{ else if eq .tag "G" }}{{ $icon = "ti-map-pin" }}{{ end }}
   <button type="button" class="tg-area-card" data-filter-type="area" data-filter-val="{{ .tag }}" aria-label="{{ .name }}（{{ .count }}{{ if $isEN }} hotels{{ else }}軒{{ end }}）で絞り込む">
     <span class="tg-area-name"><i class="ti {{ $icon }}" aria-hidden="true"></i>{{ .name | replaceRE "エリア$" "" }}</span>
     <span class="tg-area-desc">{{ .note }}</span>

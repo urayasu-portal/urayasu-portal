@@ -37,7 +37,7 @@ tgNav: true
 
 まず価格の全体像を押さえましょう（いずれも2名1室・通常期の目安）。
 
-- **最安クラス（5,000〜1万円台）** … [ホテルマイステイズ舞浜](/travel-guide/hotels/mystays-maihama/)、[マイステイズ新浦安](/travel-guide/hotels/mystays-shin-urayasu/)、[フレックステイイン新浦安](/travel-guide/hotels/flexstay-shin-urayasu/)、[ラ・ジェント・ホテル東京ベイ](/travel-guide/hotels/lagent-tokyo-bay/)、[ホテルユーラシア舞浜アネックス](/travel-guide/hotels/eurasia-annex/)、[浦安サンホテル](/travel-guide/hotels/urayasu-sun-hotel/)など浦安駅エリアのビジネスホテル各種
+- **最安クラス（5,000〜1万円台）** … [ホテルマイステイズ舞浜](/travel-guide/hotels/mystays-maihama/)、[マイステイズ新浦安](/travel-guide/hotels/mystays-shin-urayasu/)、[フレックステイイン新浦安](/travel-guide/hotels/flexstay-shin-urayasu/)、[ラ・ジェント・ホテル東京ベイ](/travel-guide/hotels/lagent-tokyo-bay/)、[ホテルユーラシア舞浜アネックス](/travel-guide/hotels/eurasia-annex/)、[浦安サンホテル](/travel-guide/hotels/urayasu-sun-hotel/)など浦安市内のビジネスホテル各種
 - **1万円台前半ゾーン** … [イビススタイルズ東京ベイ](/travel-guide/hotels/ibis-styles-tokyo-bay/)、[舞浜ユーラシア](/travel-guide/hotels/maihama-eurasia/)、[BAYHOTEL浦安駅前](/travel-guide/hotels/bayhotel-urayasu/)
 - **ディズニーホテルの最安格** … [東京ディズニーセレブレーションホテル](/travel-guide/hotels/celebration-wish/)（3名2万円前後〜）
 
@@ -55,7 +55,7 @@ tgNav: true
 **[ホテルユーラシア舞浜アネックス](/travel-guide/hotels/eurasia-annex/)**
 8,000円台〜とリーズナブルで、本館の天然温泉を割引価格で利用できる特典付き。舞浜駅から徒歩35分と距離はありますが、無料シャトルがあります。「安く泊まって温泉も楽しみたい」人に。
 
-### 新浦安エリア｜選択肢が最も豊富な激戦区
+### 新浦安・新町エリア｜選択肢が最も豊富な激戦区
 
 **[マイステイズ新浦安](/travel-guide/hotels/mystays-shin-urayasu/)／[フレックステイイン新浦安](/travel-guide/hotels/flexstay-shin-urayasu/)**
 ともに2名7,500〜7,800円台〜の安定した低価格。フレックステイインは長期滞在型で、連泊するほど割安感が増します。
@@ -82,10 +82,10 @@ tgNav: true
 **[BAYHOTEL浦安駅前](/travel-guide/hotels/bayhotel-urayasu/)**
 14,000円台〜とやや高めに見えますが、**全室にキッチン・冷蔵庫・洗濯機を完備**したアパートメントタイプ。自炊で食費を抑えられ、連泊や長めの滞在では結果的にコスパが高くなります。
 
-### 舞浜エリア｜パーク周辺で最も手頃な宿泊特化型
+### 元町エリア｜旧江戸川側のリーズナブルな宿泊特化型
 
 **[フォーストーリーズホテル舞浜](/travel-guide/hotels/four-stories-hotel/)**
-1万円〜の宿泊特化型で、舞浜エリアでは最安値クラス。26室の小規模ホテルで、フロアごとに異なる物語をテーマにした客室が個性的です。ただしTDR直通シャトルがなく、公共の路線バス利用が前提（舞浜駅までバス約7分・最終23:00）なので、夜遅くの帰着には注意。
+1万円〜の宿泊特化型で、元町エリアでは最安値クラス。26室の小規模ホテルで、フロアごとに異なる物語をテーマにした客室が個性的です。ただしTDR直通シャトルがなく、公共の路線バス利用が前提（舞浜駅までバス約7分・最終23:00）なので、夜遅くの帰着には注意。
 
 ### ディズニーの世界観を、できるだけ安く
 

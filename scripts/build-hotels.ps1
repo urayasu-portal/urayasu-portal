@@ -35,11 +35,13 @@ $csv = Import-Csv $csvPath -Encoding UTF8
 
 # エリア定義（順序・見出し・説明文）。count はCSVから自動算出。
 $areas = @(
-  [ordered]@{ id="a"; tag="A"; name="舞浜エリア";   note="ディズニーホテル・オフィシャル集中。パーク最至近。" }
-  [ordered]@{ id="b"; tag="B"; name="千鳥エリア";   note="マイステイズ舞浜はTDS徒歩6分・最安値クラス。" }
-  [ordered]@{ id="c"; tag="C"; name="新浦安エリア"; note="パートナーホテル集中。空港リムジンも便利。" }
-  [ordered]@{ id="d"; tag="D"; name="浦安駅エリア"; note="東西線直通で都心1本。パークへはバス25〜30分。" }
-  [ordered]@{ id="e"; tag="E"; name="浦安近郊";   note="葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。" }
+  [ordered]@{ id="a"; tag="A"; group="リゾート";   name="舞浜エリア";   note="ディズニーホテル・オフィシャル集中。パーク最至近。" }
+  [ordered]@{ id="b"; tag="B"; group="リゾート";   name="千鳥エリア";   note="マイステイズ舞浜はTDS徒歩6分・最安値クラス。" }
+  [ordered]@{ id="c"; tag="C"; group="ベイサイド"; name="新町エリア";   note="日の出・明海のパートナーホテル集中。無料シャトル・空港リムジンも便利。" }
+  [ordered]@{ id="d"; tag="D"; group="ベイサイド"; name="新浦安エリア"; note="新浦安駅周辺（美浜・今川・東野）。京葉線で舞浜まで2駅。" }
+  [ordered]@{ id="e"; tag="E"; group="リバーサイド"; name="元町エリア";   note="富士見など旧市街南側。旧江戸川沿いの落ち着いた住宅エリア。" }
+  [ordered]@{ id="f"; tag="F"; group="リバーサイド"; name="浦安駅エリア"; note="東西線直通で都心1本。パークへはバス25〜30分。" }
+  [ordered]@{ id="g"; tag="G"; group="浦安近郊";   name="浦安近郊";   note="葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。" }
 )
 
 # CSVカテゴリ → 表示用カテゴリ（TDR公式の区分に準拠）
@@ -84,6 +86,7 @@ foreach ($a in $areas) {
   [void]$sb.AppendLine(("  - id: {0}" -f $a.id))
   [void]$sb.AppendLine(("    tag: ""{0}""" -f $a.tag))
   [void]$sb.AppendLine(("    name: ""{0}""" -f $a.name))
+  [void]$sb.AppendLine(("    group: ""{0}""" -f $a.group))
   [void]$sb.AppendLine(("    count: {0}" -f $rows.Count))
   [void]$sb.AppendLine(("    note: ""{0}""" -f $a.note))
   [void]$sb.AppendLine("    hotels:")

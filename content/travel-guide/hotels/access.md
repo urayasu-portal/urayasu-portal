@@ -58,7 +58,7 @@ tgNav: true
 **⑥ シャトルまたは路線バス利用**
 [変なホテル舞浜](/travel-guide/hotels/henna-hotel-maihama/)は舞浜駅との無料シャトルバスを運行しています（便数・時刻・運行内容は変更される場合があるため、利用前にホテル公式サイトで最新時刻表を確認してください）。[フォーストーリーズホテル舞浜](/travel-guide/hotels/four-stories-hotel/)はTDR直通の無料シャトルがなく、路線バスで舞浜駅を経由します（最終バス23:00）。
 
-新浦安エリアのパートナーホテル・オフィシャルホテルは、おおむねパークまで無料シャトルで15〜25分。便利ですが、**閉園直後はシャトル乗り場が混雑**します。
+新浦安・新町エリアのパートナーホテル・オフィシャルホテルは、おおむねパークまで無料シャトルで15〜25分。便利ですが、**閉園直後はシャトル乗り場が混雑**します。
 
 ---
 
@@ -83,11 +83,11 @@ tgNav: true
 [東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/)、[ディズニーアンバサダーホテル](/travel-guide/hotels/ambassador-hotel/)、[ホテルミラコスタ](/travel-guide/hotels/miracosta/)、[ファンタジースプリングスホテル](/travel-guide/hotels/fantasy-springs-hotel/)、[ヒルトン東京ベイ](/travel-guide/hotels/hilton-tokyo-bay/)、[ホテルオークラ東京ベイ](/travel-guide/hotels/hotel-okura-tokyo-bay/)、[シェラトン](/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[グランドニッコー](/travel-guide/hotels/grand-nikko-tokyo-bay/)、[東京ベイ舞浜ホテル ファーストリゾート](/travel-guide/hotels/maihama-hotel-first-resort/)（予約制）。
 舞浜エリアの主要ホテルは、ホテルの目の前からリムジンバスに乗れる施設が多く、空港アクセスは非常にラクです（所要約40〜50分）。
 
-**新浦安エリアにも「ホテル前停留所」がある2軒**
+**新町エリアにも「ホテル前停留所」がある2軒**
 - **[三井ガーデンホテルプラナ東京ベイ](/travel-guide/hotels/mitsui-garden-prana/)** … ホテル敷地内に羽田・成田両方向の専用停留所 → [詳細は施設ページで](/travel-guide/hotels/mitsui-garden-prana/)
 - **[ハイアットリージェンシー東京ベイ](/travel-guide/hotels/hyatt-regency-tokyo-bay/)** … 2024年12月にホテル構内の停留所を新設（羽田まで約47〜52分）
 
-新浦安エリアでこの2軒は、空港からの移動が特にスムーズです。
+新町エリアでこの2軒は、空港からの移動が特にスムーズです。
 
 **新浦安駅のバス停を使う施設**
 [浦安ブライトンホテル](/travel-guide/hotels/brighton-tokyo-bay/)（徒歩1〜2分）、[オリエンタルホテル](/travel-guide/hotels/oriental-tokyo-bay/)（徒歩1分）など。新浦安駅南口のリムジン乗り場（Hのりば）から羽田まで約40〜45分。

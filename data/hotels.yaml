@@ -8,6 +8,7 @@ areas:
   - id: a
     tag: "A"
     name: "舞浜エリア"
+    group: "リゾート"
     count: 12
     note: "ディズニーホテル・オフィシャル集中。パーク最至近。"
     hotels:
@@ -99,6 +100,7 @@ areas:
   - id: b
     tag: "B"
     name: "千鳥エリア"
+    group: "リゾート"
     count: 5
     note: "マイステイズ舞浜はTDS徒歩6分・最安値クラス。"
     hotels:
@@ -139,9 +141,10 @@ areas:
 
   - id: c
     tag: "C"
-    name: "新浦安エリア"
-    count: 18
-    note: "パートナーホテル集中。空港リムジンも便利。"
+    name: "新町エリア"
+    group: "ベイサイド"
+    count: 10
+    note: "日の出・明海のパートナーホテル集中。無料シャトル・空港リムジンも便利。"
     hotels:
       - name: "東京ディズニーセレブレーションホテル（ウィッシュ）"
         category: "ディズニーホテル"
@@ -171,20 +174,6 @@ areas:
         policy: normal
         individual_page: true
         slug: "comfort-suites-tokyo-bay"
-      - name: "浦安ブライトンホテル"
-        category: "パートナーホテル"
-        price_guide: "¥15,000〜"
-        feature: "新浦安駅直結"
-        policy: normal
-        individual_page: true
-        slug: "brighton-tokyo-bay"
-      - name: "オリエンタルホテル東京ベイ"
-        category: "パートナーホテル"
-        price_guide: "¥16,500〜"
-        feature: "新浦安駅直結"
-        policy: normal
-        individual_page: true
-        slug: "oriental-tokyo-bay"
       - name: "ホテルエミオン東京ベイ"
         category: "パートナーホテル"
         price_guide: "¥18,000〜"
@@ -227,6 +216,28 @@ areas:
         policy: normal
         individual_page: true
         slug: "mystays-shin-urayasu"
+
+  - id: d
+    tag: "D"
+    name: "新浦安エリア"
+    group: "ベイサイド"
+    count: 6
+    note: "新浦安駅周辺（美浜・今川・東野）。京葉線で舞浜まで2駅。"
+    hotels:
+      - name: "浦安ブライトンホテル"
+        category: "パートナーホテル"
+        price_guide: "¥15,000〜"
+        feature: "新浦安駅直結"
+        policy: normal
+        individual_page: true
+        slug: "brighton-tokyo-bay"
+      - name: "オリエンタルホテル東京ベイ"
+        category: "パートナーホテル"
+        price_guide: "¥16,500〜"
+        feature: "新浦安駅直結"
+        policy: normal
+        individual_page: true
+        slug: "oriental-tokyo-bay"
       - name: "フレックステイイン新浦安"
         category: "その他のホテル"
         price_guide: "¥7,000〜"
@@ -234,20 +245,6 @@ areas:
         policy: normal
         individual_page: true
         slug: "flexstay-shin-urayasu"
-      - name: "変なホテル舞浜"
-        category: "その他のホテル"
-        price_guide: "¥11,000〜"
-        feature: "舞浜駅シャトル運行（2026年7月減便）"
-        policy: normal
-        individual_page: true
-        slug: "henna-hotel-maihama"
-      - name: "フォーストーリーズホテル舞浜"
-        category: "その他のホテル"
-        price_guide: "¥10,000〜"
-        feature: "路線バス利用（最終23:00）"
-        policy: normal
-        individual_page: true
-        slug: "four-stories-hotel"
       - name: "日和ホテル舞浜"
         category: "その他のホテル"
         price_guide: "¥10,000〜"
@@ -268,9 +265,32 @@ areas:
         policy: name-only
         individual_page: false
 
-  - id: d
-    tag: "D"
+  - id: e
+    tag: "E"
+    name: "元町エリア"
+    group: "リバーサイド"
+    count: 2
+    note: "富士見など旧市街南側。旧江戸川沿いの落ち着いた住宅エリア。"
+    hotels:
+      - name: "変なホテル舞浜"
+        category: "その他のホテル"
+        price_guide: "¥11,000〜"
+        feature: "舞浜駅シャトル運行（2026年7月減便）"
+        policy: normal
+        individual_page: true
+        slug: "henna-hotel-maihama"
+      - name: "フォーストーリーズホテル舞浜"
+        category: "その他のホテル"
+        price_guide: "¥10,000〜"
+        feature: "路線バス利用（最終23:00）"
+        policy: normal
+        individual_page: true
+        slug: "four-stories-hotel"
+
+  - id: f
+    tag: "F"
     name: "浦安駅エリア"
+    group: "リバーサイド"
     count: 5
     note: "東西線直通で都心1本。パークへはバス25〜30分。"
     hotels:
@@ -309,9 +329,10 @@ areas:
         policy: name-only
         individual_page: false
 
-  - id: e
-    tag: "E"
+  - id: g
+    tag: "G"
     name: "浦安近郊"
+    group: "浦安近郊"
     count: 8
     note: "葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。"
     hotels:
