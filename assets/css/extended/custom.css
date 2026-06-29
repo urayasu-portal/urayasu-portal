@@ -1143,6 +1143,7 @@ body.pillar-travel .post-single .post-content th {
   font-weight: 700;
   color: var(--up-muted);
   padding-top: 2px;
+  white-space: nowrap;
 }
 .info-box dd {
   font-size: 13px;
@@ -1965,6 +1966,13 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   flex-shrink: 0;
 }
 .tg-cross-btn:hover { background: var(--up-coral); color: #fff !important; }
+/* 本文用 h3 ルール（.post-single .post-content h3）がクロスリンクの白見出しを暗色＋枠線で上書きしてしまうため、詳細度を上げて打ち消す */
+.post-single .post-content .tg-cross-link h3 {
+  color: #fff;
+  border-left: none;
+  padding-left: 0;
+}
+.post-single .post-content .tg-cross-link p { color: #aac8e0; }
 
 /* ---------- ホテルハブ ヒーロー（コーラル） ---------- */
 .tg-hotels-hero {

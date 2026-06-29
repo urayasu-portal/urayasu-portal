@@ -332,12 +332,12 @@ faq:
 
 ## 参考出典
 
-- 東京空港交通 — 東京ディズニーリゾートエリア⇔羽田空港 線
-- 東京空港交通 — 新浦安エリア⇔羽田空港 線・新浦安⇔成田空港 線
-- 東京空港交通 — 成田空港→東京ディズニーリゾートエリア 時刻表
-- JR東日本 — 駅のバリアフリー情報
-- 東京メトロ — 浦安駅 バリアフリー設備
-- 浦安市公式サイト — 福祉タクシー
+- <a href="https://www.limousinebus.co.jp/ja/" target="_blank" rel="noopener">東京空港交通</a> — 東京ディズニーリゾートエリア⇔羽田空港 線
+- <a href="https://www.limousinebus.co.jp/ja/" target="_blank" rel="noopener">東京空港交通</a> — 新浦安エリア⇔羽田空港 線・新浦安⇔成田空港 線
+- <a href="https://www.limousinebus.co.jp/ja/" target="_blank" rel="noopener">東京空港交通</a> — 成田空港→東京ディズニーリゾートエリア 時刻表
+- <a href="https://www.jreast.co.jp/" target="_blank" rel="noopener">JR東日本</a> — 駅のバリアフリー情報
+- <a href="https://www.tokyometro.jp/station/urayasu/yardmap/" target="_blank" rel="noopener">東京メトロ</a> — 浦安駅 バリアフリー設備
+- <a href="https://www.city.urayasu.lg.jp/fukushi/shogai/enjo/gaishutsu/1001249.html" target="_blank" rel="noopener">浦安市公式サイト</a> — 福祉タクシー
 - 各ホテル公式サイト、各タクシー会社公式サイト
 
 ---

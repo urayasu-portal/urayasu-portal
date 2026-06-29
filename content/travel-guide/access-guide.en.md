@@ -330,11 +330,11 @@ First confirm whether your destination is **Maihama, Shin-Urayasu, or Urayasu**,
 
 ## Sources
 
-- Tokyo Airport Transport (Limousine Bus) — TDR area ⇔ Haneda Airport routes
-- Tokyo Airport Transport — Shin-Urayasu area ⇔ Haneda/Narita Airport routes
-- JR East — Station accessibility information
-- Tokyo Metro — Urayasu Station accessibility
-- Urayasu City official website — Welfare taxi services
+- <a href="https://www.limousinebus.co.jp/en/" target="_blank" rel="noopener">Tokyo Airport Transport (Limousine Bus)</a> — TDR area ⇔ Haneda Airport routes
+- <a href="https://www.limousinebus.co.jp/en/" target="_blank" rel="noopener">Tokyo Airport Transport</a> — Shin-Urayasu area ⇔ Haneda/Narita Airport routes
+- <a href="https://www.jreast.co.jp/en/" target="_blank" rel="noopener">JR East</a> — Station accessibility information
+- <a href="https://www.tokyometro.jp/lang_en/" target="_blank" rel="noopener">Tokyo Metro</a> — Urayasu Station accessibility
+- <a href="https://www.city.urayasu.lg.jp/fukushi/shogai/enjo/gaishutsu/1001249.html" target="_blank" rel="noopener">Urayasu City official website</a> — Welfare taxi services
 - Official hotel websites, taxi company websites
 
 ---

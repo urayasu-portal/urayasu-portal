@@ -348,12 +348,12 @@ Taxi demand is high these days, and you may have to wait at stands or for a hote
 
 ## Sources
 
-- Maihama Resort Cab — "Call a Taxi," "Fares"
-- Mitsuya Emitas Taxi — "Airport Flat-Rate Taxi"
-- Chiba Taxi Association — "Fares and Rates," "Keiyo Line Stations," "Tokyo Metro Tozai Line Stations"
-- Urayasu City official website — "Welfare Taxi Operator List"
-- Haneda Airport official website — "Taxi"
-- Narita Airport official website — "Taxi"
+- <a href="https://resortcab.co.jp/" target="_blank" rel="noopener">Maihama Resort Cab</a> — "Call a Taxi," "Fares"
+- <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">Mitsuya Emitas Taxi</a> — "Airport Flat-Rate Taxi"
+- <a href="https://www.taxi-chiba.jp/" target="_blank" rel="noopener">Chiba Taxi Association</a> — "Fares and Rates," "Keiyo Line Stations," "Tokyo Metro Tozai Line Stations"
+- <a href="https://www.city.urayasu.lg.jp/fukushi/shogai/enjo/gaishutsu/1001249.html" target="_blank" rel="noopener">Urayasu City official website</a> — "Welfare Taxi Operator List"
+- <a href="https://tokyo-haneda.com/en/access/taxi/index.html" target="_blank" rel="noopener">Haneda Airport official website</a> — "Taxi"
+- <a href="https://www.narita-airport.jp/en/access/taxi/" target="_blank" rel="noopener">Narita Airport official website</a> — "Taxi"
 
 ---
 

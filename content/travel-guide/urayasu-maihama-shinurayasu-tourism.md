@@ -719,18 +719,18 @@ faq:
 <h2 id="references">公式情報・参考リンク</h2>
 
 <ul>
-  <li>イクスピアリ公式サイト（営業時間・施設情報）</li>
-  <li>ボン・ヴォヤージュ（東京ディズニーリゾート公式）</li>
-  <li>アトレ新浦安 公式サイト</li>
-  <li>MONA新浦安 公式サイト</li>
-  <li>イオンスタイル新浦安 公式サイト</li>
-  <li>ニューコースト新浦安 公式サイト</li>
-  <li>浦安市郷土博物館（浦安市公式）</li>
-  <li>浦安市の歴史的建造物・文化財（浦安市公式）</li>
-  <li>浦安市総合体育館・運動公園（浦安市公式）</li>
-  <li>J:COM浦安音楽ホール（新浦安エリア）</li>
-  <li>JR東日本 — 舞浜駅・新浦安駅のバリアフリー情報</li>
-  <li>東京メトロ — 浦安駅バリアフリー情報</li>
+  <li><a href="https://www.ikspiari.com/" target="_blank" rel="noopener">イクスピアリ公式サイト</a>（営業時間・施設情報）</li>
+  <li><a href="https://www.tokyodisneyresort.jp/tdr/facility/bv.html" target="_blank" rel="noopener">ボン・ヴォヤージュ（東京ディズニーリゾート公式）</a></li>
+  <li><a href="https://www.atre.co.jp/shin_urayasu/" target="_blank" rel="noopener">アトレ新浦安 公式サイト</a></li>
+  <li><a href="https://www.e-mona.jp/" target="_blank" rel="noopener">MONA新浦安 公式サイト</a></li>
+  <li><a href="https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E6%96%B0%E6%B5%A6%E5%AE%89/" target="_blank" rel="noopener">イオンスタイル新浦安 公式サイト</a></li>
+  <li><a href="https://www.newcoast.jp/" target="_blank" rel="noopener">ニューコースト新浦安 公式サイト</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/kanko/kyodo/index.html" target="_blank" rel="noopener">浦安市郷土博物館（浦安市公式）</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisei/profile/rekishi/index.html" target="_blank" rel="noopener">浦安市の歴史的建造物・文化財（浦安市公式）</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisetsu/kouen/1005631.html" target="_blank" rel="noopener">浦安市総合体育館・運動公園（浦安市公式）</a></li>
+  <li><a href="https://www.urayasu-concerthall.jp/" target="_blank" rel="noopener">J:COM浦安音楽ホール（新浦安エリア）</a></li>
+  <li><a href="https://www.jreast.co.jp/" target="_blank" rel="noopener">JR東日本</a> — 舞浜駅・新浦安駅のバリアフリー情報</li>
+  <li><a href="https://www.tokyometro.jp/station/urayasu/yardmap/" target="_blank" rel="noopener">東京メトロ</a> — 浦安駅バリアフリー情報</li>
 </ul>
 
 <p style="font-size:12px;color:#6b7a8d;">※本記事は公開情報をもとにまとめたものです。施設情報・料金・営業時間は変更になる場合があります。最新情報は各施設の公式サイトでご確認ください。（2026年6月時点）</p>

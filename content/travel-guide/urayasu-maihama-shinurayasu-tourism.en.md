@@ -719,18 +719,18 @@ faq:
 <h2 id="references">Official Sources</h2>
 
 <ul>
-  <li>Ikspiari official website (hours, facility info)</li>
-  <li>Bon Voyage (Tokyo Disney Resort official)</li>
-  <li>Atre Shin-Urayasu official website</li>
-  <li>MONA Shin-Urayasu official website</li>
-  <li>Aeon Style Shin-Urayasu official website</li>
-  <li>New Coast Shin-Urayasu official website</li>
-  <li>Urayasu City Local History Museum (Urayasu City official)</li>
-  <li>Historic buildings and cultural properties (Urayasu City official)</li>
-  <li>Urayasu City General Gymnasium / Sports Park (Urayasu City official)</li>
-  <li>J:COM Urayasu Music Hall (Shin-Urayasu area)</li>
-  <li>JR East — Maihama Station / Shin-Urayasu Station accessibility info</li>
-  <li>Tokyo Metro — Urayasu Station accessibility info</li>
+  <li><a href="https://www.ikspiari.com/" target="_blank" rel="noopener">Ikspiari official website</a> (hours, facility info)</li>
+  <li><a href="https://www.tokyodisneyresort.jp/en/tdr/facility/bv.html" target="_blank" rel="noopener">Bon Voyage (Tokyo Disney Resort official)</a></li>
+  <li><a href="https://www.atre.co.jp/shin_urayasu/" target="_blank" rel="noopener">Atre Shin-Urayasu official website</a></li>
+  <li><a href="https://www.e-mona.jp/" target="_blank" rel="noopener">MONA Shin-Urayasu official website</a></li>
+  <li><a href="https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E6%96%B0%E6%B5%A6%E5%AE%89/" target="_blank" rel="noopener">Aeon Style Shin-Urayasu official website</a></li>
+  <li><a href="https://www.newcoast.jp/" target="_blank" rel="noopener">New Coast Shin-Urayasu official website</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/kanko/kyodo/index.html" target="_blank" rel="noopener">Urayasu City Local History Museum (Urayasu City official)</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisei/profile/rekishi/index.html" target="_blank" rel="noopener">Historic buildings and cultural properties (Urayasu City official)</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisetsu/kouen/1005631.html" target="_blank" rel="noopener">Urayasu City General Gymnasium / Sports Park (Urayasu City official)</a></li>
+  <li><a href="https://www.urayasu-concerthall.jp/" target="_blank" rel="noopener">J:COM Urayasu Music Hall (Shin-Urayasu area)</a></li>
+  <li><a href="https://www.jreast.co.jp/en/" target="_blank" rel="noopener">JR East</a> — Maihama Station / Shin-Urayasu Station accessibility info</li>
+  <li><a href="https://www.tokyometro.jp/lang_en/" target="_blank" rel="noopener">Tokyo Metro</a> — Urayasu Station accessibility info</li>
 </ul>
 
 <p style="font-size:12px;color:#6b7a8d;">※ This article is based on publicly available information. Facility details, fees, and hours are subject to change. Check the official website of each facility for the latest information. (As of June 2026)</p>

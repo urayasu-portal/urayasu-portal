@@ -350,12 +350,12 @@ UDタクシーは車いす利用者・高齢者・ベビーカー利用者にも
 
 ## 参考出典
 
-- 舞浜リゾートキャブ「タクシーを呼ぶ」「ご利用料金」
-- 三ツ矢エミタスタクシー「空港定額タクシー」
-- 千葉県タクシー協会「運賃・料金」「京葉線 駅一覧」「東京メトロ東西線 駅一覧」
-- 浦安市公式サイト「福祉タクシー協力機関一覧」
-- 羽田空港公式サイト「タクシー」
-- 成田空港公式サイト「タクシー」
+- <a href="https://resortcab.co.jp/" target="_blank" rel="noopener">舞浜リゾートキャブ</a>「タクシーを呼ぶ」「ご利用料金」
+- <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">三ツ矢エミタスタクシー</a>「空港定額タクシー」
+- <a href="https://www.taxi-chiba.jp/" target="_blank" rel="noopener">千葉県タクシー協会</a>「運賃・料金」「京葉線 駅一覧」「東京メトロ東西線 駅一覧」
+- <a href="https://www.city.urayasu.lg.jp/fukushi/shogai/enjo/gaishutsu/1001249.html" target="_blank" rel="noopener">浦安市公式サイト</a>「福祉タクシー協力機関一覧」
+- <a href="https://tokyo-haneda.com/text/access/taxi/index.html" target="_blank" rel="noopener">羽田空港公式サイト</a>「タクシー」
+- <a href="https://www.narita-airport.jp/ja/access/taxi/" target="_blank" rel="noopener">成田空港公式サイト</a>「タクシー」
 
 ---
 
