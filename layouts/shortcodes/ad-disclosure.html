@@ -1,0 +1,4 @@
+{{- /* 広告（PR）表記。アフィリエイトリンクを含む記事の冒頭などに {{< ad-disclosure >}} で挿入する。
+       2023年10月のステマ規制（景表法）対応。日英で文言を切替。 */ -}}
+{{- $isEN := eq .Page.Language.Lang "en" -}}
+<p class="ad-disclosure"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if $isEN }}This page includes affiliate advertising (PR). Prices and availability are subject to change—please confirm on each provider's site.{{ else }}本ページは広告（アフィリエイト）を含みます。料金・空室状況は変動するため、最新情報は各予約サイトでご確認ください。{{ end }}</p>

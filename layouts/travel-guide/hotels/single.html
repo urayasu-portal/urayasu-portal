@@ -171,6 +171,25 @@
     </div>
     {{- end }}
 
+    {{/* 料金・空室を見る（予約アフィリエイト。data/hotels_map.yaml の booking が空なら非表示） */}}
+    {{- $bk := false }}
+    {{- with $cur2 }}{{ with .booking }}{{ $bk = . }}{{ end }}{{ end }}
+    {{- if $bk }}
+    <div class="lg-book-cta">
+      <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ if $isEN }}Check rates &amp; availability{{ else }}料金・空室を見る{{ end }}</div>
+      <div class="lg-book-btns">
+        {{- if $isEN }}
+        {{- with $bk.booking }}<a class="lg-book-btn book-booking" href="{{ . }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
+        {{- with $bk.agoda }}<a class="lg-book-btn book-agoda" href="{{ . }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
+        {{- else }}
+        {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener">楽天トラベル</a>{{ end }}
+        {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener">じゃらん</a>{{ end }}
+        {{- end }}
+      </div>
+      <div class="lg-book-pr">{{ if $isEN }}Includes affiliate links (PR){{ else }}広告（PR・アフィリエイト）を含みます{{ end }}</div>
+    </div>
+    {{- end }}
+
     {{/* ホテルを比較して選ぶ */}}
     <div class="lg-side-cta">
       <i class="ti ti-checklist" aria-hidden="true"></i>

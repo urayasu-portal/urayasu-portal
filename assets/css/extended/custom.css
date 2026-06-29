@@ -3348,6 +3348,21 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
   display: block; background: var(--accent); color: #fff;
   font-size: 12px; font-weight: 700; padding: 9px; border-radius: 8px; text-decoration: none;
 }
+/* 料金・空室を見る（予約アフィリエイトカード） */
+.lg-book-cta { background: var(--up-surface); border: 1px solid var(--up-border); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+.lg-book-cta-title { font-size: 13px; font-weight: 700; color: var(--up-text); display: flex; align-items: center; gap: 6px; margin-bottom: 10px; }
+.lg-book-cta-title i { color: var(--accent); font-size: 16px; }
+.lg-book-btns { display: flex; flex-direction: column; gap: 8px; }
+.lg-book-btn { display: block; text-align: center; font-size: 13px; font-weight: 700; color: #fff !important; text-decoration: none !important; padding: 10px 12px; border-radius: 8px; transition: filter .15s, transform .15s; }
+.lg-book-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.book-rakuten { background: #bf0000; }
+.book-jalan   { background: #e9531f; }
+.book-booking { background: #003580; }
+.book-agoda   { background: #d62e4f; }
+.lg-book-pr { font-size: 10px; color: var(--up-text-3); margin-top: 9px; text-align: center; }
+/* 広告（PR）表記（{{< ad-disclosure >}}） */
+.ad-disclosure { font-size: 12px; color: var(--up-text-3); background: var(--up-surface-2); border: 1px solid var(--up-border); border-radius: 8px; padding: 8px 12px; margin: 0 0 16px; display: flex; align-items: center; gap: 6px; line-height: 1.6; }
+.ad-disclosure i { color: var(--up-text-4); flex-shrink: 0; }
 .lg-pop-rank { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 11px; }
 .lg-pop-rank a { display: flex; gap: 9px; align-items: flex-start; text-decoration: none; font-size: 12px; color: var(--up-text); line-height: 1.5; font-weight: 500; }
 .lg-pop-num { color: var(--accent); font-size: 15px; font-weight: 800; flex-shrink: 0; }

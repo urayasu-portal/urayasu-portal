@@ -42,6 +42,7 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("#         convenience=館内コンビニ, shuttle=無料シャトル, station=駅直結/徒歩1分,")
 [void]$sb.AppendLine("#         limousine=空港リムジン, kitchen=ミニキッチン")
 [void]$sb.AppendLine("# facilities: 個別ページの設備アイコン用（key + 任意のnote）。CSV機能フラグの key:note を展開。")
+[void]$sb.AppendLine("# booking: 予約リンク（rakuten/jalan/booking/agoda）。CSVの各URL列に値がある時だけ出力。")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("hotels:")
 
@@ -85,6 +86,16 @@ foreach ($r in $csv) {
     }
   } else {
     [void]$sb.AppendLine("    facilities: []")
+  }
+  # 予約リンク（アフィリエイト）: CSVに値があるものだけ出力（未登録時は空で何も出さない）
+  $bk = @()
+  if (($r.'楽天トラベルURL').Trim()) { $bk += "      rakuten: ""$(($r.'楽天トラベルURL').Trim())""" }
+  if (($r.'じゃらんURL').Trim())     { $bk += "      jalan: ""$(($r.'じゃらんURL').Trim())""" }
+  if (($r.'BookingURL').Trim())      { $bk += "      booking: ""$(($r.'BookingURL').Trim())""" }
+  if (($r.'AgodaURL').Trim())        { $bk += "      agoda: ""$(($r.'AgodaURL').Trim())""" }
+  if ($bk.Count -gt 0) {
+    [void]$sb.AppendLine("    booking:")
+    foreach ($b in $bk) { [void]$sb.AppendLine($b) }
   }
   [void]$sb.AppendLine("    name: ""$($r.'施設名')""")
   [void]$sb.AppendLine("    address: ""$($r.'住所')""")
