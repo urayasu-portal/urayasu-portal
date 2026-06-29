@@ -271,11 +271,11 @@ Urayasu City's official website publishes a list of welfare taxi operators, incl
 
 | Operator | Location | Phone | Wheelchair | Stretcher |
 |---|---|---|:---:|:---:|
-| Rakuraku Kaigo Taxi | Urayasu-shi Tomigaoka | 090-8687-2843 | ○ | ○ |
-| Marinaze Kaigo Taxi | Urayasu-shi Nekonomi | 090-2625-0119 | ○ | ○ |
+| <a href="http://kaigotaxi-rakuraku.com/" target="_blank" rel="noopener">Rakuraku Kaigo Taxi</a> | Urayasu-shi Tomigaoka | 090-8687-2843 | ○ | ○ |
+| <a href="https://marinaze.com/" target="_blank" rel="noopener">Marinaze Kaigo Taxi</a> | Urayasu-shi Nekonomi | 090-2625-0119 | ○ | ○ |
 | Daigo Care Taxi | Urayasu-shi Nekonomi | 090-1664-0557 | ○ | — |
-| Goodo Kaisha Respite | Urayasu-shi Kitaei | 047-727-4479 | ○ | ○ |
-| K's Care LLC | Urayasu-shi Nekonomi | 047-711-2224 | ○ | ○ |
+| <a href="https://www.respaitcare.com/" target="_blank" rel="noopener">Goodo Kaisha Respite</a> | Urayasu-shi Kitaei | 047-727-4479 | ○ | ○ |
+| <a href="https://www.kscare.me/" target="_blank" rel="noopener">K's Care LLC</a> | Urayasu-shi Nekonomi | 047-711-2224 | ○ | ○ |
 
 ※ Partial data from Urayasu City official materials. Confirm availability, fares, booking conditions, and tourism/airport trip coverage directly with each operator before use.
 
