@@ -256,6 +256,8 @@ hotels:
       - key: "shuttle"
       - key: "station"
       - key: "limousine"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1238%2F1238.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "オリエンタルホテル東京ベイ"
     address: "千葉県浦安市美浜1-8-2"
   - slug: "emion-tokyo-bay"
