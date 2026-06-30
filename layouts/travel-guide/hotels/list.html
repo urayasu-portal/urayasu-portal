@@ -2,6 +2,7 @@
 
 {{- $hotels := hugo.Data.hotels }}
 {{- $isEN := eq .Lang "en" }}
+{{- $lang := .Lang }}
 {{- $total := 0 }}{{- range $hotels.areas }}{{- $total = add $total .count }}{{- end }}
 {{- $areaCount := len $hotels.areas }}
 
@@ -10,69 +11,50 @@
      ──────────────────────────────────────── */}}
 <div class="tg-hotels-hero">
   <div class="tg-hotels-eyebrows">
-    {{- if $isEN }}
-    <span class="tg-hotels-eyebrow is-solid">Hotels</span>
-    <span class="tg-hotels-eyebrow">Maihama / Urayasu / Shin-Urayasu</span>
-    {{- else }}
-    <span class="tg-hotels-eyebrow is-solid">ホテル一覧</span>
-    <span class="tg-hotels-eyebrow">舞浜・浦安・新浦安</span>
-    {{- end }}
+    <span class="tg-hotels-eyebrow is-solid">{{ i18n "hl_eyebrow1" }}</span>
+    <span class="tg-hotels-eyebrow">{{ i18n "hl_eyebrow2" }}</span>
   </div>
-  {{- if $isEN }}
-  <h1 class="tg-hotels-title">Choosing a Hotel in the Maihama &amp; Urayasu Area</h1>
-  <p class="tg-hotels-lead">From TDR-owned luxury properties to budget hotels, we have organized all <strong>{{ $total }} hotels</strong> in the area from a local perspective — including 3 new properties opened in 2024–2026. Find the right one for your trip by purpose, area, or price.</p>
-  {{- else }}
-  <h1 class="tg-hotels-title">舞浜・浦安エリアのホテルを選ぶ</h1>
-  <p class="tg-hotels-lead">ディズニーホテルからオフィシャル・パートナー、その他のホテルまで、エリア内の<strong>全{{ $total }}軒</strong>を地元目線で整理しました。2024〜2026年に開業した新しい施設も掲載。目的・エリア・価格帯から、あなたの旅に合う一軒を見つけてください。</p>
-  {{- end }}
+  <h1 class="tg-hotels-title">{{ i18n "hl_title" }}</h1>
+  <p class="tg-hotels-lead">{{ i18n "hl_lead" (dict "total" $total) | safeHTML }}</p>
   <div class="tg-hotels-stats">
-    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $total }}</span><span class="tg-hotels-stat-label">{{ if $isEN }}hotels{{ else }}軒掲載{{ end }}</span></div>
-    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $areaCount }}</span><span class="tg-hotels-stat-label">{{ if $isEN }}areas{{ else }}エリア{{ end }}</span></div>
-    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">¥5,000</span><span class="tg-hotels-stat-label">{{ if $isEN }}and up{{ else }}〜の宿も{{ end }}</span></div>
+    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $total }}</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_hotels" }}</span></div>
+    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $areaCount }}</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_areas" }}</span></div>
+    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">¥5,000</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_andup" }}</span></div>
   </div>
 </div>
 
 {{/* ────────────────────────────────────────
      比較マップへの導線 ＋ 目的から絞り込む / Compare banner + Filter by purpose
      ──────────────────────────────────────── */}}
-{{- $compareURL := cond $isEN "/en/travel-guide/hotels/compare/" "/travel-guide/hotels/compare/" }}
-{{- $kidsURL := cond $isEN "/en/travel-guide/hotels/kids/" "/travel-guide/hotels/kids/" }}
-{{- $budgetURL := cond $isEN "/en/travel-guide/hotels/budget/" "/travel-guide/hotels/budget/" }}
-{{- $accessURL := cond $isEN "/en/travel-guide/hotels/access/" "/travel-guide/hotels/access/" }}
-<a href="{{ $compareURL }}" class="hcm-list-banner">
+<a href="{{ "/travel-guide/hotels/compare/" | relLangURL }}" class="hcm-list-banner">
   <span class="hcm-list-banner-left">
     <i class="ti ti-map-2" aria-hidden="true"></i>
     <span>
-      {{- if $isEN }}
-      <strong>Hotel Comparison Map</strong>
-      <span class="hcm-list-banner-sub">Filter the list and map together by area, facilities and price</span>
-      {{- else }}
-      <strong>ホテル比較マップ</strong>
-      <span class="hcm-list-banner-sub">エリア・設備・価格で一覧と地図を同時に絞り込む</span>
-      {{- end }}
+      <strong>{{ i18n "hl_compare_title" }}</strong>
+      <span class="hcm-list-banner-sub">{{ i18n "hl_compare_sub" }}</span>
     </span>
   </span>
-  <span class="hcm-list-banner-cta">{{ if $isEN }}Compare on map →{{ else }}マップで比較 →{{ end }}</span>
+  <span class="hcm-list-banner-cta">{{ i18n "hl_compare_cta" }}</span>
 </a>
 <div class="section-head">
-  <h2>{{ if $isEN }}Find by Purpose{{ else }}目的から絞り込む{{ end }}</h2>
+  <h2>{{ i18n "hl_find_purpose" }}</h2>
 </div>
-<p class="tg-section-sub">{{ if $isEN }}Not sure where to start? Begin with your travel style.{{ else }}迷ったら、まずは旅のスタイルから。{{ end }}</p>
+<p class="tg-section-sub">{{ i18n "hl_purpose_sub" }}</p>
 <div class="tg-hotelneed-grid">
-  <a class="tg-hotelneed-card" href="{{ $kidsURL }}">
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | relLangURL }}">
     <i class="ti ti-mood-kid" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">{{ if $isEN }}Family{{ else }}子連れ向け{{ end }}</div>
-    <div class="tg-hotelneed-desc">{{ if $isEN }}Family-friendly stays: baths, spacious rooms, in-house stores{{ else }}大浴場・客室・設備で選ぶ家族の宿{{ end }}</div>
+    <div class="tg-hotelneed-title">{{ i18n "hl_family" }}</div>
+    <div class="tg-hotelneed-desc">{{ i18n "hl_family_desc" }}</div>
   </a>
-  <a class="tg-hotelneed-card" href="{{ $budgetURL }}">
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/budget/" | relLangURL }}">
     <i class="ti ti-coin" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">{{ if $isEN }}Budget{{ else }}格安{{ end }}</div>
-    <div class="tg-hotelneed-desc">{{ if $isEN }}Value-focused stays from around ¥5,000 a night{{ else }}1泊5,000円台〜コスパ重視で泊まる{{ end }}</div>
+    <div class="tg-hotelneed-title">{{ i18n "hl_budget" }}</div>
+    <div class="tg-hotelneed-desc">{{ i18n "hl_budget_desc" }}</div>
   </a>
-  <a class="tg-hotelneed-card" href="{{ $accessURL }}">
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/access/" | relLangURL }}">
     <i class="ti ti-walk" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">{{ if $isEN }}Access{{ else }}アクセス重視{{ end }}</div>
-    <div class="tg-hotelneed-desc">{{ if $isEN }}Hotels close to the parks, stations or airports{{ else }}パーク・駅・空港に近い宿で選ぶ{{ end }}</div>
+    <div class="tg-hotelneed-title">{{ i18n "hl_access" }}</div>
+    <div class="tg-hotelneed-desc">{{ i18n "hl_access_desc" }}</div>
   </a>
 </div>
 
@@ -80,19 +62,19 @@
      エリアで探す / Area Overview
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{- if $isEN }}Find by Area{{- else }}エリアで探す{{- end }}</h2>
+  <h2>{{ i18n "hl_find_area" }}</h2>
 </div>
-<p class="tg-section-sub">{{- if $isEN }}Urayasu, Maihama and nearby areas are split into {{ $areaCount }} areas. Tap a card to filter the list below.{{- else }}浦安・舞浜と近郊は{{ $areaCount }}つのエリアに分かれます。カードをクリックすると下のホテル一覧を絞り込めます。{{- end }}</p>
+<p class="tg-section-sub">{{ i18n "hl_area_sub" (dict "count" $areaCount) }}</p>
 <div class="tg-area-grid">
   {{- range $hotels.areas }}
   {{- $icon := "ti-map-pin" }}
   {{- if eq .tag "A" }}{{ $icon = "ti-building-castle" }}{{ else if eq .tag "B" }}{{ $icon = "ti-anchor" }}{{ else if eq .tag "C" }}{{ $icon = "ti-building-skyscraper" }}{{ else if eq .tag "D" }}{{ $icon = "ti-building" }}{{ else if eq .tag "E" }}{{ $icon = "ti-ripple" }}{{ else if eq .tag "F" }}{{ $icon = "ti-train" }}{{ else if eq .tag "G" }}{{ $icon = "ti-map-pin" }}{{ end }}
-  {{- $an := cond $isEN .name_en (.name | replaceRE "エリア$" "") }}
-  {{- $anote := cond $isEN .note_en .note }}
-  <button type="button" class="tg-area-card" data-filter-type="area" data-filter-val="{{ .tag }}" aria-label="{{ if $isEN }}Filter by {{ $an }} ({{ .count }} hotels){{ else }}{{ .name }}（{{ .count }}軒）で絞り込む{{ end }}">
+  {{- $an := cond (eq $lang "ja") (.name | replaceRE "エリア$" "") (index . (printf "name_%s" $lang)) }}
+  {{- $anote := cond (eq $lang "ja") .note (index . (printf "note_%s" $lang)) }}
+  <button type="button" class="tg-area-card" data-filter-type="area" data-filter-val="{{ .tag }}" aria-label="{{ $an }} ({{ .count }})">
     <span class="tg-area-name"><i class="ti {{ $icon }}" aria-hidden="true"></i>{{ $an }}</span>
     <span class="tg-area-desc">{{ $anote }}</span>
-    <span class="tg-area-count">{{ .count }}<span>{{- if $isEN }} hotels{{- else }} 軒{{- end }}</span></span>
+    <span class="tg-area-count">{{ .count }}<span> {{ i18n "hl_stat_hotels" }}</span></span>
   </button>
   {{- end }}
 </div>
@@ -101,71 +83,65 @@
      価格帯の目安 / Price Pyramid
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{- if $isEN }}Hotel Types & Price Guide{{- else }}区分と価格帯の目安{{- end }}</h2>
-  <span style="font-size:11px;color:var(--up-muted);">{{- if $isEN }}2 guests/room, off-peak estimate{{- else }}2名1室・通常期の目安{{- end }}</span>
+  <h2>{{ i18n "hl_types_price" }}</h2>
+  <span style="font-size:11px;color:var(--up-muted);">{{ i18n "hl_estimate" }}</span>
 </div>
-<p class="tg-section-sub">{{- if $isEN }}Tap a bar to filter the list below by hotel type.{{- else }}バーをクリックすると下のホテル一覧を区分で絞り込めます。{{- end }}</p>
+<p class="tg-section-sub">{{ i18n "hl_pyramid_sub" }}</p>
 <div class="tg-pyramid-wrap">
   <div class="tg-pyramid">
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="disney">{{- if $isEN }}Disney Hotels{{- else }}ディズニーホテル{{- end }} <span class="tg-pyr-price">¥20,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="disney">{{ i18n "cat_full_disney" }} <span class="tg-pyr-price">¥20,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="official">{{- if $isEN }}Official Hotels{{- else }}オフィシャルホテル{{- end }} <span class="tg-pyr-price">¥20,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="official">{{ i18n "cat_full_official" }} <span class="tg-pyr-price">¥20,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="partner">{{- if $isEN }}Partner Hotels{{- else }}パートナーホテル{{- end }} <span class="tg-pyr-price">¥15,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="partner">{{ i18n "cat_full_partner" }} <span class="tg-pyr-price">¥15,000〜</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="other">{{- if $isEN }}Other Hotels{{- else }}その他のホテル{{- end }} <span class="tg-pyr-price">¥5,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="other">{{ i18n "cat_other" }} <span class="tg-pyr-price">¥5,000〜</span></button>
     </div>
   </div>
-  <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:6px;">{{- if $isEN }}※ Prices rise significantly during peak seasons (Golden Week, summer, year-end){{- else }}※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします{{- end }}</p>
+  <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:6px;">{{ i18n "hl_peak_note" }}</p>
 </div>
-{{- $typesURL := cond $isEN "/en/travel-guide/hotels/types/" "/travel-guide/hotels/types/" }}
 <p style="text-align:center;margin:10px 0 4px;">
-  <a href="{{ $typesURL }}" style="display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--up-accent);text-decoration:none;">
-    <i class="ti ti-help-circle" aria-hidden="true"></i>{{ if $isEN }}What's the difference between Disney, Official, Partner &amp; Good Neighbor hotels? →{{ else }}ディズニー／オフィシャル／パートナー／グッドネイバーの違いをくわしく見る →{{ end }}</a>
+  <a href="{{ "/travel-guide/hotels/types/" | relLangURL }}" style="display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--up-accent);text-decoration:none;">
+    <i class="ti ti-help-circle" aria-hidden="true"></i>{{ i18n "hl_types_link" }}</a>
 </p>
 
 {{/* ────────────────────────────────────────
      全施設一覧表（フィルタ付き） / Full Hotel List (filterable)
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{- if $isEN }}Full Hotel List{{- else }}ホテル一覧（全{{ $total }}軒）{{- end }}</h2>
+  <h2>{{ i18n "hl_full_list" }}</h2>
 </div>
 <div class="tg-notice-warn">
-  {{- if $isEN }}
-  <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> About pricing and information:</strong> Price ranges are estimates for 2 guests/room during off-peak periods. Rates vary significantly during busy seasons. Always check the latest prices on booking sites. Tap a hotel name to open its detail page.
-  {{- else }}
-  <strong><i class="ti ti-alert-triangle" aria-hidden="true"></i> 料金・施設情報について</strong>：価格帯は2名1室・通常期の目安です。繁忙期は大きく変動します。最新料金は各予約サイトでご確認ください。
-  {{- end }}
+  <i class="ti ti-alert-triangle" aria-hidden="true"></i> {{ i18n "hl_notice" | safeHTML }}
 </div>
 
-<div class="tg-hotel-filter" role="group" aria-label="{{ if $isEN }}Filter hotels by type{{ else }}ホテルの区分で絞り込む{{ end }}">
-  <button type="button" class="tg-hotel-chip is-active" data-filter-type="group" data-filter-val="all">{{ if $isEN }}All{{ else }}すべて{{ end }}</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="disney">{{ if $isEN }}Disney{{ else }}ディズニー{{ end }}</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="official">{{ if $isEN }}Official{{ else }}オフィシャル{{ end }}</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="partner">{{ if $isEN }}Partner{{ else }}パートナー{{ end }}</button>
-  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="other">{{ if $isEN }}Other{{ else }}その他{{ end }}</button>
+<div class="tg-hotel-filter" role="group" aria-label="{{ i18n "hl_filter_label" }}">
+  <button type="button" class="tg-hotel-chip is-active" data-filter-type="group" data-filter-val="all">{{ i18n "hl_all" }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="disney">{{ i18n "cat_disney" }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="official">{{ i18n "cat_official" }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="partner">{{ i18n "cat_partner" }}</button>
+  <button type="button" class="tg-hotel-chip" data-filter-type="cat" data-filter-val="other">{{ i18n "cat_other" }}</button>
 </div>
 
 <div class="tg-hotel-table-wrap">
   <table class="tg-hotel-table" id="tg-hotel-table">
     <thead>
       <tr>
-        <th>{{- if $isEN }}Hotel Name{{- else }}施設名{{- end }}</th>
-        <th>{{- if $isEN }}Area{{- else }}エリア{{- end }}</th>
-        <th>{{- if $isEN }}Type{{- else }}区分{{- end }}</th>
-        <th>{{- if $isEN }}Price Range{{- else }}価格帯目安{{- end }}</th>
-        <th>{{- if $isEN }}Notes{{- else }}特徴メモ{{- end }}</th>
+        <th>{{ i18n "th_name" }}</th>
+        <th>{{ i18n "th_area" }}</th>
+        <th>{{ i18n "th_type" }}</th>
+        <th>{{ i18n "th_price" }}</th>
+        <th>{{ i18n "th_notes" }}</th>
       </tr>
     </thead>
     <tbody>
       {{- range $hotels.areas }}
       {{- $areaTag := .tag }}
-      {{- $areaName := .name }}
-      {{- $areaNameEN := .name_en }}
+      {{- $areaNameLoc := cond (eq $lang "ja") (.name | replaceRE "エリア$" "") (index . (printf "name_%s" $lang)) }}
       {{- range .hotels }}
       {{- $cat := "other" }}
       {{- if eq .category "ディズニーホテル" }}{{ $cat = "disney" }}
@@ -175,46 +151,42 @@
       {{- else if eq .category "—" }}{{ $cat = "fashion" }}
       {{- end }}
       <tr data-cat="{{ $cat }}" data-area="{{ $areaTag }}"{{- if eq .policy "name-only" }} class="tg-row-nameonly"{{- end }}>
-        {{- $hname := cond $isEN .name_en .name }}
+        {{- $hname := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)) }}
         <td>
           {{- if and .individual_page (eq .policy "normal") }}
-          {{- $href := printf "/travel-guide/hotels/%s/" .slug }}
-          {{- if $isEN }}{{ $href = printf "/en/travel-guide/hotels/%s/" .slug }}{{ end }}
-          <a href="{{ $href }}">{{ $hname }}</a>
+          <a href="{{ printf "/travel-guide/hotels/%s/" .slug | relLangURL }}">{{ $hname }}</a>
           {{- else }}
           {{ $hname }}
           {{- end }}
           {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
         </td>
-        <td>{{ if $isEN }}{{ $areaNameEN }}{{ else }}{{ $areaName | replaceRE "エリア$" "" }}{{ end }}</td>
+        <td>{{ $areaNameLoc }}</td>
         <td style="font-size:0.82em;">
-          {{- if $isEN }}
-          {{- if eq .category "ディズニーホテル" }}Disney Hotels
-          {{- else if eq .category "オフィシャルホテル" }}Official Hotels
-          {{- else if eq .category "パートナーホテル" }}Partner Hotels
-          {{- else if eq .category "グッドネイバーホテル" }}Good Neighbor Hotels
-          {{- else if eq .category "その他のホテル" }}Other Hotels
-          {{- else }}{{ .category }}{{- end }}
+          {{- if eq .category "ディズニーホテル" }}{{ i18n "cat_full_disney" }}
+          {{- else if eq .category "オフィシャルホテル" }}{{ i18n "cat_full_official" }}
+          {{- else if eq .category "パートナーホテル" }}{{ i18n "cat_full_partner" }}
+          {{- else if eq .category "グッドネイバーホテル" }}{{ i18n "cat_full_goodneighbor" }}
+          {{- else if eq .category "その他のホテル" }}{{ i18n "cat_other" }}
           {{- else }}{{ .category }}{{- end }}
         </td>
         <td style="white-space:nowrap;">
           {{- if .price_guide }}{{ .price_guide }}{{- else }}&mdash;{{- end }}
         </td>
         <td style="font-size:0.82em;color:var(--up-muted);">
-          {{- if $isEN }}{{ with .feature_en }}{{ . }}{{ end }}{{- else }}{{ with .feature }}{{ . }}{{ end }}{{- end }}
+          {{- $feat := cond (eq $lang "ja") .feature (index . (printf "feature_%s" $lang)) }}{{ with $feat }}{{ . }}{{ end }}
         </td>
       </tr>
       {{- end }}
       {{- end }}
     </tbody>
   </table>
-  <p style="font-size:0.8em;color:var(--up-muted);margin-top:8px;">{{- if $isEN }}※ marked hotels show name, area, and category only.{{- else }}※ 印の施設は名称・エリア・カテゴリのみ掲載しています。{{- end }}</p>
+  <p style="font-size:0.8em;color:var(--up-muted);margin-top:8px;">{{ i18n "hl_nameonly_note" }}</p>
 </div>
 
 {{/* ────────────────────────────────────────
      ナビゲーション / Navigation
      ──────────────────────────────────────── */}}
-{{- if not $isEN }}
+{{- if eq $lang "ja" }}
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>浦安市民向けの生活情報はこちら</h3>

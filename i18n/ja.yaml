@@ -68,3 +68,73 @@
   translation: "注目のホテル"
 - id: see_all
   translation: "すべて見る →"
+- id: hl_eyebrow1
+  translation: "ホテル一覧"
+- id: hl_eyebrow2
+  translation: "舞浜・浦安・新浦安"
+- id: hl_title
+  translation: "舞浜・浦安エリアのホテルを選ぶ"
+- id: hl_lead
+  translation: "ディズニーホテルからオフィシャル・パートナー、その他のホテルまで、エリア内の<strong>全{{ .total }}軒</strong>を地元目線で整理しました。2024〜2026年に開業した新しい施設も掲載。目的・エリア・価格帯から、あなたの旅に合う一軒を見つけてください。"
+- id: hl_stat_hotels
+  translation: "軒掲載"
+- id: hl_stat_areas
+  translation: "エリア"
+- id: hl_stat_andup
+  translation: "〜の宿も"
+- id: hl_compare_title
+  translation: "ホテル比較マップ"
+- id: hl_compare_sub
+  translation: "エリア・設備・価格で一覧と地図を同時に絞り込む"
+- id: hl_compare_cta
+  translation: "マップで比較 →"
+- id: hl_find_purpose
+  translation: "目的から絞り込む"
+- id: hl_purpose_sub
+  translation: "迷ったら、まずは旅のスタイルから。"
+- id: hl_family
+  translation: "子連れ向け"
+- id: hl_family_desc
+  translation: "大浴場・客室・設備で選ぶ家族の宿"
+- id: hl_budget
+  translation: "格安"
+- id: hl_budget_desc
+  translation: "1泊5,000円台〜コスパ重視で泊まる"
+- id: hl_access
+  translation: "アクセス重視"
+- id: hl_access_desc
+  translation: "パーク・駅・空港に近い宿で選ぶ"
+- id: hl_find_area
+  translation: "エリアで探す"
+- id: hl_area_sub
+  translation: "浦安・舞浜と近郊は{{ .count }}つのエリアに分かれます。カードをクリックすると下のホテル一覧を絞り込めます。"
+- id: hl_types_price
+  translation: "区分と価格帯の目安"
+- id: hl_estimate
+  translation: "2名1室・通常期の目安"
+- id: hl_pyramid_sub
+  translation: "バーをクリックすると下のホテル一覧を区分で絞り込めます。"
+- id: hl_peak_note
+  translation: "※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします"
+- id: hl_types_link
+  translation: "ディズニー／オフィシャル／パートナー／グッドネイバーの違いをくわしく見る →"
+- id: hl_full_list
+  translation: "ホテル一覧"
+- id: hl_notice
+  translation: "<strong>料金・施設情報について</strong>：価格帯は2名1室・通常期の目安です。繁忙期は大きく変動します。最新料金は各予約サイトでご確認ください。"
+- id: hl_filter_label
+  translation: "ホテルの区分で絞り込む"
+- id: hl_all
+  translation: "すべて"
+- id: th_name
+  translation: "施設名"
+- id: th_area
+  translation: "エリア"
+- id: th_type
+  translation: "区分"
+- id: th_price
+  translation: "価格帯目安"
+- id: th_notes
+  translation: "特徴メモ"
+- id: hl_nameonly_note
+  translation: "※ 印の施設は名称・エリア・カテゴリのみ掲載しています。"

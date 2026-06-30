@@ -68,3 +68,73 @@
   translation: "Featured hotels"
 - id: see_all
   translation: "See all →"
+- id: hl_eyebrow1
+  translation: "Hotels"
+- id: hl_eyebrow2
+  translation: "Maihama / Urayasu / Shin-Urayasu"
+- id: hl_title
+  translation: "Choosing a Hotel in the Maihama & Urayasu Area"
+- id: hl_lead
+  translation: "From TDR-owned luxury properties to budget hotels, we have organized all <strong>{{ .total }} hotels</strong> in the area from a local perspective — including new properties opened in 2024–2026. Find the right one by purpose, area, or price."
+- id: hl_stat_hotels
+  translation: "hotels"
+- id: hl_stat_areas
+  translation: "areas"
+- id: hl_stat_andup
+  translation: "and up"
+- id: hl_compare_title
+  translation: "Hotel Comparison Map"
+- id: hl_compare_sub
+  translation: "Filter the list and map together by area, facilities and price"
+- id: hl_compare_cta
+  translation: "Compare on map →"
+- id: hl_find_purpose
+  translation: "Find by Purpose"
+- id: hl_purpose_sub
+  translation: "Not sure where to start? Begin with your travel style."
+- id: hl_family
+  translation: "Family"
+- id: hl_family_desc
+  translation: "Family-friendly stays: baths, spacious rooms, in-house stores"
+- id: hl_budget
+  translation: "Budget"
+- id: hl_budget_desc
+  translation: "Value-focused stays from around ¥5,000 a night"
+- id: hl_access
+  translation: "Access"
+- id: hl_access_desc
+  translation: "Hotels close to the parks, stations or airports"
+- id: hl_find_area
+  translation: "Find by Area"
+- id: hl_area_sub
+  translation: "Urayasu, Maihama and nearby areas are split into {{ .count }} areas. Tap a card to filter the list below."
+- id: hl_types_price
+  translation: "Hotel Types & Price Guide"
+- id: hl_estimate
+  translation: "2 guests/room, off-peak estimate"
+- id: hl_pyramid_sub
+  translation: "Tap a bar to filter the list below by hotel type."
+- id: hl_peak_note
+  translation: "※ Prices rise significantly during peak seasons (Golden Week, summer, year-end)"
+- id: hl_types_link
+  translation: "What's the difference between Disney, Official, Partner & Good Neighbor hotels? →"
+- id: hl_full_list
+  translation: "Full Hotel List"
+- id: hl_notice
+  translation: "<strong>About pricing and information:</strong> Price ranges are estimates for 2 guests/room during off-peak periods. Rates vary significantly during busy seasons. Always check the latest prices on booking sites. Tap a hotel name to open its detail page."
+- id: hl_filter_label
+  translation: "Filter hotels by type"
+- id: hl_all
+  translation: "All"
+- id: th_name
+  translation: "Hotel Name"
+- id: th_area
+  translation: "Area"
+- id: th_type
+  translation: "Type"
+- id: th_price
+  translation: "Price Range"
+- id: th_notes
+  translation: "Notes"
+- id: hl_nameonly_note
+  translation: "※ marked hotels show name, area, and category only."

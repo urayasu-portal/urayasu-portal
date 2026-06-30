@@ -68,3 +68,73 @@
   translation: "精选酒店"
 - id: see_all
   translation: "查看全部 →"
+- id: hl_eyebrow1
+  translation: "酒店一览"
+- id: hl_eyebrow2
+  translation: "舞滨·浦安·新浦安"
+- id: hl_title
+  translation: "在舞滨·浦安地区挑选酒店"
+- id: hl_lead
+  translation: "从东京迪士尼直营的高端酒店到实惠酒店，我们以本地视角整理了区域内的<strong>全部{{ .total }}家酒店</strong>，并收录2024–2026年新开业的设施。可按目的、区域或价位，找到适合你旅程的那一家。"
+- id: hl_stat_hotels
+  translation: "家酒店"
+- id: hl_stat_areas
+  translation: "个区域"
+- id: hl_stat_andup
+  translation: "起的住宿"
+- id: hl_compare_title
+  translation: "酒店比较地图"
+- id: hl_compare_sub
+  translation: "按区域、设施与价位，同时筛选列表与地图"
+- id: hl_compare_cta
+  translation: "在地图上比较 →"
+- id: hl_find_purpose
+  translation: "按目的筛选"
+- id: hl_purpose_sub
+  translation: "不知从何选起？先从你的旅行风格开始。"
+- id: hl_family
+  translation: "亲子出行"
+- id: hl_family_desc
+  translation: "大浴场·客房·设施齐全的家庭住宿"
+- id: hl_budget
+  translation: "实惠"
+- id: hl_budget_desc
+  translation: "每晚5,000日元起·讲究性价比"
+- id: hl_access
+  translation: "交通优先"
+- id: hl_access_desc
+  translation: "邻近乐园·车站或机场的住宿"
+- id: hl_find_area
+  translation: "按区域查找"
+- id: hl_area_sub
+  translation: "浦安·舞滨及周边分为{{ .count }}个区域。点击卡片可筛选下方的酒店列表。"
+- id: hl_types_price
+  translation: "分类与价位参考"
+- id: hl_estimate
+  translation: "2人1间·平日参考"
+- id: hl_pyramid_sub
+  translation: "点击价位条，可按分类筛选下方的酒店列表。"
+- id: hl_peak_note
+  translation: "※ 旺季（黄金周、暑假、年末年初）所有酒店都会大幅涨价"
+- id: hl_types_link
+  translation: "迪士尼／官方／合作／好邻居酒店有何区别？ →"
+- id: hl_full_list
+  translation: "酒店一览"
+- id: hl_notice
+  translation: "<strong>关于价格与设施信息：</strong>价位为2人1间·平日的参考值，旺季会大幅变动。最新价格请于各预订网站确认。点击酒店名称可打开详情页。"
+- id: hl_filter_label
+  translation: "按分类筛选酒店"
+- id: hl_all
+  translation: "全部"
+- id: th_name
+  translation: "酒店名称"
+- id: th_area
+  translation: "区域"
+- id: th_type
+  translation: "分类"
+- id: th_price
+  translation: "价位参考"
+- id: th_notes
+  translation: "特色备注"
+- id: hl_nameonly_note
+  translation: "※ 标注的设施仅提供名称、区域与分类。"
