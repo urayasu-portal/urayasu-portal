@@ -1,10 +1,15 @@
-<div class="mt-banner" role="note" aria-label="Editorial notice">
+{{- $lang := .Language.Lang }}
+<div class="mt-banner" role="note" aria-label="{{ if eq $lang "zh" }}编辑说明{{ else }}Editorial notice{{ end }}">
   <div class="mt-banner-inner">
     <span class="mt-banner-icon"><i class="ti ti-circle-check" aria-hidden="true"></i></span>
     <div class="mt-banner-text">
+      {{- if eq $lang "zh" }}
+      <strong>由本地编辑团队亲自核对。</strong>本文在日本浦安当地手工撰写与查证。我们力求准确，但价格、营业时间与空房状况可能变动——预订前请以官方信息为准。
+      {{- else }}
       <strong>Reviewed by our local editorial team.</strong> Written and checked by hand in Urayasu, Japan. We work to keep everything accurate, but prices, hours and availability can change — please confirm with the official source before you book.
+      {{- end }}
       {{- with .Translations }}{{- range . }}{{- if eq .Lang "ja" }}
-      <a class="mt-banner-link" href="{{ .Permalink }}">View in Japanese →</a>
+      <a class="mt-banner-link" href="{{ .Permalink }}">{{ if eq $lang "zh" }}查看日文版 →{{ else }}View in Japanese →{{ end }}</a>
       {{- end }}{{- end }}{{- end }}
     </div>
   </div>

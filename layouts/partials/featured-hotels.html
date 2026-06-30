@@ -4,12 +4,16 @@
        ・JSが訪問週(ISO週番号)で上書きし、リビルド不要で定期ローテーション
        構成＝上位（ディズニー/オフィシャル）＋パートナー＋その他 を各1枠で変化に富む。
        呼び出し: {{ partial "featured-hotels.html" . }} */ -}}
-{{- $isEN := eq site.Language.Lang "en" }}
-{{- $catBadge := dict "disney" (cond $isEN "DISNEY" "ディズニー") "official" (cond $isEN "OFFICIAL" "オフィシャル") "partner" (cond $isEN "PARTNER" "パートナー") "other" (cond $isEN "OTHER" "その他") }}
+{{- $lang := site.Language.Lang }}
+{{- $catBadge := dict
+    "disney"   (index (dict "ja" "ディズニー" "en" "DISNEY" "zh" "迪士尼") $lang)
+    "official" (index (dict "ja" "オフィシャル" "en" "OFFICIAL" "zh" "官方") $lang)
+    "partner"  (index (dict "ja" "パートナー" "en" "PARTNER" "zh" "合作") $lang)
+    "other"    (index (dict "ja" "その他" "en" "OTHER" "zh" "其他") $lang) }}
 {{- $catIcon := dict "disney" "ti-building-castle" "official" "ti-building-skyscraper" "partner" "ti-star" "other" "ti-building" }}
 {{- $premium := slice }}{{- $partner := slice }}{{- $value := slice }}
 {{- range hugo.Data.hotels.areas }}
-  {{- $aname := cond $isEN .name_en .name }}
+  {{- $aname := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)) }}
   {{- range .hotels }}
     {{- if eq .policy "normal" }}
       {{- $ck := "" }}
@@ -18,7 +22,9 @@
       {{- else if eq .category "パートナーホテル" }}{{ $ck = "partner" }}
       {{- else if eq .category "その他のホテル" }}{{ $ck = "other" }}{{ end }}
       {{- if $ck }}
-        {{- $item := dict "name" (cond $isEN .name_en .name) "area" $aname "price" .price_guide "feature" (cond $isEN .feature_en .feature) "url" (printf "/travel-guide/hotels/%s/" .slug | absLangURL) "cat" $ck "badge" (index $catBadge $ck) "icon" (index $catIcon $ck) }}
+        {{- $hname := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)) }}
+        {{- $hfeat := cond (eq $lang "ja") .feature (index . (printf "feature_%s" $lang)) }}
+        {{- $item := dict "name" $hname "area" $aname "price" .price_guide "feature" $hfeat "url" (printf "/travel-guide/hotels/%s/" .slug | absLangURL) "cat" $ck "badge" (index $catBadge $ck) "icon" (index $catIcon $ck) }}
         {{- if or (eq $ck "disney") (eq $ck "official") }}{{ $premium = $premium | append $item }}{{ end }}
         {{- if eq $ck "partner" }}{{ $partner = $partner | append $item }}{{ end }}
         {{- if eq $ck "other" }}{{ $value = $value | append $item }}{{ end }}
@@ -32,8 +38,8 @@
 {{- $b := index $partner (mod $week (len $partner)) }}
 {{- $c := index $value (mod $week (len $value)) }}
 <div class="section-head">
-  <h2>{{ if $isEN }}Featured hotels{{ else }}注目のホテル{{ end }}</h2>
-  <a class="section-more" href="{{ "/travel-guide/hotels/" | absLangURL }}">{{ if $isEN }}See all →{{ else }}すべて見る →{{ end }}</a>
+  <h2>{{ i18n "featured_title" }}</h2>
+  <a class="section-more" href="{{ "/travel-guide/hotels/" | absLangURL }}">{{ i18n "see_all" }}</a>
 </div>
 <script>window.TG_FEATURED = {{ dict "premium" $premium "partner" $partner "value" $value | jsonify | safeJS }};</script>
 <div class="tg-featured-grid" id="tg-featured-grid">

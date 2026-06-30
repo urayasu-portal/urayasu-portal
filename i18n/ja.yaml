@@ -64,3 +64,7 @@
   translation: "Googleマップで開く"
 - id: map_directions
   translation: "経路を調べる"
+- id: featured_title
+  translation: "注目のホテル"
+- id: see_all
+  translation: "すべて見る →"

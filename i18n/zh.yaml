@@ -64,3 +64,7 @@
   translation: "在Google地图打开"
 - id: map_directions
   translation: "查询路线"
+- id: featured_title
+  translation: "精选酒店"
+- id: see_all
+  translation: "查看全部 →"
