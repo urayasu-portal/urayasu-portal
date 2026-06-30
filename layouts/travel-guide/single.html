@@ -6,6 +6,7 @@
 {{- $cur := .RelPermalink }}
 {{- $cover := .Params.cover.image | default "" }}
 {{- $isEN := eq .Lang "en" }}
+{{- $isZH := eq .Lang "zh" }}
 
 {{/* 観光ガイドの他の記事（ホテル個別を除く）= サイドバー／関連用 */}}
 {{- $guides := slice }}
@@ -38,16 +39,16 @@
     <article class="post-single">
 
       <header class="post-header">
-        <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else }}パンくずリスト{{ end }}">
-          <a href="{{ if $isEN }}/en/{{ else }}/{{ end }}">{{ if $isEN }}Home{{ else }}ホーム{{ end }}</a>
+        <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else if $isZH }}面包屑导航{{ else }}パンくずリスト{{ end }}">
+          <a href="{{ "/" | absLangURL }}">{{ if $isEN }}Home{{ else if $isZH }}首页{{ else }}ホーム{{ end }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-          <a href="{{ if $isEN }}/en/travel-guide/{{ else }}/travel-guide/{{ end }}">{{ if $isEN }}Travel Guide{{ else }}観光ガイド{{ end }}</a>
+          <a href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else }}観光ガイド{{ end }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <span class="bc-current" aria-current="page">{{ .Title | truncate 28 "…" }}</span>
         </nav>
 
         <div class="hg-badges">
-          <span class="hg-badge">{{ if $isEN }}Travel Guide{{ else }}観光ガイド{{ end }}</span>
+          <span class="hg-badge">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else }}観光ガイド{{ end }}</span>
           {{- with .Params.badge }}<span class="hg-badge-sub">{{ . }}</span>{{- end }}
         </div>
 
@@ -77,7 +78,7 @@
       <footer class="post-footer">
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         {{- with $.GetTerms $tags }}
-        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> タグ：</span></div>
+        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> {{ i18n "tags_label" }}</span></div>
         <ul class="post-tags">
           {{- range . }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{- end }}
         </ul>
@@ -93,7 +94,7 @@
     {{/* 目次 */}}
     {{- if ge (len $toc) 2 }}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> {{ if $isEN }}Contents{{ else }}目次{{ end }}</div>
+      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> {{ if $isEN }}Contents{{ else if $isZH }}目录{{ else }}目次{{ end }}</div>
       <nav class="lg-toc-list">
         {{- range $toc }}
         <a href="#{{ .id }}">{{ .title }}</a>
@@ -105,15 +106,15 @@
     {{/* 旅行ガイドへの導線 */}}
     <div class="lg-side-cta">
       <i class="ti ti-map-2" aria-hidden="true"></i>
-      <div class="lg-side-cta-title">{{ if $isEN }}Urayasu &amp; Maihama Travel Guide{{ else }}浦安・舞浜の旅行ガイド{{ end }}</div>
-      <div class="lg-side-cta-desc">{{ if $isEN }}Hotels, access &amp; gourmet in one place{{ else }}ホテル・アクセス・グルメをまとめて{{ end }}</div>
-      <a class="lg-side-cta-btn" href="{{ if $isEN }}/en/travel-guide/{{ else }}/travel-guide/{{ end }}">{{ if $isEN }}Guide top{{ else }}ガイドトップへ{{ end }}</a>
+      <div class="lg-side-cta-title">{{ if $isEN }}Urayasu &amp; Maihama Travel Guide{{ else if $isZH }}浦安·舞滨旅行指南{{ else }}浦安・舞浜の旅行ガイド{{ end }}</div>
+      <div class="lg-side-cta-desc">{{ if $isEN }}Hotels, access &amp; gourmet in one place{{ else if $isZH }}酒店·交通·美食一站搜罗{{ else }}ホテル・アクセス・グルメをまとめて{{ end }}</div>
+      <a class="lg-side-cta-btn" href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Guide top{{ else if $isZH }}指南首页{{ else }}ガイドトップへ{{ end }}</a>
     </div>
 
     {{/* 観光ガイドの他の記事 */}}
     {{- with $guides }}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-compass" aria-hidden="true"></i> {{ if $isEN }}More travel guides{{ else }}観光ガイドの記事{{ end }}</div>
+      <div class="widget-title"><i class="ti ti-compass" aria-hidden="true"></i> {{ if $isEN }}More travel guides{{ else if $isZH }}更多旅行攻略{{ else }}観光ガイドの記事{{ end }}</div>
       <ol class="lg-pop-rank">
         {{- range $i, $g := first 5 . }}
         <li><a href="{{ $g.RelPermalink }}"><span class="lg-pop-num">{{ add $i 1 }}</span><span>{{ $g.Title | truncate 28 "…" }}</span></a></li>

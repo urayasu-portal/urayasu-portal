@@ -9,20 +9,20 @@ defaultContentLanguageInSubdir: false
 
 languages:
   ja:
-    languageName: 日本語
-    languageCode: ja
+    label: 日本語
+    locale: ja
     weight: 1
   en:
-    languageName: English
-    languageCode: en-US
+    label: English
+    locale: en-US
     weight: 2
     title: Urayasu Portal
     params:
       homeTitle: "Urayasu Portal | Urayasu & Maihama Travel Guide"
       description: "A local travel guide for Urayasu and Maihama area near Tokyo Disney Resort. Hotels, access, sightseeing, food, and taxi information."
   zh:
-    languageName: 简体中文
-    languageCode: zh-Hans
+    label: 简体中文
+    locale: zh-Hans
     weight: 3
     title: Urayasu Portal
     params:

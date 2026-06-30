@@ -36,7 +36,7 @@
 <meta name="description" content="{{- with $metaDesc }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
     {{- .Summary | default (printf "%s - %s" .Title  site.Title) }}{{- else }}
     {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
-<meta name="author" content="{{ if eq .Lang "en" }}Urayasu Portal{{ else }}{{ (partial "author.html" . ) }}{{ end }}">
+<meta name="author" content="{{ if eq .Lang "ja" }}{{ (partial "author.html" . ) }}{{ else }}Urayasu Portal{{ end }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
 {{- if site.Params.analytics.google.SiteVerificationTag }}
 <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
