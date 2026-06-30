@@ -1,17 +1,20 @@
-{{- $cur := .RelPermalink -}}
-<nav class="pillar-switcher pillar-switcher--travel-en" aria-label="Travel Guide navigation">
+{{- /* 観光特化サブナビ（EN/ZH 共用）。日本語サイトは pillar-switcher.html を使う。
+       active 判定は言語プレフィックス（/en・/zh）を除去して共通化。 */ -}}
+{{- $cur := .RelPermalink | strings.TrimPrefix "/en" | strings.TrimPrefix "/zh" -}}
+{{- $isZH := eq .Lang "zh" -}}
+<nav class="pillar-switcher pillar-switcher--travel-en" aria-label="{{ if $isZH }}旅行指南导航{{ else }}Travel Guide navigation{{ end }}">
   <div class="pillar-switcher-inner">
-    <a class="pillar-tab pillar-tab--travel{{ if or (eq $cur "/en/travel-guide/") (eq $cur "/en/") }} is-active{{ end }}"
-       href="{{ "/travel-guide/" | absLangURL }}">Travel Guide</a>
+    <a class="pillar-tab pillar-tab--travel{{ if or (eq $cur "/travel-guide/") (eq $cur "/") }} is-active{{ end }}"
+       href="{{ "/travel-guide/" | absLangURL }}">{{ if $isZH }}旅行指南{{ else }}Travel Guide{{ end }}</a>
     <a class="pillar-tab pillar-tab--travel{{ if in $cur "/travel-guide/hotels/" }} is-active{{ end }}"
-       href="{{ "/travel-guide/hotels/" | absLangURL }}"><i class="ti ti-bed" aria-hidden="true"></i>Hotels</a>
+       href="{{ "/travel-guide/hotels/" | absLangURL }}"><i class="ti ti-bed" aria-hidden="true"></i>{{ if $isZH }}酒店{{ else }}Hotels{{ end }}</a>
     <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-maihama-access-guide" }} is-active{{ end }}"
-       href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}"><i class="ti ti-route" aria-hidden="true"></i>Access</a>
+       href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}"><i class="ti ti-route" aria-hidden="true"></i>{{ if $isZH }}交通{{ else }}Access{{ end }}</a>
     <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-maihama-shinurayasu-tourism" }} is-active{{ end }}"
-       href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}"><i class="ti ti-camera" aria-hidden="true"></i>Sightseeing</a>
+       href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}"><i class="ti ti-camera" aria-hidden="true"></i>{{ if $isZH }}观光{{ else }}Sightseeing{{ end }}</a>
     <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-gourmet-souvenir-guide" }} is-active{{ end }}"
-       href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Food</a>
+       href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>{{ if $isZH }}美食{{ else }}Food{{ end }}</a>
     <a class="pillar-tab pillar-tab--travel{{ if in $cur "urayasu-taxi-airport-flat-rate-guide" }} is-active{{ end }}"
-       href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}"><i class="ti ti-taxi" aria-hidden="true"></i>Taxi</a>
+       href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}"><i class="ti ti-taxi" aria-hidden="true"></i>{{ if $isZH }}出租车{{ else }}Taxi{{ end }}</a>
   </div>
 </nav>

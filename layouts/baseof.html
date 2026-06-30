@@ -24,7 +24,7 @@
 <body class="pillar-{{ $pillar }}" id="top">
 {{- end }}
     {{ partialCached "header.html" . .Page -}}
-    {{- if eq .Lang "en" }}
+    {{- if ne .Lang "ja" }}
     {{ partial "travel-subnav-en.html" . }}
     {{- else }}
     {{ partial "pillar-switcher.html" . }}
