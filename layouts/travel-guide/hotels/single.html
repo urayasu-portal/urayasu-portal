@@ -195,11 +195,12 @@
       <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
       <div class="lg-book-btns">
         {{- if ne $lang "ja" }}
-        {{- with $bk.booking }}<a class="lg-book-btn book-booking" href="{{ . }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
+        {{- with $bk.expedia }}<a class="lg-book-btn book-expedia" href="{{ . }}" target="_blank" rel="sponsored noopener">Expedia</a>{{ end }}
         {{- with $bk.agoda }}<a class="lg-book-btn book-agoda" href="{{ . }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
         {{- else }}
         {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener">楽天トラベル</a>{{ end }}
         {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener">じゃらん</a>{{ end }}
+        {{- with $bk.yahoo }}<a class="lg-book-btn book-yahoo" href="{{ . }}" target="_blank" rel="sponsored noopener">Yahoo!トラベル</a>{{ end }}
         {{- end }}
       </div>
       <div class="lg-book-pr">{{ i18n "includes_pr" }}</div>

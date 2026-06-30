@@ -20,7 +20,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F74732%2F74732.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Tokyo%20Disneyland%20Hotel"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Tokyo%20Disneyland%20Hotel"
     name: "東京ディズニーランドホテル"
     address: "〒279-8505 千葉県浦安市舞浜29-1"
     name_en: "Tokyo Disneyland Hotel"
@@ -38,7 +38,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F74733%2F74733.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Tokyo%20DisneySea%20Hotel%20MiraCosta"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Tokyo%20DisneySea%20Hotel%20MiraCosta"
     name: "東京ディズニーシー・ホテルミラコスタ"
     address: "〒279-8519 千葉県浦安市舞浜1-13"
     name_en: "Tokyo DisneySea Hotel MiraCosta"
@@ -55,7 +55,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F189000%2F189000.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Tokyo%20DisneySea%20Fantasy%20Springs%20Hotel"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Tokyo%20DisneySea%20Fantasy%20Springs%20Hotel"
     name: "東京ディズニーシー・ファンタジースプリングスホテル"
     address: "〒279-8526 千葉県浦安市舞浜1-2"
     name_en: "Tokyo DisneySea Fantasy Springs Hotel"
@@ -72,7 +72,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F72737%2F72737.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Disney%20Ambassador%20Hotel"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Disney%20Ambassador%20Hotel"
     name: "ディズニーアンバサダーホテル"
     address: "〒279-8522 千葉県浦安市舞浜2-11"
     name_en: "Disney Ambassador Hotel"
@@ -90,7 +90,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F183493%2F183493.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Tokyo%20Disney%20Resort%20Toy%20Story%20Hotel"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Tokyo%20Disney%20Resort%20Toy%20Story%20Hotel"
     name: "トイ・ストーリーホテル"
     address: "〒279-8506 千葉県浦安市舞浜1-47"
     name_en: "Tokyo Disney Resort Toy Story Hotel"
@@ -108,7 +108,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F151431%2F151431.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Tokyo%20Disney%20Celebration%20Hotel%3A%20Wish"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Tokyo%20Disney%20Celebration%20Hotel%3A%20Wish"
     name: "東京ディズニーセレブレーションホテル：ウィッシュ"
     address: "千葉県浦安市明海7丁目1-1"
     name_en: "Tokyo Disney Celebration Hotel: Wish"
@@ -126,7 +126,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F151431%2F151431.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Tokyo%20Disney%20Celebration%20Hotel%3A%20Discover"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Tokyo%20Disney%20Celebration%20Hotel%3A%20Discover"
     name: "東京ディズニーセレブレーションホテル：ディスカバー"
     address: "千葉県浦安市日の出7-1-1"
     name_en: "Tokyo Disney Celebration Hotel: Discover"
@@ -142,7 +142,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1304%2F1304.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Okura%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Okura%20Tokyo%20Bay"
     name: "ホテルオークラ東京ベイ"
     address: "千葉県浦安市舞浜1-8"
     name_en: "Hotel Okura Tokyo Bay"
@@ -160,7 +160,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F179245%2F179245.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Grand%20Nikko%20Tokyo%20Bay%20Maihama"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Grand%20Nikko%20Tokyo%20Bay%20Maihama"
     name: "グランドニッコー東京ベイ舞浜"
     address: "千葉県浦安市舞浜1-7"
     name_en: "Grand Nikko Tokyo Bay Maihama"
@@ -181,7 +181,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F27896%2F27896.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Sheraton%20Grande%20Tokyo%20Bay%20Hotel"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Sheraton%20Grande%20Tokyo%20Bay%20Hotel"
     name: "シェラトン・グランデ・トーキョーベイ"
     address: "千葉県浦安市舞浜1-9"
     name_en: "Sheraton Grande Tokyo Bay Hotel"
@@ -201,7 +201,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1405%2F1405.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hilton%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hilton%20Tokyo%20Bay"
     name: "ヒルトン東京ベイ"
     address: "〒279-0031 千葉県浦安市舞浜1-8"
     name_en: "Hilton Tokyo Bay"
@@ -219,7 +219,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F27929%2F27929.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Tokyo%20Bay%20Maihama%20Hotel%20First%20Resort"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Tokyo%20Bay%20Maihama%20Hotel%20First%20Resort"
     name: "東京ベイ舞浜ホテル ファーストリゾート"
     address: "千葉県浦安市舞浜1-6"
     name_en: "Tokyo Bay Maihama Hotel First Resort"
@@ -237,7 +237,7 @@ hotels:
       - key: "station"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F19901%2F19901.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Dream%20Gate%20Maihama"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Dream%20Gate%20Maihama"
     name: "ホテルドリームゲート舞浜"
     address: "千葉県浦安市舞浜26-5"
     name_en: "Hotel Dream Gate Maihama"
@@ -255,7 +255,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F54127%2F54127.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Maihama%20View%20Hotel%20by%20HULIC"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Maihama%20View%20Hotel%20by%20HULIC"
     name: "舞浜ビューホテル by HULIC"
     address: "〒279-0031 千葉県浦安市舞浜1-34"
     name_en: "Maihama View Hotel by HULIC"
@@ -272,7 +272,7 @@ hotels:
       - key: "shuttle"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F196513%2F196513.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=The%20Royal%20Park%20Hotel%20Maihama%20Resort%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=The%20Royal%20Park%20Hotel%20Maihama%20Resort%20Tokyo%20Bay"
     name: "ザ ロイヤルパークホテル 舞浜リゾート 東京ベイ"
     address: "〒279-0032 千葉県浦安市千鳥13-1"
     name_en: "The Royal Park Hotel Maihama Resort Tokyo Bay"
@@ -287,7 +287,7 @@ hotels:
       - key: "shuttle"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F39203%2F39203.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=HOTEL%20MYSTAYS%20Maihama"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=HOTEL%20MYSTAYS%20Maihama"
     name: "ホテルマイステイズ舞浜"
     address: "〒279-0025 千葉県浦安市鉄鋼通り3-5-1"
     name_en: "HOTEL MYSTAYS Maihama"
@@ -305,7 +305,7 @@ hotels:
       - key: "shuttle"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F67868%2F67868.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=SPA%20%26%20HOTEL%20Maihama%20Eurasia"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=SPA%20%26%20HOTEL%20Maihama%20Eurasia"
     name: "スパ＆ホテル 舞浜ユーラシア"
     address: "千葉県浦安市千鳥13-20"
     name_en: "SPA & HOTEL Maihama Eurasia"
@@ -322,7 +322,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F172068%2F172068.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Eurasia%20Maihama%20Annex"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Eurasia%20Maihama%20Annex"
     name: "HOTELユーラシア舞浜ANNEX"
     address: "〒279-0032 千葉県浦安市千鳥10-5"
     name_en: "Hotel Eurasia Maihama Annex"
@@ -341,7 +341,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F172919%2F172919.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hyatt%20Regency%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hyatt%20Regency%20Tokyo%20Bay"
     name: "ハイアット リージェンシー 東京ベイ"
     address: "千葉県浦安市明海5-8-23"
     name_en: "Hyatt Regency Tokyo Bay"
@@ -358,7 +358,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F165869%2F165869.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Comfort%20Suites%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Comfort%20Suites%20Tokyo%20Bay"
     name: "コンフォートスイーツ東京ベイ"
     address: "〒279-0014 千葉県浦安市明海5-8-15"
     name_en: "Comfort Suites Tokyo Bay"
@@ -375,7 +375,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F978%2F978.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Urayasu%20Brighton%20Hotel%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Urayasu%20Brighton%20Hotel%20Tokyo%20Bay"
     name: "浦安ブライトンホテル東京ベイ"
     address: "千葉県浦安市美浜1-9"
     name_en: "Urayasu Brighton Hotel Tokyo Bay"
@@ -394,7 +394,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1238%2F1238.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Oriental%20Hotel%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Oriental%20Hotel%20Tokyo%20Bay"
     name: "オリエンタルホテル東京ベイ"
     address: "千葉県浦安市美浜1-8-2"
     name_en: "Oriental Hotel Tokyo Bay"
@@ -414,7 +414,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F38529%2F38529.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Emion%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Emion%20Tokyo%20Bay"
     name: "ホテルエミオン東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出1-1-1"
     name_en: "Hotel Emion Tokyo Bay"
@@ -434,7 +434,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F67046%2F67046.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Mitsui%20Garden%20Hotel%20Prana%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Mitsui%20Garden%20Hotel%20Prana%20Tokyo%20Bay"
     name: "三井ガーデンホテルプラナ東京ベイ"
     address: "千葉県浦安市明海6-2-1"
     name_en: "Mitsui Garden Hotel Prana Tokyo Bay"
@@ -451,7 +451,7 @@ hotels:
       - key: "shuttle"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F188799%2F188799.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=1955%20Tokyo%20Bay%20by%20Hoshino%20Resorts"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=1955%20Tokyo%20Bay%20by%20Hoshino%20Resorts"
     name: "星野リゾート 1955 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出7-2-3"
     name_en: "1955 Tokyo Bay by Hoshino Resorts"
@@ -467,7 +467,7 @@ hotels:
       - key: "shuttle"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F158612%2F158612.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=La'gent%20Hotel%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=La'gent%20Hotel%20Tokyo%20Bay"
     name: "ラ・ジェント・ホテル東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出5-7-1"
     name_en: "La'gent Hotel Tokyo Bay"
@@ -484,7 +484,7 @@ hotels:
       - key: "limousine"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F167677%2F167677.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=ibis%20Styles%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=ibis%20Styles%20Tokyo%20Bay"
     name: "イビス スタイルズ 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出2-1-1"
     name_en: "ibis Styles Tokyo Bay"
@@ -499,7 +499,7 @@ hotels:
       - key: "laundry"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F76849%2F76849.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=HOTEL%20MYSTAYS%20Shin%20Urayasu%20Conference%20Center"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=HOTEL%20MYSTAYS%20Shin%20Urayasu%20Conference%20Center"
     name: "マイステイズ新浦安コンファレンスセンター"
     address: "〒279-0014 千葉県浦安市明海2-1-4"
     name_en: "HOTEL MYSTAYS Shin Urayasu Conference Center"
@@ -516,7 +516,7 @@ hotels:
       - key: "kitchen"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F30925%2F30925.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=FLEXSTAY%20INN%20Shin%20Urayasu"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=FLEXSTAY%20INN%20Shin%20Urayasu"
     name: "フレックステイイン新浦安"
     address: "〒279-0022 千葉県浦安市今川4-1-29"
     name_en: "FLEXSTAY INN Shin Urayasu"
@@ -531,7 +531,7 @@ hotels:
       - key: "shuttle"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F160670%2F160670.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Henn%20na%20Hotel%20Maihama%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Henn%20na%20Hotel%20Maihama%20Tokyo%20Bay"
     name: "変なホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見5-3-23"
     name_en: "Henn na Hotel Maihama Tokyo Bay"
@@ -546,7 +546,7 @@ hotels:
       - key: "laundry"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F182605%2F182605.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Four%20Stories%20Hotel%20Maihama%20Tokyo%20Bay"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Four%20Stories%20Hotel%20Maihama%20Tokyo%20Bay"
     name: "フォーストーリーズホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見1-11-31"
     name_en: "Four Stories Hotel Maihama Tokyo Bay"
@@ -562,7 +562,7 @@ hotels:
       - key: "shuttle"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F161050%2F161050.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=HIYORI%20HOTEL%20Maihama"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=HIYORI%20HOTEL%20Maihama"
     name: "日和ホテル舞浜"
     address: "〒279-0042 千葉県浦安市東野2-25-8"
     name_en: "HIYORI HOTEL Maihama"
@@ -577,7 +577,7 @@ hotels:
       - key: "station"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F1199%2F1199.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Urayasu%20Beaufort%20Hotel"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Urayasu%20Beaufort%20Hotel"
     name: "浦安ビューフォートホテル"
     address: "〒279-0004 千葉県浦安市猫実4-18-28"
     name_en: "Urayasu Beaufort Hotel"
@@ -591,7 +591,7 @@ hotels:
     facilities:
       - key: "station"
     booking:
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Daigo"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Daigo"
     name: "ホテル醍醐"
     address: "〒279-0002 千葉県浦安市北栄1-11-1"
     name_en: "Hotel Daigo"
@@ -607,7 +607,7 @@ hotels:
       - key: "kitchen"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F167313%2F167313.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=BAY%20HOTEL%20Urayasu-ekimae"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=BAY%20HOTEL%20Urayasu-ekimae"
     name: "BAYHOTEL浦安駅前"
     address: "〒279-0002 千葉県浦安市北栄1-15-28"
     name_en: "BAY HOTEL Urayasu-ekimae"
@@ -623,7 +623,7 @@ hotels:
       - key: "station"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F143299%2F143299.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Urayasu%20Sun%20Hotel"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Urayasu%20Sun%20Hotel"
     name: "浦安サンホテル"
     address: "〒279-0001 千葉県浦安市当代島1-19-13"
     name_en: "Urayasu Sun Hotel"
@@ -639,7 +639,7 @@ hotels:
         note: "サウナ"
       - key: "shuttle"
     booking:
-      booking: "https://www.booking.com/searchresults.html?ss=Premium%20hotel%20MONday%20Maihama%20View%20I"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Premium%20hotel%20MONday%20Maihama%20View%20I"
     name: "Premium hotel MONday 舞浜ビューⅠ"
     address: "〒134-0085 東京都江戸川区南葛西6-2-22"
     name_en: "Premium hotel MONday Maihama View I"
@@ -654,7 +654,7 @@ hotels:
       - key: "bath"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F129892%2F129892.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Seaside%20Edogawa"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Seaside%20Edogawa"
     name: "ホテルシーサイド江戸川"
     address: "〒134-0086 東京都江戸川区臨海町6-2-2（葛西臨海公園内）"
     name_en: "Hotel Seaside Edogawa"
@@ -669,7 +669,7 @@ hotels:
       - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F84838%2F84838.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=CVS%20BAY%20HOTEL"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=CVS%20BAY%20HOTEL"
     name: "CVS・BAY HOTEL"
     address: "〒272-0127 千葉県市川市塩浜2-33-1（本館）"
     name_en: "CVS BAY HOTEL"
@@ -684,7 +684,7 @@ hotels:
       - key: "laundry"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F165087%2F165087.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Il%20Fiore%20Kasai"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Il%20Fiore%20Kasai"
     name: "ホテルイルフィオーレ葛西"
     address: "〒134-0084 東京都江戸川区東葛西6-5-8"
     name_en: "Hotel Il Fiore Kasai"
@@ -699,7 +699,7 @@ hotels:
       - key: "laundry"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F189226%2F189226.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Il%20Fiore%20Kasai%20ANNEX"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Il%20Fiore%20Kasai%20ANNEX"
     name: "ホテルイルフィオーレ葛西 ANNEX"
     address: "〒134-0084 東京都江戸川区東葛西6-1-7"
     name_en: "Hotel Il Fiore Kasai ANNEX"
@@ -714,7 +714,7 @@ hotels:
       - key: "laundry"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F20242%2F20242.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Hotel%20Lumiere%20Kasai"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Hotel%20Lumiere%20Kasai"
     name: "ホテルルミエール葛西"
     address: "〒134-0083 東京都江戸川区中葛西5-41-20"
     name_en: "Hotel Lumiere Kasai"
@@ -729,7 +729,7 @@ hotels:
       - key: "laundry"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F153534%2F153534.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=HOTEL%20LiVEMAX%20Kasai-Ekimae"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=HOTEL%20LiVEMAX%20Kasai-Ekimae"
     name: "ホテルリブマックス葛西駅前"
     address: "〒134-0084 東京都江戸川区東葛西6-1-3"
     name_en: "HOTEL LiVEMAX Kasai-Ekimae"
@@ -744,7 +744,7 @@ hotels:
       - key: "laundry"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F40250%2F40250.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
-      booking: "https://www.booking.com/searchresults.html?ss=Super%20Hotel%20Tozai%20Line%20Ichikawa-Myoden"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=Super%20Hotel%20Tozai%20Line%20Ichikawa-Myoden"
     name: "スーパーホテル東西線・市川・妙典駅前"
     address: "〒272-0111 千葉県市川市妙典4-4-27 妙典センタービル"
     name_en: "Super Hotel Tozai Line Ichikawa-Myoden"

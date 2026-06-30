@@ -3373,6 +3373,8 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .book-jalan   { background: #e9531f; }
 .book-booking { background: #003580; }
 .book-agoda   { background: #d62e4f; }
+.book-expedia { background: #1668e3; }
+.book-yahoo   { background: #ff0033; }
 .lg-book-pr { font-size: 10px; color: var(--up-text-3); margin-top: 9px; text-align: center; }
 /* 広告（PR）表記（{{< ad-disclosure >}}） */
 .ad-disclosure { font-size: 12px; color: var(--up-text-3); background: var(--up-surface-2); border: 1px solid var(--up-border); border-radius: 8px; padding: 8px 12px; margin: 0 0 16px; display: flex; align-items: center; gap: 6px; line-height: 1.6; }
