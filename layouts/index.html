@@ -83,52 +83,8 @@
   </a>
 </div>
 
-{{/* Featured hotels */}}
-<div class="section-head">
-  <h2>Featured hotels</h2>
-  <a class="section-more" href="{{ "/travel-guide/hotels/" | absLangURL }}">See all →</a>
-</div>
-<div class="tg-featured-grid">
-  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/hilton-tokyo-bay/" | absLangURL }}">
-    <div class="tg-featured-band tg-featured-band--official">
-      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
-      <span class="tg-featured-badge tg-featured-badge--official">OFFICIAL</span>
-    </div>
-    <div class="tg-featured-body">
-      <div class="tg-featured-name">Hilton Tokyo Bay</div>
-      <div class="tg-featured-meta">Maihama · 828 rooms</div>
-      <div class="tg-featured-tags">
-        <span>Family</span><span>24h store</span>
-      </div>
-    </div>
-  </a>
-  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/grand-nikko-tokyo-bay/" | absLangURL }}">
-    <div class="tg-featured-band tg-featured-band--official">
-      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
-      <span class="tg-featured-badge tg-featured-badge--official">OFFICIAL</span>
-    </div>
-    <div class="tg-featured-body">
-      <div class="tg-featured-name">Grand Nikko Tokyo Bay</div>
-      <div class="tg-featured-meta">Maihama · 770 rooms</div>
-      <div class="tg-featured-tags">
-        <span>By station</span><span>Onsen</span>
-      </div>
-    </div>
-  </a>
-  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/mystays-shin-urayasu/" | absLangURL }}">
-    <div class="tg-featured-band tg-featured-band--budget">
-      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
-      <span class="tg-featured-badge tg-featured-badge--budget">BUDGET</span>
-    </div>
-    <div class="tg-featured-body">
-      <div class="tg-featured-name">MyStays Shin-Urayasu</div>
-      <div class="tg-featured-meta">Shin-Urayasu · Free shuttle</div>
-      <div class="tg-featured-tags tg-featured-tags--budget">
-        <span>Value</span><span>Long stay</span>
-      </div>
-    </div>
-  </a>
-</div>
+{{/* Featured hotels（共通パーシャル・週替わりローテーション） */}}
+{{ partial "featured-hotels.html" . }}
 
 {{/* Japanese site cross-link */}}
 <div class="tg-cross-link" style="margin-top:32px;">

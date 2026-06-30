@@ -94,58 +94,8 @@
   </a>
 </div>
 
-{{/* ────────────────────────────────────────
-     注目のホテル / Featured hotels（3カード）
-     ──────────────────────────────────────── */}}
-<div class="section-head">
-  <h2>{{ if $isEN }}Featured hotels{{ else }}注目のホテル{{ end }}</h2>
-  <a class="section-more" href="{{ "/travel-guide/hotels/" | absLangURL }}">{{ if $isEN }}See all →{{ else }}すべて見る →{{ end }}</a>
-</div>
-<div class="tg-featured-grid">
-
-  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/hilton-tokyo-bay/" | absLangURL }}">
-    <div class="tg-featured-band tg-featured-band--official">
-      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
-      <span class="tg-featured-badge tg-featured-badge--official">{{ if $isEN }}OFFICIAL{{ else }}オフィシャル{{ end }}</span>
-    </div>
-    <div class="tg-featured-body">
-      <div class="tg-featured-name">{{ if $isEN }}Hilton Tokyo Bay{{ else }}ヒルトン東京ベイ{{ end }}</div>
-      <div class="tg-featured-meta">{{ if $isEN }}Maihama · 828 rooms{{ else }}舞浜エリア ・ 全828室{{ end }}</div>
-      <div class="tg-featured-tags">
-        <span>{{ if $isEN }}Family{{ else }}子連れ◎{{ end }}</span><span>{{ if $isEN }}24h store{{ else }}24h コンビニ{{ end }}</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/grand-nikko-tokyo-bay/" | absLangURL }}">
-    <div class="tg-featured-band tg-featured-band--official">
-      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
-      <span class="tg-featured-badge tg-featured-badge--official">{{ if $isEN }}OFFICIAL{{ else }}オフィシャル{{ end }}</span>
-    </div>
-    <div class="tg-featured-body">
-      <div class="tg-featured-name">{{ if $isEN }}Grand Nikko Tokyo Bay{{ else }}グランドニッコー東京ベイ{{ end }}</div>
-      <div class="tg-featured-meta">{{ if $isEN }}Maihama · 770 rooms{{ else }}舞浜エリア ・ 全770室{{ end }}</div>
-      <div class="tg-featured-tags">
-        <span>{{ if $isEN }}By station{{ else }}駅直結{{ end }}</span><span>{{ if $isEN }}Onsen{{ else }}大浴場{{ end }}</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="tg-featured-card" href="{{ "/travel-guide/hotels/mystays-shin-urayasu/" | absLangURL }}">
-    <div class="tg-featured-band tg-featured-band--budget">
-      <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
-      <span class="tg-featured-badge tg-featured-badge--budget">{{ if $isEN }}BUDGET{{ else }}格安{{ end }}</span>
-    </div>
-    <div class="tg-featured-body">
-      <div class="tg-featured-name">{{ if $isEN }}MyStays Shin-Urayasu{{ else }}マイステイズ新浦安{{ end }}</div>
-      <div class="tg-featured-meta">{{ if $isEN }}Shin-Urayasu · Free shuttle{{ else }}新町エリア ・ 無料送迎{{ end }}</div>
-      <div class="tg-featured-tags tg-featured-tags--budget">
-        <span>{{ if $isEN }}Value{{ else }}コスパ◎{{ end }}</span><span>{{ if $isEN }}Long stay{{ else }}長期滞在{{ end }}</span>
-      </div>
-    </div>
-  </a>
-
-</div>
+{{/* 注目のホテル（共通パーシャル・data/hotels.yaml由来・週替わりローテーション） */}}
+{{ partial "featured-hotels.html" . }}
 
 {{/* ────────────────────────────────────────
      クロスリンク (日本語のみ) / Cross-link (JP only)

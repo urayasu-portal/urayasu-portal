@@ -1833,12 +1833,18 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 .tg-featured-band > i { font-size: 24px; opacity: .5; }
 .tg-featured-band--official { background: #FBDED4; color: var(--accent); }
 .tg-featured-band--budget { background: #E8EDF2; color: var(--up-text-3); }
+.tg-featured-band--disney  { background: #F0E2F5; color: #7B1FA2; }
+.tg-featured-band--partner { background: #FBEFD6; color: #B07415; }
+.tg-featured-band--other   { background: #E1ECF4; color: #1A5C8A; }
 .tg-featured-badge {
   position: absolute; top: 7px; left: 7px;
   color: #fff; font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 4px;
 }
 .tg-featured-badge--official { background: var(--accent); }
 .tg-featured-badge--budget { background: var(--up-text-3); }
+.tg-featured-badge--disney  { background: #7B1FA2; }
+.tg-featured-badge--partner { background: #C8841A; }
+.tg-featured-badge--other   { background: #1A5C8A; }
 .tg-featured-body { padding: 11px; }
 .tg-featured-name { font-size: 12px; font-weight: 700; color: var(--up-text); line-height: 1.4; }
 .tg-featured-meta { font-size: 10px; color: var(--up-text-3); margin: 5px 0 6px; }

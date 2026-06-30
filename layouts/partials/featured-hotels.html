@@ -1,0 +1,85 @@
+{{- /* 注目のホテル（共通パーシャル）。data/hotels.yaml（マスター=CSV）由来でカードを生成し、毎週自動で入れ替える。
+       ・カード情報は常に最新（CSVを直せば反映。室数等のハードコードなし）
+       ・サーバ側はビルド週でフォールバック描画（SEO・JS無効時も有効）
+       ・JSが訪問週(ISO週番号)で上書きし、リビルド不要で定期ローテーション
+       構成＝上位（ディズニー/オフィシャル）＋パートナー＋その他 を各1枠で変化に富む。
+       呼び出し: {{ partial "featured-hotels.html" . }} */ -}}
+{{- $isEN := eq site.Language.Lang "en" }}
+{{- $catBadge := dict "disney" (cond $isEN "DISNEY" "ディズニー") "official" (cond $isEN "OFFICIAL" "オフィシャル") "partner" (cond $isEN "PARTNER" "パートナー") "other" (cond $isEN "OTHER" "その他") }}
+{{- $catIcon := dict "disney" "ti-building-castle" "official" "ti-building-skyscraper" "partner" "ti-star" "other" "ti-building" }}
+{{- $premium := slice }}{{- $partner := slice }}{{- $value := slice }}
+{{- range hugo.Data.hotels.areas }}
+  {{- $aname := cond $isEN .name_en .name }}
+  {{- range .hotels }}
+    {{- if eq .policy "normal" }}
+      {{- $ck := "" }}
+      {{- if eq .category "ディズニーホテル" }}{{ $ck = "disney" }}
+      {{- else if eq .category "オフィシャルホテル" }}{{ $ck = "official" }}
+      {{- else if eq .category "パートナーホテル" }}{{ $ck = "partner" }}
+      {{- else if eq .category "その他のホテル" }}{{ $ck = "other" }}{{ end }}
+      {{- if $ck }}
+        {{- $item := dict "name" (cond $isEN .name_en .name) "area" $aname "price" .price_guide "feature" (cond $isEN .feature_en .feature) "url" (printf "/travel-guide/hotels/%s/" .slug | absLangURL) "cat" $ck "badge" (index $catBadge $ck) "icon" (index $catIcon $ck) }}
+        {{- if or (eq $ck "disney") (eq $ck "official") }}{{ $premium = $premium | append $item }}{{ end }}
+        {{- if eq $ck "partner" }}{{ $partner = $partner | append $item }}{{ end }}
+        {{- if eq $ck "other" }}{{ $value = $value | append $item }}{{ end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- if and $premium $partner $value }}
+{{- $week := div now.YearDay 7 }}
+{{- $a := index $premium (mod $week (len $premium)) }}
+{{- $b := index $partner (mod $week (len $partner)) }}
+{{- $c := index $value (mod $week (len $value)) }}
+<div class="section-head">
+  <h2>{{ if $isEN }}Featured hotels{{ else }}注目のホテル{{ end }}</h2>
+  <a class="section-more" href="{{ "/travel-guide/hotels/" | absLangURL }}">{{ if $isEN }}See all →{{ else }}すべて見る →{{ end }}</a>
+</div>
+<script>window.TG_FEATURED = {{ dict "premium" $premium "partner" $partner "value" $value | jsonify | safeJS }};</script>
+<div class="tg-featured-grid" id="tg-featured-grid">
+  {{- range (slice $a $b $c) }}
+  <a class="tg-featured-card" href="{{ .url }}">
+    <div class="tg-featured-band tg-featured-band--{{ .cat }}">
+      <i class="ti {{ .icon }}" aria-hidden="true"></i>
+      <span class="tg-featured-badge tg-featured-badge--{{ .cat }}">{{ .badge }}</span>
+    </div>
+    <div class="tg-featured-body">
+      <div class="tg-featured-name">{{ .name }}</div>
+      <div class="tg-featured-meta">{{ .area }}{{ with .price }} ・ {{ . }}{{ end }}</div>
+      {{- with .feature }}<div class="tg-featured-tags"><span>{{ . }}</span></div>{{- end }}
+    </div>
+  </a>
+  {{- end }}
+</div>
+<script>
+(function () {
+  var grid = document.getElementById('tg-featured-grid');
+  var data = window.TG_FEATURED;
+  if (!grid || !data) return;
+  var premium = data.premium || [], partner = data.partner || [], value = data.value || [];
+  if (!premium.length || !partner.length || !value.length) return;
+  // ISO週番号（訪問者のローカル日付。リビルド無しで毎週入れ替わる）
+  var n = new Date();
+  var d = new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate()));
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7) + 3);
+  var firstThu = new Date(Date.UTC(d.getUTCFullYear(), 0, 4));
+  var week = 1 + Math.round(((d - firstThu) / 864e5 - 3 + ((firstThu.getUTCDay() + 6) % 7)) / 7);
+  var a = premium[week % premium.length];
+  var b = partner[week % partner.length];
+  var c = value[week % value.length];
+  function esc(s) { return (s || '').replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
+  function card(h) {
+    return '<a class="tg-featured-card" href="' + esc(h.url) + '">'
+      + '<div class="tg-featured-band tg-featured-band--' + esc(h.cat) + '">'
+      + '<i class="ti ' + esc(h.icon) + '" aria-hidden="true"></i>'
+      + '<span class="tg-featured-badge tg-featured-badge--' + esc(h.cat) + '">' + esc(h.badge) + '</span></div>'
+      + '<div class="tg-featured-body">'
+      + '<div class="tg-featured-name">' + esc(h.name) + '</div>'
+      + '<div class="tg-featured-meta">' + esc(h.area) + (h.price ? ' ・ ' + esc(h.price) : '') + '</div>'
+      + (h.feature ? '<div class="tg-featured-tags"><span>' + esc(h.feature) + '</span></div>' : '')
+      + '</div></a>';
+  }
+  grid.innerHTML = [a, b, c].map(card).join('');
+})();
+</script>
+{{- end }}
