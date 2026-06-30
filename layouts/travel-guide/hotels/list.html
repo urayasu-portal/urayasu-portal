@@ -122,6 +122,11 @@
   </div>
   <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:6px;">{{- if $isEN }}※ Prices rise significantly during peak seasons (Golden Week, summer, year-end){{- else }}※ 繁忙期（GW・夏休み・年末年始）は全ホテルで大きく値上がりします{{- end }}</p>
 </div>
+{{- $typesURL := cond $isEN "/en/travel-guide/hotels/types/" "/travel-guide/hotels/types/" }}
+<p style="text-align:center;margin:10px 0 4px;">
+  <a href="{{ $typesURL }}" style="display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--up-accent);text-decoration:none;">
+    <i class="ti ti-help-circle" aria-hidden="true"></i>{{ if $isEN }}What's the difference between Disney, Official, Partner &amp; Good Neighbor hotels? →{{ else }}ディズニー／オフィシャル／パートナー／グッドネイバーの違いをくわしく見る →{{ end }}</a>
+</p>
 
 {{/* ────────────────────────────────────────
      全施設一覧表（フィルタ付き） / Full Hotel List (filterable)

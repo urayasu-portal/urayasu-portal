@@ -155,6 +155,10 @@
       <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>{{ if $isEN }}Other{{ else }}その他{{ end }}</span>
     </div>
     <p class="hcm-map-note"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if $isEN }}Click a pin to highlight its card. Pins outside the current filter are dimmed. Coordinates are approximate.{{ else }}ピンをクリックするとカードがハイライトします。絞り込み外のピンは薄く表示されます。座標は近似値です。{{ end }}</p>
+    <p class="hcm-map-note" style="margin-top:2px;">
+      <i class="ti ti-help-circle" aria-hidden="true"></i>
+      <a href="{{ cond $isEN "/en/travel-guide/hotels/types/" "/travel-guide/hotels/types/" }}" style="color:var(--up-accent);text-decoration:none;font-weight:600;">{{ if $isEN }}What do Disney / Official / Partner / Good Neighbor mean? →{{ else }}ディズニー／オフィシャル／パートナー／グッドネイバーの違いとは？ →{{ end }}</a>
+    </p>
   </div>
 </div>
 

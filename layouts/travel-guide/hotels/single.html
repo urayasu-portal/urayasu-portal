@@ -101,6 +101,22 @@
           {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ if $isEN }}Updated {{ .Lastmod.Format "Jan 2, 2006" }}{{ else }}{{ .Lastmod.Format "2006年1月2日" }}更新{{ end }}</span>{{- end }}
           {{- with $area }}<span><i class="ti ti-map-pin" aria-hidden="true"></i> {{ . }}</span>{{- end }}
         </div>
+
+        {{/* カテゴリ区分の解説ページへの文脈リンク（実ホテルページのみ。kids/budget/access等のガイドページでは非表示） */}}
+        {{- if $curCat }}
+        {{- $typeAnchor := "others" }}{{- $typeName := "" }}
+        {{- if eq $curCat "ディズニーホテル" }}{{ $typeAnchor = "disney" }}{{ $typeName = cond $isEN "Disney Hotel" "ディズニーホテル" }}
+        {{- else if eq $curCat "オフィシャルホテル" }}{{ $typeAnchor = "official" }}{{ $typeName = cond $isEN "Official Hotel" "オフィシャルホテル" }}
+        {{- else if eq $curCat "パートナーホテル" }}{{ $typeAnchor = "partner" }}{{ $typeName = cond $isEN "Partner Hotel" "パートナーホテル" }}
+        {{- else if eq $curCat "グッドネイバーホテル" }}{{ $typeAnchor = "goodneighbor" }}{{ $typeName = cond $isEN "Good Neighbor Hotel" "グッドネイバーホテル" }}
+        {{- end }}
+        {{- $typesBase := cond $isEN "/en/travel-guide/hotels/types/" "/travel-guide/hotels/types/" }}
+        <p class="hg-type-link" style="margin:8px 0 0;font-size:0.84em;">
+          <a href="{{ $typesBase }}#{{ $typeAnchor }}" style="display:inline-flex;align-items:center;gap:5px;color:var(--up-accent);text-decoration:none;">
+            <i class="ti ti-help-circle" aria-hidden="true"></i>
+            {{- if $typeName }}{{ if $isEN }}What is a {{ $typeName }}?{{ else }}{{ $typeName }}とは？{{ end }}{{ else }}{{ if $isEN }}About TDR hotel categories{{ else }}ホテルの区分とは？{{ end }}{{ end }} →</a>
+        </p>
+        {{- end }}
       </header>
 
       {{- if $hotelPhoto }}
