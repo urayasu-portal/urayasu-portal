@@ -6,17 +6,17 @@
 {{- range .Site.Data.hotels_map.hotels }}
   {{- if eq .slug $slug }}{{ $h = . }}{{ end }}
 {{- end }}
-{{- $isEN := eq .Page.Language.Lang "en" }}
+{{- $lang := .Page.Language.Lang }}
 {{- with $h }}
-{{- $dispName := cond $isEN (.name_en | default .name) .name }}
+{{- $dispName := .name }}{{ if eq $lang "en" }}{{ $dispName = .name_en | default .name }}{{ else if eq $lang "zh" }}{{ $dispName = .name_zh | default .name }}{{ end }}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <div class="hg-map">
 <div class="hg-map-head"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="hg-map-name">{{ $dispName }}</div><div class="hg-map-addr">{{ .address }}</div></div></div>
 <div class="hg-map-embed"><div id="hotel-map"></div></div>
 <div class="hg-map-actions">
-<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&{{ querify "query" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>{{ if $isEN }}Open in Google Maps{{ else }}Googleマップで開く{{ end }}</a>
-<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&{{ querify "destination" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>{{ if $isEN }}Get directions{{ else }}経路を調べる{{ end }}</a>
+<a class="hg-map-btn" href="https://www.google.com/maps/search/?api=1&{{ querify "query" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-brand-google-maps" aria-hidden="true"></i>{{ i18n "map_open" }}</a>
+<a class="hg-map-btn hg-map-btn--out" href="https://www.google.com/maps/dir/?api=1&{{ querify "destination" (printf "%s %s" .name .address) }}" target="_blank" rel="noopener"><i class="ti ti-route" aria-hidden="true"></i>{{ i18n "map_directions" }}</a>
 </div></div>
 <script>
 (function(){

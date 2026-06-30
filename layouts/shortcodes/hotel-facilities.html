@@ -4,6 +4,7 @@
        該当する設備だけを全部表示（4枚固定にしない）。 */ -}}
 {{- $slug := .Page.File.ContentBaseName }}
 {{- $isEN := eq .Page.Language.Lang "en" }}
+{{- $lang := .Page.Language.Lang }}
 {{- $h := false }}
 {{- range .Site.Data.hotels_map.hotels }}
   {{- if eq .slug $slug }}{{ $h = . }}{{ end }}
@@ -23,17 +24,24 @@
 {{- $noteEN := dict
     "有料" "Paid" "無料" "Free" "天然温泉" "Hot spring" "サウナ" "Sauna"
     "温水" "Heated" "屋内外" "In/outdoor" "展望" "View" "無料・展望" "Free / view" }}
+{{- $labZH := dict
+    "bath" "大浴场·温泉" "pool" "室内泳池" "laundry" "投币洗衣"
+    "convenience" "馆内商店" "shuttle" "免费班车" "station" "邻近车站"
+    "limousine" "机场利木津巴士" "kitchen" "小厨房" }}
+{{- $noteZH := dict
+    "有料" "付费" "無料" "免费" "天然温泉" "天然温泉" "サウナ" "桑拿"
+    "温水" "温水" "屋内外" "室内外" "展望" "景观" "無料・展望" "免费·景观" }}
 {{- with $h }}
 {{- if .facilities }}
 <div class="hg-facilities">
   {{- range .facilities }}
   {{- $ti := index $icon .key }}
-  {{- $label := index $labJP .key }}{{ if $isEN }}{{ $label = index $labEN .key }}{{ end }}
+  {{- $label := index $labJP .key }}{{ if eq $lang "en" }}{{ $label = index $labEN .key }}{{ else if eq $lang "zh" }}{{ $label = index $labZH .key }}{{ end }}
   {{- if $ti }}
   <div class="hg-fac">
     <i class="ti {{ $ti }}" aria-hidden="true"></i>
     <div class="hg-fac-label">{{ $label }}</div>
-    {{- with .note }}<div class="hg-fac-note">{{ if $isEN }}{{ with index $noteEN . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else }}{{ . }}{{ end }}</div>{{- end }}
+    {{- with .note }}<div class="hg-fac-note">{{ if eq $lang "en" }}{{ with index $noteEN . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "zh" }}{{ with index $noteZH . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else }}{{ . }}{{ end }}</div>{{- end }}
   </div>
   {{- end }}
   {{- end }}

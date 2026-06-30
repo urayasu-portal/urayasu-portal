@@ -1,0 +1,66 @@
+# UIラベルの多言語化テーブル（English）。テンプレートの {{ i18n "key" }} 用。
+# ja.yaml / zh.yaml とキーを必ず揃えること（韓国語は ko.yaml を追加するだけ）。
+- id: breadcrumb
+  translation: "Breadcrumb"
+- id: nav_home
+  translation: "Home"
+- id: nav_travel_guide
+  translation: "Travel Guide"
+- id: nav_hotels
+  translation: "Hotels"
+- id: hotel_badge
+  translation: "Hotel"
+- id: tdr_official
+  translation: "TDR Official"
+- id: updated_on
+  translation: "Updated {{ .date }}"
+- id: type_what_is
+  translation: "What is a {{ .name }}?"
+- id: type_about
+  translation: "About TDR hotel categories"
+- id: hotel_disclaimer
+  translation: "Rates and services listed here are subject to change. Always confirm the latest availability, prices and conditions on each hotel's official website."
+- id: nearby_hotels
+  translation: "Nearby similar hotels"
+- id: cat_disney
+  translation: "Disney"
+- id: cat_official
+  translation: "Official"
+- id: cat_partner
+  translation: "Partner"
+- id: cat_other
+  translation: "Other"
+- id: cat_full_disney
+  translation: "Disney Hotel"
+- id: cat_full_official
+  translation: "Official Hotel"
+- id: cat_full_partner
+  translation: "Partner Hotel"
+- id: cat_full_goodneighbor
+  translation: "Good Neighbor Hotel"
+- id: tags_label
+  translation: "Tags:"
+- id: contents
+  translation: "Contents"
+- id: check_rates
+  translation: "Check rates & availability"
+- id: includes_pr
+  translation: "Includes affiliate links (PR)"
+- id: compare_title
+  translation: "Compare & choose a hotel"
+- id: compare_desc
+  translation: "Filter by family, budget & access"
+- id: compare_btn
+  translation: "Open comparison map"
+- id: popular_guides
+  translation: "Popular hotel guides"
+- id: pop_kids
+  translation: "Family-friendly hotels compared"
+- id: pop_budget
+  translation: "How to choose a budget hotel"
+- id: pop_access
+  translation: "Hotels compared by access"
+- id: map_open
+  translation: "Open in Google Maps"
+- id: map_directions
+  translation: "Get directions"

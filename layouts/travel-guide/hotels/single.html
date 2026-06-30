@@ -13,6 +13,7 @@
 {{- end }}
 
 {{- $isEN := eq site.Language.Lang "en" }}
+{{- $lang := site.Language.Lang }}
 
 {{/* 近隣の似たホテル：エリア区分ではなく「実座標の距離」を主軸に、区分・価格帯の近さを加点して
      上位3件を選定する。浦安近郊のようにエリア内でも施設間が離れるケースに対応するため距離ベースとし、
@@ -22,7 +23,7 @@
 {{- $mapIdx := dict }}
 {{- range hugo.Data.hotels_map.hotels }}{{ $mapIdx = merge $mapIdx (dict .slug .) }}{{- end }}
 {{- $catIdx := dict }}{{- $areaNameIdx := dict }}
-{{- range hugo.Data.hotels.areas }}{{- $an := .name }}{{- range .hotels }}{{- if .slug }}{{ $catIdx = merge $catIdx (dict .slug .category) }}{{ $areaNameIdx = merge $areaNameIdx (dict .slug $an) }}{{- end }}{{- end }}{{- end }}
+{{- range hugo.Data.hotels.areas }}{{- $an := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)) }}{{- range .hotels }}{{- if .slug }}{{ $catIdx = merge $catIdx (dict .slug .category) }}{{ $areaNameIdx = merge $areaNameIdx (dict .slug $an) }}{{- end }}{{- end }}{{- end }}
 {{- $cur2 := index $mapIdx $curSlug }}
 {{- $curCat := index $catIdx $curSlug | default "" }}
 {{- $curPrice := 0 }}{{- with $cur2 }}{{ $curPrice = .price_min | default 0 }}{{- end }}
@@ -71,50 +72,41 @@
     <article class="post-single">
 
       <header class="post-header">
-        <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else }}パンくずリスト{{ end }}">
-          {{- if $isEN }}
-          <a href="/en/">Home</a>
+        <nav class="post-breadcrumb" aria-label="{{ i18n "breadcrumb" }}">
+          <a href="{{ "/" | relLangURL }}">{{ i18n "nav_home" }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-          <a href="/en/travel-guide/">Travel Guide</a>
+          <a href="{{ "/travel-guide/" | relLangURL }}">{{ i18n "nav_travel_guide" }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-          <a class="hg-bc" href="/en/travel-guide/hotels/">Hotels</a>
-          {{- else }}
-          <a href="/">ホーム</a>
-          <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-          <a href="/travel-guide/">観光ガイド</a>
-          <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-          <a class="hg-bc" href="/travel-guide/hotels/">ホテル</a>
-          {{- end }}
+          <a class="hg-bc" href="{{ "/travel-guide/hotels/" | relLangURL }}">{{ i18n "nav_hotels" }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <span class="bc-current" aria-current="page">{{ .Title | truncate 24 "…" }}</span>
         </nav>
 
         <div class="hg-badges">
-          <span class="hg-badge">{{ if $isEN }}Hotel{{ else }}ホテル{{ end }}</span>
+          <span class="hg-badge">{{ i18n "hotel_badge" }}</span>
           {{- with .Params.badge }}<span class="hg-badge-sub">{{ . }}</span>{{- end }}
-          {{- if or (in .Params.tags "オフィシャルホテル") (in .Params.tags "Official Hotel") }}<span class="hg-badge-sub">{{ if $isEN }}TDR Official{{ else }}TDRオフィシャル{{ end }}</span>{{- end }}
+          {{- if eq $curCat "オフィシャルホテル" }}<span class="hg-badge-sub">{{ i18n "tdr_official" }}</span>{{- end }}
         </div>
 
         <h1 class="post-title">{{ .Title }}</h1>
 
         <div class="hg-meta">
-          {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ if $isEN }}Updated {{ .Lastmod.Format "Jan 2, 2006" }}{{ else }}{{ .Lastmod.Format "2006年1月2日" }}更新{{ end }}</span>{{- end }}
+          {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ i18n "updated_on" (dict "date" (.Lastmod.Format (cond $isEN "Jan 2, 2006" "2006年1月2日"))) }}</span>{{- end }}
           {{- with $area }}<span><i class="ti ti-map-pin" aria-hidden="true"></i> {{ . }}</span>{{- end }}
         </div>
 
         {{/* カテゴリ区分の解説ページへの文脈リンク（実ホテルページのみ。kids/budget/access等のガイドページでは非表示） */}}
         {{- if $curCat }}
         {{- $typeAnchor := "others" }}{{- $typeName := "" }}
-        {{- if eq $curCat "ディズニーホテル" }}{{ $typeAnchor = "disney" }}{{ $typeName = cond $isEN "Disney Hotel" "ディズニーホテル" }}
-        {{- else if eq $curCat "オフィシャルホテル" }}{{ $typeAnchor = "official" }}{{ $typeName = cond $isEN "Official Hotel" "オフィシャルホテル" }}
-        {{- else if eq $curCat "パートナーホテル" }}{{ $typeAnchor = "partner" }}{{ $typeName = cond $isEN "Partner Hotel" "パートナーホテル" }}
-        {{- else if eq $curCat "グッドネイバーホテル" }}{{ $typeAnchor = "goodneighbor" }}{{ $typeName = cond $isEN "Good Neighbor Hotel" "グッドネイバーホテル" }}
+        {{- if eq $curCat "ディズニーホテル" }}{{ $typeAnchor = "disney" }}{{ $typeName = i18n "cat_full_disney" }}
+        {{- else if eq $curCat "オフィシャルホテル" }}{{ $typeAnchor = "official" }}{{ $typeName = i18n "cat_full_official" }}
+        {{- else if eq $curCat "パートナーホテル" }}{{ $typeAnchor = "partner" }}{{ $typeName = i18n "cat_full_partner" }}
+        {{- else if eq $curCat "グッドネイバーホテル" }}{{ $typeAnchor = "goodneighbor" }}{{ $typeName = i18n "cat_full_goodneighbor" }}
         {{- end }}
-        {{- $typesBase := cond $isEN "/en/travel-guide/hotels/types/" "/travel-guide/hotels/types/" }}
         <p class="hg-type-link" style="margin:8px 0 0;font-size:0.84em;">
-          <a href="{{ $typesBase }}#{{ $typeAnchor }}" style="display:inline-flex;align-items:center;gap:5px;color:var(--up-accent);text-decoration:none;">
+          <a href="{{ "/travel-guide/hotels/types/" | relLangURL }}#{{ $typeAnchor }}" style="display:inline-flex;align-items:center;gap:5px;color:var(--up-accent);text-decoration:none;">
             <i class="ti ti-help-circle" aria-hidden="true"></i>
-            {{- if $typeName }}{{ if $isEN }}What is a {{ $typeName }}?{{ else }}{{ $typeName }}とは？{{ end }}{{ else }}{{ if $isEN }}About TDR hotel categories{{ else }}ホテルの区分とは？{{ end }}{{ end }} →</a>
+            {{- if $typeName }}{{ i18n "type_what_is" (dict "name" $typeName) }}{{ else }}{{ i18n "type_about" }}{{ end }} →</a>
         </p>
         {{- end }}
       </header>
@@ -139,22 +131,22 @@
       {{/* 注意書き（コーラル＝accent追従） */}}
       <div class="lg-disclaimer">
         <i class="ti ti-info-circle" aria-hidden="true"></i>
-        <span>{{ if $isEN }}Rates and services listed here are subject to change. Always confirm the latest availability, prices and conditions on each hotel's official website.{{ else }}掲載の料金・サービス内容は変動します。最新の空室・料金・各種条件は、必ず各ホテルの公式サイトでご確認ください。{{ end }}</span>
+        <span>{{ i18n "hotel_disclaimer" }}</span>
       </div>
 
       {{/* 近隣の似たホテル */}}
       {{- if $related }}
       <div class="hg-related">
-        <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>{{ if $isEN }}Nearby similar hotels{{ else }}近隣の似たホテル{{ end }}</h2></div>
+        <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>{{ i18n "nearby_hotels" }}</h2></div>
         <div class="hg-hotel-grid">
           {{- range $related }}
           {{- $rarea := "" }}
-          {{- if not $isEN }}{{- with index $areaNameIdx .File.ContentBaseName }}{{ $rarea = . }}{{- end }}{{- end }}
+          {{- if ne $lang "en" }}{{- with index $areaNameIdx .File.ContentBaseName }}{{ $rarea = . }}{{- end }}{{- end }}
           {{- $rcat := index $catIdx .File.ContentBaseName | default "" }}
-          {{- $ckey := "other" }}{{- $clabel := cond $isEN "Other" "その他" }}
-          {{- if eq $rcat "ディズニーホテル" }}{{ $ckey = "disney" }}{{ $clabel = cond $isEN "Disney" "ディズニー" }}
-          {{- else if eq $rcat "オフィシャルホテル" }}{{ $ckey = "official" }}{{ $clabel = cond $isEN "Official" "オフィシャル" }}
-          {{- else if eq $rcat "パートナーホテル" }}{{ $ckey = "partner" }}{{ $clabel = cond $isEN "Partner" "パートナー" }}
+          {{- $ckey := "other" }}{{- $clabel := i18n "cat_other" }}
+          {{- if eq $rcat "ディズニーホテル" }}{{ $ckey = "disney" }}{{ $clabel = i18n "cat_disney" }}
+          {{- else if eq $rcat "オフィシャルホテル" }}{{ $ckey = "official" }}{{ $clabel = i18n "cat_official" }}
+          {{- else if eq $rcat "パートナーホテル" }}{{ $ckey = "partner" }}{{ $clabel = i18n "cat_partner" }}
           {{- else if eq $rcat "ファッションホテル" }}{{ $ckey = "fashion" }}{{ $clabel = "" }}{{- end }}
           {{- $nm := .Title | replaceRE "\\s*[｜|].*$" "" }}
           <a class="hg-hotel-card hg-cat-{{ $ckey }}" href="{{ .RelPermalink }}">
@@ -170,7 +162,7 @@
       <footer class="post-footer">
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         {{- with $.GetTerms $tags }}
-        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> {{ if $isEN }}Tags:{{ else }}タグ：{{ end }}</span></div>
+        <div style="margin-bottom:4px;"><span class="post-tag-label"><i class="ti ti-tag" aria-hidden="true"></i> {{ i18n "tags_label" }}</span></div>
         <ul class="post-tags">
           {{- range . }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{- end }}
         </ul>
@@ -186,7 +178,7 @@
     {{/* 目次 / Contents */}}
     {{- if ge (len $toc) 2 }}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> {{ if $isEN }}Contents{{ else }}目次{{ end }}</div>
+      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> {{ i18n "contents" }}</div>
       <nav class="lg-toc-list">
         {{- range $toc }}
         <a href="#{{ .id }}">{{ .title }}</a>
@@ -200,9 +192,9 @@
     {{- with $cur2 }}{{ with .booking }}{{ $bk = . }}{{ end }}{{ end }}
     {{- if $bk }}
     <div class="lg-book-cta">
-      <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ if $isEN }}Check rates &amp; availability{{ else }}料金・空室を見る{{ end }}</div>
+      <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
       <div class="lg-book-btns">
-        {{- if $isEN }}
+        {{- if ne $lang "ja" }}
         {{- with $bk.booking }}<a class="lg-book-btn book-booking" href="{{ . }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
         {{- with $bk.agoda }}<a class="lg-book-btn book-agoda" href="{{ . }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
         {{- else }}
@@ -210,40 +202,26 @@
         {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener">じゃらん</a>{{ end }}
         {{- end }}
       </div>
-      <div class="lg-book-pr">{{ if $isEN }}Includes affiliate links (PR){{ else }}広告（PR・アフィリエイト）を含みます{{ end }}</div>
+      <div class="lg-book-pr">{{ i18n "includes_pr" }}</div>
     </div>
     {{- end }}
 
     {{/* ホテルを比較して選ぶ / Compare hotels */}}
     <div class="lg-side-cta">
       <i class="ti ti-checklist" aria-hidden="true"></i>
-      {{- if $isEN }}
-      <div class="lg-side-cta-title">Compare &amp; choose a hotel</div>
-      <div class="lg-side-cta-desc">Filter by family, budget &amp; access</div>
-      <a class="lg-side-cta-btn" href="/en/travel-guide/hotels/compare/">Open comparison map</a>
-      {{- else }}
-      <div class="lg-side-cta-title">ホテルを比較して選ぶ</div>
-      <div class="lg-side-cta-desc">子連れ・格安・アクセスで絞る</div>
-      <a class="lg-side-cta-btn" href="/travel-guide/hotels/compare/">比較ページへ</a>
-      {{- end }}
+      <div class="lg-side-cta-title">{{ i18n "compare_title" }}</div>
+      <div class="lg-side-cta-desc">{{ i18n "compare_desc" }}</div>
+      <a class="lg-side-cta-btn" href="{{ "/travel-guide/hotels/compare/" | relLangURL }}">{{ i18n "compare_btn" }}</a>
     </div>
 
     {{/* 人気のホテル記事 / Popular hotel guides */}}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-star" aria-hidden="true"></i> {{ if $isEN }}Popular hotel guides{{ else }}人気のホテル記事{{ end }}</div>
-      {{- if $isEN }}
+      <div class="widget-title"><i class="ti ti-star" aria-hidden="true"></i> {{ i18n "popular_guides" }}</div>
       <ol class="lg-pop-rank">
-        <li><a href="/en/travel-guide/hotels/kids/"><span class="lg-pop-num">1</span><span>Family-friendly hotels compared</span></a></li>
-        <li><a href="/en/travel-guide/hotels/budget/"><span class="lg-pop-num">2</span><span>How to choose a budget hotel</span></a></li>
-        <li><a href="/en/travel-guide/hotels/access/"><span class="lg-pop-num">3</span><span>Hotels compared by access</span></a></li>
+        <li><a href="{{ "/travel-guide/hotels/kids/" | relLangURL }}"><span class="lg-pop-num">1</span><span>{{ i18n "pop_kids" }}</span></a></li>
+        <li><a href="{{ "/travel-guide/hotels/budget/" | relLangURL }}"><span class="lg-pop-num">2</span><span>{{ i18n "pop_budget" }}</span></a></li>
+        <li><a href="{{ "/travel-guide/hotels/access/" | relLangURL }}"><span class="lg-pop-num">3</span><span>{{ i18n "pop_access" }}</span></a></li>
       </ol>
-      {{- else }}
-      <ol class="lg-pop-rank">
-        <li><a href="/travel-guide/hotels/kids/"><span class="lg-pop-num">1</span><span>子連れ向けホテル比較</span></a></li>
-        <li><a href="/travel-guide/hotels/budget/"><span class="lg-pop-num">2</span><span>格安ホテルの選び方</span></a></li>
-        <li><a href="/travel-guide/hotels/access/"><span class="lg-pop-num">3</span><span>アクセスで選ぶホテル比較</span></a></li>
-      </ol>
-      {{- end }}
     </div>
 
   </aside>
