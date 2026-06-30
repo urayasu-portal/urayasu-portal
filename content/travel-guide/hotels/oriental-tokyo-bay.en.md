@@ -54,7 +54,7 @@ Free shuttle bus (up to 69/day, first bus 7:00), approx. 15 min.
 **Deck connection to Shin-Urayasu Station: approx. 1 min (deck bridge)**. Same as Brighton — both are directly deck-connected to the station. Convenient for train travelers even in rain.
 
 ### To the Airport
-From "Shin-Urayasu Station" bus stop (South Exit, stop H; 1–2 min from hotel via deck): Haneda approx. 40–45 min, ¥1,300. Narita approx. 60 min (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+From "Shin-Urayasu Station" bus stop (South Exit, stop H; 1–2 min from hotel via deck): Haneda approx. 40–45 min, ¥1,300. Narita approx. 60 min, ¥2,900 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 > Note: No dedicated hotel stop; a short walk to Shin-Urayasu Station bus stop is required.
 
 ### To Central Tokyo

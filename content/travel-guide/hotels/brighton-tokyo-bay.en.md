@@ -57,7 +57,7 @@ Free Partner Hotel shuttle (up to 34/day), approx. 15 min.
 **Covered deck connection to Shin-Urayasu Station: approx. 1 min (approx. 80m)**. The closest station connection among all four Partner Hotels; no umbrella needed even in heavy rain. Very practical for guests with large suitcases.
 
 ### To the Airport
-Haneda: approx. 40–45 min, ¥1,300 from "Shin-Urayasu Station" bus stop (1–2 min walk from hotel, South Exit stop H). Narita: approx. 60 min from the same stop (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+Haneda: approx. 40–45 min, ¥1,300 from "Shin-Urayasu Station" bus stop (1–2 min walk from hotel, South Exit stop H). Narita: approx. 60 min, ¥2,900 from the same stop (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 > Note: No dedicated hotel stop; a short walk to Shin-Urayasu Station bus stop is required.
 
 ### To Central Tokyo

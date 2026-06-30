@@ -49,7 +49,7 @@ Tokyo Disneyland Hotel is the highest-prestige Disney Hotel at Tokyo Disneyland.
 Direct covered walkway to the main gate: approximately 1-min walk (no shuttle, no monorail) + 15-min early entry (Happy Entry). This is the defining access advantage.
 
 ### To Tokyo DisneySea
-Via the Disney Resort Line (paid); 15-min early entry.
+Via the Disney Resort Line (paid).
 
 ### To JR Station
 From the hotel, the Disney Resort Cruiser (free) or Disney Resort Line runs to Maihama Station area. Walking directly to Maihama Station is possible but takes approximately 10–15 min.

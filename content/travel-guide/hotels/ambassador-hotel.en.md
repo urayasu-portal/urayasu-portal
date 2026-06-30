@@ -50,7 +50,7 @@ Disney Ambassador Hotel, the first Disney Hotel at Tokyo Disney Resort (opened 2
 Free shuttle 'Disney Resort Cruiser' (15-min early entry).
 
 ### To Tokyo DisneySea
-Disney Resort Cruiser + Disney Resort Line (15-min early entry).
+Disney Resort Cruiser + Disney Resort Line.
 
 ### To JR Station
 About 8 minutes on foot to Maihama Station (official estimate). Part of the route via Ikspiari has roof coverage, making rainy days more manageable. A realistic walking distance if you aren't carrying much luggage.

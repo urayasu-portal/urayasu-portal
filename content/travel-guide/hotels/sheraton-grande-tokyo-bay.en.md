@@ -2,7 +2,7 @@
 title: "Sheraton Grande Tokyo Bay Hotel | Large Bath 'Maiyu' with Sauna, Year-Round Indoor Pool, OASIS Recreation Facility, Official Hotel"
 date: 2026-06-17T10:00:00+09:00
 lastmod: 2026-06-17
-description: "Local review of Sheraton Grande Tokyo Bay Hotel (TDR Official Hotel). Large bath 'Maiyu' (marble interior, sauna). Year-round indoor pool + summer outdoor pool. OASIS recreation facility (mini golf, flight simulator, etc.). Two chapels. Bayside Station 1-min walk. Happy Entry for TDL only (not TDS). Airport limousine at front. Price range ¥30,000–¥80,000+."
+description: "Local review of Sheraton Grande Tokyo Bay Hotel (TDR Official Hotel). Large bath 'Maiyu' (marble interior, sauna). Year-round indoor pool + summer outdoor pool. OASIS recreation facility (mini golf, flight simulator, etc.). Two chapels. Bayside Station 1-min walk. Airport limousine at front. Price range ¥30,000–¥80,000+."
 tags:
   - Hotel
   - Disney
@@ -11,7 +11,7 @@ images: ["/images/og-travel-urayasu.png"]
 noDate: true
 ---
 
-Sheraton Grande Tokyo Bay Hotel is a Tokyo Disney Resort Official Hotel uniquely positioned around recreational facilities: a large bath "Maiyu" with marble interiors and sauna, a year-round indoor pool, summer outdoor pool, and the "OASIS" recreation complex (mini golf, flight simulator, archery, etc.). Bayside Station on the Disney Resort Line is a 1-minute walk. Happy Entry early admission applies to TDL only (not TDS). Two chapels make it a popular wedding venue. This review covers the hotel's strengths, weaknesses, and access. Prices and times are estimates based on 2025–2026 research.
+Sheraton Grande Tokyo Bay Hotel is a Tokyo Disney Resort Official Hotel uniquely positioned around recreational facilities: a large bath "Maiyu" with marble interiors and sauna, a year-round indoor pool, summer outdoor pool, and the "OASIS" recreation complex (mini golf, flight simulator, archery, etc.). Bayside Station on the Disney Resort Line is a 1-minute walk. Two chapels make it a popular wedding venue. This review covers the hotel's strengths, weaknesses, and access. Prices and times are estimates based on 2025–2026 research.
 
 ---
 
@@ -31,12 +31,11 @@ Sheraton Grande Tokyo Bay Hotel is a Tokyo Disney Resort Official Hotel uniquely
 
 - **Guests who want the most recreation facilities of any Official Hotel** — OASIS facility (mini golf, flight simulator, archery, etc.) and indoor/outdoor pools are unavailable at other Official Hotels
 - **Guests who want a large communal bath with sauna** — "Maiyu" large bath (marble, sauna) is available to hotel guests (fee may apply; confirm on official website)
-- **Guests who primarily visit TDL (not TDS)** — Bayside Station is 1 min walk; direct Disney Resort Line to TDL Entrance Station. Happy Entry applies to TDL (confirm TDS status on official website)
+- **Guests who want quick Resort Line access to the parks** — Bayside Station is a 1-min walk; direct Disney Resort Line to both parks
 - **Wedding guests and honeymoon stays** — Two chapels on site; popular wedding hotel
 
 ## May Not Suit
 
-- **Guests who primarily visit TDS and want Happy Entry** — **Happy Entry currently applies to TDL only** (not TDS — confirm current scope on official website before booking)
 - **Guests on a tight budget** — Standard rates from approx. ¥30,000–¥60,000
 - **Guests who don't use the pools or OASIS** — If recreation facilities aren't important to you, other Official Hotels may offer better value for the price
 
@@ -103,8 +102,6 @@ Free Wi-Fi in all rooms. Marriott Bonvoy members can earn and redeem points.
 ## Local Notes
 
 Sheraton Grande Tokyo Bay's identity within the Official Hotel lineup is "recreation and pool." The OASIS facility, indoor pool, outdoor pool, and Maiyu large bath with sauna create a resort experience beyond "sleep, eat, go to the parks." For guests who want to enjoy the hotel itself as part of the trip — letting children use the pool, visiting the large bath in the evening, playing mini golf as a family — Sheraton has clear advantages over other Official Hotels.
-
-The most important caveat: **Happy Entry currently applies to TDL only.** If your primary destination is TDS, confirm on the official website whether Happy Entry for TDS is available, as this may differ by period. The 1-minute walk to Bayside Station (Disney Resort Line → TDL) partially compensates for TDS-bound guests, but the Happy Entry scope matters for planning.
 
 ---
 

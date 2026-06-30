@@ -11,7 +11,7 @@ images: ["/images/og-travel-urayasu.png"]
 noDate: true
 ---
 
-Maihama Hotel First Resort holds a historic distinction: it was the **first Official Hotel when Tokyo Disney Resort opened in 1983**. With themed concept rooms, a full set of Disney Hotel benefits including Happy Entry, and an airport limousine stop (by phone reservation and prepay only), the hotel delivers the TDR Official Hotel experience. However, several practical details differ from newer Official Hotels: TDL is 15 minutes on foot (the longest walk among Official Hotels), room Wi-Fi is paid (¥500/night) except in premium rooms, and coin laundry is in the South building only. This review covers strengths, weaknesses, and access. Prices and times are estimates based on 2025–2026 research.
+Maihama Hotel First Resort holds a historic distinction: it was the **first Official Hotel when Tokyo Disney Resort opened in 1983**. With themed concept rooms, Official Hotel conveniences, and an airport limousine stop (by phone reservation and prepay only), the hotel delivers the TDR Official Hotel experience. However, several practical details differ from newer Official Hotels: TDL is 15 minutes on foot (the longest walk among Official Hotels), room Wi-Fi is paid (¥500/night) except in premium rooms, and coin laundry is in the South building only. This review covers strengths, weaknesses, and access. Prices and times are estimates based on 2025–2026 research.
 
 ---
 
@@ -31,7 +31,7 @@ Maihama Hotel First Resort holds a historic distinction: it was the **first Offi
 
 - **Guests who want the historic significance of staying at TDR's first Official Hotel** — Opened in 1983 as the very first Official Hotel at Tokyo Disneyland Resort; a unique piece of TDR history
 - **Guests who want themed concept rooms** — Themed room types with distinct design concepts unavailable at newer Official Hotels
-- **Guests who want Official Hotel Disney benefits at a mid-range Official Hotel price** — Happy Entry, limousine, and full Disney Hotel benefits at approx. ¥20,000–¥40,000 (lower than Hilton or Sheraton)
+- **Guests who want Official Hotel benefits at a mid-range price** — Airport limousine stop and Official Hotel conveniences at approx. ¥20,000–¥40,000 (lower than Hilton or Sheraton)
 
 ## May Not Suit
 
@@ -45,10 +45,10 @@ Maihama Hotel First Resort holds a historic distinction: it was the **first Offi
 ## Access
 
 ### To Tokyo Disneyland
-~15-min walk (~800m) to the TDL entrance, or free shuttle + Disney Resort Line; 15-min early entry.
+~15-min walk (~800m) to the TDL entrance, or free shuttle + Disney Resort Line.
 
 ### To Tokyo DisneySea
-Bayside Station free shuttle + Disney Resort Line to Tokyo DisneySea Station; 15-min early entry.
+Bayside Station free shuttle + Disney Resort Line to Tokyo DisneySea Station.
 
 ### To JR Station
 Free shuttle to Maihama Station (schedule: confirm on official website).
@@ -70,9 +70,6 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 **Themed Concept Rooms**
 Various themed room types with distinct design concepts. Room types and availability: confirm on official website (and availability at booking).
-
-**Happy Entry**
-15-minute early park admission included as an Official Hotel benefit (confirm parks and current scope on official website).
 
 **"First Shop" (7:00–23:00)**
 In-house shop open 7:00–23:00. Covers morning coffee and post-park evening shopping but closes before midnight. Not a 24-hour convenience store.

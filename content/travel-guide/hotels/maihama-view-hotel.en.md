@@ -43,10 +43,10 @@ Maihama View Hotel (formerly Tokyo Bay Maihama Hotel, rebranded and reopened in 
 ## Access
 
 ### To Tokyo Disneyland
-~18-min walk to TDL, or free shuttle + monorail; 15-min early entry.
+~18-min walk to TDL, or free shuttle + monorail.
 
 ### To Tokyo DisneySea
-Free shuttle (~5 min) + Disney Resort Line from Bayside Station to Tokyo DisneySea Station; 15-min early entry.
+Free shuttle (~5 min) + Disney Resort Line from Bayside Station to Tokyo DisneySea Station.
 
 ### To JR Station
 Free shuttle to Maihama Station: approx. 5 min (also to Bayside Station and Ikspiari on the same shuttle).

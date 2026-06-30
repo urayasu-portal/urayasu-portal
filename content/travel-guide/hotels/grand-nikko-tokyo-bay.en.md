@@ -2,7 +2,7 @@
 title: "Tokyo DisneySea Hotel MiraCosta — No, Tokyo Bay Grand Nikko | Japan's Largest Hotel Atrium, Pink European Exterior, Official Hotel"
 date: 2026-06-17T10:00:00+09:00
 lastmod: 2026-06-17
-description: "Local review of Grand Nikko Tokyo Bay Maihama. Japan's largest hotel atrium (37m / 4,300 m²), South European pink exterior. TDR Official Hotel. 319 parking spaces with EV chargers. Dedicated airport limousine stop. Happy Entry and other Disney benefits. Price range ¥30,000–¥80,000+."
+description: "Local review of Grand Nikko Tokyo Bay Maihama. Japan's largest hotel atrium (37m / 4,300 m²), South European pink exterior. TDR Official Hotel. 319 parking spaces with EV chargers. Dedicated airport limousine stop. Price range ¥30,000–¥80,000+."
 tags:
   - Hotel
   - Disney
@@ -11,7 +11,7 @@ images: ["/images/og-travel-urayasu.png"]
 noDate: true
 ---
 
-Grand Nikko Tokyo Bay Maihama (Tokyo Disney Resort Official Hotel) is instantly recognizable by its South European-inspired pink exterior and grand staircase — a landmark view from the Keiyo Line trains. Japan's largest hotel atrium (37 meters high, 4,300 m² floor area) creates an architectural experience on arrival that few Japanese hotels can match. With 319 parking spaces including EV chargers, a dedicated airport limousine stop, and full Disney Hotel benefits including Happy Entry, it's a flagship option in the TDR Official Hotel lineup. This review covers strengths, weaknesses, and access from a local perspective. Prices and times are estimates based on 2025–2026 research.
+Grand Nikko Tokyo Bay Maihama (Tokyo Disney Resort Official Hotel) is instantly recognizable by its South European-inspired pink exterior and grand staircase — a landmark view from the Keiyo Line trains. Japan's largest hotel atrium (37 meters high, 4,300 m² floor area) creates an architectural experience on arrival that few Japanese hotels can match. With 319 parking spaces including EV chargers and a dedicated airport limousine stop, it's a flagship option in the TDR Official Hotel lineup. This review covers strengths, weaknesses, and access from a local perspective. Prices and times are estimates based on 2025–2026 research.
 
 ---
 
@@ -32,7 +32,6 @@ Grand Nikko Tokyo Bay Maihama (Tokyo Disney Resort Official Hotel) is instantly 
 - **Guests who want Japan's most impressive hotel atrium as a visual centerpiece of their stay** — 37-meter-high, 4,300 m² atrium provides a genuine wow-factor arrival
 - **Guests arriving by car in electric vehicles** — 319 parking spaces including EV charging stations (rare among TDR hotels)
 - **Guests arriving directly from the airport with heavy luggage** — Dedicated airport limousine stop at the hotel entrance; drop off luggage at the front desk without navigating transit
-- **Guests who want the full Disney Hotel experience** — Happy Entry early admission and full Official Hotel benefits
 
 ## May Not Suit
 
