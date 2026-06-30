@@ -20,6 +20,14 @@ languages:
     params:
       homeTitle: "Urayasu Portal | Urayasu & Maihama Travel Guide"
       description: "A local travel guide for Urayasu and Maihama area near Tokyo Disney Resort. Hotels, access, sightseeing, food, and taxi information."
+  zh:
+    languageName: 简体中文
+    languageCode: zh-Hans
+    weight: 3
+    title: Urayasu Portal
+    params:
+      homeTitle: "浦安·舞滨旅行指南 | Urayasu Portal"
+      description: "面向中国游客的浦安·舞滨地区本地旅行指南。东京迪士尼度假区周边的酒店、交通、观光、美食与出租车信息，由浦安本地团队亲自编写核对。"
 
 pagination:
   pagerSize: 10
