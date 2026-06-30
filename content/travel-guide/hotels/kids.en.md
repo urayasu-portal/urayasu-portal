@@ -79,7 +79,7 @@ A Lawson in the building, so the night supply run is covered.
 **La'gent Hotel Tokyo Bay (Shin-Urayasu area)**
 A 24-hour convenience store adjacent to the hotel.
 
-Note: many Disney hotels have an in-house shop ("Shop Together") for drinks, snacks, and daily goods, but it may be guests-only at certain hours (e.g., midnight to 6:00 a.m.) and may not stock meal items like bento or onigiri. When you want to stock up properly, an outside convenience store is more convenient.
+Note: many Disney hotels have an in-house shop for drinks, snacks, and daily goods. The names differ by hotel — for example, "Shop Together" at Toy Story Hotel (6:00–24:00) and "Mickyrangelo's Gifts" at MiraCosta (8:00–22:00). Hours may be limited late at night, and they may not stock meal items like bento or onigiri, so when you want to stock up properly, an outside convenience store is more convenient.
 
 ---
 

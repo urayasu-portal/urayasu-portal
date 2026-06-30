@@ -111,7 +111,7 @@
     <button class="hcm-chip" data-chip-type="flag" data-chip-val="bath" onclick="hcmChipClick('flag','bath')"><i class="ti ti-ripple" aria-hidden="true"></i> {{ if $isEN }}Public bath{{ else }}大浴場{{ end }}</button>
     <button class="hcm-chip" data-chip-type="flag" data-chip-val="pool" onclick="hcmChipClick('flag','pool')"><i class="ti ti-swimming" aria-hidden="true"></i> {{ if $isEN }}Indoor pool{{ else }}室内プール{{ end }}</button>
     <button class="hcm-chip" data-chip-type="flag" data-chip-val="laundry" onclick="hcmChipClick('flag','laundry')"><i class="ti ti-wash-machine" aria-hidden="true"></i> {{ if $isEN }}Laundry{{ else }}ランドリー{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="convenience" onclick="hcmChipClick('flag','convenience')"><i class="ti ti-building-store" aria-hidden="true"></i> {{ if $isEN }}In-house store{{ else }}館内コンビニ{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="convenience" onclick="hcmChipClick('flag','convenience')"><i class="ti ti-building-store" aria-hidden="true"></i> {{ if $isEN }}In-house store{{ else }}館内売店{{ end }}</button>
     <button class="hcm-chip" data-chip-type="flag" data-chip-val="limousine" onclick="hcmChipClick('flag','limousine')"><i class="ti ti-plane" aria-hidden="true"></i> {{ if $isEN }}Airport limo{{ else }}空港リムジン{{ end }}</button>
     <button class="hcm-chip" data-chip-type="flag" data-chip-val="station" onclick="hcmChipClick('flag','station')"><i class="ti ti-train" aria-hidden="true"></i> {{ if $isEN }}By station{{ else }}駅直結/1分{{ end }}</button>
     <button class="hcm-chip" data-chip-type="flag" data-chip-val="kitchen" onclick="hcmChipClick('flag','kitchen')"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i> {{ if $isEN }}Kitchen{{ else }}ミニキッチン{{ end }}</button>
@@ -137,7 +137,7 @@
         {{- if .flags }}
         <div class="hcm-card-flags">
           {{- range .flags }}
-          <span class="hcm-flag"><i class="ti ti-{{ if eq . "shuttle" }}bus{{ else if eq . "bath" }}ripple{{ else if eq . "pool" }}swimming{{ else if eq . "laundry" }}wash-machine{{ else if eq . "convenience" }}building-store{{ else if eq . "limousine" }}plane{{ else if eq . "station" }}train{{ else if eq . "kitchen" }}tools-kitchen-2{{ else }}star{{ end }}" aria-hidden="true"></i>{{ if $isEN }}{{ if eq . "shuttle" }}Shuttle{{ else if eq . "bath" }}Public bath{{ else if eq . "pool" }}Indoor pool{{ else if eq . "laundry" }}Laundry{{ else if eq . "convenience" }}In-house store{{ else if eq . "limousine" }}Airport limo{{ else if eq . "station" }}By station{{ else if eq . "kitchen" }}Kitchen{{ end }}{{ else }}{{ if eq . "shuttle" }}シャトル{{ else if eq . "bath" }}大浴場{{ else if eq . "pool" }}室内プール{{ else if eq . "laundry" }}ランドリー{{ else if eq . "convenience" }}館内コンビニ{{ else if eq . "limousine" }}空港リムジン{{ else if eq . "station" }}駅直結/1分{{ else if eq . "kitchen" }}ミニキッチン{{ end }}{{ end }}</span>
+          <span class="hcm-flag"><i class="ti ti-{{ if eq . "shuttle" }}bus{{ else if eq . "bath" }}ripple{{ else if eq . "pool" }}swimming{{ else if eq . "laundry" }}wash-machine{{ else if eq . "convenience" }}building-store{{ else if eq . "limousine" }}plane{{ else if eq . "station" }}train{{ else if eq . "kitchen" }}tools-kitchen-2{{ else }}star{{ end }}" aria-hidden="true"></i>{{ if $isEN }}{{ if eq . "shuttle" }}Shuttle{{ else if eq . "bath" }}Public bath{{ else if eq . "pool" }}Indoor pool{{ else if eq . "laundry" }}Laundry{{ else if eq . "convenience" }}In-house store{{ else if eq . "limousine" }}Airport limo{{ else if eq . "station" }}By station{{ else if eq . "kitchen" }}Kitchen{{ end }}{{ else }}{{ if eq . "shuttle" }}シャトル{{ else if eq . "bath" }}大浴場{{ else if eq . "pool" }}室内プール{{ else if eq . "laundry" }}ランドリー{{ else if eq . "convenience" }}館内売店{{ else if eq . "limousine" }}空港リムジン{{ else if eq . "station" }}駅直結/1分{{ else if eq . "kitchen" }}ミニキッチン{{ end }}{{ end }}</span>
           {{- end }}
         </div>
         {{- end }}
@@ -196,7 +196,7 @@
     bath:        { label: {{ if $isEN }}'Public bath'{{ else }}'大浴場'{{ end }},       icon: 'ripple' },
     pool:        { label: {{ if $isEN }}'Indoor pool'{{ else }}'室内プール'{{ end }},   icon: 'swimming' },
     laundry:     { label: {{ if $isEN }}'Laundry'{{ else }}'ランドリー'{{ end }},   icon: 'wash-machine' },
-    convenience: { label: {{ if $isEN }}'In-house store'{{ else }}'館内コンビニ'{{ end }}, icon: 'building-store' },
+    convenience: { label: {{ if $isEN }}'In-house store'{{ else }}'館内売店'{{ end }}, icon: 'building-store' },
     limousine:   { label: {{ if $isEN }}'Airport limo'{{ else }}'空港リムジン'{{ end }}, icon: 'plane' },
     station:     { label: {{ if $isEN }}'By station'{{ else }}'駅直結/1分'{{ end }},  icon: 'train' },
     kitchen:     { label: {{ if $isEN }}'Kitchen'{{ else }}'ミニキッチン'{{ end }}, icon: 'tools-kitchen-2' }

@@ -39,7 +39,7 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("# 生成:     scripts/build-hotels-map.ps1")
 [void]$sb.AppendLine("# 座標・フラグ・最低価格を変えるときはCSVを編集して本スクリプトで再生成すること。")
 [void]$sb.AppendLine("# flags: bath=大浴場・温泉, pool=室内プール, laundry=コインランドリー,")
-[void]$sb.AppendLine("#         convenience=館内コンビニ, shuttle=無料シャトル, station=駅直結/徒歩1分,")
+[void]$sb.AppendLine("#         convenience=館内売店, shuttle=無料シャトル, station=駅直結/徒歩1分,")
 [void]$sb.AppendLine("#         limousine=空港リムジン, kitchen=ミニキッチン")
 [void]$sb.AppendLine("# facilities: 個別ページの設備アイコン用（key + 任意のnote）。CSV機能フラグの key:note を展開。")
 [void]$sb.AppendLine("# booking: 予約リンク（rakuten/jalan/booking/agoda）。CSVの各URL列に値がある時だけ出力。")

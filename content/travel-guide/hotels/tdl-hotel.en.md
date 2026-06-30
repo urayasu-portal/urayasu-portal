@@ -85,7 +85,7 @@ Available for eligible room types. Complimentary food, drinks, and concierge ser
 Victorian European-themed rooms and suites. Wide variety of standard, character, and suite options. Room details: confirm on official website.
 
 **In-House Shop**
-"Kingdom Baubles" on 1F. Nearest external convenience store: 7-Eleven approximately 6 min on foot.
+"Looking Glass Gifts" on 1F (6:00–24:00, open to non-guests too) sells drinks, light meals, snacks, daily goods, baby items and Disney merchandise (no medicine). Nearest external convenience store: 7-Eleven approximately 6 min on foot (24h).
 
 **Parking**
 ¥3,000 for 1st night; ¥1,000 per additional night.

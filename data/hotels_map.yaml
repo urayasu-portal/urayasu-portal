@@ -3,7 +3,7 @@
 # 生成:     scripts/build-hotels-map.ps1
 # 座標・フラグ・最低価格を変えるときはCSVを編集して本スクリプトで再生成すること。
 # flags: bath=大浴場・温泉, pool=室内プール, laundry=コインランドリー,
-#         convenience=館内コンビニ, shuttle=無料シャトル, station=駅直結/徒歩1分,
+#         convenience=館内売店, shuttle=無料シャトル, station=駅直結/徒歩1分,
 #         limousine=空港リムジン, kitchen=ミニキッチン
 # facilities: 個別ページの設備アイコン用（key + 任意のnote）。CSV機能フラグの key:note を展開。
 # booking: 予約リンク（rakuten/jalan/booking/agoda）。CSVの各URL列に値がある時だけ出力。
@@ -13,10 +13,11 @@ hotels:
     lat: 35.6368
     lng: 139.8783
     price_min: 55000
-    flags: [laundry, limousine]
+    flags: [laundry, limousine, convenience]
     facilities:
       - key: "laundry"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F74732%2F74732.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーランドホテル"
@@ -26,11 +27,12 @@ hotels:
     lat: 35.6269
     lng: 139.8881
     price_min: 83000
-    flags: [pool, limousine]
+    flags: [pool, limousine, convenience]
     facilities:
       - key: "pool"
         note: "有料"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F74733%2F74733.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーシー・ホテルミラコスタ"
@@ -40,10 +42,11 @@ hotels:
     lat: 35.6289
     lng: 139.8764
     price_min: 50000
-    flags: [laundry, limousine]
+    flags: [laundry, limousine, convenience]
     facilities:
       - key: "laundry"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F189000%2F189000.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーシー・ファンタジースプリングスホテル"
@@ -53,10 +56,11 @@ hotels:
     lat: 35.6334
     lng: 139.8878
     price_min: 40000
-    flags: [shuttle, limousine]
+    flags: [shuttle, limousine, convenience]
     facilities:
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F72737%2F72737.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ディズニーアンバサダーホテル"
@@ -66,11 +70,12 @@ hotels:
     lat: 35.6259
     lng: 139.8746
     price_min: 45000
-    flags: [laundry, shuttle, limousine]
+    flags: [laundry, shuttle, limousine, convenience]
     facilities:
       - key: "laundry"
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F183493%2F183493.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "トイ・ストーリーホテル"
@@ -80,11 +85,12 @@ hotels:
     lat: 35.6388
     lng: 139.9305
     price_min: 20000
-    flags: [laundry, shuttle, limousine]
+    flags: [laundry, shuttle, limousine, convenience]
     facilities:
       - key: "laundry"
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F151431%2F151431.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーセレブレーションホテル：ウィッシュ"
@@ -94,11 +100,12 @@ hotels:
     lat: 35.6384
     lng: 139.9308
     price_min: 20000
-    flags: [laundry, shuttle, limousine]
+    flags: [laundry, shuttle, limousine, convenience]
     facilities:
       - key: "laundry"
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F151431%2F151431.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ディズニーセレブレーションホテル：ディスカバー"
@@ -121,11 +128,12 @@ hotels:
     lat: 35.6293
     lng: 139.8740
     price_min: 30000
-    flags: [laundry, shuttle, limousine]
+    flags: [laundry, shuttle, limousine, convenience]
     facilities:
       - key: "laundry"
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F179245%2F179245.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "グランドニッコー東京ベイ舞浜"
@@ -170,11 +178,12 @@ hotels:
     lat: 35.6317
     lng: 139.8739
     price_min: 20000
-    flags: [laundry, shuttle, limousine]
+    flags: [laundry, shuttle, limousine, convenience]
     facilities:
       - key: "laundry"
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F27929%2F27929.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "東京ベイ舞浜ホテル ファーストリゾート"
@@ -228,9 +237,10 @@ hotels:
     lat: 35.6328
     lng: 139.8924
     price_min: 8000
-    flags: [shuttle]
+    flags: [shuttle, convenience]
     facilities:
       - key: "shuttle"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F39203%2F39203.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルマイステイズ舞浜"
@@ -255,10 +265,11 @@ hotels:
     lat: 35.6236
     lng: 139.9028
     price_min: 8000
-    flags: [laundry, shuttle]
+    flags: [laundry, shuttle, convenience]
     facilities:
       - key: "laundry"
       - key: "shuttle"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F172068%2F172068.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "HOTELユーラシア舞浜ANNEX"
@@ -268,12 +279,13 @@ hotels:
     lat: 35.6377
     lng: 139.9259
     price_min: 25000
-    flags: [pool, shuttle, limousine]
+    flags: [pool, shuttle, limousine, convenience]
     facilities:
       - key: "pool"
         note: "屋内外"
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F172919%2F172919.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ハイアット リージェンシー 東京ベイ"
@@ -283,10 +295,11 @@ hotels:
     lat: 35.6386
     lng: 139.9274
     price_min: 15000
-    flags: [laundry, shuttle]
+    flags: [laundry, shuttle, convenience]
     facilities:
       - key: "laundry"
       - key: "shuttle"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F165869%2F165869.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "コンフォートスイーツ東京ベイ"
@@ -326,13 +339,14 @@ hotels:
     lat: 35.6477
     lng: 139.9203
     price_min: 18000
-    flags: [bath, laundry, shuttle, limousine]
+    flags: [bath, laundry, shuttle, limousine, convenience]
     facilities:
       - key: "bath"
         note: "天然温泉"
       - key: "laundry"
       - key: "shuttle"
       - key: "limousine"
+      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F38529%2F38529.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルエミオン東京ベイ"

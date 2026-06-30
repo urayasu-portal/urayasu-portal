@@ -77,7 +77,7 @@ Mickey Mouse and friends appear at this breakfast buffet (6:30–10:00). Hotel g
 Art Deco 1930s Hollywood interiors across 503 rooms. Standard, character, connecting, and suite options. Family rooms (97 m²) accommodate 5–6 adults and up to 4 children sharing.
 
 **In-House Shop**
-"Sundries Shop" sells daily goods and snacks (24-hour status: confirm). Nearest external convenience store: NewDays Maihama, about 5 min on foot (6:30–23:00).
+"Sunset Sundry" on 1F (6:00–24:00; hours vary by season/day, open to non-guests too) sells daily goods, snacks, soft drinks and baby items. Nearest external convenience store: NewDays Maihama, about 5 min on foot (6:30–23:00).
 
 **Access to Ikspiari**
 Ikspiari, a major shopping and entertainment complex, is 5–8 minutes on foot. Dinner, cafes, and souvenirs beyond Disney are all within easy reach.

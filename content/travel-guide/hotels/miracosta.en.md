@@ -81,16 +81,16 @@ Hotel guests may enter the park 15 minutes before general admission. The "Hotel 
 "Oceano" on the 1F: Japanese and Western buffet (6:30–10:00), 286 seats. Breakfast overlooking the harbor offers a truly immersive atmosphere. "Silk Road Garden" is also available.
 
 **Spa & Pool "Terme Venezia"**
-In lieu of a large public bath, this paid spa and pool facility with warm water pool and spa is available for a relaxing stay (fees apply — confirm rates on the official website).
+In lieu of a large public bath, this paid spa and pool for hotel guests offers a warm-water pool and spa. The pricing is a little complex, so please check the details on the [official facilities page](https://www.tokyodisneyresort.jp/en/hotel/dhm/facility.html). Note that **Terme Venezia will be closed for renovation from Wed, Nov 4, 2026 to Fri, Feb 19, 2027** (the poolside bar "Hippocampi" is closed for the same period).
 
 **Coin Laundry**
 No coin laundry available. Paid laundry service is available.
 
 **Parking**
-¥3,000 for the 1st night; ¥1,000 per additional night (from 0:00 on check-in day to 24:00 on check-out day).
+¥3,000 for the 1st night; ¥1,000 per additional night (from 0:00 on check-in day to 24:00 on check-out day). **A rate revision (increase) is scheduled for check-ins on or after Thu, Oct 1, 2026** — please confirm the latest fee on the official website.
 
 **In-House Shop**
-"Shop Together" on 2F (Dailyamazaki-affiliated, light meals and daily goods). Accessible to hotel guests only from midnight to 6:00. The nearest external convenience store (NewDays Maihama) is 13+ minutes on foot.
+"Mickyrangelo's Gifts" on 2F (8:00–22:00; hours vary by season/day). A gift shop with a small in-house store selling snacks, sweet rolls, cup noodles and daily goods — also open to Tokyo DisneySea visitors. It does not sell rice balls or boxed meals, and is not a convenience store. The nearest external convenience store (NewDays Maihama) is 13+ minutes on foot.
 
 **Wi-Fi & Multilingual**
 Free Wi-Fi in rooms. Multilingual staff available.
