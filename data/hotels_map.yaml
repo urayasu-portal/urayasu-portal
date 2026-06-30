@@ -237,10 +237,9 @@ hotels:
     lat: 35.6328
     lng: 139.8924
     price_min: 8000
-    flags: [shuttle, convenience]
+    flags: [shuttle]
     facilities:
       - key: "shuttle"
-      - key: "convenience"
     booking:
       rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F39203%2F39203.html&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     name: "ホテルマイステイズ舞浜"

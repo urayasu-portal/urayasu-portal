@@ -24,7 +24,7 @@ MyStays Hotel Maihama is a compact 90-room hotel with a distinctive advantage: a
 | Area | Maihama Area B (Budget Hotel) |
 | Rooms | 90 |
 | Check-in / Check-out | 15:00 / 10:00 |
-| Official Website | [cm.mystays.com (EN)](https://cm.mystays.com/en-us/location-hotel-mystays-maihama-chiba/) |
+| Official Website | [iconia.co.jp (EN)](https://iconia.co.jp/en-us/hotel-mystays-maihama-chiba) |
 
 ---
 
@@ -37,7 +37,7 @@ MyStays Hotel Maihama is a compact 90-room hotel with a distinctive advantage: a
 ## May Not Suit
 
 - **Guests who need a late check-out** — 10:00 check-out is among the earliest in the area
-- **Guests requiring 24-hour coin laundry or a convenience store** — Confirm availability at the hotel; 90-room scale means limited shared facilities
+- **Guests who need a 24-hour in-hotel store** — No in-house store; nearest convenience store is approx. 5 min on foot
 - **Guests who want the Disney Hotel benefits (Happy Entry, character rooms)** — No Disney Hotel benefits; non-Disney brand
 
 ---
@@ -78,7 +78,7 @@ Fresh-baked bread breakfast. A quality point of difference for a budget-range ho
 Confirm availability on official website.
 
 **Convenience Store**
-Nearest convenience store: confirm distance at check-in.
+No in-house store. Nearest convenience store is approx. 5 minutes on foot — confirm exact location at check-in.
 
 **Parking**
 Confirm availability and rates on official website.
