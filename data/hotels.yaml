@@ -9,116 +9,142 @@ areas:
     tag: "A"
     name: "舞浜エリア"
     name_en: "Maihama"
+    name_zh: "舞滨地区"
     group: "リゾート"
     count: 12
     note: "ディズニーホテル・オフィシャル集中。パーク最至近。"
     note_en: "Disney & Official hotels, closest to the parks."
+    note_zh: "迪士尼饭店与官方饭店集中，离乐园最近。"
     hotels:
       - name: "東京ディズニーランドホテル"
         name_en: "Tokyo Disneyland Hotel"
+        name_zh: "东京迪士尼乐园大饭店"
         category: "ディズニーホテル"
         price_guide: "¥55,000〜"
         feature: "TDL徒歩約1分"
         feature_en: "1-min walk to TDL"
+        feature_zh: "步行1分钟到迪士尼乐园"
         policy: normal
         individual_page: true
         slug: "tdl-hotel"
       - name: "東京ディズニーシー・ホテルミラコスタ"
         name_en: "Tokyo DisneySea Hotel MiraCosta"
+        name_zh: "东京迪士尼海洋观海景大饭店 米拉柯斯达"
         category: "ディズニーホテル"
         price_guide: "¥83,000〜"
         feature: "TDS内・専用入口"
         feature_en: "Inside TDS, private entrance"
+        feature_zh: "位于迪士尼海洋园区内·专用入口"
         policy: normal
         individual_page: true
         slug: "miracosta"
       - name: "ファンタジースプリングスホテル"
         name_en: "Tokyo DisneySea Fantasy Springs Hotel"
+        name_zh: "东京迪士尼海洋梦幻泉乡大饭店"
         category: "ディズニーホテル"
         price_guide: "¥50,000〜"
         feature: "TDS新エリア直結（2024年開業）"
         feature_en: "Connected to TDS Fantasy Springs (opened 2024)"
+        feature_zh: "直通迪士尼海洋梦幻泉乡（2024年开业）"
         policy: normal
         individual_page: true
         slug: "fantasy-springs-hotel"
       - name: "ディズニーアンバサダーホテル"
         name_en: "Disney Ambassador Hotel"
+        name_zh: "迪士尼大使大饭店"
         category: "ディズニーホテル"
         price_guide: "¥40,000〜"
         feature: "舞浜駅徒歩約8分"
         feature_en: "8-min walk from Maihama Stn"
+        feature_zh: "距舞滨站步行8分钟"
         policy: normal
         individual_page: true
         slug: "ambassador-hotel"
       - name: "トイ・ストーリーホテル"
         name_en: "Tokyo Disney Resort Toy Story Hotel"
+        name_zh: "东京迪士尼度假区玩具总动员饭店"
         category: "ディズニーホテル"
         price_guide: "¥45,000〜"
         feature: "ベイサイド・ステーション徒歩約3分"
         feature_en: "3-min walk from Bayside Station"
+        feature_zh: "距海湾站步行3分钟"
         policy: normal
         individual_page: true
         slug: "toy-story-hotel"
       - name: "ホテルオークラ東京ベイ"
         name_en: "Hotel Okura Tokyo Bay"
+        name_zh: "东京湾大仓酒店"
         category: "オフィシャルホテル"
         price_guide: "¥30,000〜"
         feature: "専用シャトル運行"
         feature_en: "Dedicated park shuttle"
+        feature_zh: "专用乐园班车"
         policy: normal
         individual_page: true
         slug: "hotel-okura-tokyo-bay"
       - name: "グランドニッコー東京ベイ舞浜"
         name_en: "Grand Nikko Tokyo Bay Maihama"
+        name_zh: "东京湾舞滨格兰日航酒店"
         category: "オフィシャルホテル"
         price_guide: "¥30,000〜"
         feature: "専用シャトル運行"
         feature_en: "Dedicated park shuttle"
+        feature_zh: "专用乐园班车"
         policy: normal
         individual_page: true
         slug: "grand-nikko-tokyo-bay"
       - name: "シェラトン・グランデ・トーキョーベイ"
         name_en: "Sheraton Grande Tokyo Bay Hotel"
+        name_zh: "东京湾喜来登大酒店"
         category: "オフィシャルホテル"
         price_guide: "¥30,000〜"
         feature: "大浴場「舞湯」・大型プール"
         feature_en: "Large public bath & big pool"
+        feature_zh: "大浴场与大型泳池"
         policy: normal
         individual_page: true
         slug: "sheraton-grande-tokyo-bay"
       - name: "ヒルトン東京ベイ"
         name_en: "Hilton Tokyo Bay"
+        name_zh: "东京湾希尔顿酒店"
         category: "オフィシャルホテル"
         price_guide: "¥30,000〜"
         feature: "館内24時間コンビニ"
         feature_en: "24h in-house convenience store"
+        feature_zh: "馆内24小时便利店"
         policy: normal
         individual_page: true
         slug: "hilton-tokyo-bay"
       - name: "東京ベイ舞浜ホテル ファーストリゾート"
         name_en: "Tokyo Bay Maihama Hotel First Resort"
+        name_zh: "东京湾舞滨酒店 第一度假村"
         category: "オフィシャルホテル"
         price_guide: "¥20,000〜"
         feature: "コインランドリー完備"
         feature_en: "Coin laundry on-site"
+        feature_zh: "馆内自助洗衣"
         policy: normal
         individual_page: true
         slug: "maihama-hotel-first-resort"
       - name: "ホテルドリームゲート舞浜"
         name_en: "Hotel Dream Gate Maihama"
+        name_zh: "舞滨梦想之门酒店"
         category: "その他のホテル"
         price_guide: "¥15,000〜"
         feature: "JR舞浜駅改札直結"
         feature_en: "Direct to JR Maihama Stn gate"
+        feature_zh: "直通JR舞滨站检票口"
         policy: normal
         individual_page: true
         slug: "dreamgate-maihama"
       - name: "舞浜ビューホテル by HULIC"
         name_en: "Maihama View Hotel by HULIC"
+        name_zh: "舞滨观景酒店 by HULIC"
         category: "オフィシャルホテル"
         price_guide: "¥20,000〜"
         feature: "大浴場「スパ ローズ」"
         feature_en: "Large public bath 'Spa Rose'"
+        feature_zh: "大浴场「Spa Rose」"
         policy: normal
         individual_page: true
         slug: "maihama-view-hotel"
@@ -127,53 +153,65 @@ areas:
     tag: "B"
     name: "千鳥エリア"
     name_en: "Chidori"
+    name_zh: "千鸟地区"
     group: "リゾート"
     count: 5
     note: "マイステイズ舞浜はTDS徒歩6分・最安値クラス。"
     note_en: "MYSTAYS Maihama is a 6-min walk to TDS, best-value class."
+    note_zh: "MyStays舞滨步行6分钟到迪士尼海洋，价位实惠。"
     hotels:
       - name: "ザロイヤルパークホテル舞浜リゾート東京ベイ"
         name_en: "The Royal Park Hotel Maihama Resort Tokyo Bay"
+        name_zh: "舞滨皇家花园酒店 东京湾"
         category: "その他のホテル"
         price_guide: "¥25,000〜"
         feature: "2026年2月開業・最大6名対応"
         feature_en: "Opened Feb 2026, up to 6 guests"
+        feature_zh: "2026年2月开业·最多入住6人"
         policy: normal
         individual_page: true
         slug: "royal-park-maihama"
       - name: "ホテルマイステイズ舞浜"
         name_en: "HOTEL MYSTAYS Maihama"
+        name_zh: "舞滨MyStays酒店"
         category: "その他のホテル"
         price_guide: "¥8,000〜"
         feature: "TDS徒歩6分・エリア最安クラスのコスパビジネスホテル"
         feature_en: "6-min walk to TDS, area's best value"
+        feature_zh: "步行6分钟到迪士尼海洋·区域内超值"
         policy: normal
         individual_page: true
         slug: "mystays-maihama"
       - name: "舞浜ユーラシア（SPA&HOTEL）"
         name_en: "SPA & HOTEL Maihama Eurasia"
+        name_zh: "SPA&HOTEL 舞滨欧亚"
         category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "天然温泉・露天風呂・サウナ"
         feature_en: "Hot spring, open-air bath & sauna"
+        feature_zh: "天然温泉·露天浴池与桑拿"
         policy: normal
         individual_page: true
         slug: "maihama-eurasia"
       - name: "ホテルユーラシア舞浜アネックス"
         name_en: "Hotel Eurasia Maihama Annex"
+        name_zh: "HOTEL 欧亚舞滨 ANNEX"
         category: "その他のホテル"
         price_guide: "¥8,000〜"
         feature: "本館温泉を割引利用可"
         feature_en: "Discounted access to main-building hot spring"
+        feature_zh: "可优惠使用本馆温泉"
         policy: normal
         individual_page: true
         slug: "eurasia-annex"
       - name: "GRAND MONday Resort 東京ベイ舞浜"
         name_en: "GRAND MONday Resort Tokyo Bay Maihama"
+        name_zh: "GRAND MONday Resort 東京ベイ舞浜"
         category: "その他のホテル"
         price_guide: ""
         feature: "2026年7月18日開業予定・全室オーシャンフロント"
         feature_en: ""
+        feature_zh: ""
         policy: name-only
         individual_page: false
 
@@ -181,98 +219,120 @@ areas:
     tag: "C"
     name: "新町エリア"
     name_en: "Shinmachi"
+    name_zh: "新町地区"
     group: "ベイサイド"
     count: 10
     note: "日の出・明海のパートナーホテル集中。無料シャトル・空港リムジンも便利。"
     note_en: "Partner hotels in Hinode/Akemi. Free shuttles & airport limousines."
+    note_zh: "日出·明海的合作饭店集中，免费班车与机场巴士便利。"
     hotels:
       - name: "東京ディズニーセレブレーションホテル（ウィッシュ）"
         name_en: "Tokyo Disney Celebration Hotel: Wish"
+        name_zh: "东京迪士尼欢庆饭店：愿望"
         category: "ディズニーホテル"
         price_guide: "¥20,000〜"
         feature: "ハッピーエントリー特典付き"
         feature_en: "Happy Entry perk included"
+        feature_zh: "含Happy Entry提前入园礼遇"
         policy: normal
         individual_page: true
         slug: "celebration-wish"
       - name: "東京ディズニーセレブレーションホテル（ディスカバー）"
         name_en: "Tokyo Disney Celebration Hotel: Discover"
+        name_zh: "东京迪士尼欢庆饭店：探索"
         category: "ディズニーホテル"
         price_guide: "¥20,000〜"
         feature: "ハッピーエントリー特典付き"
         feature_en: "Happy Entry perk included"
+        feature_zh: "含Happy Entry提前入园礼遇"
         policy: normal
         individual_page: true
         slug: "celebration-discover"
       - name: "ハイアットリージェンシー東京ベイ"
         name_en: "Hyatt Regency Tokyo Bay"
+        name_zh: "东京湾凯悦酒店"
         category: "その他のホテル"
         price_guide: "¥25,000〜"
         feature: "ホテル前リムジン停留所（2024年新設）"
         feature_en: "Limousine stop at hotel (new 2024)"
+        feature_zh: "饭店门口设机场巴士站（2024新设）"
         policy: normal
         individual_page: true
         slug: "hyatt-regency-tokyo-bay"
       - name: "コンフォートスイーツ東京ベイ"
         name_en: "Comfort Suites Tokyo Bay"
+        name_zh: "东京湾凯富套房酒店"
         category: "その他のホテル"
         price_guide: "¥15,000〜"
         feature: "閉園後30分シャトル・小学6年生まで添い寝無料"
         feature_en: "Shuttle 30 min after closing, kids sleep free"
+        feature_zh: "闭园后30分钟班车·儿童免费同住"
         policy: normal
         individual_page: true
         slug: "comfort-suites-tokyo-bay"
       - name: "ホテルエミオン東京ベイ"
         name_en: "Hotel Emion Tokyo Bay"
+        name_zh: "东京湾艾米恩酒店"
         category: "パートナーホテル"
         price_guide: "¥18,000〜"
         feature: "天然温泉・露天風呂"
         feature_en: "Hot spring & open-air bath"
+        feature_zh: "天然温泉与露天浴池"
         policy: normal
         individual_page: true
         slug: "emion-tokyo-bay"
       - name: "三井ガーデンホテルプラナ東京ベイ"
         name_en: "Mitsui Garden Hotel Prana Tokyo Bay"
+        name_zh: "三井花园酒店 普拉纳东京湾"
         category: "パートナーホテル"
         price_guide: "¥18,000〜"
         feature: "展望大浴場・館内コンビニ"
         feature_en: "View public bath & in-house store"
+        feature_zh: "景观大浴场与馆内商店"
         policy: normal
         individual_page: true
         slug: "mitsui-garden-prana"
       - name: "星野リゾート 1955 東京ベイ"
         name_en: "1955 Tokyo Bay by Hoshino Resorts"
+        name_zh: "星野集团 1955 东京湾"
         category: "その他のホテル"
         price_guide: "¥18,000〜"
         feature: "館内ローソン・2024年開業"
         feature_en: "In-house Lawson, opened 2024"
+        feature_zh: "馆内罗森便利店·2024开业"
         policy: normal
         individual_page: true
         slug: "hoshinoresorts-1955-tokyo-bay"
       - name: "ラ・ジェント・ホテル東京ベイ"
         name_en: "La'gent Hotel Tokyo Bay"
+        name_zh: "东京湾拉珍特酒店"
         category: "その他のホテル"
         price_guide: "¥8,000〜"
         feature: "最大6名対応・24時間コンビニ隣接"
         feature_en: "Up to 6 guests, 24h store next door"
+        feature_zh: "最多6人·隔壁24小时便利店"
         policy: normal
         individual_page: true
         slug: "lagent-tokyo-bay"
       - name: "イビススタイルズ東京ベイ"
         name_en: "ibis Styles Tokyo Bay"
+        name_zh: "东京湾宜必思尚品酒店"
         category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "アコーホテルズ系デザインホテル"
         feature_en: "Accor design hotel"
+        feature_zh: "雅高集团设计饭店"
         policy: normal
         individual_page: true
         slug: "ibis-styles-tokyo-bay"
       - name: "マイステイズ新浦安コンファレンスセンター"
         name_en: "HOTEL MYSTAYS Shin Urayasu Conference Center"
+        name_zh: "新浦安MyStays会议中心酒店"
         category: "その他のホテル"
         price_guide: "¥7,500〜"
         feature: "安定した低価格帯"
         feature_en: "Reliably low rates"
+        feature_zh: "价位稳定实惠"
         policy: normal
         individual_page: true
         slug: "mystays-shin-urayasu"
@@ -281,61 +341,75 @@ areas:
     tag: "D"
     name: "新浦安エリア"
     name_en: "Shin-Urayasu"
+    name_zh: "新浦安地区"
     group: "ベイサイド"
     count: 6
     note: "新浦安駅周辺（美浜・今川・東野）。京葉線で舞浜まで2駅。"
     note_en: "Around Shin-Urayasu Stn. Two stops to Maihama on the Keiyo Line."
+    note_zh: "新浦安站周边（美浜·今川·东野）。京叶线到舞滨2站。"
     hotels:
       - name: "浦安ブライトンホテル"
         name_en: "Urayasu Brighton Hotel Tokyo Bay"
+        name_zh: "浦安布莱顿酒店 东京湾"
         category: "パートナーホテル"
         price_guide: "¥15,000〜"
         feature: "新浦安駅直結"
         feature_en: "Direct to Shin-Urayasu Stn"
+        feature_zh: "直通新浦安站"
         policy: normal
         individual_page: true
         slug: "brighton-tokyo-bay"
       - name: "オリエンタルホテル東京ベイ"
         name_en: "Oriental Hotel Tokyo Bay"
+        name_zh: "东京湾东方酒店"
         category: "パートナーホテル"
         price_guide: "¥16,500〜"
         feature: "新浦安駅直結"
         feature_en: "Direct to Shin-Urayasu Stn"
+        feature_zh: "直通新浦安站"
         policy: normal
         individual_page: true
         slug: "oriental-tokyo-bay"
       - name: "フレックステイイン新浦安"
         name_en: "FLEXSTAY INN Shin Urayasu"
+        name_zh: "新浦安Flexstay Inn"
         category: "その他のホテル"
         price_guide: "¥7,000〜"
         feature: "全室ミニキッチン・長期滞在型"
         feature_en: "Mini-kitchen in every room, long-stay"
+        feature_zh: "每间客房带小厨房·适合长住"
         policy: normal
         individual_page: true
         slug: "flexstay-shin-urayasu"
       - name: "日和ホテル舞浜"
         name_en: "HIYORI HOTEL Maihama"
+        name_zh: "舞滨日和酒店"
         category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "全室フットマッサージ器・靴乾燥機"
         feature_en: "Foot massager & shoe dryer in every room"
+        feature_zh: "每间客房备足部按摩与烘鞋机"
         policy: normal
         individual_page: true
         slug: "hiyori-hotel-maihama"
       - name: "M4 design hotel"
         name_en: "M4 design hotel"
+        name_zh: "M4 design hotel"
         category: "—"
         price_guide: ""
         feature: ""
         feature_en: ""
+        feature_zh: ""
         policy: name-only
         individual_page: false
       - name: "ホテルリバーサイド東京ベイ"
         name_en: "ホテルリバーサイド東京ベイ"
+        name_zh: "ホテルリバーサイド東京ベイ"
         category: "—"
         price_guide: ""
         feature: ""
         feature_en: ""
+        feature_zh: ""
         policy: name-only
         individual_page: false
 
@@ -343,26 +417,32 @@ areas:
     tag: "E"
     name: "元町エリア"
     name_en: "Motomachi"
+    name_zh: "元町地区"
     group: "リバーサイド"
     count: 2
     note: "富士見など旧市街南側。旧江戸川沿いの落ち着いた住宅エリア。"
     note_en: "Old-town south side along the Edogawa. Quiet residential area."
+    note_zh: "富士见等旧城区南侧。旧江户川沿岸的安静住宅区。"
     hotels:
       - name: "変なホテル舞浜"
         name_en: "Henn na Hotel Maihama Tokyo Bay"
+        name_zh: "海茵娜酒店 舞滨东京湾"
         category: "その他のホテル"
         price_guide: "¥11,000〜"
         feature: "舞浜駅シャトル運行（2026年7月減便）"
         feature_en: "Maihama Stn shuttle (reduced from Jul 2026)"
+        feature_zh: "舞滨站班车（2026年7月起减班）"
         policy: normal
         individual_page: true
         slug: "henna-hotel-maihama"
       - name: "フォーストーリーズホテル舞浜"
         name_en: "Four Stories Hotel Maihama Tokyo Bay"
+        name_zh: "舞滨四物语酒店 东京湾"
         category: "その他のホテル"
         price_guide: "¥10,000〜"
         feature: "路線バス利用（最終23:00）"
         feature_en: "Local bus access (last bus 23:00)"
+        feature_zh: "巴士接驳（末班23:00）"
         policy: normal
         individual_page: true
         slug: "four-stories-hotel"
@@ -371,53 +451,65 @@ areas:
     tag: "F"
     name: "浦安駅エリア"
     name_en: "Urayasu Stn"
+    name_zh: "浦安站地区"
     group: "リバーサイド"
     count: 5
     note: "東西線直通で都心1本。パークへはバス25〜30分。"
     note_en: "Direct to central Tokyo on the Tozai Line. 25-30 min by bus to the parks."
+    note_zh: "东西线直达市中心。到乐园乘巴士约25–30分钟。"
     hotels:
       - name: "浦安ビューフォートホテル"
         name_en: "Urayasu Beaufort Hotel"
+        name_zh: "浦安景堡酒店"
         category: "その他のホテル"
         price_guide: "¥9,000〜"
         feature: "浦安駅徒歩1分・ビュッフェ朝食"
         feature_en: "1-min walk from Urayasu Stn, buffet breakfast"
+        feature_zh: "距浦安站步行1分钟·自助早餐"
         policy: normal
         individual_page: true
         slug: "viewfort-urayasu"
       - name: "ホテル醍醐"
         name_en: "Hotel Daigo"
+        name_zh: "醍醐酒店"
         category: "その他のホテル"
         price_guide: "¥11,000〜"
         feature: "年中均一料金・繁忙期も値上げなし"
         feature_en: "Flat rate year-round, no peak surcharge"
+        feature_zh: "全年统一房价·旺季不涨"
         policy: normal
         individual_page: true
         slug: "hotel-daigo-urayasu"
       - name: "BAYHOTEL浦安駅前"
         name_en: "BAY HOTEL Urayasu-ekimae"
+        name_zh: "浦安站前 BAY HOTEL"
         category: "その他のホテル"
         price_guide: "¥14,000〜"
         feature: "全室キッチン・冷蔵庫・洗濯機付き"
         feature_en: "Kitchen, fridge & washer in every room"
+        feature_zh: "每间客房带厨房·冰箱与洗衣机"
         policy: normal
         individual_page: true
         slug: "bayhotel-urayasu"
       - name: "浦安サンホテル"
         name_en: "Urayasu Sun Hotel"
+        name_zh: "浦安阳光酒店"
         category: "その他のホテル"
         price_guide: "¥5,000〜"
         feature: "無料朝食・24時間フロント"
         feature_en: "Free breakfast, 24h front desk"
+        feature_zh: "免费早餐·24小时前台"
         policy: normal
         individual_page: true
         slug: "urayasu-sun-hotel"
       - name: "ホテルダイヤモンド"
         name_en: "ホテルダイヤモンド"
+        name_zh: "ホテルダイヤモンド"
         category: "—"
         price_guide: ""
         feature: ""
         feature_en: ""
+        feature_zh: ""
         policy: name-only
         individual_page: false
 
@@ -425,80 +517,98 @@ areas:
     tag: "G"
     name: "浦安近郊"
     name_en: "Near Urayasu"
+    name_zh: "浦安近郊"
     group: "浦安近郊"
     count: 8
     note: "葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。"
     note_en: "Adjacent Kasai/Ichikawa/Myoden. Train to Urayasu & Maihama."
+    note_zh: "葛西·市川·妙典等邻接地区。乘电车前往浦安·舞滨。"
     hotels:
       - name: "Premium hotel MONday 舞浜ビューⅠ"
         name_en: "Premium hotel MONday Maihama View I"
+        name_zh: "Premium hotel MONday 舞滨景观Ⅰ"
         category: "その他のホテル"
         price_guide: "¥11,000〜"
         feature: "2025年12月開業・TDR無料シャトル"
         feature_en: "Opened Dec 2025, free TDR shuttle"
+        feature_zh: "2025年12月开业·免费迪士尼班车"
         policy: normal
         individual_page: true
         slug: "premium-monday-maihama-view-1"
       - name: "ホテルシーサイド江戸川"
         name_en: "Hotel Seaside Edogawa"
+        name_zh: "江户川海滨酒店"
         category: "その他のホテル"
         price_guide: "¥16,000〜"
         feature: "葛西臨海公園内・駅徒歩3分・和室あり"
         feature_en: "In Kasai Rinkai Park, 3-min walk, tatami rooms"
+        feature_zh: "位于葛西临海公园·步行3分钟·有榻榻米房"
         policy: normal
         individual_page: true
         slug: "hotel-seaside-edogawa"
       - name: "CVS・BAY HOTEL"
         name_en: "CVS BAY HOTEL"
+        name_zh: "CVS·BAY HOTEL"
         category: "その他のホテル"
         price_guide: "¥5,610〜"
         feature: "市川塩浜駅隣接・舞浜2駅6分"
         feature_en: "Next to Ichikawa-Shiohama Stn, 2 stops to Maihama"
+        feature_zh: "紧邻市川盐浜站·到舞滨2站"
         policy: normal
         individual_page: true
         slug: "cvs-bay-hotel"
       - name: "ホテルイルフィオーレ葛西"
         name_en: "Hotel Il Fiore Kasai"
+        name_zh: "葛西菲奥雷酒店"
         category: "その他のホテル"
         price_guide: "¥7,860〜"
         feature: "葛西駅徒歩3分・最大5名対応"
         feature_en: "3-min walk from Kasai Stn, up to 5 guests"
+        feature_zh: "距葛西站步行3分钟·最多5人"
         policy: normal
         individual_page: true
         slug: "hotel-ilfiore-kasai"
       - name: "ホテルイルフィオーレ葛西 ANNEX"
         name_en: "Hotel Il Fiore Kasai ANNEX"
+        name_zh: "葛西菲奥雷酒店 ANNEX"
         category: "その他のホテル"
         price_guide: "¥5,500〜"
         feature: "葛西駅徒歩3分・イルフィオーレ別館"
         feature_en: "3-min walk from Kasai Stn, Il Fiore annex"
+        feature_zh: "距葛西站步行3分钟·Il Fiore别馆"
         policy: normal
         individual_page: true
         slug: "hotel-ilfiore-kasai-annex"
       - name: "ホテルルミエール葛西"
         name_en: "Hotel Lumiere Kasai"
+        name_zh: "葛西卢米埃尔酒店"
         category: "その他のホテル"
         price_guide: "¥9,700〜"
         feature: "葛西駅徒歩2分のビジネスホテル"
         feature_en: "Business hotel, 2-min walk from Kasai Stn"
+        feature_zh: "商务饭店·距葛西站步行2分钟"
         policy: normal
         individual_page: true
         slug: "hotel-lumiere-kasai"
       - name: "ホテルリブマックス葛西駅前"
         name_en: "HOTEL LiVEMAX Kasai-Ekimae"
+        name_zh: "LiVEMAX葛西站前酒店"
         category: "その他のホテル"
         price_guide: "¥5,000〜"
         feature: "葛西駅徒歩3分・TDRバス約20分"
         feature_en: "3-min walk from Kasai Stn, ~20 min bus to TDR"
+        feature_zh: "距葛西站步行3分钟·乘巴士约20分钟到迪士尼"
         policy: normal
         individual_page: true
         slug: "livemax-kasai-ekimae"
       - name: "スーパーホテル 市川・妙典駅前"
         name_en: "Super Hotel Tozai Line Ichikawa-Myoden"
+        name_zh: "超级酒店 东西线·市川·妙典站前"
         category: "その他のホテル"
         price_guide: "¥7,400〜"
         feature: "妙典駅前・東西線で浦安へ"
         feature_en: "By Myoden Stn, Tozai Line to Urayasu"
+        feature_zh: "妙典站旁·乘东西线可达浦安"
         policy: normal
         individual_page: true
         slug: "superhotel-myoden"

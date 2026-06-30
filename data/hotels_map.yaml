@@ -23,6 +23,7 @@ hotels:
     name: "東京ディズニーランドホテル"
     address: "〒279-8505 千葉県浦安市舞浜29-1"
     name_en: "Tokyo Disneyland Hotel"
+    name_zh: "东京迪士尼乐园大饭店"
   - slug: "miracosta"
     lat: 35.6269
     lng: 139.8881
@@ -38,6 +39,7 @@ hotels:
     name: "東京ディズニーシー・ホテルミラコスタ"
     address: "〒279-8519 千葉県浦安市舞浜1-13"
     name_en: "Tokyo DisneySea Hotel MiraCosta"
+    name_zh: "东京迪士尼海洋观海景大饭店 米拉柯斯达"
   - slug: "fantasy-springs-hotel"
     lat: 35.6289
     lng: 139.8764
@@ -52,6 +54,7 @@ hotels:
     name: "東京ディズニーシー・ファンタジースプリングスホテル"
     address: "〒279-8526 千葉県浦安市舞浜1-2"
     name_en: "Tokyo DisneySea Fantasy Springs Hotel"
+    name_zh: "东京迪士尼海洋梦幻泉乡大饭店"
   - slug: "ambassador-hotel"
     lat: 35.6334
     lng: 139.8878
@@ -66,6 +69,7 @@ hotels:
     name: "ディズニーアンバサダーホテル"
     address: "〒279-8522 千葉県浦安市舞浜2-11"
     name_en: "Disney Ambassador Hotel"
+    name_zh: "迪士尼大使大饭店"
   - slug: "toy-story-hotel"
     lat: 35.6259
     lng: 139.8746
@@ -81,6 +85,7 @@ hotels:
     name: "トイ・ストーリーホテル"
     address: "〒279-8506 千葉県浦安市舞浜1-47"
     name_en: "Tokyo Disney Resort Toy Story Hotel"
+    name_zh: "东京迪士尼度假区玩具总动员饭店"
   - slug: "celebration-wish"
     lat: 35.6388
     lng: 139.9305
@@ -96,6 +101,7 @@ hotels:
     name: "東京ディズニーセレブレーションホテル：ウィッシュ"
     address: "千葉県浦安市明海7丁目1-1"
     name_en: "Tokyo Disney Celebration Hotel: Wish"
+    name_zh: "东京迪士尼欢庆饭店：愿望"
   - slug: "celebration-discover"
     lat: 35.6384
     lng: 139.9308
@@ -111,6 +117,7 @@ hotels:
     name: "東京ディズニーセレブレーションホテル：ディスカバー"
     address: "千葉県浦安市日の出7-1-1"
     name_en: "Tokyo Disney Celebration Hotel: Discover"
+    name_zh: "东京迪士尼欢庆饭店：探索"
   - slug: "hotel-okura-tokyo-bay"
     lat: 35.6259
     lng: 139.8760
@@ -124,6 +131,7 @@ hotels:
     name: "ホテルオークラ東京ベイ"
     address: "千葉県浦安市舞浜1-8"
     name_en: "Hotel Okura Tokyo Bay"
+    name_zh: "东京湾大仓酒店"
   - slug: "grand-nikko-tokyo-bay"
     lat: 35.6293
     lng: 139.8740
@@ -139,6 +147,7 @@ hotels:
     name: "グランドニッコー東京ベイ舞浜"
     address: "千葉県浦安市舞浜1-7"
     name_en: "Grand Nikko Tokyo Bay Maihama"
+    name_zh: "东京湾舞滨格兰日航酒店"
   - slug: "sheraton-grande-tokyo-bay"
     lat: 35.6257
     lng: 139.8782
@@ -157,6 +166,7 @@ hotels:
     name: "シェラトン・グランデ・トーキョーベイ"
     address: "千葉県浦安市舞浜1-9"
     name_en: "Sheraton Grande Tokyo Bay Hotel"
+    name_zh: "东京湾喜来登大酒店"
   - slug: "hilton-tokyo-bay"
     lat: 35.6272
     lng: 139.8739
@@ -174,6 +184,7 @@ hotels:
     name: "ヒルトン東京ベイ"
     address: "〒279-0031 千葉県浦安市舞浜1-8"
     name_en: "Hilton Tokyo Bay"
+    name_zh: "东京湾希尔顿酒店"
   - slug: "maihama-hotel-first-resort"
     lat: 35.6317
     lng: 139.8739
@@ -189,6 +200,7 @@ hotels:
     name: "東京ベイ舞浜ホテル ファーストリゾート"
     address: "千葉県浦安市舞浜1-6"
     name_en: "Tokyo Bay Maihama Hotel First Resort"
+    name_zh: "东京湾舞滨酒店 第一度假村"
   - slug: "dreamgate-maihama"
     lat: 35.6357
     lng: 139.8850
@@ -204,6 +216,7 @@ hotels:
     name: "ホテルドリームゲート舞浜"
     address: "千葉県浦安市舞浜26-5"
     name_en: "Hotel Dream Gate Maihama"
+    name_zh: "舞滨梦想之门酒店"
   - slug: "maihama-view-hotel"
     lat: 35.6307
     lng: 139.8739
@@ -219,6 +232,7 @@ hotels:
     name: "舞浜ビューホテル by HULIC"
     address: "〒279-0031 千葉県浦安市舞浜1-34"
     name_en: "Maihama View Hotel by HULIC"
+    name_zh: "舞滨观景酒店 by HULIC"
   - slug: "royal-park-maihama"
     lat: 35.6267
     lng: 139.8972
@@ -233,6 +247,7 @@ hotels:
     name: "ザ ロイヤルパークホテル 舞浜リゾート 東京ベイ"
     address: "〒279-0032 千葉県浦安市千鳥13-1"
     name_en: "The Royal Park Hotel Maihama Resort Tokyo Bay"
+    name_zh: "舞滨皇家花园酒店 东京湾"
   - slug: "mystays-maihama"
     lat: 35.6328
     lng: 139.8924
@@ -245,6 +260,7 @@ hotels:
     name: "ホテルマイステイズ舞浜"
     address: "〒279-0025 千葉県浦安市鉄鋼通り3-5-1"
     name_en: "HOTEL MYSTAYS Maihama"
+    name_zh: "舞滨MyStays酒店"
   - slug: "maihama-eurasia"
     lat: 35.6272
     lng: 139.8957
@@ -260,6 +276,7 @@ hotels:
     name: "スパ＆ホテル 舞浜ユーラシア"
     address: "千葉県浦安市千鳥13-20"
     name_en: "SPA & HOTEL Maihama Eurasia"
+    name_zh: "SPA&HOTEL 舞滨欧亚"
   - slug: "eurasia-annex"
     lat: 35.6236
     lng: 139.9028
@@ -274,6 +291,7 @@ hotels:
     name: "HOTELユーラシア舞浜ANNEX"
     address: "〒279-0032 千葉県浦安市千鳥10-5"
     name_en: "Hotel Eurasia Maihama Annex"
+    name_zh: "HOTEL 欧亚舞滨 ANNEX"
   - slug: "hyatt-regency-tokyo-bay"
     lat: 35.6377
     lng: 139.9259
@@ -290,6 +308,7 @@ hotels:
     name: "ハイアット リージェンシー 東京ベイ"
     address: "千葉県浦安市明海5-8-23"
     name_en: "Hyatt Regency Tokyo Bay"
+    name_zh: "东京湾凯悦酒店"
   - slug: "comfort-suites-tokyo-bay"
     lat: 35.6386
     lng: 139.9274
@@ -304,6 +323,7 @@ hotels:
     name: "コンフォートスイーツ東京ベイ"
     address: "〒279-0014 千葉県浦安市明海5-8-15"
     name_en: "Comfort Suites Tokyo Bay"
+    name_zh: "东京湾凯富套房酒店"
   - slug: "brighton-tokyo-bay"
     lat: 35.6500
     lng: 139.9116
@@ -318,6 +338,7 @@ hotels:
     name: "浦安ブライトンホテル東京ベイ"
     address: "千葉県浦安市美浜1-9"
     name_en: "Urayasu Brighton Hotel Tokyo Bay"
+    name_zh: "浦安布莱顿酒店 东京湾"
   - slug: "oriental-tokyo-bay"
     lat: 35.6509
     lng: 139.9127
@@ -334,6 +355,7 @@ hotels:
     name: "オリエンタルホテル東京ベイ"
     address: "千葉県浦安市美浜1-8-2"
     name_en: "Oriental Hotel Tokyo Bay"
+    name_zh: "东京湾东方酒店"
   - slug: "emion-tokyo-bay"
     lat: 35.6477
     lng: 139.9203
@@ -351,6 +373,7 @@ hotels:
     name: "ホテルエミオン東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出1-1-1"
     name_en: "Hotel Emion Tokyo Bay"
+    name_zh: "东京湾艾米恩酒店"
   - slug: "mitsui-garden-prana"
     lat: 35.6361
     lng: 139.9243
@@ -368,6 +391,7 @@ hotels:
     name: "三井ガーデンホテルプラナ東京ベイ"
     address: "千葉県浦安市明海6-2-1"
     name_en: "Mitsui Garden Hotel Prana Tokyo Bay"
+    name_zh: "三井花园酒店 普拉纳东京湾"
   - slug: "hoshinoresorts-1955-tokyo-bay"
     lat: 35.6375
     lng: 139.9320
@@ -382,6 +406,7 @@ hotels:
     name: "星野リゾート 1955 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出7-2-3"
     name_en: "1955 Tokyo Bay by Hoshino Resorts"
+    name_zh: "星野集团 1955 东京湾"
   - slug: "lagent-tokyo-bay"
     lat: 35.6407
     lng: 139.9296
@@ -395,6 +420,7 @@ hotels:
     name: "ラ・ジェント・ホテル東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出5-7-1"
     name_en: "La'gent Hotel Tokyo Bay"
+    name_zh: "东京湾拉珍特酒店"
   - slug: "ibis-styles-tokyo-bay"
     lat: 35.6490
     lng: 139.9217
@@ -409,6 +435,7 @@ hotels:
     name: "イビス スタイルズ 東京ベイ"
     address: "〒279-0013 千葉県浦安市日の出2-1-1"
     name_en: "ibis Styles Tokyo Bay"
+    name_zh: "东京湾宜必思尚品酒店"
   - slug: "mystays-shin-urayasu"
     lat: 35.6440
     lng: 139.9156
@@ -421,6 +448,7 @@ hotels:
     name: "マイステイズ新浦安コンファレンスセンター"
     address: "〒279-0014 千葉県浦安市明海2-1-4"
     name_en: "HOTEL MYSTAYS Shin Urayasu Conference Center"
+    name_zh: "新浦安MyStays会议中心酒店"
   - slug: "flexstay-shin-urayasu"
     lat: 35.642556
     lng: 139.904282
@@ -435,6 +463,7 @@ hotels:
     name: "フレックステイイン新浦安"
     address: "〒279-0022 千葉県浦安市今川4-1-29"
     name_en: "FLEXSTAY INN Shin Urayasu"
+    name_zh: "新浦安Flexstay Inn"
   - slug: "henna-hotel-maihama"
     lat: 35.6450
     lng: 139.8877
@@ -447,6 +476,7 @@ hotels:
     name: "変なホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見5-3-23"
     name_en: "Henn na Hotel Maihama Tokyo Bay"
+    name_zh: "海茵娜酒店 舞滨东京湾"
   - slug: "four-stories-hotel"
     lat: 35.650735
     lng: 139.891043
@@ -459,6 +489,7 @@ hotels:
     name: "フォーストーリーズホテル舞浜 東京ベイ"
     address: "〒279-0043 千葉県浦安市富士見1-11-31"
     name_en: "Four Stories Hotel Maihama Tokyo Bay"
+    name_zh: "舞滨四物语酒店 东京湾"
   - slug: "hiyori-hotel-maihama"
     lat: 35.646345
     lng: 139.897186
@@ -472,6 +503,7 @@ hotels:
     name: "日和ホテル舞浜"
     address: "〒279-0042 千葉県浦安市東野2-25-8"
     name_en: "HIYORI HOTEL Maihama"
+    name_zh: "舞滨日和酒店"
   - slug: "viewfort-urayasu"
     lat: 35.66471
     lng: 139.892687
@@ -484,6 +516,7 @@ hotels:
     name: "浦安ビューフォートホテル"
     address: "〒279-0004 千葉県浦安市猫実4-18-28"
     name_en: "Urayasu Beaufort Hotel"
+    name_zh: "浦安景堡酒店"
   - slug: "hotel-daigo-urayasu"
     lat: 35.666597
     lng: 139.895219
@@ -494,6 +527,7 @@ hotels:
     name: "ホテル醍醐"
     address: "〒279-0002 千葉県浦安市北栄1-11-1"
     name_en: "Hotel Daigo"
+    name_zh: "醍醐酒店"
   - slug: "bayhotel-urayasu"
     lat: 35.665547
     lng: 139.894629
@@ -507,6 +541,7 @@ hotels:
     name: "BAYHOTEL浦安駅前"
     address: "〒279-0002 千葉県浦安市北栄1-15-28"
     name_en: "BAY HOTEL Urayasu-ekimae"
+    name_zh: "浦安站前 BAY HOTEL"
   - slug: "urayasu-sun-hotel"
     lat: 35.665574
     lng: 139.890164
@@ -520,6 +555,7 @@ hotels:
     name: "浦安サンホテル"
     address: "〒279-0001 千葉県浦安市当代島1-19-13"
     name_en: "Urayasu Sun Hotel"
+    name_zh: "浦安阳光酒店"
   - slug: "premium-monday-maihama-view-1"
     lat: 35.644359
     lng: 139.877470
@@ -532,6 +568,7 @@ hotels:
     name: "Premium hotel MONday 舞浜ビューⅠ"
     address: "〒134-0085 東京都江戸川区南葛西6-2-22"
     name_en: "Premium hotel MONday Maihama View I"
+    name_zh: "Premium hotel MONday 舞滨景观Ⅰ"
   - slug: "hotel-seaside-edogawa"
     lat: 35.642820
     lng: 139.859376
@@ -544,6 +581,7 @@ hotels:
     name: "ホテルシーサイド江戸川"
     address: "〒134-0086 東京都江戸川区臨海町6-2-2（葛西臨海公園内）"
     name_en: "Hotel Seaside Edogawa"
+    name_zh: "江户川海滨酒店"
   - slug: "cvs-bay-hotel"
     lat: 35.666803
     lng: 139.923990
@@ -556,6 +594,7 @@ hotels:
     name: "CVS・BAY HOTEL"
     address: "〒272-0127 千葉県市川市塩浜2-33-1（本館）"
     name_en: "CVS BAY HOTEL"
+    name_zh: "CVS·BAY HOTEL"
   - slug: "hotel-ilfiore-kasai"
     lat: 35.662815
     lng: 139.874746
@@ -568,6 +607,7 @@ hotels:
     name: "ホテルイルフィオーレ葛西"
     address: "〒134-0084 東京都江戸川区東葛西6-5-8"
     name_en: "Hotel Il Fiore Kasai"
+    name_zh: "葛西菲奥雷酒店"
   - slug: "hotel-ilfiore-kasai-annex"
     lat: 35.661294
     lng: 139.873346
@@ -580,6 +620,7 @@ hotels:
     name: "ホテルイルフィオーレ葛西 ANNEX"
     address: "〒134-0084 東京都江戸川区東葛西6-1-7"
     name_en: "Hotel Il Fiore Kasai ANNEX"
+    name_zh: "葛西菲奥雷酒店 ANNEX"
   - slug: "hotel-lumiere-kasai"
     lat: 35.661161
     lng: 139.872502
@@ -592,6 +633,7 @@ hotels:
     name: "ホテルルミエール葛西"
     address: "〒134-0083 東京都江戸川区中葛西5-41-20"
     name_en: "Hotel Lumiere Kasai"
+    name_zh: "葛西卢米埃尔酒店"
   - slug: "livemax-kasai-ekimae"
     lat: 35.660810
     lng: 139.873359
@@ -604,6 +646,7 @@ hotels:
     name: "ホテルリブマックス葛西駅前"
     address: "〒134-0084 東京都江戸川区東葛西6-1-3"
     name_en: "HOTEL LiVEMAX Kasai-Ekimae"
+    name_zh: "LiVEMAX葛西站前酒店"
   - slug: "superhotel-myoden"
     lat: 35.691631
     lng: 139.926597
@@ -616,3 +659,4 @@ hotels:
     name: "スーパーホテル東西線・市川・妙典駅前"
     address: "〒272-0111 千葉県市川市妙典4-4-27 妙典センタービル"
     name_en: "Super Hotel Tozai Line Ichikawa-Myoden"
+    name_zh: "超级酒店 东西线·市川·妙典站前"

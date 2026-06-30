@@ -33,6 +33,55 @@ if (-not (Test-Path $csvPath)) { throw "マスターCSVが見つかりません:
 
 $csv = Import-Csv $csvPath -Encoding UTF8
 
+# ホテル名の中文表記（slug→简体中文）。比較マップ(/zh/)のポップアップ・地図用。
+# ※ build-hotels.ps1 の $nameZh と同内容。どちらか変更時は両方更新すること。
+$nameZh = @{
+  "tdl-hotel"                     = "东京迪士尼乐园大饭店"
+  "miracosta"                     = "东京迪士尼海洋观海景大饭店 米拉柯斯达"
+  "fantasy-springs-hotel"         = "东京迪士尼海洋梦幻泉乡大饭店"
+  "ambassador-hotel"              = "迪士尼大使大饭店"
+  "toy-story-hotel"               = "东京迪士尼度假区玩具总动员饭店"
+  "celebration-wish"              = "东京迪士尼欢庆饭店：愿望"
+  "celebration-discover"          = "东京迪士尼欢庆饭店：探索"
+  "hotel-okura-tokyo-bay"         = "东京湾大仓酒店"
+  "grand-nikko-tokyo-bay"         = "东京湾舞滨格兰日航酒店"
+  "sheraton-grande-tokyo-bay"     = "东京湾喜来登大酒店"
+  "hilton-tokyo-bay"              = "东京湾希尔顿酒店"
+  "maihama-hotel-first-resort"    = "东京湾舞滨酒店 第一度假村"
+  "maihama-view-hotel"            = "舞滨观景酒店 by HULIC"
+  "dreamgate-maihama"             = "舞滨梦想之门酒店"
+  "royal-park-maihama"            = "舞滨皇家花园酒店 东京湾"
+  "mystays-maihama"               = "舞滨MyStays酒店"
+  "maihama-eurasia"               = "SPA&HOTEL 舞滨欧亚"
+  "eurasia-annex"                 = "HOTEL 欧亚舞滨 ANNEX"
+  "hyatt-regency-tokyo-bay"       = "东京湾凯悦酒店"
+  "comfort-suites-tokyo-bay"      = "东京湾凯富套房酒店"
+  "brighton-tokyo-bay"            = "浦安布莱顿酒店 东京湾"
+  "oriental-tokyo-bay"            = "东京湾东方酒店"
+  "emion-tokyo-bay"               = "东京湾艾米恩酒店"
+  "mitsui-garden-prana"           = "三井花园酒店 普拉纳东京湾"
+  "hoshinoresorts-1955-tokyo-bay" = "星野集团 1955 东京湾"
+  "lagent-tokyo-bay"              = "东京湾拉珍特酒店"
+  "ibis-styles-tokyo-bay"         = "东京湾宜必思尚品酒店"
+  "mystays-shin-urayasu"          = "新浦安MyStays会议中心酒店"
+  "flexstay-shin-urayasu"         = "新浦安Flexstay Inn"
+  "henna-hotel-maihama"           = "海茵娜酒店 舞滨东京湾"
+  "four-stories-hotel"            = "舞滨四物语酒店 东京湾"
+  "hiyori-hotel-maihama"          = "舞滨日和酒店"
+  "viewfort-urayasu"              = "浦安景堡酒店"
+  "hotel-daigo-urayasu"           = "醍醐酒店"
+  "bayhotel-urayasu"              = "浦安站前 BAY HOTEL"
+  "urayasu-sun-hotel"             = "浦安阳光酒店"
+  "premium-monday-maihama-view-1" = "Premium hotel MONday 舞滨景观Ⅰ"
+  "hotel-seaside-edogawa"         = "江户川海滨酒店"
+  "cvs-bay-hotel"                 = "CVS·BAY HOTEL"
+  "hotel-ilfiore-kasai"           = "葛西菲奥雷酒店"
+  "hotel-ilfiore-kasai-annex"     = "葛西菲奥雷酒店 ANNEX"
+  "hotel-lumiere-kasai"           = "葛西卢米埃尔酒店"
+  "livemax-kasai-ekimae"          = "LiVEMAX葛西站前酒店"
+  "superhotel-myoden"             = "超级酒店 东西线·市川·妙典站前"
+}
+
 $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("# === 自動生成ファイル / DO NOT EDIT ===")
 [void]$sb.AppendLine("# マスター: hotel-database-full.csv")
@@ -102,6 +151,10 @@ foreach ($r in $csv) {
   $nameEn = ($r.'英語表記').Trim()
   if (-not $nameEn) { $nameEn = ($r.'施設名').Trim() }
   [void]$sb.AppendLine("    name_en: ""$nameEn""")
+  $nameZhV = ""
+  if ($nameZh.ContainsKey($slug)) { $nameZhV = $nameZh[$slug] }
+  if (-not $nameZhV) { $nameZhV = ($r.'施設名').Trim() }
+  [void]$sb.AppendLine("    name_zh: ""$nameZhV""")
   $count++
 }
 
