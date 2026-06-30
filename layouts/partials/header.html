@@ -4,7 +4,7 @@
     <nav class="header-nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
-            {{- if eq .Lang "en" }}{{ $label_text = "Urayasu Portal" }}{{ else if eq .Lang "zh" }}{{ $label_text = "浦安门户" }}{{ end }}
+            {{- if eq .Lang "en" }}{{ $label_text = "Urayasu Portal" }}{{ else if eq .Lang "zh" }}{{ $label_text = "浦安门户" }}{{ else if eq .Lang "ko" }}{{ $label_text = "우라야스 포털" }}{{ end }}
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if hasPrefix site.Params.label.iconSVG "<svg" }}

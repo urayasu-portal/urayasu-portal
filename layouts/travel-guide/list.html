@@ -3,6 +3,7 @@
 {{- $allPosts := where site.RegularPages "Section" "posts" }}
 {{- $isEN := eq .Lang "en" }}
 {{- $isZH := eq .Lang "zh" }}
+{{- $isKO := eq .Lang "ko" }}
 
 {{/* ────────────────────────────────────────
      ヒーロー / Hero（モックアップF準拠・コーラル）
@@ -16,6 +17,10 @@
   <p class="tg-hero-eyebrow">浦安·舞滨 旅行指南</p>
   <h1>东京迪士尼度假区之旅，<br>由本地向导带路。</h1>
   <p class="tg-hero-lead">从舞滨·浦安的酒店选择，到从机场、东京站的交通、美食与伴手礼——由浦安本地编辑团队为中国游客打造的实用攻略。</p>
+  {{- else if $isKO }}
+  <p class="tg-hero-eyebrow">우라야스·마이하마 여행 가이드</p>
+  <h1>도쿄 디즈니 리조트 여행을,<br>현지에서 안내합니다.</h1>
+  <p class="tg-hero-lead">마이하마 지역의 호텔 선택부터 공항·도쿄역에서의 교통, 맛집·기념품까지. 우라야스시 거주 스태프가 실제 사정을 바탕으로 안내합니다.</p>
   {{- else }}
   <p class="tg-hero-eyebrow">浦安・舞浜 旅行ガイド</p>
   <h1>東京ディズニーリゾートへの旅を、<br>地元から。</h1>
@@ -25,11 +30,10 @@
   {{/* 言語切替（実在の対応言語のみ） */}}
   {{- with .AllTranslations }}
   <div class="tg-lang-switch">
-    <span class="tg-lang-label">{{ if $isEN }}Language{{ else if $isZH }}语言{{ else }}言語{{ end }}</span>
+    <span class="tg-lang-label">{{ if $isEN }}Language{{ else if $isZH }}语言{{ else if $isKO }}언어{{ else }}言語{{ end }}</span>
     {{- range . }}
     <a class="tg-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }}>{{ .Language.LanguageName }}</a>
     {{- end }}
-    <span class="tg-lang-pill tg-lang-pill--disabled">한국어</span>
   </div>
   {{- end }}
 </div>
@@ -38,38 +42,38 @@
      旅の目的から探す / Find by purpose（6カード）
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{ if $isEN }}Find by purpose{{ else if $isZH }}按目的搜索{{ else }}旅の目的から探す{{ end }}</h2>
+  <h2>{{ if $isEN }}Find by purpose{{ else if $isZH }}按目的搜索{{ else if $isKO }}여행 목적으로 찾기{{ else }}旅の目的から探す{{ end }}</h2>
 </div>
 <div class="tg-purpose-grid">
   <a class="tg-purpose-card" href="{{ "/travel-guide/hotels/" | absLangURL }}">
     <i class="ti ti-bed" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Hotels{{ else if $isZH }}酒店{{ else }}ホテル{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Official to budget — compared{{ else if $isZH }}官方到平价，全面比较{{ else }}オフィシャル〜格安まで比較{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Hotels{{ else if $isZH }}酒店{{ else if $isKO }}호텔{{ else }}ホテル{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Official to budget — compared{{ else if $isZH }}官方到平价，全面比较{{ else if $isKO }}공식부터 가성비까지 비교{{ else }}オフィシャル〜格安まで比較{{ end }}</div>
   </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">
     <i class="ti ti-route" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Access{{ else if $isZH }}交通{{ else }}アクセス{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}From the airports &amp; Tokyo Stn.{{ else if $isZH }}从机场·东京站前往{{ else }}空港・東京駅からの行き方{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Access{{ else if $isZH }}交通{{ else if $isKO }}교통{{ else }}アクセス{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}From the airports &amp; Tokyo Stn.{{ else if $isZH }}从机场·东京站前往{{ else if $isKO }}공항·도쿄역에서 가는 법{{ else }}空港・東京駅からの行き方{{ end }}</div>
   </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
     <i class="ti ti-camera" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Sightseeing{{ else if $isZH }}观光景点{{ else }}観光スポット{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Maihama · Urayasu · Shin-Urayasu{{ else if $isZH }}舞滨·浦安·新浦安散步{{ else }}舞浜・浦安・新浦安を歩く{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Sightseeing{{ else if $isZH }}观光景点{{ else if $isKO }}관광 명소{{ else }}観光スポット{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Maihama · Urayasu · Shin-Urayasu{{ else if $isZH }}舞滨·浦安·新浦安散步{{ else if $isKO }}마이하마·우라야스·신우라야스 산책{{ else }}舞浜・浦安・新浦安を歩く{{ end }}</div>
   </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">
     <i class="ti ti-gift" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Food &amp; Souvenirs{{ else if $isZH }}美食与伴手礼{{ else }}グルメ・お土産{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Local eats &amp; gifts to take home{{ else if $isZH }}本地美食与伴手礼推荐{{ else }}地元の味と手土産選び{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Food &amp; Souvenirs{{ else if $isZH }}美食与伴手礼{{ else if $isKO }}맛집·기념품{{ else }}グルメ・お土産{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Local eats &amp; gifts to take home{{ else if $isZH }}本地美食与伴手礼推荐{{ else if $isKO }}현지 맛집과 선물 고르기{{ else }}地元の味と手土産選び{{ end }}</div>
   </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">
     <i class="ti ti-taxi" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Taxi{{ else if $isZH }}出租车{{ else }}タクシー{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Fixed-fare airport taxis{{ else if $isZH }}机场定额出租车攻略{{ else }}空港定額タクシーの使い方{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Taxi{{ else if $isZH }}出租车{{ else if $isKO }}택시{{ else }}タクシー{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Fixed-fare airport taxis{{ else if $isZH }}机场定额出租车攻略{{ else if $isKO }}공항 정액 택시 이용법{{ else }}空港定額タクシーの使い方{{ end }}</div>
   </a>
   <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
     <i class="ti ti-map-search" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Sample plans{{ else if $isZH }}行程样例{{ else }}モデルプラン{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}How to spend 1–2 days{{ else if $isZH }}1泊2日的游览方式{{ else }}1泊2日の回り方の例{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Sample plans{{ else if $isZH }}行程样例{{ else if $isKO }}모델 플랜{{ else }}モデルプラン{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}How to spend 1–2 days{{ else if $isZH }}1泊2日的游览方式{{ else if $isKO }}1박 2일 코스 예시{{ else }}1泊2日の回り方の例{{ end }}</div>
   </a>
 </div>
 
@@ -77,24 +81,24 @@
      ホテルを目的で選ぶ / Choose a hotel by need（3カード）
      ──────────────────────────────────────── */}}
 <div class="section-head" style="margin-bottom:6px;">
-  <h2>{{ if $isEN }}Choose a hotel by need{{ else if $isZH }}按目的选酒店{{ else }}ホテルを目的で選ぶ{{ end }}</h2>
+  <h2>{{ if $isEN }}Choose a hotel by need{{ else if $isZH }}按目的选酒店{{ else if $isKO }}목적으로 호텔 고르기{{ else }}ホテルを目的で選ぶ{{ end }}</h2>
 </div>
-<p class="tg-section-sub">{{ if $isEN }}Find the right stay from 40+ hotels.{{ else if $isZH }}从40家以上酒店中，找到最适合你旅行的那一家。{{ else }}40軒以上のホテルから、あなたの旅に合う1軒を。{{ end }}</p>
+<p class="tg-section-sub">{{ if $isEN }}Find the right stay from 40+ hotels.{{ else if $isZH }}从40家以上酒店中，找到最适合你旅行的那一家。{{ else if $isKO }}40곳 이상의 호텔에서 여행에 맞는 한 곳을.{{ else }}40軒以上のホテルから、あなたの旅に合う1軒を。{{ end }}</p>
 <div class="tg-hotelneed-grid">
   <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
     <i class="ti ti-mood-kid" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">{{ if $isEN }}Family-friendly{{ else if $isZH }}亲子出行{{ else }}子連れ向け{{ end }}</div>
-    <div class="tg-hotelneed-desc">{{ if $isEN }}Rooms &amp; amenities for kids{{ else if $isZH }}大浴场·宽敞客房·设施齐全{{ else }}設備・客室で選ぶ家族の宿{{ end }}</div>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Family-friendly{{ else if $isZH }}亲子出行{{ else if $isKO }}가족 동반{{ else }}子連れ向け{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Rooms &amp; amenities for kids{{ else if $isZH }}大浴场·宽敞客房·设施齐全{{ else if $isKO }}시설·객실로 고르는 가족 숙소{{ else }}設備・客室で選ぶ家族の宿{{ end }}</div>
   </a>
   <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/budget/" | absLangURL }}">
     <i class="ti ti-coin" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">{{ if $isEN }}Budget{{ else if $isZH }}实惠{{ else }}格安{{ end }}</div>
-    <div class="tg-hotelneed-desc">{{ if $isEN }}Best value for money{{ else if $isZH }}注重性价比的住宿{{ else }}コスパ重視で泊まる{{ end }}</div>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Budget{{ else if $isZH }}实惠{{ else if $isKO }}가성비{{ else }}格安{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Best value for money{{ else if $isZH }}注重性价比的住宿{{ else if $isKO }}가성비 중시 숙박{{ else }}コスパ重視で泊まる{{ end }}</div>
   </a>
   <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/access/" | absLangURL }}">
     <i class="ti ti-walk" aria-hidden="true"></i>
-    <div class="tg-hotelneed-title">{{ if $isEN }}Best access{{ else if $isZH }}交通优先{{ else }}アクセス重視{{ end }}</div>
-    <div class="tg-hotelneed-desc">{{ if $isEN }}Close to parks, stations, airports{{ else if $isZH }}邻近乐园·车站·机场的住宿{{ else }}パーク・駅・空港に近い宿{{ end }}</div>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Best access{{ else if $isZH }}交通优先{{ else if $isKO }}교통 우선{{ else }}アクセス重視{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Close to parks, stations, airports{{ else if $isZH }}邻近乐园·车站·机场的住宿{{ else if $isKO }}파크·역·공항과 가까운 숙소{{ else }}パーク・駅・空港に近い宿{{ end }}</div>
   </a>
 </div>
 

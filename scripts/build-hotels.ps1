@@ -36,13 +36,13 @@ $csv = Import-Csv $csvPath -Encoding UTF8
 # エリア定義（順序・見出し・説明文）。count はCSVから自動算出。
 # name_en / note_en … 英語サイト(/en/)用。日本語をベースに、インバウンド向けに簡潔化。
 $areas = @(
-  [ordered]@{ id="a"; tag="A"; group="リゾート";   name="舞浜エリア";   note="ディズニーホテル・オフィシャル集中。パーク最至近。"; name_en="Maihama";       note_en="Disney & Official hotels, closest to the parks."; name_zh="舞滨地区";   note_zh="迪士尼饭店与官方饭店集中，离乐园最近。" }
-  [ordered]@{ id="b"; tag="B"; group="リゾート";   name="千鳥エリア";   note="マイステイズ舞浜はTDS徒歩6分・最安値クラス。"; name_en="Chidori";       note_en="MYSTAYS Maihama is a 6-min walk to TDS, best-value class."; name_zh="千鸟地区";   note_zh="MyStays舞滨步行6分钟到迪士尼海洋，价位实惠。" }
-  [ordered]@{ id="c"; tag="C"; group="ベイサイド"; name="新町エリア";   note="日の出・明海のパートナーホテル集中。無料シャトル・空港リムジンも便利。"; name_en="Shinmachi";     note_en="Partner hotels in Hinode/Akemi. Free shuttles & airport limousines."; name_zh="新町地区";   note_zh="日出·明海的合作饭店集中，免费班车与机场巴士便利。" }
-  [ordered]@{ id="d"; tag="D"; group="ベイサイド"; name="新浦安エリア"; note="新浦安駅周辺（美浜・今川・東野）。京葉線で舞浜まで2駅。"; name_en="Shin-Urayasu";  note_en="Around Shin-Urayasu Stn. Two stops to Maihama on the Keiyo Line."; name_zh="新浦安地区"; note_zh="新浦安站周边（美浜·今川·东野）。京叶线到舞滨2站。" }
-  [ordered]@{ id="e"; tag="E"; group="リバーサイド"; name="元町エリア";   note="富士見など旧市街南側。旧江戸川沿いの落ち着いた住宅エリア。"; name_en="Motomachi";     note_en="Old-town south side along the Edogawa. Quiet residential area."; name_zh="元町地区";   note_zh="富士见等旧城区南侧。旧江户川沿岸的安静住宅区。" }
-  [ordered]@{ id="f"; tag="F"; group="リバーサイド"; name="浦安駅エリア"; note="東西線直通で都心1本。パークへはバス25〜30分。"; name_en="Urayasu Stn";   note_en="Direct to central Tokyo on the Tozai Line. 25-30 min by bus to the parks."; name_zh="浦安站地区"; note_zh="东西线直达市中心。到乐园乘巴士约25–30分钟。" }
-  [ordered]@{ id="g"; tag="G"; group="浦安近郊";   name="浦安近郊";   note="葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。"; name_en="Near Urayasu";  note_en="Adjacent Kasai/Ichikawa/Myoden. Train to Urayasu & Maihama."; name_zh="浦安近郊";   note_zh="葛西·市川·妙典等邻接地区。乘电车前往浦安·舞滨。" }
+  [ordered]@{ id="a"; tag="A"; group="リゾート";   name="舞浜エリア";   note="ディズニーホテル・オフィシャル集中。パーク最至近。"; name_en="Maihama";       note_en="Disney & Official hotels, closest to the parks."; name_zh="舞滨地区";   note_zh="迪士尼饭店与官方饭店集中，离乐园最近。"; name_ko="마이하마 지역";   note_ko="디즈니 호텔·공식 호텔이 모여 있고 파크에서 가장 가깝습니다." }
+  [ordered]@{ id="b"; tag="B"; group="リゾート";   name="千鳥エリア";   note="マイステイズ舞浜はTDS徒歩6分・最安値クラス。"; name_en="Chidori";       note_en="MYSTAYS Maihama is a 6-min walk to TDS, best-value class."; name_zh="千鸟地区";   note_zh="MyStays舞滨步行6分钟到迪士尼海洋，价位实惠。"; name_ko="치도리 지역";   note_ko="마이스테이즈 마이하마는 디즈니씨까지 도보 6분·최저가 클래스." }
+  [ordered]@{ id="c"; tag="C"; group="ベイサイド"; name="新町エリア";   note="日の出・明海のパートナーホテル集中。無料シャトル・空港リムジンも便利。"; name_en="Shinmachi";     note_en="Partner hotels in Hinode/Akemi. Free shuttles & airport limousines."; name_zh="新町地区";   note_zh="日出·明海的合作饭店集中，免费班车与机场巴士便利。"; name_ko="신마치 지역";   note_ko="히노데·아케미의 파트너 호텔이 모여 있고, 무료 셔틀·공항 리무진도 편리합니다." }
+  [ordered]@{ id="d"; tag="D"; group="ベイサイド"; name="新浦安エリア"; note="新浦安駅周辺（美浜・今川・東野）。京葉線で舞浜まで2駅。"; name_en="Shin-Urayasu";  note_en="Around Shin-Urayasu Stn. Two stops to Maihama on the Keiyo Line."; name_zh="新浦安地区"; note_zh="新浦安站周边（美浜·今川·东野）。京叶线到舞滨2站。"; name_ko="신우라야스 지역"; note_ko="신우라야스역 주변(미하마·이마가와·히가시노). 게이요선으로 마이하마까지 2개 역." }
+  [ordered]@{ id="e"; tag="E"; group="リバーサイド"; name="元町エリア";   note="富士見など旧市街南側。旧江戸川沿いの落ち着いた住宅エリア。"; name_en="Motomachi";     note_en="Old-town south side along the Edogawa. Quiet residential area."; name_zh="元町地区";   note_zh="富士见等旧城区南侧。旧江户川沿岸的安静住宅区。"; name_ko="모토마치 지역";   note_ko="후지미 등 구시가지 남쪽. 옛 에도가와 강변의 차분한 주택가." }
+  [ordered]@{ id="f"; tag="F"; group="リバーサイド"; name="浦安駅エリア"; note="東西線直通で都心1本。パークへはバス25〜30分。"; name_en="Urayasu Stn";   note_en="Direct to central Tokyo on the Tozai Line. 25-30 min by bus to the parks."; name_zh="浦安站地区"; note_zh="东西线直达市中心。到乐园乘巴士约25–30分钟。"; name_ko="우라야스역 지역"; note_ko="도자이선으로 도심까지 한 번에. 파크까지는 버스 25~30분." }
+  [ordered]@{ id="g"; tag="G"; group="浦安近郊";   name="浦安近郊";   note="葛西・市川・妙典など隣接エリア。電車で浦安・舞浜へ。"; name_en="Near Urayasu";  note_en="Adjacent Kasai/Ichikawa/Myoden. Train to Urayasu & Maihama."; name_zh="浦安近郊";   note_zh="葛西·市川·妙典等邻接地区。乘电车前往浦安·舞滨。"; name_ko="우라야스 근교";   note_ko="가사이·이치카와·묘덴 등 인접 지역. 전철로 우라야스·마이하마로 이동." }
 )
 
 # 特徴ラベルの英訳（slug→英語）。英語サイトの一覧・比較マップ用。
@@ -142,6 +142,54 @@ $featureZh = @{
   "superhotel-myoden"             = "妙典站旁·乘东西线可达浦安"
 }
 
+# 特徴ラベルの韓国語訳（slug→한국어）。韓国語サイト(/ko/)の一覧・比較マップ用。
+$featureKo = @{
+  "tdl-hotel"                     = "디즈니랜드까지 도보 1분"
+  "miracosta"                     = "디즈니씨 파크 내·전용 입구"
+  "fantasy-springs-hotel"         = "디즈니씨 판타지 스프링스 직결(2024년 개업)"
+  "ambassador-hotel"              = "마이하마역에서 도보 8분"
+  "toy-story-hotel"               = "베이사이드 스테이션에서 도보 3분"
+  "celebration-wish"              = "해피 엔트리 입장 특전 포함"
+  "celebration-discover"          = "해피 엔트리 입장 특전 포함"
+  "hotel-okura-tokyo-bay"         = "전용 파크 셔틀버스"
+  "grand-nikko-tokyo-bay"         = "전용 파크 셔틀버스"
+  "sheraton-grande-tokyo-bay"     = "대욕장과 대형 수영장"
+  "hilton-tokyo-bay"              = "관내 24시간 편의점"
+  "maihama-hotel-first-resort"    = "관내 셀프 세탁"
+  "dreamgate-maihama"             = "JR 마이하마역 개찰구 직결"
+  "maihama-view-hotel"            = "대욕장 'Spa Rose'"
+  "royal-park-maihama"            = "2026년 2월 개업·최대 6인 투숙"
+  "mystays-maihama"               = "디즈니씨까지 도보 6분·지역 내 가성비"
+  "maihama-eurasia"               = "천연 온천·노천탕과 사우나"
+  "eurasia-annex"                 = "본관 온천 할인 이용 가능"
+  "hyatt-regency-tokyo-bay"       = "호텔 앞 공항버스 정류장(2024 신설)"
+  "comfort-suites-tokyo-bay"      = "폐장 30분 후 셔틀·어린이 무료 동반"
+  "brighton-tokyo-bay"            = "신우라야스역 직결"
+  "oriental-tokyo-bay"            = "신우라야스역 직결"
+  "emion-tokyo-bay"               = "천연 온천과 노천탕"
+  "mitsui-garden-prana"           = "전망 대욕장과 관내 상점"
+  "hoshinoresorts-1955-tokyo-bay" = "관내 로손 편의점·2024 개업"
+  "lagent-tokyo-bay"              = "최대 6인·옆 건물 24시간 편의점"
+  "ibis-styles-tokyo-bay"         = "아코르 그룹 디자인 호텔"
+  "mystays-shin-urayasu"          = "안정적인 저렴한 가격"
+  "flexstay-shin-urayasu"         = "전 객실 미니 주방·장기 체류에 적합"
+  "henna-hotel-maihama"           = "마이하마역 셔틀(2026년 7월부터 감축)"
+  "four-stories-hotel"            = "버스 접근(막차 23:00)"
+  "hiyori-hotel-maihama"          = "전 객실 발 마사지기·신발 건조기 비치"
+  "viewfort-urayasu"              = "우라야스역에서 도보 1분·뷔페 조식"
+  "hotel-daigo-urayasu"           = "연중 균일 요금·성수기 인상 없음"
+  "bayhotel-urayasu"              = "전 객실 주방·냉장고·세탁기"
+  "urayasu-sun-hotel"             = "무료 조식·24시간 프런트"
+  "premium-monday-maihama-view-1" = "2025년 12월 개업·무료 디즈니 셔틀"
+  "hotel-seaside-edogawa"         = "가사이 임해공원 내·도보 3분·다다미 객실"
+  "cvs-bay-hotel"                 = "이치카와시오하마역 인접·마이하마까지 2개 역"
+  "hotel-ilfiore-kasai"           = "가사이역에서 도보 3분·최대 5인"
+  "hotel-ilfiore-kasai-annex"     = "가사이역에서 도보 3분·Il Fiore 별관"
+  "hotel-lumiere-kasai"           = "비즈니스 호텔·가사이역에서 도보 2분"
+  "livemax-kasai-ekimae"          = "가사이역에서 도보 3분·버스로 디즈니까지 약 20분"
+  "superhotel-myoden"             = "묘덴역 옆·도자이선으로 우라야스 도달"
+}
+
 # ホテル名の中文表記（slug→简体中文）。ディズニー直営は東京ディズニー公式简体中文サイト(/sc/)の官方名称、
 # チェーン系は各ブランドの標準中文名、その他は一般的な表記。空はdispName(日本語名)で代替。
 $nameZh = @{
@@ -191,6 +239,55 @@ $nameZh = @{
   "superhotel-myoden"             = "超级酒店 东西线·市川·妙典站前"
 }
 
+# ホテル名の韓国語表記（slug→한국어）。ディズニー直営は東京ディズニー公式韓国語サイト(/kr/)の公式名称、
+# チェーン系は各ブランドの標準韓国語名、その他は一般的な音訳。空はdispName(日本語名)で代替。
+$nameKo = @{
+  "tdl-hotel"                     = "도쿄디즈니랜드 호텔"
+  "miracosta"                     = "도쿄디즈니씨 호텔 미라코스타"
+  "fantasy-springs-hotel"         = "도쿄디즈니씨 판타지 스프링스 호텔"
+  "ambassador-hotel"              = "디즈니 앰버서더 호텔"
+  "toy-story-hotel"               = "도쿄디즈니리조트 토이 스토리 호텔"
+  "celebration-wish"              = "도쿄디즈니 셀러브레이션 호텔: 위시"
+  "celebration-discover"          = "도쿄디즈니 셀러브레이션 호텔: 디스커버"
+  "hotel-okura-tokyo-bay"         = "호텔 오쿠라 도쿄 베이"
+  "grand-nikko-tokyo-bay"         = "그랜드 니코 도쿄 베이 마이하마"
+  "sheraton-grande-tokyo-bay"     = "쉐라톤 그란데 도쿄 베이 호텔"
+  "hilton-tokyo-bay"              = "힐튼 도쿄 베이"
+  "maihama-hotel-first-resort"    = "도쿄 베이 마이하마 호텔 퍼스트 리조트"
+  "maihama-view-hotel"            = "마이하마 뷰 호텔 by HULIC"
+  "dreamgate-maihama"             = "호텔 드림게이트 마이하마"
+  "royal-park-maihama"            = "더 로열 파크 호텔 마이하마 리조트 도쿄 베이"
+  "mystays-maihama"               = "호텔 마이스테이즈 마이하마"
+  "maihama-eurasia"               = "스파&호텔 마이하마 유라시아"
+  "eurasia-annex"                 = "호텔 유라시아 마이하마 ANNEX"
+  "hyatt-regency-tokyo-bay"       = "하얏트 리젠시 도쿄 베이"
+  "comfort-suites-tokyo-bay"      = "컴포트 스위트 도쿄 베이"
+  "brighton-tokyo-bay"            = "우라야스 브라이튼 호텔 도쿄 베이"
+  "oriental-tokyo-bay"            = "오리엔탈 호텔 도쿄 베이"
+  "emion-tokyo-bay"               = "호텔 에미온 도쿄 베이"
+  "mitsui-garden-prana"           = "미쓰이 가든 호텔 프라나 도쿄 베이"
+  "hoshinoresorts-1955-tokyo-bay" = "호시노 리조트 1955 도쿄 베이"
+  "lagent-tokyo-bay"              = "라젠트 호텔 도쿄 베이"
+  "ibis-styles-tokyo-bay"         = "이비스 스타일스 도쿄 베이"
+  "mystays-shin-urayasu"          = "마이스테이즈 신우라야스 컨퍼런스 센터"
+  "flexstay-shin-urayasu"         = "플렉스테이 인 신우라야스"
+  "henna-hotel-maihama"           = "헨나 호텔 마이하마 도쿄 베이"
+  "four-stories-hotel"            = "포 스토리즈 호텔 마이하마 도쿄 베이"
+  "hiyori-hotel-maihama"          = "히요리 호텔 마이하마"
+  "viewfort-urayasu"              = "우라야스 뷰포트 호텔"
+  "hotel-daigo-urayasu"           = "호텔 다이고"
+  "bayhotel-urayasu"              = "우라야스역앞 베이 호텔"
+  "urayasu-sun-hotel"             = "우라야스 선 호텔"
+  "premium-monday-maihama-view-1" = "Premium hotel MONday 마이하마 뷰Ⅰ"
+  "hotel-seaside-edogawa"         = "호텔 시사이드 에도가와"
+  "cvs-bay-hotel"                 = "CVS·BAY HOTEL"
+  "hotel-ilfiore-kasai"           = "호텔 일 피오레 가사이"
+  "hotel-ilfiore-kasai-annex"     = "호텔 일 피오레 가사이 ANNEX"
+  "hotel-lumiere-kasai"           = "호텔 뤼미에르 가사이"
+  "livemax-kasai-ekimae"          = "호텔 리브맥스 가사이역앞"
+  "superhotel-myoden"             = "슈퍼호텔 도자이선·이치카와·묘덴역앞"
+}
+
 # CSVカテゴリ → 表示用カテゴリ（TDR公式の区分に準拠）
 #   ディズニーホテル / オフィシャルホテル / パートナーホテル / グッドネイバーホテル / その他のホテル
 #   ファッションホテルは区分を表示せず「—」（名称・エリアのみ掲載の方針）
@@ -235,11 +332,13 @@ foreach ($a in $areas) {
   [void]$sb.AppendLine(("    name: ""{0}""" -f $a.name))
   [void]$sb.AppendLine(("    name_en: ""{0}""" -f $a.name_en))
   [void]$sb.AppendLine(("    name_zh: ""{0}""" -f $a.name_zh))
+  [void]$sb.AppendLine(("    name_ko: ""{0}""" -f $a.name_ko))
   [void]$sb.AppendLine(("    group: ""{0}""" -f $a.group))
   [void]$sb.AppendLine(("    count: {0}" -f $rows.Count))
   [void]$sb.AppendLine(("    note: ""{0}""" -f $a.note))
   [void]$sb.AppendLine(("    note_en: ""{0}""" -f $a.note_en))
   [void]$sb.AppendLine(("    note_zh: ""{0}""" -f $a.note_zh))
+  [void]$sb.AppendLine(("    note_ko: ""{0}""" -f $a.note_ko))
   [void]$sb.AppendLine("    hotels:")
   foreach ($r in $rows) {
     $pol = Convert-Policy $r
@@ -256,14 +355,21 @@ foreach ($a in $areas) {
     if (-not $nameZhV) { $nameZhV = $dispName }
     $featZh = ""
     if ($r.slug -and $featureZh.ContainsKey($r.slug)) { $featZh = $featureZh[$r.slug] }
+    $nameKoV = ""
+    if ($r.slug -and $nameKo.ContainsKey($r.slug)) { $nameKoV = $nameKo[$r.slug] }
+    if (-not $nameKoV) { $nameKoV = $dispName }
+    $featKo = ""
+    if ($r.slug -and $featureKo.ContainsKey($r.slug)) { $featKo = $featureKo[$r.slug] }
     [void]$sb.AppendLine(("      - name: ""{0}""" -f $dispName))
     [void]$sb.AppendLine(("        name_en: ""{0}""" -f $nameEn))
     [void]$sb.AppendLine(("        name_zh: ""{0}""" -f $nameZhV))
+    [void]$sb.AppendLine(("        name_ko: ""{0}""" -f $nameKoV))
     [void]$sb.AppendLine(("        category: ""{0}""" -f (Convert-Category $r)))
     [void]$sb.AppendLine(("        price_guide: ""{0}""" -f (Convert-Price $r)))
     [void]$sb.AppendLine(("        feature: ""{0}""" -f $r."特徴ラベル"))
     [void]$sb.AppendLine(("        feature_en: ""{0}""" -f $featEn))
     [void]$sb.AppendLine(("        feature_zh: ""{0}""" -f $featZh))
+    [void]$sb.AppendLine(("        feature_ko: ""{0}""" -f $featKo))
     [void]$sb.AppendLine(("        policy: {0}" -f $pol))
     [void]$sb.AppendLine(("        individual_page: {0}" -f $ip))
     if ($pol -ne "name-only") {

@@ -28,6 +28,14 @@ languages:
     params:
       homeTitle: "浦安·舞滨旅行指南 | Urayasu Portal"
       description: "面向中国游客的浦安·舞滨地区本地旅行指南。东京迪士尼度假区周边的酒店、交通、观光、美食与出租车信息，由浦安本地团队亲自编写核对。"
+  ko:
+    label: 한국어
+    locale: ko-KR
+    weight: 4
+    title: Urayasu Portal
+    params:
+      homeTitle: "우라야스·마이하마 여행 가이드 | Urayasu Portal"
+      description: "도쿄 디즈니 리조트 인근 우라야스·마이하마 지역의 현지 여행 가이드. 호텔, 교통, 관광, 맛집, 택시 정보를 우라야스 현지 팀이 직접 작성하고 확인했습니다."
 
 pagination:
   pagerSize: 10

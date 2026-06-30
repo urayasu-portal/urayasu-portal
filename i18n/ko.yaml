@@ -1,0 +1,140 @@
+# UIラベルの多言語化テーブル（한국어）。テンプレートの {{ i18n "key" }} 用。
+# en.yaml / ja.yaml / zh.yaml とキーを必ず揃えること。
+- id: breadcrumb
+  translation: "탐색 경로"
+- id: nav_home
+  translation: "홈"
+- id: nav_travel_guide
+  translation: "여행 가이드"
+- id: nav_hotels
+  translation: "호텔"
+- id: hotel_badge
+  translation: "호텔"
+- id: tdr_official
+  translation: "디즈니 공식 호텔"
+- id: updated_on
+  translation: "{{ .date }} 업데이트"
+- id: type_what_is
+  translation: "{{ .name }}란?"
+- id: type_about
+  translation: "호텔 분류 알아보기"
+- id: hotel_disclaimer
+  translation: "이 페이지의 가격과 서비스는 변동될 수 있습니다. 예약 전 각 호텔 공식 사이트에서 최신 객실 상황·가격·조건을 반드시 확인하세요."
+- id: nearby_hotels
+  translation: "주변의 같은 분류 호텔"
+- id: cat_disney
+  translation: "디즈니"
+- id: cat_official
+  translation: "공식"
+- id: cat_partner
+  translation: "파트너"
+- id: cat_other
+  translation: "기타"
+- id: cat_full_disney
+  translation: "디즈니 호텔"
+- id: cat_full_official
+  translation: "공식 호텔"
+- id: cat_full_partner
+  translation: "파트너 호텔"
+- id: cat_full_goodneighbor
+  translation: "굿네이버 호텔"
+- id: tags_label
+  translation: "태그:"
+- id: contents
+  translation: "목차"
+- id: check_rates
+  translation: "요금·빈방 확인"
+- id: includes_pr
+  translation: "제휴 링크 포함(PR)"
+- id: compare_title
+  translation: "비교하며 호텔 고르기"
+- id: compare_desc
+  translation: "가족·가성비·교통으로 검색"
+- id: compare_btn
+  translation: "비교 지도 열기"
+- id: popular_guides
+  translation: "인기 호텔 가이드"
+- id: pop_kids
+  translation: "가족 호텔 비교"
+- id: pop_budget
+  translation: "가성비 호텔 고르는 법"
+- id: pop_access
+  translation: "교통으로 호텔 비교"
+- id: map_open
+  translation: "Google 지도에서 열기"
+- id: map_directions
+  translation: "경로 찾기"
+- id: featured_title
+  translation: "추천 호텔"
+- id: see_all
+  translation: "전체 보기 →"
+- id: hl_eyebrow1
+  translation: "호텔 목록"
+- id: hl_eyebrow2
+  translation: "마이하마·우라야스·신우라야스"
+- id: hl_title
+  translation: "마이하마·우라야스 지역에서 호텔 고르기"
+- id: hl_lead
+  translation: "도쿄 디즈니 직영 고급 호텔부터 가성비 호텔까지, 현지 시선으로 지역 내 <strong>전체 {{ .total }}곳의 호텔</strong>을 정리했습니다. 2024–2026년 신규 개업 시설도 수록. 목적·지역·가격대로 여행에 맞는 호텔을 찾아보세요."
+- id: hl_stat_hotels
+  translation: "곳"
+- id: hl_stat_areas
+  translation: "개 지역"
+- id: hl_stat_andup
+  translation: "부터"
+- id: hl_compare_title
+  translation: "호텔 비교 지도"
+- id: hl_compare_sub
+  translation: "지역·시설·가격대로 목록과 지도를 동시에 검색"
+- id: hl_compare_cta
+  translation: "지도에서 비교 →"
+- id: hl_find_purpose
+  translation: "목적으로 찾기"
+- id: hl_purpose_sub
+  translation: "어디서부터 고를지 모르겠다면, 여행 스타일부터 시작하세요."
+- id: hl_family
+  translation: "가족 여행"
+- id: hl_family_desc
+  translation: "대욕장·객실·시설이 잘 갖춰진 가족 숙소"
+- id: hl_budget
+  translation: "가성비"
+- id: hl_budget_desc
+  translation: "1박 5,000엔부터·가성비 중시"
+- id: hl_access
+  translation: "교통 우선"
+- id: hl_access_desc
+  translation: "파크·역·공항과 가까운 숙소"
+- id: hl_find_area
+  translation: "지역으로 찾기"
+- id: hl_area_sub
+  translation: "우라야스·마이하마 및 주변을 {{ .count }}개 지역으로 나눴습니다. 카드를 클릭하면 아래 호텔 목록을 검색할 수 있습니다."
+- id: hl_types_price
+  translation: "분류와 가격대 참고"
+- id: hl_estimate
+  translation: "2인 1실·평일 기준"
+- id: hl_pyramid_sub
+  translation: "가격대 막대를 클릭하면 분류별로 아래 호텔 목록을 검색할 수 있습니다."
+- id: hl_peak_note
+  translation: "※ 성수기(골든위크·여름방학·연말연시)에는 모든 호텔이 큰 폭으로 인상됩니다"
+- id: hl_types_link
+  translation: "디즈니／공식／파트너／굿네이버 호텔은 어떻게 다른가요? →"
+- id: hl_full_list
+  translation: "호텔 목록"
+- id: hl_notice
+  translation: "<strong>가격·시설 정보 안내:</strong> 가격대는 2인 1실·평일 기준 참고값으로, 성수기에는 크게 변동됩니다. 최신 가격은 각 예약 사이트에서 확인하세요. 호텔 이름을 클릭하면 상세 페이지가 열립니다."
+- id: hl_filter_label
+  translation: "분류로 호텔 검색"
+- id: hl_all
+  translation: "전체"
+- id: th_name
+  translation: "호텔 이름"
+- id: th_area
+  translation: "지역"
+- id: th_type
+  translation: "분류"
+- id: th_price
+  translation: "가격대 참고"
+- id: th_notes
+  translation: "특징·비고"
+- id: hl_nameonly_note
+  translation: "※ 표시된 시설은 이름·지역·분류만 제공합니다."

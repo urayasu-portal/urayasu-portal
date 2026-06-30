@@ -7,6 +7,7 @@
 {{- $cover := .Params.cover.image | default "" }}
 {{- $isEN := eq .Lang "en" }}
 {{- $isZH := eq .Lang "zh" }}
+{{- $isKO := eq .Lang "ko" }}
 
 {{/* 観光ガイドの他の記事（ホテル個別を除く）= サイドバー／関連用 */}}
 {{- $guides := slice }}
@@ -39,23 +40,23 @@
     <article class="post-single">
 
       <header class="post-header">
-        <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else if $isZH }}面包屑导航{{ else }}パンくずリスト{{ end }}">
-          <a href="{{ "/" | absLangURL }}">{{ if $isEN }}Home{{ else if $isZH }}首页{{ else }}ホーム{{ end }}</a>
+        <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else if $isZH }}面包屑导航{{ else if $isKO }}탐색 경로{{ else }}パンくずリスト{{ end }}">
+          <a href="{{ "/" | absLangURL }}">{{ if $isEN }}Home{{ else if $isZH }}首页{{ else if $isKO }}홈{{ else }}ホーム{{ end }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-          <a href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else }}観光ガイド{{ end }}</a>
+          <a href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else }}観光ガイド{{ end }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <span class="bc-current" aria-current="page">{{ .Title | truncate 28 "…" }}</span>
         </nav>
 
         <div class="hg-badges">
-          <span class="hg-badge">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else }}観光ガイド{{ end }}</span>
+          <span class="hg-badge">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else }}観光ガイド{{ end }}</span>
           {{- with .Params.badge }}<span class="hg-badge-sub">{{ . }}</span>{{- end }}
         </div>
 
         <h1 class="post-title">{{ .Title }}</h1>
 
         <div class="hg-meta">
-          {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ if $isEN }}Updated {{ .Lastmod.Format "Jan 2, 2006" }}{{ else }}{{ .Lastmod.Format "2006年1月2日" }}更新{{ end }}</span>{{- end }}
+          {{- if .Lastmod }}<span><i class="ti ti-refresh" aria-hidden="true"></i> {{ if $isEN }}Updated {{ .Lastmod.Format "Jan 2, 2006" }}{{ else if $isKO }}{{ .Lastmod.Format "2006년 1월 2일" }} 업데이트{{ else }}{{ .Lastmod.Format "2006年1月2日" }}更新{{ end }}</span>{{- end }}
           {{- with .Params.area }}<span><i class="ti ti-map-pin" aria-hidden="true"></i> {{ . }}</span>{{- end }}
         </div>
       </header>
@@ -94,7 +95,7 @@
     {{/* 目次 */}}
     {{- if ge (len $toc) 2 }}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> {{ if $isEN }}Contents{{ else if $isZH }}目录{{ else }}目次{{ end }}</div>
+      <div class="widget-title"><i class="ti ti-list-numbers" aria-hidden="true"></i> {{ if $isEN }}Contents{{ else if $isZH }}目录{{ else if $isKO }}목차{{ else }}目次{{ end }}</div>
       <nav class="lg-toc-list">
         {{- range $toc }}
         <a href="#{{ .id }}">{{ .title }}</a>
@@ -106,15 +107,15 @@
     {{/* 旅行ガイドへの導線 */}}
     <div class="lg-side-cta">
       <i class="ti ti-map-2" aria-hidden="true"></i>
-      <div class="lg-side-cta-title">{{ if $isEN }}Urayasu &amp; Maihama Travel Guide{{ else if $isZH }}浦安·舞滨旅行指南{{ else }}浦安・舞浜の旅行ガイド{{ end }}</div>
-      <div class="lg-side-cta-desc">{{ if $isEN }}Hotels, access &amp; gourmet in one place{{ else if $isZH }}酒店·交通·美食一站搜罗{{ else }}ホテル・アクセス・グルメをまとめて{{ end }}</div>
-      <a class="lg-side-cta-btn" href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Guide top{{ else if $isZH }}指南首页{{ else }}ガイドトップへ{{ end }}</a>
+      <div class="lg-side-cta-title">{{ if $isEN }}Urayasu &amp; Maihama Travel Guide{{ else if $isZH }}浦安·舞滨旅行指南{{ else if $isKO }}우라야스·마이하마 여행 가이드{{ else }}浦安・舞浜の旅行ガイド{{ end }}</div>
+      <div class="lg-side-cta-desc">{{ if $isEN }}Hotels, access &amp; gourmet in one place{{ else if $isZH }}酒店·交通·美食一站搜罗{{ else if $isKO }}호텔·교통·맛집을 한눈에{{ else }}ホテル・アクセス・グルメをまとめて{{ end }}</div>
+      <a class="lg-side-cta-btn" href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Guide top{{ else if $isZH }}指南首页{{ else if $isKO }}가이드 홈으로{{ else }}ガイドトップへ{{ end }}</a>
     </div>
 
     {{/* 観光ガイドの他の記事 */}}
     {{- with $guides }}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-compass" aria-hidden="true"></i> {{ if $isEN }}More travel guides{{ else if $isZH }}更多旅行攻略{{ else }}観光ガイドの記事{{ end }}</div>
+      <div class="widget-title"><i class="ti ti-compass" aria-hidden="true"></i> {{ if $isEN }}More travel guides{{ else if $isZH }}更多旅行攻略{{ else if $isKO }}더 많은 여행 가이드{{ else }}観光ガイドの記事{{ end }}</div>
       <ol class="lg-pop-rank">
         {{- range $i, $g := first 5 . }}
         <li><a href="{{ $g.RelPermalink }}"><span class="lg-pop-num">{{ add $i 1 }}</span><span>{{ $g.Title | truncate 28 "…" }}</span></a></li>

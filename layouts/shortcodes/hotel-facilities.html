@@ -31,17 +31,24 @@
 {{- $noteZH := dict
     "有料" "付费" "無料" "免费" "天然温泉" "天然温泉" "サウナ" "桑拿"
     "温水" "温水" "屋内外" "室内外" "展望" "景观" "無料・展望" "免费·景观" }}
+{{- $labKO := dict
+    "bath" "대욕장·온천" "pool" "실내 수영장" "laundry" "코인 세탁실"
+    "convenience" "관내 매점" "shuttle" "무료 셔틀" "station" "역 직결·역세권"
+    "limousine" "공항 리무진" "kitchen" "미니 주방" }}
+{{- $noteKO := dict
+    "有料" "유료" "無料" "무료" "天然温泉" "천연 온천" "サウナ" "사우나"
+    "温水" "온수" "屋内外" "실내외" "展望" "전망" "無料・展望" "무료·전망" }}
 {{- with $h }}
 {{- if .facilities }}
 <div class="hg-facilities">
   {{- range .facilities }}
   {{- $ti := index $icon .key }}
-  {{- $label := index $labJP .key }}{{ if eq $lang "en" }}{{ $label = index $labEN .key }}{{ else if eq $lang "zh" }}{{ $label = index $labZH .key }}{{ end }}
+  {{- $label := index $labJP .key }}{{ if eq $lang "en" }}{{ $label = index $labEN .key }}{{ else if eq $lang "zh" }}{{ $label = index $labZH .key }}{{ else if eq $lang "ko" }}{{ $label = index $labKO .key }}{{ end }}
   {{- if $ti }}
   <div class="hg-fac">
     <i class="ti {{ $ti }}" aria-hidden="true"></i>
     <div class="hg-fac-label">{{ $label }}</div>
-    {{- with .note }}<div class="hg-fac-note">{{ if eq $lang "en" }}{{ with index $noteEN . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "zh" }}{{ with index $noteZH . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else }}{{ . }}{{ end }}</div>{{- end }}
+    {{- with .note }}<div class="hg-fac-note">{{ if eq $lang "en" }}{{ with index $noteEN . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "zh" }}{{ with index $noteZH . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "ko" }}{{ with index $noteKO . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else }}{{ . }}{{ end }}</div>{{- end }}
   </div>
   {{- end }}
   {{- end }}

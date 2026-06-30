@@ -82,6 +82,55 @@ $nameZh = @{
   "superhotel-myoden"             = "超级酒店 东西线·市川·妙典站前"
 }
 
+# ホテル名の韓国語表記（slug→한국어）。比較マップ(/ko/)のポップアップ・地図用。
+# ※ build-hotels.ps1 の $nameKo と同内容。どちらか変更時は両方更新すること。
+$nameKo = @{
+  "tdl-hotel"                     = "도쿄디즈니랜드 호텔"
+  "miracosta"                     = "도쿄디즈니씨 호텔 미라코스타"
+  "fantasy-springs-hotel"         = "도쿄디즈니씨 판타지 스프링스 호텔"
+  "ambassador-hotel"              = "디즈니 앰버서더 호텔"
+  "toy-story-hotel"               = "도쿄디즈니리조트 토이 스토리 호텔"
+  "celebration-wish"              = "도쿄디즈니 셀러브레이션 호텔: 위시"
+  "celebration-discover"          = "도쿄디즈니 셀러브레이션 호텔: 디스커버"
+  "hotel-okura-tokyo-bay"         = "호텔 오쿠라 도쿄 베이"
+  "grand-nikko-tokyo-bay"         = "그랜드 니코 도쿄 베이 마이하마"
+  "sheraton-grande-tokyo-bay"     = "쉐라톤 그란데 도쿄 베이 호텔"
+  "hilton-tokyo-bay"              = "힐튼 도쿄 베이"
+  "maihama-hotel-first-resort"    = "도쿄 베이 마이하마 호텔 퍼스트 리조트"
+  "maihama-view-hotel"            = "마이하마 뷰 호텔 by HULIC"
+  "dreamgate-maihama"             = "호텔 드림게이트 마이하마"
+  "royal-park-maihama"            = "더 로열 파크 호텔 마이하마 리조트 도쿄 베이"
+  "mystays-maihama"               = "호텔 마이스테이즈 마이하마"
+  "maihama-eurasia"               = "스파&호텔 마이하마 유라시아"
+  "eurasia-annex"                 = "호텔 유라시아 마이하마 ANNEX"
+  "hyatt-regency-tokyo-bay"       = "하얏트 리젠시 도쿄 베이"
+  "comfort-suites-tokyo-bay"      = "컴포트 스위트 도쿄 베이"
+  "brighton-tokyo-bay"            = "우라야스 브라이튼 호텔 도쿄 베이"
+  "oriental-tokyo-bay"            = "오리엔탈 호텔 도쿄 베이"
+  "emion-tokyo-bay"               = "호텔 에미온 도쿄 베이"
+  "mitsui-garden-prana"           = "미쓰이 가든 호텔 프라나 도쿄 베이"
+  "hoshinoresorts-1955-tokyo-bay" = "호시노 리조트 1955 도쿄 베이"
+  "lagent-tokyo-bay"              = "라젠트 호텔 도쿄 베이"
+  "ibis-styles-tokyo-bay"         = "이비스 스타일스 도쿄 베이"
+  "mystays-shin-urayasu"          = "마이스테이즈 신우라야스 컨퍼런스 센터"
+  "flexstay-shin-urayasu"         = "플렉스테이 인 신우라야스"
+  "henna-hotel-maihama"           = "헨나 호텔 마이하마 도쿄 베이"
+  "four-stories-hotel"            = "포 스토리즈 호텔 마이하마 도쿄 베이"
+  "hiyori-hotel-maihama"          = "히요리 호텔 마이하마"
+  "viewfort-urayasu"              = "우라야스 뷰포트 호텔"
+  "hotel-daigo-urayasu"           = "호텔 다이고"
+  "bayhotel-urayasu"              = "우라야스역앞 베이 호텔"
+  "urayasu-sun-hotel"             = "우라야스 선 호텔"
+  "premium-monday-maihama-view-1" = "Premium hotel MONday 마이하마 뷰Ⅰ"
+  "hotel-seaside-edogawa"         = "호텔 시사이드 에도가와"
+  "cvs-bay-hotel"                 = "CVS·BAY HOTEL"
+  "hotel-ilfiore-kasai"           = "호텔 일 피오레 가사이"
+  "hotel-ilfiore-kasai-annex"     = "호텔 일 피오레 가사이 ANNEX"
+  "hotel-lumiere-kasai"           = "호텔 뤼미에르 가사이"
+  "livemax-kasai-ekimae"          = "호텔 리브맥스 가사이역앞"
+  "superhotel-myoden"             = "슈퍼호텔 도자이선·이치카와·묘덴역앞"
+}
+
 $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("# === 自動生成ファイル / DO NOT EDIT ===")
 [void]$sb.AppendLine("# マスター: hotel-database-full.csv")
@@ -155,6 +204,10 @@ foreach ($r in $csv) {
   if ($nameZh.ContainsKey($slug)) { $nameZhV = $nameZh[$slug] }
   if (-not $nameZhV) { $nameZhV = ($r.'施設名').Trim() }
   [void]$sb.AppendLine("    name_zh: ""$nameZhV""")
+  $nameKoV = ""
+  if ($nameKo.ContainsKey($slug)) { $nameKoV = $nameKo[$slug] }
+  if (-not $nameKoV) { $nameKoV = ($r.'施設名').Trim() }
+  [void]$sb.AppendLine("    name_ko: ""$nameKoV""")
   $count++
 }
 

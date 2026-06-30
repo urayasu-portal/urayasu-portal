@@ -182,6 +182,93 @@
   <a class="tg-cross-btn" href="/">日本語サイトへ →</a>
 </div>
 
+{{- else if eq .Lang "ko" }}
+
+<div class="tg-hero">
+  <p class="tg-hero-eyebrow">우라야스·마이하마 여행 가이드</p>
+  <h1>도쿄 디즈니 리조트 여행을,<br>현지에서 안내합니다.</h1>
+  <p class="tg-hero-lead">호텔 선택부터 교통, 식사, 기념품까지——우라야스 현지 편집팀이 직접 작성하고 확인한 실용 가이드입니다.</p>
+</div>
+
+<div class="section-head">
+  <h2>여행 계획하기</h2>
+</div>
+<div class="tg-purpose-grid">
+  <a class="tg-purpose-card" href="{{ "/travel-guide/hotels/" | absLangURL }}">
+    <i class="ti ti-bed" aria-hidden="true"></i>
+    <div class="tg-purpose-title">호텔</div>
+    <div class="tg-purpose-desc">전체 호텔을 지역·가격으로 비교</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">
+    <i class="ti ti-route" aria-hidden="true"></i>
+    <div class="tg-purpose-title">교통</div>
+    <div class="tg-purpose-desc">공항과 도쿄역에서 가는 법</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
+    <i class="ti ti-camera" aria-hidden="true"></i>
+    <div class="tg-purpose-title">관광</div>
+    <div class="tg-purpose-desc">마이하마·우라야스·신우라야스</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">
+    <i class="ti ti-gift" aria-hidden="true"></i>
+    <div class="tg-purpose-title">맛집·기념품</div>
+    <div class="tg-purpose-desc">현지 맛집과 가져갈 선물</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">
+    <i class="ti ti-taxi" aria-hidden="true"></i>
+    <div class="tg-purpose-title">택시</div>
+    <div class="tg-purpose-desc">공항 정액 택시 가이드</div>
+  </a>
+  <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/" | absLangURL }}">
+    <i class="ti ti-map-search" aria-hidden="true"></i>
+    <div class="tg-purpose-title">전체 가이드</div>
+    <div class="tg-purpose-desc">전체 여행 가이드 보기</div>
+  </a>
+</div>
+
+<a href="{{ "/travel-guide/hotels/compare/" | absLangURL }}" class="hcm-list-banner">
+  <span class="hcm-list-banner-left">
+    <i class="ti ti-map-2" aria-hidden="true"></i>
+    <span>
+      <strong>호텔 비교 지도</strong>
+      <span class="hcm-list-banner-sub">한 장의 지도에서 지역·시설·가격으로 주변 호텔을 검색</span>
+    </span>
+  </span>
+  <span class="hcm-list-banner-cta">지도에서 비교 →</span>
+</a>
+
+<div class="section-head" style="margin-bottom:6px;">
+  <h2>목적으로 호텔 고르기</h2>
+</div>
+<p class="tg-section-sub">40곳 이상의 호텔에서 알맞은 숙소를 찾아보세요.</p>
+<div class="tg-hotelneed-grid">
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
+    <i class="ti ti-mood-kid" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">가족 동반</div>
+    <div class="tg-hotelneed-desc">대욕장·넓은 객실·시설 완비</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/budget/" | absLangURL }}">
+    <i class="ti ti-coin" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">가성비 숙소</div>
+    <div class="tg-hotelneed-desc">가성비를 중시하는 선택</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/access/" | absLangURL }}">
+    <i class="ti ti-walk" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">교통 우선</div>
+    <div class="tg-hotelneed-desc">파크·역·공항과 가까운 숙소</div>
+  </a>
+</div>
+
+{{ partial "featured-hotels.html" . }}
+
+<div class="tg-cross-link" style="margin-top:32px;">
+  <div>
+    <h3>일본어판 사이트를 찾고 계신가요?</h3>
+    <p>본 가이드는 일본 우라야스 현지 팀이 운영하는 미디어 사이트 '浦安ぽーたる(Urayasu Portal)'의 일부입니다. 전체 일본어 사이트에서는 지역 뉴스·맛집·생활 정보도 다룹니다.</p>
+  </div>
+  <a class="tg-cross-btn" href="/">日本語サイトへ →</a>
+</div>
+
 {{- else }}
 
 {{/* カテゴリ → CSSクラスのマッピング */}}
