@@ -1,4 +1,4 @@
-baseURL: "https://urayasu-portal.com/"
+﻿baseURL: "https://urayasu-portal.com/"
 googleAnalytics: "G-8S20X6BDPW"
 locale: ja
 title: 浦安ぽーたる
@@ -42,6 +42,12 @@ pagination:
 
 params:
   env: production
+  # アフィリエイト設定。バリューコマース LinkSwitch を使うと、本文中の booking.com / agoda.com 等の
+  # 提携広告主リンクをクリック時に自動でアフィリリンク化する。
+  # valuecommercePid に管理画面の「LinkSwitch ID（vc_pid）」を貼ると extend_head.html がタグを出力。
+  # 空のあいだは何も出力されない（誤計測防止）。production 時のみ出力。
+  affiliate:
+    valuecommercePid: ""
   # ヘッダーロゴの主表示。英語サイトでもブランド名は「浦安ぽーたる」で統一（site.Title はSEOの<title>接尾辞用に言語別のまま）
   label:
     text: 浦安ぽーたる

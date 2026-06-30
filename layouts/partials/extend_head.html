@@ -5,6 +5,14 @@
 <style>.ti{font-display:swap}</style>
 {{- partial "event-jsonld.html" . -}}
 {{- partial "faq-jsonld.html" . -}}
+{{- /* バリューコマース LinkSwitch。site.Params.affiliate.valuecommercePid に LinkSwitch ID を設定すると、
+       本文中の提携広告主（booking.com / agoda.com 等）リンクをクリック時に自動でアフィリ化する。
+       PID未設定 or 非productionでは何も出力しない（誤計測・開発環境での発火を防ぐ）。 */ -}}
+{{- $vcPid := site.Params.affiliate.valuecommercePid }}
+{{- if and $vcPid (hugo.IsProduction | or (eq site.Params.env "production")) }}
+<script type="text/javascript" language="javascript">var vc_pid = "{{ $vcPid }}";</script>
+<script type="text/javascript" src="//aml.valuecommerce.com/vcdal.js" async></script>
+{{- end }}
 {{- /* ★SEO: WebSite スキーマ（ホームのみ）。Googleのサイトリンク検索に有効。 */}}
 {{- if .IsHome }}
 <script type="application/ld+json">

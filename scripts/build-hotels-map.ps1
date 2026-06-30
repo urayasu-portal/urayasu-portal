@@ -185,11 +185,20 @@ foreach ($r in $csv) {
   } else {
     [void]$sb.AppendLine("    facilities: []")
   }
-  # 予約リンク（アフィリエイト）: CSVに値があるものだけ出力（未登録時は空で何も出さない）
+  # 予約リンク（アフィリエイト）。CSVに各URL列があれば優先。
+  # Bookingは空なら施設名(英語)で検索URLを自動生成 → バリューコマース LinkSwitch でアフィリ化する
+  # （en/zh/ko の予約CTAを常時表示するため。個別ページURLが分かれば CSV BookingURL 列に入れて上書き可）。
   $bk = @()
   if (($r.'楽天トラベルURL').Trim()) { $bk += "      rakuten: ""$(($r.'楽天トラベルURL').Trim())""" }
   if (($r.'じゃらんURL').Trim())     { $bk += "      jalan: ""$(($r.'じゃらんURL').Trim())""" }
-  if (($r.'BookingURL').Trim())      { $bk += "      booking: ""$(($r.'BookingURL').Trim())""" }
+  $bookingUrl = ($r.'BookingURL').Trim()
+  if (-not $bookingUrl) {
+    $bnameRaw = ($r.'英語表記').Trim()
+    if (-not $bnameRaw) { $bnameRaw = ($r.'施設名').Trim() }
+    $bquery = [uri]::EscapeDataString($bnameRaw)
+    $bookingUrl = "https://www.booking.com/searchresults.html?ss=$bquery"
+  }
+  $bk += "      booking: ""$bookingUrl"""
   if (($r.'AgodaURL').Trim())        { $bk += "      agoda: ""$(($r.'AgodaURL').Trim())""" }
   if ($bk.Count -gt 0) {
     [void]$sb.AppendLine("    booking:")
