@@ -46,10 +46,10 @@ Toy Story Hotel is a Disney Hotel opened in 2022 with a theme based on the inter
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Bayside Station + Disney Resort Line to Tokyo Disneyland Station (15-min early entry, all rooms).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Bayside Station + Disney Resort Line to Tokyo DisneySea Station (15-min early entry, all rooms).
 
 ### To JR Station

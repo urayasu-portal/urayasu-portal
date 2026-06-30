@@ -58,8 +58,8 @@ noDate: true
 <table class="lg-art-table">
 <thead><tr><th>行き先</th><th>手段</th><th>目安</th></tr></thead>
 <tbody>
-<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーランド（TDL）</td><td>専用無料シャトル「ディズニーリゾートクルーザー」</td><td>15分早入園</td></tr>
-<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーシー（TDS）</td><td>リゾートクルーザー＋ディズニーリゾートライン</td><td>15分早入園</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーランド</td><td>専用無料シャトル「ディズニーリゾートクルーザー」</td><td>15分早入園</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーシー</td><td>リゾートクルーザー＋ディズニーリゾートライン</td><td>15分早入園</td></tr>
 <tr><td><i class="ti ti-train" aria-hidden="true"></i> JR駅</td><td>JR舞浜駅まで徒歩</td><td>約8分</td></tr>
 <tr><td><i class="ti ti-plane" aria-hidden="true"></i> 空港</td><td>ホテル前からリムジンバス</td><td>羽田約40〜50分／成田約62〜67分</td></tr>
 <tr><td><i class="ti ti-building" aria-hidden="true"></i> 都心</td><td>舞浜駅からJR京葉線</td><td>東京駅約15分</td></tr>

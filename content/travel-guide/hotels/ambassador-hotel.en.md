@@ -46,10 +46,10 @@ Disney Ambassador Hotel, the first Disney Hotel at Tokyo Disney Resort (opened 2
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle 'Disney Resort Cruiser' (15-min early entry).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Disney Resort Cruiser + Disney Resort Line (15-min early entry).
 
 ### To JR Station

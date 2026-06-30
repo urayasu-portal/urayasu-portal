@@ -44,10 +44,10 @@ Tokyo Disneyland Celebration Hotel: Wish is a value-type Disney Hotel operated b
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle bus, approx. 20 min (15-min early entry, all rooms).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle bus, approx. 20 min (15-min early entry, all rooms).
 
 ### To JR Station

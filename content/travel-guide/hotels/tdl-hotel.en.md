@@ -45,10 +45,10 @@ Tokyo Disneyland Hotel is the highest-prestige Disney Hotel at Tokyo Disneyland.
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Direct covered walkway to the main gate: approximately 1-min walk (no shuttle, no monorail) + 15-min early entry (Happy Entry). This is the defining access advantage.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Via the Disney Resort Line (paid); 15-min early entry.
 
 ### To JR Station

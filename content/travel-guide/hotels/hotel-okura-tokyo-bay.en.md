@@ -44,10 +44,10 @@ Hotel Okura Tokyo Bay is a Tokyo Disney Resort Official Hotel with 427 rooms, al
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle + Disney Resort Line to Tokyo Disneyland Station (Bayside Station ~3-min walk).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle + Disney Resort Line to Tokyo DisneySea Station (Bayside Station ~3-min walk).
 
 ### To JR Station

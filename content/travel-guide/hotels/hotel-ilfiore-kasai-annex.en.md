@@ -43,10 +43,10 @@ Hotel Il Fiore Kasai ANNEX is the annex of Hotel Il Fiore Kasai, a 3-minute walk
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Keisei bus from Kasai Station, approx. 20 min.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Keisei bus from Kasai Station, approx. 20 min.
 
 ### To the Nearest Station

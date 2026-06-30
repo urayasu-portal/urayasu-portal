@@ -44,10 +44,10 @@ MyStays Hotel Shin-Urayasu Conference Center is a 175-room business hotel in the
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle has only ~3 evening departures; for the outbound trip, Tokyo Baycity Bus or taxi is practical.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle has only ~3 evening departures; for the outbound trip, Tokyo Baycity Bus or taxi is practical.
 
 ### To JR Station

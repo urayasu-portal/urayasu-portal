@@ -44,10 +44,10 @@ Grand Nikko Tokyo Bay Maihama (Tokyo Disney Resort Official Hotel) is instantly 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle + Disney Resort Line to Tokyo Disneyland Station (shuttle approx. 2-3 min).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle + Disney Resort Line to Tokyo DisneySea Station (shuttle approx. 2-3 min).
 
 ### To JR Station

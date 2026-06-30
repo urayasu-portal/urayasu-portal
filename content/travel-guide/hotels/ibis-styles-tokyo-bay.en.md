@@ -44,10 +44,10 @@ ibis Styles Tokyo Bay is an Accor design hotel in the Shin-Urayasu area. The 14:
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free hotel shuttle bus (schedule on the official site / LINE).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free hotel shuttle bus (schedule on the official site / LINE).
 
 ### To JR Station

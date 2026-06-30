@@ -45,10 +45,10 @@ Fantasy Springs Hotel, which opened in June 2024 alongside the Fantasy Springs e
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Via the Disney Resort Line (15-min early entry, all rooms).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Direct from the private 'Grand Chateau Gateway' entrance (Grand guests); 15-min early entry.
 
 ### To JR Station

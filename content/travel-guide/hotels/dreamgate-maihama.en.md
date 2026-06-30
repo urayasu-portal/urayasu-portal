@@ -44,10 +44,10 @@ Dreamgate Maihama has an access advantage that stands alone in the area: **both 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Directly connected to JR Maihama Station, then Disney Resort Line to Tokyo Disneyland Station.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Directly connected to JR Maihama Station, then Disney Resort Line to Tokyo DisneySea Station.
 
 ### To JR Station

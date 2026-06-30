@@ -44,10 +44,10 @@ Maihama Hotel First Resort holds a historic distinction: it was the **first Offi
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 ~15-min walk (~800m) to the TDL entrance, or free shuttle + Disney Resort Line; 15-min early entry.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Bayside Station free shuttle + Disney Resort Line to Tokyo DisneySea Station; 15-min early entry.
 
 ### To JR Station

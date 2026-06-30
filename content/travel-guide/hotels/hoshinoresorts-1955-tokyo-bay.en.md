@@ -46,10 +46,10 @@ Hoshino Resorts BEB5 Tokyo Bay opened in June 2024 as Hoshino Resorts' first pro
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Dedicated free shuttle '1955' to TDR, approx. 30 min (daily; schedule on official website).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Dedicated free shuttle '1955' to TDR, approx. 30 min (daily; schedule on official website).
 
 ### To JR Station

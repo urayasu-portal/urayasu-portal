@@ -44,10 +44,10 @@ Urayasu Sun Hotel is a compact business hotel approximately 3 minutes on foot fr
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Keiseibus Chiba West from Urayasu Station, approx. 20 min (no dedicated shuttle).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Keiseibus Chiba West from Urayasu Station, approx. 20 min (no dedicated shuttle).
 
 ### To JR Station

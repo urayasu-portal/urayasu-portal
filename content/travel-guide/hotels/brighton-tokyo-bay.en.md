@@ -47,10 +47,10 @@ Urayasu Brighton Hotel Tokyo Bay is a Tokyo Disney Resort Partner Hotel connecte
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free Partner Hotel shuttle (up to 34/day), approx. 15 min.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free Partner Hotel shuttle (up to 34/day), approx. 15 min.
 
 ### To JR Station

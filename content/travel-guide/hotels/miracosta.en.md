@@ -47,10 +47,10 @@ Among all Disney Hotels at Tokyo Disney Resort, Tokyo DisneySea Hotel MiraCosta 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Via the Disney Resort Line.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Direct from the in-park private entrance (entry from 1 hour after opening).
 
 ### To JR Station

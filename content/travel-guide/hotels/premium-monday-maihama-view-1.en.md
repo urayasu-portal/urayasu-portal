@@ -42,10 +42,10 @@ Premium hotel MONday Maihama View I opened in December 2025. All 57 rooms are sp
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle bus to TDR (bus ~7 min from Kasai-Rinkai-Koen Station).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle bus to TDR (bus ~7 min from Kasai-Rinkai-Koen Station).
 
 ### To the Nearest Station

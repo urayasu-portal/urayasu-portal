@@ -44,10 +44,10 @@ MyStays Hotel Maihama is a compact 90-room hotel with a distinctive advantage: a
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle bus, or via Maihama Station (schedule on the official PC site).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 ~6-min walk to the TDS main gate; a free shuttle bus also runs daily.
 
 ### To JR Station

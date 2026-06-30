@@ -43,10 +43,10 @@ Hotel Seaside Edogawa is an urban resort set inside the vast Kasai Rinkai Park. 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 One stop on the JR Keiyo Line to Maihama, then Disney Resort Line to Tokyo Disneyland Station.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 One stop on the JR Keiyo Line to Maihama, then Disney Resort Line to Tokyo DisneySea Station.
 
 ### To the Nearest Station

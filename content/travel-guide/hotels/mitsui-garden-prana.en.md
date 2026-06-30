@@ -43,10 +43,10 @@ Mitsui Garden Hotel Prana Tokyo Bay is a TDR Partner Hotel offering a combinatio
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Partner Hotel free shuttle (no reservation), approx. 20 min (up to every 10 min).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Partner Hotel free shuttle (no reservation), approx. 20 min (up to every 10 min).
 
 ### To JR Station

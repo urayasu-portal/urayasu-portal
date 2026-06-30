@@ -44,10 +44,10 @@ Hotel Oriental Tokyo Bay is a TDR Partner Hotel offering an exceptional shuttle 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle bus (up to 69/day, first bus 7:00), approx. 15 min.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle bus (up to 69/day, first bus 7:00), approx. 15 min.
 
 ### To JR Station

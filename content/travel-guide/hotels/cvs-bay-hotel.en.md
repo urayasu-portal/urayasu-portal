@@ -44,10 +44,10 @@ CVS BAY HOTEL is adjacent to JR Keiyo Line Ichikawa-Shiohama Station — just 2 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 2 stops (~6 min) on the JR Keiyo Line to Maihama, then Disney Resort Line to Tokyo Disneyland Station (no direct shuttle).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 2 stops (~6 min) on the JR Keiyo Line to Maihama, then Disney Resort Line to Tokyo DisneySea Station (no direct shuttle).
 
 ### To the Nearest Station

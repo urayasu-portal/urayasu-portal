@@ -43,10 +43,10 @@ Hotel Lumiere Kasai is about a 2-minute walk from Tokyo Metro Tozai Line Kasai S
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Keisei bus from Kasai Station, approx. 20 min (15 min by car).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Keisei bus from Kasai Station, approx. 20 min (15 min by car).
 
 ### To the Nearest Station

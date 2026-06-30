@@ -44,10 +44,10 @@ Hyatt Regency Tokyo Bay is a Shin-Urayasu hotel from the Hyatt brand, carrying t
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle bus (not eligible for TDR official benefits), approx. 20 min.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle bus (not eligible for TDR official benefits), approx. 20 min.
 
 ### To JR Station

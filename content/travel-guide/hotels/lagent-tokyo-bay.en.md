@@ -44,10 +44,10 @@ LAGENT HOTEL Tokyo Bay won the Rakuten Travel Silver Award in 2024 with consiste
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free hotel shuttle, approx. 25 min (return service until ~21:00).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free hotel shuttle, approx. 25 min (return service until ~21:00).
 
 ### To JR Station

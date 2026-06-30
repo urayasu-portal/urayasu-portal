@@ -44,10 +44,10 @@ Comfort Suites Tokyo Bay (Choice Hotels). A free shuttle to TDL and TDS runs dai
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free hotel shuttle bus (runs until ~30 min after park closing).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free hotel shuttle bus (runs until ~30 min after park closing).
 
 ### To JR Station

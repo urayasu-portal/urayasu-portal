@@ -44,10 +44,10 @@ Sheraton Grande Tokyo Bay Hotel is a Tokyo Disney Resort Official Hotel uniquely
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Bayside Station + Disney Resort Line to Tokyo Disneyland Station (1-min walk to station).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Bayside Station + Disney Resort Line to Tokyo DisneySea Station (1-min walk to station).
 
 ### To JR Station

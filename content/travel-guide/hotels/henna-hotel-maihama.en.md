@@ -46,10 +46,10 @@ Note: From July 2026, the TDR shuttle service from this hotel is being reduced â
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Hotel-Maihama Station free shuttle, daily (reduced/rescheduled from July 1, 2026), then Disney Resort Line to Tokyo Disneyland Station.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Hotel-Maihama Station free shuttle, daily (reduced/rescheduled from July 1, 2026), then Disney Resort Line to Tokyo DisneySea Station.
 
 ### To JR Station

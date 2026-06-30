@@ -46,10 +46,10 @@ Royal Park Hotel The Maihama opened on February 13, 2026 — the largest new hot
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Dedicated free shuttle looping Hotel-TDL-TDS, daily (schedule on the official site).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Dedicated free shuttle, or ~15-min walk from the Disney Resort Line Tokyo DisneySea Station.
 
 ### To JR Station

@@ -43,10 +43,10 @@ Flexstay Inn Shin-Urayasu (MyStays group) is an extended-stay hotel where every 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle bus (schedule on official website), or local bus ~10-15 min from Maihama Station.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle bus (schedule on official website), or local bus ~10-15 min from Maihama Station.
 
 ### To JR Station

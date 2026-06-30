@@ -55,8 +55,8 @@ noDate: true
 <table class="lg-art-table">
 <thead><tr><th>行き先</th><th>手段</th><th>目安</th></tr></thead>
 <tbody>
-<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーランド（TDL）</td><td>無料シャトルバス（公式特典対象外）</td><td>約20分</td></tr>
-<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーシー（TDS）</td><td>無料シャトルバス（公式特典対象外）</td><td>約20分</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーランド</td><td>無料シャトルバス（公式特典対象外）</td><td>約20分</td></tr>
+<tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーシー</td><td>無料シャトルバス（公式特典対象外）</td><td>約20分</td></tr>
 <tr><td><i class="ti ti-train" aria-hidden="true"></i> JR駅</td><td>新浦安駅から無料シャトル／路線バス</td><td>約8〜10分</td></tr>
 <tr><td><i class="ti ti-plane" aria-hidden="true"></i> 空港</td><td>ホテル前専用リムジン停留所（徒歩0分）</td><td>羽田約47〜52分／成田約75分</td></tr>
 <tr><td><i class="ti ti-building" aria-hidden="true"></i> 都心</td><td>新浦安駅経由JR京葉線</td><td>東京駅約20分</td></tr>

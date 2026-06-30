@@ -44,10 +44,10 @@ Hiyori Hotel Maihama is a hotel in the Higashino district offering some genuinel
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Hotel-Maihama Station free shuttle ~10 min, then Disney Resort Line to Tokyo Disneyland Station.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Hotel-Maihama Station free shuttle ~10 min, then Disney Resort Line to Tokyo DisneySea Station.
 
 ### To JR Station

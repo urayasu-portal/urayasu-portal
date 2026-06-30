@@ -43,10 +43,10 @@ HOTEL LiVEMAX Kasai-Ekimae is about a 3-minute walk from Tokyo Metro Tozai Line 
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Keisei bus from Kasai Station, approx. 20 min (13 min by car).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Keisei bus from Kasai Station, approx. 20 min (13 min by car).
 
 ### To the Nearest Station

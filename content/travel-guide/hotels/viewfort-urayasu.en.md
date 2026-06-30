@@ -43,10 +43,10 @@ A business hotel about 1-minute walk from Urayasu Station on the Tokyo Metro Toz
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Keiseibus Chiba West from Urayasu Station, approx. 25-30 min (no dedicated shuttle).
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Keiseibus Chiba West from Urayasu Station, approx. 25-30 min (no dedicated shuttle).
 
 ### To JR Station

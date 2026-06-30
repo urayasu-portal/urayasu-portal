@@ -46,10 +46,10 @@ Hilton Tokyo Bay is a Tokyo Disney Resort Official Hotel with 828 rooms, located
 
 ## Access
 
-### To Tokyo Disneyland (TDL)
+### To Tokyo Disneyland
 Free shuttle + Disney Resort Line to Tokyo Disneyland Station, approx. 10 min.
 
-### To Tokyo DisneySea (TDS)
+### To Tokyo DisneySea
 Free shuttle + Disney Resort Line to Tokyo DisneySea Station, approx. 10 min.
 
 ### To JR Station
