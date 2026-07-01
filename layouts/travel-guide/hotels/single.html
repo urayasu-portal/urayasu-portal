@@ -195,7 +195,14 @@
       <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
       <div class="lg-book-btns">
         {{- if ne $lang "ja" }}
-        {{- with $bk.expedia }}<a class="lg-book-btn book-expedia" href="{{ . }}" target="_blank" rel="sponsored noopener">Expedia</a>{{ end }}
+        {{- with $bk.expedia }}
+          {{- $expUrl := . }}
+          {{- if eq $lang "en" }}{{ $expUrl = replace $expUrl "expedia.co.jp" "expedia.com" }}
+          {{- else if eq $lang "zh" }}{{ $expUrl = replace $expUrl "expedia.co.jp" "expedia.com.hk" }}
+          {{- else if eq $lang "ko" }}{{ $expUrl = replace $expUrl "expedia.co.jp" "expedia.co.kr" }}
+          {{- end }}
+          <a class="lg-book-btn book-expedia" href="{{ $expUrl }}" target="_blank" rel="sponsored noopener">Expedia</a>
+        {{- end }}
         {{- with $bk.agoda }}<a class="lg-book-btn book-agoda" href="{{ . }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
         {{- else }}
         {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener">楽天トラベル</a>{{ end }}
