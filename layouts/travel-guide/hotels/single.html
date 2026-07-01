@@ -194,14 +194,17 @@
     <div class="lg-book-cta">
       <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
       <div class="lg-book-btns">
-        {{- if ne $lang "ja" }}
+        {{- if eq $lang "en" }}
+        {{- with $cur2.name_en }}
+        <a class="lg-book-btn book-booking" href="https://www.booking.com/searchresults.html?ss={{ . | urlquery }}" target="_blank" rel="sponsored noopener">Booking.com</a>
+        {{- end }}
+        {{- else if eq $lang "zh" }}
+        {{- with $cur2.name_en }}
+        <a class="lg-book-btn book-trip" href="https://www.trip.com/hotels/list?cityName=Tokyo&keyword={{ . | urlquery }}" target="_blank" rel="sponsored noopener">Trip.com</a>
+        {{- end }}
+        {{- else if eq $lang "ko" }}
         {{- with $bk.expedia }}
-          {{- $expUrl := . }}
-          {{- if eq $lang "en" }}{{ $expUrl = replace $expUrl "expedia.co.jp" "expedia.com" }}
-          {{- else if eq $lang "zh" }}{{ $expUrl = replace $expUrl "expedia.co.jp" "expedia.com.hk" }}
-          {{- else if eq $lang "ko" }}{{ $expUrl = replace $expUrl "expedia.co.jp" "expedia.co.kr" }}
-          {{- end }}
-          <a class="lg-book-btn book-expedia" href="{{ $expUrl }}" target="_blank" rel="sponsored noopener">Expedia</a>
+        <a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener">Expedia</a>
         {{- end }}
         {{- with $bk.agoda }}<a class="lg-book-btn book-agoda" href="{{ . }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
         {{- else }}
