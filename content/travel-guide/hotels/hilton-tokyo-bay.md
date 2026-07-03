@@ -28,7 +28,7 @@ noDate: true
     <dt>IN / OUT</dt><dd>15:00（15:00〜24:00） / 12:00</dd>
     <dt>価格の目安</dt><dd>2名1室1泊 30,000円〜（時期により変動）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://hilton.com" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
+  <a class="hg-info-btn" href="https://tokyobay.hiltonjapan.co.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人
