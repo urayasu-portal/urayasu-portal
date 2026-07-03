@@ -26,7 +26,7 @@ noDate: true
     <dt>IN / OUT</dt><dd>15:00 / 12:00</dd>
     <dt>価格の目安</dt><dd>2名1室1泊 40,000円〜（時期により変動）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://tokyodisneyresort.jp/hotel/dah.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
+  <a class="hg-info-btn" href="https://www.tokyodisneyresort.jp/hotel/dah.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人
