@@ -36,7 +36,7 @@
 {{- with $cur2 }}{{ with .booking }}{{ $bk = . }}{{ end }}{{ end }}
 {{- $hasBookBtn := false }}
 {{- if $bk }}
-  {{- if eq $lang "en" }}{{- if $cur2.name_en }}{{ $hasBookBtn = true }}{{ end }}
+  {{- if eq $lang "en" }}{{- if or $bk.booking $cur2.name_en }}{{ $hasBookBtn = true }}{{ end }}
   {{- else if eq $lang "zh" }}{{- if $cur2.name_en }}{{ $hasBookBtn = true }}{{ end }}
   {{- else if eq $lang "ko" }}{{- if or $bk.expedia $bk.agoda }}{{ $hasBookBtn = true }}{{ end }}
   {{- else }}{{- if or $bk.rakuten $bk.jalan $bk.yahoo }}{{ $hasBookBtn = true }}{{ end }}

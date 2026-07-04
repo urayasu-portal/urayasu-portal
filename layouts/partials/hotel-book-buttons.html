@@ -4,8 +4,13 @@
 {{- $lang := .lang }}
 {{- $cur2 := .cur2 }}
 {{- if eq $lang "en" }}
+  {{- /* ホテル個別ページURL(CSVのBookingURL列)があれば直接遷移。無ければ施設名検索へフォールバック */ -}}
+  {{- with $bk.booking }}
+  <a class="lg-book-btn book-booking" href="{{ . }}" target="_blank" rel="sponsored noopener">Booking.com</a>
+  {{- else }}
   {{- with $cur2.name_en }}
   <a class="lg-book-btn book-booking" href="https://www.booking.com/searchresults.html?ss={{ . | urlquery }}" target="_blank" rel="sponsored noopener">Booking.com</a>
+  {{- end }}
   {{- end }}
 {{- else if eq $lang "zh" }}
   {{- with $cur2.name_en }}

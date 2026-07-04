@@ -187,20 +187,18 @@ foreach ($r in $csv) {
   }
   # 予約リンク（アフィリエイト）。提携ASPに合わせた構成：
   #   JA      → 楽天トラベル(楽天アフィリ・既存) ＋ じゃらん/Yahoo!トラベル(CSV列に値があれば)
-  #   en/zh/ko→ Expedia(co.jp) … バリューコマース LinkSwitch でアフィリ化。施設名(英語)の検索URLを自動生成。
-  # ※ Booking.com / Agoda はバリューコマース提携外のため不使用。個別ページURLが分かれば CSVのBookingURL列を
-  #   Expedia上書きに流用可（値があればそのまま expedia として採用）。
+  #   en      → Booking.com … CSVのBookingURL列(ホテル個別ページURL)があればそこへ直接遷移。
+  #             空なら施設名(英語)の検索結果URLをテンプレート側で自動生成(フォールバック)。
+  #   ko      → Expedia(co.jp) … 施設名(英語)の検索URLを自動生成 ＋ Agoda(CSV列に値があれば)
+  # ※ Booking.com/Agoda/Expedia のアフィリ化はバリューコマース LinkSwitch（vc_pid設定後に自動変換）。
   $bk = @()
   if (($r.'楽天トラベルURL').Trim()) { $bk += "      rakuten: ""$(($r.'楽天トラベルURL').Trim())""" }
   if (($r.'じゃらんURL').Trim())     { $bk += "      jalan: ""$(($r.'じゃらんURL').Trim())""" }
-  $expediaUrl = ($r.'BookingURL').Trim()
-  if (-not $expediaUrl) {
-    $exname = ($r.'英語表記').Trim()
-    if (-not $exname) { $exname = ($r.'施設名').Trim() }
-    $exquery = [uri]::EscapeDataString($exname)
-    $expediaUrl = "https://www.expedia.co.jp/Hotel-Search?destination=$exquery"
-  }
-  $bk += "      expedia: ""$expediaUrl"""
+  if (($r.'BookingURL').Trim())      { $bk += "      booking: ""$(($r.'BookingURL').Trim())""" }
+  $exname = ($r.'英語表記').Trim()
+  if (-not $exname) { $exname = ($r.'施設名').Trim() }
+  $exquery = [uri]::EscapeDataString($exname)
+  $bk += "      expedia: ""https://www.expedia.co.jp/Hotel-Search?destination=$exquery"""
   if (($r.'AgodaURL').Trim())        { $bk += "      agoda: ""$(($r.'AgodaURL').Trim())""" }
   if ($bk.Count -gt 0) {
     [void]$sb.AppendLine("    booking:")
