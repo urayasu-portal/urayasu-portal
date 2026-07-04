@@ -27,6 +27,21 @@
 {{- $cur2 := index $mapIdx $curSlug }}
 {{- $curCat := index $catIdx $curSlug | default "" }}
 {{- $curPrice := 0 }}{{- with $cur2 }}{{ $curPrice = .price_min | default 0 }}{{- end }}
+
+{{/* 料金・空室を見る（予約アフィリエイト）。data/hotels_map.yaml の booking が空なら非表示。
+     サイドバーCTA・本文直前CTA・モバイル下部固定バーの3箇所で共通利用するためファイル冒頭で算出。
+     $bkはbooking dictの有無、$hasBookBtnは「現在の言語で実際に描画されるボタンが1つでもあるか」。
+     （例：expediaのみ登録済みのホテルは$bkはtrueだがJP版は表示ボタンが無いため、空のCTA箱を出さないよう$hasBookBtnで判定） */}}
+{{- $bk := false }}
+{{- with $cur2 }}{{ with .booking }}{{ $bk = . }}{{ end }}{{ end }}
+{{- $hasBookBtn := false }}
+{{- if $bk }}
+  {{- if eq $lang "en" }}{{- if $cur2.name_en }}{{ $hasBookBtn = true }}{{ end }}
+  {{- else if eq $lang "zh" }}{{- if $cur2.name_en }}{{ $hasBookBtn = true }}{{ end }}
+  {{- else if eq $lang "ko" }}{{- if or $bk.expedia $bk.agoda }}{{ $hasBookBtn = true }}{{ end }}
+  {{- else }}{{- if or $bk.rakuten $bk.jalan $bk.yahoo }}{{ $hasBookBtn = true }}{{ end }}
+  {{- end }}
+{{- end }}
 {{- $scored := slice }}
 {{- if $cur2 }}
   {{- range hugo.Data.hotels_map.hotels }}
@@ -117,6 +132,18 @@
       <div class="hg-hero" aria-hidden="true"><i class="ti ti-photo"></i></div>
       {{- end }}
 
+      {{/* モバイル限定・本文直前のCTA。スマホでは右サイドバーが本文の後ろに回るため、
+           本文を読み進める前に予約導線へ触れられるようここにも複製表示する（PCでは非表示）。 */}}
+      {{- if $hasBookBtn }}
+      <div class="lg-book-cta lg-book-cta-inline">
+        <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
+        <div class="lg-book-btns">
+          {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2) }}
+        </div>
+        <div class="lg-book-pr">{{ i18n "includes_pr" }}</div>
+      </div>
+      {{- end }}
+
       {{- if $content }}
       <div class="post-content md-content">
         {{- if not (.Param "disableAnchoredHeadings") }}
@@ -187,31 +214,12 @@
     </div>
     {{- end }}
 
-    {{/* 料金・空室を見る（予約アフィリエイト。data/hotels_map.yaml の booking が空なら非表示） */}}
-    {{- $bk := false }}
-    {{- with $cur2 }}{{ with .booking }}{{ $bk = . }}{{ end }}{{ end }}
-    {{- if $bk }}
+    {{/* 料金・空室を見る（予約アフィリエイト。$bk・$hasBookBtnはファイル冒頭で算出済み） */}}
+    {{- if $hasBookBtn }}
     <div class="lg-book-cta">
       <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
       <div class="lg-book-btns">
-        {{- if eq $lang "en" }}
-        {{- with $cur2.name_en }}
-        <a class="lg-book-btn book-booking" href="https://www.booking.com/searchresults.html?ss={{ . | urlquery }}" target="_blank" rel="sponsored noopener">Booking.com</a>
-        {{- end }}
-        {{- else if eq $lang "zh" }}
-        {{- with $cur2.name_en }}
-        <a class="lg-book-btn book-trip" href="https://www.trip.com/hotels/list?cityName=Tokyo&keyword={{ . | urlquery }}" target="_blank" rel="sponsored noopener">Trip.com</a>
-        {{- end }}
-        {{- else if eq $lang "ko" }}
-        {{- with $bk.expedia }}
-        <a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener">Expedia</a>
-        {{- end }}
-        {{- with $bk.agoda }}<a class="lg-book-btn book-agoda" href="{{ . }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
-        {{- else }}
-        {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener">楽天トラベル</a>{{ end }}
-        {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener">じゃらん</a>{{ end }}
-        {{- with $bk.yahoo }}<a class="lg-book-btn book-yahoo" href="{{ . }}" target="_blank" rel="sponsored noopener">Yahoo!トラベル</a>{{ end }}
-        {{- end }}
+        {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2) }}
       </div>
       <div class="lg-book-pr">{{ i18n "includes_pr" }}</div>
     </div>
@@ -238,5 +246,15 @@
   </aside>
 
 </div>{{/* end home-layout */}}
+
+{{/* モバイル限定・画面下部固定の予約バー。スクロール位置によらず常時アクセスできる導線として設置（PCでは非表示）。 */}}
+{{- if $hasBookBtn }}
+<div class="lg-mobile-book-bar">
+  <span class="lg-mobile-book-bar-label"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</span>
+  <div class="lg-mobile-book-bar-btns">
+    {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2) }}
+  </div>
+</div>
+{{- end }}
 
 {{- end }}
