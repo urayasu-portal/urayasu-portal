@@ -1,4 +1,4 @@
-﻿baseURL: "https://urayasu-portal.com/"
+baseURL: "https://urayasu-portal.com/"
 googleAnalytics: "G-8S20X6BDPW"
 locale: ja
 title: 浦安ぽーたる
@@ -46,8 +46,19 @@ params:
   # 提携広告主リンクをクリック時に自動でアフィリリンク化する。
   # valuecommercePid に管理画面の「LinkSwitch ID（vc_pid）」を貼ると extend_head.html がタグを出力。
   # 空のあいだは何も出力されない（誤計測防止）。production 時のみ出力。
+  #
+  # Travelpayouts（Booking.com 等）: 予約ボタンの booking.com リンクを
+  # https://tp.media/r?marker=…&trs=…&p=…&u=<遷移先> のリダイレクト型アフィリリンクに包む。
+  # 管理画面で生成したBooking.comリンクの各パラメータを下に転記すると有効化。
+  # marker=パートナーID / trs=トラフィックソースID / bookingP=p値 / bookingCampaign=campaign_id（あれば）。
+  # いずれか未設定のあいだは素のURLのまま（誤計測防止）。
   affiliate:
     valuecommercePid: ""
+    travelpayouts:
+      marker: ""
+      trs: ""
+      bookingP: ""
+      bookingCampaign: ""
   # ヘッダーロゴの主表示。英語サイトでもブランド名は「浦安ぽーたる」で統一（site.Title はSEOの<title>接尾辞用に言語別のまま）
   label:
     text: 浦安ぽーたる

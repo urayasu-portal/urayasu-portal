@@ -4,13 +4,19 @@
 {{- $lang := .lang }}
 {{- $cur2 := .cur2 }}
 {{- if eq $lang "en" }}
-  {{- /* ホテル個別ページURL(CSVのBookingURL列)があれば直接遷移。無ければ施設名検索へフォールバック */ -}}
-  {{- with $bk.booking }}
-  <a class="lg-book-btn book-booking" href="{{ . }}" target="_blank" rel="sponsored noopener">Booking.com</a>
-  {{- else }}
-  {{- with $cur2.name_en }}
-  <a class="lg-book-btn book-booking" href="https://www.booking.com/searchresults.html?ss={{ . | urlquery }}" target="_blank" rel="sponsored noopener">Booking.com</a>
+  {{- /* ホテル個別ページURL(CSVのBookingURL列)があれば直接遷移。無ければ施設名検索へフォールバック。
+         hugo.yaml の affiliate.travelpayouts が設定済みなら tp.media リダイレクトで包んでアフィリ化
+         （個別URL・検索フォールバックの両方が収益化対象になる） */ -}}
+  {{- $bookingHref := "" }}
+  {{- with $bk.booking }}{{ $bookingHref = . }}{{ else }}{{ with $cur2.name_en }}{{ $bookingHref = printf "https://www.booking.com/searchresults.html?ss=%s" (. | urlquery) }}{{ end }}{{ end }}
+  {{- if $bookingHref }}
+  {{- $tp := site.Params.affiliate.travelpayouts | default dict }}
+  {{- if and $tp.marker $tp.trs $tp.bookingP }}
+    {{- $wrapped := printf "https://tp.media/r?marker=%s&trs=%s&p=%s&u=%s" $tp.marker $tp.trs $tp.bookingP ($bookingHref | urlquery) }}
+    {{- with $tp.bookingCampaign }}{{ $wrapped = printf "%s&campaign_id=%s" $wrapped . }}{{ end }}
+    {{- $bookingHref = $wrapped }}
   {{- end }}
+  <a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>
   {{- end }}
 {{- else if eq $lang "zh" }}
   {{- with $cur2.name_en }}
