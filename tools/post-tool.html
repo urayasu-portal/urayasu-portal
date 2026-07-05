@@ -39,6 +39,7 @@
     #status.success{background:#d5f5e3;color:#186a3b;border:1px solid #a9dfbf;display:block}
     #status.error{background:#fadbd8;color:#922b21;border:1px solid #f1948a;display:block}
     #status.loading{background:#d6eaf8;color:#1a5276;border:1px solid #a9cce3;display:block}
+    #status.warn{background:#fdf3d3;color:#7d6608;border:1px solid #f4d76b;display:block}
     #status a{color:inherit;font-weight:700}
     .badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:.75rem;font-weight:700;background:#eaf3fb;color:#2980b9;margin-left:8px;vertical-align:middle}
     #parsedInfo{margin-top:10px;padding:10px 14px;background:#f0f7ff;border-radius:8px;font-size:.82rem;color:#2c5f8a;display:none}
@@ -659,6 +660,55 @@ async function uploadImage(pat, filename, b64) {
   return `/images/posts/${filename}`;
 }
 
+/* ── 投稿前の自動品質チェック ── */
+const ALLOWED_CATEGORIES = ['開店・閉店','ニュース・事件事故','イベント','グルメ・カフェ','スポーツ','子育て・教育','お知らせ'];
+function checkArticleQuality(content, isUpdate) {
+  const errors = [], warns = [];
+  const m = content.match(/^---\n([\s\S]*?)\n---([\s\S]*)$/);
+  if (!m) { errors.push('フロントマターの形式が正しくありません（--- で囲まれていません）'); return {errors, warns}; }
+  const fm = m[1], body = m[2];
+
+  const catMatch = fm.match(/^categories:\n((?:[ \t]*-[ \t]*.+\n?)*)/m);
+  if (catMatch) {
+    const cats = Array.from(catMatch[1].matchAll(/-\s*["']?([^"'\n]+?)["']?\s*$/gm)).map(x => x[1].trim());
+    cats.forEach(c => {
+      if (c.startsWith('cat-')) errors.push(`categories に不正な値が含まれています：${c}`);
+      else if (!ALLOWED_CATEGORIES.includes(c)) errors.push(`categories に許可されていない値が含まれています：${c}`);
+    });
+  }
+
+  const hasEventDate    = /^eventDates?:/m.test(fm);
+  const hasHideEventBox = /^hideEventBox:\s*true/m.test(fm);
+  if (hasEventDate && !hasHideEventBox) errors.push('eventDate(s) があるのに hideEventBox: true がありません');
+
+  if (!/^draft:\s*false/m.test(fm)) errors.push('draft: false がありません');
+
+  const hasLastmod = /^lastmod:/m.test(fm);
+  if (!isUpdate && hasLastmod) warns.push('新規投稿なのに lastmod が設定されています');
+  if (isUpdate && !hasLastmod) warns.push('更新なのに lastmod が設定されていません');
+
+  const hasCheckDate = /^checkDate:/m.test(fm);
+  const hasSources   = /^sources:/m.test(fm);
+  if (hasCheckDate && /<h2>\s*参考情報\s*<\/h2>/.test(body)) warns.push('checkDate があるのに本文に「参考情報」見出しが残っています（sources移行漏れ）');
+  if (hasCheckDate && !hasSources) warns.push('checkDate があるのに frontmatter に sources: がありません');
+
+  if (/<div\s+style=/.test(body)) warns.push('本文に <div style=...> が含まれています');
+  if (/<iframe/.test(body))       warns.push('本文に <iframe> が含まれています');
+
+  const plainLen = body.replace(/<[^>]+>/g,'').replace(/\s+/g,'').length;
+  if (plainLen < 300) warns.push(`本文が${plainLen}字と短めです（まとめ記事への統合を検討してください）`);
+
+  const descMatch = fm.match(/^description:\s*["'](.+?)["']\s*$/m);
+  if (descMatch) {
+    const len = descMatch[1].length;
+    if (len < 90 || len > 130) warns.push(`description が${len}字です（90〜130字を推奨）`);
+  }
+
+  if (/<img[^>]*\balt=""[^>]*>/.test(body)) warns.push('alt が空の画像があります');
+
+  return { errors, warns };
+}
+
 /* ── 記事投稿 ── */
 async function submitArticle() {
   const pat     = localStorage.getItem('urayasu_gh_pat');
@@ -674,7 +724,27 @@ async function submitArticle() {
   btn.disabled = true;
 
   try {
-    // ① サムネイル画像アップロード
+    const path   = `content/posts/${fn}`;
+    const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
+    const hdrs   = ghHeaders(pat);
+
+    let sha; const c = await fetch(apiUrl,{headers:hdrs}); if(c.ok) sha=(await c.json()).sha;
+    const isUpdate = !!sha;
+
+    // ① 自動品質チェック
+    const {errors, warns} = checkArticleQuality(content, isUpdate);
+    if (errors.length) {
+      showStatus('error', '❌ 投稿をブロックしました：\n' + errors.map(x=>'・'+escHtml(x)).join('\n'));
+      btn.disabled = false; return;
+    }
+    if (warns.length) {
+      showStatus('warn', '⚠️ 確認してください：\n' + warns.map(x=>'・'+escHtml(x)).join('\n'));
+      if (!confirm('以下の点を確認してください。このまま投稿を続行しますか？\n\n' + warns.map(x=>'・'+x).join('\n'))) {
+        btn.disabled = false; return;
+      }
+    }
+
+    // ② サムネイル画像アップロード
     if (document.getElementById('useThumb').checked && getRadio('thumbType')==='upload') {
       const f  = thumbProcessedFile || document.getElementById('thumbFile').files[0];
       const tfn = document.getElementById('thumbFilename').value.trim();
@@ -683,7 +753,7 @@ async function submitArticle() {
       showStatus('loading','⏳ サムネイル画像をアップロード中...');
       await uploadImage(pat, tfn, await fileToBase64(f));
     }
-    // ② 冒頭画像アップロード（別ファイルの場合のみ）
+    // ③ 冒頭画像アップロード（別ファイルの場合のみ）
     if (document.getElementById('useBody').checked && getRadio('bodyType')==='upload') {
       const f  = bodyProcessedFile || document.getElementById('bodyFile').files[0];
       const bfn = document.getElementById('bodyFilename').value.trim();
@@ -695,25 +765,21 @@ async function submitArticle() {
         await uploadImage(pat, bfn, await fileToBase64(f));
       }
     }
-    // ③ カバーブロックをフロントマターに適用
+    // ④ カバーブロックをフロントマターに適用
     const coverBlock = buildCoverBlock();
     if (coverBlock) {
       content = applyCoverBlock(content, coverBlock);
       document.getElementById('content').value = content;
     }
-    // ④ .md ファイルを投稿
+    // ⑤ .md ファイルを投稿
     showStatus('loading','⏳ 記事ファイルをGitHubに投稿しています...');
-    const path   = `content/posts/${fn}`;
-    const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
-    const hdrs   = ghHeaders(pat);
     const {title} = parseFrontmatter(content);
     const msg = title ? `feat: ${title}` : `feat: ${fn.replace('.md','')}を追加`;
-    let sha; const c = await fetch(apiUrl,{headers:hdrs}); if(c.ok) sha=(await c.json()).sha;
     const body = {message:msg, content:toBase64(content), branch:BRANCH};
     if(sha) body.sha=sha;
     const res = await fetch(apiUrl,{method:'PUT',headers:hdrs,body:JSON.stringify(body)});
     if (res.ok) {
-      const action = sha?'更新':'新規投稿';
+      const action = isUpdate?'更新':'新規投稿';
       const slug   = fn.replace(/^\d{8}-/,'').replace('.md','');
       showStatus('success',
         `✅ ${action}しました！\n📄 <strong>${fn}</strong>\n` +
