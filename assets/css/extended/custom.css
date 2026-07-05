@@ -4050,3 +4050,14 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
   .post-content .lg-art-cards { grid-template-columns: 1fr; }
   .post-content .lg-art-cols, .post-content .lg-art-links { grid-template-columns: 1fr; }
 }
+
+/* ── アクセスガイド 地図＋エリア別旅程（access-guide 記事） ── */
+.access-journey .node{display:inline-flex;align-items:center;gap:6px;border:1.5px solid #CBD5E1;background:#fff;border-radius:999px;padding:7px 13px;font-size:12px;font-weight:700;color:#0F172A;white-space:nowrap}
+.access-journey .conn{flex:1;min-width:78px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.access-journey .conn .mode{font-size:11px;font-weight:700;white-space:nowrap}
+.access-journey .conn .lin{display:flex;align-items:center;width:100%}
+.access-journey .conn .lin .bar{flex:1;height:2px}
+.access-journey .conn .time{font-size:10px;color:#64748B;white-space:nowrap}
+.access-journey .strip{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:4px 0 2px}
+.access-journey .rowlab{font-size:11px;font-weight:700;color:#475569;display:flex;align-items:center;gap:5px;margin:12px 0 4px}
+.access-journey .alt{font-size:10.5px;color:#64748B;background:#F8FAFC;border-radius:7px;padding:6px 10px;margin-top:7px;line-height:1.6}

@@ -1,7 +1,7 @@
 ---
-title: "How to Get to Urayasu & Maihama from Haneda, Narita & Tokyo Station"
+title: "How to Get to Urayasu & Maihama (Routes by Destination)"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-06-19
+lastmod: 2026-07-05
 slug: "urayasu-maihama-access-guide"
 badge: "Access"
 description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort. Includes notes for guests with wheelchairs, strollers, or heavy luggage."
@@ -38,311 +38,157 @@ faq:
     a: "Taxi demand rises after park closing and on rainy days, so wait times may occur. Also consider hotel shuttles, local buses, and ride-hailing apps."
 ---
 
-This guide covers how to reach the Urayasu and Maihama area from Haneda Airport, Narita Airport, and Tokyo Station.
-
-The best transport depends on whether you are heading to Tokyo Disney Resort, a hotel in Shin-Urayasu, or the area around Urayasu Station. We compare **trains, airport limousine buses, and taxis**, and include notes for guests with wheelchairs, strollers, or heavy luggage.
-
-For hotel-by-hotel comparisons of travel time to the park, airports, and city center, also see [Hotel Access Comparison](/en/travel-guide/hotels/access/).
-
-> **Please note**
-> Fares, travel times, frequency, stop locations, and hotel shuttle availability are subject to change. Before travel, check the latest information on the websites of rail operators, airport limousine bus services, taxi companies, your hotel, and Tokyo Disney Resort.
->
-> Last verified: June 19, 2026
-
----
-
-## First: Understanding the Three Stations
-
-The most common point of confusion for first-time visitors is **the difference between three stations**. Tokyo Disney Resort is served by Maihama Station, but searching for "Urayasu" in Japanese maps can show Tokyo Metro Urayasu Station instead. Confirm your destination first.
-
-| Station / Area | Line | Main Features | Best For |
-|---|---|---|---|
-| Maihama Station | JR Keiyo / Musashino Line | Gateway to Tokyo Disney Resort | Visitors to Tokyo Disneyland / DisneySea |
-| Shin-Urayasu Station | JR Keiyo / Musashino Line | Nearest to bay-area hotels | Guests at Shin-Urayasu hotels |
-| Urayasu Station | Tokyo Metro Tozai Line | City center, restaurants, local area | Guests at hotels near Urayasu Station |
-
-```text
-Tokyo direction
-  │
-  ├─ Urayasu Station (Tokyo Metro Tozai Line)
-  │    ↑ Different line
-  │
-  └─ Tokyo Station ── Shin-Urayasu Sta. ── Maihama Sta. ── Tokyo Disney Resort
-                           │                    │
-                    Bay-area hotels     TDR hotels (owned & official)
-```
-
-*This diagram is a conceptual overview — actual distances and directions differ.*
-
-**Important:** Urayasu Station is on the Tokyo Metro Tozai Line, while Maihama and Shin-Urayasu are on the JR Keiyo/Musashino Line. These are separate lines with no direct through service between them.
-
----
-
-## Recommended Routes by Purpose
-
-| Your situation | Consider first | Why |
-|---|---|---|
-| Haneda → Maihama / Disney | Limousine bus / Train | Bus handles luggage easily; train timing is predictable |
-| Narita → Maihama / Disney | Limousine bus / Train | Fewer transfers by bus; long distance from Narita |
-| Tokyo Station → Maihama | JR Keiyo / Musashino Line | Direct train to Maihama Station |
-| Heading to Shin-Urayasu hotels | Shin-Urayasu Sta. + shuttle / bus / taxi | Hotel locations vary; some are far from the station |
-| Staying near Urayasu Station | Tokyo Metro Tozai Line direction | Be aware it is a different line from Maihama |
-| Small children / heavy luggage | Limousine bus / Taxi | Minimizes transfers and stairs |
-| Wheelchair / stroller | Route with fewest transfers + pre-confirm | Elevator locations, bus accessibility, taxi reservation |
-
----
-
-## Transport Options at a Glance
-
-| Transport | Advantages | Watch out for | Wheelchair / Stroller |
-|---|---|---|---|
-| Train | Predictable timing, relatively affordable | Transfers and walking within stations | Check elevator locations in advance |
-| Airport limousine bus | Easy with luggage, goes near hotels | Congestion, full buses, limited departures | Confirm accessibility policy in advance |
-| Taxi | Door-to-door | Higher cost | Consider booking a UD taxi or welfare taxi |
-| Hotel shuttle | Convenient for guests | Varies by hotel — availability and frequency differ | Confirm wheelchair access with hotel |
-| Disney Resort Line | Handy within TDR and hotel area | Busy at peak times | Check elevator routing |
-
----
-
-## From Haneda Airport
-
-For guests with heavy luggage or children, the **airport limousine bus** is often the easiest option. For predictable travel times, the **train** is a strong alternative.
-
-### To Maihama / Tokyo Disney Resort
-
-| Transport | Best for | Watch out for |
-|---|---|---|
-| Airport limousine bus | Heavy luggage, families, going directly to hotel | Congestion, buses filling up |
-| Train (via Keikyu or Monorail) | Predictable timing, budget-conscious | Transfers and station walking |
-| Taxi | Large groups, heavy luggage, early morning / late night | Higher cost |
-
-Limousine buses from Haneda stop at Tokyo Disneyland, Tokyo DisneySea, Disney-owned hotels, and Official Hotels. Departure times and stops vary by day — check the official timetable before travel.
-
-### To Shin-Urayasu
-
-Limousine buses serve Shin-Urayasu Station and some bay-area hotels. Check in advance whether a bus stops near your specific hotel.
-
-### To Urayasu Station
-
-From Haneda, the basic route involves transferring to the Tozai Line within central Tokyo. Since Urayasu Station is on a different line from Maihama and Shin-Urayasu, guests staying near Urayasu Station should plan their route in advance.
-
-### Wheelchair / Stroller Tips
-
-- Confirm accessible routes (elevators, ramps) within the airport before proceeding
-- Limousine buses do not have step-free wheelchair boarding — confirm the policy in advance (see note below)
-- For train travel, check elevator locations at transfer stations
-
----
-
-## From Narita Airport
-
-Narita Airport is farther from the Urayasu area, so expect longer travel times. **Limousine buses reduce transfers; trains offer more predictable timing.**
-
-### To Maihama / Tokyo Disney Resort
-
-| Transport | Best for | Watch out for |
-|---|---|---|
-| Airport limousine bus | Fewer transfers, heavy luggage | Delays due to road conditions |
-| Train (Keisei Line, JR, etc.) | Predictable timing, comparing costs | Transfers depending on route |
-| Taxi | Groups, heavy luggage, early morning / late night | High cost |
-
-Limousine buses from Narita serve Tokyo Disneyland, Tokyo DisneySea, Disney-owned hotels, and Official Hotels.
-
-### To Shin-Urayasu
-
-Limousine buses also serve Shin-Urayasu Station and some bay-area hotels. Stop locations can change — check the official site before travel.
-
-### To Urayasu Station
-
-From Narita, reaching Urayasu Station involves combining Keisei Line / JR / Tokyo Metro Tozai Line. Use a transit app to check the current best route on the day of travel.
-
-### Wheelchair / Stroller Tips
-
-- The long distance from Narita makes minimizing transfers especially important
-- Avoid peak congestion times when traveling with a stroller or large luggage
-- For taxis, check in advance whether flat-rate or UD taxi options are available from Narita
-
----
-
-## From Tokyo Station
-
-The **JR Keiyo / Musashino Line** from Tokyo Station runs directly to Maihama Station and Shin-Urayasu Station.
-
-| Destination | Main Route | Notes |
-|---|---|---|
-| Maihama Station | Tokyo Station → JR Keiyo / Musashino Line | Gateway to Tokyo Disney Resort |
-| Shin-Urayasu Station | Tokyo Station → JR Keiyo / Musashino Line | Convenient for bay-area hotels |
-| Urayasu Station | Otemachi / Nihonbashi direction → Tokyo Metro Tozai Line | For hotels near Urayasu Station |
-
-### Note: The Keiyo Line Platform Is Far
-
-The Keiyo Line platform at Tokyo Station is located far from Shinkansen and other conventional lines. Even though the train ride itself is short, allow extra walking time to reach the platform.
-
-In particular, allow extra time if you are:
-
-- Transferring from the Shinkansen
-- Using a wheelchair or stroller
-- Carrying large suitcases
-- Visiting Tokyo Station for the first time
-
----
-
-## By Destination
-
-### Tokyo Disneyland and Tokyo DisneySea
-
-Both parks are reached via **Maihama Station**.
-
-- Tokyo Disneyland is within walking distance of Maihama Station
-- Tokyo DisneySea is most easily reached from Maihama Station via the **Disney Resort Line**. Walking is also possible, but first-time visitors, guests with luggage, and wheelchair users may find the Resort Line more convenient
-
-### Shin-Urayasu Hotels
-
-Many resort and long-stay hotels are in the Shin-Urayasu, Hinode, Akemi, and Takasu areas. Bay-side hotels can be far from Shin-Urayasu Station on foot, so check these points before your stay:
-
-| Check | Why |
-|---|---|
-| Hotel shuttle availability | May run to/from TDR and Shin-Urayasu Station |
-| Airport limousine bus stop | Direct airport transfer if the bus stops at your hotel |
-| Late-night transport | Taxi demand rises after park closing and in rain |
-| Wheelchair access | Confirm shuttle, room, and in-hotel accessibility |
-
-### Near Urayasu Station
-
-Urayasu Station (Tokyo Metro Tozai Line) is in the city center with easy access to restaurants and local shops. To reach TDR, you will need to combine train, bus, or taxi.
-
----
-
-## Hotel Access Quick Reference
-
-Limousine bus stop availability and shuttle services vary by hotel. Always check the official website of your hotel before booking.
-
-| Hotel Category | Main Area | Nearest | Airport Limousine Bus | To TDR |
-|---|---|---|---|---|
-| Disney-owned hotels | Maihama / TDR area | Maihama Sta. / Resort Line | Some buses stop (confirm) | Walk / Resort Line |
-| Official Hotels | Bayside | Bayside Station | Some buses stop (confirm) | Resort Line / shuttle |
-| Hotels near Shin-Urayasu Station | Shin-Urayasu | Shin-Urayasu Sta. | Varies by hotel | Shuttle / bus / taxi |
-| Shin-Urayasu bay-side hotels | Hinode / Akemi / Takasu | Shin-Urayasu Sta. | Varies by hotel | Shuttle / taxi |
-| Hotels near Urayasu Station | Around Urayasu Sta. | Urayasu Sta. | Limited | Train / bus / taxi |
-
----
-
-## When a Taxi Makes Sense
-
-Taxis cost more but are a practical option when traveling with heavy luggage, very early or late, in rain, or with a wheelchair.
-
-| Situation | Why a taxi helps |
-|---|---|
-| Small children | Avoids transfers and stairs |
-| Multiple large suitcases | Door-to-door service |
-| Early / late flights | When trains and buses run infrequently |
-| Rainy weather | Direct to hotel or destination |
-| Bay-side hotel in Shin-Urayasu | Some hotels are far from the station |
-| Wheelchair users | UD taxi / welfare taxi can be reserved |
-
-### Taxi Availability by Station
-
-| Station | Useful for | Watch out for |
-|---|---|---|
-| Maihama Station | After park closing, hotel transfers | Busy after closing and in rain |
-| Shin-Urayasu Station | Bay-area hotel transfers | May need to wait at night / in rain |
-| Urayasu Station | City-center hotels, after Tozai Line | Consider walking or bus depending on destination |
-
----
-
-## For Wheelchair Users, Stroller Users, and Guests with Heavy Luggage
-
-Travel time alone is not the only factor — transfer distances and elevator locations matter too.
-
-### Key Things to Check in Advance
-
-| Item | Why it matters |
-|---|---|
-| Elevator location at stations | Transfer times can vary greatly |
-| Walking distance at transfer stations | Some locations, like the Keiyo Line at Tokyo Station, involve long walks |
-| Limousine bus wheelchair policy | Wheelchair users cannot board in their chair |
-| Hotel shuttle accessibility | Confirm whether wheelchairs and strollers are accommodated |
-| UD taxi / welfare taxi | Availability and booking conditions are limited |
-
-### Note on Limousine Buses
-
-Airport limousine buses are not step-free vehicles. Folding wheelchairs can often be stored in the luggage compartment, but electric wheelchairs may not be accepted. Always confirm with the bus operator in advance.
-
-### Choosing Your Transport
-
-| Priority | Consider |
-|---|---|
-| Minimize transfers | Limousine bus / taxi |
-| Predictable timing | Train |
-| Go directly to hotel | Limousine bus (if hotel has a stop) / reserved taxi |
-| Keep costs down | Train (check elevator routes in advance) |
-| Travel in wheelchair | Reserve a UD taxi or welfare taxi in advance |
-
----
-
-## FAQ
-
-### Is it better to take the train or limousine bus from Haneda Airport to Maihama?
-
-The limousine bus is convenient for heavy luggage, families, or guests going directly to their hotel. The train is a good option if you want to avoid road congestion and have predictable travel times.
-
-### What is the easiest route from Narita Airport to Disney?
-
-The limousine bus minimizes transfers. If you want to compare costs and times, also check train routes. Since Narita is far away, plan with enough time to spare.
-
-### What should I watch out for when going from Tokyo Station to Maihama Station?
-
-The Keiyo Line platform at Tokyo Station is far from other lines. Allow extra time for walking within the station, not just the train ride itself.
-
-### What is the difference between Urayasu, Shin-Urayasu, and Maihama stations?
-
-Maihama Station (JR Keiyo Line) is the gateway to Tokyo Disney Resort. Shin-Urayasu Station (JR Keiyo Line) is the nearest station for bay-area hotels. Urayasu Station (Tokyo Metro Tozai Line) serves the city center area. These are on different lines and cannot be reached without transferring.
-
-### How do I get from a Shin-Urayasu hotel to Disney?
-
-Options include hotel shuttle, local bus, taxi, and train. Shuttles vary by hotel, so check the official hotel website before your stay.
-
-### Which transport is best for wheelchair users?
-
-The limousine bus or reserved taxi reduces transfers. The train works well for predictable timing. Note that limousine buses do not have step-free wheelchair boarding — confirm the policy in advance.
-
-### Which is best if I have a stroller or heavy luggage?
-
-The limousine bus is good for going directly from the airport to your hotel. The train is good for predictable timing. If transferring to the Keiyo Line at Tokyo Station, allow extra time for the long walk.
-
-### Can I easily get a taxi after Disney park closing?
-
-Taxi demand rises after park closing and on rainy days, so wait times may occur. Also consider hotel shuttles, local buses, and ride-hailing apps.
-
----
-
-## Summary
-
-From Haneda, Narita, and Tokyo Station, the most convenient transport depends on your luggage, whether you have children, wheelchair needs, and your hotel location. 
-
-First confirm whether your destination is **Maihama, Shin-Urayasu, or Urayasu**, then compare trains, limousine buses, and taxis:
-
-- **Want to go directly to your hotel** → Limousine bus (confirm if your hotel has a stop)
-- **Need predictable timing** → Train
-- **Early / late flights or heavy luggage** → Taxi is also an option
-
----
+<div class="access-journey">
+      <div style="background:#FFF4F0;border:0.5px solid #F6D8CD;border-radius:10px;padding:12px 14px;margin-bottom:20px;font-size:12px;color:#7A4334;line-height:1.7"><i class="ti ti-bulb" style="font-size:15px;color:#E05535"></i> A Disney trip is largely decided by <strong>which area you book your hotel in</strong>. First get a feel for the city from the map, then learn how to reach the parks, and finally check "how you'll get around if you stay in that area" — in that order.</div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 12px;padding-left:11px;border-left:4px solid #E05535">① First, get a feel for the city</h2>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-radius:12px;padding:10px 10px 6px;margin-bottom:8px">
+      <img src="/images/access-map-en.png" alt="Urayasu access map: Urayasu Station on the Tozai Line; Maihama and Shin-Urayasu Stations on the JR Keiyo Line; Tokyo Disneyland and DisneySea; the three hotel areas (Resort / Bayside / Riverside) with hotel counts; out-of-city stations (Kasai, Myoden, Kasai-Rinkai-Koen, Ichikawa-Shiohama); and local bus and airport limousine routes." style="width:100%;display:block;border-radius:8px">
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:10.5px;color:#475569;margin-bottom:8px;align-items:center">
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:22px;height:4px;background:#3D9AD1;border-radius:2px"></span>Tokyo Metro Tozai Line</span>
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:22px;height:4px;background:#D6494B;border-radius:2px"></span>JR Keiyo Line</span>
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:22px;height:0;border-top:3px solid #C6469B"></span>Disney Resort Line</span>
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:22px;height:0;border-top:2.5px dashed #7C7A70"></span>Local &amp; Osampo bus</span>
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:22px;height:4px;background:#7F77DD;border-radius:2px"></span>Limousine bus &amp; taxi</span>
+        <span style="display:flex;align-items:center;gap:5px"><span style="width:14px;height:10px;background:#EDE9DC;border:1px solid #D9D2BC;border-radius:2px"></span>Outside the city (Tokyo / Ichikawa)</span>
+      </div>
+      <div style="font-size:10.5px;color:#94A3B8;margin-bottom:24px"><i class="ti ti-info-circle" style="font-size:12px"></i> Positions are approximate. The Disney Resort Line is a 4-station loop monorail (the 2 park stations are omitted). From Urayasu Station and Motomachi you can reach the Maihama and Shin-Urayasu areas by local bus (dashed). The local bus from Shin-Urayasu Station runs via Sports Park and OLC Head Office to Maihama Station (it does not pass through Shinmachi). Airport limousine buses also serve Kasai Station (outside the city).</div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② From the airports and Tokyo Station to the parks</h2>
+      <div style="font-size:11px;color:#64748B;margin-bottom:12px">How to move on a day you head straight to the parks. If you arrive by rail, you can also check "the last leg from Maihama Station" here.</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
+          <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">Haneda &amp; Narita Airports → Parks</span>
+          <span style="background:#E6F1FB;color:#0C447C;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">Usually no transfers</span>
+        </div>
+        <div class="strip" style="margin-top:8px">
+          <span class="node"><i class="ti ti-plane-arrival" style="font-size:15px;color:#1A5C8A"></i>Haneda Airport</span>
+          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-bus"></i> Limousine bus</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">approx. 35–60 min · no transfer</span></span>
+          <span class="node" style="border-color:#1A5C8A"><i class="ti ti-castle" style="font-size:15px;color:#1A5C8A"></i>Parks (stops at both Land &amp; Sea)</span>
+        </div>
+        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> From Narita: direct limousine bus approx. 60–90 min　/　<i class="ti ti-car" style="font-size:12px"></i> Taxi: approx. 30–50 min from Haneda (flat airport fares available)</div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> By rail: from either airport, transfer to reach <strong>Maihama Station</strong> (Haneda approx. 50–70 min / Narita approx. 60–90 min). From Maihama, see the card below.</div>
+      </div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:24px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
+          <i class="ti ti-train" style="font-size:17px;color:#1A5C8A"></i>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">Tokyo Station → Maihama Station → Parks</span>
+          <span style="background:#E6F1FB;color:#0C447C;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">Rail travelers' standard</span>
+        </div>
+        <div class="strip" style="margin-top:8px">
+          <span class="node"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>Tokyo Station</span>
+          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR Keiyo / Musashino Line</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">approx. 15 min</span></span>
+          <span class="node" style="border-color:#1A5C8A"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>Maihama Station</span>
+        </div>
+        <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2851B"></i> The Keiyo Line platforms at Tokyo Station are <strong>a 10+ min walk</strong> from the Shinkansen and other lines. Allow extra time for the transfer.</div>
+        <div class="rowlab"><i class="ti ti-map-pin" style="font-size:15px;color:#1A5C8A"></i>From Maihama Station to each park</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
+            <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">To Tokyo Disneyland</div>
+            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> Walk approx. 10 min<br><i class="ti ti-train" style="color:#1A5C8A"></i> Resort Line (2-min walk to Resort Gateway Station) 1 stop<br><i class="ti ti-car" style="color:#1A5C8A"></i> Taxi a few min</div>
+          </div>
+          <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
+            <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">To Tokyo DisneySea</div>
+            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-train" style="color:#1A5C8A"></i> Resort Line (2-min walk to Resort Gateway Station) 10 min<br><i class="ti ti-walk" style="color:#1A5C8A"></i> Walk approx. 15–20 min<br><i class="ti ti-bus" style="color:#1A5C8A"></i> Local bus (get off at OLC Head Office or Tokyo DisneySea) approx. 10 min<br><i class="ti ti-car" style="color:#1A5C8A"></i> Taxi approx. 5 min</div>
+          </div>
+        </div>
+      </div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">③ Your area choice shapes the whole trip</h2>
+      <div style="font-size:11px;color:#64748B;margin-bottom:12px">The map's three colors are the three hotel areas. For each, here's how you move on "arrival day" and on "daily park trips."</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #E05535;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
+          <span style="width:12px;height:12px;border-radius:3px;background:#FBE0D4;border:1px solid #E05535"></span>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">Staying in the Resort area (Maihama · Chidori)</span>
+          <span style="background:#FCEEE9;color:#7A2A14;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">Parks first</span>
+        </div>
+        <div style="font-size:10.5px;color:#94A3B8;margin-bottom:4px">e.g. MiraCosta / Hilton Tokyo Bay / Maihama Eurasia — 17 hotels</div>
+        <div class="rowlab"><i class="ti ti-luggage" style="font-size:15px;color:#E05535"></i>Arrival day (Airport / Tokyo Sta. → Hotel)</div>
+        <div class="strip">
+          <span class="node"><i class="ti ti-plane-arrival" style="font-size:15px;color:#E05535"></i>Haneda Airport</span>
+          <span class="conn"><span class="mode" style="color:#C2421F"><i class="ti ti-bus"></i> Limousine bus</span><span class="lin"><span class="bar" style="background:#E05535"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E05535"></i></span><span class="time">approx. 35–60 min · no transfer</span></span>
+          <span class="node" style="border-color:#E05535"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#E05535"></i>Straight to your hotel</span>
+        </div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> From Tokyo Station: JR Keiyo Line approx. 15 min → Maihama Sta. → walk / hotel shuttle　/　Limousine bus also runs from Narita (approx. 60–90 min)</div>
+        <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2421F"></i> <strong>Hotels in the Chidori area (e.g. Maihama Eurasia) have no direct airport limousine bus.</strong> Take the limousine bus to a park, then move by shuttle bus, on foot, or by taxi (or take the JR to Maihama Station).</div>
+        <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#E05535"></i>Daily park trips (each morning &amp; evening)</div>
+        <div class="strip">
+          <span class="node"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#E05535"></i>Hotel</span>
+          <span class="conn"><span class="mode" style="color:#C2421F"><i class="ti ti-walk"></i> Walk / Resort Line / shuttle bus</span><span class="lin"><span class="bar" style="background:#E05535"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E05535"></i></span><span class="time">approx. 5–15 min</span></span>
+          <span class="node" style="border-color:#E05535"><i class="ti ti-castle" style="font-size:15px;color:#E05535"></i>Parks</span>
+        </div>
+        <div class="alt"><i class="ti ti-clock" style="font-size:12px"></i> Check each hotel's website for shuttle bus times and availability.</div>
+        <div style="font-size:10.5px;color:#7A4334;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> Good for: rope-drop at opening / minimizing travel with kids / aiming for Happy Entry</div>
+      </div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #0F8A74;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
+          <span style="width:12px;height:12px;border-radius:3px;background:#D8F0E6;border:1px solid #0F8A74"></span>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">Staying in the Bayside area (Shin-Urayasu Sta. front · Shinmachi)</span>
+          <span style="background:#E1F5EE;color:#085041;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">Space &amp; value</span>
+        </div>
+        <div style="font-size:10.5px;color:#94A3B8;margin-bottom:4px">e.g. Oriental Hotel (station-connected) / Hotel Emion Tokyo Bay / Hyatt Regency — 16 hotels</div>
+        <div class="rowlab"><i class="ti ti-luggage" style="font-size:15px;color:#0F8A74"></i>Arrival day (Airport / Tokyo Sta. → Hotel)</div>
+        <div class="strip">
+          <span class="node"><i class="ti ti-plane-arrival" style="font-size:15px;color:#0F8A74"></i>Haneda Airport</span>
+          <span class="conn"><span class="mode" style="color:#0F6E56"><i class="ti ti-bus"></i> Limousine bus</span><span class="lin"><span class="bar" style="background:#0F8A74"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#0F8A74"></i></span><span class="time">approx. 35–60 min</span></span>
+          <span class="node"><i class="ti ti-train" style="font-size:15px;color:#0F8A74"></i>Shin-Urayasu Sta. / some hotels</span>
+          <span class="conn"><span class="mode" style="color:#0F6E56"><i class="ti ti-bus"></i> Shuttle / local bus / taxi</span><span class="lin"><span class="bar" style="background:#0F8A74"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#0F8A74"></i></span><span class="time">approx. 5–15 min</span></span>
+          <span class="node" style="border-color:#0F8A74"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#0F8A74"></i>Hotel</span>
+        </div>
+        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>Some Shinmachi hotels have a direct airport limousine bus</strong> (e.g. Hyatt Regency Tokyo Bay). From Shin-Urayasu Sta., options include shuttle bus, taxi, and local bus.</div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> From Tokyo Station: JR Keiyo Line approx. 20 min → Shin-Urayasu Sta. Station-connected hotels keep you dry.</div>
+        <div class="alt"><i class="ti ti-clock" style="font-size:12px"></i> Check each hotel's website for shuttle bus times and availability.</div>
+        <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#0F8A74"></i>Daily park trips (each morning &amp; evening)</div>
+        <div class="strip">
+          <span class="node"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#0F8A74"></i>Hotel</span>
+          <span class="conn"><span class="mode" style="color:#0F6E56"><i class="ti ti-bus"></i> Shuttle bus</span><span class="lin"><span class="bar" style="background:#0F8A74"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#0F8A74"></i></span><span class="time">approx. 15–25 min</span></span>
+          <span class="node" style="border-color:#0F8A74"><i class="ti ti-castle" style="font-size:15px;color:#0F8A74"></i>Parks</span>
+        </div>
+        <div class="alt"><i class="ti ti-bus-stop" style="font-size:12px"></i> Local tip: take a local or Osampo bus, get off at "Sports Park" or "OLC Head Office," then walk toward DisneySea (check service times).</div>
+        <div style="font-size:10.5px;color:#085041;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> Good for: relaxed multi-night stays / larger rooms for groups &amp; families / days you don't visit the parks</div>
+      </div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #E8A020;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:10px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
+          <span style="width:12px;height:12px;border-radius:3px;background:#F8E6BE;border:1px solid #E8A020"></span>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">Staying in the Riverside area (around Urayasu Sta. · Motomachi)</span>
+          <span style="background:#FAEEDA;color:#854F0B;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">Lowest prices · old-town</span>
+        </div>
+        <div style="font-size:10.5px;color:#94A3B8;margin-bottom:4px">e.g. BAYHOTEL Urayasu Ekimae / Urayasu Sun Hotel / Henn na Hotel Maihama — 7 hotels</div>
+        <div class="rowlab"><i class="ti ti-luggage" style="font-size:15px;color:#E8A020"></i>Arrival day (Tokyo Sta. / central Tokyo → Hotel)</div>
+        <div class="strip">
+          <span class="node"><i class="ti ti-train" style="font-size:15px;color:#A9690B"></i>Otemachi / Nihombashi</span>
+          <span class="conn"><span class="mode" style="color:#854F0B"><i class="ti ti-train"></i> Tokyo Metro Tozai Line</span><span class="lin"><span class="bar" style="background:#E8A020"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E8A020"></i></span><span class="time">approx. 17–20 min</span></span>
+          <span class="node"><i class="ti ti-train" style="font-size:15px;color:#A9690B"></i>Urayasu Sta.</span>
+          <span class="conn"><span class="mode" style="color:#854F0B"><i class="ti ti-walk"></i> Walk, or bus / taxi</span><span class="lin"><span class="bar" style="background:#E8A020"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E8A020"></i></span><span class="time">Station area 1–5 min walk / Motomachi ~30 min walk</span></span>
+          <span class="node" style="border-color:#E8A020"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#A9690B"></i>Hotel</span>
+        </div>
+        <div class="alt"><i class="ti ti-map-pin" style="font-size:12px"></i> <strong>Hotels in Motomachi are about a 30-min walk from Urayasu Station.</strong> Given the distance, a local bus or taxi is recommended. <strong>You can also come from Maihama Station by bus or taxi (approx. 5–10 min).</strong></div>
+        <div class="alt"><i class="ti ti-plane" style="font-size:12px"></i> From the airports, about 40–70 min by rail with transfers. Airport limousine buses do not stop at Urayasu Station (the neighboring Kasai Station has them; hotels outside the city such as Kasai and Ichikawa are covered in a separate article).</div>
+        <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#E8A020"></i>Daily park trips (each morning &amp; evening)</div>
+        <div class="strip">
+          <span class="node"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#A9690B"></i>Hotel</span>
+          <span class="conn"><span class="mode" style="color:#854F0B"><i class="ti ti-bus"></i> Local bus / taxi</span><span class="lin"><span class="bar" style="background:#E8A020"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E8A020"></i></span><span class="time">approx. 15–25 min</span></span>
+          <span class="node" style="border-color:#E8A020"><i class="ti ti-castle" style="font-size:15px;color:#A9690B"></i>Parks</span>
+        </div>
+        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> From Urayasu Sta. and Motomachi, local buses reach both the Maihama and Shin-Urayasu areas (dashed routes on the map).</div>
+        <div style="font-size:10.5px;color:#854F0B;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> Good for: keeping lodging costs down / old-town izakaya &amp; local food at night / stays combined with central Tokyo</div>
+      </div>
+      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> Travel times are rough estimates (excluding transfers and waiting). Before publishing, confirm the latest details on each operator's and hotel's official website. Limousine bus stops and frequencies vary by day.</div>
+</div>
 
 ## Sources
 
-- <a href="https://www.limousinebus.co.jp/en/" target="_blank" rel="noopener">Tokyo Airport Transport (Limousine Bus)</a> — TDR area ⇔ Haneda Airport routes
-- <a href="https://www.limousinebus.co.jp/en/" target="_blank" rel="noopener">Tokyo Airport Transport</a> — Shin-Urayasu area ⇔ Haneda/Narita Airport routes
-- <a href="https://www.jreast.co.jp/en/" target="_blank" rel="noopener">JR East</a> — Station accessibility information
-- <a href="https://www.tokyometro.jp/lang_en/" target="_blank" rel="noopener">Tokyo Metro</a> — Urayasu Station accessibility
-- <a href="https://www.city.urayasu.lg.jp/fukushi/shogai/enjo/gaishutsu/1001249.html" target="_blank" rel="noopener">Urayasu City official website</a> — Welfare taxi services
-- Official hotel websites, taxi company websites
+- <a href="https://www.limousinebus.co.jp/en/" target="_blank" rel="noopener">Tokyo Airport Transportation (Airport Limousine Bus)</a>
+- <a href="https://www.jreast.co.jp/e/" target="_blank" rel="noopener">JR East</a>
+- <a href="https://www.tokyometro.jp/en/" target="_blank" rel="noopener">Tokyo Metro</a>
+- <a href="https://www.tokyodisneyresort.jp/en/" target="_blank" rel="noopener">Tokyo Disney Resort official site</a>
+- Official websites of each hotel and taxi company
 
----
+Last verified: July 5, 2026
 
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
-    <h3>Looking for the right hotel?</h3>
-    <p>Scene-based comparison guides for families, budget travelers, and access-focused guests, plus a full list of all 40 hotels in the area.</p>
+    <h3>Not sure which hotel to pick?</h3>
+    <p>Compare by scene — with kids, on a budget, or for access — plus a full list of all 40 hotels in the city.</p>
   </div>
-  <a class="tg-cross-btn" href="/en/travel-guide/hotels/">View Hotel Guide →</a>
+  <a class="tg-cross-btn" href="/en/travel-guide/hotels/">See the hotel guide →</a>
 </div>
