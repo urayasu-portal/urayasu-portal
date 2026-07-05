@@ -75,6 +75,10 @@
     .upload-ok{font-size:.78rem;color:#27ae60;margin-top:4px;display:none}
     .img-process-info{font-size:.75rem;color:#2c5f8a;margin-top:4px;display:none}
 
+    /* 定型パーツ挿入 */
+    .insert-btns-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+    .insert-btns-row select{width:auto;flex:1;min-width:170px}
+
     @media(max-width:480px){
       .app-header h1{font-size:1.15rem}
       .card{padding:16px}
@@ -242,6 +246,24 @@ draft: false
     </div>
     <div class="inline-img-list" id="inlineImgList"></div>
     <p class="hint">アップロード後、生成された &lt;img&gt; タグを本文テキストエリアの任意の位置に挿入できます。</p>
+  </div>
+
+  <!-- 定型パーツ挿入 -->
+  <div class="card">
+    <div class="card-title">🧩 定型パーツを本文に挿入</div>
+    <div class="insert-btns-row">
+      <button type="button" class="btn btn-ghost" onclick="insertShortcode('warn')">⚠️ 注意書き</button>
+      <button type="button" class="btn btn-ghost" onclick="insertShortcode('note')">📌 補足</button>
+      <button type="button" class="btn btn-ghost" onclick="insertMapShortcode()">🗺️ 地図</button>
+      <select id="internalLinkSelect" onchange="onInternalLinkSelect()">
+        <option value="">🔗 内部リンクを挿入...</option>
+        <option value="hotels-top">浦安・舞浜のホテルガイド</option>
+        <option value="hotels-access">ホテルのアクセス比較</option>
+        <option value="access-guide">空港・東京駅からのアクセスガイド</option>
+      </select>
+      <button type="button" class="btn btn-orange" onclick="insertHotelCTA()">🏨 ホテル予約CTA</button>
+    </div>
+    <p class="hint">カーソル位置に挿入されます。挿入後、本文テキストエリア内で位置を調整してください。</p>
   </div>
 
   <!-- ファイル名 -->
@@ -809,6 +831,31 @@ async function submitArticle() {
   } finally {
     btn.disabled = false;
   }
+}
+
+/* ── 定型パーツ挿入 ── */
+function insertShortcode(name) {
+  insertAtCursor(document.getElementById('content'), `\n{{< ${name} >}}\n\n{{< /${name} >}}\n`);
+}
+function insertMapShortcode() {
+  const q = prompt('地図に表示する検索キーワード・住所を入力してください（例：浦安市入船1-1-1）', '');
+  if (q === null) return;
+  insertAtCursor(document.getElementById('content'), `\n{{< map q="${q.replace(/"/g,'&quot;')}" >}}\n`);
+}
+const INTERNAL_LINKS = {
+  'hotels-top':    { href: '/travel-guide/hotels/',                        text: '浦安・舞浜のホテルガイド' },
+  'hotels-access': { href: '/travel-guide/hotels/access/',                 text: '浦安・舞浜エリア ホテルのアクセス比較' },
+  'access-guide':  { href: '/travel-guide/urayasu-maihama-access-guide/',  text: '羽田・成田空港・東京駅から浦安・舞浜への行き方ガイド' },
+};
+function onInternalLinkSelect() {
+  const sel = document.getElementById('internalLinkSelect');
+  const l = INTERNAL_LINKS[sel.value];
+  if (l) insertAtCursor(document.getElementById('content'), `<a href="${l.href}">${l.text}</a>`);
+  sel.value = '';
+}
+function insertHotelCTA() {
+  const tag = `\n<p style="text-align:center;margin:1.5em 0;"><a class="lg-book-btn book-rakuten" style="display:inline-block;max-width:280px;" href="/travel-guide/hotels/">🏨 浦安・舞浜のホテルを探す・予約する</a></p>\n`;
+  insertAtCursor(document.getElementById('content'), tag);
 }
 
 /* ── ユーティリティ ── */
