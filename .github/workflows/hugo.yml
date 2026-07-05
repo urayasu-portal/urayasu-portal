@@ -5,6 +5,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  # 予約投稿：毎朝 07:05 JST（= 22:05 UTC 前日）に再ビルドし、
+  # 公開日(date)が到来した未来日付記事を自動公開する。
+  schedule:
+    - cron: '5 22 * * *'
 
 permissions:
   contents: read
@@ -39,7 +43,9 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
-        run: hugo --minify --buildFuture --baseURL "https://urayasu-portal.com/"
+        # --buildFuture は付けない（未来日付=公開日の記事はその日まで非公開＝予約投稿）。
+        # ローカルプレビュー（hugo server -F）では従来どおり未来記事を確認できる。
+        run: hugo --minify --baseURL "https://urayasu-portal.com/"
 
       - name: Run Pagefind (search index)
         run: npx pagefind --site public
