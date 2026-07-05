@@ -72,6 +72,7 @@
     .inline-img-item .img-info{flex:1;min-width:160px}
     .item-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
     .upload-ok{font-size:.78rem;color:#27ae60;margin-top:4px;display:none}
+    .img-process-info{font-size:.75rem;color:#2c5f8a;margin-top:4px;display:none}
 
     @media(max-width:480px){
       .app-header h1{font-size:1.15rem}
@@ -169,6 +170,7 @@ draft: false
             <label>保存ファイル名（static/images/posts/ に保存）</label>
             <input type="text" id="thumbFilename" placeholder="burio.jpg" oninput="onThumbFilenameChange()">
             <p class="hint">英数字・ハイフン・アンダースコア＋拡張子（.jpg/.png/.webp）</p>
+            <div class="img-process-info" id="thumbProcessInfo"></div>
           </div>
         </div>
       </div>
@@ -220,6 +222,7 @@ draft: false
             <label>保存ファイル名（static/images/posts/ に保存）</label>
             <input type="text" id="bodyFilename" placeholder="burio.jpg">
             <p class="hint">英数字・ハイフン・アンダースコア＋拡張子（.jpg/.png/.webp）</p>
+            <div class="img-process-info" id="bodyProcessInfo"></div>
           </div>
         </div>
       </div>
@@ -268,6 +271,85 @@ const PRESETS = {
   'cat-open':  { thumb: '/images/categories/cat-open.svg',  body: '/images/categories/cat-open.png',  catimg: 'cat-open',  preview: `${BASE}/images/categories/cat-open.png` },
   'cat-close': { thumb: '/images/categories/cat-close.svg', body: '/images/categories/cat-close.png', catimg: 'cat-close', preview: `${BASE}/images/categories/cat-close.png` },
 };
+
+let thumbProcessedFile = null;
+let bodyProcessedFile  = null;
+
+/* ── 画像処理パイプライン（リサイズ・WebP変換・EXIF削除・自動リネーム） ── */
+async function processImage(file, role, seq) {
+  const ext = (file.name.split('.').pop() || '').toLowerCase();
+
+  if (ext === 'svg') {
+    return { file, skip:false, info: 'SVG（処理スキップ）', filename: buildAutoFilename(role, 'svg', seq) || sanitize(file.name) };
+  }
+
+  if (ext === 'gif' && await isAnimatedGif(file)) {
+    const proceed = confirm('アニメーションGIFが検出されました。変換すると静止画になってしまいます。\nそのままアップロードしますか？（キャンセルでこの画像の追加を中止します）');
+    if (!proceed) return { file, skip:true };
+    return { file, skip:false, info: 'アニメーションGIF（変換スキップ・そのままアップロード）', filename: buildAutoFilename(role, 'gif', seq) || sanitize(file.name) };
+  }
+
+  const origKB = file.size / 1024;
+  const bitmap = await loadImageBitmap(file);
+  const maxSide = 1200;
+  let width = bitmap.width, height = bitmap.height;
+  if (width > maxSide || height > maxSide) {
+    if (width >= height) { height = Math.round(height * maxSide / width); width = maxSide; }
+    else { width = Math.round(width * maxSide / height); height = maxSide; }
+  }
+  const canvas = document.createElement('canvas');
+  canvas.width = width; canvas.height = height;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0, width, height);
+
+  let quality = 0.82;
+  let blob = await canvasToWebp(canvas, quality);
+  let warn = '';
+  if (blob.size > 500 * 1024) {
+    blob = await canvasToWebp(canvas, 0.7);
+    if (blob.size > 500 * 1024) warn = '　⚠️ 変換後も500KB超です';
+  }
+  const webpFile = new File([blob], file.name.replace(/\.[^.]+$/, '') + '.webp', { type: 'image/webp' });
+  const filename = buildAutoFilename(role, 'webp', seq) || sanitize(webpFile.name);
+  return {
+    file: webpFile,
+    skip: false,
+    filename,
+    info: `元: ${formatKB(origKB)} → 変換後: ${formatKB(blob.size / 1024)} ／ EXIF削除済み${warn}`,
+  };
+}
+function loadImageBitmap(file) {
+  if (window.createImageBitmap) {
+    return createImageBitmap(file, { imageOrientation: 'from-image' }).catch(() => loadImageBitmapFallback(file));
+  }
+  return loadImageBitmapFallback(file);
+}
+function loadImageBitmapFallback(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload  = () => { resolve(img); URL.revokeObjectURL(url); };
+    img.onerror = reject;
+    img.src = url;
+  });
+}
+function canvasToWebp(canvas, quality) {
+  return new Promise(resolve => canvas.toBlob(resolve, 'image/webp', quality));
+}
+function formatKB(kb) { return kb >= 1024 ? (kb/1024).toFixed(1)+'MB' : Math.round(kb)+'KB'; }
+async function isAnimatedGif(file) {
+  const buf = new Uint8Array(await file.slice(0, 2_000_000).arrayBuffer());
+  let count = 0;
+  for (let i = 0; i < buf.length - 3; i++) {
+    if (buf[i]===0x21 && buf[i+1]===0xF9 && buf[i+2]===0x04) { count++; if (count > 1) return true; }
+  }
+  return false;
+}
+function buildAutoFilename(role, ext, seq) {
+  const {date, slug} = parseFrontmatter(document.getElementById('content').value);
+  if (!date || !slug) return null;
+  if (role === 'inline') return `${date}-${slug}-${String(seq).padStart(2,'0')}.${ext}`;
+  return `${date}-${slug}-${role}.${ext}`;
+}
 
 /* ── 初期化 ── */
 window.addEventListener('DOMContentLoaded', () => {
@@ -352,11 +434,16 @@ function onThumbPresetChange() {
 function onThumbFilenameChange() {
   updateBodySameInfo();
 }
-function thumbSelected(input) {
+async function thumbSelected(input) {
   const f = input.files[0]; if (!f) return;
-  showImgPreview(f, 'thumbThumb', 'thumbPreviewWrap');
-  if (!document.getElementById('thumbFilename').value)
-    document.getElementById('thumbFilename').value = sanitize(f.name);
+  const info = document.getElementById('thumbProcessInfo');
+  info.textContent = '⏳ 画像を処理中...'; info.style.display = 'block';
+  const result = await processImage(f, 'cover');
+  if (result.skip) { input.value = ''; info.style.display = 'none'; return; }
+  thumbProcessedFile = result.file;
+  showImgPreview(result.file, 'thumbThumb', 'thumbPreviewWrap');
+  document.getElementById('thumbFilename').value = result.filename;
+  info.textContent = result.info; info.style.display = 'block';
   updateBodySameInfo();
 }
 
@@ -380,11 +467,16 @@ function onBodyPresetChange() {
   if (p) { img.src = p.preview; img.style.display = 'block'; }
   else   { img.style.display = 'none'; }
 }
-function bodySelected(input) {
+async function bodySelected(input) {
   const f = input.files[0]; if (!f) return;
-  showImgPreview(f, 'bodyThumb', 'bodyPreviewWrap');
-  if (!document.getElementById('bodyFilename').value)
-    document.getElementById('bodyFilename').value = sanitize(f.name);
+  const info = document.getElementById('bodyProcessInfo');
+  info.textContent = '⏳ 画像を処理中...'; info.style.display = 'block';
+  const result = await processImage(f, 'body');
+  if (result.skip) { input.value = ''; info.style.display = 'none'; return; }
+  bodyProcessedFile = result.file;
+  showImgPreview(result.file, 'bodyThumb', 'bodyPreviewWrap');
+  document.getElementById('bodyFilename').value = result.filename;
+  info.textContent = result.info; info.style.display = 'block';
 }
 
 /* サムネイルと同じ → 説明文を更新 */
@@ -499,30 +591,34 @@ function inlineSelected(input) {
   Array.from(input.files).forEach(addInlineItem);
   input.value = '';
 }
-function addInlineItem(file) {
+async function addInlineItem(file) {
   const id = ++inlineCounter;
   const list = document.getElementById('inlineImgList');
   const item = document.createElement('div');
   item.className = 'inline-img-item'; item.id = `inlineItem${id}`;
+  item.innerHTML = `<div class="img-info">⏳ 画像を処理中...</div>`;
+  list.appendChild(item);
+
+  const result = await processImage(file, 'inline', id);
+  if (result.skip) { item.remove(); return; }
+
   const reader = new FileReader();
   reader.onload = e => {
     item.innerHTML = `
       <img class="img-thumb" src="${e.target.result}" alt="">
       <div class="img-info">
         <label>保存ファイル名</label>
-        <input type="text" id="inlineFn${id}" value="${sanitize(file.name)}" placeholder="image.jpg">
+        <input type="text" id="inlineFn${id}" value="${escHtml(result.filename)}" placeholder="image.webp">
+        <div class="img-process-info" style="display:block;">${escHtml(result.info)}</div>
         <div class="item-actions">
           <button class="btn btn-orange" id="inlineBtn${id}" onclick="uploadInline(${id})">⬆️ アップロードして本文に挿入</button>
           <button class="btn btn-ghost" onclick="document.getElementById('inlineItem${id}').remove()">✕</button>
         </div>
         <div class="upload-ok" id="inlineOk${id}"></div>
       </div>`;
-    item._file = file;
-    list.appendChild(item);
+    item._file = result.file;
   };
-  reader.readAsDataURL(file);
-  item._file = file;
-  list.appendChild(item);
+  reader.readAsDataURL(result.file);
 }
 async function uploadInline(id) {
   const pat  = localStorage.getItem('urayasu_gh_pat');
@@ -580,7 +676,7 @@ async function submitArticle() {
   try {
     // ① サムネイル画像アップロード
     if (document.getElementById('useThumb').checked && getRadio('thumbType')==='upload') {
-      const f  = document.getElementById('thumbFile').files[0];
+      const f  = thumbProcessedFile || document.getElementById('thumbFile').files[0];
       const tfn = document.getElementById('thumbFilename').value.trim();
       if (!f || !tfn) { showStatus('error','⚠️ サムネイル画像またはファイル名が未設定です'); btn.disabled=false; return; }
       if (!isValidImgFn(tfn)) { showStatus('error','⚠️ サムネイルのファイル名形式が正しくありません'); btn.disabled=false; return; }
@@ -589,7 +685,7 @@ async function submitArticle() {
     }
     // ② 冒頭画像アップロード（別ファイルの場合のみ）
     if (document.getElementById('useBody').checked && getRadio('bodyType')==='upload') {
-      const f  = document.getElementById('bodyFile').files[0];
+      const f  = bodyProcessedFile || document.getElementById('bodyFile').files[0];
       const bfn = document.getElementById('bodyFilename').value.trim();
       const tfn = document.getElementById('thumbFilename').value.trim();
       if (!f || !bfn) { showStatus('error','⚠️ 冒頭画像またはファイル名が未設定です'); btn.disabled=false; return; }
@@ -687,7 +783,9 @@ function resetImageSections() {
   document.getElementById('thumbFilename').value = '';
   document.getElementById('thumbPresetSelect').value = '';
   document.getElementById('thumbPresetPreview').style.display = 'none';
+  document.getElementById('thumbProcessInfo').style.display = 'none';
   document.querySelector('input[name="thumbType"][value="preset"]').checked = true;
+  thumbProcessedFile = null;
   onThumbTypeChange();
   // 冒頭画像
   document.getElementById('useBody').checked = false;
@@ -698,8 +796,10 @@ function resetImageSections() {
   document.getElementById('bodyFilename').value = '';
   document.getElementById('bodyPresetSelect').value = '';
   document.getElementById('bodyPresetPreview').style.display = 'none';
+  document.getElementById('bodyProcessInfo').style.display = 'none';
   document.getElementById('bodyTypeSame').checked = true;
   document.getElementById('bodySameInfo').style.display = 'none';
+  bodyProcessedFile = null;
   onBodyTypeChange();
 }
 </script>
