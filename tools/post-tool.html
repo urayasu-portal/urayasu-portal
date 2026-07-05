@@ -632,6 +632,8 @@ async function addInlineItem(file) {
       <div class="img-info">
         <label>保存ファイル名</label>
         <input type="text" id="inlineFn${id}" value="${escHtml(result.filename)}" placeholder="image.webp">
+        <label style="margin-top:6px;">alt（画像の説明）</label>
+        <input type="text" id="inlineAlt${id}" placeholder="例：店内の様子">
         <div class="img-process-info" style="display:block;">${escHtml(result.info)}</div>
         <div class="item-actions">
           <button class="btn btn-orange" id="inlineBtn${id}" onclick="uploadInline(${id})">⬆️ アップロードして本文に挿入</button>
@@ -654,9 +656,10 @@ async function uploadInline(id) {
   if (!isValidImgFn(fn)) { showStatus('error','⚠️ ファイル名形式が正しくありません（英数字＋拡張子）'); return; }
   btn.disabled = true; btn.textContent = '⏳...';
   try {
+    const alt  = (document.getElementById(`inlineAlt${id}`).value || '').trim();
     const b64  = await fileToBase64(item._file);
     const path = await uploadImage(pat, fn, b64);
-    const tag  = `\n<figure style="margin:1.5em 0;">\n  <img src="${path}" alt="" style="width:100%;border-radius:8px;">\n</figure>\n`;
+    const tag  = `\n<figure style="margin:1.5em 0;"><img src="${path}" alt="${escHtml(alt)}" loading="lazy" style="width:100%;border-radius:8px;"></figure>\n`;
     insertAtCursor(document.getElementById('content'), tag);
     ok.textContent = `✅ ${path}`; ok.style.display = 'block';
     btn.textContent = '✅ 挿入済み';
