@@ -653,6 +653,9 @@ async function uploadImage(pat, filename, b64) {
   const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
   const hdrs   = ghHeaders(pat);
   let sha; const c = await fetch(apiUrl,{headers:hdrs}); if(c.ok) sha=(await c.json()).sha;
+  if (sha && !confirm(`同名の画像ファイルが既に存在します（${filename}）。上書きしますか？`)) {
+    throw new Error('画像アップロードをキャンセルしました');
+  }
   const body = {message:`feat: 画像を追加 (${filename})`,content:b64,branch:BRANCH};
   if(sha) body.sha=sha;
   const r = await fetch(apiUrl,{method:'PUT',headers:hdrs,body:JSON.stringify(body)});
@@ -743,8 +746,12 @@ async function submitArticle() {
         btn.disabled = false; return;
       }
     }
+    // ② 上書き事故の防止
+    if (isUpdate && !confirm(`同名の記事が既に存在します（${fn}）。上書き更新しますか？`)) {
+      btn.disabled = false; return;
+    }
 
-    // ② サムネイル画像アップロード
+    // ③ サムネイル画像アップロード
     if (document.getElementById('useThumb').checked && getRadio('thumbType')==='upload') {
       const f  = thumbProcessedFile || document.getElementById('thumbFile').files[0];
       const tfn = document.getElementById('thumbFilename').value.trim();
@@ -753,7 +760,7 @@ async function submitArticle() {
       showStatus('loading','⏳ サムネイル画像をアップロード中...');
       await uploadImage(pat, tfn, await fileToBase64(f));
     }
-    // ③ 冒頭画像アップロード（別ファイルの場合のみ）
+    // ④ 冒頭画像アップロード（別ファイルの場合のみ）
     if (document.getElementById('useBody').checked && getRadio('bodyType')==='upload') {
       const f  = bodyProcessedFile || document.getElementById('bodyFile').files[0];
       const bfn = document.getElementById('bodyFilename').value.trim();
@@ -765,13 +772,13 @@ async function submitArticle() {
         await uploadImage(pat, bfn, await fileToBase64(f));
       }
     }
-    // ④ カバーブロックをフロントマターに適用
+    // ⑤ カバーブロックをフロントマターに適用
     const coverBlock = buildCoverBlock();
     if (coverBlock) {
       content = applyCoverBlock(content, coverBlock);
       document.getElementById('content').value = content;
     }
-    // ⑤ .md ファイルを投稿
+    // ⑥ .md ファイルを投稿
     showStatus('loading','⏳ 記事ファイルをGitHubに投稿しています...');
     const {title} = parseFrontmatter(content);
     const msg = title ? `feat: ${title}` : `feat: ${fn.replace('.md','')}を追加`;
