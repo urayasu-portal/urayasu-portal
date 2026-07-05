@@ -10,6 +10,8 @@ tags:
   - 浦安
   - オフィシャルホテル
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/grand-nikko-tokyo-bay.jpg"
 noDate: true
 ---
 
