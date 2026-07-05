@@ -9,6 +9,8 @@ tags:
   - ディズニー
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/hoshinoresorts-1955-tokyo-bay.jpg"
 noDate: true
 ---
 
