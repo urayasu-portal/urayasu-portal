@@ -9,6 +9,8 @@ tags:
   - ディズニー
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/flexstay-shin-urayasu.jpg"
 noDate: true
 ---
 
