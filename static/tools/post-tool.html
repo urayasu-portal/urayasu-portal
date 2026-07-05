@@ -721,7 +721,9 @@ function checkArticleQuality(content, isUpdate) {
   if (hasCheckDate && !hasSources) warns.push('checkDate があるのに frontmatter に sources: がありません');
 
   if (/<div\s+style=/.test(body)) warns.push('本文に <div style=...> が含まれています');
-  if (/<iframe/.test(body))       warns.push('本文に <iframe> が含まれています');
+  // iframe は Googleマップ埋め込み（google.com/maps・maps.google）を除外し、それ以外のみ warn
+  const nonMapIframe = (body.match(/<iframe[^>]*>/gi) || []).some(t => !/google\.com\/maps|maps\.google/i.test(t));
+  if (nonMapIframe) warns.push('本文に地図以外の <iframe> が含まれています');
 
   const plainLen = body.replace(/<[^>]+>/g,'').replace(/\s+/g,'').length;
   if (plainLen < 300) warns.push(`本文が${plainLen}字と短めです（まとめ記事への統合を検討してください）`);
