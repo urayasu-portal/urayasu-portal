@@ -664,7 +664,7 @@ async function uploadInline(id) {
     ok.textContent = `✅ ${path}`; ok.style.display = 'block';
     btn.textContent = '✅ 挿入済み';
   } catch(e) {
-    showStatus('error', `❌ ${e.message}`);
+    showStatus('error', `❌ ${escHtml(e.message)}`);
     btn.disabled = false; btn.textContent = '⬆️ アップロードして本文に挿入';
   }
 }
@@ -814,7 +814,8 @@ async function submitArticle() {
       const action = isUpdate?'更新':'新規投稿';
       const slug   = fn.replace(/^\d{8}-/,'').replace('.md','');
       showStatus('success',
-        `✅ ${action}しました！\n📄 <strong>${fn}</strong>\n` +
+        (title ? `📌 <strong>${escHtml(title)}</strong>\n` : '') +
+        `✅ ${action}しました！\n📄 <strong>${escHtml(fn)}</strong>\n` +
         `🔗 <a href="https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}" target="_blank">GitHubで確認</a>\n` +
         `🌐 ビルド完了後：<a href="https://urayasu-portal.com/posts/${slug}/" target="_blank">記事ページを開く</a>`
       );
@@ -827,10 +828,10 @@ async function submitArticle() {
     } else {
       const e = await res.json().catch(()=>({}));
       const msgs = {401:'❌ 認証エラー：トークンを確認してください',403:'❌ 権限エラー：Contents: Read and write 権限を確認してください',404:'❌ 404：リポジトリ名・権限を確認してください'};
-      showStatus('error', msgs[res.status] || `❌ エラー（${res.status}）：${e.message||''}`);
+      showStatus('error', msgs[res.status] || `❌ エラー（${res.status}）：${escHtml(e.message||'')}`);
     }
   } catch(e) {
-    showStatus('error',`❌ 通信エラー：${e.message}`);
+    showStatus('error',`❌ 通信エラー：${escHtml(e.message)}`);
   } finally {
     btn.disabled = false;
   }
