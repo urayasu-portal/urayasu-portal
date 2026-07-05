@@ -8,6 +8,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/four-stories-hotel.jpg"
 noDate: true
 ---
 

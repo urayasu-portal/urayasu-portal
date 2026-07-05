@@ -8,6 +8,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/sheraton-grande-tokyo-bay.jpg"
 noDate: true
 ---
 

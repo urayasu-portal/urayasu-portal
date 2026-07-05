@@ -10,6 +10,8 @@ tags:
   - Official Hotel
   - Disney
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/hilton-tokyo-bay.jpg"
 noDate: true
 ---
 

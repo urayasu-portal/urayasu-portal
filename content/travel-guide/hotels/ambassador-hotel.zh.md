@@ -9,6 +9,8 @@ tags:
   - 迪士尼
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/ambassador-hotel.jpg"
 noDate: true
 ---
 

@@ -9,6 +9,8 @@ tags:
   - 디즈니
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/toy-story-hotel.jpg"
 noDate: true
 ---
 

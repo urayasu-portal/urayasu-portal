@@ -9,6 +9,8 @@ tags:
   - 合作酒店
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/brighton-tokyo-bay.jpg"
 noDate: true
 ---
 

@@ -9,6 +9,8 @@ tags:
   - 공식 호텔
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/maihama-view-hotel.jpg"
 noDate: true
 ---
 

@@ -8,6 +8,8 @@ tags:
   - 酒店
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/maihama-eurasia.jpg"
 noDate: true
 ---
 

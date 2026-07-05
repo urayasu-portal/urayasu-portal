@@ -8,6 +8,8 @@ tags:
   - 호텔
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/maihama-eurasia.jpg"
 noDate: true
 ---
 

@@ -9,6 +9,8 @@ tags:
   - 官方酒店
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/maihama-hotel-first-resort.jpg"
 noDate: true
 ---
 
