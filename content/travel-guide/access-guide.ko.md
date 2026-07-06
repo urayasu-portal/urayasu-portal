@@ -1,5 +1,5 @@
 ---
-title: "우라야스·마이하마 가는 길 안내 (목적지별 이동 경로)"
+title: "도쿄 디즈니·우라야스 가는 길 | 공항·도쿄역에서 가는 경로"
 date: 2026-06-30T10:00:00+09:00
 lastmod: 2026-07-05
 slug: "urayasu-maihama-access-guide"

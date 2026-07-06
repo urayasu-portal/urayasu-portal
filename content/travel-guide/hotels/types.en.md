@@ -1,5 +1,5 @@
 ---
-title: "Disney, Official, Partner & Good Neighbor Hotels Explained | The 4 Tokyo Disney Resort Hotel Categories"
+title: "Tokyo Disney Resort Hotel Categories Explained | Disney, Official, Partner & Good Neighbor Hotels"
 date: 2026-06-30T10:00:00+09:00
 lastmod: 2026-06-30
 description: "Tokyo Disney Resort's hotels split into four categories: Disney Hotels (operated by the resort), Official Hotels, Partner Hotels, and Good Neighbor Hotels. We break down the real differences — early park entry (Happy Entry), in-hotel ticket purchase, free shuttles, baggage delivery — plus location and price, so you can pick the right category for your trip."
@@ -10,6 +10,13 @@ tags:
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
 tgNav: true
+faq:
+  - q: "What is the difference between Disney Hotels and Official Hotels?"
+    a: "Disney Hotels are operated by Tokyo Disney Resort itself and are the only category with Happy Entry (entry up to 15 minutes before opening). Official Hotels are approved hotels in the in-resort Bayside area: you reach the parks by the Disney Resort Line monorail or free shuttle and get free baggage delivery at Maihama Station, but no early entry."
+  - q: "What is Happy Entry at Tokyo Disney Resort?"
+    a: "A guests-only benefit that lets Disney Hotel guests enter the park up to 15 minutes before official opening. The eligible park and conditions vary by hotel and season, so confirm the latest details on the official Tokyo Disney Resort website before booking."
+  - q: "Do Partner Hotels have a free shuttle to the parks?"
+    a: "Yes. A dedicated shuttle that is free and needs no reservation reaches the parks in about 15 minutes. Partner Hotels are mostly in the Shin-Urayasu area; baggage delivery is paid."
 ---
 
 One of the first things that trips people up when booking is this: **what's the actual difference between a "Disney Hotel," an "Official Hotel," a "Partner Hotel," and a "Good Neighbor Hotel"?** The names sound similar, but the category decides real things — **whether you can enter the park early, how you get to the parks, whether your luggage is delivered for you, and roughly what you'll pay.**
@@ -141,7 +148,7 @@ With no official perks, this category shines when you want to **keep costs down,
 
 Split the decision first on "do I need early entry or not," then narrow by budget and location. Compare the actual hotels in each category on the [hotel guide top page](/en/travel-guide/hotels/) (with category filters) or the [hotel comparison map](/en/travel-guide/hotels/compare/).
 
-For choosing with kids, see [choosing a hotel for a family Disney trip](/en/travel-guide/hotels/kids/); for the cheapest options, see the [budget hotel comparison](/en/travel-guide/hotels/budget/).
+For choosing with kids, see [choosing a hotel for a family Disney trip](/en/travel-guide/hotels/kids/); for the cheapest options, see the [budget hotel comparison](/en/travel-guide/hotels/budget/). For a deeper look at the early-entry benefit itself, see [Happy Entry explained](/en/travel-guide/hotels/happy-entry/), and for how each category's buses actually run, the [free shuttle guide](/en/travel-guide/hotels/shuttle/).
 
 ---
 

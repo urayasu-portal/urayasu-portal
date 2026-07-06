@@ -1,5 +1,5 @@
 ---
-title: "How to Get to Urayasu & Maihama (Routes by Destination)"
+title: "How to Get to Tokyo Disney Resort & Urayasu | Routes from Airports & Tokyo Station"
 date: 2026-06-18T10:00:00+09:00
 lastmod: 2026-07-05
 slug: "urayasu-maihama-access-guide"

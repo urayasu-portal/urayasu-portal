@@ -1,5 +1,5 @@
 ---
-title: "Taxi Stands & Flat-Rate Airport Taxi Guide for Urayasu, Maihama & Shin-Urayasu"
+title: "Taxi Guide for Tokyo Disney Resort Area | Stands & Flat-Rate Airport Taxis (Urayasu & Maihama)"
 date: 2026-06-19T00:00:00+09:00
 lastmod: 2026-06-30
 slug: "urayasu-taxi-airport-flat-rate-guide"

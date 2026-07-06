@@ -1,5 +1,5 @@
 ---
-title: "前往浦安·舞滨的交通指南（按目的地分路线）"
+title: "东京迪士尼·浦安交通指南 | 从机场·东京站出发的路线"
 date: 2026-06-30T10:00:00+09:00
 lastmod: 2026-07-05
 slug: "urayasu-maihama-access-guide"

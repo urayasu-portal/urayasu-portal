@@ -1,5 +1,5 @@
 ---
-title: "Food & Souvenir Guide: Urayasu, Shin-Urayasu & Maihama | Lunch, Cafes & Gifts"
+title: "Where to Eat near Tokyo Disney Resort | Food & Souvenirs in Urayasu, Shin-Urayasu & Maihama"
 date: 2026-06-18T00:00:00+09:00
 lastmod: 2026-06-19
 slug: "urayasu-gourmet-souvenir-guide"
