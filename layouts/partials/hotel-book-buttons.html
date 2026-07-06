@@ -16,18 +16,31 @@
 {{- $agodaHref := "" }}
 {{- with $bk.agoda }}{{ $agodaHref = partial "tp-link.html" (dict "url" . "p" $tp.agodaP "campaign" $tp.agodaCampaign) }}{{ end }}
 
+{{- /* Trip.com: 英語施設名の検索URL。直接アフィリ（affiliate.tripcom の Allianceid/SID）が
+       設定済みならパラメータ付与、無ければ Travelpayouts tripP でラップ（それも未設定なら素URL）。
+       Trip.com はサイト直接提携が承認済みのため、Booking/Agoda 承認までの主収益導線として全非JA言語に表示。 */ -}}
+{{- $tc := site.Params.affiliate.tripcom | default dict }}
+{{- $tripHref := "" }}
+{{- with $cur2.name_en }}
+  {{- $tripHref = printf "https://www.trip.com/hotels/list?cityName=Tokyo&keyword=%s" (. | urlquery) }}
+  {{- if and $tc.allianceId $tc.sid }}
+    {{- $tripHref = printf "%s&Allianceid=%s&SID=%s" $tripHref $tc.allianceId $tc.sid }}
+  {{- else }}
+    {{- $tripHref = partial "tp-link.html" (dict "url" $tripHref "p" $tp.tripP "campaign" $tp.tripCampaign) }}
+  {{- end }}
+{{- end }}
+
 {{- if eq $lang "en" }}
   {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
+  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
   {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
 {{- else if or (eq $lang "zh") (eq $lang "zh-tw") }}
-  {{- with $cur2.name_en }}
-  {{- $tripHref := partial "tp-link.html" (dict "url" (printf "https://www.trip.com/hotels/list?cityName=Tokyo&keyword=%s" (. | urlquery)) "p" $tp.tripP "campaign" $tp.tripCampaign) }}
-  <a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>
-  {{- end }}
+  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
   {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
 {{- else if eq $lang "ko" }}
   {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
   {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
+  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
   {{- with $bk.expedia }}<a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener">Expedia</a>{{ end }}
 {{- else }}
   {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener">楽天トラベル</a>{{ end }}

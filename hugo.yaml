@@ -63,7 +63,13 @@ params:
   # marker・trs・該当プログラムのp値が揃うまでは素のURLのまま（誤計測防止）。
   # 表示先: Booking=EN/ZH/KO・Trip.com=ZH・Agoda=EN/KO（CSVのAgodaURL列があるホテルのみ）。
   affiliate:
-    valuecommercePid: ""
+    valuecommercePid: "892653746"
+    # Trip.com 直接アフィリエイト（サイト直申請・承認済み）。管理画面で生成したリンクの
+    # Allianceid / SID を転記すると、全言語（EN/ZH/KO/ZH-TW）の Trip.com ボタンがアフィリリンク化。
+    # 未設定のあいだは素URL（Travelpayouts tripP が設定されればそちらでラップ）。
+    tripcom:
+      allianceId: "D18374029"
+      sid: "322202616"
     travelpayouts:
       marker: ""
       trs: ""
