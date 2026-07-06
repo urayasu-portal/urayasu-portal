@@ -26,6 +26,7 @@ hotels:
     name_en: "Tokyo Disneyland Hotel"
     name_zh: "东京迪士尼乐园大饭店"
     name_ko: "도쿄디즈니랜드 호텔"
+    name_zh-tw: "東京迪士尼樂園大飯店"
   - slug: "miracosta"
     lat: 35.6269
     lng: 139.8881
@@ -44,6 +45,7 @@ hotels:
     name_en: "Tokyo DisneySea Hotel MiraCosta"
     name_zh: "东京迪士尼海洋观海景大饭店 米拉柯斯达"
     name_ko: "도쿄디즈니씨 호텔 미라코스타"
+    name_zh-tw: "東京迪士尼海洋觀海景大飯店 米拉柯斯達"
   - slug: "fantasy-springs-hotel"
     lat: 35.6289
     lng: 139.8764
@@ -61,6 +63,7 @@ hotels:
     name_en: "Tokyo DisneySea Fantasy Springs Hotel"
     name_zh: "东京迪士尼海洋梦幻泉乡大饭店"
     name_ko: "도쿄디즈니씨 판타지 스프링스 호텔"
+    name_zh-tw: "東京迪士尼海洋夢幻泉鄉大飯店"
   - slug: "ambassador-hotel"
     lat: 35.6334
     lng: 139.8878
@@ -78,6 +81,7 @@ hotels:
     name_en: "Disney Ambassador Hotel"
     name_zh: "迪士尼大使大饭店"
     name_ko: "디즈니 앰버서더 호텔"
+    name_zh-tw: "迪士尼大使大飯店"
   - slug: "toy-story-hotel"
     lat: 35.6259
     lng: 139.8746
@@ -96,6 +100,7 @@ hotels:
     name_en: "Tokyo Disney Resort Toy Story Hotel"
     name_zh: "东京迪士尼度假区玩具总动员饭店"
     name_ko: "도쿄디즈니리조트 토이 스토리 호텔"
+    name_zh-tw: "東京迪士尼度假區玩具總動員飯店"
   - slug: "celebration-wish"
     lat: 35.6388
     lng: 139.9305
@@ -114,6 +119,7 @@ hotels:
     name_en: "Tokyo Disney Celebration Hotel: Wish"
     name_zh: "东京迪士尼欢庆饭店：愿望"
     name_ko: "도쿄디즈니 셀러브레이션 호텔: 위시"
+    name_zh-tw: "東京迪士尼樂祥飯店：願望"
   - slug: "celebration-discover"
     lat: 35.6384
     lng: 139.9308
@@ -132,6 +138,7 @@ hotels:
     name_en: "Tokyo Disney Celebration Hotel: Discover"
     name_zh: "东京迪士尼欢庆饭店：探索"
     name_ko: "도쿄디즈니 셀러브레이션 호텔: 디스커버"
+    name_zh-tw: "東京迪士尼樂祥飯店：探索"
   - slug: "hotel-okura-tokyo-bay"
     lat: 35.6259
     lng: 139.8760
@@ -148,6 +155,7 @@ hotels:
     name_en: "Hotel Okura Tokyo Bay"
     name_zh: "东京湾大仓酒店"
     name_ko: "호텔 오쿠라 도쿄 베이"
+    name_zh-tw: "東京灣大倉飯店"
   - slug: "grand-nikko-tokyo-bay"
     lat: 35.6293
     lng: 139.8740
@@ -166,6 +174,7 @@ hotels:
     name_en: "Grand Nikko Tokyo Bay Maihama"
     name_zh: "东京湾舞滨格兰日航酒店"
     name_ko: "그랜드 니코 도쿄 베이 마이하마"
+    name_zh-tw: "東京灣舞濱格蘭日航飯店"
   - slug: "sheraton-grande-tokyo-bay"
     lat: 35.6257
     lng: 139.8782
@@ -187,6 +196,7 @@ hotels:
     name_en: "Sheraton Grande Tokyo Bay Hotel"
     name_zh: "东京湾喜来登大酒店"
     name_ko: "쉐라톤 그란데 도쿄 베이 호텔"
+    name_zh-tw: "東京灣喜來登大飯店"
   - slug: "hilton-tokyo-bay"
     lat: 35.6272
     lng: 139.8739
@@ -207,6 +217,7 @@ hotels:
     name_en: "Hilton Tokyo Bay"
     name_zh: "东京湾希尔顿酒店"
     name_ko: "힐튼 도쿄 베이"
+    name_zh-tw: "東京灣希爾頓飯店"
   - slug: "maihama-hotel-first-resort"
     lat: 35.6317
     lng: 139.8739
@@ -225,6 +236,7 @@ hotels:
     name_en: "Tokyo Bay Maihama Hotel First Resort"
     name_zh: "东京湾舞滨酒店 第一度假村"
     name_ko: "도쿄 베이 마이하마 호텔 퍼스트 리조트"
+    name_zh-tw: "東京灣舞濱飯店 第一度假村"
   - slug: "dreamgate-maihama"
     lat: 35.6357
     lng: 139.8850
@@ -243,6 +255,7 @@ hotels:
     name_en: "Hotel Dream Gate Maihama"
     name_zh: "舞滨梦想之门酒店"
     name_ko: "호텔 드림게이트 마이하마"
+    name_zh-tw: "舞濱夢想之門飯店"
   - slug: "maihama-view-hotel"
     lat: 35.6307
     lng: 139.8739
@@ -261,6 +274,7 @@ hotels:
     name_en: "Maihama View Hotel by HULIC"
     name_zh: "舞滨观景酒店 by HULIC"
     name_ko: "마이하마 뷰 호텔 by HULIC"
+    name_zh-tw: "舞濱觀景飯店 by HULIC"
   - slug: "royal-park-maihama"
     lat: 35.6267
     lng: 139.8972
@@ -278,6 +292,7 @@ hotels:
     name_en: "The Royal Park Hotel Maihama Resort Tokyo Bay"
     name_zh: "舞滨皇家花园酒店 东京湾"
     name_ko: "더 로열 파크 호텔 마이하마 리조트 도쿄 베이"
+    name_zh-tw: "舞濱皇家花園飯店 東京灣"
   - slug: "mystays-maihama"
     lat: 35.6328
     lng: 139.8924
@@ -293,6 +308,7 @@ hotels:
     name_en: "HOTEL MYSTAYS Maihama"
     name_zh: "舞滨MyStays酒店"
     name_ko: "호텔 마이스테이즈 마이하마"
+    name_zh-tw: "舞濱MyStays飯店"
   - slug: "maihama-eurasia"
     lat: 35.6272
     lng: 139.8957
@@ -311,6 +327,7 @@ hotels:
     name_en: "SPA & HOTEL Maihama Eurasia"
     name_zh: "SPA&HOTEL 舞滨欧亚"
     name_ko: "스파&호텔 마이하마 유라시아"
+    name_zh-tw: "SPA&HOTEL 舞濱歐亞"
   - slug: "eurasia-annex"
     lat: 35.6236
     lng: 139.9028
@@ -328,6 +345,7 @@ hotels:
     name_en: "Hotel Eurasia Maihama Annex"
     name_zh: "HOTEL 欧亚舞滨 ANNEX"
     name_ko: "호텔 유라시아 마이하마 ANNEX"
+    name_zh-tw: "HOTEL 歐亞舞濱 ANNEX"
   - slug: "hyatt-regency-tokyo-bay"
     lat: 35.6377
     lng: 139.9259
@@ -347,6 +365,7 @@ hotels:
     name_en: "Hyatt Regency Tokyo Bay"
     name_zh: "东京湾凯悦酒店"
     name_ko: "하얏트 리젠시 도쿄 베이"
+    name_zh-tw: "東京灣凱悅飯店"
   - slug: "comfort-suites-tokyo-bay"
     lat: 35.6386
     lng: 139.9274
@@ -364,6 +383,7 @@ hotels:
     name_en: "Comfort Suites Tokyo Bay"
     name_zh: "东京湾凯富套房酒店"
     name_ko: "컴포트 스위트 도쿄 베이"
+    name_zh-tw: "東京灣凱富套房飯店"
   - slug: "brighton-tokyo-bay"
     lat: 35.6500
     lng: 139.9116
@@ -381,6 +401,7 @@ hotels:
     name_en: "Urayasu Brighton Hotel Tokyo Bay"
     name_zh: "浦安布莱顿酒店 东京湾"
     name_ko: "우라야스 브라이튼 호텔 도쿄 베이"
+    name_zh-tw: "浦安布萊頓飯店 東京灣"
   - slug: "oriental-tokyo-bay"
     lat: 35.6509
     lng: 139.9127
@@ -400,6 +421,7 @@ hotels:
     name_en: "Oriental Hotel Tokyo Bay"
     name_zh: "东京湾东方酒店"
     name_ko: "오리엔탈 호텔 도쿄 베이"
+    name_zh-tw: "東京灣東方飯店"
   - slug: "emion-tokyo-bay"
     lat: 35.6477
     lng: 139.9203
@@ -420,6 +442,7 @@ hotels:
     name_en: "Hotel Emion Tokyo Bay"
     name_zh: "东京湾艾米恩酒店"
     name_ko: "호텔 에미온 도쿄 베이"
+    name_zh-tw: "東京灣艾米恩飯店"
   - slug: "mitsui-garden-prana"
     lat: 35.6361
     lng: 139.9243
@@ -440,6 +463,7 @@ hotels:
     name_en: "Mitsui Garden Hotel Prana Tokyo Bay"
     name_zh: "三井花园酒店 普拉纳东京湾"
     name_ko: "미쓰이 가든 호텔 프라나 도쿄 베이"
+    name_zh-tw: "三井花園飯店 普拉納東京灣"
   - slug: "hoshinoresorts-1955-tokyo-bay"
     lat: 35.6375
     lng: 139.9320
@@ -457,6 +481,7 @@ hotels:
     name_en: "1955 Tokyo Bay by Hoshino Resorts"
     name_zh: "星野集团 1955 东京湾"
     name_ko: "호시노 리조트 1955 도쿄 베이"
+    name_zh-tw: "星野集團 1955 東京灣"
   - slug: "lagent-tokyo-bay"
     lat: 35.6407
     lng: 139.9296
@@ -473,6 +498,7 @@ hotels:
     name_en: "La'gent Hotel Tokyo Bay"
     name_zh: "东京湾拉珍特酒店"
     name_ko: "라젠트 호텔 도쿄 베이"
+    name_zh-tw: "東京灣拉珍特飯店"
   - slug: "ibis-styles-tokyo-bay"
     lat: 35.6490
     lng: 139.9217
@@ -490,6 +516,7 @@ hotels:
     name_en: "ibis Styles Tokyo Bay"
     name_zh: "东京湾宜必思尚品酒店"
     name_ko: "이비스 스타일스 도쿄 베이"
+    name_zh-tw: "東京灣宜必思尚品飯店"
   - slug: "mystays-shin-urayasu"
     lat: 35.6440
     lng: 139.9156
@@ -505,6 +532,7 @@ hotels:
     name_en: "HOTEL MYSTAYS Shin Urayasu Conference Center"
     name_zh: "新浦安MyStays会议中心酒店"
     name_ko: "마이스테이즈 신우라야스 컨퍼런스 센터"
+    name_zh-tw: "新浦安MyStays會議中心飯店"
   - slug: "flexstay-shin-urayasu"
     lat: 35.642556
     lng: 139.904282
@@ -522,6 +550,7 @@ hotels:
     name_en: "FLEXSTAY INN Shin Urayasu"
     name_zh: "新浦安Flexstay Inn"
     name_ko: "플렉스테이 인 신우라야스"
+    name_zh-tw: "新浦安Flexstay Inn"
   - slug: "henna-hotel-maihama"
     lat: 35.6450
     lng: 139.8877
@@ -537,6 +566,7 @@ hotels:
     name_en: "Henn na Hotel Maihama Tokyo Bay"
     name_zh: "海茵娜酒店 舞滨东京湾"
     name_ko: "헨나 호텔 마이하마 도쿄 베이"
+    name_zh-tw: "海茵娜飯店 舞濱東京灣"
   - slug: "four-stories-hotel"
     lat: 35.650735
     lng: 139.891043
@@ -552,6 +582,7 @@ hotels:
     name_en: "Four Stories Hotel Maihama Tokyo Bay"
     name_zh: "舞滨四物语酒店 东京湾"
     name_ko: "포 스토리즈 호텔 마이하마 도쿄 베이"
+    name_zh-tw: "舞濱四物語飯店 東京灣"
   - slug: "hiyori-hotel-maihama"
     lat: 35.646345
     lng: 139.897186
@@ -568,6 +599,7 @@ hotels:
     name_en: "HIYORI HOTEL Maihama"
     name_zh: "舞滨日和酒店"
     name_ko: "히요리 호텔 마이하마"
+    name_zh-tw: "舞濱日和飯店"
   - slug: "viewfort-urayasu"
     lat: 35.66471
     lng: 139.892687
@@ -583,6 +615,7 @@ hotels:
     name_en: "Urayasu Beaufort Hotel"
     name_zh: "浦安景堡酒店"
     name_ko: "우라야스 뷰포트 호텔"
+    name_zh-tw: "浦安景堡飯店"
   - slug: "hotel-daigo-urayasu"
     lat: 35.666597
     lng: 139.895219
@@ -597,6 +630,7 @@ hotels:
     name_en: "Hotel Daigo"
     name_zh: "醍醐酒店"
     name_ko: "호텔 다이고"
+    name_zh-tw: "醍醐飯店"
   - slug: "bayhotel-urayasu"
     lat: 35.665547
     lng: 139.894629
@@ -613,6 +647,7 @@ hotels:
     name_en: "BAY HOTEL Urayasu-ekimae"
     name_zh: "浦安站前 BAY HOTEL"
     name_ko: "우라야스역앞 베이 호텔"
+    name_zh-tw: "浦安站前 BAY HOTEL"
   - slug: "urayasu-sun-hotel"
     lat: 35.665574
     lng: 139.890164
@@ -629,6 +664,7 @@ hotels:
     name_en: "Urayasu Sun Hotel"
     name_zh: "浦安阳光酒店"
     name_ko: "우라야스 선 호텔"
+    name_zh-tw: "浦安陽光飯店"
   - slug: "premium-monday-maihama-view-1"
     lat: 35.644359
     lng: 139.877470
@@ -645,6 +681,7 @@ hotels:
     name_en: "Premium hotel MONday Maihama View I"
     name_zh: "Premium hotel MONday 舞滨景观Ⅰ"
     name_ko: "Premium hotel MONday 마이하마 뷰Ⅰ"
+    name_zh-tw: "Premium hotel MONday 舞濱景觀Ⅰ"
   - slug: "hotel-seaside-edogawa"
     lat: 35.642820
     lng: 139.859376
@@ -660,6 +697,7 @@ hotels:
     name_en: "Hotel Seaside Edogawa"
     name_zh: "江户川海滨酒店"
     name_ko: "호텔 시사이드 에도가와"
+    name_zh-tw: "江戶川海濱飯店"
   - slug: "cvs-bay-hotel"
     lat: 35.666803
     lng: 139.923990
@@ -675,6 +713,7 @@ hotels:
     name_en: "CVS BAY HOTEL"
     name_zh: "CVS·BAY HOTEL"
     name_ko: "CVS·BAY HOTEL"
+    name_zh-tw: "CVS·BAY HOTEL"
   - slug: "hotel-ilfiore-kasai"
     lat: 35.662815
     lng: 139.874746
@@ -690,6 +729,7 @@ hotels:
     name_en: "Hotel Il Fiore Kasai"
     name_zh: "葛西菲奥雷酒店"
     name_ko: "호텔 일 피오레 가사이"
+    name_zh-tw: "葛西菲奧雷飯店"
   - slug: "hotel-ilfiore-kasai-annex"
     lat: 35.661294
     lng: 139.873346
@@ -705,6 +745,7 @@ hotels:
     name_en: "Hotel Il Fiore Kasai ANNEX"
     name_zh: "葛西菲奥雷酒店 ANNEX"
     name_ko: "호텔 일 피오레 가사이 ANNEX"
+    name_zh-tw: "葛西菲奧雷飯店 ANNEX"
   - slug: "hotel-lumiere-kasai"
     lat: 35.661161
     lng: 139.872502
@@ -720,6 +761,7 @@ hotels:
     name_en: "Hotel Lumiere Kasai"
     name_zh: "葛西卢米埃尔酒店"
     name_ko: "호텔 뤼미에르 가사이"
+    name_zh-tw: "葛西盧米埃爾飯店"
   - slug: "livemax-kasai-ekimae"
     lat: 35.660810
     lng: 139.873359
@@ -735,6 +777,7 @@ hotels:
     name_en: "HOTEL LiVEMAX Kasai-Ekimae"
     name_zh: "LiVEMAX葛西站前酒店"
     name_ko: "호텔 리브맥스 가사이역앞"
+    name_zh-tw: "LiVEMAX葛西站前飯店"
   - slug: "superhotel-myoden"
     lat: 35.691631
     lng: 139.926597
@@ -750,3 +793,24 @@ hotels:
     name_en: "Super Hotel Tozai Line Ichikawa-Myoden"
     name_zh: "超级酒店 东西线·市川·妙典站前"
     name_ko: "슈퍼호텔 도자이선·이치카와·묘덴역앞"
+    name_zh-tw: "超級飯店 東西線·市川·妙典站前"
+  - slug: "grand-monday-resort-maihama"
+    lat: 35.6278
+    lng: 139.8996
+    price_min: 19000
+    flags: [bath, pool, shuttle]
+    facilities:
+      - key: "bath"
+        note: "大浴場・サウナ"
+      - key: "pool"
+        note: "通年屋外ラグーンプール"
+      - key: "shuttle"
+    booking:
+      rakuten: "https://hb.afl.rakuten.co.jp/hgc/5555fa03.3f01cc2a.5555fa04.2c37c5e2/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F201723%2F201723.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
+      expedia: "https://www.expedia.co.jp/Hotel-Search?destination=GRAND%20MONday%20Resort%20Tokyo%20Bay%20Maihama"
+    name: "GRAND MONday Resort 東京ベイ舞浜"
+    address: "千葉県浦安市千鳥15-9"
+    name_en: "GRAND MONday Resort Tokyo Bay Maihama"
+    name_zh: "GRAND MONday Resort 東京ベイ舞浜"
+    name_ko: "GRAND MONday Resort 東京ベイ舞浜"
+    name_zh-tw: "GRAND MONday Resort 東京ベイ舞浜"

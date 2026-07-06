@@ -10,6 +10,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
     last_verified: "2026-06-29"
@@ -21,6 +23,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "17:00～23:00"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-8"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
     last_verified: "2026-06-29"
@@ -32,6 +36,8 @@ facilities:
     operator: "生活彩家"
     status: "closed"
     hours: "-"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ1F"
     last_verified: "2026-06-29"
     note: "閉店。hilton-lawson-24h にリニューアル（沿革記録用・現役表記には使わない）"
@@ -42,6 +48,8 @@ facilities:
     operator: "NewDays"
     status: "open"
     hours: "6:30～23:00"
+    lat: 35.636112
+    lng: 139.884384
     address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
     last_verified: "2026-06-29"
     note: "舞浜系ホテルの最寄外部コンビニ。dreamgateは館内直結 / 統合元リストNo.70"
@@ -52,6 +60,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.638699
+    lng: 139.882965
     address: "千葉県浦安市舞浜2-46-1"
     last_verified: "2026-06-29"
     note: "TDLホテル・フォーストーリーズの外部最寄24時間 / 統合元リストNo.43"
@@ -61,6 +71,8 @@ facilities:
     name_en: "MONA Shin-Urayasu"
     status: "open"
     hours: "店舗による（要確認）"
+    lat: 35.649063
+    lng: 139.913803
     address: "千葉県浦安市入船1 新浦安駅前"
     last_verified: "2026-06-29"
     note: "新浦安駅前の商業施設。新浦安エリア各ホテルの買い物先"
@@ -71,6 +83,8 @@ facilities:
     operator: "JR東日本"
     status: "open"
     hours: "店舗による（要確認）"
+    lat: 35.651039
+    lng: 139.911285
     address: "千葉県浦安市美浜1 新浦安駅直結"
     last_verified: "2026-06-29"
     note: "新浦安駅直結の商業施設"
@@ -81,6 +95,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.625957
+    lng: 139.894958
     address: "千葉県浦安市千鳥13-1"
     last_verified: "2026-06-29"
     note: "館内1F直結 / 統合元リストNo.22"
@@ -91,6 +107,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.637997
+    lng: 139.931976
     address: "千葉県浦安市日の出7-2-3"
     last_verified: "2026-06-29"
     note: "館内コンビニ / 統合元リストNo.7（celebration-discoverの最寄でもある）"
@@ -101,6 +119,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "7:00-24:00 ※11:00-15:00は休業"
+    lat: 35.647377
+    lng: 139.919174
     address: "千葉県浦安市日の出1丁目1-1"
     last_verified: "2026-06-29"
     note: "館内コンビニ / 統合元リストNo.62"
@@ -111,6 +131,8 @@ facilities:
     operator: "デイリーヤマザキ"
     status: "open"
     hours: "24時間営業"
+    lat: 35.626034
+    lng: 139.8992
     address: "千葉県浦安市千鳥12-7"
     last_verified: "2026-06-29"
     note: "舞浜ユーラシアの最寄外部（徒歩約10分） / 統合元リストNo.66"
@@ -121,6 +143,8 @@ facilities:
     operator: "西友"
     status: "open"
     hours: "24時間（食品1-2F。6F専門店は時間変動）"
+    lat: 35.665432
+    lng: 139.894836
     address: "千葉県浦安市北栄1-14-1"
     official_url: "https://www.seiyu.co.jp/shop/%E8%A5%BF%E5%8F%8B%E6%B5%A6%E5%AE%89%E5%BA%97/"
     last_verified: "2026-06-29"
@@ -131,6 +155,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.652733
+    lng: 139.892288
     address: "千葉県浦安市富士見1-2-18"
     last_verified: "2026-06-29"
   - id: "poi-002"
@@ -139,6 +165,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.651051
+    lng: 139.912766
     address: "千葉県浦安市美浜1-8-2"
     last_verified: "2026-06-29"
     note: "オリエンタルホテル東京ベイ 館内（浦安ブライトンホテルの最寄でもある）"
@@ -148,6 +176,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.664001
+    lng: 139.896027
     address: "千葉県浦安市猫実4-6-39"
     last_verified: "2026-06-29"
   - id: "poi-004"
@@ -156,6 +186,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.63686
+    lng: 139.892838
     address: "千葉県浦安市弁天3-2-97"
     last_verified: "2026-06-29"
   - id: "poi-005"
@@ -164,6 +196,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.641327
+    lng: 139.920609
     address: "千葉県浦安市明海4-2-3"
     last_verified: "2026-06-29"
   - id: "poi-006"
@@ -172,6 +206,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.635925
+    lng: 139.924515
     address: "千葉県浦安市明海6-2"
     last_verified: "2026-06-29"
     note: "三井ガーデンホテルプラナ東京ベイ 館内（ナチュラルローソン）"
@@ -181,6 +217,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.638119
+    lng: 139.927719
     address: "千葉県浦安市明海5-8-15"
     last_verified: "2026-06-29"
     note: "コンフォートスイーツ東京ベイ 館内（celebration-wishの最寄でもある）"
@@ -190,6 +228,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.663673
+    lng: 139.891769
     address: "千葉県浦安市猫実5-1-38"
     last_verified: "2026-06-29"
   - id: "poi-010"
@@ -198,6 +238,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.645016
+    lng: 139.887131
     address: "千葉県浦安市富士見3-23-5"
     last_verified: "2026-06-29"
   - id: "poi-011"
@@ -206,6 +248,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.665405
+    lng: 139.894608
     address: "千葉県浦安市北栄1-15-28"
     last_verified: "2026-06-29"
   - id: "poi-012"
@@ -214,6 +258,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.650253
+    lng: 139.890671
     address: "千葉県浦安市富士見1-14-34"
     last_verified: "2026-06-29"
   - id: "poi-013"
@@ -222,6 +268,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.647228
+    lng: 139.910858
     address: "千葉県浦安市入船2-3-2"
     last_verified: "2026-06-29"
   - id: "poi-014"
@@ -230,6 +278,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.648838
+    lng: 139.911865
     address: "千葉県浦安市入船1-6-1"
     last_verified: "2026-06-29"
   - id: "poi-015"
@@ -238,6 +288,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "07:00～22:00"
+    lat: 35.665558
+    lng: 139.892654
     address: "千葉県浦安市北栄1-13-1 東西線浦安駅構内"
     last_verified: "2026-06-29"
   - id: "poi-016"
@@ -246,6 +298,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.661541
+    lng: 139.900299
     address: "千葉県浦安市北栄4-21-2"
     last_verified: "2026-06-29"
   - id: "poi-017"
@@ -254,6 +308,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.664494
+    lng: 139.892426
     address: "千葉県浦安市猫実4-18-21"
     last_verified: "2026-06-29"
   - id: "poi-018"
@@ -262,6 +318,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.647457
+    lng: 139.889343
     address: "千葉県浦安市富士見4-10-30"
     last_verified: "2026-06-29"
   - id: "poi-019"
@@ -270,6 +328,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.641151
+    lng: 139.930267
     address: "千葉県浦安市日の出5-7-2"
     last_verified: "2026-06-29"
     note: "ラ・ジェント・ホテル東京ベイ 隣接（最寄）"
@@ -279,6 +339,8 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "07:30～22:00"
+    lat: 35.645916
+    lng: 139.906921
     address: "千葉県浦安市富岡2-1-1"
     last_verified: "2026-06-29"
   - id: "poi-024"
@@ -287,6 +349,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.658447
+    lng: 139.90506
     address: "千葉県浦安市海楽2-4-1"
     last_verified: "2026-06-29"
   - id: "poi-025"
@@ -295,6 +359,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.670788
+    lng: 139.894455
     address: "千葉県浦安市当代島3-4-1"
     last_verified: "2026-06-29"
   - id: "poi-026"
@@ -303,6 +369,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.643391
+    lng: 139.90538
     address: "千葉県浦安市今川4丁目1-1"
     last_verified: "2026-06-29"
   - id: "poi-027"
@@ -311,6 +379,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.664753
+    lng: 139.900528
     address: "千葉県浦安市北栄3-9-16"
     last_verified: "2026-06-29"
   - id: "poi-028"
@@ -319,6 +389,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.640732
+    lng: 139.901642
     address: "千葉県浦安市鉄鋼通り1-1-1"
     last_verified: "2026-06-29"
   - id: "poi-029"
@@ -327,6 +399,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.653164
+    lng: 139.898224
     address: "千葉県浦安市堀江6-1-45"
     last_verified: "2026-06-29"
   - id: "poi-030"
@@ -335,6 +409,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.642681
+    lng: 139.924133
     address: "千葉県浦安市明海5-1-1"
     last_verified: "2026-06-29"
   - id: "poi-031"
@@ -343,6 +419,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.647968
+    lng: 139.918381
     address: "千葉県浦安市入船4-9-1"
     last_verified: "2026-06-29"
   - id: "poi-032"
@@ -351,6 +429,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.637566
+    lng: 139.910934
     address: "千葉県浦安市高洲2-4-10"
     last_verified: "2026-06-29"
   - id: "poi-033"
@@ -359,6 +439,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.641434
+    lng: 139.893341
     address: "千葉県浦安市弁天4-21-1"
     last_verified: "2026-06-29"
   - id: "poi-034"
@@ -367,6 +449,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.666447
+    lng: 139.889908
     address: "千葉県浦安市当代島1-14-15"
     last_verified: "2026-06-29"
   - id: "poi-035"
@@ -375,6 +459,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.669632
+    lng: 139.894318
     address: "千葉県浦安市北栄2-16-12"
     last_verified: "2026-06-29"
   - id: "poi-036"
@@ -383,6 +469,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.664429
+    lng: 139.889481
     address: "千葉県浦安市猫実5丁目11-24"
     last_verified: "2026-06-29"
   - id: "poi-037"
@@ -391,6 +479,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.665474
+    lng: 139.897552
     address: "千葉県浦安市北栄1-4-22"
     last_verified: "2026-06-29"
   - id: "poi-038"
@@ -399,6 +489,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.657444
+    lng: 139.895706
     address: "千葉県浦安市堀江1丁目33-14"
     last_verified: "2026-06-29"
   - id: "poi-039"
@@ -407,6 +499,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.652393
+    lng: 139.911469
     address: "千葉県浦安市美浜1-7-1"
     last_verified: "2026-06-29"
   - id: "poi-040"
@@ -415,6 +509,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.653736
+    lng: 139.890274
     address: "千葉県浦安市富士見2丁目3-3"
     last_verified: "2026-06-29"
   - id: "poi-041"
@@ -423,6 +519,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.660984
+    lng: 139.900696
     address: "千葉県浦安市猫実2丁目14-22"
     last_verified: "2026-06-29"
   - id: "poi-042"
@@ -431,6 +529,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.645535
+    lng: 139.887939
     address: "千葉県浦安市富士見5丁目2-28"
     last_verified: "2026-06-29"
   - id: "poi-044"
@@ -439,6 +539,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.665382
+    lng: 139.893219
     address: "千葉県浦安市北栄1丁目16-17"
     last_verified: "2026-06-29"
   - id: "poi-045"
@@ -447,6 +549,8 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    lat: 35.648228
+    lng: 139.8927
     address: "千葉県浦安市富士見1丁目17-6"
     last_verified: "2026-06-29"
   - id: "poi-046"
@@ -455,6 +559,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.656773
+    lng: 139.891907
     address: "千葉県浦安市堀江3-27-15"
     last_verified: "2026-06-29"
   - id: "poi-047"
@@ -463,6 +569,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.665722
+    lng: 139.892502
     address: "千葉県浦安市当代島1-1-25 板徳ビル1F"
     last_verified: "2026-06-29"
   - id: "poi-048"
@@ -471,6 +579,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.666237
+    lng: 139.893677
     address: "千葉県浦安市北栄1丁目13番17号"
     last_verified: "2026-06-29"
   - id: "poi-049"
@@ -479,6 +589,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.647144
+    lng: 139.893661
     address: "千葉県浦安市東野3丁目4番11号"
     last_verified: "2026-06-29"
   - id: "poi-050"
@@ -487,6 +599,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "7:00-20:00"
+    lat: 35.671627
+    lng: 139.893219
     address: "千葉県浦安市当代島3丁目4-32"
     last_verified: "2026-06-29"
   - id: "poi-051"
@@ -495,6 +609,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.65118
+    lng: 139.894516
     address: "千葉県浦安市富士見1丁目5番1号"
     last_verified: "2026-06-29"
   - id: "poi-052"
@@ -503,6 +619,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.667351
+    lng: 139.895844
     address: "千葉県浦安市北栄2丁目4番11号"
     last_verified: "2026-06-29"
   - id: "poi-053"
@@ -511,6 +629,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.652927
+    lng: 139.898788
     address: "千葉県浦安市東野1-3-1"
     last_verified: "2026-06-29"
   - id: "poi-054"
@@ -519,6 +639,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.637115
+    lng: 139.898392
     address: "千葉県浦安市鉄鋼通り2-1-8"
     last_verified: "2026-06-29"
   - id: "poi-055"
@@ -527,6 +649,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.664665
+    lng: 139.90271
     address: "千葉県浦安市北栄4-28-11"
     last_verified: "2026-06-29"
   - id: "poi-056"
@@ -535,6 +659,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.653763
+    lng: 139.902878
     address: "千葉県浦安市海楽1-1-7"
     last_verified: "2026-06-29"
   - id: "poi-057"
@@ -543,6 +669,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.661415
+    lng: 139.9039
     address: "千葉県浦安市北栄4-17-47"
     last_verified: "2026-06-29"
   - id: "poi-058"
@@ -551,6 +679,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1丁目1番の1 1階6070"
     last_verified: "2026-06-29"
   - id: "poi-059"
@@ -559,6 +689,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.650169
+    lng: 139.913925
     address: "千葉県浦安市入船1丁目2番1号"
     last_verified: "2026-06-29"
   - id: "poi-060"
@@ -567,6 +699,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.651169
+    lng: 139.915375
     address: "千葉県浦安市入船6丁目1番2号"
     last_verified: "2026-06-29"
   - id: "poi-061"
@@ -575,6 +709,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    lat: 35.646507
+    lng: 139.920258
     address: "千葉県浦安市日の出1-3-1"
     last_verified: "2026-06-29"
   - id: "poi-063"
@@ -583,6 +719,8 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "7:00-24:00"
+    lat: 35.647377
+    lng: 139.919174
     address: "千葉県浦安市日の出1丁目1-1"
     last_verified: "2026-06-29"
     note: "エミオン東京ベイ サテライト店（emion-familymartの別店舗）"
@@ -592,6 +730,8 @@ facilities:
     operator: "ミニストップ"
     status: "open"
     hours: "24時間営業"
+    lat: 35.659546
+    lng: 139.890915
     address: "千葉県浦安市堀江4丁目36-50"
     last_verified: "2026-06-29"
   - id: "poi-065"
@@ -600,6 +740,8 @@ facilities:
     operator: "ミニストップ"
     status: "open"
     hours: "24時間営業"
+    lat: 35.659344
+    lng: 139.902145
     address: "千葉県浦安市猫実2丁目11-20"
     last_verified: "2026-06-29"
   - id: "poi-067"
@@ -608,6 +750,8 @@ facilities:
     operator: "デイリーヤマザキ"
     status: "open"
     hours: "24時間営業"
+    lat: 35.647606
+    lng: 139.888824
     address: "千葉県浦安市富士見3-11-1"
     last_verified: "2026-06-29"
   - id: "poi-068"
@@ -616,6 +760,8 @@ facilities:
     operator: "NewDays"
     status: "open"
     hours: "6:30～23:30"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1 新浦安駅2F 改札外"
     last_verified: "2026-06-29"
   - id: "poi-069"
@@ -624,6 +770,8 @@ facilities:
     operator: "NewDays"
     status: "open"
     hours: "平日 6:30～21:00／土曜 6:30～20:00／日祝 7:00～14:00"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1 新浦安駅2F 改札内コンコース"
     last_verified: "2026-06-29"
   - id: "poi-071"
@@ -632,6 +780,8 @@ facilities:
     operator: "NewDays"
     status: "open"
     hours: "平日・土曜 7:00～23:00／日祝 7:00～22:30"
+    lat: 35.636112
+    lng: 139.884384
     address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札内"
     last_verified: "2026-06-29"
   - id: "poi-072"
@@ -640,6 +790,8 @@ facilities:
     operator: "その他"
     status: "open"
     hours: "8:00～23:00"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-34 東京ベイ舞浜ホテル内"
     last_verified: "2026-06-29"
     note: "東京ベイ舞浜ホテル ファーストリゾート 館内売店"
@@ -649,6 +801,8 @@ facilities:
     operator: "イオン"
     status: "open"
     hours: "8:00～23:00"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1"
     last_verified: "2026-06-29"
   - id: "poi-074"
@@ -657,6 +811,8 @@ facilities:
     operator: "イオン"
     status: "open"
     hours: "9:00～22:00"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1"
     last_verified: "2026-06-29"
   - id: "poi-075"
@@ -665,6 +821,8 @@ facilities:
     operator: "ダイエー"
     status: "open"
     hours: "8:00～24:00"
+    lat: 35.663998
+    lng: 139.896484
     address: "千葉県浦安市北栄3-27-13"
     last_verified: "2026-06-29"
   - id: "poi-076"
@@ -673,6 +831,8 @@ facilities:
     operator: "サミット"
     status: "open"
     hours: "9:00～24:00"
+    lat: 35.667419
+    lng: 139.893417
     address: "千葉県浦安市北栄1-10-20"
     last_verified: "2026-06-29"
   - id: "poi-077"
@@ -681,6 +841,8 @@ facilities:
     operator: "サミット"
     status: "open"
     hours: "9:00～23:00"
+    lat: 35.643097
+    lng: 139.900177
     address: "千葉県浦安市富岡3-2-2"
     last_verified: "2026-06-29"
   - id: "poi-078"
@@ -689,6 +851,8 @@ facilities:
     operator: "ヤオコー"
     status: "open"
     hours: "9:00～21:45"
+    lat: 35.647724
+    lng: 139.893478
     address: "千葉県浦安市東野2-29-33"
     last_verified: "2026-06-29"
   - id: "poi-079"
@@ -697,6 +861,8 @@ facilities:
     operator: "ヤオコー"
     status: "open"
     hours: "9:00～21:30"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU内"
     last_verified: "2026-06-29"
   - id: "poi-080"
@@ -705,6 +871,8 @@ facilities:
     operator: "オーケー"
     status: "open"
     hours: "8:30～21:30"
+    lat: 35.652882
+    lng: 139.899323
     address: "千葉県浦安市東野1-2-33"
     last_verified: "2026-06-29"
   - id: "poi-081"
@@ -713,6 +881,8 @@ facilities:
     operator: "オーケー"
     status: "open"
     hours: "8:45～21:30"
+    lat: 35.636314
+    lng: 139.917923
     address: "千葉県浦安市高洲5-3-1"
     last_verified: "2026-06-29"
   - id: "poi-082"
@@ -721,6 +891,8 @@ facilities:
     operator: "マルエツ"
     status: "open"
     hours: "24時間営業 ※2Fは10:00～22:00"
+    lat: 35.652317
+    lng: 139.891922
     address: "千葉県浦安市富士見1-3-20"
     last_verified: "2026-06-29"
   - id: "poi-083"
@@ -729,6 +901,8 @@ facilities:
     operator: "ベルク"
     status: "open"
     hours: "9:00～24:00"
+    lat: 35.642681
+    lng: 139.925476
     address: "千葉県浦安市日の出5-1-28"
     last_verified: "2026-06-29"
   - id: "poi-084"
@@ -737,6 +911,8 @@ facilities:
     operator: "アール元気"
     status: "open"
     hours: "10:00～20:00"
+    lat: 35.647778
+    lng: 139.892868
     address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野1F"
     last_verified: "2026-06-29"
   - id: "poi-085"
@@ -745,6 +921,8 @@ facilities:
     operator: "業務スーパー"
     status: "open"
     hours: "9:00～21:00"
+    lat: 35.658936
+    lng: 139.90387
     address: "千葉県浦安市猫実1-21-38"
     last_verified: "2026-06-29"
   - id: "poi-086"
@@ -753,6 +931,8 @@ facilities:
     operator: "ワイズマート"
     status: "open"
     hours: "24時間営業"
+    lat: 35.666306
+    lng: 139.892731
     address: "千葉県浦安市当代島1-2-25"
     last_verified: "2026-06-29"
   - id: "poi-087"
@@ -761,6 +941,8 @@ facilities:
     operator: "ワイズマート"
     status: "open"
     hours: "月～土 10:00～20:00／日 9:00～20:00"
+    lat: 35.637661
+    lng: 139.911209
     address: "千葉県浦安市高洲2-3-12"
     last_verified: "2026-06-29"
   - id: "poi-088"
@@ -769,6 +951,8 @@ facilities:
     operator: "まいばすけっと"
     status: "open"
     hours: "7:00～24:00"
+    lat: 35.665184
+    lng: 139.894485
     address: "千葉県浦安市北栄1-16-30"
     last_verified: "2026-06-29"
   - id: "poi-089"
@@ -777,6 +961,8 @@ facilities:
     operator: "まいばすけっと"
     status: "open"
     hours: "7:00～23:00"
+    lat: 35.652393
+    lng: 139.911469
     address: "千葉県浦安市美浜1-7-7 エル・シティ新浦安七番館"
     last_verified: "2026-06-29"
   - id: "poi-090"
@@ -785,6 +971,8 @@ facilities:
     operator: "まいばすけっと"
     status: "open"
     hours: "8:00～23:00"
+    lat: 35.662159
+    lng: 139.895538
     address: "千葉県浦安市猫実3-24-12 ユナイテッド浦安"
     last_verified: "2026-06-29"
   - id: "poi-091"
@@ -793,6 +981,8 @@ facilities:
     operator: "まいばすけっと"
     status: "open"
     hours: "7:00～23:00"
+    lat: 35.668461
+    lng: 139.891586
     address: "千葉県浦安市当代島2-10-34"
     last_verified: "2026-06-29"
   - id: "poi-092"
@@ -801,6 +991,8 @@ facilities:
     operator: "成城石井"
     status: "open"
     hours: "10:00～22:00"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-093"
@@ -809,6 +1001,8 @@ facilities:
     operator: "成城石井"
     status: "open"
     hours: "10:00～22:30"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
     last_verified: "2026-06-29"
   - id: "poi-094"
@@ -817,6 +1011,8 @@ facilities:
     operator: "生活クラブ"
     status: "open"
     hours: "月～土 10:00～19:00"
+    lat: 35.648354
+    lng: 139.918839
     address: "千葉県浦安市入船4-9-7"
     last_verified: "2026-06-29"
   - id: "poi-095"
@@ -825,6 +1021,8 @@ facilities:
     operator: "アタック"
     status: "open"
     hours: "9:00～23:00"
+    lat: 35.656555
+    lng: 139.891785
     address: "千葉県浦安市堀江5-22-24"
     last_verified: "2026-06-29"
   - id: "poi-096"
@@ -833,6 +1031,8 @@ facilities:
     operator: "木田屋"
     status: "open"
     hours: "9:30～20:00"
+    lat: 35.664772
+    lng: 139.898911
     address: "千葉県浦安市北栄3-31-3"
     last_verified: "2026-06-29"
   - id: "poi-097"
@@ -841,6 +1041,8 @@ facilities:
     operator: "マインド"
     status: "open"
     hours: "8:30～19:30"
+    lat: 35.653358
+    lng: 139.897858
     address: "千葉県浦安市堀江6-1-41"
     last_verified: "2026-06-29"
   - id: "poi-098"
@@ -849,6 +1051,8 @@ facilities:
     operator: "ウエルシア"
     status: "open"
     hours: "9:00～23:00"
+    lat: 35.665897
+    lng: 139.892578
     address: "千葉県浦安市当代島1-1-23"
     last_verified: "2026-06-29"
   - id: "poi-099"
@@ -857,6 +1061,8 @@ facilities:
     operator: "ウエルシア"
     status: "open"
     hours: "9:00～23:00"
+    lat: 35.643097
+    lng: 139.900177
     address: "千葉県浦安市富岡3-2-2"
     last_verified: "2026-06-29"
   - id: "poi-100"
@@ -865,6 +1071,8 @@ facilities:
     operator: "ウエルシア"
     status: "open"
     hours: "平日 8:00～20:00／土日祝休業"
+    lat: 35.643864
+    lng: 139.93103
     address: "千葉県浦安市日の出6-8-1"
     last_verified: "2026-06-29"
   - id: "poi-101"
@@ -873,6 +1081,8 @@ facilities:
     operator: "コクミン"
     status: "open"
     hours: "平日 9:00～22:00／土 9:00～21:00／日祝 10:00～21:00"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安店1階"
     last_verified: "2026-06-29"
   - id: "poi-102"
@@ -881,6 +1091,8 @@ facilities:
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～24:00"
+    lat: 35.652039
+    lng: 139.90094
     address: "千葉県浦安市東野1-1-43"
     last_verified: "2026-06-29"
   - id: "poi-103"
@@ -889,6 +1101,8 @@ facilities:
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～23:00"
+    lat: 35.652393
+    lng: 139.911469
     address: "千葉県浦安市美浜1-7-1"
     last_verified: "2026-06-29"
   - id: "poi-104"
@@ -897,6 +1111,8 @@ facilities:
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～22:00"
+    lat: 35.665482
+    lng: 139.893265
     address: "千葉県浦安市北栄1-16-18"
     last_verified: "2026-06-29"
   - id: "poi-105"
@@ -905,6 +1121,8 @@ facilities:
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～22:00"
+    lat: 35.642681
+    lng: 139.925476
     address: "千葉県浦安市日の出5-1-28"
     last_verified: "2026-06-29"
   - id: "poi-106"
@@ -913,6 +1131,8 @@ facilities:
     operator: "ココカラファイン"
     status: "open"
     hours: "月～金 9:00～20:00／土 9:00～19:00／日祝 10:00～18:30"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安 B館2F"
     last_verified: "2026-06-29"
   - id: "poi-107"
@@ -921,6 +1141,8 @@ facilities:
     operator: "トモズ"
     status: "open"
     hours: "9:00～21:00"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-108"
@@ -929,6 +1151,8 @@ facilities:
     operator: "トモズ"
     status: "open"
     hours: "10:00～21:00"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
     last_verified: "2026-06-29"
   - id: "poi-109"
@@ -937,6 +1161,8 @@ facilities:
     operator: "くすりの福太郎"
     status: "open"
     hours: "10:00～21:00"
+    lat: 35.65778
+    lng: 139.896378
     address: "千葉県浦安市堀江1-33-1"
     last_verified: "2026-06-29"
   - id: "poi-110"
@@ -945,6 +1171,8 @@ facilities:
     operator: "くすりの福太郎"
     status: "open"
     hours: "平日 10:00～21:30／土日 10:00～21:00"
+    lat: 35.66695
+    lng: 139.893219
     address: "千葉県浦安市北栄1-11-20 吉田第一ビル1階"
     last_verified: "2026-06-29"
   - id: "poi-111"
@@ -953,6 +1181,8 @@ facilities:
     operator: "くすりの福太郎"
     status: "open"
     hours: "月～金 9:00～20:00／土 9:00～18:00／日祝休業"
+    lat: 35.665607
+    lng: 139.89505
     address: "千葉県浦安市北栄1-3-34 グランデュール峯崎1-1階"
     last_verified: "2026-06-29"
   - id: "poi-112"
@@ -961,6 +1191,8 @@ facilities:
     operator: "くすりの福太郎"
     status: "open"
     hours: "月～金 9:00～18:00／土 9:00～13:00／日祝休業"
+    lat: 35.670929
+    lng: 139.893967
     address: "千葉県浦安市当代島3-4-17"
     last_verified: "2026-06-29"
   - id: "poi-113"
@@ -969,6 +1201,8 @@ facilities:
     operator: "くすりの福太郎"
     status: "open"
     hours: "月火木金 10:00～13:00・14:00～19:00／土 9:00～14:00／水日祝休業"
+    lat: 35.665211
+    lng: 139.895309
     address: "千葉県浦安市北栄1丁目2番23号 かみ吉ビル1階"
     last_verified: "2026-06-29"
   - id: "poi-114"
@@ -977,6 +1211,8 @@ facilities:
     operator: "ヤックスドラッグ"
     status: "open"
     hours: "9:00～18:30／日祝休業"
+    lat: 35.647144
+    lng: 139.893661
     address: "千葉県浦安市東野3-4-11"
     last_verified: "2026-06-29"
   - id: "poi-115"
@@ -985,6 +1221,8 @@ facilities:
     operator: "個人・その他"
     status: "open"
     hours: "月～金 8:30～19:00／土 8:30～18:00／日祝休業"
+    lat: 35.652313
+    lng: 139.891541
     address: "千葉県浦安市富士見2-9-1"
     last_verified: "2026-06-29"
   - id: "poi-116"
@@ -993,6 +1231,8 @@ facilities:
     operator: "マクドナルド"
     status: "open"
     hours: "平日・土曜 6:00～24:00／休日 6:00～23:00"
+    lat: 35.665524
+    lng: 139.893463
     address: "千葉県浦安市北栄1-15-13"
     last_verified: "2026-06-29"
   - id: "poi-117"
@@ -1001,6 +1241,8 @@ facilities:
     operator: "マクドナルド"
     status: "open"
     hours: "7:00～24:00"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1"
     last_verified: "2026-06-29"
   - id: "poi-118"
@@ -1009,6 +1251,8 @@ facilities:
     operator: "マクドナルド"
     status: "open"
     hours: "店内 6:00～23:00／ドライブスルー 6:00～24:00"
+    lat: 35.651966
+    lng: 139.891663
     address: "千葉県浦安市富士見1-6-22"
     last_verified: "2026-06-29"
   - id: "poi-119"
@@ -1017,6 +1261,8 @@ facilities:
     operator: "マクドナルド"
     status: "open"
     hours: "9:30～21:00"
+    lat: 35.649158
+    lng: 139.895233
     address: "千葉県浦安市東野2-294-2"
     last_verified: "2026-06-29"
   - id: "poi-120"
@@ -1025,6 +1271,8 @@ facilities:
     operator: "マクドナルド"
     status: "planned"
     hours: "7:00～23:00 ※開業予定店舗、電話未確認"
+    lat: 35.64212
+    lng: 139.923386
     address: "千葉県浦安市明海5-1-35"
     last_verified: "2026-06-29"
   - id: "poi-121"
@@ -1033,6 +1281,8 @@ facilities:
     operator: "ケンタッキーフライドチキン"
     status: "open"
     hours: "10:00～22:00"
+    lat: 35.665291
+    lng: 139.893204
     address: "千葉県浦安市北栄1-16-16 折本ビル"
     last_verified: "2026-06-29"
   - id: "poi-122"
@@ -1041,6 +1291,8 @@ facilities:
     operator: "ケンタッキーフライドチキン"
     status: "open"
     hours: "9:00～21:00"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1"
     last_verified: "2026-06-29"
   - id: "poi-123"
@@ -1049,6 +1301,8 @@ facilities:
     operator: "モスバーガー"
     status: "open"
     hours: "8:00～22:00"
+    lat: 35.666241
+    lng: 139.893768
     address: "千葉県浦安市北栄1-12-13"
     last_verified: "2026-06-29"
   - id: "poi-124"
@@ -1057,6 +1311,8 @@ facilities:
     operator: "モスバーガー"
     status: "open"
     hours: "9:00～21:00 ※L.O.20:30"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-125"
@@ -1065,6 +1321,8 @@ facilities:
     operator: "バーガーキング"
     status: "open"
     hours: "9:00～22:00 ※要確認"
+    lat: 35.665016
+    lng: 139.893082
     address: "千葉県浦安市北栄1-17-17"
     last_verified: "2026-06-29"
   - id: "poi-126"
@@ -1073,6 +1331,8 @@ facilities:
     operator: "バーガーキング"
     status: "open"
     hours: "10:00～21:00 ※L.O.20:30"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-127"
@@ -1081,6 +1341,8 @@ facilities:
     operator: "ウェンディーズ・ファーストキッチン"
     status: "open"
     hours: "7:00～21:30 ※西友改装状況により要確認"
+    lat: 35.66581
+    lng: 139.893646
     address: "千葉県浦安市北栄1-13-25 西友パート2 1F"
     last_verified: "2026-06-29"
   - id: "poi-128"
@@ -1089,6 +1351,8 @@ facilities:
     operator: "サブウェイ"
     status: "open"
     hours: "8:00～21:00 ※L.O.30分前"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-129"
@@ -1097,6 +1361,8 @@ facilities:
     operator: "ミスタードーナツ"
     status: "open"
     hours: "9:00～21:00"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 ショッパーズプラザ新浦安"
     last_verified: "2026-06-29"
   - id: "poi-130"
@@ -1105,6 +1371,8 @@ facilities:
     operator: "はなまるうどん"
     status: "open"
     hours: "平日 7:00～22:45／土日祝 8:00～22:00"
+    lat: 35.665558
+    lng: 139.892654
     address: "千葉県浦安市北栄1-13-1 東京メトロ浦安駅構内"
     last_verified: "2026-06-29"
   - id: "poi-131"
@@ -1113,6 +1381,8 @@ facilities:
     operator: "はなまるうどん"
     status: "open"
     hours: "10:00～22:00"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-132"
@@ -1121,6 +1391,8 @@ facilities:
     operator: "はなまるうどん"
     status: "open"
     hours: "10:00～21:00 ※L.O.20:30"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1Fフードコート"
     last_verified: "2026-06-29"
   - id: "poi-133"
@@ -1129,6 +1401,8 @@ facilities:
     operator: "丸亀製麺"
     status: "open"
     hours: "11:00～22:00 ※L.O.閉店30分前"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
     last_verified: "2026-06-29"
   - id: "poi-134"
@@ -1137,6 +1411,8 @@ facilities:
     operator: "吉野家"
     status: "open"
     hours: "4:00～翌2:00"
+    lat: 35.665112
+    lng: 139.893066
     address: "千葉県浦安市北栄1-17-16"
     last_verified: "2026-06-29"
   - id: "poi-135"
@@ -1145,6 +1421,8 @@ facilities:
     operator: "吉野家"
     status: "open"
     hours: "10:00～22:00 ※L.O.21:30"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン浦安1Fフードコート"
     last_verified: "2026-06-29"
   - id: "poi-136"
@@ -1153,6 +1431,8 @@ facilities:
     operator: "すき家"
     status: "open"
     hours: "4:00～翌3:00 ※3:00～4:00休業"
+    lat: 35.664814
+    lng: 139.892456
     address: "千葉県浦安市猫実4-18-26 浦安サンライズビル1F"
     last_verified: "2026-06-29"
   - id: "poi-137"
@@ -1161,6 +1441,8 @@ facilities:
     operator: "すき家"
     status: "open"
     hours: "4:00～翌3:00 ※3:00～4:00休業"
+    lat: 35.655205
+    lng: 139.893875
     address: "千葉県浦安市堀江6-4-29 メゾン浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-138"
@@ -1169,6 +1451,8 @@ facilities:
     operator: "松屋"
     status: "open"
     hours: "24時間営業"
+    lat: 35.665279
+    lng: 139.894302
     address: "千葉県浦安市北栄1-15-5 RECS浦安駅前"
     last_verified: "2026-06-29"
   - id: "poi-139"
@@ -1177,6 +1461,8 @@ facilities:
     operator: "松屋"
     status: "open"
     hours: "24時間営業"
+    lat: 35.646214
+    lng: 139.887848
     address: "千葉県浦安市富士見3-16-9"
     last_verified: "2026-06-29"
   - id: "poi-140"
@@ -1185,6 +1471,8 @@ facilities:
     operator: "かつや"
     status: "open"
     hours: "10:00～23:00"
+    lat: 35.659607
+    lng: 139.90329
     address: "千葉県浦安市北栄4-2-12"
     last_verified: "2026-06-29"
   - id: "poi-141"
@@ -1193,6 +1481,8 @@ facilities:
     operator: "からあげの鉄人＆カミナリステーキ"
     status: "open"
     hours: "10:00～21:00 ※L.O.20:30"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-142"
@@ -1201,6 +1491,8 @@ facilities:
     operator: "サーティワンアイスクリーム"
     status: "open"
     hours: "11:00～21:00"
+    lat: 35.666241
+    lng: 139.893768
     address: "千葉県浦安市北栄1-12-13"
     last_verified: "2026-06-29"
   - id: "poi-143"
@@ -1209,6 +1501,8 @@ facilities:
     operator: "サーティワンアイスクリーム"
     status: "open"
     hours: "10:00～21:00"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安1F"
     last_verified: "2026-06-29"
   - id: "poi-144"
@@ -1217,6 +1511,8 @@ facilities:
     operator: "マクドナルド"
     status: "open"
     hours: "8:00～22:00"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F ザ・コートヤード"
     last_verified: "2026-06-29"
   - id: "poi-145"
@@ -1225,6 +1521,8 @@ facilities:
     operator: "ガスト"
     status: "open"
     hours: "7:00～翌2:00"
+    lat: 35.664562
+    lng: 139.895493
     address: "千葉県浦安市北栄1丁目1-9"
     last_verified: "2026-06-29"
   - id: "poi-146"
@@ -1233,6 +1531,8 @@ facilities:
     operator: "ジョナサン"
     status: "open"
     hours: "6:00～24:00"
+    lat: 35.652382
+    lng: 139.899826
     address: "千葉県浦安市東野1丁目3-12 ナツミ・ガーデン1階"
     last_verified: "2026-06-29"
   - id: "poi-147"
@@ -1241,6 +1541,8 @@ facilities:
     operator: "バーミヤン"
     status: "open"
     hours: "10:00～23:30"
+    lat: 35.643555
+    lng: 139.905167
     address: "千葉県浦安市今川4丁目13-2"
     last_verified: "2026-06-29"
   - id: "poi-148"
@@ -1249,6 +1551,8 @@ facilities:
     operator: "しゃぶ葉"
     status: "open"
     hours: "平日 11:00～23:00／土日祝 10:30～23:00"
+    lat: 35.647778
+    lng: 139.892868
     address: "千葉県浦安市東野3丁目4-1 アクロスプラザ浦安東野1階"
     last_verified: "2026-06-29"
   - id: "poi-149"
@@ -1257,6 +1561,8 @@ facilities:
     operator: "ロイヤルホスト"
     status: "open"
     hours: "月～金 9:00～23:00／土日祝 8:00～23:00"
+    lat: 35.669964
+    lng: 139.894394
     address: "千葉県浦安市北栄2-18-32"
     last_verified: "2026-06-29"
   - id: "poi-150"
@@ -1265,6 +1571,8 @@ facilities:
     operator: "ココス"
     status: "open"
     hours: "6:00～翌4:00"
+    lat: 35.659607
+    lng: 139.902832
     address: "千葉県浦安市猫実1-21-26"
     last_verified: "2026-06-29"
   - id: "poi-151"
@@ -1273,6 +1581,8 @@ facilities:
     operator: "ビッグボーイ"
     status: "open"
     hours: "10:00～翌2:00"
+    lat: 35.643097
+    lng: 139.900177
     address: "千葉県浦安市富岡3-2-1 2F"
     last_verified: "2026-06-29"
   - id: "poi-152"
@@ -1281,6 +1591,8 @@ facilities:
     operator: "ジョリーパスタ"
     status: "open"
     hours: "月～金 11:00～24:00／土日祝 10:00～24:00"
+    lat: 35.643097
+    lng: 139.900177
     address: "千葉県浦安市富岡3-2-1"
     last_verified: "2026-06-29"
   - id: "poi-153"
@@ -1289,6 +1601,8 @@ facilities:
     operator: "和食さと"
     status: "open"
     hours: "11:00～24:00"
+    lat: 35.660442
+    lng: 139.901535
     address: "千葉県浦安市猫実2丁目13-23"
     last_verified: "2026-06-29"
   - id: "poi-154"
@@ -1297,6 +1611,8 @@ facilities:
     operator: "とんでん"
     status: "open"
     hours: "11:00～23:30"
+    lat: 35.651943
+    lng: 139.901123
     address: "千葉県浦安市東野1-1-41"
     last_verified: "2026-06-29"
   - id: "poi-155"
@@ -1305,6 +1621,8 @@ facilities:
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:30～翌3:00"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安内"
     last_verified: "2026-06-29"
   - id: "poi-156"
@@ -1313,6 +1631,8 @@ facilities:
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:00～翌2:00"
+    lat: 35.665981
+    lng: 139.892609
     address: "千葉県浦安市当代島1-1-22 佃甚ビル2F"
     last_verified: "2026-06-29"
   - id: "poi-157"
@@ -1321,6 +1641,8 @@ facilities:
     operator: "サイゼリヤ"
     status: "open"
     hours: "7:00～23:00"
+    lat: 35.636112
+    lng: 139.884384
     address: "千葉県浦安市舞浜26-5 ホテルドリームゲート舞浜1F"
     last_verified: "2026-06-29"
   - id: "poi-158"
@@ -1329,6 +1651,8 @@ facilities:
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:00～23:00"
+    lat: 35.647778
+    lng: 139.892868
     address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野1F"
     last_verified: "2026-06-29"
   - id: "poi-159"
@@ -1337,6 +1661,8 @@ facilities:
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:00～22:00"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU 3F"
     last_verified: "2026-06-29"
   - id: "poi-160"
@@ -1345,6 +1671,8 @@ facilities:
     operator: "サイゼリヤ"
     status: "open"
     hours: "9:00～22:30"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F B’ウェイ"
     last_verified: "2026-06-29"
   - id: "poi-161"
@@ -1353,6 +1681,8 @@ facilities:
     operator: "すし銚子丸"
     status: "open"
     hours: "11:00～21:00目安"
+    lat: 35.661366
+    lng: 139.900101
     address: "千葉県浦安市猫実2-33-24"
     last_verified: "2026-06-29"
   - id: "poi-162"
@@ -1361,6 +1691,8 @@ facilities:
     operator: "はま寿司"
     status: "open"
     hours: "月～金 11:00～24:00／土日祝 10:00～24:00"
+    lat: 35.643097
+    lng: 139.900177
     address: "千葉県浦安市富岡3-2-1"
     last_verified: "2026-06-29"
   - id: "poi-163"
@@ -1369,6 +1701,8 @@ facilities:
     operator: "スシロー"
     status: "open"
     hours: "月～金 11:00～23:00／土日祝 10:30～23:00"
+    lat: 35.642681
+    lng: 139.925476
     address: "千葉県浦安市日の出5-1-28 フォルテ新浦安2F"
     last_verified: "2026-06-29"
   - id: "poi-164"
@@ -1377,6 +1711,8 @@ facilities:
     operator: "らあめん花月嵐"
     status: "open"
     hours: "11:00～23:00（L.O.22:15）"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安4F"
     last_verified: "2026-06-29"
   - id: "poi-165"
@@ -1385,6 +1721,8 @@ facilities:
     operator: "らあめん花月嵐"
     status: "open"
     hours: "11:00～要確認"
+    lat: 35.668987
+    lng: 139.893723
     address: "千葉県浦安市当代島2-5-1"
     last_verified: "2026-06-29"
   - id: "poi-166"
@@ -1393,6 +1731,8 @@ facilities:
     operator: "らぁ麺はやし田"
     status: "open"
     hours: "11:00～23:00（L.O.22:55）"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
     last_verified: "2026-06-29"
   - id: "poi-167"
@@ -1401,6 +1741,8 @@ facilities:
     operator: "日高屋"
     status: "open"
     hours: "曜日別変動あり ※概ね10:00～24:00前後"
+    lat: 35.665203
+    lng: 139.893051
     address: "千葉県浦安市北栄1-17-15"
     last_verified: "2026-06-29"
   - id: "poi-168"
@@ -1409,6 +1751,8 @@ facilities:
     operator: "たかし屋"
     status: "open"
     hours: "11:00～翌5:00"
+    lat: 35.665565
+    lng: 139.894089
     address: "千葉県浦安市北栄1-15-23"
     last_verified: "2026-06-29"
   - id: "poi-169"
@@ -1417,6 +1761,8 @@ facilities:
     operator: "おんごろや"
     status: "open"
     hours: "月火木金土日 17:30～23:45／水曜・第1第3火曜定休"
+    lat: 35.665043
+    lng: 139.889664
     address: "千葉県浦安市猫実5-12-12"
     last_verified: "2026-06-29"
   - id: "poi-170"
@@ -1425,6 +1771,8 @@ facilities:
     operator: "麺屋土竜"
     status: "open"
     hours: "平日 11:30～22:00／土日祝 11:00～22:00"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4F"
     last_verified: "2026-06-29"
   - id: "poi-171"
@@ -1433,6 +1781,8 @@ facilities:
     operator: "麺屋真星"
     status: "open"
     hours: "昼 11:00～14:10最終入店／夜 月～土 17:00～21:25最終入店、日祝 17:00～19:25最終入店"
+    lat: 35.670631
+    lng: 139.894714
     address: "千葉県浦安市北栄2-19-26"
     last_verified: "2026-06-29"
   - id: "poi-172"
@@ -1441,6 +1791,8 @@ facilities:
     operator: "揚州商人"
     status: "open"
     hours: "11:00～23:30（L.O.23:00）"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4F"
     last_verified: "2026-06-29"
   - id: "poi-173"
@@ -1449,6 +1801,8 @@ facilities:
     operator: "焼肉きんぐ"
     status: "open"
     hours: "平日 17:00～23:00／土日祝 11:00～23:00"
+    lat: 35.665146
+    lng: 139.891632
     address: "千葉県浦安市当代島1-17-4"
     last_verified: "2026-06-29"
   - id: "poi-174"
@@ -1457,6 +1811,8 @@ facilities:
     operator: "くいどん"
     status: "open"
     hours: "平日 11:00～15:00・17:00～22:00／土日祝 11:00～22:00"
+    lat: 35.647778
+    lng: 139.892868
     address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野2F"
     last_verified: "2026-06-29"
   - id: "poi-175"
@@ -1465,6 +1821,8 @@ facilities:
     operator: "牛角"
     status: "open"
     hours: "月火水木日 17:00～24:00／金土 17:00～翌2:00"
+    lat: 35.665184
+    lng: 139.894485
     address: "千葉県浦安市北栄1-16-30 浦安小徳ビル1F"
     last_verified: "2026-06-29"
   - id: "poi-176"
@@ -1473,6 +1831,8 @@ facilities:
     operator: "牛角"
     status: "open"
     hours: "11:30～24:00"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4F"
     last_verified: "2026-06-29"
   - id: "poi-177"
@@ -1481,6 +1841,8 @@ facilities:
     operator: "焼肉新羅"
     status: "open"
     hours: "11:00～15:00／17:00～24:00 ※日祝は夜23:00までの情報あり"
+    lat: 35.664478
+    lng: 139.895676
     address: "千葉県浦安市北栄1-1-7 ブランシェ1F"
     last_verified: "2026-06-29"
   - id: "poi-178"
@@ -1489,6 +1851,8 @@ facilities:
     operator: "焼肉新羅"
     status: "open"
     hours: "11:00～15:00／月～土 15:00～24:00、日 15:00～23:00"
+    lat: 35.640732
+    lng: 139.926575
     address: "千葉県浦安市明海5-6-8 ラフィネス新浦安ベイモールA"
     last_verified: "2026-06-29"
   - id: "poi-179"
@@ -1497,6 +1861,8 @@ facilities:
     operator: "焼肉新羅"
     status: "open"
     hours: "11:00～23:00（L.O.22:30）"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安4F"
     last_verified: "2026-06-29"
   - id: "poi-180"
@@ -1505,6 +1871,8 @@ facilities:
     operator: "焼肉トラジ"
     status: "open"
     hours: "ランチ 11:00～16:00／ディナー 16:00～22:30"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ3F"
     last_verified: "2026-06-29"
   - id: "poi-181"
@@ -1513,6 +1881,8 @@ facilities:
     operator: "南大門"
     status: "open"
     hours: "11:30～15:00／17:00～23:00"
+    lat: 35.665291
+    lng: 139.893021
     address: "千葉県浦安市北栄1-17-14 加納ビル2F"
     last_verified: "2026-06-29"
   - id: "poi-182"
@@ -1521,6 +1891,8 @@ facilities:
     operator: "ポポラマーマ"
     status: "open"
     hours: "11:00～22:30（L.O.22:00）"
+    lat: 35.666065
+    lng: 139.892853
     address: "千葉県浦安市北栄1-13-7 光雄マンション2階"
     last_verified: "2026-06-29"
   - id: "poi-183"
@@ -1529,6 +1901,8 @@ facilities:
     operator: "ポポラマーマ"
     status: "open"
     hours: "11:00～22:30（L.O.22:00）"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安2階"
     last_verified: "2026-06-29"
   - id: "poi-184"
@@ -1537,6 +1911,8 @@ facilities:
     operator: "ポポラマーマ"
     status: "open"
     hours: "11:00～22:00（L.O.21:00）"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU 3F"
     last_verified: "2026-06-29"
   - id: "poi-185"
@@ -1545,6 +1921,8 @@ facilities:
     operator: "VANSAN"
     status: "open"
     hours: "11:00～23:00"
+    lat: 35.663998
+    lng: 139.896484
     address: "千葉県浦安市北栄3-27-13"
     last_verified: "2026-06-29"
   - id: "poi-186"
@@ -1553,6 +1931,8 @@ facilities:
     operator: "VANSAN"
     status: "open"
     hours: "11:00～23:00"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4 イオン新浦安4F"
     last_verified: "2026-06-29"
   - id: "poi-187"
@@ -1561,6 +1941,8 @@ facilities:
     operator: "ABURI百貫"
     status: "open"
     hours: "11:00～23:00（L.O.22:00）"
+    lat: 35.649055
+    lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4階"
     last_verified: "2026-06-29"
   - id: "poi-188"
@@ -1569,6 +1951,8 @@ facilities:
     operator: "スターバックス"
     status: "open"
     hours: "月～金 07:00～22:00／土日祝 08:00～22:00"
+    lat: 35.665394
+    lng: 139.893875
     address: "千葉県浦安市北栄1-15-9 寿ビル"
     last_verified: "2026-06-29"
   - id: "poi-189"
@@ -1577,6 +1961,8 @@ facilities:
     operator: "スターバックス"
     status: "open"
     hours: "07:00～22:00"
+    lat: 35.665276
+    lng: 139.891998
     address: "千葉県浦安市当代島1-1-4 マーヴ浦安"
     last_verified: "2026-06-29"
   - id: "poi-190"
@@ -1585,6 +1971,8 @@ facilities:
     operator: "スターバックス"
     status: "open"
     hours: "10:00～21:00"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安"
     last_verified: "2026-06-29"
   - id: "poi-191"
@@ -1593,6 +1981,8 @@ facilities:
     operator: "スターバックス"
     status: "open"
     hours: "07:00～22:00"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安"
     last_verified: "2026-06-29"
   - id: "poi-192"
@@ -1601,6 +1991,8 @@ facilities:
     operator: "スターバックス"
     status: "open"
     hours: "07:00～22:00"
+    lat: 35.636112
+    lng: 139.884384
     address: "千葉県浦安市舞浜26-5 JR舞浜駅南口改札外"
     last_verified: "2026-06-29"
   - id: "poi-193"
@@ -1609,6 +2001,8 @@ facilities:
     operator: "スターバックス"
     status: "open"
     hours: "08:00～22:00"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F"
     last_verified: "2026-06-29"
   - id: "poi-194"
@@ -1617,6 +2011,8 @@ facilities:
     operator: "スターバックス"
     status: "open"
     hours: "月～金 10:00～22:00／土日祝 08:00～22:00"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F"
     last_verified: "2026-06-29"
   - id: "poi-195"
@@ -1625,6 +2021,8 @@ facilities:
     operator: "ドトール"
     status: "open"
     hours: "平日 06:45～21:45／土日祝 07:00～21:30"
+    lat: 35.66581
+    lng: 139.893646
     address: "千葉県浦安市北栄1-13-25 西友浦安店パート2館1F"
     last_verified: "2026-06-29"
   - id: "poi-196"
@@ -1633,6 +2031,8 @@ facilities:
     operator: "ドトール"
     status: "open"
     hours: "07:00～21:00"
+    lat: 35.64994
+    lng: 139.91272
     address: "千葉県浦安市入船1-1-1"
     last_verified: "2026-06-29"
   - id: "poi-197"
@@ -1641,6 +2041,8 @@ facilities:
     operator: "ドトール"
     status: "open"
     hours: "07:30～22:00"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安"
     last_verified: "2026-06-29"
   - id: "poi-198"
@@ -1649,6 +2051,8 @@ facilities:
     operator: "ドトール"
     status: "open"
     hours: "平日 07:30～17:00／土曜 07:30～15:00 ※第2土曜休業"
+    lat: 35.645916
+    lng: 139.906921
     address: "千葉県浦安市富岡2-1-1"
     last_verified: "2026-06-29"
   - id: "poi-199"
@@ -1657,6 +2061,8 @@ facilities:
     operator: "コメダ珈琲店"
     status: "open"
     hours: "06:30～22:30"
+    lat: 35.664791
+    lng: 139.89209
     address: "千葉県浦安市猫実5-18-16 2F"
     last_verified: "2026-06-29"
   - id: "poi-200"
@@ -1665,6 +2071,8 @@ facilities:
     operator: "コメダ珈琲店"
     status: "open"
     hours: "06:30～23:00"
+    lat: 35.648975
+    lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安B館2F"
     last_verified: "2026-06-29"
   - id: "poi-201"
@@ -1673,6 +2081,8 @@ facilities:
     operator: "タリーズコーヒー"
     status: "open"
     hours: "09:00～21:00"
+    lat: 35.643726
+    lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU 1F"
     last_verified: "2026-06-29"
   - id: "poi-202"
@@ -1681,6 +2091,8 @@ facilities:
     operator: "タリーズコーヒー"
     status: "open"
     hours: "08:00～22:00"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F ガーデンサイト"
     last_verified: "2026-06-29"
   - id: "poi-203"
@@ -1689,6 +2101,8 @@ facilities:
     operator: "BECK'S COFFEE SHOP"
     status: "open"
     hours: "07:00～22:00"
+    lat: 35.636112
+    lng: 139.884384
     address: "千葉県浦安市舞浜26-5 JR舞浜駅 改札外コンコース"
     last_verified: "2026-06-29"
   - id: "poi-204"
@@ -1697,6 +2111,8 @@ facilities:
     operator: "nana's green tea"
     status: "open"
     hours: "10:00～21:00目安"
+    lat: 35.631264
+    lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F"
     last_verified: "2026-06-29"
   - id: "seims-maihama"
@@ -1705,6 +2121,8 @@ facilities:
     operator: "ドラッグセイムス"
     status: "open"
     hours: "8:00-23:45（調剤は月-土10:00-14:00/15:00-19:00・日祝休）"
+    lat: 35.644321
+    lng: 139.888519
     address: "千葉県浦安市富士見5-7-40"
     official_url: "https://store.seims.co.jp/map/9849/"
     last_verified: "2026-06-29"
