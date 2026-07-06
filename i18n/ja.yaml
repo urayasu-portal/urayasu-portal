@@ -138,3 +138,17 @@
   translation: "特徴メモ"
 - id: hl_nameonly_note
   translation: "※ 印の施設は名称・エリア・カテゴリのみ掲載しています。"
+- id: list_tagged
+  translation: "{{ .name }}の記事"
+- id: list_latest
+  translation: "新着記事"
+- id: list_count
+  translation: "全{{ .count }}件"
+- id: pager_newer
+  translation: "新しい記事"
+- id: pager_older
+  translation: "古い記事"
+- id: tags_index_title
+  translation: "タグ一覧"
+- id: tags_index_desc
+  translation: "全 {{ .count }} 件のタグ。クリックすると関連記事の一覧に移動します。"

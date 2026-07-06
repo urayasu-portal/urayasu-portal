@@ -6,6 +6,7 @@
 {{- $isEN := eq .Lang "en" }}
 {{- $isZH := eq .Lang "zh" }}
 {{- $isKO := eq .Lang "ko" }}
+{{- $isZHTW := eq .Lang "zh-tw" }}
 {{- $lang := .Lang }}
 
 {{- /* slug → マップデータ のインデックス構築 */}}
@@ -31,19 +32,19 @@
       {{- $cat := "other" }}
       {{- $catLabel := .category }}
       {{- if eq .category "ディズニーホテル" }}{{- $cat = "disney" }}
-        {{- if $isEN }}{{ $catLabel = "Disney Hotel" }}{{ else if $isZH }}{{ $catLabel = "迪士尼饭店" }}{{ else if $isKO }}{{ $catLabel = "디즈니 호텔" }}{{ end }}
+        {{- if $isEN }}{{ $catLabel = "Disney Hotel" }}{{ else if $isZH }}{{ $catLabel = "迪士尼饭店" }}{{ else if $isKO }}{{ $catLabel = "디즈니 호텔" }}{{ else if $isZHTW }}{{ $catLabel = "迪士尼飯店" }}{{ end }}
       {{- else if eq .category "オフィシャルホテル" }}{{- $cat = "official" }}
-        {{- if $isEN }}{{ $catLabel = "Official Hotel" }}{{ else if $isZH }}{{ $catLabel = "官方饭店" }}{{ else if $isKO }}{{ $catLabel = "공식 호텔" }}{{ end }}
+        {{- if $isEN }}{{ $catLabel = "Official Hotel" }}{{ else if $isZH }}{{ $catLabel = "官方饭店" }}{{ else if $isKO }}{{ $catLabel = "공식 호텔" }}{{ else if $isZHTW }}{{ $catLabel = "官方飯店" }}{{ end }}
       {{- else if eq .category "パートナーホテル" }}{{- $cat = "partner" }}
-        {{- if $isEN }}{{ $catLabel = "Partner Hotel" }}{{ else if $isZH }}{{ $catLabel = "合作饭店" }}{{ else if $isKO }}{{ $catLabel = "파트너 호텔" }}{{ end }}
+        {{- if $isEN }}{{ $catLabel = "Partner Hotel" }}{{ else if $isZH }}{{ $catLabel = "合作饭店" }}{{ else if $isKO }}{{ $catLabel = "파트너 호텔" }}{{ else if $isZHTW }}{{ $catLabel = "合作飯店" }}{{ end }}
       {{- else if eq .category "グッドネイバーホテル" }}{{- $cat = "goodneighbor" }}
-        {{- if $isEN }}{{ $catLabel = "Good Neighbor Hotel" }}{{ else if $isZH }}{{ $catLabel = "好邻居饭店" }}{{ else if $isKO }}{{ $catLabel = "굿네이버 호텔" }}{{ end }}
+        {{- if $isEN }}{{ $catLabel = "Good Neighbor Hotel" }}{{ else if $isZH }}{{ $catLabel = "好邻居饭店" }}{{ else if $isKO }}{{ $catLabel = "굿네이버 호텔" }}{{ else if $isZHTW }}{{ $catLabel = "好鄰居飯店" }}{{ end }}
       {{- else if eq .category "その他のホテル" }}
-        {{- if $isEN }}{{ $catLabel = "Other Hotel" }}{{ else if $isZH }}{{ $catLabel = "其他饭店" }}{{ else if $isKO }}{{ $catLabel = "기타 호텔" }}{{ end }}
+        {{- if $isEN }}{{ $catLabel = "Other Hotel" }}{{ else if $isZH }}{{ $catLabel = "其他饭店" }}{{ else if $isKO }}{{ $catLabel = "기타 호텔" }}{{ else if $isZHTW }}{{ $catLabel = "其他飯店" }}{{ end }}
       {{- end }}
       {{- $grp := $cat }}
       {{- $url := printf "/travel-guide/hotels/%s/" .slug }}
-      {{- if $isEN }}{{ $url = printf "/en/travel-guide/hotels/%s/" .slug }}{{ else if $isZH }}{{ $url = printf "/zh/travel-guide/hotels/%s/" .slug }}{{ else if $isKO }}{{ $url = printf "/ko/travel-guide/hotels/%s/" .slug }}{{ end }}
+      {{- if $isEN }}{{ $url = printf "/en/travel-guide/hotels/%s/" .slug }}{{ else if $isZH }}{{ $url = printf "/zh/travel-guide/hotels/%s/" .slug }}{{ else if $isKO }}{{ $url = printf "/ko/travel-guide/hotels/%s/" .slug }}{{ else if $isZHTW }}{{ $url = printf "/zh-tw/travel-guide/hotels/%s/" .slug }}{{ end }}
       {{- $hname := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang) | default .name_en) }}
       {{- $hfeat := cond (eq $lang "ja") .feature (index . (printf "feature_%s" $lang) | default .feature_en) }}
       {{- $entry := dict
@@ -70,65 +71,67 @@
 {{- /* ── ヒーロー ─────────────────────────────── */}}
 <div class="tg-hotels-hero" style="margin-bottom:24px">
   <div class="tg-hotels-eyebrows">
-    <span class="tg-hotels-eyebrow is-solid"><i class="ti ti-map-2" aria-hidden="true"></i> {{ if $isEN }}Comparison Map{{ else if $isZH }}比较地图{{ else if $isKO }}비교 지도{{ else }}比較マップ{{ end }}</span>
-    <span class="tg-hotels-eyebrow">{{ if $isEN }}Maihama / Shin-Urayasu / Urayasu{{ else if $isZH }}舞滨·浦安·新浦安地区{{ else if $isKO }}마이하마·우라야스·신우라야스 지역{{ else }}舞浜・新浦安・浦安エリア{{ end }}</span>
+    <span class="tg-hotels-eyebrow is-solid"><i class="ti ti-map-2" aria-hidden="true"></i> {{ if $isEN }}Comparison Map{{ else if $isZH }}比较地图{{ else if $isKO }}비교 지도{{ else if $isZHTW }}比較地圖{{ else }}比較マップ{{ end }}</span>
+    <span class="tg-hotels-eyebrow">{{ if $isEN }}Maihama / Shin-Urayasu / Urayasu{{ else if $isZH }}舞滨·浦安·新浦安地区{{ else if $isKO }}마이하마·우라야스·신우라야스 지역{{ else if $isZHTW }}舞濱·浦安·新浦安地區{{ else }}舞浜・新浦安・浦安エリア{{ end }}</span>
   </div>
-  <h1 class="tg-hotels-title">{{ if $isEN }}Hotel Comparison Map{{ else if $isZH }}酒店比较地图{{ else if $isKO }}호텔 비교 지도{{ else }}ホテル比較マップ{{ end }}</h1>
+  <h1 class="tg-hotels-title">{{ if $isEN }}Hotel Comparison Map{{ else if $isZH }}酒店比较地图{{ else if $isKO }}호텔 비교 지도{{ else if $isZHTW }}飯店比較地圖{{ else }}ホテル比較マップ{{ end }}</h1>
   {{- if $isEN }}
   <p class="tg-hotels-lead">Of all <strong>{{ $total }}</strong> hotels in the area, the <strong>{{ len $hotelData }}</strong> with detailed data are shown together on a map and list. Filter by area, facilities and price and both the list and the map update at once.</p>
   {{- else if $isZH }}
   <p class="tg-hotels-lead">全 <strong>{{ $total }}</strong> 家酒店中，拥有详细数据的 <strong>{{ len $hotelData }}</strong> 家已同步显示在地图与列表上。按区域、设施、价位筛选，列表与地图同步更新。</p>
   {{- else if $isKO }}
   <p class="tg-hotels-lead">전체 <strong>{{ $total }}</strong>곳 중 상세 데이터가 있는 <strong>{{ len $hotelData }}</strong>곳을 지도와 목록에서 동시에 확인할 수 있습니다. 지역·시설·가격으로 검색하면 목록과 지도가 동시에 갱신됩니다.</p>
+  {{- else if $isZHTW }}
+  <p class="tg-hotels-lead">全 <strong>{{ $total }}</strong> 家飯店中，擁有詳細資料的 <strong>{{ len $hotelData }}</strong> 家已同步顯示在地圖與列表上。依區域、設施、價位篩選，列表與地圖同步更新。</p>
   {{- else }}
   <p class="tg-hotels-lead">全 <strong>{{ $total }}</strong> 軒のうち、詳細データのある <strong>{{ len $hotelData }}</strong> 軒をマップと一覧で同時確認。エリア・設備・価格で絞り込むとリストとマップが同時に更新されます。</p>
   {{- end }}
   <div style="margin-top:10px">
-    <a href="{{ "/travel-guide/hotels/" | absLangURL }}" class="hcm-back-link"><i class="ti ti-arrow-left" aria-hidden="true"></i> {{ if $isEN }}Back to the hotel guide{{ else if $isZH }}返回酒店指南{{ else if $isKO }}호텔 가이드로 돌아가기{{ else }}ホテル一覧（シーン別ガイド）に戻る{{ end }}</a>
+    <a href="{{ "/travel-guide/hotels/" | absLangURL }}" class="hcm-back-link"><i class="ti ti-arrow-left" aria-hidden="true"></i> {{ if $isEN }}Back to the hotel guide{{ else if $isZH }}返回酒店指南{{ else if $isKO }}호텔 가이드로 돌아가기{{ else if $isZHTW }}返回飯店指南{{ else }}ホテル一覧（シーン別ガイド）に戻る{{ end }}</a>
   </div>
 </div>
 
 {{- /* ── フィルターコントロール ─────────────────── */}}
 <div class="hcm-controls" id="hcm-controls">
   <div class="hcm-sort-row">
-    <label for="hcm-sort" class="hcm-filter-label">{{ if $isEN }}Sort{{ else if $isZH }}排序{{ else if $isKO }}정렬{{ else }}並び替え{{ end }}</label>
+    <label for="hcm-sort" class="hcm-filter-label">{{ if $isEN }}Sort{{ else if $isZH }}排序{{ else if $isKO }}정렬{{ else if $isZHTW }}排序{{ else }}並び替え{{ end }}</label>
     <select class="hcm-sort" id="hcm-sort" onchange="hcmSortChange(this.value)">
-      <option value="default">{{ if $isEN }}By area (default){{ else if $isZH }}按区域（默认）{{ else if $isKO }}지역순(기본){{ else }}エリア順（デフォルト）{{ end }}</option>
-      <option value="price-asc">{{ if $isEN }}Price: low to high{{ else if $isZH }}价格从低到高{{ else if $isKO }}가격 낮은순{{ else }}価格が安い順{{ end }}</option>
-      <option value="price-desc">{{ if $isEN }}Price: high to low{{ else if $isZH }}价格从高到低{{ else if $isKO }}가격 높은순{{ else }}価格が高い順{{ end }}</option>
-      <option value="name">{{ if $isEN }}Hotel name (A–Z){{ else if $isZH }}酒店名称（字母顺序）{{ else if $isKO }}호텔 이름순{{ else }}ホテル名順（50音）{{ end }}</option>
+      <option value="default">{{ if $isEN }}By area (default){{ else if $isZH }}按区域（默认）{{ else if $isKO }}지역순(기본){{ else if $isZHTW }}依區域（預設）{{ else }}エリア順（デフォルト）{{ end }}</option>
+      <option value="price-asc">{{ if $isEN }}Price: low to high{{ else if $isZH }}价格从低到高{{ else if $isKO }}가격 낮은순{{ else if $isZHTW }}價格從低到高{{ else }}価格が安い順{{ end }}</option>
+      <option value="price-desc">{{ if $isEN }}Price: high to low{{ else if $isZH }}价格从高到低{{ else if $isKO }}가격 높은순{{ else if $isZHTW }}價格從高到低{{ else }}価格が高い順{{ end }}</option>
+      <option value="name">{{ if $isEN }}Hotel name (A–Z){{ else if $isZH }}酒店名称（字母顺序）{{ else if $isKO }}호텔 이름순{{ else if $isZHTW }}飯店名稱（字母順序）{{ else }}ホテル名順（50音）{{ end }}</option>
     </select>
-    <span class="hcm-count-inline"><strong id="hcm-count">{{ len $hotelData }}</strong> {{ if $isEN }}shown{{ else if $isZH }}家 显示中{{ else if $isKO }}곳 표시 중{{ else }}軒 表示中{{ end }}</span>
-    <button class="hcm-clear-btn" id="hcm-clear" onclick="hcmClearFilters()" style="display:none" aria-label="{{ if $isEN }}Reset filters{{ else if $isZH }}重置筛选{{ else if $isKO }}필터 초기화{{ else }}絞り込みをリセット{{ end }}">{{ if $isEN }}Clear all ×{{ else if $isZH }}清除筛选 ×{{ else if $isKO }}전체 표시 ×{{ else }}すべて表示 ×{{ end }}</button>
+    <span class="hcm-count-inline"><strong id="hcm-count">{{ len $hotelData }}</strong> {{ if $isEN }}shown{{ else if $isZH }}家 显示中{{ else if $isKO }}곳 표시 중{{ else if $isZHTW }}家 顯示中{{ else }}軒 表示中{{ end }}</span>
+    <button class="hcm-clear-btn" id="hcm-clear" onclick="hcmClearFilters()" style="display:none" aria-label="{{ if $isEN }}Reset filters{{ else if $isZH }}重置筛选{{ else if $isKO }}필터 초기화{{ else if $isZHTW }}重置篩選{{ else }}絞り込みをリセット{{ end }}">{{ if $isEN }}Clear all ×{{ else if $isZH }}清除筛选 ×{{ else if $isKO }}전체 표시 ×{{ else if $isZHTW }}清除篩選 ×{{ else }}すべて表示 ×{{ end }}</button>
   </div>
   <div class="hcm-filter-row">
-    <span class="hcm-filter-label">{{ if $isEN }}Area{{ else if $isZH }}区域{{ else if $isKO }}지역{{ else }}エリア{{ end }}</span>
-    <button class="hcm-chip is-active" data-chip-type="area" data-chip-val="*" onclick="hcmChipClick('area','*')">{{ if $isEN }}All{{ else if $isZH }}全部{{ else if $isKO }}전체{{ else }}すべて{{ end }}</button>
+    <span class="hcm-filter-label">{{ if $isEN }}Area{{ else if $isZH }}区域{{ else if $isKO }}지역{{ else if $isZHTW }}區域{{ else }}エリア{{ end }}</span>
+    <button class="hcm-chip is-active" data-chip-type="area" data-chip-val="*" onclick="hcmChipClick('area','*')">{{ if $isEN }}All{{ else if $isZH }}全部{{ else if $isKO }}전체{{ else if $isZHTW }}全部{{ else }}すべて{{ end }}</button>
     {{- range $hotels.areas }}
     {{- $hasMap := false }}
     {{- range .hotels }}{{- if ne .policy "name-only" }}{{ $hasMap = true }}{{- end }}{{- end }}
     {{- if $hasMap }}
-    <button class="hcm-chip" data-chip-type="area" data-chip-val="{{ .tag }}" onclick="hcmChipClick('area','{{ .tag }}')">{{ if $isEN }}{{ .name_en }}{{ else if $isZH }}{{ index . "name_zh" | default .name }}{{ else if $isKO }}{{ index . "name_ko" | default .name }}{{ else }}{{ .name | replaceRE "エリア$" "" }}{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="area" data-chip-val="{{ .tag }}" onclick="hcmChipClick('area','{{ .tag }}')">{{ if $isEN }}{{ .name_en }}{{ else if $isZH }}{{ index . "name_zh" | default .name }}{{ else if $isKO }}{{ index . "name_ko" | default .name }}{{ else if $isZHTW }}{{ index . "name_zh-tw" | default .name }}{{ else }}{{ .name | replaceRE "エリア$" "" }}{{ end }}</button>
     {{- end }}
     {{- end }}
   </div>
   <div class="hcm-filter-row">
-    <span class="hcm-filter-label">{{ if $isEN }}Type{{ else if $isZH }}分类{{ else if $isKO }}분류{{ else }}区分{{ end }}</span>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="disney" onclick="hcmChipClick('grp','disney')"><i class="ti ti-building-castle" aria-hidden="true"></i> {{ if $isEN }}Disney{{ else if $isZH }}迪士尼{{ else if $isKO }}디즈니{{ else }}ディズニー{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="official" onclick="hcmChipClick('grp','official')"><i class="ti ti-building-skyscraper" aria-hidden="true"></i> {{ if $isEN }}Official{{ else if $isZH }}官方{{ else if $isKO }}공식{{ else }}オフィシャル{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="partner" onclick="hcmChipClick('grp','partner')"><i class="ti ti-star" aria-hidden="true"></i> {{ if $isEN }}Partner{{ else if $isZH }}合作{{ else if $isKO }}파트너{{ else }}パートナー{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="grp" data-chip-val="other" onclick="hcmChipClick('grp','other')"><i class="ti ti-home" aria-hidden="true"></i> {{ if $isEN }}Other{{ else if $isZH }}其他{{ else if $isKO }}기타{{ else }}その他{{ end }}</button>
+    <span class="hcm-filter-label">{{ if $isEN }}Type{{ else if $isZH }}分类{{ else if $isKO }}분류{{ else if $isZHTW }}分類{{ else }}区分{{ end }}</span>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="disney" onclick="hcmChipClick('grp','disney')"><i class="ti ti-building-castle" aria-hidden="true"></i> {{ if $isEN }}Disney{{ else if $isZH }}迪士尼{{ else if $isKO }}디즈니{{ else if $isZHTW }}迪士尼{{ else }}ディズニー{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="official" onclick="hcmChipClick('grp','official')"><i class="ti ti-building-skyscraper" aria-hidden="true"></i> {{ if $isEN }}Official{{ else if $isZH }}官方{{ else if $isKO }}공식{{ else if $isZHTW }}官方{{ else }}オフィシャル{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="partner" onclick="hcmChipClick('grp','partner')"><i class="ti ti-star" aria-hidden="true"></i> {{ if $isEN }}Partner{{ else if $isZH }}合作{{ else if $isKO }}파트너{{ else if $isZHTW }}合作{{ else }}パートナー{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="grp" data-chip-val="other" onclick="hcmChipClick('grp','other')"><i class="ti ti-home" aria-hidden="true"></i> {{ if $isEN }}Other{{ else if $isZH }}其他{{ else if $isKO }}기타{{ else if $isZHTW }}其他{{ else }}その他{{ end }}</button>
   </div>
   <div class="hcm-filter-row">
-    <span class="hcm-filter-label">{{ if $isEN }}Facilities{{ else if $isZH }}设施{{ else if $isKO }}시설{{ else }}設備{{ end }}</span>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="shuttle" onclick="hcmChipClick('flag','shuttle')"><i class="ti ti-bus" aria-hidden="true"></i> {{ if $isEN }}Shuttle{{ else if $isZH }}班车{{ else if $isKO }}셔틀{{ else }}シャトル{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="bath" onclick="hcmChipClick('flag','bath')"><i class="ti ti-ripple" aria-hidden="true"></i> {{ if $isEN }}Public bath{{ else if $isZH }}大浴场{{ else if $isKO }}대욕장{{ else }}大浴場{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="pool" onclick="hcmChipClick('flag','pool')"><i class="ti ti-swimming" aria-hidden="true"></i> {{ if $isEN }}Indoor pool{{ else if $isZH }}室内泳池{{ else if $isKO }}실내 수영장{{ else }}室内プール{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="laundry" onclick="hcmChipClick('flag','laundry')"><i class="ti ti-wash-machine" aria-hidden="true"></i> {{ if $isEN }}Laundry{{ else if $isZH }}投币洗衣{{ else if $isKO }}세탁{{ else }}ランドリー{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="convenience" onclick="hcmChipClick('flag','convenience')"><i class="ti ti-building-store" aria-hidden="true"></i> {{ if $isEN }}In-house store{{ else if $isZH }}馆内商店{{ else if $isKO }}관내 매점{{ else }}館内売店{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="limousine" onclick="hcmChipClick('flag','limousine')"><i class="ti ti-plane" aria-hidden="true"></i> {{ if $isEN }}Airport limo{{ else if $isZH }}机场利木津{{ else if $isKO }}공항 리무진{{ else }}空港リムジン{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="station" onclick="hcmChipClick('flag','station')"><i class="ti ti-train" aria-hidden="true"></i> {{ if $isEN }}By station{{ else if $isZH }}邻站/1分钟{{ else if $isKO }}역세권/1분{{ else }}駅直結/1分{{ end }}</button>
-    <button class="hcm-chip" data-chip-type="flag" data-chip-val="kitchen" onclick="hcmChipClick('flag','kitchen')"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i> {{ if $isEN }}Kitchen{{ else if $isZH }}小厨房{{ else if $isKO }}미니 주방{{ else }}ミニキッチン{{ end }}</button>
+    <span class="hcm-filter-label">{{ if $isEN }}Facilities{{ else if $isZH }}设施{{ else if $isKO }}시설{{ else if $isZHTW }}設施{{ else }}設備{{ end }}</span>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="shuttle" onclick="hcmChipClick('flag','shuttle')"><i class="ti ti-bus" aria-hidden="true"></i> {{ if $isEN }}Shuttle{{ else if $isZH }}班车{{ else if $isKO }}셔틀{{ else if $isZHTW }}班車{{ else }}シャトル{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="bath" onclick="hcmChipClick('flag','bath')"><i class="ti ti-ripple" aria-hidden="true"></i> {{ if $isEN }}Public bath{{ else if $isZH }}大浴场{{ else if $isKO }}대욕장{{ else if $isZHTW }}大浴場{{ else }}大浴場{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="pool" onclick="hcmChipClick('flag','pool')"><i class="ti ti-swimming" aria-hidden="true"></i> {{ if $isEN }}Indoor pool{{ else if $isZH }}室内泳池{{ else if $isKO }}실내 수영장{{ else if $isZHTW }}室內泳池{{ else }}室内プール{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="laundry" onclick="hcmChipClick('flag','laundry')"><i class="ti ti-wash-machine" aria-hidden="true"></i> {{ if $isEN }}Laundry{{ else if $isZH }}投币洗衣{{ else if $isKO }}세탁{{ else if $isZHTW }}投幣洗衣{{ else }}ランドリー{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="convenience" onclick="hcmChipClick('flag','convenience')"><i class="ti ti-building-store" aria-hidden="true"></i> {{ if $isEN }}In-house store{{ else if $isZH }}馆内商店{{ else if $isKO }}관내 매점{{ else if $isZHTW }}館內商店{{ else }}館内売店{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="limousine" onclick="hcmChipClick('flag','limousine')"><i class="ti ti-plane" aria-hidden="true"></i> {{ if $isEN }}Airport limo{{ else if $isZH }}机场利木津{{ else if $isKO }}공항 리무진{{ else if $isZHTW }}機場利木津{{ else }}空港リムジン{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="station" onclick="hcmChipClick('flag','station')"><i class="ti ti-train" aria-hidden="true"></i> {{ if $isEN }}By station{{ else if $isZH }}邻站/1分钟{{ else if $isKO }}역세권/1분{{ else if $isZHTW }}鄰站/1分鐘{{ else }}駅直結/1分{{ end }}</button>
+    <button class="hcm-chip" data-chip-type="flag" data-chip-val="kitchen" onclick="hcmChipClick('flag','kitchen')"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i> {{ if $isEN }}Kitchen{{ else if $isZH }}小厨房{{ else if $isKO }}미니 주방{{ else if $isZHTW }}小廚房{{ else }}ミニキッチン{{ end }}</button>
   </div>
 </div>
 
@@ -151,7 +154,7 @@
         {{- if .flags }}
         <div class="hcm-card-flags">
           {{- range .flags }}
-          <span class="hcm-flag"><i class="ti ti-{{ if eq . "shuttle" }}bus{{ else if eq . "bath" }}ripple{{ else if eq . "pool" }}swimming{{ else if eq . "laundry" }}wash-machine{{ else if eq . "convenience" }}building-store{{ else if eq . "limousine" }}plane{{ else if eq . "station" }}train{{ else if eq . "kitchen" }}tools-kitchen-2{{ else }}star{{ end }}" aria-hidden="true"></i>{{ if $isEN }}{{ if eq . "shuttle" }}Shuttle{{ else if eq . "bath" }}Public bath{{ else if eq . "pool" }}Indoor pool{{ else if eq . "laundry" }}Laundry{{ else if eq . "convenience" }}In-house store{{ else if eq . "limousine" }}Airport limo{{ else if eq . "station" }}By station{{ else if eq . "kitchen" }}Kitchen{{ end }}{{ else if $isZH }}{{ if eq . "shuttle" }}班车{{ else if eq . "bath" }}大浴场{{ else if eq . "pool" }}室内泳池{{ else if eq . "laundry" }}投币洗衣{{ else if eq . "convenience" }}馆内商店{{ else if eq . "limousine" }}机场利木津{{ else if eq . "station" }}邻站/1分钟{{ else if eq . "kitchen" }}小厨房{{ end }}{{ else if $isKO }}{{ if eq . "shuttle" }}셔틀{{ else if eq . "bath" }}대욕장{{ else if eq . "pool" }}실내 수영장{{ else if eq . "laundry" }}세탁{{ else if eq . "convenience" }}관내 매점{{ else if eq . "limousine" }}공항 리무진{{ else if eq . "station" }}역세권/1분{{ else if eq . "kitchen" }}미니 주방{{ end }}{{ else }}{{ if eq . "shuttle" }}シャトル{{ else if eq . "bath" }}大浴場{{ else if eq . "pool" }}室内プール{{ else if eq . "laundry" }}ランドリー{{ else if eq . "convenience" }}館内売店{{ else if eq . "limousine" }}空港リムジン{{ else if eq . "station" }}駅直結/1分{{ else if eq . "kitchen" }}ミニキッチン{{ end }}{{ end }}</span>
+          <span class="hcm-flag"><i class="ti ti-{{ if eq . "shuttle" }}bus{{ else if eq . "bath" }}ripple{{ else if eq . "pool" }}swimming{{ else if eq . "laundry" }}wash-machine{{ else if eq . "convenience" }}building-store{{ else if eq . "limousine" }}plane{{ else if eq . "station" }}train{{ else if eq . "kitchen" }}tools-kitchen-2{{ else }}star{{ end }}" aria-hidden="true"></i>{{ if $isEN }}{{ if eq . "shuttle" }}Shuttle{{ else if eq . "bath" }}Public bath{{ else if eq . "pool" }}Indoor pool{{ else if eq . "laundry" }}Laundry{{ else if eq . "convenience" }}In-house store{{ else if eq . "limousine" }}Airport limo{{ else if eq . "station" }}By station{{ else if eq . "kitchen" }}Kitchen{{ end }}{{ else if $isZH }}{{ if eq . "shuttle" }}班车{{ else if eq . "bath" }}大浴场{{ else if eq . "pool" }}室内泳池{{ else if eq . "laundry" }}投币洗衣{{ else if eq . "convenience" }}馆内商店{{ else if eq . "limousine" }}机场利木津{{ else if eq . "station" }}邻站/1分钟{{ else if eq . "kitchen" }}小厨房{{ end }}{{ else if $isKO }}{{ if eq . "shuttle" }}셔틀{{ else if eq . "bath" }}대욕장{{ else if eq . "pool" }}실내 수영장{{ else if eq . "laundry" }}세탁{{ else if eq . "convenience" }}관내 매점{{ else if eq . "limousine" }}공항 리무진{{ else if eq . "station" }}역세권/1분{{ else if eq . "kitchen" }}미니 주방{{ end }}{{ else if $isZHTW }}{{ if eq . "shuttle" }}班車{{ else if eq . "bath" }}大浴場{{ else if eq . "pool" }}室內泳池{{ else if eq . "laundry" }}投幣洗衣{{ else if eq . "convenience" }}館內商店{{ else if eq . "limousine" }}機場利木津{{ else if eq . "station" }}鄰站/1分鐘{{ else if eq . "kitchen" }}小廚房{{ end }}{{ else }}{{ if eq . "shuttle" }}シャトル{{ else if eq . "bath" }}大浴場{{ else if eq . "pool" }}室内プール{{ else if eq . "laundry" }}ランドリー{{ else if eq . "convenience" }}館内売店{{ else if eq . "limousine" }}空港リムジン{{ else if eq . "station" }}駅直結/1分{{ else if eq . "kitchen" }}ミニキッチン{{ end }}{{ end }}</span>
           {{- end }}
         </div>
         {{- end }}
@@ -161,17 +164,17 @@
   </div>
 
   <div class="hcm-map-col">
-    <div id="hcm-map" aria-label="{{ if $isEN }}Hotel location map (Leaflet / OpenStreetMap){{ else if $isZH }}酒店位置地图（Leaflet / OpenStreetMap）{{ else if $isKO }}호텔 위치 지도(Leaflet / OpenStreetMap){{ else }}ホテル位置マップ（Leaflet / OpenStreetMap）{{ end }}"></div>
+    <div id="hcm-map" aria-label="{{ if $isEN }}Hotel location map (Leaflet / OpenStreetMap){{ else if $isZH }}酒店位置地图（Leaflet / OpenStreetMap）{{ else if $isKO }}호텔 위치 지도(Leaflet / OpenStreetMap){{ else if $isZHTW }}飯店位置地圖（Leaflet / OpenStreetMap）{{ else }}ホテル位置マップ（Leaflet / OpenStreetMap）{{ end }}"></div>
     <div class="hcm-map-legend">
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#7B1FA2"></span>{{ if $isEN }}Disney{{ else if $isZH }}迪士尼{{ else if $isKO }}디즈니{{ else }}ディズニー{{ end }}</span>
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E05535"></span>{{ if $isEN }}Official{{ else if $isZH }}官方{{ else if $isKO }}공식{{ else }}オフィシャル{{ end }}</span>
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E8A020"></span>{{ if $isEN }}Partner{{ else if $isZH }}合作{{ else if $isKO }}파트너{{ else }}パートナー{{ end }}</span>
-      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>{{ if $isEN }}Other{{ else if $isZH }}其他{{ else if $isKO }}기타{{ else }}その他{{ end }}</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#7B1FA2"></span>{{ if $isEN }}Disney{{ else if $isZH }}迪士尼{{ else if $isKO }}디즈니{{ else if $isZHTW }}迪士尼{{ else }}ディズニー{{ end }}</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E05535"></span>{{ if $isEN }}Official{{ else if $isZH }}官方{{ else if $isKO }}공식{{ else if $isZHTW }}官方{{ else }}オフィシャル{{ end }}</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#E8A020"></span>{{ if $isEN }}Partner{{ else if $isZH }}合作{{ else if $isKO }}파트너{{ else if $isZHTW }}合作{{ else }}パートナー{{ end }}</span>
+      <span class="hcm-legend-item"><span class="hcm-legend-dot" style="background:#1A5C8A"></span>{{ if $isEN }}Other{{ else if $isZH }}其他{{ else if $isKO }}기타{{ else if $isZHTW }}其他{{ else }}その他{{ end }}</span>
     </div>
-    <p class="hcm-map-note"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if $isEN }}Click a pin to highlight its card. Pins outside the current filter are dimmed. Coordinates are approximate.{{ else if $isZH }}点击图钉可高亮对应酒店。筛选范围外的图钉会变淡。坐标为参考值。{{ else if $isKO }}핀을 클릭하면 해당 호텔 카드가 강조됩니다. 필터 범위 밖의 핀은 흐리게 표시됩니다. 좌표는 근사값입니다.{{ else }}ピンをクリックするとカードがハイライトします。絞り込み外のピンは薄く表示されます。座標は近似値です。{{ end }}</p>
+    <p class="hcm-map-note"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if $isEN }}Click a pin to highlight its card. Pins outside the current filter are dimmed. Coordinates are approximate.{{ else if $isZH }}点击图钉可高亮对应酒店。筛选范围外的图钉会变淡。坐标为参考值。{{ else if $isKO }}핀을 클릭하면 해당 호텔 카드가 강조됩니다. 필터 범위 밖의 핀은 흐리게 표시됩니다. 좌표는 근사값입니다.{{ else if $isZHTW }}點擊圖釘可高亮對應飯店。篩選範圍外的圖釘會變淡。座標為參考值。{{ else }}ピンをクリックするとカードがハイライトします。絞り込み外のピンは薄く表示されます。座標は近似値です。{{ end }}</p>
     <p class="hcm-map-note" style="margin-top:2px;">
       <i class="ti ti-help-circle" aria-hidden="true"></i>
-      <a href="{{ if $isEN }}/en/travel-guide/hotels/types/{{ else if $isZH }}/zh/travel-guide/hotels/types/{{ else if $isKO }}/ko/travel-guide/hotels/types/{{ else }}/travel-guide/hotels/types/{{ end }}" style="color:var(--up-accent);text-decoration:none;font-weight:600;">{{ if $isEN }}What do Disney / Official / Partner / Good Neighbor mean? →{{ else if $isZH }}迪士尼／官方／合作／好邻居是什么意思？→{{ else if $isKO }}디즈니／공식／파트너／굿네이버는 어떻게 다른가요? →{{ else }}ディズニー／オフィシャル／パートナー／グッドネイバーの違いとは？ →{{ end }}</a>
+      <a href="{{ if $isEN }}/en/travel-guide/hotels/types/{{ else if $isZH }}/zh/travel-guide/hotels/types/{{ else if $isKO }}/ko/travel-guide/hotels/types/{{ else if $isZHTW }}/zh-tw/travel-guide/hotels/types/{{ else }}/travel-guide/hotels/types/{{ end }}" style="color:var(--up-accent);text-decoration:none;font-weight:600;">{{ if $isEN }}What do Disney / Official / Partner / Good Neighbor mean? →{{ else if $isZH }}迪士尼／官方／合作／好邻居是什么意思？→{{ else if $isKO }}디즈니／공식／파트너／굿네이버는 어떻게 다른가요? →{{ else if $isZHTW }}迪士尼／官方／合作／好鄰居是什麼意思？→{{ else }}ディズニー／オフィシャル／パートナー／グッドネイバーの違いとは？ →{{ end }}</a>
     </p>
   </div>
 </div>
@@ -210,14 +213,14 @@
   };
 
   var FLAG_META = {
-    shuttle:     { label: {{ if $isEN }}'Shuttle'{{ else if $isZH }}'班车'{{ else if $isKO }}'셔틀'{{ else }}'シャトル'{{ end }},     icon: 'bus' },
-    bath:        { label: {{ if $isEN }}'Public bath'{{ else if $isZH }}'大浴场'{{ else if $isKO }}'대욕장'{{ else }}'大浴場'{{ end }},       icon: 'ripple' },
-    pool:        { label: {{ if $isEN }}'Indoor pool'{{ else if $isZH }}'室内泳池'{{ else if $isKO }}'실내 수영장'{{ else }}'室内プール'{{ end }},   icon: 'swimming' },
-    laundry:     { label: {{ if $isEN }}'Laundry'{{ else if $isZH }}'投币洗衣'{{ else if $isKO }}'세탁'{{ else }}'ランドリー'{{ end }},   icon: 'wash-machine' },
-    convenience: { label: {{ if $isEN }}'In-house store'{{ else if $isZH }}'馆内商店'{{ else if $isKO }}'관내 매점'{{ else }}'館内売店'{{ end }}, icon: 'building-store' },
-    limousine:   { label: {{ if $isEN }}'Airport limo'{{ else if $isZH }}'机场利木津'{{ else if $isKO }}'공항 리무진'{{ else }}'空港リムジン'{{ end }}, icon: 'plane' },
-    station:     { label: {{ if $isEN }}'By station'{{ else if $isZH }}'邻站/1分钟'{{ else if $isKO }}'역세권/1분'{{ else }}'駅直結/1分'{{ end }},  icon: 'train' },
-    kitchen:     { label: {{ if $isEN }}'Kitchen'{{ else if $isZH }}'小厨房'{{ else if $isKO }}'미니 주방'{{ else }}'ミニキッチン'{{ end }}, icon: 'tools-kitchen-2' }
+    shuttle:     { label: {{ if $isEN }}'Shuttle'{{ else if $isZH }}'班车'{{ else if $isKO }}'셔틀'{{ else if $isZHTW }}'班車'{{ else }}'シャトル'{{ end }},     icon: 'bus' },
+    bath:        { label: {{ if $isEN }}'Public bath'{{ else if $isZH }}'大浴场'{{ else if $isKO }}'대욕장'{{ else if $isZHTW }}'大浴場'{{ else }}'大浴場'{{ end }},       icon: 'ripple' },
+    pool:        { label: {{ if $isEN }}'Indoor pool'{{ else if $isZH }}'室内泳池'{{ else if $isKO }}'실내 수영장'{{ else if $isZHTW }}'室內泳池'{{ else }}'室内プール'{{ end }},   icon: 'swimming' },
+    laundry:     { label: {{ if $isEN }}'Laundry'{{ else if $isZH }}'投币洗衣'{{ else if $isKO }}'세탁'{{ else if $isZHTW }}'投幣洗衣'{{ else }}'ランドリー'{{ end }},   icon: 'wash-machine' },
+    convenience: { label: {{ if $isEN }}'In-house store'{{ else if $isZH }}'馆内商店'{{ else if $isKO }}'관내 매점'{{ else if $isZHTW }}'館內商店'{{ else }}'館内売店'{{ end }}, icon: 'building-store' },
+    limousine:   { label: {{ if $isEN }}'Airport limo'{{ else if $isZH }}'机场利木津'{{ else if $isKO }}'공항 리무진'{{ else if $isZHTW }}'機場利木津'{{ else }}'空港リムジン'{{ end }}, icon: 'plane' },
+    station:     { label: {{ if $isEN }}'By station'{{ else if $isZH }}'邻站/1分钟'{{ else if $isKO }}'역세권/1분'{{ else if $isZHTW }}'鄰站/1分鐘'{{ else }}'駅直結/1分'{{ end }},  icon: 'train' },
+    kitchen:     { label: {{ if $isEN }}'Kitchen'{{ else if $isZH }}'小厨房'{{ else if $isKO }}'미니 주방'{{ else if $isZHTW }}'小廚房'{{ else }}'ミニキッチン'{{ end }}, icon: 'tools-kitchen-2' }
   };
 
   /* ── フィルター・ソート ── */
@@ -242,7 +245,7 @@
     } else if (state.sort === 'price-desc') {
       arr.sort(function (a, b) { return (b.price_min || 0) - (a.price_min || 0); });
     } else if (state.sort === 'name') {
-      arr.sort(function (a, b) { return a.name.localeCompare(b.name, '{{ if $isEN }}en{{ else if $isZH }}zh{{ else if $isKO }}ko{{ else }}ja{{ end }}'); });
+      arr.sort(function (a, b) { return a.name.localeCompare(b.name, '{{ if $isEN }}en{{ else if $isZH }}zh{{ else if $isKO }}ko{{ else if $isZHTW }}zh-Hant{{ else }}ja{{ end }}'); });
     }
     return arr;
   }
@@ -348,7 +351,8 @@
         + {{ if $isEN }}'<p>No hotels match your filters</p>'
         + '<p style="font-size:12px">Try changing the filter conditions</p>'{{ else if $isZH }}'<p>没有符合条件的酒店</p>'
         + '<p style="font-size:12px">请更改筛选条件</p>'{{ else if $isKO }}'<p>조건에 맞는 호텔이 없습니다</p>'
-        + '<p style="font-size:12px">필터 조건을 변경해 보세요</p>'{{ else }}'<p>該当するホテルがありません</p>'
+        + '<p style="font-size:12px">필터 조건을 변경해 보세요</p>'{{ else if $isZHTW }}'<p>沒有符合條件的飯店</p>'
+        + '<p style="font-size:12px">請更改篩選條件</p>'{{ else }}'<p>該当するホテルがありません</p>'
         + '<p style="font-size:12px">絞り込み条件を変更してください</p>'{{ end }}
         + '</div>';
     } else {
@@ -441,7 +445,7 @@
         + '<strong style="font-size:13px;display:block;margin-bottom:2px">' + esc(h.name) + '</strong>'
         + '<span style="font-size:11px;color:#666">' + esc(h.area) + ' ' + esc(h.areaName) + '</span>'
         + (h.price_guide ? '<div style="font-size:12px;color:#E05535;font-weight:700;margin-top:2px">' + esc(h.price_guide) + '</div>' : '')
-        + (h.url ? '<a href="' + esc(h.url) + '" style="display:block;margin-top:6px;font-size:11px;color:#1A5C8A">{{ if $isEN }}View details →{{ else if $isZH }}查看详情 →{{ else if $isKO }}상세 보기 →{{ else }}詳細を見る →{{ end }}</a>' : '')
+        + (h.url ? '<a href="' + esc(h.url) + '" style="display:block;margin-top:6px;font-size:11px;color:#1A5C8A">{{ if $isEN }}View details →{{ else if $isZH }}查看详情 →{{ else if $isKO }}상세 보기 →{{ else if $isZHTW }}查看詳情 →{{ else }}詳細を見る →{{ end }}</a>' : '')
         + '</div>';
 
       marker.bindPopup(popup, { maxWidth: 240 });

@@ -122,7 +122,7 @@ If you drive, many hotels charge around ¥2,000 per night for parking even when 
 
 Look at "room + transport + food" together and the truly good-value hotel emerges. Check availability and the latest rates for the stays that interest you.
 
-A full list of all 40 hotels and the overall price picture is on the [Hotel Guide top page](/en/travel-guide/hotels/). For choosing with kids, see the [Family Disney Hotel Guide](/en/travel-guide/hotels/kids/).
+A full list of all 48 hotels and the overall price picture is on the [Hotel Guide top page](/en/travel-guide/hotels/). For choosing with kids, see the [Family Disney Hotel Guide](/en/travel-guide/hotels/kids/).
 
 ---
 

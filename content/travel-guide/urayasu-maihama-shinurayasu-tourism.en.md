@@ -700,8 +700,8 @@ faq:
     <a class="rg-card" href="/en/travel-guide/hotels/">
       <span class="rg-emoji">🏨</span>
       <span class="rg-body">
-        <span class="rg-title">Urayasu Hotel Guide — All 40 Hotels</span>
-        <span class="rg-go">Compare all 40 hotels by area and price →</span>
+        <span class="rg-title">Urayasu Hotel Guide — All 48 Hotels</span>
+        <span class="rg-go">Compare all 48 hotels by area and price →</span>
       </span>
     </a>
     <a class="rg-card" href="/en/travel-guide/urayasu-gourmet-souvenir-guide/">

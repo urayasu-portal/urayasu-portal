@@ -113,8 +113,13 @@
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ .Name }}">
 {{ end -}}
 {{- range .AllTranslations -}}
-<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+{{- $hreflang := .Lang }}{{ if eq $hreflang "zh" }}{{ $hreflang = "zh-Hans" }}{{ else if eq $hreflang "zh-tw" }}{{ $hreflang = "zh-Hant-TW" }}{{ end -}}
+<link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}">
 {{ end -}}
+{{- /* x-default: 対応4言語圏以外からの検索者には英語版を既定として提示（英訳が存在するページのみ） */ -}}
+{{- range .AllTranslations -}}{{ if eq .Lang "en" -}}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{ end }}{{ end -}}
 
 <noscript>
     <style>

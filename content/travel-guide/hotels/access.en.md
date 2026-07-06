@@ -129,7 +129,7 @@ As a geographic exception, **Henn na Hotel Maihama and Four Stories Hotel Maiham
 
 The best answer changes with "where you want to go." Pick the hotel that fits your itinerary.
 
-A full list of all 40 hotels and area-by-area characteristics is on the [Hotel Guide top page](/en/travel-guide/hotels/). For choosing with kids, see the [Family Disney Hotel Guide](/en/travel-guide/hotels/kids/); to choose on price, see the [Budget Hotel Comparison](/en/travel-guide/hotels/budget/).
+A full list of all 48 hotels and area-by-area characteristics is on the [Hotel Guide top page](/en/travel-guide/hotels/). For choosing with kids, see the [Family Disney Hotel Guide](/en/travel-guide/hotels/kids/); to choose on price, see the [Budget Hotel Comparison](/en/travel-guide/hotels/budget/).
 
 ---
 

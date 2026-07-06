@@ -64,7 +64,7 @@
 <div class="section-head" style="margin-bottom:6px;">
   <h2>Choose a hotel by need</h2>
 </div>
-<p class="tg-section-sub">Find the right stay from 40+ hotels near the parks.</p>
+<p class="tg-section-sub">Find the right stay from 48 hotels near the parks.</p>
 <div class="tg-hotelneed-grid">
   <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
     <i class="ti ti-mood-kid" aria-hidden="true"></i>
@@ -153,7 +153,7 @@
 <div class="section-head" style="margin-bottom:6px;">
   <h2>按需求选酒店</h2>
 </div>
-<p class="tg-section-sub">从40家以上酒店中找到适合你的住宿。</p>
+<p class="tg-section-sub">从48家酒店中找到适合你的住宿。</p>
 <div class="tg-hotelneed-grid">
   <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
     <i class="ti ti-mood-kid" aria-hidden="true"></i>
@@ -178,6 +178,93 @@
   <div>
     <h3>正在查找日语版网站？</h3>
     <p>本指南属于浦安ぽーたる（Urayasu Portal）——由日本浦安本地团队运营的媒体网站。完整日语站还涵盖城市新闻、餐饮及当地生活信息。</p>
+  </div>
+  <a class="tg-cross-btn" href="/">日本語サイトへ →</a>
+</div>
+
+{{- else if eq .Lang "zh-tw" }}
+
+<div class="tg-hero">
+  <p class="tg-hero-eyebrow">浦安·舞濱 旅遊指南</p>
+  <h1>東京迪士尼度假區之旅，<br>由在地嚮導帶路。</h1>
+  <p class="tg-hero-lead">從選擇飯店到交通、餐飲與伴手禮——由浦安在地編輯團隊為台灣旅客打造的實用攻略。</p>
+</div>
+
+<div class="section-head">
+  <h2>規劃您的旅程</h2>
+</div>
+<div class="tg-purpose-grid">
+  <a class="tg-purpose-card" href="{{ "/travel-guide/hotels/" | absLangURL }}">
+    <i class="ti ti-bed" aria-hidden="true"></i>
+    <div class="tg-purpose-title">飯店</div>
+    <div class="tg-purpose-desc">全部飯店，依區域與價格比較</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">
+    <i class="ti ti-route" aria-hidden="true"></i>
+    <div class="tg-purpose-title">交通</div>
+    <div class="tg-purpose-desc">從機場和東京站前往</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
+    <i class="ti ti-camera" aria-hidden="true"></i>
+    <div class="tg-purpose-title">觀光</div>
+    <div class="tg-purpose-desc">舞濱·浦安·新浦安</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">
+    <i class="ti ti-gift" aria-hidden="true"></i>
+    <div class="tg-purpose-title">美食與伴手禮</div>
+    <div class="tg-purpose-desc">在地美食與值得帶回的禮物</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">
+    <i class="ti ti-taxi" aria-hidden="true"></i>
+    <div class="tg-purpose-title">計程車</div>
+    <div class="tg-purpose-desc">機場定額計程車攻略</div>
+  </a>
+  <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/" | absLangURL }}">
+    <i class="ti ti-map-search" aria-hidden="true"></i>
+    <div class="tg-purpose-title">完整指南</div>
+    <div class="tg-purpose-desc">查看全部旅遊攻略</div>
+  </a>
+</div>
+
+<a href="{{ "/travel-guide/hotels/compare/" | absLangURL }}" class="hcm-list-banner">
+  <span class="hcm-list-banner-left">
+    <i class="ti ti-map-2" aria-hidden="true"></i>
+    <span>
+      <strong>飯店比較地圖</strong>
+      <span class="hcm-list-banner-sub">在一張地圖上，依區域、設施和價格篩選周邊飯店</span>
+    </span>
+  </span>
+  <span class="hcm-list-banner-cta">在地圖上比較 →</span>
+</a>
+
+<div class="section-head" style="margin-bottom:6px;">
+  <h2>依需求選飯店</h2>
+</div>
+<p class="tg-section-sub">從48家飯店中找到適合你的住宿。</p>
+<div class="tg-hotelneed-grid">
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
+    <i class="ti ti-mood-kid" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">親子出遊</div>
+    <div class="tg-hotelneed-desc">大浴場·寬敞客房·設施齊全</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/budget/" | absLangURL }}">
+    <i class="ti ti-coin" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">實惠住宿</div>
+    <div class="tg-hotelneed-desc">講究CP值的選擇</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/access/" | absLangURL }}">
+    <i class="ti ti-walk" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">交通優先</div>
+    <div class="tg-hotelneed-desc">鄰近樂園·車站·機場</div>
+  </a>
+</div>
+
+{{ partial "featured-hotels.html" . }}
+
+<div class="tg-cross-link" style="margin-top:32px;">
+  <div>
+    <h3>正在尋找日語版網站？</h3>
+    <p>本指南屬於浦安ぽーたる（Urayasu Portal）——由日本浦安在地團隊營運的媒體網站。完整日語站還涵蓋城市新聞、餐飲及當地生活資訊。</p>
   </div>
   <a class="tg-cross-btn" href="/">日本語サイトへ →</a>
 </div>
@@ -240,7 +327,7 @@
 <div class="section-head" style="margin-bottom:6px;">
   <h2>목적으로 호텔 고르기</h2>
 </div>
-<p class="tg-section-sub">40곳 이상의 호텔에서 알맞은 숙소를 찾아보세요.</p>
+<p class="tg-section-sub">48곳의 호텔에서 알맞은 숙소를 찾아보세요.</p>
 <div class="tg-hotelneed-grid">
   <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/kids/" | absLangURL }}">
     <i class="ti ti-mood-kid" aria-hidden="true"></i>

@@ -147,7 +147,7 @@ Finally, organized by what you prioritize.
 
 For every hotel, the "right answer" shifts with your child's age and travel style. When a place catches your eye, check availability and the latest rates.
 
-A full list of all 40 hotels and area-by-area characteristics is on the [Hotel Guide top page](/en/travel-guide/hotels/).
+A full list of all 48 hotels and area-by-area characteristics is on the [Hotel Guide top page](/en/travel-guide/hotels/).
 
 ---
 

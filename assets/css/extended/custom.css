@@ -286,6 +286,7 @@ body.list { --main-width: 1160px; }
 
 /* ---------- 2カラムレイアウト ---------- */
 .home-layout { display: grid; grid-template-columns: 1fr 280px; gap: 28px; align-items: start; }
+.home-layout--full { grid-template-columns: 1fr; }
 .home-main { min-width: 0; }
 .home-sidebar { min-width: 0; position: sticky; top: calc(var(--header-height) + 12px); }
 
@@ -552,6 +553,38 @@ body.list { --main-width: 1160px; }
 }
 .ft-site-links a { font-size: 12px; color: rgba(255,255,255,.48) !important; }
 .ft-site-links a:hover { color: rgba(255,255,255,.8) !important; }
+/* 言語スイッチャー（ヘッダー右上・ライトテーマ） */
+.hdr-lang {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+/* セレクタは .logo-switches a（特異度0,1,1）+ !important に勝つため a.hdr-lang-pill（0,2,1）で記述 */
+.hdr-lang a.hdr-lang-pill {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 5px 10px;
+  border-radius: 7px;
+  text-decoration: none;
+  background: #fff;
+  border: 0.5px solid #E2D6CF;
+  color: #6B5A52 !important; /* .logo-switches a の白文字 !important を打ち消す */
+  white-space: nowrap;
+}
+.logo-switches a.hdr-lang-pill:hover { background: #FBE3DA; color: #C2421F !important; }
+.hdr-lang a.hdr-lang-pill.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff !important;
+  cursor: default;
+}
+.logo-switches a.hdr-lang-pill.is-active:hover { background: var(--accent); color: #fff !important; }
+@media (max-width: 600px) {
+  .hdr-lang-pill { font-size: 11px; padding: 4px 8px; }
+  .hdr-lang { gap: 4px; }
+}
 .ft-bottom {
   border-top: 1px solid rgba(255,255,255,.1);
   padding: 14px 24px;

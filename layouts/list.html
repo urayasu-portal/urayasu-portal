@@ -93,8 +93,9 @@
 {{- end }}
 {{- end }}
 
-{{/* 2カラムレイアウト */}}
-<div class="home-layout">
+{{/* 2カラムレイアウト（サイドバーは日本語サイト専用のナビ＝JA限定。非JAは単カラム） */}}
+{{- $showSidebar := eq .Lang "ja" }}
+<div class="home-layout{{ if not $showSidebar }} home-layout--full{{ end }}">
   <div class="home-main">
 
     {{- $pages := cond $isCategoryTerm $catPages .Pages }}
@@ -141,8 +142,8 @@
     {{/* ─ タグ・その他: 従来どおりのグリッド ─ */}}
     {{- if $paginator.Pages }}
     <div class="section-head">
-      <h2>{{ if and .Title (ne .Title "記事一覧") }}{{ .Title }}の記事{{ else }}新着記事{{ end }}</h2>
-      <span class="list-count">全{{ len $pages }}件</span>
+      <h2>{{ if and .Title (ne .Title "記事一覧") }}{{ i18n "list_tagged" (dict "name" .Title) }}{{ else }}{{ i18n "list_latest" }}{{ end }}</h2>
+      <span class="list-count">{{ i18n "list_count" (dict "count" (len $pages)) }}</span>
     </div>
 
     <div class="article-grid">
@@ -157,18 +158,19 @@
     {{- if gt $paginator.TotalPages 1 }}
     <div class="home-pagination {{ if $isCategoryTerm }}{{ $cls }}{{ end }}">
       {{- if $paginator.HasPrev }}
-      <a class="page-btn" href="{{ $paginator.Prev.URL }}">← 新しい記事</a>
+      <a class="page-btn" href="{{ $paginator.Prev.URL }}">← {{ i18n "pager_newer" }}</a>
       {{- end }}
       <span class="page-info">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
       {{- if $paginator.HasNext }}
-      <a class="page-btn" href="{{ $paginator.Next.URL }}">古い記事 →</a>
+      <a class="page-btn" href="{{ $paginator.Next.URL }}">{{ i18n "pager_older" }} →</a>
       {{- end }}
     </div>
     {{- end }}
 
   </div>
 
-  {{/* サイドバー */}}
+  {{/* サイドバー（検索・カレンダー・カテゴリ・最近の記事は日本語ローカルニュース向けのため JA のみ描画） */}}
+  {{- if $showSidebar }}
   {{- $allPosts := where site.RegularPages "Section" "posts" }}
   <aside class="home-sidebar">
 
@@ -219,6 +221,7 @@
     </div>
 
   </aside>
+  {{- end }}
 </div>
 
 {{- end }}

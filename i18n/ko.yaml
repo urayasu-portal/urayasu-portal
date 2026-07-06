@@ -138,3 +138,17 @@
   translation: "특징·비고"
 - id: hl_nameonly_note
   translation: "※ 표시된 시설은 이름·지역·분류만 제공합니다."
+- id: list_tagged
+  translation: "'{{ .name }}' 태그 글"
+- id: list_latest
+  translation: "최신 글"
+- id: list_count
+  translation: "총 {{ .count }}건"
+- id: pager_newer
+  translation: "최신 글"
+- id: pager_older
+  translation: "이전 글"
+- id: tags_index_title
+  translation: "태그 목록"
+- id: tags_index_desc
+  translation: "총 {{ .count }}개 태그. 태그를 클릭하면 관련 글을 볼 수 있습니다."

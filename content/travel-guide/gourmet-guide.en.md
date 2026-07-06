@@ -283,7 +283,7 @@ When sharing information, please include the shop name, address, official URL, o
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>Looking for the right hotel?</h3>
-    <p>Scene-based comparison guides for families, budget travelers, and access-focused guests, plus a full list of all 40 hotels.</p>
+    <p>Scene-based comparison guides for families, budget travelers, and access-focused guests, plus a full list of all 48 hotels.</p>
   </div>
   <a class="tg-cross-btn" href="/en/travel-guide/hotels/">View Hotel Guide →</a>
 </div>

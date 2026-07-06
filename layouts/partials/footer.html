@@ -75,6 +75,42 @@
       </ul>
     </div>
 
+  {{- else if eq $lang "zh-tw" }}
+
+    {{- /* ZHTW 第1欄：品牌 + 網站資訊 */ -}}
+    <div>
+      <div class="ft-logo"><i class="ti ti-anchor" aria-hidden="true"></i> Urayasu Portal</div>
+      <p class="ft-desc">專為台灣旅客打造的東京迪士尼度假區·浦安·舞濱在地旅遊指南。<br>由日本在地編輯團隊親自撰寫與核實。</p>
+      <ul class="ft-site-links">
+        <li><a href="/about/">關於我們</a></li>
+        <li><a href="/privacy/">隱私政策</a></li>
+        <li><a href="/">日本語サイト / 日語</a></li>
+      </ul>
+    </div>
+
+    {{- /* ZHTW 第2欄：旅遊指南 */ -}}
+    <div>
+      <div class="ft-col-heading">旅遊指南</div>
+      <ul class="ft-links">
+        <li><a href="/zh-tw/travel-guide/hotels/">飯店</a></li>
+        <li><a href="/zh-tw/travel-guide/urayasu-maihama-access-guide/">交通</a></li>
+        <li><a href="/zh-tw/travel-guide/urayasu-maihama-shinurayasu-tourism/">觀光</a></li>
+        <li><a href="/zh-tw/travel-guide/urayasu-gourmet-souvenir-guide/">美食與伴手禮</a></li>
+        <li><a href="/zh-tw/travel-guide/urayasu-taxi-airport-flat-rate-guide/">計程車</a></li>
+      </ul>
+    </div>
+
+    {{- /* ZHTW 第3欄：規劃住宿 */ -}}
+    <div>
+      <div class="ft-col-heading">規劃住宿</div>
+      <ul class="ft-links">
+        <li><a href="/zh-tw/travel-guide/hotels/compare/">飯店比較地圖</a></li>
+        <li><a href="/zh-tw/travel-guide/hotels/kids/">親子飯店</a></li>
+        <li><a href="/zh-tw/travel-guide/hotels/budget/">實惠飯店</a></li>
+        <li><a href="/zh-tw/travel-guide/hotels/access/">依交通選飯店</a></li>
+      </ul>
+    </div>
+
   {{- else if eq $lang "ko" }}
 
     {{- /* KO 1열: 브랜드 + 사이트 정보 */ -}}

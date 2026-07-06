@@ -138,3 +138,17 @@
   translation: "Notes"
 - id: hl_nameonly_note
   translation: "※ marked hotels show name, area, and category only."
+- id: list_tagged
+  translation: "Posts tagged “{{ .name }}”"
+- id: list_latest
+  translation: "Latest posts"
+- id: list_count
+  translation: "{{ .count }} posts"
+- id: pager_newer
+  translation: "Newer"
+- id: pager_older
+  translation: "Older"
+- id: tags_index_title
+  translation: "All tags"
+- id: tags_index_desc
+  translation: "{{ .count }} tags in total. Click a tag to see related posts."

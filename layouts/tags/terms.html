@@ -1,14 +1,17 @@
 {{- define "main" }}
-<div class="home-layout">
+{{- $showSidebar := eq .Lang "ja" }}
+<div class="home-layout{{ if not $showSidebar }} home-layout--full{{ end }}">
   <div class="home-main">
 
     <div class="post-single">
       <header class="post-header" style="margin-bottom:24px;">
-        <h1 class="post-title" style="font-size:1.5em;"><i class="ti ti-tag" aria-hidden="true"></i> タグ一覧</h1>
+        <h1 class="post-title" style="font-size:1.5em;"><i class="ti ti-tag" aria-hidden="true"></i> {{ i18n "tags_index_title" }}</h1>
         <p style="font-size:0.9em;color:var(--up-muted);margin:6px 0 0;">
-          全 {{ len site.Taxonomies.tags }} 件のタグ。クリックすると関連記事の一覧に移動します。
+          {{ i18n "tags_index_desc" (dict "count" (len site.Taxonomies.tags)) }}
         </p>
       </header>
+
+      {{- if $showSidebar }}
 
       {{/* ── タグ名 → Hugo タクソノミーオブジェクトのマップを作る ── */}}
       {{- $tagMap := dict }}
@@ -62,10 +65,22 @@
       </section>
       {{- end }}
 
+      {{- else }}
+      {{/* 非JA: タグ分類(taggroups)は日本語タグ前提のため、当該言語のタグを平坦なクラウドで表示 */}}
+      <div class="tag-cloud tag-cloud-all">
+        {{- range site.Taxonomies.tags.ByCount }}
+        <a class="tag-item{{- if ge .Count 3 }} tag-item-popular{{- end }}" href="{{ .Page.RelPermalink }}">
+          {{ .Page.Title }}<span class="tag-count">{{ .Count }}</span>
+        </a>
+        {{- end }}
+      </div>
+      {{- end }}
+
     </div>
   </div>
 
-  {{/* サイドバー */}}
+  {{/* サイドバー（日本語ローカルニュース向けのため JA のみ） */}}
+  {{- if $showSidebar }}
   <aside class="home-sidebar">
     {{- partial "sidebar-calendar.html" . }}
 
@@ -76,5 +91,6 @@
       </ul>
     </div>
   </aside>
+  {{- end }}
 </div>
 {{- end }}

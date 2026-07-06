@@ -187,7 +187,7 @@ faq:
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>호텔 선택이 고민이라면</h3>
-    <p>아이 동반·가성비·교통 중심 3가지 시나리오 비교와 시내 전체 40곳 목록을 정리했습니다.</p>
+    <p>아이 동반·가성비·교통 중심 3가지 시나리오 비교와 전체 48곳 목록을 정리했습니다.</p>
   </div>
   <a class="tg-cross-btn" href="/ko/travel-guide/hotels/">호텔 가이드 보기 →</a>
 </div>

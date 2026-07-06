@@ -1,0 +1,154 @@
+# UIラベルの多言語化テーブル（繁體中文・台湾向け）。テンプレートの {{ i18n "key" }} 用。
+# en.yaml / ja.yaml とキーを必ず揃えること。
+- id: breadcrumb
+  translation: "麵包屑導覽"
+- id: nav_home
+  translation: "首頁"
+- id: nav_travel_guide
+  translation: "旅遊指南"
+- id: nav_hotels
+  translation: "飯店"
+- id: hotel_badge
+  translation: "飯店"
+- id: tdr_official
+  translation: "迪士尼官方飯店"
+- id: updated_on
+  translation: "更新於 {{ .date }}"
+- id: type_what_is
+  translation: "{{ .name }}是什麼？"
+- id: type_about
+  translation: "認識飯店分類"
+- id: hotel_disclaimer
+  translation: "本頁所列價格與服務可能異動。預訂前請務必至各飯店官方網站確認最新房況、價格與各項條件。"
+- id: nearby_hotels
+  translation: "附近的同類飯店"
+- id: cat_disney
+  translation: "迪士尼"
+- id: cat_official
+  translation: "官方"
+- id: cat_partner
+  translation: "合作"
+- id: cat_other
+  translation: "其他"
+- id: cat_full_disney
+  translation: "迪士尼飯店"
+- id: cat_full_official
+  translation: "官方飯店"
+- id: cat_full_partner
+  translation: "合作飯店"
+- id: cat_full_goodneighbor
+  translation: "好鄰居飯店"
+- id: tags_label
+  translation: "標籤："
+- id: contents
+  translation: "目錄"
+- id: check_rates
+  translation: "查看房價與空房"
+- id: includes_pr
+  translation: "含推廣聯盟連結（PR）"
+- id: compare_title
+  translation: "比較並挑選飯店"
+- id: compare_desc
+  translation: "依親子・實惠・交通篩選"
+- id: compare_btn
+  translation: "開啟比較地圖"
+- id: popular_guides
+  translation: "熱門飯店攻略"
+- id: pop_kids
+  translation: "親子飯店比較"
+- id: pop_budget
+  translation: "如何挑選實惠飯店"
+- id: pop_access
+  translation: "依交通比較飯店"
+- id: map_open
+  translation: "在Google地圖開啟"
+- id: map_directions
+  translation: "查詢路線"
+- id: featured_title
+  translation: "精選飯店"
+- id: see_all
+  translation: "查看全部 →"
+- id: hl_eyebrow1
+  translation: "飯店一覽"
+- id: hl_eyebrow2
+  translation: "舞濱・浦安・新浦安"
+- id: hl_title
+  translation: "在舞濱・浦安地區挑選飯店"
+- id: hl_lead
+  translation: "從東京迪士尼直營的高端飯店到實惠飯店，我們以在地視角整理了區域內的<strong>全部{{ .total }}家飯店</strong>，並收錄2024–2026年新開幕的設施。您可依目的、區域或價位，找到適合你旅程的那一家。"
+- id: hl_stat_hotels
+  translation: "家飯店"
+- id: hl_stat_areas
+  translation: "個區域"
+- id: hl_stat_andup
+  translation: "起的住宿"
+- id: hl_compare_title
+  translation: "飯店比較地圖"
+- id: hl_compare_sub
+  translation: "依區域、設施與價位，同時篩選列表與地圖"
+- id: hl_compare_cta
+  translation: "在地圖上比較 →"
+- id: hl_find_purpose
+  translation: "依目的篩選"
+- id: hl_purpose_sub
+  translation: "不知道從何選起？先從你的旅行風格開始。"
+- id: hl_family
+  translation: "親子出遊"
+- id: hl_family_desc
+  translation: "大浴場・客房・設施齊全的家庭住宿"
+- id: hl_budget
+  translation: "實惠"
+- id: hl_budget_desc
+  translation: "每晚5,000日圓起・講究CP值"
+- id: hl_access
+  translation: "交通優先"
+- id: hl_access_desc
+  translation: "鄰近樂園・車站或機場的住宿"
+- id: hl_find_area
+  translation: "依區域查找"
+- id: hl_area_sub
+  translation: "浦安・舞濱及周邊分為{{ .count }}個區域。點擊卡片可篩選下方的飯店列表。"
+- id: hl_types_price
+  translation: "分類與價位參考"
+- id: hl_estimate
+  translation: "2人1房・平日參考"
+- id: hl_pyramid_sub
+  translation: "點擊價位區間，可依分類篩選下方的飯店列表。"
+- id: hl_peak_note
+  translation: "※ 旺季（黃金週、暑假、年末年初）所有飯店都會大幅漲價"
+- id: hl_types_link
+  translation: "迪士尼／官方／合作／好鄰居飯店有何差別？ →"
+- id: hl_full_list
+  translation: "飯店一覽"
+- id: hl_notice
+  translation: "<strong>關於價格與設施資訊：</strong>價位為2人1房・平日的參考值，旺季會大幅變動。最新價格請至各預訂網站確認。點擊飯店名稱可開啟詳情頁。"
+- id: hl_filter_label
+  translation: "依分類篩選飯店"
+- id: hl_all
+  translation: "全部"
+- id: th_name
+  translation: "飯店名稱"
+- id: th_area
+  translation: "區域"
+- id: th_type
+  translation: "分類"
+- id: th_price
+  translation: "價位參考"
+- id: th_notes
+  translation: "特色備註"
+- id: hl_nameonly_note
+  translation: "※ 標註的設施僅提供名稱、區域與分類。"
+- id: list_tagged
+  translation: "標籤「{{ .name }}」的文章"
+- id: list_latest
+  translation: "最新文章"
+- id: list_count
+  translation: "共 {{ .count }} 篇"
+- id: pager_newer
+  translation: "較新文章"
+- id: pager_older
+  translation: "較早文章"
+- id: tags_index_title
+  translation: "標籤一覽"
+- id: tags_index_desc
+  translation: "共 {{ .count }} 個標籤。點擊標籤查看相關文章。"

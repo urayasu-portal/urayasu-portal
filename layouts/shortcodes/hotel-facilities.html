@@ -38,17 +38,24 @@
 {{- $noteKO := dict
     "有料" "유료" "無料" "무료" "天然温泉" "천연 온천" "サウナ" "사우나"
     "温水" "온수" "屋内外" "실내외" "展望" "전망" "無料・展望" "무료·전망" }}
+{{- $labZHTW := dict
+    "bath" "大浴場·溫泉" "pool" "室內泳池" "laundry" "投幣洗衣"
+    "convenience" "館內商店" "shuttle" "免費班車" "station" "鄰近車站"
+    "limousine" "機場利木津巴士" "kitchen" "小廚房" }}
+{{- $noteZHTW := dict
+    "有料" "付費" "無料" "免費" "天然温泉" "天然溫泉" "サウナ" "三溫暖"
+    "温水" "溫水" "屋内外" "室內外" "展望" "景觀" "無料・展望" "免費·景觀" }}
 {{- with $h }}
 {{- if .facilities }}
 <div class="hg-facilities">
   {{- range .facilities }}
   {{- $ti := index $icon .key }}
-  {{- $label := index $labJP .key }}{{ if eq $lang "en" }}{{ $label = index $labEN .key }}{{ else if eq $lang "zh" }}{{ $label = index $labZH .key }}{{ else if eq $lang "ko" }}{{ $label = index $labKO .key }}{{ end }}
+  {{- $label := index $labJP .key }}{{ if eq $lang "en" }}{{ $label = index $labEN .key }}{{ else if eq $lang "zh" }}{{ $label = index $labZH .key }}{{ else if eq $lang "ko" }}{{ $label = index $labKO .key }}{{ else if eq $lang "zh-tw" }}{{ $label = index $labZHTW .key }}{{ end }}
   {{- if $ti }}
   <div class="hg-fac">
     <i class="ti {{ $ti }}" aria-hidden="true"></i>
     <div class="hg-fac-label">{{ $label }}</div>
-    {{- with .note }}<div class="hg-fac-note">{{ if eq $lang "en" }}{{ with index $noteEN . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "zh" }}{{ with index $noteZH . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "ko" }}{{ with index $noteKO . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else }}{{ . }}{{ end }}</div>{{- end }}
+    {{- with .note }}<div class="hg-fac-note">{{ if eq $lang "en" }}{{ with index $noteEN . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "zh" }}{{ with index $noteZH . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "ko" }}{{ with index $noteKO . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else if eq $lang "zh-tw" }}{{ with index $noteZHTW . }}{{ . }}{{ else }}{{ . }}{{ end }}{{ else }}{{ . }}{{ end }}</div>{{- end }}
   </div>
   {{- end }}
   {{- end }}

@@ -701,7 +701,7 @@ faq:
       <span class="rg-emoji">🏨</span>
       <span class="rg-body">
         <span class="rg-title">浦安市内ホテル一覧ガイド</span>
-        <span class="rg-go">市内全40軒をエリア・価格帯で比較 →</span>
+        <span class="rg-go">全48軒をエリア・価格帯で比較 →</span>
       </span>
     </a>
     <a class="rg-card" href="/travel-guide/urayasu-gourmet-souvenir-guide/">

@@ -188,7 +188,7 @@ Last verified: July 5, 2026
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>Not sure which hotel to pick?</h3>
-    <p>Compare by scene — with kids, on a budget, or for access — plus a full list of all 40 hotels in the city.</p>
+    <p>Compare by scene — with kids, on a budget, or for access — plus a full list of all 48 hotels in the area.</p>
   </div>
   <a class="tg-cross-btn" href="/en/travel-guide/hotels/">See the hotel guide →</a>
 </div>

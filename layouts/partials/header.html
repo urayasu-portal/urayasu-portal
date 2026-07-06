@@ -4,7 +4,7 @@
     <nav class="header-nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
-            {{- if eq .Lang "en" }}{{ $label_text = "Urayasu Portal" }}{{ else if eq .Lang "zh" }}{{ $label_text = "浦安门户" }}{{ else if eq .Lang "ko" }}{{ $label_text = "우라야스 포털" }}{{ end }}
+            {{- if eq .Lang "en" }}{{ $label_text = "Urayasu Portal" }}{{ else if eq .Lang "zh" }}{{ $label_text = "浦安门户" }}{{ else if eq .Lang "ko" }}{{ $label_text = "우라야스 포털" }}{{ else if eq .Lang "zh-tw" }}{{ $label_text = "浦安門戶" }}{{ end }}
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if hasPrefix site.Params.label.iconSVG "<svg" }}
@@ -40,6 +40,14 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                {{- end }}
+                {{- /* 言語スイッチャー（翻訳が2言語以上あるページのみ）。header は baseof で .Page キャッシュ＝ページ単位なので .AllTranslations が正しく解決される。.AllTranslations は自ページも含むため len>1 で判定。 */ -}}
+                {{- if gt (len .AllTranslations) 1 }}
+                <div class="hdr-lang" role="navigation" aria-label="{{ if eq $.Lang "en" }}Language{{ else if eq $.Lang "zh" }}语言{{ else if eq $.Lang "ko" }}언어{{ else if eq $.Lang "zh-tw" }}語言{{ else }}言語{{ end }}">
+                    {{- range .AllTranslations }}
+                    <a class="hdr-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }} hreflang="{{ if eq .Lang "zh" }}zh-Hans{{ else if eq .Lang "zh-tw" }}zh-Hant-TW{{ else }}{{ .Lang }}{{ end }}">{{ .Language.LanguageName }}</a>
+                    {{- end }}
+                </div>
                 {{- end }}
             </div>
             {{- end }}

@@ -1,5 +1,5 @@
 {{- $lang := .Language.Lang }}
-<div class="mt-banner" role="note" aria-label="{{ if eq $lang "zh" }}编辑说明{{ else if eq $lang "ko" }}편집자 안내{{ else }}Editorial notice{{ end }}">
+<div class="mt-banner" role="note" aria-label="{{ if eq $lang "zh" }}编辑说明{{ else if eq $lang "ko" }}편집자 안내{{ else if eq $lang "zh-tw" }}編輯說明{{ else }}Editorial notice{{ end }}">
   <div class="mt-banner-inner">
     <span class="mt-banner-icon"><i class="ti ti-circle-check" aria-hidden="true"></i></span>
     <div class="mt-banner-text">
@@ -7,11 +7,13 @@
       <strong>由本地编辑团队亲自核对。</strong>本文在日本浦安当地手工撰写与查证。我们力求准确，但价格、营业时间与空房状况可能变动——预订前请以官方信息为准。
       {{- else if eq $lang "ko" }}
       <strong>현지 편집팀이 직접 검수했습니다.</strong> 일본 우라야스 현지에서 직접 작성하고 확인한 콘텐츠입니다. 정확성을 위해 노력하지만 가격·영업시간·객실 상황은 변동될 수 있으니, 예약 전 공식 정보를 확인하세요.
+      {{- else if eq $lang "zh-tw" }}
+      <strong>由在地編輯團隊親自核實。</strong>本文在日本浦安當地手工撰寫與查證。我們力求準確，但價格、營業時間與空房狀況可能異動——預訂前請以官方資訊為準。
       {{- else }}
       <strong>Reviewed by our local editorial team.</strong> Written and checked by hand in Urayasu, Japan. We work to keep everything accurate, but prices, hours and availability can change — please confirm with the official source before you book.
       {{- end }}
       {{- with .Translations }}{{- range . }}{{- if eq .Lang "ja" }}
-      <a class="mt-banner-link" href="{{ .Permalink }}">{{ if eq $lang "zh" }}查看日文版 →{{ else if eq $lang "ko" }}일본어판 보기 →{{ else }}View in Japanese →{{ end }}</a>
+      <a class="mt-banner-link" href="{{ .Permalink }}">{{ if eq $lang "zh" }}查看日文版 →{{ else if eq $lang "ko" }}일본어판 보기 →{{ else if eq $lang "zh-tw" }}查看日文版 →{{ else }}View in Japanese →{{ end }}</a>
       {{- end }}{{- end }}{{- end }}
     </div>
   </div>

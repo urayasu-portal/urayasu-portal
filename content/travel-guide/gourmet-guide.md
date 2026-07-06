@@ -284,7 +284,7 @@ Grand Café・Galleria Café・日本料理「飛鳥」・Maihama Teppanyaki+・
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>ホテル選びに迷ったら</h3>
-    <p>子連れ・格安・アクセス重視の3つのシーン別比較記事と、市内全40軒の施設一覧をまとめています。</p>
+    <p>子連れ・格安・アクセス重視の3つのシーン別比較記事と、エリア全48軒の施設一覧をまとめています。</p>
   </div>
   <a class="tg-cross-btn" href="/travel-guide/hotels/">ホテルガイドを見る →</a>
 </div>

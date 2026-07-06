@@ -187,7 +187,7 @@ faq:
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>选酒店拿不定主意？</h3>
-    <p>按亲子·实惠·交通三种场景比较，并附市内全部40家酒店一览。</p>
+    <p>按亲子·实惠·交通三种场景比较，并附全部48家酒店一览。</p>
   </div>
   <a class="tg-cross-btn" href="/zh/travel-guide/hotels/">查看酒店指南 →</a>
 </div>

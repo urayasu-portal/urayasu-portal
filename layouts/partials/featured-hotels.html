@@ -6,10 +6,10 @@
        呼び出し: {{ partial "featured-hotels.html" . }} */ -}}
 {{- $lang := site.Language.Lang }}
 {{- $catBadge := dict
-    "disney"   (index (dict "ja" "ディズニー" "en" "DISNEY" "zh" "迪士尼" "ko" "디즈니") $lang)
-    "official" (index (dict "ja" "オフィシャル" "en" "OFFICIAL" "zh" "官方" "ko" "공식") $lang)
-    "partner"  (index (dict "ja" "パートナー" "en" "PARTNER" "zh" "合作" "ko" "파트너") $lang)
-    "other"    (index (dict "ja" "その他" "en" "OTHER" "zh" "其他" "ko" "기타") $lang) }}
+    "disney"   (index (dict "ja" "ディズニー" "en" "DISNEY" "zh" "迪士尼" "ko" "디즈니" "zh-tw" "迪士尼") $lang)
+    "official" (index (dict "ja" "オフィシャル" "en" "OFFICIAL" "zh" "官方" "ko" "공식" "zh-tw" "官方") $lang)
+    "partner"  (index (dict "ja" "パートナー" "en" "PARTNER" "zh" "合作" "ko" "파트너" "zh-tw" "合作") $lang)
+    "other"    (index (dict "ja" "その他" "en" "OTHER" "zh" "其他" "ko" "기타" "zh-tw" "其他") $lang) }}
 {{- $catIcon := dict "disney" "ti-building-castle" "official" "ti-building-skyscraper" "partner" "ti-star" "other" "ti-building" }}
 {{- $premium := slice }}{{- $partner := slice }}{{- $value := slice }}
 {{- range hugo.Data.hotels.areas }}

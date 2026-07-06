@@ -138,3 +138,17 @@
   translation: "特色备注"
 - id: hl_nameonly_note
   translation: "※ 标注的设施仅提供名称、区域与分类。"
+- id: list_tagged
+  translation: "标签“{{ .name }}”的文章"
+- id: list_latest
+  translation: "最新文章"
+- id: list_count
+  translation: "共 {{ .count }} 篇"
+- id: pager_newer
+  translation: "较新文章"
+- id: pager_older
+  translation: "较早文章"
+- id: tags_index_title
+  translation: "标签一览"
+- id: tags_index_desc
+  translation: "共 {{ .count }} 个标签。点击标签查看相关文章。"
