@@ -8,6 +8,8 @@ tags:
   - ホテル
   - ディズニー
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/livemax-kasai-ekimae.jpg"
 noDate: true
 ---
 

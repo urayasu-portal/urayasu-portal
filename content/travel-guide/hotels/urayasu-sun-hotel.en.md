@@ -8,6 +8,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/urayasu-sun-hotel.jpg"
 noDate: true
 ---
 

@@ -8,6 +8,8 @@ tags:
   - ホテル
   - ディズニー
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/premium-monday-maihama-view-1.jpg"
 noDate: true
 ---
 

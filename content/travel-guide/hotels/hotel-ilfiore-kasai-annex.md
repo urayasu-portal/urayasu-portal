@@ -8,6 +8,8 @@ tags:
   - ホテル
   - ディズニー
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/hotels/hotel-ilfiore-kasai-annex.jpg"
 noDate: true
 ---
 
