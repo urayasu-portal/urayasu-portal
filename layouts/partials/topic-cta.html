@@ -1,0 +1,45 @@
+{{- /*
+  街のトピックス（posts）記事末尾の自動CTA。
+  data/affiliate_ctas.yaml の tag_rules → category_rules の順で該当CTAを解決し、
+  url が非空の場合のみ描画する（affiliate枠はASP承認後にyamlへURLを貼るだけで有効化）。
+  記事側のフロントマター・本文編集は不要。
+*/ -}}
+{{- if eq .Section "posts" }}
+{{- $cfg := hugo.Data.affiliate_ctas }}
+{{- $pageTags := .Params.tags | default slice }}
+{{- $ctaIds := slice }}
+
+{{- /* タグ優先ルール */}}
+{{- range $rule := $cfg.tag_rules }}
+  {{- if gt (len (intersect $pageTags ($rule.tags | default slice))) 0 }}
+    {{- $ctaIds = $ctaIds | append $rule.cta }}
+  {{- end }}
+{{- end }}
+
+{{- /* カテゴリルール */}}
+{{- $cat := index (.Params.categories | default slice) 0 | default "" }}
+{{- with index $cfg.category_rules $cat }}
+  {{- $ctaIds = $ctaIds | append . }}
+{{- end }}
+
+{{- $ctaId := index $ctaIds 0 | default "" }}
+{{- $cta := index $cfg.ctas $ctaId }}
+{{- if and $cta $cta.url }}
+{{- $isAff := eq ($cta.type | default "affiliate") "affiliate" }}
+<aside class="topic-cta {{ if $isAff }}is-affiliate{{ else }}is-internal{{ end }}">
+  <div class="topic-cta-head">
+    {{- if $isAff }}<span class="pr-note">PR</span>{{ end }}
+    {{- with $cta.eyebrow }}<span class="topic-cta-eyebrow">{{ . }}</span>{{ end }}
+  </div>
+  <div class="topic-cta-body">
+    <span class="topic-cta-ic"><i class="ti {{ $cta.icon | default "ti-external-link" }}" aria-hidden="true"></i></span>
+    <div class="topic-cta-text">
+      <p class="topic-cta-title">{{ $cta.title }}</p>
+      {{- with $cta.desc }}<p class="topic-cta-desc">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+  <a class="topic-cta-btn" href="{{ $cta.url }}"{{ if $isAff }} rel="sponsored noopener" target="_blank"{{ end }}>{{ $cta.btn }} <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+  {{- if $isAff }}<p class="topic-cta-note">{{ i18n "includes_pr" }}</p>{{ end }}
+</aside>
+{{- end }}
+{{- end }}

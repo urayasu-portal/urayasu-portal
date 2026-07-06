@@ -1504,6 +1504,51 @@ body.pillar-travel .post-single .post-content th {
 .rec-title { font-size: 13px; font-weight: 700; line-height: 1.5; }
 .rec-desc { font-size: 11px; color: var(--up-muted); margin-top: 4px; }
 
+/* 記事末尾 自動CTA（topic-cta.html / data/affiliate_ctas.yaml） */
+.topic-cta {
+  border-radius: 10px;
+  padding: 18px 20px 16px;
+  margin: 28px 0 8px;
+  border: 1px solid var(--up-border);
+}
+.topic-cta.is-internal { background: #FDF3EF; border-color: #F3CDBF; }
+.topic-cta.is-affiliate { background: #fffbf0; border-color: #f0d080; }
+.topic-cta-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.topic-cta-eyebrow { font-size: 12px; font-weight: 700; color: var(--up-muted); letter-spacing: .04em; }
+.topic-cta-body { display: flex; align-items: flex-start; gap: 14px; }
+.topic-cta-ic {
+  flex-shrink: 0;
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: #fff;
+  border: 1px solid var(--up-border);
+  font-size: 24px;
+}
+.topic-cta.is-internal .topic-cta-ic { color: #E05535; border-color: #F3CDBF; }
+.topic-cta.is-affiliate .topic-cta-ic { color: #B7791F; border-color: #f0d080; }
+.topic-cta-text { flex: 1; min-width: 0; }
+.topic-cta-title { font-size: 15px; font-weight: 700; line-height: 1.6; margin: 0; }
+.topic-cta-desc { font-size: 13px; color: var(--up-muted); line-height: 1.7; margin: 4px 0 0; }
+.topic-cta-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 14px;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px; font-weight: 700;
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: filter .15s;
+}
+.topic-cta.is-internal .topic-cta-btn { background: #E05535; }
+.topic-cta.is-affiliate .topic-cta-btn { background: #B7791F; }
+.topic-cta-btn:hover { filter: brightness(0.92); }
+.topic-cta-note { font-size: 11px; color: var(--up-text-3); margin: 10px 0 0; }
+@media (max-width: 480px) {
+  .topic-cta-body { flex-direction: column; gap: 10px; }
+  .topic-cta-btn { width: 100%; justify-content: center; }
+}
+
 /* ---------- お問い合わせ イントロ ---------- */
 .contact-intro {
   background: var(--cat-news-bg);

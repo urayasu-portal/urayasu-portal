@@ -1,0 +1,65 @@
+# ============================================================
+# 街のトピックス（posts）記事末尾の自動CTA定義
+#
+# 運用ルール：
+# - 記事側の編集は一切不要。このファイルを直すだけで全記事に反映される
+# - type: affiliate は url が空の間は何も表示されない
+#   → ASPで提携承認されたらアフィリエイトURLを url に貼るだけで有効化
+# - type: internal は内部リンク導線（PR表記なし・rel/sponsored なし）
+# - tag_rules が category_rules より優先（上から順に最初にマッチした1件）
+# - 表示テンプレート: layouts/partials/topic-cta.html
+# ============================================================
+
+# タグ優先ルール：記事の tags にいずれかが含まれたら適用
+tag_rules:
+  - tags:
+      - 舞浜
+      - ディズニー
+      - 東京ディズニーリゾート
+      - 東京ディズニーランド
+      - 東京ディズニーシー
+      - TDR
+      - ホテル
+    cta: hotel_guide
+
+# カテゴリ→CTA（記事の categories 先頭で判定。載せないカテゴリは書かない）
+# ニュース・お知らせ・開店・閉店・スポーツは意図的に無し（AdSenseのみ）
+category_rules:
+  イベント: hotel_guide
+  グルメ・カフェ: gourmet
+  グルメカフェ: gourmet
+  子育て・教育: kosodate
+  子育て教育: kosodate
+
+# CTA定義本体
+ctas:
+
+  # ── 内部導線：ホテル比較ガイド（収益ページへの送客・常時有効） ──
+  hotel_guide:
+    type: internal
+    icon: ti-building-skyscraper
+    eyebrow: 舞浜・浦安に泊まるなら
+    title: 舞浜・新浦安のホテルを地元目線で徹底比較
+    desc: ディズニー周辺のオフィシャルホテルから駅近の格安ビジネスまで、料金目安・アクセス・設備をまとめて比較できます。
+    url: /travel-guide/hotels/
+    btn: ホテル比較ガイドを見る
+
+  # ── アフィリエイト枠：グルメ・カフェ（A8提携承認後に url を貼る） ──
+  gourmet:
+    type: affiliate
+    icon: ti-coffee
+    eyebrow: 自宅で浦安グルメ
+    title: ""
+    desc: ""
+    url: ""
+    btn: ""
+
+  # ── アフィリエイト枠：子育て・教育（A8提携承認後に url を貼る） ──
+  kosodate:
+    type: affiliate
+    icon: ti-school
+    eyebrow: 浦安の子育て世帯に
+    title: ""
+    desc: ""
+    url: ""
+    btn: ""

@@ -157,6 +157,9 @@
 
       {{- partial "extend_post_content.html" . }}
 
+      {{/* 記事末尾 自動CTA（カテゴリ/タグ連動・data/affiliate_ctas.yaml） */}}
+      {{- partial "topic-cta.html" . }}
+
       {{/* 情報提供CTA */}}
       {{- partial "info-cta.html" . }}
 
