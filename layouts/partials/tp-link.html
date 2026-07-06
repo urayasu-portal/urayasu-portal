@@ -1,0 +1,11 @@
+{{- /* Travelpayouts リダイレクトラッパー。url を tp.media 型アフィリリンクに包んで返す。
+       共通の marker/trs（hugo.yaml params.affiliate.travelpayouts）とプログラム別の p が
+       すべて設定済みのときだけ包み、未設定なら素のURLをそのまま返す（誤計測防止）。
+       引数: url（遷移先）/ p（プログラムID）/ campaign（campaign_id・省略可） */ -}}
+{{- $tp := site.Params.affiliate.travelpayouts | default dict }}
+{{- $out := .url }}
+{{- if and $tp.marker $tp.trs .p }}
+  {{- $out = printf "https://tp.media/r?marker=%s&trs=%s&p=%s&u=%s" $tp.marker $tp.trs .p (.url | urlquery) }}
+  {{- with .campaign }}{{ $out = printf "%s&campaign_id=%s" $out . }}{{ end }}
+{{- end }}
+{{- return $out }}

@@ -1,32 +1,34 @@
 {{- /* 予約ボタン一式（<a>タグのみ）。サイドバーCTA・モバイル固定バー・本文内CTAの3箇所で共通利用。
-       引数: bk（data/hotels_map.yaml の booking dict）, lang（言語コード）, cur2（hotels_map.yaml の該当ホテル。name_en参照用） */ -}}
+       引数: bk（data/hotels_map.yaml の booking dict）, lang（言語コード）, cur2（hotels_map.yaml の該当ホテル。name_en参照用）
+       非JAのアフィリ化は Travelpayouts（partials/tp-link.html でラップ。個別URL・検索フォールバックの両方が対象）。
+       hugo.yaml の affiliate.travelpayouts が未設定のあいだは素のURLで表示される。 */ -}}
 {{- $bk := .bk }}
 {{- $lang := .lang }}
 {{- $cur2 := .cur2 }}
+{{- $tp := site.Params.affiliate.travelpayouts | default dict }}
+
+{{- /* Booking.com: 個別ページURL(CSVのBookingURL列)があれば直接遷移。無ければ英語施設名の検索結果へフォールバック */ -}}
+{{- $bookingHref := "" }}
+{{- with $bk.booking }}{{ $bookingHref = . }}{{ else }}{{ with $cur2.name_en }}{{ $bookingHref = printf "https://www.booking.com/searchresults.html?ss=%s" (. | urlquery) }}{{ end }}{{ end }}
+{{- if $bookingHref }}{{ $bookingHref = partial "tp-link.html" (dict "url" $bookingHref "p" $tp.bookingP "campaign" $tp.bookingCampaign) }}{{ end }}
+
+{{- /* Agoda: CSVのAgodaURL列があるホテルのみ */ -}}
+{{- $agodaHref := "" }}
+{{- with $bk.agoda }}{{ $agodaHref = partial "tp-link.html" (dict "url" . "p" $tp.agodaP "campaign" $tp.agodaCampaign) }}{{ end }}
+
 {{- if eq $lang "en" }}
-  {{- /* ホテル個別ページURL(CSVのBookingURL列)があれば直接遷移。無ければ施設名検索へフォールバック。
-         hugo.yaml の affiliate.travelpayouts が設定済みなら tp.media リダイレクトで包んでアフィリ化
-         （個別URL・検索フォールバックの両方が収益化対象になる） */ -}}
-  {{- $bookingHref := "" }}
-  {{- with $bk.booking }}{{ $bookingHref = . }}{{ else }}{{ with $cur2.name_en }}{{ $bookingHref = printf "https://www.booking.com/searchresults.html?ss=%s" (. | urlquery) }}{{ end }}{{ end }}
-  {{- if $bookingHref }}
-  {{- $tp := site.Params.affiliate.travelpayouts | default dict }}
-  {{- if and $tp.marker $tp.trs $tp.bookingP }}
-    {{- $wrapped := printf "https://tp.media/r?marker=%s&trs=%s&p=%s&u=%s" $tp.marker $tp.trs $tp.bookingP ($bookingHref | urlquery) }}
-    {{- with $tp.bookingCampaign }}{{ $wrapped = printf "%s&campaign_id=%s" $wrapped . }}{{ end }}
-    {{- $bookingHref = $wrapped }}
-  {{- end }}
-  <a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>
-  {{- end }}
-{{- else if eq $lang "zh" }}
+  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
+  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
+{{- else if or (eq $lang "zh") (eq $lang "zh-tw") }}
   {{- with $cur2.name_en }}
-  <a class="lg-book-btn book-trip" href="https://www.trip.com/hotels/list?cityName=Tokyo&keyword={{ . | urlquery }}" target="_blank" rel="sponsored noopener">Trip.com</a>
+  {{- $tripHref := partial "tp-link.html" (dict "url" (printf "https://www.trip.com/hotels/list?cityName=Tokyo&keyword=%s" (. | urlquery)) "p" $tp.tripP "campaign" $tp.tripCampaign) }}
+  <a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>
   {{- end }}
+  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
 {{- else if eq $lang "ko" }}
-  {{- with $bk.expedia }}
-  <a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener">Expedia</a>
-  {{- end }}
-  {{- with $bk.agoda }}<a class="lg-book-btn book-agoda" href="{{ . }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
+  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
+  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
+  {{- with $bk.expedia }}<a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener">Expedia</a>{{ end }}
 {{- else }}
   {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener">楽天トラベル</a>{{ end }}
   {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener">じゃらん</a>{{ end }}

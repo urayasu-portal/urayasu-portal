@@ -47,11 +47,13 @@ params:
   # valuecommercePid に管理画面の「LinkSwitch ID（vc_pid）」を貼ると extend_head.html がタグを出力。
   # 空のあいだは何も出力されない（誤計測防止）。production 時のみ出力。
   #
-  # Travelpayouts（Booking.com 等）: 予約ボタンの booking.com リンクを
-  # https://tp.media/r?marker=…&trs=…&p=…&u=<遷移先> のリダイレクト型アフィリリンクに包む。
-  # 管理画面で生成したBooking.comリンクの各パラメータを下に転記すると有効化。
-  # marker=パートナーID / trs=トラフィックソースID / bookingP=p値 / bookingCampaign=campaign_id（あれば）。
-  # いずれか未設定のあいだは素のURLのまま（誤計測防止）。
+  # Travelpayouts: 非JAの予約ボタン（Booking.com / Trip.com / Agoda）を
+  # https://tp.media/r?marker=…&trs=…&p=…&u=<遷移先> のリダイレクト型アフィリリンクに包む（partials/tp-link.html）。
+  # 管理画面のリンクジェネレーターで各プログラムのリンクを1本生成し、パラメータを下に転記すると有効化。
+  # marker=パートナーID / trs=トラフィックソースID（全プログラム共通）
+  # *P=プログラム別のp値 / *Campaign=campaign_id（あれば）。
+  # marker・trs・該当プログラムのp値が揃うまでは素のURLのまま（誤計測防止）。
+  # 表示先: Booking=EN/ZH/KO・Trip.com=ZH・Agoda=EN/KO（CSVのAgodaURL列があるホテルのみ）。
   affiliate:
     valuecommercePid: ""
     travelpayouts:
@@ -59,6 +61,10 @@ params:
       trs: ""
       bookingP: ""
       bookingCampaign: ""
+      tripP: ""
+      tripCampaign: ""
+      agodaP: ""
+      agodaCampaign: ""
   # ヘッダーロゴの主表示。英語サイトでもブランド名は「浦安ぽーたる」で統一（site.Title はSEOの<title>接尾辞用に言語別のまま）
   label:
     text: 浦安ぽーたる
