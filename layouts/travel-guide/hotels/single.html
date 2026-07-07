@@ -186,6 +186,9 @@
       </div>
       {{- end }}
 
+      {{/* 旅行ガイド 横断ナビ（全記事共通） */}}
+      {{- partial "travel-guide-nav.html" . }}
+
       <footer class="post-footer">
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         {{- with $.GetTerms $tags }}
@@ -240,6 +243,9 @@
         <li><a href="{{ "/travel-guide/hotels/kids/" | relLangURL }}"><span class="lg-pop-num">1</span><span>{{ i18n "pop_kids" }}</span></a></li>
         <li><a href="{{ "/travel-guide/hotels/budget/" | relLangURL }}"><span class="lg-pop-num">2</span><span>{{ i18n "pop_budget" }}</span></a></li>
         <li><a href="{{ "/travel-guide/hotels/access/" | relLangURL }}"><span class="lg-pop-num">3</span><span>{{ i18n "pop_access" }}</span></a></li>
+        <li><a href="{{ "/travel-guide/hotels/happy-entry/" | relLangURL }}"><span class="lg-pop-num">4</span><span>{{ i18n "pop_happy" }}</span></a></li>
+        <li><a href="{{ "/travel-guide/hotels/shuttle/" | relLangURL }}"><span class="lg-pop-num">5</span><span>{{ i18n "pop_shuttle" }}</span></a></li>
+        <li><a href="{{ "/travel-guide/hotels/types/" | relLangURL }}"><span class="lg-pop-num">6</span><span>{{ i18n "pop_types" }}</span></a></li>
       </ol>
     </div>
 

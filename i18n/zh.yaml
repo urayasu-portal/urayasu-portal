@@ -60,6 +60,12 @@
   translation: "如何挑选实惠酒店"
 - id: pop_access
   translation: "按交通比较酒店"
+- id: pop_happy
+  translation: "Happy Entry提前入园解说"
+- id: pop_shuttle
+  translation: "有免费班车的酒店"
+- id: pop_types
+  translation: "酒店分类体系解说"
 - id: map_open
   translation: "在Google地图打开"
 - id: map_directions
@@ -104,6 +110,18 @@
   translation: "交通优先"
 - id: hl_access_desc
   translation: "邻近乐园·车站或机场的住宿"
+- id: hl_types
+  translation: "酒店分类"
+- id: hl_types_desc
+  translation: "迪士尼·官方·合作酒店的区别"
+- id: hl_happy
+  translation: "提前入园"
+- id: hl_happy_desc
+  translation: "哪些酒店能提前15分钟入园"
+- id: hl_shuttle
+  translation: "免费班车"
+- id: hl_shuttle_desc
+  translation: "班车的4种类型与时刻表陷阱"
 - id: hl_find_area
   translation: "按区域查找"
 - id: hl_area_sub

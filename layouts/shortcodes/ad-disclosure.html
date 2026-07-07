@@ -1,4 +1,4 @@
 {{- /* 広告（PR）表記。アフィリエイトリンクを含む記事の冒頭などに {{< ad-disclosure >}} で挿入する。
-       2023年10月のステマ規制（景表法）対応。日英で文言を切替。 */ -}}
-{{- $isEN := eq .Page.Language.Lang "en" -}}
-<p class="ad-disclosure"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if $isEN }}This page includes affiliate advertising (PR). Prices and availability are subject to change—please confirm on each provider's site.{{ else }}本ページは広告（アフィリエイト）を含みます。料金・空室状況は変動するため、最新情報は各予約サイトでご確認ください。{{ end }}</p>
+       2023年10月のステマ規制（景表法）対応。5言語で文言を切替。 */ -}}
+{{- $lang := .Page.Language.Lang -}}
+<p class="ad-disclosure"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if eq $lang "en" }}This page includes affiliate advertising (PR). Prices and availability are subject to change—please confirm on each provider's site.{{ else if eq $lang "zh" }}本页包含联盟广告（PR）。价格与库存可能变动，请以各销售网站的最新信息为准。{{ else if eq $lang "zh-tw" }}本頁包含聯盟廣告（PR）。價格與庫存可能變動，請以各銷售網站的最新資訊為準。{{ else if eq $lang "ko" }}본 페이지에는 제휴 광고(PR)가 포함되어 있습니다. 가격·재고는 변동될 수 있으니 각 판매 사이트에서 최신 정보를 확인하세요.{{ else }}本ページは広告（アフィリエイト）を含みます。料金・空室状況は変動するため、最新情報は各予約サイトでご確認ください。{{ end }}</p>

@@ -77,6 +77,9 @@
       {{/* 出典・確認時点（frontmatter に sources/checkDate がある場合のみ表示） */}}
       {{- partial "source-info.html" . }}
 
+      {{/* 旅行ガイド 横断ナビ（全記事共通） */}}
+      {{- partial "travel-guide-nav.html" . }}
+
       <footer class="post-footer">
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         {{- with $.GetTerms $tags }}

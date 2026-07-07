@@ -5,23 +5,41 @@
       <span class="tg-snav-label"><i class="ti ti-bed" aria-hidden="true"></i> {{- if eq .Lang "en" }}Hotels{{- else if eq .Lang "zh" }}选择酒店{{- else if eq .Lang "ko" }}호텔 고르기{{- else if eq .Lang "zh-tw" }}選擇飯店{{- else }}ホテルを選ぶ{{- end }}</span>
       <div class="tg-snav-links">
         <a href="{{ "/travel-guide/hotels/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}All 48 hotels{{- else if eq .Lang "zh" }}全部酒店一览{{- else if eq .Lang "ko" }}전체 호텔 목록{{- else if eq .Lang "zh-tw" }}全部飯店一覽{{- else }}全48軒一覧{{- end }}</a>
+        <a href="{{ "/travel-guide/hotels/types/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/types/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Hotel categories{{- else if eq .Lang "zh" }}酒店分类{{- else if eq .Lang "ko" }}호텔 분류{{- else if eq .Lang "zh-tw" }}飯店分類{{- else }}区分の違い{{- end }}</a>
+        <a href="{{ "/travel-guide/hotels/happy-entry/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/happy-entry/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Happy Entry{{- else if eq .Lang "zh" }}提前入园{{- else if eq .Lang "ko" }}해피 엔트리{{- else if eq .Lang "zh-tw" }}提前入園{{- else }}ハッピーエントリー{{- end }}</a>
+        <a href="{{ "/travel-guide/hotels/shuttle/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/shuttle/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Free shuttles{{- else if eq .Lang "zh" }}免费班车{{- else if eq .Lang "ko" }}무료 셔틀{{- else if eq .Lang "zh-tw" }}免費接駁車{{- else }}無料シャトル{{- end }}</a>
         <a href="{{ "/travel-guide/hotels/kids/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/kids/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Family{{- else if eq .Lang "zh" }}亲子{{- else if eq .Lang "ko" }}가족{{- else if eq .Lang "zh-tw" }}親子{{- else }}子連れ向け{{- end }}</a>
         <a href="{{ "/travel-guide/hotels/budget/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/budget/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Budget{{- else if eq .Lang "zh" }}实惠{{- else if eq .Lang "ko" }}가성비{{- else if eq .Lang "zh-tw" }}實惠{{- else }}格安比較{{- end }}</a>
         <a href="{{ "/travel-guide/hotels/access/" | absLangURL }}"{{- if eq $cur "/travel-guide/hotels/access/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Access{{- else if eq .Lang "zh" }}交通比较{{- else if eq .Lang "ko" }}교통 비교{{- else if eq .Lang "zh-tw" }}交通比較{{- else }}ホテル別アクセス{{- end }}</a>
       </div>
     </div>
     <div class="tg-snav-group">
-      <span class="tg-snav-label"><i class="ti ti-map" aria-hidden="true"></i> {{- if eq .Lang "en" }}Explore{{- else if eq .Lang "zh" }}游览区域{{- else if eq .Lang "ko" }}지역 즐기기{{- else if eq .Lang "zh-tw" }}遊覽區域{{- else }}エリアを楽しむ{{- end }}</span>
+      <span class="tg-snav-label"><i class="ti ti-map" aria-hidden="true"></i> {{- if eq .Lang "en" }}Explore &amp; rest days{{- else if eq .Lang "zh" }}游览与休息日{{- else if eq .Lang "ko" }}즐기기·휴식일{{- else if eq .Lang "zh-tw" }}遊覽與休息日{{- else }}エリアを楽しむ・休息日{{- end }}</span>
       <div class="tg-snav-links">
         <a href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-maihama-shinurayasu-tourism/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Sightseeing{{- else if eq .Lang "zh" }}观光指南{{- else if eq .Lang "ko" }}관광 가이드{{- else if eq .Lang "zh-tw" }}觀光指南{{- else }}観光ガイド{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-gourmet-souvenir-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Food & Souvenirs{{- else if eq .Lang "zh" }}美食·伴手礼{{- else if eq .Lang "ko" }}맛집·기념품{{- else if eq .Lang "zh-tw" }}美食·伴手禮{{- else }}グルメ・お土産{{- end }}</a>
+        <a href="{{ "/travel-guide/urayasu-traffic-park/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-traffic-park/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Traffic Park (free){{- else if eq .Lang "zh" }}交通公园（免费）{{- else if eq .Lang "ko" }}교통공원(무료){{- else if eq .Lang "zh-tw" }}交通公園（免費）{{- else }}交通公園（無料）{{- end }}</a>
+        <a href="{{ "/travel-guide/kasai-rinkai-park/" | absLangURL }}"{{- if eq $cur "/travel-guide/kasai-rinkai-park/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Kasai Rinkai Park{{- else if eq .Lang "zh" }}葛西临海公园{{- else if eq .Lang "ko" }}가사이 임해공원{{- else if eq .Lang "zh-tw" }}葛西臨海公園{{- else }}葛西臨海公園{{- end }}</a>
+        <a href="{{ "/travel-guide/teamlab-planets/" | absLangURL }}"{{- if eq $cur "/travel-guide/teamlab-planets/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}teamLab Planets{{- else if eq .Lang "zh" }}teamLab丰洲{{- else if eq .Lang "ko" }}teamLab(도요스){{- else if eq .Lang "zh-tw" }}teamLab豐洲{{- else }}チームラボ（豊洲）{{- end }}</a>
+        <a href="{{ "/travel-guide/maihama-eurasia-spa/" | absLangURL }}"{{- if eq $cur "/travel-guide/maihama-eurasia-spa/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Day-use onsen{{- else if eq .Lang "zh" }}舞滨当日温泉{{- else if eq .Lang "ko" }}당일 온천{{- else if eq .Lang "zh-tw" }}舞濱當日溫泉{{- else }}舞浜の日帰り温泉{{- end }}</a>
       </div>
     </div>
     <div class="tg-snav-group">
       <span class="tg-snav-label"><i class="ti ti-plane" aria-hidden="true"></i> {{- if eq .Lang "en" }}Getting Around{{- else if eq .Lang "zh" }}出行交通{{- else if eq .Lang "ko" }}이동하기{{- else if eq .Lang "zh-tw" }}出行交通{{- else }}移動する{{- end }}</span>
       <div class="tg-snav-links">
         <a href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-maihama-access-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}From airports / Tokyo Station{{- else if eq .Lang "zh" }}从机场·东京站{{- else if eq .Lang "ko" }}공항·도쿄역에서{{- else if eq .Lang "zh-tw" }}從機場·東京站{{- else }}空港・東京駅から{{- end }}</a>
+        <a href="{{ "/travel-guide/tokyo-sightseeing-access/" | absLangURL }}"{{- if eq $cur "/travel-guide/tokyo-sightseeing-access/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Day trips into Tokyo{{- else if eq .Lang "zh" }}去东京市区观光{{- else if eq .Lang "ko" }}도쿄 시내 관광으로{{- else if eq .Lang "zh-tw" }}去東京市區觀光{{- else }}都心の観光地へ{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Taxi guide{{- else if eq .Lang "zh" }}出租车攻略{{- else if eq .Lang "ko" }}택시 가이드{{- else if eq .Lang "zh-tw" }}計程車攻略{{- else }}タクシーガイド{{- end }}</a>
+      </div>
+    </div>
+    <div class="tg-snav-group">
+      <span class="tg-snav-label"><i class="ti ti-checklist" aria-hidden="true"></i> {{- if eq .Lang "en" }}Plan &amp; Prepare{{- else if eq .Lang "zh" }}行前准备{{- else if eq .Lang "ko" }}여행 준비{{- else if eq .Lang "zh-tw" }}行前準備{{- else }}準備と安心{{- end }}</span>
+      <div class="tg-snav-links">
+        <a href="{{ "/travel-guide/disney-tickets/" | absLangURL }}"{{- if eq $cur "/travel-guide/disney-tickets/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Buying park tickets{{- else if eq .Lang "zh" }}门票怎么买{{- else if eq .Lang "ko" }}티켓 사는 법{{- else if eq .Lang "zh-tw" }}門票怎麼買{{- else }}チケットの買い方{{- end }}</a>
+        {{- if ne .Lang "ja" }}
+        <a href="{{ "/travel-guide/pre-trip-checklist/" | absLangURL }}"{{- if eq $cur "/travel-guide/pre-trip-checklist/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Pre-trip checklist{{- else if eq .Lang "zh" }}行前清单{{- else if eq .Lang "ko" }}여행 준비 체크리스트{{- else if eq .Lang "zh-tw" }}行前清單{{- end }}</a>
+        {{- end }}
+        <a href="{{ "/travel-guide/kids-emergency/" | absLangURL }}"{{- if eq $cur "/travel-guide/kids-emergency/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}If your child gets sick{{- else if eq .Lang "zh" }}孩子生病了怎么办{{- else if eq .Lang "ko" }}아이가 아플 때{{- else if eq .Lang "zh-tw" }}孩子生病了怎麼辦{{- else }}子どもの急病ガイド{{- end }}</a>
       </div>
     </div>
   </div>

@@ -60,6 +60,12 @@
   translation: "How to choose a budget hotel"
 - id: pop_access
   translation: "Hotels compared by access"
+- id: pop_happy
+  translation: "Happy Entry (early entry) explained"
+- id: pop_shuttle
+  translation: "Hotels with free shuttle buses"
+- id: pop_types
+  translation: "Hotel categories explained"
 - id: map_open
   translation: "Open in Google Maps"
 - id: map_directions
@@ -104,6 +110,18 @@
   translation: "Access"
 - id: hl_access_desc
   translation: "Hotels close to the parks, stations or airports"
+- id: hl_types
+  translation: "Categories"
+- id: hl_types_desc
+  translation: "Disney vs Official vs Partner — the real differences"
+- id: hl_happy
+  translation: "Happy Entry"
+- id: hl_happy_desc
+  translation: "Which hotels get 15-minute early entry"
+- id: hl_shuttle
+  translation: "Free shuttles"
+- id: hl_shuttle_desc
+  translation: "The four shuttle patterns & timetable traps"
 - id: hl_find_area
   translation: "Find by Area"
 - id: hl_area_sub

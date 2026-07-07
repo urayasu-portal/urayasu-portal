@@ -60,6 +60,12 @@
   translation: "가성비 호텔 고르는 법"
 - id: pop_access
   translation: "교통으로 호텔 비교"
+- id: pop_happy
+  translation: "해피 엔트리(15분 조기 입장) 해설"
+- id: pop_shuttle
+  translation: "무료 셔틀버스가 있는 호텔"
+- id: pop_types
+  translation: "호텔 분류 체계 해설"
 - id: map_open
   translation: "Google 지도에서 열기"
 - id: map_directions
@@ -104,6 +110,18 @@
   translation: "교통 우선"
 - id: hl_access_desc
   translation: "파크·역·공항과 가까운 숙소"
+- id: hl_types
+  translation: "호텔 분류"
+- id: hl_types_desc
+  translation: "디즈니·공식·파트너의 차이"
+- id: hl_happy
+  translation: "해피 엔트리"
+- id: hl_happy_desc
+  translation: "15분 조기 입장은 어느 호텔?"
+- id: hl_shuttle
+  translation: "무료 셔틀"
+- id: hl_shuttle_desc
+  translation: "셔틀 4패턴과 시간표 함정"
 - id: hl_find_area
   translation: "지역으로 찾기"
 - id: hl_area_sub

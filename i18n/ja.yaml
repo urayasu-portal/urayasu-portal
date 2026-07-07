@@ -60,6 +60,12 @@
   translation: "格安ホテルの選び方"
 - id: pop_access
   translation: "アクセスで選ぶホテル比較"
+- id: pop_happy
+  translation: "ハッピーエントリー（15分前入園）とは"
+- id: pop_shuttle
+  translation: "無料シャトルバスのあるホテル"
+- id: pop_types
+  translation: "ホテル4区分の違いを解説"
 - id: map_open
   translation: "Googleマップで開く"
 - id: map_directions
@@ -104,6 +110,18 @@
   translation: "アクセス重視"
 - id: hl_access_desc
   translation: "パーク・駅・空港に近い宿で選ぶ"
+- id: hl_types
+  translation: "区分の違い"
+- id: hl_types_desc
+  translation: "ディズニー／オフィシャル／パートナーの差"
+- id: hl_happy
+  translation: "ハッピーエントリー"
+- id: hl_happy_desc
+  translation: "15分前入園はどのホテル？"
+- id: hl_shuttle
+  translation: "無料シャトル"
+- id: hl_shuttle_desc
+  translation: "シャトル4パターンと時刻表の落とし穴"
 - id: hl_find_area
   translation: "エリアで探す"
 - id: hl_area_sub

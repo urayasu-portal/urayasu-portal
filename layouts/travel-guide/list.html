@@ -105,10 +105,86 @@
     <div class="tg-hotelneed-title">{{ if $isEN }}Best access{{ else if $isZH }}交通优先{{ else if $isKO }}교통 우선{{ else if $isZHTW }}交通優先{{ else }}アクセス重視{{ end }}</div>
     <div class="tg-hotelneed-desc">{{ if $isEN }}Close to parks, stations, airports{{ else if $isZH }}邻近乐园·车站·机场的住宿{{ else if $isKO }}파크·역·공항과 가까운 숙소{{ else if $isZHTW }}鄰近樂園·車站·機場的住宿{{ else }}パーク・駅・空港に近い宿{{ end }}</div>
   </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/types/" | absLangURL }}">
+    <i class="ti ti-category" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Hotel categories{{ else if $isZH }}酒店分类{{ else if $isKO }}호텔 분류{{ else if $isZHTW }}飯店分類{{ else }}区分の違い{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Disney vs Official vs Partner{{ else if $isZH }}迪士尼·官方·合作的区别{{ else if $isKO }}디즈니·공식·파트너의 차이{{ else if $isZHTW }}迪士尼·官方·合作的區別{{ else }}ディズニー／オフィシャル／パートナーの差{{ end }}</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/happy-entry/" | absLangURL }}">
+    <i class="ti ti-door-enter" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Happy Entry{{ else if $isZH }}提前入园{{ else if $isKO }}해피 엔트리{{ else if $isZHTW }}提前入園{{ else }}ハッピーエントリー{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}Which hotels get 15-min early entry{{ else if $isZH }}哪些酒店能提前15分钟入园{{ else if $isKO }}15분 조기 입장은 어느 호텔?{{ else if $isZHTW }}哪些飯店能提前15分鐘入園{{ else }}15分前入園はどのホテル？{{ end }}</div>
+  </a>
+  <a class="tg-hotelneed-card" href="{{ "/travel-guide/hotels/shuttle/" | absLangURL }}">
+    <i class="ti ti-bus" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">{{ if $isEN }}Free shuttles{{ else if $isZH }}免费班车{{ else if $isKO }}무료 셔틀{{ else if $isZHTW }}免費接駁車{{ else }}無料シャトル{{ end }}</div>
+    <div class="tg-hotelneed-desc">{{ if $isEN }}The 4 shuttle patterns &amp; traps{{ else if $isZH }}班车的4种类型与陷阱{{ else if $isKO }}셔틀 4패턴과 함정{{ else if $isZHTW }}接駁車的4種類型與陷阱{{ else }}シャトル4パターンと落とし穴{{ end }}</div>
+  </a>
 </div>
 
 {{/* 注目のホテル（共通パーシャル・data/hotels.yaml由来・週替わりローテーション） */}}
 {{ partial "featured-hotels.html" . }}
+
+{{/* ────────────────────────────────────────
+     休息日・パークの外で / Beyond the parks
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>{{ if $isEN }}Rest days &amp; beyond the parks{{ else if $isZH }}休息日·乐园之外{{ else if $isKO }}휴식일·파크 밖에서{{ else if $isZHTW }}休息日·樂園之外{{ else }}休息日・パークの外で{{ end }}</h2>
+</div>
+<p class="tg-section-sub">{{ if $isEN }}Free local parks, an aquarium next door, digital art and a hot spring — what locals do between park days.{{ else if $isZH }}免费公园、隔壁站的水族园、数字艺术和温泉——本地人在入园间隙的过法。{{ else if $isKO }}무료 공원, 옆 역의 수족원, 디지털 아트와 온천——입장 사이 현지인의 하루.{{ else if $isZHTW }}免費公園、隔壁站的水族園、數位藝術和溫泉——在地人在入園間隙的過法。{{ else }}無料の公園、隣駅の水族園、デジタルアート、温泉——パークの合間の地元流の過ごし方。{{ end }}</p>
+<div class="tg-purpose-grid">
+  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-traffic-park/" | absLangURL }}">
+    <i class="ti ti-bike" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Traffic Park{{ else if $isZH }}交通公园{{ else if $isKO }}교통공원{{ else if $isZHTW }}交通公園{{ else }}交通公園{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Free rides &amp; animals, one stop away{{ else if $isZH }}一站之外·免费骑车与动物{{ else if $isKO }}한 정거장·무료 탈것과 동물{{ else if $isZHTW }}一站之外·免費騎車與動物{{ else }}1駅先・無料の乗り物と動物{{ end }}</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/kasai-rinkai-park/" | absLangURL }}">
+    <i class="ti ti-fish" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Kasai Rinkai Park{{ else if $isZH }}葛西临海公园{{ else if $isKO }}가사이 임해공원{{ else if $isZHTW }}葛西臨海公園{{ else }}葛西臨海公園{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Aquarium &amp; giant Ferris wheel{{ else if $isZH }}水族园与大摩天轮{{ else if $isKO }}수족원과 대관람차{{ else if $isZHTW }}水族園與大摩天輪{{ else }}水族園と大観覧車{{ end }}</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/teamlab-planets/" | absLangURL }}">
+    <i class="ti ti-ripple" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}teamLab Planets{{ else if $isZH }}teamLab丰洲{{ else if $isKO }}teamLab 도요스{{ else if $isZHTW }}teamLab豐洲{{ else }}チームラボ（豊洲）{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Barefoot art, 30 min away — rainy-day OK{{ else if $isZH }}30分钟可达·雨天OK的沉浸艺术{{ else if $isKO }}30분 거리·비 와도 OK{{ else if $isZHTW }}30分鐘可達·雨天OK的沉浸藝術{{ else }}30分で行ける水のアート・雨天OK{{ end }}</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/maihama-eurasia-spa/" | absLangURL }}">
+    <i class="ti ti-bath" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Day-use onsen{{ else if $isZH }}当日温泉{{ else if $isKO }}당일 온천{{ else if $isZHTW }}當日溫泉{{ else }}日帰り温泉{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Maihama's only natural hot spring{{ else if $isZH }}舞滨唯一的天然温泉{{ else if $isKO }}마이하마 유일의 천연 온천{{ else if $isZHTW }}舞濱唯一的天然溫泉{{ else }}舞浜唯一の天然温泉で回復{{ end }}</div>
+  </a>
+  <a class="tg-purpose-card" href="{{ "/travel-guide/tokyo-sightseeing-access/" | absLangURL }}">
+    <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Day trips into Tokyo{{ else if $isZH }}去东京市区{{ else if $isKO }}도쿄 시내로{{ else if $isZHTW }}去東京市區{{ else }}都心の観光地へ{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Asakusa, Shibuya, Skytree — routes &amp; fares{{ else if $isZH }}浅草·涩谷·晴空塔的路线与车费{{ else if $isKO }}아사쿠사·시부야·스카이트리 경로와 요금{{ else if $isZHTW }}淺草·澀谷·晴空塔的路線與車資{{ else }}浅草・渋谷・スカイツリーへの行き方{{ end }}</div>
+  </a>
+</div>
+
+{{/* ────────────────────────────────────────
+     旅の準備と安心 / Plan & prepare
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>{{ if $isEN }}Plan &amp; prepare{{ else if $isZH }}行前准备与安心{{ else if $isKO }}여행 준비와 안심{{ else if $isZHTW }}行前準備與安心{{ else }}旅の準備と安心{{ end }}</h2>
+</div>
+<div class="tg-purpose-grid">
+  <a class="tg-purpose-card" href="{{ "/travel-guide/disney-tickets/" | absLangURL }}">
+    <i class="ti ti-ticket" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Park tickets{{ else if $isZH }}门票怎么买{{ else if $isKO }}티켓 사는 법{{ else if $isZHTW }}門票怎麼買{{ else }}チケットの買い方{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Prices, sold-out days &amp; where to buy{{ else if $isZH }}价格·售罄日·正规购买渠道{{ else if $isKO }}가격·매진일·정규 구매처{{ else if $isZHTW }}價格·售罄日·正規購買管道{{ else }}料金・売り切れ・正規の購入先{{ end }}</div>
+  </a>
+  {{- if not (eq .Lang "ja") }}
+  <a class="tg-purpose-card" href="{{ "/travel-guide/pre-trip-checklist/" | absLangURL }}">
+    <i class="ti ti-checklist" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Pre-trip checklist{{ else if $isZH }}行前清单{{ else if $isKO }}준비 체크리스트{{ else if $isZHTW }}行前清單{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}2 months / 1 month / 1 week before{{ else if $isZH }}2个月·1个月·1周前该做的事{{ else if $isKO }}2개월·1개월·1주 전 할 일{{ else if $isZHTW }}2個月·1個月·1週前該做的事{{ end }}</div>
+  </a>
+  {{- end }}
+  <a class="tg-purpose-card" href="{{ "/travel-guide/kids-emergency/" | absLangURL }}">
+    <i class="ti ti-first-aid-kit" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}If your child gets sick{{ else if $isZH }}孩子生病了{{ else if $isKO }}아이가 아플 때{{ else if $isZHTW }}孩子生病了{{ else }}子どもの急病{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Night clinic, emergency numbers, English help{{ else if $isZH }}夜间诊所·紧急电话·求助方法{{ else if $isKO }}야간 진료·긴급 번호·도움받는 법{{ else if $isZHTW }}夜間診所·緊急電話·求助方法{{ else }}夜間診療・緊急連絡先ガイド{{ end }}</div>
+  </a>
+</div>
 
 {{/* ────────────────────────────────────────
      クロスリンク (日本語のみ) / Cross-link (JP only)

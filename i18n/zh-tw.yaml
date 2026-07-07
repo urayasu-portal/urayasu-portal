@@ -60,6 +60,12 @@
   translation: "如何挑選實惠飯店"
 - id: pop_access
   translation: "依交通比較飯店"
+- id: pop_happy
+  translation: "Happy Entry提前入園解說"
+- id: pop_shuttle
+  translation: "有免費接駁車的飯店"
+- id: pop_types
+  translation: "飯店分類體系解說"
 - id: map_open
   translation: "在Google地圖開啟"
 - id: map_directions
@@ -104,6 +110,18 @@
   translation: "交通優先"
 - id: hl_access_desc
   translation: "鄰近樂園・車站或機場的住宿"
+- id: hl_types
+  translation: "飯店分類"
+- id: hl_types_desc
+  translation: "迪士尼·官方·合作飯店的區別"
+- id: hl_happy
+  translation: "提前入園"
+- id: hl_happy_desc
+  translation: "哪些飯店能提前15分鐘入園"
+- id: hl_shuttle
+  translation: "免費接駁車"
+- id: hl_shuttle_desc
+  translation: "接駁車的4種類型與時刻表陷阱"
 - id: hl_find_area
   translation: "依區域查找"
 - id: hl_area_sub
