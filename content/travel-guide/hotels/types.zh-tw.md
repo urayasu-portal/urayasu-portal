@@ -53,7 +53,7 @@ faq:
 
 **主要禮遇**
 
-- **Happy Entry（優先入場）** — 僅限住宿房客，可在開園前約15分鐘入場（適用樂園及條件因飯店而異）
+- **[Happy Entry（優先入場）](/zh-tw/travel-guide/hotels/happy-entry/)** — 僅限住宿房客，可在開園前約15分鐘入場（適用樂園及條件因飯店而異）
 - 館內購買園區門票
 - 免費行李配送
 - 住宿專屬商品及迪士尼主題客房
@@ -148,7 +148,7 @@ faq:
 
 先根據「是否需要優先入場」做第一次判斷，再依預算和位置縮小範圍。各分類的具體飯店可在[飯店指南首頁](/zh-tw/travel-guide/hotels/)（含分類篩選功能）或[飯店比較地圖](/zh-tw/travel-guide/hotels/compare/)上查看。
 
-親子選飯店請看[親子迪士尼飯店指南](/zh-tw/travel-guide/hotels/kids/)；想選最實惠的請看[實惠飯店比較](/zh-tw/travel-guide/hotels/budget/)。
+親子選飯店請看[親子迪士尼飯店指南](/zh-tw/travel-guide/hotels/kids/)；想選最實惠的請看[實惠飯店比較](/zh-tw/travel-guide/hotels/budget/)。想深入了解提前入園本身，請看[Happy Entry詳解](/zh-tw/travel-guide/hotels/happy-entry/)；各分類的接駁車實際怎麼跑，請看[免費接駁車指南](/zh-tw/travel-guide/hotels/shuttle/)。
 
 ---
 

@@ -9,7 +9,7 @@ tags:
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
-tgNav: true
+tgNav: true
 faq:
   - q: "迪士尼酒店和指定酒店（官方酒店）有什么区别？"
     a: "迪士尼酒店由东京迪士尼度假区直营，是唯一可使用「Happy Entry」（提前15分钟入园）的类别。指定酒店位于度假区内湾岸地区，可乘迪士尼度假区线单轨或免费班车往返乐园，并可在舞滨站享受免费行李配送，但不能提前入园。"
@@ -53,7 +53,7 @@ faq:
 
 **主要权益**
 
-- **Happy Entry（优先入场）** — 仅限住宿客人，可在开园前约15分钟入场（适用乐园及条件因酒店而异）
+- **[Happy Entry（优先入场）](/zh/travel-guide/hotels/happy-entry/)** — 仅限住宿客人，可在开园前约15分钟入场（适用乐园及条件因酒店而异）
 - 馆内购买园区门票
 - 免费行李配送
 - 住宿专属商品及迪士尼主题客房
@@ -148,7 +148,7 @@ faq:
 
 先根据"是否需要优先入场"做第一次判断，再按预算和位置缩小范围。各类别的具体酒店可在[酒店指南首页](/zh/travel-guide/hotels/)（含类别筛选功能）或[酒店对比地图](/zh/travel-guide/hotels/compare/)上查看。
 
-带孩子选酒店请看[家庭迪士尼酒店指南](/zh/travel-guide/hotels/kids/)；想选最实惠的请看[实惠酒店比较](/zh/travel-guide/hotels/budget/)。
+带孩子选酒店请看[家庭迪士尼酒店指南](/zh/travel-guide/hotels/kids/)；想选最实惠的请看[实惠酒店比较](/zh/travel-guide/hotels/budget/)。想深入了解提前入园本身，请看[Happy Entry详解](/zh/travel-guide/hotels/happy-entry/)；各类别的班车实际怎么跑，请看[免费班车指南](/zh/travel-guide/hotels/shuttle/)。
 
 ---
 

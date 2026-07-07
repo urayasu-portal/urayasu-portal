@@ -98,5 +98,6 @@ Compare all 48 hotels on the [Hotel Guide top page](/en/travel-guide/hotels/) or
 
 - [Hotel Categories Explained (Disney / Official / Partner)](/en/travel-guide/hotels/types/)
 - [Hotels with Free Shuttle Buses](/en/travel-guide/hotels/shuttle/)
+- [How to Buy Tokyo Disney Tickets](/en/travel-guide/disney-tickets/)
 - [Family Hotel Guide](/en/travel-guide/hotels/kids/)
 - [Hotel Guide Top](/en/travel-guide/hotels/)

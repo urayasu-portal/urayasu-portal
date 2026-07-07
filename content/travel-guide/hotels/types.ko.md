@@ -53,7 +53,7 @@ faq:
 
 **주요 혜택**
 
-- **해피 엔트리(우선 입장)** — 투숙객 한정, 개장 약 15분 전 입장 가능(대상 파크와 조건은 호텔에 따라 다름)
+- **[해피 엔트리(우선 입장)](/ko/travel-guide/hotels/happy-entry/)** — 투숙객 한정, 개장 약 15분 전 입장 가능(대상 파크와 조건은 호텔에 따라 다름)
 - 관내 파크 티켓 구매
 - 무료 짐 배송
 - 숙박 전용 상품과 디즈니 테마 객실
@@ -148,7 +148,7 @@ faq:
 
 먼저 '우선 입장이 필요한가'로 1차 판단하고, 예산과 위치로 범위를 좁히세요. 분류별 구체적 호텔은 [호텔 가이드 홈](/ko/travel-guide/hotels/)(분류 필터 기능 포함)이나 [호텔 비교 지도](/ko/travel-guide/hotels/compare/)에서 볼 수 있습니다.
 
-아이와 함께라면 [가족 디즈니 호텔 가이드](/ko/travel-guide/hotels/kids/), 가장 가성비 좋은 곳을 원하면 [가성비 호텔 비교](/ko/travel-guide/hotels/budget/)를 보세요.
+아이와 함께라면 [가족 디즈니 호텔 가이드](/ko/travel-guide/hotels/kids/), 가장 가성비 좋은 곳을 원하면 [가성비 호텔 비교](/ko/travel-guide/hotels/budget/)를 보세요. 조기 입장 제도 자체가 궁금하면 [해피 엔트리 해설](/ko/travel-guide/hotels/happy-entry/), 분류별 셔틀이 실제로 어떻게 다니는지는 [무료 셔틀 가이드](/ko/travel-guide/hotels/shuttle/)로.
 
 ---
 
