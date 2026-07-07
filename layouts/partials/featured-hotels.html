@@ -24,7 +24,9 @@
       {{- if $ck }}
         {{- $hname := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)) }}
         {{- $hfeat := cond (eq $lang "ja") .feature (index . (printf "feature_%s" $lang)) }}
-        {{- $item := dict "name" $hname "area" $aname "price" .price_guide "feature" $hfeat "url" (printf "/travel-guide/hotels/%s/" .slug | absLangURL) "cat" $ck "badge" (index $catBadge $ck) "icon" (index $catIcon $ck) }}
+        {{- $himg := "" }}
+        {{- if fileExists (printf "static/images/hotels/%s.jpg" .slug) }}{{ $himg = printf "/images/hotels/%s.jpg" .slug }}{{ end }}
+        {{- $item := dict "name" $hname "area" $aname "price" .price_guide "feature" $hfeat "url" (printf "/travel-guide/hotels/%s/" .slug | absLangURL) "cat" $ck "badge" (index $catBadge $ck) "icon" (index $catIcon $ck) "img" $himg }}
         {{- if or (eq $ck "disney") (eq $ck "official") }}{{ $premium = $premium | append $item }}{{ end }}
         {{- if eq $ck "partner" }}{{ $partner = $partner | append $item }}{{ end }}
         {{- if eq $ck "other" }}{{ $value = $value | append $item }}{{ end }}
@@ -45,10 +47,17 @@
 <div class="tg-featured-grid" id="tg-featured-grid">
   {{- range (slice $a $b $c) }}
   <a class="tg-featured-card" href="{{ .url }}">
+    {{- if .img }}
+    <div class="tg-featured-band tg-featured-band--{{ .cat }} tg-featured-band--img">
+      <img src="{{ .img }}" alt="{{ .name }}" loading="lazy">
+      <span class="tg-featured-badge tg-featured-badge--{{ .cat }}">{{ .badge }}</span>
+    </div>
+    {{- else }}
     <div class="tg-featured-band tg-featured-band--{{ .cat }}">
       <i class="ti {{ .icon }}" aria-hidden="true"></i>
       <span class="tg-featured-badge tg-featured-badge--{{ .cat }}">{{ .badge }}</span>
     </div>
+    {{- end }}
     <div class="tg-featured-body">
       <div class="tg-featured-name">{{ .name }}</div>
       <div class="tg-featured-meta">{{ .area }}{{ with .price }} ・ {{ . }}{{ end }}</div>
@@ -75,10 +84,15 @@
   var c = value[week % value.length];
   function esc(s) { return (s || '').replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
   function card(h) {
+    var band = h.img
+      ? '<div class="tg-featured-band tg-featured-band--' + esc(h.cat) + ' tg-featured-band--img">'
+        + '<img src="' + esc(h.img) + '" alt="' + esc(h.name) + '" loading="lazy">'
+        + '<span class="tg-featured-badge tg-featured-badge--' + esc(h.cat) + '">' + esc(h.badge) + '</span></div>'
+      : '<div class="tg-featured-band tg-featured-band--' + esc(h.cat) + '">'
+        + '<i class="ti ' + esc(h.icon) + '" aria-hidden="true"></i>'
+        + '<span class="tg-featured-badge tg-featured-badge--' + esc(h.cat) + '">' + esc(h.badge) + '</span></div>';
     return '<a class="tg-featured-card" href="' + esc(h.url) + '">'
-      + '<div class="tg-featured-band tg-featured-band--' + esc(h.cat) + '">'
-      + '<i class="ti ' + esc(h.icon) + '" aria-hidden="true"></i>'
-      + '<span class="tg-featured-badge tg-featured-badge--' + esc(h.cat) + '">' + esc(h.badge) + '</span></div>'
+      + band
       + '<div class="tg-featured-body">'
       + '<div class="tg-featured-name">' + esc(h.name) + '</div>'
       + '<div class="tg-featured-meta">' + esc(h.area) + (h.price ? ' ・ ' + esc(h.price) : '') + '</div>'
