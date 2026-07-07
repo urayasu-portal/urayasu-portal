@@ -55,6 +55,12 @@ The surprise: **for central-Tokyo sightseeing, the humble Tozai Line often beats
 
 **Verdict: the bus for ease, Tozai for price.** From the Disney side the zero-transfer direct bus is the easy button (departures are limited — check the timetable). By train, the Tozai + Hanzomon route reaches Oshiage (right below Skytree) for ¥252.
 
+Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m) exist, but on busy days a **date-and-time ticket bought ahead** lets you skip the entry line.
+
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Check Tokyo Skytree tickets on Trip.com →</a></p>
+
+{{< ad-disclosure >}}
+
 ### Tokyo Tower
 
 | From | Route | Time | Fare (IC) |

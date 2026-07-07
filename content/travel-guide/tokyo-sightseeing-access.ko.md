@@ -61,6 +61,12 @@ tags:
 
 **추천: 편함은 버스, 가격은 도자이선.** 디즈니 쪽에서는 환승 없는 직행 버스가 가장 편합니다(운행 편수가 적으니 시간표를 미리 확인). 전철이면 도자이선＋한조몬선으로 오시아게(스카이트리 바로 아래)까지 ¥252.
 
+전망대(덴보 데크 350m／덴보 갤러리아 450m)는 당일권도 있지만, 혼잡한 날에는 **날짜·시간 지정 예매권**으로 입장 줄을 건너뛸 수 있습니다.
+
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.com에서 스카이트리 티켓 확인 →</a></p>
+
+{{< ad-disclosure >}}
+
 ### 도쿄 타워
 
 | 출발 | 경로 | 시간 | 요금(IC) |

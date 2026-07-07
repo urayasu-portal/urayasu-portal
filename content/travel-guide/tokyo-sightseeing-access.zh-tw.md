@@ -61,6 +61,12 @@ tags:
 
 **勝者：圖方便搭巴士，圖便宜走東西線。** 從迪士尼一側，免轉乘的直達巴士最省心（班次有限，請先查時刻表）。搭電車則走東西線＋半藏門線，到押上（晴空塔正下方）只要¥252。
 
+展望台（天望甲板350m／天望迴廊450m）也有當日票，但旺日用**指定日期時段的預售票**可以免去入場排隊。
+
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">在 Trip.com 查看晴空塔門票 →</a></p>
+
+{{< ad-disclosure >}}
+
 ### 東京鐵塔
 
 | 出發 | 路線 | 時間 | 車資(IC) |

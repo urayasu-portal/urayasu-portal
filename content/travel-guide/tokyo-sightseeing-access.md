@@ -61,6 +61,12 @@ tags:
 
 **軍配：楽さのバスか、安さの東西線。** 舞浜側からは乗り換えゼロの直行バスが楽です（本数は限られるので時刻表を事前確認）。電車なら東西線＋半蔵門線で押上（スカイツリーの真下）まで¥252。
 
+展望デッキ（天望デッキ350m／天望回廊450m）は当日券もありますが、混雑日は入場までの列を避けられる**日時指定の前売り券**が便利です。
+
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.comでスカイツリー展望券を見る →</a></p>
+
+{{< ad-disclosure >}}
+
 ### 東京タワー
 
 | 出発 | ルート | 時間 | 運賃(IC) |
