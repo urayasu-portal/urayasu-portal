@@ -16,9 +16,14 @@
 
             {{- if eq .Lang "ja" }}<span class="logo-subtitle">URAYASU PORTAL</span>{{- end }}
 
-            {{- $lsenabled := (or (not site.Params.disableThemeToggle) (and (not site.Params.disableLangToggle) (hugo.IsMultilingual))) }}
-            {{- if $lsenabled }}
             <div class="logo-switches">
+                {{- /* サイト内検索の入口（全ページ常設・言語別URL） */ -}}
+                {{- $searchLabel := "検索" }}
+                {{- if eq .Lang "en" }}{{ $searchLabel = "Search" }}{{ else if eq .Lang "zh" }}{{ $searchLabel = "搜索" }}{{ else if eq .Lang "ko" }}{{ $searchLabel = "검색" }}{{ else if eq .Lang "zh-tw" }}{{ $searchLabel = "搜尋" }}{{ end }}
+                <a class="header-search-link" href="{{ "/search/" | absLangURL }}" title="{{ $searchLabel }}" aria-label="{{ $searchLabel }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <span>{{ $searchLabel }}</span>
+                </a>
                 {{- if (not site.Params.disableThemeToggle) }}
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -50,7 +55,6 @@
                 </div>
                 {{- end }}
             </div>
-            {{- end }}
         </div>
     </nav>
 </header>

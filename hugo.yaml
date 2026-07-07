@@ -132,6 +132,19 @@ params:
 
   socialIcons: []
 
+  # サイト内検索（PaperMod Fuse.js）。minMatchCharLength:1 は日本語1文字検索に必須。
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    ignoreLocation: true
+    threshold: 0.35
+    minMatchCharLength: 1
+    limit: 40
+    keys:
+      - title
+      - summary
+      - content
+
   cover:
     hidden: false
     hiddenInList: false
@@ -164,6 +177,7 @@ outputs:
   home:
     - HTML
     - RSS
+    - JSON
 
 minify:
   disableHTML: true
