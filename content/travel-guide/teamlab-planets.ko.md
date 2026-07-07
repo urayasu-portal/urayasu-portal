@@ -56,6 +56,12 @@ teamLab의 상설관은 도쿄에 여러 곳 있지만, **마이하마에서 가
 | **주소** | 도쿄도 고토구 도요스 6-1-16(유리카모메 「신토요스」역 앞) |
 | **어떤 날에** | 비 오는 날／휴식일／오후부터 반나절 |
 
+teamLab은 **날짜·시간 지정 사전 예매제**이고 주말 시간대는 매진되니, 일정이 정해지면 서둘러 예약하세요.
+
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.com에서 teamLab 티켓 확인 →</a></p>
+
+{{< ad-disclosure >}}
+
 {{< map q="チームラボプラネッツ TOKYO" >}}
 
 ## 마이하마에서 가는 법

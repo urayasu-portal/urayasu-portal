@@ -56,6 +56,12 @@ tags:
 | **住所** | 東京都江東区豊洲6-1-16（ゆりかもめ「新豊洲」駅前） |
 | **こんな日に** | 雨の日／休息日／午後から半日 |
 
+**日時指定・事前購入制**です。週末や連休は売り切れやすいので、旅程が決まったら早めの確保がおすすめです。
+
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.comでチケットを見る →</a></p>
+
+{{< ad-disclosure >}}
+
 {{< map q="チームラボプラネッツ TOKYO" >}}
 
 ## 舞浜からの行き方

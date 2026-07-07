@@ -51,6 +51,12 @@ Newer areas add athletic, bouncy, climb-on-it play and an interactive forest whe
 | **Address** | 6-1-16 Toyosu, Koto, Tokyo (right at Shin-Toyosu Station on the Yurikamome line) |
 | **Best for** | Rainy days / rest day / a half day from the afternoon |
 
+teamLab uses **date-and-time tickets bought in advance**, and weekend slots sell out — book as soon as your dates are set.
+
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Check teamLab Planets tickets on Trip.com →</a></p>
+
+{{< ad-disclosure >}}
+
 {{< map q="チームラボプラネッツ TOKYO" >}}
 
 ## How to get there from Maihama
