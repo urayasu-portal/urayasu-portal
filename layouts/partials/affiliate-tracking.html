@@ -1,0 +1,42 @@
+{{- /* アフィリエイト/予約CTAのクリックをGA4イベント affiliate_click として計測。
+       本番のみ・gtag定義時のみ送信。イベント委譲で全ページの動的CTAにも対応。
+       対象: .lg-book-btn（予約/チケットボタン）/ rel="sponsored" / 既知ASPドメイン（アソビュー等の本文リンク含む）。 */ -}}
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+<script>
+(function () {
+  var KNOWN = ['trip', 'rakuten', 'booking', 'agoda', 'jalan', 'asoview', 'expedia', 'kkday', 'klook', 'yahoo'];
+  function aspOf(href) {
+    var h = (href || '').toLowerCase();
+    if (h.indexOf('trip.com') > -1) return 'trip';
+    if (h.indexOf('rakuten') > -1) return 'rakuten';
+    if (h.indexOf('booking.com') > -1) return 'booking';
+    if (h.indexOf('agoda') > -1) return 'agoda';
+    if (h.indexOf('jalan') > -1) return 'jalan';
+    if (h.indexOf('asoview') > -1) return 'asoview';
+    if (h.indexOf('expedia') > -1) return 'expedia';
+    if (h.indexOf('kkday') > -1) return 'kkday';
+    if (h.indexOf('klook') > -1) return 'klook';
+    if (h.indexOf('yahoo') > -1) return 'yahoo';
+    try { return new URL(href).hostname; } catch (e) { return 'other'; }
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.href || '';
+    var isBtn = a.classList.contains('lg-book-btn');
+    var isSponsored = (' ' + (a.getAttribute('rel') || '') + ' ').indexOf(' sponsored ') > -1;
+    var asp = aspOf(href);
+    var known = KNOWN.indexOf(asp) > -1;
+    if (!(isBtn || isSponsored || known)) return;
+    if (typeof gtag !== 'function') return;
+    gtag('event', 'affiliate_click', {
+      asp: asp,
+      link_url: href,
+      link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80),
+      page_path: location.pathname,
+      page_lang: document.documentElement.lang || 'ja'
+    });
+  }, false);
+})();
+</script>
+{{- end }}
