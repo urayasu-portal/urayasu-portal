@@ -132,6 +132,11 @@ params:
 
   socialIcons: []
 
+  # SNS。x に X(旧Twitter)ハンドル（@抜き）を入れるとフッターにフォロー導線が出る。
+  # 例: urayasu_portal  → https://x.com/urayasu_portal
+  social:
+    x: ""
+
   # サイト内検索（PaperMod Fuse.js）。minMatchCharLength:1 は日本語1文字検索に必須。
   fuseOpts:
     isCaseSensitive: false

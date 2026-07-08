@@ -585,10 +585,31 @@ body.list { --main-width: 1160px; }
   .hdr-lang-pill { font-size: 11px; padding: 4px 8px; }
   .hdr-lang { gap: 4px; }
 }
+.ft-social {
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px 0;
+}
+.ft-x-follow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background .15s, border-color .15s;
+}
+.ft-x-follow:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.4); }
+.ft-x-follow svg { flex-shrink: 0; }
 .ft-bottom {
   border-top: 1px solid rgba(255,255,255,.1);
   padding: 14px 24px;
   text-align: center;
+  margin-top: 16px;
 }
 .ft-bottom-text {
   font-size: 12px;
