@@ -553,38 +553,69 @@ body.list { --main-width: 1160px; }
 }
 .ft-site-links a { font-size: 12px; color: rgba(255,255,255,.48) !important; }
 .ft-site-links a:hover { color: rgba(255,255,255,.8) !important; }
-/* 言語スイッチャー（ヘッダー右上・ライトテーマ） */
-.hdr-lang {
+/* 言語スイッチャー（ヘッダー・検索ボタン右のドロップダウン。details/summary） */
+/* .logo-switches>*{min-height:inherit(=stretch)} でヘッダー高に伸びるため、
+   flex+align-items:center でサマリー（トグル）を検索リンクと同じ縦位置に中央寄せする */
+.hdr-lang { position: relative; display: flex; align-items: center; }
+.hdr-lang-toggle {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 5px;
-}
-/* セレクタは .logo-switches a（特異度0,1,1）+ !important に勝つため a.hdr-lang-pill（0,2,1）で記述 */
-.hdr-lang a.hdr-lang-pill {
+  padding: 3px 9px;
   font-size: 12px;
   font-weight: 600;
-  line-height: 1;
-  padding: 5px 10px;
-  border-radius: 7px;
-  text-decoration: none;
+  line-height: 1.4;
+  color: rgba(255,255,255,.85);
+  background: rgba(255,255,255,.12);
+  border: 0.5px solid rgba(255,255,255,.28);
+  border-radius: 6px;
+  white-space: nowrap;
+  cursor: pointer;
+  list-style: none; /* 既定の三角マーカーを消す */
+}
+.hdr-lang-toggle::-webkit-details-marker { display: none; }
+.hdr-lang-toggle i.ti-language { font-size: 15px; }
+.hdr-lang-caret { font-size: 14px; opacity: .8; transition: transform .15s; }
+.hdr-lang[open] .hdr-lang-caret { transform: rotate(180deg); }
+.hdr-lang-toggle:hover { background: rgba(255,255,255,.2); color: #fff; }
+/* 検索リンクと言語トグルを同一サイズ・同一高さに揃える。
+   テーマの .logo a{font-size:24px}（0,1,1）と .header-nav{line-height:var(--header-height)}を
+   .logo-switches ○○（0,2,0）で打ち消す。モバイルで24pxだと幅溢れするため両者を適正サイズに正規化。 */
+.logo-switches .header-search-link,
+.logo-switches .hdr-lang-toggle {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 3px 9px;
+}
+/* ドロップダウン本体（右寄せ・白背景） */
+.hdr-lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 140px;
   background: #fff;
-  border: 0.5px solid #E2D6CF;
-  color: #6B5A52 !important; /* .logo-switches a の白文字 !important を打ち消す */
+  border: 1px solid #E2D6CF;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.18);
+  padding: 4px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+/* .logo-switches a{color:#fff!important}（特異度0,1,1）に勝つため 0,2,1 で記述 */
+.hdr-lang-menu a.hdr-lang-item {
+  display: block;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #4A3F3A !important;
   white-space: nowrap;
 }
-.logo-switches a.hdr-lang-pill:hover { background: #FBE3DA; color: #C2421F !important; }
-.hdr-lang a.hdr-lang-pill.is-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff !important;
-  cursor: default;
-}
-.logo-switches a.hdr-lang-pill.is-active:hover { background: var(--accent); color: #fff !important; }
-@media (max-width: 600px) {
-  .hdr-lang-pill { font-size: 11px; padding: 4px 8px; }
-  .hdr-lang { gap: 4px; }
-}
+.hdr-lang-menu a.hdr-lang-item:hover { background: #FBE3DA; color: #C2421F !important; }
+.hdr-lang-menu a.hdr-lang-item.is-active { background: var(--accent); color: #fff !important; }
 .ft-social {
   display: flex;
   justify-content: center;
@@ -806,6 +837,7 @@ body.pillar-travel .post-single .post-content th {
   color: var(--up-text) !important;
   transition: border-color .15s, background .15s;
   min-width: 0;
+  width: 100%; /* PaperMod既定の paginav リンク幅50%指定を打ち消しグリッドセル幅に追従。auto はminifierが初期値として削除するため100%を明示 */
 }
 .paginav a:hover { border-color: var(--up-teal); background: #f0fbf9; }
 .paginav a .title { font-size: 11px; font-weight: 700; color: var(--up-teal); text-transform: uppercase; letter-spacing: .06em; }
@@ -1034,7 +1066,10 @@ body.pillar-travel .post-single .post-content th {
   .post-single .post-content { padding: 8px 16px 24px; font-size: 15px; }
   .post-single .post-footer { padding: 16px 16px 20px; }
   .post-single .post-title { font-size: 18px !important; }
-  .paginav { grid-template-columns: 1fr; }
+  /* 前後記事ナビはモバイルでも横並び（左右2列）。カードは幅に合わせて縮小 */
+  .paginav { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .paginav a { padding: 10px 11px; gap: 2px; }
+  .paginav a span:last-child { font-size: 12px; line-height: 1.45; }
 }
 
 /* ===================================================

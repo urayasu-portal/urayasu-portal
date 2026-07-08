@@ -46,13 +46,21 @@
                     </svg>
                 </button>
                 {{- end }}
-                {{- /* 言語スイッチャー（翻訳が2言語以上あるページのみ）。header は baseof で .Page キャッシュ＝ページ単位なので .AllTranslations が正しく解決される。.AllTranslations は自ページも含むため len>1 で判定。 */ -}}
+                {{- /* 言語スイッチャー（翻訳が2言語以上あるページのみ・ドロップダウン）。header は baseof で .Page キャッシュ＝ページ単位なので .AllTranslations が正しく解決される。.AllTranslations は自ページも含むため len>1 で判定。details/summary でJS不要・リンク実体を保持。 */ -}}
                 {{- if gt (len .AllTranslations) 1 }}
-                <div class="hdr-lang" role="navigation" aria-label="{{ if eq $.Lang "en" }}Language{{ else if eq $.Lang "zh" }}语言{{ else if eq $.Lang "ko" }}언어{{ else if eq $.Lang "zh-tw" }}語言{{ else }}言語{{ end }}">
-                    {{- range .AllTranslations }}
-                    <a class="hdr-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }} hreflang="{{ if eq .Lang "zh" }}zh-Hans{{ else if eq .Lang "zh-tw" }}zh-Hant-TW{{ else }}{{ .Lang }}{{ end }}">{{ .Language.LanguageName }}</a>
-                    {{- end }}
-                </div>
+                {{- $langLabel := "言語" }}{{ if eq $.Lang "en" }}{{ $langLabel = "Language" }}{{ else if eq $.Lang "zh" }}{{ $langLabel = "语言" }}{{ else if eq $.Lang "ko" }}{{ $langLabel = "언어" }}{{ else if eq $.Lang "zh-tw" }}{{ $langLabel = "語言" }}{{ end }}
+                <details class="hdr-lang" role="navigation" aria-label="{{ $langLabel }}">
+                    <summary class="hdr-lang-toggle" title="{{ $langLabel }}">
+                        <i class="ti ti-language" aria-hidden="true"></i>
+                        <span class="hdr-lang-current">{{ $.Language.LanguageName }}</span>
+                        <i class="ti ti-chevron-down hdr-lang-caret" aria-hidden="true"></i>
+                    </summary>
+                    <div class="hdr-lang-menu">
+                        {{- range .AllTranslations }}
+                        <a class="hdr-lang-item{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }} hreflang="{{ if eq .Lang "zh" }}zh-Hans{{ else if eq .Lang "zh-tw" }}zh-Hant-TW{{ else }}{{ .Lang }}{{ end }}">{{ .Language.LanguageName }}</a>
+                        {{- end }}
+                    </div>
+                </details>
                 {{- end }}
             </div>
         </div>
