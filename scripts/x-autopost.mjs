@@ -92,11 +92,28 @@ async function main() {
   const state = loadState();
   const postedSet = new Set(state.posted);
 
-  // 初回シード：状態が空なら全件を既読にして投稿しない（過去記事の一斉投稿防止）
+  const { TwitterApi } = await import('twitter-api-v2');
+  const rw = new TwitterApi(creds).readWrite;
+
+  async function post(item) {
+    try {
+      await rw.v2.tweet(buildText(item));
+      console.log(`[x-autopost] posted: ${item.title}`);
+      return true;
+    } catch (e) {
+      console.error(`[x-autopost] 投稿失敗（スキップ）: ${item.title} :: ${e?.message || e}`);
+      return false;
+    }
+  }
+
+  // 初回：最新1件だけ投稿し、残りを既読化（過去記事の一斉投稿を防ぎつつ、稼働確認を兼ねる）。
+  // 投稿失敗（キー不正等）時は最新を既読化せず次回リトライさせる。
   if (state.posted.length === 0) {
-    const allGuids = items.map((i) => i.guid);
-    saveState(allGuids);
-    console.log(`[x-autopost] 初回シード: ${allGuids.length}件を既読化。投稿は0件。`);
+    const newest = items[0];
+    const ok = await post(newest);
+    const seed = items.map((i) => i.guid).filter((g) => ok || g !== newest.guid);
+    saveState(seed);
+    console.log(`[x-autopost] 初回: 最新1件を${ok ? '投稿' : '投稿失敗(次回リトライ)'}、既読化 ${seed.length}件。`);
     return;
   }
 
@@ -106,33 +123,18 @@ async function main() {
     return;
   }
 
-  const { TwitterApi } = await import('twitter-api-v2');
-  const client = new TwitterApi(creds);
-  const rw = client.readWrite;
-
   const toPost = fresh.slice(0, MAX_PER_RUN);
-  let postedCount = 0;
   for (const item of toPost) {
-    const text = buildText(item);
-    try {
-      await rw.v2.tweet(text);
-      postedSet.add(item.guid);
-      postedCount++;
-      console.log(`[x-autopost] posted: ${item.title}`);
-    } catch (e) {
-      console.error(`[x-autopost] 投稿失敗（スキップ）: ${item.title} :: ${e?.message || e}`);
-      // 失敗した記事は既読にしない＝次回リトライ
-    }
+    if (await post(item)) postedSet.add(item.guid);
   }
-
   if (fresh.length > MAX_PER_RUN) {
     console.log(`[x-autopost] 残り${fresh.length - MAX_PER_RUN}件は次回に持ち越し。`);
   }
 
-  // 既読集合を保存（元の順序を保ちつつ新規を末尾へ）
+  // 既読集合を保存（元の順序を保ちつつ、投稿できた分だけ末尾へ）
   const merged = state.posted.concat(toPost.filter((i) => postedSet.has(i.guid)).map((i) => i.guid));
   saveState(merged);
-  console.log(`[x-autopost] 完了: ${postedCount}件投稿。`);
+  console.log('[x-autopost] 完了。');
 }
 
 main().catch((e) => {
