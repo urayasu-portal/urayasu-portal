@@ -70,6 +70,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Guest Rooms (4 beds standard)**
 "Dreams and fantasy" theme with murals of Disney characters enjoying park attractions covering the walls. Standard and Superior rooms: 2 regular beds + 2 daybed = 4-person bed use (up to 2 additional children sharing). Corner rooms accommodate 3 guests.
 

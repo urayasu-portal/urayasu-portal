@@ -70,6 +70,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Guest Rooms (all 44 m²+, marble bathroom)**
 427 rooms with minimum 44 m² floor space and marble bathrooms — a consistent specification across all room types that reflects the Okura brand promise. Room types include standard, garden, ocean view, and suites.
 

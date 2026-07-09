@@ -70,6 +70,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Check-In (14:00 — 1 hour earlier than typical)**
 14:00 check-in is a genuine convenience for afternoon arrivals. Guests can drop bags in the room and head to the parks by 15:00.
 

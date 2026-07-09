@@ -1,0 +1,293 @@
+{{- /* 浦安 生活・買い物マップ（インバウンド向け大型フィルタ地図）。
+       facilities.yaml 全施設＋hotels_map.yaml 全ホテルをJSに渡し、クライアント側で
+       ①店種フィルタ ②ニーズ別プリセット ③今開いてる ④宿泊ホテル選択（★＋徒歩分）を実行。
+       5言語対応(ja/en/zh/ko/zh-tw)。施設の固有名は name/name_en のみのため非jaは name_en を表示。
+       ラベル類は下部JSの翻訳テーブルで一元管理し、静的ラベルもJSで流し込む。 */ -}}
+{{- $lang := .Page.Language.Lang }}
+{{- $facs := slice }}
+{{- range hugo.Data.facilities.facilities }}
+  {{- if and .lat .lng (ne .status "closed") (ne .status "planned") }}
+    {{- $hh := .hours | default "" }}
+    {{- if eq $lang "en" }}{{ $hh = .hours_en | default $hh }}{{ else if eq $lang "zh" }}{{ $hh = .hours_zh | default $hh }}{{ else if eq $lang "ko" }}{{ $hh = .hours_ko | default $hh }}{{ else if eq $lang "zh-tw" }}{{ $hh = .hours_zhtw | default $hh }}{{ end }}
+    {{- $facs = $facs | append (dict
+        "t" .type "n" .name "ne" (.name_en | default .name) "h" $hh
+        "a" (.address | default "") "u" (.official_url | default "") "lat" .lat "lng" .lng
+        "h24" (.is_24h | default false) "ae" (.open_early | default false) "al" (.open_late | default false)
+        "atm" (eq (.atm_intl | default "") "1") "baby" (.baby_goods | default false)
+        "tax" (.tax_free | default false) "tak" (.takkyubin | default false)) }}
+  {{- end }}
+{{- end }}
+{{- $hotels := slice }}
+{{- range hugo.Data.hotels_map.hotels }}
+  {{- if and .lat .lng }}{{ $hotels = $hotels | append (dict "s" .slug "n" .name "ne" (.name_en | default .name) "lat" .lat "lng" .lng) }}{{ end }}
+{{- end }}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<div class="fm-wrap">
+  <div class="fm-controls">
+    <div class="fm-row fm-row--top">
+      <label class="fm-hotel">
+        <i class="ti ti-bed" aria-hidden="true"></i>
+        <span class="fm-hotel-lab"></span>
+        <select id="fm-hotel"></select>
+      </label>
+      <button type="button" id="fm-now" class="fm-toggle"><i class="ti ti-clock" aria-hidden="true"></i><span class="fm-now-lab"></span></button>
+      <button type="button" id="fm-here" class="fm-toggle"><i class="ti ti-current-location" aria-hidden="true"></i><span class="fm-here-lab"></span></button>
+      <span class="fm-count" id="fm-count"></span>
+      <button type="button" id="fm-reset" class="fm-reset"><i class="ti ti-refresh" aria-hidden="true"></i><span class="fm-reset-lab"></span></button>
+    </div>
+    <div class="fm-presets" id="fm-presets"></div>
+    <div class="fm-chips" id="fm-chips"></div>
+  </div>
+  <div class="fm-map"><div id="fm-map-el"></div></div>
+  <div class="fm-list" id="fm-list" hidden>
+    <div class="fm-list-head"><span class="fm-list-title"></span></div>
+    <ul class="fm-list-ul" id="fm-list-ul"></ul>
+  </div>
+  <div class="fm-legend">
+    <span><i class="fm-dot" style="background:#E05535"></i><span class="fm-leg-food"></span></span>
+    <span><i class="fm-dot" style="background:#378ADD"></i><span class="fm-leg-shop"></span></span>
+    <span><i class="fm-dot" style="background:#1D9E75"></i><span class="fm-leg-svc"></span></span>
+    <span class="fm-legend-note fm-leg-note"></span>
+  </div>
+</div>
+<script>
+(function(){
+  var FAC = {{ $facs | jsonify | safeJS }};
+  var HOTELS = {{ $hotels | jsonify | safeJS }};
+  var LANG = "{{ .Page.Language.Lang }}";
+  var LI = ({ja:0,en:1,zh:2,ko:3,"zh-tw":4})[LANG]; if(LI==null) LI=1;
+  var ISJA = (LANG==="ja");
+  function pick(a){ return a[1+LI] || a[2]; }
+
+  var TXT = {
+    ja:{hotel:"宿泊ホテル",sel:"選択してください",now:"今開いてる",reset:"リセット",count:"件",legFood:"飲食・カフェ",legShop:"買い物・日用",legSvc:"ランドリー・郵便",legNote:"徒歩分・営業時間は目安です",dir:"経路",find:"店舗検索",walk:"ホテルから徒歩%d分",b24:"24時間",late:"夜遅く",early:"早朝",atm:"海外カードOK",baby:"おむつ",tax:"免税",tak:"宅配",walkHere:"現在地から徒歩%d分",useLoc:"現在地から探す",locErr:"位置情報を取得できませんでした"},
+    en:{hotel:"Your hotel",sel:"Select…",now:"Open now",reset:"Reset",count:"places",legFood:"Food & café",legShop:"Shopping",legSvc:"Laundry & post",legNote:"Walk times & hours are estimates",dir:"Directions",find:"Find stores",walk:"%d-min walk from hotel",b24:"24h",late:"Open late",early:"Early",atm:"Foreign card ATM",baby:"Baby goods",tax:"Tax-free",tak:"Takkyubin",walkHere:"%d-min walk from here",useLoc:"Use my location",locErr:"Couldn't get your location"},
+    zh:{hotel:"住宿饭店",sel:"请选择",now:"现在营业",reset:"重置",count:"处",legFood:"餐饮·咖啡",legShop:"购物·日用",legSvc:"洗衣·邮局",legNote:"步行时间与营业时间仅供参考",dir:"路线",find:"门店查询",walk:"距饭店步行%d分钟",b24:"24小时",late:"深夜营业",early:"早间营业",atm:"海外卡可用",baby:"母婴用品",tax:"免税",tak:"宅急便",walkHere:"距当前位置步行%d分钟",useLoc:"使用当前位置",locErr:"无法获取位置信息"},
+    ko:{hotel:"숙박 호텔",sel:"선택하세요",now:"지금 영업 중",reset:"초기화",count:"곳",legFood:"음식·카페",legShop:"쇼핑·생활",legSvc:"세탁·우체국",legNote:"도보 시간·영업시간은 참고용입니다",dir:"경로",find:"매장 검색",walk:"호텔에서 도보 %d분",b24:"24시간",late:"심야 영업",early:"이른 영업",atm:"해외카드 가능",baby:"육아용품",tax:"면세",tak:"택배",walkHere:"현재 위치에서 도보 %d분",useLoc:"현재 위치 사용",locErr:"위치를 가져올 수 없습니다"},
+    "zh-tw":{hotel:"住宿飯店",sel:"請選擇",now:"現在營業",reset:"重設",count:"處",legFood:"餐飲·咖啡",legShop:"購物·日用",legSvc:"洗衣·郵局",legNote:"步行時間與營業時間僅供參考",dir:"路線",find:"門市查詢",walk:"距飯店步行%d分鐘",b24:"24小時",late:"深夜營業",early:"早間營業",atm:"海外卡可用",baby:"母嬰用品",tax:"免稅",tak:"宅急便",walkHere:"距目前位置步行%d分鐘",useLoc:"使用目前位置",locErr:"無法取得位置資訊"}
+  };
+  var T = TXT[LANG] || TXT.en;
+  var LISTLAB = ({ja:"一覧",en:"List",zh:"列表",ko:"목록","zh-tw":"列表"})[LANG] || "List";
+
+  function track(name,p){ try{ if(typeof gtag==='function'){ p=p||{}; p.map_lang=LANG; p.page_path=location.pathname; gtag('event',name,p); } }catch(e){} }
+  function iconOf(t){ return ({conbini:'ti-building-store',supermarket:'ti-shopping-cart',drugstore:'ti-pill',electronics:'ti-device-desktop',hundred_yen:'ti-coin',apparel:'ti-shirt',laundry:'ti-wash-machine',post_office:'ti-mail',commercial:'ti-building-store',cafe:'ti-coffee'})[t] || (FOOD.indexOf(t)>=0?'ti-tools-kitchen-2':'ti-map-pin'); }
+
+  var FOOD = ['fastfood','family_restaurant','sushi','ramen','yakiniku','izakaya','casual_restaurant'];
+  function isFoodCafe(f){ return f.t==='cafe' || FOOD.indexOf(f.t)>=0; }
+  function groupChip(t){ return FOOD.indexOf(t)>=0 ? 'food' : t; }
+  function bucket(t){ if(t==='cafe'||FOOD.indexOf(t)>=0) return 'food'; if(t==='laundry'||t==='post_office') return 'service'; return 'shop'; }
+  var BCOLOR = { food:'#E05535', shop:'#378ADD', service:'#1D9E75' };
+
+  var CHIPS = [
+    ['conbini','コンビニ','Convenience','便利店','편의점','便利商店'],
+    ['supermarket','スーパー','Supermarket','超市','슈퍼마켓','超市'],
+    ['drugstore','ドラッグ','Pharmacy','药妆店','드러그스토어','藥妝店'],
+    ['food','飲食','Food','餐饮','음식','餐飲'],
+    ['cafe','カフェ','Cafe','咖啡','카페','咖啡'],
+    ['hundred_yen','100均','100-yen','百元店','100엔숍','百元店'],
+    ['electronics','家電','Electronics','电器','가전','電器'],
+    ['apparel','衣料','Clothing','服饰','의류','服飾'],
+    ['laundry','ランドリー','Laundry','洗衣店','세탁소','洗衣店'],
+    ['post_office','郵便局','Post office','邮局','우체국','郵局'],
+    ['commercial','商業施設','Malls','商场','상업시설','商場']
+  ];
+  var PRESETS = [
+    ['diapers','おむつ・ミルク','Diapers & baby','尿布·奶粉','기저귀·분유','尿布·奶粉','ti-baby-bottle'],
+    ['bento','お弁当・軽食','Bento & snacks','便当·轻食','도시락·간식','便當·輕食','ti-tools-kitchen-2'],
+    ['latemeal','深夜めし','Late-night meal','深夜用餐','심야 식사','深夜用餐','ti-moon'],
+    ['breakfast','朝食','Breakfast','早餐','아침 식사','早餐','ti-sun'],
+    ['cash','現金(海外カード)','Cash (foreign card)','取现(海外卡)','현금(해외카드)','提領現金(海外卡)','ti-cash'],
+    ['medicine','常備薬','Medicine','常备药','상비약','常備藥','ti-pill'],
+    ['laundry','洗濯','Laundry','洗衣','세탁','洗衣','ti-wash-machine'],
+    ['clothes','着替え','Clothes','换洗衣物','갈아입을 옷','換洗衣物','ti-shirt'],
+    ['japanese','日本食','Japanese food','日本料理','일본 음식','日本料理','ti-fish'],
+    ['taxfree','免税','Tax-free','免税','면세','免稅','ti-discount'],
+    ['shipping','荷物発送','Ship luggage','行李寄送','짐 배송','行李寄送','ti-package']
+  ];
+  var PRESETFN = {
+    diapers:function(f){return f.baby;}, bento:function(f){return f.t==='conbini'||f.t==='supermarket';},
+    latemeal:function(f){return isFoodCafe(f)&&f.al;}, breakfast:function(f){return isFoodCafe(f)&&f.ae;},
+    cash:function(f){return f.atm;}, medicine:function(f){return f.t==='drugstore';},
+    laundry:function(f){return f.t==='laundry';}, clothes:function(f){return f.t==='apparel';},
+    japanese:function(f){return ['sushi','ramen','yakiniku','izakaya'].indexOf(f.t)>=0;},
+    taxfree:function(f){return f.tax;}, shipping:function(f){return f.tak;}
+  };
+  var TLAB = {
+    conbini:['コンビニ','Convenience store','便利店','편의점','便利商店'],
+    supermarket:['スーパー','Supermarket','超市','슈퍼마켓','超市'],
+    drugstore:['ドラッグストア','Pharmacy','药妆店','드러그스토어','藥妝店'],
+    electronics:['家電量販店','Electronics','电器行','가전 양판점','電器行'],
+    hundred_yen:['100円ショップ','100-yen shop','百元店','100엔숍','百元店'],
+    apparel:['衣料品店','Clothing','服饰店','의류점','服飾店'],
+    laundry:['コインランドリー','Coin laundry','自助洗衣','코인 세탁','自助洗衣'],
+    post_office:['郵便局','Post office','邮局','우체국','郵局'],
+    commercial:['商業施設','Mall','商场','상업시설','商場'],
+    cafe:['カフェ','Cafe','咖啡厅','카페','咖啡廳'],
+    fastfood:['ファストフード','Fast food','快餐','패스트푸드','速食'],
+    family_restaurant:['ファミレス','Family restaurant','家庭餐厅','패밀리 레스토랑','家庭餐廳'],
+    sushi:['寿司','Sushi','寿司','스시','壽司'],
+    ramen:['ラーメン','Ramen','拉面','라멘','拉麵'],
+    yakiniku:['焼肉','Yakiniku','烤肉','야키니쿠','燒肉'],
+    izakaya:['居酒屋','Izakaya','居酒屋','이자카야','居酒屋'],
+    casual_restaurant:['食堂','Restaurant','餐馆','식당','餐館']
+  };
+  function tlab(t){ var a=TLAB[t]; return a? (a[LI]||a[1]) : t; }
+
+  var state = { types:{}, preset:null, openNow:false, hotel:null, here:null, origin:null };
+
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function dist(a,b,c,d){ var R=6371000,p=Math.PI/180,x=Math.sin((c-a)*p/2)*Math.sin((c-a)*p/2)+Math.cos(a*p)*Math.cos(c*p)*Math.sin((d-b)*p/2)*Math.sin((d-b)*p/2); return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x)); }
+  function parseRanges(h){ if(!h) return []; if(h.indexOf('24時間')>=0) return [[0,1440]];
+    var re=/(\d{1,2}):(\d{2})\s*[～〜~‐-―]\s*(翌)?(\d{1,2}):(\d{2})/g,m,out=[];
+    while(m=re.exec(h)){ var s=(+m[1])*60+(+m[2]),e=(+m[4])*60+(+m[5]); if(m[3])e+=1440; if(e<=s)e+=1440; out.push([s,e]); } return out; }
+  function isOpenNow(f){ if(f.h24) return true; var r=parseRanges(f.h); if(!r.length) return false;
+    var dt=new Date(),mn=dt.getHours()*60+dt.getMinutes(),i,s,e;
+    for(i=0;i<r.length;i++){ s=r[i][0];e=r[i][1];
+      if(mn>=s&&mn<e) return true; if(e>1440&&(mn+1440)>=s&&(mn+1440)<e) return true; } return false; }
+
+  function visible(f){
+    if(state.preset){ if(!PRESETFN[state.preset](f)) return false; }
+    else { var keys=Object.keys(state.types); if(keys.length && !state.types[groupChip(f.t)]) return false; }
+    if(state.openNow && !isOpenNow(f)) return false;
+    return true;
+  }
+
+  var map = L.map('fm-map-el',{scrollWheelZoom:false}).setView([35.653,139.903],13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',maxZoom:19}).addTo(map);
+  var layer = L.layerGroup().addTo(map);
+  var hotelMarker=null, hotelCircle=null, hereMarker=null;
+
+  function tag(t,c){ return '<span class="fm-pt fm-pt--'+c+'">'+t+'</span>'; }
+  function popupHTML(f){
+    var name = ISJA? f.n : (f.ne||f.n);
+    var b='';
+    if(f.h24) b+=tag(T.b24,'green'); else if(f.al) b+=tag(T.late,'green');
+    if(f.ae && !f.h24) b+=tag(T.early,'green');
+    if(f.atm) b+=tag(T.atm,'blue');
+    if(f.baby) b+=tag(T.baby,'amber');
+    if(f.tax) b+=tag(T.tax,'amber');
+    if(f.tak) b+=tag(T.tak,'gray');
+    var walk='';
+    if(state.origin){ var m=Math.max(1,Math.ceil(dist(state.origin.lat,state.origin.lng,f.lat,f.lng)/80));
+      var wt = (state.origin.kind==='here') ? T.walkHere : T.walk;
+      walk='<div class="fm-pop-walk"><i class="ti ti-walk"></i> '+wt.replace('%d',m)+'</div>'; }
+    var hrs = (f.h && !f.h24)? '<div class="fm-pop-h">'+esc(f.h)+'</div>':'';
+    var dir='https://www.google.com/maps/dir/?api=1&destination='+f.lat+','+f.lng;
+    var da='data-t="'+esc(f.t)+'" data-n="'+esc(f.n)+'"';
+    var links='<a data-fm="directions" '+da+' href="'+dir+'" target="_blank" rel="noopener">'+T.dir+'</a>';
+    if(f.u) links+=' <span class="fm-sep">·</span> <a data-fm="find" '+da+' href="'+esc(f.u)+'" target="_blank" rel="noopener">'+T.find+'</a>';
+    return '<div class="fm-pop"><div class="fm-pop-cat">'+tlab(f.t)+'</div><div class="fm-pop-name">'+esc(name)+'</div>'+walk+hrs+(b?'<div class="fm-pop-badges">'+b+'</div>':'')+'<div class="fm-pop-links">'+links+'</div></div>';
+  }
+
+  var markers = FAC.map(function(f){
+    var mk = L.circleMarker([f.lat,f.lng],{radius:6,weight:1.5,color:'#fff',fillColor:BCOLOR[bucket(f.t)],fillOpacity:0.95});
+    mk.__f = f; mk.bindPopup(function(){ return popupHTML(f); },{maxWidth:250});
+    mk.on('popupopen',function(){ track('map_open_place',{place_type:f.t, place_name:f.n}); });
+    return mk;
+  });
+
+  function walkMin(f){ return Math.max(1,Math.ceil(dist(state.origin.lat,state.origin.lng,f.lat,f.lng)/80)); }
+
+  function buildList(vis){
+    var wrap=document.getElementById('fm-list'), ul=document.getElementById('fm-list-ul');
+    var filtered = !!(state.preset || Object.keys(state.types).length || state.openNow);
+    if(!filtered){ wrap.hidden=true; ul.innerHTML=''; return; }
+    wrap.hidden=false;
+    var arr=vis.slice();
+    if(state.origin){ arr.sort(function(a,b){ return dist(state.origin.lat,state.origin.lng,a.__f.lat,a.__f.lng)-dist(state.origin.lat,state.origin.lng,b.__f.lat,b.__f.lng); }); }
+    else { arr.sort(function(a,b){ return (ISJA?a.__f.n:(a.__f.ne||a.__f.n)).localeCompare(ISJA?b.__f.n:(b.__f.ne||b.__f.n)); }); }
+    document.querySelector('.fm-list-title').textContent = LISTLAB + ' (' + vis.length + ')';
+    var cap=80, more=(arr.length>cap)?(arr.length-cap):0; if(more) arr=arr.slice(0,cap);
+    ul.innerHTML='';
+    arr.forEach(function(mk){ var f=mk.__f, name=ISJA?f.n:(f.ne||f.n);
+      var walk = state.origin ? ('<span class="fm-li-walk"><i class="ti ti-walk" aria-hidden="true"></i>'+(ISJA?('徒歩'+walkMin(f)+'分'):(walkMin(f)+' min'))+'</span>') : '';
+      var li=document.createElement('li'); li.className='fm-li';
+      li.innerHTML='<span class="fm-li-ico fm-li-'+bucket(f.t)+'"><i class="ti '+iconOf(f.t)+'" aria-hidden="true"></i></span><span class="fm-li-body"><span class="fm-li-name">'+esc(name)+'</span><span class="fm-li-meta">'+esc(tlab(f.t))+(walk?(' <span class="fm-sep">·</span> '+walk):'')+'</span></span><i class="ti ti-chevron-right fm-li-arr" aria-hidden="true"></i>';
+      li.onclick=function(){ map.setView([f.lat,f.lng],17); mk.openPopup(); track('map_list_click',{place_type:f.t, place_name:f.n}); };
+      ul.appendChild(li);
+    });
+    if(more){ var l=document.createElement('li'); l.className='fm-li-more'; l.textContent=(ISJA?('他 '+more+' 件'):('+'+more+' more')); ul.appendChild(l); }
+  }
+
+  function apply(){
+    layer.clearLayers(); var vis=[];
+    for(var i=0;i<markers.length;i++){ if(visible(markers[i].__f)){ layer.addLayer(markers[i]); vis.push(markers[i]); } }
+    document.getElementById('fm-count').textContent = vis.length + ' ' + T.count;
+    buildList(vis);
+  }
+
+  function buildChips(){
+    var c=document.getElementById('fm-chips');
+    CHIPS.forEach(function(x){ var b=document.createElement('button'); b.type='button'; b.className='fm-chip';
+      b.textContent = pick(x); b.setAttribute('data-k',x[0]);
+      b.onclick=function(){ state.preset=null; syncPresetUI();
+        if(state.types[x[0]]){ delete state.types[x[0]]; b.classList.remove('on'); }
+        else { state.types[x[0]]=1; b.classList.add('on'); }
+        track('map_filter_type',{filter:x[0], active:!!state.types[x[0]]}); apply(); };
+      c.appendChild(b); });
+  }
+  function buildPresets(){
+    var c=document.getElementById('fm-presets');
+    PRESETS.forEach(function(x){ var b=document.createElement('button'); b.type='button'; b.className='fm-preset';
+      b.innerHTML='<i class="ti '+x[6]+'" aria-hidden="true"></i>'+esc(pick(x)); b.setAttribute('data-k',x[0]);
+      b.onclick=function(){
+        if(state.preset===x[0]){ state.preset=null; }
+        else { state.preset=x[0]; state.types={}; syncChipUI(); }
+        track('map_filter_preset',{preset:x[0], active:state.preset===x[0]});
+        syncPresetUI(); apply(); };
+      c.appendChild(b); });
+  }
+  function syncPresetUI(){ var bs=document.querySelectorAll('#fm-presets .fm-preset');
+    for(var i=0;i<bs.length;i++){ bs[i].classList.toggle('on', bs[i].getAttribute('data-k')===state.preset); } }
+  function syncChipUI(){ var bs=document.querySelectorAll('#fm-chips .fm-chip');
+    for(var i=0;i<bs.length;i++){ bs[i].classList.toggle('on', !!state.types[bs[i].getAttribute('data-k')]); } }
+
+  function buildHotelSelect(){
+    var s=document.getElementById('fm-hotel'); var o=document.createElement('option');
+    o.value=''; o.textContent = T.sel; s.appendChild(o);
+    HOTELS.slice().sort(function(a,b){ return (ISJA?a.n:a.ne).localeCompare(ISJA?b.n:b.ne); }).forEach(function(h){
+      var op=document.createElement('option'); op.value=h.s; op.textContent=ISJA?h.n:(h.ne||h.n); s.appendChild(op); });
+    s.onchange=function(){ var h=null; for(var i=0;i<HOTELS.length;i++){ if(HOTELS[i].s===s.value) h=HOTELS[i]; }
+      state.hotel=h; track('map_select_hotel',{hotel:s.value||'(none)'});
+      if(hotelMarker){ map.removeLayer(hotelMarker); hotelMarker=null; }
+      if(hotelCircle){ map.removeLayer(hotelCircle); hotelCircle=null; }
+      if(h){ hotelMarker=L.marker([h.lat,h.lng],{icon:L.divIcon({className:'',iconSize:[30,30],iconAnchor:[15,15],
+          html:'<div class="fm-hotelpin"><i class="ti ti-star"></i></div>'})}).addTo(map);
+        hotelMarker.bindPopup('<strong>'+esc(ISJA?h.n:(h.ne||h.n))+'</strong>');
+        hotelCircle=L.circle([h.lat,h.lng],{radius:400,color:'#E05535',weight:1,fillColor:'#E05535',fillOpacity:0.06}).addTo(map);
+        state.origin={lat:h.lat,lng:h.lng,kind:'hotel'};
+        map.setView([h.lat,h.lng],15); }
+      else { state.origin = state.here; }
+      apply(); };
+  }
+
+  function setText(sel,txt){ var e=document.querySelector(sel); if(e) e.textContent=txt; }
+  setText('.fm-hotel-lab',T.hotel); setText('.fm-now-lab',T.now); setText('.fm-reset-lab',T.reset); setText('.fm-here-lab',T.useLoc);
+  setText('.fm-leg-food',T.legFood); setText('.fm-leg-shop',T.legShop); setText('.fm-leg-svc',T.legSvc); setText('.fm-leg-note',T.legNote);
+
+  document.getElementById('fm-now').onclick=function(){ state.openNow=!state.openNow;
+    this.classList.toggle('on',state.openNow); track('map_open_now',{active:state.openNow}); apply(); };
+  document.querySelector('.fm-wrap').addEventListener('click',function(e){
+    var a=e.target.closest? e.target.closest('.fm-pop-links a[data-fm]') : null; if(!a) return;
+    track('map_place_action',{action:a.getAttribute('data-fm'), place_type:a.getAttribute('data-t'), place_name:a.getAttribute('data-n')});
+  },false);
+  document.getElementById('fm-here').onclick=function(){
+    var btn=this;
+    if(!navigator.geolocation){ alert(T.locErr); return; }
+    btn.classList.add('on'); btn.disabled=true;
+    navigator.geolocation.getCurrentPosition(function(pos){
+      btn.disabled=false;
+      var la=pos.coords.latitude, ln=pos.coords.longitude;
+      state.here={lat:la,lng:ln,kind:'here'}; state.origin=state.here; track('map_use_location',{});
+      if(hereMarker){ map.removeLayer(hereMarker); }
+      hereMarker=L.marker([la,ln],{icon:L.divIcon({className:'',iconSize:[18,18],iconAnchor:[9,9],html:'<div class="fm-herepin"></div>'})}).addTo(map);
+      map.setView([la,ln],15); apply();
+    }, function(){ btn.disabled=false; btn.classList.remove('on'); alert(T.locErr); }, {enableHighAccuracy:true,timeout:10000,maximumAge:60000});
+  };
+  document.getElementById('fm-reset').onclick=function(){ state.types={}; state.preset=null; state.openNow=false;
+    syncChipUI(); syncPresetUI(); document.getElementById('fm-now').classList.remove('on'); apply(); };
+
+  buildChips(); buildPresets(); buildHotelSelect(); apply();
+})();
+</script>

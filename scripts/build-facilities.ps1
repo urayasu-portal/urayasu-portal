@@ -10,7 +10,9 @@
   （将来 type=medical を足せば医療機関記事のデータ源にも流用できる基底スキーマ）
 
   列：id / type / name / name_en / operator / status / hours / lat / lng /
-      address / official_url / last_verified / note
+      address / official_url / last_verified / note /
+      open_early / open_late / is_24h（scripts/derive-inbound-flags.ps1 が hours から自動導出）/
+      atm_intl（手動管理: 1=海外カード対応ATMあり / check=要確認 / 空=なし・不明）
 #>
 $ErrorActionPreference = "Stop"
 $root    = Split-Path $PSScriptRoot -Parent
@@ -19,6 +21,7 @@ $outPath = Join-Path $root "data\facilities.yaml"
 if (-not (Test-Path $csvPath)) { throw "マスターCSVが見つかりません: $csvPath" }
 
 $csv = Import-Csv $csvPath -Encoding UTF8
+. (Join-Path $PSScriptRoot "hours-i18n.ps1")
 
 function Q([string]$s) { '"' + (($s) -replace '"','\"') + '"' }
 
@@ -39,7 +42,21 @@ foreach ($r in $csv) {
   if (($r.name_en).Trim())     { [void]$sb.AppendLine("    name_en: " + (Q ($r.name_en).Trim())) }
   if (($r.operator).Trim())    { [void]$sb.AppendLine("    operator: " + (Q ($r.operator).Trim())) }
   [void]$sb.AppendLine("    status: " + (Q ($r.status).Trim()))
-  if (($r.hours).Trim())       { [void]$sb.AppendLine("    hours: " + (Q ($r.hours).Trim())) }
+  $hj = ($r.hours).Trim()
+  if ($hj) {
+    [void]$sb.AppendLine("    hours: " + (Q $hj))
+    [void]$sb.AppendLine("    hours_en: " + (Q (Get-HoursI18n $hj 'en')))
+    [void]$sb.AppendLine("    hours_zh: " + (Q (Get-HoursI18n $hj 'zh')))
+    [void]$sb.AppendLine("    hours_ko: " + (Q (Get-HoursI18n $hj 'ko')))
+    [void]$sb.AppendLine("    hours_zhtw: " + (Q (Get-HoursI18n $hj 'zh-tw')))
+  }
+  if (($r.open_early).Trim() -eq '1') { [void]$sb.AppendLine("    open_early: true") }
+  if (($r.open_late).Trim() -eq '1')  { [void]$sb.AppendLine("    open_late: true") }
+  if (($r.is_24h).Trim() -eq '1')     { [void]$sb.AppendLine("    is_24h: true") }
+  if (($r.atm_intl).Trim())    { [void]$sb.AppendLine("    atm_intl: " + (Q ($r.atm_intl).Trim())) }
+  if (($r.baby_goods).Trim() -eq '1') { [void]$sb.AppendLine("    baby_goods: true") }
+  if (($r.tax_free).Trim() -eq '1')   { [void]$sb.AppendLine("    tax_free: true") }
+  if (($r.takkyubin).Trim() -eq '1')  { [void]$sb.AppendLine("    takkyubin: true") }
   if (($r.lat).Trim() -match '^-?[0-9.]+$') { [void]$sb.AppendLine("    lat: " + ($r.lat).Trim()) }
   if (($r.lng).Trim() -match '^-?[0-9.]+$') { [void]$sb.AppendLine("    lng: " + ($r.lng).Trim()) }
   if (($r.address).Trim())     { [void]$sb.AppendLine("    address: " + (Q ($r.address).Trim())) }

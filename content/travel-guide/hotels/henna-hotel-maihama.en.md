@@ -72,6 +72,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Guest Rooms (Guinness robot + deep soaking tub in all rooms)**
 100 rooms, each with a "Henn na" robot that responds to voice (light/air conditioning control, weather and local info). Separate bath and toilet with deep soaking tub in every room — comfortable bath time without waiting for a shared facility. Dinosaur robot at front desk handles self-check-in.
 

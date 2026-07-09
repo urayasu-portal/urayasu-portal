@@ -68,6 +68,8 @@ From Maihama Station, about 15–20 minutes to Tokyo Station on the JR Keiyo Lin
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **MAIHAMA LAGOON (year-round outdoor pool)**
 Temperature-controlled outdoor lagoon pool open 365 days a year, with barrel sauna, jet bath, kids pool, and poolside BBQ area. Hours and conditions on the official website.
 

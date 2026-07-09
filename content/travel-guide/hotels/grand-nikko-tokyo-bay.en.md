@@ -69,6 +69,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Atrium (Japan's largest — the defining visual experience)**
 A 37-meter-high, 4,300 m² atrium with a grand piano at its center. Glass elevators, balcony corridors, and carefully maintained greenery make the atrium a space guests are proud to return to — not just check in at.
 

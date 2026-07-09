@@ -73,6 +73,8 @@ From Maihama Station, about 15–20 minutes to Tokyo Station on the JR Keiyo Lin
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **In-House Convenience Store (24-Hour — the biggest practical advantage)**
 A 24-hour "Lawson" on the 1st floor sells drinks, snacks, and daily goods (pharmaceuticals 8:00–22:00; bank ATM and color copier on site). A limited-hours "Lawson S Hilton Tokyo Bay" is also on the same floor (17:00–23:00; no pharmaceuticals). **The only 24-hour in-house convenience store among Official Hotels in the Urayasu area** — guests from neighboring Okura and Sheraton come here to shop, a well-known fact locally. (The former "Seikatsu Saika" has closed and been converted to a Lawson.)
 

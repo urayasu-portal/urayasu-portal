@@ -70,6 +70,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Themed Concept Rooms**
 Various themed room types with distinct design concepts. Room types and availability: confirm on official website (and availability at booking).
 

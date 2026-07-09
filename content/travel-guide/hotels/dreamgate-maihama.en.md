@@ -70,6 +70,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line (di
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Direct Station Connection (the defining feature)**
 Main building: directly connected to the left of Maihama Station's ticket gate. Annex: directly connected to the right. Two buildings that literally flank the station. The only hotel in the entire TDR area with this kind of integration with Maihama Station.
 

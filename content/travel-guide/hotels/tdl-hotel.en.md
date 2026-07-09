@@ -71,6 +71,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Walkway Connection to TDL (the defining feature)**
 A covered indoor/semi-indoor walkway from the hotel lobby to TDL's entrance gate. Approximately 1 minute in good weather or bad. No more watching the shuttle schedule or worrying about shuttle timing on busy days.
 

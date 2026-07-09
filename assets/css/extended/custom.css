@@ -650,18 +650,28 @@ body.list { --main-width: 1160px; }
 .ft-bottom-text a:hover { color: rgba(255,255,255,.7) !important; }
 
 @media (max-width: 767px) {
+  /* モバイルはリンク列を2カラムに保ち縦長化を防ぐ。ブランド列は全幅で上段に。 */
   .ft-inner {
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    padding: 28px 20px 20px;
+    gap: 20px 28px;
+    padding: 26px 20px 16px;
   }
+  .ft-inner > div:first-child { grid-column: 1 / -1; }
+  .ft-desc { margin-bottom: 12px; }
 }
 @media (max-width: 480px) {
   .ft-inner {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 24px 16px 16px;
+    gap: 16px 18px;
+    padding: 22px 16px 12px;
   }
+  .ft-desc { font-size: 12.5px; line-height: 1.6; margin-bottom: 8px; }
+  .ft-links { gap: 6px; }
+  .ft-links a { font-size: 12.5px; }
+  .ft-col-heading { margin-bottom: 8px; }
+  .ft-col-heading + .ft-col-heading,
+  .ft-links + .ft-col-heading { margin-top: 14px; }
+  .ft-social { padding-top: 12px; }
+  .ft-bottom { margin-top: 12px; padding: 12px 16px; }
 }
 
 /* ---------- リストページヘッダー ---------- */
@@ -3831,6 +3841,100 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .post-content .hg-map-btn:hover { background: var(--accent-ink); }
 .post-content .hg-map-btn--out { background: #fff; border: 0.5px solid #F0C4B6; color: var(--accent-ink) !important; }
 .post-content .hg-map-btn--out:hover { background: #FBE3DA; }
+
+/* ホテル別 生活サバイバル情報 (.hg-survival) — 最寄りコンビニ/薬局/スーパー/ランドリー/海外ATM */
+.post-content .hg-survival { border: 0.5px solid #F6D8CD; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px -12px rgba(224,85,53,.35); margin: 0 0 24px; }
+.post-content .hg-sv-head { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 0.5px solid #F3E2DB; background: #FDF4F1; }
+.post-content .hg-sv-head > i { font-size: 20px; color: var(--accent); }
+.post-content .hg-sv-title { font-size: 13px; font-weight: 700; color: var(--up-text); line-height: 1.3; }
+.post-content .hg-sv-sub { font-size: 11px; color: var(--up-muted); line-height: 1.3; margin-top: 2px; }
+.post-content .hg-sv-list { list-style: none; margin: 0; padding: 0; }
+.post-content .hg-sv-item { display: flex; align-items: center; gap: 11px; padding: 11px 14px; border-bottom: 0.5px solid #F3E2DB; }
+.post-content .hg-sv-item:last-child { border-bottom: none; }
+.post-content .hg-sv-ico { flex: none; width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: #FBE9E3; color: var(--accent); }
+.post-content .hg-sv-ico > i { font-size: 19px; }
+.post-content .hg-sv-atm { background: #E6F1FB; color: #185FA5; }
+.post-content .hg-sv-laundry { background: #E1F5EE; color: #0F6E56; }
+.post-content .hg-sv-body { flex: 1 1 auto; min-width: 0; }
+.post-content .hg-sv-role { font-size: 10px; font-weight: 700; color: var(--up-text-2); text-transform: uppercase; letter-spacing: .02em; }
+.post-content .hg-sv-name { font-size: 13.5px; font-weight: 700; color: var(--up-text); line-height: 1.3; margin: 1px 0 3px; }
+.post-content .hg-sv-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 11px; color: var(--up-muted); }
+.post-content .hg-sv-walk { display: inline-flex; align-items: center; gap: 3px; font-weight: 700; color: var(--up-text-2); }
+.post-content .hg-sv-walk > i { font-size: 13px; }
+.post-content .hg-sv-inb { display: inline-flex; align-items: center; font-weight: 700; color: #0F6E56; background: #E1F5EE; border-radius: 8px; padding: 1px 8px; }
+.post-content .hg-sv-tag { font-size: 10px; font-weight: 700; border-radius: 8px; padding: 1px 7px; }
+.post-content .hg-sv-tag--24h { background: #E1F5EE; color: #0F6E56; }
+.post-content .hg-sv-tag--atm { background: #E6F1FB; color: #185FA5; }
+.post-content .hg-sv-tag--tax { background: #FAEEDA; color: #854F0B; }
+.post-content .hg-sv-actions { flex: none; display: flex; gap: 6px; }
+.post-content .hg-sv-btn { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 9px; text-decoration: none !important; background: var(--accent); color: #fff !important; }
+.post-content .hg-sv-btn:hover { background: var(--accent-ink); }
+.post-content .hg-sv-btn > i { font-size: 17px; }
+.post-content .hg-sv-btn--out { background: #fff; border: 0.5px solid #F0C4B6; color: var(--accent-ink) !important; }
+.post-content .hg-sv-btn--out:hover { background: #FBE3DA; }
+.post-content .hg-sv-note { font-size: 10px; color: var(--up-text-3); padding: 9px 14px; background: #FDF7F5; }
+
+/* 浦安 生活・買い物マップ (.fm-*) — インバウンド向け大型フィルタ地図 */
+.post-content .fm-wrap { border: 0.5px solid var(--up-border); border-radius: 14px; overflow: hidden; background: #fff; margin: 0 0 24px; box-shadow: 0 6px 18px -12px rgba(0,0,0,.18); }
+.post-content .fm-controls { padding: 12px 14px 10px; border-bottom: 0.5px solid var(--up-border); background: #FBFAF7; }
+.post-content .fm-row--top { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.post-content .fm-hotel { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; color: var(--up-text-2); }
+.post-content .fm-hotel > i { font-size: 17px; color: var(--accent); }
+.post-content .fm-hotel select { font-size: 12px; padding: 6px 8px; border: 0.5px solid var(--up-border); border-radius: 8px; background: #fff; color: var(--up-text); max-width: 210px; }
+.post-content .fm-toggle, .post-content .fm-reset { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 700; padding: 7px 11px; border-radius: 20px; border: 0.5px solid var(--up-border); background: #fff; color: var(--up-text-2); cursor: pointer; }
+.post-content .fm-toggle > i, .post-content .fm-reset > i { font-size: 15px; }
+.post-content .fm-toggle.on { background: #E1F5EE; border-color: #9FE1CB; color: #0F6E56; }
+.post-content .fm-reset { border: none; color: var(--up-muted); font-weight: 400; margin-left: auto; }
+.post-content .fm-count { font-size: 12px; font-weight: 700; color: var(--up-text-2); }
+.post-content .fm-presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.post-content .fm-preset { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 20px; border: 0.5px solid #EAD7CE; background: #FFF7F3; color: var(--accent-ink); cursor: pointer; }
+.post-content .fm-preset > i { font-size: 15px; }
+.post-content .fm-preset.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.post-content .fm-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.post-content .fm-chip { font-size: 11.5px; font-weight: 700; padding: 5px 11px; border-radius: 20px; border: 0.5px solid var(--up-border); background: #fff; color: var(--up-text-2); cursor: pointer; }
+.post-content .fm-chip.on { background: #E6F1FB; border-color: #85B7EB; color: #185FA5; }
+.post-content .fm-map { position: relative; aspect-ratio: 4 / 3; max-height: 520px; background: #e9eef0; }
+.post-content .fm-map #fm-map-el { position: absolute; inset: 0; width: 100%; height: 100%; }
+.post-content .fm-map .leaflet-container { font-family: inherit; }
+.post-content .fm-list { border-top: 0.5px solid var(--up-border); background: #fff; }
+.post-content .fm-list-head { padding: 9px 14px 4px; }
+.post-content .fm-list-title { font-size: 12px; font-weight: 700; color: var(--up-text-2); }
+.post-content .fm-list-ul { list-style: none; margin: 0; padding: 0 6px 8px; max-height: 300px; overflow-y: auto; }
+.post-content .fm-li { display: flex; align-items: center; gap: 10px; padding: 9px 8px; border-radius: 9px; cursor: pointer; }
+.post-content .fm-li:hover { background: #FBFAF7; }
+.post-content .fm-li + .fm-li { border-top: 0.5px solid var(--up-border); border-radius: 0; }
+.post-content .fm-li-ico { flex: none; width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.post-content .fm-li-ico > i { font-size: 16px; }
+.post-content .fm-li-food { background: #FBE9E3; color: #C0492A; }
+.post-content .fm-li-shop { background: #E6F1FB; color: #185FA5; }
+.post-content .fm-li-service { background: #E1F5EE; color: #0F6E56; }
+.post-content .fm-li-body { flex: 1 1 auto; min-width: 0; }
+.post-content .fm-li-name { display: block; font-size: 13px; font-weight: 700; color: var(--up-text); line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.post-content .fm-li-meta { display: block; font-size: 11px; color: var(--up-muted); margin-top: 1px; }
+.post-content .fm-li-walk { font-weight: 700; color: var(--up-text-2); }
+.post-content .fm-li-walk > i { font-size: 12px; vertical-align: -1px; margin-right: 1px; }
+.post-content .fm-li-arr { flex: none; font-size: 16px; color: var(--up-text-3); }
+.post-content .fm-li-more { list-style: none; text-align: center; font-size: 11px; color: var(--up-muted); padding: 8px; }
+.post-content .fm-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 9px 14px; font-size: 11px; color: var(--up-text-2); border-top: 0.5px solid var(--up-border); }
+.post-content .fm-legend .fm-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+.post-content .fm-legend-note { color: var(--up-muted); margin-left: auto; }
+.post-content .fm-hotelpin { width: 30px; height: 30px; border-radius: 50%; background: var(--accent); border: 2.5px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,.35); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 17px; }
+.post-content .fm-herepin { width: 16px; height: 16px; border-radius: 50%; background: #2B7FFF; border: 3px solid #fff; box-shadow: 0 0 0 4px rgba(43,127,255,.25), 0 1px 4px rgba(0,0,0,.3); }
+.post-content #fm-here.on { background: #E6F1FB; border-color: #85B7EB; color: #185FA5; }
+.post-content .fm-pop-cat { font-size: 10px; font-weight: 700; color: var(--up-muted); text-transform: uppercase; letter-spacing: .02em; }
+.post-content .fm-pop-name { font-size: 13.5px; font-weight: 700; color: var(--up-text); margin: 1px 0 4px; line-height: 1.3; }
+.post-content .fm-pop-walk { font-size: 11.5px; font-weight: 700; color: var(--accent-ink); margin-bottom: 2px; }
+.post-content .fm-pop-h { font-size: 11px; color: var(--up-text-2); margin-bottom: 4px; }
+.post-content .fm-pop-badges { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+.post-content .fm-pt { font-size: 10px; font-weight: 700; border-radius: 7px; padding: 1px 6px; }
+.post-content .fm-pt--green { background: #E1F5EE; color: #0F6E56; }
+.post-content .fm-pt--blue { background: #E6F1FB; color: #185FA5; }
+.post-content .fm-pt--amber { background: #FAEEDA; color: #854F0B; }
+.post-content .fm-pt--gray { background: #F1EFE8; color: #5F5E5A; }
+.post-content .fm-pop-links { font-size: 11.5px; }
+.post-content .fm-pop-links a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.post-content .fm-pop-links .fm-sep { color: var(--up-muted); }
+@media (max-width: 640px) { .post-content .fm-map { aspect-ratio: 1 / 1; } .post-content .fm-hotel select { max-width: 150px; } }
 
 /* ========================================
    ホテル比較マップ (.hcm-*)

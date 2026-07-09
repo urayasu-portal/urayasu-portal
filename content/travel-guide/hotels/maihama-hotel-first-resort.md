@@ -73,6 +73,8 @@ noDate: true
 
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **客室**　豊富なコンセプトルームを展開。
 
 **朝食**　レストランでビュッフェ形式（詳細は公式要確認）。

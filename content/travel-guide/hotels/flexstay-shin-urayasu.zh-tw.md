@@ -69,6 +69,8 @@ noDate: true
 ## 設施與服務
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **客房（全室迷你廚房）**
 全室配迷你廚房，適合長住旅居。房型與最大入住人數請以官方網站確認。
 

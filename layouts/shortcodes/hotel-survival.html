@@ -1,0 +1,72 @@
+{{- /* ホテル別「生活サバイバル情報」ブロック。data/hotel_survival.yaml を slug で引き、
+       最寄りのコンビニ/ドラッグ/スーパー/コインランドリー/海外カードATMを徒歩分つきで表示。
+       結合ロジックは scripts/build-hotel-survival.ps1 が持ち、本ショートコードは描画のみ。
+       言語: ja/en/zh/ko/zh-tw を対応。施設固有名は name/name_en のみのため非jaは name_en。 */ -}}
+{{- $slug := .Page.File.ContentBaseName }}
+{{- $lang := .Page.Language.Lang }}
+{{- $isJA := eq $lang "ja" }}
+{{- $sv := false }}
+{{- range .Site.Data.hotel_survival.hotels }}{{ if eq .slug $slug }}{{ $sv = . }}{{ end }}{{- end }}
+{{- $icon := dict "conbini" "ti-building-store" "drugstore" "ti-pill" "supermarket" "ti-shopping-cart" "laundry" "ti-wash-machine" "atm" "ti-cash" }}
+{{- $roles := dict
+  "ja" (dict "conbini" "コンビニ" "drugstore" "ドラッグストア" "supermarket" "スーパー" "laundry" "コインランドリー" "atm" "海外カード対応ATM")
+  "en" (dict "conbini" "Convenience" "drugstore" "Pharmacy" "supermarket" "Supermarket" "laundry" "Coin laundry" "atm" "ATM (foreign card)")
+  "zh" (dict "conbini" "便利店" "drugstore" "药妆店" "supermarket" "超市" "laundry" "自助洗衣" "atm" "海外卡ATM")
+  "ko" (dict "conbini" "편의점" "drugstore" "드러그스토어" "supermarket" "슈퍼마켓" "laundry" "코인 세탁" "atm" "해외카드 ATM")
+  "zh-tw" (dict "conbini" "便利商店" "drugstore" "藥妝店" "supermarket" "超市" "laundry" "自助洗衣" "atm" "海外卡ATM") }}
+{{- $L := dict
+  "ja" (dict "title" "このホテルの生活サバイバル情報" "sub" "最寄りの生活施設を自動表示（徒歩の目安つき）" "inb" "館内" "laun" "館内コインランドリーあり" "walkPre" "徒歩" "walkSuf" "分" "b24" "24時間" "early" "早朝" "atm" "海外カードOK" "tax" "免税" "dir" "経路" "find" "店舗検索" "note" "徒歩分は直線距離の目安です。営業時間は変わることがあります。")
+  "en" (dict "title" "Essentials near this hotel" "sub" "Nearest daily-life spots, with walking times" "inb" "In hotel" "laun" "Coin laundry in the hotel" "walkPre" "" "walkSuf" "-min walk" "b24" "24h" "early" "Early" "atm" "Foreign card OK" "tax" "Tax-free" "dir" "Directions" "find" "Find stores" "note" "Walk times are straight-line estimates. Hours may change.")
+  "zh" (dict "title" "本饭店周边生活便利信息" "sub" "自动显示最近的生活设施（含步行时间参考）" "inb" "馆内" "laun" "馆内设有自助洗衣" "walkPre" "步行" "walkSuf" "分钟" "b24" "24小时" "early" "早间营业" "atm" "海外卡可用" "tax" "免税" "dir" "路线" "find" "门店查询" "note" "步行时间为直线距离参考，营业时间可能变动。")
+  "ko" (dict "title" "이 호텔 주변 생활 정보" "sub" "가장 가까운 생활 시설을 자동 표시(도보 시간 기준)" "inb" "관내" "laun" "관내 코인 세탁실 있음" "walkPre" "도보 " "walkSuf" "분" "b24" "24시간" "early" "이른 영업" "atm" "해외카드 가능" "tax" "면세" "dir" "경로" "find" "매장 검색" "note" "도보 시간은 직선거리 기준이며 영업시간은 달라질 수 있습니다.")
+  "zh-tw" (dict "title" "本飯店周邊生活便利資訊" "sub" "自動顯示最近的生活設施（含步行時間參考）" "inb" "館內" "laun" "館內設有自助洗衣" "walkPre" "步行" "walkSuf" "分鐘" "b24" "24小時" "early" "早間營業" "atm" "海外卡可用" "tax" "免稅" "dir" "路線" "find" "門市查詢" "note" "步行時間為直線距離參考，營業時間可能變動。") }}
+{{- $r := index $roles $lang }}{{ if not $r }}{{ $r = index $roles "en" }}{{ end }}
+{{- $t := index $L $lang }}{{ if not $t }}{{ $t = index $L "en" }}{{ end }}
+{{- with $sv }}
+<div class="hg-survival">
+  <div class="hg-sv-head">
+    <i class="ti ti-map-pin-check" aria-hidden="true"></i>
+    <div>
+      <div class="hg-sv-title">{{ $t.title }}</div>
+      <div class="hg-sv-sub">{{ $t.sub }}</div>
+    </div>
+  </div>
+  <ul class="hg-sv-list">
+    {{- range .items }}
+    {{- $ti := index $icon .role }}
+    {{- $nm := .name }}{{ if and (not $isJA) .name_en }}{{ $nm = .name_en }}{{ end }}
+    <li class="hg-sv-item">
+      <span class="hg-sv-ico hg-sv-{{ .role }}"><i class="ti {{ $ti }}" aria-hidden="true"></i></span>
+      <div class="hg-sv-body">
+        <div class="hg-sv-role">{{ index $r .role }}</div>
+        {{- if and (eq .role "laundry") .in_building }}
+        <div class="hg-sv-name">{{ $t.laun }}</div>
+        <div class="hg-sv-meta"><span class="hg-sv-inb">{{ $t.inb }}</span></div>
+        {{- else }}
+        <div class="hg-sv-name">{{ $nm }}</div>
+        <div class="hg-sv-meta">
+          {{- if .in_building }}<span class="hg-sv-inb">{{ $t.inb }}</span>
+          {{- else }}<span class="hg-sv-walk"><i class="ti ti-walk" aria-hidden="true"></i>{{ $t.walkPre }}{{ .walk_min }}{{ $t.walkSuf }}</span>{{ end }}
+          {{- if .is_24h }}<span class="hg-sv-tag hg-sv-tag--24h">{{ $t.b24 }}</span>
+          {{- else }}{{ $hh := .hours }}{{ if eq $lang "en" }}{{ $hh = .hours_en | default .hours }}{{ else if eq $lang "zh" }}{{ $hh = .hours_zh | default .hours }}{{ else if eq $lang "ko" }}{{ $hh = .hours_ko | default .hours }}{{ else if eq $lang "zh-tw" }}{{ $hh = .hours_zhtw | default .hours }}{{ end }}{{ with $hh }}<span class="hg-sv-hours">{{ . }}</span>{{ end }}{{ end }}
+          {{- if eq .atm_intl "1" }}<span class="hg-sv-tag hg-sv-tag--atm">{{ $t.atm }}</span>{{ end }}
+          {{- if .tax_free }}<span class="hg-sv-tag hg-sv-tag--tax">{{ $t.tax }}</span>{{ end }}
+        </div>
+        {{- end }}
+      </div>
+      {{- if not (and (eq .role "laundry") .in_building) }}
+      <div class="hg-sv-actions">
+        {{- if and .lat .lng }}
+        <a class="hg-sv-btn" href="https://www.google.com/maps/dir/?api=1&{{ querify "destination" (printf "%v,%v" .lat .lng) }}" target="_blank" rel="noopener" title="{{ $t.dir }}"><i class="ti ti-route" aria-hidden="true"></i></a>
+        {{- end }}
+        {{- with .url }}
+        <a class="hg-sv-btn hg-sv-btn--out" href="{{ . }}" target="_blank" rel="noopener" title="{{ $t.find }}"><i class="ti ti-external-link" aria-hidden="true"></i></a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+  <div class="hg-sv-note">{{ $t.note }}</div>
+</div>
+{{- end }}

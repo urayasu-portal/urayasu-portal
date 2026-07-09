@@ -69,6 +69,8 @@ Urayasu Station → Tokyo Metro Tozai Line express: approx. 18 min to Otemachi (
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Guest Rooms (30 m², up to 4 guests)**
 Studio-style 30 m² rooms with double bed × 2 (up to 4 guests). Full kitchen, refrigerator, microwave oven, washing machine, and separate toilet and bathroom in every room. Suitable for families and groups.
 

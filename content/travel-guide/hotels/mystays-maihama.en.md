@@ -70,6 +70,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Guest Rooms (foot massager in all rooms)**
 90 compact rooms, all with an in-room foot massager. Post-park foot fatigue recovery in your own room without a spa visit.
 

@@ -71,6 +71,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **TDR Shuttle (69 buses/day — the area's highest frequency)**
 69 free shuttle buses per day eliminates scheduling stress. Whether you're heading to park opening, returning for lunch, or staying until closing, a shuttle is always within minutes. Particularly valuable on busy days and during school holidays.
 

@@ -70,6 +70,8 @@ Via Maihama Station (JR Keiyo Line) or Shin-Urayasu Station (JR Keiyo Line), app
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Guest Rooms (26 rooms, 4 floor themes)**
 4 floors each featuring a completely different story world. Small-hotel-scale intimacy. Room types and capacity: confirm on official website.
 

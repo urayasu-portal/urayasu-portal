@@ -1,0 +1,2503 @@
+# === 自動生成ファイル / DO NOT EDIT ===
+# マスター: hotel-database-full.csv + facility-database.csv
+# 生成:     scripts/build-hotel-survival.ps1
+# ホテルの最寄り施設リンクや施設情報を変えたら再生成すること。
+
+hotels:
+  - slug: "tdl-hotel"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 6
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 9
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 9
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 6
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "miracosta"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "NewDays 舞浜"
+        name_en: "NewDays Maihama"
+        hours: "6:30～23:00"
+        hours_en: "6:30～23:00"
+        hours_zh: "6:30～23:00"
+        hours_ko: "6:30～23:00"
+        hours_zhtw: "6:30～23:00"
+        walk_min: 14
+        lat: 35.636112
+        lng: 139.884384
+        address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
+        url: "https://www.j-retail.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 17
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 17
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 富士見3丁目店"
+        name_en: "wash+ Fujimi 3-chome (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 32
+        lat: 35.649422
+        lng: 139.887482
+        address: "千葉県浦安市富士見3-4-8"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安見明川店"
+        name_en: "Lawson Urayasu Miakegawa"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 15
+        lat: 35.63686
+        lng: 139.892838
+        address: "千葉県浦安市弁天3-2-97"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "fantasy-springs-hotel"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "NewDays 舞浜"
+        name_en: "NewDays Maihama"
+        hours: "6:30～23:00"
+        hours_en: "6:30～23:00"
+        hours_zh: "6:30～23:00"
+        hours_ko: "6:30～23:00"
+        hours_zhtw: "6:30～23:00"
+        walk_min: 14
+        lat: 35.636112
+        lng: 139.884384
+        address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
+        url: "https://www.j-retail.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 5
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 5
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 16
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "ambassador-hotel"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "NewDays 舞浜"
+        name_en: "NewDays Maihama"
+        hours: "6:30～23:00"
+        hours_en: "6:30～23:00"
+        hours_zh: "6:30～23:00"
+        hours_ko: "6:30～23:00"
+        hours_zhtw: "6:30～23:00"
+        walk_min: 6
+        lat: 35.636112
+        lng: 139.884384
+        address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
+        url: "https://www.j-retail.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "ドラッグセイムス 舞浜店"
+        name_en: "Drug Seims Maihama"
+        hours: "8:00-23:45（調剤は月-土10:00-14:00/15:00-19:00・日祝休）"
+        hours_en: "8:00-23:45（Rx Mon-Sat10:00-14:00/15:00-19:00・Sun/Hol closed）"
+        hours_zh: "8:00-23:45（调剂 周一-周六10:00-14:00/15:00-19:00・周日及节假日休）"
+        hours_ko: "8:00-23:45（조제 월-토10:00-14:00/15:00-19:00・일·공휴일 휴무）"
+        hours_zhtw: "8:00-23:45（調劑 週一-週六10:00-14:00/15:00-19:00・週日及假日休）"
+        walk_min: 16
+        lat: 35.644321
+        lng: 139.888519
+        address: "千葉県浦安市富士見5-7-40"
+        url: "https://store.seims.co.jp/map/9849/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 16
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 富士見3丁目店"
+        name_en: "wash+ Fujimi 3-chome (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 23
+        lat: 35.649422
+        lng: 139.887482
+        address: "千葉県浦安市富士見3-4-8"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安見明川店"
+        name_en: "Lawson Urayasu Miakegawa"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 8
+        lat: 35.63686
+        lng: 139.892838
+        address: "千葉県浦安市弁天3-2-97"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "toy-story-hotel"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン ヒルトン東京ベイ店"
+        name_en: "Lawson Hilton Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 8
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
+        url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 8
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 8
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 21
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "celebration-wish"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン コンフォートスイーツ東京ベイ店"
+        name_en: "Lawson Comfort Suites Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 4
+        lat: 35.638119
+        lng: 139.927719
+        address: "千葉県浦安市明海5-8-15"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシア 順天堂大学浦安・日の出キャンパス店"
+        name_en: "Welcia Juntendo Urayasu-Hinode Campus"
+        hours: "平日 8:00～20:00／土日祝休業"
+        hours_en: "Weekdays 8:00～20:00／Sat/Sun/Holclosed"
+        hours_zh: "工作日 8:00～20:00／周末及节假日休息"
+        hours_ko: "평일 8:00～20:00／주말·공휴일휴무"
+        hours_zhtw: "平日 8:00～20:00／週末及假日休息"
+        walk_min: 8
+        lat: 35.643864
+        lng: 139.93103
+        address: "千葉県浦安市日の出6-8-1"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "MONA新浦安"
+        name_en: "MONA Shin-Urayasu"
+        hours: "店舗による（要確認）"
+        hours_en: "Varies by shop（check）"
+        hours_zh: "视店铺而定（需确认）"
+        hours_ko: "매장에 따라（확인 필요）"
+        hours_zhtw: "視店鋪而定（需確認）"
+        walk_min: 24
+        lat: 35.649063
+        lng: 139.913803
+        address: "千葉県浦安市入船1 新浦安駅前"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン シーサイド新浦安店"
+        name_en: "Lawson Seaside Shin-Urayasu"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 4
+        lat: 35.641151
+        lng: 139.930267
+        address: "千葉県浦安市日の出5-7-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "celebration-discover"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン 星野リゾート1955東京ベイ店"
+        name_en: "Lawson (Hoshino Resorts 1955)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 2
+        lat: 35.637997
+        lng: 139.931976
+        address: "千葉県浦安市日の出7-2-3"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシア 順天堂大学浦安・日の出キャンパス店"
+        name_en: "Welcia Juntendo Urayasu-Hinode Campus"
+        hours: "平日 8:00～20:00／土日祝休業"
+        hours_en: "Weekdays 8:00～20:00／Sat/Sun/Holclosed"
+        hours_zh: "工作日 8:00～20:00／周末及节假日休息"
+        hours_ko: "평일 8:00～20:00／주말·공휴일휴무"
+        hours_zhtw: "平日 8:00～20:00／週末及假日休息"
+        walk_min: 8
+        lat: 35.643864
+        lng: 139.93103
+        address: "千葉県浦安市日の出6-8-1"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "MONA新浦安"
+        name_en: "MONA Shin-Urayasu"
+        hours: "店舗による（要確認）"
+        hours_en: "Varies by shop（check）"
+        hours_zh: "视店铺而定（需确认）"
+        hours_ko: "매장에 따라（확인 필요）"
+        hours_zhtw: "視店鋪而定（需確認）"
+        walk_min: 25
+        lat: 35.649063
+        lng: 139.913803
+        address: "千葉県浦安市入船1 新浦安駅前"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン シーサイド新浦安店"
+        name_en: "Lawson Seaside Shin-Urayasu"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 4
+        lat: 35.641151
+        lng: 139.930267
+        address: "千葉県浦安市日の出5-7-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "hotel-okura-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン ヒルトン東京ベイ店"
+        name_en: "Lawson Hilton Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 8
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
+        url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 8
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 8
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 富士見3丁目店"
+        name_en: "wash+ Fujimi 3-chome (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 36
+        lat: 35.649422
+        lng: 139.887482
+        address: "千葉県浦安市富士見3-4-8"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 20
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "grand-nikko-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "NewDays 舞浜"
+        name_en: "NewDays Maihama"
+        hours: "6:30～23:00"
+        hours_en: "6:30～23:00"
+        hours_zh: "6:30～23:00"
+        hours_ko: "6:30～23:00"
+        hours_zhtw: "6:30～23:00"
+        walk_min: 16
+        lat: 35.636112
+        lng: 139.884384
+        address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
+        url: "https://www.j-retail.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 3
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 3
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 17
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "sheraton-grande-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン ヒルトン東京ベイ店"
+        name_en: "Lawson Hilton Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 9
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
+        url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 9
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 9
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 19
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "hilton-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ローソン ヒルトン東京ベイ店"
+        name_en: "Lawson Hilton Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 0
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
+        url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 6
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 6
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 19
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "maihama-hotel-first-resort"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ファーストセレクト"
+        name_en: "First Select (Tokyo Bay Maihama Hotel)"
+        hours: "8:00～23:00"
+        hours_en: "8:00～23:00"
+        hours_zh: "8:00～23:00"
+        hours_ko: "8:00～23:00"
+        hours_zhtw: "8:00～23:00"
+        walk_min: 0
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-34 東京ベイ舞浜ホテル内"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 1
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 1
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 15
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "dreamgate-maihama"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "NewDays 舞浜"
+        name_en: "NewDays Maihama"
+        hours: "6:30～23:00"
+        hours_en: "6:30～23:00"
+        hours_zh: "6:30～23:00"
+        hours_ko: "6:30～23:00"
+        hours_zhtw: "6:30～23:00"
+        walk_min: 0
+        lat: 35.636112
+        lng: 139.884384
+        address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
+        url: "https://www.j-retail.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "ドラッグセイムス 舞浜店"
+        name_en: "Drug Seims Maihama"
+        hours: "8:00-23:45（調剤は月-土10:00-14:00/15:00-19:00・日祝休）"
+        hours_en: "8:00-23:45（Rx Mon-Sat10:00-14:00/15:00-19:00・Sun/Hol closed）"
+        hours_zh: "8:00-23:45（调剂 周一-周六10:00-14:00/15:00-19:00・周日及节假日休）"
+        hours_ko: "8:00-23:45（조제 월-토10:00-14:00/15:00-19:00・일·공휴일 휴무）"
+        hours_zhtw: "8:00-23:45（調劑 週一-週六10:00-14:00/15:00-19:00・週日及假日休）"
+        walk_min: 13
+        lat: 35.644321
+        lng: 139.888519
+        address: "千葉県浦安市富士見5-7-40"
+        url: "https://store.seims.co.jp/map/9849/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 14
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 5
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "maihama-view-hotel"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "NewDays 舞浜"
+        name_en: "NewDays Maihama"
+        hours: "6:30～23:00"
+        hours_en: "6:30～23:00"
+        hours_zh: "6:30～23:00"
+        hours_ko: "6:30～23:00"
+        hours_zhtw: "6:30～23:00"
+        walk_min: 15
+        lat: 35.636112
+        lng: 139.884384
+        address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
+        url: "https://www.j-retail.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ イクスピアリ店"
+        name_en: "Tomod's Ikspiari"
+        hours: "10:00～21:00"
+        hours_en: "10:00～21:00"
+        hours_zh: "10:00～21:00"
+        hours_ko: "10:00～21:00"
+        hours_zhtw: "10:00～21:00"
+        walk_min: 1
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "成城石井 舞浜イクスピアリ店"
+        name_en: "Seijo Ishii Maihama Ikspiari"
+        hours: "10:00～22:30"
+        hours_en: "10:00～22:30"
+        hours_zh: "10:00～22:30"
+        hours_ko: "10:00～22:30"
+        hours_zhtw: "10:00～22:30"
+        walk_min: 1
+        lat: 35.631264
+        lng: 139.874329
+        address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
+        url: "https://shop.seijoishii.com/seijoishii/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 富士見3丁目店"
+        name_en: "wash+ Fujimi 3-chome (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 31
+        lat: 35.649422
+        lng: 139.887482
+        address: "千葉県浦安市富士見3-4-8"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 16
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "royal-park-maihama"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ローソン ザ ロイヤルパークホテル 舞浜リゾート 東京ベイ店"
+        name_en: "Lawson Royal Park Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 0
+        lat: 35.625957
+        lng: 139.894958
+        address: "千葉県浦安市千鳥13-1"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシアライフガーデン新浦安店"
+        name_en: "Welcia Life Garden Shin-Urayasu"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 24
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "ワイズマートディスカ 高洲店"
+        name_en: "Y's Mart Disca Takasu"
+        hours: "月～土 10:00～20:00／日 9:00～20:00"
+        hours_en: "Mon-Sat 10:00～20:00／Sun 9:00～20:00"
+        hours_zh: "周一至周六 10:00～20:00／周日 9:00～20:00"
+        hours_ko: "월~토 10:00～20:00／일 9:00～20:00"
+        hours_zhtw: "週一至週六 10:00～20:00／週日 9:00～20:00"
+        walk_min: 22
+        lat: 35.637661
+        lng: 139.911209
+        address: "千葉県浦安市高洲2-3-12"
+        url: "https://www.ysmart.co.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安見明川店"
+        name_en: "Lawson Urayasu Miakegawa"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 15
+        lat: 35.63686
+        lng: 139.892838
+        address: "千葉県浦安市弁天3-2-97"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "mystays-maihama"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン 浦安見明川店"
+        name_en: "Lawson Urayasu Miakegawa"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 6
+        lat: 35.63686
+        lng: 139.892838
+        address: "千葉県浦安市弁天3-2-97"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ドラッグセイムス 舞浜店"
+        name_en: "Drug Seims Maihama"
+        hours: "8:00-23:45（調剤は月-土10:00-14:00/15:00-19:00・日祝休）"
+        hours_en: "8:00-23:45（Rx Mon-Sat10:00-14:00/15:00-19:00・Sun/Hol closed）"
+        hours_zh: "8:00-23:45（调剂 周一-周六10:00-14:00/15:00-19:00・周日及节假日休）"
+        hours_ko: "8:00-23:45（조제 월-토10:00-14:00/15:00-19:00・일·공휴일 휴무）"
+        hours_zhtw: "8:00-23:45（調劑 週一-週六10:00-14:00/15:00-19:00・週日及假日休）"
+        walk_min: 17
+        lat: 35.644321
+        lng: 139.888519
+        address: "千葉県浦安市富士見5-7-40"
+        url: "https://store.seims.co.jp/map/9849/"
+      - role: "supermarket"
+        in_building: false
+        name: "サミットストア ライフガーデン浦安富岡店"
+        name_en: "Summit Store Life Garden Urayasu Tomioka"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 17
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.summitstore.co.jp/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 今川店"
+        name_en: "wash+ Imagawa (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 24
+        lat: 35.644634
+        lng: 139.906815
+        address: "千葉県浦安市今川1-1-35 エルドシック浦安103"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安見明川店"
+        name_en: "Lawson Urayasu Miakegawa"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 6
+        lat: 35.63686
+        lng: 139.892838
+        address: "千葉県浦安市弁天3-2-97"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "maihama-eurasia"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "デイリーヤマザキ 浦安千鳥店"
+        name_en: "Daily Yamazaki Urayasu Chidori"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 5
+        lat: 35.626034
+        lng: 139.8992
+        address: "千葉県浦安市千鳥12-7"
+        url: "https://www.daily-yamazaki.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシアライフガーデン新浦安店"
+        name_en: "Welcia Life Garden Shin-Urayasu"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 23
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "サミットストア ライフガーデン浦安富岡店"
+        name_en: "Summit Store Life Garden Urayasu Tomioka"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 23
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.summitstore.co.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安見明川店"
+        name_en: "Lawson Urayasu Miakegawa"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 14
+        lat: 35.63686
+        lng: 139.892838
+        address: "千葉県浦安市弁天3-2-97"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "eurasia-annex"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "デイリーヤマザキ 浦安千鳥店"
+        name_en: "Daily Yamazaki Urayasu Chidori"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 6
+        lat: 35.626034
+        lng: 139.8992
+        address: "千葉県浦安市千鳥12-7"
+        url: "https://www.daily-yamazaki.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシアライフガーデン新浦安店"
+        name_en: "Welcia Life Garden Shin-Urayasu"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 28
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "ワイズマートディスカ 高洲店"
+        name_en: "Y's Mart Disca Takasu"
+        hours: "月～土 10:00～20:00／日 9:00～20:00"
+        hours_en: "Mon-Sat 10:00～20:00／Sun 9:00～20:00"
+        hours_zh: "周一至周六 10:00～20:00／周日 9:00～20:00"
+        hours_ko: "월~토 10:00～20:00／일 9:00～20:00"
+        hours_zhtw: "週一至週六 10:00～20:00／週日 9:00～20:00"
+        walk_min: 22
+        lat: 35.637661
+        lng: 139.911209
+        address: "千葉県浦安市高洲2-3-12"
+        url: "https://www.ysmart.co.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安高洲2丁目店"
+        name_en: "7-Eleven Urayasu Takasu 2-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 22
+        lat: 35.637566
+        lng: 139.910934
+        address: "千葉県浦安市高洲2-4-10"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "hyatt-regency-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン コンフォートスイーツ東京ベイ店"
+        name_en: "Lawson Comfort Suites Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 3
+        lat: 35.638119
+        lng: 139.927719
+        address: "千葉県浦安市明海5-8-15"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ドラッグストア マツモトキヨシ フォルテ新浦安店"
+        name_en: "Matsumoto Kiyoshi Forte Shin-Urayasu"
+        hours: "9:00～22:00"
+        hours_en: "9:00～22:00"
+        hours_zh: "9:00～22:00"
+        hours_ko: "9:00～22:00"
+        hours_zhtw: "9:00～22:00"
+        walk_min: 7
+        lat: 35.642681
+        lng: 139.925476
+        address: "千葉県浦安市日の出5-1-28"
+        url: "https://www.matsukiyococokara-online.com/store/"
+      - role: "supermarket"
+        in_building: false
+        name: "ベルク フォルテ新浦安店"
+        name_en: "Belc Forte Shin-Urayasu"
+        hours: "9:00～24:00"
+        hours_en: "9:00～24:00"
+        hours_zh: "9:00～24:00"
+        hours_ko: "9:00～24:00"
+        hours_zhtw: "9:00～24:00"
+        walk_min: 7
+        lat: 35.642681
+        lng: 139.925476
+        address: "千葉県浦安市日の出5-1-28"
+        url: "https://www.belc.jp/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 明海店"
+        name_en: "wash+ Akemi (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 4
+        lat: 35.639416
+        lng: 139.928223
+        address: "千葉県浦安市明海5-7-8"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン シーサイド新浦安店"
+        name_en: "Lawson Seaside Shin-Urayasu"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 7
+        lat: 35.641151
+        lng: 139.930267
+        address: "千葉県浦安市日の出5-7-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "comfort-suites-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ローソン コンフォートスイーツ東京ベイ店"
+        name_en: "Lawson Comfort Suites Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 0
+        lat: 35.638119
+        lng: 139.927719
+        address: "千葉県浦安市明海5-8-15"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ドラッグストア マツモトキヨシ フォルテ新浦安店"
+        name_en: "Matsumoto Kiyoshi Forte Shin-Urayasu"
+        hours: "9:00～22:00"
+        hours_en: "9:00～22:00"
+        hours_zh: "9:00～22:00"
+        hours_ko: "9:00～22:00"
+        hours_zhtw: "9:00～22:00"
+        walk_min: 7
+        lat: 35.642681
+        lng: 139.925476
+        address: "千葉県浦安市日の出5-1-28"
+        url: "https://www.matsukiyococokara-online.com/store/"
+      - role: "supermarket"
+        in_building: false
+        name: "ベルク フォルテ新浦安店"
+        name_en: "Belc Forte Shin-Urayasu"
+        hours: "9:00～24:00"
+        hours_en: "9:00～24:00"
+        hours_zh: "9:00～24:00"
+        hours_ko: "9:00～24:00"
+        hours_zhtw: "9:00～24:00"
+        walk_min: 7
+        lat: 35.642681
+        lng: 139.925476
+        address: "千葉県浦安市日の出5-1-28"
+        url: "https://www.belc.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン シーサイド新浦安店"
+        name_en: "Lawson Seaside Shin-Urayasu"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 5
+        lat: 35.641151
+        lng: 139.930267
+        address: "千葉県浦安市日の出5-7-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "brighton-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン オリエンタルホテル東京ベイ店"
+        name_en: "Lawson Oriental Hotel Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 2
+        lat: 35.651051
+        lng: 139.912766
+        address: "千葉県浦安市美浜1-8-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "KoKuMiN アトレ新浦安店"
+        name_en: "KoKuMiN atre Shin-Urayasu"
+        hours: "平日 9:00～22:00／土 9:00～21:00／日祝 10:00～21:00"
+        hours_en: "Weekdays 9:00～22:00／Sat 9:00～21:00／Sun/Hol 10:00～21:00"
+        hours_zh: "工作日 9:00～22:00／周六 9:00～21:00／周日及节假日 10:00～21:00"
+        hours_ko: "평일 9:00～22:00／토 9:00～21:00／일·공휴일 10:00～21:00"
+        hours_zhtw: "平日 9:00～22:00／週六 9:00～21:00／週日及假日 10:00～21:00"
+        walk_min: 2
+        lat: 35.64994
+        lng: 139.91272
+        address: "千葉県浦安市入船1-1-1 アトレ新浦安店1階"
+        url: "https://www.kokumin.co.jp/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 今川店"
+        name_en: "wash+ Imagawa (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 10
+        lat: 35.644634
+        lng: 139.906815
+        address: "千葉県浦安市今川1-1-35 エルドシック浦安103"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 新浦安TKビルディング店"
+        name_en: "Lawson Shin-Urayasu TK Building"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 2
+        lat: 35.648838
+        lng: 139.911865
+        address: "千葉県浦安市入船1-6-1"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "oriental-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ローソン オリエンタルホテル東京ベイ店"
+        name_en: "Lawson Oriental Hotel Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 0
+        lat: 35.651051
+        lng: 139.912766
+        address: "千葉県浦安市美浜1-8-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "KoKuMiN アトレ新浦安店"
+        name_en: "KoKuMiN atre Shin-Urayasu"
+        hours: "平日 9:00～22:00／土 9:00～21:00／日祝 10:00～21:00"
+        hours_en: "Weekdays 9:00～22:00／Sat 9:00～21:00／Sun/Hol 10:00～21:00"
+        hours_zh: "工作日 9:00～22:00／周六 9:00～21:00／周日及节假日 10:00～21:00"
+        hours_ko: "평일 9:00～22:00／토 9:00～21:00／일·공휴일 10:00～21:00"
+        hours_zhtw: "平日 9:00～22:00／週六 9:00～21:00／週日及假日 10:00～21:00"
+        walk_min: 2
+        lat: 35.64994
+        lng: 139.91272
+        address: "千葉県浦安市入船1-1-1 アトレ新浦安店1階"
+        url: "https://www.kokumin.co.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安美浜店"
+        name_en: "7-Eleven Urayasu Mihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 3
+        lat: 35.652393
+        lng: 139.911469
+        address: "千葉県浦安市美浜1-7-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "emion-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ファミリーマート エミオン東京ベイ店"
+        name_en: "FamilyMart (Hotel Emion)"
+        hours: "7:00-24:00 ※11:00-15:00は休業"
+        hours_en: "7:00-24:00 ※11:00-15:00 closed"
+        hours_zh: "7:00-24:00 ※11:00-15:00 休息"
+        hours_ko: "7:00-24:00 ※11:00-15:00 휴무"
+        hours_zhtw: "7:00-24:00 ※11:00-15:00 休息"
+        atm_intl: "check"
+        walk_min: 0
+        lat: 35.647377
+        lng: 139.919174
+        address: "千葉県浦安市日の出1丁目1-1"
+        url: "https://store.family.co.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ ニューコースト新浦安店"
+        name_en: "Tomod's New Coast Shin-Urayasu"
+        hours: "9:00～21:00"
+        hours_en: "9:00～21:00"
+        hours_zh: "9:00～21:00"
+        hours_ko: "9:00～21:00"
+        hours_zhtw: "9:00～21:00"
+        walk_min: 7
+        lat: 35.643726
+        lng: 139.922821
+        address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "デポー浦安"
+        name_en: "Depot Urayasu"
+        hours: "月～土 10:00～19:00"
+        hours_en: "Mon-Sat 10:00～19:00"
+        hours_zh: "周一至周六 10:00～19:00"
+        hours_ko: "월~토 10:00～19:00"
+        hours_zhtw: "週一至週六 10:00～19:00"
+        walk_min: 2
+        lat: 35.648354
+        lng: 139.918839
+        address: "千葉県浦安市入船4-9-7"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安入船4丁目店"
+        name_en: "7-Eleven Urayasu Irifune 4-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 3
+        lat: 35.647968
+        lng: 139.918381
+        address: "千葉県浦安市入船4-9-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "mitsui-garden-prana"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ナチュラルローソン プラナ東京ベイ店"
+        name_en: "Natural Lawson Prana Tokyo Bay"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 0
+        lat: 35.635925
+        lng: 139.924515
+        address: "千葉県浦安市明海6-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ドラッグストア マツモトキヨシ フォルテ新浦安店"
+        name_en: "Matsumoto Kiyoshi Forte Shin-Urayasu"
+        hours: "9:00～22:00"
+        hours_en: "9:00～22:00"
+        hours_zh: "9:00～22:00"
+        hours_ko: "9:00～22:00"
+        hours_zhtw: "9:00～22:00"
+        walk_min: 10
+        lat: 35.642681
+        lng: 139.925476
+        address: "千葉県浦安市日の出5-1-28"
+        url: "https://www.matsukiyococokara-online.com/store/"
+      - role: "supermarket"
+        in_building: false
+        name: "オーケー 新浦安店"
+        name_en: "OK Store Shin-Urayasu"
+        hours: "8:45～21:30"
+        hours_en: "8:45～21:30"
+        hours_zh: "8:45～21:30"
+        hours_ko: "8:45～21:30"
+        hours_zhtw: "8:45～21:30"
+        walk_min: 8
+        lat: 35.636314
+        lng: 139.917923
+        address: "千葉県浦安市高洲5-3-1"
+        url: "https://ok-corporation.jp/shop/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安明海店"
+        name_en: "Lawson Urayasu Akemi"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 9
+        lat: 35.641327
+        lng: 139.920609
+        address: "千葉県浦安市明海4-2-3"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "hoshinoresorts-1955-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: true
+        name: "ローソン 星野リゾート1955東京ベイ店"
+        name_en: "Lawson (Hoshino Resorts 1955)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 0
+        lat: 35.637997
+        lng: 139.931976
+        address: "千葉県浦安市日の出7-2-3"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシア 順天堂大学浦安・日の出キャンパス店"
+        name_en: "Welcia Juntendo Urayasu-Hinode Campus"
+        hours: "平日 8:00～20:00／土日祝休業"
+        hours_en: "Weekdays 8:00～20:00／Sat/Sun/Holclosed"
+        hours_zh: "工作日 8:00～20:00／周末及节假日休息"
+        hours_ko: "평일 8:00～20:00／주말·공휴일휴무"
+        hours_zhtw: "平日 8:00～20:00／週末及假日休息"
+        walk_min: 9
+        lat: 35.643864
+        lng: 139.93103
+        address: "千葉県浦安市日の出6-8-1"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "ベルク フォルテ新浦安店"
+        name_en: "Belc Forte Shin-Urayasu"
+        hours: "9:00～24:00"
+        hours_en: "9:00～24:00"
+        hours_zh: "9:00～24:00"
+        hours_ko: "9:00～24:00"
+        hours_zhtw: "9:00～24:00"
+        walk_min: 11
+        lat: 35.642681
+        lng: 139.925476
+        address: "千葉県浦安市日の出5-1-28"
+        url: "https://www.belc.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン シーサイド新浦安店"
+        name_en: "Lawson Seaside Shin-Urayasu"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 6
+        lat: 35.641151
+        lng: 139.930267
+        address: "千葉県浦安市日の出5-7-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "lagent-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン シーサイド新浦安店"
+        name_en: "Lawson Seaside Shin-Urayasu"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.641151
+        lng: 139.930267
+        address: "千葉県浦安市日の出5-7-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシア 順天堂大学浦安・日の出キャンパス店"
+        name_en: "Welcia Juntendo Urayasu-Hinode Campus"
+        hours: "平日 8:00～20:00／土日祝休業"
+        hours_en: "Weekdays 8:00～20:00／Sat/Sun/Holclosed"
+        hours_zh: "工作日 8:00～20:00／周末及节假日休息"
+        hours_ko: "평일 8:00～20:00／주말·공휴일휴무"
+        hours_zhtw: "平日 8:00～20:00／週末及假日休息"
+        walk_min: 5
+        lat: 35.643864
+        lng: 139.93103
+        address: "千葉県浦安市日の出6-8-1"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "ベルク フォルテ新浦安店"
+        name_en: "Belc Forte Shin-Urayasu"
+        hours: "9:00～24:00"
+        hours_en: "9:00～24:00"
+        hours_zh: "9:00～24:00"
+        hours_ko: "9:00～24:00"
+        hours_zhtw: "9:00～24:00"
+        walk_min: 6
+        lat: 35.642681
+        lng: 139.925476
+        address: "千葉県浦安市日の出5-1-28"
+        url: "https://www.belc.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン シーサイド新浦安店"
+        name_en: "Lawson Seaside Shin-Urayasu"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.641151
+        lng: 139.930267
+        address: "千葉県浦安市日の出5-7-2"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "ibis-styles-tokyo-bay"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ファミリーマート エミオン東京ベイ店"
+        name_en: "FamilyMart (Hotel Emion)"
+        hours: "7:00-24:00 ※11:00-15:00は休業"
+        hours_en: "7:00-24:00 ※11:00-15:00 closed"
+        hours_zh: "7:00-24:00 ※11:00-15:00 休息"
+        hours_ko: "7:00-24:00 ※11:00-15:00 휴무"
+        hours_zhtw: "7:00-24:00 ※11:00-15:00 休息"
+        atm_intl: "check"
+        walk_min: 4
+        lat: 35.647377
+        lng: 139.919174
+        address: "千葉県浦安市日の出1丁目1-1"
+        url: "https://store.family.co.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "トモズ ニューコースト新浦安店"
+        name_en: "Tomod's New Coast Shin-Urayasu"
+        hours: "9:00～21:00"
+        hours_en: "9:00～21:00"
+        hours_zh: "9:00～21:00"
+        hours_ko: "9:00～21:00"
+        hours_zhtw: "9:00～21:00"
+        walk_min: 8
+        lat: 35.643726
+        lng: 139.922821
+        address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
+        url: "https://shop.tomods.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "デポー浦安"
+        name_en: "Depot Urayasu"
+        hours: "月～土 10:00～19:00"
+        hours_en: "Mon-Sat 10:00～19:00"
+        hours_zh: "周一至周六 10:00～19:00"
+        hours_ko: "월~토 10:00～19:00"
+        hours_zhtw: "週一至週六 10:00～19:00"
+        walk_min: 4
+        lat: 35.648354
+        lng: 139.918839
+        address: "千葉県浦安市入船4-9-7"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安入船4丁目店"
+        name_en: "7-Eleven Urayasu Irifune 4-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 5
+        lat: 35.647968
+        lng: 139.918381
+        address: "千葉県浦安市入船4-9-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "mystays-shin-urayasu"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ファミリーマート エミオン東京ベイ店"
+        name_en: "FamilyMart (Hotel Emion)"
+        hours: "7:00-24:00 ※11:00-15:00は休業"
+        hours_en: "7:00-24:00 ※11:00-15:00 closed"
+        hours_zh: "7:00-24:00 ※11:00-15:00 休息"
+        hours_ko: "7:00-24:00 ※11:00-15:00 휴무"
+        hours_zhtw: "7:00-24:00 ※11:00-15:00 休息"
+        atm_intl: "check"
+        walk_min: 7
+        lat: 35.647377
+        lng: 139.919174
+        address: "千葉県浦安市日の出1丁目1-1"
+        url: "https://store.family.co.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "ココカラファイン薬局 新浦安店"
+        name_en: "Cocokara Fine Shin-Urayasu"
+        hours: "月～金 9:00～20:00／土 9:00～19:00／日祝 10:00～18:30"
+        hours_en: "Mon-Fri 9:00～20:00／Sat 9:00～19:00／Sun/Hol 10:00～18:30"
+        hours_zh: "周一至周五 9:00～20:00／周六 9:00～19:00／周日及节假日 10:00～18:30"
+        hours_ko: "월~금 9:00～20:00／토 9:00～19:00／일·공휴일 10:00～18:30"
+        hours_zhtw: "週一至週五 9:00～20:00／週六 9:00～19:00／週日及假日 10:00～18:30"
+        walk_min: 8
+        lat: 35.648975
+        lng: 139.913177
+        address: "千葉県浦安市入船1-5-1 MONA新浦安 B館2F"
+        url: "https://www.cocokarafine.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "イオンスタイル新浦安"
+        name_en: "AEON Style Shin-Urayasu"
+        hours: "8:00～23:00"
+        hours_en: "8:00～23:00"
+        hours_zh: "8:00～23:00"
+        hours_ko: "8:00～23:00"
+        hours_zhtw: "8:00～23:00"
+        atm_intl: "1"
+        walk_min: 8
+        lat: 35.649055
+        lng: 139.914963
+        address: "千葉県浦安市入船1-4-1"
+        url: "https://www.aeon.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安入船4丁目店"
+        name_en: "7-Eleven Urayasu Irifune 4-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 7
+        lat: 35.647968
+        lng: 139.918381
+        address: "千葉県浦安市入船4-9-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "flexstay-shin-urayasu"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "セブンイレブン 浦安今川4丁目店"
+        name_en: "7-Eleven Urayasu Imagawa 4-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 2
+        lat: 35.643391
+        lng: 139.90538
+        address: "千葉県浦安市今川4丁目1-1"
+        url: "https://www.sej.co.jp/shop/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシアライフガーデン新浦安店"
+        name_en: "Welcia Life Garden Shin-Urayasu"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 5
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "サミットストア ライフガーデン浦安富岡店"
+        name_en: "Summit Store Life Garden Urayasu Tomioka"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 5
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.summitstore.co.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安今川4丁目店"
+        name_en: "7-Eleven Urayasu Imagawa 4-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 2
+        lat: 35.643391
+        lng: 139.90538
+        address: "千葉県浦安市今川4丁目1-1"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "henna-hotel-maihama"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン 舞浜店"
+        name_en: "Lawson Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.645016
+        lng: 139.887131
+        address: "千葉県浦安市富士見3-23-5"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "ドラッグセイムス 舞浜店"
+        name_en: "Drug Seims Maihama"
+        hours: "8:00-23:45（調剤は月-土10:00-14:00/15:00-19:00・日祝休）"
+        hours_en: "8:00-23:45（Rx Mon-Sat10:00-14:00/15:00-19:00・Sun/Hol closed）"
+        hours_zh: "8:00-23:45（调剂 周一-周六10:00-14:00/15:00-19:00・周日及节假日休）"
+        hours_ko: "8:00-23:45（조제 월-토10:00-14:00/15:00-19:00・일·공휴일 휴무）"
+        hours_zhtw: "8:00-23:45（調劑 週一-週六10:00-14:00/15:00-19:00・週日及假日休）"
+        walk_min: 2
+        lat: 35.644321
+        lng: 139.888519
+        address: "千葉県浦安市富士見5-7-40"
+        url: "https://store.seims.co.jp/map/9849/"
+      - role: "supermarket"
+        in_building: false
+        name: "アール元気 アクロスプラザ浦安東野店"
+        name_en: "R Genki Across Plaza Urayasu Higashino"
+        hours: "10:00～20:00"
+        hours_en: "10:00～20:00"
+        hours_zh: "10:00～20:00"
+        hours_ko: "10:00～20:00"
+        hours_zhtw: "10:00～20:00"
+        walk_min: 7
+        lat: 35.647778
+        lng: 139.892868
+        address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野1F"
+        url: "https://www.welcia.co.jp/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 富士見3丁目店"
+        name_en: "wash+ Fujimi 3-chome (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 7
+        lat: 35.649422
+        lng: 139.887482
+        address: "千葉県浦安市富士見3-4-8"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 舞浜店"
+        name_en: "Lawson Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.645016
+        lng: 139.887131
+        address: "千葉県浦安市富士見3-23-5"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "four-stories-hotel"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "セブンイレブン 浦安舞浜店"
+        name_en: "7-Eleven Urayasu Maihama"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 20
+        lat: 35.638699
+        lng: 139.882965
+        address: "千葉県浦安市舞浜2-46-1"
+        url: "https://www.sej.co.jp/shop/"
+      - role: "drugstore"
+        in_building: false
+        name: "薬局ドラッグ・ジロー"
+        name_en: "Drug Jiro Pharmacy"
+        hours: "月～金 8:30～19:00／土 8:30～18:00／日祝休業"
+        hours_en: "Mon-Fri 8:30～19:00／Sat 8:30～18:00／Sun/Holclosed"
+        hours_zh: "周一至周五 8:30～19:00／周六 8:30～18:00／周日及节假日休息"
+        hours_ko: "월~금 8:30～19:00／토 8:30～18:00／일·공휴일휴무"
+        hours_zhtw: "週一至週五 8:30～19:00／週六 8:30～18:00／週日及假日休息"
+        walk_min: 3
+        lat: 35.652313
+        lng: 139.891541
+        address: "千葉県浦安市富士見2-9-1"
+      - role: "supermarket"
+        in_building: false
+        name: "マルエツ 浦安店"
+        name_en: "Maruetsu Urayasu"
+        hours: "24時間営業 ※2Fは10:00～22:00"
+        hours_en: "24h ※2F 10:00～22:00"
+        hours_zh: "24小时营业 ※2F 10:00～22:00"
+        hours_ko: "24시간 영업 ※2F 10:00～22:00"
+        hours_zhtw: "24小時營業 ※2F 10:00～22:00"
+        is_24h: true
+        walk_min: 3
+        lat: 35.652317
+        lng: 139.891922
+        address: "千葉県浦安市富士見1-3-20"
+        url: "https://www.maruetsu.co.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安富士見店"
+        name_en: "Lawson Urayasu Fujimi"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.650253
+        lng: 139.890671
+        address: "千葉県浦安市富士見1-14-34"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "hiyori-hotel-maihama"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ファミリーマート ヤックスドラッグ浦安東野店"
+        name_en: "FamilyMart Yac's Drug Urayasu Higashino"
+        hours: "24時間"
+        hours_en: "24h"
+        hours_zh: "24小时"
+        hours_ko: "24시간"
+        hours_zhtw: "24小時"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 5
+        lat: 35.647144
+        lng: 139.893661
+        address: "千葉県浦安市東野3丁目4番11号"
+        url: "https://store.family.co.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "ファミリーマート＋ヤックスドラッグ 浦安東野薬局"
+        name_en: "FamilyMart + Yac's Drug Urayasu Higashino Pharmacy"
+        hours: "9:00～18:30／日祝休業"
+        hours_en: "9:00～18:30／Sun/Holclosed"
+        hours_zh: "9:00～18:30／周日及节假日休息"
+        hours_ko: "9:00～18:30／일·공휴일휴무"
+        hours_zhtw: "9:00～18:30／週日及假日休息"
+        walk_min: 5
+        lat: 35.647144
+        lng: 139.893661
+        address: "千葉県浦安市東野3-4-11"
+        url: "https://www.yac-web.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "ヤオコー 浦安東野店"
+        name_en: "Yaoko Urayasu Higashino"
+        hours: "9:00～21:45"
+        hours_en: "9:00～21:45"
+        hours_zh: "9:00～21:45"
+        hours_ko: "9:00～21:45"
+        hours_zhtw: "9:00～21:45"
+        walk_min: 5
+        lat: 35.647724
+        lng: 139.893478
+        address: "千葉県浦安市東野2-29-33"
+        url: "https://www.yaoko-net.com/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "浦安富岡郵便局"
+        name_en: "Urayasu Tomioka Post Office"
+        hours: "平日9:00～17:00"
+        hours_en: "Weekdays9:00～17:00"
+        hours_zh: "工作日9:00～17:00"
+        hours_ko: "평일9:00～17:00"
+        hours_zhtw: "平日9:00～17:00"
+        atm_intl: "1"
+        walk_min: 6
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://map.japanpost.jp/p/search/"
+  - slug: "viewfort-urayasu"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン 浦安南口店"
+        name_en: "Lawson Urayasu South Exit"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.664494
+        lng: 139.892426
+        address: "千葉県浦安市猫実4-18-21"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "薬 マツモトキヨシ 浦安南口駅前店"
+        name_en: "Matsumoto Kiyoshi Urayasu Station South Exit"
+        hours: "9:00～22:00"
+        hours_en: "9:00～22:00"
+        hours_zh: "9:00～22:00"
+        hours_ko: "9:00～22:00"
+        hours_zhtw: "9:00～22:00"
+        walk_min: 2
+        lat: 35.665482
+        lng: 139.893265
+        address: "千葉県浦安市北栄1-16-18"
+        url: "https://www.matsukiyococokara-online.com/store/"
+      - role: "supermarket"
+        in_building: false
+        name: "まいばすけっと 浦安駅前店"
+        name_en: "My Basket Urayasu Ekimae"
+        hours: "7:00～24:00"
+        hours_en: "7:00～24:00"
+        hours_zh: "7:00～24:00"
+        hours_ko: "7:00～24:00"
+        hours_zhtw: "7:00～24:00"
+        walk_min: 3
+        lat: 35.665184
+        lng: 139.894485
+        address: "千葉県浦安市北栄1-16-30"
+        url: "https://www.mybasket.co.jp/shop/"
+      - role: "laundry"
+        in_building: false
+        name: "コインランドリー Ha Ha Hand"
+        name_en: "Ha Ha Hand Coin Laundry"
+        hours: "5:00～23:00"
+        hours_en: "5:00～23:00"
+        hours_zh: "5:00～23:00"
+        hours_ko: "5:00～23:00"
+        hours_zhtw: "5:00～23:00"
+        walk_min: 4
+        lat: 35.666996
+        lng: 139.891525
+        address: "千葉県浦安市当代島1-11-17"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安南口店"
+        name_en: "Lawson Urayasu South Exit"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.664494
+        lng: 139.892426
+        address: "千葉県浦安市猫実4-18-21"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "hotel-daigo-urayasu"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ファミリーマート ニーズ浦安店"
+        name_en: "FamilyMart Needs Urayasu"
+        hours: "24時間"
+        hours_en: "24h"
+        hours_zh: "24小时"
+        hours_ko: "24시간"
+        hours_zhtw: "24小時"
+        is_24h: true
+        atm_intl: "check"
+        walk_min: 2
+        lat: 35.667351
+        lng: 139.895844
+        address: "千葉県浦安市北栄2丁目4番11号"
+        url: "https://store.family.co.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "調剤薬局くすりの福太郎 浦安駅前店"
+        name_en: "Kusuri no Fukutaro Urayasu Ekimae"
+        hours: "月～金 9:00～20:00／土 9:00～18:00／日祝休業"
+        hours_en: "Mon-Fri 9:00～20:00／Sat 9:00～18:00／Sun/Holclosed"
+        hours_zh: "周一至周五 9:00～20:00／周六 9:00～18:00／周日及节假日休息"
+        hours_ko: "월~금 9:00～20:00／토 9:00～18:00／일·공휴일휴무"
+        hours_zhtw: "週一至週五 9:00～20:00／週六 9:00～18:00／週日及假日休息"
+        walk_min: 2
+        lat: 35.665607
+        lng: 139.89505
+        address: "千葉県浦安市北栄1-3-34 グランデュール峯崎1-1階"
+        url: "https://www.kusuri-no-fukutaro.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "西友浦安店"
+        name_en: "Seiyu (near BAYHOTEL Urayasu)"
+        hours: "24時間（食品1-2F。6F専門店は時間変動）"
+        hours_en: "24h（Food1-2F。6Fspecialty shops hours vary）"
+        hours_zh: "24小时（食品1-2F。6F专门店 时间变动）"
+        hours_ko: "24시간（식품1-2F。6F전문점 시간 변동）"
+        hours_zhtw: "24小時（食品1-2F。6F專門店 時間變動）"
+        is_24h: true
+        walk_min: 2
+        lat: 35.665432
+        lng: 139.894836
+        address: "千葉県浦安市北栄1-14-1"
+        url: "https://www.seiyu.co.jp/shop/%E8%A5%BF%E5%8F%8B%E6%B5%A6%E5%AE%89%E5%BA%97/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 北栄2丁目店"
+        name_en: "wash+ Kitasakae 2-chome (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 2
+        lat: 35.667435
+        lng: 139.895508
+        address: "千葉県浦安市北栄2-5-2"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安駅南口店"
+        name_en: "Lawson Urayasu Station South Exit"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 2
+        lat: 35.665405
+        lng: 139.894608
+        address: "千葉県浦安市北栄1-15-28"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "bayhotel-urayasu"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "ローソン 浦安駅南口店"
+        name_en: "Lawson Urayasu Station South Exit"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.665405
+        lng: 139.894608
+        address: "千葉県浦安市北栄1-15-28"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+      - role: "drugstore"
+        in_building: false
+        name: "調剤薬局くすりの福太郎 浦安駅前店"
+        name_en: "Kusuri no Fukutaro Urayasu Ekimae"
+        hours: "月～金 9:00～20:00／土 9:00～18:00／日祝休業"
+        hours_en: "Mon-Fri 9:00～20:00／Sat 9:00～18:00／Sun/Holclosed"
+        hours_zh: "周一至周五 9:00～20:00／周六 9:00～18:00／周日及节假日休息"
+        hours_ko: "월~금 9:00～20:00／토 9:00～18:00／일·공휴일휴무"
+        hours_zhtw: "週一至週五 9:00～20:00／週六 9:00～18:00／週日及假日休息"
+        walk_min: 1
+        lat: 35.665607
+        lng: 139.89505
+        address: "千葉県浦安市北栄1-3-34 グランデュール峯崎1-1階"
+        url: "https://www.kusuri-no-fukutaro.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "西友浦安店"
+        name_en: "Seiyu (near BAYHOTEL Urayasu)"
+        hours: "24時間（食品1-2F。6F専門店は時間変動）"
+        hours_en: "24h（Food1-2F。6Fspecialty shops hours vary）"
+        hours_zh: "24小时（食品1-2F。6F专门店 时间变动）"
+        hours_ko: "24시간（식품1-2F。6F전문점 시간 변동）"
+        hours_zhtw: "24小時（食品1-2F。6F專門店 時間變動）"
+        is_24h: true
+        walk_min: 1
+        lat: 35.665432
+        lng: 139.894836
+        address: "千葉県浦安市北栄1-14-1"
+        url: "https://www.seiyu.co.jp/shop/%E8%A5%BF%E5%8F%8B%E6%B5%A6%E5%AE%89%E5%BA%97/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 北栄2丁目店"
+        name_en: "wash+ Kitasakae 2-chome (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 3
+        lat: 35.667435
+        lng: 139.895508
+        address: "千葉県浦安市北栄2-5-2"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安駅南口店"
+        name_en: "Lawson Urayasu Station South Exit"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 1
+        lat: 35.665405
+        lng: 139.894608
+        address: "千葉県浦安市北栄1-15-28"
+        url: "https://www.e-map.ne.jp/p/lawson/"
+  - slug: "urayasu-sun-hotel"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "セブンイレブン 浦安当代島1丁目店"
+        name_en: "7-Eleven Urayasu Tokaijima 1-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 2
+        lat: 35.666447
+        lng: 139.889908
+        address: "千葉県浦安市当代島1-14-15"
+        url: "https://www.sej.co.jp/shop/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシア薬局浦安駅前店"
+        name_en: "Welcia Pharmacy Urayasu Ekimae"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 3
+        lat: 35.665897
+        lng: 139.892578
+        address: "千葉県浦安市当代島1-1-23"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "ワイズマート 浦安本店"
+        name_en: "Y's Mart Urayasu Main Store"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 4
+        lat: 35.666306
+        lng: 139.892731
+        address: "千葉県浦安市当代島1-2-25"
+        url: "https://www.ysmart.co.jp/"
+      - role: "laundry"
+        in_building: true
+        walk_min: 0
+      - role: "atm"
+        in_building: false
+        name: "セブンイレブン 浦安当代島1丁目店"
+        name_en: "7-Eleven Urayasu Tokaijima 1-chome"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 2
+        lat: 35.666447
+        lng: 139.889908
+        address: "千葉県浦安市当代島1-14-15"
+        url: "https://www.sej.co.jp/shop/"
+  - slug: "grand-monday-resort-maihama"
+    items:
+      - role: "conbini"
+        in_building: false
+        name: "デイリーヤマザキ 浦安千鳥店"
+        name_en: "Daily Yamazaki Urayasu Chidori"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 3
+        lat: 35.626034
+        lng: 139.8992
+        address: "千葉県浦安市千鳥12-7"
+        url: "https://www.daily-yamazaki.jp/"
+      - role: "drugstore"
+        in_building: false
+        name: "ウエルシアライフガーデン新浦安店"
+        name_en: "Welcia Life Garden Shin-Urayasu"
+        hours: "9:00～23:00"
+        hours_en: "9:00～23:00"
+        hours_zh: "9:00～23:00"
+        hours_ko: "9:00～23:00"
+        hours_zhtw: "9:00～23:00"
+        walk_min: 22
+        lat: 35.643097
+        lng: 139.900177
+        address: "千葉県浦安市富岡3-2-2"
+        url: "https://www.welcia.co.jp/"
+      - role: "supermarket"
+        in_building: false
+        name: "ワイズマートディスカ 高洲店"
+        name_en: "Y's Mart Disca Takasu"
+        hours: "月～土 10:00～20:00／日 9:00～20:00"
+        hours_en: "Mon-Sat 10:00～20:00／Sun 9:00～20:00"
+        hours_zh: "周一至周六 10:00～20:00／周日 9:00～20:00"
+        hours_ko: "월~토 10:00～20:00／일 9:00～20:00"
+        hours_zhtw: "週一至週六 10:00～20:00／週日 9:00～20:00"
+        walk_min: 19
+        lat: 35.637661
+        lng: 139.911209
+        address: "千葉県浦安市高洲2-3-12"
+        url: "https://www.ysmart.co.jp/"
+      - role: "laundry"
+        in_building: false
+        name: "wash+ 今川店"
+        name_en: "wash+ Imagawa (Coin Laundry)"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        walk_min: 25
+        lat: 35.644634
+        lng: 139.906815
+        address: "千葉県浦安市今川1-1-35 エルドシック浦安103"
+        url: "https://www.wash-plus.jp/store/"
+      - role: "atm"
+        in_building: false
+        name: "ローソン 浦安見明川店"
+        name_en: "Lawson Urayasu Miakegawa"
+        hours: "24時間営業"
+        hours_en: "24h"
+        hours_zh: "24小时营业"
+        hours_ko: "24시간 영업"
+        hours_zhtw: "24小時營業"
+        is_24h: true
+        atm_intl: "1"
+        walk_min: 15
+        lat: 35.63686
+        lng: 139.892838
+        address: "千葉県浦安市弁天3-2-97"
+        url: "https://www.e-map.ne.jp/p/lawson/"

@@ -69,6 +69,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Guest Rooms (mini kitchen in all rooms)**
 All rooms equipped with mini kitchen for extended stays. Room types and capacity: confirm on the official website.
 

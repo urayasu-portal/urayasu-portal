@@ -10,11 +10,20 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "旧「生活彩家」をリニューアル。浦安オフィシャルで唯一の館内24時間コンビニ / 統合元リストNo.20"
   - id: "hilton-lawson-s"
     type: "conbini"
@@ -23,11 +32,18 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "17:00～23:00"
+    hours_en: "17:00～23:00"
+    hours_zh: "17:00～23:00"
+    hours_ko: "17:00～23:00"
+    hours_zhtw: "17:00～23:00"
+    open_late: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-8"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "同フロアの時間限定店。24時間店とは別店舗 / 統合元リストNo.21"
   - id: "seikatsu-saika-hilton"
     type: "conbini"
@@ -36,10 +52,14 @@ facilities:
     operator: "生活彩家"
     status: "closed"
     hours: "-"
+    hours_en: "-"
+    hours_zh: "-"
+    hours_ko: "-"
+    hours_zhtw: "-"
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ1F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "閉店。hilton-lawson-24h にリニューアル（沿革記録用・現役表記には使わない）"
   - id: "newdays-maihama"
     type: "conbini"
@@ -48,10 +68,17 @@ facilities:
     operator: "NewDays"
     status: "open"
     hours: "6:30～23:00"
+    hours_en: "6:30～23:00"
+    hours_zh: "6:30～23:00"
+    hours_ko: "6:30～23:00"
+    hours_zhtw: "6:30～23:00"
+    open_early: true
+    open_late: true
     lat: 35.636112
     lng: 139.884384
     address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
-    last_verified: "2026-06-29"
+    official_url: "https://www.j-retail.jp/"
+    last_verified: "2026/6/29"
     note: "舞浜系ホテルの最寄外部コンビニ。dreamgateは館内直結 / 統合元リストNo.70"
   - id: "seven-eleven-urayasu-maihama"
     type: "conbini"
@@ -60,10 +87,20 @@ facilities:
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.638699
     lng: 139.882965
     address: "千葉県浦安市舞浜2-46-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
     note: "TDLホテル・フォーストーリーズの外部最寄24時間 / 統合元リストNo.43"
   - id: "mona-shin-urayasu"
     type: "commercial"
@@ -71,10 +108,14 @@ facilities:
     name_en: "MONA Shin-Urayasu"
     status: "open"
     hours: "店舗による（要確認）"
+    hours_en: "Varies by shop（check）"
+    hours_zh: "视店铺而定（需确认）"
+    hours_ko: "매장에 따라（확인 필요）"
+    hours_zhtw: "視店鋪而定（需確認）"
     lat: 35.649063
     lng: 139.913803
     address: "千葉県浦安市入船1 新浦安駅前"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "新浦安駅前の商業施設。新浦安エリア各ホテルの買い物先"
   - id: "atre-shin-urayasu"
     type: "commercial"
@@ -83,10 +124,14 @@ facilities:
     operator: "JR東日本"
     status: "open"
     hours: "店舗による（要確認）"
+    hours_en: "Varies by shop（check）"
+    hours_zh: "视店铺而定（需确认）"
+    hours_ko: "매장에 따라（확인 필요）"
+    hours_zhtw: "視店鋪而定（需確認）"
     lat: 35.651039
     lng: 139.911285
     address: "千葉県浦安市美浜1 新浦安駅直結"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "新浦安駅直結の商業施設"
   - id: "royal-park-lawson"
     type: "conbini"
@@ -95,10 +140,20 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.625957
     lng: 139.894958
     address: "千葉県浦安市千鳥13-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
     note: "館内1F直結 / 統合元リストNo.22"
   - id: "hoshino-lawson"
     type: "conbini"
@@ -107,10 +162,20 @@ facilities:
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.637997
     lng: 139.931976
     address: "千葉県浦安市日の出7-2-3"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
     note: "館内コンビニ / 統合元リストNo.7（celebration-discoverの最寄でもある）"
   - id: "emion-familymart"
     type: "conbini"
@@ -119,10 +184,19 @@ facilities:
     operator: "ファミリーマート"
     status: "open"
     hours: "7:00-24:00 ※11:00-15:00は休業"
+    hours_en: "7:00-24:00 ※11:00-15:00 closed"
+    hours_zh: "7:00-24:00 ※11:00-15:00 休息"
+    hours_ko: "7:00-24:00 ※11:00-15:00 휴무"
+    hours_zhtw: "7:00-24:00 ※11:00-15:00 休息"
+    open_early: true
+    open_late: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.647377
     lng: 139.919174
     address: "千葉県浦安市日の出1丁目1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
     note: "館内コンビニ / 統合元リストNo.62"
   - id: "daily-yamazaki-chidori"
     type: "conbini"
@@ -131,10 +205,19 @@ facilities:
     operator: "デイリーヤマザキ"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    takkyubin: true
     lat: 35.626034
     lng: 139.8992
     address: "千葉県浦安市千鳥12-7"
-    last_verified: "2026-06-29"
+    official_url: "https://www.daily-yamazaki.jp/"
+    last_verified: "2026/6/29"
     note: "舞浜ユーラシアの最寄外部（徒歩約10分） / 統合元リストNo.66"
   - id: "seiyu-urayasu-ekimae"
     type: "supermarket"
@@ -143,1987 +226,4122 @@ facilities:
     operator: "西友"
     status: "open"
     hours: "24時間（食品1-2F。6F専門店は時間変動）"
+    hours_en: "24h（Food1-2F。6Fspecialty shops hours vary）"
+    hours_zh: "24小时（食品1-2F。6F专门店 时间变动）"
+    hours_ko: "24시간（식품1-2F。6F전문점 시간 변동）"
+    hours_zhtw: "24小時（食品1-2F。6F專門店 時間變動）"
+    open_early: true
+    open_late: true
+    is_24h: true
+    baby_goods: true
     lat: 35.665432
     lng: 139.894836
     address: "千葉県浦安市北栄1-14-1"
     official_url: "https://www.seiyu.co.jp/shop/%E8%A5%BF%E5%8F%8B%E6%B5%A6%E5%AE%89%E5%BA%97/"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "BAYHOTEL浦安駅前の最寄スーパー（浦安駅東口 徒歩1分）。改装中（食品フロアは営業）。将来トライアルに転換予定（転換時に更新）"
   - id: "poi-001"
     type: "conbini"
     name: "ローソンストア100 LS浦安富士見店"
+    name_en: "Lawson Store 100 Urayasu Fujimi"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.652733
     lng: 139.892288
     address: "千葉県浦安市富士見1-2-18"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-002"
     type: "conbini"
     name: "ローソン オリエンタルホテル東京ベイ店"
+    name_en: "Lawson Oriental Hotel Tokyo Bay"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.651051
     lng: 139.912766
     address: "千葉県浦安市美浜1-8-2"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
     note: "オリエンタルホテル東京ベイ 館内（浦安ブライトンホテルの最寄でもある）"
   - id: "poi-003"
     type: "conbini"
     name: "ローソン 浦安猫実四丁目店"
+    name_en: "Lawson Urayasu Nekomi 4-chome"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.664001
     lng: 139.896027
     address: "千葉県浦安市猫実4-6-39"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-004"
     type: "conbini"
     name: "ローソン 浦安見明川店"
+    name_en: "Lawson Urayasu Miakegawa"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.63686
     lng: 139.892838
     address: "千葉県浦安市弁天3-2-97"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-005"
     type: "conbini"
     name: "ローソン 浦安明海店"
+    name_en: "Lawson Urayasu Akemi"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.641327
     lng: 139.920609
     address: "千葉県浦安市明海4-2-3"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-006"
     type: "conbini"
     name: "ナチュラルローソン プラナ東京ベイ店"
+    name_en: "Natural Lawson Prana Tokyo Bay"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.635925
     lng: 139.924515
     address: "千葉県浦安市明海6-2"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
     note: "三井ガーデンホテルプラナ東京ベイ 館内（ナチュラルローソン）"
   - id: "poi-008"
     type: "conbini"
     name: "ローソン コンフォートスイーツ東京ベイ店"
+    name_en: "Lawson Comfort Suites Tokyo Bay"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.638119
     lng: 139.927719
     address: "千葉県浦安市明海5-8-15"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
     note: "コンフォートスイーツ東京ベイ 館内（celebration-wishの最寄でもある）"
   - id: "poi-009"
     type: "conbini"
     name: "ローソン 浦安猫実五丁目店"
+    name_en: "Lawson Urayasu Nekomi 5-chome"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.663673
     lng: 139.891769
     address: "千葉県浦安市猫実5-1-38"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-010"
     type: "conbini"
     name: "ローソン 舞浜店"
+    name_en: "Lawson Maihama"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.645016
     lng: 139.887131
     address: "千葉県浦安市富士見3-23-5"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-011"
     type: "conbini"
     name: "ローソン 浦安駅南口店"
+    name_en: "Lawson Urayasu Station South Exit"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.665405
     lng: 139.894608
     address: "千葉県浦安市北栄1-15-28"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-012"
     type: "conbini"
     name: "ローソン 浦安富士見店"
+    name_en: "Lawson Urayasu Fujimi"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.650253
     lng: 139.890671
     address: "千葉県浦安市富士見1-14-34"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-013"
     type: "conbini"
     name: "ローソン 浦安入船店"
+    name_en: "Lawson Urayasu Irifune"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.647228
     lng: 139.910858
     address: "千葉県浦安市入船2-3-2"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-014"
     type: "conbini"
     name: "ローソン 新浦安TKビルディング店"
+    name_en: "Lawson Shin-Urayasu TK Building"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.648838
     lng: 139.911865
     address: "千葉県浦安市入船1-6-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-015"
     type: "conbini"
     name: "ローソン メトロス浦安店"
+    name_en: "Lawson Metros Urayasu"
     operator: "ローソン"
     status: "open"
     hours: "07:00～22:00"
+    hours_en: "07:00～22:00"
+    hours_zh: "07:00～22:00"
+    hours_ko: "07:00～22:00"
+    hours_zhtw: "07:00～22:00"
+    open_early: true
+    open_late: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.665558
     lng: 139.892654
     address: "千葉県浦安市北栄1-13-1 東西線浦安駅構内"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-016"
     type: "conbini"
     name: "ローソン 浦安北栄四丁目店"
+    name_en: "Lawson Urayasu Kitasakae 4-chome"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.661541
     lng: 139.900299
     address: "千葉県浦安市北栄4-21-2"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-017"
     type: "conbini"
     name: "ローソン 浦安南口店"
+    name_en: "Lawson Urayasu South Exit"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.664494
     lng: 139.892426
     address: "千葉県浦安市猫実4-18-21"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-018"
     type: "conbini"
     name: "ローソン 浦安富士見四丁目店"
+    name_en: "Lawson Urayasu Fujimi 4-chome"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.647457
     lng: 139.889343
     address: "千葉県浦安市富士見4-10-30"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-019"
     type: "conbini"
     name: "ローソン シーサイド新浦安店"
+    name_en: "Lawson Seaside Shin-Urayasu"
     operator: "ローソン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.641151
     lng: 139.930267
     address: "千葉県浦安市日の出5-7-2"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
     note: "ラ・ジェント・ホテル東京ベイ 隣接（最寄）"
   - id: "poi-023"
     type: "conbini"
     name: "ナチュラルローソン 順天堂大学医学部附属浦安病院店"
+    name_en: "Natural Lawson Juntendo Urayasu Hospital"
     operator: "ローソン"
     status: "open"
     hours: "07:30～22:00"
+    hours_en: "07:30～22:00"
+    hours_zh: "07:30～22:00"
+    hours_ko: "07:30～22:00"
+    hours_zhtw: "07:30～22:00"
+    open_late: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.645916
     lng: 139.906921
     address: "千葉県浦安市富岡2-1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.e-map.ne.jp/p/lawson/"
+    last_verified: "2026/6/29"
   - id: "poi-024"
     type: "conbini"
     name: "セブンイレブン 浦安海楽店"
+    name_en: "7-Eleven Urayasu Kairaku"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.658447
     lng: 139.90506
     address: "千葉県浦安市海楽2-4-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-025"
     type: "conbini"
     name: "セブンイレブン 浦安当代島店"
+    name_en: "7-Eleven Urayasu Tokaijima"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.670788
     lng: 139.894455
     address: "千葉県浦安市当代島3-4-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-026"
     type: "conbini"
     name: "セブンイレブン 浦安今川4丁目店"
+    name_en: "7-Eleven Urayasu Imagawa 4-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.643391
     lng: 139.90538
     address: "千葉県浦安市今川4丁目1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-027"
     type: "conbini"
     name: "セブンイレブン 浦安北栄3丁目店"
+    name_en: "7-Eleven Urayasu Kitasakae 3-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.664753
     lng: 139.900528
     address: "千葉県浦安市北栄3-9-16"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-028"
     type: "conbini"
     name: "セブンイレブン 浦安鉄鋼通り店"
+    name_en: "7-Eleven Urayasu Tekkodori"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.640732
     lng: 139.901642
     address: "千葉県浦安市鉄鋼通り1-1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-029"
     type: "conbini"
     name: "セブンイレブン 浦安堀江6丁目店"
+    name_en: "7-Eleven Urayasu Horie 6-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.653164
     lng: 139.898224
     address: "千葉県浦安市堀江6-1-45"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-030"
     type: "conbini"
     name: "セブンイレブン 浦安明海5丁目店"
+    name_en: "7-Eleven Urayasu Akemi 5-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.642681
     lng: 139.924133
     address: "千葉県浦安市明海5-1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-031"
     type: "conbini"
     name: "セブンイレブン 浦安入船4丁目店"
+    name_en: "7-Eleven Urayasu Irifune 4-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.647968
     lng: 139.918381
     address: "千葉県浦安市入船4-9-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-032"
     type: "conbini"
     name: "セブンイレブン 浦安高洲2丁目店"
+    name_en: "7-Eleven Urayasu Takasu 2-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.637566
     lng: 139.910934
     address: "千葉県浦安市高洲2-4-10"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-033"
     type: "conbini"
     name: "セブンイレブン 湾岸浦安インター店"
+    name_en: "7-Eleven Wangan Urayasu Interchange"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.641434
     lng: 139.893341
     address: "千葉県浦安市弁天4-21-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-034"
     type: "conbini"
     name: "セブンイレブン 浦安当代島1丁目店"
+    name_en: "7-Eleven Urayasu Tokaijima 1-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.666447
     lng: 139.889908
     address: "千葉県浦安市当代島1-14-15"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-035"
     type: "conbini"
     name: "セブンイレブン 浦安北栄2丁目店"
+    name_en: "7-Eleven Urayasu Kitasakae 2-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.669632
     lng: 139.894318
     address: "千葉県浦安市北栄2-16-12"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-036"
     type: "conbini"
     name: "セブンイレブン 浦安猫実5丁目店"
+    name_en: "7-Eleven Urayasu Nekomi 5-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.664429
     lng: 139.889481
     address: "千葉県浦安市猫実5丁目11-24"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-037"
     type: "conbini"
     name: "セブンイレブン 浦安北栄1丁目店"
+    name_en: "7-Eleven Urayasu Kitasakae 1-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.665474
     lng: 139.897552
     address: "千葉県浦安市北栄1-4-22"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-038"
     type: "conbini"
     name: "セブンイレブン 浦安堀江1丁目店"
+    name_en: "7-Eleven Urayasu Horie 1-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.657444
     lng: 139.895706
     address: "千葉県浦安市堀江1丁目33-14"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-039"
     type: "conbini"
     name: "セブンイレブン 浦安美浜店"
+    name_en: "7-Eleven Urayasu Mihama"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.652393
     lng: 139.911469
     address: "千葉県浦安市美浜1-7-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-040"
     type: "conbini"
     name: "セブンイレブン 浦安富士見2丁目店"
+    name_en: "7-Eleven Urayasu Fujimi 2-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.653736
     lng: 139.890274
     address: "千葉県浦安市富士見2丁目3-3"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-041"
     type: "conbini"
     name: "セブンイレブン 浦安猫実2丁目店"
+    name_en: "7-Eleven Urayasu Nekomi 2-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.660984
     lng: 139.900696
     address: "千葉県浦安市猫実2丁目14-22"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-042"
     type: "conbini"
     name: "セブンイレブン 浦安富士見5丁目店"
+    name_en: "7-Eleven Urayasu Fujimi 5-chome"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.645535
     lng: 139.887939
     address: "千葉県浦安市富士見5丁目2-28"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-044"
     type: "conbini"
     name: "セブンイレブン 浦安駅南口店"
+    name_en: "7-Eleven Urayasu Station South Exit"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.665382
     lng: 139.893219
     address: "千葉県浦安市北栄1丁目16-17"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-045"
     type: "conbini"
     name: "セブンイレブン 浦安富士見店"
+    name_en: "7-Eleven Urayasu Fujimi"
     operator: "セブンイレブン"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "1"
+    takkyubin: true
     lat: 35.648228
     lng: 139.8927
     address: "千葉県浦安市富士見1丁目17-6"
-    last_verified: "2026-06-29"
+    official_url: "https://www.sej.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-046"
     type: "conbini"
     name: "ファミリーマート 浦安堀江三丁目店"
+    name_en: "FamilyMart Urayasu Horie 3-chome"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.656773
     lng: 139.891907
     address: "千葉県浦安市堀江3-27-15"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-047"
     type: "conbini"
     name: "ファミリーマート 浦安駅前店"
+    name_en: "FamilyMart Urayasu Ekimae"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.665722
     lng: 139.892502
     address: "千葉県浦安市当代島1-1-25 板徳ビル1F"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-048"
     type: "conbini"
     name: "ファミリーマート 浦安駅東口店"
+    name_en: "FamilyMart Urayasu Station East Exit"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.666237
     lng: 139.893677
     address: "千葉県浦安市北栄1丁目13番17号"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-049"
     type: "conbini"
     name: "ファミリーマート ヤックスドラッグ浦安東野店"
+    name_en: "FamilyMart Yac's Drug Urayasu Higashino"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.647144
     lng: 139.893661
     address: "千葉県浦安市東野3丁目4番11号"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-050"
     type: "conbini"
     name: "ファミリーマート 東京ベイ・浦安市川医療センター店"
+    name_en: "FamilyMart Tokyo Bay Urayasu-Ichikawa Medical Center"
     operator: "ファミリーマート"
     status: "open"
     hours: "7:00-20:00"
+    hours_en: "7:00-20:00"
+    hours_zh: "7:00-20:00"
+    hours_ko: "7:00-20:00"
+    hours_zhtw: "7:00-20:00"
+    open_early: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.671627
     lng: 139.893219
     address: "千葉県浦安市当代島3丁目4-32"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-051"
     type: "conbini"
     name: "ファミリーマート 浦安富士見一丁目店"
+    name_en: "FamilyMart Urayasu Fujimi 1-chome"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.65118
     lng: 139.894516
     address: "千葉県浦安市富士見1丁目5番1号"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-052"
     type: "conbini"
     name: "ファミリーマート ニーズ浦安店"
+    name_en: "FamilyMart Needs Urayasu"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.667351
     lng: 139.895844
     address: "千葉県浦安市北栄2丁目4番11号"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-053"
     type: "conbini"
     name: "ファミリーマート 浦安東野一丁目店"
+    name_en: "FamilyMart Urayasu Higashino 1-chome"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.652927
     lng: 139.898788
     address: "千葉県浦安市東野1-3-1"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-054"
     type: "conbini"
     name: "ファミリーマート 浦安若潮通り店"
+    name_en: "FamilyMart Urayasu Wakashio-dori"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.637115
     lng: 139.898392
     address: "千葉県浦安市鉄鋼通り2-1-8"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-055"
     type: "conbini"
     name: "ファミリーマート 浦安北栄店"
+    name_en: "FamilyMart Urayasu Kitasakae"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.664665
     lng: 139.90271
     address: "千葉県浦安市北栄4-28-11"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-056"
     type: "conbini"
     name: "ファミリーマート 浦安海楽店"
+    name_en: "FamilyMart Urayasu Kairaku"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.653763
     lng: 139.902878
     address: "千葉県浦安市海楽1-1-7"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-057"
     type: "conbini"
     name: "ファミリーマート 浦安北栄四丁目店"
+    name_en: "FamilyMart Urayasu Kitasakae 4-chome"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.661415
     lng: 139.9039
     address: "千葉県浦安市北栄4-17-47"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-058"
     type: "conbini"
     name: "ファミリーマート アトレ新浦安店"
+    name_en: "FamilyMart atre Shin-Urayasu"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1丁目1番の1 1階6070"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-059"
     type: "conbini"
     name: "ファミリーマート 新浦安マーレ店"
+    name_en: "FamilyMart Shin-Urayasu Mare"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.650169
     lng: 139.913925
     address: "千葉県浦安市入船1丁目2番1号"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-060"
     type: "conbini"
     name: "ファミリーマート 浦安入船六丁目店"
+    name_en: "FamilyMart Urayasu Irifune 6-chome"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.651169
     lng: 139.915375
     address: "千葉県浦安市入船6丁目1番2号"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-061"
     type: "conbini"
     name: "ファミリーマート 浦安マリーナ店"
+    name_en: "FamilyMart Urayasu Marina"
     operator: "ファミリーマート"
     status: "open"
     hours: "24時間"
+    hours_en: "24h"
+    hours_zh: "24小时"
+    hours_ko: "24시간"
+    hours_zhtw: "24小時"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.646507
     lng: 139.920258
     address: "千葉県浦安市日の出1-3-1"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-063"
     type: "conbini"
     name: "ファミリーマート エミオン東京ベイ／S店"
+    name_en: "FamilyMart Emion Tokyo Bay S"
     operator: "ファミリーマート"
     status: "open"
     hours: "7:00-24:00"
+    hours_en: "7:00-24:00"
+    hours_zh: "7:00-24:00"
+    hours_ko: "7:00-24:00"
+    hours_zhtw: "7:00-24:00"
+    open_early: true
+    open_late: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.647377
     lng: 139.919174
     address: "千葉県浦安市日の出1丁目1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://store.family.co.jp/"
+    last_verified: "2026/6/29"
     note: "エミオン東京ベイ サテライト店（emion-familymartの別店舗）"
   - id: "poi-064"
     type: "conbini"
     name: "ミニストップ 堀江4丁目店"
+    name_en: "Ministop Horie 4-chome"
     operator: "ミニストップ"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.659546
     lng: 139.890915
     address: "千葉県浦安市堀江4丁目36-50"
-    last_verified: "2026-06-29"
+    official_url: "https://www.ministop.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-065"
     type: "conbini"
     name: "ミニストップ 浦安猫実2丁目店"
+    name_en: "Ministop Urayasu Nekomi 2-chome"
     operator: "ミニストップ"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    atm_intl: "check"
+    takkyubin: true
     lat: 35.659344
     lng: 139.902145
     address: "千葉県浦安市猫実2丁目11-20"
-    last_verified: "2026-06-29"
+    official_url: "https://www.ministop.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-067"
     type: "conbini"
     name: "デイリーヤマザキ 浦安舞浜店"
+    name_en: "Daily Yamazaki Urayasu Maihama"
     operator: "デイリーヤマザキ"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    takkyubin: true
     lat: 35.647606
     lng: 139.888824
     address: "千葉県浦安市富士見3-11-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.daily-yamazaki.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-068"
     type: "conbini"
     name: "NewDays 新浦安"
+    name_en: "NewDays Shin-Urayasu"
     operator: "NewDays"
     status: "open"
     hours: "6:30～23:30"
+    hours_en: "6:30～23:30"
+    hours_zh: "6:30～23:30"
+    hours_ko: "6:30～23:30"
+    hours_zhtw: "6:30～23:30"
+    open_early: true
+    open_late: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1 新浦安駅2F 改札外"
-    last_verified: "2026-06-29"
+    official_url: "https://www.j-retail.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-069"
     type: "conbini"
     name: "NewDaysミニ 新浦安4号"
+    name_en: "NewDays Mini Shin-Urayasu No.4"
     operator: "NewDays"
     status: "open"
     hours: "平日 6:30～21:00／土曜 6:30～20:00／日祝 7:00～14:00"
+    hours_en: "Weekdays 6:30～21:00／Sat 6:30～20:00／Sun/Hol 7:00～14:00"
+    hours_zh: "工作日 6:30～21:00／周六 6:30～20:00／周日及节假日 7:00～14:00"
+    hours_ko: "평일 6:30～21:00／토요일 6:30～20:00／일·공휴일 7:00～14:00"
+    hours_zhtw: "平日 6:30～21:00／週六 6:30～20:00／週日及假日 7:00～14:00"
+    open_early: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1 新浦安駅2F 改札内コンコース"
-    last_verified: "2026-06-29"
+    official_url: "https://www.j-retail.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-071"
     type: "conbini"
     name: "NewDaysミニ 舞浜3号"
+    name_en: "NewDays Mini Maihama No.3"
     operator: "NewDays"
     status: "open"
     hours: "平日・土曜 7:00～23:00／日祝 7:00～22:30"
+    hours_en: "Weekdays・Sat 7:00～23:00／Sun/Hol 7:00～22:30"
+    hours_zh: "工作日・周六 7:00～23:00／周日及节假日 7:00～22:30"
+    hours_ko: "평일・토요일 7:00～23:00／일·공휴일 7:00～22:30"
+    hours_zhtw: "平日・週六 7:00～23:00／週日及假日 7:00～22:30"
+    open_early: true
+    open_late: true
     lat: 35.636112
     lng: 139.884384
     address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札内"
-    last_verified: "2026-06-29"
+    official_url: "https://www.j-retail.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-072"
     type: "conbini"
     name: "ファーストセレクト"
+    name_en: "First Select (Tokyo Bay Maihama Hotel)"
     operator: "その他"
     status: "open"
     hours: "8:00～23:00"
+    hours_en: "8:00～23:00"
+    hours_zh: "8:00～23:00"
+    hours_ko: "8:00～23:00"
+    hours_zhtw: "8:00～23:00"
+    open_late: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-34 東京ベイ舞浜ホテル内"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "東京ベイ舞浜ホテル ファーストリゾート 館内売店"
   - id: "poi-073"
     type: "supermarket"
     name: "イオンスタイル新浦安"
+    name_en: "AEON Style Shin-Urayasu"
     operator: "イオン"
     status: "open"
     hours: "8:00～23:00"
+    hours_en: "8:00～23:00"
+    hours_zh: "8:00～23:00"
+    hours_ko: "8:00～23:00"
+    hours_zhtw: "8:00～23:00"
+    open_late: true
+    atm_intl: "1"
+    baby_goods: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.aeon.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-074"
     type: "supermarket"
     name: "イオンスタイル新浦安MONA"
+    name_en: "AEON Style Shin-Urayasu MONA"
     operator: "イオン"
     status: "open"
     hours: "9:00～22:00"
+    hours_en: "9:00～22:00"
+    hours_zh: "9:00～22:00"
+    hours_ko: "9:00～22:00"
+    hours_zhtw: "9:00～22:00"
+    open_late: true
+    atm_intl: "check"
+    baby_goods: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.aeon.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-075"
     type: "supermarket"
     name: "ダイエー浦安駅前店"
+    name_en: "Daiei Urayasu Ekimae"
     operator: "ダイエー"
     status: "open"
     hours: "8:00～24:00"
+    hours_en: "8:00～24:00"
+    hours_zh: "8:00～24:00"
+    hours_ko: "8:00～24:00"
+    hours_zhtw: "8:00～24:00"
+    open_late: true
+    atm_intl: "check"
+    baby_goods: true
     lat: 35.663998
     lng: 139.896484
     address: "千葉県浦安市北栄3-27-13"
-    last_verified: "2026-06-29"
+    official_url: "https://www.daiei.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-076"
     type: "supermarket"
     name: "サミットストア 浦安駅北口店"
+    name_en: "Summit Store Urayasu Station North Exit"
     operator: "サミット"
     status: "open"
     hours: "9:00～24:00"
+    hours_en: "9:00～24:00"
+    hours_zh: "9:00～24:00"
+    hours_ko: "9:00～24:00"
+    hours_zhtw: "9:00～24:00"
+    open_late: true
+    baby_goods: true
     lat: 35.667419
     lng: 139.893417
     address: "千葉県浦安市北栄1-10-20"
-    last_verified: "2026-06-29"
+    official_url: "https://www.summitstore.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-077"
     type: "supermarket"
     name: "サミットストア ライフガーデン浦安富岡店"
+    name_en: "Summit Store Life Garden Urayasu Tomioka"
     operator: "サミット"
     status: "open"
     hours: "9:00～23:00"
+    hours_en: "9:00～23:00"
+    hours_zh: "9:00～23:00"
+    hours_ko: "9:00～23:00"
+    hours_zhtw: "9:00～23:00"
+    open_late: true
+    baby_goods: true
     lat: 35.643097
     lng: 139.900177
     address: "千葉県浦安市富岡3-2-2"
-    last_verified: "2026-06-29"
+    official_url: "https://www.summitstore.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-078"
     type: "supermarket"
     name: "ヤオコー 浦安東野店"
+    name_en: "Yaoko Urayasu Higashino"
     operator: "ヤオコー"
     status: "open"
     hours: "9:00～21:45"
+    hours_en: "9:00～21:45"
+    hours_zh: "9:00～21:45"
+    hours_ko: "9:00～21:45"
+    hours_zhtw: "9:00～21:45"
+    baby_goods: true
     lat: 35.647724
     lng: 139.893478
     address: "千葉県浦安市東野2-29-33"
-    last_verified: "2026-06-29"
+    official_url: "https://www.yaoko-net.com/"
+    last_verified: "2026/6/29"
   - id: "poi-079"
     type: "supermarket"
     name: "ヤオコー 新浦安店"
+    name_en: "Yaoko Shin-Urayasu"
     operator: "ヤオコー"
     status: "open"
     hours: "9:00～21:30"
+    hours_en: "9:00～21:30"
+    hours_zh: "9:00～21:30"
+    hours_ko: "9:00～21:30"
+    hours_zhtw: "9:00～21:30"
+    baby_goods: true
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU内"
-    last_verified: "2026-06-29"
+    official_url: "https://www.yaoko-net.com/"
+    last_verified: "2026/6/29"
   - id: "poi-080"
     type: "supermarket"
     name: "オーケー 浦安店"
+    name_en: "OK Store Urayasu"
     operator: "オーケー"
     status: "open"
     hours: "8:30～21:30"
+    hours_en: "8:30～21:30"
+    hours_zh: "8:30～21:30"
+    hours_ko: "8:30～21:30"
+    hours_zhtw: "8:30～21:30"
+    baby_goods: true
     lat: 35.652882
     lng: 139.899323
     address: "千葉県浦安市東野1-2-33"
-    last_verified: "2026-06-29"
+    official_url: "https://ok-corporation.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-081"
     type: "supermarket"
     name: "オーケー 新浦安店"
+    name_en: "OK Store Shin-Urayasu"
     operator: "オーケー"
     status: "open"
     hours: "8:45～21:30"
+    hours_en: "8:45～21:30"
+    hours_zh: "8:45～21:30"
+    hours_ko: "8:45～21:30"
+    hours_zhtw: "8:45～21:30"
+    baby_goods: true
     lat: 35.636314
     lng: 139.917923
     address: "千葉県浦安市高洲5-3-1"
-    last_verified: "2026-06-29"
+    official_url: "https://ok-corporation.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-082"
     type: "supermarket"
     name: "マルエツ 浦安店"
+    name_en: "Maruetsu Urayasu"
     operator: "マルエツ"
     status: "open"
     hours: "24時間営業 ※2Fは10:00～22:00"
+    hours_en: "24h ※2F 10:00～22:00"
+    hours_zh: "24小时营业 ※2F 10:00～22:00"
+    hours_ko: "24시간 영업 ※2F 10:00～22:00"
+    hours_zhtw: "24小時營業 ※2F 10:00～22:00"
+    open_early: true
+    open_late: true
+    is_24h: true
+    baby_goods: true
     lat: 35.652317
     lng: 139.891922
     address: "千葉県浦安市富士見1-3-20"
-    last_verified: "2026-06-29"
+    official_url: "https://www.maruetsu.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-083"
     type: "supermarket"
     name: "ベルク フォルテ新浦安店"
+    name_en: "Belc Forte Shin-Urayasu"
     operator: "ベルク"
     status: "open"
     hours: "9:00～24:00"
+    hours_en: "9:00～24:00"
+    hours_zh: "9:00～24:00"
+    hours_ko: "9:00～24:00"
+    hours_zhtw: "9:00～24:00"
+    open_late: true
+    baby_goods: true
     lat: 35.642681
     lng: 139.925476
     address: "千葉県浦安市日の出5-1-28"
-    last_verified: "2026-06-29"
+    official_url: "https://www.belc.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-084"
     type: "supermarket"
     name: "アール元気 アクロスプラザ浦安東野店"
+    name_en: "R Genki Across Plaza Urayasu Higashino"
     operator: "アール元気"
     status: "open"
     hours: "10:00～20:00"
+    hours_en: "10:00～20:00"
+    hours_zh: "10:00～20:00"
+    hours_ko: "10:00～20:00"
+    hours_zhtw: "10:00～20:00"
+    baby_goods: true
     lat: 35.647778
     lng: 139.892868
     address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.welcia.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-085"
     type: "supermarket"
     name: "業務スーパー 新浦安店"
+    name_en: "Gyomu Super Shin-Urayasu"
     operator: "業務スーパー"
     status: "open"
     hours: "9:00～21:00"
+    hours_en: "9:00～21:00"
+    hours_zh: "9:00～21:00"
+    hours_ko: "9:00～21:00"
+    hours_zhtw: "9:00～21:00"
+    baby_goods: true
     lat: 35.658936
     lng: 139.90387
     address: "千葉県浦安市猫実1-21-38"
-    last_verified: "2026-06-29"
+    official_url: "https://www.gyomusuper.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-086"
     type: "supermarket"
     name: "ワイズマート 浦安本店"
+    name_en: "Y's Mart Urayasu Main Store"
     operator: "ワイズマート"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    baby_goods: true
     lat: 35.666306
     lng: 139.892731
     address: "千葉県浦安市当代島1-2-25"
-    last_verified: "2026-06-29"
+    official_url: "https://www.ysmart.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-087"
     type: "supermarket"
     name: "ワイズマートディスカ 高洲店"
+    name_en: "Y's Mart Disca Takasu"
     operator: "ワイズマート"
     status: "open"
     hours: "月～土 10:00～20:00／日 9:00～20:00"
+    hours_en: "Mon-Sat 10:00～20:00／Sun 9:00～20:00"
+    hours_zh: "周一至周六 10:00～20:00／周日 9:00～20:00"
+    hours_ko: "월~토 10:00～20:00／일 9:00～20:00"
+    hours_zhtw: "週一至週六 10:00～20:00／週日 9:00～20:00"
+    baby_goods: true
     lat: 35.637661
     lng: 139.911209
     address: "千葉県浦安市高洲2-3-12"
-    last_verified: "2026-06-29"
+    official_url: "https://www.ysmart.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-088"
     type: "supermarket"
     name: "まいばすけっと 浦安駅前店"
+    name_en: "My Basket Urayasu Ekimae"
     operator: "まいばすけっと"
     status: "open"
     hours: "7:00～24:00"
+    hours_en: "7:00～24:00"
+    hours_zh: "7:00～24:00"
+    hours_ko: "7:00～24:00"
+    hours_zhtw: "7:00～24:00"
+    open_early: true
+    open_late: true
+    baby_goods: true
     lat: 35.665184
     lng: 139.894485
     address: "千葉県浦安市北栄1-16-30"
-    last_verified: "2026-06-29"
+    official_url: "https://www.mybasket.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-089"
     type: "supermarket"
     name: "まいばすけっと 浦安美浜店"
+    name_en: "My Basket Urayasu Mihama"
     operator: "まいばすけっと"
     status: "open"
     hours: "7:00～23:00"
+    hours_en: "7:00～23:00"
+    hours_zh: "7:00～23:00"
+    hours_ko: "7:00～23:00"
+    hours_zhtw: "7:00～23:00"
+    open_early: true
+    open_late: true
+    baby_goods: true
     lat: 35.652393
     lng: 139.911469
     address: "千葉県浦安市美浜1-7-7 エル・シティ新浦安七番館"
-    last_verified: "2026-06-29"
+    official_url: "https://www.mybasket.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-090"
     type: "supermarket"
     name: "まいばすけっと 猫実3丁目店"
+    name_en: "My Basket Nekomi 3-chome"
     operator: "まいばすけっと"
     status: "open"
     hours: "8:00～23:00"
+    hours_en: "8:00～23:00"
+    hours_zh: "8:00～23:00"
+    hours_ko: "8:00～23:00"
+    hours_zhtw: "8:00～23:00"
+    open_late: true
+    baby_goods: true
     lat: 35.662159
     lng: 139.895538
     address: "千葉県浦安市猫実3-24-12 ユナイテッド浦安"
-    last_verified: "2026-06-29"
+    official_url: "https://www.mybasket.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-091"
     type: "supermarket"
     name: "まいばすけっと 浦安当代島2丁目店"
+    name_en: "My Basket Urayasu Tokaijima 2-chome"
     operator: "まいばすけっと"
     status: "open"
     hours: "7:00～23:00"
+    hours_en: "7:00～23:00"
+    hours_zh: "7:00～23:00"
+    hours_ko: "7:00～23:00"
+    hours_zhtw: "7:00～23:00"
+    open_early: true
+    open_late: true
+    baby_goods: true
     lat: 35.668461
     lng: 139.891586
     address: "千葉県浦安市当代島2-10-34"
-    last_verified: "2026-06-29"
+    official_url: "https://www.mybasket.co.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-092"
     type: "supermarket"
     name: "成城石井 アトレ新浦安店"
+    name_en: "Seijo Ishii atre Shin-Urayasu"
     operator: "成城石井"
     status: "open"
     hours: "10:00～22:00"
+    hours_en: "10:00～22:00"
+    hours_zh: "10:00～22:00"
+    hours_ko: "10:00～22:00"
+    hours_zhtw: "10:00～22:00"
+    open_late: true
+    baby_goods: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://shop.seijoishii.com/seijoishii/"
+    last_verified: "2026/6/29"
   - id: "poi-093"
     type: "supermarket"
     name: "成城石井 舞浜イクスピアリ店"
+    name_en: "Seijo Ishii Maihama Ikspiari"
     operator: "成城石井"
     status: "open"
     hours: "10:00～22:30"
+    hours_en: "10:00～22:30"
+    hours_zh: "10:00～22:30"
+    hours_ko: "10:00～22:30"
+    hours_zhtw: "10:00～22:30"
+    open_late: true
+    baby_goods: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
-    last_verified: "2026-06-29"
+    official_url: "https://shop.seijoishii.com/seijoishii/"
+    last_verified: "2026/6/29"
   - id: "poi-094"
     type: "supermarket"
     name: "デポー浦安"
+    name_en: "Depot Urayasu"
     operator: "生活クラブ"
     status: "open"
     hours: "月～土 10:00～19:00"
+    hours_en: "Mon-Sat 10:00～19:00"
+    hours_zh: "周一至周六 10:00～19:00"
+    hours_ko: "월~토 10:00～19:00"
+    hours_zhtw: "週一至週六 10:00～19:00"
+    baby_goods: true
     lat: 35.648354
     lng: 139.918839
     address: "千葉県浦安市入船4-9-7"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-095"
     type: "supermarket"
     name: "アタック 浦安堀江店"
+    name_en: "Attack Urayasu Horie"
     operator: "アタック"
     status: "open"
     hours: "9:00～23:00"
+    hours_en: "9:00～23:00"
+    hours_zh: "9:00～23:00"
+    hours_ko: "9:00～23:00"
+    hours_zhtw: "9:00～23:00"
+    open_late: true
+    baby_goods: true
     lat: 35.656555
     lng: 139.891785
     address: "千葉県浦安市堀江5-22-24"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-096"
     type: "supermarket"
     name: "スーパー木田屋 北栄店"
+    name_en: "Super Kidaya Kitasakae"
     operator: "木田屋"
     status: "open"
     hours: "9:30～20:00"
+    hours_en: "9:30～20:00"
+    hours_zh: "9:30～20:00"
+    hours_ko: "9:30～20:00"
+    hours_zhtw: "9:30～20:00"
+    baby_goods: true
     lat: 35.664772
     lng: 139.898911
     address: "千葉県浦安市北栄3-31-3"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-097"
     type: "supermarket"
     name: "マインド 堀江店"
+    name_en: "Mind Horie"
     operator: "マインド"
     status: "open"
     hours: "8:30～19:30"
+    hours_en: "8:30～19:30"
+    hours_zh: "8:30～19:30"
+    hours_ko: "8:30～19:30"
+    hours_zhtw: "8:30～19:30"
+    baby_goods: true
     lat: 35.653358
     lng: 139.897858
     address: "千葉県浦安市堀江6-1-41"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-098"
     type: "drugstore"
     name: "ウエルシア薬局浦安駅前店"
+    name_en: "Welcia Pharmacy Urayasu Ekimae"
     operator: "ウエルシア"
     status: "open"
     hours: "9:00～23:00"
+    hours_en: "9:00～23:00"
+    hours_zh: "9:00～23:00"
+    hours_ko: "9:00～23:00"
+    hours_zhtw: "9:00～23:00"
+    open_late: true
+    baby_goods: true
     lat: 35.665897
     lng: 139.892578
     address: "千葉県浦安市当代島1-1-23"
-    last_verified: "2026-06-29"
+    official_url: "https://www.welcia.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-099"
     type: "drugstore"
     name: "ウエルシアライフガーデン新浦安店"
+    name_en: "Welcia Life Garden Shin-Urayasu"
     operator: "ウエルシア"
     status: "open"
     hours: "9:00～23:00"
+    hours_en: "9:00～23:00"
+    hours_zh: "9:00～23:00"
+    hours_ko: "9:00～23:00"
+    hours_zhtw: "9:00～23:00"
+    open_late: true
+    baby_goods: true
     lat: 35.643097
     lng: 139.900177
     address: "千葉県浦安市富岡3-2-2"
-    last_verified: "2026-06-29"
+    official_url: "https://www.welcia.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-100"
     type: "drugstore"
     name: "ウエルシア 順天堂大学浦安・日の出キャンパス店"
+    name_en: "Welcia Juntendo Urayasu-Hinode Campus"
     operator: "ウエルシア"
     status: "open"
     hours: "平日 8:00～20:00／土日祝休業"
+    hours_en: "Weekdays 8:00～20:00／Sat/Sun/Holclosed"
+    hours_zh: "工作日 8:00～20:00／周末及节假日休息"
+    hours_ko: "평일 8:00～20:00／주말·공휴일휴무"
+    hours_zhtw: "平日 8:00～20:00／週末及假日休息"
+    baby_goods: true
     lat: 35.643864
     lng: 139.93103
     address: "千葉県浦安市日の出6-8-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.welcia.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-101"
     type: "drugstore"
     name: "KoKuMiN アトレ新浦安店"
+    name_en: "KoKuMiN atre Shin-Urayasu"
     operator: "コクミン"
     status: "open"
     hours: "平日 9:00～22:00／土 9:00～21:00／日祝 10:00～21:00"
+    hours_en: "Weekdays 9:00～22:00／Sat 9:00～21:00／Sun/Hol 10:00～21:00"
+    hours_zh: "工作日 9:00～22:00／周六 9:00～21:00／周日及节假日 10:00～21:00"
+    hours_ko: "평일 9:00～22:00／토 9:00～21:00／일·공휴일 10:00～21:00"
+    hours_zhtw: "平日 9:00～22:00／週六 9:00～21:00／週日及假日 10:00～21:00"
+    open_late: true
+    baby_goods: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安店1階"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kokumin.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-102"
     type: "drugstore"
     name: "ドラッグストア マツモトキヨシ 浦安東野店"
+    name_en: "Matsumoto Kiyoshi Urayasu Higashino"
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～24:00"
+    hours_en: "9:00～24:00"
+    hours_zh: "9:00～24:00"
+    hours_ko: "9:00～24:00"
+    hours_zhtw: "9:00～24:00"
+    open_late: true
+    baby_goods: true
     lat: 35.652039
     lng: 139.90094
     address: "千葉県浦安市東野1-1-43"
-    last_verified: "2026-06-29"
+    official_url: "https://www.matsukiyococokara-online.com/store/"
+    last_verified: "2026/6/29"
   - id: "poi-103"
     type: "drugstore"
     name: "ドラッグストア マツモトキヨシ 新浦安美浜店"
+    name_en: "Matsumoto Kiyoshi Shin-Urayasu Mihama"
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～23:00"
+    hours_en: "9:00～23:00"
+    hours_zh: "9:00～23:00"
+    hours_ko: "9:00～23:00"
+    hours_zhtw: "9:00～23:00"
+    open_late: true
+    baby_goods: true
     lat: 35.652393
     lng: 139.911469
     address: "千葉県浦安市美浜1-7-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.matsukiyococokara-online.com/store/"
+    last_verified: "2026/6/29"
   - id: "poi-104"
     type: "drugstore"
     name: "薬 マツモトキヨシ 浦安南口駅前店"
+    name_en: "Matsumoto Kiyoshi Urayasu Station South Exit"
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～22:00"
+    hours_en: "9:00～22:00"
+    hours_zh: "9:00～22:00"
+    hours_ko: "9:00～22:00"
+    hours_zhtw: "9:00～22:00"
+    open_late: true
+    baby_goods: true
     lat: 35.665482
     lng: 139.893265
     address: "千葉県浦安市北栄1-16-18"
-    last_verified: "2026-06-29"
+    official_url: "https://www.matsukiyococokara-online.com/store/"
+    last_verified: "2026/6/29"
   - id: "poi-105"
     type: "drugstore"
     name: "ドラッグストア マツモトキヨシ フォルテ新浦安店"
+    name_en: "Matsumoto Kiyoshi Forte Shin-Urayasu"
     operator: "マツモトキヨシ"
     status: "open"
     hours: "9:00～22:00"
+    hours_en: "9:00～22:00"
+    hours_zh: "9:00～22:00"
+    hours_ko: "9:00～22:00"
+    hours_zhtw: "9:00～22:00"
+    open_late: true
+    baby_goods: true
     lat: 35.642681
     lng: 139.925476
     address: "千葉県浦安市日の出5-1-28"
-    last_verified: "2026-06-29"
+    official_url: "https://www.matsukiyococokara-online.com/store/"
+    last_verified: "2026/6/29"
   - id: "poi-106"
     type: "drugstore"
     name: "ココカラファイン薬局 新浦安店"
+    name_en: "Cocokara Fine Shin-Urayasu"
     operator: "ココカラファイン"
     status: "open"
     hours: "月～金 9:00～20:00／土 9:00～19:00／日祝 10:00～18:30"
+    hours_en: "Mon-Fri 9:00～20:00／Sat 9:00～19:00／Sun/Hol 10:00～18:30"
+    hours_zh: "周一至周五 9:00～20:00／周六 9:00～19:00／周日及节假日 10:00～18:30"
+    hours_ko: "월~금 9:00～20:00／토 9:00～19:00／일·공휴일 10:00～18:30"
+    hours_zhtw: "週一至週五 9:00～20:00／週六 9:00～19:00／週日及假日 10:00～18:30"
+    baby_goods: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安 B館2F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.cocokarafine.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-107"
     type: "drugstore"
     name: "トモズ ニューコースト新浦安店"
+    name_en: "Tomod's New Coast Shin-Urayasu"
     operator: "トモズ"
     status: "open"
     hours: "9:00～21:00"
+    hours_en: "9:00～21:00"
+    hours_zh: "9:00～21:00"
+    hours_ko: "9:00～21:00"
+    hours_zhtw: "9:00～21:00"
+    baby_goods: true
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://shop.tomods.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-108"
     type: "drugstore"
     name: "トモズ イクスピアリ店"
+    name_en: "Tomod's Ikspiari"
     operator: "トモズ"
     status: "open"
     hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    baby_goods: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
-    last_verified: "2026-06-29"
+    official_url: "https://shop.tomods.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-109"
     type: "drugstore"
     name: "くすりの福太郎 浦安堀江店"
+    name_en: "Kusuri no Fukutaro Urayasu Horie"
     operator: "くすりの福太郎"
     status: "open"
     hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    baby_goods: true
     lat: 35.65778
     lng: 139.896378
     address: "千葉県浦安市堀江1-33-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kusuri-no-fukutaro.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-110"
     type: "drugstore"
     name: "くすりの福太郎 浦安北栄店"
+    name_en: "Kusuri no Fukutaro Urayasu Kitasakae"
     operator: "くすりの福太郎"
     status: "open"
     hours: "平日 10:00～21:30／土日 10:00～21:00"
+    hours_en: "Weekdays 10:00～21:30／Sat/Sun 10:00～21:00"
+    hours_zh: "工作日 10:00～21:30／周末 10:00～21:00"
+    hours_ko: "평일 10:00～21:30／주말 10:00～21:00"
+    hours_zhtw: "平日 10:00～21:30／週末 10:00～21:00"
+    baby_goods: true
     lat: 35.66695
     lng: 139.893219
     address: "千葉県浦安市北栄1-11-20 吉田第一ビル1階"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kusuri-no-fukutaro.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-111"
     type: "drugstore"
     name: "調剤薬局くすりの福太郎 浦安駅前店"
+    name_en: "Kusuri no Fukutaro Urayasu Ekimae"
     operator: "くすりの福太郎"
     status: "open"
     hours: "月～金 9:00～20:00／土 9:00～18:00／日祝休業"
+    hours_en: "Mon-Fri 9:00～20:00／Sat 9:00～18:00／Sun/Holclosed"
+    hours_zh: "周一至周五 9:00～20:00／周六 9:00～18:00／周日及节假日休息"
+    hours_ko: "월~금 9:00～20:00／토 9:00～18:00／일·공휴일휴무"
+    hours_zhtw: "週一至週五 9:00～20:00／週六 9:00～18:00／週日及假日休息"
+    baby_goods: true
     lat: 35.665607
     lng: 139.89505
     address: "千葉県浦安市北栄1-3-34 グランデュール峯崎1-1階"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kusuri-no-fukutaro.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-112"
     type: "drugstore"
     name: "薬局くすりの福太郎 浦安店"
+    name_en: "Kusuri no Fukutaro Urayasu"
     operator: "くすりの福太郎"
     status: "open"
     hours: "月～金 9:00～18:00／土 9:00～13:00／日祝休業"
+    hours_en: "Mon-Fri 9:00～18:00／Sat 9:00～13:00／Sun/Holclosed"
+    hours_zh: "周一至周五 9:00～18:00／周六 9:00～13:00／周日及节假日休息"
+    hours_ko: "월~금 9:00～18:00／토 9:00～13:00／일·공휴일휴무"
+    hours_zhtw: "週一至週五 9:00～18:00／週六 9:00～13:00／週日及假日休息"
+    baby_goods: true
     lat: 35.670929
     lng: 139.893967
     address: "千葉県浦安市当代島3-4-17"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kusuri-no-fukutaro.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-113"
     type: "drugstore"
     name: "くすりの福太郎 浦安駅南口店"
+    name_en: "Kusuri no Fukutaro Urayasu Station South Exit"
     operator: "くすりの福太郎"
     status: "open"
     hours: "月火木金 10:00～13:00・14:00～19:00／土 9:00～14:00／水日祝休業"
+    hours_en: "Mon/Tue/Thu/Fri 10:00～13:00・14:00～19:00／Sat 9:00～14:00／WedSun/Holclosed"
+    hours_zh: "周一二四五 10:00～13:00・14:00～19:00／周六 9:00～14:00／周三周日及节假日休息"
+    hours_ko: "월화목금 10:00～13:00・14:00～19:00／토 9:00～14:00／수일·공휴일휴무"
+    hours_zhtw: "週一二四五 10:00～13:00・14:00～19:00／週六 9:00～14:00／週三週日及假日休息"
+    baby_goods: true
     lat: 35.665211
     lng: 139.895309
     address: "千葉県浦安市北栄1丁目2番23号 かみ吉ビル1階"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kusuri-no-fukutaro.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-114"
     type: "drugstore"
     name: "ファミリーマート＋ヤックスドラッグ 浦安東野薬局"
+    name_en: "FamilyMart + Yac's Drug Urayasu Higashino Pharmacy"
     operator: "ヤックスドラッグ"
     status: "open"
     hours: "9:00～18:30／日祝休業"
+    hours_en: "9:00～18:30／Sun/Holclosed"
+    hours_zh: "9:00～18:30／周日及节假日休息"
+    hours_ko: "9:00～18:30／일·공휴일휴무"
+    hours_zhtw: "9:00～18:30／週日及假日休息"
+    baby_goods: true
     lat: 35.647144
     lng: 139.893661
     address: "千葉県浦安市東野3-4-11"
-    last_verified: "2026-06-29"
+    official_url: "https://www.yac-web.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-115"
     type: "drugstore"
     name: "薬局ドラッグ・ジロー"
+    name_en: "Drug Jiro Pharmacy"
     operator: "個人・その他"
     status: "open"
     hours: "月～金 8:30～19:00／土 8:30～18:00／日祝休業"
+    hours_en: "Mon-Fri 8:30～19:00／Sat 8:30～18:00／Sun/Holclosed"
+    hours_zh: "周一至周五 8:30～19:00／周六 8:30～18:00／周日及节假日休息"
+    hours_ko: "월~금 8:30～19:00／토 8:30～18:00／일·공휴일휴무"
+    hours_zhtw: "週一至週五 8:30～19:00／週六 8:30～18:00／週日及假日休息"
+    baby_goods: true
     lat: 35.652313
     lng: 139.891541
     address: "千葉県浦安市富士見2-9-1"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-116"
     type: "fastfood"
     name: "マクドナルド 浦安店"
+    name_en: "McDonald's Urayasu"
     operator: "マクドナルド"
     status: "open"
     hours: "平日・土曜 6:00～24:00／休日 6:00～23:00"
+    hours_en: "Weekdays・Sat 6:00～24:00／Hol 6:00～23:00"
+    hours_zh: "工作日・周六 6:00～24:00／节假日 6:00～23:00"
+    hours_ko: "평일・토요일 6:00～24:00／휴일 6:00～23:00"
+    hours_zhtw: "平日・週六 6:00～24:00／假日 6:00～23:00"
+    open_early: true
+    open_late: true
     lat: 35.665524
     lng: 139.893463
     address: "千葉県浦安市北栄1-15-13"
-    last_verified: "2026-06-29"
+    official_url: "https://map.mcdonalds.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-117"
     type: "fastfood"
     name: "マクドナルド 新浦安駅前店"
+    name_en: "McDonald's Shin-Urayasu Ekimae"
     operator: "マクドナルド"
     status: "open"
     hours: "7:00～24:00"
+    hours_en: "7:00～24:00"
+    hours_zh: "7:00～24:00"
+    hours_ko: "7:00～24:00"
+    hours_zhtw: "7:00～24:00"
+    open_early: true
+    open_late: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1"
-    last_verified: "2026-06-29"
+    official_url: "https://map.mcdonalds.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-118"
     type: "fastfood"
     name: "マクドナルド 浦安富士見店"
+    name_en: "McDonald's Urayasu Fujimi"
     operator: "マクドナルド"
     status: "open"
     hours: "店内 6:00～23:00／ドライブスルー 6:00～24:00"
+    hours_en: "Dine-in 6:00～23:00／Drive-thru 6:00～24:00"
+    hours_zh: "堂食 6:00～23:00／得来速 6:00～24:00"
+    hours_ko: "매장 내 6:00～23:00／드라이브스루 6:00～24:00"
+    hours_zhtw: "內用 6:00～23:00／得來速 6:00～24:00"
+    open_early: true
+    open_late: true
     lat: 35.651966
     lng: 139.891663
     address: "千葉県浦安市富士見1-6-22"
-    last_verified: "2026-06-29"
+    official_url: "https://map.mcdonalds.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-119"
     type: "fastfood"
     name: "マクドナルド 浦安東野ヤオコー店"
+    name_en: "McDonald's Urayasu Higashino Yaoko"
     operator: "マクドナルド"
     status: "open"
     hours: "9:30～21:00"
+    hours_en: "9:30～21:00"
+    hours_zh: "9:30～21:00"
+    hours_ko: "9:30～21:00"
+    hours_zhtw: "9:30～21:00"
     lat: 35.649158
     lng: 139.895233
     address: "千葉県浦安市東野2-294-2"
-    last_verified: "2026-06-29"
+    official_url: "https://map.mcdonalds.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-120"
     type: "fastfood"
     name: "マクドナルド 新浦安明海店"
+    name_en: "McDonald's Shin-Urayasu Akemi"
     operator: "マクドナルド"
     status: "planned"
     hours: "7:00～23:00 ※開業予定店舗、電話未確認"
+    hours_en: "7:00～23:00 ※Opening soon, phone TBC"
+    hours_zh: "7:00～23:00 ※预定开业, 电话未确认"
+    hours_ko: "7:00～23:00 ※개업 예정, 전화 미확인"
+    hours_zhtw: "7:00～23:00 ※預定開幕, 電話未確認"
     lat: 35.64212
     lng: 139.923386
     address: "千葉県浦安市明海5-1-35"
-    last_verified: "2026-06-29"
+    official_url: "https://map.mcdonalds.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-121"
     type: "fastfood"
     name: "ケンタッキーフライドチキン 浦安店"
+    name_en: "KFC Urayasu"
     operator: "ケンタッキーフライドチキン"
     status: "open"
     hours: "10:00～22:00"
+    hours_en: "10:00～22:00"
+    hours_zh: "10:00～22:00"
+    hours_ko: "10:00～22:00"
+    hours_zhtw: "10:00～22:00"
+    open_late: true
     lat: 35.665291
     lng: 139.893204
     address: "千葉県浦安市北栄1-16-16 折本ビル"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kfc.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-122"
     type: "fastfood"
     name: "ケンタッキーフライドチキン イオン新浦安店"
+    name_en: "KFC AEON Shin-Urayasu"
     operator: "ケンタッキーフライドチキン"
     status: "open"
     hours: "9:00～21:00"
+    hours_en: "9:00～21:00"
+    hours_zh: "9:00～21:00"
+    hours_ko: "9:00～21:00"
+    hours_zhtw: "9:00～21:00"
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kfc.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-123"
     type: "fastfood"
     name: "モスバーガー マーヴ浦安店"
+    name_en: "MOS Burger Marv Urayasu"
     operator: "モスバーガー"
     status: "open"
     hours: "8:00～22:00"
+    hours_en: "8:00～22:00"
+    hours_zh: "8:00～22:00"
+    hours_ko: "8:00～22:00"
+    hours_zhtw: "8:00～22:00"
+    open_late: true
     lat: 35.666241
     lng: 139.893768
     address: "千葉県浦安市北栄1-12-13"
-    last_verified: "2026-06-29"
+    official_url: "https://www.mos.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-124"
     type: "fastfood"
     name: "モスバーガー イオン新浦安店"
+    name_en: "MOS Burger AEON Shin-Urayasu"
     operator: "モスバーガー"
     status: "open"
     hours: "9:00～21:00 ※L.O.20:30"
+    hours_en: "9:00～21:00 ※L.O.20:30"
+    hours_zh: "9:00～21:00 ※L.O.20:30"
+    hours_ko: "9:00～21:00 ※L.O.20:30"
+    hours_zhtw: "9:00～21:00 ※L.O.20:30"
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.mos.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-125"
     type: "fastfood"
     name: "バーガーキング 浦安駅前店"
+    name_en: "Burger King Urayasu Ekimae"
     operator: "バーガーキング"
     status: "open"
     hours: "9:00～22:00 ※要確認"
+    hours_en: "9:00～22:00 ※check"
+    hours_zh: "9:00～22:00 ※需确认"
+    hours_ko: "9:00～22:00 ※확인 필요"
+    hours_zhtw: "9:00～22:00 ※需確認"
+    open_late: true
     lat: 35.665016
     lng: 139.893082
     address: "千葉県浦安市北栄1-17-17"
-    last_verified: "2026-06-29"
+    official_url: "https://www.burgerking.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-126"
     type: "fastfood"
     name: "バーガーキング ニューコースト新浦安店"
+    name_en: "Burger King New Coast Shin-Urayasu"
     operator: "バーガーキング"
     status: "open"
     hours: "10:00～21:00 ※L.O.20:30"
+    hours_en: "10:00～21:00 ※L.O.20:30"
+    hours_zh: "10:00～21:00 ※L.O.20:30"
+    hours_ko: "10:00～21:00 ※L.O.20:30"
+    hours_zhtw: "10:00～21:00 ※L.O.20:30"
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.burgerking.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-127"
     type: "fastfood"
     name: "ウェンディーズ・ファーストキッチン 浦安西友店"
+    name_en: "Wendy's First Kitchen Urayasu Seiyu"
     operator: "ウェンディーズ・ファーストキッチン"
     status: "open"
     hours: "7:00～21:30 ※西友改装状況により要確認"
+    hours_en: "7:00～21:30 ※pending Seiyu reno, check"
+    hours_zh: "7:00～21:30 ※视西友改装, 需确认"
+    hours_ko: "7:00～21:30 ※세이유 리뉴얼에 따라 확인 필요"
+    hours_zhtw: "7:00～21:30 ※視西友改裝, 需確認"
+    open_early: true
     lat: 35.66581
     lng: 139.893646
     address: "千葉県浦安市北栄1-13-25 西友パート2 1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.wendys-firstkitchen.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-128"
     type: "fastfood"
     name: "サブウェイ イオン新浦安店"
+    name_en: "Subway AEON Shin-Urayasu"
     operator: "サブウェイ"
     status: "open"
     hours: "8:00～21:00 ※L.O.30分前"
+    hours_en: "8:00～21:00 ※L.O.30min before"
+    hours_zh: "8:00～21:00 ※L.O.30分钟前"
+    hours_ko: "8:00～21:00 ※L.O.30분 전"
+    hours_zhtw: "8:00～21:00 ※L.O.30分鐘前"
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.subway.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-129"
     type: "fastfood"
     name: "ミスタードーナツ 新浦安ショップ"
+    name_en: "Mister Donut Shin-Urayasu"
     operator: "ミスタードーナツ"
     status: "open"
     hours: "9:00～21:00"
+    hours_en: "9:00～21:00"
+    hours_zh: "9:00～21:00"
+    hours_ko: "9:00～21:00"
+    hours_zhtw: "9:00～21:00"
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 ショッパーズプラザ新浦安"
-    last_verified: "2026-06-29"
+    official_url: "https://md.mapion.co.jp/b/misterdonut/"
+    last_verified: "2026/6/29"
   - id: "poi-130"
     type: "fastfood"
     name: "はなまるうどん 浦安メトロピア店"
+    name_en: "Hanamaru Udon Urayasu Metropia"
     operator: "はなまるうどん"
     status: "open"
     hours: "平日 7:00～22:45／土日祝 8:00～22:00"
+    hours_en: "Weekdays 7:00～22:45／Sat/Sun/Hol 8:00～22:00"
+    hours_zh: "工作日 7:00～22:45／周末及节假日 8:00～22:00"
+    hours_ko: "평일 7:00～22:45／주말·공휴일 8:00～22:00"
+    hours_zhtw: "平日 7:00～22:45／週末及假日 8:00～22:00"
+    open_early: true
+    open_late: true
     lat: 35.665558
     lng: 139.892654
     address: "千葉県浦安市北栄1-13-1 東京メトロ浦安駅構内"
-    last_verified: "2026-06-29"
+    official_url: "https://www.hanamaruudon.com/"
+    last_verified: "2026/6/29"
   - id: "poi-131"
     type: "fastfood"
     name: "はなまるうどん イオン新浦安店"
+    name_en: "Hanamaru Udon AEON Shin-Urayasu"
     operator: "はなまるうどん"
     status: "open"
     hours: "10:00～22:00"
+    hours_en: "10:00～22:00"
+    hours_zh: "10:00～22:00"
+    hours_ko: "10:00～22:00"
+    hours_zhtw: "10:00～22:00"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.hanamaruudon.com/"
+    last_verified: "2026/6/29"
   - id: "poi-132"
     type: "fastfood"
     name: "はなまるうどん ニューコースト新浦安店"
+    name_en: "Hanamaru Udon New Coast Shin-Urayasu"
     operator: "はなまるうどん"
     status: "open"
     hours: "10:00～21:00 ※L.O.20:30"
+    hours_en: "10:00～21:00 ※L.O.20:30"
+    hours_zh: "10:00～21:00 ※L.O.20:30"
+    hours_ko: "10:00～21:00 ※L.O.20:30"
+    hours_zhtw: "10:00～21:00 ※L.O.20:30"
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1Fフードコート"
-    last_verified: "2026-06-29"
+    official_url: "https://www.hanamaruudon.com/"
+    last_verified: "2026/6/29"
   - id: "poi-133"
     type: "fastfood"
     name: "丸亀製麺 アトレ新浦安店"
+    name_en: "Marugame Seimen atre Shin-Urayasu"
     operator: "丸亀製麺"
     status: "open"
     hours: "11:00～22:00 ※L.O.閉店30分前"
+    hours_en: "11:00～22:00 ※L.O.close30min before"
+    hours_zh: "11:00～22:00 ※L.O.闭店30分钟前"
+    hours_ko: "11:00～22:00 ※L.O.폐점30분 전"
+    hours_zhtw: "11:00～22:00 ※L.O.閉店30分鐘前"
+    open_late: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
-    last_verified: "2026-06-29"
+    official_url: "https://stores.marugame.com/"
+    last_verified: "2026/6/29"
   - id: "poi-134"
     type: "fastfood"
     name: "吉野家 浦安駅前店"
+    name_en: "Yoshinoya Urayasu Ekimae"
     operator: "吉野家"
     status: "open"
     hours: "4:00～翌2:00"
+    hours_en: "4:00～next-day 2:00"
+    hours_zh: "4:00～次日2:00"
+    hours_ko: "4:00～익일 2:00"
+    hours_zhtw: "4:00～次日2:00"
+    open_early: true
+    open_late: true
     lat: 35.665112
     lng: 139.893066
     address: "千葉県浦安市北栄1-17-16"
-    last_verified: "2026-06-29"
+    official_url: "https://stores.yoshinoya.com/yoshinoya/"
+    last_verified: "2026/6/29"
   - id: "poi-135"
     type: "fastfood"
     name: "吉野家 イオン新浦安店"
+    name_en: "Yoshinoya AEON Shin-Urayasu"
     operator: "吉野家"
     status: "open"
     hours: "10:00～22:00 ※L.O.21:30"
+    hours_en: "10:00～22:00 ※L.O.21:30"
+    hours_zh: "10:00～22:00 ※L.O.21:30"
+    hours_ko: "10:00～22:00 ※L.O.21:30"
+    hours_zhtw: "10:00～22:00 ※L.O.21:30"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン浦安1Fフードコート"
-    last_verified: "2026-06-29"
+    official_url: "https://stores.yoshinoya.com/yoshinoya/"
+    last_verified: "2026/6/29"
   - id: "poi-136"
     type: "fastfood"
     name: "すき家 浦安駅前店"
+    name_en: "Sukiya Urayasu Ekimae"
     operator: "すき家"
     status: "open"
     hours: "4:00～翌3:00 ※3:00～4:00休業"
+    hours_en: "4:00～next-day 3:00 ※3:00～4:00closed"
+    hours_zh: "4:00～次日3:00 ※3:00～4:00休息"
+    hours_ko: "4:00～익일 3:00 ※3:00～4:00휴무"
+    hours_zhtw: "4:00～次日3:00 ※3:00～4:00休息"
+    open_early: true
+    open_late: true
     lat: 35.664814
     lng: 139.892456
     address: "千葉県浦安市猫実4-18-26 浦安サンライズビル1F"
-    last_verified: "2026-06-29"
+    official_url: "https://maps.sukiya.jp/jp/here.html"
+    last_verified: "2026/6/29"
   - id: "poi-137"
     type: "fastfood"
     name: "すき家 浦安堀江店"
+    name_en: "Sukiya Urayasu Horie"
     operator: "すき家"
     status: "open"
     hours: "4:00～翌3:00 ※3:00～4:00休業"
+    hours_en: "4:00～next-day 3:00 ※3:00～4:00closed"
+    hours_zh: "4:00～次日3:00 ※3:00～4:00休息"
+    hours_ko: "4:00～익일 3:00 ※3:00～4:00휴무"
+    hours_zhtw: "4:00～次日3:00 ※3:00～4:00休息"
+    open_early: true
+    open_late: true
     lat: 35.655205
     lng: 139.893875
     address: "千葉県浦安市堀江6-4-29 メゾン浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://maps.sukiya.jp/jp/here.html"
+    last_verified: "2026/6/29"
   - id: "poi-138"
     type: "fastfood"
     name: "松屋 浦安店"
+    name_en: "Matsuya Urayasu"
     operator: "松屋"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
     lat: 35.665279
     lng: 139.894302
     address: "千葉県浦安市北栄1-15-5 RECS浦安駅前"
-    last_verified: "2026-06-29"
+    official_url: "https://pkg.navitime.co.jp/matsuyafoods/"
+    last_verified: "2026/6/29"
   - id: "poi-139"
     type: "fastfood"
     name: "松屋 浦安富士見店"
+    name_en: "Matsuya Urayasu Fujimi"
     operator: "松屋"
     status: "open"
     hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
     lat: 35.646214
     lng: 139.887848
     address: "千葉県浦安市富士見3-16-9"
-    last_verified: "2026-06-29"
+    official_url: "https://pkg.navitime.co.jp/matsuyafoods/"
+    last_verified: "2026/6/29"
   - id: "poi-140"
     type: "fastfood"
     name: "かつや 千葉浦安店"
+    name_en: "Katsuya Chiba-Urayasu"
     operator: "かつや"
     status: "open"
     hours: "10:00～23:00"
+    hours_en: "10:00～23:00"
+    hours_zh: "10:00～23:00"
+    hours_ko: "10:00～23:00"
+    hours_zhtw: "10:00～23:00"
+    open_late: true
     lat: 35.659607
     lng: 139.90329
     address: "千葉県浦安市北栄4-2-12"
-    last_verified: "2026-06-29"
+    official_url: "https://www.katsuya.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-141"
     type: "fastfood"
     name: "からあげの鉄人＆カミナリステーキ ニューコースト新浦安店"
+    name_en: "Karaage no Tetsujin & Kaminari Steak New Coast Shin-Urayasu"
     operator: "からあげの鉄人＆カミナリステーキ"
     status: "open"
     hours: "10:00～21:00 ※L.O.20:30"
+    hours_en: "10:00～21:00 ※L.O.20:30"
+    hours_zh: "10:00～21:00 ※L.O.20:30"
+    hours_ko: "10:00～21:00 ※L.O.20:30"
+    hours_zhtw: "10:00～21:00 ※L.O.20:30"
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-142"
     type: "fastfood"
     name: "サーティワンアイスクリーム マーヴ浦安店"
+    name_en: "Baskin-Robbins Marv Urayasu"
     operator: "サーティワンアイスクリーム"
     status: "open"
     hours: "11:00～21:00"
+    hours_en: "11:00～21:00"
+    hours_zh: "11:00～21:00"
+    hours_ko: "11:00～21:00"
+    hours_zhtw: "11:00～21:00"
     lat: 35.666241
     lng: 139.893768
     address: "千葉県浦安市北栄1-12-13"
-    last_verified: "2026-06-29"
+    official_url: "https://www.31ice.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-143"
     type: "fastfood"
     name: "サーティワンアイスクリーム 新浦安アトレ店"
+    name_en: "Baskin-Robbins atre Shin-Urayasu"
     operator: "サーティワンアイスクリーム"
     status: "open"
     hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.31ice.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-144"
     type: "fastfood"
     name: "マクドナルド 舞浜イクスピアリ店"
+    name_en: "McDonald's Maihama Ikspiari"
     operator: "マクドナルド"
     status: "open"
     hours: "8:00～22:00"
+    hours_en: "8:00～22:00"
+    hours_zh: "8:00～22:00"
+    hours_ko: "8:00～22:00"
+    hours_zhtw: "8:00～22:00"
+    open_late: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F ザ・コートヤード"
-    last_verified: "2026-06-29"
+    official_url: "https://map.mcdonalds.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-145"
     type: "family_restaurant"
     name: "ガスト 浦安店"
+    name_en: "Gusto Urayasu"
     operator: "ガスト"
     status: "open"
     hours: "7:00～翌2:00"
+    hours_en: "7:00～next-day 2:00"
+    hours_zh: "7:00～次日2:00"
+    hours_ko: "7:00～익일 2:00"
+    hours_zhtw: "7:00～次日2:00"
+    open_early: true
+    open_late: true
     lat: 35.664562
     lng: 139.895493
     address: "千葉県浦安市北栄1丁目1-9"
-    last_verified: "2026-06-29"
+    official_url: "https://store-info.skylark.co.jp/gusto/"
+    last_verified: "2026/6/29"
   - id: "poi-146"
     type: "family_restaurant"
     name: "ジョナサン 浦安店"
+    name_en: "Jonathan's Urayasu"
     operator: "ジョナサン"
     status: "open"
     hours: "6:00～24:00"
+    hours_en: "6:00～24:00"
+    hours_zh: "6:00～24:00"
+    hours_ko: "6:00～24:00"
+    hours_zhtw: "6:00～24:00"
+    open_early: true
+    open_late: true
     lat: 35.652382
     lng: 139.899826
     address: "千葉県浦安市東野1丁目3-12 ナツミ・ガーデン1階"
-    last_verified: "2026-06-29"
+    official_url: "https://store-info.skylark.co.jp/jonathan/"
+    last_verified: "2026/6/29"
   - id: "poi-147"
     type: "family_restaurant"
     name: "バーミヤン 浦安今川店"
+    name_en: "Bamiyan Urayasu Imagawa"
     operator: "バーミヤン"
     status: "open"
     hours: "10:00～23:30"
+    hours_en: "10:00～23:30"
+    hours_zh: "10:00～23:30"
+    hours_ko: "10:00～23:30"
+    hours_zhtw: "10:00～23:30"
+    open_late: true
     lat: 35.643555
     lng: 139.905167
     address: "千葉県浦安市今川4丁目13-2"
-    last_verified: "2026-06-29"
+    official_url: "https://store-info.skylark.co.jp/bamiyan/"
+    last_verified: "2026/6/29"
   - id: "poi-148"
     type: "family_restaurant"
     name: "しゃぶ葉 浦安東野店"
+    name_en: "Shabu-yo Urayasu Higashino"
     operator: "しゃぶ葉"
     status: "open"
     hours: "平日 11:00～23:00／土日祝 10:30～23:00"
+    hours_en: "Weekdays 11:00～23:00／Sat/Sun/Hol 10:30～23:00"
+    hours_zh: "工作日 11:00～23:00／周末及节假日 10:30～23:00"
+    hours_ko: "평일 11:00～23:00／주말·공휴일 10:30～23:00"
+    hours_zhtw: "平日 11:00～23:00／週末及假日 10:30～23:00"
+    open_late: true
     lat: 35.647778
     lng: 139.892868
     address: "千葉県浦安市東野3丁目4-1 アクロスプラザ浦安東野1階"
-    last_verified: "2026-06-29"
+    official_url: "https://store-info.skylark.co.jp/shabuyo/"
+    last_verified: "2026/6/29"
   - id: "poi-149"
     type: "family_restaurant"
     name: "ロイヤルホスト 浦安店"
+    name_en: "Royal Host Urayasu"
     operator: "ロイヤルホスト"
     status: "open"
     hours: "月～金 9:00～23:00／土日祝 8:00～23:00"
+    hours_en: "Mon-Fri 9:00～23:00／Sat/Sun/Hol 8:00～23:00"
+    hours_zh: "周一至周五 9:00～23:00／周末及节假日 8:00～23:00"
+    hours_ko: "월~금 9:00～23:00／주말·공휴일 8:00～23:00"
+    hours_zhtw: "週一至週五 9:00～23:00／週末及假日 8:00～23:00"
+    open_late: true
     lat: 35.669964
     lng: 139.894394
     address: "千葉県浦安市北栄2-18-32"
-    last_verified: "2026-06-29"
+    official_url: "https://www.royalhost.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-150"
     type: "family_restaurant"
     name: "ココス 浦安店"
+    name_en: "COCO'S Urayasu"
     operator: "ココス"
     status: "open"
     hours: "6:00～翌4:00"
+    hours_en: "6:00～next-day 4:00"
+    hours_zh: "6:00～次日4:00"
+    hours_ko: "6:00～익일 4:00"
+    hours_zhtw: "6:00～次日4:00"
+    open_early: true
+    open_late: true
     lat: 35.659607
     lng: 139.902832
     address: "千葉県浦安市猫実1-21-26"
-    last_verified: "2026-06-29"
+    official_url: "https://maps.cocos-jpn.co.jp/jp/index.html"
+    last_verified: "2026/6/29"
   - id: "poi-151"
     type: "family_restaurant"
     name: "ビッグボーイ ライフガーデン新浦安店"
+    name_en: "Big Boy Life Garden Shin-Urayasu"
     operator: "ビッグボーイ"
     status: "open"
     hours: "10:00～翌2:00"
+    hours_en: "10:00～next-day 2:00"
+    hours_zh: "10:00～次日2:00"
+    hours_ko: "10:00～익일 2:00"
+    hours_zhtw: "10:00～次日2:00"
+    open_late: true
     lat: 35.643097
     lng: 139.900177
     address: "千葉県浦安市富岡3-2-1 2F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.bigboyjapan.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-152"
     type: "family_restaurant"
     name: "ジョリーパスタ ライフガーデン新浦安店"
+    name_en: "Jolly Pasta Life Garden Shin-Urayasu"
     operator: "ジョリーパスタ"
     status: "open"
     hours: "月～金 11:00～24:00／土日祝 10:00～24:00"
+    hours_en: "Mon-Fri 11:00～24:00／Sat/Sun/Hol 10:00～24:00"
+    hours_zh: "周一至周五 11:00～24:00／周末及节假日 10:00～24:00"
+    hours_ko: "월~금 11:00～24:00／주말·공휴일 10:00～24:00"
+    hours_zhtw: "週一至週五 11:00～24:00／週末及假日 10:00～24:00"
+    open_late: true
     lat: 35.643097
     lng: 139.900177
     address: "千葉県浦安市富岡3-2-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.jolly-pasta.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-153"
     type: "family_restaurant"
     name: "和食さと 浦安店"
+    name_en: "Washoku Sato Urayasu"
     operator: "和食さと"
     status: "open"
     hours: "11:00～24:00"
+    hours_en: "11:00～24:00"
+    hours_zh: "11:00～24:00"
+    hours_ko: "11:00～24:00"
+    hours_zhtw: "11:00～24:00"
+    open_late: true
     lat: 35.660442
     lng: 139.901535
     address: "千葉県浦安市猫実2丁目13-23"
-    last_verified: "2026-06-29"
+    official_url: "https://sato-res.com/"
+    last_verified: "2026/6/29"
   - id: "poi-154"
     type: "family_restaurant"
     name: "北海道生まれ 和食処とんでん 浦安店"
+    name_en: "Tonden Urayasu"
     operator: "とんでん"
     status: "open"
     hours: "11:00～23:30"
+    hours_en: "11:00～23:30"
+    hours_zh: "11:00～23:30"
+    hours_ko: "11:00～23:30"
+    hours_zhtw: "11:00～23:30"
+    open_late: true
     lat: 35.651943
     lng: 139.901123
     address: "千葉県浦安市東野1-1-41"
-    last_verified: "2026-06-29"
+    official_url: "https://www.tonden.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-155"
     type: "family_restaurant"
     name: "サイゼリヤ アトレ新浦安店"
+    name_en: "Saizeriya atre Shin-Urayasu"
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:30～翌3:00"
+    hours_en: "10:30～next-day 3:00"
+    hours_zh: "10:30～次日3:00"
+    hours_ko: "10:30～익일 3:00"
+    hours_zhtw: "10:30～次日3:00"
+    open_late: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安内"
-    last_verified: "2026-06-29"
+    official_url: "https://www.saizeriya.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-156"
     type: "family_restaurant"
     name: "サイゼリヤ 浦安駅前店"
+    name_en: "Saizeriya Urayasu Ekimae"
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:00～翌2:00"
+    hours_en: "10:00～next-day 2:00"
+    hours_zh: "10:00～次日2:00"
+    hours_ko: "10:00～익일 2:00"
+    hours_zhtw: "10:00～次日2:00"
+    open_late: true
     lat: 35.665981
     lng: 139.892609
     address: "千葉県浦安市当代島1-1-22 佃甚ビル2F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.saizeriya.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-157"
     type: "family_restaurant"
     name: "サイゼリヤ 舞浜駅前店"
+    name_en: "Saizeriya Maihama Ekimae"
     operator: "サイゼリヤ"
     status: "open"
     hours: "7:00～23:00"
+    hours_en: "7:00～23:00"
+    hours_zh: "7:00～23:00"
+    hours_ko: "7:00～23:00"
+    hours_zhtw: "7:00～23:00"
+    open_early: true
+    open_late: true
     lat: 35.636112
     lng: 139.884384
     address: "千葉県浦安市舞浜26-5 ホテルドリームゲート舞浜1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.saizeriya.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-158"
     type: "family_restaurant"
     name: "サイゼリヤ アクロスプラザ浦安東野店"
+    name_en: "Saizeriya Across Plaza Urayasu Higashino"
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:00～23:00"
+    hours_en: "10:00～23:00"
+    hours_zh: "10:00～23:00"
+    hours_ko: "10:00～23:00"
+    hours_zhtw: "10:00～23:00"
+    open_late: true
     lat: 35.647778
     lng: 139.892868
     address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.saizeriya.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-159"
     type: "family_restaurant"
     name: "サイゼリヤ ニューコースト新浦安店"
+    name_en: "Saizeriya New Coast Shin-Urayasu"
     operator: "サイゼリヤ"
     status: "open"
     hours: "10:00～22:00"
+    hours_en: "10:00～22:00"
+    hours_zh: "10:00～22:00"
+    hours_ko: "10:00～22:00"
+    hours_zhtw: "10:00～22:00"
+    open_late: true
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU 3F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.saizeriya.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-160"
     type: "family_restaurant"
     name: "サイゼリヤ 舞浜イクスピアリ店"
+    name_en: "Saizeriya Maihama Ikspiari"
     operator: "サイゼリヤ"
     status: "open"
     hours: "9:00～22:30"
+    hours_en: "9:00～22:30"
+    hours_zh: "9:00～22:30"
+    hours_ko: "9:00～22:30"
+    hours_zhtw: "9:00～22:30"
+    open_late: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F B’ウェイ"
-    last_verified: "2026-06-29"
+    official_url: "https://www.saizeriya.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-161"
     type: "sushi"
     name: "すし銚子丸 浦安店"
+    name_en: "Sushi Choshimaru Urayasu"
     operator: "すし銚子丸"
     status: "open"
     hours: "11:00～21:00目安"
+    hours_en: "11:00～21:00approx."
+    hours_zh: "11:00～21:00参考"
+    hours_ko: "11:00～21:00기준"
+    hours_zhtw: "11:00～21:00參考"
     lat: 35.661366
     lng: 139.900101
     address: "千葉県浦安市猫実2-33-24"
-    last_verified: "2026-06-29"
+    official_url: "https://www.choushimaru.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-162"
     type: "sushi"
     name: "はま寿司 ライフガーデン新浦安店"
+    name_en: "Hama Sushi Life Garden Shin-Urayasu"
     operator: "はま寿司"
     status: "open"
     hours: "月～金 11:00～24:00／土日祝 10:00～24:00"
+    hours_en: "Mon-Fri 11:00～24:00／Sat/Sun/Hol 10:00～24:00"
+    hours_zh: "周一至周五 11:00～24:00／周末及节假日 10:00～24:00"
+    hours_ko: "월~금 11:00～24:00／주말·공휴일 10:00～24:00"
+    hours_zhtw: "週一至週五 11:00～24:00／週末及假日 10:00～24:00"
+    open_late: true
     lat: 35.643097
     lng: 139.900177
     address: "千葉県浦安市富岡3-2-1"
-    last_verified: "2026-06-29"
+    official_url: "https://maps.hama-sushi.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-163"
     type: "sushi"
     name: "スシロー フォルテ新浦安店"
+    name_en: "Sushiro Forte Shin-Urayasu"
     operator: "スシロー"
     status: "open"
     hours: "月～金 11:00～23:00／土日祝 10:30～23:00"
+    hours_en: "Mon-Fri 11:00～23:00／Sat/Sun/Hol 10:30～23:00"
+    hours_zh: "周一至周五 11:00～23:00／周末及节假日 10:30～23:00"
+    hours_ko: "월~금 11:00～23:00／주말·공휴일 10:30～23:00"
+    hours_zhtw: "週一至週五 11:00～23:00／週末及假日 10:30～23:00"
+    open_late: true
     lat: 35.642681
     lng: 139.925476
     address: "千葉県浦安市日の出5-1-28 フォルテ新浦安2F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.akindo-sushiro.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-164"
     type: "ramen"
     name: "らあめん花月嵐 MONA新浦安店"
+    name_en: "Kagetsu Arashi Ramen MONA Shin-Urayasu"
     operator: "らあめん花月嵐"
     status: "open"
     hours: "11:00～23:00（L.O.22:15）"
+    hours_en: "11:00～23:00（L.O.22:15）"
+    hours_zh: "11:00～23:00（L.O.22:15）"
+    hours_ko: "11:00～23:00（L.O.22:15）"
+    hours_zhtw: "11:00～23:00（L.O.22:15）"
+    open_late: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安4F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kagetsu.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-165"
     type: "ramen"
     name: "らあめん花月嵐 浦安店"
+    name_en: "Kagetsu Arashi Ramen Urayasu"
     operator: "らあめん花月嵐"
     status: "open"
     hours: "11:00～要確認"
+    hours_en: "11:00～check"
+    hours_zh: "11:00～需确认"
+    hours_ko: "11:00～확인 필요"
+    hours_zhtw: "11:00～需確認"
     lat: 35.668987
     lng: 139.893723
     address: "千葉県浦安市当代島2-5-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.kagetsu.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-166"
     type: "ramen"
     name: "らぁ麺はやし田 アトレ新浦安店"
+    name_en: "Ramen Hayashida atre Shin-Urayasu"
     operator: "らぁ麺はやし田"
     status: "open"
     hours: "11:00～23:00（L.O.22:55）"
+    hours_en: "11:00～23:00（L.O.22:55）"
+    hours_zh: "11:00～23:00（L.O.22:55）"
+    hours_ko: "11:00～23:00（L.O.22:55）"
+    hours_zhtw: "11:00～23:00（L.O.22:55）"
+    open_late: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-167"
     type: "ramen"
     name: "日高屋 浦安店"
+    name_en: "Hidakaya Urayasu"
     operator: "日高屋"
     status: "open"
     hours: "曜日別変動あり ※概ね10:00～24:00前後"
+    hours_en: "Varies by day ※approx.10:00～24:00approx."
+    hours_zh: "按星期变动 ※大致10:00～24:00前后"
+    hours_ko: "요일별 변동 ※대략10:00～24:00전후"
+    hours_zhtw: "依星期變動 ※大致10:00～24:00前後"
+    open_late: true
     lat: 35.665203
     lng: 139.893051
     address: "千葉県浦安市北栄1-17-15"
-    last_verified: "2026-06-29"
+    official_url: "https://hidakaya.hiday.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-168"
     type: "ramen"
     name: "ラーメンたかし屋 浦安店"
+    name_en: "Ramen Takashiya Urayasu"
     operator: "たかし屋"
     status: "open"
     hours: "11:00～翌5:00"
+    hours_en: "11:00～next-day 5:00"
+    hours_zh: "11:00～次日5:00"
+    hours_ko: "11:00～익일 5:00"
+    hours_zhtw: "11:00～次日5:00"
+    open_late: true
     lat: 35.665565
     lng: 139.894089
     address: "千葉県浦安市北栄1-15-23"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-169"
     type: "ramen"
     name: "とんこつらーめん おんごろや"
+    name_en: "Ongoroya (Tonkotsu Ramen)"
     operator: "おんごろや"
     status: "open"
     hours: "月火木金土日 17:30～23:45／水曜・第1第3火曜定休"
+    hours_en: "Mon/Tue/Thu/FriSat/Sun 17:30～23:45／Wed・1st/3rd Tueclosed"
+    hours_zh: "周一二四五周末 17:30～23:45／周三・每周一第1·3周二例休"
+    hours_ko: "월화목금주말 17:30～23:45／수요일・첫째·셋째 화정기휴무"
+    hours_zhtw: "週一二四五週末 17:30～23:45／週三・每週一第1·3週二例休"
+    open_late: true
     lat: 35.665043
     lng: 139.889664
     address: "千葉県浦安市猫実5-12-12"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-170"
     type: "ramen"
     name: "麺屋 土竜 新浦安"
+    name_en: "Menya Mogura Shin-Urayasu"
     operator: "麺屋土竜"
     status: "open"
     hours: "平日 11:30～22:00／土日祝 11:00～22:00"
+    hours_en: "Weekdays 11:30～22:00／Sat/Sun/Hol 11:00～22:00"
+    hours_zh: "工作日 11:30～22:00／周末及节假日 11:00～22:00"
+    hours_ko: "평일 11:30～22:00／주말·공휴일 11:00～22:00"
+    hours_zhtw: "平日 11:30～22:00／週末及假日 11:00～22:00"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-171"
     type: "ramen"
     name: "麺屋真星"
+    name_en: "Menya Masei"
     operator: "麺屋真星"
     status: "open"
     hours: "昼 11:00～14:10最終入店／夜 月～土 17:00～21:25最終入店、日祝 17:00～19:25最終入店"
+    hours_en: "Lunch  11:00～14:10last entry／Dinner  Mon-Sat 17:00～21:25last entry, Sun/Hol 17:00～19:25last entry"
+    hours_zh: "午间  11:00～14:10最后入店／晚间  周一至周六 17:00～21:25最后入店, 周日及节假日 17:00～19:25最后入店"
+    hours_ko: "점심  11:00～14:10마지막 입장／저녁  월~토 17:00～21:25마지막 입장, 일·공휴일 17:00～19:25마지막 입장"
+    hours_zhtw: "午間  11:00～14:10最後入店／晚間  週一至週六 17:00～21:25最後入店, 週日及假日 17:00～19:25最後入店"
     lat: 35.670631
     lng: 139.894714
     address: "千葉県浦安市北栄2-19-26"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-172"
     type: "ramen"
     name: "中国ラーメン揚州商人 イオン新浦安店"
+    name_en: "Yoshu Shonin Chinese Ramen AEON Shin-Urayasu"
     operator: "揚州商人"
     status: "open"
     hours: "11:00～23:30（L.O.23:00）"
+    hours_en: "11:00～23:30（L.O.23:00）"
+    hours_zh: "11:00～23:30（L.O.23:00）"
+    hours_ko: "11:00～23:30（L.O.23:00）"
+    hours_zhtw: "11:00～23:30（L.O.23:00）"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.yoshu.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-173"
     type: "yakiniku"
     name: "焼肉きんぐ マーヴ浦安店"
+    name_en: "Yakiniku King Marv Urayasu"
     operator: "焼肉きんぐ"
     status: "open"
     hours: "平日 17:00～23:00／土日祝 11:00～23:00"
+    hours_en: "Weekdays 17:00～23:00／Sat/Sun/Hol 11:00～23:00"
+    hours_zh: "工作日 17:00～23:00／周末及节假日 11:00～23:00"
+    hours_ko: "평일 17:00～23:00／주말·공휴일 11:00～23:00"
+    hours_zhtw: "平日 17:00～23:00／週末及假日 11:00～23:00"
+    open_late: true
     lat: 35.665146
     lng: 139.891632
     address: "千葉県浦安市当代島1-17-4"
-    last_verified: "2026-06-29"
+    official_url: "https://www.yakiniku-king.jp/shop/"
+    last_verified: "2026/6/29"
   - id: "poi-174"
     type: "yakiniku"
     name: "国産牛焼肉くいどん 浦安店"
+    name_en: "Kuidon Yakiniku Urayasu"
     operator: "くいどん"
     status: "open"
     hours: "平日 11:00～15:00・17:00～22:00／土日祝 11:00～22:00"
+    hours_en: "Weekdays 11:00～15:00・17:00～22:00／Sat/Sun/Hol 11:00～22:00"
+    hours_zh: "工作日 11:00～15:00・17:00～22:00／周末及节假日 11:00～22:00"
+    hours_ko: "평일 11:00～15:00・17:00～22:00／주말·공휴일 11:00～22:00"
+    hours_zhtw: "平日 11:00～15:00・17:00～22:00／週末及假日 11:00～22:00"
+    open_late: true
     lat: 35.647778
     lng: 139.892868
     address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野2F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-175"
     type: "yakiniku"
     name: "牛角 浦安店"
+    name_en: "Gyukaku Urayasu"
     operator: "牛角"
     status: "open"
     hours: "月火水木日 17:00～24:00／金土 17:00～翌2:00"
+    hours_en: "Mon-Thu,Sun 17:00～24:00／Fri/Sat 17:00～next-day 2:00"
+    hours_zh: "周一至周四及周日 17:00～24:00／周五六 17:00～次日2:00"
+    hours_ko: "월~목·일 17:00～24:00／금토 17:00～익일 2:00"
+    hours_zhtw: "週一至週四及週日 17:00～24:00／週五六 17:00～次日2:00"
+    open_late: true
     lat: 35.665184
     lng: 139.894485
     address: "千葉県浦安市北栄1-16-30 浦安小徳ビル1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.gyukaku.ne.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-176"
     type: "yakiniku"
     name: "牛角 イオン新浦安店"
+    name_en: "Gyukaku AEON Shin-Urayasu"
     operator: "牛角"
     status: "open"
     hours: "11:30～24:00"
+    hours_en: "11:30～24:00"
+    hours_zh: "11:30～24:00"
+    hours_ko: "11:30～24:00"
+    hours_zhtw: "11:30～24:00"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.gyukaku.ne.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-177"
     type: "yakiniku"
     name: "焼肉新羅 浦安店"
+    name_en: "Yakiniku Shinra Urayasu"
     operator: "焼肉新羅"
     status: "open"
     hours: "11:00～15:00／17:00～24:00 ※日祝は夜23:00までの情報あり"
+    hours_en: "11:00～15:00／17:00～24:00 ※Sun/Hol Dinner 23:00until (reported)"
+    hours_zh: "11:00～15:00／17:00～24:00 ※周日及节假日 晚间 23:00至(有信息)"
+    hours_ko: "11:00～15:00／17:00～24:00 ※일·공휴일 저녁 23:00까지 (정보)"
+    hours_zhtw: "11:00～15:00／17:00～24:00 ※週日及假日 晚間 23:00至(有資訊)"
+    open_late: true
     lat: 35.664478
     lng: 139.895676
     address: "千葉県浦安市北栄1-1-7 ブランシェ1F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-178"
     type: "yakiniku"
     name: "焼肉新羅 新浦安本店"
+    name_en: "Yakiniku Shinra Shin-Urayasu Main Store"
     operator: "焼肉新羅"
     status: "open"
     hours: "11:00～15:00／月～土 15:00～24:00、日 15:00～23:00"
+    hours_en: "11:00～15:00／Mon-Sat 15:00～24:00, Sun 15:00～23:00"
+    hours_zh: "11:00～15:00／周一至周六 15:00～24:00, 周日 15:00～23:00"
+    hours_ko: "11:00～15:00／월~토 15:00～24:00, 일 15:00～23:00"
+    hours_zhtw: "11:00～15:00／週一至週六 15:00～24:00, 週日 15:00～23:00"
+    open_late: true
     lat: 35.640732
     lng: 139.926575
     address: "千葉県浦安市明海5-6-8 ラフィネス新浦安ベイモールA"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-179"
     type: "yakiniku"
     name: "焼肉新羅 新浦安駅前 MONA店"
+    name_en: "Yakiniku Shinra Shin-Urayasu MONA"
     operator: "焼肉新羅"
     status: "open"
     hours: "11:00～23:00（L.O.22:30）"
+    hours_en: "11:00～23:00（L.O.22:30）"
+    hours_zh: "11:00～23:00（L.O.22:30）"
+    hours_ko: "11:00～23:00（L.O.22:30）"
+    hours_zhtw: "11:00～23:00（L.O.22:30）"
+    open_late: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安4F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-180"
     type: "yakiniku"
     name: "焼肉トラジ イクスピアリ店"
+    name_en: "Yakiniku Toraji Ikspiari"
     operator: "焼肉トラジ"
     status: "open"
     hours: "ランチ 11:00～16:00／ディナー 16:00～22:30"
+    hours_en: "Lunch 11:00～16:00／Dinner 16:00～22:30"
+    hours_zh: "午餐 11:00～16:00／晚餐 16:00～22:30"
+    hours_ko: "런치 11:00～16:00／디너 16:00～22:30"
+    hours_zhtw: "午餐 11:00～16:00／晚餐 16:00～22:30"
+    open_late: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ3F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.toraji.com/"
+    last_verified: "2026/6/29"
   - id: "poi-181"
     type: "yakiniku"
     name: "焼肉レストラン南大門 浦安本店"
+    name_en: "Namdaemun Yakiniku Urayasu Main Store"
     operator: "南大門"
     status: "open"
     hours: "11:30～15:00／17:00～23:00"
+    hours_en: "11:30～15:00／17:00～23:00"
+    hours_zh: "11:30～15:00／17:00～23:00"
+    hours_ko: "11:30～15:00／17:00～23:00"
+    hours_zhtw: "11:30～15:00／17:00～23:00"
+    open_late: true
     lat: 35.665291
     lng: 139.893021
     address: "千葉県浦安市北栄1-17-14 加納ビル2F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-182"
     type: "casual_restaurant"
     name: "ポポラマーマ 浦安店"
+    name_en: "Popolamama Urayasu"
     operator: "ポポラマーマ"
     status: "open"
     hours: "11:00～22:30（L.O.22:00）"
+    hours_en: "11:00～22:30（L.O.22:00）"
+    hours_zh: "11:00～22:30（L.O.22:00）"
+    hours_ko: "11:00～22:30（L.O.22:00）"
+    hours_zhtw: "11:00～22:30（L.O.22:00）"
+    open_late: true
     lat: 35.666065
     lng: 139.892853
     address: "千葉県浦安市北栄1-13-7 光雄マンション2階"
-    last_verified: "2026-06-29"
+    official_url: "https://www.popolamama.com/"
+    last_verified: "2026/6/29"
   - id: "poi-183"
     type: "casual_restaurant"
     name: "ポポラマーマ イオン新浦安店"
+    name_en: "Popolamama AEON Shin-Urayasu"
     operator: "ポポラマーマ"
     status: "open"
     hours: "11:00～22:30（L.O.22:00）"
+    hours_en: "11:00～22:30（L.O.22:00）"
+    hours_zh: "11:00～22:30（L.O.22:00）"
+    hours_ko: "11:00～22:30（L.O.22:00）"
+    hours_zhtw: "11:00～22:30（L.O.22:00）"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安2階"
-    last_verified: "2026-06-29"
+    official_url: "https://www.popolamama.com/"
+    last_verified: "2026/6/29"
   - id: "poi-184"
     type: "casual_restaurant"
     name: "ポポラマーマ ニューコースト新浦安店"
+    name_en: "Popolamama New Coast Shin-Urayasu"
     operator: "ポポラマーマ"
     status: "open"
     hours: "11:00～22:00（L.O.21:00）"
+    hours_en: "11:00～22:00（L.O.21:00）"
+    hours_zh: "11:00～22:00（L.O.21:00）"
+    hours_ko: "11:00～22:00（L.O.21:00）"
+    hours_zhtw: "11:00～22:00（L.O.21:00）"
+    open_late: true
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU 3F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.popolamama.com/"
+    last_verified: "2026/6/29"
   - id: "poi-185"
     type: "casual_restaurant"
     name: "Italian Kitchen VANSAN 浦安店"
+    name_en: "Italian Kitchen VANSAN Urayasu"
     operator: "VANSAN"
     status: "open"
     hours: "11:00～23:00"
+    hours_en: "11:00～23:00"
+    hours_zh: "11:00～23:00"
+    hours_ko: "11:00～23:00"
+    hours_zhtw: "11:00～23:00"
+    open_late: true
     lat: 35.663998
     lng: 139.896484
     address: "千葉県浦安市北栄3-27-13"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-186"
     type: "casual_restaurant"
     name: "Italian Kitchen VANSAN イオン新浦安店"
+    name_en: "Italian Kitchen VANSAN AEON Shin-Urayasu"
     operator: "VANSAN"
     status: "open"
     hours: "11:00～23:00"
+    hours_en: "11:00～23:00"
+    hours_zh: "11:00～23:00"
+    hours_ko: "11:00～23:00"
+    hours_zhtw: "11:00～23:00"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4 イオン新浦安4F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-187"
     type: "sushi"
     name: "ABURI百貫 イオン新浦安店"
+    name_en: "Aburi Hyakkan AEON Shin-Urayasu"
     operator: "ABURI百貫"
     status: "open"
     hours: "11:00～23:00（L.O.22:00）"
+    hours_en: "11:00～23:00（L.O.22:00）"
+    hours_zh: "11:00～23:00（L.O.22:00）"
+    hours_ko: "11:00～23:00（L.O.22:00）"
+    hours_zhtw: "11:00～23:00（L.O.22:00）"
+    open_late: true
     lat: 35.649055
     lng: 139.914963
     address: "千葉県浦安市入船1-4-1 イオン新浦安4階"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-188"
     type: "cafe"
     name: "スターバックス コーヒー 浦安店"
+    name_en: "Starbucks Coffee Urayasu"
     operator: "スターバックス"
     status: "open"
     hours: "月～金 07:00～22:00／土日祝 08:00～22:00"
+    hours_en: "Mon-Fri 07:00～22:00／Sat/Sun/Hol 08:00～22:00"
+    hours_zh: "周一至周五 07:00～22:00／周末及节假日 08:00～22:00"
+    hours_ko: "월~금 07:00～22:00／주말·공휴일 08:00～22:00"
+    hours_zhtw: "週一至週五 07:00～22:00／週末及假日 08:00～22:00"
+    open_early: true
+    open_late: true
     lat: 35.665394
     lng: 139.893875
     address: "千葉県浦安市北栄1-15-9 寿ビル"
-    last_verified: "2026-06-29"
+    official_url: "https://store.starbucks.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-189"
     type: "cafe"
     name: "スターバックス コーヒー マーヴ浦安店"
+    name_en: "Starbucks Coffee Marv Urayasu"
     operator: "スターバックス"
     status: "open"
     hours: "07:00～22:00"
+    hours_en: "07:00～22:00"
+    hours_zh: "07:00～22:00"
+    hours_ko: "07:00～22:00"
+    hours_zhtw: "07:00～22:00"
+    open_early: true
+    open_late: true
     lat: 35.665276
     lng: 139.891998
     address: "千葉県浦安市当代島1-1-4 マーヴ浦安"
-    last_verified: "2026-06-29"
+    official_url: "https://store.starbucks.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-190"
     type: "cafe"
     name: "スターバックス コーヒー アトレ新浦安店"
+    name_en: "Starbucks Coffee atre Shin-Urayasu"
     operator: "スターバックス"
     status: "open"
     hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1 アトレ新浦安"
-    last_verified: "2026-06-29"
+    official_url: "https://store.starbucks.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-191"
     type: "cafe"
     name: "スターバックス コーヒー MONA新浦安店"
+    name_en: "Starbucks Coffee MONA Shin-Urayasu"
     operator: "スターバックス"
     status: "open"
     hours: "07:00～22:00"
+    hours_en: "07:00～22:00"
+    hours_zh: "07:00～22:00"
+    hours_ko: "07:00～22:00"
+    hours_zhtw: "07:00～22:00"
+    open_early: true
+    open_late: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安"
-    last_verified: "2026-06-29"
+    official_url: "https://store.starbucks.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-192"
     type: "cafe"
     name: "スターバックス コーヒー 舞浜駅店"
+    name_en: "Starbucks Coffee Maihama Station"
     operator: "スターバックス"
     status: "open"
     hours: "07:00～22:00"
+    hours_en: "07:00～22:00"
+    hours_zh: "07:00～22:00"
+    hours_ko: "07:00～22:00"
+    hours_zhtw: "07:00～22:00"
+    open_early: true
+    open_late: true
     lat: 35.636112
     lng: 139.884384
     address: "千葉県浦安市舞浜26-5 JR舞浜駅南口改札外"
-    last_verified: "2026-06-29"
+    official_url: "https://store.starbucks.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-193"
     type: "cafe"
     name: "スターバックス コーヒー 舞浜 イクスピアリ店"
+    name_en: "Starbucks Coffee Maihama Ikspiari"
     operator: "スターバックス"
     status: "open"
     hours: "08:00～22:00"
+    hours_en: "08:00～22:00"
+    hours_zh: "08:00～22:00"
+    hours_ko: "08:00～22:00"
+    hours_zhtw: "08:00～22:00"
+    open_late: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F"
-    last_verified: "2026-06-29"
+    official_url: "https://store.starbucks.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-194"
     type: "cafe"
     name: "スターバックス コーヒー 舞浜 イクスピアリ2F トレイダーズ・パッセージ店"
+    name_en: "Starbucks Coffee Maihama Ikspiari Trader's Passage"
     operator: "スターバックス"
     status: "open"
     hours: "月～金 10:00～22:00／土日祝 08:00～22:00"
+    hours_en: "Mon-Fri 10:00～22:00／Sat/Sun/Hol 08:00～22:00"
+    hours_zh: "周一至周五 10:00～22:00／周末及节假日 08:00～22:00"
+    hours_ko: "월~금 10:00～22:00／주말·공휴일 08:00～22:00"
+    hours_zhtw: "週一至週五 10:00～22:00／週末及假日 08:00～22:00"
+    open_late: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F"
-    last_verified: "2026-06-29"
+    official_url: "https://store.starbucks.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-195"
     type: "cafe"
     name: "ドトールコーヒーショップ 浦安南口店"
+    name_en: "Doutor Coffee Urayasu South Exit"
     operator: "ドトール"
     status: "open"
     hours: "平日 06:45～21:45／土日祝 07:00～21:30"
+    hours_en: "Weekdays 06:45～21:45／Sat/Sun/Hol 07:00～21:30"
+    hours_zh: "工作日 06:45～21:45／周末及节假日 07:00～21:30"
+    hours_ko: "평일 06:45～21:45／주말·공휴일 07:00～21:30"
+    hours_zhtw: "平日 06:45～21:45／週末及假日 07:00～21:30"
+    open_early: true
     lat: 35.66581
     lng: 139.893646
     address: "千葉県浦安市北栄1-13-25 西友浦安店パート2館1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.doutor.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-196"
     type: "cafe"
     name: "ドトールコーヒーショップ アトレ新浦安店"
+    name_en: "Doutor Coffee atre Shin-Urayasu"
     operator: "ドトール"
     status: "open"
     hours: "07:00～21:00"
+    hours_en: "07:00～21:00"
+    hours_zh: "07:00～21:00"
+    hours_ko: "07:00～21:00"
+    hours_zhtw: "07:00～21:00"
+    open_early: true
     lat: 35.64994
     lng: 139.91272
     address: "千葉県浦安市入船1-1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.doutor.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-197"
     type: "cafe"
     name: "ドトールコーヒーショップ 新浦安モナ店"
+    name_en: "Doutor Coffee Shin-Urayasu MONA"
     operator: "ドトール"
     status: "open"
     hours: "07:30～22:00"
+    hours_en: "07:30～22:00"
+    hours_zh: "07:30～22:00"
+    hours_ko: "07:30～22:00"
+    hours_zhtw: "07:30～22:00"
+    open_late: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安"
-    last_verified: "2026-06-29"
+    official_url: "https://www.doutor.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-198"
     type: "cafe"
     name: "ドトールコーヒーショップ 順天堂大学医学部附属浦安病院店"
+    name_en: "Doutor Coffee Juntendo Urayasu Hospital"
     operator: "ドトール"
     status: "open"
     hours: "平日 07:30～17:00／土曜 07:30～15:00 ※第2土曜休業"
+    hours_en: "Weekdays 07:30～17:00／Sat 07:30～15:00 ※2nd Satclosed"
+    hours_zh: "工作日 07:30～17:00／周六 07:30～15:00 ※每周一第2周六休息"
+    hours_ko: "평일 07:30～17:00／토요일 07:30～15:00 ※둘째 토휴무"
+    hours_zhtw: "平日 07:30～17:00／週六 07:30～15:00 ※每週一第2週六休息"
     lat: 35.645916
     lng: 139.906921
     address: "千葉県浦安市富岡2-1-1"
-    last_verified: "2026-06-29"
+    official_url: "https://www.doutor.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-199"
     type: "cafe"
     name: "コメダ珈琲店 浦安駅前店"
+    name_en: "Komeda's Coffee Urayasu Ekimae"
     operator: "コメダ珈琲店"
     status: "open"
     hours: "06:30～22:30"
+    hours_en: "06:30～22:30"
+    hours_zh: "06:30～22:30"
+    hours_ko: "06:30～22:30"
+    hours_zhtw: "06:30～22:30"
+    open_early: true
+    open_late: true
     lat: 35.664791
     lng: 139.89209
     address: "千葉県浦安市猫実5-18-16 2F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.komeda.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-200"
     type: "cafe"
     name: "コメダ珈琲店 新浦安店"
+    name_en: "Komeda's Coffee Shin-Urayasu"
     operator: "コメダ珈琲店"
     status: "open"
     hours: "06:30～23:00"
+    hours_en: "06:30～23:00"
+    hours_zh: "06:30～23:00"
+    hours_ko: "06:30～23:00"
+    hours_zhtw: "06:30～23:00"
+    open_early: true
+    open_late: true
     lat: 35.648975
     lng: 139.913177
     address: "千葉県浦安市入船1-5-1 MONA新浦安B館2F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.komeda.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-201"
     type: "cafe"
     name: "タリーズコーヒー ニューコースト新浦安店"
+    name_en: "Tully's Coffee New Coast Shin-Urayasu"
     operator: "タリーズコーヒー"
     status: "open"
     hours: "09:00～21:00"
+    hours_en: "09:00～21:00"
+    hours_zh: "09:00～21:00"
+    hours_ko: "09:00～21:00"
+    hours_zhtw: "09:00～21:00"
     lat: 35.643726
     lng: 139.922821
     address: "千葉県浦安市明海4-1-1 NEW COAST SHIN-URAYASU 1F"
-    last_verified: "2026-06-29"
+    official_url: "https://www.tullys.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-202"
     type: "cafe"
     name: "タリーズコーヒー イクスピアリ店"
+    name_en: "Tully's Coffee Ikspiari"
     operator: "タリーズコーヒー"
     status: "open"
     hours: "08:00～22:00"
+    hours_en: "08:00～22:00"
+    hours_zh: "08:00～22:00"
+    hours_ko: "08:00～22:00"
+    hours_zhtw: "08:00～22:00"
+    open_late: true
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F ガーデンサイト"
-    last_verified: "2026-06-29"
+    official_url: "https://www.tullys.co.jp/"
+    last_verified: "2026/6/29"
   - id: "poi-203"
     type: "cafe"
     name: "BECK'S COFFEE SHOP 舞浜店"
+    name_en: "BECK'S COFFEE SHOP Maihama"
     operator: "BECK'S COFFEE SHOP"
     status: "open"
     hours: "07:00～22:00"
+    hours_en: "07:00～22:00"
+    hours_zh: "07:00～22:00"
+    hours_ko: "07:00～22:00"
+    hours_zhtw: "07:00～22:00"
+    open_early: true
+    open_late: true
     lat: 35.636112
     lng: 139.884384
     address: "千葉県浦安市舞浜26-5 JR舞浜駅 改札外コンコース"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "poi-204"
     type: "cafe"
     name: "nana's green tea イクスピアリ店"
+    name_en: "nana's green tea Ikspiari"
     operator: "nana's green tea"
     status: "open"
     hours: "10:00～21:00目安"
+    hours_en: "10:00～21:00approx."
+    hours_zh: "10:00～21:00参考"
+    hours_ko: "10:00～21:00기준"
+    hours_zhtw: "10:00～21:00參考"
     lat: 35.631264
     lng: 139.874329
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
   - id: "seims-maihama"
     type: "drugstore"
     name: "ドラッグセイムス 舞浜店"
+    name_en: "Drug Seims Maihama"
     operator: "ドラッグセイムス"
     status: "open"
     hours: "8:00-23:45（調剤は月-土10:00-14:00/15:00-19:00・日祝休）"
+    hours_en: "8:00-23:45（Rx Mon-Sat10:00-14:00/15:00-19:00・Sun/Hol closed）"
+    hours_zh: "8:00-23:45（调剂 周一-周六10:00-14:00/15:00-19:00・周日及节假日休）"
+    hours_ko: "8:00-23:45（조제 월-토10:00-14:00/15:00-19:00・일·공휴일 휴무）"
+    hours_zhtw: "8:00-23:45（調劑 週一-週六10:00-14:00/15:00-19:00・週日及假日休）"
+    open_late: true
+    baby_goods: true
     lat: 35.644321
     lng: 139.888519
     address: "千葉県浦安市富士見5-7-40"
     official_url: "https://store.seims.co.jp/map/9849/"
-    last_verified: "2026-06-29"
+    last_verified: "2026/6/29"
     note: "変なホテル舞浜 東京ベイの近隣ドラッグストア（深夜23:45まで）。富士見にウエルシアは無く旧記述の誤りを是正"
+  - id: "daiso-ekimae"
+    type: "hundred_yen"
+    name: "ダイソー 浦安駅前店"
+    name_en: "Daiso Urayasu Ekimae"
+    operator: "ダイソー"
+    status: "open"
+    hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    lat: 35.66486
+    lng: 139.89415
+    address: "千葉県浦安市北栄1-16-5 サカゼン浦安2F"
+    official_url: "https://www.daiso-sangyo.co.jp/shop"
+    last_verified: "2026/7/9"
+    note: "浦安駅東口至近の100円ショップ"
+  - id: "daiso-aeon"
+    type: "hundred_yen"
+    name: "ダイソー イオン新浦安店"
+    name_en: "Daiso AEON Shin-Urayasu"
+    operator: "ダイソー"
+    status: "open"
+    hours: "9:00～21:00"
+    hours_en: "9:00～21:00"
+    hours_zh: "9:00～21:00"
+    hours_ko: "9:00～21:00"
+    hours_zhtw: "9:00～21:00"
+    lat: 35.649055
+    lng: 139.914963
+    address: "千葉県浦安市入船1-4-1 イオンスタイル新浦安3F"
+    official_url: "https://www.daiso-sangyo.co.jp/shop"
+    last_verified: "2026/7/9"
+  - id: "daiso-newcoast"
+    type: "hundred_yen"
+    name: "ダイソー ニューコースト新浦安店"
+    name_en: "Daiso New Coast Shin-Urayasu"
+    operator: "ダイソー"
+    status: "open"
+    hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    lat: 35.643726
+    lng: 139.922821
+    address: "千葉県浦安市明海4-1-1 ニューコースト新浦安3F"
+    official_url: "https://www.daiso-sangyo.co.jp/shop"
+    last_verified: "2026/7/9"
+  - id: "daiso-ikspiari"
+    type: "hundred_yen"
+    name: "ダイソー イクスピアリ店"
+    name_en: "Daiso Ikspiari"
+    operator: "ダイソー"
+    status: "open"
+    hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    lat: 35.631264
+    lng: 139.874329
+    address: "千葉県浦安市舞浜1-4 イクスピアリ3F"
+    official_url: "https://www.daiso-sangyo.co.jp/shop"
+    last_verified: "2026/7/9"
+    note: "TDR徒歩圏の100円ショップ（イクスピアリ内）"
+  - id: "seria-mona"
+    type: "hundred_yen"
+    name: "セリア MONA新浦安店"
+    name_en: "Seria MONA Shin-Urayasu"
+    operator: "セリア"
+    status: "open"
+    hours: "10:00～20:30"
+    hours_en: "10:00～20:30"
+    hours_zh: "10:00～20:30"
+    hours_ko: "10:00～20:30"
+    hours_zhtw: "10:00～20:30"
+    lat: 35.648975
+    lng: 139.913177
+    address: "千葉県浦安市入船1-5-1 MONA新浦安B館3F"
+    official_url: "https://www.seria-group.com/shop/"
+    last_verified: "2026/7/9"
+  - id: "seria-seiyu"
+    type: "hundred_yen"
+    name: "セリア 西友浦安店"
+    name_en: "Seria Seiyu Urayasu"
+    operator: "セリア"
+    status: "open"
+    hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    lat: 35.665432
+    lng: 139.894836
+    address: "千葉県浦安市北栄1-14-1 西友浦安店4F"
+    official_url: "https://www.seria-group.com/shop/"
+    last_verified: "2026/7/9"
+    note: "西友→トライアル西友への改装後の在館・営業時間は要確認"
+  - id: "watts-maruetsu"
+    type: "hundred_yen"
+    name: "ワッツウィズ 浦安マルエツ店"
+    name_en: "Watts With Urayasu Maruetsu"
+    operator: "ワッツ"
+    status: "open"
+    hours: "10:00～22:00"
+    hours_en: "10:00～22:00"
+    hours_zh: "10:00～22:00"
+    hours_ko: "10:00～22:00"
+    hours_zhtw: "10:00～22:00"
+    open_late: true
+    lat: 35.652317
+    lng: 139.891922
+    address: "千葉県浦安市富士見1-3-20 マルエツ浦安店2F"
+    official_url: "https://www.watts-jp.com/"
+    last_verified: "2026/7/9"
+  - id: "watts-higashino"
+    type: "hundred_yen"
+    name: "ワッツ 浦安東野マツモトキヨシ店"
+    name_en: "Watts Urayasu Higashino"
+    operator: "ワッツ"
+    status: "open"
+    hours: "9:00～21:00"
+    hours_en: "9:00～21:00"
+    hours_zh: "9:00～21:00"
+    hours_ko: "9:00～21:00"
+    hours_zhtw: "9:00～21:00"
+    lat: 35.652039
+    lng: 139.90094
+    address: "千葉県浦安市東野1-1-43 マツモトキヨシ浦安東野店内"
+    official_url: "https://www.watts-jp.com/"
+    last_verified: "2026/7/9"
+  - id: "post-urayasu"
+    type: "post_office"
+    name: "浦安郵便局"
+    name_en: "Urayasu Post Office"
+    operator: "日本郵便"
+    status: "open"
+    hours: "窓口 平日9:00～19:00／土9:00～17:00（ゆうゆう窓口 平日7:00～19:00・土日祝7:00～18:00）"
+    hours_en: "counter Weekdays9:00～19:00／Sat9:00～17:00（after-hours counter Weekdays7:00～19:00・Sat/Sun/Hol7:00～18:00）"
+    hours_zh: "窗口 工作日9:00～19:00／周六9:00～17:00（邮务窗口 工作日7:00～19:00・周末及节假日7:00～18:00）"
+    hours_ko: "창구 평일9:00～19:00／토9:00～17:00（유유창구 평일7:00～19:00・주말·공휴일7:00～18:00）"
+    hours_zhtw: "窗口 平日9:00～19:00／週六9:00～17:00（郵務窗口 平日7:00～19:00・週末及假日7:00～18:00）"
+    open_early: true
+    atm_intl: "1"
+    takkyubin: true
+    lat: 35.651989
+    lng: 139.900589
+    address: "千葉県浦安市東野1-6-1"
+    official_url: "https://map.japanpost.jp/p/search/"
+    last_verified: "2026/7/9"
+    note: "市内本局・ゆうちょ銀行浦安店併設。ゆうちょATMは海外発行カード対応"
+  - id: "post-ekimae"
+    type: "post_office"
+    name: "浦安駅前郵便局"
+    name_en: "Urayasu Ekimae Post Office"
+    operator: "日本郵便"
+    status: "open"
+    hours: "平日9:00～17:00"
+    hours_en: "Weekdays9:00～17:00"
+    hours_zh: "工作日9:00～17:00"
+    hours_ko: "평일9:00～17:00"
+    hours_zhtw: "平日9:00～17:00"
+    atm_intl: "1"
+    takkyubin: true
+    lat: 35.665981
+    lng: 139.892609
+    address: "千葉県浦安市当代島1-1-22"
+    official_url: "https://map.japanpost.jp/p/search/"
+    last_verified: "2026/7/9"
+    note: "浦安駅至近。ゆうちょATMは海外発行カード対応"
+  - id: "post-tomioka"
+    type: "post_office"
+    name: "浦安富岡郵便局"
+    name_en: "Urayasu Tomioka Post Office"
+    operator: "日本郵便"
+    status: "open"
+    hours: "平日9:00～17:00"
+    hours_en: "Weekdays9:00～17:00"
+    hours_zh: "工作日9:00～17:00"
+    hours_ko: "평일9:00～17:00"
+    hours_zhtw: "平日9:00～17:00"
+    atm_intl: "1"
+    takkyubin: true
+    lat: 35.643097
+    lng: 139.900177
+    address: "千葉県浦安市富岡3-2-2"
+    official_url: "https://map.japanpost.jp/p/search/"
+    last_verified: "2026/7/9"
+    note: "ライフガーデン新浦安内。ゆうちょATMは海外発行カード対応"
+  - id: "post-bokai"
+    type: "post_office"
+    name: "浦安望海の街郵便局"
+    name_en: "Urayasu Bokai-no-machi Post Office"
+    operator: "日本郵便"
+    status: "open"
+    hours: "平日9:00～17:00"
+    hours_en: "Weekdays9:00～17:00"
+    hours_zh: "工作日9:00～17:00"
+    hours_ko: "평일9:00～17:00"
+    hours_zhtw: "平日9:00～17:00"
+    atm_intl: "1"
+    takkyubin: true
+    lat: 35.641327
+    lng: 139.920609
+    address: "千葉県浦安市明海4-2-1"
+    official_url: "https://map.japanpost.jp/p/search/"
+    last_verified: "2026/7/9"
+    note: "ゆうちょATMは海外発行カード対応"
+  - id: "post-nekomi2"
+    type: "post_office"
+    name: "浦安猫実二郵便局"
+    name_en: "Urayasu Nekomi-2 Post Office"
+    operator: "日本郵便"
+    status: "open"
+    hours: "平日9:00～17:00"
+    hours_en: "Weekdays9:00～17:00"
+    hours_zh: "工作日9:00～17:00"
+    hours_ko: "평일9:00～17:00"
+    hours_zhtw: "平日9:00～17:00"
+    atm_intl: "1"
+    takkyubin: true
+    lat: 35.658863
+    lng: 139.899338
+    address: "千葉県浦安市猫実2-7-7"
+    official_url: "https://map.japanpost.jp/p/search/"
+    last_verified: "2026/7/9"
+    note: "ゆうちょATMは海外発行カード対応"
+  - id: "uniqlo-atre"
+    type: "apparel"
+    name: "ユニクロ アトレ新浦安店"
+    name_en: "UNIQLO atre Shin-Urayasu"
+    operator: "ユニクロ"
+    status: "open"
+    hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    lat: 35.64994
+    lng: 139.91272
+    address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
+    official_url: "https://map.uniqlo.com/jp/ja/"
+    last_verified: "2026/7/9"
+    note: "市内唯一のユニクロ。着替えの緊急調達に"
+  - id: "gu-mona"
+    type: "apparel"
+    name: "ジーユー MONA新浦安店"
+    name_en: "GU MONA Shin-Urayasu"
+    operator: "ジーユー"
+    status: "open"
+    hours: "10:00～20:30"
+    hours_en: "10:00～20:30"
+    hours_zh: "10:00～20:30"
+    hours_ko: "10:00～20:30"
+    hours_zhtw: "10:00～20:30"
+    lat: 35.648975
+    lng: 139.913177
+    address: "千葉県浦安市入船1-5-1 MONA新浦安3F"
+    official_url: "https://map.gu-global.com/jp/ja/"
+    last_verified: "2026/7/9"
+  - id: "shimamura-newcoast"
+    type: "apparel"
+    name: "ファッションセンターしまむら ニューコースト新浦安店"
+    name_en: "Shimamura New Coast Shin-Urayasu"
+    operator: "しまむら"
+    status: "open"
+    hours: "10:00～20:00"
+    hours_en: "10:00～20:00"
+    hours_zh: "10:00～20:00"
+    hours_ko: "10:00～20:00"
+    hours_zhtw: "10:00～20:00"
+    lat: 35.643726
+    lng: 139.922821
+    address: "千葉県浦安市明海4-1-1 ニューコースト新浦安"
+    official_url: "https://www.shimamura.gr.jp/shop/"
+    last_verified: "2026/7/9"
+  - id: "torikizoku-shinurayasu"
+    type: "izakaya"
+    name: "鳥貴族 新浦安店"
+    name_en: "Torikizoku Shin-Urayasu"
+    operator: "鳥貴族"
+    status: "open"
+    hours: "月～金 17:00～24:00／土日 16:00～24:00"
+    hours_en: "Mon-Fri 17:00～24:00／Sat/Sun 16:00～24:00"
+    hours_zh: "周一至周五 17:00～24:00／周末 16:00～24:00"
+    hours_ko: "월~금 17:00～24:00／주말 16:00～24:00"
+    hours_zhtw: "週一至週五 17:00～24:00／週末 16:00～24:00"
+    open_late: true
+    lat: 35.648838
+    lng: 139.911865
+    address: "千葉県浦安市入船1-6-1 新浦安TKビルディング2F"
+    official_url: "https://map.torikizoku.co.jp/"
+    last_verified: "2026/7/9"
+    note: "均一価格の焼き鳥チェーン。新浦安駅徒歩3分"
+  - id: "uotami-ekimae"
+    type: "izakaya"
+    name: "魚民 浦安駅前店"
+    name_en: "Uotami Urayasu Ekimae"
+    operator: "モンテローザ"
+    status: "open"
+    hours: "17:00～翌3:00"
+    hours_en: "17:00～next-day 3:00"
+    hours_zh: "17:00～次日3:00"
+    hours_ko: "17:00～익일 3:00"
+    hours_zhtw: "17:00～次日3:00"
+    open_late: true
+    lat: 35.665016
+    lng: 139.893082
+    address: "千葉県浦安市北栄1-17-17 大盛ビル2F"
+    official_url: "https://www.monteroza.co.jp/"
+    last_verified: "2026/7/9"
+    note: "総合居酒屋チェーン。深夜まで営業"
+  - id: "mekiki-mona"
+    type: "izakaya"
+    name: "目利きの銀次 MONA新浦安店"
+    name_en: "Mekiki no Ginji MONA Shin-Urayasu"
+    operator: "モンテローザ"
+    status: "open"
+    hours: "11:00～23:00"
+    hours_en: "11:00～23:00"
+    hours_zh: "11:00～23:00"
+    hours_ko: "11:00～23:00"
+    hours_zhtw: "11:00～23:00"
+    open_late: true
+    lat: 35.648975
+    lng: 139.913177
+    address: "千葉県浦安市入船1-5-1 MONA新浦安"
+    official_url: "https://www.monteroza.co.jp/"
+    last_verified: "2026/7/9"
+    note: "海鮮居酒屋チェーン。昼営業あり"
+  - id: "washplus-fujimi3"
+    type: "laundry"
+    name: "wash+ 富士見3丁目店"
+    name_en: "wash+ Fujimi 3-chome (Coin Laundry)"
+    operator: "wash+"
+    status: "open"
+    hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    lat: 35.649422
+    lng: 139.887482
+    address: "千葉県浦安市富士見3-4-8"
+    official_url: "https://www.wash-plus.jp/store/"
+    last_verified: "2026/7/9"
+    note: "洗剤不要のコインランドリー・24時間"
+  - id: "washplus-imagawa"
+    type: "laundry"
+    name: "wash+ 今川店"
+    name_en: "wash+ Imagawa (Coin Laundry)"
+    operator: "wash+"
+    status: "open"
+    hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    lat: 35.644634
+    lng: 139.906815
+    address: "千葉県浦安市今川1-1-35 エルドシック浦安103"
+    official_url: "https://www.wash-plus.jp/store/"
+    last_verified: "2026/7/9"
+    note: "24時間コインランドリー"
+  - id: "washplus-kitasakae2"
+    type: "laundry"
+    name: "wash+ 北栄2丁目店"
+    name_en: "wash+ Kitasakae 2-chome (Coin Laundry)"
+    operator: "wash+"
+    status: "open"
+    hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    lat: 35.667435
+    lng: 139.895508
+    address: "千葉県浦安市北栄2-5-2"
+    official_url: "https://www.wash-plus.jp/store/"
+    last_verified: "2026/7/9"
+    note: "24時間コインランドリー"
+  - id: "washplus-akemi"
+    type: "laundry"
+    name: "wash+ 明海店"
+    name_en: "wash+ Akemi (Coin Laundry)"
+    operator: "wash+"
+    status: "open"
+    hours: "24時間営業"
+    hours_en: "24h"
+    hours_zh: "24小时营业"
+    hours_ko: "24시간 영업"
+    hours_zhtw: "24小時營業"
+    open_early: true
+    open_late: true
+    is_24h: true
+    lat: 35.639416
+    lng: 139.928223
+    address: "千葉県浦安市明海5-7-8"
+    official_url: "https://www.wash-plus.jp/store/"
+    last_verified: "2026/7/9"
+    note: "24時間コインランドリー"
+  - id: "hahahand-urayasu"
+    type: "laundry"
+    name: "コインランドリー Ha Ha Hand"
+    name_en: "Ha Ha Hand Coin Laundry"
+    operator: "個人・その他"
+    status: "open"
+    hours: "5:00～23:00"
+    hours_en: "5:00～23:00"
+    hours_zh: "5:00～23:00"
+    hours_ko: "5:00～23:00"
+    hours_zhtw: "5:00～23:00"
+    open_early: true
+    open_late: true
+    lat: 35.666996
+    lng: 139.891525
+    address: "千葉県浦安市当代島1-11-17"
+    last_verified: "2026/7/9"
+    note: "当代島のコインランドリー"
+  - id: "nojima-seiyu"
+    type: "electronics"
+    name: "ノジマ 西友浦安店"
+    name_en: "Nojima Seiyu Urayasu"
+    operator: "ノジマ"
+    status: "open"
+    hours: "10:00～20:00"
+    hours_en: "10:00～20:00"
+    hours_zh: "10:00～20:00"
+    hours_ko: "10:00～20:00"
+    hours_zhtw: "10:00～20:00"
+    tax_free: true
+    lat: 35.665432
+    lng: 139.894836
+    address: "千葉県浦安市北栄1-14-1 西友浦安店内"
+    official_url: "https://www.nojima.co.jp/shop/chiba/seiyuurayasu/"
+    last_verified: "2026/7/9"
+    note: "西友(トライアル改装)内。改装後の営業時間は要確認"
+  - id: "nojima-newcoast"
+    type: "electronics"
+    name: "ノジマ ニューコースト新浦安店"
+    name_en: "Nojima New Coast Shin-Urayasu"
+    operator: "ノジマ"
+    status: "open"
+    hours: "10:00～21:00"
+    hours_en: "10:00～21:00"
+    hours_zh: "10:00～21:00"
+    hours_ko: "10:00～21:00"
+    hours_zhtw: "10:00～21:00"
+    tax_free: true
+    lat: 35.643726
+    lng: 139.922821
+    address: "千葉県浦安市明海4-1-1 ニューコースト新浦安"
+    official_url: "https://www.nojima.co.jp/shop/chiba/newcoast_shinurayasu/"
+    last_verified: "2026/7/9"
+  - id: "yamada-aeon"
+    type: "electronics"
+    name: "ヤマダ電機 テックランド イオン新浦安店"
+    name_en: "Yamada Denki Tecc Land AEON Shin-Urayasu"
+    operator: "ヤマダ電機"
+    status: "open"
+    hours: "9:00～21:00"
+    hours_en: "9:00～21:00"
+    hours_zh: "9:00～21:00"
+    hours_ko: "9:00～21:00"
+    hours_zhtw: "9:00～21:00"
+    tax_free: true
+    lat: 35.649055
+    lng: 139.914963
+    address: "千葉県浦安市入船1-4-1 イオン新浦安3F"
+    official_url: "https://www.yamada-denki.jp/store/contents/?d=2193"
+    last_verified: "2026/7/9"
+  - id: "ksdenki-hinode"
+    type: "electronics"
+    name: "ケーズデンキ 東京ベイサイド新浦安"
+    name_en: "K's Denki Tokyo Bayside Shin-Urayasu"
+    operator: "ケーズデンキ"
+    status: "open"
+    hours: "10:00～20:00 ※要確認"
+    hours_en: "10:00～20:00 ※check"
+    hours_zh: "10:00～20:00 ※需确认"
+    hours_ko: "10:00～20:00 ※확인 필요"
+    hours_zhtw: "10:00～20:00 ※需確認"
+    tax_free: true
+    lat: 35.644836
+    lng: 139.924042
+    address: "千葉県浦安市日の出4-1-8"
+    official_url: "https://www.ksdenki.co.jp/store/detail/?prefectureCode=12&code=1108"
+    last_verified: "2026/7/9"
+    note: "営業時間は季節/曜日変動あり公式要確認"

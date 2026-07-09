@@ -70,6 +70,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Parking (190 spaces — a major advantage)**
 190 first-come parking spaces. At most Shin-Urayasu hotels, parking is 30–90 spaces. 190 spaces dramatically reduces the risk of arriving to find the lot full. Confirm rate on the official website.
 

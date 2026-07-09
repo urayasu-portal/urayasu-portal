@@ -69,6 +69,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 ## Facilities & Services
 {{< hotel-facilities >}}
 
+{{< hotel-survival >}}
+
 **Natural Hot Spring (discounted access to main Eurasia building)**
 Guests receive discounted access to the natural hot spring and large bath at the main Maihama Eurasia building. 50% discount campaign was valid April–July 2026; **current discounts for other periods require confirmation on the official website.** Access hours and shuttle availability to the main building also require confirmation.
 
