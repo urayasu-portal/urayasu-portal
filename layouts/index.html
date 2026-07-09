@@ -1,9 +1,17 @@
 {{- define "main" }}
-{{- if eq .Lang "en" }}
+{{- if ne .Lang "ja" }}
+{{/* 非日本語トップは観光ガイド一覧(/xx/travel-guide/)へ集約し、言語ごとのトップ二重化を解消する。
+     （日本語は / =地域ポータル と /travel-guide/ =観光ガイドで役割が別のため対象外） */}}
+{{- $d := "/travel-guide/" | absLangURL }}
+<meta http-equiv="refresh" content="0; url={{ $d }}">
+<script>window.location.replace({{ $d | jsonify }});</script>
+<div style="padding:4rem 1rem;text-align:center;">
+  <a href="{{ $d }}" style="color:var(--accent);font-weight:700;text-decoration:none;">{{ if eq .Lang "en" }}Go to the travel guide →{{ else if eq .Lang "zh" }}前往旅行指南 →{{ else if eq .Lang "ko" }}여행 가이드로 이동 →{{ else if eq .Lang "zh-tw" }}前往旅遊指南 →{{ end }}</a>
+</div>
+{{- else if eq .Lang "en" }}
 
 {{/* ═══════════════════════════════════════════
-     英語トップ：観光ガイド特化ランディング (EN home LP)
-     既存 travel-guide の tg-* / hcm-* スタイルを流用
+     （未使用）英語トップの旧LP。非日本語は上のリダイレクトに集約したため描画されない。
      ═══════════════════════════════════════════ */}}
 <div class="tg-hero">
   <p class="tg-hero-eyebrow">Urayasu · Maihama Travel Guide</p>
