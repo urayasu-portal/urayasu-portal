@@ -5,6 +5,8 @@ date: 2026-06-01T00:00:00+09:00
 lastmod: 2026-06-29T00:00:00+09:00
 slug: "privacy"
 draft: false
+cover:
+  image: "/images/site-cover.png"
 ---
 
 最終更新日：2026年6月29日

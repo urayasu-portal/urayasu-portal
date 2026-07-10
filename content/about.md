@@ -6,6 +6,8 @@ lastmod: 2026-06-13T00:00:00+09:00
 slug: "about"
 draft: false
 noDate: true
+cover:
+  image: "/images/site-cover.png"
 ---
 
 <div style="background:#e7f7f3;border-left:4px solid #0e9e8e;border-radius:0 10px 10px 0;padding:16px 20px;margin-bottom:28px;font-size:0.95em;line-height:1.7;">
