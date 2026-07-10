@@ -3,6 +3,8 @@ title: "teamLab Planets (Toyosu): Barefoot Digital Art 30 Minutes from Disney"
 description: "Wade knee-deep through glowing water and walk barefoot through rooms of light — the world-famous digital art museum is just 30 minutes by train from Maihama. The perfect rainy-day plan B for a Tokyo Disney trip, with ticket and clothing tips from locals."
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/teamlab-planets.jpg"
 hideEventBox: true
 slug: "teamlab-planets"
 badge: "Rainy Day OK"
