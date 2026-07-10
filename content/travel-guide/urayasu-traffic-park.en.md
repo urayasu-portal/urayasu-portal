@@ -3,6 +3,8 @@ title: "Urayasu Traffic Park: A Free Kids' Paradise One Stop from Tokyo Disney R
 description: "Free bike riding, pony rides, and guinea pig cuddles 10 minutes from your Disney hotel. The perfect rest-day spot for families staying near Tokyo Disney Resort."
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/urayasu-traffic-park.jpg"
 hideEventBox: true
 checkDate: "July 2026"
 sources:
@@ -32,7 +34,7 @@ The park is intended for children up to elementary-school age (roughly 12 and un
 
 ### The vehicle plaza: a tiny Japan to drive through
 
-The heart of the park is a miniature road course complete with working traffic lights, crosswalks, and Japanese road signs. Kids borrow bicycles, quirky pedal cycles, and battery cars for free and "drive" the course while learning traffic rules — a very Japanese concept of play. Children in grade 2 and under can ride the course, and parents can hop on the family-sized four-seater cycles to pedal around together. If your child is still wobbly on two wheels, staff are used to beginners; this is where many Urayasu kids first learn to ride.
+The heart of the park is a miniature road course complete with working traffic lights, crosswalks, and Japanese road signs. Kids borrow bicycles, quirky pedal cycles, and battery cars for free and "drive" the course while learning traffic rules — a very Japanese concept of play. Bicycles and pedal cycles are for elementary schoolers and under (battery cars are for grade 2 and under), and parents can hop on the family-sized four-seater cycles to pedal around together. If your child is still wobbly on two wheels, staff are used to beginners; this is where many Urayasu kids first learn to ride.
 
 ### The animal plaza: guinea pigs, ponies, and a binturong
 
@@ -67,10 +69,10 @@ Expect a well-loved municipal park, not a polished attraction: signage is mostly
 ## How to get there from Maihama
 
 1. From **Maihama Station** (the Tokyo Disney Resort station), take the **JR Keiyo Line** one stop toward Soga to **Shin-Urayasu Station** — about 3 minutes.
-2. Exit the ticket gates and head out the **south side** of the station.
-3. Walk roughly **10 minutes** through the calm, planned streets of the Mihama district. The park is impossible to miss once you hear it.
+2. Exit the ticket gates and head out the **north side** of the station.
+3. Walk roughly **8–10 minutes** through the calm, planned streets of the Mihama district. The park is impossible to miss once you hear it.
 
-Total door-to-door from most Maihama and Shin-Urayasu hotels: **under 30 minutes**. From Shin-Urayasu area hotels (Hilton, Sheraton shuttle routes, Emion, Oriental Hotel), you may even be able to walk. There is a small parking lot, but on weekends the city asks visitors to come by train — do that.
+Total door-to-door from most Maihama and Shin-Urayasu hotels: **under 30 minutes**. From hotels near Shin-Urayasu Station (Oriental Hotel, Emion), you may even be able to walk; from bayside Maihama hotels such as the Hilton or Sheraton, the train or a taxi is the realistic option. There is a small parking lot, but on weekends the city asks visitors to come by train — do that.
 
 ## Pair it with
 
