@@ -262,6 +262,16 @@
       apply(); };
   }
 
+  /* ホテルページの「生活・買い物マップで見る」から ?hotel=<slug> で来たときは
+     そのホテルを初期選択する（★ピン・半径400m・徒歩分の起点がホテルになる）。 */
+  function preselectHotel(){
+    var m = /[?&]hotel=([^&#]+)/.exec(location.search); if(!m) return;
+    var slug; try{ slug = decodeURIComponent(m[1]); }catch(e){ return; }
+    var s = document.getElementById('fm-hotel');
+    s.value = slug; if(s.value !== slug) return;  /* 未知のslugは無視 */
+    s.onchange();
+  }
+
   function setText(sel,txt){ var e=document.querySelector(sel); if(e) e.textContent=txt; }
   setText('.fm-hotel-lab',T.hotel); setText('.fm-now-lab',T.now); setText('.fm-reset-lab',T.reset); setText('.fm-here-lab',T.useLoc);
   setText('.fm-leg-food',T.legFood); setText('.fm-leg-shop',T.legShop); setText('.fm-leg-svc',T.legSvc); setText('.fm-leg-note',T.legNote);
@@ -288,6 +298,6 @@
   document.getElementById('fm-reset').onclick=function(){ state.types={}; state.preset=null; state.openNow=false;
     syncChipUI(); syncPresetUI(); document.getElementById('fm-now').classList.remove('on'); apply(); };
 
-  buildChips(); buildPresets(); buildHotelSelect(); apply();
+  buildChips(); buildPresets(); buildHotelSelect(); apply(); preselectHotel();
 })();
 </script>

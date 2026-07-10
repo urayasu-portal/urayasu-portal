@@ -15,13 +15,19 @@
   "ko" (dict "conbini" "편의점" "drugstore" "드러그스토어" "supermarket" "슈퍼마켓" "laundry" "코인 세탁" "atm" "해외카드 ATM")
   "zh-tw" (dict "conbini" "便利商店" "drugstore" "藥妝店" "supermarket" "超市" "laundry" "自助洗衣" "atm" "海外卡ATM") }}
 {{- $L := dict
-  "ja" (dict "title" "このホテルの生活サバイバル情報" "sub" "最寄りの生活施設を自動表示（徒歩の目安つき）" "inb" "館内" "laun" "館内コインランドリーあり" "walkPre" "徒歩" "walkSuf" "分" "b24" "24時間" "early" "早朝" "atm" "海外カードOK" "tax" "免税" "dir" "経路" "find" "店舗検索" "note" "徒歩分は直線距離の目安です。営業時間は変わることがあります。")
-  "en" (dict "title" "Essentials near this hotel" "sub" "Nearest daily-life spots, with walking times" "inb" "In hotel" "laun" "Coin laundry in the hotel" "walkPre" "" "walkSuf" "-min walk" "b24" "24h" "early" "Early" "atm" "Foreign card OK" "tax" "Tax-free" "dir" "Directions" "find" "Find stores" "note" "Walk times are straight-line estimates. Hours may change.")
-  "zh" (dict "title" "本饭店周边生活便利信息" "sub" "自动显示最近的生活设施（含步行时间参考）" "inb" "馆内" "laun" "馆内设有自助洗衣" "walkPre" "步行" "walkSuf" "分钟" "b24" "24小时" "early" "早间营业" "atm" "海外卡可用" "tax" "免税" "dir" "路线" "find" "门店查询" "note" "步行时间为直线距离参考，营业时间可能变动。")
-  "ko" (dict "title" "이 호텔 주변 생활 정보" "sub" "가장 가까운 생활 시설을 자동 표시(도보 시간 기준)" "inb" "관내" "laun" "관내 코인 세탁실 있음" "walkPre" "도보 " "walkSuf" "분" "b24" "24시간" "early" "이른 영업" "atm" "해외카드 가능" "tax" "면세" "dir" "경로" "find" "매장 검색" "note" "도보 시간은 직선거리 기준이며 영업시간은 달라질 수 있습니다.")
-  "zh-tw" (dict "title" "本飯店周邊生活便利資訊" "sub" "自動顯示最近的生活設施（含步行時間參考）" "inb" "館內" "laun" "館內設有自助洗衣" "walkPre" "步行" "walkSuf" "分鐘" "b24" "24小時" "early" "早間營業" "atm" "海外卡可用" "tax" "免稅" "dir" "路線" "find" "門市查詢" "note" "步行時間為直線距離參考，營業時間可能變動。") }}
+  "ja" (dict "title" "このホテルの生活サバイバル情報" "sub" "最寄りの生活施設を自動表示（徒歩の目安つき）" "inb" "館内" "laun" "館内コインランドリーあり" "walkPre" "徒歩" "walkSuf" "分" "b24" "24時間" "early" "早朝" "atm" "海外カードOK" "tax" "免税" "dir" "経路" "find" "店舗検索" "note" "徒歩分は直線距離の目安です。営業時間は変わることがあります。" "map" "生活・買い物マップで見る")
+  "en" (dict "title" "Essentials near this hotel" "sub" "Nearest daily-life spots, with walking times" "inb" "In hotel" "laun" "Coin laundry in the hotel" "walkPre" "" "walkSuf" "-min walk" "b24" "24h" "early" "Early" "atm" "Foreign card OK" "tax" "Tax-free" "dir" "Directions" "find" "Find stores" "note" "Walk times are straight-line estimates. Hours may change." "map" "Open the essentials map")
+  "zh" (dict "title" "本饭店周边生活便利信息" "sub" "自动显示最近的生活设施（含步行时间参考）" "inb" "馆内" "laun" "馆内设有自助洗衣" "walkPre" "步行" "walkSuf" "分钟" "b24" "24小时" "early" "早间营业" "atm" "海外卡可用" "tax" "免税" "dir" "路线" "find" "门店查询" "note" "步行时间为直线距离参考，营业时间可能变动。" "map" "在生活购物地图查看")
+  "ko" (dict "title" "이 호텔 주변 생활 정보" "sub" "가장 가까운 생활 시설을 자동 표시(도보 시간 기준)" "inb" "관내" "laun" "관내 코인 세탁실 있음" "walkPre" "도보 " "walkSuf" "분" "b24" "24시간" "early" "이른 영업" "atm" "해외카드 가능" "tax" "면세" "dir" "경로" "find" "매장 검색" "note" "도보 시간은 직선거리 기준이며 영업시간은 달라질 수 있습니다." "map" "생활·쇼핑 지도에서 보기")
+  "zh-tw" (dict "title" "本飯店周邊生活便利資訊" "sub" "自動顯示最近的生活設施（含步行時間參考）" "inb" "館內" "laun" "館內設有自助洗衣" "walkPre" "步行" "walkSuf" "分鐘" "b24" "24小時" "early" "早間營業" "atm" "海外卡可用" "tax" "免稅" "dir" "路線" "find" "門市查詢" "note" "步行時間為直線距離參考，營業時間可能變動。" "map" "在生活購物地圖查看") }}
 {{- $r := index $roles $lang }}{{ if not $r }}{{ $r = index $roles "en" }}{{ end }}
 {{- $t := index $L $lang }}{{ if not $t }}{{ $t = index $L "en" }}{{ end }}
+{{- /* 生活・買い物マップへのリンク。hotels_map.yaml に座標があるホテルだけ ?hotel=<slug> を
+       付け、マップ側の「宿泊ホテル」を初期選択させる（無い場合はマップトップへ）。 */ -}}
+{{- $onMap := false }}
+{{- range hugo.Data.hotels_map.hotels }}{{ if and (eq .slug $slug) .lat .lng }}{{ $onMap = true }}{{ end }}{{- end }}
+{{- $mapURL := "/travel-guide/urayasu-map/" | absLangURL }}
+{{- if $onMap }}{{ $mapURL = printf "%s?%s" $mapURL (querify "hotel" $slug) }}{{ end }}
 {{- with $sv }}
 <div class="hg-survival">
   <div class="hg-sv-head">
@@ -30,6 +36,7 @@
       <div class="hg-sv-title">{{ $t.title }}</div>
       <div class="hg-sv-sub">{{ $t.sub }}</div>
     </div>
+    <a class="hg-sv-maplink" href="{{ $mapURL }}" aria-label="{{ $t.map }}" title="{{ $t.map }}"><span>{{ $t.map }}</span><i class="ti ti-arrow-right" aria-hidden="true"></i></a>
   </div>
   <ul class="hg-sv-list">
     {{- range .items }}
