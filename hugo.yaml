@@ -50,6 +50,15 @@ pagination:
 
 params:
   env: production
+  # favicon の ?v= はキャッシュバスター。サイトが長期間 favicon 404 だったため、
+  # ブラウザ（特にChrome）が「アイコン無し」を強くキャッシュしている。
+  # アイコン画像を差し替えたときは v の数字を上げて再取得させること。
+  assets:
+    favicon: "favicon.ico?v=2"
+    favicon16x16: "favicon-16x16.png?v=2"
+    favicon32x32: "favicon-32x32.png?v=2"
+    apple_touch_icon: "apple-touch-icon.png?v=2"
+    safari_pinned_tab: "safari-pinned-tab.svg?v=2"
   # アフィリエイト設定。バリューコマース LinkSwitch を使うと、本文中の booking.com / agoda.com 等の
   # 提携広告主リンクをクリック時に自動でアフィリリンク化する。
   # valuecommercePid に管理画面の「LinkSwitch ID（vc_pid）」を貼ると extend_head.html がタグを出力。
