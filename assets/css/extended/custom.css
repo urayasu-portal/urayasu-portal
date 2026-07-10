@@ -517,8 +517,12 @@ body.list { --main-width: 1160px; }
   font-weight: 800;
   color: #fff;
   margin-bottom: 10px;
+  /* テーマreset の img{display:block} でマークが単独行に落ちるため flex で1行に */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
 }
-.ft-logo-mark { vertical-align: -4px; margin-right: 2px; }
 .ft-desc {
   font-size: 13px;
   line-height: 1.75;
