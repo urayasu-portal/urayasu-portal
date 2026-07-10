@@ -44,9 +44,9 @@ faq:
 
 ## 类型2｜免费班车到海滨站＋单轨
 
-**[迪士尼大使大饭店](/zh/travel-guide/hotels/ambassador-hotel/)**以及指定酒店中的**[东京湾大仓酒店](/zh/travel-guide/hotels/hotel-okura-tokyo-bay/)**、**[东京湾舞滨格兰日航酒店](/zh/travel-guide/hotels/grand-nikko-tokyo-bay/)**、**[东京湾希尔顿酒店](/zh/travel-guide/hotels/hilton-tokyo-bay/)**运行到**海滨站**的免费班车，在那里换乘迪士尼度假区线单轨前往乐园。
+[**迪士尼大使大饭店**](/zh/travel-guide/hotels/ambassador-hotel/)以及指定酒店中的[**东京湾大仓酒店**](/zh/travel-guide/hotels/hotel-okura-tokyo-bay/)、**[东京湾舞滨格兰日航酒店](/zh/travel-guide/hotels/grand-nikko-tokyo-bay/)**、[**东京湾希尔顿酒店**](/zh/travel-guide/hotels/hilton-tokyo-bay/)运行到**海滨站**的免费班车，在那里换乘迪士尼度假区线单轨前往乐园。
 
-虽然是两段式（巴士＋单轨），但两段都很短且班次频繁。**[东京湾舞滨酒店 第一度假村](/zh/travel-guide/hotels/maihama-hotel-first-resort/)**和**[舞滨观景酒店 by HULIC](/zh/travel-guide/hotels/maihama-view-hotel/)**是两家最需要确认班车时刻表的指定酒店——错过巴士的话，第一度假村到乐园要步行约15分钟。
+虽然是两段式（巴士＋单轨），但两段都很短且班次频繁。[**东京湾舞滨酒店 第一度假村**](/zh/travel-guide/hotels/maihama-hotel-first-resort/)和[**舞滨观景酒店 by HULIC**](/zh/travel-guide/hotels/maihama-view-hotel/)是两家最需要确认班车时刻表的指定酒店——错过巴士的话，第一度假村到乐园要步行约15分钟。
 
 ---
 

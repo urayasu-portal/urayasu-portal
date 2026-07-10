@@ -44,9 +44,9 @@ faq:
 
 ## 類型2｜免費接駁車到海濱站＋單軌
 
-**[迪士尼大使大飯店](/zh-tw/travel-guide/hotels/ambassador-hotel/)**以及官方飯店中的**[東京灣大倉飯店](/zh-tw/travel-guide/hotels/hotel-okura-tokyo-bay/)**、**[東京灣舞濱格蘭日航飯店](/zh-tw/travel-guide/hotels/grand-nikko-tokyo-bay/)**、**[東京灣希爾頓飯店](/zh-tw/travel-guide/hotels/hilton-tokyo-bay/)**運行到**海濱站**的免費接駁車，在那裡轉乘迪士尼度假區線單軌前往樂園。
+[**迪士尼大使大飯店**](/zh-tw/travel-guide/hotels/ambassador-hotel/)以及官方飯店中的[**東京灣大倉飯店**](/zh-tw/travel-guide/hotels/hotel-okura-tokyo-bay/)、**[東京灣舞濱格蘭日航飯店](/zh-tw/travel-guide/hotels/grand-nikko-tokyo-bay/)**、[**東京灣希爾頓飯店**](/zh-tw/travel-guide/hotels/hilton-tokyo-bay/)運行到**海濱站**的免費接駁車，在那裡轉乘迪士尼度假區線單軌前往樂園。
 
-雖然是兩段式（巴士＋單軌），但兩段都很短且班次頻繁。**[東京灣舞濱飯店 第一度假村](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/)**和**[舞濱觀景飯店 by HULIC](/zh-tw/travel-guide/hotels/maihama-view-hotel/)**是兩家最需要確認接駁車時刻表的官方飯店——錯過巴士的話，第一度假村到樂園要步行約15分鐘。
+雖然是兩段式（巴士＋單軌），但兩段都很短且班次頻繁。[**東京灣舞濱飯店 第一度假村**](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/)和[**舞濱觀景飯店 by HULIC**](/zh-tw/travel-guide/hotels/maihama-view-hotel/)是兩家最需要確認接駁車時刻表的官方飯店——錯過巴士的話，第一度假村到樂園要步行約15分鐘。
 
 ---
 

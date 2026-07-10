@@ -44,9 +44,9 @@ faq:
 
 ## 유형 2｜베이사이드역까지 무료 셔틀＋모노레일
 
-**[디즈니 앰버서더 호텔](/ko/travel-guide/hotels/ambassador-hotel/)**과 공식 호텔인 **[호텔 오쿠라 도쿄 베이](/ko/travel-guide/hotels/hotel-okura-tokyo-bay/)**, **[그랜드 니코 도쿄 베이 마이하마](/ko/travel-guide/hotels/grand-nikko-tokyo-bay/)**, **[힐튼 도쿄 베이](/ko/travel-guide/hotels/hilton-tokyo-bay/)**는 **베이사이드역**까지 무료 셔틀을 운행하며, 거기서 디즈니 리조트 라인 모노레일로 환승해 파크로 갑니다.
+[**디즈니 앰버서더 호텔**](/ko/travel-guide/hotels/ambassador-hotel/)과 공식 호텔인 **[호텔 오쿠라 도쿄 베이](/ko/travel-guide/hotels/hotel-okura-tokyo-bay/)**, **[그랜드 니코 도쿄 베이 마이하마](/ko/travel-guide/hotels/grand-nikko-tokyo-bay/)**, [**힐튼 도쿄 베이**](/ko/travel-guide/hotels/hilton-tokyo-bay/)는 **베이사이드역**까지 무료 셔틀을 운행하며, 거기서 디즈니 리조트 라인 모노레일로 환승해 파크로 갑니다.
 
-2단계 이동(버스＋모노레일)이지만 두 구간 모두 짧고 배차가 잦습니다. **[도쿄 베이 마이하마 호텔 퍼스트 리조트](/ko/travel-guide/hotels/maihama-hotel-first-resort/)**와 **[마이하마 뷰 호텔 by HULIC](/ko/travel-guide/hotels/maihama-view-hotel/)**은 공식 호텔 중 셔틀 시간표 확인이 가장 중요한 두 곳입니다 — 퍼스트 리조트는 버스를 놓치면 디즈니랜드까지 도보 약 15분입니다.
+2단계 이동(버스＋모노레일)이지만 두 구간 모두 짧고 배차가 잦습니다. [**도쿄 베이 마이하마 호텔 퍼스트 리조트**](/ko/travel-guide/hotels/maihama-hotel-first-resort/)와 [**마이하마 뷰 호텔 by HULIC**](/ko/travel-guide/hotels/maihama-view-hotel/)은 공식 호텔 중 셔틀 시간표 확인이 가장 중요한 두 곳입니다 — 퍼스트 리조트는 버스를 놓치면 디즈니랜드까지 도보 약 15분입니다.
 
 ---
 
