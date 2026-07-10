@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 浦安ぽーたる ロゴマーク (Safari pinned tab用・単色黒)
+       Safariはこれをマスクとして使い、link要素のcolor属性で着色する。 -->
+  <defs>
+    <mask id="wave-cut-w" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#000"/>
+      <path d="M30,364 C122,328 184,334 256,366 C330,398 400,392 484,352"
+            fill="none" stroke="#000" stroke-width="44" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <g mask="url(#wave-cut-w)">
+    <path fill="#000" d="M64,64 L176,64 L176,272
+      C176,326 208,356 256,356 C304,356 336,326 336,272
+      L336,64 L448,64 L448,288
+      C448,398 362,456 256,456 C150,456 64,398 64,288 Z"/>
+    <path fill="#000" d="M190,236 L244,202 L244,400 L190,400 Z
+      M268,202 L322,236 L322,400 L268,400 Z"/>
+  </g>
+  <path fill="#000" d="M256,84 C261,116 267,122 292,130
+    C267,138 261,144 256,176 C251,144 245,138 220,130
+    C245,122 251,116 256,84 Z"/>
+  <path fill="none" stroke="#000" stroke-width="16" stroke-linecap="round"
+        d="M30,364 C122,328 184,334 256,366 C330,398 400,392 484,352"/>
+</svg>
