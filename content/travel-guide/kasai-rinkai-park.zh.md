@@ -3,6 +3,8 @@ title: "葛西临海公园与水族园：离迪士尼一站的另一座巨型公
 description: "从舞滨坐电车3分钟：一座免费的海滨大公园，有金枪鱼环游的水族园（小学及以下免费）和117米高的大摩天轮。逃离东京迪士尼度假区的完美「休息日」。"
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/kasai-rinkai-park.jpg"
 hideEventBox: true
 slug: "kasai-rinkai-park"
 badge: "休息日"

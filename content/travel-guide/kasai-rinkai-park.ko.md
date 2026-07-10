@@ -3,6 +3,8 @@ title: "가사이 임해공원과 수족원: 디즈니에서 한 정거장, 또 
 description: "마이하마에서 전철로 3분: 무료 해변 대공원에 참치가 헤엄치는 수족원(초등학생 이하 무료)과 117m 높이의 대관람차. 도쿄 디즈니 리조트에서 벗어나는 완벽한 「휴식일」."
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/kasai-rinkai-park.jpg"
 hideEventBox: true
 slug: "kasai-rinkai-park"
 badge: "휴식일"

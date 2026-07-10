@@ -3,6 +3,8 @@ title: "葛西臨海公園與水族園：離迪士尼一站的另一座巨型公
 description: "從舞濱搭電車3分鐘：一座免費的海濱大公園，有鮪魚環游的水族園（小學及以下免費）和117公尺高的大摩天輪。逃離東京迪士尼度假區的完美「休息日」。"
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/kasai-rinkai-park.jpg"
 hideEventBox: true
 slug: "kasai-rinkai-park"
 badge: "休息日"

@@ -3,6 +3,8 @@ title: "Kasai Rinkai Park & Aquarium: The Other Giant Park One Stop from Disney"
 description: "Three minutes by train from Maihama: a huge free waterfront park with a tuna-filled aquarium (free for kids 12 and under) and a 117-meter Ferris wheel. The perfect rest-day escape from Tokyo Disney Resort."
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/kasai-rinkai-park.jpg"
 hideEventBox: true
 slug: "kasai-rinkai-park"
 badge: "Rest Day"
