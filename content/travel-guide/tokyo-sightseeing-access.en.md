@@ -3,6 +3,8 @@ title: "Day Trips into Tokyo from Your Disney Hotel: Routes & Fares for Asakusa,
 description: "The fastest routes and IC fares from the Tokyo Disney Resort area to Asakusa, Skytree, Tokyo Tower, the Imperial Palace, Akihabara, Shibuya and Harajuku — compared from the JR Keiyo Line (Maihama) and the Tozai Line (Urayasu). Plus how to pay: tap your own card vs. Suica, and why it depends on the line."
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "Access"

@@ -3,6 +3,8 @@ title: "舞浜・浦安から東京観光へ：浅草・渋谷・スカイツリ
 description: "浅草・東京スカイツリー・東京タワー・皇居・秋葉原・渋谷・原宿へ、京葉線（舞浜・新浦安）と東西線（浦安駅）それぞれからの最短ルートと運賃（IC）を一覧表で。タッチ決済とSuicaの使い分け、東京駅の京葉線ホームが遠い問題、朝ラッシュ回避など地元のコツも。"
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "アクセス"
