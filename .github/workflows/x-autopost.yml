@@ -1,12 +1,16 @@
 name: Auto-post new posts to X
 
-# デプロイ完了後に走り、公開済み RSS(/posts/index.xml) を見て新着記事を X に投稿する。
-# 予約公開（毎朝の定期リビルド）で公開された記事も、デプロイ完了を起点に拾える。
+# 公開済み RSS(/posts/index.xml) を見て新着記事を X に投稿する。
 # X API の Secrets が未設定なら scripts/x-autopost.mjs が安全に no-op で終了する。
+#
+# ⏸ 休眠中（2026-07-09）: X API が pay-per-use 化し、URL付き投稿は $0.20/件
+#   （地元向けトピックスの投稿頻度で月数千円規模）。アフィリ収益（観光ガイド中心）と
+#   客層が一致せず費用対効果が低いと判断し、deploy連鎖トリガー(workflow_run)を止めて
+#   手動実行(workflow_dispatch)のみに変更。再開する場合は下のコメントアウトを戻す。
 on:
-  workflow_run:
-    workflows: ["Deploy Hugo site to GitHub Pages"]
-    types: [completed]
+  # workflow_run:
+  #   workflows: ["Deploy Hugo site to GitHub Pages"]
+  #   types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -18,8 +22,6 @@ concurrency:
 
 jobs:
   post:
-    # 手動実行、またはデプロイ成功時のみ
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
