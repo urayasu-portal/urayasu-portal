@@ -3,6 +3,8 @@ title: "舞滨欧亚天然温泉：逛完乐园就能泡的舞滨唯一当日温
 description: "走了3万步的双腿，交给天然温泉来拯救。舞滨地区唯一的天然温泉「SPA&HOTEL舞滨欧亚」当日泡汤，由本地人解说：价格、营业时间、亲子注意事项、从3站发出的免费班车。"
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/maihama-eurasia-spa.jpg"
 hideEventBox: true
 slug: "maihama-eurasia-spa"
 badge: "温泉"

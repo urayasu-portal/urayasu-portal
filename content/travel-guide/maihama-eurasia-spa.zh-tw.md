@@ -3,6 +3,8 @@ title: "舞濱歐亞天然溫泉：逛完樂園就能泡的舞濱唯一當日溫
 description: "走了3萬步的雙腿，交給天然溫泉來拯救。舞濱地區唯一的天然溫泉「SPA&HOTEL舞濱歐亞」當日泡湯，由在地人解說：價格、營業時間、親子注意事項、從3站發出的免費接駁車。"
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/maihama-eurasia-spa.jpg"
 hideEventBox: true
 slug: "maihama-eurasia-spa"
 badge: "溫泉"

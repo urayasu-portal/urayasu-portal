@@ -3,6 +3,8 @@ title: "The Natural Hot Spring at Maihama Eurasia: A Real Onsen 5 Minutes from t
 description: "After 20,000 steps at Disney, soak in Maihama's only natural hot spring. A local guide to day-use bathing at Spa & Hotel Maihama Eurasia: prices, hours, kids' rules, tattoo policy, and the free shuttle from three stations."
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/maihama-eurasia-spa.jpg"
 hideEventBox: true
 slug: "maihama-eurasia-spa"
 badge: "Onsen"

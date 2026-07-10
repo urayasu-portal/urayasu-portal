@@ -3,6 +3,8 @@ title: "舞浜ユーラシアの天然温泉：パーク帰りに浸かれる、
 description: "1日3万歩歩いた足を、天然温泉が救う。舞浜エリア唯一の天然温泉「スパ＆ホテル舞浜ユーラシア」の日帰り利用を地元が解説。料金・営業時間・子連れの注意点・3駅からの無料シャトルまで。"
 date: 2026-07-07
 draft: false
+cover:
+  image: "/images/travel-guide/maihama-eurasia-spa.jpg"
 hideEventBox: true
 slug: "maihama-eurasia-spa"
 badge: "温泉"
