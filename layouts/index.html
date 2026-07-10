@@ -4,7 +4,7 @@
      （日本語は / =地域ポータル と /travel-guide/ =観光ガイドで役割が別のため対象外） */}}
 {{- $d := "/travel-guide/" | absLangURL }}
 <meta http-equiv="refresh" content="0; url={{ $d }}">
-<script>window.location.replace({{ $d | jsonify }});</script>
+<script>window.location.replace({{ $d }});</script>
 <div style="padding:4rem 1rem;text-align:center;">
   <a href="{{ $d }}" style="color:var(--accent);font-weight:700;text-decoration:none;">{{ if eq .Lang "en" }}Go to the travel guide →{{ else if eq .Lang "zh" }}前往旅行指南 →{{ else if eq .Lang "ko" }}여행 가이드로 이동 →{{ else if eq .Lang "zh-tw" }}前往旅遊指南 →{{ end }}</a>
 </div>
