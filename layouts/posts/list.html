@@ -141,10 +141,9 @@
     <div class="sidebar-widget">
       <div class="widget-title"><i class="ti ti-tag" aria-hidden="true"></i> タグ</div>
       <div class="tag-cloud">
-        {{- range site.Taxonomies.tags.ByCount }}
-        {{- if ge .Count 3 }}
+        {{- /* 件数の多い順に上位20件のみ表示（3件未満は除外） */ -}}
+        {{- range first 20 (where site.Taxonomies.tags.ByCount "Count" ">=" 3) }}
         <a class="tag-item" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}({{ .Count }})</a>
-        {{- end }}
         {{- end }}
       </div>
       <a class="tag-more-link" href="/tags/">すべてのタグを見る →</a>
