@@ -31,9 +31,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 9
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 10
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -45,9 +45,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 9
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 10
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -94,9 +94,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 17
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 11
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -108,9 +108,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 17
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 11
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -169,9 +169,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 5
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 14
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -183,9 +183,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 5
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 14
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -246,9 +246,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 16
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 2
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -295,9 +295,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "check"
-        walk_min: 8
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 3
+        lat: 35.627180
+        lng: 139.873697
         address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
         url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
       - role: "drugstore"
@@ -309,9 +309,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 8
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 18
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -323,9 +323,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 8
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 18
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -488,9 +488,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "check"
-        walk_min: 8
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 4
+        lat: 35.627180
+        lng: 139.873697
         address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
         url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
       - role: "drugstore"
@@ -502,9 +502,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 8
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 17
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -516,9 +516,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 8
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 17
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -577,9 +577,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 3
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 16
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -591,9 +591,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 3
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 16
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -628,9 +628,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "check"
-        walk_min: 9
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 6
+        lat: 35.627180
+        lng: 139.873697
         address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
         url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
       - role: "drugstore"
@@ -642,9 +642,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 9
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 16
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -656,9 +656,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 9
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 16
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -694,8 +694,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 0
-        lat: 35.631264
-        lng: 139.874329
+        lat: 35.627180
+        lng: 139.873697
         address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
         url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
       - role: "drugstore"
@@ -707,9 +707,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 6
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 18
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -721,9 +721,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 6
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 18
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -757,8 +757,8 @@ hotels:
         hours_ko: "8:00～23:00"
         hours_zhtw: "8:00～23:00"
         walk_min: 0
-        lat: 35.631264
-        lng: 139.874329
+        lat: 35.630993
+        lng: 139.872862
         address: "千葉県浦安市舞浜1-34 東京ベイ舞浜ホテル内"
       - role: "drugstore"
         in_building: false
@@ -769,9 +769,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 1
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 15
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -783,9 +783,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 1
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 15
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -846,9 +846,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 14
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 3
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -895,9 +895,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 1
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 16
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -909,9 +909,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 1
-        lat: 35.631264
-        lng: 139.874329
+        walk_min: 16
+        lat: 35.634299
+        lng: 139.886566
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -959,8 +959,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 0
-        lat: 35.625957
-        lng: 139.894958
+        lat: 35.626700
+        lng: 139.897200
         address: "千葉県浦安市千鳥13-1"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"

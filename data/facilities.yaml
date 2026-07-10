@@ -19,8 +19,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.627180
+    lng: 139.873697
     address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
     last_verified: "2026/6/29"
@@ -39,8 +39,8 @@ facilities:
     open_late: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.627180
+    lng: 139.873697
     address: "千葉県浦安市舞浜1-8"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
     last_verified: "2026/6/29"
@@ -56,8 +56,8 @@ facilities:
     hours_zh: "-"
     hours_ko: "-"
     hours_zhtw: "-"
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.627180
+    lng: 139.873697
     address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ1F"
     last_verified: "2026/6/29"
     note: "閉店。hilton-lawson-24h にリニューアル（沿革記録用・現役表記には使わない）"
@@ -149,8 +149,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.625957
-    lng: 139.894958
+    lat: 35.626700
+    lng: 139.897200
     address: "千葉県浦安市千鳥13-1"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -1563,8 +1563,8 @@ facilities:
     hours_ko: "8:00～23:00"
     hours_zhtw: "8:00～23:00"
     open_late: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.630993
+    lng: 139.872862
     address: "千葉県浦安市舞浜1-34 東京ベイ舞浜ホテル内"
     last_verified: "2026/6/29"
     note: "東京ベイ舞浜ホテル ファーストリゾート 館内売店"
@@ -1944,8 +1944,8 @@ facilities:
     hours_zhtw: "10:00～22:30"
     open_late: true
     baby_goods: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
     official_url: "https://shop.seijoishii.com/seijoishii/"
     last_verified: "2026/6/29"
@@ -2203,8 +2203,8 @@ facilities:
     hours_ko: "10:00～21:00"
     hours_zhtw: "10:00～21:00"
     baby_goods: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
     official_url: "https://shop.tomods.jp/"
     last_verified: "2026/6/29"
@@ -2813,8 +2813,8 @@ facilities:
     hours_ko: "8:00～22:00"
     hours_zhtw: "8:00～22:00"
     open_late: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F ザ・コートヤード"
     official_url: "https://map.mcdonalds.co.jp/"
     last_verified: "2026/6/29"
@@ -3089,8 +3089,8 @@ facilities:
     hours_ko: "9:00～22:30"
     hours_zhtw: "9:00～22:30"
     open_late: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F B’ウェイ"
     official_url: "https://www.saizeriya.co.jp/"
     last_verified: "2026/6/29"
@@ -3417,8 +3417,8 @@ facilities:
     hours_ko: "런치 11:00～16:00／디너 16:00～22:30"
     hours_zhtw: "午餐 11:00～16:00／晚餐 16:00～22:30"
     open_late: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ3F"
     official_url: "https://www.toraji.com/"
     last_verified: "2026/6/29"
@@ -3637,8 +3637,8 @@ facilities:
     hours_ko: "08:00～22:00"
     hours_zhtw: "08:00～22:00"
     open_late: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F"
     official_url: "https://store.starbucks.co.jp/"
     last_verified: "2026/6/29"
@@ -3654,8 +3654,8 @@ facilities:
     hours_ko: "월~금 10:00～22:00／주말·공휴일 08:00～22:00"
     hours_zhtw: "週一至週五 10:00～22:00／週末及假日 08:00～22:00"
     open_late: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ2F"
     official_url: "https://store.starbucks.co.jp/"
     last_verified: "2026/6/29"
@@ -3790,8 +3790,8 @@ facilities:
     hours_ko: "08:00～22:00"
     hours_zhtw: "08:00～22:00"
     open_late: true
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F ガーデンサイト"
     official_url: "https://www.tullys.co.jp/"
     last_verified: "2026/6/29"
@@ -3823,8 +3823,8 @@ facilities:
     hours_zh: "10:00～21:00参考"
     hours_ko: "10:00～21:00기준"
     hours_zhtw: "10:00～21:00參考"
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ1F"
     last_verified: "2026/6/29"
   - id: "seims-maihama"
@@ -3906,8 +3906,8 @@ facilities:
     hours_zh: "10:00～21:00"
     hours_ko: "10:00～21:00"
     hours_zhtw: "10:00～21:00"
-    lat: 35.631264
-    lng: 139.874329
+    lat: 35.634299
+    lng: 139.886566
     address: "千葉県浦安市舞浜1-4 イクスピアリ3F"
     official_url: "https://www.daiso-sangyo.co.jp/shop"
     last_verified: "2026/7/9"
