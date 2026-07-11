@@ -116,8 +116,10 @@ params:
     - 葛西
   author: 浦安ぽーたる
   # ★SEO: SNSシェア時の既定OG画像（1200×630ブランド画像）。個別記事は各自の画像が優先される。
+  # ?v= はキャッシュバスター。画像を差し替えたら数字を上げると、SNS/CDN側の
+  # 旧画像キャッシュを避けて新しいカードを取得させられる（X/Facebook はOGPを強くキャッシュする）。
   images:
-    - /images/og-default.png
+    - /images/og-default.png?v=2
   schema:
     # ★SEO: Organization/BlogPosting publisher の logo（512×512px 正方形）
     logo: /images/logo-square.png
