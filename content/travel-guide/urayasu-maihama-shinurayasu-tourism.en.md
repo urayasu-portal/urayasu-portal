@@ -23,7 +23,7 @@ faq:
   - q: "Are there places to spend half a day outside the Disney parks?"
     a: "Yes. Ikspiari and Bon Voyage in Maihama are both accessible without park admission. In the Urayasu Station area, combining the Local History Museum, historic houses (Uda-gawa, Otsuka), and a walk along Sakaigawa canal makes for a solid half-day course."
   - q: "How do I get from Maihama Station to Urayasu Station?"
-    a: "JR Maihama to JR Shin-Urayasu is 5–7 minutes (no transfer). From Shin-Urayasu to Urayasu Station (Tozai Line) requires a transfer and takes about 20–25 minutes total. If you have a suitcase, a taxi is also an option."
+    a: "JR Maihama to JR Shin-Urayasu is about 3–4 minutes (no transfer). From Shin-Urayasu to Urayasu Station (Tozai Line) requires a transfer and takes about 20–25 minutes total. If you have a suitcase, a taxi is also an option."
   - q: "Can I buy Disney goods without park admission?"
     a: "Yes. Bon Voyage (adjacent to Ikspiari, near JR Maihama Station) sells official Disney merchandise without a park entry ticket."
   - q: "Which area is easiest to visit with small children?"
@@ -118,7 +118,7 @@ faq:
 </table>
 </div>
 
-<p>The three areas are separated by train and cannot be reached on foot. (Maihama to Shin-Urayasu: 1 stop on the Keiyo Line, about 5–7 minutes. Maihama to Urayasu Station: including transfer, about 30–40 minutes.) If you plan to visit multiple areas in one trip, allow generous travel time.</p>
+<p>The three areas are separated by train and cannot be reached on foot. (Maihama to Shin-Urayasu: 1 stop on the Keiyo Line, about 3–4 minutes. Maihama to Urayasu Station: including transfer, about 30–40 minutes.) If you plan to visit multiple areas in one trip, allow generous travel time.</p>
 
 <h2 id="purpose-table">Quick Guide by Purpose</h2>
 
@@ -237,7 +237,7 @@ faq:
     </tr>
     <tr>
       <td>9:00–10:00</td>
-      <td>Pick up breakfast or drinks at the basement supermarket of <strong>Atre Shin-Urayasu</strong></td>
+      <td>Pick up breakfast or drinks at the first-floor supermarket of <strong>Atre Shin-Urayasu</strong></td>
       <td>Bakery and deli are well stocked. Eat-in space available</td>
     </tr>
     <tr>
@@ -330,7 +330,7 @@ faq:
 <ul>
   <li><strong>Access:</strong> Directly connected to JR Shin-Urayasu Station</li>
   <li><strong>Hours:</strong> 10:00–21:00 (some restaurants until 22:00)</li>
-  <li><strong>Tip:</strong> The basement deli and prepared food section is convenient for souvenirs. Drug stores for daily supplies are also here.</li>
+  <li><strong>Tip:</strong> The first-floor deli and prepared food section is convenient for souvenirs. Drug stores for daily supplies are also here.</li>
 </ul>
 
 <h3>MONA Shin-Urayasu</h3>
@@ -390,7 +390,7 @@ faq:
 <p>Near Urayasu Station, combining the former Udagawa residence, the former Otsuka residence, and a walk along Sakaigawa canal gives visitors a taste of Moto-machi's character even in a short visit. Opening days and hours are subject to change — check the Urayasu City official website before visiting.</p>
 
 <h3>Sakaigawa Canal Promenade & Shopping Street</h3>
-<p>The promenade along the Sakaigawa canal running from Urayasu Station is a popular local walking route. Old-style shops, local restaurants, bakeries, and shrines (Kiyotaki Shrine, Inaragiki Kumano Shrine, etc.) are dotted along the way for a leisurely walk.</p>
+<p>The promenade along the Sakaigawa canal running from Urayasu Station is a popular local walking route. Old-style shops, local restaurants, bakeries, and shrines (Kiyotaki Shrine, Toyouke Shrine, etc.) are dotted along the way for a leisurely walk.</p>
 <ul>
   <li><strong>Access:</strong> A short walk from Urayasu Station</li>
   <li><strong>Time needed:</strong> At least 1 hour for a quick look; combine with the Local History Museum for a half-day course</li>
@@ -647,7 +647,7 @@ faq:
     </tr>
     <tr>
       <td>Between areas</td>
-      <td colspan="3">Maihama ↔ Shin-Urayasu: Keiyo Line ~5–7 min / Shin-Urayasu ↔ Urayasu Sta.: transfer ~20–25 min</td>
+      <td colspan="3">Maihama ↔ Shin-Urayasu: Keiyo Line ~3–4 min / Shin-Urayasu ↔ Urayasu Sta.: transfer ~20–25 min</td>
     </tr>
   </tbody>
 </table>
@@ -663,7 +663,7 @@ faq:
 <p>Yes. Ikspiari and Bon Voyage in Maihama are both accessible without park admission. In the Urayasu Station area, combining the Local History Museum, historic houses, and a walk along the Sakaigawa canal makes for a half-day course.</p>
 
 <h3>How do I get from Maihama Station to Urayasu Station?</h3>
-<p>JR Maihama to JR Shin-Urayasu is 5–7 minutes (no transfer). From Shin-Urayasu to Urayasu Station (Tozai Line) requires a transfer and takes about 20–25 minutes total. If you have a suitcase, a taxi is also an option.</p>
+<p>JR Maihama to JR Shin-Urayasu is about 3–4 minutes (no transfer). From Shin-Urayasu to Urayasu Station (Tozai Line) requires a transfer and takes about 20–25 minutes total. If you have a suitcase, a taxi is also an option.</p>
 
 <h3>Can I buy Disney goods without park admission?</h3>
 <p>Yes. <strong>Bon Voyage</strong> (adjacent to Ikspiari, near JR Maihama Station) sells official Disney merchandise without a park entry ticket.</p>
