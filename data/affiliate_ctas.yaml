@@ -44,22 +44,24 @@ ctas:
     url: /travel-guide/hotels/
     btn: ホテル比較ガイドを見る
 
-  # ── アフィリエイト枠：グルメ・カフェ（A8提携承認後に url を貼る） ──
+  # ── アフィリエイト枠：グルメ・カフェ（成城石井.com／バリューコマース LinkSwitch） ──
   gourmet:
     type: affiliate
-    icon: ti-coffee
+    icon: ti-shopping-bag
     eyebrow: 自宅で浦安グルメ
-    title: ""
-    desc: ""
-    url: ""
-    btn: ""
+    title: 成城石井の味を、おうちで
+    desc: アトレ新浦安1階でおなじみの成城石井。公式通販なら、人気の惣菜やワイン、輸入チーズ・スイーツをまとめてお取り寄せできます。
+    url: https://www.seijoishii.com/
+    btn: 成城石井.comで見る
 
-  # ── アフィリエイト枠：子育て・教育（A8提携承認後に url を貼る） ──
+  # ── アフィリエイト枠：子育て・教育（モグモ 幼児食／A8.net） ──
+  # 差し替え候補：Cha Cha Cha（知育玩具サブスク・A8）
+  #   url=https://px.a8.net/svt/ejp?a8mat=4B7XX3+3NKU8Q+4OIO+5YJRM
   kosodate:
     type: affiliate
-    icon: ti-school
+    icon: ti-tools-kitchen-2
     eyebrow: 浦安の子育て世帯に
-    title: ""
-    desc: ""
-    url: ""
-    btn: ""
+    title: 好き嫌い・食べムラに、栄養設計の幼児食「モグモ」
+    desc: 管理栄養士監修の幼児向け冷凍宅食。レンジで温めるだけ、累計300万食突破。共働きが多い浦安の食卓の“もう一品”に。
+    url: https://px.a8.net/svt/ejp?a8mat=4B7XX3+47TKT6+5CLW+5YJRM
+    btn: モグモを見てみる

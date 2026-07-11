@@ -60,6 +60,8 @@ tags:
 
 **日時指定・事前購入制**です。週末や連休は売り切れやすいので、旅程が決まったら早めの確保がおすすめです。
 
+<p><a class="lg-book-btn book-asoview" href="https://www.asoview.com/brand/teamlabplanets/" target="_blank" rel="sponsored noopener">アソビューでチケット・クーポンを見る →</a></p>
+
 <p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.comでチケットを見る →</a></p>
 
 {{< ad-disclosure >}}

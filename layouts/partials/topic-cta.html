@@ -38,7 +38,7 @@
       {{- with $cta.desc }}<p class="topic-cta-desc">{{ . }}</p>{{ end }}
     </div>
   </div>
-  <a class="topic-cta-btn" href="{{ $cta.url }}"{{ if $isAff }} rel="sponsored noopener" target="_blank"{{ end }}>{{ $cta.btn }} <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+  <a class="topic-cta-btn" href="{{ $cta.url }}"{{ if $isAff }} rel="sponsored nofollow noopener" target="_blank"{{ end }}>{{ $cta.btn }} <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
   {{- if $isAff }}<p class="topic-cta-note">{{ i18n "includes_pr" }}</p>{{ end }}
 </aside>
 {{- end }}
