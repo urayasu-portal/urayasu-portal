@@ -73,6 +73,22 @@
   </a>
 </div>
 
+{{/* 設備で探す（EN限定の設備逆引きページ群。JP版は未作成のためENのみ表示） */}}
+{{- if $isEN }}
+<div class="section-head">
+  <h2>Find hotels by facility</h2>
+</div>
+<p class="tg-section-sub">Data-driven lists from our hand-checked hotel database.</p>
+<div class="fl-chip-row fl-chip-row-hub">
+  <a class="fl-chip" href="/en/travel-guide/hotels/airport-limousine/"><i class="ti ti-plane" aria-hidden="true"></i>Airport limousine bus</a>
+  <a class="fl-chip" href="/en/travel-guide/hotels/large-public-bath/"><i class="ti ti-bath" aria-hidden="true"></i>Large bath / onsen</a>
+  <a class="fl-chip" href="/en/travel-guide/hotels/near-station/"><i class="ti ti-train" aria-hidden="true"></i>Right at the station</a>
+  <a class="fl-chip" href="/en/travel-guide/hotels/coin-laundry/"><i class="ti ti-wash-machine" aria-hidden="true"></i>Coin laundry</a>
+  <a class="fl-chip" href="/en/travel-guide/hotels/in-house-store/"><i class="ti ti-building-store" aria-hidden="true"></i>In-house shop</a>
+  <a class="fl-chip" href="/en/travel-guide/hotels/pool/"><i class="ti ti-swimming" aria-hidden="true"></i>Pool</a>
+</div>
+{{- end }}
+
 {{/* ────────────────────────────────────────
      エリアで探す / Area Overview
      ──────────────────────────────────────── */}}

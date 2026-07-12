@@ -1,0 +1,132 @@
+{{- define "main" }}
+{{- /*
+  設備逆引きの英語ランディングページ（facility-list レイアウト）。
+  frontmatter の facility キー（bath/pool/laundry/convenience/shuttle/station/limousine/kitchen）で
+  data/hotels_map.yaml の flags をフィルタし、data/hotels.yaml の区分・エリア・特徴ENを合流して
+  価格昇順で一覧化する。CSVを直して再生成すれば自動反映（ページ本文の書き換え不要）。
+  FAQ構造化データは extend_head.html の faq-jsonld が frontmatter faq: を拾う（本文表示は本テンプレ）。
+*/ -}}
+{{- $fac := .Params.facility }}
+{{- $isEN := eq .Language.Lang "en" }}
+
+{{- /* hotels.yaml: slug → 区分/エリアEN/特徴EN/掲載区分 の索引 */ -}}
+{{- $info := dict }}
+{{- range hugo.Data.hotels.areas }}
+  {{- $areaEN := .name_en | default .name }}
+  {{- range .hotels }}
+    {{- if .slug }}
+      {{- $info = merge $info (dict .slug (dict
+            "category" (.category | default "")
+            "feature" (.feature_en | default "")
+            "area" $areaEN)) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- $catEN := dict
+    "ディズニーホテル" "Disney Hotel"
+    "オフィシャルホテル" "Official Hotel"
+    "パートナーホテル" "Partner Hotel" }}
+{{- $noteEN := dict
+    "有料" "Paid" "無料" "Free" "天然温泉" "Natural hot spring" "サウナ" "Sauna"
+    "温水" "Heated" "屋内外" "Indoor & outdoor" "展望" "With a view" "無料・展望" "Free, with a view"
+    "大浴場・サウナ" "Bath & sauna" "通年屋外ラグーンプール" "Year-round outdoor lagoon pool" }}
+
+{{- $rows := slice }}
+{{- range hugo.Data.hotels_map.hotels }}
+  {{- if in .flags $fac }}
+    {{- $note := "" }}
+    {{- range .facilities }}
+      {{- if eq .key $fac }}{{ with .note }}{{ $note = (index $noteEN .) | default . }}{{ end }}{{ end }}
+    {{- end }}
+    {{- $meta := index $info .slug | default dict }}
+    {{- $rows = $rows | append (dict
+          "slug" .slug
+          "name" (.name_en | default .name)
+          "price" (.price_min | default 999999)
+          "note" $note
+          "cat" (index $meta "category" | default "")
+          "area" (index $meta "area" | default "")
+          "feature" (index $meta "feature" | default "")) }}
+  {{- end }}
+{{- end }}
+{{- $rows = sort $rows "price" "asc" }}
+
+<article class="fl-page">
+  <nav class="fl-bc" aria-label="Breadcrumb">
+    <a href="/en/">Home</a> › <a href="/en/travel-guide/">Travel Guide</a> › <a href="/en/travel-guide/hotels/">Hotels</a>
+  </nav>
+  <header class="fl-header">
+    <h1>{{ .Title }}</h1>
+    <p class="fl-count"><strong>{{ len $rows }}</strong> hotels in our local database ・ prices are typical off-peak rates for 2 adults per room</p>
+  </header>
+
+  <div class="fl-intro">{{ .Content }}</div>
+
+  <div class="fl-list">
+    {{- range $rows }}
+    {{- $pg := site.GetPage (printf "/travel-guide/hotels/%s" .slug) }}
+    <a class="fl-row" {{ with $pg }}href="{{ .RelPermalink }}"{{ else }}href="/en/travel-guide/hotels/"{{ end }}>
+      <span class="fl-main">
+        <span class="fl-name">{{ .name }}</span>
+        <span class="fl-meta">
+          {{- with index $catEN .cat }}<span class="fl-cat">{{ . }}</span>{{ end }}
+          {{- with .area }}<span class="fl-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+          {{- with .note }}<span class="fl-note">{{ . }}</span>{{ end }}
+        </span>
+        {{- with .feature }}<span class="fl-feature">{{ . }}</span>{{ end }}
+      </span>
+      <span class="fl-price">
+        {{- if lt .price 999999 }}from ¥{{ lang.FormatNumberCustom 0 .price }}{{ end }}
+        <i class="ti ti-chevron-right" aria-hidden="true"></i>
+      </span>
+    </a>
+    {{- end }}
+  </div>
+
+  <p class="fl-disclaimer">Facility details and prices change — please confirm on each hotel's page and official site before booking. This list is generated from our hand-checked local hotel database.</p>
+
+  {{- /* FAQ（本文表示。JSON-LDは extend_head の faq-jsonld が出力） */ -}}
+  {{- with .Params.faq }}
+  <section class="fl-faq">
+    <h2>FAQ</h2>
+    {{- range . }}
+    <h3>{{ .q }}</h3>
+    <p>{{ .a }}</p>
+    {{- end }}
+  </section>
+  {{- end }}
+
+  {{- /* 姉妹ページ（設備逆引き）チップ */ -}}
+  {{- $siblings := slice
+      (dict "slug" "airport-limousine" "label" "Airport limousine bus" "icon" "ti-plane")
+      (dict "slug" "large-public-bath" "label" "Large bath / onsen" "icon" "ti-bath")
+      (dict "slug" "near-station" "label" "Right at the station" "icon" "ti-train")
+      (dict "slug" "coin-laundry" "label" "Coin laundry" "icon" "ti-wash-machine")
+      (dict "slug" "in-house-store" "label" "In-house shop" "icon" "ti-building-store")
+      (dict "slug" "pool" "label" "Pool" "icon" "ti-swimming") }}
+  {{- $cur := "" }}{{ with .File }}{{ $cur = .ContentBaseName }}{{ end }}
+  <section class="fl-siblings">
+    <h2>Find hotels by facility</h2>
+    <div class="fl-chip-row">
+      {{- range $siblings }}
+      {{- if ne .slug $cur }}
+      <a class="fl-chip" href="/en/travel-guide/hotels/{{ .slug }}/"><i class="ti {{ .icon }}" aria-hidden="true"></i>{{ .label }}</a>
+      {{- end }}
+      {{- end }}
+      <a class="fl-chip" href="/en/travel-guide/hotels/shuttle/"><i class="ti ti-bus" aria-hidden="true"></i>Free shuttle (guide)</a>
+    </div>
+    <p class="fl-hub-link"><a href="/en/travel-guide/hotels/">← Back to all 48 hotels near Tokyo Disney Resort</a></p>
+  </section>
+</article>
+
+{{- /* ItemList 構造化データ */ -}}
+{{- $items := slice }}
+{{- range $i, $e := $rows }}
+  {{- $pg := site.GetPage (printf "/travel-guide/hotels/%s" $e.slug) }}
+  {{- if $pg }}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "url" $pg.Permalink "name" $e.name) }}
+  {{- end }}
+{{- end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "itemListElement" $items | jsonify | safeJS }}</script>
+{{- end }}
