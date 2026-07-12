@@ -3,7 +3,7 @@ title: "【浦安市】日の出地区で防災スポーツ施設整備へ"
 date: 2026-07-11T07:00:00+09:00
 slug: "hinode-bosai-sports-facility-sounding"
 categories:
-  - "ニュース・事件事故"
+  - "ニュース"
 tags:
   - "浦安市"
   - "日の出"
