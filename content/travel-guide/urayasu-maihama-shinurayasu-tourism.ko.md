@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 볼거리 가이드 | 마이하마·우라야스·신우라야스 관광"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-07-12
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - 마이하마
@@ -31,7 +31,7 @@ faq:
   - q: "휠체어 이용자에게 편한가요?"
     a: "익스피아리, 아트레 신우라야스, JR 각 역은 모두 무장애 시설입니다. 향토박물관의 실외 전시 구역에는 계단이 있으니 미리 시설에 연락하는 것을 권합니다. 시내에는 복지 택시도 있습니다."
   - q: "식사·기념품 가이드가 있나요?"
-    a: "있습니다. [맛집·기념품 가이드](/ko/travel-guide/gourmet-guide/)에서 지역별 추천 식당과 가게를 소개합니다."
+    a: "있습니다. [맛집·기념품 가이드](/ko/travel-guide/urayasu-gourmet-souvenir-guide/)에서 지역별 추천 식당과 가게를 소개합니다."
 ---
 
 <div class="tg-notice-warn">
@@ -401,7 +401,7 @@ faq:
     <tr><td>도쿄 메트로 우라야스역</td><td>엘리베이터와 휠체어 전용 공간이 있으니 자세한 내용은 도쿄 메트로 공식 사이트를 참조하세요.</td></tr>
     <tr><td>익스피아리</td><td>전 구간 엘리베이터와 경사로가 있고, 휠체어 대여 서비스도 제공합니다(시설에 문의).</td></tr>
     <tr><td>향토박물관</td><td>실외 전시 구역에는 계단이 있으니 방문 전 시설에 연락해 확인하세요.</td></tr>
-    <tr><td>택시·복지 택시</td><td>시내에 여러 복지 택시 운영사가 있고, 휠체어로 탑승 가능한 차종도 있습니다. 자세한 내용은 <a href="/ko/travel-guide/taxi-guide/">택시 가이드</a>를 참조하세요.</td></tr>
+    <tr><td>택시·복지 택시</td><td>시내에 여러 복지 택시 운영사가 있고, 휠체어로 탑승 가능한 차종도 있습니다. 자세한 내용은 <a href="/ko/travel-guide/urayasu-taxi-airport-flat-rate-guide/">택시 가이드</a>를 참조하세요.</td></tr>
     <tr><td>TDR</td><td>도쿄 디즈니 리조트에는 전용 무장애 규정이 있으니 TDR 공식 사이트의 '배리어프리 서비스' 페이지를 참조하세요.</td></tr>
   </tbody>
 </table>
@@ -440,7 +440,7 @@ faq:
 
 <h2 id="access">마이하마·신우라야스·우라야스 사이의 이동</h2>
 
-<p>공항과 도쿄역에서 출발하는 자세한 교통 가이드는 <a href="/ko/travel-guide/access-guide/">교통 가이드</a>를 참조하세요. 아래는 관광 시 기본 교통 정보입니다.</p>
+<p>공항과 도쿄역에서 출발하는 자세한 교통 가이드는 <a href="/ko/travel-guide/urayasu-maihama-access-guide/">교통 가이드</a>를 참조하세요. 아래는 관광 시 기본 교통 정보입니다.</p>
 
 <div style="overflow-x:auto;margin-bottom:20px;">
 <table>
@@ -456,7 +456,7 @@ faq:
 </table>
 </div>
 
-<p>지역 간 교통과 택시 정보는 <a href="/ko/travel-guide/taxi-guide/">택시·공항 정액 가이드</a>도 참조하세요.</p>
+<p>지역 간 교통과 택시 정보는 <a href="/ko/travel-guide/urayasu-taxi-airport-flat-rate-guide/">택시·공항 정액 가이드</a>도 참조하세요.</p>
 
 <hr>
 
@@ -475,10 +475,10 @@ faq:
 <p>어린아이와 함께라면 <strong>익스피아리(마이하마)</strong>와 <strong>아트레 신우라야스</strong>가 좋은 실내 선택지입니다. <strong>우라야스시 향토박물관</strong>에는 초등학생에게 인기 있는 체험 전시가 있습니다.</p>
 
 <h3>휠체어 이용자에게 편한가요?</h3>
-<p>익스피아리, 아트레 신우라야스, JR 각 역은 모두 무장애 시설입니다. 향토박물관 실외 전시 구역에는 계단이 있으니 미리 시설에 연락하는 것을 권합니다. 시내에는 복지 택시도 있습니다(자세한 내용은 <a href="/ko/travel-guide/taxi-guide/">택시 가이드</a> 참조).</p>
+<p>익스피아리, 아트레 신우라야스, JR 각 역은 모두 무장애 시설입니다. 향토박물관 실외 전시 구역에는 계단이 있으니 미리 시설에 연락하는 것을 권합니다. 시내에는 복지 택시도 있습니다(자세한 내용은 <a href="/ko/travel-guide/urayasu-taxi-airport-flat-rate-guide/">택시 가이드</a> 참조).</p>
 
 <h3>식사·기념품 가이드가 있나요?</h3>
-<p>있습니다. <a href="/ko/travel-guide/gourmet-guide/">맛집·기념품 가이드</a>에서 지역별 추천 식당과 가게를 소개합니다.</p>
+<p>있습니다. <a href="/ko/travel-guide/urayasu-gourmet-souvenir-guide/">맛집·기념품 가이드</a>에서 지역별 추천 식당과 가게를 소개합니다.</p>
 
 <hr>
 
@@ -486,14 +486,14 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
-    <a class="rg-card" href="/ko/travel-guide/access-guide/">
+    <a class="rg-card" href="/ko/travel-guide/urayasu-maihama-access-guide/">
       <span class="rg-emoji">🚃</span>
       <span class="rg-body">
         <span class="rg-title">우라야스·마이하마 교통 가이드</span>
         <span class="rg-go">하네다·나리타·도쿄역에서 가는 경로 →</span>
       </span>
     </a>
-    <a class="rg-card" href="/ko/travel-guide/taxi-guide/">
+    <a class="rg-card" href="/ko/travel-guide/urayasu-taxi-airport-flat-rate-guide/">
       <span class="rg-emoji">🚕</span>
       <span class="rg-body">
         <span class="rg-title">우라야스 택시·공항 정액 가이드</span>
@@ -507,7 +507,7 @@ faq:
         <span class="rg-go">지역과 가격으로 전 호텔 비교 →</span>
       </span>
     </a>
-    <a class="rg-card" href="/ko/travel-guide/gourmet-guide/">
+    <a class="rg-card" href="/ko/travel-guide/urayasu-gourmet-souvenir-guide/">
       <span class="rg-emoji">🍜</span>
       <span class="rg-body">
         <span class="rg-title">맛집·기념품 가이드</span>

@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 호텔 교통 비교 | 파크·역·공항·도쿄 도심(현지 시선)"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-07-12
 description: "현지 미디어가 우라야스 전 호텔의 교통 편의를 비교합니다: 파크까지 거리, JR 역 접근성, 공항버스, 도쿄 도심 이동——네 가지 관점을 한 번에. 공항버스 요금, 실제로 마이하마역에서 걸어갈 수 있는 호텔 등 실용 정보."
 tags:
   - 호텔
@@ -23,7 +23,7 @@ faq:
 
 이 글에서는 현지 시선으로 우라야스 전 호텔을 네 가지 목적지별로 분류 비교해, '어디에서 어디로 가기 편한가'의 실제 상황을 정리합니다. 데이터는 2025–2026년 현지 조사의 참고값입니다.
 
-공항이나 도쿄역에서 우라야스·마이하마로 오는 교통은 별도의 [교통 가이드](/ko/travel-guide/access-guide/)를 참조하세요.
+공항이나 도쿄역에서 우라야스·마이하마로 오는 교통은 별도의 [교통 가이드](/ko/travel-guide/urayasu-maihama-access-guide/)를 참조하세요.
 
 ---
 
@@ -147,4 +147,4 @@ faq:
 - [호텔 가이드 홈](/ko/travel-guide/hotels/)
 - [가족 디즈니 호텔 가이드](/ko/travel-guide/hotels/kids/)
 - [가성비 호텔 비교](/ko/travel-guide/hotels/budget/)
-- [교통 가이드(공항·도쿄역)](/ko/travel-guide/access-guide/)
+- [교통 가이드(공항·도쿄역)](/ko/travel-guide/urayasu-maihama-access-guide/)

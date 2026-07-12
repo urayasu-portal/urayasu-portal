@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼周邊遊覽指南 | 舞濱·浦安·新浦安的觀光景點"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-07-12
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - 舞濱
@@ -31,7 +31,7 @@ faq:
   - q: "輪椅使用者方便嗎？"
     a: "Ikspiari、Atre新浦安和JR各站均為無障礙設施。鄉土博物館的室外展示區有台階，建議提前聯繫設施。市內也提供福祉計程車。"
   - q: "有餐飲·紀念品指南嗎？"
-    a: "有。請參閱[美食·紀念品指南](/zh-tw/travel-guide/gourmet-guide/)，依地區介紹推薦餐廳和店鋪。"
+    a: "有。請參閱[美食·紀念品指南](/zh-tw/travel-guide/urayasu-gourmet-souvenir-guide/)，依地區介紹推薦餐廳和店鋪。"
 ---
 
 <div class="tg-notice-warn">
@@ -401,7 +401,7 @@ faq:
     <tr><td>東京地鐵浦安站</td><td>設有電梯和輪椅專用空間，詳情請參閱東京地鐵官方網站。</td></tr>
     <tr><td>Ikspiari</td><td>全程設有電梯和坡道，並提供輪椅借用服務（請向設施諮詢）。</td></tr>
     <tr><td>鄉土博物館</td><td>室外展示區有台階，出行前請聯繫設施確認。</td></tr>
-    <tr><td>計程車·福祉計程車</td><td>市內有多家福祉計程車營運商，包括可乘坐輪椅上車的車型。詳情請參閱<a href="/zh-tw/travel-guide/taxi-guide/">計程車指南</a>。</td></tr>
+    <tr><td>計程車·福祉計程車</td><td>市內有多家福祉計程車營運商，包括可乘坐輪椅上車的車型。詳情請參閱<a href="/zh-tw/travel-guide/urayasu-taxi-airport-flat-rate-guide/">計程車指南</a>。</td></tr>
     <tr><td>TDR</td><td>東京迪士尼度假區有專屬的無障礙規定，請參閱TDR官方網站的「無障礙服務」頁面。</td></tr>
   </tbody>
 </table>
@@ -440,7 +440,7 @@ faq:
 
 <h2 id="access">舞濱·新浦安·浦安之間的移動</h2>
 
-<p>從機場和東京站出發的詳細交通指南，請參閱<a href="/zh-tw/travel-guide/access-guide/">交通指南</a>。以下為觀光時的基本交通資訊。</p>
+<p>從機場和東京站出發的詳細交通指南，請參閱<a href="/zh-tw/travel-guide/urayasu-maihama-access-guide/">交通指南</a>。以下為觀光時的基本交通資訊。</p>
 
 <div style="overflow-x:auto;margin-bottom:20px;">
 <table>
@@ -456,7 +456,7 @@ faq:
 </table>
 </div>
 
-<p>區域間交通和計程車資訊，另請參閱<a href="/zh-tw/travel-guide/taxi-guide/">計程車·機場定額指南</a>。</p>
+<p>區域間交通和計程車資訊，另請參閱<a href="/zh-tw/travel-guide/urayasu-taxi-airport-flat-rate-guide/">計程車·機場定額指南</a>。</p>
 
 <hr>
 
@@ -475,10 +475,10 @@ faq:
 <p>帶小孩子去，<strong>Ikspiari（舞濱）</strong>和<strong>Atre新浦安</strong>都是不錯的室內選項。<strong>浦安市鄉土博物館</strong>有深受小學生歡迎的體驗展示。</p>
 
 <h3>輪椅使用者方便嗎？</h3>
-<p>Ikspiari、Atre新浦安和JR各站均為無障礙設施。鄉土博物館室外展示區有台階，建議提前聯繫設施。市內也提供福祉計程車（詳見<a href="/zh-tw/travel-guide/taxi-guide/">計程車指南</a>）。</p>
+<p>Ikspiari、Atre新浦安和JR各站均為無障礙設施。鄉土博物館室外展示區有台階，建議提前聯繫設施。市內也提供福祉計程車（詳見<a href="/zh-tw/travel-guide/urayasu-taxi-airport-flat-rate-guide/">計程車指南</a>）。</p>
 
 <h3>有餐飲·紀念品指南嗎？</h3>
-<p>有，請參閱<a href="/zh-tw/travel-guide/gourmet-guide/">美食·紀念品指南</a>，依地區介紹推薦餐廳和店鋪。</p>
+<p>有，請參閱<a href="/zh-tw/travel-guide/urayasu-gourmet-souvenir-guide/">美食·紀念品指南</a>，依地區介紹推薦餐廳和店鋪。</p>
 
 <hr>
 
@@ -486,14 +486,14 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
-    <a class="rg-card" href="/zh-tw/travel-guide/access-guide/">
+    <a class="rg-card" href="/zh-tw/travel-guide/urayasu-maihama-access-guide/">
       <span class="rg-emoji">🚃</span>
       <span class="rg-body">
         <span class="rg-title">浦安·舞濱交通指南</span>
         <span class="rg-go">從羽田·成田·東京站出發的路線 →</span>
       </span>
     </a>
-    <a class="rg-card" href="/zh-tw/travel-guide/taxi-guide/">
+    <a class="rg-card" href="/zh-tw/travel-guide/urayasu-taxi-airport-flat-rate-guide/">
       <span class="rg-emoji">🚕</span>
       <span class="rg-body">
         <span class="rg-title">浦安計程車·機場定額指南</span>
@@ -507,7 +507,7 @@ faq:
         <span class="rg-go">依地區和價格比較全部飯店 →</span>
       </span>
     </a>
-    <a class="rg-card" href="/zh-tw/travel-guide/gourmet-guide/">
+    <a class="rg-card" href="/zh-tw/travel-guide/urayasu-gourmet-souvenir-guide/">
       <span class="rg-emoji">🍜</span>
       <span class="rg-body">
         <span class="rg-title">美食·紀念品指南</span>

@@ -3,6 +3,7 @@ title: "【浦安市】子どもの医療費・健康ガイド｜子ども医療
 slug: "urayasu-kodomo-iryohi"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:30:00+09:00
+factChecked: "2026-07-12"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "医療費", "子ども医療費助成", "救急", "浦安市"]

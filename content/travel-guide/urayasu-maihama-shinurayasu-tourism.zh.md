@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼周边游览指南 | 舞滨·浦安·新浦安的观光景点"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-07-12
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - 舞滨
@@ -31,7 +31,7 @@ faq:
   - q: "轮椅使用者方便吗？"
     a: "Ikspiari、Atre新浦安和JR各站均为无障碍设施。乡土博物馆的室外展示区有台阶，建议提前联系设施。市内也提供福祉出租车。"
   - q: "有餐饮·纪念品指南吗？"
-    a: "有。请参阅[美食·纪念品指南](/zh/travel-guide/gourmet-guide/)，按地区介绍推荐餐厅和店铺。"
+    a: "有。请参阅[美食·纪念品指南](/zh/travel-guide/urayasu-gourmet-souvenir-guide/)，按地区介绍推荐餐厅和店铺。"
 ---
 
 <div class="tg-notice-warn">
@@ -401,7 +401,7 @@ faq:
     <tr><td>东京地铁浦安站</td><td>设有电梯和轮椅专用空间，详情请参阅东京地铁官方网站。</td></tr>
     <tr><td>Ikspiari</td><td>全程设有电梯和坡道，并提供轮椅借用服务（请向设施咨询）。</td></tr>
     <tr><td>乡土博物馆</td><td>室外展示区有台阶，出行前请联系设施确认。</td></tr>
-    <tr><td>出租车·福祉出租车</td><td>市内有多家福祉出租车运营商，包括可乘坐轮椅上车的车型。详情请参阅<a href="/zh/travel-guide/taxi-guide/">出租车指南</a>。</td></tr>
+    <tr><td>出租车·福祉出租车</td><td>市内有多家福祉出租车运营商，包括可乘坐轮椅上车的车型。详情请参阅<a href="/zh/travel-guide/urayasu-taxi-airport-flat-rate-guide/">出租车指南</a>。</td></tr>
     <tr><td>TDR</td><td>东京迪士尼度假区有专属的无障碍规定，请参阅TDR官方网站的"无障碍服务"页面。</td></tr>
   </tbody>
 </table>
@@ -440,7 +440,7 @@ faq:
 
 <h2 id="access">舞滨·新浦安·浦安之间的移动</h2>
 
-<p>从机场和东京站出发的详细交通指南，请参阅<a href="/zh/travel-guide/access-guide/">交通指南</a>。以下为观光时的基本交通信息。</p>
+<p>从机场和东京站出发的详细交通指南，请参阅<a href="/zh/travel-guide/urayasu-maihama-access-guide/">交通指南</a>。以下为观光时的基本交通信息。</p>
 
 <div style="overflow-x:auto;margin-bottom:20px;">
 <table>
@@ -456,7 +456,7 @@ faq:
 </table>
 </div>
 
-<p>区域间交通和出租车信息，另请参阅<a href="/zh/travel-guide/taxi-guide/">出租车·机场定额指南</a>。</p>
+<p>区域间交通和出租车信息，另请参阅<a href="/zh/travel-guide/urayasu-taxi-airport-flat-rate-guide/">出租车·机场定额指南</a>。</p>
 
 <hr>
 
@@ -475,10 +475,10 @@ faq:
 <p>带小孩子去，<strong>Ikspiari（舞滨）</strong>和<strong>Atre新浦安</strong>都是不错的室内选项。<strong>浦安市乡土博物馆</strong>有深受小学生欢迎的体验展示。</p>
 
 <h3>轮椅使用者方便吗？</h3>
-<p>Ikspiari、Atre新浦安和JR各站均为无障碍设施。乡土博物馆室外展示区有台阶，建议提前联系设施。市内也提供福祉出租车（详见<a href="/zh/travel-guide/taxi-guide/">出租车指南</a>）。</p>
+<p>Ikspiari、Atre新浦安和JR各站均为无障碍设施。乡土博物馆室外展示区有台阶，建议提前联系设施。市内也提供福祉出租车（详见<a href="/zh/travel-guide/urayasu-taxi-airport-flat-rate-guide/">出租车指南</a>）。</p>
 
 <h3>有餐饮·纪念品指南吗？</h3>
-<p>有，请参阅<a href="/zh/travel-guide/gourmet-guide/">美食·纪念品指南</a>，按地区介绍推荐餐厅和店铺。</p>
+<p>有，请参阅<a href="/zh/travel-guide/urayasu-gourmet-souvenir-guide/">美食·纪念品指南</a>，按地区介绍推荐餐厅和店铺。</p>
 
 <hr>
 
@@ -486,14 +486,14 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
-    <a class="rg-card" href="/zh/travel-guide/access-guide/">
+    <a class="rg-card" href="/zh/travel-guide/urayasu-maihama-access-guide/">
       <span class="rg-emoji">🚃</span>
       <span class="rg-body">
         <span class="rg-title">浦安·舞滨交通指南</span>
         <span class="rg-go">从羽田·成田·东京站出发的路线 →</span>
       </span>
     </a>
-    <a class="rg-card" href="/zh/travel-guide/taxi-guide/">
+    <a class="rg-card" href="/zh/travel-guide/urayasu-taxi-airport-flat-rate-guide/">
       <span class="rg-emoji">🚕</span>
       <span class="rg-body">
         <span class="rg-title">浦安出租车·机场定额指南</span>
@@ -507,7 +507,7 @@ faq:
         <span class="rg-go">按地区和价格比较全部酒店 →</span>
       </span>
     </a>
-    <a class="rg-card" href="/zh/travel-guide/gourmet-guide/">
+    <a class="rg-card" href="/zh/travel-guide/urayasu-gourmet-souvenir-guide/">
       <span class="rg-emoji">🍜</span>
       <span class="rg-body">
         <span class="rg-title">美食·纪念品指南</span>

@@ -1,7 +1,8 @@
 ---
 title: "浦安・舞浜への行き方ガイド （目的地別移動ルート）"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-07-05
+lastmod: 2026-07-12
+factChecked: "2026-07-05"
 slug: "urayasu-maihama-access-guide"
 badge: "アクセス"
 description: "羽田空港・成田空港・東京駅から、浦安駅・新浦安駅・舞浜駅・東京ディズニーリゾートへ向かう方法を電車・リムジンバス・タクシー別に比較。子連れ・大荷物・車いす利用時の注意点もまとめています。"
@@ -182,8 +183,6 @@ faq:
 - <a href="https://www.tokyometro.jp/" target="_blank" rel="noopener">東京メトロ</a>
 - <a href="https://www.tokyodisneyresort.jp/" target="_blank" rel="noopener">東京ディズニーリゾート公式サイト</a>
 - 各ホテル公式サイト・各タクシー会社公式サイト
-
-最終確認日：2026年7月5日
 
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>

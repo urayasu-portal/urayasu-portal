@@ -1,7 +1,8 @@
 ---
 title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド｜町名別カレンダー・申込先まとめ"
 date: 2026-06-13T12:00:00+09:00
-lastmod: 2026-06-13T12:00:00+09:00
+lastmod: 2026-07-12
+factChecked: "2026-07-12"
 categories:
   - "お知らせ"
 tags:
@@ -106,7 +107,7 @@ aliases:
 <p>品目名で検索できる「分別辞典」と、収集日のアラートが受け取れる「クルなび」を使うと便利です。</p>
 
 <div class="lg-art-cards cols-2">
-  <div class="lg-art-card"><i class="ti ti-search lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">浦安市ごみ分別辞典</div><p class="lg-art-card-desc">品目名を入力して、何ごみで出すかを確認できる検索サービス。「迷ったらまずここ」として使えます。</p><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/todokede/gomi/1002009.html" target="_blank" rel="noopener">分別辞典を開く</a></div>
+  <div class="lg-art-card"><i class="ti ti-search lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">浦安市ごみ分別辞典</div><p class="lg-art-card-desc">品目名を入力して、何ごみで出すかを確認できる検索サービス。「迷ったらまずここ」として使えます。</p><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1012343.html" target="_blank" rel="noopener">分別辞典を開く</a></div>
   <div class="lg-art-card"><i class="ti ti-device-mobile lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">ごみ分別アプリ「クルなび」</div><p class="lg-art-card-desc">収集日カレンダー、分別辞典、出し忘れ防止アラート、市からのお知らせを確認できます。</p><div class="lg-art-badges" style="margin-top:8px"><a class="lg-art-badge" href="https://itunes.apple.com/jp/app/pu-shigomi-fen-bieapuri-kurunabi/id915229339?mt=8" target="_blank" rel="noopener" style="text-decoration:none">App Store</a><a class="lg-art-badge" href="https://play.google.com/store/apps/details?id=jp.gomisuke.app.Gomisuke0004" target="_blank" rel="noopener" style="text-decoration:none">Google Play</a><a class="lg-art-badge" href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1005796.html" target="_blank" rel="noopener" style="text-decoration:none">アプリの詳細</a></div></div>
 </div>
 
@@ -133,7 +134,7 @@ aliases:
   <div class="lg-art-card"><span class="lg-art-badge is-teal">手数料（家庭ごみ）</span><div class="lg-art-card-title" style="margin-top:8px">10kgごと220円</div><p class="lg-art-card-desc">目安料金。持ち込み前に確認を</p></div>
 </div>
 
-<div class="lg-art-note">電話：<strong>047-381-5300</strong>　詳細は<a href="https://www.city.urayasu.lg.jp/todokede/gomi/1002013.html" target="_blank" rel="noopener">浦安市公式サイト（クリーンセンター）</a>でご確認ください。</div>
+<div class="lg-art-note">電話：<strong>047-381-5300</strong>　詳細は<a href="https://www.city.urayasu.lg.jp/todokede/gomi/clean/1000392.html" target="_blank" rel="noopener">浦安市公式サイト（クリーンセンター）</a>でご確認ください。</div>
 
 <h2 id="cannot">市で処理できないもの</h2>
 
@@ -180,8 +181,8 @@ aliases:
 
 <div class="lg-art-links">
   <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/index.html" target="_blank" rel="noopener">ごみ収集カレンダー</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/1002009.html" target="_blank" rel="noopener">ごみ分別辞典</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/1002012.html" target="_blank" rel="noopener">粗大ごみの申し込み</a>
-  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/1002013.html" target="_blank" rel="noopener">クリーンセンター持ち込み</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1012343.html" target="_blank" rel="noopener">ごみ分別辞典</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/sodai/1000383.html" target="_blank" rel="noopener">粗大ごみの申し込み</a>
+  <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/clean/1000392.html" target="_blank" rel="noopener">クリーンセンター持ち込み</a>
   <a class="lg-art-link" href="https://www.city.urayasu.lg.jp/todokede/gomi/index.html" target="_blank" rel="noopener">浦安市 ごみ・リサイクル情報</a>
 </div>

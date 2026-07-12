@@ -3,6 +3,7 @@ title: "【浦安市】児童手当・経済的支援ガイド｜手当・就学
 slug: "urayasu-jido-teate"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:40:00+09:00
+factChecked: "2026-07-12"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "児童手当", "就学援助", "奨学金", "浦安市"]
