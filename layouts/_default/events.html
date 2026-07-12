@@ -1,0 +1,118 @@
+{{- define "main" }}
+{{- /*
+  イベントカレンダー（/events/）
+  データソース＝posts の eventDate frontmatter（"2026-07-18" または "2026-07-18/2026-07-19"）。
+  eventEndDate があれば終了日として優先。開催予定は月別・日付昇順、終了分は直近30件を折りたたみ表示。
+  ビルド時刻基準（CIはUTC）なので JST に +9h 補正してから今日を判定する。
+*/ -}}
+{{- $today := (now.Add (time.ParseDuration "9h")).Format "2006-01-02" }}
+{{- $wdays := slice "日" "月" "火" "水" "木" "金" "土" }}
+{{- $events := slice }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- if .Params.eventDate }}
+    {{- /* eventDate は "2026-07-18" / "2026-07-18/2026-07-19" / YAML配列 の3形式が混在する */ -}}
+    {{- $edParam := .Params.eventDate }}
+    {{- $start := "" }}
+    {{- $end := "" }}
+    {{- if reflect.IsSlice $edParam }}
+      {{- $start = printf "%v" (index $edParam 0) }}
+      {{- $end = printf "%v" (index $edParam (sub (len $edParam) 1)) }}
+    {{- else }}
+      {{- $parts := split (printf "%v" $edParam) "/" }}
+      {{- $start = index $parts 0 }}
+      {{- $end = index $parts (sub (len $parts) 1) }}
+    {{- end }}
+    {{- with .Params.eventEndDate }}{{ $end = printf "%v" . }}{{ end }}
+    {{- $start = substr (trim $start " ") 0 10 }}
+    {{- $end = substr (trim $end " ") 0 10 }}
+    {{- if findRE `^\d{4}-\d{2}-\d{2}$` $start }}
+      {{- if not (findRE `^\d{4}-\d{2}-\d{2}$` $end) }}{{ $end = $start }}{{ end }}
+      {{- $events = $events | append (dict
+            "start" $start
+            "end" $end
+            "title" .Title
+            "href" .RelPermalink
+            "loc" (.Params.eventLocation | default "")) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $upcoming := slice }}{{- $past := slice }}
+{{- range $events }}
+  {{- if ge .end $today }}{{ $upcoming = $upcoming | append . }}{{ else }}{{ $past = $past | append . }}{{ end }}
+{{- end }}
+{{- $upcoming = sort $upcoming "start" "asc" }}
+{{- $past = sort $past "start" "desc" }}
+
+<article class="ev-page">
+  <header class="ev-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="ev-lead">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="ev-intro">{{ .Content }}</div>
+
+  {{- if $upcoming }}
+  {{- $prev := "" }}
+  {{- range $upcoming }}
+    {{- $m := substr .start 0 7 }}
+    {{- if ne $m $prev }}
+      {{- if ne $prev "" }}</div>{{ end }}
+      {{- $ym := split $m "-" }}
+      <h2 class="ev-month">{{ index $ym 0 }}年{{ int (strings.TrimLeft "0" (index $ym 1)) }}月</h2>
+      <div class="ev-group">
+    {{- $prev = $m }}
+    {{- end }}
+    {{- $sd := time .start }}
+    {{- $sw := index $wdays (int (printf "%d" $sd.Weekday)) }}
+    <a class="ev-row" href="{{ .href }}">
+      <span class="ev-date">
+        {{ $sd.Format "1/2" }}<span class="ev-wd">({{ $sw }})</span>
+        {{- if ne .end .start }}
+          {{- $edt := time .end }}
+          {{- $ew := index $wdays (int (printf "%d" $edt.Weekday)) }}
+          <span class="ev-tilde">〜</span>{{ $edt.Format "1/2" }}<span class="ev-wd">({{ $ew }})</span>
+        {{- end }}
+      </span>
+      <span class="ev-body">
+        <span class="ev-title">
+          {{- if and (le .start $today) (ge .end $today) }}<span class="ev-now">開催中</span>{{ end -}}
+          {{ .title }}
+        </span>
+        {{- with .loc }}<span class="ev-loc"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+      </span>
+    </a>
+  {{- end }}
+  {{- if ne $prev "" }}</div>{{ end }}
+  {{- else }}
+  <p class="ev-empty">現在、開催予定として掲載中のイベントはありません。新しいイベント情報は<a href="/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/">イベントカテゴリ</a>に随時追加されます。</p>
+  {{- end }}
+
+  {{- if $past }}
+  <details class="ev-past">
+    <summary>終了したイベントを見る（直近30件）</summary>
+    <div class="ev-past-list">
+      {{- range first 30 $past }}
+      <a class="ev-row is-past" href="{{ .href }}">
+        <span class="ev-date">{{ (time .start).Format "2006/1/2" }}</span>
+        <span class="ev-body"><span class="ev-title">{{ .title }}</span></span>
+      </a>
+      {{- end }}
+    </div>
+  </details>
+  {{- end }}
+
+  <div class="ev-footer-cta">
+    <a href="/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/">イベント記事の一覧を見る <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+    <a href="/contact/">イベント情報の掲載依頼はこちら</a>
+  </div>
+</article>
+
+{{- /* ItemList 構造化データ（開催予定） */ -}}
+{{- if $upcoming }}
+{{- $items := slice }}
+{{- range $i, $e := first 30 $upcoming }}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "url" (absURL $e.href) "name" $e.title) }}
+{{- end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "itemListElement" $items | jsonify | safeJS }}</script>
+{{- end }}
+{{- end }}

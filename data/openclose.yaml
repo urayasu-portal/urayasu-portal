@@ -1,0 +1,305 @@
+# 開店・閉店 年表（/open-close/）のキュレーションデータ
+# キー = content/posts/ のファイル名（拡張子なし = .File.ContentBaseName）
+# type: open（オープン）/ close（閉店・休業）/ renewal（改装・再開）/ move（移転）/ feature（まとめ）
+# when: 実施時期が判明していればその年月、未定・不明なら報道月（YYYY-MM）
+# ここに無い記事は layouts/_default/openclose.html がタイトルから自動分類する（掲載漏れは起きない）
+"2026-05-19-nisyakugosun-urayasuekimae":
+  shop: "二尺五寸 浦安駅前店（焼鳥・蕎麦居酒屋）"
+  type: open
+  when: "2026-05"
+  area: "浦安駅前"
+"20260531-urayasu-kourai-closed":
+  shop: "浦安 幸来（浦安そば）"
+  type: close
+  when: "2026-05"
+  area: "浦安"
+"20260603-bambi-drops-kaigaku":
+  shop: "バンビドロップス（テイクアウトカフェ）"
+  type: open
+  when: "2026-06"
+  area: "海楽"
+"20260608-atre-shinurayasu-wagashi-renewal":
+  shop: "アトレ新浦安の和菓子店（改装休業）"
+  type: renewal
+  when: "2026-06"
+  area: "新浦安"
+"20260609-atre-shin-urayasu-food-renewal-202607":
+  shop: "アトレ新浦安 食品フロア"
+  type: renewal
+  when: "2026-07"
+  area: "新浦安"
+"20260613-gyotoku-horumon-shoryuen-open-2026":
+  shop: "ホルモン将龍苑（出店予定）"
+  type: open
+  when: "2026-06"
+  area: "行徳"
+"20260614-eyecarelabo-urayasu-open":
+  shop: "アイケアLaBo 浦安駅前店"
+  type: open
+  when: "2026-06"
+  area: "浦安駅前"
+"20260614-ikspiari-sugary-open-2026":
+  shop: "SUGARY（イクスピアリ・出店予定）"
+  type: open
+  when: "2026-06"
+  area: "舞浜"
+"20260617-atre-shinurayasu-kurikorean-renewal":
+  shop: "横浜くりこ庵 アトレ新浦安店（再開）"
+  type: renewal
+  when: "2026-06"
+  area: "新浦安"
+"20260617-gyotoku-turkish-restaurant-saray-open":
+  shop: "トルコ料理 SARAY"
+  type: open
+  when: "2026-06"
+  area: "行徳"
+"20260620-maruetsu-gyotoku-close-2026":
+  shop: "マルエツ行徳店"
+  type: close
+  when: "2026-07"
+  area: "行徳"
+"20260620-mav-urayasu-west-open-2026":
+  shop: "M’av浦安WEST"
+  type: open
+  when: "2026-06"
+  area: "浦安"
+"20260623-bambi-drops-kairaku-open":
+  shop: "Bambi DROPS"
+  type: open
+  when: "2026-06"
+  area: "海楽"
+"20260623-nanohana-shokudo-gyotoku-close":
+  shop: "なのはな食堂"
+  type: close
+  when: "2026-06"
+  area: "行徳"
+"20260623-the-golf-base-shinurayasu-range-open":
+  shop: "THE GOLF BASE 新浦安レンジ（夏開業予定）"
+  type: open
+  when: "2026-07"
+  area: "海楽"
+"20260624-daiso-maruesu-gyotoku-close":
+  shop: "ダイソー マルエツ行徳店"
+  type: close
+  when: "2026-07"
+  area: "行徳"
+"20260624-malatang-tenpo-newcoast-shinurayasu-open":
+  shop: "麻辣湯 天宝（出店予定）"
+  type: open
+  when: "2026-07"
+  area: "新浦安"
+"20260626-kitchen-origin-minami-gyotoku-open":
+  shop: "キッチンオリジン 南行徳店"
+  type: open
+  when: "2026-06"
+  area: "南行徳"
+"20260627-atre-shinurayasu-food-renewal-20260709":
+  shop: "アトレ新浦安 1階"
+  type: renewal
+  when: "2026-07"
+  area: "新浦安"
+"20260627-familymart-shinurayasu-mare-open":
+  shop: "ファミリーマート（マーレ新浦安）"
+  type: open
+  when: "2026-06"
+  area: "新浦安"
+"20260627-gyotoku-yakitori-takeout-open":
+  shop: "焼き鳥テイクアウト店（出店予定）"
+  type: open
+  when: "2026-06"
+  area: "行徳"
+"20260630-trial-seiyu-urayasu-open":
+  shop: "トライアル西友浦安店"
+  type: open
+  when: "2026-07"
+  area: "浦安"
+"20260701-gongcha-ikspiari-renewal":
+  shop: "ゴンチャ イクスピアリ店（改装再開）"
+  type: renewal
+  when: "2026-07"
+  area: "舞浜"
+"20260701-ikspiari-sugary-open-date-20260728":
+  shop: "SUGARY（開店日7月28日に決定）"
+  type: open
+  when: "2026-07"
+  area: "舞浜"
+"20260701-mav-urayasu-west-grand-open-stores":
+  shop: "M’av浦安WEST 開業8店舗まとめ"
+  type: feature
+  when: "2026-07"
+  area: "浦安"
+"20260702-ikspiari-limited-shops-202607":
+  shop: "イクスピアリ 期間限定3店舗"
+  type: open
+  when: "2026-07"
+  area: "舞浜"
+"20260704-curves-aeon-shinurayasu-open":
+  shop: "カーブス イオン新浦安店（開店予定）"
+  type: open
+  when: "2026-07"
+  area: "新浦安"
+"20260705-sagami-mona-shinurayasu-open":
+  shop: "さが美 MONA新浦安店"
+  type: open
+  when: "2026-07"
+  area: "新浦安"
+"20260707-spalab-urayasu-kairaku-open":
+  shop: "スペラボ 浦安海楽店（トランクルーム）"
+  type: open
+  when: "2026-08"
+  area: "海楽"
+"20260708-kaitori-daikichi-seiyu-urayasu":
+  shop: "買取大吉 西友浦安店（出店予定）"
+  type: open
+  when: "2026-07"
+  area: "浦安"
+"tsutaya浦安さくら通り店が7月6日で閉店、6月14日から閉":
+  shop: "TSUTAYA 浦安さくら通り店"
+  type: close
+  when: "2025-07"
+  area: "浦安"
+"urayasu-station-new-open-2026":
+  shop: "浦安駅周辺 新店まとめ（2026年6〜7月）"
+  type: feature
+  when: "2026-06"
+  area: "浦安駅前"
+"「イオン新浦安ショッピングセンター」にサン":
+  shop: "サンリオカフェワゴン（イオン新浦安）"
+  type: open
+  when: "2025-07"
+  area: "新浦安"
+"「中華料理-泰興」浦安駅高架下再開発で3月上旬に":
+  shop: "中華料理 泰興（高架下再開発で移転）"
+  type: move
+  when: "2026-03"
+  area: "浦安駅前"
+"【新浦安】アトレ新浦安1f食料品ゾーンが7月リニ":
+  shop: "アトレ新浦安 1F食料品ゾーン（クイーンズ伊勢丹など）"
+  type: renewal
+  when: "2026-07"
+  area: "新浦安"
+"【浦安】「grand-monday-resort-東京ベイ舞浜」7月18日グランドオ":
+  shop: "GRAND MONday Resort 東京ベイ舞浜"
+  type: open
+  when: "2026-07"
+  area: "舞浜"
+"【浦安】オムライス専門店「yellow-浦安」が2026年6月〜7":
+  shop: "Yellow 浦安（オムライス専門店・予定）"
+  type: open
+  when: "2026-06"
+  area: "当代島"
+"【浦安】ファミリーマート浦安富士見三丁目店が":
+  shop: "ファミリーマート 浦安富士見三丁目店"
+  type: close
+  when: "2026-04"
+  area: "富士見"
+"【浦安】マクドナルド新浦安明海店が明海5丁目に":
+  shop: "マクドナルド 新浦安明海店（開店予定）"
+  type: open
+  when: "2026-04"
+  area: "明海"
+"【浦安】マーヴ浦安に「ら～めん-きんとうん」が6":
+  shop: "ら～めん きんとうん（マーヴ浦安・予定）"
+  type: open
+  when: "2026-06"
+  area: "浦安"
+"【浦安】リンツ-ショコラ-ブティックが北栄エリア":
+  shop: "リンツ ショコラ ブティック（出店予定）"
+  type: open
+  when: "2026-06"
+  area: "北栄"
+"【浦安】ローソンストア100浦安当代島店が本日4-30（":
+  shop: "ローソンストア100 浦安当代島店"
+  type: close
+  when: "2026-04"
+  area: "当代島"
+"【浦安】西友浦安店が5月31日に一時閉店、夏に「":
+  shop: "西友浦安店（一時閉店→トライアル西友へ）"
+  type: renewal
+  when: "2026-05"
+  area: "浦安"
+"【浦安市】mona新浦安2fにdenbaラウンジ4月25日オープン｜":
+  shop: "DENBAラウンジ（MONA新浦安）"
+  type: open
+  when: "2026-04"
+  area: "新浦安"
+"【浦安市】北栄にハンバーガー店「perch-diner」が4月21日":
+  shop: "PERCH DINER（ハンバーガー）"
+  type: open
+  when: "2026-04"
+  area: "北栄"
+"【浦安市】浦安駅前に「焼肉きんぐ」が2026年6月下":
+  shop: "焼肉きんぐ 浦安駅前店（開店予定）"
+  type: open
+  when: "2026-06"
+  area: "浦安駅前"
+"【舞浜・イクスピアリ】月島もんじゃ「モヘジ」":
+  shop: "月島もんじゃ モヘジ（イクスピアリ）"
+  type: open
+  when: "2026-04"
+  area: "舞浜"
+"いちご飴専門店「strawberry-fetish」がイクスピアリに8月オー":
+  shop: "Strawberry Fetish（いちご飴・出店予定）"
+  type: open
+  when: "2025-08"
+  area: "舞浜"
+"イクスピアリ25周年リニューアル-ディズニースト":
+  shop: "ディズニーストア（新装開店）"
+  type: renewal
+  when: "2025-07"
+  area: "舞浜"
+"イクスピアリにアサイー専門店「sugary」が2026年夏オー":
+  shop: "SUGARY（アサイー専門店・2026年夏予定）"
+  type: open
+  when: "2026-04"
+  area: "舞浜"
+"イクスピアリに韓国料理「ベジゴー」が登場！108":
+  shop: "韓国料理 ベジゴー（イクスピアリ）"
+  type: open
+  when: "2026-04"
+  area: "舞浜"
+"ザ-ロイヤルパークホテル舞浜リゾート東京ベイ2026":
+  shop: "ザ ロイヤルパークホテル舞浜リゾート東京ベイ"
+  type: open
+  when: "2026-02"
+  area: "舞浜"
+"ドラッグストア「スギ薬局-浦安さくら通り店」が5":
+  shop: "スギ薬局 浦安さくら通り店"
+  type: open
+  when: "2026-05"
+  area: "堀江"
+"ドン・キホーテ西友行徳店がオープン　行徳エリ":
+  shop: "ドン・キホーテ 西友行徳店"
+  type: open
+  when: "2025-07"
+  area: "行徳"
+"ニューコースト新浦安に精肉専門店「肉匠かみむ":
+  shop: "肉匠かみむら 新浦安店（精肉）"
+  type: open
+  when: "2025-07"
+  area: "新浦安"
+"フェリシモのワンピースショップがイクスピアリ":
+  shop: "フェリシモ ワンピースショップ（イクスピアリ）"
+  type: open
+  when: "2025-07"
+  area: "舞浜"
+"ワイズマート＊ディスカ浦安弁天店が6月23日より":
+  shop: "ワイズマート＊ディスカ浦安弁天店（長期休業・再開未定）"
+  type: close
+  when: "2025-06"
+  area: "弁天"
+"一風堂イクスピアリ店-6月27日リニューアルオープ":
+  shop: "一風堂 イクスピアリ店"
+  type: renewal
+  when: "2025-06"
+  area: "舞浜"
+"稲庭うどんx丼めし「金子半之助」がイクスピア":
+  shop: "金子半之助（イクスピアリ・千葉県初出店）"
+  type: open
+  when: "2026-04"
+  area: "舞浜"
+"肉処-大久保（ニューコースト新浦安）閉店":
+  shop: "肉処 大久保（ニューコースト新浦安）"
+  type: close
+  when: "2025-06"
+  area: "新浦安"

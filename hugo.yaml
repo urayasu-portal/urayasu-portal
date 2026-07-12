@@ -176,6 +176,10 @@ menu:
       identifier: topics
       url: https://urayasu-portal.com/
       weight: 20
+    - name: イベント
+      identifier: events
+      url: /events/
+      weight: 25
     - name: 旅行ガイド
       identifier: travel-guide
       url: /travel-guide/

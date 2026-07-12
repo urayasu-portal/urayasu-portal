@@ -78,6 +78,21 @@
   {{- end }}
 </nav>
 
+{{/* 開店閉店・イベント: 特設まとめページへの導線バナー */}}
+{{- if eq .Title "開店・閉店" }}
+<a class="cat-feature-link" href="/open-close/">
+  <i class="ti ti-timeline" aria-hidden="true"></i>
+  <span><strong>開店・閉店 まとめ年表</strong>— オープン・閉店・リニューアルを月別にさかのぼれます</span>
+  <i class="ti ti-arrow-right cfl-arrow" aria-hidden="true"></i>
+</a>
+{{- else if eq .Title "イベント" }}
+<a class="cat-feature-link" href="/events/">
+  <i class="ti ti-calendar-event" aria-hidden="true"></i>
+  <span><strong>イベントカレンダー</strong>— 開催日が決まっているイベントを日付順にチェック</span>
+  <i class="ti ti-arrow-right cfl-arrow" aria-hidden="true"></i>
+</a>
+{{- end }}
+
 {{- else }}
 {{/* タグページ・その他のリストページ: 通常ヘッダー */}}
 {{- if .Title }}

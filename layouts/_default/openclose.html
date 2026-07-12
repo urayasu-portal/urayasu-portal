@@ -1,0 +1,108 @@
+{{- define "main" }}
+{{- /*
+  開店・閉店 まとめ年表（/open-close/）
+  データソース＝posts の「開店・閉店」カテゴリ全記事。
+  data/openclose.yaml にキュレーション（店名・種別・実施時期・エリア）があればそれを使い、
+  無い記事はタイトルのキーワードから自動分類する（新記事の掲載漏れは起きない）。
+*/ -}}
+{{- $data := hugo.Data.openclose | default dict }}
+{{- $posts := where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" (slice "開店・閉店") }}
+{{- $typeLabel := dict "open" "オープン" "close" "閉店" "renewal" "リニューアル" "move" "移転" "feature" "まとめ" }}
+{{- $entries := slice }}
+{{- range $posts }}
+  {{- $key := "" }}
+  {{- with .File }}{{ $key = .ContentBaseName }}{{ end }}
+  {{- $meta := index $data $key }}
+  {{- $type := "open" }}
+  {{- $shop := .Title }}
+  {{- $when := .Date.Format "2006-01" }}
+  {{- $area := "" }}
+  {{- if $meta }}
+    {{- $type = $meta.type | default "open" }}
+    {{- $shop = $meta.shop | default .Title }}
+    {{- $when = $meta.when | default $when }}
+    {{- $area = $meta.area | default "" }}
+  {{- else }}
+    {{- $t := .Title }}
+    {{- if findRE `移転` $t }}{{ $type = "move" }}
+    {{- else if findRE `リニューアル|改装|再開|新装` $t }}{{ $type = "renewal" }}
+    {{- else if findRE `閉店|休業` $t }}{{ $type = "close" }}
+    {{- else if findRE `まとめ` $t }}{{ $type = "feature" }}
+    {{- end }}
+  {{- end }}
+  {{- $entries = $entries | append (dict
+        "type" $type
+        "shop" $shop
+        "when" $when
+        "area" $area
+        "href" .RelPermalink
+        "pub" (.Date.Format "2006/1/2")
+        "sortkey" (printf "%s|%s" $when (.Date.Format "2006-01-02"))) }}
+{{- end }}
+{{- $entries = sort $entries "sortkey" "desc" }}
+
+{{- /* 今年のオープン/閉店件数 */ -}}
+{{- $year := now.Format "2006" }}
+{{- $openN := 0 }}{{- $closeN := 0 }}{{- $renewN := 0 }}
+{{- range $entries }}
+  {{- if hasPrefix .when $year }}
+    {{- if eq .type "open" }}{{ $openN = add $openN 1 }}
+    {{- else if eq .type "close" }}{{ $closeN = add $closeN 1 }}
+    {{- else if eq .type "renewal" }}{{ $renewN = add $renewN 1 }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+<article class="oc-page">
+  <header class="oc-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="oc-lead">{{ . }}</p>{{ end }}
+    <div class="oc-stats" aria-label="{{ $year }}年の集計">
+      <span class="oc-stat"><strong>{{ $openN }}</strong> 件のオープン</span>
+      <span class="oc-stat"><strong>{{ $closeN }}</strong> 件の閉店</span>
+      <span class="oc-stat"><strong>{{ $renewN }}</strong> 件のリニューアル</span>
+      <span class="oc-stat-note">（{{ $year }}年・当サイト掲載分）</span>
+    </div>
+  </header>
+
+  <div class="oc-intro">{{ .Content }}</div>
+
+  <div class="oc-legend" aria-hidden="true">
+    <span class="oc-badge oc-open">オープン</span>
+    <span class="oc-badge oc-close">閉店</span>
+    <span class="oc-badge oc-renewal">リニューアル</span>
+    <span class="oc-badge oc-move">移転</span>
+    <span class="oc-badge oc-feature">まとめ</span>
+  </div>
+
+  {{- $prev := "" }}
+  {{- range $entries }}
+    {{- if ne .when $prev }}
+      {{- if ne $prev "" }}</div>{{ end }}
+      {{- $ym := split .when "-" }}
+      <h2 class="oc-month">{{ index $ym 0 }}年{{ int (strings.TrimLeft "0" (index $ym 1)) }}月</h2>
+      <div class="oc-group">
+    {{- $prev = .when }}
+    {{- end }}
+    <a class="oc-row" href="{{ .href }}">
+      <span class="oc-badge oc-{{ .type }}">{{ index $typeLabel .type | default .type }}</span>
+      <span class="oc-shop">{{ .shop }}</span>
+      {{- with .area }}<span class="oc-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+      <span class="oc-pub">{{ .pub }}掲載</span>
+    </a>
+  {{- end }}
+  {{- if ne $prev "" }}</div>{{ end }}
+
+  <div class="oc-footer-cta">
+    <a href="/categories/%E9%96%8B%E5%BA%97%E9%96%89%E5%BA%97/">開店・閉店の記事一覧を見る <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+    <a href="/contact/">開店・閉店情報をご存知の方はこちら（情報提供）</a>
+  </div>
+</article>
+
+{{- /* ItemList 構造化データ（最新30件） */ -}}
+{{- $items := slice }}
+{{- range $i, $e := first 30 $entries }}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "url" (absURL $e.href) "name" $e.shop) }}
+{{- end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "itemListElement" $items | jsonify | safeJS }}</script>
+{{- end }}
