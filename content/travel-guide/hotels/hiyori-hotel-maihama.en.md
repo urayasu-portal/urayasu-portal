@@ -1,6 +1,7 @@
 ---
 title: "Hiyori Hotel Maihama | Foot Massager + Shoe Dryer in All Rooms, 30-Item Buffet Breakfast, Shuttle from Maihama South Exit C3"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Hiyori Hotel Maihama (Higashino district). Foot massager and shoe dryer in all guest rooms. Infused water server free of charge. 30+ item Japanese/Western buffet breakfast. 40 parking spaces ¥1,000/night (first-come). Shuttle from Maihama Station South Exit C3: approx. 10 min."
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "Four Stories Hotel | Area's Most Affordable, Last Shuttle 23:00, Parking ¥1,500/Night — Small Hotel with Unique Floor Themes"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Four Stories Hotel. 26 rooms across 4 floors, each with a different story theme. Last shuttle to the hotel at 23:00 (critical!). Nearest convenience store 19 min on foot. Parking ¥1,500/night (8 spaces, first-come). The area's most affordable option. Price range ¥10,000–¥25,000."
 tags:

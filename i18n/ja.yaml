@@ -14,6 +14,8 @@
   translation: "TDRオフィシャル"
 - id: updated_on
   translation: "{{ .date }}更新"
+- id: verified_on
+  translation: "{{ .date }}情報確認"
 - id: type_what_is
   translation: "{{ .name }}とは？"
 - id: type_about

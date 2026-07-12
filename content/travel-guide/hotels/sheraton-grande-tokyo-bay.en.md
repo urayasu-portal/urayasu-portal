@@ -1,6 +1,7 @@
 ---
 title: "Sheraton Grande Tokyo Bay Hotel | Large Bath 'Maiyu' with Sauna, Year-Round Indoor Pool, OASIS Recreation Facility, Official Hotel"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Sheraton Grande Tokyo Bay Hotel (TDR Official Hotel). Large bath 'Maiyu' (marble interior, sauna). Year-round indoor pool + summer outdoor pool. OASIS recreation facility (mini golf, flight simulator, etc.). Two chapels. Bayside Station 1-min walk. Airport limousine at front. Price range ¥30,000–¥80,000+."
 tags:

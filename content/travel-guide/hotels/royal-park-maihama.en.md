@@ -1,6 +1,7 @@
 ---
 title: "Royal Park Hotel The Maihama | Opened February 2026, 750 Rooms, In-House Lawson 24hr, 10 Coin Laundry Machines"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Royal Park Hotel The Maihama. Opened February 13, 2026. 750 rooms — the largest new hotel near TDR in years. Four-seas themed rooms, in-house 24-hour Lawson, 10 coin laundry machines (room availability viewable on room TV), dedicated shuttle to TDL/TDS. Not a Disney Hotel — no Happy Entry. Price range ¥25,000–¥60,000."
 tags:

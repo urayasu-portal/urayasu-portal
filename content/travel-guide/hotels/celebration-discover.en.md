@@ -1,6 +1,7 @@
 ---
 title: "Tokyo DisneySea Celebration Hotel: Discover | Budget Disney Hotel with Beds for 4, Adventure & Discovery Theme"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Tokyo DisneySea Celebration Hotel: Discover. Among the most affordable Disney Hotels, with standard rooms sleeping 4 (Happy Entry included). Themed after TDS's adventure and discovery concept. Key notes: bus access from Shin-Urayasu, no Narita limousine, 11:00 checkout."
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "Disney Ambassador Hotel | Chef Mickey Character Dining, Close to Ikspiari — A Hollywood-Themed Disney Hotel"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Disney Ambassador Hotel. Exclusive character dining 'Chef Mickey' (Mickey Mouse at breakfast), proximity to Ikspiari, family rooms for up to 5 adults, and Happy Entry early admission. A 1930s Hollywood Art Deco Disney Hotel — with honest notes on what to expect."
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "Hotel Seaside Edogawa | Inside Kasai Rinkai Park, 3-Min Walk from Station, Japanese-Style Rooms by the Bay"
 date: 2026-06-27T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-28
 description: "Local review of Hotel Seaside Edogawa. An urban resort inside the vast Kasai Rinkai Park, 29 rooms including 14 Japanese-style rooms rare for the bay area. Separate large baths for men and women, 3-min walk from Kasai-Rinkai-Koen Station, one stop from Maihama. Guests use the park parking free of charge."
 tags:

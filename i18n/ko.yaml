@@ -14,6 +14,8 @@
   translation: "디즈니 공식 호텔"
 - id: updated_on
   translation: "{{ .date }} 업데이트"
+- id: verified_on
+  translation: "{{ .date }} 정보 확인"
 - id: type_what_is
   translation: "{{ .name }}란?"
 - id: type_about

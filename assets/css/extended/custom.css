@@ -3265,6 +3265,11 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
   font-weight: 700;
   white-space: nowrap;
 }
+.post-verified-badge {
+  background: #e9f7ef;
+  color: #1a6b3c;
+  border-color: #b8e2c8;
+}
 
 /* ---------- イベント終了警告 ---------- */
 .event-ended-warn {

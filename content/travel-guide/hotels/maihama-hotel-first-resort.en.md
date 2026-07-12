@@ -1,6 +1,7 @@
 ---
 title: "Maihama Hotel First Resort | The First TDR Official Hotel (Historic), Themed Rooms, Limousine Reservation-Only by Phone"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Maihama Hotel First Resort (TDR Official Hotel). The very first Official Hotel when TDR opened in 1983. Themed concept rooms. Airport limousine by reservation only (phone + prepay). TDL is a 15-min walk (longest among Official Hotels). 'First Shop' 7:00–23:00. Room Wi-Fi is paid ¥500 except premium rooms. Coin laundry in South building only. Price range ¥20,000–¥40,000."
 tags:

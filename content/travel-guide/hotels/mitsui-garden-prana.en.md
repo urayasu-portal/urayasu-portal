@@ -1,6 +1,7 @@
 ---
 title: "Mitsui Garden Hotel Prana Tokyo Bay | Rooftop Sea-View Large Bath Free for Guests, 24-Hour Convenience Store In-House, Airport Limousine at the Door"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Mitsui Garden Hotel Prana Tokyo Bay (TDR Partner Hotel). Rooftop large bath with ocean view (free for guests, 18:00–9:00). 24-hour convenience store inside the hotel. Dedicated airport limousine stop on the premises. Up to 6-person rooms. Shuttle from Shin-Urayasu Station approx. 20 min, up to 10-minute intervals. Price range ¥18,000+."
 tags:

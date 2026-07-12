@@ -1,6 +1,7 @@
 ---
 title: "CVS BAY HOTEL | Next to Ichikawa-Shiohama Station, 2 Stops (6 Min) to Maihama, Women's Capsules"
 date: 2026-06-27T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-28
 description: "Local review of CVS BAY HOTEL (Ichikawa-Shiohama). Adjacent to JR Keiyo Line Ichikawa-Shiohama Station, 2 stops (~6 min) to Maihama. About 256 rooms across Main, Bay Tower and Annex buildings, including women-only capsules. 1F convenience store, breakfast buffet (large bath currently closed)."
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "Tokyo DisneySea Hotel MiraCosta — No, Tokyo Bay Grand Nikko | Japan's Largest Hotel Atrium, Pink European Exterior, Official Hotel"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Grand Nikko Tokyo Bay Maihama. Japan's largest hotel atrium (37m / 4,300 m²), South European pink exterior. TDR Official Hotel. 319 parking spaces with EV chargers. Dedicated airport limousine stop. Price range ¥30,000–¥80,000+."
 tags:

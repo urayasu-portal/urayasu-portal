@@ -1,6 +1,7 @@
 ---
 title: "Hotel Il Fiore Kasai | 3-Min Walk from Kasai Station, Family Rooms for Up to 4, ~25 Min to TDR"
 date: 2026-06-27T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-28
 description: "Local review of Hotel Il Fiore Kasai. A 3-minute walk from Tokyo Metro Tozai Line Kasai Station, 128 rooms. Family rooms for up to 4 and free co-sleeping for elementary-age children and under. Coin laundry, 10 parking spaces, free drinks 15:00–20:00. About 25 min to Tokyo Disney Resort."
 tags:

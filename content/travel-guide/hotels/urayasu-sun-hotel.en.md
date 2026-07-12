@@ -1,6 +1,7 @@
 ---
 title: "Urayasu Sun Hotel | 3-Min Walk from Urayasu Station, Free Continental Breakfast from 6:00, 24-Hour Front Desk"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Urayasu Sun Hotel. 3-min walk from Urayasu Station (Tozai Line). Free continental breakfast from 6:00am. 24-hour front desk (last check-in 0:30). 2F coin laundry (2 washers + 2 dryers). 10 parking spaces ¥900/night (first-come). Day-use plan ¥8,800+. Weekly plans available."
 tags:

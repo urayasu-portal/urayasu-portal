@@ -52,9 +52,7 @@
         {{- partial "breadcrumbs.html" . }}
         <div class="post-meta-line">
           <span class="cat-badge lg-pillar-badge">便利ガイド{{- with $curCatName }} ・ {{ . }}{{- end }}</span>
-          {{- if .Lastmod }}
-          <span class="post-updated-badge"><i class="ti ti-refresh" aria-hidden="true"></i> {{ .Lastmod.Format "2006年1月2日" }}更新</span>
-          {{- end }}
+          {{- partial "meta-badges.html" . }}
           <span class="lg-saved-badge"><i class="ti ti-bookmark" aria-hidden="true"></i> 保存版ガイド</span>
         </div>
         <h1 class="post-title">{{ .Title }}</h1>

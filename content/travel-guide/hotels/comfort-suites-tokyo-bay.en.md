@@ -1,6 +1,7 @@
 ---
 title: "Comfort Suites Tokyo Bay | Shuttle Runs Until 30 Min After Park Closing, Free Self-Cloakroom, Children Sleep Free"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Comfort Suites Tokyo Bay (Choice Hotels). TDL/TDS free shuttle daily — if park closes by 22:00, shuttle runs until 30 min after closing. 312 rooms. Children through elementary school 6th grade sleep free (up to 2 per room). Free self-cloakroom from before check-in. Free Wi-Fi throughout."
 tags:

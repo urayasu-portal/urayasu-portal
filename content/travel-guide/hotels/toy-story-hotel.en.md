@@ -1,6 +1,7 @@
 ---
 title: "Toy Story Hotel | Andy's Room Theme Disney Hotel, Close to Bayside Station, Fantasy Springs Entrance from 10:00"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Toy Story Hotel (Disney Hotel opened 2022). 595 rooms with Andy's room theme. Adjacent to Bayside Station (Disney Resort Line). Fantasy Springs entrance accessible from 10:00 (1 hour after park opening). 3F coin laundry. In-house shop 6:00–24:00. Airport limousine at the hotel front. Price range ¥45,000–¥65,000."
 tags:

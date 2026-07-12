@@ -1,6 +1,7 @@
 ---
 title: "Flexstay Inn Shin-Urayasu | Extended-Stay Hotel with In-Room Mini Kitchen, 14:00 Check-in"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Flexstay Inn Shin-Urayasu (MyStays group). All rooms with mini kitchen, 14:00 check-in (early for the Shin-Urayasu area), convenience store 2 minutes on foot, reserved parking ¥1,630/night. Practical budget option for extended stays in Shin-Urayasu."
 tags:

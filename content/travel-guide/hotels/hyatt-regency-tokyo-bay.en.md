@@ -1,6 +1,7 @@
 ---
 title: "Hyatt Regency Tokyo Bay | Dedicated Limousine Stop Added Dec 2024, Club Lounge, Chromecast in All Rooms"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Hyatt Regency Tokyo Bay. Dedicated airport limousine bus stop added December 20, 2024 (direct airport access with zero-minute walk). Hyatt brand with club lounge. All rooms with separated bathroom and wash area. Children 12 and under sleep free. Chromecast in all rooms. Price range ¥25,000–¥60,000."
 tags:

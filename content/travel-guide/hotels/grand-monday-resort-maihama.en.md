@@ -1,6 +1,7 @@
 ---
 title: "GRAND MONday Resort Tokyo Bay Maihama | Opens July 18, 2026 — All-Oceanfront Rooms & Year-Round Lagoon Pool"
 date: 2026-07-06T21:00:00+09:00
+factChecked: "2026-07-06"
 lastmod: 2026-07-06
 description: "Local review of GRAND MONday Resort Tokyo Bay Maihama. Opening July 18, 2026 — the first property of the new GRAND MONday Resort brand. 140 rooms, all facing Tokyo Bay, year-round outdoor lagoon pool 'MAIHAMA LAGOON' with barrel sauna, large public bath & magma-spa sauna. Honest notes on shuttle frequency and no Happy Entry."
 tags:

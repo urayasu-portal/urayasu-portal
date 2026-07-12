@@ -1,0 +1,10 @@
+{{- /* 更新日・情報確認日バッジ（life-guide / travel-guide / hotels 共通）
+     factChecked: "YYYY-MM-DD" を frontmatter に持つページは緑の情報確認バッジも表示 */ -}}
+{{- $fmt := "2006年1月2日" }}
+{{- if eq .Language.Lang "en" }}{{ $fmt = "Jan 2, 2006" }}{{ else if eq .Language.Lang "ko" }}{{ $fmt = "2006년 1월 2일" }}{{ end }}
+{{- if .Lastmod }}
+<span class="post-updated-badge"><i class="ti ti-refresh" aria-hidden="true"></i> {{ i18n "updated_on" (dict "date" (.Lastmod.Format $fmt)) }}</span>
+{{- end }}
+{{- with .Params.factChecked }}
+<span class="post-updated-badge post-verified-badge"><i class="ti ti-circle-check" aria-hidden="true"></i> {{ i18n "verified_on" (dict "date" ((time .).Format $fmt)) }}</span>
+{{- end }}

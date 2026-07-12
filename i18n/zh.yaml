@@ -14,6 +14,8 @@
   translation: "迪士尼官方酒店"
 - id: updated_on
   translation: "更新于 {{ .date }}"
+- id: verified_on
+  translation: "信息核实于 {{ .date }}"
 - id: type_what_is
   translation: "{{ .name }}是什么？"
 - id: type_about

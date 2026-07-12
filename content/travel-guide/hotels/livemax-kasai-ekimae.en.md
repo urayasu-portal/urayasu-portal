@@ -1,6 +1,7 @@
 ---
 title: "HOTEL LiVEMAX Kasai-Ekimae | 3-Min Walk from Kasai Station, 57 Rooms, Coin Laundry with Café"
 date: 2026-06-27T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-28
 description: "Local review of HOTEL LiVEMAX Kasai-Ekimae. About a 3-minute walk from Tokyo Metro Tozai Line Kasai Station, 57 rooms. Rooms with microwave and shower toilet, a café-equipped coin laundry 'MAX WASH & CAFE', free Wi-Fi. About 20 min to TDR by Keisei bus, about 35 min to Haneda Airport."
 tags:

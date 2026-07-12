@@ -14,6 +14,8 @@
   translation: "TDR Official"
 - id: updated_on
   translation: "Updated {{ .date }}"
+- id: verified_on
+  translation: "Verified {{ .date }}"
 - id: type_what_is
   translation: "What is a {{ .name }}?"
 - id: type_about

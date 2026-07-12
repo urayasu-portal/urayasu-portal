@@ -1,6 +1,7 @@
 ---
 title: "BAYHOTEL Urayasu Ekimae | Apartment-Style Hotel with Full Kitchen and Washing Machine, 24-Hour Supermarket Across the Street"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of BAYHOTEL Urayasu Ekimae. 1–2 min walk from Urayasu Station. All rooms 30 m² with kitchen, refrigerator, microwave oven, and washing machine. 24-hour supermarket (Trial Seiyu Urayasu) directly opposite; convenience store on ground floor. About 18 min to Otemachi by Tozai Line express. Ideal for combining Disney and central Tokyo sightseeing."
 tags:

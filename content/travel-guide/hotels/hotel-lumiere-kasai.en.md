@@ -1,6 +1,7 @@
 ---
 title: "Hotel Lumiere Kasai | 2-Min Walk from Kasai Station, Free Breakfast, Rooms with Mini Kitchen"
 date: 2026-06-27T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-28
 description: "Local review of Hotel Lumiere Kasai. About a 2-minute walk from Tokyo Metro Tozai Line Kasai Station. Free breakfast in the 1F lounge (6:30–10:00), twin rooms with microwave and mini kitchen, coin laundry on multiple floors, 50-space tower parking. One stop to Urayasu / ~20 min to Otemachi on the Tozai Line."
 tags:

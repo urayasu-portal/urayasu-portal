@@ -1,6 +1,7 @@
 ---
 title: "ibis Styles Tokyo Bay | Accor Design Hotel, 14:00 Check-In (1 Hour Earlier), Coin Laundry, Children 11 and Under Sleep Free"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of ibis Styles Tokyo Bay (Accor). 14:00 check-in (1 hour earlier than typical 15:00). Japanese and Western buffet breakfast. Coin laundry available. Children 11 and under sleep free (same-bed sharing). 36 parking spaces (first-come). Free baggage storage at check-in and after check-out. Price range ¥10,000–¥25,000."
 tags:

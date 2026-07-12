@@ -1,6 +1,7 @@
 ---
 title: "Tokyo DisneySea Hotel MiraCosta | The Only Hotel Located Inside TDS"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Tokyo DisneySea Hotel MiraCosta. The only hotel physically inside Tokyo DisneySea, with harbor-view rooms, Happy Entry early admission, and Spa & Pool Terme Venezia. The most exclusive Disney Hotel experience — and what to be aware of."
 tags:

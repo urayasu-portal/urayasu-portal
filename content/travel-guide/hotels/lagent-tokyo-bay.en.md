@@ -1,6 +1,7 @@
 ---
 title: "LAGENT HOTEL Tokyo Bay | 2024 Rakuten Silver Award, Adjacent Convenience Store Open 24 Hours, 190 Parking Spaces"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of LAGENT HOTEL Tokyo Bay. Won the Rakuten Travel Silver Award 2024. 24-hour convenience store adjacent to the hotel. 190 parking spaces (first-come). Up to 6-person rooms. 4 coin laundry machines. Return shuttle from TDR runs until approx. 21:00. No large communal bath. Price range ¥8,000–¥20,000."
 tags:

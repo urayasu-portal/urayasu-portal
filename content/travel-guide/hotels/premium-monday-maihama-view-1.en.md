@@ -1,6 +1,7 @@
 ---
 title: "Premium hotel MONday Maihama View I | Opened Dec 2025, Spacious Rooms + Sauna Bath, Free Shuttle to TDR"
 date: 2026-06-27T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-28
 description: "Local review of Premium hotel MONday Maihama View I. Opened December 2025, 57 spacious rooms up to ~56㎡ for 4–6 guests. Large bath with sauna, free shuttle bus to Tokyo Disney Resort. Located in Minami-Kasai, Edogawa; bus access from Kasai-Rinkai-Koen Station."
 tags:

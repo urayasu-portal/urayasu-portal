@@ -1,6 +1,7 @@
 ---
 title: "Hotel Il Fiore Kasai ANNEX | 3-Min Walk from Kasai Station, Deluxe Rooms for Up to 6, ~20 Min to TDR"
 date: 2026-06-27T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-28
 description: "Local review of Hotel Il Fiore Kasai ANNEX. The Il Fiore annex, a 3-minute walk from Tokyo Metro Tozai Line Kasai Station. Rooms from doubles to standard twins (up to 4) and deluxe rooms for up to 6. 1F coin laundry, free drinks, free in-room Wi-Fi. About 20 min to Tokyo Disney Resort."
 tags:

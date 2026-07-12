@@ -1,6 +1,7 @@
 ---
 title: "Hotel Okura Tokyo Bay | Breakfast from 6:00am (Earliest Among Official Hotels), All Rooms 44 m²+, Marble Bathroom"
 date: 2026-06-17T10:00:00+09:00
+factChecked: "2026-06-28"
 lastmod: 2026-06-17
 description: "Local review of Hotel Okura Tokyo Bay (TDR Official Hotel). Breakfast from 6:00am — the earliest opening among Official Hotels; a key advantage for early park entry. All 427 rooms 44 m² or larger with marble bathroom. Dedicated airport limousine stop. No coin laundry or in-house convenience store. Price range ¥30,000–¥80,000+."
 tags:
