@@ -1,7 +1,8 @@
 ---
 title: "浦安市の子ども向け屋内・公共の遊び場まとめ｜雨の日・暑い日にも使える親子のおでかけガイド"
 date: 2026-06-07T10:00:00+09:00
-lastmod: 2026-06-27T10:00:00+09:00
+lastmod: 2026-07-14
+factChecked: "2026-07-14"
 categories:
   - "子育て・教育"
 tags:
@@ -122,8 +123,8 @@ aliases:
   <div class="lg-art-card">
     <div class="lg-art-card-title"><i class="ti ti-building-carousel" aria-hidden="true"></i> 高洲児童センター</div>
     <p class="lg-art-card-desc">高洲・エスレ高洲内｜無料</p>
-    <p class="lg-art-card-desc">地域交流プラザ「エスレ高洲」内にある児童センター。平日は18時まで開いており、0歳の乳幼児から小学生・中高生まで利用できます。土日は9時から開館します。</p>
-    <ul class="lg-art-card-meta"><li><b>所在地</b><span>浦安市高洲5-3-2（エスレ高洲内）</span></li><li><b>開館</b><span>月〜金 10:00〜18:00／土・日 9:00〜17:00（祝日ほか休館）</span></li><li><b>対象</b><span>0〜18歳未満＋保護者（未就学児は同伴）</span></li><li><b>電話</b><span>047-304-0315</span></li></ul>
+    <p class="lg-art-card-desc">地域交流プラザ「エスレ高洲」内にある児童センター。0歳の乳幼児から小学生・中高生まで、火曜から日曜まで利用できます（月曜休館）。</p>
+    <ul class="lg-art-card-meta"><li><b>所在地</b><span>浦安市高洲5-3-2（エスレ高洲内）</span></li><li><b>開館</b><span>火〜日 10:00〜17:00（月曜・祝日・年末年始ほか休館）</span></li><li><b>対象</b><span>0〜18歳未満＋保護者（未就学児は同伴）</span></li><li><b>電話</b><span>047-304-0315</span></li></ul>
     <div class="lg-art-badges"><span class="lg-art-badge is-teal">雨の日OK</span><span class="lg-art-badge">体を動かせる</span><span class="lg-art-badge">乳幼児コーナー</span></div>
     <div style="margin-top:10px"><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/shisetsu/kosodate/kosodate/1005526.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式ページ</a></div>
   </div>

@@ -44,3 +44,37 @@
 - **factChecked未設定 残り126件**: 次回以降ローテーションで消化（life-guide残り17件＋travel-guide多言語群）
 - 粗大ごみ受付センターの受付時間（月〜金9:00〜17:00と記載）: 公式で「土日祝除く」は確認、時刻の明記は未確認（2026-07-12）
 - holiday-night-medical等の frontmatter `checkDate: "2026年6月"` はfactCheckedと重複気味。テンプレートでの利用有無を確認して整理を検討
+
+---
+
+## 2026-07-14（第2回）
+
+> リポジトリ移動あり: 作業対象は `C:\Users\kadoh\OneDrive\ドキュメント\02-2 副業\urayasu-portal`（旧 Desktop\urayasu-portal は消失。第1回コミットは本リポジトリのHEAD祖先として取り込み済み）。以降この場所で運用。
+
+### 機械スキャン結果（新規記事含む・today=2026-07-14）
+| 項目 | ヒット |
+|---|---|
+| 1. 期限切れイベント | 0件（第1回で解消済み） |
+| 2. 期日超過の予定表現 | 7件（＝店舗開店の持ち越し8記事。第1回から変化なし） |
+| 3. frontmatter矛盾 | 1件（マクドナルド＝同上持ち越し） |
+| 4. 閉店施設への参照 | 0件 |
+| 5. 内部リンク404 | 21件（新規作業で増加）→ **20件修正・1件保留** |
+| 6. 本文の日付直書き | 0件 |
+| 7. factChecked未設定 | 132件／369件（新規記事分で微増） |
+
+### 実施した修正
+- **テンプレート修正** `layouts/travel-guide/hotels/list.html`: 「設備で探す」施設逆引きチップ群（日英のみ整備）が ko/zh/zh-tw でも出力され、存在しない現地語ページへ18リンク＝404。`{{ if or (eq $lang "ja") $isEN }}`で日英限定に。→18件解消
+- **EN施設ページ2件**（airport-limousine.en / near-station.en）: `/en/travel-guide/access-guide/` → slug版 `/en/travel-guide/urayasu-maihama-access-guide/`。→2件解消
+- **タグ`#`バグ**: 記事 20260714-ikspiari-club-cpla の tag `"CLUB #C-pla"` が slug `club-#c-pla` を生成し `#` でURL分断＝404。tagを `"CLUB C-pla"` に（店名表記の`#C-pla`は本文・タイトルで維持）。→1件解消
+
+### Web照合（factChecked付与3件・一次情報＝市/県公式）
+| 記事 | 結果 | 対応 |
+|---|---|---|
+| libraries-public-facilities | 公民館7館・図書館分館7つ・文化/スポーツ/予約等の公式リンク6本すべて生存・内容一致 | 修正なし・factChecked付与 |
+| indoor-playgrounds | キッズスポーツルーム料金230/340円・時間・休館・電話、東野児童センターは一致。**高洲児童センターの開館時間が誤り**（記事「月〜金10-18/土日9-17」→公式は火〜日10-17・月曜休館）を修正 | 本文修正＋factChecked＋lastmod更新 |
+| city-hall-procedures | 3行政サービスセンターの住所・電話・平日8:30-17:00は公式（2026-07-09更新）と一致。浦安駅前の建物名が「西友パート2」→公式「**トライアル西友**パート2」に更新 | 名称更新＋factChecked＋lastmod更新 |
+
+### 持ち越し
+- **内部リンク404 残り1件**: JA `coin-laundry.md` → `/travel-guide/pre-trip-checklist/`。pre-trip-checklist の**JA版は意図的に `draft: true`**（英語版レビュー用）。en/ko/zh/zh-twは公開済み。公開中のJAページから未公開JAページへのリンクで404。対応案＝(a)JAチェックリストを公開、(b)JA coin-laundryの該当リンクを外す。要判断
+- **店舗開店8記事**（第1回からの持ち越し）: 引き続き見送り中
+- **factChecked未設定 残り129件**: 次回ローテーション（life-guide残り14件＋travel-guide多言語群＋新設 urayasu-sumai-hikkoshi）

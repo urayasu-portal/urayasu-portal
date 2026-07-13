@@ -73,7 +73,8 @@
   </a>
 </div>
 
-{{/* 設備で探す（設備逆引きページ群・日英） */}}
+{{/* 設備で探す（設備逆引きページ群・日英のみ。ko/zh/zh-twは逆引きページ未整備のため非表示） */}}
+{{ if or (eq $lang "ja") $isEN }}
 <div class="section-head">
   <h2>{{ if $isEN }}Find hotels by facility{{ else }}設備で探す{{ end }}</h2>
 </div>
@@ -86,6 +87,7 @@
   <a class="fl-chip" href="{{ "/travel-guide/hotels/in-house-store/" | relLangURL }}"><i class="ti ti-building-store" aria-hidden="true"></i>{{ if $isEN }}In-house shop{{ else }}館内売店{{ end }}</a>
   <a class="fl-chip" href="{{ "/travel-guide/hotels/pool/" | relLangURL }}"><i class="ti ti-swimming" aria-hidden="true"></i>{{ if $isEN }}Pool{{ else }}プール{{ end }}</a>
 </div>
+{{ end }}
 
 {{/* ────────────────────────────────────────
      エリアで探す / Area Overview

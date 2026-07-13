@@ -1,7 +1,8 @@
 ---
 title: "浦安市の市役所手続き・行政サービスセンターガイド｜住民票・転入転出・マイナンバーカードの窓口まとめ"
 date: 2026-06-13T13:00:00+09:00
-lastmod: 2026-06-13T13:00:00+09:00
+lastmod: 2026-07-14
+factChecked: "2026-07-14"
 categories:
   - "お知らせ"
 tags:
@@ -89,7 +90,7 @@ aliases:
   <div class="lg-art-card">
     <span class="lg-art-badge is-teal">東京メトロ東西線 浦安駅周辺</span>
     <div class="lg-art-card-title" style="margin-top:8px">浦安駅前行政サービスセンター</div>
-    <ul class="lg-art-card-meta"><li><b>所在地</b><span>北栄一丁目13番25号 西友パート2 1階</span></li><li><b>電話</b><span>047-354-2721</span></li><li><b>開所</b><span>平日 8:30〜17:00（土日祝・年末年始は閉所）</span></li></ul>
+    <ul class="lg-art-card-meta"><li><b>所在地</b><span>北栄一丁目13番25号 トライアル西友パート2 1階</span></li><li><b>電話</b><span>047-354-2721</span></li><li><b>開所</b><span>平日 8:30〜17:00（土日祝・年末年始は閉所）</span></li></ul>
   </div>
   <div class="lg-art-card">
     <span class="lg-art-badge is-teal">JR京葉線 新浦安駅周辺</span>
@@ -143,7 +144,7 @@ aliases:
 
 <div class="lg-art-cards cols-2">
   <div class="lg-art-card"><div class="lg-art-card-title">市役所（代表）</div><p class="lg-art-card-desc"><strong>047-351-1111</strong>／市役所1階 市民課</p></div>
-  <div class="lg-art-card"><div class="lg-art-card-title">浦安駅前行政サービスセンター</div><p class="lg-art-card-desc"><strong>047-354-2721</strong>／北栄一丁目13番25号 西友パート2 1階</p></div>
+  <div class="lg-art-card"><div class="lg-art-card-title">浦安駅前行政サービスセンター</div><p class="lg-art-card-desc"><strong>047-354-2721</strong>／北栄一丁目13番25号 トライアル西友パート2 1階</p></div>
   <div class="lg-art-card"><div class="lg-art-card-title">新浦安駅前行政サービスセンター</div><p class="lg-art-card-desc"><strong>047-390-6276</strong>／入船一丁目2番1号 プラザマーレ2階</p></div>
   <div class="lg-art-card"><div class="lg-art-card-title">舞浜駅前行政サービスセンター</div><p class="lg-art-card-desc"><strong>047-390-6396</strong>／舞浜25番地2 舞浜駅北口2階</p></div>
 </div>

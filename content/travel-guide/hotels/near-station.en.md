@@ -22,4 +22,4 @@ faq:
 
 Station-front hotels are the most underrated choice in the Disney area, especially if you plan to mix park days with trips into central Tokyo. The hotels below are either physically connected to a station or roughly a one-minute walk from the ticket gate — check the area label on each row, because they sit at different stations (Maihama itself, plus nearby stops like Shin-Urayasu, Kasai and Ichikawa-Shiohama on lines that reach Maihama in a few minutes).
 
-Dragging suitcases, late arrivals after your flight, and post-fireworks trains all get dramatically easier when the walk at the end is sixty seconds. Pair this list with our [routes and fares guide](/en/travel-guide/access-guide/) to see exactly how each station connects to the parks and the airports.
+Dragging suitcases, late arrivals after your flight, and post-fireworks trains all get dramatically easier when the walk at the end is sixty seconds. Pair this list with our [routes and fares guide](/en/travel-guide/urayasu-maihama-access-guide/) to see exactly how each station connects to the parks and the airports.

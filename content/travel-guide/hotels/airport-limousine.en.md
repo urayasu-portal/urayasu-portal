@@ -22,4 +22,4 @@ faq:
 
 If you are landing with big suitcases — or with sleeping kids — the Airport Limousine Bus is the easiest way to reach the Tokyo Disney Resort area. It runs directly between Narita / Haneda and the hotel district, and the hotels below have a bus stop right at (or steps from) their entrance, so you skip the train transfers at Tokyo Station entirely.
 
-Not every hotel is served by every route: some stops are Narita-only or have just a few departures a day, and timetables change seasonally. Use this list to shortlist hotels, then confirm the current timetable on the hotel's page and the official Airport Bus site. For the full picture of trains, buses and taxis, see our [access guide](/en/travel-guide/access-guide/).
+Not every hotel is served by every route: some stops are Narita-only or have just a few departures a day, and timetables change seasonally. Use this list to shortlist hotels, then confirm the current timetable on the hotel's page and the official Airport Bus site. For the full picture of trains, buses and taxis, see our [access guide](/en/travel-guide/urayasu-maihama-access-guide/).
