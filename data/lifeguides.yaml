@@ -100,6 +100,11 @@ categories:
         icon: "ti-dog"
         url: "/life-guide/urayasu-pet/"
         published: true
+      - title: "浦安市の住まい・引っ越しガイド"
+        desc: "家賃の目安、初期費用の抑え方、引っ越しの段取りと転入手続きを整理。"
+        icon: "ti-home"
+        url: "/life-guide/urayasu-sumai-hikkoshi/"
+        published: true
 
   - name: "おでかけ・公共施設"
     id: "odekake"
@@ -153,6 +158,9 @@ situations:
   - text: "浦安市に引っ越してきた"
     icon: "ti-truck-delivery"
     url: "/life-guide/city-hall-procedures/"
+  - text: "部屋探し・引っ越しの費用を抑えたい"
+    icon: "ti-home"
+    url: "/life-guide/urayasu-sumai-hikkoshi/"
   - text: "週末に子どもと遊びたい"
     icon: "ti-ball-football"
     url: "/life-guide/parks-playgrounds/"
@@ -179,6 +187,9 @@ situations:
     url: "/life-guide/urayasu-bus-kotsu/"
 
 updates:
+  - text: "住まい・引っ越しガイドを公開"
+    date: "2026.07"
+    url: "/life-guide/urayasu-sumai-hikkoshi/"
   - text: "国民健康保険・年金・税金ガイドを公開"
     date: "2026.06"
     url: "/life-guide/urayasu-hoken-nenkin-zei/"
