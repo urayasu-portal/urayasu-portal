@@ -62,13 +62,20 @@ images: ["/images/og-guides.png"]
 </table>
 </div>
 
-<p>初期費用を大きく左右するのが<strong>敷金・礼金・仲介手数料</strong>です。ここが「なし」の物件を選べるかで、最初に用意する金額は数十万円単位で変わります。</p>
+<p>初期費用を大きく左右するのが<strong>敷金・礼金・仲介手数料</strong>です。ここが「なし」の物件を選べるかで、最初に用意する金額は数十万円単位で変わります。初期費用や家賃を抑えたいときは、次のような選択肢もあります。</p>
 
 <div class="affiliate-box">
   <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>初期費用と家賃を最優先で抑えたいなら</strong></p>
   <p style="margin:0 0 4px;">敷金・礼金・仲介手数料・更新料が<strong>すべて0円</strong>の全国賃貸「ビレッジハウス」。家賃2万円台〜の物件もあり、引っ越し支援は最大3万円です。ただし<strong>浦安市内には物件がなく、近いのは船橋市など</strong>の通勤圏になります。多少の通勤時間と引き換えに、初期費用と毎月の家賃を思い切り下げたい人の選択肢です。</p>
   <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX3+46MOTU+45I8+68U4Y" target="_blank" rel="sponsored nofollow noopener"><i class="ti ti-home" aria-hidden="true"></i> ビレッジハウスの空き物件を見る</a>
   <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※上記リンクは広告（アフィリエイト）を含みます。物件の有無・条件は公式サイトで最新情報をご確認ください。</p>
+</div>
+
+<div class="affiliate-box">
+  <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>家具家電付きで手軽に始めたいなら</strong></p>
+  <p style="margin:0 0 4px;">家具・家電付きで、そのまま住み始められる単身者向け賃貸「レオパレス21」。<strong>仲介手数料0円</strong>で、契約もオンラインで完結できます。家電を買い揃えない分、初期費用を抑えられるのが特徴。<strong>浦安市内（新浦安・舞浜方面など）にも物件があり</strong>、転勤・単身赴任・新生活など短中期の住まいに向いています。</p>
+  <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX3+3MZDV6+4YI4+61C2Q" target="_blank" rel="sponsored nofollow noopener"><i class="ti ti-sofa" aria-hidden="true"></i> レオパレス21の物件を見る</a>
+  <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※上記リンクは広告（アフィリエイト）を含みます。物件の有無・条件は公式サイトでご確認ください。</p>
 </div>
 
 <h2 id="hikkoshi">引っ越しの段取りと費用を抑えるコツ</h2>
@@ -81,6 +88,15 @@ images: ["/images/og-guides.png"]
   <li><strong>不用品は早めに処分</strong>。荷物が減るほど料金は下がる。粗大ごみは<a href="/life-guide/trash-recycling/">ごみの出し方ガイド</a>で申し込み方法を確認。</li>
   <li><strong>ライフラインの手続き</strong>（電気・ガス・水道・インターネット）は1〜2週間前までに。</li>
 </ul>
+
+<p>特に電気は、引っ越しや契約の見直しのタイミングで切り替えると基本料金がお得になることがあります。<strong>浦安市は電気を東京ガスの新電力に切り替えられます</strong>（都市ガスは京葉ガスのエリアのため、ガスは対象外です）。</p>
+
+<div class="affiliate-box">
+  <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>引っ越しを機に電気を見直すなら</strong></p>
+  <p style="margin:0 0 4px;">東京ガスの新電力「基本プラン」。<strong>新規申し込みで電気の基本料金が1か月無料</strong>になります。浦安市も電気の供給エリアで、Webから手続きできます。</p>
+  <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX3+4Z7HV6+4R1I+BXQOI" target="_blank" rel="sponsored nofollow noopener"><i class="ti ti-bolt" aria-hidden="true"></i> 東京ガスの電気【基本プラン】を見る</a>
+  <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※上記リンクは広告（アフィリエイト）を含みます。料金・供給エリアは公式サイトで最新情報をご確認ください。</p>
+</div>
 
 <h2 id="tetsuzuki">引っ越しに伴う手続き</h2>
 
