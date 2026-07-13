@@ -73,21 +73,19 @@
   </a>
 </div>
 
-{{/* 設備で探す（EN限定の設備逆引きページ群。JP版は未作成のためENのみ表示） */}}
-{{- if $isEN }}
+{{/* 設備で探す（設備逆引きページ群・日英） */}}
 <div class="section-head">
-  <h2>Find hotels by facility</h2>
+  <h2>{{ if $isEN }}Find hotels by facility{{ else }}設備で探す{{ end }}</h2>
 </div>
-<p class="tg-section-sub">Data-driven lists from our hand-checked hotel database.</p>
+<p class="tg-section-sub">{{ if $isEN }}Data-driven lists from our hand-checked hotel database.{{ else }}実地で確認したホテルデータベースからの自動生成一覧です。{{ end }}</p>
 <div class="fl-chip-row fl-chip-row-hub">
-  <a class="fl-chip" href="/en/travel-guide/hotels/airport-limousine/"><i class="ti ti-plane" aria-hidden="true"></i>Airport limousine bus</a>
-  <a class="fl-chip" href="/en/travel-guide/hotels/large-public-bath/"><i class="ti ti-bath" aria-hidden="true"></i>Large bath / onsen</a>
-  <a class="fl-chip" href="/en/travel-guide/hotels/near-station/"><i class="ti ti-train" aria-hidden="true"></i>Right at the station</a>
-  <a class="fl-chip" href="/en/travel-guide/hotels/coin-laundry/"><i class="ti ti-wash-machine" aria-hidden="true"></i>Coin laundry</a>
-  <a class="fl-chip" href="/en/travel-guide/hotels/in-house-store/"><i class="ti ti-building-store" aria-hidden="true"></i>In-house shop</a>
-  <a class="fl-chip" href="/en/travel-guide/hotels/pool/"><i class="ti ti-swimming" aria-hidden="true"></i>Pool</a>
+  <a class="fl-chip" href="{{ "/travel-guide/hotels/airport-limousine/" | relLangURL }}"><i class="ti ti-plane" aria-hidden="true"></i>{{ if $isEN }}Airport limousine bus{{ else }}空港リムジンバス{{ end }}</a>
+  <a class="fl-chip" href="{{ "/travel-guide/hotels/large-public-bath/" | relLangURL }}"><i class="ti ti-bath" aria-hidden="true"></i>{{ if $isEN }}Large bath / onsen{{ else }}大浴場・温泉{{ end }}</a>
+  <a class="fl-chip" href="{{ "/travel-guide/hotels/near-station/" | relLangURL }}"><i class="ti ti-train" aria-hidden="true"></i>{{ if $isEN }}Right at the station{{ else }}駅直結・駅近{{ end }}</a>
+  <a class="fl-chip" href="{{ "/travel-guide/hotels/coin-laundry/" | relLangURL }}"><i class="ti ti-wash-machine" aria-hidden="true"></i>{{ if $isEN }}Coin laundry{{ else }}コインランドリー{{ end }}</a>
+  <a class="fl-chip" href="{{ "/travel-guide/hotels/in-house-store/" | relLangURL }}"><i class="ti ti-building-store" aria-hidden="true"></i>{{ if $isEN }}In-house shop{{ else }}館内売店{{ end }}</a>
+  <a class="fl-chip" href="{{ "/travel-guide/hotels/pool/" | relLangURL }}"><i class="ti ti-swimming" aria-hidden="true"></i>{{ if $isEN }}Pool{{ else }}プール{{ end }}</a>
 </div>
-{{- end }}
 
 {{/* ────────────────────────────────────────
      エリアで探す / Area Overview

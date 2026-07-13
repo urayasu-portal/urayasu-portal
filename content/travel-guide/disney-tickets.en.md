@@ -1,7 +1,8 @@
 ---
 title: "How to Buy Tokyo Disneyland & DisneySea Tickets | Prices, Sold-Out Days & Where to Buy"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-06
+lastmod: 2026-07-13
+factChecked: "2026-07-13"
 slug: "disney-tickets"
 badge: "Tickets"
 description: "A local guide to buying Tokyo Disneyland and Tokyo DisneySea tickets: date-based prices, age bands, sold-out days, official site vs authorized resellers like Trip.com, hotel ticket plans, and how Disney Premier Access works."
@@ -46,7 +47,7 @@ Three rules define the Tokyo Disney ticket system:
 | Child | 4–11 |
 | Free | 3 and under |
 
-As of our research, a 1-Day Passport for an adult runs roughly **¥8,000–11,000 depending on the date**, with junior and child tickets progressively cheaper. Evening-entry tickets (from mid-afternoon on weekends/holidays, or from 17:00 on weekdays) cost less — a realistic option for a second, shorter park day. Check current prices on the official site or a reseller's product page.
+As of our latest check (July 2026), a 1-Day Passport for an adult runs roughly **¥8,400–12,400 depending on the date** (a tiered system, with the highest tiers applying to dates from October 2026), with junior and child tickets progressively cheaper. Evening-entry tickets (from mid-afternoon on weekends/holidays, or from 17:00 on weekdays) cost less — a realistic option for a second, shorter park day. Check current prices on the official site or a reseller's product page.
 
 ---
 

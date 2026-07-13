@@ -526,7 +526,12 @@ faq:
   <li><a href="https://www.tokyodisneyresort.jp/en/tdr/facility/bv.html" target="_blank" rel="noopener">봉 보야지(도쿄 디즈니 리조트 공식)</a></li>
   <li><a href="https://www.atre.co.jp/shin_urayasu/" target="_blank" rel="noopener">아트레 신우라야스 공식 사이트</a></li>
   <li><a href="https://www.e-mona.jp/" target="_blank" rel="noopener">모나 신우라야스 공식 사이트</a></li>
+  <li><a href="https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E6%96%B0%E6%B5%A6%E5%AE%89/" target="_blank" rel="noopener">이온 스타일 신우라야스 공식 사이트</a></li>
+  <li><a href="https://www.newcoast.jp/" target="_blank" rel="noopener">New Coast 신우라야스 공식 사이트</a></li>
   <li><a href="https://www.city.urayasu.lg.jp/kanko/kyodo/index.html" target="_blank" rel="noopener">우라야스시 향토박물관(우라야스시 공식)</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisei/profile/rekishi/index.html" target="_blank" rel="noopener">우라야스시 역사적 건조물·문화재(우라야스시 공식)</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisetsu/kouen/1005631.html" target="_blank" rel="noopener">우라야스시 종합체육관·운동공원(우라야스시 공식)</a></li>
+  <li><a href="https://www.urayasu-concerthall.jp/" target="_blank" rel="noopener">J:COM 우라야스 음악홀(신우라야스 지역)</a></li>
   <li><a href="https://www.jreast.co.jp/multi/ko/" target="_blank" rel="noopener">JR 동일본</a> — 마이하마역·신우라야스역 무장애 정보</li>
   <li><a href="https://www.tokyometro.jp/lang_kr/" target="_blank" rel="noopener">도쿄 메트로</a> — 우라야스역 무장애 정보</li>
 </ul>

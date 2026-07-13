@@ -1,24 +1,25 @@
 {{- define "main" }}
 {{- /*
-  設備逆引きの英語ランディングページ（facility-list レイアウト）。
+  設備逆引きのランディングページ（facility-list レイアウト・日英二言語）。
   frontmatter の facility キー（bath/pool/laundry/convenience/shuttle/station/limousine/kitchen）で
-  data/hotels_map.yaml の flags をフィルタし、data/hotels.yaml の区分・エリア・特徴ENを合流して
+  data/hotels_map.yaml の flags をフィルタし、data/hotels.yaml の区分・エリア・特徴を合流して
   価格昇順で一覧化する。CSVを直して再生成すれば自動反映（ページ本文の書き換え不要）。
+  日本語ページと英語ページで同一テンプレを共有し、言語ごとに表示名/特徴/区分/UI文言を出し分ける。
   FAQ構造化データは extend_head.html の faq-jsonld が frontmatter faq: を拾う（本文表示は本テンプレ）。
 */ -}}
 {{- $fac := .Params.facility }}
 {{- $isEN := eq .Language.Lang "en" }}
 
-{{- /* hotels.yaml: slug → 区分/エリアEN/特徴EN/掲載区分 の索引 */ -}}
+{{- /* hotels.yaml: slug → 区分/エリア名(日英)/特徴(日英) の索引 */ -}}
 {{- $info := dict }}
 {{- range hugo.Data.hotels.areas }}
-  {{- $areaEN := .name_en | default .name }}
+  {{- $area := cond $isEN (.name_en | default .name) .name }}
   {{- range .hotels }}
     {{- if .slug }}
       {{- $info = merge $info (dict .slug (dict
             "category" (.category | default "")
-            "feature" (.feature_en | default "")
-            "area" $areaEN)) }}
+            "feature" (cond $isEN (.feature_en | default "") (.feature | default ""))
+            "area" $area)) }}
     {{- end }}
   {{- end }}
 {{- end }}
@@ -37,12 +38,12 @@
   {{- if in .flags $fac }}
     {{- $note := "" }}
     {{- range .facilities }}
-      {{- if eq .key $fac }}{{ with .note }}{{ $note = (index $noteEN .) | default . }}{{ end }}{{ end }}
+      {{- if eq .key $fac }}{{ with .note }}{{ $note = cond $isEN ((index $noteEN .) | default .) . }}{{ end }}{{ end }}
     {{- end }}
     {{- $meta := index $info .slug | default dict }}
     {{- $rows = $rows | append (dict
           "slug" .slug
-          "name" (.name_en | default .name)
+          "name" (cond $isEN (.name_en | default .name) .name)
           "price" (.price_min | default 999999)
           "note" $note
           "cat" (index $meta "category" | default "")
@@ -52,13 +53,25 @@
 {{- end }}
 {{- $rows = sort $rows "price" "asc" }}
 
+{{- $hotelsURL := "/travel-guide/hotels/" | relLangURL }}
+{{- $tgURL := "/travel-guide/" | relLangURL }}
+{{- $homeURL := "/" | relLangURL }}
+
 <article class="fl-page">
   <nav class="fl-bc" aria-label="Breadcrumb">
-    <a href="/en/">Home</a> › <a href="/en/travel-guide/">Travel Guide</a> › <a href="/en/travel-guide/hotels/">Hotels</a>
+    {{- if $isEN }}
+    <a href="{{ $homeURL }}">Home</a> › <a href="{{ $tgURL }}">Travel Guide</a> › <a href="{{ $hotelsURL }}">Hotels</a>
+    {{- else }}
+    <a href="{{ $homeURL }}">ホーム</a> › <a href="{{ $tgURL }}">旅行ガイド</a> › <a href="{{ $hotelsURL }}">ホテル</a>
+    {{- end }}
   </nav>
   <header class="fl-header">
     <h1>{{ .Title }}</h1>
-    <p class="fl-count"><strong>{{ len $rows }}</strong> hotels in our local database ・ prices are typical off-peak rates for 2 adults per room</p>
+    <p class="fl-count">
+      {{- if $isEN }}<strong>{{ len $rows }}</strong> hotels in our local database ・ prices are typical off-peak rates for 2 adults per room
+      {{- else }}該当<strong>{{ len $rows }}</strong>軒（当サイトのホテルデータベースより）・価格は2名1室・通常期の目安
+      {{- end }}
+    </p>
   </header>
 
   <div class="fl-intro">{{ .Content }}</div>
@@ -66,30 +79,34 @@
   <div class="fl-list">
     {{- range $rows }}
     {{- $pg := site.GetPage (printf "/travel-guide/hotels/%s" .slug) }}
-    <a class="fl-row" {{ with $pg }}href="{{ .RelPermalink }}"{{ else }}href="/en/travel-guide/hotels/"{{ end }}>
+    <a class="fl-row" {{ with $pg }}href="{{ .RelPermalink }}"{{ else }}href="{{ $hotelsURL }}"{{ end }}>
       <span class="fl-main">
         <span class="fl-name">{{ .name }}</span>
         <span class="fl-meta">
-          {{- with index $catEN .cat }}<span class="fl-cat">{{ . }}</span>{{ end }}
+          {{- if .cat }}<span class="fl-cat">{{ if $isEN }}{{ index $catEN .cat | default .cat }}{{ else }}{{ .cat }}{{ end }}</span>{{ end }}
           {{- with .area }}<span class="fl-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
           {{- with .note }}<span class="fl-note">{{ . }}</span>{{ end }}
         </span>
         {{- with .feature }}<span class="fl-feature">{{ . }}</span>{{ end }}
       </span>
       <span class="fl-price">
-        {{- if lt .price 999999 }}from ¥{{ lang.FormatNumberCustom 0 .price }}{{ end }}
+        {{- if lt .price 999999 }}{{ if $isEN }}from ¥{{ lang.FormatNumberCustom 0 .price }}{{ else }}¥{{ lang.FormatNumberCustom 0 .price }}〜{{ end }}{{ end }}
         <i class="ti ti-chevron-right" aria-hidden="true"></i>
       </span>
     </a>
     {{- end }}
   </div>
 
-  <p class="fl-disclaimer">Facility details and prices change — please confirm on each hotel's page and official site before booking. This list is generated from our hand-checked local hotel database.</p>
+  <p class="fl-disclaimer">
+    {{- if $isEN }}Facility details and prices change — please confirm on each hotel's page and official site before booking. This list is generated from our hand-checked local hotel database.
+    {{- else }}設備の内容や価格は変わることがあります。ご予約前に各ホテルのページと公式サイトでご確認ください。この一覧は当サイトが実地で確認したホテルデータベースから自動生成しています。
+    {{- end }}
+  </p>
 
   {{- /* FAQ（本文表示。JSON-LDは extend_head の faq-jsonld が出力） */ -}}
   {{- with .Params.faq }}
   <section class="fl-faq">
-    <h2>FAQ</h2>
+    <h2>{{ if $isEN }}FAQ{{ else }}よくある質問{{ end }}</h2>
     {{- range . }}
     <h3>{{ .q }}</h3>
     <p>{{ .a }}</p>
@@ -99,24 +116,24 @@
 
   {{- /* 姉妹ページ（設備逆引き）チップ */ -}}
   {{- $siblings := slice
-      (dict "slug" "airport-limousine" "label" "Airport limousine bus" "icon" "ti-plane")
-      (dict "slug" "large-public-bath" "label" "Large bath / onsen" "icon" "ti-bath")
-      (dict "slug" "near-station" "label" "Right at the station" "icon" "ti-train")
-      (dict "slug" "coin-laundry" "label" "Coin laundry" "icon" "ti-wash-machine")
-      (dict "slug" "in-house-store" "label" "In-house shop" "icon" "ti-building-store")
-      (dict "slug" "pool" "label" "Pool" "icon" "ti-swimming") }}
+      (dict "slug" "airport-limousine" "en" "Airport limousine bus" "ja" "空港リムジンバス" "icon" "ti-plane")
+      (dict "slug" "large-public-bath" "en" "Large bath / onsen" "ja" "大浴場・温泉" "icon" "ti-bath")
+      (dict "slug" "near-station" "en" "Right at the station" "ja" "駅直結・駅近" "icon" "ti-train")
+      (dict "slug" "coin-laundry" "en" "Coin laundry" "ja" "コインランドリー" "icon" "ti-wash-machine")
+      (dict "slug" "in-house-store" "en" "In-house shop" "ja" "館内売店" "icon" "ti-building-store")
+      (dict "slug" "pool" "en" "Pool" "ja" "プール" "icon" "ti-swimming") }}
   {{- $cur := "" }}{{ with .File }}{{ $cur = .ContentBaseName }}{{ end }}
   <section class="fl-siblings">
-    <h2>Find hotels by facility</h2>
+    <h2>{{ if $isEN }}Find hotels by facility{{ else }}設備で探す{{ end }}</h2>
     <div class="fl-chip-row">
       {{- range $siblings }}
       {{- if ne .slug $cur }}
-      <a class="fl-chip" href="/en/travel-guide/hotels/{{ .slug }}/"><i class="ti {{ .icon }}" aria-hidden="true"></i>{{ .label }}</a>
+      <a class="fl-chip" href="{{ printf "/travel-guide/hotels/%s/" .slug | relLangURL }}"><i class="ti {{ .icon }}" aria-hidden="true"></i>{{ if $isEN }}{{ .en }}{{ else }}{{ .ja }}{{ end }}</a>
       {{- end }}
       {{- end }}
-      <a class="fl-chip" href="/en/travel-guide/hotels/shuttle/"><i class="ti ti-bus" aria-hidden="true"></i>Free shuttle (guide)</a>
+      <a class="fl-chip" href="{{ "/travel-guide/hotels/shuttle/" | relLangURL }}"><i class="ti ti-bus" aria-hidden="true"></i>{{ if $isEN }}Free shuttle (guide){{ else }}無料シャトル（解説）{{ end }}</a>
     </div>
-    <p class="fl-hub-link"><a href="/en/travel-guide/hotels/">← Back to all 48 hotels near Tokyo Disney Resort</a></p>
+    <p class="fl-hub-link"><a href="{{ $hotelsURL }}">{{ if $isEN }}← Back to all 48 hotels near Tokyo Disney Resort{{ else }}← ディズニー周辺の全ホテル一覧に戻る{{ end }}</a></p>
   </section>
 </article>
 

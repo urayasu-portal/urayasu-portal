@@ -526,7 +526,12 @@ faq:
   <li><a href="https://www.tokyodisneyresort.jp/en/tdr/facility/bv.html" target="_blank" rel="noopener">Bon Voyage（東京迪士尼度假區官方）</a></li>
   <li><a href="https://www.atre.co.jp/shin_urayasu/" target="_blank" rel="noopener">Atre新浦安官方網站</a></li>
   <li><a href="https://www.e-mona.jp/" target="_blank" rel="noopener">MONA新浦安官方網站</a></li>
+  <li><a href="https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E6%96%B0%E6%B5%A6%E5%AE%89/" target="_blank" rel="noopener">永旺STYLE新浦安 官方網站</a></li>
+  <li><a href="https://www.newcoast.jp/" target="_blank" rel="noopener">New Coast新浦安 官方網站</a></li>
   <li><a href="https://www.city.urayasu.lg.jp/kanko/kyodo/index.html" target="_blank" rel="noopener">浦安市鄉土博物館（浦安市官方）</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisei/profile/rekishi/index.html" target="_blank" rel="noopener">浦安市歷史建築·文化財（浦安市官方）</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shisetsu/kouen/1005631.html" target="_blank" rel="noopener">浦安市綜合體育館·運動公園（浦安市官方）</a></li>
+  <li><a href="https://www.urayasu-concerthall.jp/" target="_blank" rel="noopener">J:COM浦安音樂廳（新浦安地區）</a></li>
   <li><a href="https://www.jreast.co.jp/en/" target="_blank" rel="noopener">JR東日本</a> — 舞濱站·新浦安站無障礙資訊</li>
   <li><a href="https://www.tokyometro.jp/lang_en/" target="_blank" rel="noopener">東京地鐵</a> — 浦安站無障礙資訊</li>
 </ul>
