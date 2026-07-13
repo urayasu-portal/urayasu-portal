@@ -75,6 +75,6 @@
 | city-hall-procedures | 3行政サービスセンターの住所・電話・平日8:30-17:00は公式（2026-07-09更新）と一致。浦安駅前の建物名が「西友パート2」→公式「**トライアル西友**パート2」に更新 | 名称更新＋factChecked＋lastmod更新 |
 
 ### 持ち越し
-- **内部リンク404 残り1件**: JA `coin-laundry.md` → `/travel-guide/pre-trip-checklist/`。pre-trip-checklist の**JA版は意図的に `draft: true`**（英語版レビュー用）。en/ko/zh/zh-twは公開済み。公開中のJAページから未公開JAページへのリンクで404。対応案＝(a)JAチェックリストを公開、(b)JA coin-laundryの該当リンクを外す。要判断
+- ~~内部リンク404 残り1件: JA `coin-laundry.md` → 未公開(draft)の pre-trip-checklist~~ → **2026-07-14 解消**: ユーザー判断でJA coin-laundryの該当リンク（1文）を削除。**内部リンク404は0件に**。pre-trip-checklist の JA版が draft のままな点は変更なし（英語版レビュー用の方針を維持）
 - **店舗開店8記事**（第1回からの持ち越し）: 引き続き見送り中
 - **factChecked未設定 残り129件**: 次回ローテーション（life-guide残り14件＋travel-guide多言語群＋新設 urayasu-sumai-hikkoshi）
