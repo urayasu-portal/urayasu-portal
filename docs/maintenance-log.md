@@ -110,3 +110,19 @@
 
 ### 持ち越し更新
 - **factChecked未設定 残り123件**: life-guide残り8件（urayasu-hitorioya-shogai / urayasu-koreisha-kaigo / urayasu-kosodate-shien-matome / urayasu-ninshin-shussan-shien / urayasu-nyuyoji-shien / urayasu-pet / urayasu-shougakusei-chuugakusei / urayasu-sumai-hikkoshi）＋ life-guide/_index ＋ travel-guide多言語群
+
+---
+
+## 2026-07-15（第5回・ローテーション継続）
+
+機械スキャンは前回と同一（セクション1・6は0件、2・3は店舗開店の持ち越し、404は0件）。factCheckedローテーションを3件消化。うち2件で事実の修正・補完あり。
+
+### Web照合（factChecked付与3件・一次情報＝市公式）
+| 記事 | 結果 | 対応 |
+|---|---|---|
+| urayasu-pet | 犬の登録期限・狂犬病注射・環境衛生課(047-712-6495・6階)は一致。**ドッグランが市内2か所**（浦安公園＝市役所向かい／運動公園隣の浦安ドッグラン）あるのに記事は浦安公園のみ記載だったため2か所に補完。利用条件（市内在住・畜犬登録・1年以内の狂犬病注射・混合ワクチン）も追記 | 本文補完＋factChecked＋lastmod更新 |
+| urayasu-koreisha-kaigo | ともづな5センター2支所の名称・担当地区、猫実(047-381-9037)・浦安駅前(047-351-8950)・新浦安(047-306-5171)・高洲(047-382-2424)・東野支所(047-314-1085)・高齢者包括支援課(047-381-9028)は公式一致。**ともづな富岡の電話が誤り**（記事「047-355-5271」→公式「047-721-1027」）を訂正 | 本文修正＋factChecked＋lastmod更新 |
+| urayasu-hitorioya-shogai | 金額・要件は全て公式委譲の構成。こども発達センター(総合福祉センター内)・障害児通所支援の公式リンク生存、構造的記述も正確 | 修正なし・factChecked付与 |
+
+### 持ち越し更新
+- **factChecked未設定 残り120件**: life-guide残り5件（urayasu-kosodate-shien-matome / urayasu-ninshin-shussan-shien / urayasu-nyuyoji-shien / urayasu-shougakusei-chuugakusei / urayasu-sumai-hikkoshi）＋ life-guide/_index ＋ travel-guide多言語群
