@@ -94,3 +94,19 @@
 
 ### 持ち越し更新
 - **factChecked未設定 残り126件**: life-guide残り11件（station-life / urayasu-hitorioya-shogai / urayasu-hoiku-youchien / urayasu-hoken-nenkin-zei / urayasu-koreisha-kaigo / urayasu-kosodate-shien-matome / urayasu-ninshin-shussan-shien / urayasu-nyuyoji-shien / urayasu-pet / urayasu-shougakusei-chuugakusei / urayasu-sumai-hikkoshi）＋ life-guide/_index ＋ travel-guide多言語群
+
+---
+
+## 2026-07-15（第4回・ローテーション継続）
+
+機械スキャンは前回と同一（セクション1・6は0件、2・3は店舗開店の持ち越し、404は0件）。factCheckedローテーションを3件消化。今回はいずれも内容一致で本文修正なし。
+
+### Web照合（factChecked付与3件・一次情報＝市公式）
+| 記事 | 結果 | 対応 |
+|---|---|---|
+| urayasu-hoken-nenkin-zei | 各課直通6件（国保年金課047-712-6829・保険税係6280・後期高齢係6274・市民税課6212・固定資産税課6065・収税課6229）を市ダイヤルイン一覧で照合、全一致 | 修正なし・factChecked付与 |
+| station-life | 変動情報なし。路線(東西線/京葉線・武蔵野線)・商業施設(アトレ/MONA/イオン/ニューコースト/イクスピアリ)いずれも現存・正確 | 修正なし・factChecked付与 |
+| urayasu-hoiku-youchien | **0〜2歳児クラス保育料無償化（2026-04-01から・年齢/課税/きょうだい問わず・給食費別）**を公式で確認、記載と完全一致。3〜5歳無償化も標準どおり | 修正なし・factChecked付与 |
+
+### 持ち越し更新
+- **factChecked未設定 残り123件**: life-guide残り8件（urayasu-hitorioya-shogai / urayasu-koreisha-kaigo / urayasu-kosodate-shien-matome / urayasu-ninshin-shussan-shien / urayasu-nyuyoji-shien / urayasu-pet / urayasu-shougakusei-chuugakusei / urayasu-sumai-hikkoshi）＋ life-guide/_index ＋ travel-guide多言語群

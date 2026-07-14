@@ -3,6 +3,7 @@ title: "【浦安市】保育園・幼稚園・預かりガイド｜入園申込
 slug: "urayasu-hoiku-youchien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:20:00+09:00
+factChecked: "2026-07-15"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "保育園", "幼稚園", "認定こども園", "浦安市"]
