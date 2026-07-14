@@ -1,7 +1,8 @@
 ---
 title: "浦安3大スポーツチーム観戦ガイド｜D-Rocks・ブリオベッカ・バルドラールの試合日程・会場・チケットまとめ"
 date: 2026-06-13
-lastmod: 2026-06-13
+lastmod: 2026-07-14
+factChecked: "2026-07-14"
 description: "浦安市を拠点に活動するラグビー・サッカー・フットサルのチームを、初めて観戦する人や子連れで行きたい人向けにわかりやすく整理しました。"
 categories: ["スポーツ"]
 tags: ["浦安D-Rocks", "ブリオベッカ浦安・市川", "バルドラール浦安", "スポーツ観戦", "子連れ観戦", "舞浜", "浦安市運動公園"]
@@ -139,7 +140,7 @@ aliases:
 <p>実際に行くときに困りやすい「どこへ行くか」「車で行けるか」「子連れ設備はあるか」を会場別に整理します。</p>
 
 <div class="lg-art-cards cols-2">
-  <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-ball-american-football" aria-hidden="true"></i> 浦安D-Rocks ホームゲーム会場</div><p class="lg-art-card-desc">リーグワンの試合は試合ごとに会場が変わる場合があります。<strong>練習拠点・浦安Dパーク</strong>（千葉県浦安市北栄1-1-1）はファン向けイベントや公開練習の会場として使用されます。試合会場・日程は公式サイトで必ずご確認ください。</p></div>
+  <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-ball-american-football" aria-hidden="true"></i> 浦安D-Rocks ホームゲーム会場</div><p class="lg-art-card-desc">リーグワンの試合は試合ごとに会場が変わる場合があります。<strong>練習拠点・浦安Dパーク</strong>（千葉県浦安市高洲8-2-1）はファン向けイベントや公開練習の会場として使用されます。試合会場・日程は公式サイトで必ずご確認ください。</p></div>
   <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-ball-football" aria-hidden="true"></i> ブリオベッカ浦安競技場</div><p class="lg-art-card-desc"><strong>浦安市運動公園 陸上競技場</strong>（千葉県浦安市舞浜2-27）がホーム会場の目安です。JR京葉線・舞浜駅南口から徒歩約15〜18分。駐車場あり（台数は公式確認）。試合ごとに会場が変わる場合もあります。</p></div>
   <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-soccer-field" aria-hidden="true"></i> バルドラール浦安アリーナ</div><p class="lg-art-card-desc"><strong>浦安市運動公園 総合体育館</strong>（千葉県浦安市舞浜2-27）がホームアリーナ。JR京葉線・舞浜駅南口から徒歩約15〜18分。屋内のため天候不問。最寄りの駐車場も公式で確認を。</p></div>
   <div class="lg-art-card"><div class="lg-art-card-title"><i class="ti ti-map-2" aria-hidden="true"></i> その他の開催会場</div><p class="lg-art-card-desc">リーグ戦・カップ戦では市外会場や中立地開催もあります。試合ごとに会場が指定されるため、観戦前に各チーム公式サイト・公式SNSで最新情報をご確認ください。</p></div>

@@ -78,3 +78,19 @@
 - ~~内部リンク404 残り1件: JA `coin-laundry.md` → 未公開(draft)の pre-trip-checklist~~ → **2026-07-14 解消**: ユーザー判断でJA coin-laundryの該当リンク（1文）を削除。**内部リンク404は0件に**。pre-trip-checklist の JA版が draft のままな点は変更なし（英語版レビュー用の方針を維持）
 - **店舗開店8記事**（第1回からの持ち越し）: 引き続き見送り中
 - **factChecked未設定 残り129件**: 次回ローテーション（life-guide残り14件＋travel-guide多言語群＋新設 urayasu-sumai-hikkoshi）
+
+---
+
+## 2026-07-14（第3回・ローテーション継続）
+
+機械スキャンは第2回と同一（セクション1・6は0件、2・3は店舗開店の持ち越し、404は0件）。factCheckedローテーションを3件消化。
+
+### Web照合（factChecked付与3件・一次情報＝市公式/各チーム公式）
+| 記事 | 結果 | 対応 |
+|---|---|---|
+| disaster-prevention | 避難所/ハザードマップ/防災アプリの公式リンク・危機管理課(047-712-6897・市役所4階)すべて生存＆一致。概念説明も正確 | 修正なし・factChecked付与 |
+| sports-teams | チーム名(ブリオベッカ浦安・市川)・リーグ(JFL/F1/リーグワン)・会場は各公式と一致。**浦安Dパークの所在地が誤り**（記事「北栄1-1-1」→公式「高洲8-2-1」）を訂正 | 本文修正＋factChecked＋lastmod更新 |
+| parks-playgrounds | 交通公園(美浜2-15-1・9:00-16:30・月曜休・無料・63台)、こどもの広場(高洲2-4-10・水〜金10-17/土日祝9-17・月火休・61台)は公式と完全一致 | 修正なし・factChecked付与 |
+
+### 持ち越し更新
+- **factChecked未設定 残り126件**: life-guide残り11件（station-life / urayasu-hitorioya-shogai / urayasu-hoiku-youchien / urayasu-hoken-nenkin-zei / urayasu-koreisha-kaigo / urayasu-kosodate-shien-matome / urayasu-ninshin-shussan-shien / urayasu-nyuyoji-shien / urayasu-pet / urayasu-shougakusei-chuugakusei / urayasu-sumai-hikkoshi）＋ life-guide/_index ＋ travel-guide多言語群
