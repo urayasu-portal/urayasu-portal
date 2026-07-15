@@ -18,7 +18,7 @@ eventDates:
   - "2026-08-14"
   - "2026-08-15"
   - "2026-10-17"
-draft: fals
+draft: false
 lastmod: 2026-07-16T07:00:00+09:00
 ---
 <p>浦安市は、2026年の「浦安市納涼盆踊り大会」と「浦安市花火大会」の開催予定日を発表しました。</p>
@@ -31,7 +31,8 @@ lastmod: 2026-07-16T07:00:00+09:00
 
 <h2>参考情報</h2>
 <ul>
-  <li><a href="https://www.city.urayasu.lg.jp/shogaigakushu/chiiki/jichikai/1048581.html">浦安市公式サイト：浦安市納涼盆踊り大会・浦安市花火大会の開催について</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shogaigakushu/chiiki/jichikai/1048716.html">浦安市公式サイト：納涼盆踊り大会</a></li>
+  <li><a href="https://www.city.urayasu.lg.jp/shogaigakushu/chiiki/jichikai/1045971/index.html">浦安市公式サイト：第43回浦安市花火大会</a></li>
 </ul>
 <h2>納涼盆踊り大会は8月14日・15日に浦安小学校で開催</h2>
 <p>2026年の浦安市納涼盆踊り大会は、8月14日（金）・15日（土）の2日間、浦安市立浦安小学校の校庭で開催されます。時間は両日とも午後6時30分から午後9時までです。</p>
