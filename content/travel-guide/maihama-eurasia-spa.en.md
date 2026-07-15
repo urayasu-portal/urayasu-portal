@@ -24,7 +24,7 @@ A full Disney day puts 20,000–30,000 steps on adult legs. The cure is five min
 - You came all the way to Japan but have no time for an onsen town — **this one fits inside your Disney itinerary**.
 
 {{< note >}}
-Day-use is for ages 4 and up in the baths: **kids from age 4 through elementary school pay the child rate** (¥1,000 weekdays / ¥1,300 weekends & holidays). Children 3 and under are free but cannot enter the spa floors. **Children who still wear diapers cannot use the baths.** The stone sauna and saunas are for junior-high age and up. Note that onsen bathing is nude and gender-separated — children 6 and under may accompany a parent of either gender.
+Day-use is for ages 4 and up in the baths: **kids from age 4 through elementary school pay the child rate**. Children 3 and under are free but cannot enter the spa floors. **Children who still wear diapers cannot use the baths.** The stone sauna and saunas are for junior-high age and up. Note that onsen bathing is nude and gender-separated — children 6 and under may accompany a parent of either gender.
 {{< /note >}}
 
 ## What to expect
