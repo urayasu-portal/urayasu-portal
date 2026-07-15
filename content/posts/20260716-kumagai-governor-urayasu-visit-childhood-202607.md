@@ -3,7 +3,7 @@ title: "【浦安】熊谷千葉県知事が市内を視察　実は幼少期を
 date: 2026-07-16T07:00:00+09:00
 slug: "kumagai-governor-urayasu-visit-childhood-202607"
 categories:
-  - "ニュース・事件事故"
+  - "ニュース"
 tags:
   - "浦安"
   - "熊谷俊人"
