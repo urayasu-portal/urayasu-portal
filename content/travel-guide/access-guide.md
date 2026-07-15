@@ -174,6 +174,14 @@ faq:
         <div style="font-size:10.5px;color:#854F0B;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> こんな人に：宿代を抑えたい／夜は下町の居酒屋・地元グルメ／都心と兼ねた滞在</div>
       </div>
       <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> 所要時間は目安です（乗換・待ち時間を含みません）。公開前に各交通機関・ホテル公式サイトで最新情報を確認してください。リムジンバスの停車ホテル・運行本数は日により異なります。</div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:24px 0 6px;padding-left:11px;border-left:4px solid #E05535">④ 車で行くなら：駐車場は「予約」が正解</h2>
+      <div style="font-size:11px;color:#64748B;margin-bottom:12px">マイカーやレンタカーで舞浜へ向かう人へ。パークの公式駐車場は料金が高めで、繁忙期は入庫待ちの列もできます。当日満車で慌てないためには、周辺の駐車場を事前に確保しておくのが安心です。</div>
+      <div class="affiliate-box">
+        <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>舞浜・ディズニー周辺で駐車場を確保するなら</strong></p>
+        <p style="margin:0 0 4px;">「アキッパ（akippa）」は、コインパーキングや個人の空きスペースを<strong>事前予約できる</strong>駐車場サービスです。舞浜・ディズニーリゾート周辺にも多数の登録があり、予約制なので満車の心配がなく、<strong>公式駐車場より安く済むことも</strong>あります（パークまでの徒歩距離は駐車場ごとに幅があります）。イベントや連休など混雑する日ほど、早めの予約が効きます。</p>
+        <a class="lg-book-btn book-akippa" href="https://px.a8.net/svt/ejp?a8mat=4B7XX3+3WIBJM+3NAY+65U42" target="_blank" rel="sponsored nofollow noopener">アキッパで駐車場を予約する →</a>
+        <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※上記リンクは広告（アフィリエイト）を含みます。空き状況・料金・徒歩距離は公式サイトでご確認ください。</p>
+      </div>
 </div>
 
 ## 参考出典

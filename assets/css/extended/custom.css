@@ -3546,6 +3546,7 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
 .book-expedia { background: #1668e3; }
 .book-yahoo   { background: #ff0033; }
 .book-asoview { background: #f57c00; }
+.book-akippa  { background: #00a94f; }
 .lg-book-pr { font-size: 10px; color: var(--up-text-3); margin-top: 9px; text-align: center; }
 
 /* 予約CTA: 本文直前の複製（モバイル限定。PCではサイドバーのCTAのみ表示） */
