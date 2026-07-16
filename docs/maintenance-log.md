@@ -126,3 +126,20 @@
 
 ### 持ち越し更新
 - **factChecked未設定 残り120件**: life-guide残り5件（urayasu-kosodate-shien-matome / urayasu-ninshin-shussan-shien / urayasu-nyuyoji-shien / urayasu-shougakusei-chuugakusei / urayasu-sumai-hikkoshi）＋ life-guide/_index ＋ travel-guide多言語群
+
+---
+
+## 2026-07-15（第6回・ローテーション継続）
+
+機械スキャンは前回と同一（セクション1・6は0件、2・3は店舗開店の持ち越し、404は0件）。factCheckedローテーションを3件消化。
+
+### Web照合（factChecked付与3件・一次情報＝市公式）
+| 記事 | 結果 | 対応 |
+|---|---|---|
+| urayasu-ninshin-shussan-shien | 妊婦支援給付金(1回目5万円/妊婦・2回目5万円×胎児数・令和7年4月以降妊娠)、出産育児一時金(2023年4月〜50万円)、母子保健課(047-381-9034・健康センター1階)すべて公式一致 | 修正なし・factChecked付与 |
+| urayasu-nyuyoji-shien | 母子保健課・こども発達センターは一致。子どもインフル助成の**公式リンク(1015846.html)が404**（季節事業でFY2025ページが会期後に取下げか）だったため、安定した親カテゴリ(kenko/yobou/index.html)へ張り替え。助成額2,000円は現行で維持 | リンク張替＋factChecked付与 |
+| urayasu-sumai-hikkoshi | 新設4日目。初期費用の目安・転入14日・都市ガス=京葉ガス/電気=東京ガス新電力可などの編集事実は正確。A8アフィリンク・広告表記・物件有無(変動情報・ヘッジ済み)は対象外 | 修正なし・factChecked付与 |
+
+### 持ち越し更新
+- **factChecked未設定 残り117件**: life-guide残り2件（urayasu-kosodate-shien-matome / urayasu-shougakusei-chuugakusei）＋ life-guide/_index ＋ travel-guide多言語群。→ 次回で life-guide 記事本体はほぼ一巡完了
+- 監視: urayasu-nyuyoji-shien の子どもインフル助成は季節事業。秋（10月ごろ）にFY2026ページが公開されたら、より具体的なページへの再リンクを検討

@@ -3,6 +3,7 @@ title: "【浦安市】乳幼児期の子育て支援ガイド｜健診・予防
 slug: "urayasu-nyuyoji-shien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:10:00+09:00
+factChecked: "2026-07-15"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "乳幼児", "健診", "予防接種", "浦安市"]
@@ -58,7 +59,7 @@ sources:
 <h3>子どものインフルエンザ予防接種費用の助成（任意接種）</h3>
 <p>任意接種であるインフルエンザ予防接種の費用の一部を助成します（1回あたり上限2,000円。2026年6月時点。例年10月開始で年度ごとに実施）。申込書は市内の協力医療機関にあります。</p>
 <p><strong>対象：</strong>接種日に浦安市に住民票がある生後6か月〜高校3年生相当の方</p>
-{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/1015846.html" >}}子どものインフルエンザ予防接種費用助成（浦安市公式）{{< /gov-link >}}
+{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/index.html" >}}子どもの予防接種・インフルエンザ費用助成（浦安市公式）{{< /gov-link >}}
 
 <h2>③ 親子で通える・相談できる場</h2>
 
