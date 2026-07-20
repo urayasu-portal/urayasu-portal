@@ -1,7 +1,7 @@
 ---
 title: "浦安市の子ども向け屋内・公共の遊び場まとめ｜雨の日・暑い日にも使える親子のおでかけガイド"
 date: 2026-06-07T10:00:00+09:00
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 factChecked: "2026-07-14"
 categories:
   - "子育て・教育"
@@ -236,3 +236,8 @@ aliases:
   <div class="lg-art-faq-item"><div class="lg-art-q">子育て支援センターは予約が必要ですか？</div><p class="lg-art-a">通常の親子交流（自由遊び）は予約不要で利用できます。育児相談や一部の催しは予約が必要な場合があり、混雑時に入場を制限することもあるため、事前に各施設へご確認いただくと安心です。</p></div>
   <div class="lg-art-faq-item"><div class="lg-art-q">つどいの広場と児童センターは何が違いますか？</div><p class="lg-art-a">つどいの広場は0〜3歳の小さなお子さんと保護者がゆったり過ごす場所、児童センターは0〜18歳が体を動かして遊べる場所です。お子さんの年齢と「何をしたいか」で選ぶのがおすすめです。</p></div>
 </div>
+
+<h2 id="shien">子育て支援制度も調べる</h2>
+
+<p>児童手当・子ども医療費助成・一時預かりなど、浦安市の子育て支援制度は保存版ガイドにまとめています。遊び場探しとあわせてご活用ください。</p>
+<p><a class="lg-art-btn" href="/life-guide/urayasu-kosodate-shien-matome/"><i class="ti ti-arrow-right" aria-hidden="true"></i> 子育て支援・手当・助成まとめ</a></p>

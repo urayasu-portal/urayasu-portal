@@ -2,7 +2,7 @@
 title: "浦安市の子育て支援・手当・助成まとめ｜妊娠・出産から小中学生まで使える制度ガイド"
 linkTitle: "子育て支援まとめ"
 date: 2026-06-07T09:00:00+09:00
-lastmod: 2026-06-07T09:00:00+09:00
+lastmod: 2026-07-20T10:00:00+09:00
 categories:
   - "子育て・教育"
 tags:
@@ -270,6 +270,14 @@ cover:
 </tbody>
 </table>
 </div>
+
+<h2 id="odekake">遊び場・おでかけガイド</h2>
+
+<p>支援制度とあわせて、子どもと出かけられる市内の遊び場も保存版ガイドにまとめています。晴れた日の外遊びから雨の日の屋内施設まで、行き先探しにご活用ください。</p>
+<p>
+  <a class="lg-art-btn" href="/life-guide/parks-playgrounds/"><i class="ti ti-arrow-right" aria-hidden="true"></i> 公園・遊び場ガイド</a>
+  <a class="lg-art-btn" href="/life-guide/indoor-playgrounds/"><i class="ti ti-arrow-right" aria-hidden="true"></i> 屋内・公共の遊び場まとめ</a>
+</p>
 
 <div class="lg-art-callout">
   <i class="ti ti-info-circle" aria-hidden="true"></i>

@@ -46,23 +46,8 @@ popular:
     published: true
 
 categories:
-  - name: "子育て・教育"
-    id: "kosodate"
-    icon: "ti-baby-carriage"
-    guides:
-      - title: "浦安市の子育て支援・手当・助成まとめ"
-        desc: "妊娠・出産、育児、保育、教育費などの支援制度を整理。"
-        icon: "ti-baby-carriage"
-        url: "/life-guide/urayasu-kosodate-shien-matome/"
-        published: true
-      - title: "浦安市の子ども向け屋内・公共の遊び場まとめ"
-        desc: "雨の日や暑い日に使いやすい屋内・公共施設を紹介。"
-        icon: "ti-building-carousel"
-        url: "/life-guide/indoor-playgrounds/"
-        published: true
-
-  - name: "医療・安心"
-    id: "iryo"
+  - name: "緊急・安心（医療・防災）"
+    id: "kinkyu"
     icon: "ti-heartbeat"
     guides:
       - title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
@@ -76,15 +61,10 @@ categories:
         url: "/life-guide/disaster-prevention/"
         published: true
 
-  - name: "暮らしの手続き"
+  - name: "役所の手続き・お金"
     id: "tetsuzuki"
     icon: "ti-clipboard-text"
     guides:
-      - title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド"
-        desc: "分別、収集日、粗大ごみ、持ち込みなどをわかりやすく整理。"
-        icon: "ti-trash"
-        url: "/life-guide/trash-recycling/"
-        published: true
       - title: "浦安市の行政サービスセンター・市役所手続きガイド"
         desc: "住民票、証明書、引っ越し関連などの窓口情報を確認。"
         icon: "ti-building-bank"
@@ -95,18 +75,53 @@ categories:
         icon: "ti-receipt"
         url: "/life-guide/urayasu-hoken-nenkin-zei/"
         published: true
-      - title: "浦安市のペットガイド"
-        desc: "犬の登録・狂犬病予防注射・飼い方のマナーやドッグランを案内。"
-        icon: "ti-dog"
-        url: "/life-guide/urayasu-pet/"
+
+  - name: "子育て・教育"
+    id: "kosodate"
+    icon: "ti-baby-carriage"
+    guides:
+      - title: "浦安市の子育て支援・手当・助成まとめ"
+        desc: "妊娠・出産から小中学生まで、7つのテーマ別ガイドの入口。"
+        icon: "ti-baby-carriage"
+        url: "/life-guide/urayasu-kosodate-shien-matome/"
         published: true
+
+  - name: "高齢者・介護"
+    id: "koreisha"
+    icon: "ti-old"
+    guides:
+      - title: "浦安市の高齢者・介護ガイド"
+        desc: "地域包括支援センター「ともづな」と介護保険サービスの使い方を整理。"
+        icon: "ti-old"
+        url: "/life-guide/urayasu-koreisha-kaigo/"
+        published: true
+
+  - name: "住まい・暮らし"
+    id: "sumai"
+    icon: "ti-home"
+    guides:
       - title: "浦安市の住まい・引っ越しガイド"
         desc: "家賃の目安、初期費用の抑え方、引っ越しの段取りと転入手続きを整理。"
         icon: "ti-home"
         url: "/life-guide/urayasu-sumai-hikkoshi/"
         published: true
+      - title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド"
+        desc: "分別、収集日、粗大ごみ、持ち込みなどをわかりやすく整理。"
+        icon: "ti-trash"
+        url: "/life-guide/trash-recycling/"
+        published: true
+      - title: "浦安市のペットガイド"
+        desc: "犬の登録・狂犬病予防注射・飼い方のマナーやドッグランを案内。"
+        icon: "ti-dog"
+        url: "/life-guide/urayasu-pet/"
+        published: true
+      - title: "浦安市の駅別生活ガイド：浦安・新浦安・舞浜"
+        desc: "駅ごとの買い物、交通、雰囲気、暮らしやすさを比較。"
+        icon: "ti-train"
+        url: "/life-guide/station-life/"
+        published: true
 
-  - name: "おでかけ・公共施設"
+  - name: "おでかけ・施設・交通"
     id: "odekake"
     icon: "ti-tree"
     guides:
@@ -114,6 +129,11 @@ categories:
         desc: "子ども連れで行きやすい公園や遊び場をエリア別に紹介。"
         icon: "ti-windmill"
         url: "/life-guide/parks-playgrounds/"
+        published: true
+      - title: "浦安市の子ども向け屋内・公共の遊び場まとめ"
+        desc: "雨の日や暑い日に使いやすい屋内・公共施設を紹介。"
+        icon: "ti-building-carousel"
+        url: "/life-guide/indoor-playgrounds/"
         published: true
       - title: "浦安市の図書館・公共施設一覧ガイド"
         desc: "図書館、公民館、文化施設、体育施設などを目的別に整理。"
@@ -125,30 +145,10 @@ categories:
         icon: "ti-bus"
         url: "/life-guide/urayasu-bus-kotsu/"
         published: true
-
-  - name: "まちを楽しむ"
-    id: "enjoy"
-    icon: "ti-confetti"
-    guides:
       - title: "浦安3大スポーツチーム観戦ガイド"
         desc: "D-Rocks、バルドラール、ブリオベッカの観戦情報を紹介。"
         icon: "ti-ball-american-football"
         url: "/life-guide/sports-teams/"
-        published: true
-      - title: "浦安市の駅別生活ガイド：浦安・新浦安・舞浜"
-        desc: "駅ごとの買い物、交通、雰囲気、暮らしやすさを比較。"
-        icon: "ti-train"
-        url: "/life-guide/station-life/"
-        published: true
-
-  - name: "高齢者・介護"
-    id: "koreisha"
-    icon: "ti-old"
-    guides:
-      - title: "浦安市の高齢者・介護ガイド"
-        desc: "地域包括支援センター「ともづな」と介護保険サービスの使い方を整理。"
-        icon: "ti-old"
-        url: "/life-guide/urayasu-koreisha-kaigo/"
         published: true
 
 situations:
