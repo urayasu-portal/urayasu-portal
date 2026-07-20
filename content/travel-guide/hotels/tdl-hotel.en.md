@@ -23,7 +23,7 @@ Tokyo Disneyland Hotel is the highest-prestige Disney Hotel at Tokyo Disneyland.
 | Item | Details |
 |---|---|
 | Address | 1-1 Maihama, Urayasu, Chiba 279-8511 |
-| Phone | 047-305-5555 |
+| Phone | 047-305-3333 |
 | Area | Maihama (TDR Disney Hotel) |
 | Rooms | 706 |
 | Check-in / Check-out | 15:00 / 12:00 |

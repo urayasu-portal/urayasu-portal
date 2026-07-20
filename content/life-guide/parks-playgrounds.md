@@ -191,8 +191,8 @@ aliases:
 
 <div class="lg-art-infobox-title"><i class="ti ti-building-bank" aria-hidden="true"></i> 公園に関する問い合わせ</div>
 <dl class="lg-art-infobox">
-  <dt>担当</dt><dd>浦安市役所 公園緑地担当課</dd>
-  <dt>電話</dt><dd>047-712-6437（公園に関する問い合わせ）</dd>
+  <dt>担当</dt><dd>浦安市役所 みどり公園課</dd>
+  <dt>電話</dt><dd>047-712-6513（公園に関する問い合わせ）</dd>
   <dt>備考</dt><dd>交通公園・こどもの広場など、各施設へ直接お問い合わせいただく場合もあります。</dd>
 </dl>
 

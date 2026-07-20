@@ -143,3 +143,31 @@
 ### 持ち越し更新
 - **factChecked未設定 残り117件**: life-guide残り2件（urayasu-kosodate-shien-matome / urayasu-shougakusei-chuugakusei）＋ life-guide/_index ＋ travel-guide多言語群。→ 次回で life-guide 記事本体はほぼ一巡完了
 - 監視: urayasu-nyuyoji-shien の子どもインフル助成は季節事業。秋（10月ごろ）にFY2026ページが公開されたら、より具体的なページへの再リンクを検討
+
+---
+
+## 2026-07-21（臨時・電話番号総点検）
+
+通常の月次ファクトチェック（確認日ローテーション）とは別に、サイト掲載の全電話番号を対象とした特別監査を実施（確認日の更新対象外）。並列エージェント21件でcontent全体＋facility-database.csv 213件＋hotel多言語相違6軒をWeb一次情報照合。
+
+### 修正した誤り（9件）
+| 対象 | 誤 | 正 |
+|---|---|---|
+| life-guide/urayasu-kosodate-shien-matome.md | 教育センター 047-305-2873 | 047-381-7961 |
+| 同上 | 課名「こども未来部保育課」 | 「健康こども部保育幼稚園課」 |
+| life-guide/parks-playgrounds.md | 公園緑地担当課 047-712-6437 | みどり公園課 047-712-6513 |
+| facility-database.csv（サーティワン マーヴ浦安店） | 047-702-9631 | 050-1726-4843 |
+| facility-database.csv（ドラッグセイムス舞浜店） | 047-316-0168 | 047-306-5561 |
+| facility-database.csv（鳥貴族新浦安店） | 047-711-2625 | 050-1808-0599 |
+| facility-database.csv（麺屋真星） | 要確認（空欄） | 047-316-7778（新規判明・補完） |
+| travel-guide/hotels/hyatt-regency-tokyo-bay.{en,zh,zh-tw,ko}.md | 047-325-1234 | 047-305-1234 |
+| travel-guide/hotels/grand-nikko-tokyo-bay.{en,zh,zh-tw,ko}.md | 047-354-1111 | 047-350-3533 |
+| travel-guide/hotels/oriental-tokyo-bay.{en,zh,zh-tw,ko}.md | 047-381-7861 | 047-350-8111 |
+| travel-guide/hotels/tdl-hotel.{en,zh,zh-tw,ko}.md | 047-305-5555（トイストーリーホテルの番号が誤混入） | 047-305-3333 |
+
+### 一致確認（修正なし）
+医療・救急8件／タクシー・介護タクシー13件／市役所窓口約30件／posts記事10件／facility-database.csv店舗約200件のうち上記以外は全て公式情報と一致。
+
+### 据え置き（要確認のまま・推測で書き換えず）
+- ともづな富岡本体047-721-1027は個別再確認で一致（訂正不要）
+- facility-database.csv: poi-063（ファミリーマート エミオン東京ベイ／S店。同一施設内の別店舗emion-familymartとの検索混同の疑い）、poi-059（ファミリーマート新浦安マーレ店）、poi-072（ファーストセレクト）、poi-084（アール元気アクロスプラザ浦安東野店）、poi-103（マツモトキヨシ新浦安美浜店）、poi-131（はなまるうどんイオン新浦安店）、poi-147（バーミヤン浦安今川店）は一次情報が錯綜し確認不能。次回総点検時に再確認

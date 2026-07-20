@@ -23,7 +23,7 @@ noDate: true
 | 項目 | 內容 |
 |---|---|
 | 地址 | 千葉縣浦安市美濱1-1-1 |
-| 電話 | 047-325-1234 |
+| 電話 | 047-305-1234 |
 | 區域 | 新浦安地區（高級飯店） |
 | 入住 / 退房 | 15:00 / 12:00 |
 | 官方網站 | [hyatt.com（凱悅東京灣）](https://www.hyatt.com/zh-CN/hotel/japan/hyatt-regency-tokyo-bay/nrtzt) |

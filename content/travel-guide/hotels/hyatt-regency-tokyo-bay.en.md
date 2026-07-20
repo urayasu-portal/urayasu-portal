@@ -23,7 +23,7 @@ Hyatt Regency Tokyo Bay is a Shin-Urayasu hotel from the Hyatt brand, carrying t
 | Item | Details |
 |---|---|
 | Address | 1-1-1 Mihama, Urayasu, Chiba |
-| Phone | 047-325-1234 |
+| Phone | 047-305-1234 |
 | Area | Shin-Urayasu (Upscale Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |
 | Official Website | [hyatt.com (EN)](https://www.hyatt.com/hyatt-regency/en-US/nrtzt-hyatt-regency-tokyo-bay) |

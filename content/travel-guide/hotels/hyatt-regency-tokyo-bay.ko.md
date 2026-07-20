@@ -23,7 +23,7 @@ noDate: true
 | 항목 | 내용 |
 |---|---|
 | 주소 | 지바현 우라야스시 미하마 1-1-1 |
-| 전화 | 047-325-1234 |
+| 전화 | 047-305-1234 |
 | 지역 | 신우라야스 지역 (고급 호텔) |
 | 체크인 / 체크아웃 | 15:00 / 12:00 |
 | 공식 사이트 | [hyatt.com(하얏트 도쿄 베이)](https://www.hyatt.com/ko-KR/hotel/japan/hyatt-regency-tokyo-bay/nrtzt) |

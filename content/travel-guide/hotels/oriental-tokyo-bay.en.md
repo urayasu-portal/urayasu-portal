@@ -23,7 +23,7 @@ Hotel Oriental Tokyo Bay is a TDR Partner Hotel offering an exceptional shuttle 
 | Item | Details |
 |---|---|
 | Address | 1-6 Mihama, Urayasu, Chiba |
-| Phone | 047-381-7861 |
+| Phone | 047-350-8111 |
 | Area | Shin-Urayasu (TDR Partner Hotel) |
 | Rooms | 511 |
 | Check-in / Check-out | 15:00 / 12:00 |

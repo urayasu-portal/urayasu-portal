@@ -23,7 +23,7 @@ Grand Nikko Tokyo Bay Maihama (Tokyo Disney Resort Official Hotel) is instantly 
 | Item | Details |
 |---|---|
 | Address | 1-7 Maihama, Urayasu, Chiba 279-8565 |
-| Phone | 047-354-1111 |
+| Phone | 047-350-3533 |
 | Area | Maihama (TDR Official Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |
 | Official Website | [tokyobay.grandnikko.com (EN)](https://tokyobay.grandnikko.com/en/) |
