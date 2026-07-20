@@ -1,7 +1,7 @@
 ---
 title: "Things to Do near Tokyo Disney Resort | Maihama, Urayasu & Shin-Urayasu Sightseeing Guide"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-06-18T00:00:00+09:00
+lastmod: 2026-07-21T00:00:00+09:00
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - "Maihama"
@@ -396,11 +396,11 @@ faq:
   <li><strong>Time needed:</strong> At least 1 hour for a quick look; combine with the Local History Museum for a half-day course</li>
 </ul>
 
-<h3>Shopping near Urayasu Station (Seiyu, etc.)</h3>
-<p>The Moto-machi area is mostly small everyday shops; for larger shopping, <strong>Seiyu Urayasu</strong> in front of Urayasu Station is convenient, carrying everything from groceries to daily goods.</p>
+<h3>Shopping near Urayasu Station (Trial Seiyu, etc.)</h3>
+<p>The Moto-machi area is mostly small everyday shops; for larger shopping, <strong>Trial Seiyu Urayasu</strong> in front of Urayasu Station is convenient, carrying everything from groceries to daily goods.</p>
 <ul>
   <li><strong>Access:</strong> A short walk from Tokyo Metro Tozai Line Urayasu Station</li>
-  <li><strong>Note:</strong> Seiyu Urayasu has been partly closed for renovation since the end of May 2026 and is scheduled to reopen as "Trial Seiyu Urayasu" in summer 2026 (some specialty shops remain open). Available sections vary by visit timing — check the official website for the latest status.</li>
+  <li><strong>Note:</strong> The former Seiyu Urayasu reopened as "Trial Seiyu Urayasu" in July 2026 after renovation. Sections and opening hours may vary — check the official website for the latest status.</li>
 </ul>
 
 <div class="info-box">
