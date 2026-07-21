@@ -1,0 +1,21 @@
+{{- /*
+  ホテル比較表ショートコード。partials/hotel-compare-table.html の薄いラッパー。
+  Markdown から使用:
+    {{< hotel-table >}}                         全48軒（区分＋無料シャトル有無）
+    {{< hotel-table shuttle-only="true" mode="shuttle" >}}  シャトルありのみ・種別列
+    {{< hotel-table zone="C" >}}                エリアCのみ
+    {{< hotel-table category="partner" >}}      パートナーホテルのみ
+    {{< hotel-table limit="8" >}}               上位8軒
+  パラメータはすべて任意。
+*/ -}}
+{{- $shuttleOnly := eq (.Get "shuttle-only") "true" }}
+{{- $limit := 0 }}{{ with .Get "limit" }}{{ $limit = int . }}{{ end }}
+{{- partial "hotel-compare-table.html" (dict
+    "lang" .Page.Language.Lang
+    "mode" (.Get "mode" | default "default")
+    "zone" (.Get "zone" | default "")
+    "shuttleOnly" $shuttleOnly
+    "category" (.Get "category" | default "")
+    "limit" $limit
+    "caption" (.Get "caption" | default "")
+) -}}

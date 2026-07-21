@@ -32,6 +32,9 @@ areas:
         feature_zh: "步行1分钟到迪士尼乐园"
         feature_ko: "디즈니랜드까지 도보 1분"
         feature_zh-tw: "步行1分鐘到迪士尼樂園"
+        shuttle_type: "walk"
+        shuttle: false
+        price_min: 55000
         policy: normal
         individual_page: true
         slug: "tdl-hotel"
@@ -47,6 +50,9 @@ areas:
         feature_zh: "位于迪士尼海洋园区内·专用入口"
         feature_ko: "디즈니씨 파크 내·전용 입구"
         feature_zh-tw: "位於迪士尼海洋園區內·專用入口"
+        shuttle_type: "walk"
+        shuttle: false
+        price_min: 83000
         policy: normal
         individual_page: true
         slug: "miracosta"
@@ -62,6 +68,9 @@ areas:
         feature_zh: "直通迪士尼海洋梦幻泉乡（2024年开业）"
         feature_ko: "디즈니씨 판타지 스프링스 직결(2024년 개업)"
         feature_zh-tw: "直通迪士尼海洋夢幻泉鄉（2024年開幕）"
+        shuttle_type: "walk"
+        shuttle: false
+        price_min: 50000
         policy: normal
         individual_page: true
         slug: "fantasy-springs-hotel"
@@ -77,6 +86,9 @@ areas:
         feature_zh: "距舞滨站步行8分钟"
         feature_ko: "마이하마역에서 도보 8분"
         feature_zh-tw: "距舞濱站步行8分鐘"
+        shuttle_type: "bayside"
+        shuttle: true
+        price_min: 40000
         policy: normal
         individual_page: true
         slug: "ambassador-hotel"
@@ -92,6 +104,9 @@ areas:
         feature_zh: "距海湾站步行3分钟"
         feature_ko: "베이사이드 스테이션에서 도보 3분"
         feature_zh-tw: "距海灣站步行3分鐘"
+        shuttle_type: "walk"
+        shuttle: false
+        price_min: 45000
         policy: normal
         individual_page: true
         slug: "toy-story-hotel"
@@ -107,6 +122,9 @@ areas:
         feature_zh: "专用乐园班车"
         feature_ko: "전용 파크 셔틀버스"
         feature_zh-tw: "專用樂園班車"
+        shuttle_type: "bayside"
+        shuttle: true
+        price_min: 30000
         policy: normal
         individual_page: true
         slug: "hotel-okura-tokyo-bay"
@@ -122,6 +140,9 @@ areas:
         feature_zh: "专用乐园班车"
         feature_ko: "전용 파크 셔틀버스"
         feature_zh-tw: "專用樂園班車"
+        shuttle_type: "bayside"
+        shuttle: true
+        price_min: 30000
         policy: normal
         individual_page: true
         slug: "grand-nikko-tokyo-bay"
@@ -137,6 +158,9 @@ areas:
         feature_zh: "大浴场与大型泳池"
         feature_ko: "대욕장과 대형 수영장"
         feature_zh-tw: "大浴場與大型泳池"
+        shuttle_type: "walk"
+        shuttle: false
+        price_min: 30000
         policy: normal
         individual_page: true
         slug: "sheraton-grande-tokyo-bay"
@@ -152,6 +176,9 @@ areas:
         feature_zh: "馆内24小时便利店"
         feature_ko: "관내 24시간 편의점"
         feature_zh-tw: "館內24小時便利店"
+        shuttle_type: "bayside"
+        shuttle: true
+        price_min: 30000
         policy: normal
         individual_page: true
         slug: "hilton-tokyo-bay"
@@ -167,6 +194,9 @@ areas:
         feature_zh: "馆内自助洗衣"
         feature_ko: "관내 셀프 세탁"
         feature_zh-tw: "館內自助洗衣"
+        shuttle_type: "bayside"
+        shuttle: true
+        price_min: 20000
         policy: normal
         individual_page: true
         slug: "maihama-hotel-first-resort"
@@ -182,6 +212,9 @@ areas:
         feature_zh: "直通JR舞滨站检票口"
         feature_ko: "JR 마이하마역 개찰구 직결"
         feature_zh-tw: "直通JR舞濱站剪票口"
+        shuttle_type: "walk"
+        shuttle: false
+        price_min: 15000
         policy: normal
         individual_page: true
         slug: "dreamgate-maihama"
@@ -197,6 +230,9 @@ areas:
         feature_zh: "大浴场「Spa Rose」"
         feature_ko: "대욕장 'Spa Rose'"
         feature_zh-tw: "大浴場「Spa Rose」"
+        shuttle_type: "bayside"
+        shuttle: true
+        price_min: 20000
         policy: normal
         individual_page: true
         slug: "maihama-view-hotel"
@@ -228,6 +264,9 @@ areas:
         feature_zh: "2026年2月开业·最多入住6人"
         feature_ko: "2026년 2월 개업·최대 6인 투숙"
         feature_zh-tw: "2026年2月開幕·最多入住6人"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 25000
         policy: normal
         individual_page: true
         slug: "royal-park-maihama"
@@ -243,6 +282,9 @@ areas:
         feature_zh: "步行6分钟到迪士尼海洋·区域内超值"
         feature_ko: "디즈니씨까지 도보 6분·지역 내 가성비"
         feature_zh-tw: "步行6分鐘到迪士尼海洋·區域內超值"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 8000
         policy: normal
         individual_page: true
         slug: "mystays-maihama"
@@ -258,6 +300,9 @@ areas:
         feature_zh: "天然温泉·露天浴池与桑拿"
         feature_ko: "천연 온천·노천탕과 사우나"
         feature_zh-tw: "天然溫泉·露天浴池與三溫暖"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 10000
         policy: normal
         individual_page: true
         slug: "maihama-eurasia"
@@ -273,6 +318,9 @@ areas:
         feature_zh: "可优惠使用本馆温泉"
         feature_ko: "본관 온천 할인 이용 가능"
         feature_zh-tw: "可優惠使用本館溫泉"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 8000
         policy: normal
         individual_page: true
         slug: "eurasia-annex"
@@ -288,6 +336,9 @@ areas:
         feature_zh: "2026年7月18日开业·全客房面海·全年泳池"
         feature_ko: "2026년 7월 18일 개업·전 객실 오션프런트·연중 수영장"
         feature_zh-tw: "2026年7月18日開幕·全客房面海·全年泳池"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 19000
         policy: normal
         individual_page: true
         slug: "grand-monday-resort-maihama"
@@ -319,6 +370,9 @@ areas:
         feature_zh: "含Happy Entry提前入园礼遇"
         feature_ko: "해피 엔트리 입장 특전 포함"
         feature_zh-tw: "含Happy Entry提前入園禮遇"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 20000
         policy: normal
         individual_page: true
         slug: "celebration-wish"
@@ -334,6 +388,9 @@ areas:
         feature_zh: "含Happy Entry提前入园礼遇"
         feature_ko: "해피 엔트리 입장 특전 포함"
         feature_zh-tw: "含Happy Entry提前入園禮遇"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 20000
         policy: normal
         individual_page: true
         slug: "celebration-discover"
@@ -349,6 +406,9 @@ areas:
         feature_zh: "饭店门口设机场巴士站（2024新设）"
         feature_ko: "호텔 앞 공항버스 정류장(2024 신설)"
         feature_zh-tw: "飯店門口設機場巴士站（2024新設）"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 25000
         policy: normal
         individual_page: true
         slug: "hyatt-regency-tokyo-bay"
@@ -364,6 +424,9 @@ areas:
         feature_zh: "闭园后30分钟班车·儿童免费同住"
         feature_ko: "폐장 30분 후 셔틀·어린이 무료 동반"
         feature_zh-tw: "閉園後30分鐘班車·兒童免費同住"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 15000
         policy: normal
         individual_page: true
         slug: "comfort-suites-tokyo-bay"
@@ -379,6 +442,9 @@ areas:
         feature_zh: "天然温泉与露天浴池"
         feature_ko: "천연 온천과 노천탕"
         feature_zh-tw: "天然溫泉與露天浴池"
+        shuttle_type: "partner"
+        shuttle: true
+        price_min: 18000
         policy: normal
         individual_page: true
         slug: "emion-tokyo-bay"
@@ -394,6 +460,9 @@ areas:
         feature_zh: "景观大浴场与馆内商店"
         feature_ko: "전망 대욕장과 관내 상점"
         feature_zh-tw: "景觀大浴場與館內商店"
+        shuttle_type: "partner"
+        shuttle: true
+        price_min: 18000
         policy: normal
         individual_page: true
         slug: "mitsui-garden-prana"
@@ -409,6 +478,9 @@ areas:
         feature_zh: "馆内罗森便利店·2024开业"
         feature_ko: "관내 로손 편의점·2024 개업"
         feature_zh-tw: "館內羅森便利店·2024開幕"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 18000
         policy: normal
         individual_page: true
         slug: "hoshinoresorts-1955-tokyo-bay"
@@ -424,6 +496,9 @@ areas:
         feature_zh: "最多6人·隔壁24小时便利店"
         feature_ko: "최대 6인·옆 건물 24시간 편의점"
         feature_zh-tw: "最多6人·隔壁24小時便利店"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 8000
         policy: normal
         individual_page: true
         slug: "lagent-tokyo-bay"
@@ -439,6 +514,9 @@ areas:
         feature_zh: "雅高集团设计饭店"
         feature_ko: "아코르 그룹 디자인 호텔"
         feature_zh-tw: "雅高集團設計飯店"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 10000
         policy: normal
         individual_page: true
         slug: "ibis-styles-tokyo-bay"
@@ -454,6 +532,9 @@ areas:
         feature_zh: "价位稳定实惠"
         feature_ko: "안정적인 저렴한 가격"
         feature_zh-tw: "價位穩定實惠"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 7500
         policy: normal
         individual_page: true
         slug: "mystays-shin-urayasu"
@@ -485,6 +566,9 @@ areas:
         feature_zh: "直通新浦安站"
         feature_ko: "신우라야스역 직결"
         feature_zh-tw: "直通新浦安站"
+        shuttle_type: "partner"
+        shuttle: true
+        price_min: 15000
         policy: normal
         individual_page: true
         slug: "brighton-tokyo-bay"
@@ -500,6 +584,9 @@ areas:
         feature_zh: "直通新浦安站"
         feature_ko: "신우라야스역 직결"
         feature_zh-tw: "直通新浦安站"
+        shuttle_type: "partner"
+        shuttle: true
+        price_min: 16500
         policy: normal
         individual_page: true
         slug: "oriental-tokyo-bay"
@@ -515,6 +602,9 @@ areas:
         feature_zh: "每间客房带小厨房·适合长住"
         feature_ko: "전 객실 미니 주방·장기 체류에 적합"
         feature_zh-tw: "每間客房附小廚房·適合長住"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 7000
         policy: normal
         individual_page: true
         slug: "flexstay-shin-urayasu"
@@ -530,6 +620,9 @@ areas:
         feature_zh: "每间客房备足部按摩与烘鞋机"
         feature_ko: "전 객실 발 마사지기·신발 건조기 비치"
         feature_zh-tw: "每間客房備有足部按摩與烘鞋機"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 10000
         policy: normal
         individual_page: true
         slug: "hiyori-hotel-maihama"
@@ -545,6 +638,9 @@ areas:
         feature_zh: ""
         feature_ko: ""
         feature_zh-tw: ""
+        shuttle_type: ""
+        shuttle: false
+        price_min: 0
         policy: name-only
         individual_page: false
       - name: "ホテルリバーサイド東京ベイ"
@@ -559,6 +655,9 @@ areas:
         feature_zh: ""
         feature_ko: ""
         feature_zh-tw: ""
+        shuttle_type: ""
+        shuttle: false
+        price_min: 0
         policy: name-only
         individual_page: false
 
@@ -589,6 +688,9 @@ areas:
         feature_zh: "舞滨站班车（2026年7月起减班）"
         feature_ko: "마이하마역 셔틀(2026년 7월부터 감축)"
         feature_zh-tw: "舞濱站班車（2026年7月起減班）"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 11000
         policy: normal
         individual_page: true
         slug: "henna-hotel-maihama"
@@ -604,6 +706,9 @@ areas:
         feature_zh: "巴士接驳（末班23:00）"
         feature_ko: "버스 접근(막차 23:00)"
         feature_zh-tw: "巴士接駁（末班23:00）"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 10000
         policy: normal
         individual_page: true
         slug: "four-stories-hotel"
@@ -635,6 +740,9 @@ areas:
         feature_zh: "距浦安站步行1分钟·自助早餐"
         feature_ko: "우라야스역에서 도보 1분·뷔페 조식"
         feature_zh-tw: "距浦安站步行1分鐘·自助早餐"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 9000
         policy: normal
         individual_page: true
         slug: "viewfort-urayasu"
@@ -650,6 +758,9 @@ areas:
         feature_zh: "全年统一房价·旺季不涨"
         feature_ko: "연중 균일 요금·성수기 인상 없음"
         feature_zh-tw: "全年統一房價·旺季不漲"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 11000
         policy: normal
         individual_page: true
         slug: "hotel-daigo-urayasu"
@@ -665,6 +776,9 @@ areas:
         feature_zh: "每间客房带厨房·冰箱与洗衣机"
         feature_ko: "전 객실 주방·냉장고·세탁기"
         feature_zh-tw: "每間客房附廚房·冰箱與洗衣機"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 14000
         policy: normal
         individual_page: true
         slug: "bayhotel-urayasu"
@@ -680,6 +794,9 @@ areas:
         feature_zh: "免费早餐·24小时前台"
         feature_ko: "무료 조식·24시간 프런트"
         feature_zh-tw: "免費早餐·24小時櫃檯"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 5000
         policy: normal
         individual_page: true
         slug: "urayasu-sun-hotel"
@@ -695,6 +812,9 @@ areas:
         feature_zh: ""
         feature_ko: ""
         feature_zh-tw: ""
+        shuttle_type: ""
+        shuttle: false
+        price_min: 0
         policy: name-only
         individual_page: false
 
@@ -725,6 +845,9 @@ areas:
         feature_zh: "2025年12月开业·免费迪士尼班车"
         feature_ko: "2025년 12월 개업·무료 디즈니 셔틀"
         feature_zh-tw: "2025年12月開幕·免費迪士尼班車"
+        shuttle_type: "own"
+        shuttle: true
+        price_min: 11000
         policy: normal
         individual_page: true
         slug: "premium-monday-maihama-view-1"
@@ -740,6 +863,9 @@ areas:
         feature_zh: "位于葛西临海公园·步行3分钟·有榻榻米房"
         feature_ko: "가사이 임해공원 내·도보 3분·다다미 객실"
         feature_zh-tw: "位於葛西臨海公園·步行3分鐘·有榻榻米房"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 16000
         policy: normal
         individual_page: true
         slug: "hotel-seaside-edogawa"
@@ -755,6 +881,9 @@ areas:
         feature_zh: "紧邻市川盐浜站·到舞滨2站"
         feature_ko: "이치카와시오하마역 인접·마이하마까지 2개 역"
         feature_zh-tw: "緊鄰市川鹽濱站·到舞濱2站"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 5610
         policy: normal
         individual_page: true
         slug: "cvs-bay-hotel"
@@ -770,6 +899,9 @@ areas:
         feature_zh: "距葛西站步行3分钟·最多5人"
         feature_ko: "가사이역에서 도보 3분·최대 5인"
         feature_zh-tw: "距葛西站步行3分鐘·最多5人"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 7860
         policy: normal
         individual_page: true
         slug: "hotel-ilfiore-kasai"
@@ -785,6 +917,9 @@ areas:
         feature_zh: "距葛西站步行3分钟·Il Fiore别馆"
         feature_ko: "가사이역에서 도보 3분·Il Fiore 별관"
         feature_zh-tw: "距葛西站步行3分鐘·Il Fiore別館"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 5500
         policy: normal
         individual_page: true
         slug: "hotel-ilfiore-kasai-annex"
@@ -800,6 +935,9 @@ areas:
         feature_zh: "商务饭店·距葛西站步行2分钟"
         feature_ko: "비즈니스 호텔·가사이역에서 도보 2분"
         feature_zh-tw: "商務飯店·距葛西站步行2分鐘"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 9700
         policy: normal
         individual_page: true
         slug: "hotel-lumiere-kasai"
@@ -815,6 +953,9 @@ areas:
         feature_zh: "距葛西站步行3分钟·乘巴士约20分钟到迪士尼"
         feature_ko: "가사이역에서 도보 3분·버스로 디즈니까지 약 20분"
         feature_zh-tw: "距葛西站步行3分鐘·搭巴士約20分鐘到迪士尼"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 5000
         policy: normal
         individual_page: true
         slug: "livemax-kasai-ekimae"
@@ -830,6 +971,9 @@ areas:
         feature_zh: "妙典站旁·乘东西线可达浦安"
         feature_ko: "묘덴역 옆·도자이선으로 우라야스 도달"
         feature_zh-tw: "妙典站旁·搭東西線可達浦安"
+        shuttle_type: "none"
+        shuttle: false
+        price_min: 7400
         policy: normal
         individual_page: true
         slug: "superhotel-myoden"

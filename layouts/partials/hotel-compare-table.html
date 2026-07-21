@@ -1,0 +1,131 @@
+{{- /*
+  ホテル比較表 partial（データ駆動・多言語）。
+  マスター: hotel-database-full.csv → data/hotels.yaml（build-hotels.ps1）。
+  ハブ list.html とショートコード hotel-table.html の両方から呼ばれる単一ソース。
+
+  引数 dict:
+    lang        … 言語コード（"en"/"ja"/"zh"/"ko"/"zh-tw"）
+    mode        … "default"（区分＋無料シャトル有無）/ "shuttle"（シャトル種別を主役に）
+    zone        … エリア記号でフィルタ（"A".."G"、空=全エリア）
+    shuttleOnly … true なら無料シャトルを持つ軒だけ（種別 bayside/partner/own）
+    category    … 区分キーでフィルタ（"disney"/"official"/"partner"/"other"、空=全区分）
+    limit       … 最大表示件数（0=無制限）
+    caption     … 任意のキャプション（省略可）
+*/ -}}
+{{- $lang := .lang }}
+{{- $mode := .mode | default "default" }}
+{{- $zone := .zone | default "" }}
+{{- $shuttleOnly := .shuttleOnly | default false }}
+{{- $catFilter := .category | default "" }}
+{{- $limit := .limit | default 0 }}
+{{- $caption := .caption | default "" }}
+
+{{- /* 区分キー → i18n ラベルキー */ -}}
+{{- $catKey := dict
+    "ディズニーホテル" "disney" "オフィシャルホテル" "official"
+    "パートナーホテル" "partner" "グッドネイバーホテル" "goodneighbor"
+    "その他のホテル" "other" "—" "fashion" }}
+
+{{- /* シャトル種別ラベル（多言語） */ -}}
+{{- $stLabel := dict }}
+{{- if eq $lang "en" }}{{ $stLabel = dict "walk" "Walkable / monorail" "bayside" "Shuttle → Bayside Stn" "partner" "Partner Hotel Shuttle" "own" "Hotel's own shuttle" "none" "No free shuttle" }}
+{{- else if eq $lang "zh" }}{{ $stLabel = dict "walk" "步行/单轨" "bayside" "班车→海湾站" "partner" "合作饭店班车" "own" "饭店自营班车" "none" "无免费班车" }}
+{{- else if eq $lang "ko" }}{{ $stLabel = dict "walk" "도보/모노레일" "bayside" "셔틀→베이사이드역" "partner" "파트너 호텔 셔틀" "own" "호텔 자체 셔틀" "none" "무료 셔틀 없음" }}
+{{- else if eq $lang "zh-tw" }}{{ $stLabel = dict "walk" "步行/單軌" "bayside" "班車→海灣站" "partner" "合作飯店班車" "own" "飯店自營班車" "none" "無免費班車" }}
+{{- else }}{{ $stLabel = dict "walk" "徒歩・モノレール圏" "bayside" "無料シャトル→ベイサイド駅" "partner" "パートナー無料シャトル" "own" "ホテル独自の無料シャトル" "none" "無料シャトルなし" }}
+{{- end }}
+
+{{- /* ヘッダー文言（多言語） */ -}}
+{{- $H := dict "hotel" "Hotel" "area" "Area" "type" "Type" "from" "From" "shuttle" "Free shuttle" "stype" "Shuttle to parks" "note" "Notes" "yes" "Yes" "notneeded" "Not needed" "no" "—" }}
+{{- if eq $lang "ja" }}{{ $H = dict "hotel" "ホテル" "area" "エリア" "type" "区分" "from" "目安" "shuttle" "無料シャトル" "stype" "パークへのシャトル" "note" "特徴" "yes" "あり" "notneeded" "不要" "no" "—" }}
+{{- else if eq $lang "zh" }}{{ $H = dict "hotel" "饭店" "area" "地区" "type" "类别" "from" "起价" "shuttle" "免费班车" "stype" "前往乐园的班车" "note" "特点" "yes" "有" "notneeded" "无需" "no" "—" }}
+{{- else if eq $lang "ko" }}{{ $H = dict "hotel" "호텔" "area" "지역" "type" "구분" "from" "최저" "shuttle" "무료 셔틀" "stype" "파크행 셔틀" "note" "특징" "yes" "있음" "notneeded" "불필요" "no" "—" }}
+{{- else if eq $lang "zh-tw" }}{{ $H = dict "hotel" "飯店" "area" "地區" "type" "類別" "from" "起價" "shuttle" "免費班車" "stype" "前往樂園的班車" "note" "特點" "yes" "有" "notneeded" "無需" "no" "—" }}
+{{- end }}
+
+{{- /* 行を収集（フィルタ適用）→ 価格昇順ソート */ -}}
+{{- $rows := slice }}
+{{- range site.Data.hotels.areas }}
+  {{- $areaTag := .tag }}
+  {{- $areaName := cond (eq $lang "ja") (.name | replaceRE "エリア$" "") (index . (printf "name_%s" $lang)) }}
+  {{- if or (eq $zone "") (eq $zone $areaTag) }}
+    {{- range .hotels }}
+      {{- $ck := index $catKey .category }}
+      {{- $pass := true }}
+      {{- if and $shuttleOnly (not .shuttle) }}{{ $pass = false }}{{ end }}
+      {{- if and (ne $catFilter "") (ne $ck $catFilter) }}{{ $pass = false }}{{ end }}
+      {{- if eq .policy "name-only" }}{{ $pass = false }}{{ end }}
+      {{- if $pass }}
+        {{- $sp := cond (gt .price_min 0) .price_min 99999999 }}
+        {{- $rows = $rows | append (dict
+            "name" (cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)))
+            "slug" .slug
+            "individual" (and .individual_page (eq .policy "normal"))
+            "area" $areaName
+            "category" .category
+            "catkey" $ck
+            "price" .price_guide
+            "priceSort" $sp
+            "shuttle" .shuttle
+            "stype" .shuttle_type
+            "feature" (cond (eq $lang "ja") .feature (index . (printf "feature_%s" $lang)))) }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $rows = sort $rows "priceSort" "asc" }}
+{{- if gt $limit 0 }}{{ $rows = first $limit $rows }}{{ end }}
+
+{{- $catI18n := dict "disney" "cat_full_disney" "official" "cat_full_official" "partner" "cat_full_partner" "goodneighbor" "cat_full_goodneighbor" "other" "cat_other" "fashion" "" }}
+
+<div class="tg-hotel-table-wrap hct-wrap">
+  <table class="tg-hotel-table hct-table">
+    {{- with $caption }}<caption class="hct-caption">{{ . }}</caption>{{- end }}
+    <thead>
+      <tr>
+        <th>{{ index $H "hotel" }}</th>
+        <th>{{ index $H "area" }}</th>
+        {{- if eq $mode "shuttle" }}
+        <th>{{ index $H "stype" }}</th>
+        {{- else }}
+        <th>{{ index $H "type" }}</th>
+        {{- end }}
+        <th>{{ index $H "from" }}</th>
+        {{- if eq $mode "shuttle" }}
+        <th>{{ index $H "note" }}</th>
+        {{- else }}
+        <th>{{ index $H "shuttle" }}</th>
+        {{- end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $rows }}
+      <tr>
+        <td>
+          {{- if .individual }}
+          <a href="{{ printf "/travel-guide/hotels/%s/" .slug | relLangURL }}">{{ .name }}</a>
+          {{- else }}{{ .name }}{{- end }}
+        </td>
+        <td>{{ .area }}</td>
+        {{- if eq $mode "shuttle" }}
+        <td class="hct-stype hct-st-{{ .stype }}">{{ index $stLabel .stype }}</td>
+        {{- else }}
+        <td style="font-size:0.85em;">
+          {{- $lk := index $catI18n .catkey }}{{ with $lk }}{{ i18n . }}{{ else }}{{ end }}
+        </td>
+        {{- end }}
+        <td style="white-space:nowrap;">{{ with .price }}{{ . }}{{ else }}&mdash;{{ end }}</td>
+        {{- if eq $mode "shuttle" }}
+        <td style="font-size:0.85em;color:var(--up-muted);">{{ with .feature }}{{ . }}{{ end }}</td>
+        {{- else }}
+        <td class="hct-sh">
+          {{- if .shuttle }}<span class="hct-yes"><i class="ti ti-bus" aria-hidden="true"></i> {{ index $H "yes" }}</span>
+          {{- else if eq .stype "walk" }}<span class="hct-na">{{ index $H "notneeded" }}</span>
+          {{- else }}<span class="hct-no">{{ index $H "no" }}</span>{{- end }}
+        </td>
+        {{- end }}
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>

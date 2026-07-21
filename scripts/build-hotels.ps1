@@ -418,6 +418,17 @@ function Convert-Policy($r) {
   if ($r."掲載区分" -eq "名称・カテゴリのみ掲載") { return "name-only" }
   return "normal"
 }
+# シャトル種別（CSV「シャトル種別」列）。統制語彙 walk/bayside/partner/own/none/空。
+# shuttle(bool) は無料シャトルを実際に持つ種別（bayside/partner/own）で true。
+function Convert-ShuttleType($r) {
+  $t = ($r."シャトル種別").Trim()
+  return $t
+}
+function Convert-PriceMin($r) {
+  $pm = ($r."最低価格").Trim()
+  if ($pm -match '^\d+$' -and [int]$pm -gt 0) { return [int]$pm }
+  return 0
+}
 
 $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("# === 自動生成ファイル / DO NOT EDIT ===")
@@ -483,6 +494,12 @@ foreach ($a in $areas) {
     [void]$sb.AppendLine(("        feature_zh: ""{0}""" -f $featZh))
     [void]$sb.AppendLine(("        feature_ko: ""{0}""" -f $featKo))
     [void]$sb.AppendLine(("        feature_zh-tw: ""{0}""" -f $featZhTw))
+    $stype = Convert-ShuttleType $r
+    $shasBool = "false"
+    if ($stype -eq "bayside" -or $stype -eq "partner" -or $stype -eq "own") { $shasBool = "true" }
+    [void]$sb.AppendLine(("        shuttle_type: ""{0}""" -f $stype))
+    [void]$sb.AppendLine(("        shuttle: {0}" -f $shasBool))
+    [void]$sb.AppendLine(("        price_min: {0}" -f (Convert-PriceMin $r)))
     [void]$sb.AppendLine(("        policy: {0}" -f $pol))
     [void]$sb.AppendLine(("        individual_page: {0}" -f $ip))
     if ($pol -ne "name-only") {
