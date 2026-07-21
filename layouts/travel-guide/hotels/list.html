@@ -5,6 +5,7 @@
 {{- $lang := .Lang }}
 {{- $total := 0 }}{{- range $hotels.areas }}{{- $total = add $total .count }}{{- end }}
 {{- $areaCount := len $hotels.areas }}
+{{- $shuttleCount := 0 }}{{- range $hotels.areas }}{{- range .hotels }}{{- if .shuttle }}{{ $shuttleCount = add $shuttleCount 1 }}{{- end }}{{- end }}{{- end }}
 
 {{/* ────────────────────────────────────────
      ヒーロー（モックアップH準拠・コーラル） / Hero
@@ -21,6 +22,33 @@
     <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $areaCount }}</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_areas" }}</span></div>
     <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">¥5,000</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_andup" }}</span></div>
   </div>
+</div>
+
+{{/* ────────────────────────────────────────
+     早見比較表（要約）＋絞り込み導線 / Quick-compare summary + narrow-down
+     ──────────────────────────────────────── */}}
+<div class="section-head">
+  <h2>{{ i18n "hl_quick_title" }}</h2>
+</div>
+<p class="tg-section-sub">{{ i18n "hl_quick_sub" (dict "total" $total) }}</p>
+{{- $picks := slice "tdl-hotel" "miracosta" "sheraton-grande-tokyo-bay" "hilton-tokyo-bay" "brighton-tokyo-bay" "emion-tokyo-bay" "mystays-maihama" "dreamgate-maihama" "urayasu-sun-hotel" }}
+{{ partial "hotel-compare-table.html" (dict "lang" $lang "mode" "default" "pick" $picks) }}
+<p style="text-align:center;margin:-8px 0 22px;">
+  <a href="#tg-hotel-table" style="display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--up-accent);text-decoration:none;">
+    <i class="ti ti-arrow-down" aria-hidden="true"></i>{{ i18n "hl_seefull" (dict "total" $total) }}</a>
+</p>
+
+<div class="tg-narrow-grid">
+  <a class="tg-narrow-card" href="{{ "/travel-guide/hotels/shuttle/" | relLangURL }}">
+    <i class="ti ti-bus" aria-hidden="true"></i>
+    <span class="tg-narrow-text">{{ i18n "hl_narrow_shuttle" (dict "count" $shuttleCount "total" $total) }}</span>
+    <span class="tg-narrow-cta">{{ i18n "hl_narrow_shuttle_cta" }}</span>
+  </a>
+  <a class="tg-narrow-card" href="{{ "/travel-guide/hotels/budget/" | relLangURL }}">
+    <i class="ti ti-coin" aria-hidden="true"></i>
+    <span class="tg-narrow-text">{{ i18n "hl_narrow_cheap" }}</span>
+    <span class="tg-narrow-cta">{{ i18n "hl_narrow_cheap_cta" }}</span>
+  </a>
 </div>
 
 {{/* ────────────────────────────────────────
@@ -270,6 +298,26 @@
 
   apply();
 })();
+</script>
+
+{{/* ────────────────────────────────────────
+     構造化データ ItemList（掲載中の個別ホテルページ一覧） / ItemList JSON-LD
+     ──────────────────────────────────────── */}}
+{{- $items := slice }}
+{{- $pos := 0 }}
+{{- range $hotels.areas }}
+  {{- range .hotels }}
+  {{- if and .individual_page (eq .policy "normal") }}
+    {{- $pos = add $pos 1 }}
+    {{- $nm := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)) }}
+    {{- $url := printf "/travel-guide/hotels/%s/" .slug | absLangURL }}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" $pos "url" $url "name" $nm) }}
+  {{- end }}
+  {{- end }}
+{{- end }}
+{{- $itemList := dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "numberOfItems" $pos "itemListElement" $items }}
+<script type="application/ld+json">
+{{ $itemList | jsonify (dict "indent" "  ") | safeJS }}
 </script>
 
 {{- end }}

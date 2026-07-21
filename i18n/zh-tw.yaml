@@ -172,3 +172,19 @@
   translation: "標籤一覽"
 - id: tags_index_desc
   translation: "共 {{ .count }} 個標籤。點擊標籤查看相關文章。"
+- id: hl_quick_title
+  translation: "一目了然：各價位的代表飯店"
+- id: hl_quick_sub
+  translation: "依價格排序比較代表性飯店（含免費班車有無）。全部{{ .total }}家的清單在頁面下方。"
+- id: hl_seefull
+  translation: "在下方清單查看全部{{ .total }}家 ↓"
+- id: hl_narrow_title
+  translation: "縮小範圍：看班車，還是看價格？"
+- id: hl_narrow_shuttle
+  translation: "{{ .total }}家中有{{ .count }}家提供免費樂園班車。"
+- id: hl_narrow_shuttle_cta
+  translation: "查看免費班車指南 →"
+- id: hl_narrow_cheap
+  translation: "最便宜的房型平日約¥5,000起。"
+- id: hl_narrow_cheap_cta
+  translation: "查看超值之選 →"

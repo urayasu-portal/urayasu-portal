@@ -172,3 +172,19 @@
   translation: "태그 목록"
 - id: tags_index_desc
   translation: "총 {{ .count }}개 태그. 태그를 클릭하면 관련 글을 볼 수 있습니다."
+- id: hl_quick_title
+  translation: "한눈에 보기: 가격대별 대표 호텔"
+- id: hl_quick_sub
+  translation: "대표적인 호텔을 가격순으로 비교(무료 셔틀 유무 포함). 전체 {{ .total }}곳 목록은 페이지 하단에 있습니다."
+- id: hl_seefull
+  translation: "아래 목록에서 전체 {{ .total }}곳 보기 ↓"
+- id: hl_narrow_title
+  translation: "좁혀 보기: 셔틀로 고를까, 가격으로 고를까?"
+- id: hl_narrow_shuttle
+  translation: "전체 {{ .total }}곳 중 {{ .count }}곳이 무료 파크 셔틀을 운행합니다."
+- id: hl_narrow_shuttle_cta
+  translation: "무료 셔틀 가이드 보기 →"
+- id: hl_narrow_cheap
+  translation: "가장 저렴한 객실은 비수기 기준 1실 약 ¥5,000부터입니다."
+- id: hl_narrow_cheap_cta
+  translation: "가성비 추천 보기 →"

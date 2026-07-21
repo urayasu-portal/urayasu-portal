@@ -81,7 +81,7 @@
 - id: hl_eyebrow2
   translation: "Maihama / Urayasu / Shin-Urayasu"
 - id: hl_title
-  translation: "Choosing a Hotel in the Maihama & Urayasu Area"
+  translation: "Hotels in Urayasu & Maihama, near Tokyo Disney Resort"
 - id: hl_lead
   translation: "From TDR-owned luxury properties to budget hotels, we have organized all <strong>{{ .total }} hotels</strong> in the area from a local perspective — including new properties opened in 2024–2026. Find the right one by purpose, area, or price."
 - id: hl_stat_hotels
@@ -172,3 +172,19 @@
   translation: "All tags"
 - id: tags_index_desc
   translation: "{{ .count }} tags in total. Click a tag to see related posts."
+- id: hl_quick_title
+  translation: "At a glance: popular picks across price ranges"
+- id: hl_quick_sub
+  translation: "A quick comparison of representative hotels — sorted by price, with free park shuttle shown. The full list of all {{ .total }} hotels is further down."
+- id: hl_seefull
+  translation: "See all {{ .total }} hotels in the full list below ↓"
+- id: hl_narrow_title
+  translation: "Narrowing down: with a shuttle, or on a budget?"
+- id: hl_narrow_shuttle
+  translation: "{{ .count }} of the {{ .total }} hotels run a free park shuttle."
+- id: hl_narrow_shuttle_cta
+  translation: "See the free-shuttle guide →"
+- id: hl_narrow_cheap
+  translation: "The cheapest stays start around ¥5,000 per room, off-peak."
+- id: hl_narrow_cheap_cta
+  translation: "See budget picks →"

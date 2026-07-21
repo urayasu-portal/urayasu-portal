@@ -172,3 +172,19 @@
   translation: "标签一览"
 - id: tags_index_desc
   translation: "共 {{ .count }} 个标签。点击标签查看相关文章。"
+- id: hl_quick_title
+  translation: "一目了然：各价位的代表饭店"
+- id: hl_quick_sub
+  translation: "按价格排序比较代表性饭店（含免费班车有无）。全部{{ .total }}家的清单在页面下方。"
+- id: hl_seefull
+  translation: "在下方清单查看全部{{ .total }}家 ↓"
+- id: hl_narrow_title
+  translation: "缩小范围：看班车，还是看价格？"
+- id: hl_narrow_shuttle
+  translation: "{{ .total }}家中有{{ .count }}家提供免费乐园班车。"
+- id: hl_narrow_shuttle_cta
+  translation: "查看免费班车指南 →"
+- id: hl_narrow_cheap
+  translation: "最便宜的房型平日约¥5,000起。"
+- id: hl_narrow_cheap_cta
+  translation: "查看超值之选 →"

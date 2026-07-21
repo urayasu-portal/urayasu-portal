@@ -172,3 +172,19 @@
   translation: "タグ一覧"
 - id: tags_index_desc
   translation: "全 {{ .count }} 件のタグ。クリックすると関連記事の一覧に移動します。"
+- id: hl_quick_title
+  translation: "早わかり：価格帯別のおすすめ代表格"
+- id: hl_quick_sub
+  translation: "代表的なホテルを価格順で比較（無料シャトルの有無つき）。全{{ .total }}軒の一覧はページ下部にあります。"
+- id: hl_seefull
+  translation: "下の一覧で全{{ .total }}軒を見る ↓"
+- id: hl_narrow_title
+  translation: "絞り込み：シャトルで選ぶ？ 価格で選ぶ？"
+- id: hl_narrow_shuttle
+  translation: "全{{ .total }}軒中{{ .count }}軒が無料のパークシャトルを運行しています。"
+- id: hl_narrow_shuttle_cta
+  translation: "無料シャトルガイドを見る →"
+- id: hl_narrow_cheap
+  translation: "最安クラスは通常期で1室約¥5,000〜です。"
+- id: hl_narrow_cheap_cta
+  translation: "格安のおすすめを見る →"

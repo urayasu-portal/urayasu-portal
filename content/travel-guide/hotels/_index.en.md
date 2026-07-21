@@ -1,5 +1,7 @@
 ---
-title: "All 48 Hotels near Tokyo Disneyland & DisneySea | Local Hotel Guide (Urayasu & Maihama)"
-description: "Compare all 48 hotels in the Urayasu and Maihama area near Tokyo Disney Resort. Organized by area, price range, and travel purpose — from a local media perspective."
+title: "Hotels in Urayasu & Maihama: All 48 near Tokyo Disney Resort | Local Guide"
+description: "Hotels in Urayasu and Maihama near Tokyo Disney Resort, compared by a local team. All 48 hotels by area, price, and free park shuttle — find cheap stays and hotels with a shuttle to Disneyland & DisneySea."
 images: ["/images/og-travel-urayasu.png"]
+date: 2026-06-30
+lastmod: 2026-07-22
 ---
