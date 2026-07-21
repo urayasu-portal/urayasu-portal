@@ -2,8 +2,8 @@
 title: "Urayasu Brighton Hotel Tokyo Bay | 1-Minute Walk from Shin-Urayasu Station, Up to 34 Shuttles Per Day to TDR"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-06-28"
-lastmod: 2026-06-17
-description: "Local review of Urayasu Brighton Hotel Tokyo Bay. Covered deck connection to Shin-Urayasu Station (approx. 80m, 1 min). Up to 34 free shuttle buses per day from opening to after park closing. 42 m² rooms, up to 5 guests. No large bath or coin laundry — key trade-offs covered honestly."
+lastmod: 2026-07-22
+description: "Local review of Urayasu Brighton Hotel Tokyo Bay. Covered deck connection to Shin-Urayasu Station (approx. 80m, 1 min). Up to 34 free shuttle buses per day from opening to after park closing. Luggage storage before check-in, 42 m² rooms, up to 5 guests. No large bath or coin laundry — key trade-offs covered honestly."
 tags:
   - Hotel
   - Disney
@@ -12,6 +12,13 @@ images: ["/images/og-travel-urayasu.png"]
 cover:
   image: "/images/hotels/brighton-tokyo-bay.jpg"
 noDate: true
+faq:
+  - q: "Can I store my luggage at Urayasu Brighton Hotel before check-in?"
+    a: "Yes. If you arrive before the 15:00 check-in, the front desk will hold your luggage on the day of your stay, so you can head to Tokyo Disneyland or DisneySea first and settle into your room later. The hotel also connects to Shin-Urayasu Station by an 80 m covered deck (about 1 minute), so arriving with large suitcases is easy even in the rain."
+  - q: "Does Urayasu Brighton Hotel have a free shuttle bus to Tokyo Disney Resort?"
+    a: "Yes. It runs the free Tokyo Disney Resort Partner Hotel shuttle — up to 34 buses per day, about 15 minutes to the parks, no reservation needed, from before park opening until after closing. Right after park close the Shin-Urayasu-bound stops get crowded, so allow a little extra time."
+  - q: "Does Urayasu Brighton Hotel have a large public bath or coin laundry?"
+    a: "No. There is no large communal bath or hot spring and no in-house coin laundry (the front desk can suggest nearby facilities). If you want a natural hot spring among the Partner Hotels, consider Hotel Emion Tokyo Bay instead."
 ---
 
 Urayasu Brighton Hotel Tokyo Bay is a Tokyo Disney Resort Partner Hotel connected to Shin-Urayasu Station by a covered deck just 80 meters away — the closest station-to-hotel connection among the four Partner Hotels. With up to 34 free shuttle buses per day running from park opening to after closing, and a convenience store steps away, it's a highly functional hotel for train travelers and families managing large amounts of luggage. This review covers the hotel's strengths, weaknesses, and access from a local perspective. Prices and times are estimates based on 2025–2026 research.
@@ -68,6 +75,19 @@ From Shin-Urayasu Station, about 17 min to Tokyo Station on the JR Keiyo Line ex
 
 ---
 
+## Luggage Storage (Before Check-in) & Baggage Delivery
+
+One of the most common questions we hear about this hotel is whether you can drop your bags **before check-in** — handy when you land in the morning and want to head straight to the parks. The short answer: yes.
+
+- **Before check-in (same-day storage):** Arriving early? The front desk will hold your luggage on the day of your stay, so you can leave your suitcases and go to Tokyo Disneyland or DisneySea before the 15:00 check-in.<!-- TODO: 要確認 — 預かり開始時刻・個数/サイズ制限・料金（無料か）をホテルに確認 -->
+- **Easy arrival with heavy suitcases:** Shin-Urayasu Station connects to the hotel by an **80 m covered deck (about 1 minute)** — the closest station link among the four Partner Hotels — so you can wheel large cases straight from the train without stepping outside, even in the rain.
+- **Park-to-hotel baggage delivery (paid):** After check-out you can send your bags from the park back to the hotel for a hands-free day in the parks — a paid service at about **¥800 per item**.
+- **Coin lockers:** <!-- TODO: 要確認 — 館内コインロッカーの有無、無ければ新浦安駅のロッカー事情を確認して追記 -->
+
+Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book.
+
+---
+
 ## Map
 
 {{< hotel-map >}}
@@ -90,7 +110,7 @@ Lawson steps from the hotel, open 24 hours. Handles post-park snacks and late-ni
 ¥3,000 per night per vehicle (details may vary by plan; confirm at booking).
 
 **Luggage**
-Same-day luggage storage for early arrivals. Baggage delivery service (paid, ¥800/item) from the park to the hotel also available for hands-free park visit after check-out.
+Same-day storage before check-in and paid park-to-hotel delivery — see [Luggage Storage (Before Check-in)](#luggage-storage-before-check-in--baggage-delivery) above.
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.
