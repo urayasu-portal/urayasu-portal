@@ -1,7 +1,7 @@
 ---
 title: "How to Get to Tokyo Disney Resort & Urayasu | Routes from Airports & Tokyo Station"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-07-05
+lastmod: 2026-07-22
 slug: "urayasu-maihama-access-guide"
 badge: "Access"
 description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort. Includes notes for guests with wheelchairs, strollers, or heavy luggage."
@@ -161,6 +161,7 @@ faq:
           <span class="conn"><span class="mode" style="color:#854F0B"><i class="ti ti-walk"></i> Walk, or bus / taxi</span><span class="lin"><span class="bar" style="background:#E8A020"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E8A020"></i></span><span class="time">Station area 1–5 min walk / Motomachi ~30 min walk</span></span>
           <span class="node" style="border-color:#E8A020"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#A9690B"></i>Hotel</span>
         </div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> <strong>From Tokyo Station to Urayasu Station:</strong> Urayasu Station is on the Tokyo Metro Tozai Line, which does not stop at Tokyo Station — walk about 8 min to Otemachi, then take the Tozai Line approx. 17 min (about 25–30 min in total). For Shin-Urayasu Station instead, take the JR Keiyo Line directly from Tokyo Station (approx. 20 min).</div>
         <div class="alt"><i class="ti ti-map-pin" style="font-size:12px"></i> <strong>Hotels in Motomachi are about a 30-min walk from Urayasu Station.</strong> Given the distance, a local bus or taxi is recommended. <strong>You can also come from Maihama Station by bus or taxi (approx. 5–10 min).</strong></div>
         <div class="alt"><i class="ti ti-plane" style="font-size:12px"></i> From the airports, about 40–70 min by rail with transfers. Airport limousine buses do not stop at Urayasu Station (the neighboring Kasai Station has them; hotels outside the city such as Kasai and Ichikawa are covered in a separate article).</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#E8A020"></i>Daily park trips (each morning &amp; evening)</div>
