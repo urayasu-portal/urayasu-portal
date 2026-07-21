@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disney Resort Hotels with Free Shuttle Buses | How Park Shuttles Really Work"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-06
+lastmod: 2026-07-22
 description: "Which hotels near Tokyo Disneyland and DisneySea have a free shuttle bus? A local guide to the four shuttle patterns — no shuttle needed, Disney Resort Cruiser, the Partner Hotel Shuttle, and each hotel's own bus — plus the timetable traps to check before booking."
 tags:
   - Hotel
@@ -24,6 +24,16 @@ faq:
 "Does the hotel have a free shuttle to the parks?" is one of the most common questions we hear from overseas visitors planning a Tokyo Disney Resort trip. The honest local answer: **"free shuttle" means four different things around Maihama and Urayasu**, and mixing them up is how people end up waiting at a bus stop with a tired child at 9 pm.
 
 This guide sorts the hotels covered on this site into four shuttle patterns, with the traps to check before you book. Details are estimates from our 2025–2026 research — always confirm the current timetable on each hotel's official site.
+
+---
+
+## All hotels with a free park shuttle, at a glance
+
+The table below lists every hotel on this site that runs a **free shuttle**, sorted by price, with its shuttle type. Hotels that are connected, adjacent, or a short walk from the Disney Resort Line monorail — so they need no bus at all — are covered under **Pattern 1** below.
+
+{{< hotel-table shuttle-only="true" mode="shuttle" >}}
+
+**How to read the shuttle types:** *Shuttle → Bayside Stn* = a free hotel shuttle to Bayside Station, then the monorail; *Partner Hotel Shuttle* = the resort-approved ~15-minute shuttle shared by the four Partner Hotels; *Hotel's own shuttle* = an independent hotel bus, where timetables vary and change most often — check before booking.
 
 ---
 
