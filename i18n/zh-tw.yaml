@@ -190,3 +190,7 @@
   translation: "查看超值之選 →"
 - id: hl_closed_until
   translation: "暫停營業至 {{ .date }}"
+- id: hl_luggage
+  translation: "行李寄存"
+- id: hl_luggage_desc
+  translation: "入住前寄存與車站行李配送指南"

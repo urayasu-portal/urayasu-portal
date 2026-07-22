@@ -1,7 +1,7 @@
 ---
 title: "GRAND MONday Resort 도쿄 베이 마이하마 | 2026년 7월 18일 개업·전 객실 오션프런트·연중 라군 수영장"
 date: 2026-07-06T21:00:00+09:00
-factChecked: "2026-07-06"
+factChecked: "2026-07-22"
 lastmod: 2026-07-06
 description: "현지 미디어가 소개하는 GRAND MONday Resort 도쿄 베이 마이하마. 2026년 7월 18일 개업, hotel MONday 그룹 신규 브랜드 1호점. 140객실 전부 도쿄만 전망, 연중 운영 야외 라군 수영장 'MAIHAMA LAGOON'(배럴 사우나 포함), 대욕장과 마그마 스파식 사우나. 셔틀 편수가 적고 해피 엔트리 미적용 등 주의점도 솔직하게 설명합니다."
 area: "마이하마 지역"

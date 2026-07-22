@@ -1,7 +1,7 @@
 ---
 title: "GRAND MONday Resort 東京灣舞濱 | 2026年7月18日開幕·全客房面海·全年開放潟湖泳池"
 date: 2026-07-06T21:00:00+09:00
-factChecked: "2026-07-06"
+factChecked: "2026-07-22"
 lastmod: 2026-07-06
 description: "本地媒體評測GRAND MONday Resort 東京灣舞濱。2026年7月18日開幕，hotel MONday集團新品牌1號店。140間客房全部面朝東京灣，全年開放的室外潟湖泳池「MAIHAMA LAGOON」（含桶式三溫暖）、大浴場與岩漿Spa式三溫暖。接駁車班次較少、無Happy Entry提前入園等注意事項也如實說明。"
 area: "舞濱地區"

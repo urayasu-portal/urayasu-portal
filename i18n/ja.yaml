@@ -190,3 +190,7 @@
   translation: "格安のおすすめを見る →"
 - id: hl_closed_until
   translation: "{{ .date }}まで一時休館"
+- id: hl_luggage
+  translation: "荷物・配送"
+- id: hl_luggage_desc
+  translation: "チェックイン前の預かり・駅からの配送の仕組み"

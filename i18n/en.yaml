@@ -190,3 +190,7 @@
   translation: "See budget picks →"
 - id: hl_closed_until
   translation: "Temporarily closed until {{ .date }}"
+- id: hl_luggage
+  translation: "Luggage"
+- id: hl_luggage_desc
+  translation: "Storage before check-in & station baggage delivery"

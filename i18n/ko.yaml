@@ -190,3 +190,7 @@
   translation: "가성비 추천 보기 →"
 - id: hl_closed_until
   translation: "{{ .date }}까지 임시 휴관"
+- id: hl_luggage
+  translation: "수하물"
+- id: hl_luggage_desc
+  translation: "체크인 전 보관·역 수하물 배송 안내"
