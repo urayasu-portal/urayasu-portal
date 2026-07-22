@@ -86,6 +86,7 @@ faq:
 
 ## 相關頁面
 
+- [如何把行李從舞濱站送到飯店（當天使用步驟）](/zh-tw/travel-guide/hotels/luggage-howto/)
 - [提供免費班車的飯店一覽](/zh-tw/travel-guide/hotels/shuttle/)
 - [飯店類別解說（迪士尼/官方/合作）](/zh-tw/travel-guide/hotels/types/)
 - [交通比較指南](/zh-tw/travel-guide/hotels/access/)

@@ -61,10 +61,8 @@ You can also handle these at the same counter:
 - **Disney Hotels**: complete check-in by tapping the "Check-in" button in the official app (the 2F counter handles baggage, park-ticket sales, and online check-in reception)
 - **Official Hotels**: complete pre-check-in, and — on eligible plans — buy park tickets here too (cash or credit card only)
 
-<!-- TODO: 要現地確認 — 受付での提示物（予約確認書/アプリ）・引換証の交付有無。公式に明記なし -->
-
 ### Step 4｜Head into the parks hands-free
-Your bags are delivered to the hotel. The official sources don't state whether they arrive in your room or wait at the bell desk, nor a delivery time, so **check the pick-up details with your hotel's front desk at check-in**.<!-- TODO: 要現地確認 — 客室配送かベルデスク受取か・到着目安時刻 -->
+Your bags are delivered to the hotel. The official sources don't state whether they arrive in your room or wait at the bell desk, nor a delivery time, so **check the pick-up details with your hotel's front desk at check-in**.
 
 ---
 
@@ -79,8 +77,6 @@ Reception runs on your **check-in day**, from when Bon Voyage opens (hours are u
 ### Step 3｜Drop your bags at the 1F counter
 Use the "Home Delivery Service Counter" on the store's 1st floor. The fee is **¥800 per item (tax included) for the four Partner Hotels**. Celebration Hotel guests use the same counter, but the **fee is not published** — confirm it on site. As in Pattern A, valuables, fragile items, precision devices, and drinks can't be sent.
 
-<!-- TODO: 要現地確認 — カウンターの支払い方法（現金のみ/カード可否）。公式非公開。「エミオンはクレカ不可」は他サイトの誤読（チケット購入特典の注記）なので書かない -->
-
 ### Step 4｜Head into the parks hands-free
 Your bags are delivered to your hotel the same day. As with Pattern A, the pick-up point and arrival time aren't published, so confirm at the front desk when you check in.
 
@@ -94,8 +90,6 @@ Send your bags to the station after check-out and you can enjoy the final day ha
 2. **Earlier is better**: at Maihama View Hotel, your drop-off time sets when pick-up opens (by 9:00 → from 13:00 / 9:00–10:30 → from 14:00 / 10:30–12:30 → from 15:30).
 3. **Collect at the Welcome Center 1F counter**: pick-up hours differ — **13:00–21:00 for Disney Hotels, until 20:00 for Official hotels**.
 4. **Mind the deadline**: bags left past the pick-up window are returned to the hotel (per Maihama View). Even if you're staying for the nighttime show, **collect your bags before wandering off after park close**.
-
-<!-- TODO: 要現地確認 — お渡しカウンターで必要なもの（引換証等）・支払いが預け時か受取時か。公式に明記なし -->
 
 ---
 

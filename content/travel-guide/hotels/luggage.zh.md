@@ -86,6 +86,7 @@ faq:
 
 ## 相关页面
 
+- [如何把行李从舞滨站送到饭店（当天使用步骤）](/zh/travel-guide/hotels/luggage-howto/)
 - [提供免费班车的饭店一览](/zh/travel-guide/hotels/shuttle/)
 - [饭店类别解说（迪士尼/官方/合作）](/zh/travel-guide/hotels/types/)
 - [交通比较指南](/zh/travel-guide/hotels/access/)

@@ -86,6 +86,7 @@ faq:
 
 ## 관련 페이지
 
+- [마이하마역에서 호텔로 짐을 보내는 방법(당일 이용 순서)](/ko/travel-guide/hotels/luggage-howto/)
 - [무료 셔틀버스가 있는 호텔 정리](/ko/travel-guide/hotels/shuttle/)
 - [호텔 구분 해설(디즈니/공식/파트너)](/ko/travel-guide/hotels/types/)
 - [교통 비교 가이드](/ko/travel-guide/hotels/access/)
