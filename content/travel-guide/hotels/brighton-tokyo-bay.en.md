@@ -2,7 +2,7 @@
 title: "Urayasu Brighton Hotel Tokyo Bay | 1-Minute Walk from Shin-Urayasu Station, Up to 34 Shuttles Per Day to TDR"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-07-22"
-lastmod: 2026-07-22
+lastmod: 2026-07-23
 description: "Local review of Urayasu Brighton Hotel Tokyo Bay. Covered deck connection to Shin-Urayasu Station (approx. 80m, 1 min). Up to 34 free shuttle buses per day from opening to after park closing. Luggage storage before check-in, 42 m² rooms, up to 5 guests. No large bath or coin laundry — key trade-offs covered honestly."
 tags:
   - Hotel
@@ -79,11 +79,10 @@ From Shin-Urayasu Station, about 17 min to Tokyo Station on the JR Keiyo Line ex
 
 One of the most common questions we hear about this hotel is whether you can drop your bags **before check-in** — handy when you land in the morning and want to head straight to the parks. The short answer: yes.
 
-- **Before check-in (same-day storage):** Arriving early? The front desk will hold your luggage on the day of your stay, so you can leave your suitcases and go to Tokyo Disneyland or DisneySea before the 15:00 check-in.<!-- TODO: 要確認 — 預かり開始時刻・個数/サイズ制限・料金（無料か）をホテルに確認 -->
+- **Before check-in (same-day storage):** Arriving early? The front desk will hold your luggage on the day of your stay, so you can leave your suitcases and go to Tokyo Disneyland or DisneySea before the 15:00 check-in.
 - **Easy arrival with heavy suitcases:** Shin-Urayasu Station connects to the hotel by an **80 m covered deck (about 1 minute)** — the closest station link among the four Partner Hotels — so you can wheel large cases straight from the train without stepping outside, even in the rain.
 - **Baggage delivery from JR Maihama Station (paid):** On arrival day you can drop bags at the "Bon Voyage" home-delivery counter beside JR Maihama Station and have them delivered to the hotel — a paid service at **¥800 per item**, reception from store opening until about 15:00. (This is a one-way *station → hotel* service; it is not a park pick-up.) Valuables, fragile items, drinks and precision devices are excluded.
 - **Sending bags home / to the airport:** The bell desk also handles takkyubin courier shipments (to your home, or same-day to the airport / Tokyo Station on a cash-on-delivery basis).
-- **Coin lockers:** <!-- TODO: 要確認 — 館内コインロッカーの有無、無ければ新浦安駅のロッカー事情を確認して追記 -->
 
 Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book. For how the area's paid Bon Voyage delivery compares with the free service at Disney and Official hotels, see [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
