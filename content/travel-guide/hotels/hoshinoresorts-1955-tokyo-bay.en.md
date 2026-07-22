@@ -1,8 +1,8 @@
 ---
 title: "Hoshino Resorts BEB5 Tokyo Bay | Opened June 2024, 1955 America Vintage Theme, In-House Lawson, 339 Parking ¥500/12hrs"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Hoshino Resorts BEB5 Tokyo Bay (opened June 2024, Hoshino Resorts' first Chiba location). 638 rooms in 23 types. 1955 America vintage diner theme. In-house Lawson convenience store. 339 parking spaces ¥500/12hrs (the lowest rate among area hotels). Shuttle 'Bus Number 1955' to TDR approx. 30 min. No large communal bath. Price range ¥18,000–¥50,000."
 tags:
   - Hotel
@@ -92,6 +92,9 @@ Confirm availability on official website.
 
 **Large Bath / Hot Spring**
 No large communal bath.
+
+**Luggage**
+Free lockers you can use before check-in and after check-out, plus pre-check-in so you only collect your room key on return. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

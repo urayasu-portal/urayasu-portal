@@ -1,8 +1,8 @@
 ---
 title: "Hyatt Regency Tokyo Bay | Dedicated Limousine Stop Added Dec 2024, Club Lounge, Chromecast in All Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Hyatt Regency Tokyo Bay. Dedicated airport limousine bus stop added December 20, 2024 (direct airport access with zero-minute walk). Hyatt brand with club lounge. All rooms with separated bathroom and wash area. Children 12 and under sleep free. Chromecast in all rooms. Price range ¥25,000–¥60,000."
 tags:
   - Hotel
@@ -88,8 +88,8 @@ Available in-house (fee applies).
 **Parking**
 Available (fee applies; confirm at booking).
 
-**Luggage Storage**
-Available at the front desk.
+**Luggage**
+Storage before and after your stay at the front desk (bags can be received before your arrival date). The hotel does not run a delivery service to Maihama Station — it suggests in-park lockers or a courier instead. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

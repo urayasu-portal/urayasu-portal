@@ -1,7 +1,7 @@
 ---
 title: "Hotel Emion Tokyo Bay | The Only Natural Hot Spring Among TDR Partner Hotels, Welcome Baby Certified, Rooms for Up to 6"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-07-22"
 lastmod: 2026-07-22
 description: "Local review of Hotel Emion Tokyo Bay. The only natural hot spring (saline spring, amber-colored) among TDR's four Partner Hotels. Welcome Baby certified for infants. 584 rooms including Family Wonder up to 6 guests. Free bike rental. 7 min from Shin-Urayasu Station by shuttle."
 tags:

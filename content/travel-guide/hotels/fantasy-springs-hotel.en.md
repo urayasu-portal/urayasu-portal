@@ -1,8 +1,8 @@
 ---
 title: "Fantasy Springs Hotel | Newest Disney Hotel (2024), Grand Chateau Direct Fantasy Springs Access + 8 Attraction Tickets"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Fantasy Springs Hotel. Disney Hotel opened June 2024 with two tiers: Grand Chateau (56 rooms, direct access to Fantasy Springs + 8 attraction tickets, luxury pricing) and Fantasy Chateau (419 rooms, deluxe). Happy Entry applies to both. A complete guide to the newest TDS Disney Hotel."
 tags:
   - Hotel
@@ -96,6 +96,9 @@ In-house convenience store and coin laundry (confirm on official website).
 
 **Parking**
 ¥3,000 for 1st night; ¥1,000 per additional night.
+
+**Luggage**
+Same-day storage at the bell desk from 6:00 (Grand Chateau guests from 7:00 in the lounge), held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); paid Station Delivery the other way at ¥800 per item on departure. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in rooms.

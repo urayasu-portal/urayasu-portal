@@ -1,8 +1,8 @@
 ---
 title: "Hotel Oriental Tokyo Bay | 1-Minute from Shin-Urayasu Station, 69 Shuttles/Day, 24-Hour In-House Convenience Store, Cinderella Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Hotel Oriental Tokyo Bay (TDR Partner Hotel). Deck connection to Shin-Urayasu Station (1 min walk). 69 free shuttle buses per day — the highest frequency among Partner Hotels. 24-hour in-house convenience store. 2F coin laundry. Cinderella Castle themed rooms. 8.5m projection mapping. ¥16,500+."
 tags:
   - Hotel
@@ -98,8 +98,8 @@ Buffet and à la carte options (confirm hours on official website).
 **Parking**
 Progressive rate system (the longer you stay, the lower the nightly rate). Confirm current rates on official website.
 
-**Luggage Storage**
-Available at front desk. Baggage delivery service (paid) also available.
+**Luggage**
+Storage before and after your stay at the 2F front / bell desk, with a guest-only baggage/locker room. As a Partner Hotel, station-to-hotel delivery uses the paid "Bon Voyage" counter by JR Maihama Station (about ¥800 per item, until around 15:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

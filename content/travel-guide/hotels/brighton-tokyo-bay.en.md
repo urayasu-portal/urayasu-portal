@@ -1,7 +1,7 @@
 ---
 title: "Urayasu Brighton Hotel Tokyo Bay | 1-Minute Walk from Shin-Urayasu Station, Up to 34 Shuttles Per Day to TDR"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-07-22"
 lastmod: 2026-07-22
 description: "Local review of Urayasu Brighton Hotel Tokyo Bay. Covered deck connection to Shin-Urayasu Station (approx. 80m, 1 min). Up to 34 free shuttle buses per day from opening to after park closing. Luggage storage before check-in, 42 m² rooms, up to 5 guests. No large bath or coin laundry — key trade-offs covered honestly."
 tags:
@@ -85,7 +85,7 @@ One of the most common questions we hear about this hotel is whether you can dro
 - **Sending bags home / to the airport:** The bell desk also handles takkyubin courier shipments (to your home, or same-day to the airport / Tokyo Station on a cash-on-delivery basis).
 - **Coin lockers:** <!-- TODO: 要確認 — 館内コインロッカーの有無、無ければ新浦安駅のロッカー事情を確認して追記 -->
 
-Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book.
+Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book. For how the area's paid Bon Voyage delivery compares with the free service at Disney and Official hotels, see [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 ---
 

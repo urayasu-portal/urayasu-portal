@@ -1,8 +1,8 @@
 ---
 title: "Maihama Hotel First Resort | The First TDR Official Hotel (Historic), Themed Rooms, Limousine Reservation-Only by Phone"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Maihama Hotel First Resort (TDR Official Hotel). The very first Official Hotel when TDR opened in 1983. Themed concept rooms. Airport limousine by reservation only (phone + prepay). TDL is a 15-min walk (longest among Official Hotels). 'First Shop' 7:00–23:00. Room Wi-Fi is paid ¥500 except premium rooms. Coin laundry in South building only. Price range ¥20,000–¥40,000."
 tags:
   - Hotel
@@ -87,6 +87,9 @@ Available in the South building only. Guests in other buildings need to travel t
 
 **Wi-Fi in 1F Lobby**
 Free Wi-Fi is available in the 1F lobby area for all guests.
+
+**Luggage**
+Free guest-only lockers on the West side 1F (7:00–22:00), plus early-arrival storage at Guest Service. As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); on departure, paid Station Delivery at ¥800 per item, and a same-day delivery (¥940/item) to other Disney/Official hotels in the Maihama area. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Parking**
 Confirm details on official website.

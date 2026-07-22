@@ -1,7 +1,7 @@
 ---
 title: "Maihama View Hotel | TDR Official Hotel Rebranded 2025, Large Bath 'Spa Rose', Free Shuttle to Maihama and Ikspiari"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-07-22"
 lastmod: 2026-07-22
 description: "Local review of Maihama View Hotel (rebranded from Tokyo Bay Maihama Hotel in 2025, operated by HULIC). TDR Official Hotel with large bath 'Spa Rose' — unusual among Official Hotels. Free shuttle to Maihama Station, Ikspiari, and Bayside (5 min). Coin laundry availability in transition. Price range ¥20,000–¥40,000."
 tags:

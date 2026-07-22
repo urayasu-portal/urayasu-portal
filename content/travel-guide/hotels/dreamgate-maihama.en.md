@@ -1,7 +1,7 @@
 ---
 title: "Dreamgate Maihama | Directly Connected to JR Maihama Station, NewDays Inside, Children 6 and Under Sleep Free"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-07-22"
 lastmod: 2026-07-22
 description: "Local review of Dreamgate Maihama. Main building: directly connected left of Maihama Station ticket gate. Annex: directly connected right. NewDays convenience store inside (6:30–23:00). Children 6 and under sleep free. 3 coin laundry machines per building (room status viewable on TV). Ground-floor Saizeriya for breakfast. Price range ¥15,000–¥35,000."
 tags:

@@ -1,8 +1,8 @@
 ---
 title: "Tokyo DisneySea Hotel MiraCosta — No, Tokyo Bay Grand Nikko | Japan's Largest Hotel Atrium, Pink European Exterior, Official Hotel"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Grand Nikko Tokyo Bay Maihama. Japan's largest hotel atrium (37m / 4,300 m²), South European pink exterior. TDR Official Hotel. 319 parking spaces with EV chargers. Dedicated airport limousine stop. Price range ¥30,000–¥80,000+."
 tags:
   - Hotel
@@ -94,7 +94,7 @@ Available in-house.
 In-house shops (confirm hours and types on official website).
 
 **Luggage**
-Baggage delivery service from Maihama Station to the hotel. Airport and home delivery (paid) available.
+Guest-only self-service lockers on 1F, with the bell captain desk as backup for storage before and after your stay. As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); a paid Station Delivery runs the other way on departure. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

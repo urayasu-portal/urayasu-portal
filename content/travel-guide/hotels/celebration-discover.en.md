@@ -1,8 +1,8 @@
 ---
 title: "Tokyo DisneySea Celebration Hotel: Discover | Budget Disney Hotel with Beds for 4, Adventure & Discovery Theme"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Tokyo DisneySea Celebration Hotel: Discover. Among the most affordable Disney Hotels, with standard rooms sleeping 4 (Happy Entry included). Themed after TDS's adventure and discovery concept. Key notes: bus access from Shin-Urayasu, no Narita limousine, 11:00 checkout."
 tags:
   - Hotel
@@ -92,8 +92,8 @@ Lawson within 5 min on foot of the hotel, open late. For supermarkets, take the 
 **Parking**
 ¥2,000/night (per standard car, cash only). Available from 12:00 on check-in day to 12:00 on check-out day; in/out allowed.
 
-**Luggage Storage**
-Guest services counter in the lobby handles pre-check-in and post-check-out luggage. Baggage delivery between Disney Hotels also available.
+**Luggage**
+Same-day storage at the Guest Service desk from 6:00, held until 24:00 on check-out day. Like its sister wing, the Celebration Hotels cannot use the free Welcome Center delivery or the Station Delivery service — instead, guests use the paid "Bon Voyage" counter by JR Maihama Station for station-to-hotel delivery (fee not published; confirm locally). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in rooms.

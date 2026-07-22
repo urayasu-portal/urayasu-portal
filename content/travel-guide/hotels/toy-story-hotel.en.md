@@ -1,8 +1,8 @@
 ---
 title: "Toy Story Hotel | Andy's Room Theme Disney Hotel, Close to Bayside Station, Fantasy Springs Entrance from 10:00"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Toy Story Hotel (Disney Hotel opened 2022). 595 rooms with Andy's room theme. Adjacent to Bayside Station (Disney Resort Line). Fantasy Springs entrance accessible from 10:00 (1 hour after park opening). 3F coin laundry. In-house shop 6:00–24:00. Airport limousine at the hotel front. Price range ¥45,000–¥65,000."
 tags:
   - Hotel
@@ -95,6 +95,9 @@ Available from 6:30am (confirm details on official website).
 
 **Parking**
 ¥3,000 for 1st night; ¥1,000 per additional night.
+
+**Luggage**
+Same-day storage at the Guest Service counter from 6:00, held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); paid Station Delivery the other way at ¥800 per item on departure. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

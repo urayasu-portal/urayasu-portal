@@ -1,8 +1,8 @@
 ---
 title: "Comfort Suites Tokyo Bay | Shuttle Runs Until 30 Min After Park Closing, Free Self-Cloakroom, Children Sleep Free"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Comfort Suites Tokyo Bay (Choice Hotels). TDL/TDS free shuttle daily — if park closes by 22:00, shuttle runs until 30 min after closing. 312 rooms. Children through elementary school 6th grade sleep free (up to 2 per room). Free self-cloakroom from before check-in. Free Wi-Fi throughout."
 tags:
   - Hotel
@@ -88,8 +88,8 @@ In-house convenience store (store name and hours: confirm on official website).
 **Parking**
 Available (when full, nearby parking is offered). Confirm rates on official website.
 
-**Luggage Storage**
-Free self-cloakroom (available before check-in).
+**Luggage**
+Free self-service cloak room before check-in and after check-out (luggage carts available in the lobby). There is no station baggage-delivery service; an in-house courier counter is available 7:00–13:00. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi throughout (FREESPOT also available in lobby and breakfast area).

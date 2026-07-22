@@ -1,7 +1,7 @@
 ---
 title: "MyStays Maihama | 6-Minute Walk to TDS (Closest in Area B), Foot Massager in All Rooms, Fresh-Baked Bread Breakfast"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-07-22"
 lastmod: 2026-07-22
 description: "Local review of MyStays Hotel Maihama. Only 90 rooms — 6-minute walk to Tokyo DisneySea, the shortest walking distance among 'non-Disney-Hotel' properties in Area B. Foot massager in all rooms. Fresh-baked bread for breakfast. Check-out 10:00. Price range ¥5,000–¥20,000."
 tags:
