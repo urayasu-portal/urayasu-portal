@@ -45,12 +45,12 @@ All of these services exclude **valuables, fragile items, drinks, and precision 
 
 If you stay at a **Disney Hotel** or an **Official Hotel**, you can arrive light. At the **Welcome Center Hotel Service Counter** beside JR Maihama Station, hand over your bags and they are delivered to your hotel **free of charge**:
 
-- **Disney Hotels** — 2nd-floor counter, roughly **7:30–16:00** (e.g. [Disney Ambassador Hotel](/en/travel-guide/hotels/ambassador-hotel/))
-- **Official Hotels** — 1st-floor counter, roughly **8:00–15:00** (e.g. [Hotel Okura Tokyo Bay](/en/travel-guide/hotels/hotel-okura-tokyo-bay/), [Grand Nikko Tokyo Bay Maihama](/en/travel-guide/hotels/grand-nikko-tokyo-bay/), [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/))
+- **Disney Hotels** — 2nd-floor counter, roughly **7:30–16:00** (e.g. [Tokyo Disneyland Hotel](/en/travel-guide/hotels/tdl-hotel/), [Hotel MiraCosta](/en/travel-guide/hotels/miracosta/), [Fantasy Springs Hotel](/en/travel-guide/hotels/fantasy-springs-hotel/), [Toy Story Hotel](/en/travel-guide/hotels/toy-story-hotel/), [Disney Ambassador Hotel](/en/travel-guide/hotels/ambassador-hotel/))
+- **Official Hotels** — 1st-floor counter, roughly **8:00–15:00** (e.g. [Hotel Okura Tokyo Bay](/en/travel-guide/hotels/hotel-okura-tokyo-bay/), [Grand Nikko Tokyo Bay Maihama](/en/travel-guide/hotels/grand-nikko-tokyo-bay/), [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/), [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/))
 
 This is one of the quiet perks of the Official-hotel tier: drop the bags at the station and head straight into your day.
 
-> Note: the **Celebration Hotels** are not part of this counter service, and there is no delivery from inside the parks.
+> Note: the **Celebration Hotels** are the exception among Disney-run hotels — they can't use this free counter or the Station Delivery service. Instead, guests there use the **paid Bon Voyage counter** by the station (fee unpublished — confirm locally). The Welcome Center also does not offer plain walk-up luggage storage, and there is no delivery from inside the parks.
 
 ---
 
@@ -72,7 +72,10 @@ You don't always need a delivery service. Almost every hotel will simply **hold 
 
 - **[Hotel Dream Gate Maihama](/en/travel-guide/hotels/dreamgate-maihama/)** — free guest-only lockers and a self-service cloak room, usable from the morning of your stay and after check-out
 - **[HOTEL MYSTAYS Maihama](/en/travel-guide/hotels/mystays-maihama/)** — free coin lockers (a ¥100 refundable type) plus front-desk storage
-- **[Disney Ambassador Hotel](/en/travel-guide/hotels/ambassador-hotel/)** — same-day storage at the Guest Service Counter from 6:00; keep your claim until 24:00 on the day of check-out
+- **The Disney Hotels** — same-day storage from **6:00** at the bell desk or Guest Service counter; keep your claim tag until 24:00 on check-out day
+- **[Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/)** — free guest-only lockers (7:00–22:00)
+- **[Hoshino Resorts 1955 Tokyo Bay](/en/travel-guide/hotels/hoshinoresorts-1955-tokyo-bay/)** — free lockers before and after your stay, plus pre-check-in so you only pick up the key later
+- **[Comfort Suites Tokyo Bay](/en/travel-guide/hotels/comfort-suites-tokyo-bay/)** — free self-service cloak room before check-in and after check-out
 - **[Oriental Hotel Tokyo Bay](/en/travel-guide/hotels/oriental-tokyo-bay/)** — a guest-only baggage/locker room, with before- and after-stay storage at the bell desk
 
 ---
