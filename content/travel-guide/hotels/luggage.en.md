@@ -39,6 +39,8 @@ Most of the area's baggage services run through **JR Maihama Station**, the gate
 
 All of these services exclude **valuables, fragile items, drinks, and precision devices** (laptops, cameras). Keep those with you.
 
+> Want the step-by-step version — where to go from the ticket gates, reception hours, and how to pay? See **[How to send your luggage from Maihama Station to your hotel](/en/travel-guide/hotels/luggage-howto/)**.
+
 ---
 
 ## Free station-to-hotel delivery (Disney & Official hotels)
@@ -86,6 +88,7 @@ You don't always need a delivery service. Almost every hotel will simply **hold 
 
 ## Related
 
+- [How to Send Your Luggage from Maihama Station to Your Hotel (step by step)](/en/travel-guide/hotels/luggage-howto/)
 - [Tokyo Disney Resort Hotels with Free Shuttle Buses](/en/travel-guide/hotels/shuttle/)
 - [How to Get to Tokyo Disney Resort & Urayasu](/en/travel-guide/urayasu-maihama-access-guide/)
 - [Hotel Categories Explained (Disney / Official / Partner)](/en/travel-guide/hotels/types/)

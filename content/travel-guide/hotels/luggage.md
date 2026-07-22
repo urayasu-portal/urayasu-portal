@@ -39,6 +39,8 @@ faq:
 
 いずれも**貴重品・壊れ物・飲み物・精密機器**（PC・カメラ等）は預けられません。
 
+> 改札からの行き方・受付時間・支払い方法まで、当日の手順を知りたい方は **[舞浜駅からホテルへ荷物を送る方法（手順ガイド）](/travel-guide/hotels/luggage-howto/)** をご覧ください。
+
 ---
 
 ## 駅→ホテル無料配送（ディズニー・オフィシャルホテル）
@@ -86,6 +88,7 @@ faq:
 
 ## 関連ページ
 
+- [舞浜駅からホテルへ荷物を送る方法（当日の手順ガイド）](/travel-guide/hotels/luggage-howto/)
 - [無料シャトルバスで行けるホテルまとめ](/travel-guide/hotels/shuttle/)
 - [ホテルの区分（ディズニー/オフィシャル/パートナー）解説](/travel-guide/hotels/types/)
 - [アクセス比較ガイド](/travel-guide/hotels/access/)
