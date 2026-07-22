@@ -2,7 +2,7 @@
 title: "Hilton Tokyo Bay | 24-Hour Convenience Store In-House, Large Official Hotel Near Tokyo Disney Resort"
 date: 2026-06-16T10:00:00+09:00
 factChecked: "2026-06-28"
-lastmod: 2026-06-16
+lastmod: 2026-07-22
 description: "Local review of Hilton Tokyo Bay. 24-hour in-house convenience store, family rooms for 2–6 guests, dedicated airport limousine stop at the hotel entrance, and 24-hour coin laundry in B1. One of the most family-friendly Official Hotels near Tokyo Disney Resort."
 tags:
   - Hotel
@@ -95,7 +95,7 @@ Japanese, Western, and Chinese buffet with a chef-made omelet station and a Kids
 ¥3,100 for 1 night / ¥4,700 for 2 nights / ¥6,300 for 3+ nights (tax included). Available from 15:00 on check-in day to 30 minutes after check-out. Some Family Happy Magic room plans include free parking (except Dec. 31).
 
 **Luggage**
-Cloakroom at the lobby service counter. Baggage delivery from Maihama Station Welcome Center to the hotel, and home delivery (paid) are available.
+Cloakroom at the lobby service counter for storage before check-in and after check-out. As an Official Hotel, you get **free** baggage delivery from the Welcome Center by JR Maihama Station to the hotel (about 8:00–15:00); on departure the paid Station Delivery runs the other way at **¥800 per item** (last pick-up 20:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi & Multilingual**
 Free Wi-Fi throughout. Multilingual staff available.

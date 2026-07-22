@@ -2,7 +2,7 @@
 title: "Hotel Okura Tokyo Bay | Breakfast from 6:00am (Earliest Among Official Hotels), All Rooms 44 m²+, Marble Bathroom"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-06-28"
-lastmod: 2026-06-17
+lastmod: 2026-07-22
 description: "Local review of Hotel Okura Tokyo Bay (TDR Official Hotel). Breakfast from 6:00am — the earliest opening among Official Hotels; a key advantage for early park entry. All 427 rooms 44 m² or larger with marble bathroom. Dedicated airport limousine stop. No coin laundry or in-house convenience store. Price range ¥30,000–¥80,000+."
 tags:
   - Hotel
@@ -92,7 +92,7 @@ Not available in-house. Nearest external convenience store: confirm distance at 
 Available (confirm rates on official website).
 
 **Luggage**
-Baggage delivery service from Maihama Station to the hotel. Airport and home delivery (paid) available.
+The 1F bell desk stores bags 6:00–23:00 (same-day courier forwarding if handed in by 13:00). As an Official Hotel, **free** baggage delivery from the Welcome Center counter (1F, about 8:00–15:00) to the hotel; paid Station Delivery on departure; airport and home courier also available. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

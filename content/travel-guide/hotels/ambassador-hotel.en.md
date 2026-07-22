@@ -2,7 +2,7 @@
 title: "Disney Ambassador Hotel | Chef Mickey Character Dining, Close to Ikspiari — A Hollywood-Themed Disney Hotel"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-06-28"
-lastmod: 2026-06-17
+lastmod: 2026-07-22
 description: "Local review of Disney Ambassador Hotel. Exclusive character dining 'Chef Mickey' (Mickey Mouse at breakfast), proximity to Ikspiari, family rooms for up to 5 adults, and Happy Entry early admission. A 1930s Hollywood Art Deco Disney Hotel — with honest notes on what to expect."
 tags:
   - Hotel
@@ -91,7 +91,7 @@ Ikspiari, a major shopping and entertainment complex, is 5–8 minutes on foot. 
 ¥3,000 for the 1st night; ¥1,000 per additional night (from 0:00 on check-in day to 24:00 on check-out day).
 
 **Luggage**
-Free baggage delivery from Maihama Station Welcome Center to the hotel. Paid station delivery on departure is also available for hands-free travel home.
+Same-day storage at the Guest Service Counter from 6:00 (keep your claim tag until 24:00 on check-out day). As a Disney Hotel, **free** baggage delivery from the Welcome Center Disney-hotel counter (2F, about 7:30–16:00) to the hotel; a paid Station Delivery runs the other way on departure. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in rooms.

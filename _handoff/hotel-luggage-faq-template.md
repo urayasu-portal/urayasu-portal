@@ -23,10 +23,21 @@ faq:
     a: "<大浴場/コインランドリーの有無。May Not Suit と矛盾させない>"
 ```
 
-## 2. 本文に「Luggage Storage (Before Check-in)」H2 を追加
+## 1.5. 共有解説ページへ必ずリンクする
 
-配置：`## Access` セクションの直後・`## Map` の前。既存の Facilities 内「**Luggage**」小項目は
-このH2への参照リンクに置き換えて重複を避ける。
+舞浜の荷物・配送の仕組み（駅→ホテル：ディズニー/オフィシャルは無料WC・パートナー/独立は有料
+Bon Voyage 800円／ホテル→駅：有料Station Delivery／パーク→ホテルは無し）は
+**`/en/travel-guide/hotels/luggage/`（共有解説ページ）に集約済み**。各ホテルは自館の要点だけ書き、
+仕組みの詳細はこのページへリンクする（重複を避け、内部リンクを増やす）。
+
+## 2. 本文の荷物記述（Facilities内「**Luggage**」小項目 または H2）
+
+- **情報が濃い軒**（独自ロッカー・時刻/料金が揃う）＝独立H2でもよい。**薄い軒**＝Facilities内の
+  「**Luggage**」小項目1つで十分（水増ししない）。
+- **必ず「方向」を書く**：①チェックイン前預かり(場所/時刻) ②チェックアウト後 ③配送=駅→ホテル/
+  ホテル→駅のどちらか・無料/有料と金額。**「park-to-hotel」と書かない**（舞浜駅ハブ経由が正しい）。
+- 末尾に必ず `[how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/)` へのリンク。
+- 事実源＝CSV`荷物預かり`列（2026-07公式照合済みの軒は詳細あり）＋各.md本文。未公表の料金/制限は断定禁止。
 
 ```markdown
 ## Luggage Storage (Before Check-in) & Baggage Delivery

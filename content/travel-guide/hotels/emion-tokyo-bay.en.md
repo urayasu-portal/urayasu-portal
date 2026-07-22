@@ -2,7 +2,7 @@
 title: "Hotel Emion Tokyo Bay | The Only Natural Hot Spring Among TDR Partner Hotels, Welcome Baby Certified, Rooms for Up to 6"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-06-28"
-lastmod: 2026-06-17
+lastmod: 2026-07-22
 description: "Local review of Hotel Emion Tokyo Bay. The only natural hot spring (saline spring, amber-colored) among TDR's four Partner Hotels. Welcome Baby certified for infants. 584 rooms including Family Wonder up to 6 guests. Free bike rental. 7 min from Shin-Urayasu Station by shuttle."
 tags:
   - Hotel
@@ -96,6 +96,9 @@ Free for guests (reservation recommended during peak periods). An active option 
 
 **Parking**
 Available (fee applies; confirm at booking).
+
+**Luggage**
+Storage before check-in and after check-out at the bell captain desk (1F lobby). As a Partner Hotel, station-to-hotel delivery uses the paid "Bon Voyage" counter by JR Maihama Station (about **¥800 per item**, until around 15:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.
