@@ -111,6 +111,7 @@ A full list of all 48 hotels is on the [Hotel Guide top page](/en/travel-guide/h
 
 ## Related
 
+- [Luggage Storage & Baggage Delivery near the Parks](/en/travel-guide/hotels/luggage/)
 - [Hotel Access Comparison](/en/travel-guide/hotels/access/)
 - [Hotel Categories Explained (Disney / Official / Partner)](/en/travel-guide/hotels/types/)
 - [Happy Entry (15-Minute Early Entry) Explained](/en/travel-guide/hotels/happy-entry/)
