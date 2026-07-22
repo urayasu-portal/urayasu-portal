@@ -188,3 +188,5 @@
   translation: "最安クラスは通常期で1室約¥5,000〜です。"
 - id: hl_narrow_cheap_cta
   translation: "格安のおすすめを見る →"
+- id: hl_closed_until
+  translation: "{{ .date }}まで一時休館"

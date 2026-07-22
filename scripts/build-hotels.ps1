@@ -429,6 +429,10 @@ function Convert-PriceMin($r) {
   if ($pm -match '^\d+$' -and [int]$pm -gt 0) { return [int]$pm }
   return 0
 }
+# 休館まで（CSV「休館まで」列）。値がある間は一時休館の再開予定日（YYYY-MM-DD）。空=通常営業。
+function Convert-ClosedUntil($r) {
+  return ($r."休館まで").Trim()
+}
 
 $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("# === 自動生成ファイル / DO NOT EDIT ===")
@@ -500,6 +504,8 @@ foreach ($a in $areas) {
     [void]$sb.AppendLine(("        shuttle_type: ""{0}""" -f $stype))
     [void]$sb.AppendLine(("        shuttle: {0}" -f $shasBool))
     [void]$sb.AppendLine(("        price_min: {0}" -f (Convert-PriceMin $r)))
+    $closedUntil = Convert-ClosedUntil $r
+    if ($closedUntil) { [void]$sb.AppendLine(("        closed_until: ""{0}""" -f $closedUntil)) }
     [void]$sb.AppendLine(("        policy: {0}" -f $pol))
     [void]$sb.AppendLine(("        individual_page: {0}" -f $ip))
     if ($pol -ne "name-only") {

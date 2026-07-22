@@ -188,3 +188,5 @@
   translation: "The cheapest stays start around ¥5,000 per room, off-peak."
 - id: hl_narrow_cheap_cta
   translation: "See budget picks →"
+- id: hl_closed_until
+  translation: "Temporarily closed until {{ .date }}"

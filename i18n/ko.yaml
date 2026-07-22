@@ -188,3 +188,5 @@
   translation: "가장 저렴한 객실은 비수기 기준 1실 약 ¥5,000부터입니다."
 - id: hl_narrow_cheap_cta
   translation: "가성비 추천 보기 →"
+- id: hl_closed_until
+  translation: "{{ .date }}까지 임시 휴관"

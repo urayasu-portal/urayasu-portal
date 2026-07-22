@@ -218,6 +218,7 @@
           {{ $hname }}
           {{- end }}
           {{- if eq .policy "name-only" }}<span class="tg-nameonly-note"> ※</span>{{- end }}
+          {{- with .closed_until }}<span class="hct-closed"><i class="ti ti-tools" aria-hidden="true"></i> {{ i18n "hl_closed_until" (dict "date" .) }}</span>{{- end }}
         </td>
         <td>{{ $areaNameLoc }}</td>
         <td style="font-size:0.82em;">

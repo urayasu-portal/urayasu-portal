@@ -463,6 +463,7 @@ areas:
         shuttle_type: "partner"
         shuttle: true
         price_min: 18000
+        closed_until: "2026-09-10"
         policy: normal
         individual_page: true
         slug: "mitsui-garden-prana"

@@ -188,3 +188,5 @@
   translation: "最便宜的房型平日约¥5,000起。"
 - id: hl_narrow_cheap_cta
   translation: "查看超值之选 →"
+- id: hl_closed_until
+  translation: "暂停营业至 {{ .date }}"

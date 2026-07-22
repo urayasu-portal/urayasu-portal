@@ -2344,6 +2344,12 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 .hct-na { color: var(--up-muted); font-weight: 600; }
 .hct-no { color: var(--up-muted); }
 .hct-stype { font-size: 0.85em; font-weight: 600; white-space: nowrap; }
+.hct-closed {
+  display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px;
+  background: #FBE9E7; color: #B23A1E; font-size: 0.72rem; font-weight: 700; white-space: nowrap;
+  vertical-align: middle;
+}
+.hct-closed .ti { font-size: 0.9em; }
 /* シャトル種別の色分け（比較を素早く読ませる） */
 .hct-st-partner { color: #C2421F; }
 .hct-st-bayside { color: #1A5C8A; }
