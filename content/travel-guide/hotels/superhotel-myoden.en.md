@@ -1,8 +1,8 @@
 ---
 title: "Super Hotel Tozai Line Ichikawa-Myoden | 2-Min Walk from Myoden Station, Free Healthy Breakfast"
 date: 2026-06-27T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-28
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Super Hotel Tozai Line Ichikawa-Myoden. About a 2-minute walk from Tokyo Metro Tozai Line Myoden Station. Free breakfast buffet with organic vegetables and freshly baked bread, coin laundry, 50 parking spaces (first-come), luggage storage. Easy Tozai Line access to Urayasu and central Tokyo."
 tags:
   - Hotel
@@ -82,8 +82,8 @@ Available.
 **Parking**
 50 spaces, first-come.
 
-**Luggage Storage**
-Same-day and until end of check-out day.
+**Luggage**
+Front-desk storage on the day of your stay (before check-in) and until the end of check-out day — this is the chain-wide policy, and a few branches differ, so confirm with this hotel directly. Outgoing parcels can be sent from the desk during front-desk hours. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Available.

@@ -1,8 +1,8 @@
 ---
 title: "Henn na Hotel Maihama Tokyo Bay | World's First Robot Hotel (Guinness Record), Dinosaur Check-In, Deep Bathtub in All Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-28
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Henn na Hotel Maihama Tokyo Bay. Guinness World Record for world's first robot hotel. Dinosaur robot at front desk; Henn na robot in all rooms. All rooms with bath/toilet separate and deep soaking tub. Shuttle to Maihama Station: approx. 7–10 min. Price range ¥11,200–¥79,600."
 tags:
   - Hotel
@@ -86,6 +86,9 @@ Confirm availability on official website.
 
 **Convenience Store / Parking**
 Confirm on official website.
+
+**Luggage**
+Same-day storage in the luggage lockers or at the front counter — if the lockers are full, dial "9" on the 1F house phone to call a staff member (a robot-hotel quirk worth knowing). Pick up by 24:00 on check-out day; valuables, fragile items, food and drinks are not accepted. There is no station baggage-delivery service, and advance shipping must be prepaid (no cash-on-delivery). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

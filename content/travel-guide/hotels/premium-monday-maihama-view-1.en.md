@@ -1,8 +1,8 @@
 ---
 title: "Premium hotel MONday Maihama View I | Opened Dec 2025, Spacious Rooms + Sauna Bath, Free Shuttle to TDR"
 date: 2026-06-27T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-28
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Premium hotel MONday Maihama View I. Opened December 2025, 57 spacious rooms up to ~56㎡ for 4–6 guests. Large bath with sauna, free shuttle bus to Tokyo Disney Resort. Located in Minami-Kasai, Edogawa; bus access from Kasai-Rinkai-Koen Station."
 tags:
   - Hotel
@@ -80,6 +80,9 @@ Buffet at the in-house restaurant "GOOD PIZZA FACTORY K6" (breakfast-included pl
 
 **Parking**
 6 outdoor spaces, ¥3,000/night (reservation required).
+
+**Luggage**
+Free storage before check-in and after check-out (same-day pick-up; valuables, fragile items and food are not accepted). There is no station baggage-delivery service; the front desk can arrange same-day airport delivery (Airporter). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free in-room Wi-Fi.

@@ -1,8 +1,8 @@
 ---
 title: "Urayasu Sun Hotel | 3-Min Walk from Urayasu Station, Free Continental Breakfast from 6:00, 24-Hour Front Desk"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Urayasu Sun Hotel. 3-min walk from Urayasu Station (Tozai Line). Free continental breakfast from 6:00am. 24-hour front desk (last check-in 0:30). 2F coin laundry (2 washers + 2 dryers). 10 parking spaces ¥900/night (first-come). Day-use plan ¥8,800+. Weekly plans available."
 tags:
   - Hotel
@@ -90,6 +90,9 @@ Day-use plan from ¥8,800. Useful for guests who need a daytime room in Urayasu 
 
 **Weekly Plans**
 Available for longer-term stays. Confirm details on official website.
+
+**Luggage**
+Luggage storage is available (hours and location are not published — ask the front desk). You can ship bags ahead prepaid, and outgoing parcels go via Yamato with slips at the desk. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi (confirm details on official website).

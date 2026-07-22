@@ -1,8 +1,8 @@
 ---
 title: "GRAND MONday Resort Tokyo Bay Maihama | Opens July 18, 2026 — All-Oceanfront Rooms & Year-Round Lagoon Pool"
 date: 2026-07-06T21:00:00+09:00
-factChecked: "2026-07-06"
-lastmod: 2026-07-06
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of GRAND MONday Resort Tokyo Bay Maihama. Opening July 18, 2026 — the first property of the new GRAND MONday Resort brand. 140 rooms, all facing Tokyo Bay, year-round outdoor lagoon pool 'MAIHAMA LAGOON' with barrel sauna, large public bath & magma-spa sauna. Honest notes on shuttle frequency and no Happy Entry."
 tags:
   - Hotel
@@ -82,6 +82,9 @@ From Superior Twin (25.44 sqm, 4–5 guests) to Suites (50.88 sqm, 6 guests, in-
 
 **Restaurant / Parking / Wi-Fi**
 All-day dining "ISLE -Pool Club Restaurant-" (planned 6:30–24:00) plus room service (last order 24:00). Limited on-site parking at ¥3,000/night (partner lot with free shuttle when full). Free Wi-Fi in all rooms; AI translation devices available.
+
+**Luggage**
+Free storage before check-in and after check-out (same-day pick-up; valuables, fragile items and food are not accepted). There is no station baggage-delivery service; the front desk can arrange same-day airport delivery (Airporter). As a newly opened hotel, reconfirm details on the official site. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 ---
 

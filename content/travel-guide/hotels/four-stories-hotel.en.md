@@ -1,8 +1,8 @@
 ---
 title: "Four Stories Hotel | Area's Most Affordable, Last Shuttle 23:00, Parking ¥1,500/Night — Small Hotel with Unique Floor Themes"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Four Stories Hotel. 26 rooms across 4 floors, each with a different story theme. Last shuttle to the hotel at 23:00 (critical!). Nearest convenience store 19 min on foot. Parking ¥1,500/night (8 spaces, first-come). The area's most affordable option. Price range ¥10,000–¥25,000."
 tags:
   - Hotel
@@ -87,6 +87,9 @@ Nearest convenience store is 19 minutes on foot — plan accordingly. Food deliv
 
 **Parking**
 8 spaces, ¥1,500/night (first-come, first-served). Contact the hotel in advance if parking is needed.
+
+**Luggage**
+Storage from 6:00 on arrival day — and even from the day before (front desk staffed 6:00–24:00; valuables excluded). After check-out, bags are held until 23:00 the same day. There is no station baggage-delivery service; outgoing shipments go via Sagawa at the desk (packing materials sold if you have no box). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi (confirm on official website).

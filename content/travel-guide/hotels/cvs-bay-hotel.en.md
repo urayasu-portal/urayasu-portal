@@ -1,8 +1,8 @@
 ---
 title: "CVS BAY HOTEL | Next to Ichikawa-Shiohama Station, 2 Stops (6 Min) to Maihama, Women's Capsules"
 date: 2026-06-27T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-28
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of CVS BAY HOTEL (Ichikawa-Shiohama). Adjacent to JR Keiyo Line Ichikawa-Shiohama Station, 2 stops (~6 min) to Maihama. About 256 rooms across Main, Bay Tower and Annex buildings, including women-only capsules. 1F convenience store, breakfast buffet (large bath currently closed)."
 tags:
   - Hotel
@@ -83,10 +83,13 @@ Breakfast buffet available (depending on plan).
 **Parking**
 No dedicated lot; partner Times parking (around ¥1,500, discount tickets provided).
 
+**Luggage**
+Early-morning storage before check-in at the front desk. After check-out, bags are held the same day only — from the next day a ¥1,000/day storage fee applies. There is no station baggage-delivery service, and the front desk does not handle outgoing parcels (use the Lawson next door). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+
 **Wi-Fi**
 Wired LAN / Wi-Fi in all rooms.
 
-**Coin Laundry / Luggage Storage**
+**Coin Laundry**
 Confirm on the official website.
 
 ---

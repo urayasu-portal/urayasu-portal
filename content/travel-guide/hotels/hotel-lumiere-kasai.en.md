@@ -1,8 +1,8 @@
 ---
 title: "Hotel Lumiere Kasai | 2-Min Walk from Kasai Station, Free Breakfast, Rooms with Mini Kitchen"
 date: 2026-06-27T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-28
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Hotel Lumiere Kasai. About a 2-minute walk from Tokyo Metro Tozai Line Kasai Station. Free breakfast in the 1F lounge (6:30–10:00), twin rooms with microwave and mini kitchen, coin laundry on multiple floors, 50-space tower parking. One stop to Urayasu / ~20 min to Otemachi on the Tozai Line."
 tags:
   - Hotel
@@ -82,8 +82,8 @@ On floors 5, 8 and 11 (washer ¥300 / dryer ¥200 per hour).
 **Parking**
 Mechanical tower parking, 50 spaces, ¥1,500/night (reservation; vehicle size limits).
 
-**Luggage Storage**
-Available before check-in and after check-out.
+**Luggage**
+The front desk stores bags before check-in, and you can ship luggage ahead to arrive the day before (mark the reservation name in katakana and stay date, addressed to the front desk). After-check-out storage is not published — ask at the desk. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free throughout.
