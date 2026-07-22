@@ -81,7 +81,8 @@ One of the most common questions we hear about this hotel is whether you can dro
 
 - **Before check-in (same-day storage):** Arriving early? The front desk will hold your luggage on the day of your stay, so you can leave your suitcases and go to Tokyo Disneyland or DisneySea before the 15:00 check-in.<!-- TODO: 要確認 — 預かり開始時刻・個数/サイズ制限・料金（無料か）をホテルに確認 -->
 - **Easy arrival with heavy suitcases:** Shin-Urayasu Station connects to the hotel by an **80 m covered deck (about 1 minute)** — the closest station link among the four Partner Hotels — so you can wheel large cases straight from the train without stepping outside, even in the rain.
-- **Park-to-hotel baggage delivery (paid):** After check-out you can send your bags from the park back to the hotel for a hands-free day in the parks — a paid service at about **¥800 per item**.
+- **Baggage delivery from JR Maihama Station (paid):** On arrival day you can drop bags at the "Bon Voyage" home-delivery counter beside JR Maihama Station and have them delivered to the hotel — a paid service at **¥800 per item**, reception from store opening until about 15:00. (This is a one-way *station → hotel* service; it is not a park pick-up.) Valuables, fragile items, drinks and precision devices are excluded.
+- **Sending bags home / to the airport:** The bell desk also handles takkyubin courier shipments (to your home, or same-day to the airport / Tokyo Station on a cash-on-delivery basis).
 - **Coin lockers:** <!-- TODO: 要確認 — 館内コインロッカーの有無、無ければ新浦安駅のロッカー事情を確認して追記 -->
 
 Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book.
@@ -110,7 +111,7 @@ Lawson steps from the hotel, open 24 hours. Handles post-park snacks and late-ni
 ¥3,000 per night per vehicle (details may vary by plan; confirm at booking).
 
 **Luggage**
-Same-day storage before check-in and paid park-to-hotel delivery — see [Luggage Storage (Before Check-in)](#luggage-storage-before-check-in--baggage-delivery) above.
+Same-day storage before check-in, plus paid baggage delivery from JR Maihama Station — see [Luggage Storage (Before Check-in)](#luggage-storage-before-check-in--baggage-delivery) above.
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.
