@@ -62,7 +62,7 @@ Guests at **Partner Hotels** and other independent hotels near Maihama use the p
 
 ## Departure day: hotel-to-station "Station Delivery"
 
-Going the other way, the **Station Delivery** service lets you drop your bags at the hotel after check-out and pick them up at the **Welcome Center 1st-floor counter** (roughly **13:00–21:00**) on your way to the station. It is a **paid** service — [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/) and [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/) both list **¥800 per item**; other hotels don't always publish the price, so confirm at the bell desk.
+Going the other way, the **Station Delivery** service lets you drop your bags at the hotel after check-out and pick them up at the **Welcome Center 1st-floor counter** (roughly **13:00–21:00**) on your way to the station. It is a **paid** service at **¥800 per item** — listed by the Disney Hotels, [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/) and [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/); a few hotels don't publish the price, so confirm at the bell desk.
 
 ---
 

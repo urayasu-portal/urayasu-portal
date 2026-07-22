@@ -97,7 +97,7 @@ Available in-house (confirm details on official website).
 Available (fee applies; confirm at booking).
 
 **Luggage**
-Storage before and after your stay at the 2F bell desk. As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); on departure, a paid Station Delivery runs the other way (hand in by 12:30, pick-up 13:00–20:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Storage before and after your stay at the 2F bell desk (free). As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); on departure, paid Station Delivery runs the other way at **¥800 per item**, paid on pick-up (hand in by 12:30, pick-up 13:00–20:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms. Marriott Bonvoy members can earn and redeem points.

@@ -1,8 +1,8 @@
 ---
 title: "Maihama Eurasia Annex | Southern France Theme, Discounted Hot Spring Access at Main Building, Shuttle from Maihama 15 Min"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-07-22"
+lastmod: 2026-07-22
 description: "Local review of Maihama Eurasia Annex. Nice/Côte d'Azur theme; guests receive a 50% discount on the natural hot spring at the main Eurasia building (campaign valid Apr–Jul 2026, others vary by period). Shuttle from Maihama Station: approx. 15 min. Check-out 11:00. Price range ¥8,000–¥20,000."
 tags:
   - Hotel
@@ -83,6 +83,9 @@ Available (details and hours: confirm on official website).
 
 **Coin Laundry / Parking**
 Confirm details on official website.
+
+**Luggage**
+Free storage **before check-in only** — unlike the main Eurasia building, the annex does not store bags after check-out, so plan your departure day accordingly. Bags shipped ahead are held until check-in (no valuables, refrigerated parcels, or cash-on-delivery). There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
 
 **Wi-Fi**
 Confirm details on official website.
