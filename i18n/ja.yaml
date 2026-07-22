@@ -5,7 +5,7 @@
 - id: nav_home
   translation: "ホーム"
 - id: nav_travel_guide
-  translation: "観光ガイド"
+  translation: "旅行ガイド"
 - id: nav_hotels
   translation: "ホテル"
 - id: hotel_badge

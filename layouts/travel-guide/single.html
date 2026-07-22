@@ -44,13 +44,13 @@
         <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else if $isZH }}面包屑导航{{ else if $isKO }}탐색 경로{{ else if $isZHTW }}麵包屑導覽{{ else }}パンくずリスト{{ end }}">
           <a href="{{ "/" | absLangURL }}">{{ if $isEN }}Home{{ else if $isZH }}首页{{ else if $isKO }}홈{{ else if $isZHTW }}首頁{{ else }}ホーム{{ end }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
-          <a href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else if $isZHTW }}旅遊指南{{ else }}観光ガイド{{ end }}</a>
+          <a href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else if $isZHTW }}旅遊指南{{ else }}旅行ガイド{{ end }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <span class="bc-current" aria-current="page">{{ .Title | truncate 28 "…" }}</span>
         </nav>
 
         <div class="hg-badges">
-          <span class="hg-badge">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else if $isZHTW }}旅遊指南{{ else }}観光ガイド{{ end }}</span>
+          <span class="hg-badge">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else if $isZHTW }}旅遊指南{{ else }}旅行ガイド{{ end }}</span>
           {{- with .Params.badge }}<span class="hg-badge-sub">{{ . }}</span>{{- end }}
         </div>
 
@@ -119,7 +119,7 @@
     {{/* 観光ガイドの他の記事 */}}
     {{- with $guides }}
     <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-compass" aria-hidden="true"></i> {{ if $isEN }}More travel guides{{ else if $isZH }}更多旅行攻略{{ else if $isKO }}더 많은 여행 가이드{{ else if $isZHTW }}更多旅遊攻略{{ else }}観光ガイドの記事{{ end }}</div>
+      <div class="widget-title"><i class="ti ti-compass" aria-hidden="true"></i> {{ if $isEN }}More travel guides{{ else if $isZH }}更多旅行攻略{{ else if $isKO }}더 많은 여행 가이드{{ else if $isZHTW }}更多旅遊攻略{{ else }}旅行ガイドの記事{{ end }}</div>
       <ol class="lg-pop-rank">
         {{- range $i, $g := first 5 . }}
         <li><a href="{{ $g.RelPermalink }}"><span class="lg-pop-num">{{ add $i 1 }}</span><span>{{ $g.Title | truncate 28 "…" }}</span></a></li>

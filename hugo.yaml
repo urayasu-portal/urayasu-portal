@@ -168,7 +168,7 @@ params:
 
 menu:
   main:
-    - name: 便利ガイド
+    - name: 生活ガイド
       identifier: life-guide
       url: /life-guide/
       weight: 10
