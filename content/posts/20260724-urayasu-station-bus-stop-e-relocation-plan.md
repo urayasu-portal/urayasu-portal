@@ -3,7 +3,7 @@ title: "【浦安】浦安駅入口Eバス停をやなぎ通りへ移す計画�
 date: 2026-07-24T07:00:00+09:00
 slug: "urayasu-station-bus-stop-e-relocation-plan"
 categories:
-  - "ニュース・事件事故"
+  - "ニュース"
 tags:
   - "浦安"
   - "浦安駅"
