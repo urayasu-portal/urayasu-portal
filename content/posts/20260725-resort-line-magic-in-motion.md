@@ -14,6 +14,9 @@ tags:
 description: "舞浜のリゾートゲートウェイ・ステーションで、初の体験型映像「マジック・イン・モーション！」が2026年7月24日に開始。手をかざすと車両デザインが変わる仕組みや、25周年フリーきっぷを紹介します。"
 eventDate: "2026-07-24/2027-03-31"
 hideEventBox: true
+cover:
+  image: "/images/posts/resort-line-magic-in-motion.jpg"
+  alt: "ディズニーリゾートライン 体験型映像「マジック・イン・モーション！」と25周年フリーきっぷ"
 draft: false
 ---
 
