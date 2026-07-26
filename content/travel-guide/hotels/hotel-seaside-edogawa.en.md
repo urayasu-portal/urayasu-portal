@@ -104,5 +104,6 @@ From approx. ¥16,000 for 2 guests (dynamic pricing). Check the latest availabil
 
 ## Related
 
+- [Kasai Rinkai Park & Aquarium](/en/travel-guide/kasai-rinkai-park/)
 - [Hotel Guide Top](/en/travel-guide/hotels/)
 - [Access Comparison](/en/travel-guide/hotels/access/)

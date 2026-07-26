@@ -68,6 +68,17 @@
   {{- end }}
 {{- end }}
 
+{{- /* ── パンくず（ホーム > 旅行ガイド > ホテル > 比較マップ） ── */}}
+<nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else if $isZH }}面包屑导航{{ else if $isKO }}탐색 경로{{ else if $isZHTW }}麵包屑導覽{{ else }}パンくずリスト{{ end }}" style="margin-bottom:16px">
+  <a href="{{ "/" | absLangURL }}">{{ if $isEN }}Home{{ else if $isZH }}首页{{ else if $isKO }}홈{{ else if $isZHTW }}首頁{{ else }}ホーム{{ end }}</a>
+  <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+  <a href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else if $isZHTW }}旅遊指南{{ else }}旅行ガイド{{ end }}</a>
+  <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+  <a href="{{ "/travel-guide/hotels/" | absLangURL }}">{{ if $isEN }}Hotels{{ else if $isZH }}酒店{{ else if $isKO }}호텔{{ else if $isZHTW }}飯店{{ else }}ホテル{{ end }}</a>
+  <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+  <span class="bc-current" aria-current="page">{{ if $isEN }}Comparison Map{{ else if $isZH }}比较地图{{ else if $isKO }}비교 지도{{ else if $isZHTW }}比較地圖{{ else }}比較マップ{{ end }}</span>
+</nav>
+
 {{- /* ── ヒーロー ─────────────────────────────── */}}
 <div class="tg-hotels-hero" style="margin-bottom:24px">
   <div class="tg-hotels-eyebrows">
@@ -181,6 +192,9 @@
     </p>
   </div>
 </div>
+
+{{- /* 旅行ガイド 横断ナビ（全記事共通・回遊の背骨） */}}
+{{- partial "travel-guide-nav.html" . }}
 
 {{- /* ── データ埋め込み ───────────────────────── */}}
 <script>var HOTELS_DATA = {{ $hotelData | jsonify | safeJS }};</script>

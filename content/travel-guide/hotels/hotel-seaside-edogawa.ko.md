@@ -104,5 +104,6 @@ JR 게이요선 1정거장으로 마이하마, 다시 디즈니 리조트 라인
 
 ## 관련 링크
 
+- [가사이 임해공원과 수족원](/ko/travel-guide/kasai-rinkai-park/)
 - [호텔 가이드 홈](/ko/travel-guide/hotels/)
 - [교통 비교](/ko/travel-guide/hotels/access/)

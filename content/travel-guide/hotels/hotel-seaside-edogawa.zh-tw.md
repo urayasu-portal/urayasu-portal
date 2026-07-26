@@ -104,5 +104,6 @@ noDate: true
 
 ## 相關連結
 
+- [葛西臨海公園與水族園](/zh-tw/travel-guide/kasai-rinkai-park/)
 - [飯店指南首頁](/zh-tw/travel-guide/hotels/)
 - [交通比較](/zh-tw/travel-guide/hotels/access/)
