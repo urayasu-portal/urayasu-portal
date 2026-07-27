@@ -689,7 +689,7 @@ async function uploadImage(pat, filename, b64) {
 }
 
 /* ── 投稿前の自動品質チェック ── */
-const ALLOWED_CATEGORIES = ['開店・閉店','ニュース・事件事故','イベント','グルメ・カフェ','スポーツ','子育て・教育','お知らせ'];
+const ALLOWED_CATEGORIES = ['開店・閉店','ニュース','イベント','グルメ・カフェ','スポーツ','子育て・教育','お知らせ'];
 function checkArticleQuality(content, isUpdate) {
   const errors = [], warns = [];
   const m = content.match(/^---\n([\s\S]*?)\n---([\s\S]*)$/);
