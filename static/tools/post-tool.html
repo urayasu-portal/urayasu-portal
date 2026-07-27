@@ -728,12 +728,6 @@ function checkArticleQuality(content, isUpdate) {
   const plainLen = body.replace(/<[^>]+>/g,'').replace(/\s+/g,'').length;
   if (plainLen < 300) warns.push(`本文が${plainLen}字と短めです（まとめ記事への統合を検討してください）`);
 
-  const descMatch = fm.match(/^description:\s*["'](.+?)["']\s*$/m);
-  if (descMatch) {
-    const len = descMatch[1].length;
-    if (len < 90 || len > 130) warns.push(`description が${len}字です（90〜130字を推奨）`);
-  }
-
   if (/<img[^>]*\balt=""[^>]*>/.test(body)) warns.push('alt が空の画像があります');
 
   return { errors, warns };
