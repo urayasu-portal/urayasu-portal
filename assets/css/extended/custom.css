@@ -1661,6 +1661,42 @@ body.pillar-travel .post-single .post-content th {
   .topic-cta-btn { width: 100%; justify-content: center; }
 }
 
+/* 本文中CTA（topic-cta.html variant=inline）。末尾カードより手前で1回だけ露出させる。
+   読書の流れを切らないよう、高さを抑えた1行構成にする。 */
+.topic-cta-inline {
+  display: flex; align-items: center; gap: 12px;
+  margin: 24px 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--up-border);
+  border-left-width: 4px;
+}
+.topic-cta-inline.is-internal { background: #FDF3EF; border-color: #F3CDBF; border-left-color: #E05535; }
+.topic-cta-inline.is-affiliate { background: #fffbf0; border-color: #f0d080; border-left-color: #B7791F; }
+.topic-cta-inline .tci-ic {
+  flex-shrink: 0;
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  background: #fff;
+  border: 1px solid var(--up-border);
+  font-size: 18px;
+}
+.topic-cta-inline.is-internal .tci-ic { color: #E05535; border-color: #F3CDBF; }
+.topic-cta-inline.is-affiliate .tci-ic { color: #B7791F; border-color: #f0d080; }
+.topic-cta-inline .tci-text { flex: 1; min-width: 0; font-size: 14px; line-height: 1.6; }
+.topic-cta-inline .tci-link { font-weight: 700; text-decoration: none !important; }
+.topic-cta-inline.is-internal .tci-link { color: #C2410C; }
+.topic-cta-inline.is-affiliate .tci-link { color: #92600F; }
+.topic-cta-inline .tci-link:hover { text-decoration: underline !important; }
+.topic-cta-inline .tci-arrow { flex-shrink: 0; font-size: 16px; color: var(--up-muted); }
+.topic-cta-inline .pr-note { margin-right: 6px; }
+@media (max-width: 480px) {
+  .topic-cta-inline { gap: 10px; padding: 11px 12px; }
+  .topic-cta-inline .tci-text { font-size: 13px; }
+  .topic-cta-inline .tci-arrow { display: none; }
+}
+
 /* ---------- お問い合わせ イントロ ---------- */
 .contact-intro {
   background: var(--cat-news-bg);

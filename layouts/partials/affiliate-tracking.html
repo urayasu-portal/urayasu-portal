@@ -1,10 +1,17 @@
 {{- /* アフィリエイト/予約CTAのクリックをGA4イベント affiliate_click として計測。
        本番のみ・gtag定義時のみ送信。イベント委譲で全ページの動的CTAにも対応。
-       対象: .lg-book-btn（予約/チケットボタン）/ rel="sponsored" / 既知ASPドメイン（アソビュー等の本文リンク含む）。 */ -}}
+       対象: .lg-book-btn（予約/チケットボタン）/ rel="sponsored" / data-aff="1" / 既知ASPドメイン。
+
+       ⚠ バリューコマース LinkSwitch(vcdal.js) は読み込み時に提携広告主リンクを書き換え、
+         href を dalr.valuecommerce.com/... に、rel を "nofollow" に差し替える（sponsored が消える）。
+         そのため rel と href だけで判定すると VC 経由のクリックを取りこぼす。
+         → 自前CTAには data-aff / data-asp をサーバー側で付与し、そちらを優先して判定する。
+         → 本文中の素リンク（アソビュー等）は書き換え後 asp='valuecommerce' として計上され、
+           広告主単位の内訳までは取れない（VCの管理画面側で確認する）。 */ -}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 <script>
 (function () {
-  var KNOWN = ['trip', 'rakuten', 'booking', 'agoda', 'jalan', 'asoview', 'expedia', 'kkday', 'klook', 'yahoo'];
+  var KNOWN = ['trip', 'rakuten', 'booking', 'agoda', 'jalan', 'asoview', 'expedia', 'kkday', 'klook', 'yahoo', 'valuecommerce', 'a8'];
   function aspOf(href) {
     var h = (href || '').toLowerCase();
     if (h.indexOf('trip.com') > -1) return 'trip';
@@ -17,20 +24,39 @@
     if (h.indexOf('kkday') > -1) return 'kkday';
     if (h.indexOf('klook') > -1) return 'klook';
     if (h.indexOf('yahoo') > -1) return 'yahoo';
+    if (h.indexOf('valuecommerce') > -1) return 'valuecommerce';
+    if (h.indexOf('a8.net') > -1) return 'a8';
     try { return new URL(href).hostname; } catch (e) { return 'other'; }
   }
   document.addEventListener('click', function (e) {
     var a = e.target.closest ? e.target.closest('a[href]') : null;
     if (!a) return;
+    if (typeof gtag !== 'function') return;
     var href = a.href || '';
+
+    /* 記事内CTA（topic-cta）の掲載位置別クリック。内部リンクCTAは affiliate_click の
+       対象外なので、本文中(inline)と末尾(full)の効果を比較するため別イベントで計測する。 */
+    var ctaId = a.getAttribute('data-cta');
+    if (ctaId) {
+      gtag('event', 'topic_cta_click', {
+        cta_id: ctaId,
+        cta_pos: a.getAttribute('data-cta-pos') || '',
+        link_url: href,
+        page_path: location.pathname,
+        page_lang: document.documentElement.lang || 'ja'
+      });
+    }
+
     var isBtn = a.classList.contains('lg-book-btn');
     var isSponsored = (' ' + (a.getAttribute('rel') || '') + ' ').indexOf(' sponsored ') > -1;
-    var asp = aspOf(href);
-    var known = KNOWN.indexOf(asp) > -1;
-    if (!(isBtn || isSponsored || known)) return;
-    if (typeof gtag !== 'function') return;
+    var isTagged = a.getAttribute('data-aff') === '1';
+    /* data-asp はサーバー側で埋めた遷移先ホスト。LinkSwitch に書き換えられても正しい広告主が残る */
+    var asp = a.getAttribute('data-asp') || aspOf(href);
+    var known = KNOWN.indexOf(aspOf(href)) > -1;
+    if (!(isBtn || isSponsored || isTagged || known)) return;
     gtag('event', 'affiliate_click', {
       asp: asp,
+      cta_pos: a.getAttribute('data-cta-pos') || '',
       link_url: href,
       link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80),
       page_path: location.pathname,

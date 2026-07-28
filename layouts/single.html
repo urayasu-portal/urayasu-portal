@@ -149,6 +149,39 @@
         {{- end }}
       {{- end }}
 
+      {{/* ─ 本文中CTA：離脱前に必ず通過する位置へコンパクト版を1つだけ挿入 ─
+           記事末尾CTAは到達率が低く（90%スクロール到達は全PVの約7%）、大半の読者に
+           見られていないため。記事の作りが一定でないので挿入位置は優先順に決める:
+             1. h2が2つ以上 … 2つ目のh2の直前（第1セクションを読み終えた区切り）
+             2. h2が1つ     … そのh2の直前（ただし手前に段落が2つ以上ある場合のみ）
+             3. h2が無い     … 2つ目の段落の直後（段落が3つ以上ある場合のみ）
+           どれにも当てはまらない短い記事は挿入せず、末尾CTAのみとする。 */}}
+      {{- if eq .Section "posts" }}
+      {{- $inlineCta := partial "topic-cta.html" (dict "page" . "variant" "inline") }}
+      {{- if gt (len (trim (printf "%s" $inlineCta) " \r\n\t")) 0 }}
+        {{- $h2list := findRE `(?is)<h2[^>]*>.*?</h2>` $content -1 }}
+        {{- $anchor := "" }}
+        {{- if ge (len $h2list) 2 }}
+          {{- $anchor = index $h2list 1 }}
+        {{- else if eq (len $h2list) 1 }}
+          {{- $anchor = index $h2list 0 }}
+          {{- /* 導入が短すぎる記事でCTAが本文冒頭に出るのを避ける */}}
+          {{- $before := index (split $content $anchor) 0 }}
+          {{- if lt (len (findRE `(?i)</p>` $before -1)) 2 }}
+            {{- $anchor = "" }}
+          {{- end }}
+        {{- end }}
+        {{- if $anchor }}
+          {{- $content = replace $content $anchor (printf "%s%s" $inlineCta $anchor) 1 }}
+        {{- else if lt (len $h2list) 1 }}
+          {{- $parts := split $content "</p>" }}
+          {{- if ge (len $parts) 4 }}
+            {{- $content = printf "%s</p>%s%s" (delimit (first 2 $parts) "</p>") $inlineCta (delimit (after 2 $parts) "</p>") }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+      {{- end }}
+
       {{- if $content }}
       <div class="post-content md-content">
         {{- if not (.Param "disableAnchoredHeadings") }}

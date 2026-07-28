@@ -1,12 +1,26 @@
 {{- /*
-  街のトピックス（posts）記事末尾の自動CTA。
+  街のトピックス（posts）記事の自動CTA。
   data/affiliate_ctas.yaml の tag_rules → category_rules の順で該当CTAを解決し、
   url が非空の場合のみ描画する（affiliate枠はASP承認後にyamlへURLを貼るだけで有効化）。
   記事側のフロントマター・本文編集は不要。
+
+  呼び出し方:
+    {{ partial "topic-cta.html" . }}                                   → 記事末尾（フル表示・カード）
+    {{ partial "topic-cta.html" (dict "page" . "variant" "inline") }}  → 本文中（1行コンパクト）
+
+  yaml側の任意キー:
+    inline: false   … その CTA を本文中には出さない（記事末尾のみ）
+    inline_title    … 本文中だけ短い文言に差し替える（未指定なら title を使う）
 */ -}}
-{{- if eq .Section "posts" }}
+{{- $page := . }}
+{{- $variant := "full" }}
+{{- if reflect.IsMap . }}
+  {{- $page = .page }}
+  {{- $variant = .variant | default "full" }}
+{{- end }}
+{{- if eq $page.Section "posts" }}
 {{- $cfg := hugo.Data.affiliate_ctas }}
-{{- $pageTags := .Params.tags | default slice }}
+{{- $pageTags := $page.Params.tags | default slice }}
 {{- $ctaIds := slice }}
 
 {{- /* タグ優先ルール */}}
@@ -17,7 +31,7 @@
 {{- end }}
 
 {{- /* カテゴリルール */}}
-{{- $cat := index (.Params.categories | default slice) 0 | default "" }}
+{{- $cat := index ($page.Params.categories | default slice) 0 | default "" }}
 {{- with index $cfg.category_rules $cat }}
   {{- $ctaIds = $ctaIds | append . }}
 {{- end }}
@@ -25,7 +39,20 @@
 {{- $ctaId := index $ctaIds 0 | default "" }}
 {{- $cta := index $cfg.ctas $ctaId }}
 {{- if and $cta $cta.url }}
+{{- $isInline := eq $variant "inline" }}
+{{- /* 本文中は yaml で inline: false を指定した CTA を出さない */}}
+{{- if or (not $isInline) (ne $cta.inline false) }}
 {{- $isAff := eq ($cta.type | default "affiliate") "affiliate" }}
+{{- if $isInline }}
+<aside class="topic-cta-inline {{ if $isAff }}is-affiliate{{ else }}is-internal{{ end }}">
+  <span class="tci-ic"><i class="ti {{ $cta.icon | default "ti-external-link" }}" aria-hidden="true"></i></span>
+  <span class="tci-text">
+    {{- if $isAff }}<span class="pr-note">PR</span>{{ end }}
+    <a class="tci-link" href="{{ $cta.url }}" data-cta="{{ $ctaId }}" data-cta-pos="inline"{{ if $isAff }} data-aff="1" data-asp="{{ (urls.Parse $cta.url).Host }}" rel="sponsored nofollow noopener" target="_blank"{{ end }}>{{ $cta.inline_title | default $cta.title }}</a>
+  </span>
+  <i class="ti ti-arrow-right tci-arrow" aria-hidden="true"></i>
+</aside>
+{{- else }}
 <aside class="topic-cta {{ if $isAff }}is-affiliate{{ else }}is-internal{{ end }}">
   <div class="topic-cta-head">
     {{- if $isAff }}<span class="pr-note">PR</span>{{ end }}
@@ -38,8 +65,10 @@
       {{- with $cta.desc }}<p class="topic-cta-desc">{{ . }}</p>{{ end }}
     </div>
   </div>
-  <a class="topic-cta-btn" href="{{ $cta.url }}"{{ if $isAff }} rel="sponsored nofollow noopener" target="_blank"{{ end }}>{{ $cta.btn }} <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+  <a class="topic-cta-btn" href="{{ $cta.url }}" data-cta="{{ $ctaId }}" data-cta-pos="full"{{ if $isAff }} data-aff="1" data-asp="{{ (urls.Parse $cta.url).Host }}" rel="sponsored nofollow noopener" target="_blank"{{ end }}>{{ $cta.btn }} <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
   {{- if $isAff }}<p class="topic-cta-note">{{ i18n "includes_pr" }}</p>{{ end }}
 </aside>
+{{- end }}
+{{- end }}
 {{- end }}
 {{- end }}
