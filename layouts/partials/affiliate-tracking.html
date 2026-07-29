@@ -47,6 +47,18 @@
       });
     }
 
+    /* 記事下の回遊ブロック（関連記事／同エリアの記事）のクリック。
+       掲載位置を変えた効果を測るために block 別に記録する。 */
+    var navBlock = a.closest ? a.closest('.related-posts, .area-posts') : null;
+    if (navBlock) {
+      gtag('event', 'related_click', {
+        block: navBlock.classList.contains('related-posts') ? 'related' : 'area',
+        link_url: href,
+        page_path: location.pathname,
+        page_lang: document.documentElement.lang || 'ja'
+      });
+    }
+
     var isBtn = a.classList.contains('lg-book-btn');
     var isSponsored = (' ' + (a.getAttribute('rel') || '') + ' ').indexOf(' sponsored ') > -1;
     var isTagged = a.getAttribute('data-aff') === '1';
