@@ -1,8 +1,8 @@
 ---
 title: "浦安市の子ども向け屋内・公共の遊び場まとめ｜雨の日・暑い日にも使える親子のおでかけガイド"
 date: 2026-06-07T10:00:00+09:00
-lastmod: 2026-07-20
-factChecked: "2026-07-14"
+lastmod: 2026-08-01
+factChecked: "2026-08-01"
 categories:
   - "子育て・教育"
 tags:
@@ -73,7 +73,7 @@ aliases:
 
 <h2 id="area">エリア別に探す</h2>
 
-<p>浦安市内を3エリアに分けて主な施設を整理しました。東京メトロ東西線で行きやすい葛西・行徳・妙典の周辺施設は<a href="#around">ページ下部</a>でご紹介します。</p>
+<p>浦安市内を3エリアに分けて主な施設を整理しました。東京メトロ東西線で行きやすい葛西・行徳の周辺施設は<a href="#around">ページ下部</a>でご紹介します。</p>
 
 <div class="lg-art-cards">
   <div class="lg-art-card"><div class="lg-art-card-title">浦安駅周辺（元町）</div><p class="lg-art-card-desc">猫実・堀江・当代島・北栄・弁天</p><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>浦安市子育て支援センター（猫実）</li><li>堀江つどいの広場（堀江）</li><li>浦安駅前・弁天・愛和元町の地域子育て支援センター</li></ul></div>
@@ -210,12 +210,11 @@ aliases:
 
 <h2 id="around">浦安から行きやすい周辺エリアの施設</h2>
 
-<p>東京メトロ東西線を使えば、葛西・行徳・妙典エリアの公共施設にも気軽に行けます。市外の施設は対象者や利用ルールが各自治体で異なるため、おでかけ前に各施設の公式情報をご確認ください。</p>
+<p>東京メトロ東西線を使えば、葛西・行徳エリアの公共施設にも気軽に行けます。市外の施設は対象者や利用ルールが各自治体で異なるため、おでかけ前に各施設の公式情報をご確認ください。</p>
 
 <div class="lg-art-cards">
   <div class="lg-art-card"><div class="lg-art-card-title">葛西・西葛西（江戸川区）</div><p class="lg-art-card-desc">新浦安駅から東西線で2〜4駅。区立図書館のこどもコーナーや子育てひろば、葛西臨海水族園（有料・屋内展示は雨天でも楽しめます）など、乳幼児から小学生まで楽しめる施設が集まっています。</p></div>
   <div class="lg-art-card"><div class="lg-art-card-title">行徳・南行徳（市川市）</div><p class="lg-art-card-desc">浦安駅から東西線で1〜2駅。市川市立図書館の行徳・南行徳の分館や、市民センターの集会施設などを利用できます。市川市在住でなくても使える施設が多く、雨の日の外出先として便利です。</p></div>
-  <div class="lg-art-card"><div class="lg-art-card-title">妙典（市川市）</div><p class="lg-art-card-desc">浦安駅から東西線で約10分。妙典図書館には広いこどもコーナーがあり、読み聞かせイベントも行われています。あわせて市民向けの集会施設も利用できます。</p></div>
 </div>
 
 <h2 id="checklist">お出かけ前のチェックリスト</h2>

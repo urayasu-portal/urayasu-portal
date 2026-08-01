@@ -1,8 +1,8 @@
 ---
 title: "浦安市の図書館・公共施設一覧ガイド｜図書館・公民館・文化施設・行政窓口を目的別に探せる便利帳"
 date: 2026-06-13T15:00:00+09:00
-lastmod: 2026-06-13T15:00:00+09:00
-factChecked: "2026-07-14"
+lastmod: 2026-08-01
+factChecked: "2026-08-01"
 categories:
   - "お知らせ"
 tags:
@@ -83,7 +83,7 @@ aliases:
   <div class="lg-art-card"><div class="lg-art-card-title">新浦安駅周辺</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>新浦安駅前行政サービスセンター</li><li>Wave101</li><li>J:COM浦安音楽ホール</li><li>総合体育館</li></ul></div>
   <div class="lg-art-card"><div class="lg-art-card-title">中町エリア</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>富岡公民館（図書館分館あり）</li><li>美浜公民館（図書館分館あり）</li><li>中央武道館</li></ul></div>
   <div class="lg-art-card"><div class="lg-art-card-title">新町エリア</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>高洲公民館（図書館分館あり）</li><li>日の出公民館（図書館分館あり）</li><li>健康センター</li></ul></div>
-  <div class="lg-art-card"><div class="lg-art-card-title">舞浜・運動公園周辺</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>舞浜駅前行政サービスセンター</li><li>運動公園周辺施設</li><li>舞浜公民館</li></ul></div>
+  <div class="lg-art-card"><div class="lg-art-card-title">舞浜・運動公園周辺</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>舞浜駅前行政サービスセンター</li><li>運動公園（総合体育館・球技場など）</li></ul></div>
 </div>
 
 <h2 id="library">図書館・図書サービス</h2>
