@@ -2,6 +2,7 @@
 title: "浦安市交通公園：ディズニーから1駅、無料で遊べる子どもの楽園"
 description: "自転車・ポニー乗馬・モルモットとのふれあいがすべて無料。ディズニー旅行の合間の「休息日」にぴったりの、地元・浦安のファミリー向けスポットを紹介します。"
 date: 2026-07-07
+factChecked: "2026-07-21"
 draft: false
 cover:
   image: "/images/travel-guide/urayasu-traffic-park.jpg"

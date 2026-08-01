@@ -2,6 +2,7 @@
 title: "舞浜・浦安・新浦安観光ガイド｜ディズニー周辺の過ごし方・観光スポットまとめ"
 date: 2026-06-18T00:00:00+09:00
 lastmod: 2026-07-21T00:00:00+09:00
+factChecked: "2026-07-21"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - "舞浜"

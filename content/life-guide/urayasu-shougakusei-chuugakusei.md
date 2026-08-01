@@ -3,6 +3,7 @@ title: "【浦安市】小学生・中学生の支援ガイド｜学童・教育
 slug: "urayasu-shougakusei-chuugakusei"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:50:00+09:00
+factChecked: "2026-07-21"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "小学生", "中学生", "学童", "不登校", "浦安市"]
