@@ -1,8 +1,8 @@
 ---
 title: "Things to Do near Tokyo Disney Resort | Maihama, Urayasu & Shin-Urayasu Sightseeing Guide"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-07-21T00:00:00+09:00
-factChecked: "2026-07-21"
+lastmod: 2026-08-01T00:00:00+09:00
+factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - "Maihama"

@@ -1,8 +1,8 @@
 ---
 title: "東京迪士尼周邊遊覽指南 | 舞濱·浦安·新浦安的觀光景點"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-07-21
-factChecked: "2026-07-21"
+lastmod: 2026-08-01
+factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - 舞濱

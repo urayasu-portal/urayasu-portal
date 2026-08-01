@@ -2,7 +2,7 @@
 title: "チームラボプラネッツ（豊洲）：ディズニーから30分、裸足で水の中を歩くアート"
 description: "舞浜から電車で約30分。膝まで水に入り、裸足で光の中を歩く世界的人気のデジタルアートミュージアム。雨の日プランBにも、パークとは違う「もうひとつの非日常」にも。チケットの買い方と服装の注意まで地元が解説します。"
 date: 2026-07-07
-factChecked: "2026-07-21"
+factChecked: "2026-08-01"
 draft: false
 cover:
   image: "/images/travel-guide/teamlab-planets.jpg"

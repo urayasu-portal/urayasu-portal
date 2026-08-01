@@ -2,7 +2,7 @@
 title: "Tokyo Disney Trip Prep Checklist: What to Do 2 Months, 1 Month and 1 Week Before"
 description: "The pre-trip checklist locals wish every visitor had: when Disney tickets actually go on sale, why your credit card might fail, what to set up on your phone, how much cash to carry, and the one clothing item teamLab requires. Organized by countdown."
 date: 2026-07-07
-factChecked: "2026-07-21"
+factChecked: "2026-08-01"
 draft: false
 hideEventBox: true
 slug: "pre-trip-checklist"
