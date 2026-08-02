@@ -18,6 +18,9 @@ checkDate: "2026-08"
 sources:
   - name: "J:COM浦安音楽ホール「ワンコインコンサート Vol.24」"
     url: "https://www.urayasu-concerthall.jp/ev_calendar/?mc_id=10730"
+cover:
+  bodyImage: /images/posts/20260802-horn-onecoin-concert-20260808-body.jpg
+  alt: "【新浦安】親子で楽しむ500円ホルンコンサート"
 draft: false
 ---
 <p>J:COM浦安音楽ホールで2026年8月8日（土）、「0才から大人まで みんなで楽しむ ワンコインコンサート Vol.24」が開催されます。</p>
