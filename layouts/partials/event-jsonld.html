@@ -13,8 +13,19 @@
 {{- if and (eq .Section "posts") .Params.eventDate }}
 
 {{- $name   := .Title | plainify }}
-{{- $start  := .Params.eventDate }}
-{{- $end    := .Params.eventEndDate | default .Params.eventDate }}
+{{- /* eventDate は 単日 / スラッシュ範囲("A/B") / YAMLリスト を許容。
+       startDate=初日・endDate=最終日 に正規化してから出力する（不正なJSON-LDを防ぐ）。 */ -}}
+{{- $ed := .Params.eventDate }}
+{{- $start := "" }}{{- $end := "" }}
+{{- if reflect.IsSlice $ed }}
+  {{- $start = printf "%v" (index $ed 0) }}
+  {{- $end   = printf "%v" (index (last 1 $ed) 0) }}
+{{- else }}
+  {{- $parts := split (printf "%v" $ed) "/" }}
+  {{- $start = index $parts 0 }}
+  {{- $end   = index (last 1 $parts) 0 }}
+{{- end }}
+{{- with .Params.eventEndDate }}{{- $end = . }}{{- end }}
 {{- $loc    := .Params.eventLocation | default "浦安市" }}
 {{- $desc   := .Summary | plainify | truncate 120 }}
 {{- with .Description }}{{- $desc = . | plainify }}{{- end }}
