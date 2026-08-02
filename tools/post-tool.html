@@ -316,7 +316,8 @@ async function processImage(file, role, seq) {
   const bitmap = await loadImageBitmap(file);
   const maxSide = 1200;
   let width = bitmap.width, height = bitmap.height;
-  if (width > maxSide || height > maxSide) {
+  const resized = width > maxSide || height > maxSide;
+  if (resized) {
     if (width >= height) { height = Math.round(height * maxSide / width); width = maxSide; }
     else { width = Math.round(width * maxSide / height); height = maxSide; }
   }
@@ -324,21 +325,120 @@ async function processImage(file, role, seq) {
   canvas.width = width; canvas.height = height;
   canvas.getContext('2d').drawImage(bitmap, 0, 0, width, height);
 
-  let quality = 0.82;
-  let blob = await canvasToWebp(canvas, quality);
-  let warn = '';
-  if (blob.size > 500 * 1024) {
-    blob = await canvasToWebp(canvas, 0.7);
-    if (blob.size > 500 * 1024) warn = '　⚠️ 変換後も500KB超です';
+  let blob = await canvasToWebp(canvas, 0.82);
+  if (blob.size > 500 * 1024) blob = await canvasToWebp(canvas, 0.7);
+  let outExt = 'webp', note = '';
+
+  // 最適化済みJPEG・平坦なPNG・元からWebP等は、WebPへ再エンコードすると逆に太る。
+  // その場合は再エンコードせず、元画像から EXIF 等のメタデータだけを除いたものを使う
+  // （リサイズが必要だった画像は長辺1200pxの制約を優先するので対象外）。
+  if (!resized) {
+    const stripped = await stripMetadata(file);
+    if (stripped && stripped.blob.size < blob.size) {
+      blob = stripped.blob; outExt = stripped.ext;
+      note = '　※WebPだと増えるため元形式を維持';
+    }
   }
-  const webpFile = new File([blob], file.name.replace(/\.[^.]+$/, '') + '.webp', { type: 'image/webp' });
-  const filename = buildAutoFilename(role, 'webp', seq) || sanitize(webpFile.name);
+
+  const warn = blob.size > 500 * 1024 ? '　⚠️ 500KB超です' : '';
+  const outFile = new File([blob], file.name.replace(/\.[^.]+$/, '') + '.' + outExt, { type: blob.type });
+  const filename = buildAutoFilename(role, outExt, seq) || sanitize(outFile.name);
   return {
-    file: webpFile,
+    file: outFile,
     skip: false,
     filename,
-    info: `元: ${formatKB(origKB)} → 変換後: ${formatKB(blob.size / 1024)} ／ EXIF削除済み${warn}`,
+    info: `元: ${formatKB(origKB)} → 変換後: ${formatKB(blob.size / 1024)}（${outExt}）／ EXIF削除済み${note}${warn}`,
   };
+}
+
+/* 元画像を再エンコードせずメタデータ（EXIF/GPS/コメント等）だけを除去する。
+   画質は完全に維持され、サイズが元より増えることはない。
+   対応: JPEG / PNG / WebP。非対応形式は null（＝WebP変換版をそのまま使う）。 */
+async function stripMetadata(file) {
+  try {
+    const buf = new Uint8Array(await file.arrayBuffer());
+    if (buf.length < 12) return null;
+    const tag = (o, n) => String.fromCharCode(...buf.subarray(o, o + n));
+    if (buf[0] === 0xFF && buf[1] === 0xD8) {
+      return { blob: new Blob(stripJpegMeta(buf), { type: 'image/jpeg' }), ext: 'jpg' };
+    }
+    if (buf[0] === 0x89 && tag(1, 3) === 'PNG') {
+      return { blob: new Blob(stripPngMeta(buf), { type: 'image/png' }), ext: 'png' };
+    }
+    if (tag(0, 4) === 'RIFF' && tag(8, 4) === 'WEBP') {
+      return { blob: new Blob(stripWebpMeta(buf), { type: 'image/webp' }), ext: 'webp' };
+    }
+  } catch (e) { /* 解析に失敗したらWebP変換版にフォールバック */ }
+  return null;
+}
+/* 解析に失敗したら投げる。呼び出し元(stripMetadata)が握って null を返し、WebP変換版に戻る。
+   ここで元データをそのまま返してしまうと EXIF が残ったままになるため、必ず失敗扱いにする。 */
+function badImage() { throw new Error('unparsable'); }
+
+/* JPEG: APP1(EXIF/XMP)・APP13(IPTC)・COM を落とす。ICC(APP2)やJFIF(APP0)は色が変わるので残す。 */
+function stripJpegMeta(buf) {
+  const out = [buf.subarray(0, 2)];
+  let i = 2;
+  while (i + 1 < buf.length) {
+    if (buf[i] !== 0xFF) badImage();
+    const marker = buf[i + 1];
+    if (marker === 0xFF) { i++; continue; }            // マーカー前のフィルバイト
+    if (marker === 0x01 || (marker >= 0xD0 && marker <= 0xD9)) { out.push(buf.subarray(i, i + 2)); i += 2; continue; }
+    if (marker === 0xDA) { out.push(buf.subarray(i)); return out; }  // SOS以降は画像データ
+    if (i + 4 > buf.length) badImage();
+    const len = (buf[i + 2] << 8) | buf[i + 3];
+    if (len < 2 || i + 2 + len > buf.length) badImage();
+    if (marker !== 0xE1 && marker !== 0xED && marker !== 0xFE) out.push(buf.subarray(i, i + 2 + len));
+    i += 2 + len;
+  }
+  return badImage();                                   // SOSに到達しなかった＝壊れている
+}
+/* PNG: テキスト・EXIF・タイムスタンプ系チャンクを落とす。iCCP/gAMA等の色情報は残す。 */
+function stripPngMeta(buf) {
+  const DROP = new Set(['tEXt', 'zTXt', 'iTXt', 'eXIf', 'tIME']);
+  const dv = new DataView(buf.buffer, buf.byteOffset, buf.byteLength);
+  const out = [buf.subarray(0, 8)];
+  let i = 8, sawEnd = false;
+  while (i + 12 <= buf.length) {
+    const len   = dv.getUint32(i);
+    const type  = String.fromCharCode(...buf.subarray(i + 4, i + 8));
+    const total = 12 + len;
+    if (i + total > buf.length) badImage();
+    if (!DROP.has(type)) out.push(buf.subarray(i, i + total));
+    i += total;
+    if (type === 'IEND') { sawEnd = true; break; }
+  }
+  if (!sawEnd) badImage();
+  return out;
+}
+/* WebP: RIFFコンテナから EXIF/XMP チャンクを落とし、RIFFサイズとVP8Xのフラグを整合させる。 */
+function stripWebpMeta(buf) {
+  const DROP = new Set(['EXIF', 'XMP ']);
+  const dv = new DataView(buf.buffer, buf.byteOffset, buf.byteLength);
+  const chunks = [];
+  let i = 12, dropped = false;
+  while (i + 8 <= buf.length) {
+    const type  = String.fromCharCode(...buf.subarray(i, i + 4));
+    const size  = dv.getUint32(i + 4, true);
+    const total = 8 + size + (size & 1);            // 奇数長は1バイトパディング
+    if (i + total > buf.length) badImage();
+    if (DROP.has(type)) { dropped = true; }
+    else {
+      let chunk = buf.subarray(i, i + total);
+      if (type === 'VP8X' && size >= 1) {           // EXIF/XMP 有りフラグを下ろす
+        chunk = chunk.slice();
+        chunk[8] &= ~0x0C;
+      }
+      chunks.push(chunk);
+    }
+    i += total;
+  }
+  if (!chunks.length) badImage();
+  if (!dropped) return [buf];                       // 元からメタデータ無し＝そのままで安全
+  let payload = 0; chunks.forEach(c => { payload += c.length; });
+  const head = buf.slice(0, 12);
+  new DataView(head.buffer).setUint32(4, payload + 4, true);
+  return [head, ...chunks];
 }
 function loadImageBitmap(file) {
   if (window.createImageBitmap) {
