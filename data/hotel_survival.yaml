@@ -18,8 +18,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 6
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
       - role: "drugstore"
@@ -31,9 +31,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 10
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 9
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -45,9 +45,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 10
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 9
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -65,8 +65,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 6
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "miracosta"
@@ -95,8 +95,8 @@ hotels:
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
         walk_min: 11
-        lat: 35.634299
-        lng: 139.886566
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -109,8 +109,8 @@ hotels:
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
         walk_min: 11
-        lat: 35.634299
-        lng: 139.886566
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -139,9 +139,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 15
-        lat: 35.63686
-        lng: 139.892838
+        walk_min: 14
+        lat: 35.6350791
+        lng: 139.8942967
         address: "千葉県浦安市弁天3-2-97"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "fantasy-springs-hotel"
@@ -169,9 +169,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 14
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 13
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -183,9 +183,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 14
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 13
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -203,8 +203,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 16
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "ambassador-hotel"
@@ -246,9 +246,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 2
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 3
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -278,8 +278,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 8
-        lat: 35.63686
-        lng: 139.892838
+        lat: 35.6350791
+        lng: 139.8942967
         address: "千葉県浦安市弁天3-2-97"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "toy-story-hotel"
@@ -310,8 +310,8 @@ hotels:
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
         walk_min: 18
-        lat: 35.634299
-        lng: 139.886566
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -324,8 +324,8 @@ hotels:
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
         walk_min: 18
-        lat: 35.634299
-        lng: 139.886566
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -343,8 +343,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 21
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "celebration-wish"
@@ -361,8 +361,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 4
-        lat: 35.638119
-        lng: 139.927719
+        lat: 35.6382487
+        lng: 139.927507
         address: "千葉県浦安市明海5-8-15"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -388,9 +388,9 @@ hotels:
         hours_zh: "视店铺而定（需确认）"
         hours_ko: "매장에 따라（확인 필요）"
         hours_zhtw: "視店鋪而定（需確認）"
-        walk_min: 24
-        lat: 35.649063
-        lng: 139.913803
+        walk_min: 25
+        lat: 35.6489350
+        lng: 139.9131256
         address: "千葉県浦安市入船1 新浦安駅前"
       - role: "laundry"
         in_building: true
@@ -407,8 +407,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 4
-        lat: 35.641151
-        lng: 139.930267
+        lat: 35.6408394
+        lng: 139.928894
         address: "千葉県浦安市日の出5-7-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "celebration-discover"
@@ -425,8 +425,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 2
-        lat: 35.637997
-        lng: 139.931976
+        lat: 35.637457
+        lng: 139.9316336
         address: "千葉県浦安市日の出7-2-3"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -453,8 +453,8 @@ hotels:
         hours_ko: "매장에 따라（확인 필요）"
         hours_zhtw: "視店鋪而定（需確認）"
         walk_min: 25
-        lat: 35.649063
-        lng: 139.913803
+        lat: 35.6489350
+        lng: 139.9131256
         address: "千葉県浦安市入船1 新浦安駅前"
       - role: "laundry"
         in_building: true
@@ -470,9 +470,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 4
-        lat: 35.641151
-        lng: 139.930267
+        walk_min: 5
+        lat: 35.6408394
+        lng: 139.928894
         address: "千葉県浦安市日の出5-7-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "hotel-okura-tokyo-bay"
@@ -502,9 +502,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 17
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 16
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -516,9 +516,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 17
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 16
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -548,8 +548,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 20
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "grand-nikko-tokyo-bay"
@@ -577,9 +577,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 16
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 15
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -591,9 +591,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 16
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 15
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -611,8 +611,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 17
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "sheraton-grande-tokyo-bay"
@@ -642,9 +642,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 16
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 15
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -656,9 +656,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 16
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 15
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -675,9 +675,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 19
-        lat: 35.638699
-        lng: 139.882965
+        walk_min: 20
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "hilton-tokyo-bay"
@@ -707,9 +707,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 18
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 17
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -721,9 +721,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 18
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 17
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -740,9 +740,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 19
-        lat: 35.638699
-        lng: 139.882965
+        walk_min: 20
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "maihama-hotel-first-resort"
@@ -769,9 +769,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 15
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 14
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -783,9 +783,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 15
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 14
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -803,8 +803,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 15
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "dreamgate-maihama"
@@ -847,8 +847,8 @@ hotels:
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
         walk_min: 3
-        lat: 35.634299
-        lng: 139.886566
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -865,9 +865,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 5
-        lat: 35.638699
-        lng: 139.882965
+        walk_min: 6
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "maihama-view-hotel"
@@ -895,9 +895,9 @@ hotels:
         hours_zh: "10:00～21:00"
         hours_ko: "10:00～21:00"
         hours_zhtw: "10:00～21:00"
-        walk_min: 16
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 15
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4 イクスピアリ2F シアター・フロント"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -909,9 +909,9 @@ hotels:
         hours_zh: "10:00～22:30"
         hours_ko: "10:00～22:30"
         hours_zhtw: "10:00～22:30"
-        walk_min: 16
-        lat: 35.634299
-        lng: 139.886566
+        walk_min: 15
+        lat: 35.6342940
+        lng: 139.8855631
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
@@ -941,8 +941,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 16
-        lat: 35.638699
-        lng: 139.882965
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "royal-park-maihama"
@@ -972,9 +972,9 @@ hotels:
         hours_zh: "9:00～23:00"
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
-        walk_min: 24
-        lat: 35.643097
-        lng: 139.900177
+        walk_min: 23
+        lat: 35.6428455
+        lng: 139.9004096
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.welcia.co.jp/"
       - role: "supermarket"
@@ -986,9 +986,9 @@ hotels:
         hours_zh: "周一至周六 10:00～20:00／周日 9:00～20:00"
         hours_ko: "월~토 10:00～20:00／일 9:00～20:00"
         hours_zhtw: "週一至週六 10:00～20:00／週日 9:00～20:00"
-        walk_min: 22
-        lat: 35.637661
-        lng: 139.911209
+        walk_min: 23
+        lat: 35.6378181
+        lng: 139.9111512
         address: "千葉県浦安市高洲2-3-12"
         url: "https://www.ysmart.co.jp/"
       - role: "laundry"
@@ -1005,9 +1005,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 15
-        lat: 35.63686
-        lng: 139.892838
+        walk_min: 13
+        lat: 35.6350791
+        lng: 139.8942967
         address: "千葉県浦安市弁天3-2-97"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "mystays-maihama"
@@ -1023,9 +1023,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 6
-        lat: 35.63686
-        lng: 139.892838
+        walk_min: 4
+        lat: 35.6350791
+        lng: 139.8942967
         address: "千葉県浦安市弁天3-2-97"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -1051,9 +1051,9 @@ hotels:
         hours_zh: "9:00～23:00"
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
-        walk_min: 17
-        lat: 35.643097
-        lng: 139.900177
+        walk_min: 18
+        lat: 35.6431671
+        lng: 139.9006595
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.summitstore.co.jp/"
       - role: "laundry"
@@ -1082,9 +1082,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 6
-        lat: 35.63686
-        lng: 139.892838
+        walk_min: 4
+        lat: 35.6350791
+        lng: 139.8942967
         address: "千葉県浦安市弁天3-2-97"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "maihama-eurasia"
@@ -1099,9 +1099,9 @@ hotels:
         hours_ko: "24시간 영업"
         hours_zhtw: "24小時營業"
         is_24h: true
-        walk_min: 5
-        lat: 35.626034
-        lng: 139.8992
+        walk_min: 7
+        lat: 35.6239351
+        lng: 139.8994632
         address: "千葉県浦安市千鳥12-7"
         url: "https://www.daily-yamazaki.jp/"
       - role: "drugstore"
@@ -1114,8 +1114,8 @@ hotels:
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
         walk_min: 23
-        lat: 35.643097
-        lng: 139.900177
+        lat: 35.6428455
+        lng: 139.9004096
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.welcia.co.jp/"
       - role: "supermarket"
@@ -1128,8 +1128,8 @@ hotels:
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
         walk_min: 23
-        lat: 35.643097
-        lng: 139.900177
+        lat: 35.6431671
+        lng: 139.9006595
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.summitstore.co.jp/"
       - role: "laundry"
@@ -1146,9 +1146,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 14
-        lat: 35.63686
-        lng: 139.892838
+        walk_min: 12
+        lat: 35.6350791
+        lng: 139.8942967
         address: "千葉県浦安市弁天3-2-97"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "eurasia-annex"
@@ -1163,9 +1163,9 @@ hotels:
         hours_ko: "24시간 영업"
         hours_zhtw: "24小時營業"
         is_24h: true
-        walk_min: 6
-        lat: 35.626034
-        lng: 139.8992
+        walk_min: 4
+        lat: 35.6239351
+        lng: 139.8994632
         address: "千葉県浦安市千鳥12-7"
         url: "https://www.daily-yamazaki.jp/"
       - role: "drugstore"
@@ -1177,9 +1177,9 @@ hotels:
         hours_zh: "9:00～23:00"
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
-        walk_min: 28
-        lat: 35.643097
-        lng: 139.900177
+        walk_min: 27
+        lat: 35.6428455
+        lng: 139.9004096
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.welcia.co.jp/"
       - role: "supermarket"
@@ -1192,8 +1192,8 @@ hotels:
         hours_ko: "월~토 10:00～20:00／일 9:00～20:00"
         hours_zhtw: "週一至週六 10:00～20:00／週日 9:00～20:00"
         walk_min: 22
-        lat: 35.637661
-        lng: 139.911209
+        lat: 35.6378181
+        lng: 139.9111512
         address: "千葉県浦安市高洲2-3-12"
         url: "https://www.ysmart.co.jp/"
       - role: "laundry"
@@ -1210,9 +1210,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 22
-        lat: 35.637566
-        lng: 139.910934
+        walk_min: 21
+        lat: 35.6371784
+        lng: 139.9105209
         address: "千葉県浦安市高洲2-4-10"
         url: "https://www.sej.co.jp/shop/"
   - slug: "hyatt-regency-tokyo-bay"
@@ -1228,9 +1228,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "check"
-        walk_min: 3
-        lat: 35.638119
-        lng: 139.927719
+        walk_min: 2
+        lat: 35.6382487
+        lng: 139.927507
         address: "千葉県浦安市明海5-8-15"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -1243,8 +1243,8 @@ hotels:
         hours_ko: "9:00～22:00"
         hours_zhtw: "9:00～22:00"
         walk_min: 7
-        lat: 35.642681
-        lng: 139.925476
+        lat: 35.6423491
+        lng: 139.9259429
         address: "千葉県浦安市日の出5-1-28"
         url: "https://www.matsukiyococokara-online.com/store/"
       - role: "supermarket"
@@ -1257,8 +1257,8 @@ hotels:
         hours_ko: "9:00～24:00"
         hours_zhtw: "9:00～24:00"
         walk_min: 7
-        lat: 35.642681
-        lng: 139.925476
+        lat: 35.6423491
+        lng: 139.9259429
         address: "千葉県浦安市日の出5-1-28"
         url: "https://www.belc.jp/"
       - role: "laundry"
@@ -1287,9 +1287,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 7
-        lat: 35.641151
-        lng: 139.930267
+        walk_min: 6
+        lat: 35.6408394
+        lng: 139.928894
         address: "千葉県浦安市日の出5-7-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "comfort-suites-tokyo-bay"
@@ -1306,8 +1306,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 0
-        lat: 35.638119
-        lng: 139.927719
+        lat: 35.6382487
+        lng: 139.927507
         address: "千葉県浦安市明海5-8-15"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -1319,9 +1319,9 @@ hotels:
         hours_zh: "9:00～22:00"
         hours_ko: "9:00～22:00"
         hours_zhtw: "9:00～22:00"
-        walk_min: 7
-        lat: 35.642681
-        lng: 139.925476
+        walk_min: 6
+        lat: 35.6423491
+        lng: 139.9259429
         address: "千葉県浦安市日の出5-1-28"
         url: "https://www.matsukiyococokara-online.com/store/"
       - role: "supermarket"
@@ -1333,9 +1333,9 @@ hotels:
         hours_zh: "9:00～24:00"
         hours_ko: "9:00～24:00"
         hours_zhtw: "9:00～24:00"
-        walk_min: 7
-        lat: 35.642681
-        lng: 139.925476
+        walk_min: 6
+        lat: 35.6423491
+        lng: 139.9259429
         address: "千葉県浦安市日の出5-1-28"
         url: "https://www.belc.jp/"
       - role: "laundry"
@@ -1352,9 +1352,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 5
-        lat: 35.641151
-        lng: 139.930267
+        walk_min: 4
+        lat: 35.6408394
+        lng: 139.928894
         address: "千葉県浦安市日の出5-7-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "brighton-tokyo-bay"
@@ -1371,8 +1371,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 2
-        lat: 35.651051
-        lng: 139.912766
+        lat: 35.6504436
+        lng: 139.9124567
         address: "千葉県浦安市美浜1-8-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -1416,8 +1416,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 2
-        lat: 35.648838
-        lng: 139.911865
+        lat: 35.6487436
+        lng: 139.9122153
         address: "千葉県浦安市入船1-6-1"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "oriental-tokyo-bay"
@@ -1434,8 +1434,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 0
-        lat: 35.651051
-        lng: 139.912766
+        lat: 35.6504436
+        lng: 139.9124567
         address: "千葉県浦安市美浜1-8-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -1484,8 +1484,8 @@ hotels:
         hours_zhtw: "7:00-24:00 ※11:00-15:00 休息"
         atm_intl: "check"
         walk_min: 0
-        lat: 35.647377
-        lng: 139.919174
+        lat: 35.6472652
+        lng: 139.9199183
         address: "千葉県浦安市日の出1丁目1-1"
         url: "https://store.family.co.jp/"
       - role: "drugstore"
@@ -1497,9 +1497,9 @@ hotels:
         hours_zh: "9:00～21:00"
         hours_ko: "9:00～21:00"
         hours_zhtw: "9:00～21:00"
-        walk_min: 7
-        lat: 35.643726
-        lng: 139.922821
+        walk_min: 8
+        lat: 35.6428345
+        lng: 139.9227975
         address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -1561,9 +1561,9 @@ hotels:
         hours_zh: "9:00～22:00"
         hours_ko: "9:00～22:00"
         hours_zhtw: "9:00～22:00"
-        walk_min: 10
-        lat: 35.642681
-        lng: 139.925476
+        walk_min: 9
+        lat: 35.6423491
+        lng: 139.9259429
         address: "千葉県浦安市日の出5-1-28"
         url: "https://www.matsukiyococokara-online.com/store/"
       - role: "supermarket"
@@ -1595,8 +1595,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 9
-        lat: 35.641327
-        lng: 139.920609
+        lat: 35.6416009
+        lng: 139.9204501
         address: "千葉県浦安市明海4-2-3"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "hoshinoresorts-1955-tokyo-bay"
@@ -1613,8 +1613,8 @@ hotels:
         is_24h: true
         atm_intl: "check"
         walk_min: 0
-        lat: 35.637997
-        lng: 139.931976
+        lat: 35.637457
+        lng: 139.9316336
         address: "千葉県浦安市日の出7-2-3"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -1640,9 +1640,9 @@ hotels:
         hours_zh: "9:00～24:00"
         hours_ko: "9:00～24:00"
         hours_zhtw: "9:00～24:00"
-        walk_min: 11
-        lat: 35.642681
-        lng: 139.925476
+        walk_min: 10
+        lat: 35.6423491
+        lng: 139.9259429
         address: "千葉県浦安市日の出5-1-28"
         url: "https://www.belc.jp/"
       - role: "laundry"
@@ -1660,8 +1660,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 6
-        lat: 35.641151
-        lng: 139.930267
+        lat: 35.6408394
+        lng: 139.928894
         address: "千葉県浦安市日の出5-7-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "lagent-tokyo-bay"
@@ -1678,8 +1678,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 1
-        lat: 35.641151
-        lng: 139.930267
+        lat: 35.6408394
+        lng: 139.928894
         address: "千葉県浦安市日の出5-7-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
       - role: "drugstore"
@@ -1705,9 +1705,9 @@ hotels:
         hours_zh: "9:00～24:00"
         hours_ko: "9:00～24:00"
         hours_zhtw: "9:00～24:00"
-        walk_min: 6
-        lat: 35.642681
-        lng: 139.925476
+        walk_min: 5
+        lat: 35.6423491
+        lng: 139.9259429
         address: "千葉県浦安市日の出5-1-28"
         url: "https://www.belc.jp/"
       - role: "laundry"
@@ -1725,8 +1725,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 1
-        lat: 35.641151
-        lng: 139.930267
+        lat: 35.6408394
+        lng: 139.928894
         address: "千葉県浦安市日の出5-7-2"
         url: "https://www.e-map.ne.jp/p/lawson/"
   - slug: "ibis-styles-tokyo-bay"
@@ -1742,8 +1742,8 @@ hotels:
         hours_zhtw: "7:00-24:00 ※11:00-15:00 休息"
         atm_intl: "check"
         walk_min: 4
-        lat: 35.647377
-        lng: 139.919174
+        lat: 35.6472652
+        lng: 139.9199183
         address: "千葉県浦安市日の出1丁目1-1"
         url: "https://store.family.co.jp/"
       - role: "drugstore"
@@ -1755,9 +1755,9 @@ hotels:
         hours_zh: "9:00～21:00"
         hours_ko: "9:00～21:00"
         hours_zhtw: "9:00～21:00"
-        walk_min: 8
-        lat: 35.643726
-        lng: 139.922821
+        walk_min: 9
+        lat: 35.6428345
+        lng: 139.9227975
         address: "千葉県浦安市明海4-1-1 ニューコースト新浦安1F"
         url: "https://shop.tomods.jp/"
       - role: "supermarket"
@@ -1805,8 +1805,8 @@ hotels:
         hours_zhtw: "7:00-24:00 ※11:00-15:00 休息"
         atm_intl: "check"
         walk_min: 7
-        lat: 35.647377
-        lng: 139.919174
+        lat: 35.6472652
+        lng: 139.9199183
         address: "千葉県浦安市日の出1丁目1-1"
         url: "https://store.family.co.jp/"
       - role: "drugstore"
@@ -1819,8 +1819,8 @@ hotels:
         hours_ko: "월~금 9:00～20:00／토 9:00～19:00／일·공휴일 10:00～18:30"
         hours_zhtw: "週一至週五 9:00～20:00／週六 9:00～19:00／週日及假日 10:00～18:30"
         walk_min: 8
-        lat: 35.648975
-        lng: 139.913177
+        lat: 35.6489350
+        lng: 139.9131256
         address: "千葉県浦安市入船1-5-1 MONA新浦安 B館2F"
         url: "https://www.cocokarafine.co.jp/"
       - role: "supermarket"
@@ -1833,9 +1833,9 @@ hotels:
         hours_ko: "8:00～23:00"
         hours_zhtw: "8:00～23:00"
         atm_intl: "1"
-        walk_min: 8
-        lat: 35.649055
-        lng: 139.914963
+        walk_min: 7
+        lat: 35.6489623
+        lng: 139.9148950
         address: "千葉県浦安市入船1-4-1"
         url: "https://www.aeon.jp/"
       - role: "laundry"
@@ -1871,8 +1871,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 2
-        lat: 35.643391
-        lng: 139.90538
+        lat: 35.6432417
+        lng: 139.9053185
         address: "千葉県浦安市今川4丁目1-1"
         url: "https://www.sej.co.jp/shop/"
       - role: "drugstore"
@@ -1885,8 +1885,8 @@ hotels:
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
         walk_min: 5
-        lat: 35.643097
-        lng: 139.900177
+        lat: 35.6428455
+        lng: 139.9004096
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.welcia.co.jp/"
       - role: "supermarket"
@@ -1899,8 +1899,8 @@ hotels:
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
         walk_min: 5
-        lat: 35.643097
-        lng: 139.900177
+        lat: 35.6431671
+        lng: 139.9006595
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.summitstore.co.jp/"
       - role: "laundry"
@@ -1918,8 +1918,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 2
-        lat: 35.643391
-        lng: 139.90538
+        lat: 35.6432417
+        lng: 139.9053185
         address: "千葉県浦安市今川4丁目1-1"
         url: "https://www.sej.co.jp/shop/"
   - slug: "henna-hotel-maihama"
@@ -1964,8 +1964,8 @@ hotels:
         hours_ko: "10:00～20:00"
         hours_zhtw: "10:00～20:00"
         walk_min: 7
-        lat: 35.647778
-        lng: 139.892868
+        lat: 35.6473333
+        lng: 139.8930197
         address: "千葉県浦安市東野3-4-1 アクロスプラザ浦安東野1F"
         url: "https://www.welcia.co.jp/"
       - role: "laundry"
@@ -2012,9 +2012,9 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 20
-        lat: 35.638699
-        lng: 139.882965
+        walk_min: 19
+        lat: 35.6392451
+        lng: 139.8825051
         address: "千葉県浦安市舞浜2-46-1"
         url: "https://www.sej.co.jp/shop/"
       - role: "drugstore"
@@ -2041,8 +2041,8 @@ hotels:
         hours_zhtw: "24小時營業 ※2F 10:00～22:00"
         is_24h: true
         walk_min: 3
-        lat: 35.652317
-        lng: 139.891922
+        lat: 35.6524797
+        lng: 139.8921773
         address: "千葉県浦安市富士見1-3-20"
         url: "https://www.maruetsu.co.jp/"
       - role: "laundry"
@@ -2077,9 +2077,9 @@ hotels:
         hours_zhtw: "24小時"
         is_24h: true
         atm_intl: "check"
-        walk_min: 5
-        lat: 35.647144
-        lng: 139.893661
+        walk_min: 4
+        lat: 35.6469546
+        lng: 139.8937543
         address: "千葉県浦安市東野3丁目4番11号"
         url: "https://store.family.co.jp/"
       - role: "drugstore"
@@ -2106,8 +2106,8 @@ hotels:
         hours_ko: "9:00～21:45"
         hours_zhtw: "9:00～21:45"
         walk_min: 5
-        lat: 35.647724
-        lng: 139.893478
+        lat: 35.6476278
+        lng: 139.8938296
         address: "千葉県浦安市東野2-29-33"
         url: "https://www.yaoko-net.com/"
       - role: "laundry"
@@ -2123,9 +2123,9 @@ hotels:
         hours_ko: "평일9:00～17:00"
         hours_zhtw: "平日9:00～17:00"
         atm_intl: "1"
-        walk_min: 6
-        lat: 35.643097
-        lng: 139.900177
+        walk_min: 7
+        lat: 35.6425750
+        lng: 139.9002864
         address: "千葉県浦安市富岡3-2-2"
         url: "https://map.japanpost.jp/p/search/"
   - slug: "viewfort-urayasu"
@@ -2246,8 +2246,8 @@ hotels:
         hours_zhtw: "24小時（食品1-2F。6F專門店 時間變動）"
         is_24h: true
         walk_min: 2
-        lat: 35.665432
-        lng: 139.894836
+        lat: 35.6657368
+        lng: 139.8944772
         address: "千葉県浦安市北栄1-14-1"
         url: "https://www.seiyu.co.jp/shop/%E8%A5%BF%E5%8F%8B%E6%B5%A6%E5%AE%89%E5%BA%97/"
       - role: "laundry"
@@ -2324,8 +2324,8 @@ hotels:
         hours_zhtw: "24小時（食品1-2F。6F專門店 時間變動）"
         is_24h: true
         walk_min: 1
-        lat: 35.665432
-        lng: 139.894836
+        lat: 35.6657368
+        lng: 139.8944772
         address: "千葉県浦安市北栄1-14-1"
         url: "https://www.seiyu.co.jp/shop/%E8%A5%BF%E5%8F%8B%E6%B5%A6%E5%AE%89%E5%BA%97/"
       - role: "laundry"
@@ -2373,8 +2373,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 2
-        lat: 35.666447
-        lng: 139.889908
+        lat: 35.6664788
+        lng: 139.8900802
         address: "千葉県浦安市当代島1-14-15"
         url: "https://www.sej.co.jp/shop/"
       - role: "drugstore"
@@ -2421,8 +2421,8 @@ hotels:
         is_24h: true
         atm_intl: "1"
         walk_min: 2
-        lat: 35.666447
-        lng: 139.889908
+        lat: 35.6664788
+        lng: 139.8900802
         address: "千葉県浦安市当代島1-14-15"
         url: "https://www.sej.co.jp/shop/"
   - slug: "grand-monday-resort-maihama"
@@ -2437,9 +2437,9 @@ hotels:
         hours_ko: "24시간 영업"
         hours_zhtw: "24小時營業"
         is_24h: true
-        walk_min: 3
-        lat: 35.626034
-        lng: 139.8992
+        walk_min: 6
+        lat: 35.6239351
+        lng: 139.8994632
         address: "千葉県浦安市千鳥12-7"
         url: "https://www.daily-yamazaki.jp/"
       - role: "drugstore"
@@ -2451,9 +2451,9 @@ hotels:
         hours_zh: "9:00～23:00"
         hours_ko: "9:00～23:00"
         hours_zhtw: "9:00～23:00"
-        walk_min: 22
-        lat: 35.643097
-        lng: 139.900177
+        walk_min: 21
+        lat: 35.6428455
+        lng: 139.9004096
         address: "千葉県浦安市富岡3-2-2"
         url: "https://www.welcia.co.jp/"
       - role: "supermarket"
@@ -2465,9 +2465,9 @@ hotels:
         hours_zh: "周一至周六 10:00～20:00／周日 9:00～20:00"
         hours_ko: "월~토 10:00～20:00／일 9:00～20:00"
         hours_zhtw: "週一至週六 10:00～20:00／週日 9:00～20:00"
-        walk_min: 19
-        lat: 35.637661
-        lng: 139.911209
+        walk_min: 20
+        lat: 35.6378181
+        lng: 139.9111512
         address: "千葉県浦安市高洲2-3-12"
         url: "https://www.ysmart.co.jp/"
       - role: "laundry"
@@ -2496,8 +2496,8 @@ hotels:
         hours_zhtw: "24小時營業"
         is_24h: true
         atm_intl: "1"
-        walk_min: 15
-        lat: 35.63686
-        lng: 139.892838
+        walk_min: 12
+        lat: 35.6350791
+        lng: 139.8942967
         address: "千葉県浦安市弁天3-2-97"
         url: "https://www.e-map.ne.jp/p/lawson/"
