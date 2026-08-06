@@ -1,8 +1,8 @@
 ---
 title: "浦安・舞浜への行き方ガイド （目的地別移動ルート）"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-07-12
-factChecked: "2026-07-05"
+lastmod: 2026-08-07
+factChecked: "2026-08-07"
 slug: "urayasu-maihama-access-guide"
 badge: "アクセス"
 description: "羽田空港・成田空港・東京駅から、浦安駅・新浦安駅・舞浜駅・東京ディズニーリゾートへ向かう方法を電車・リムジンバス・タクシー別に比較。子連れ・大荷物・車いす利用時の注意点もまとめています。"
@@ -78,7 +78,7 @@ faq:
         </div>
         <div class="strip" style="margin-top:8px">
           <span class="node"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>東京駅</span>
-          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR京葉線・武蔵野線</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">約15分</span></span>
+          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR京葉線・武蔵野線</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">約20分</span></span>
           <span class="node" style="border-color:#1A5C8A"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>舞浜駅</span>
         </div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2851B"></i> 東京駅の京葉線ホームは新幹線・在来線から<strong>徒歩10分以上</strong>離れています。乗換時間に余裕を</div>
@@ -86,7 +86,7 @@ faq:
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">ディズニーランドへ</div>
-            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> 徒歩 約10分<br><i class="ti ti-train" style="color:#1A5C8A"></i> リゾートライン（リゾートゲートウェイステーションまで徒歩2分） 1駅<br><i class="ti ti-car" style="color:#1A5C8A"></i> タクシー 数分</div>
+            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> 徒歩 約5分<br><i class="ti ti-train" style="color:#1A5C8A"></i> リゾートライン（リゾートゲートウェイステーションまで徒歩2分） 1駅<br><i class="ti ti-car" style="color:#1A5C8A"></i> タクシー 数分</div>
           </div>
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">ディズニーシーへ</div>
@@ -109,7 +109,7 @@ faq:
           <span class="conn"><span class="mode" style="color:#C2421F"><i class="ti ti-bus"></i> リムジンバス</span><span class="lin"><span class="bar" style="background:#E05535"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E05535"></i></span><span class="time">約35〜60分・乗換なし</span></span>
           <span class="node" style="border-color:#E05535"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#E05535"></i>ホテルに直接到着</span>
         </div>
-        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 東京駅からは：JR京葉線 約15分 → 舞浜駅 → 徒歩・ホテル送迎　／　成田空港からもリムジンバスあり（約60〜90分）</div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 東京駅からは：JR京葉線 約20分 → 舞浜駅 → 徒歩・ホテル送迎　／　成田空港からもリムジンバスあり（約60〜90分）</div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2421F"></i> <strong>千鳥エリアのホテル（舞浜ユーラシア等）には空港発の直行リムジンバスはありません。</strong>リムジンバスでパークまで行き、シャトルバス・徒歩・タクシーで移動（またはJRで舞浜駅へ）</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#E05535"></i>パーク通い（毎朝・毎晩）</div>
         <div class="strip">
