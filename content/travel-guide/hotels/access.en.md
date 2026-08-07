@@ -2,6 +2,7 @@
 title: "Tokyo Disney Hotels Compared by Access | Parks, Stations & Airports (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
 lastmod: 2026-06-16
+factChecked: "2026-08-08"
 description: "A local-media comparison of all 40 Urayasu hotels by how easy they are to reach: the parks, JR stations, the airports, and central Tokyo. Limousine bus fares, which hotels you can actually walk to from Maihama Station, and more."
 tags:
   - Hotel

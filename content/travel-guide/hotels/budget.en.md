@@ -1,7 +1,8 @@
 ---
 title: "Cheap Hotels near Tokyo Disneyland | Budget Stays from Around ¥10,000 for Two (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-06-16
+lastmod: 2026-08-08
+factChecked: "2026-08-08"
 description: "Enjoy Tokyo Disney Resort for less. A local-media comparison of budget hotels in Urayasu where two can stay from around ¥10,000, balancing price and location — plus tips for making 'cheap' actually pay off."
 tags:
   - Hotel
@@ -80,7 +81,7 @@ The Tozai Line / Urayasu Station area has no free TDR shuttle, but its appeal is
 From around ¥5,000s, 3 min from Urayasu Station — one of the cheapest options in Urayasu. It offers a free breakfast from 6:00 (bread, salad, coffee), a 2F coin laundry, and a 24-hour front desk (last check-in 0:30), supporting longer and business stays. A strong pick for families who simply want to keep the room rate down.
 
 **Urayasu Viewfort Hotel**
-From around ¥9,000, 1 min from Urayasu Station. About 16 minutes direct to Nihonbashi.
+From around ¥9,000, 1 min from Urayasu Station. About 18 minutes direct to Nihonbashi.
 
 **Hotel Daigo**
 From around ¥11,000 for two, 3 min from Urayasu Station. Its biggest feature is a **flat rate all year that does not rise in peak season** (as researched) — a real advantage for families staying during Golden Week or summer. Japanese-style rooms available. Rates may change; confirm on the official site.

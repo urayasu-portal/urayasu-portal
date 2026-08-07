@@ -2,6 +2,7 @@
 title: "Hotels near Tokyo Disney with a Direct Airport Limousine Bus Stop (Narita & Haneda)"
 date: 2026-07-12T10:00:00+09:00
 lastmod: 2026-07-12
+factChecked: "2026-08-08"
 layout: facility-list
 facility: limousine
 description: "Land at Narita or Haneda and ride one bus straight to your hotel — no train transfers, no stairs with suitcases. A local list of Tokyo Disney Resort area hotels served by the Airport Limousine Bus, sorted by price."

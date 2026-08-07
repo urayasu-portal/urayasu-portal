@@ -2,6 +2,7 @@
 title: "Tokyo Disney Area Hotels with Coin Laundry — Pack Half the Clothes"
 date: 2026-07-12T10:00:00+09:00
 lastmod: 2026-07-12
+factChecked: "2026-08-08"
 layout: facility-list
 facility: laundry
 description: "Staying several nights for the parks? These Tokyo Disney Resort area hotels have guest coin laundry, so families can travel with half the luggage. Local list, sorted by price."
