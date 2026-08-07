@@ -2,6 +2,7 @@
 title: "Urayasu Shopping & Essentials Map | Convenience, Pharmacy, ATM, Laundry by Need"
 date: 2026-07-09T10:00:00+09:00
 lastmod: 2026-07-09
+factChecked: "2026-08-08"
 description: "Find convenience stores, supermarkets, pharmacies, 100-yen shops, electronics, coin laundries and foreign-card ATMs around Urayasu & Maihama. Filter the map by need (diapers, bento, late-night meals, cash, laundry) and pick your hotel to see walking times."
 tags:
   - Urayasu

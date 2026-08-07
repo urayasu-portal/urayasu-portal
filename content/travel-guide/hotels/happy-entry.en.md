@@ -1,7 +1,8 @@
 ---
 title: "Happy Entry at Tokyo Disney Resort Explained | 15-Minute Early Entry & Which Hotels Get It"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-06
+lastmod: 2026-08-08
+factChecked: "2026-08-08"
 description: "Happy Entry lets Tokyo Disney Resort hotel guests enter the park up to 15 minutes before official opening — but only guests of the Disney Hotels. A local guide to how it works, which hotels qualify, common misconceptions, and what to do if you are not staying at a Disney Hotel."
 tags:
   - Hotel
@@ -13,7 +14,7 @@ noDate: true
 tgNav: true
 faq:
   - q: "What is Happy Entry at Tokyo Disney Resort?"
-    a: "Happy Entry is a guests-only benefit that lets Disney Hotel guests enter Tokyo Disneyland or Tokyo DisneySea up to 15 minutes before official opening through a dedicated entrance. The eligible park and conditions vary by hotel and season, so confirm the latest details on the official Tokyo Disney Resort website before booking."
+    a: "Happy Entry is a guests-only benefit that lets Disney Hotel guests enter the park before official opening through a dedicated entrance. Tokyo Disneyland remains 15 minutes early, but Tokyo DisneySea has been 5 to 15 minutes early (it varies by day) since September 2025 due to entrance-area construction. The eligible park and conditions vary by hotel and season, so confirm the latest details on the official Tokyo Disney Resort website before booking."
   - q: "Which hotels get Happy Entry?"
     a: "Only the Disney Hotels operated by Tokyo Disney Resort: Tokyo Disneyland Hotel, Hotel MiraCosta, Fantasy Springs Hotel, Disney Ambassador Hotel, Toy Story Hotel, and Tokyo Disney Celebration Hotel. Official Hotels such as Hilton or Sheraton, Partner Hotels, and independent hotels are not eligible, no matter how close they are to the parks."
   - q: "Is 15 minutes of early entry actually worth it?"
@@ -28,7 +29,7 @@ Here is how it actually works, in plain terms. Conditions are based on our 2025�
 
 ## What Happy Entry is
 
-**Happy Entry is entry to the park up to 15 minutes before official opening, through a dedicated guests-only entrance.** It is a benefit for guests of the **Disney Hotels** — the hotels operated by Tokyo Disney Resort itself.
+**Happy Entry is entry to the park before official opening, through a dedicated guests-only entrance.** It is a benefit for guests of the **Disney Hotels** — the hotels operated by Tokyo Disney Resort itself. Tokyo Disneyland remains 15 minutes early, but **Tokyo DisneySea has been 5 to 15 minutes early (varies by day) since September 2025**, due to construction around the entrance.
 
 Fifteen minutes sounds small. It is not. Those minutes happen **before the general queue is released**, which means Happy Entry guests reach the headline attractions — or the Premier Access purchase screens — ahead of the crowd. On busy days, the practical head start is often measured in hours of avoided queueing, not minutes.
 

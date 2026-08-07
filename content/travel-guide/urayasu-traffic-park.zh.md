@@ -2,6 +2,7 @@
 title: "浦安市交通公园：离迪士尼一站，免费畅玩的儿童乐园"
 description: "免费骑自行车、骑迷你马、抱豚鼠，就在离迪士尼酒店一站的地方。适合住在东京迪士尼度假区附近家庭的「休息日」好去处，由本地人带你逛。"
 date: 2026-07-07
+factChecked: "2026-08-08"
 draft: false
 cover:
   image: "/images/travel-guide/urayasu-traffic-park.jpg"

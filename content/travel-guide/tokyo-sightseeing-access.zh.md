@@ -2,6 +2,7 @@
 title: "从舞滨·浦安去东京观光：浅草·涩谷·晴空塔等7大景点路线与车费一览"
 description: "从京叶线（舞滨·新浦安）和东西线（浦安站）分别前往浅草、东京晴空塔、东京铁塔、皇居、秋叶原、涩谷、原宿的最短路线与IC车费一览。附刷卡（闪付）与西瓜卡Suica的区别、东京站京叶线站台很远等本地贴士。"
 date: 2026-07-07
+factChecked: "2026-08-08"
 draft: false
 cover:
   image: "/images/travel-guide/tokyo-sightseeing-access.jpg"

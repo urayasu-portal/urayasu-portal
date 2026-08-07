@@ -2,6 +2,7 @@
 title: "從舞濱·浦安去東京觀光：淺草·澀谷·晴空塔等7大景點路線與車資一覽"
 description: "從京葉線（舞濱·新浦安）和東西線（浦安站）分別前往淺草、東京晴空塔、東京鐵塔、皇居、秋葉原、澀谷、原宿的最短路線與IC車資一覽。附感應信用卡與Suica（西瓜卡）的區別、東京站京葉線月台很遠等在地小撇步。"
 date: 2026-07-07
+factChecked: "2026-08-08"
 draft: false
 cover:
   image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
