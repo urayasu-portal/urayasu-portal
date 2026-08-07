@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disney Hotels Compared by Access | Parks, Stations & Airports (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-06-16
+lastmod: 2026-08-08
 factChecked: "2026-08-08"
 description: "A local-media comparison of all 40 Urayasu hotels by how easy they are to reach: the parks, JR stations, the airports, and central Tokyo. Limousine bus fares, which hotels you can actually walk to from Maihama Station, and more."
 tags:
@@ -110,7 +110,7 @@ Hotels around Urayasu Station have no limousine stop; the basic route is by trai
 
 "We want to enjoy Tokyo, not just Disney" — for those families, the **Tozai Line / Urayasu Station area** is a hidden gem.
 
-From Urayasu Station on the Tokyo Metro Tozai Line: **about 18 min to Otemachi (next to Tokyo Station) and about 16 min direct to Nihonbashi.** Asakusa, Ginza, and Tokyo Skytree are all within easy reach. If you plan "Disney on day one, Tokyo sightseeing on day two," this area offers outstanding value.
+From Urayasu Station on the Tokyo Metro Tozai Line: **about 18 min to Otemachi (next to Tokyo Station) and about 18 min direct to Nihonbashi.** Asakusa, Ginza, and Tokyo Skytree are all within easy reach. If you plan "Disney on day one, Tokyo sightseeing on day two," this area offers outstanding value.
 
 - **Urayasu Viewfort Hotel** (1 min walk from Urayasu Station)
 - **BAYHOTEL Urayasu Station** (1–2 min walk, kitchen in every room)

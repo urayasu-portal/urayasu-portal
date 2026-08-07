@@ -244,9 +244,12 @@ budget(ja/en/zh/zh-tw/ko)・access(ja/en/zh/zh-tw/ko)・compare(ja/en/zh/zh-tw/k
 
 ### 持ち越し更新
 - **factChecked未設定 残り**: 多言語版travel-guide群（disney-tickets/access-guide/kids-emergency等のen/zh/zh-tw/ko）＋ ホテル個別記事以外の残り比較記事（kids.md等、未調査）
-- 要再確認: access.mdの浦安駅↔舞浜路線バス運賃(240円)・所要時間、東西線の正確な分数（運営会社サイトの403エラーで未確認。次回は別ルートでの確認を試みる）
+- 要再確認: access.mdの浦安駅↔舞浜路線バス運賃(240円)・所要時間（運営会社サイトの403エラーで未確認。次回は別ルートでの確認を試みる）
 - 監視: 葛西臨海水族園の建て替え（新水族園2027年頃開業予定）
 - 監視: urayasu-nyuyoji-shien の子どもインフル助成は季節事業（10月ごろFY2026ページ公開時に再リンク検討）
+
+### 追記（同日中）
+レポート提出後、hotels/access.mdの本文中に**同一の「日本橋まで直通約16分」誤り**を発見（budget.mdで修正した数値の伝播元）。東京メトロ東西線の実測（快速でも18分、通常18〜20分）に基づき、**access.md 全5言語（ja/en/zh/zh-tw/ko）**で「約16分」→「約18分」に統一修正。lastmodも更新。
 
 ---
 
