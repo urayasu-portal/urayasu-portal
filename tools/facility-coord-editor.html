@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>施設座標エディタ｜浦安ぽーたる</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root{ --bd:#dcd8cf; --tx:#2b2a27; --tx2:#5f5e5a; --mut:#8b8983; --acc:#E05535; --ok:#1D9E75; }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{font:14px/1.6 -apple-system,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic UI",sans-serif;color:var(--tx);background:#FBFAF7}
+  #app{display:flex;height:100vh}
+  /* ---- 左パネル ---- */
+  #side{width:340px;flex:none;border-right:1px solid var(--bd);display:flex;flex-direction:column;background:#fff}
+  #side h1{font-size:15px;margin:0;padding:12px 14px;border-bottom:1px solid var(--bd);background:#1A5C8A;color:#fff}
+  #side h1 small{display:block;font-weight:400;font-size:11px;opacity:.85;margin-top:2px}
+  .ctl{padding:10px 12px;border-bottom:1px solid var(--bd);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .ctl input[type=search],.ctl select{font:inherit;font-size:12px;padding:5px 7px;border:1px solid var(--bd);border-radius:6px;background:#fff;color:var(--tx)}
+  .ctl input[type=search]{flex:1 1 100%}
+  .ctl label{font-size:12px;color:var(--tx2);display:inline-flex;align-items:center;gap:4px;cursor:pointer}
+  #stat{font-size:11px;color:var(--mut);padding:0 12px 8px}
+  #list{flex:1;overflow-y:auto}
+  .it{padding:8px 12px;border-bottom:1px solid #f0eee9;cursor:pointer}
+  .it:hover{background:#FBFAF7}
+  .it.sel{background:#FFF1EC;box-shadow:inset 3px 0 0 var(--acc)}
+  .it .nm{font-weight:700;font-size:13px;line-height:1.35}
+  .it .ad{font-size:11px;color:var(--mut);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bdg{display:inline-block;font-size:10px;font-weight:700;border-radius:6px;padding:0 5px;margin-left:5px;vertical-align:1px}
+  .b-ok{background:#E1F5EE;color:#0F6E56}
+  .b-new{background:#FAEEDA;color:#854F0B}
+  .b-mv{background:#FFE4DC;color:#B3381C}
+  /* ---- 右 ---- */
+  #main{flex:1;display:flex;flex-direction:column;min-width:0}
+  #map{flex:1}
+  #bar{border-top:1px solid var(--bd);background:#fff;padding:10px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  #cur{flex:1;min-width:200px;font-size:12px;color:var(--tx2)}
+  #cur b{font-size:14px;color:var(--tx);display:block}
+  #cur .mv{color:var(--acc);font-weight:700}
+  button{font:inherit;font-size:13px;font-weight:700;padding:7px 13px;border-radius:8px;border:1px solid var(--bd);background:#fff;color:var(--tx2);cursor:pointer}
+  button:hover:not(:disabled){background:#f5f3ee}
+  button:disabled{opacity:.4;cursor:default}
+  button.p{background:var(--acc);border-color:var(--acc);color:#fff}
+  button.g{background:var(--ok);border-color:var(--ok);color:#fff}
+  #out{display:none;border-top:1px solid var(--bd);background:#fff;padding:10px 14px}
+  #out.on{display:block}
+  #out textarea{width:100%;height:150px;font:12px/1.5 ui-monospace,Consolas,monospace;border:1px solid var(--bd);border-radius:6px;padding:8px;resize:vertical}
+  #out .row{display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  #out .row span{font-size:12px;color:var(--mut);flex:1}
+  .pin-o{width:14px;height:14px;border-radius:50%;background:#8b8983;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)}
+  .hint{font-size:11px;color:var(--mut);padding:6px 12px;background:#FFFBF0;border-bottom:1px solid var(--bd)}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="side">
+    <h1>施設座標エディタ<small>ピンをドラッグして正しい位置に置く → 出力を渡す</small></h1>
+    <div class="hint">航空写真に切り替えると建物が見えて置きやすくなります（地図右上）。</div>
+    <div class="ctl">
+      <input type="search" id="q" placeholder="店名・住所で検索">
+      <select id="ft"><option value="">すべての種別</option></select>
+      <label><input type="checkbox" id="fu"> 未検証のみ</label>
+    </div>
+    <div id="stat"></div>
+    <div id="list"></div>
+  </div>
+  <div id="main">
+    <div id="map"></div>
+    <div id="bar">
+      <div id="cur">左のリストから店を選んでください</div>
+      <button id="bOk" class="g" disabled>現状で正しい</button>
+      <button id="bSave" class="p" disabled>この位置で確定</button>
+      <button id="bReset" disabled>元に戻す</button>
+      <button id="bOut">出力を見る</button>
+    </div>
+    <div id="out">
+      <div class="row">
+        <span id="outN"></span>
+        <button id="bCopy" class="p">コピー</button>
+        <button id="bClear">記録を全消去</button>
+      </div>
+      <textarea id="outT" readonly></textarea>
+    </div>
+  </div>
+</div>
+
+<script src="facility-data.js"></script>
+<script>
+(function(){
+  var KEY = 'urayasu-coord-editor-v1';
+  var edits = {};                      // id -> {lat,lng,st:'moved'|'ok'}
+  try { edits = JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ edits = {}; }
+  function persist(){ try{ localStorage.setItem(KEY, JSON.stringify(edits)); }catch(e){} }
+
+  var TL = {conbini:'コンビニ',supermarket:'スーパー',drugstore:'ドラッグ',electronics:'家電',
+    hundred_yen:'100均',apparel:'衣料',laundry:'ランドリー',post_office:'郵便局',commercial:'商業施設',
+    cafe:'カフェ',fastfood:'ファストフード',family_restaurant:'ファミレス',sushi:'寿司',ramen:'ラーメン',
+    yakiniku:'焼肉',izakaya:'居酒屋',casual_restaurant:'食堂'};
+  function tl(t){ return TL[t]||t; }
+  function dist(a,b,c,d){ var R=6371000,p=Math.PI/180,
+    x=Math.sin((c-a)*p/2)*Math.sin((c-a)*p/2)+Math.cos(a*p)*Math.cos(c*p)*Math.sin((d-b)*p/2)*Math.sin((d-b)*p/2);
+    return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x)); }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  /* ---------- 地図 ---------- */
+  var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {maxZoom:19, attribution:'&copy; OpenStreetMap contributors'});
+  var photo = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg',
+    {maxZoom:18, attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a>'});
+  var std = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png',
+    {maxZoom:18, attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a>'});
+  var map = L.map('map',{layers:[osm]}).setView([35.653,139.903],14);
+  L.control.layers({'OpenStreetMap':osm,'航空写真（地理院）':photo,'地理院地図':std},null,{position:'topright'}).addTo(map);
+  L.control.scale({imperial:false}).addTo(map);
+
+  var ghost = null;   // 元の位置（灰色・固定）
+  var pin   = null;   // 編集用（ドラッグ可）
+  var others = L.layerGroup().addTo(map);
+  var cur = null;
+
+  /* ---------- リスト ---------- */
+  var elList=document.getElementById('list'), elStat=document.getElementById('stat'),
+      elQ=document.getElementById('q'), elFT=document.getElementById('ft'), elFU=document.getElementById('fu');
+
+  (function(){
+    var ts={}; FACILITIES.forEach(function(f){ ts[f.type]=1; });
+    Object.keys(ts).sort().forEach(function(t){
+      var o=document.createElement('option'); o.value=t; o.textContent=tl(t); elFT.appendChild(o); });
+  })();
+
+  function stateOf(f){
+    var e = edits[f.id];
+    if (e && e.st==='moved') return 'moved';
+    if (e && e.st==='ok') return 'ok';
+    return f.ok ? 'done' : 'todo';
+  }
+  function filtered(){
+    var q=elQ.value.trim(), t=elFT.value, u=elFU.checked;
+    return FACILITIES.filter(function(f){
+      if(t && f.type!==t) return false;
+      if(u && (f.ok || edits[f.id])) return false;
+      if(q && (f.name+' '+f.address+' '+f.id).indexOf(q)<0) return false;
+      return true;
+    });
+  }
+  function render(){
+    var rows=filtered();
+    elList.innerHTML='';
+    rows.forEach(function(f){
+      var st=stateOf(f), b='';
+      if(st==='moved') b='<span class="bdg b-mv">修正</span>';
+      else if(st==='ok') b='<span class="bdg b-ok">OK</span>';
+      else if(st==='done') b='<span class="bdg b-ok">検証済</span>';
+      else b='<span class="bdg b-new">未検証</span>';
+      var d=document.createElement('div');
+      d.className='it'+(cur&&cur.id===f.id?' sel':'');
+      d.innerHTML='<div class="nm">'+esc(f.name)+b+'</div><div class="ad">'+esc(tl(f.type))+' ・ '+esc(f.address)+'</div>';
+      d.onclick=function(){ select(f); };
+      elList.appendChild(d);
+    });
+    var nMoved=0,nOk=0,nTodo=0;
+    FACILITIES.forEach(function(f){ var s=stateOf(f);
+      if(s==='moved')nMoved++; else if(s==='ok')nOk++; else if(s==='todo')nTodo++; });
+    elStat.textContent='表示 '+rows.length+' / 全 '+FACILITIES.length
+      +' 件　｜　修正 '+nMoved+'・OK '+nOk+'・未検証 '+nTodo;
+  }
+  elQ.oninput=render; elFT.onchange=render; elFU.onchange=render;
+
+  /* ---------- 選択 ---------- */
+  function pos(f){ var e=edits[f.id]; return (e&&e.st==='moved')?[e.lat,e.lng]:[f.lat,f.lng]; }
+
+  function select(f){
+    cur=f;
+    if(ghost) map.removeLayer(ghost);
+    if(pin) map.removeLayer(pin);
+    ghost=L.marker([f.lat,f.lng],{interactive:false,zIndexOffset:-500,
+      icon:L.divIcon({className:'',iconSize:[14,14],iconAnchor:[7,7],html:'<div class="pin-o"></div>'})}).addTo(map);
+    var p=pos(f);
+    pin=L.marker(p,{draggable:true,autoPan:true}).addTo(map);
+    pin.on('drag',info); pin.on('dragend',info);
+    // 近隣の他施設を薄く表示（位置関係の目印）
+    others.clearLayers();
+    FACILITIES.forEach(function(o){
+      if(o.id===f.id) return;
+      var q=pos(o);
+      if(dist(p[0],p[1],q[0],q[1])>350) return;
+      L.circleMarker(q,{radius:4,weight:1,color:'#fff',fillColor:'#378ADD',fillOpacity:.85})
+        .bindTooltip(o.name,{direction:'top'}).addTo(others);
+    });
+    map.setView(p, Math.max(map.getZoom(),18));
+    info(); render();
+  }
+
+  function info(){
+    if(!cur){ return; }
+    var p=pin.getLatLng(), d=dist(cur.lat,cur.lng,p.lat,p.lng);
+    var st=stateOf(cur);
+    var tag = st==='moved'?'（修正済み）': st==='ok'?'（現状OKと記録）': st==='done'?'（OSM照合で検証済み）':'（未検証）';
+    var g='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(cur.name+' '+cur.address);
+    document.getElementById('cur').innerHTML =
+      '<b>'+esc(cur.name)+'</b>'+esc(cur.address)+' '+esc(tag)
+      +'<br>元 '+cur.lat.toFixed(6)+', '+cur.lng.toFixed(6)
+      +'　→　<span class="mv">'+p.lat.toFixed(6)+', '+p.lng.toFixed(6)+'（'+Math.round(d)+'m移動）</span>'
+      +'　<a href="'+g+'" target="_blank" rel="noopener">Googleマップで確認</a>';
+    document.getElementById('bSave').disabled = (d<0.5);
+    document.getElementById('bOk').disabled = false;
+    document.getElementById('bReset').disabled = !edits[cur.id];
+  }
+
+  document.getElementById('bSave').onclick=function(){
+    if(!cur) return; var p=pin.getLatLng();
+    edits[cur.id]={lat:+p.lat.toFixed(7),lng:+p.lng.toFixed(7),st:'moved'};
+    persist(); info(); render(); out();
+  };
+  document.getElementById('bOk').onclick=function(){
+    if(!cur) return;
+    edits[cur.id]={lat:cur.lat,lng:cur.lng,st:'ok'};
+    persist(); pin.setLatLng([cur.lat,cur.lng]); info(); render(); out();
+  };
+  document.getElementById('bReset').onclick=function(){
+    if(!cur) return; delete edits[cur.id]; persist();
+    pin.setLatLng([cur.lat,cur.lng]); info(); render(); out();
+  };
+
+  /* ---------- 出力 ---------- */
+  function out(){
+    var lines=['id,lat,lng,status,name'];
+    FACILITIES.forEach(function(f){
+      var e=edits[f.id]; if(!e) return;
+      lines.push([f.id,e.lat,e.lng,e.st,'"'+f.name.replace(/"/g,'""')+'"'].join(','));
+    });
+    document.getElementById('outT').value = lines.length>1 ? lines.join('\n') : '（まだ記録がありません）';
+    var n=lines.length-1;
+    document.getElementById('outN').textContent = n+' 件を記録中（このテキストをコピーして渡してください）';
+  }
+  document.getElementById('bOut').onclick=function(){
+    document.getElementById('out').classList.toggle('on'); out(); };
+  document.getElementById('bCopy').onclick=function(){
+    var t=document.getElementById('outT'); t.select();
+    try{ document.execCommand('copy'); this.textContent='コピーしました'; var b=this;
+      setTimeout(function(){ b.textContent='コピー'; },1500); }catch(e){}
+  };
+  document.getElementById('bClear').onclick=function(){
+    if(!confirm('記録した修正をすべて消します。よろしいですか？')) return;
+    edits={}; persist(); if(cur) select(cur); render(); out();
+  };
+
+  render(); out();
+})();
+</script>
+</body>
+</html>

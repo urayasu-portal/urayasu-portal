@@ -19,8 +19,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.627180
-    lng: 139.873697
+    lat: 35.6277954
+    lng: 139.8737186
     address: "千葉県浦安市舞浜1-8 ヒルトン東京ベイ"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
     last_verified: "2026/6/29"
@@ -39,8 +39,8 @@ facilities:
     open_late: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.627180
-    lng: 139.873697
+    lat: 35.6274946
+    lng: 139.8734397
     address: "千葉県浦安市舞浜1-8"
     official_url: "https://tokyobay.hiltonjapan.co.jp/facilities/shop"
     last_verified: "2026/6/29"
@@ -74,8 +74,8 @@ facilities:
     hours_zhtw: "6:30～23:00"
     open_early: true
     open_late: true
-    lat: 35.636112
-    lng: 139.884384
+    lat: 35.6358901
+    lng: 139.8843133
     address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札外 ホテルドリームゲート内"
     official_url: "https://www.j-retail.jp/"
     last_verified: "2026/6/29"
@@ -128,8 +128,8 @@ facilities:
     hours_zh: "视店铺而定（需确认）"
     hours_ko: "매장에 따라（확인 필요）"
     hours_zhtw: "視店鋪而定（需確認）"
-    lat: 35.651039
-    lng: 139.911285
+    lat: 35.6497644
+    lng: 139.9127984
     address: "千葉県浦安市美浜1 新浦安駅直結"
     last_verified: "2026/6/29"
     note: "新浦安駅直結の商業施設"
@@ -256,8 +256,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.652733
-    lng: 139.892288
+    lat: 35.6528306
+    lng: 139.8921856
     address: "千葉県浦安市富士見1-2-18"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -299,8 +299,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.664001
-    lng: 139.896027
+    lat: 35.6639125
+    lng: 139.896099
     address: "千葉県浦安市猫実4-6-39"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -362,8 +362,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.635925
-    lng: 139.924515
+    lat: 35.6358269
+    lng: 139.9247235
     address: "千葉県浦安市明海6-2"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -448,8 +448,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.665405
-    lng: 139.894608
+    lat: 35.665318
+    lng: 139.8946667
     address: "千葉県浦安市北栄1-15-28"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -490,8 +490,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.647228
-    lng: 139.910858
+    lat: 35.6470266
+    lng: 139.9092525
     address: "千葉県浦安市入船2-3-2"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -531,8 +531,8 @@ facilities:
     open_late: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.665558
-    lng: 139.892654
+    lat: 35.6658387
+    lng: 139.8931459
     address: "千葉県浦安市北栄1-13-1 東西線浦安駅構内"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -552,8 +552,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.661541
-    lng: 139.900299
+    lat: 35.6615938
+    lng: 139.9002859
     address: "千葉県浦安市北栄4-21-2"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -594,8 +594,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.647457
-    lng: 139.889343
+    lat: 35.6474058
+    lng: 139.8891842
     address: "千葉県浦安市富士見4-10-30"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -635,8 +635,8 @@ facilities:
     open_late: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.645916
-    lng: 139.906921
+    lat: 35.6459846
+    lng: 139.9066293
     address: "千葉県浦安市富岡2-1-1"
     official_url: "https://www.e-map.ne.jp/p/lawson/"
     last_verified: "2026/6/29"
@@ -677,8 +677,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.670788
-    lng: 139.894455
+    lat: 35.6708571
+    lng: 139.894487
     address: "千葉県浦安市当代島3-4-1"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -803,8 +803,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.647968
-    lng: 139.918381
+    lat: 35.6479507
+    lng: 139.918431
     address: "千葉県浦安市入船4-9-1"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -845,8 +845,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.641434
-    lng: 139.893341
+    lat: 35.6411545
+    lng: 139.8932558
     address: "千葉県浦安市弁天4-21-1"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -887,8 +887,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.669632
-    lng: 139.894318
+    lat: 35.6694997
+    lng: 139.8942697
     address: "千葉県浦安市北栄2-16-12"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -908,8 +908,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.664429
-    lng: 139.889481
+    lat: 35.6644311
+    lng: 139.8894095
     address: "千葉県浦安市猫実5丁目11-24"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -929,8 +929,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.665474
-    lng: 139.897552
+    lat: 35.6654989
+    lng: 139.8975179
     address: "千葉県浦安市北栄1-4-22"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -950,8 +950,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.657444
-    lng: 139.895706
+    lat: 35.6573725
+    lng: 139.8957476
     address: "千葉県浦安市堀江1丁目33-14"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -971,8 +971,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.652393
-    lng: 139.911469
+    lat: 35.6526192
+    lng: 139.910953
     address: "千葉県浦安市美浜1-7-1"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -992,8 +992,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.653736
-    lng: 139.890274
+    lat: 35.6538092
+    lng: 139.8902464
     address: "千葉県浦安市富士見2丁目3-3"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -1034,8 +1034,8 @@ facilities:
     is_24h: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.645535
-    lng: 139.887939
+    lat: 35.645479
+    lng: 139.8881355
     address: "千葉県浦安市富士見5丁目2-28"
     official_url: "https://www.sej.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -1097,8 +1097,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.656773
-    lng: 139.891907
+    lat: 35.656856
+    lng: 139.8919442
     address: "千葉県浦安市堀江3-27-15"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1179,8 +1179,8 @@ facilities:
     open_early: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.671627
-    lng: 139.893219
+    lat: 35.6711493
+    lng: 139.8937118
     address: "千葉県浦安市当代島3丁目4-32"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1200,8 +1200,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.65118
-    lng: 139.894516
+    lat: 35.6511459
+    lng: 139.8943877
     address: "千葉県浦安市富士見1丁目5番1号"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1221,8 +1221,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.667351
-    lng: 139.895844
+    lat: 35.6673772
+    lng: 139.8957905
     address: "千葉県浦安市北栄2丁目4番11号"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1242,8 +1242,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.652927
-    lng: 139.898788
+    lat: 35.6527021
+    lng: 139.8986953
     address: "千葉県浦安市東野1-3-1"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1263,8 +1263,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.637115
-    lng: 139.898392
+    lat: 35.6369539
+    lng: 139.8973274
     address: "千葉県浦安市鉄鋼通り2-1-8"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1284,8 +1284,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.664665
-    lng: 139.90271
+    lat: 35.6646142
+    lng: 139.902842
     address: "千葉県浦安市北栄4-28-11"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1305,8 +1305,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.653763
-    lng: 139.902878
+    lat: 35.6536175
+    lng: 139.903003
     address: "千葉県浦安市海楽1-1-7"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1326,8 +1326,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.661415
-    lng: 139.9039
+    lat: 35.6611319
+    lng: 139.9036521
     address: "千葉県浦安市北栄4-17-47"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1347,8 +1347,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6491911
+    lng: 139.9118489
     address: "千葉県浦安市入船1丁目1番の1 1階6070"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1368,8 +1368,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.650169
-    lng: 139.913925
+    lat: 35.6499734
+    lng: 139.9135655
     address: "千葉県浦安市入船1丁目2番1号"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1389,8 +1389,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.651169
-    lng: 139.915375
+    lat: 35.6528738
+    lng: 139.9161753
     address: "千葉県浦安市入船6丁目1番2号"
     official_url: "https://store.family.co.jp/"
     last_verified: "2026/6/29"
@@ -1452,8 +1452,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.659546
-    lng: 139.890915
+    lat: 35.6593993
+    lng: 139.891035
     address: "千葉県浦安市堀江4丁目36-50"
     official_url: "https://www.ministop.co.jp/"
     last_verified: "2026/6/29"
@@ -1473,8 +1473,8 @@ facilities:
     is_24h: true
     atm_intl: "check"
     takkyubin: true
-    lat: 35.659344
-    lng: 139.902145
+    lat: 35.6592402
+    lng: 139.9019784
     address: "千葉県浦安市猫実2丁目11-20"
     official_url: "https://www.ministop.co.jp/"
     last_verified: "2026/6/29"
@@ -1511,8 +1511,8 @@ facilities:
     hours_zhtw: "6:30～23:30"
     open_early: true
     open_late: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6499167
+    lng: 139.9128547
     address: "千葉県浦安市入船1-1 新浦安駅2F 改札外"
     official_url: "https://www.j-retail.jp/"
     last_verified: "2026/6/29"
@@ -1528,8 +1528,8 @@ facilities:
     hours_ko: "평일 6:30～21:00／토요일 6:30～20:00／일·공휴일 7:00～14:00"
     hours_zhtw: "平日 6:30～21:00／週六 6:30～20:00／週日及假日 7:00～14:00"
     open_early: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6497663
+    lng: 139.9127045
     address: "千葉県浦安市入船1-1 新浦安駅2F 改札内コンコース"
     official_url: "https://www.j-retail.jp/"
     last_verified: "2026/6/29"
@@ -1546,8 +1546,8 @@ facilities:
     hours_zhtw: "平日・週六 7:00～23:00／週日及假日 7:00～22:30"
     open_early: true
     open_late: true
-    lat: 35.636112
-    lng: 139.884384
+    lat: 35.6361538
+    lng: 139.8841497
     address: "千葉県浦安市舞浜26-5 舞浜駅2F 改札内"
     official_url: "https://www.j-retail.jp/"
     last_verified: "2026/6/29"
@@ -1563,8 +1563,8 @@ facilities:
     hours_ko: "8:00～23:00"
     hours_zhtw: "8:00～23:00"
     open_late: true
-    lat: 35.630993
-    lng: 139.872862
+    lat: 35.6309131
+    lng: 139.8739117
     address: "千葉県浦安市舞浜1-34 東京ベイ舞浜ホテル内"
     last_verified: "2026/6/29"
     note: "東京ベイ舞浜ホテル ファーストリゾート 館内売店"
@@ -1638,8 +1638,8 @@ facilities:
     hours_zhtw: "9:00～24:00"
     open_late: true
     baby_goods: true
-    lat: 35.667419
-    lng: 139.893417
+    lat: 35.6675145
+    lng: 139.8938513
     address: "千葉県浦安市北栄1-10-20"
     official_url: "https://www.summitstore.co.jp/"
     last_verified: "2026/6/29"
@@ -1707,8 +1707,8 @@ facilities:
     hours_ko: "8:30～21:30"
     hours_zhtw: "8:30～21:30"
     baby_goods: true
-    lat: 35.652882
-    lng: 139.899323
+    lat: 35.6529156
+    lng: 139.89972
     address: "千葉県浦安市東野1-2-33"
     official_url: "https://ok-corporation.jp/shop/"
     last_verified: "2026/6/29"
@@ -1724,8 +1724,8 @@ facilities:
     hours_ko: "8:45～21:30"
     hours_zhtw: "8:45～21:30"
     baby_goods: true
-    lat: 35.636314
-    lng: 139.917923
+    lat: 35.6362018
+    lng: 139.9181172
     address: "千葉県浦安市高洲5-3-1"
     official_url: "https://ok-corporation.jp/shop/"
     last_verified: "2026/6/29"
@@ -1796,8 +1796,8 @@ facilities:
     hours_ko: "9:00～21:00"
     hours_zhtw: "9:00～21:00"
     baby_goods: true
-    lat: 35.658936
-    lng: 139.90387
+    lat: 35.6585713
+    lng: 139.9036467
     address: "千葉県浦安市猫実1-21-38"
     official_url: "https://www.gyomusuper.jp/"
     last_verified: "2026/6/29"
@@ -1816,8 +1816,8 @@ facilities:
     open_late: true
     is_24h: true
     baby_goods: true
-    lat: 35.666306
-    lng: 139.892731
+    lat: 35.6662594
+    lng: 139.8926523
     address: "千葉県浦安市当代島1-2-25"
     official_url: "https://www.ysmart.co.jp/"
     last_verified: "2026/6/29"
@@ -1852,8 +1852,8 @@ facilities:
     open_early: true
     open_late: true
     baby_goods: true
-    lat: 35.665184
-    lng: 139.894485
+    lat: 35.6650543
+    lng: 139.8946881
     address: "千葉県浦安市北栄1-16-30"
     official_url: "https://www.mybasket.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -1871,8 +1871,8 @@ facilities:
     open_early: true
     open_late: true
     baby_goods: true
-    lat: 35.652393
-    lng: 139.911469
+    lat: 35.6519132
+    lng: 139.9121225
     address: "千葉県浦安市美浜1-7-7 エル・シティ新浦安七番館"
     official_url: "https://www.mybasket.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -1908,8 +1908,8 @@ facilities:
     open_early: true
     open_late: true
     baby_goods: true
-    lat: 35.668461
-    lng: 139.891586
+    lat: 35.6684864
+    lng: 139.8915339
     address: "千葉県浦安市当代島2-10-34"
     official_url: "https://www.mybasket.co.jp/shop/"
     last_verified: "2026/6/29"
@@ -1926,8 +1926,8 @@ facilities:
     hours_zhtw: "10:00～22:00"
     open_late: true
     baby_goods: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6494939
+    lng: 139.9122378
     address: "千葉県浦安市入船1-1-1 アトレ新浦安1F"
     official_url: "https://shop.seijoishii.com/seijoishii/"
     last_verified: "2026/6/29"
@@ -1961,8 +1961,8 @@ facilities:
     hours_ko: "월~토 10:00～19:00"
     hours_zhtw: "週一至週六 10:00～19:00"
     baby_goods: true
-    lat: 35.648354
-    lng: 139.918839
+    lat: 35.648245
+    lng: 139.9188012
     address: "千葉県浦安市入船4-9-7"
     last_verified: "2026/6/29"
   - id: "poi-095"
@@ -1978,8 +1978,8 @@ facilities:
     hours_zhtw: "9:00～23:00"
     open_late: true
     baby_goods: true
-    lat: 35.656555
-    lng: 139.891785
+    lat: 35.6565444
+    lng: 139.891676
     address: "千葉県浦安市堀江5-22-24"
     last_verified: "2026/6/29"
   - id: "poi-096"
@@ -1994,8 +1994,8 @@ facilities:
     hours_ko: "9:30～20:00"
     hours_zhtw: "9:30～20:00"
     baby_goods: true
-    lat: 35.664772
-    lng: 139.898911
+    lat: 35.6647558
+    lng: 139.8990628
     address: "千葉県浦安市北栄3-31-3"
     last_verified: "2026/6/29"
   - id: "poi-097"
@@ -2010,8 +2010,8 @@ facilities:
     hours_ko: "8:30～19:30"
     hours_zhtw: "8:30～19:30"
     baby_goods: true
-    lat: 35.653358
-    lng: 139.897858
+    lat: 35.6532186
+    lng: 139.8979899
     address: "千葉県浦安市堀江6-1-41"
     last_verified: "2026/6/29"
   - id: "poi-098"
@@ -2027,8 +2027,8 @@ facilities:
     hours_zhtw: "9:00～23:00"
     open_late: true
     baby_goods: true
-    lat: 35.665897
-    lng: 139.892578
+    lat: 35.6658497
+    lng: 139.8924726
     address: "千葉県浦安市当代島1-1-23"
     official_url: "https://www.welcia.co.jp/"
     last_verified: "2026/6/29"
@@ -2062,8 +2062,8 @@ facilities:
     hours_ko: "평일 8:00～20:00／주말·공휴일휴무"
     hours_zhtw: "平日 8:00～20:00／週末及假日休息"
     baby_goods: true
-    lat: 35.643864
-    lng: 139.93103
+    lat: 35.6441885
+    lng: 139.9319118
     address: "千葉県浦安市日の出6-8-1"
     official_url: "https://www.welcia.co.jp/"
     last_verified: "2026/6/29"
@@ -2080,8 +2080,8 @@ facilities:
     hours_zhtw: "平日 9:00～22:00／週六 9:00～21:00／週日及假日 10:00～21:00"
     open_late: true
     baby_goods: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6494133
+    lng: 139.9121547
     address: "千葉県浦安市入船1-1-1 アトレ新浦安店1階"
     official_url: "https://www.kokumin.co.jp/"
     last_verified: "2026/6/29"
@@ -2098,8 +2098,8 @@ facilities:
     hours_zhtw: "9:00～24:00"
     open_late: true
     baby_goods: true
-    lat: 35.652039
-    lng: 139.90094
+    lat: 35.6523859
+    lng: 139.9007553
     address: "千葉県浦安市東野1-1-43"
     official_url: "https://www.matsukiyococokara-online.com/store/"
     last_verified: "2026/6/29"
@@ -2116,8 +2116,8 @@ facilities:
     hours_zhtw: "9:00～23:00"
     open_late: true
     baby_goods: true
-    lat: 35.652393
-    lng: 139.911469
+    lat: 35.652434
+    lng: 139.9107626
     address: "千葉県浦安市美浜1-7-1"
     official_url: "https://www.matsukiyococokara-online.com/store/"
     last_verified: "2026/6/29"
@@ -2220,8 +2220,8 @@ facilities:
     hours_ko: "10:00～21:00"
     hours_zhtw: "10:00～21:00"
     baby_goods: true
-    lat: 35.65778
-    lng: 139.896378
+    lat: 35.6577822
+    lng: 139.896158
     address: "千葉県浦安市堀江1-33-1"
     official_url: "https://www.kusuri-no-fukutaro.co.jp/"
     last_verified: "2026/6/29"
@@ -2237,8 +2237,8 @@ facilities:
     hours_ko: "평일 10:00～21:30／주말 10:00～21:00"
     hours_zhtw: "平日 10:00～21:30／週末 10:00～21:00"
     baby_goods: true
-    lat: 35.66695
-    lng: 139.893219
+    lat: 35.6669763
+    lng: 139.8932961
     address: "千葉県浦安市北栄1-11-20 吉田第一ビル1階"
     official_url: "https://www.kusuri-no-fukutaro.co.jp/"
     last_verified: "2026/6/29"
@@ -2254,8 +2254,8 @@ facilities:
     hours_ko: "월~금 9:00～20:00／토 9:00～18:00／일·공휴일휴무"
     hours_zhtw: "週一至週五 9:00～20:00／週六 9:00～18:00／週日及假日休息"
     baby_goods: true
-    lat: 35.665607
-    lng: 139.89505
+    lat: 35.6654336
+    lng: 139.8950824
     address: "千葉県浦安市北栄1-3-34 グランデュール峯崎1-1階"
     official_url: "https://www.kusuri-no-fukutaro.co.jp/"
     last_verified: "2026/6/29"
@@ -2271,8 +2271,8 @@ facilities:
     hours_ko: "월~금 9:00～18:00／토 9:00～13:00／일·공휴일휴무"
     hours_zhtw: "週一至週五 9:00～18:00／週六 9:00～13:00／週日及假日休息"
     baby_goods: true
-    lat: 35.670929
-    lng: 139.893967
+    lat: 35.6709508
+    lng: 139.8939237
     address: "千葉県浦安市当代島3-4-17"
     official_url: "https://www.kusuri-no-fukutaro.co.jp/"
     last_verified: "2026/6/29"
@@ -2288,8 +2288,8 @@ facilities:
     hours_ko: "월화목금 10:00～13:00・14:00～19:00／토 9:00～14:00／수일·공휴일휴무"
     hours_zhtw: "週一二四五 10:00～13:00・14:00～19:00／週六 9:00～14:00／週三週日及假日休息"
     baby_goods: true
-    lat: 35.665211
-    lng: 139.895309
+    lat: 35.665111
+    lng: 139.8952809
     address: "千葉県浦安市北栄1丁目2番23号 かみ吉ビル1階"
     official_url: "https://www.kusuri-no-fukutaro.co.jp/"
     last_verified: "2026/6/29"
@@ -2305,8 +2305,8 @@ facilities:
     hours_ko: "9:00～18:30／일·공휴일휴무"
     hours_zhtw: "9:00～18:30／週日及假日休息"
     baby_goods: true
-    lat: 35.647144
-    lng: 139.893661
+    lat: 35.6469503
+    lng: 139.8937547
     address: "千葉県浦安市東野3-4-11"
     official_url: "https://www.yac-web.co.jp/"
     last_verified: "2026/6/29"
@@ -2322,8 +2322,8 @@ facilities:
     hours_ko: "월~금 8:30～19:00／토 8:30～18:00／일·공휴일휴무"
     hours_zhtw: "週一至週五 8:30～19:00／週六 8:30～18:00／週日及假日休息"
     baby_goods: true
-    lat: 35.652313
-    lng: 139.891541
+    lat: 35.6523098
+    lng: 139.8914534
     address: "千葉県浦安市富士見2-9-1"
     last_verified: "2026/6/29"
   - id: "poi-116"
@@ -2339,8 +2339,8 @@ facilities:
     hours_zhtw: "平日・週六 6:00～24:00／假日 6:00～23:00"
     open_early: true
     open_late: true
-    lat: 35.665524
-    lng: 139.893463
+    lat: 35.6655838
+    lng: 139.8933738
     address: "千葉県浦安市北栄1-15-13"
     official_url: "https://map.mcdonalds.co.jp/"
     last_verified: "2026/6/29"
@@ -2375,8 +2375,8 @@ facilities:
     hours_zhtw: "內用 6:00～23:00／得來速 6:00～24:00"
     open_early: true
     open_late: true
-    lat: 35.651966
-    lng: 139.891663
+    lat: 35.6518456
+    lng: 139.891853
     address: "千葉県浦安市富士見1-6-22"
     official_url: "https://map.mcdonalds.co.jp/"
     last_verified: "2026/6/29"
@@ -2391,8 +2391,8 @@ facilities:
     hours_zh: "9:30～21:00"
     hours_ko: "9:30～21:00"
     hours_zhtw: "9:30～21:00"
-    lat: 35.649158
-    lng: 139.895233
+    lat: 35.6475893
+    lng: 139.893575
     address: "千葉県浦安市東野2-294-2"
     official_url: "https://map.mcdonalds.co.jp/"
     last_verified: "2026/6/29"
@@ -2424,8 +2424,8 @@ facilities:
     hours_ko: "10:00～22:00"
     hours_zhtw: "10:00～22:00"
     open_late: true
-    lat: 35.665291
-    lng: 139.893204
+    lat: 35.6652418
+    lng: 139.8932853
     address: "千葉県浦安市北栄1-16-16 折本ビル"
     official_url: "https://www.kfc.co.jp/"
     last_verified: "2026/6/29"
@@ -2457,8 +2457,8 @@ facilities:
     hours_ko: "8:00～22:00"
     hours_zhtw: "8:00～22:00"
     open_late: true
-    lat: 35.666241
-    lng: 139.893768
+    lat: 35.6662964
+    lng: 139.8938271
     address: "千葉県浦安市北栄1-12-13"
     official_url: "https://www.mos.jp/"
     last_verified: "2026/6/29"
@@ -2490,8 +2490,8 @@ facilities:
     hours_ko: "9:00～22:00 ※확인 필요"
     hours_zhtw: "9:00～22:00 ※需確認"
     open_late: true
-    lat: 35.665016
-    lng: 139.893082
+    lat: 35.6650042
+    lng: 139.8930413
     address: "千葉県浦安市北栄1-17-17"
     official_url: "https://www.burgerking.co.jp/"
     last_verified: "2026/6/29"
@@ -2573,8 +2573,8 @@ facilities:
     hours_zhtw: "平日 7:00～22:45／週末及假日 8:00～22:00"
     open_early: true
     open_late: true
-    lat: 35.665558
-    lng: 139.892654
+    lat: 35.6659368
+    lng: 139.8931593
     address: "千葉県浦安市北栄1-13-1 東京メトロ浦安駅構内"
     official_url: "https://www.hanamaruudon.com/"
     last_verified: "2026/6/29"
@@ -2623,8 +2623,8 @@ facilities:
     hours_ko: "11:00～22:00 ※L.O.폐점30분 전"
     hours_zhtw: "11:00～22:00 ※L.O.閉店30分鐘前"
     open_late: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6493196
+    lng: 139.9121413
     address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
     official_url: "https://stores.marugame.com/"
     last_verified: "2026/6/29"
@@ -2641,8 +2641,8 @@ facilities:
     hours_zhtw: "4:00～次日2:00"
     open_early: true
     open_late: true
-    lat: 35.665112
-    lng: 139.893066
+    lat: 35.6651001
+    lng: 139.8930359
     address: "千葉県浦安市北栄1-17-16"
     official_url: "https://stores.yoshinoya.com/yoshinoya/"
     last_verified: "2026/6/29"
@@ -2676,8 +2676,8 @@ facilities:
     hours_zhtw: "4:00～次日3:00 ※3:00～4:00休息"
     open_early: true
     open_late: true
-    lat: 35.664814
-    lng: 139.892456
+    lat: 35.664721
+    lng: 139.8923948
     address: "千葉県浦安市猫実4-18-26 浦安サンライズビル1F"
     official_url: "https://maps.sukiya.jp/jp/here.html"
     last_verified: "2026/6/29"
@@ -2694,8 +2694,8 @@ facilities:
     hours_zhtw: "4:00～次日3:00 ※3:00～4:00休息"
     open_early: true
     open_late: true
-    lat: 35.655205
-    lng: 139.893875
+    lat: 35.6551234
+    lng: 139.8939264
     address: "千葉県浦安市堀江6-4-29 メゾン浦安1F"
     official_url: "https://maps.sukiya.jp/jp/here.html"
     last_verified: "2026/6/29"
@@ -2713,8 +2713,8 @@ facilities:
     open_early: true
     open_late: true
     is_24h: true
-    lat: 35.665279
-    lng: 139.894302
+    lat: 35.6652897
+    lng: 139.8943609
     address: "千葉県浦安市北栄1-15-5 RECS浦安駅前"
     official_url: "https://pkg.navitime.co.jp/matsuyafoods/"
     last_verified: "2026/6/29"
@@ -2732,8 +2732,8 @@ facilities:
     open_early: true
     open_late: true
     is_24h: true
-    lat: 35.646214
-    lng: 139.887848
+    lat: 35.6463857
+    lng: 139.8880255
     address: "千葉県浦安市富士見3-16-9"
     official_url: "https://pkg.navitime.co.jp/matsuyafoods/"
     last_verified: "2026/6/29"
@@ -2749,8 +2749,8 @@ facilities:
     hours_ko: "10:00～23:00"
     hours_zhtw: "10:00～23:00"
     open_late: true
-    lat: 35.659607
-    lng: 139.90329
+    lat: 35.6598373
+    lng: 139.9035662
     address: "千葉県浦安市北栄4-2-12"
     official_url: "https://www.katsuya.jp/"
     last_verified: "2026/6/29"
@@ -2780,8 +2780,8 @@ facilities:
     hours_zh: "11:00～21:00"
     hours_ko: "11:00～21:00"
     hours_zhtw: "11:00～21:00"
-    lat: 35.666241
-    lng: 139.893768
+    lat: 35.6662245
+    lng: 139.8939613
     address: "千葉県浦安市北栄1-12-13"
     official_url: "https://www.31ice.co.jp/"
     last_verified: "2026/7/21"
@@ -2797,8 +2797,8 @@ facilities:
     hours_zh: "10:00～21:00"
     hours_ko: "10:00～21:00"
     hours_zhtw: "10:00～21:00"
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6500125
+    lng: 139.9131417
     address: "千葉県浦安市入船1-1-1 アトレ新浦安1F"
     official_url: "https://www.31ice.co.jp/"
     last_verified: "2026/6/29"
@@ -2832,8 +2832,8 @@ facilities:
     hours_zhtw: "7:00～次日2:00"
     open_early: true
     open_late: true
-    lat: 35.664562
-    lng: 139.895493
+    lat: 35.6646359
+    lng: 139.895584
     address: "千葉県浦安市北栄1丁目1-9"
     official_url: "https://store-info.skylark.co.jp/gusto/"
     last_verified: "2026/6/29"
@@ -2850,8 +2850,8 @@ facilities:
     hours_zhtw: "6:00～24:00"
     open_early: true
     open_late: true
-    lat: 35.652382
-    lng: 139.899826
+    lat: 35.6523098
+    lng: 139.8996556
     address: "千葉県浦安市東野1丁目3-12 ナツミ・ガーデン1階"
     official_url: "https://store-info.skylark.co.jp/jonathan/"
     last_verified: "2026/6/29"
@@ -2867,8 +2867,8 @@ facilities:
     hours_ko: "10:00～23:30"
     hours_zhtw: "10:00～23:30"
     open_late: true
-    lat: 35.643555
-    lng: 139.905167
+    lat: 35.6433451
+    lng: 139.9049824
     address: "千葉県浦安市今川4丁目13-2"
     official_url: "https://store-info.skylark.co.jp/bamiyan/"
     last_verified: "2026/6/29"
@@ -2901,8 +2901,8 @@ facilities:
     hours_ko: "월~금 9:00～23:00／주말·공휴일 8:00～23:00"
     hours_zhtw: "週一至週五 9:00～23:00／週末及假日 8:00～23:00"
     open_late: true
-    lat: 35.669964
-    lng: 139.894394
+    lat: 35.6699725
+    lng: 139.8945433
     address: "千葉県浦安市北栄2-18-32"
     official_url: "https://www.royalhost.jp/"
     last_verified: "2026/6/29"
@@ -2919,8 +2919,8 @@ facilities:
     hours_zhtw: "6:00～次日4:00"
     open_early: true
     open_late: true
-    lat: 35.659607
-    lng: 139.902832
+    lat: 35.6593863
+    lng: 139.9028769
     address: "千葉県浦安市猫実1-21-26"
     official_url: "https://maps.cocos-jpn.co.jp/jp/index.html"
     last_verified: "2026/6/29"
@@ -2970,8 +2970,8 @@ facilities:
     hours_ko: "11:00～24:00"
     hours_zhtw: "11:00～24:00"
     open_late: true
-    lat: 35.660442
-    lng: 139.901535
+    lat: 35.6602994
+    lng: 139.9014044
     address: "千葉県浦安市猫実2丁目13-23"
     official_url: "https://sato-res.com/"
     last_verified: "2026/6/29"
@@ -2987,8 +2987,8 @@ facilities:
     hours_ko: "11:00～23:30"
     hours_zhtw: "11:00～23:30"
     open_late: true
-    lat: 35.651943
-    lng: 139.901123
+    lat: 35.6519044
+    lng: 139.9013588
     address: "千葉県浦安市東野1-1-41"
     official_url: "https://www.tonden.co.jp/"
     last_verified: "2026/6/29"
@@ -3004,8 +3004,8 @@ facilities:
     hours_ko: "10:30～익일 3:00"
     hours_zhtw: "10:30～次日3:00"
     open_late: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6504004
+    lng: 139.913418
     address: "千葉県浦安市入船1-1-1 アトレ新浦安内"
     official_url: "https://www.saizeriya.co.jp/"
     last_verified: "2026/6/29"
@@ -3021,8 +3021,8 @@ facilities:
     hours_ko: "10:00～익일 2:00"
     hours_zhtw: "10:00～次日2:00"
     open_late: true
-    lat: 35.665981
-    lng: 139.892609
+    lat: 35.6659521
+    lng: 139.8924485
     address: "千葉県浦安市当代島1-1-22 佃甚ビル2F"
     official_url: "https://www.saizeriya.co.jp/"
     last_verified: "2026/6/29"
@@ -3106,8 +3106,8 @@ facilities:
     hours_zh: "11:00～21:00参考"
     hours_ko: "11:00～21:00기준"
     hours_zhtw: "11:00～21:00參考"
-    lat: 35.661366
-    lng: 139.900101
+    lat: 35.6613149
+    lng: 139.8999345
     address: "千葉県浦安市猫実2-33-24"
     official_url: "https://www.choushimaru.co.jp/"
     last_verified: "2026/6/29"
@@ -3173,8 +3173,8 @@ facilities:
     hours_zh: "11:00～需确认"
     hours_ko: "11:00～확인 필요"
     hours_zhtw: "11:00～需確認"
-    lat: 35.668987
-    lng: 139.893723
+    lat: 35.6690159
+    lng: 139.8937359
     address: "千葉県浦安市当代島2-5-1"
     official_url: "https://www.kagetsu.co.jp/"
     last_verified: "2026/6/29"
@@ -3190,8 +3190,8 @@ facilities:
     hours_ko: "11:00～23:00（L.O.22:55）"
     hours_zhtw: "11:00～23:00（L.O.22:55）"
     open_late: true
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.6492368
+    lng: 139.912034
     address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
     last_verified: "2026/6/29"
   - id: "poi-167"
@@ -3206,8 +3206,8 @@ facilities:
     hours_ko: "요일별 변동 ※대략10:00～24:00전후"
     hours_zhtw: "依星期變動 ※大致10:00～24:00前後"
     open_late: true
-    lat: 35.665203
-    lng: 139.893051
+    lat: 35.6651546
+    lng: 139.8930117
     address: "千葉県浦安市北栄1-17-15"
     official_url: "https://hidakaya.hiday.co.jp/"
     last_verified: "2026/6/29"
@@ -3223,8 +3223,8 @@ facilities:
     hours_ko: "11:00～익일 5:00"
     hours_zhtw: "11:00～次日5:00"
     open_late: true
-    lat: 35.665565
-    lng: 139.894089
+    lat: 35.6655054
+    lng: 139.8941517
     address: "千葉県浦安市北栄1-15-23"
     last_verified: "2026/6/29"
   - id: "poi-169"
@@ -3239,8 +3239,8 @@ facilities:
     hours_ko: "월화목금주말 17:30～23:45／수요일・첫째·셋째 화정기휴무"
     hours_zhtw: "週一二四五週末 17:30～23:45／週三・每週一第1·3週二例休"
     open_late: true
-    lat: 35.665043
-    lng: 139.889664
+    lat: 35.665063
+    lng: 139.8897636
     address: "千葉県浦安市猫実5-12-12"
     last_verified: "2026/6/29"
   - id: "poi-170"
@@ -3270,8 +3270,8 @@ facilities:
     hours_zh: "午间  11:00～14:10最后入店／晚间  周一至周六 17:00～21:25最后入店, 周日及节假日 17:00～19:25最后入店"
     hours_ko: "점심  11:00～14:10마지막 입장／저녁  월~토 17:00～21:25마지막 입장, 일·공휴일 17:00～19:25마지막 입장"
     hours_zhtw: "午間  11:00～14:10最後入店／晚間  週一至週六 17:00～21:25最後入店, 週日及假日 17:00～19:25最後入店"
-    lat: 35.670631
-    lng: 139.894714
+    lat: 35.6705935
+    lng: 139.8946854
     address: "千葉県浦安市北栄2-19-26"
     last_verified: "2026/7/21"
     note: "電話番号総点検で判明・補完"
@@ -3304,8 +3304,8 @@ facilities:
     hours_ko: "평일 17:00～23:00／주말·공휴일 11:00～23:00"
     hours_zhtw: "平日 17:00～23:00／週末及假日 11:00～23:00"
     open_late: true
-    lat: 35.665146
-    lng: 139.891632
+    lat: 35.6651263
+    lng: 139.891499
     address: "千葉県浦安市当代島1-17-4"
     official_url: "https://www.yakiniku-king.jp/shop/"
     last_verified: "2026/6/29"
@@ -3337,8 +3337,8 @@ facilities:
     hours_ko: "월~목·일 17:00～24:00／금토 17:00～익일 2:00"
     hours_zhtw: "週一至週四及週日 17:00～24:00／週五六 17:00～次日2:00"
     open_late: true
-    lat: 35.665184
-    lng: 139.894485
+    lat: 35.6650587
+    lng: 139.894613
     address: "千葉県浦安市北栄1-16-30 浦安小徳ビル1F"
     official_url: "https://www.gyukaku.ne.jp/"
     last_verified: "2026/6/29"
@@ -3371,8 +3371,8 @@ facilities:
     hours_ko: "11:00～15:00／17:00～24:00 ※일·공휴일 저녁 23:00까지 (정보)"
     hours_zhtw: "11:00～15:00／17:00～24:00 ※週日及假日 晚間 23:00至(有資訊)"
     open_late: true
-    lat: 35.664478
-    lng: 139.895676
+    lat: 35.6644812
+    lng: 139.8957932
     address: "千葉県浦安市北栄1-1-7 ブランシェ1F"
     last_verified: "2026/6/29"
   - id: "poi-178"
@@ -3387,8 +3387,8 @@ facilities:
     hours_ko: "11:00～15:00／월~토 15:00～24:00, 일 15:00～23:00"
     hours_zhtw: "11:00～15:00／週一至週六 15:00～24:00, 週日 15:00～23:00"
     open_late: true
-    lat: 35.640732
-    lng: 139.926575
+    lat: 35.6405419
+    lng: 139.926711
     address: "千葉県浦安市明海5-6-8 ラフィネス新浦安ベイモールA"
     last_verified: "2026/6/29"
   - id: "poi-179"
@@ -3436,8 +3436,8 @@ facilities:
     hours_ko: "11:30～15:00／17:00～23:00"
     hours_zhtw: "11:30～15:00／17:00～23:00"
     open_late: true
-    lat: 35.665291
-    lng: 139.893021
+    lat: 35.665318
+    lng: 139.8929635
     address: "千葉県浦安市北栄1-17-14 加納ビル2F"
     last_verified: "2026/6/29"
   - id: "poi-182"
@@ -3452,8 +3452,8 @@ facilities:
     hours_ko: "11:00～22:30（L.O.22:00）"
     hours_zhtw: "11:00～22:30（L.O.22:00）"
     open_late: true
-    lat: 35.666065
-    lng: 139.892853
+    lat: 35.6660851
+    lng: 139.8929286
     address: "千葉県浦安市北栄1-13-7 光雄マンション2階"
     official_url: "https://www.popolamama.com/"
     last_verified: "2026/6/29"
@@ -3503,8 +3503,8 @@ facilities:
     hours_ko: "11:00～23:00"
     hours_zhtw: "11:00～23:00"
     open_late: true
-    lat: 35.663998
-    lng: 139.896484
+    lat: 35.6652
+    lng: 139.8949403
     address: "千葉県浦安市北栄3-27-13"
     last_verified: "2026/6/29"
   - id: "poi-186"
@@ -3552,8 +3552,8 @@ facilities:
     hours_zhtw: "週一至週五 07:00～22:00／週末及假日 08:00～22:00"
     open_early: true
     open_late: true
-    lat: 35.665394
-    lng: 139.893875
+    lat: 35.665525
+    lng: 139.8938647
     address: "千葉県浦安市北栄1-15-9 寿ビル"
     official_url: "https://store.starbucks.co.jp/"
     last_verified: "2026/6/29"
@@ -3570,8 +3570,8 @@ facilities:
     hours_zhtw: "07:00～22:00"
     open_early: true
     open_late: true
-    lat: 35.665276
-    lng: 139.891998
+    lat: 35.6655032
+    lng: 139.8924002
     address: "千葉県浦安市当代島1-1-4 マーヴ浦安"
     official_url: "https://store.starbucks.co.jp/"
     last_verified: "2026/6/29"
@@ -3741,8 +3741,8 @@ facilities:
     hours_zhtw: "06:30～22:30"
     open_early: true
     open_late: true
-    lat: 35.664791
-    lng: 139.89209
+    lat: 35.6648059
+    lng: 139.8919335
     address: "千葉県浦安市猫実5-18-16 2F"
     official_url: "https://www.komeda.co.jp/"
     last_verified: "2026/6/29"
@@ -3810,8 +3810,8 @@ facilities:
     hours_zhtw: "07:00～22:00"
     open_early: true
     open_late: true
-    lat: 35.636112
-    lng: 139.884384
+    lat: 35.6362628
+    lng: 139.8832726
     address: "千葉県浦安市舞浜26-5 JR舞浜駅 改札外コンコース"
     last_verified: "2026/6/29"
   - id: "poi-204"
@@ -3842,8 +3842,8 @@ facilities:
     hours_zhtw: "8:00-23:45（調劑 週一-週六10:00-14:00/15:00-19:00・週日及假日休）"
     open_late: true
     baby_goods: true
-    lat: 35.644321
-    lng: 139.888519
+    lat: 35.6441908
+    lng: 139.8883957
     address: "千葉県浦安市富士見5-7-40"
     official_url: "https://store.seims.co.jp/map/9849/"
     last_verified: "2026/7/21"
@@ -3859,8 +3859,8 @@ facilities:
     hours_zh: "10:00～21:00"
     hours_ko: "10:00～21:00"
     hours_zhtw: "10:00～21:00"
-    lat: 35.66486
-    lng: 139.89415
+    lat: 35.6649802
+    lng: 139.894141
     address: "千葉県浦安市北栄1-16-5 サカゼン浦安2F"
     official_url: "https://www.daiso-sangyo.co.jp/shop"
     last_verified: "2026/7/9"
@@ -3941,8 +3941,8 @@ facilities:
     hours_zh: "10:00～21:00"
     hours_ko: "10:00～21:00"
     hours_zhtw: "10:00～21:00"
-    lat: 35.665432
-    lng: 139.894836
+    lat: 35.6656601
+    lng: 139.8944548
     address: "千葉県浦安市北栄1-14-1 西友浦安店4F"
     official_url: "https://www.seria-group.com/shop/"
     last_verified: "2026/7/9"
@@ -3959,8 +3959,8 @@ facilities:
     hours_ko: "10:00～22:00"
     hours_zhtw: "10:00～22:00"
     open_late: true
-    lat: 35.652317
-    lng: 139.891922
+    lat: 35.65241
+    lng: 139.8922393
     address: "千葉県浦安市富士見1-3-20 マルエツ浦安店2F"
     official_url: "https://www.watts-jp.com/"
     last_verified: "2026/7/9"
@@ -3975,8 +3975,8 @@ facilities:
     hours_zh: "9:00～21:00"
     hours_ko: "9:00～21:00"
     hours_zhtw: "9:00～21:00"
-    lat: 35.652039
-    lng: 139.90094
+    lat: 35.6523445
+    lng: 139.9006265
     address: "千葉県浦安市東野1-1-43 マツモトキヨシ浦安東野店内"
     official_url: "https://www.watts-jp.com/"
     last_verified: "2026/7/9"
@@ -3994,8 +3994,8 @@ facilities:
     open_early: true
     atm_intl: "1"
     takkyubin: true
-    lat: 35.651989
-    lng: 139.900589
+    lat: 35.6517257
+    lng: 139.9003771
     address: "千葉県浦安市東野1-6-1"
     official_url: "https://map.japanpost.jp/p/search/"
     last_verified: "2026/7/9"
@@ -4013,8 +4013,8 @@ facilities:
     hours_zhtw: "平日9:00～17:00"
     atm_intl: "1"
     takkyubin: true
-    lat: 35.665981
-    lng: 139.892609
+    lat: 35.665987
+    lng: 139.8924592
     address: "千葉県浦安市当代島1-1-22"
     official_url: "https://map.japanpost.jp/p/search/"
     last_verified: "2026/7/9"
@@ -4051,8 +4051,8 @@ facilities:
     hours_zhtw: "平日9:00～17:00"
     atm_intl: "1"
     takkyubin: true
-    lat: 35.641327
-    lng: 139.920609
+    lat: 35.6412525
+    lng: 139.9200565
     address: "千葉県浦安市明海4-2-1"
     official_url: "https://map.japanpost.jp/p/search/"
     last_verified: "2026/7/9"
@@ -4070,8 +4070,8 @@ facilities:
     hours_zhtw: "平日9:00～17:00"
     atm_intl: "1"
     takkyubin: true
-    lat: 35.658863
-    lng: 139.899338
+    lat: 35.6588087
+    lng: 139.8993766
     address: "千葉県浦安市猫実2-7-7"
     official_url: "https://map.japanpost.jp/p/search/"
     last_verified: "2026/7/9"
@@ -4087,8 +4087,8 @@ facilities:
     hours_zh: "10:00～21:00"
     hours_ko: "10:00～21:00"
     hours_zhtw: "10:00～21:00"
-    lat: 35.64994
-    lng: 139.91272
+    lat: 35.649945
+    lng: 139.9130049
     address: "千葉県浦安市入船1-1-1 アトレ新浦安2F"
     official_url: "https://map.uniqlo.com/jp/ja/"
     last_verified: "2026/7/9"
@@ -4137,8 +4137,8 @@ facilities:
     hours_ko: "월~금 17:00～24:00／주말 16:00～24:00"
     hours_zhtw: "週一至週五 17:00～24:00／週末 16:00～24:00"
     open_late: true
-    lat: 35.648838
-    lng: 139.911865
+    lat: 35.6488007
+    lng: 139.9122888
     address: "千葉県浦安市入船1-6-1 新浦安TKビルディング2F"
     official_url: "https://map.torikizoku.co.jp/"
     last_verified: "2026/7/21"
@@ -4155,8 +4155,8 @@ facilities:
     hours_ko: "17:00～익일 3:00"
     hours_zhtw: "17:00～次日3:00"
     open_late: true
-    lat: 35.665016
-    lng: 139.893082
+    lat: 35.665026
+    lng: 139.8930332
     address: "千葉県浦安市北栄1-17-17 大盛ビル2F"
     official_url: "https://www.monteroza.co.jp/"
     last_verified: "2026/7/9"
@@ -4289,8 +4289,8 @@ facilities:
     hours_ko: "10:00～20:00"
     hours_zhtw: "10:00～20:00"
     tax_free: true
-    lat: 35.665432
-    lng: 139.894836
+    lat: 35.6656426
+    lng: 139.8945111
     address: "千葉県浦安市北栄1-14-1 西友浦安店内"
     official_url: "https://www.nojima.co.jp/shop/chiba/seiyuurayasu/"
     last_verified: "2026/7/9"
