@@ -2,6 +2,7 @@
 title: "Hotels with an In-House Shop near Tokyo Disney Resort (Drinks, Snacks & Essentials)"
 date: 2026-07-12T10:00:00+09:00
 lastmod: 2026-07-12
+factChecked: "2026-08-08"
 layout: facility-list
 facility: convenience
 description: "Forgot diapers at 10pm? Want drinks without leaving the building? A local list of Tokyo Disney Resort area hotels with a shop inside the hotel — from full convenience stores to well-stocked gift shops."

@@ -2,6 +2,7 @@
 title: "Hotels Right at the Train Station near Tokyo Disney Resort (Direct Link or 1-Minute Walk)"
 date: 2026-07-12T10:00:00+09:00
 lastmod: 2026-07-12
+factChecked: "2026-08-08"
 layout: facility-list
 facility: station
 description: "No shuttle timetables, no taxi queues — just walk out of the ticket gate and into your hotel. A local list of station-front hotels in the Tokyo Disney Resort area, sorted by price."

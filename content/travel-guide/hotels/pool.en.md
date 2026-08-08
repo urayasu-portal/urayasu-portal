@@ -2,6 +2,7 @@
 title: "Hotels with a Pool near Tokyo Disney Resort"
 date: 2026-07-12T10:00:00+09:00
 lastmod: 2026-07-12
+factChecked: "2026-08-08"
 layout: facility-list
 facility: pool
 description: "A swim before the parks, or a rest-day plan the kids will accept. A local list of Tokyo Disney Resort area hotels with a pool confirmed in our database, sorted by price."

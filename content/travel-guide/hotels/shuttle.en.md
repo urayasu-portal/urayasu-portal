@@ -1,7 +1,8 @@
 ---
 title: "Tokyo Disney Resort Hotels with Free Shuttle Buses | How Park Shuttles Really Work"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-22
+lastmod: 2026-08-08
+factChecked: "2026-08-08"
 description: "Which hotels near Tokyo Disneyland and DisneySea have a free shuttle bus? A local guide to the four shuttle patterns — no shuttle needed, Disney Resort Cruiser, the Partner Hotel Shuttle, and each hotel's own bus — plus the timetable traps to check before booking."
 tags:
   - Hotel
@@ -16,7 +17,7 @@ faq:
   - q: "Which hotels have a free shuttle bus to Tokyo Disneyland and DisneySea?"
     a: "The four Partner Hotels (Urayasu Brighton, Oriental Hotel Tokyo Bay, Hotel Emion Tokyo Bay, Mitsui Garden Hotel Prana) run a dedicated free shuttle with no reservation needed, about 15 minutes to the parks. Several independent hotels such as The Royal Park Hotel Maihama Resort Tokyo Bay and Maihama Eurasia also run their own free shuttles. Always check the current timetable before booking."
   - q: "Do Disney Hotels and Official Hotels need a shuttle at all?"
-    a: "Mostly no. Tokyo Disneyland Hotel, Hotel MiraCosta and Fantasy Springs Hotel are connected or adjacent to the parks, and Sheraton Grande Tokyo Bay is a 1-minute walk from Bayside Station on the monorail. Disney Ambassador Hotel and the Official Hotels Okura, Grand Nikko and Hilton run a free shuttle to Bayside Station, where you transfer to the Disney Resort Line."
+    a: "Mostly no. Tokyo Disneyland Hotel, Hotel MiraCosta and Fantasy Springs Hotel are connected or adjacent to the parks, and Sheraton Grande Tokyo Bay is a 1-minute walk from Bayside Station on the monorail. The Official Hotels Okura, Grand Nikko and Hilton run a free shuttle to Bayside Station, where you transfer to the Disney Resort Line. Disney Ambassador Hotel uses the same Disney Resort Cruiser shuttle but on a different route that goes straight to the park."
   - q: "What should I check about hotel shuttles before booking?"
     a: "Three things: the last-bus time (shuttle stops get very crowded right after park close), whether the shuttle runs all day or only a few times (MyStays Shin-Urayasu's direct Disney shuttle runs only a few times at night), and recent timetable changes (Henn na Hotel Maihama reduced its Maihama Station shuttle from July 2026)."
 ---
@@ -54,9 +55,11 @@ If your priority is "get a tired child to bed fast," this pattern beats any shut
 
 ## Pattern 2 | Free hotel shuttle to Bayside Station + monorail
 
-**[Disney Ambassador Hotel](/en/travel-guide/hotels/ambassador-hotel/)** and the Official Hotels **[Hotel Okura Tokyo Bay](/en/travel-guide/hotels/hotel-okura-tokyo-bay/)**, **[Grand Nikko Tokyo Bay Maihama](/en/travel-guide/hotels/grand-nikko-tokyo-bay/)** and **[Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/)** run a free shuttle to **Bayside Station**, where you transfer to the Disney Resort Line monorail for the parks.
+The Official Hotels **[Hotel Okura Tokyo Bay](/en/travel-guide/hotels/hotel-okura-tokyo-bay/)**, **[Grand Nikko Tokyo Bay Maihama](/en/travel-guide/hotels/grand-nikko-tokyo-bay/)** and **[Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/)** run a free shuttle called the "Disney Resort Cruiser" to **Bayside Station**, where you transfer to the Disney Resort Line monorail for the parks.
 
 It is a two-step trip (bus + monorail), but both legs are short and frequent. **[Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/)** and **[Maihama View Hotel by HULIC](/en/travel-guide/hotels/maihama-view-hotel/)** are the two Official Hotels where checking the free-shuttle timetable matters most — First Resort is about a 15-minute walk to TDL if you miss the bus.
+
+**[Disney Ambassador Hotel](/en/travel-guide/hotels/ambassador-hotel/)** also uses the Disney Resort Cruiser, but on a different route that goes straight to the park — no transfer at Bayside Station is needed.
 
 ---
 

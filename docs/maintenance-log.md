@@ -304,6 +304,32 @@ in-house-store・near-station・large-public-bath・pool（動的ページ、付
 
 ---
 
+## 2026-08-08（第12回・hotels比較記事の多言語版）
+
+機械スキャン: 期日超過0件・日付直書き0件・facility-database.csv要対応0件・内部リンク404 0件。
+
+前回の持ち越しどおり、hotels配下の比較記事の多言語版16ファイル（shuttle/types/kids各4言語＋in-house-store/near-station/large-public-bath/pool各en版）を消化。
+
+### Web照合・事実修正（2件・第11回で判明したja版の誤りの多言語展開）
+| 記事 | 結果 |
+|---|---|
+| hotels/shuttle（en/zh/zh-tw/ko） | 第11回でja版を訂正したディズニーアンバサダーホテルのルート誤り（ベイサイド経由→実際は別ルート直行）が**4言語すべてに同じ誤りとして存在**したため統一修正。なお「舞浜ユーラシア by HULIC」のホテル名混同はja版のみの誤りで、他言語版はもともと正しい表記だった |
+| hotels/types（en/zh/zh-tw/ko） | 第10回・第11回で判明したハッピーエントリーの「開園15分前」古い記述（東京ディズニーシーは工事で5〜15分前に変更）が**4言語すべての4箇所**（FAQ2箇所・比較表・箇条書き）に残っていたため統一修正 |
+
+### factChecked付与（16ファイル）
+shuttle・types（本文修正、上記の通り）／kids（ja版で修正なしと確認済みのため付与のみ）／in-house-store・near-station・large-public-bath・pool（en版、動的ページ）
+
+これで**hotels配下の主要比較記事は全言語でfactCheckedローテーションが一巡完了**。
+
+### 持ち越し更新
+- **factChecked未設定 残り**: travel-guide主要記事（access-guide/kids-emergency/urayasu-map等）の多言語版
+- 要再確認: hotels/access.mdの浦安駅↔舞浜路線バス運賃(240円)・所要時間（継続持ち越し）
+- 監視: 東京ディズニーシーのハッピーエントリー時間（5〜15分変動）は入口工事に伴う一時的措置。工事終了時期が判明次第、happy-entry.md・types.md（全5言語）の表現を見直す
+- 監視: 葛西臨海水族園の建て替え（新水族園2027年頃開業予定）
+- 監視: urayasu-nyuyoji-shien の子どもインフル助成は季節事業（10月ごろFY2026ページ公開時に再リンク検討）
+
+---
+
 ## 2026-08-01（臨時・生活ガイド掲載施設の実在確認）
 
 通常のローテーションとは別に、**life-guide 全23記事に固有名で登場する施設・店舗の「実在するか」**だけを対象にした特別監査。記事本文をタグ除去して全件抽出→公式一次情報で照合。

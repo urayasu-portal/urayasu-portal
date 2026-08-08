@@ -2,6 +2,7 @@
 title: "Hotels with a Large Public Bath or Natural Onsen near Tokyo Disney Resort"
 date: 2026-07-12T10:00:00+09:00
 lastmod: 2026-07-12
+factChecked: "2026-08-08"
 layout: facility-list
 facility: bath
 description: "Soak away a full day at the parks. A local list of Tokyo Disney Resort area hotels with a large Japanese-style public bath — including ones fed by real natural hot springs — sorted by price."

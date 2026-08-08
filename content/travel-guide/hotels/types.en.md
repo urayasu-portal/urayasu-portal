@@ -1,7 +1,8 @@
 ---
 title: "Tokyo Disney Resort Hotel Categories Explained | Disney, Official, Partner & Good Neighbor Hotels"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-08-08
+factChecked: "2026-08-08"
 description: "Tokyo Disney Resort's hotels split into four categories: Disney Hotels (operated by the resort), Official Hotels, Partner Hotels, and Good Neighbor Hotels. We break down the real differences — early park entry (Happy Entry), in-hotel ticket purchase, free shuttles, baggage delivery — plus location and price, so you can pick the right category for your trip."
 tags:
   - Hotel
@@ -12,9 +13,9 @@ noDate: true
 tgNav: true
 faq:
   - q: "What is the difference between Disney Hotels and Official Hotels?"
-    a: "Disney Hotels are operated by Tokyo Disney Resort itself and are the only category with Happy Entry (entry up to 15 minutes before opening). Official Hotels are approved hotels in the in-resort Bayside area: you reach the parks by the Disney Resort Line monorail or free shuttle and get free baggage delivery at Maihama Station, but no early entry."
+    a: "Disney Hotels are operated by Tokyo Disney Resort itself and are the only category with Happy Entry (Tokyo Disneyland is 15 minutes early; Tokyo DisneySea has been 5 to 15 minutes early due to construction). Official Hotels are approved hotels in the in-resort Bayside area: you reach the parks by the Disney Resort Line monorail or free shuttle and get free baggage delivery at Maihama Station, but no early entry."
   - q: "What is Happy Entry at Tokyo Disney Resort?"
-    a: "A guests-only benefit that lets Disney Hotel guests enter the park up to 15 minutes before official opening. The eligible park and conditions vary by hotel and season, so confirm the latest details on the official Tokyo Disney Resort website before booking."
+    a: "A guests-only early-entry benefit for Disney Hotel guests. Tokyo Disneyland remains 15 minutes early, but Tokyo DisneySea has been 5 to 15 minutes early (it varies by day) since September 2025 due to entrance-area construction. The eligible park and conditions vary by hotel and season, so confirm the latest details on the official Tokyo Disney Resort website before booking."
   - q: "Do Partner Hotels have a free shuttle to the parks?"
     a: "Yes. A dedicated shuttle that is free and needs no reservation reaches the parks in about 15 minutes. Partner Hotels are mostly in the Shin-Urayasu area; baggage delivery is paid."
 ---
@@ -33,7 +34,7 @@ Benefits and prices are estimates based on 2025–2026 research. Always confirm 
 
 | Category | Location | Early entry<br>(Happy Entry) | Free park transport | Baggage delivery |
 |---|---|---|---|---|
-| **Disney Hotels** (resort-run) | Next to the parks / in-resort | ◯ 15 min early | Walk / monorail | ◯ Free |
+| **Disney Hotels** (resort-run) | Next to the parks / in-resort | ◯ Land 15 min / Sea 5–15 min | Walk / monorail | ◯ Free |
 | **Official Hotels** | In-resort, Bayside | ✗ | Resort Line / free shuttle | ◯ Free (at Maihama Stn.) |
 | **Partner Hotels** | Shin-Urayasu area | ✗ | Dedicated shuttle (free, no booking) | △ Paid |
 | **Good Neighbor Hotels** | Central Tokyo, Odaiba, Makuhari, etc. | ✗ | Direct bus (free, reservation required) | ✗ |
@@ -53,7 +54,7 @@ These are operated **directly by Tokyo Disney Resort.** They sit closest to the 
 
 **Key benefits**
 
-- **Happy Entry** — guests-only entry up to 15 minutes before opening (eligible park and conditions vary by hotel)
+- **Happy Entry** — guests-only early entry (Land 15 min early, Sea 5–15 min early due to construction; eligible park and conditions vary by hotel)
 - Buy park tickets inside the hotel
 - Free baggage delivery
 - Guest-exclusive merchandise, and rooms immersed in Disney theming
