@@ -86,6 +86,9 @@
     <span class="tg-hotels-eyebrow">{{ if $isEN }}Maihama / Shin-Urayasu / Urayasu{{ else if $isZH }}舞滨·浦安·新浦安地区{{ else if $isKO }}마이하마·우라야스·신우라야스 지역{{ else if $isZHTW }}舞濱·浦安·新浦安地區{{ else }}舞浜・新浦安・浦安エリア{{ end }}</span>
   </div>
   <h1 class="tg-hotels-title">{{ if $isEN }}Hotel Comparison Map{{ else if $isZH }}酒店比较地图{{ else if $isKO }}호텔 비교 지도{{ else if $isZHTW }}飯店比較地圖{{ else }}ホテル比較マップ{{ end }}</h1>
+  <div class="hg-meta">
+    {{- partial "meta-badges.html" . }}
+  </div>
   {{- if $isEN }}
   <p class="tg-hotels-lead">Of all <strong>{{ $total }}</strong> hotels in the area, the <strong>{{ len $hotelData }}</strong> with detailed data are shown together on a map and list. Filter by area, facilities and price and both the list and the map update at once.</p>
   {{- else if $isZH }}

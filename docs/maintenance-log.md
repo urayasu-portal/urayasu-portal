@@ -423,3 +423,26 @@ libraries-public-facilities / urayasu-kosodate-shien-matome / indoor-playgrounds
 **検証**: 全120行16列／id重複0／座標欠損0／UTF-8 BOM維持／type語彙10種のまま（park 20・evacuation 33・childcare 16・government 15・library 8・kominkan 7・commercial 7・culture 6・sports 4・medical 4）。
 
 **残る持ち越し**: sogo-fukushi-center の official_url（公式個別ページ未特定）。記事側（parks-playgrounds / urayasu-koreisha-kaigo）へ新規6公園・日の出支所を反映するかは別途判断。
+
+---
+
+## 2026-08-08（臨時・factCheckedバッジ非表示バグの発見と修正）
+
+第12回終了後、ユーザーから「情報確認した日を更新できているか」との確認を受けて調査したところ、**frontmatterへのfactChecked記録は正しいが、一部ページ種別ではバッジが画面に一切表示されない構造的な欠陥**を発見。
+
+### 原因
+`layout: facility-list` および `layout: compare` を使うページ（hotels配下のホテル一覧・設備逆引きページ）専用のレイアウトテンプレートに、更新日・情報確認日バッジを描画する共通パーシャル `meta-badges.html` の呼び出しが存在しなかった。個別ホテルページ（`travel-guide/hotels/single.html`）やlife-guide/travel-guide記事（各々の`single.html`）には元から実装されていたが、この2レイアウトだけ漏れていた。
+
+この結果、第9回〜第12回で以下7記事（多言語版含む計約20ファイル）に付与したfactChecked日付が、**ずっとページ上に反映されていなかった**：
+- `layout: compare`: compare（全5言語）
+- `layout: facility-list`: in-house-store・near-station・large-public-bath・pool・airport-limousine・coin-laundry（各ja/en、一部多言語）
+
+### 修正
+`layouts/travel-guide/hotels/facility-list.html` と `layouts/travel-guide/hotels/compare.html` の見出し（`<h1>`）直後に `<div class="hg-meta">{{ partial "meta-badges.html" . }}</div>` を追加。CSS（`.post-updated-badge`）は独立したクラスのため、既存の個別ホテルページと同じスタイルでそのまま表示される。
+
+### 検証
+`hugo --minify` exit 0。上記7記事・全18言語別ページで `post-verified-badge` の生成を確認。ローカルhugoサーバーでin-house-store（ja）とcompare（ja）を実際にレンダリングし、アクセシビリティツリーで「2026年8月8日情報確認」バッジが見出し直下に正しく表示され、他のUI（フィルターボタン・一覧行）にレイアウト崩れがないことを確認済み。
+
+### 教訓・今後の対応
+- 新しいレイアウトテンプレートを追加する際は、必ず `meta-badges.html` の呼び出しを含めること（life-guide/travel-guide/hotels共通のチェック項目として今後のfact-check運用に追加）
+- 過去にこの2レイアウトへfactCheckedを付与した記事は、日付自体は正しく記録されているため再照合は不要（今回はテンプレート側の修正のみで解決）

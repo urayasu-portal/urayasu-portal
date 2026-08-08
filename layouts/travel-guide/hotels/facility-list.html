@@ -67,6 +67,9 @@
   </nav>
   <header class="fl-header">
     <h1>{{ .Title }}</h1>
+    <div class="hg-meta">
+      {{- partial "meta-badges.html" . }}
+    </div>
     <p class="fl-count">
       {{- if $isEN }}<strong>{{ len $rows }}</strong> hotels in our local database ・ prices are typical off-peak rates for 2 adults per room
       {{- else }}該当<strong>{{ len $rows }}</strong>軒（当サイトのホテルデータベースより）・価格は2名1室・通常期の目安
