@@ -17,6 +17,7 @@ sources:
   - name: "Diamond and Flower Ferris Wheel Official Site"
     url: "https://www.senyo.co.jp/kasai/"
 tags: ["rest-day", "with-kids", "kasai", "aquarium"]
+factChecked: "2026-08-11"
 ---
 
 Look toward Tokyo from the Maihama Station platform and you'll see a giant Ferris wheel. That's **Kasai Rinkai Park** — one stop and about 3 minutes away on the JR Keiyo Line, and one of the largest parks in Tokyo. Entry is free. Inside you'll find **Tokyo Sea Life Park**, an aquarium where real bluefin tuna school around a doughnut-shaped tank (free for elementary-school kids and under), the 117-meter **Diamond and Flower Ferris Wheel**, and an artificial beach where kids splash barefoot. Three minutes from the Disney crowds, an entirely different kind of day.

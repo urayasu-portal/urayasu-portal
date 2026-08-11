@@ -17,6 +17,7 @@ sources:
   - name: "Tokyo Metropolitan Bureau of Transportation – Contactless payment for transit"
     url: "https://www.kotsu.metro.tokyo.jp/subway/fare/contactless.html"
 tags: ["access", "tokyo", "asakusa", "shibuya", "skytree"]
+factChecked: "2026-08-11"
 ---
 
 Planning one Tokyo sightseeing day in the middle of your Disney trip? The best route depends on **which station your hotel is near**. This area has two rail lines: the **JR Keiyo Line** (Maihama and Shin-Urayasu stations — the Disney-area and bayside hotels) and the **Tokyo Metro Tozai Line** (Urayasu Station — the downtown-Urayasu hotels). Below, the seven classic sights with routes and fares from both lines, side by side. Times and fares are rough estimates (transfer walking included; fares are IC-card, adult, one-way).

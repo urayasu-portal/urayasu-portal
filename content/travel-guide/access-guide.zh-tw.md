@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼·浦安交通指南 | 從機場·東京站出發的路線"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-07-05
+lastmod: 2026-08-11
 slug: "urayasu-maihama-access-guide"
 badge: "交通"
 description: "比較從羽田機場、成田機場、東京站前往浦安站·新浦安站·舞濱站·東京迪士尼度假區的電車·機場巴士·計程車路線。含輪椅·嬰兒車·大型行李旅客注意事項。"
@@ -35,6 +35,7 @@ faq:
     a: "從機場直達飯店選機場巴士比較方便，時間可控性高則選電車。在東京站轉乘京葉線時，請預留額外步行時間。"
   - q: "迪士尼樂園閉園後能方便地叫到計程車嗎？"
     a: "閉園後和雨天計程車需求會激增，可能需要等待。也請考慮飯店班車、路線巴士和叫車軟體。"
+factChecked: "2026-08-11"
 ---
 
 <div class="access-journey">
@@ -76,7 +77,7 @@ faq:
         </div>
         <div class="strip" style="margin-top:8px">
           <span class="node"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>東京站</span>
-          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR京葉線·武藏野線</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">約15分</span></span>
+          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR京葉線·武藏野線</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">約20分</span></span>
           <span class="node" style="border-color:#1A5C8A"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>舞濱站</span>
         </div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2851B"></i> 東京站的京葉線月台距新幹線·在來線<strong>步行10分鐘以上</strong>。請預留充裕的轉乘時間</div>
@@ -84,7 +85,7 @@ faq:
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">前往迪士尼樂園</div>
-            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> 步行 約10分<br><i class="ti ti-train" style="color:#1A5C8A"></i> 度假區線（步行2分到度假區門戶站）1站<br><i class="ti ti-car" style="color:#1A5C8A"></i> 計程車 數分鐘</div>
+            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> 步行 約5分<br><i class="ti ti-train" style="color:#1A5C8A"></i> 度假區線（步行2分到度假區門戶站）1站<br><i class="ti ti-car" style="color:#1A5C8A"></i> 計程車 數分鐘</div>
           </div>
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">前往迪士尼海洋</div>
@@ -107,7 +108,7 @@ faq:
           <span class="conn"><span class="mode" style="color:#C2421F"><i class="ti ti-bus"></i> 利木津巴士</span><span class="lin"><span class="bar" style="background:#E05535"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E05535"></i></span><span class="time">約35〜60分·無需轉乘</span></span>
           <span class="node" style="border-color:#E05535"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#E05535"></i>直達飯店</span>
         </div>
-        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 從東京站：JR京葉線 約15分 → 舞濱站 → 步行·飯店接送　/　成田機場也有利木津巴士（約60〜90分）</div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 從東京站：JR京葉線 約20分 → 舞濱站 → 步行·飯店接送　/　成田機場也有利木津巴士（約60〜90分）</div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2421F"></i> <strong>千鳥區的飯店（SPA&HOTEL舞濱歐亞等）沒有機場直達利木津巴士。</strong>可搭利木津巴士到樂園，再轉乘班車·步行·計程車（或搭JR到舞濱站）</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#E05535"></i>往返樂園（每天早晚）</div>
         <div class="strip">

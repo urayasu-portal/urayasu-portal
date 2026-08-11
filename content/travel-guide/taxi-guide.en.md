@@ -35,6 +35,7 @@ faq:
     a: "Standard taxis can usually accommodate strollers and luggage, but wagon-style vehicles may be needed for larger loads. Specify your luggage when booking."
   - q: "Can I get a taxi immediately after Disney park closing?"
     a: "Demand spikes after closing and in rainy weather. For guaranteed service, allow extra time or check hotel shuttles, the Disney Resort Line, and local buses as backup options."
+factChecked: "2026-08-11"
 ---
 
 This guide covers taxi stands and dispatch companies by station, flat-rate airport taxi fares, and tips for wheelchair-accessible and welfare taxis in the Urayasu, Shin-Urayasu, and Maihama areas.

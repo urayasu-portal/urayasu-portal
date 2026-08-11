@@ -14,6 +14,7 @@ sources:
     url: "https://www.city.urayasu.lg.jp/shisetsu/kouen/kotsu/1005852.html"
 tags: ["rest-day", "with-kids", "free", "shin-urayasu"]
 categories: ["travel-guide"]
+factChecked: "2026-08-11"
 ---
 
 Your kids survived two full days of Disney queues — but somehow they still have energy to burn, and you don't. **Urayasu Traffic Park (交通公園, Kōtsū Kōen)** is the local answer: a free city-run park one train stop from Maihama where children ride bikes on a miniature road course, cuddle guinea pigs, and take a short pony ride. No tickets, no lines that matter, no gift shop ambush. It's where Urayasu families actually take their own kids.

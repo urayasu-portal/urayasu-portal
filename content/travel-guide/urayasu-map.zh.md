@@ -10,6 +10,7 @@ tags:
 images: ["/images/og-travel-urayasu.png"]
 noDate: true
 tgNav: true
+factChecked: "2026-08-11"
 ---
 
 乐园以外的“临时需要”，一张地图搞定。选择您入住的饭店，再按需求（想买尿布／想深夜用餐／想用海外卡取现 等）或店铺类型筛选，即可在地图上看到最近的店铺与步行时间参考。

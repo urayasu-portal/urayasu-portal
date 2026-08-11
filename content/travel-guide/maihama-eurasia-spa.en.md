@@ -13,6 +13,7 @@ sources:
   - name: "Spa & Hotel Maihama Eurasia Official Site – Hours & Prices"
     url: "https://my-spa.jp/spa/price/"
 tags: ["onsen", "maihama", "rest-day"]
+factChecked: "2026-08-11"
 ---
 
 A full Disney day puts 20,000–30,000 steps on adult legs. The cure is five minutes from Maihama Station by free shuttle: **Spa & Hotel Maihama Eurasia**, the only place in the Maihama area with a genuine **natural hot spring (onsen)**. You don't need to stay overnight — day-use bathing gets you open-air baths, a cave bath, saunas and a foot bath. "Play at the park, soak in an onsen, sleep like a stone" is the perfect Japanese day, and you can have it without leaving Disney's doorstep.

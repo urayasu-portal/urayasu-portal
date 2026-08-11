@@ -1,7 +1,7 @@
 ---
 title: "How to Get to Tokyo Disney Resort & Urayasu | Routes from Airports & Tokyo Station"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-07-22
+lastmod: 2026-08-11
 slug: "urayasu-maihama-access-guide"
 badge: "Access"
 description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort. Includes notes for guests with wheelchairs, strollers, or heavy luggage."
@@ -36,6 +36,7 @@ faq:
     a: "The limousine bus is good for going directly from the airport to your hotel. The train works well when you need predictable timing. When transferring to the Keiyo Line at Tokyo Station, allow extra time for the long walk."
   - q: "Can I easily get a taxi after Disney park closing?"
     a: "Taxi demand rises after park closing and on rainy days, so wait times may occur. Also consider hotel shuttles, local buses, and ride-hailing apps."
+factChecked: "2026-08-11"
 ---
 
 <div class="access-journey">
@@ -77,7 +78,7 @@ faq:
         </div>
         <div class="strip" style="margin-top:8px">
           <span class="node"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>Tokyo Station</span>
-          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR Keiyo / Musashino Line</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">approx. 15 min</span></span>
+          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR Keiyo / Musashino Line</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">approx. 20 min</span></span>
           <span class="node" style="border-color:#1A5C8A"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>Maihama Station</span>
         </div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2851B"></i> The Keiyo Line platforms at Tokyo Station are <strong>a 10+ min walk</strong> from the Shinkansen and other lines. Allow extra time for the transfer.</div>
@@ -85,7 +86,7 @@ faq:
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">To Tokyo Disneyland</div>
-            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> Walk approx. 10 min<br><i class="ti ti-train" style="color:#1A5C8A"></i> Resort Line (2-min walk to Resort Gateway Station) 1 stop<br><i class="ti ti-car" style="color:#1A5C8A"></i> Taxi a few min</div>
+            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> Walk approx. 5 min<br><i class="ti ti-train" style="color:#1A5C8A"></i> Resort Line (2-min walk to Resort Gateway Station) 1 stop<br><i class="ti ti-car" style="color:#1A5C8A"></i> Taxi a few min</div>
           </div>
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">To Tokyo DisneySea</div>
@@ -108,7 +109,7 @@ faq:
           <span class="conn"><span class="mode" style="color:#C2421F"><i class="ti ti-bus"></i> Limousine bus</span><span class="lin"><span class="bar" style="background:#E05535"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E05535"></i></span><span class="time">approx. 35–60 min · no transfer</span></span>
           <span class="node" style="border-color:#E05535"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#E05535"></i>Straight to your hotel</span>
         </div>
-        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> From Tokyo Station: JR Keiyo Line approx. 15 min → Maihama Sta. → walk / hotel shuttle　/　Limousine bus also runs from Narita (approx. 60–90 min)</div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> From Tokyo Station: JR Keiyo Line approx. 20 min → Maihama Sta. → walk / hotel shuttle　/　Limousine bus also runs from Narita (approx. 60–90 min)</div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2421F"></i> <strong>Hotels in the Chidori area (e.g. Maihama Eurasia) have no direct airport limousine bus.</strong> Take the limousine bus to a park, then move by shuttle bus, on foot, or by taxi (or take the JR to Maihama Station).</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#E05535"></i>Daily park trips (each morning &amp; evening)</div>
         <div class="strip">

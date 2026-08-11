@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니·우라야스 가는 길 | 공항·도쿄역에서 가는 경로"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-07-05
+lastmod: 2026-08-11
 slug: "urayasu-maihama-access-guide"
 badge: "교통"
 description: "하네다 공항, 나리타 공항, 도쿄역에서 우라야스역·신우라야스역·마이하마역·도쿄 디즈니 리조트로 가는 전철·공항버스·택시 경로를 비교합니다. 휠체어·유모차·대형 짐 여행자 주의사항 포함."
@@ -35,6 +35,7 @@ faq:
     a: "공항에서 호텔까지 바로 가려면 공항버스가 편하고, 시간 정확성이 중요하면 전철을 고르세요. 도쿄역에서 게이요선으로 갈아탈 때는 추가 도보 시간을 두세요."
   - q: "디즈니 파크 폐장 후 택시를 쉽게 잡을 수 있나요?"
     a: "폐장 후와 비 오는 날에는 택시 수요가 급증해 기다려야 할 수 있습니다. 호텔 셔틀, 노선버스, 호출 앱도 함께 고려하세요."
+factChecked: "2026-08-11"
 ---
 
 <div class="access-journey">
@@ -76,7 +77,7 @@ faq:
         </div>
         <div class="strip" style="margin-top:8px">
           <span class="node"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>도쿄역</span>
-          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR 게이요선·무사시노선</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">약 15분</span></span>
+          <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-train"></i> JR 게이요선·무사시노선</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">약 20분</span></span>
           <span class="node" style="border-color:#1A5C8A"><i class="ti ti-train" style="font-size:15px;color:#1A5C8A"></i>마이하마역</span>
         </div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2851B"></i> 도쿄역의 게이요선 승강장은 신칸센·재래선에서 <strong>도보 10분 이상</strong> 떨어져 있습니다. 환승 시간에 여유를</div>
@@ -84,7 +85,7 @@ faq:
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">도쿄 디즈니랜드로</div>
-            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> 도보 약 10분<br><i class="ti ti-train" style="color:#1A5C8A"></i> 리조트라인(리조트 게이트웨이역까지 도보 2분) 1개 역<br><i class="ti ti-car" style="color:#1A5C8A"></i> 택시 몇 분</div>
+            <div style="font-size:10.5px;color:#475569;line-height:1.8"><i class="ti ti-walk" style="color:#1A5C8A"></i> 도보 약 5분<br><i class="ti ti-train" style="color:#1A5C8A"></i> 리조트라인(리조트 게이트웨이역까지 도보 2분) 1개 역<br><i class="ti ti-car" style="color:#1A5C8A"></i> 택시 몇 분</div>
           </div>
           <div style="background:#F8FAFC;border:0.5px solid #E2E8F0;border-radius:10px;padding:10px 12px">
             <div style="font-size:12px;font-weight:800;color:#0F172A;margin-bottom:5px">도쿄 디즈니씨로</div>
@@ -107,7 +108,7 @@ faq:
           <span class="conn"><span class="mode" style="color:#C2421F"><i class="ti ti-bus"></i> 리무진 버스</span><span class="lin"><span class="bar" style="background:#E05535"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#E05535"></i></span><span class="time">약 35〜60분·환승 없음</span></span>
           <span class="node" style="border-color:#E05535"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#E05535"></i>호텔에 직접 도착</span>
         </div>
-        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 도쿄역에서: JR 게이요선 약 15분 → 마이하마역 → 도보·호텔 셔틀　/　나리타 공항에서도 리무진 버스 있음(약 60〜90분)</div>
+        <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 도쿄역에서: JR 게이요선 약 20분 → 마이하마역 → 도보·호텔 셔틀　/　나리타 공항에서도 리무진 버스 있음(약 60〜90분)</div>
         <div class="alt"><i class="ti ti-alert-triangle" style="font-size:12px;color:#C2421F"></i> <strong>치도리 지역의 호텔(마이하마 유라시아 등)에는 공항발 직행 리무진 버스가 없습니다.</strong> 리무진 버스로 파크까지 가서 셔틀버스·도보·택시로 이동(또는 JR로 마이하마역)</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#E05535"></i>파크 왕복(매일 아침·저녁)</div>
         <div class="strip">

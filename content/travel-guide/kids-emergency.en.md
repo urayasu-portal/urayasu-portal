@@ -20,6 +20,7 @@ faq:
     a: "Yes. The Japan Visitor Hotline (Japan National Tourism Organization) at 050-3816-2787 operates 24/7 in English, Chinese and Korean, and can help in emergencies, including finding medical care. Local numbers like #7119 and #8000 are Japanese-language services."
   - q: "How do I pay at a Japanese emergency clinic as a tourist?"
     a: "The Urayasu Emergency Clinic takes cash only, and prescriptions are limited to about one day's medicine as a rule. Bring cash and your passport, keep all receipts for your travel insurance claim, and see a regular doctor afterwards if symptoms continue."
+factChecked: "2026-08-11"
 ---
 
 It is 9 pm, your child's forehead is hot, and the pediatrician you trust is 9,000 km away. This is the moment a Disney trip stops being about ride strategies — and the moment almost no English-language Disney guide can help you.

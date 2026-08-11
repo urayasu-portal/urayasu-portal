@@ -13,6 +13,7 @@ sources:
   - name: "teamLab Planets TOKYO DMM Official Site"
     url: "https://teamlabplanets.dmm.com/"
 tags: ["rainy-day", "with-kids", "toyosu", "teamlab"]
+factChecked: "2026-08-11"
 ---
 
 You take off your shoes and socks, wade in up to your knees, and glowing koi swim across the water around your legs — **teamLab Planets TOKYO** is the "museum you walk into water" that travelers all over the world put on their Tokyo list. Here's the part most of them don't know: it's in Toyosu, **about 30 minutes by train from Maihama** — one of the easiest world-class Tokyo experiences to reach from a Disney hotel. Fully indoors, rain or shine, and utterly unlike anything in the parks.

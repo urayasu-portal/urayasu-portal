@@ -14,6 +14,7 @@ tags:
 images: ["/images/og-gourmet.png"]
 noDate: true
 tgNav: true
+factChecked: "2026-08-11"
 ---
 
 浦安·新浦安·舞濱地區的餐飲選擇因目的而異：浦安站周邊有日常午餐的個人小館，舞濱站附近有迪士尼來訪前後方便使用的餐廳和咖啡廳，Ikspiari有紀念品店，還有對外開放的飯店餐廳。每個區域各有不同的適用場景。

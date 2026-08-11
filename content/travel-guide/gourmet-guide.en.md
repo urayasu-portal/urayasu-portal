@@ -14,6 +14,7 @@ tags:
 images: ["/images/og-gourmet.png"]
 noDate: true
 tgNav: true
+factChecked: "2026-08-11"
 ---
 
 The Urayasu, Shin-Urayasu, and Maihama area has a range of dining options depending on your purpose: everyday local lunches near Urayasu Station, cafes and restaurants easy to reach before or after Tokyo Disney Resort visits near Maihama Station, souvenir shops at Ikspiari, and hotel restaurants open to non-guests. Each area suits different needs.
