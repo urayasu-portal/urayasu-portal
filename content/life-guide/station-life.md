@@ -24,7 +24,7 @@ aliases:
   - /guides/station-life/
 ---
 
-<p>浦安市には、東京メトロ東西線の「浦安駅」、JR京葉線・武蔵野線の「新浦安駅」「舞浜駅」があります。駅名だけで生活圏がきれいに分かれるわけではありませんが、この記事では暮らしの目安として3つのエリアに分けて紹介します。<strong>これから浦安に引っ越す人のエリア選び</strong>にも、<strong>いま住んでいる人が自分の駅の使いこなしを深める</strong>のにも使えます。引っ越しの段取りや家賃の目安は<a href="/life-guide/urayasu-sumai-hikkoshi/">引っ越し・住まいガイド</a>とあわせてどうぞ。</p>
+<p>浦安市には、東京メトロ東西線の「浦安駅」、JR京葉線・武蔵野線の「新浦安駅」「舞浜駅」があります。駅名だけで生活圏がきれいに分かれるわけではありませんが、この記事では暮らしの目安として3つのエリアに分けて紹介します。<strong>これから浦安に引っ越す人のエリア選び</strong>にも、<strong>いま住んでいる人が自分の駅の使いこなしを深める</strong>のにも使えます。引っ越しの段取りや家賃の目安は<a href="/life-guide/urayasu-sumai-hikkoshi/">引っ越し・住まいガイド</a>、ひとり・ふたり暮らしの入口は<a href="/life-guide/single-couple-life/">単身・ふたり暮らしガイド</a>とあわせてどうぞ。</p>
 
 <div class="lg-art-keypoints">
   <div class="lg-art-keypoints-title"><i class="ti ti-checklist" aria-hidden="true"></i>この記事でわかること</div>

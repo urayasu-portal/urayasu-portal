@@ -3,16 +3,16 @@
 # published: true のガイドは実際の記事ページへリンク、false は「準備中」バッジを表示。
 
 # ライフステージ4分岐（トップの段1・生活ガイド再設計W1）
-# ※単身ふたり=W3でハブ新設後にURL差し替え／シニア=W5でkaigo-first-steps新設後に見直し
+# ※シニア=W5でkaigo-first-steps新設後に見直し
 stages:
   - title: "引っ越す・引っ越してきた"
     desc: "手続き・ごみルール・エリア選びをまとめて"
     icon: "ti-truck-delivery"
     url: "/life-guide/urayasu-sumai-hikkoshi/"
   - title: "単身・ふたりで暮らす"
-    desc: "駅別の暮らし・バス・週末の楽しみ"
+    desc: "困ったときの相談先と、休日の楽しみ方"
     icon: "ti-user"
-    url: "/life-guide/station-life/"
+    url: "/life-guide/single-couple-life/"
   - title: "子育てする"
     desc: "妊娠・出産から小中学生までの支援を順番に"
     icon: "ti-baby-carriage"
@@ -120,6 +120,11 @@ categories:
     id: "sumai"
     icon: "ti-home"
     guides:
+      - title: "浦安の単身・ふたり暮らしガイド"
+        desc: "困ったときの相談先と休日の楽しみ方をまとめた入口ページ。"
+        icon: "ti-user"
+        url: "/life-guide/single-couple-life/"
+        published: true
       - title: "浦安市の引っ越し・住まいガイド"
         desc: "時系列チェックリストで引っ越しを整理。家賃の目安・初期費用の抑え方も。"
         icon: "ti-home"
@@ -202,6 +207,9 @@ situations:
     url: "/life-guide/urayasu-pet/"
 
 updates:
+  - text: "単身・ふたり暮らしガイドを公開"
+    date: "2026.08"
+    url: "/life-guide/single-couple-life/"
   - text: "引っ越し・住まいガイドに時系列チェックリストを追加"
     date: "2026.08"
     url: "/life-guide/urayasu-sumai-hikkoshi/"

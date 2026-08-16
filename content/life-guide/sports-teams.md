@@ -1,7 +1,7 @@
 ---
 title: "浦安3大スポーツチーム観戦ガイド｜D-Rocks・ブリオベッカ・バルドラールの試合日程・会場・チケットまとめ"
 date: 2026-06-13
-lastmod: 2026-07-14
+lastmod: 2026-08-17
 factChecked: "2026-07-14"
 description: "浦安市を拠点に活動するラグビー・サッカー・フットサルのチームを、初めて観戦する人や子連れで行きたい人向けにわかりやすく整理しました。"
 categories: ["スポーツ"]
@@ -31,7 +31,7 @@ aliases:
   - /guides/sports-teams/
 ---
 
-<p>浦安市には、ラグビーの<strong>浦安D-Rocks</strong>、サッカーの<strong>ブリオベッカ浦安・市川</strong>、フットサルの<strong>バルドラール浦安</strong>という、地域に根ざしたスポーツチームがあります。この記事では、各チームの特徴、観戦時期の目安、会場アクセス、チケット購入、子連れ観戦のポイントをまとめます。</p>
+<p>浦安市には、ラグビーの<strong>浦安D-Rocks</strong>、サッカーの<strong>ブリオベッカ浦安・市川</strong>、フットサルの<strong>バルドラール浦安</strong>という、地域に根ざしたスポーツチームがあります。この記事では、各チームの特徴、観戦時期の目安、会場アクセス、チケット購入、子連れ観戦のポイントをまとめます。観戦以外の休日の過ごし方は<a href="/life-guide/single-couple-life/">単身・ふたり暮らしガイド</a>もどうぞ。</p>
 
 <div class="lg-art-keypoints">
   <div class="lg-art-keypoints-title"><i class="ti ti-checklist" aria-hidden="true"></i>この記事でわかること</div>
