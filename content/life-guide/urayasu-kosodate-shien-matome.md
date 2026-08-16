@@ -2,7 +2,8 @@
 title: "浦安市の子育て支援・手当・助成まとめ｜妊娠・出産から小中学生まで使える制度ガイド"
 linkTitle: "子育て支援まとめ"
 date: 2026-06-07T09:00:00+09:00
-lastmod: 2026-08-01T00:00:00+09:00
+lastmod: 2026-08-17
+newsTags: ["子育て", "子ども", "保育園", "学校"]
 factChecked: "2026-08-01"
 categories:
   - "子育て・教育"
@@ -40,6 +41,19 @@ cover:
     <li>各制度の担当課・相談窓口の連絡先</li>
   </ul>
 </div>
+
+<h2 id="stage-nav">お子さんのステージから詳しいガイドへ</h2>
+
+<p>この記事は全体像をつかむための入口です。お子さんのステージが決まっている方は、窓口の連絡先まで掘り下げた<strong>ステージ順の詳しいガイド</strong>へどうぞ。</p>
+
+<div class="lg-art-links">
+  <a class="lg-art-link" href="/life-guide/urayasu-ninshin-shussan-shien/">① 妊娠・出産<span>健診助成・給付金・産後ケアの窓口</span></a>
+  <a class="lg-art-link" href="/life-guide/urayasu-nyuyoji-shien/">② 乳幼児期<span>健診・予防接種・子育て支援センター・一時預かり</span></a>
+  <a class="lg-art-link" href="/life-guide/urayasu-hoiku-youchien/">③ 保育園・幼稚園<span>入園申込み・保育料・無償化・病児保育</span></a>
+  <a class="lg-art-link" href="/life-guide/urayasu-shougakusei-chuugakusei/">④ 小学生・中学生<span>学童・教育相談・不登校・いじめ相談</span></a>
+</div>
+
+<div class="lg-art-note">全ステージ共通のお金・医療は<a href="/life-guide/urayasu-kodomo-iryohi/">子どもの医療費・健康ガイド</a>と<a href="/life-guide/urayasu-jido-teate/">児童手当・経済的支援ガイド</a>へ。<strong>ひとり親家庭・障がいのあるお子さん</strong>の支援は<a href="/life-guide/urayasu-hitorioya-shogai/">専用ガイド</a>にまとめています。</div>
 
 <h2 id="overview">浦安市の子育て支援の全体像</h2>
 

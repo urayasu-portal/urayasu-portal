@@ -3,6 +3,8 @@ title: "【浦安市】小学生・中学生の支援ガイド｜学童・教育
 slug: "urayasu-shougakusei-chuugakusei"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:50:00+09:00
+lastmod: 2026-08-17
+newsTags: ["子育て", "学校"]
 factChecked: "2026-08-01"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
@@ -77,5 +79,14 @@ sources:
 {{< note >}}
 ・学用品費・給食費などの就学援助や奨学支援金は<a href="/life-guide/urayasu-jido-teate/">児童手当・経済的支援ガイド</a>へ。<br>
 ・雨の日にも使える屋内の遊び場・児童センターは<a href="/life-guide/indoor-playgrounds/">浦安市の子ども向け屋内・公共の遊び場まとめ</a>へ。<br>
-・発達や特別支援教育に関する支援は、ひとり親・障がいのある子どもへの支援ページ（準備中）でまとめる予定です。
+・発達や特別支援教育に関する支援は<a href="/life-guide/urayasu-hitorioya-shogai/">ひとり親・障がいのある子どもへの支援ガイド</a>でまとめています。
 {{< /note >}}
+
+<h2 id="series-nav">子育てステージ順ガイド</h2>
+
+<div class="lg-art-links">
+  <a class="lg-art-link" href="/life-guide/urayasu-hoiku-youchien/">前のステージ：保育園・幼稚園・預かりガイド<span>入園申込み・保育料・無償化・病児保育</span></a>
+  <a class="lg-art-link" href="/life-guide/urayasu-kosodate-shien-matome/">子育て支援・手当・助成まとめ（全体像）<span>妊娠・出産から小中学生までの入口ページ</span></a>
+</div>
+
+<div class="lg-art-note">全ステージ共通：<a href="/life-guide/urayasu-kodomo-iryohi/">子どもの医療費・健康ガイド</a>／<a href="/life-guide/urayasu-jido-teate/">児童手当・経済的支援ガイド</a></div>

@@ -3,6 +3,8 @@ title: "【浦安市】妊娠・出産時の支援ガイド｜健診助成・給
 slug: "urayasu-ninshin-shussan-shien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:00:00+09:00
+lastmod: 2026-08-17
+newsTags: ["子育て", "子ども"]
 factChecked: "2026-07-15"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
@@ -124,3 +126,12 @@ sources:
 <h3>流産・死産を経験された方への支援</h3>
 <p>流産・死産・新生児死亡を経験された方へ、相談先のご案内や利用できる支援があります。おひとりで抱え込まず、ご相談ください。</p>
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/ninshin/1041686.html" >}}流産・死産を経験された方へ（浦安市公式）{{< /gov-link >}}
+
+<h2 id="series-nav">子育てステージ順ガイド</h2>
+
+<div class="lg-art-links">
+  <a class="lg-art-link" href="/life-guide/urayasu-nyuyoji-shien/">次のステージ：乳幼児期の子育て支援ガイド<span>健診・予防接種・子育て支援センター・一時預かり</span></a>
+  <a class="lg-art-link" href="/life-guide/urayasu-kosodate-shien-matome/">子育て支援・手当・助成まとめ（全体像）<span>妊娠・出産から小中学生までの入口ページ</span></a>
+</div>
+
+<div class="lg-art-note">全ステージ共通：<a href="/life-guide/urayasu-kodomo-iryohi/">子どもの医療費・健康ガイド</a>／<a href="/life-guide/urayasu-jido-teate/">児童手当・経済的支援ガイド</a></div>

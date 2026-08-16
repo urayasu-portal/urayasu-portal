@@ -207,6 +207,9 @@ situations:
     url: "/life-guide/urayasu-pet/"
 
 updates:
+  - text: "子育てガイドをステージ順シリーズとして接続"
+    date: "2026.08"
+    url: "/life-guide/urayasu-kosodate-shien-matome/"
   - text: "単身・ふたり暮らしガイドを公開"
     date: "2026.08"
     url: "/life-guide/single-couple-life/"

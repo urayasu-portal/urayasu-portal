@@ -3,6 +3,8 @@ title: "【浦安市】ひとり親・障がいのある子どもへの支援ガ
 slug: "urayasu-hitorioya-shogai"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T08:00:00+09:00
+lastmod: 2026-08-17
+newsTags: ["子育て", "子ども"]
 factChecked: "2026-07-15"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]

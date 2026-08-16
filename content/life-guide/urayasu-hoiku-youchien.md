@@ -3,6 +3,8 @@ title: "【浦安市】保育園・幼稚園・預かりガイド｜入園申込
 slug: "urayasu-hoiku-youchien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:20:00+09:00
+lastmod: 2026-08-17
+newsTags: ["子育て", "保育園"]
 factChecked: "2026-07-15"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
@@ -97,3 +99,13 @@ sources:
 <strong>一時預かり・ファミリー・サポート・センターについて</strong><br>
 理由を問わない一時預かりや、地域で送迎・預かりを助け合うファミリー・サポート・センターは、<a href="/life-guide/urayasu-nyuyoji-shien/">乳幼児期の子育て支援ガイド</a>でまとめています。
 {{< /note >}}
+
+<h2 id="series-nav">子育てステージ順ガイド</h2>
+
+<div class="lg-art-links">
+  <a class="lg-art-link" href="/life-guide/urayasu-nyuyoji-shien/">前のステージ：乳幼児期の子育て支援ガイド<span>健診・予防接種・子育て支援センター・一時預かり</span></a>
+  <a class="lg-art-link" href="/life-guide/urayasu-shougakusei-chuugakusei/">次のステージ：小学生・中学生の支援ガイド<span>学童・教育相談・不登校・いじめ相談</span></a>
+  <a class="lg-art-link" href="/life-guide/urayasu-kosodate-shien-matome/">子育て支援・手当・助成まとめ（全体像）<span>妊娠・出産から小中学生までの入口ページ</span></a>
+</div>
+
+<div class="lg-art-note">全ステージ共通：<a href="/life-guide/urayasu-kodomo-iryohi/">子どもの医療費・健康ガイド</a>／<a href="/life-guide/urayasu-jido-teate/">児童手当・経済的支援ガイド</a></div>
