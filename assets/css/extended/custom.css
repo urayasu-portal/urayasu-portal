@@ -818,6 +818,17 @@ body.pillar-travel .post-single .post-content th {
   border-color: var(--accent);
 }
 
+/* ---------- rowspan で行をまとめる表（例：空港ターミナル別の締切一覧） ---------- */
+/* tbody の行見出しはヘッダー行と区別したいので、アクセント色ではなく淡い背景にする */
+.post-single .post-content table.tg-rowspan-table tbody th,
+body.pillar-travel .post-single .post-content table.tg-rowspan-table tbody th {
+  background: var(--up-bg);
+  color: var(--up-text);
+  border-color: var(--up-border);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
 .wp-block-image { margin: 20px 0; }
 .wp-block-image img { max-width: 100%; border-radius: 8px; }
 .wp-block-separator { border: none; border-top: 1px solid var(--up-border); margin: 32px 0; }

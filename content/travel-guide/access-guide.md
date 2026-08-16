@@ -1,7 +1,7 @@
 ---
 title: "浦安・舞浜への行き方ガイド （目的地別移動ルート）"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-08-07
+lastmod: 2026-08-16
 factChecked: "2026-08-07"
 slug: "urayasu-maihama-access-guide"
 badge: "アクセス"
@@ -56,6 +56,7 @@ faq:
       <div style="font-size:10.5px;color:#94A3B8;margin-bottom:24px"><i class="ti ti-info-circle" style="font-size:12px"></i> 位置関係はイメージです。リゾートラインは計4駅の循環モノレール（パーク2駅は省略）。浦安駅・元町からは路線バスで舞浜駅・新浦安駅方面へ移動できます（点線）。新浦安駅からの路線バスは運動公園・OLC本社前を経由して舞浜駅まで結びます（新町は経由しません）。葛西駅（市外）にも空港リムジンバスが発着します。</div>
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② 空港・東京駅からパークへ</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">まずパークへ直行する日の動き方。鉄道で来る人は「舞浜駅からの最後のひと区間」もここで確認できます。</div>
+      <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>荷物だけ先に送りたい方へ：</strong>スーツケースは空港や東京駅からホテルへ当日配送できます。ただし手続きの締切が朝9:50〜午後2時と早いため、<a href="/travel-guide/hotels/luggage-airport/" style="color:#E05535;font-weight:700">羽田・成田空港から舞浜・浦安のホテルへ荷物を送る方法</a>で先にご確認ください。</div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>
