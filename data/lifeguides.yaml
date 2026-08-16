@@ -3,7 +3,6 @@
 # published: true のガイドは実際の記事ページへリンク、false は「準備中」バッジを表示。
 
 # ライフステージ4分岐（トップの段1・生活ガイド再設計W1）
-# ※シニア=W5でkaigo-first-steps新設後に見直し
 stages:
   - title: "引っ越す・引っ越してきた"
     desc: "手続き・ごみルール・エリア選びをまとめて"
@@ -18,7 +17,7 @@ stages:
     icon: "ti-baby-carriage"
     url: "/life-guide/urayasu-kosodate-shien-matome/"
   - title: "シニアの暮らし・親の介護"
-    desc: "地域包括支援センターと介護保険の使い方"
+    desc: "ご本人の暮らしの支援と、親の介護の最初の一歩"
     icon: "ti-heart-handshake"
     url: "/life-guide/urayasu-koreisha-kaigo/"
 
@@ -110,6 +109,11 @@ categories:
     id: "koreisha"
     icon: "ti-old"
     guides:
+      - title: "親の介護が始まったら｜最初の一歩ガイド"
+        desc: "ご家族向け。担当の「ともづな」への電話までを最短で案内。"
+        icon: "ti-phone"
+        url: "/life-guide/kaigo-first-steps/"
+        published: true
       - title: "浦安市の高齢者・介護ガイド"
         desc: "地域包括支援センター「ともづな」と介護保険サービスの使い方を整理。"
         icon: "ti-old"
@@ -207,6 +211,9 @@ situations:
     url: "/life-guide/urayasu-pet/"
 
 updates:
+  - text: "「親の介護が始まったら｜最初の一歩ガイド」を公開"
+    date: "2026.08"
+    url: "/life-guide/kaigo-first-steps/"
   - text: "子育てガイドをステージ順シリーズとして接続"
     date: "2026.08"
     url: "/life-guide/urayasu-kosodate-shien-matome/"
