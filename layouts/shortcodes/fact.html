@@ -1,0 +1,23 @@
+{{- /* 事実の単一情報源（data/travel_facts.yaml）をドットパスで参照するインラインショートコード。
+     使用例: {{< fact "limousine.haneda_fare" >}}
+     葉が {v, u:yen} の形なら言語別に通貨表記を付け、文字列ならそのまま出す。
+     未定義キーはビルドエラーにして誤参照を検出する。 */ -}}
+{{- $key := .Get 0 -}}
+{{- $node := hugo.Data.travel_facts -}}
+{{- range split $key "." -}}
+  {{- if $node -}}{{- $node = index $node . -}}{{- end -}}
+{{- end -}}
+{{- if eq $node nil -}}
+  {{- errorf "fact ショートコード: キー %q が data/travel_facts.yaml にありません（%s）" $key .Page.File.Path -}}
+{{- else if reflect.IsMap $node -}}
+  {{- $v := index $node "v" -}}
+  {{- if eq (index $node "u") "yen" -}}
+    {{- $lang := .Page.Lang -}}
+    {{- if eq $lang "en" -}}¥{{ $v }}
+    {{- else if eq $lang "ko" -}}{{ $v }}엔
+    {{- else if eq $lang "zh" -}}{{ $v }}日元
+    {{- else if eq $lang "zh-tw" -}}{{ $v }}日圓
+    {{- else -}}{{ $v }}円
+    {{- end -}}
+  {{- else -}}{{ $v }}{{- end -}}
+{{- else -}}{{ $node }}{{- end -}}

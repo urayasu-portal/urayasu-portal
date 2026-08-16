@@ -1,0 +1,66 @@
+# 旅行ガイド共通の事実データ（単一情報源）
+#
+# 使い方: 記事本文で {{< fact "limousine.haneda_fare" >}} のように参照する。
+#   - 葉が {v: "...", u: yen} の形なら、fact ショートコードが言語別に通貨表記を付ける
+#     （ja: 1,300円 / en: ¥1,300 / ko: 1,300엔 / zh: 1,300日元 / zh-tw: 1,300日圓）
+#   - 葉がただの文字列ならそのまま出力する
+# ルール:
+#   - 値を更新したら checked を必ず更新する（記事側の factChecked の代わりにここで管理）
+#   - 新しい事実を足すときは source（公式URL）を必ず書く
+#   - frontmatter（FAQ等）ではショートコードが効かないため、本文のみで使用する
+
+# ── 空港リムジンバス（東京空港交通ほか共同運行）─────────────────
+# source: https://www.limousinebus.co.jp/ja/line/detail/Haneda-TDR/
+# source: https://www.limousinebus.co.jp/ja/line/detail/Narita-TDR/
+# source: https://www.limousinebus.co.jp/ja/guide/terms/baggage/
+# checked: 2026-08-16
+limousine:
+  haneda_fare: { v: "1,300", u: yen }        # 羽田⇔TDR 大人
+  haneda_fare_child: { v: "650", u: yen }    # 同 小児
+  narita_fare: { v: "2,900", u: yen }        # 成田⇔TDR 大人
+  narita_fare_child: { v: "1,450", u: yen }  # 同 小児
+  baggage_per_person: "2"                    # 預け荷物 1名あたり個数
+  baggage_size_limit: "50×60×120cm"          # 1個あたり上限サイズ
+  baggage_weight_limit: "30kg"               # 1個あたり上限重量
+
+# ── ハッピーエントリー ───────────────────────────────
+# source: https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html
+# checked: 2026-08-08
+happy_entry:
+  minutes: "15"                              # 一般開園より早く入園できる分数
+
+# ── 舞浜駅の荷物サービス ─────────────────────────────
+# source: https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html
+# source: https://faq.tokyodisneyresort.jp/answer/67eaa647f939746b30956686/
+# checked: 2026-08-16
+bon_voyage:
+  fee: { v: "800", u: yen }                  # バゲッジデリバリー 1個
+  deadline: "15:00"                          # 受付締切（開店〜）
+welcome_center:
+  disney_hours_start: "7:30"                 # ディズニーホテルカウンター（2F）
+  disney_hours_end: "16:00"
+  official_hours_start: "8:00"               # オフィシャルホテルカウンター（1F）
+  official_hours_end: "15:00"
+station_delivery:
+  fee: { v: "800", u: yen }                  # ホテル→駅 1個
+  accept_start: "7:00"
+  accept_end: "12:30"
+
+# ── 空港・駅の手荷物当日配送カウンター ─────────────────────
+# source: https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/haneda_airport1.html ほか各所
+# source: https://www.kuronekoyamato.co.jp/ytc/promotion/haneda_sameday_delivery/ja/index.html
+# source: https://www.jalabc.com/delivery_service/hotel_delivery/haneda-airport.html
+# checked: 2026-08-16（ヤマト成田の締切は運営者が電話確認）
+luggage_counters:
+  sagawa_haneda_deadline: "13:00"
+  sagawa_narita_deadline: "14:00"
+  sagawa_tokyo_station_deadline: "13:00"
+  yamato_haneda_deadline: "11:00"
+  yamato_narita_deadline: "10:30"
+  yamato_narita_t3_deadline: "9:50"
+  jalabc_deadline: "13:00"
+  sagawa_140_haneda: { v: "2,180", u: yen }  # 3辺140cmまで
+  sagawa_140_narita: { v: "3,390", u: yen }
+  sagawa_140_tokyo: { v: "2,180", u: yen }
+  yamato_140_urayasu: { v: "5,390", u: yen } # 140サイズ・浦安市内ホテル宛
+  jalabc_flat: { v: "1,800", u: yen }        # 提携19ホテル定額
