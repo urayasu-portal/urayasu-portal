@@ -120,8 +120,8 @@ categories:
     id: "sumai"
     icon: "ti-home"
     guides:
-      - title: "浦安市の住まい・引っ越しガイド"
-        desc: "家賃の目安、初期費用の抑え方、引っ越しの段取りと転入手続きを整理。"
+      - title: "浦安市の引っ越し・住まいガイド"
+        desc: "時系列チェックリストで引っ越しを整理。家賃の目安・初期費用の抑え方も。"
         icon: "ti-home"
         url: "/life-guide/urayasu-sumai-hikkoshi/"
         published: true
@@ -202,8 +202,8 @@ situations:
     url: "/life-guide/urayasu-pet/"
 
 updates:
-  - text: "住まい・引っ越しガイドを公開"
-    date: "2026.07"
+  - text: "引っ越し・住まいガイドに時系列チェックリストを追加"
+    date: "2026.08"
     url: "/life-guide/urayasu-sumai-hikkoshi/"
   - text: "国民健康保険・年金・税金ガイドを公開"
     date: "2026.06"
