@@ -2,6 +2,26 @@
 # 各ガイドの追加・更新はこのファイルを編集するだけでOK。
 # published: true のガイドは実際の記事ページへリンク、false は「準備中」バッジを表示。
 
+# ライフステージ4分岐（トップの段1・生活ガイド再設計W1）
+# ※単身ふたり=W3でハブ新設後にURL差し替え／シニア=W5でkaigo-first-steps新設後に見直し
+stages:
+  - title: "引っ越す・引っ越してきた"
+    desc: "手続き・ごみルール・エリア選びをまとめて"
+    icon: "ti-truck-delivery"
+    url: "/life-guide/urayasu-sumai-hikkoshi/"
+  - title: "単身・ふたりで暮らす"
+    desc: "駅別の暮らし・バス・週末の楽しみ"
+    icon: "ti-user"
+    url: "/life-guide/station-life/"
+  - title: "子育てする"
+    desc: "妊娠・出産から小中学生までの支援を順番に"
+    icon: "ti-baby-carriage"
+    url: "/life-guide/urayasu-kosodate-shien-matome/"
+  - title: "シニアの暮らし・親の介護"
+    desc: "地域包括支援センターと介護保険の使い方"
+    icon: "ti-heart-handshake"
+    url: "/life-guide/urayasu-koreisha-kaigo/"
+
 urgent:
   - text: "休日・夜間診療、急病時の相談先を確認する"
     short: "休日・夜間診療"
@@ -151,40 +171,35 @@ categories:
         url: "/life-guide/sports-teams/"
         published: true
 
+# いま困っていることから（トップの段2・横断事象。ステージ系の項目はstagesへ移動済み）
 situations:
   - text: "子どもが急に熱を出した"
     icon: "ti-mood-sick"
     url: "/life-guide/holiday-night-medical/"
-  - text: "浦安市に引っ越してきた"
-    icon: "ti-truck-delivery"
-    url: "/life-guide/city-hall-procedures/"
-  - text: "部屋探し・引っ越しの費用を抑えたい"
-    icon: "ti-home"
-    url: "/life-guide/urayasu-sumai-hikkoshi/"
-  - text: "週末に子どもと遊びたい"
-    icon: "ti-ball-football"
-    url: "/life-guide/parks-playgrounds/"
   - text: "粗大ごみを出したい"
     icon: "ti-sofa"
     url: "/life-guide/trash-recycling/"
   - text: "台風や大雨に備えたい"
     icon: "ti-cloud-storm"
     url: "/life-guide/disaster-prevention/"
-  - text: "浦安のチームを応援したい"
-    icon: "ti-ball-american-football"
-    url: "/life-guide/sports-teams/"
-  - text: "親の介護が心配になった"
-    icon: "ti-old"
-    url: "/life-guide/urayasu-koreisha-kaigo/"
+  - text: "住民票・証明書がほしい"
+    icon: "ti-building-bank"
+    url: "/life-guide/city-hall-procedures/"
   - text: "保険や年金の手続きをしたい"
     icon: "ti-receipt"
     url: "/life-guide/urayasu-hoken-nenkin-zei/"
-  - text: "犬を飼い始めた"
-    icon: "ti-dog"
-    url: "/life-guide/urayasu-pet/"
   - text: "市内をバスで移動したい"
     icon: "ti-bus"
     url: "/life-guide/urayasu-bus-kotsu/"
+  - text: "週末に子どもと遊びたい"
+    icon: "ti-ball-football"
+    url: "/life-guide/parks-playgrounds/"
+  - text: "浦安のチームを応援したい"
+    icon: "ti-ball-american-football"
+    url: "/life-guide/sports-teams/"
+  - text: "犬を飼い始めた"
+    icon: "ti-dog"
+    url: "/life-guide/urayasu-pet/"
 
 updates:
   - text: "住まい・引っ越しガイドを公開"

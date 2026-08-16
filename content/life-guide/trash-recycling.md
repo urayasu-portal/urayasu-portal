@@ -1,8 +1,9 @@
 ---
 title: "浦安市のごみ分別・収集日・粗大ごみの出し方ガイド｜町名別カレンダー・申込先まとめ"
 date: 2026-06-13T12:00:00+09:00
-lastmod: 2026-07-12
-factChecked: "2026-07-12"
+lastmod: 2026-08-17
+factChecked: "2026-08-17"
+newsTags: ["ごみ", "リサイクル", "粗大ごみ", "クリーンセンター"]
 categories:
   - "お知らせ"
 tags:
@@ -44,6 +45,17 @@ aliases:
     <li>燃やせる・燃やせないごみは<strong>浦安市指定ごみ袋</strong>へ</li>
     <li>粗大ごみは<strong>事前申し込みが必要</strong>。処理券だけでは出せません</li>
     <li>迷ったら「<strong>ごみ分別辞典</strong>」または「<strong>クルなび</strong>」で確認</li>
+  </ul>
+</div>
+
+<div style="background:#fff;border:1.5px solid #e2e8f0;border-left:4px solid #0F8A74;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 24px;">
+  <div style="font-size:14px;font-weight:700;margin-bottom:8px;">🔍 まず選んでください — 今日やりたいのはどれですか</div>
+  <ul style="margin:0;padding-left:1.2em;font-size:13.5px;line-height:2;">
+    <li><a href="#calendar">収集日を知りたい</a> — 町名別カレンダーへ</li>
+    <li><a href="#sort">この品目、何ごみ？</a> — 分別早見表・迷いやすい品目辞典へ</li>
+    <li><a href="#sodai">粗大ごみを出したい</a> — 申し込み手順へ</li>
+    <li><a href="#clean">自分で持ち込みたい</a> — クリーンセンターの案内へ</li>
+    <li><a href="#moving">引っ越し・大掃除で大量に出る</a> — まとめて処分する方法へ</li>
   </ul>
 </div>
 

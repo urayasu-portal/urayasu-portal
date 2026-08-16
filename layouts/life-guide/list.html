@@ -23,10 +23,30 @@
 </div>
 
 {{/* ════════════════════════════════════════
-     2. こんなときに
+     2. あなたのライフステージから（段1・再設計W1）
+     ════════════════════════════════════════ */}}
+{{- with $guides.stages }}
+<section class="lg-hub-section" aria-labelledby="lg-stages">
+  <h2 id="lg-stages" class="lg-hub-h2"><span class="lg-hub-bar" aria-hidden="true"></span>あなたのライフステージから</h2>
+  <div class="lg-guide-grid">
+    {{- range . }}
+    <a class="lg-guide-card" href="{{ .url }}">
+      <span class="lg-guide-card-icon" aria-hidden="true"><i class="ti {{ .icon }}"></i></span>
+      <div class="lg-guide-card-body">
+        <div class="lg-guide-card-title">{{ .title }}</div>
+        <div class="lg-guide-card-desc">{{ .desc }}</div>
+      </div>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{/* ════════════════════════════════════════
+     3. いま困っていることから（段2・横断事象）
      ════════════════════════════════════════ */}}
 <section class="lg-hub-section" aria-labelledby="lg-situations">
-  <h2 id="lg-situations" class="lg-hub-h2"><span class="lg-hub-bar" aria-hidden="true"></span>こんなときに</h2>
+  <h2 id="lg-situations" class="lg-hub-h2"><span class="lg-hub-bar" aria-hidden="true"></span>いま困っていることから</h2>
   <div class="lg-sit-grid">
     {{- range $guides.situations }}
     <a class="lg-sit-card" href="{{ .url }}">
@@ -66,7 +86,32 @@
 </section>
 
 {{/* ════════════════════════════════════════
-     4. 最近の更新（グレー帯）
+     4. 暮らしのニュース（posts連動・guide_mapタグの合算・再設計W1）
+     ════════════════════════════════════════ */}}
+{{- $lifeTags := slice }}
+{{- range hugo.Data.guide_map.mappings }}{{ $lifeTags = $lifeTags | append .tags }}{{ end }}
+{{- $lifeNews := slice }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- if gt (len (intersect (.Params.tags | default slice) $lifeTags)) 0 }}
+    {{- $lifeNews = $lifeNews | append . }}
+  {{- end }}
+{{- end }}
+{{- with first 5 $lifeNews }}
+<section class="lg-hub-section" aria-labelledby="lg-news">
+  <h2 id="lg-news" class="lg-hub-h2"><span class="lg-hub-bar" aria-hidden="true"></span>暮らしのニュース</h2>
+  <ul class="lg-news-list">
+    {{- range . }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "1/2" }}</time>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+
+{{/* ════════════════════════════════════════
+     5. 最近の更新（グレー帯）
      ════════════════════════════════════════ */}}
 <div class="lg-recent-band">
   <h2 class="lg-recent-title"><i class="ti ti-refresh" aria-hidden="true"></i> 最近の更新</h2>
