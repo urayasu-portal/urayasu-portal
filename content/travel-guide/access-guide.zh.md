@@ -4,7 +4,7 @@ date: 2026-06-30T10:00:00+09:00
 lastmod: 2026-08-16
 slug: "urayasu-maihama-access-guide"
 badge: "交通"
-description: "比较从羽田机场、成田机场、东京站前往浦安站·新浦安站·舞滨站·东京迪士尼度假区的电车·机场大巴·出租车路线。含轮椅·婴儿车·大型行李旅客注意事项。"
+description: "比较从羽田机场、成田机场、东京站前往浦安站·新浦安站·舞滨站·东京迪士尼度假区的电车·机场大巴·出租车路线。含成田第3航站楼（LCC）·羽田第3航站楼抵达时的走法、回程日提示，以及轮椅·婴儿车·大型行李旅客注意事项。"
 tags:
   - 浦安
   - 舞滨
@@ -23,6 +23,8 @@ faq:
     a: "有大件行李、带孩子或想直达酒店时，机场大巴比较方便。想避开堵车、时间有保障时，电车是更好的选择。"
   - q: "从成田机场到东京迪士尼度假区最方便的路线是什么？"
     a: "机场大巴可减少换乘次数。成田距离较远，请预留充裕的交通时间。若要比较费用和时间，也请参考电车路线。"
+  - q: "从成田机场第3航站楼（LCC）怎么去迪士尼？"
+    a: "第3航站楼也设有东京迪士尼度假区方向利木津巴士的乘车点，可以不换乘直达。若乘坐铁路，第3航站楼没有车站，需经连接通道步行约15分钟（也有免费航站楼接驳巴士）到第2航站楼的机场第2大楼站再乘车。行李当日配送受理至9:50，除清晨抵达的航班外基本无法使用。"
   - q: "从东京站到舞滨站有什么需要注意的？"
     a: "东京站的京叶线站台距离其他路线较远，需要额外步行时间。请不仅计算乘车时间，还要预留在站内步行的时间。"
   - q: "浦安站·新浦安站·舞滨站有什么区别？"
@@ -35,7 +37,7 @@ faq:
     a: "从机场直达酒店选机场大巴比较方便，时间可控性高则选电车。在东京站换乘京叶线时，请预留额外步行时间。"
   - q: "迪士尼乐园闭园后能方便地叫到出租车吗？"
     a: "闭园后和雨天出租车需求会激增，可能需要等待。也请考虑酒店班车、路线巴士和打车软件。"
-factChecked: "2026-08-11"
+factChecked: "2026-08-16"
 ---
 
 <div class="access-journey">
@@ -56,6 +58,20 @@ factChecked: "2026-08-11"
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② 从机场·东京站前往乐园</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">先看直达乐园当天的出行方式。乘坐轨道交通前来的人，也可在此确认「从舞滨站的最后一段」。</div>
       <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>想把行李先寄过去：</strong>行李箱可从机场或东京站当日配送到饭店。不过办理截止时间在早上9:50到下午2点之间，较早，请先参阅<a href="/zh/travel-guide/luggage-airport/" style="color:#E05535;font-weight:700">从羽田·成田机场把行李寄到舞滨·浦安酒店的方法</a>确认。</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #E05535;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          <i class="ti ti-map-pin-question" style="font-size:17px;color:#E05535"></i>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">首先确认：您在哪里落地？</span>
+          <span style="background:#FCEEE9;color:#7A2A14;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">因航站楼而异</span>
+        </div>
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>羽田第1·第2航站楼（国内线）</strong> — 利木津巴士直达（成人{{< fact "limousine.haneda_fare" >}}），或京急＋京叶线换乘。<a href="/zh/travel-guide/luggage-airport/" style="color:#E05535">行李当日配送</a>13:00截止</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>羽田第3航站楼（国际线）</strong> — 利木津巴士直达最省心。行李当日配送仅雅玛多运输·11:00截止</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>成田第1·第2航站楼</strong> — 利木津巴士直达（成人{{< fact "limousine.narita_fare" >}}），或铁路换乘。行李当日配送14:00截止</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>成田第3航站楼（LCC）</strong> — 利木津巴士可在第3航站楼乘车点上车。铁路方面第3航站楼没有车站，需经连接通道步行约15分钟（有免费接驳巴士）到第2航站楼的机场第2大楼站。行李当日配送9:50截止，除清晨抵达外无法使用</div>
+          <div style="padding:6px 0"><strong>东京站（新干线·在来线）</strong> — JR京叶线约20分钟到舞滨站。注意到京叶线站台需步行10分钟以上。行李当日配送13:00截止</div>
+        </div>
+      </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>
@@ -69,6 +85,7 @@ factChecked: "2026-08-11"
         </div>
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 从成田机场：利木津巴士直达 约60〜90分　/　<i class="ti ti-car" style="font-size:12px"></i> 出租车：从羽田约30〜50分（有机场定额）</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 轨道交通：两个机场均需换乘抵达<strong>舞滨站</strong>（羽田 约50〜70分／成田 约60〜90分）。从舞滨站请看下方卡片</div>
+        <div class="alt"><i class="ti ti-coin" style="font-size:12px"></i> 利木津巴士票价：羽田 成人{{< fact "limousine.haneda_fare" >}}·儿童{{< fact "limousine.haneda_fare_child" >}}／成田 成人{{< fact "limousine.narita_fare" >}}·儿童{{< fact "limousine.narita_fare_child" >}}。行李箱可托运每人{{< fact "limousine.baggage_per_person" >}}件</div>
       </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:24px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
@@ -135,7 +152,7 @@ factChecked: "2026-08-11"
           <span class="conn"><span class="mode" style="color:#0F6E56"><i class="ti ti-bus"></i> 班车·公交巴士·出租车</span><span class="lin"><span class="bar" style="background:#0F8A74"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#0F8A74"></i></span><span class="time">约5〜15分</span></span>
           <span class="node" style="border-color:#0F8A74"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#0F8A74"></i>酒店</span>
         </div>
-        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>新町的部分酒店有机场利木津巴士直接停靠</strong>（东京湾凯悦酒店等）。从新浦安站除班车·出租车外，也可选择公交巴士</div>
+        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>新町的部分酒店有机场利木津巴士直接停靠</strong> — 另有直接连接成田机场⇔<strong>新浦安站</strong>的利木津巴士路线（时刻表请查官网）（东京湾凯悦酒店等）。从新浦安站除班车·出租车外，也可选择公交巴士</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 从东京站：JR京叶线 约20分 → 新浦安站。车站直连酒店无需撑伞</div>
         <div class="alt"><i class="ti ti-clock" style="font-size:12px"></i> 班车的运行时间·有无请在各酒店官网确认</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#0F8A74"></i>往返乐园（每天早晚）</div>
@@ -173,7 +190,18 @@ factChecked: "2026-08-11"
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 从浦安站·元町可乘公交巴士前往舞滨站方向·新浦安站方向（地图虚线路线）。</div>
         <div style="font-size:10.5px;color:#854F0B;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> 适合：想省住宿费／夜晚享受老城区居酒屋·本地美食／与市中心行程结合</div>
       </div>
-      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> 所需时间为大致参考（不含换乘·等待时间）。发布前请在各交通机构·酒店官网确认最新信息。利木津巴士的停靠酒店·班次因日而异。</div>
+      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> 所需时间为大致参考（不含换乘·等待时间）。出行前请在各交通机构·酒店官网确认最新信息。利木津巴士的停靠酒店·班次因日而异。</div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:24px 0 6px;padding-left:11px;border-left:4px solid #E05535">④ 回程日：从酒店前往机场</h2>
+      <div style="font-size:11px;color:#64748B;margin-bottom:12px">回程并不只是把来时的路倒过来——只整理需要注意的几点。</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>利木津巴士</strong> — 因航班时间已定，机场方向建议<strong>提前网上预约</strong>。在TDL·TDS·新浦安站上车也可不预约、下车时现金支付</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>行李先寄到机场</strong> — 若入住JAL ABC合作酒店，早上{{< fact "luggage_counters.jalabc_return_deadline" >}}前交给行李服务台，傍晚在羽田领取。最后一天还要去乐园的话，可用舞滨站领取的车站配送服务（受理{{< fact "station_delivery.accept_start" >}}〜{{< fact "station_delivery.accept_end" >}}）。详见<a href="/zh/travel-guide/luggage-airport/" style="color:#E05535">把行李寄到机场的方法</a>与<a href="/zh/travel-guide/luggage/" style="color:#E05535">舞滨站行李指南</a></div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>出租车</strong> — 浦安市内→羽田·成田有<strong>机场定额制</strong>。乘车点与费用见<a href="/zh/travel-guide/urayasu-taxi-airport-flat-rate-guide/" style="color:#E05535">出租车攻略</a></div>
+          <div style="padding:6px 0"><strong>电车</strong> — 工作日早晨的京叶线与通勤高峰重叠。携带大件行李请预留充裕时间</div>
+        </div>
+      </div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> 逗留期间要去浅草·涩谷等市区的日子，请参阅「<a href="/zh/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">从舞滨·浦安去东京观光</a>」。</div>
 </div>
 
 ## 参考来源

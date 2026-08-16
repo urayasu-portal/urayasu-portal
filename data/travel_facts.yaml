@@ -59,6 +59,7 @@ luggage_counters:
   yamato_narita_deadline: "10:30"
   yamato_narita_t3_deadline: "9:50"
   jalabc_deadline: "13:00"
+  jalabc_return_deadline: "10:00"            # ホテル→羽田（ベルデスク預け締切）
   sagawa_140_haneda: { v: "2,180", u: yen }  # 3辺140cmまで
   sagawa_140_narita: { v: "3,390", u: yen }
   sagawa_140_tokyo: { v: "2,180", u: yen }

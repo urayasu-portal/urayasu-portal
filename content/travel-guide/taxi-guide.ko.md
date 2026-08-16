@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 택시 가이드 | 승차장·공항 정액(우라야스·마이하마·신우라야스)"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-08-16
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "역별(우라야스·신우라야스·마이하마) 택시 승차장과 배차 회사, 하네다·나리타 공항행 정액 요금, 우라야스 지역 휠체어·복지 택시 이용 팁을 소개합니다."
 tags:
@@ -355,6 +355,7 @@ UD(유니버설 디자인) 택시는 휠체어 이용자, 고령자, 유모차 �
 
 ---
 
+<div style="margin-top:24px;font-size:12.5px"><a href="/ko/travel-guide/urayasu-maihama-access-guide/" style="font-weight:700">← 우라야스·마이하마 가는 법 가이드(이동의 전체 그림)</a></div>
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>각 호텔에서 파크와 공항으로 가는 교통을 비교하고 싶으세요?</h3>

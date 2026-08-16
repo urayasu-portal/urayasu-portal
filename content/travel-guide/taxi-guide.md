@@ -1,7 +1,7 @@
 ---
 title: "浦安市内のタクシー乗り場・空港定額タクシーガイド｜舞浜・新浦安・浦安から空港・ホテルへ"
 date: 2026-06-19T00:00:00+09:00
-lastmod: 2026-07-12
+lastmod: 2026-08-16
 factChecked: "2026-08-07"
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "浦安駅・新浦安駅・舞浜駅のタクシー乗り場と配車会社一覧、羽田・成田空港への空港定額料金、UDタクシー・福祉タクシーの確認ポイントをまとめました。"
@@ -358,6 +358,7 @@ UDタクシーは車いす利用者・高齢者・ベビーカー利用者にも
 
 ---
 
+<div style="margin-top:24px;font-size:12.5px"><a href="/travel-guide/urayasu-maihama-access-guide/" style="font-weight:700">← 浦安・舞浜への行き方ガイド（移動の全体像）</a></div>
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>ホテルから空港・パークへのアクセスを詳しく知りたい方</h3>

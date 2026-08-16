@@ -1,7 +1,7 @@
 ---
 title: "Taxi Guide for Tokyo Disney Resort Area | Stands & Flat-Rate Airport Taxis (Urayasu & Maihama)"
 date: 2026-06-19T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-08-16
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "Taxi stands and dispatch companies by station (Urayasu, Shin-Urayasu, Maihama), flat-rate fares to Haneda and Narita airports, and tips for wheelchair-accessible and welfare taxis in Urayasu."
 tags:
@@ -358,6 +358,7 @@ Taxi demand is high these days, and you may have to wait at stands or for a hote
 
 ---
 
+<div style="margin-top:24px;font-size:12.5px"><a href="/en/travel-guide/urayasu-maihama-access-guide/" style="font-weight:700">← Back to Getting to Urayasu &amp; Maihama (the full picture)</a></div>
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>Want to compare hotel access to the park and airports?</h3>

@@ -4,7 +4,7 @@ date: 2026-06-30T10:00:00+09:00
 lastmod: 2026-08-16
 slug: "urayasu-maihama-access-guide"
 badge: "교통"
-description: "하네다 공항, 나리타 공항, 도쿄역에서 우라야스역·신우라야스역·마이하마역·도쿄 디즈니 리조트로 가는 전철·공항버스·택시 경로를 비교합니다. 휠체어·유모차·대형 짐 여행자 주의사항 포함."
+description: "하네다 공항, 나리타 공항, 도쿄역에서 우라야스역·신우라야스역·마이하마역·도쿄 디즈니 리조트로 가는 전철·공항버스·택시 경로를 비교합니다. 나리타 제3터미널(LCC)·하네다 제3터미널 도착 시의 이동 방법과 귀국일 팁, 휠체어·유모차·대형 짐 여행자 주의사항 포함."
 tags:
   - 우라야스
   - 마이하마
@@ -23,6 +23,8 @@ faq:
     a: "큰 짐이 있거나 아이를 동반하거나 호텔까지 바로 가고 싶을 때는 공항버스가 편합니다. 정체를 피하고 시간을 정확히 맞추고 싶을 때는 전철이 더 나은 선택입니다."
   - q: "나리타 공항에서 도쿄 디즈니 리조트로 가는 가장 편한 경로는?"
     a: "공항버스는 환승 횟수를 줄여줍니다. 나리타는 거리가 멀어 충분한 교통 시간을 두세요. 요금과 시간을 비교하려면 전철 경로도 참고하세요."
+  - q: "나리타 공항 제3터미널(LCC)에서 디즈니까지 어떻게 가나요?"
+    a: "제3터미널에도 도쿄 디즈니 리조트행 리무진 버스 정류장이 있어 환승 없이 갈 수 있습니다. 철도를 이용할 경우 제3터미널에는 역이 없으므로, 제2터미널의 공항 제2빌딩역까지 연결 통로를 도보 약 15분(무료 터미널 연결 버스도 있음) 이동한 뒤 탑승합니다. 짐 당일 배송은 접수가 9:50까지라 이른 아침 도착 편이 아니면 사실상 이용할 수 없습니다."
   - q: "도쿄역에서 마이하마역으로 갈 때 주의할 점은?"
     a: "도쿄역의 게이요선 승강장은 다른 노선과 거리가 멀어 추가 도보 시간이 필요합니다. 승차 시간만이 아니라 역 내 도보 시간도 함께 계산하세요."
   - q: "우라야스역·신우라야스역·마이하마역의 차이는?"
@@ -35,7 +37,7 @@ faq:
     a: "공항에서 호텔까지 바로 가려면 공항버스가 편하고, 시간 정확성이 중요하면 전철을 고르세요. 도쿄역에서 게이요선으로 갈아탈 때는 추가 도보 시간을 두세요."
   - q: "디즈니 파크 폐장 후 택시를 쉽게 잡을 수 있나요?"
     a: "폐장 후와 비 오는 날에는 택시 수요가 급증해 기다려야 할 수 있습니다. 호텔 셔틀, 노선버스, 호출 앱도 함께 고려하세요."
-factChecked: "2026-08-11"
+factChecked: "2026-08-16"
 ---
 
 <div class="access-journey">
@@ -56,6 +58,20 @@ factChecked: "2026-08-11"
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② 공항·도쿄역에서 파크로</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">먼저 파크로 직행하는 날의 이동 방법. 철도로 오는 분은 「마이하마역에서의 마지막 한 구간」도 여기서 확인할 수 있습니다.</div>
       <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>짐만 먼저 보내고 싶다면：</strong>캐리어는 공항이나 도쿄역에서 호텔로 당일 배송할 수 있습니다. 다만 접수 마감이 아침 9:50~오후 2시로 이르므로, <a href="/ko/travel-guide/luggage-airport/" style="color:#E05535;font-weight:700">하네다·나리타 공항에서 마이하마·우라야스 호텔로 짐 보내는 법</a>에서 먼저 확인하세요.</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #E05535;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          <i class="ti ti-map-pin-question" style="font-size:17px;color:#E05535"></i>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">먼저 확인: 어디에 도착하나요?</span>
+          <span style="background:#FCEEE9;color:#7A2A14;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">터미널에 따라 달라집니다</span>
+        </div>
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>하네다 제1·제2터미널(국내선)</strong> — 리무진 버스 직행(성인 {{< fact "limousine.haneda_fare" >}}) 또는 게이큐＋게이요선 환승. <a href="/ko/travel-guide/luggage-airport/" style="color:#E05535">짐 당일 배송</a>은 13:00 마감</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>하네다 제3터미널(국제선)</strong> — 리무진 버스 직행이 가장 유력. 짐 당일 배송은 야마토운수만 가능·11:00 마감</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>나리타 제1·제2터미널</strong> — 리무진 버스 직행(성인 {{< fact "limousine.narita_fare" >}}) 또는 철도 환승. 짐 당일 배송은 14:00 마감</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>나리타 제3터미널(LCC)</strong> — 리무진 버스는 제3터미널 정류장에서 탑승할 수 있습니다. 철도는 제3터미널에 역이 없어 제2터미널의 공항 제2빌딩역까지 연결 통로 도보 약 15분(무료 연결 버스 있음). 짐 당일 배송은 9:50 마감이라 이른 아침 도착 외에는 이용이 어렵습니다</div>
+          <div style="padding:6px 0"><strong>도쿄역(신칸센·재래선)</strong> — JR 게이요선으로 마이하마역까지 약 20분. 게이요선 승강장까지 도보 10분 이상 걸리는 점만 주의. 짐 당일 배송은 13:00 마감</div>
+        </div>
+      </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>
@@ -69,6 +85,7 @@ factChecked: "2026-08-11"
         </div>
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 나리타 공항에서: 리무진 버스 직행 약 60〜90분　/　<i class="ti ti-car" style="font-size:12px"></i> 택시: 하네다에서 약 30〜50분(공항 정액 있음)</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 철도의 경우: 두 공항 모두 환승하여 <strong>마이하마역</strong> 도착(하네다 약 50〜70분／나리타 약 60〜90분). 마이하마역부터는 아래 카드로</div>
+        <div class="alt"><i class="ti ti-coin" style="font-size:12px"></i> 리무진 버스 요금: 하네다 성인 {{< fact "limousine.haneda_fare" >}}·어린이 {{< fact "limousine.haneda_fare_child" >}}／나리타 성인 {{< fact "limousine.narita_fare" >}}·어린이 {{< fact "limousine.narita_fare_child" >}}. 캐리어는 트렁크에 1인 {{< fact "limousine.baggage_per_person" >}}개까지</div>
       </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:24px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
@@ -135,7 +152,7 @@ factChecked: "2026-08-11"
           <span class="conn"><span class="mode" style="color:#0F6E56"><i class="ti ti-bus"></i> 셔틀버스·노선버스·택시</span><span class="lin"><span class="bar" style="background:#0F8A74"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#0F8A74"></i></span><span class="time">약 5〜15분</span></span>
           <span class="node" style="border-color:#0F8A74"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#0F8A74"></i>호텔</span>
         </div>
-        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>신마치의 일부 호텔은 공항 리무진 버스가 직접 정차합니다</strong>(하얏트 리젠시 도쿄 베이 등). 신우라야스역에서는 셔틀버스·택시 외에 노선버스도 선택지</div>
+        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>신마치의 일부 호텔은 공항 리무진 버스가 직접 정차합니다</strong> — 나리타 공항⇔<strong>신우라야스역</strong>을 직접 잇는 리무진 버스 노선도 있습니다(시간표는 공식 사이트에서 확인)(하얏트 리젠시 도쿄 베이 등). 신우라야스역에서는 셔틀버스·택시 외에 노선버스도 선택지</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 도쿄역에서: JR 게이요선 약 20분 → 신우라야스역. 역 직결 호텔이면 우산이 필요 없음</div>
         <div class="alt"><i class="ti ti-clock" style="font-size:12px"></i> 셔틀버스 운행 시간·운행 여부는 각 호텔 웹사이트에서 확인하세요</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#0F8A74"></i>파크 왕복(매일 아침·저녁)</div>
@@ -173,7 +190,18 @@ factChecked: "2026-08-11"
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 우라야스역·모토마치에서는 노선버스로 마이하마역 방면·신우라야스역 방면 어느 쪽으로도 이동할 수 있습니다(지도의 점선 경로).</div>
         <div style="font-size:10.5px;color:#854F0B;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> 이런 분께: 숙박비를 아끼고 싶다／밤에는 옛 도심의 이자카야·현지 맛집／도심과 겸한 체류</div>
       </div>
-      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> 소요 시간은 대략적 기준입니다(환승·대기 시간 미포함). 공개 전 각 교통기관·호텔 공식 사이트에서 최신 정보를 확인하세요. 리무진 버스의 정차 호텔·운행 편수는 날에 따라 다릅니다.</div>
+      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> 소요 시간은 대략적 기준입니다(환승·대기 시간 미포함). 여행 전 각 교통기관·호텔 공식 사이트에서 최신 정보를 확인하세요. 리무진 버스의 정차 호텔·운행 편수는 날에 따라 다릅니다.</div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:24px 0 6px;padding-left:11px;border-left:4px solid #E05535">④ 귀국일: 호텔에서 공항으로</h2>
+      <div style="font-size:11px;color:#64748B;margin-bottom:12px">갈 때의 역순——이 아닌 주의점만 정리했습니다.</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>리무진 버스</strong> — 탑승편 시간이 정해져 있으므로 공항행은 <strong>웹 예약을 추천</strong>합니다. TDL·TDS·신우라야스역에서의 승차는 예약 없이 하차 시 현금 결제도 가능합니다</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>짐만 먼저 공항으로</strong> — JAL ABC 제휴 호텔이라면 아침 {{< fact "luggage_counters.jalabc_return_deadline" >}}까지 벨데스크에 맡기면 하네다에서 저녁 수령. 마지막 날도 파크에서 논다면 마이하마역 수령의 스테이션 딜리버리(접수 {{< fact "station_delivery.accept_start" >}}〜{{< fact "station_delivery.accept_end" >}}). 자세한 내용은 <a href="/ko/travel-guide/luggage-airport/" style="color:#E05535">공항으로 짐 보내는 법</a>과 <a href="/ko/travel-guide/luggage/" style="color:#E05535">마이하마역 짐 가이드</a></div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>택시</strong> — 우라야스 시내→하네다·나리타는 <strong>공항 정액제</strong>가 있습니다. <a href="/ko/travel-guide/urayasu-taxi-airport-flat-rate-guide/" style="color:#E05535">택시 가이드</a>에서 승차장과 요금 확인</div>
+          <div style="padding:6px 0"><strong>전철</strong> — 평일 아침 게이요선은 통근 러시와 겹칩니다. 큰 짐이 있다면 시간에 여유를 두세요</div>
+        </div>
+      </div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> 체류 중 아사쿠사·시부야 등 도심으로 나가는 날은 「<a href="/ko/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">마이하마·우라야스에서 도쿄 관광으로</a>」를 참고하세요.</div>
 </div>
 
 ## 참고 출처

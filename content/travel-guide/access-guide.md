@@ -2,10 +2,10 @@
 title: "浦安・舞浜への行き方ガイド （目的地別移動ルート）"
 date: 2026-06-18T10:00:00+09:00
 lastmod: 2026-08-16
-factChecked: "2026-08-07"
+factChecked: "2026-08-16"
 slug: "urayasu-maihama-access-guide"
 badge: "アクセス"
-description: "羽田空港・成田空港・東京駅から、浦安駅・新浦安駅・舞浜駅・東京ディズニーリゾートへ向かう方法を電車・リムジンバス・タクシー別に比較。子連れ・大荷物・車いす利用時の注意点もまとめています。"
+description: "羽田空港・成田空港・東京駅から、浦安駅・新浦安駅・舞浜駅・東京ディズニーリゾートへ向かう方法を電車・リムジンバス・タクシー別に比較。成田第3ターミナル（LCC）・羽田第3ターミナル（国際線）からの行き方、帰る日の注意点、子連れ・大荷物・車いす利用時のポイントもまとめています。"
 tags:
   - 浦安
   - 舞浜
@@ -25,6 +25,8 @@ faq:
     a: "荷物が多い、子ども連れ、ホテルへ直行したい場合はリムジンバスが便利です。道路渋滞を避けたい場合や時間を読みたい場合は電車も候補になります。"
   - q: "成田空港からディズニーへ行くならどのルートが楽ですか？"
     a: "乗換を減らしたい場合はリムジンバスが便利です。成田空港からは距離があるため余裕を持った移動計画がおすすめです。費用や時間を比較したい場合は電車ルートも確認しましょう。"
+  - q: "成田空港の第3ターミナル（LCC）からディズニーへはどう行けばよいですか？"
+    a: "第3ターミナルにも東京ディズニーリゾート行きリムジンバスののりばがあり、乗り換えなしで行けます。鉄道を使う場合は第3ターミナルに駅がないため、第2ターミナルの空港第2ビル駅まで連絡通路を徒歩約15分（無料のターミナル連絡バスもあり）移動してから乗車します。荷物の当日配送は受付が9:50までのため、早朝着の便以外は実質使えません。"
   - q: "東京駅から舞浜駅へ行くときの注意点は？"
     a: "東京駅の京葉線ホームは他路線から離れています。電車の乗車時間だけでなく、東京駅構内の移動時間も見込んでおくと安心です。"
   - q: "浦安駅・新浦安駅・舞浜駅の違いは何ですか？"
@@ -57,6 +59,21 @@ faq:
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② 空港・東京駅からパークへ</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">まずパークへ直行する日の動き方。鉄道で来る人は「舞浜駅からの最後のひと区間」もここで確認できます。</div>
       <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>荷物だけ先に送りたい方へ：</strong>スーツケースは空港や東京駅からホテルへ当日配送できます。ただし手続きの締切が朝9:50〜午後2時と早いため、<a href="/travel-guide/luggage-airport/" style="color:#E05535;font-weight:700">羽田・成田空港から舞浜・浦安のホテルへ荷物を送る方法</a>で先にご確認ください。</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #E05535;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          <i class="ti ti-map-pin-question" style="font-size:17px;color:#E05535"></i>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">まず確認：どこに着きますか</span>
+          <span style="background:#FCEEE9;color:#7A2A14;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">ターミナルで変わります</span>
+        </div>
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>羽田 第1・第2ターミナル（国内線）</strong> — リムジンバス直行（大人{{< fact "limousine.haneda_fare" >}}）か、京急＋京葉線の乗継。<a href="/travel-guide/luggage-airport/" style="color:#E05535">荷物の当日配送</a>は13:00締切</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>羽田 第3ターミナル（国際線）</strong> — リムジンバス直行が最有力。荷物の当日配送はヤマト運輸のみ・11:00締切</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>成田 第1・第2ターミナル</strong> — リムジンバス直行（大人{{< fact "limousine.narita_fare" >}}）か、鉄道の乗継。荷物の当日配送は14:00締切</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>成田 第3ターミナル（LCC）</strong> — リムジンバスは第3ターミナルののりばから乗車できます。鉄道は第3ターミナルに駅がないため、第2ターミナルの空港第2ビル駅へ連絡通路を徒歩約15分（無料連絡バスあり）。荷物の当日配送は9:50締切のため早朝着以外は使えません</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>東京駅（新幹線・在来線）</strong> — JR京葉線で舞浜駅へ約20分。京葉線ホームまで徒歩10分以上かかる点だけ注意。荷物の当日配送は13:00締切</div>
+          <div style="padding:6px 0"><strong>車（マイカー・レンタカー）</strong> — <a href="#car" style="color:#E05535">④ 駐車場の節へ</a></div>
+        </div>
+      </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>
@@ -70,6 +87,7 @@ faq:
         </div>
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 成田空港から：リムジンバス直行 約60〜90分　／　<i class="ti ti-car" style="font-size:12px"></i> タクシー：羽田から約30〜50分（空港定額あり）</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 鉄道の場合：どちらの空港からも乗継ぎで<strong>舞浜駅</strong>着（羽田 約50〜70分／成田 約60〜90分）。舞浜駅からは下のカードへ</div>
+        <div class="alt"><i class="ti ti-coin" style="font-size:12px"></i> リムジンバス運賃：羽田 大人{{< fact "limousine.haneda_fare" >}}・小児{{< fact "limousine.haneda_fare_child" >}}／成田 大人{{< fact "limousine.narita_fare" >}}・小児{{< fact "limousine.narita_fare_child" >}}。スーツケースはトランクに1人{{< fact "limousine.baggage_per_person" >}}個まで</div>
       </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:24px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
@@ -137,6 +155,7 @@ faq:
           <span class="node" style="border-color:#0F8A74"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#0F8A74"></i>ホテル</span>
         </div>
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>新町の一部ホテルは空港リムジンバスが直接停まります</strong>（ハイアットリージェンシー東京ベイなど）。新浦安駅からはシャトルバス・タクシーのほか路線バスも選択肢</div>
+        <div class="alt"><i class="ti ti-plane" style="font-size:12px"></i> 成田空港⇔<strong>新浦安駅</strong>を直接結ぶリムジンバス路線もあります（時刻表は公式サイトで確認）</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 東京駅からは：JR京葉線 約20分 → 新浦安駅。駅直結ホテルなら傘いらず</div>
         <div class="alt"><i class="ti ti-clock" style="font-size:12px"></i> シャトルバスは各ホテルのウェブサイトで運行時間・運行の有無を確認してください</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#0F8A74"></i>パーク通い（毎朝・毎晩）</div>
@@ -174,8 +193,8 @@ faq:
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 浦安駅・元町からは路線バスで舞浜駅方面・新浦安駅方面のどちらへも移動できます（地図の点線ルート）</div>
         <div style="font-size:10.5px;color:#854F0B;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> こんな人に：宿代を抑えたい／夜は下町の居酒屋・地元グルメ／都心と兼ねた滞在</div>
       </div>
-      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> 所要時間は目安です（乗換・待ち時間を含みません）。公開前に各交通機関・ホテル公式サイトで最新情報を確認してください。リムジンバスの停車ホテル・運行本数は日により異なります。</div>
-      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:24px 0 6px;padding-left:11px;border-left:4px solid #E05535">④ 車で行くなら：駐車場は「予約」が正解</h2>
+      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> 所要時間は目安です（乗換・待ち時間を含みません）。ご利用前に各交通機関・ホテル公式サイトで最新情報を確認してください。リムジンバスの停車ホテル・運行本数は日により異なります。</div>
+      <h2 id="car" style="font-size:17px;font-weight:800;color:#0F172A;margin:24px 0 6px;padding-left:11px;border-left:4px solid #E05535">④ 車で行くなら：駐車場は「予約」が正解</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">マイカーやレンタカーで舞浜へ向かう人へ。パークの公式駐車場は料金が高めで、繁忙期は入庫待ちの列もできます。当日満車で慌てないためには、周辺の駐車場を事前に確保しておくのが安心です。</div>
       <div class="affiliate-box">
         <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>舞浜・ディズニー周辺で駐車場を確保するなら</strong></p>
@@ -183,6 +202,17 @@ faq:
         <a class="lg-book-btn book-akippa" href="https://px.a8.net/svt/ejp?a8mat=4B7XX3+3WIBJM+3NAY+65U42" target="_blank" rel="sponsored nofollow noopener">アキッパで駐車場を予約する →</a>
         <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※上記リンクは広告（アフィリエイト）を含みます。空き状況・料金・徒歩距離は公式サイトでご確認ください。</p>
       </div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:24px 0 6px;padding-left:11px;border-left:4px solid #E05535">⑤ 帰る日：ホテル・パークから空港へ</h2>
+      <div style="font-size:11px;color:#64748B;margin-bottom:12px">往路の逆をたどるだけ——ではない注意点だけまとめます。</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>リムジンバス</strong> — 帰国便・搭乗便の時間が決まっているため、空港行きは<strong>Web予約がおすすめ</strong>。TDL・TDS・新浦安駅からの乗車は予約なし・降車時の現金払いにも対応しています</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>荷物だけ先に空港へ</strong> — JAL ABC提携ホテルなら朝{{< fact "luggage_counters.jalabc_return_deadline" >}}までにベルデスクへ預けると羽田で夕方受取。最終日もパークで遊ぶなら、舞浜駅受取のステーションデリバリー（受付{{< fact "station_delivery.accept_start" >}}〜{{< fact "station_delivery.accept_end" >}}）。詳しくは<a href="/travel-guide/luggage-airport/" style="color:#E05535">空港へ荷物を送る方法</a>と<a href="/travel-guide/luggage/" style="color:#E05535">舞浜駅の荷物ガイド</a></div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>タクシー</strong> — 浦安市内→羽田・成田は<strong>空港定額制</strong>があります。<a href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/" style="color:#E05535">タクシーガイド</a>で乗り場と料金を確認</div>
+          <div style="padding:6px 0"><strong>電車</strong> — 平日朝の京葉線は通勤ラッシュと重なります。大きな荷物での乗車は時間に余裕を持って</div>
+        </div>
+      </div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> 滞在中に浅草・渋谷など都心へ出る日は「<a href="/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">舞浜・浦安から東京観光へ</a>」をご覧ください。</div>
 </div>
 
 ## 参考出典

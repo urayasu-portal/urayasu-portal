@@ -4,7 +4,7 @@ date: 2026-06-18T10:00:00+09:00
 lastmod: 2026-08-16
 slug: "urayasu-maihama-access-guide"
 badge: "Access"
-description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort. Includes notes for guests with wheelchairs, strollers, or heavy luggage."
+description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort — including arrivals at Narita Terminal 3 (LCC) and Haneda Terminal 3, departure-day tips, and notes for guests with wheelchairs, strollers, or heavy luggage."
 tags:
   - Urayasu
   - Maihama
@@ -24,6 +24,8 @@ faq:
     a: "The limousine bus is convenient if you have heavy luggage, children, or want to go directly to your hotel. The train is better if you want predictable travel times and want to avoid road congestion."
   - q: "What is the easiest route from Narita Airport to Tokyo Disney Resort?"
     a: "The limousine bus minimizes transfers. Since Narita is far away, allow plenty of time for travel. If you want to compare costs and times, also check train routes."
+  - q: "How do I get to Tokyo Disney Resort from Narita Terminal 3 (LCC)?"
+    a: "Terminal 3 has its own stop on the Tokyo Disney Resort limousine bus route, so you can ride direct with no transfers. If you prefer the train, note that Terminal 3 has no rail station — walk the connecting corridor to Terminal 2's Airport Terminal 2 Station (about 15 minutes; a free inter-terminal shuttle also runs). Same-day luggage delivery closes at 9:50, so it is only realistic on early-morning arrivals."
   - q: "What should I watch out for when going from Tokyo Station to Maihama Station?"
     a: "The Keiyo Line platform at Tokyo Station is far from other lines. Allow extra time for walking inside the station, not just the train ride itself."
   - q: "What is the difference between Urayasu Station, Shin-Urayasu Station, and Maihama Station?"
@@ -36,7 +38,7 @@ faq:
     a: "The limousine bus is good for going directly from the airport to your hotel. The train works well when you need predictable timing. When transferring to the Keiyo Line at Tokyo Station, allow extra time for the long walk."
   - q: "Can I easily get a taxi after Disney park closing?"
     a: "Taxi demand rises after park closing and on rainy days, so wait times may occur. Also consider hotel shuttles, local buses, and ride-hailing apps."
-factChecked: "2026-08-11"
+factChecked: "2026-08-16"
 ---
 
 <div class="access-journey">
@@ -57,6 +59,20 @@ factChecked: "2026-08-11"
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② From the airports and Tokyo Station to the parks</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">How to move on a day you head straight to the parks. If you arrive by rail, you can also check "the last leg from Maihama Station" here.</div>
       <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>Want to send your bags ahead?</strong> Suitcases can be delivered to your hotel the same day from the airport or Tokyo Station. Cut-off times are early — between 9:50 and 14:00 — so check <a href="/en/travel-guide/luggage-airport/" style="color:#E05535;font-weight:700">Sending luggage from Haneda or Narita to your Maihama / Urayasu hotel</a> first.</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #E05535;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          <i class="ti ti-map-pin-question" style="font-size:17px;color:#E05535"></i>
+          <span style="font-size:14px;font-weight:800;color:#0F172A">First, check: where do you land?</span>
+          <span style="background:#FCEEE9;color:#7A2A14;font-size:10px;font-weight:700;padding:3px 9px;border-radius:999px">It changes by terminal</span>
+        </div>
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>Haneda T1 / T2 (domestic)</strong> — direct limousine bus (adult {{< fact "limousine.haneda_fare" >}}) or Keikyu + Keiyo Line with transfers. <a href="/en/travel-guide/luggage-airport/" style="color:#E05535">Same-day luggage delivery</a> closes at 13:00</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>Haneda T3 (international)</strong> — the direct limousine bus is your best bet. Same-day luggage delivery: Yamato Transport only, closes at 11:00</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>Narita T1 / T2</strong> — direct limousine bus (adult {{< fact "limousine.narita_fare" >}}) or rail with transfers. Luggage delivery closes at 14:00</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>Narita T3 (LCC)</strong> — limousine buses stop at Terminal 3 too. There is no rail station at T3: walk about 15 minutes to Terminal 2's station (free shuttle available). Same-day luggage delivery closes at 9:50 — only realistic on early arrivals</div>
+          <div style="padding:6px 0"><strong>Tokyo Station (shinkansen)</strong> — JR Keiyo Line to Maihama, about 20 minutes. Allow 10+ minutes to walk to the Keiyo platform. Luggage delivery closes at 13:00</div>
+        </div>
+      </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>
@@ -70,6 +86,7 @@ factChecked: "2026-08-11"
         </div>
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> From Narita: direct limousine bus approx. 60–90 min　/　<i class="ti ti-car" style="font-size:12px"></i> Taxi: approx. 30–50 min from Haneda (flat airport fares available)</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> By rail: from either airport, transfer to reach <strong>Maihama Station</strong> (Haneda approx. 50–70 min / Narita approx. 60–90 min). From Maihama, see the card below.</div>
+        <div class="alt"><i class="ti ti-coin" style="font-size:12px"></i> Limousine bus fares: Haneda adult {{< fact "limousine.haneda_fare" >}} / child {{< fact "limousine.haneda_fare_child" >}}, Narita adult {{< fact "limousine.narita_fare" >}} / child {{< fact "limousine.narita_fare_child" >}}. Up to {{< fact "limousine.baggage_per_person" >}} suitcases per person in the hold</div>
       </div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:24px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
@@ -136,7 +153,7 @@ factChecked: "2026-08-11"
           <span class="conn"><span class="mode" style="color:#0F6E56"><i class="ti ti-bus"></i> Shuttle / local bus / taxi</span><span class="lin"><span class="bar" style="background:#0F8A74"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#0F8A74"></i></span><span class="time">approx. 5–15 min</span></span>
           <span class="node" style="border-color:#0F8A74"><i class="ti ti-building-skyscraper" style="font-size:15px;color:#0F8A74"></i>Hotel</span>
         </div>
-        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>Some Shinmachi hotels have a direct airport limousine bus</strong> (e.g. Hyatt Regency Tokyo Bay). From Shin-Urayasu Sta., options include shuttle bus, taxi, and local bus.</div>
+        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> <strong>Some Shinmachi hotels have a direct airport limousine bus</strong> — and there is also a direct limousine route between Narita Airport and <strong>Shin-Urayasu Station</strong> (check the official timetable) (e.g. Hyatt Regency Tokyo Bay). From Shin-Urayasu Sta., options include shuttle bus, taxi, and local bus.</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> From Tokyo Station: JR Keiyo Line approx. 20 min → Shin-Urayasu Sta. Station-connected hotels keep you dry.</div>
         <div class="alt"><i class="ti ti-clock" style="font-size:12px"></i> Check each hotel's website for shuttle bus times and availability.</div>
         <div class="rowlab"><i class="ti ti-building-carousel" style="font-size:15px;color:#0F8A74"></i>Daily park trips (each morning &amp; evening)</div>
@@ -175,7 +192,18 @@ factChecked: "2026-08-11"
         <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> From Urayasu Sta. and Motomachi, local buses reach both the Maihama and Shin-Urayasu areas (dashed routes on the map).</div>
         <div style="font-size:10.5px;color:#854F0B;margin-top:8px"><i class="ti ti-user-check" style="font-size:12px"></i> Good for: keeping lodging costs down / old-town izakaya &amp; local food at night / stays combined with central Tokyo</div>
       </div>
-      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> Travel times are rough estimates (excluding transfers and waiting). Before publishing, confirm the latest details on each operator's and hotel's official website. Limousine bus stops and frequencies vary by day.</div>
+      <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin-bottom:4px"><i class="ti ti-alert-circle" style="font-size:12px"></i> Travel times are rough estimates (excluding transfers and waiting). Before you travel, confirm the latest details on each operator's and hotel's official website. Limousine bus stops and frequencies vary by day.</div>
+      <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:24px 0 6px;padding-left:11px;border-left:4px solid #E05535">④ Departure day: from your hotel to the airport</h2>
+      <div style="font-size:11px;color:#64748B;margin-bottom:12px">Going home is not simply the reverse — just a few things worth knowing.</div>
+      <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
+        <div style="font-size:11.5px;color:#334155;line-height:1.9">
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>Limousine bus</strong> — book online for airport-bound rides, since your flight time is fixed. Boarding at TDL, TDS or Shin-Urayasu Station also works without a booking, paying cash when you get off</div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>Send your bags ahead</strong> — at the 19 JAL ABC partner hotels, hand your bags to the bell desk by {{< fact "luggage_counters.jalabc_return_deadline" >}} and collect them at Haneda in the evening. Spending your last day in the parks? Use Station Delivery to Maihama Station (accepted {{< fact "station_delivery.accept_start" >}}–{{< fact "station_delivery.accept_end" >}}). See <a href="/en/travel-guide/luggage-airport/" style="color:#E05535">sending luggage to the airport</a> and <a href="/en/travel-guide/luggage/" style="color:#E05535">the Maihama Station luggage guide</a></div>
+          <div style="padding:6px 0;border-bottom:1px dashed #E2E8F0"><strong>Taxi</strong> — flat-rate airport taxis run from Urayasu to Haneda and Narita. See the <a href="/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/" style="color:#E05535">taxi guide</a></div>
+          <div style="padding:6px 0"><strong>Train</strong> — weekday-morning Keiyo Line trains coincide with commuter rush. Allow extra time with large suitcases</div>
+        </div>
+      </div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> Heading into central Tokyo during your stay? See <a href="/en/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">Day trips into Tokyo</a>.</div>
 </div>
 
 ## Sources

@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼周邊計程車指南 | 搭乘處·機場定額（浦安·舞濱·新浦安）"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-08-16
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "依各車站（浦安·新浦安·舞濱）介紹計程車搭乘處和派車公司、前往羽田·成田機場的定額費用，以及浦安地區輪椅·福祉計程車使用提示。"
 tags:
@@ -355,6 +355,7 @@ UD（通用設計）計程車是為輪椅使用者、長者和嬰兒車使用者
 
 ---
 
+<div style="margin-top:24px;font-size:12.5px"><a href="/zh-tw/travel-guide/urayasu-maihama-access-guide/" style="font-weight:700">← 返回交通指南（移動的整體圖景）</a></div>
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>想比較各飯店前往樂園和機場的交通？</h3>
