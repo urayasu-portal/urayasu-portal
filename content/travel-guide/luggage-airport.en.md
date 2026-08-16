@@ -1,5 +1,6 @@
 ---
 title: "Sending Luggage from Haneda or Narita to Your Maihama / Urayasu Hotel | Cut-off Times, Prices & Eligible Hotels"
+aliases: ["/travel-guide/hotels/luggage-airport/"]
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-08-16"
 description: "How to send your suitcase straight from Haneda, Narita or Tokyo Station to your hotel near Tokyo Disney Resort. Same-day cut-off times by terminal (Narita Terminal 3 closes at 9:50), prices by size for Yamato, Sagawa and JAL ABC, the 19 eligible hotels, and what to do if you miss the cut-off — checked against official sources."
@@ -250,14 +251,14 @@ Afternoon arrivals will simply not make the same-day cut-off. In that case, carr
 - **Disney Hotels and Official Hotels** — **free**, from the Welcome Center next to JR Maihama Station
 - **Partner Hotels** — **¥800 per item**, from the counter on the 1st floor of Bon Voyage
 
-These counters accept bags until 15:00–16:00, far later than the airport services. Full instructions are in [How to send your luggage from Maihama Station to your hotel](/en/travel-guide/hotels/luggage-howto/).
+These counters accept bags until 15:00–16:00, far later than the airport services. Full instructions are in [How to send your luggage from Maihama Station to your hotel](/en/travel-guide/luggage-howto/).
 
 The easiest way to carry bags to Maihama is the **airport limousine bus**, which takes **two pieces per person** (each within 50 × 60 × 120cm and 30kg) and stops at the hotels themselves.
 
 | Route | Adult | Child |
 |---|---|---|
-| Haneda Airport ⇔ Tokyo Disney Resort area | ¥1,300 | ¥650 |
-| Narita Airport ⇔ Tokyo Disney Resort area | ¥2,900 | ¥1,450 |
+| Haneda Airport ⇔ Tokyo Disney Resort area | {{< fact "limousine.haneda_fare" >}} | {{< fact "limousine.haneda_fare_child" >}} |
+| Narita Airport ⇔ Tokyo Disney Resort area | {{< fact "limousine.narita_fare" >}} | {{< fact "limousine.narita_fare_child" >}} |
 
 Do not put cash, valuables, passports or delicate electronics (watches, cameras, laptops) in checked bus luggage. Liability is capped at ¥200,000 per person.
 
@@ -270,7 +271,7 @@ For a comparison of the journey itself, see [Getting to Urayasu and Maihama](/en
 You can travel light on departure day too. **The key point is that "to the airport" and "to Maihama Station" are two different services.**
 
 - **Hotel → airport** — at the 19 JAL ABC partner hotels, hand your bags to the bell desk by **10:00** and collect them at Haneda Terminal 1 between **16:00 and 20:00** (¥1,800 one way). If you are going via Tokyo Station, [Sagawa's Tokyo Station (Nihombashi Exit) service centre](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/tokyo_station.html) also sends bags to Haneda (11:00 cut-off, ¥2,840 up to 140cm).
-- **Hotel → Maihama Station** — the Station Delivery Service at Disney Hotels and Official Hotels (drop off 7:00–12:30, ¥800 per item). Use this if you are spending your last day in the parks and collecting the bags at the station. Details are in the [luggage storage and baggage delivery guide](/en/travel-guide/hotels/luggage/).
+- **Hotel → Maihama Station** — the Station Delivery Service at Disney Hotels and Official Hotels (drop off 7:00–12:30, ¥800 per item). Use this if you are spending your last day in the parks and collecting the bags at the station. Details are in the [luggage storage and baggage delivery guide](/en/travel-guide/luggage/).
 
 Choose the airport if your flight is in the afternoon, or the station if you are heading into the parks first.
 
@@ -309,7 +310,7 @@ This page is long, so here is what actually matters.
 | Narita Terminal 3 | **9:50** | **Yamato Transport** (no alternative) | Ask at the counter |
 | Tokyo Station | 13:00 | **Sagawa Express** | ¥2,180 |
 
-**If you miss the cut-off**, carry your bags to Maihama and [send them from the station](/en/travel-guide/hotels/luggage-howto/) — free for Disney and Official Hotel guests, ¥800 per item for Partner Hotels, with counters open until 15:00–16:00.
+**If you miss the cut-off**, carry your bags to Maihama and [send them from the station](/en/travel-guide/luggage-howto/) — free for Disney and Official Hotel guests, ¥800 per item for Partner Hotels, with counters open until 15:00–16:00.
 
 **Valuables, electronics and liquids cannot be sent** by any service, and none of them deliver to private lodgings.
 
@@ -319,8 +320,8 @@ All prices include tax. Hours and fares change, so confirm on each company's off
 
 ## Related pages
 
-- [How to send your luggage from Maihama Station to your hotel](/en/travel-guide/hotels/luggage-howto/)
-- [Luggage storage & baggage delivery near Tokyo Disney Resort](/en/travel-guide/hotels/luggage/)
+- [How to send your luggage from Maihama Station to your hotel](/en/travel-guide/luggage-howto/)
+- [Luggage storage & baggage delivery near Tokyo Disney Resort](/en/travel-guide/luggage/)
 - [Getting to Urayasu and Maihama](/en/travel-guide/urayasu-maihama-access-guide/)
 - [Hotel categories explained (Disney / Official / Partner)](/en/travel-guide/hotels/types/)
 - [Hotels with free shuttle buses](/en/travel-guide/hotels/shuttle/)

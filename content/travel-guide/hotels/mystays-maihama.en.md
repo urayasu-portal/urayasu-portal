@@ -89,7 +89,7 @@ No in-house store. Nearest convenience store is approx. 5 minutes on foot — co
 Confirm availability and rates on official website.
 
 **Luggage**
-Free coin lockers (a ¥100-refundable type, one per room) plus front-desk storage during opening hours on the day of your stay, before check-in and after check-out. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free coin lockers (a ¥100-refundable type, one per room) plus front-desk storage during opening hours on the day of your stay, before check-in and after check-out. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

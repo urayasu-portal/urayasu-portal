@@ -88,7 +88,7 @@ Ground-floor convenience store. 24-hour supermarket directly across the street �
 Confirm on the official website.
 
 **Luggage**
-Storage before check-in and after check-out at the 2F front desk (after check-out, same-day pick-up only). There is no station baggage-delivery service, and the front desk does not send parcels — use the Lawson on the 1F. Advance shipping is fine (no cash-on-delivery). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Storage before check-in and after check-out at the 2F front desk (after check-out, same-day pick-up only). There is no station baggage-delivery service, and the front desk does not send parcels — use the Lawson on the 1F. Advance shipping is fine (no cash-on-delivery). See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

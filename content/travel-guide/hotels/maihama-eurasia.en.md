@@ -91,7 +91,7 @@ Nearest: 10 min on foot. Stock up before returning to the hotel.
 Confirm details on official website.
 
 **Luggage**
-Free storage before check-in and after check-out — just ask a staff member. Bags shipped ahead are held until check-in (no valuables, refrigerated parcels, or cash-on-delivery). There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free storage before check-in and after check-out — just ask a staff member. Bags shipped ahead are held until check-in (no valuables, refrigerated parcels, or cash-on-delivery). There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi (confirm on official website).

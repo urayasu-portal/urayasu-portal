@@ -85,7 +85,7 @@ Available (details and hours: confirm on official website).
 Confirm details on official website.
 
 **Luggage**
-Free storage **before check-in only** — unlike the main Eurasia building, the annex does not store bags after check-out, so plan your departure day accordingly. Bags shipped ahead are held until check-in (no valuables, refrigerated parcels, or cash-on-delivery). There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free storage **before check-in only** — unlike the main Eurasia building, the annex does not store bags after check-out, so plan your departure day accordingly. Bags shipped ahead are held until check-in (no valuables, refrigerated parcels, or cash-on-delivery). There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Confirm details on official website.

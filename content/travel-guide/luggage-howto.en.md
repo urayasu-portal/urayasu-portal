@@ -1,5 +1,6 @@
 ---
 title: "How to Send Your Luggage from Maihama Station to Your Hotel | Welcome Center & Bon Voyage, Step by Step"
+aliases: ["/travel-guide/hotels/luggage-howto/"]
 date: 2026-07-22T10:00:00+09:00
 factChecked: "2026-07-23"
 description: "Arrive at JR Maihama Station, drop your bags, and head into the parks hands-free. A step-by-step guide to the free baggage delivery for Disney & Official hotels, the paid Bon Voyage counter for Partner hotels, and the return Station Delivery — with locations, hours, and fees."
@@ -25,7 +26,7 @@ faq:
 
 The moment you step off the train at JR Maihama Station, you face a choice: drag your suitcases into the parks, or drop them and enjoy the day hands-free. Maihama has services that **deliver your bags from the station to your hotel**, and whether it's free or paid — and which counter you use — depends on your hotel's category. This guide walks through the **steps, locations, hours, and fees in the order you'll actually use them**. Hours and fees can change, so reconfirm on each official site (details are from our 2025–2026 research).
 
-For the bigger picture of *which* hotels use *which* system, see our [complete guide to luggage storage & baggage delivery](/en/travel-guide/hotels/luggage/). This article focuses on *how* to actually use it on the day.
+For the bigger picture of *which* hotels use *which* system, see our [complete guide to luggage storage & baggage delivery](/en/travel-guide/luggage/). This article focuses on *how* to actually use it on the day.
 
 ---
 
@@ -39,7 +40,7 @@ For the bigger picture of *which* hotels use *which* system, see our [complete g
 | Celebration Hotels | **Paid** (fee not published) | Bon Voyage 1F |
 | Other hotels | No station delivery | — |
 
-Staying at an "other" hotel? There's no station delivery, so use the hotel's own front-desk storage instead (see [each hotel's luggage handling](/en/travel-guide/hotels/luggage/)).
+Staying at an "other" hotel? There's no station delivery, so use the hotel's own front-desk storage instead (see [each hotel's luggage handling](/en/travel-guide/luggage/)).
 
 ---
 
@@ -99,14 +100,14 @@ Send your bags to the station after check-out and you can enjoy the final day ha
 <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>Can't be sent:</strong> valuables (wallet, phone), fragile items, precision devices (laptops, cameras, game consoles), drinks (opened or alcoholic), and perishable or refrigerated items are excluded from every service — keep them with you. Hours and fees may change.
 </div>
 
-- **Miss the reception window, or not using delivery?** Almost every hotel holds bags at the front desk before check-in and after check-out (see [each hotel's luggage handling](/en/travel-guide/hotels/luggage/)).
+- **Miss the reception window, or not using delivery?** Almost every hotel holds bags at the front desk before check-in and after check-out (see [each hotel's luggage handling](/en/travel-guide/luggage/)).
 - **Want to stash bags inside the park?** Use the in-park coin lockers — the station-to-hotel delivery services do not operate from inside the parks.
 
 ---
 
 ## Related
 
-- [Luggage Storage & Baggage Delivery near the Parks (how the system works, which hotels)](/en/travel-guide/hotels/luggage/)
+- [Luggage Storage & Baggage Delivery near the Parks (how the system works, which hotels)](/en/travel-guide/luggage/)
 - [Tokyo Disney Resort Hotels with Free Shuttle Buses](/en/travel-guide/hotels/shuttle/)
 - [Hotel Categories Explained (Disney / Official / Partner)](/en/travel-guide/hotels/types/)
 - [Hotel Guide Top — all 48 hotels](/en/travel-guide/hotels/)

@@ -92,7 +92,7 @@ Day-use plan from ¥8,800. Useful for guests who need a daytime room in Urayasu 
 Available for longer-term stays. Confirm details on official website.
 
 **Luggage**
-Luggage storage is available (hours and location are not published — ask the front desk). You can ship bags ahead prepaid, and outgoing parcels go via Yamato with slips at the desk. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Luggage storage is available (hours and location are not published — ask the front desk). You can ship bags ahead prepaid, and outgoing parcels go via Yamato with slips at the desk. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi (confirm details on official website).

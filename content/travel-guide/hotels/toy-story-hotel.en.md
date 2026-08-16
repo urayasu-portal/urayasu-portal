@@ -97,7 +97,7 @@ Available from 6:30am (confirm details on official website).
 ¥3,000 for 1st night; ¥1,000 per additional night.
 
 **Luggage**
-Same-day storage at the Guest Service counter from 6:00, held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); paid Station Delivery the other way at ¥800 per item on departure. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Same-day storage at the Guest Service counter from 6:00, held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); paid Station Delivery the other way at ¥800 per item on departure. See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

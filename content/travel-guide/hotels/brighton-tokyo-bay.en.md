@@ -84,7 +84,7 @@ One of the most common questions we hear about this hotel is whether you can dro
 - **Baggage delivery from JR Maihama Station (paid):** On arrival day you can drop bags at the "Bon Voyage" home-delivery counter beside JR Maihama Station and have them delivered to the hotel — a paid service at **¥800 per item**, reception from store opening until about 15:00. (This is a one-way *station → hotel* service; it is not a park pick-up.) Valuables, fragile items, drinks and precision devices are excluded.
 - **Sending bags home / to the airport:** The bell desk also handles takkyubin courier shipments (to your home, or same-day to the airport / Tokyo Station on a cash-on-delivery basis).
 
-Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book. For how the area's paid Bon Voyage delivery compares with the free service at Disney and Official hotels, see [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book. For how the area's paid Bon Voyage delivery compares with the free service at Disney and Official hotels, see [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 ---
 

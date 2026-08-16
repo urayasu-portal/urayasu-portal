@@ -83,7 +83,7 @@ On floors 5, 8 and 11 (washer ¥300 / dryer ¥200 per hour).
 Mechanical tower parking, 50 spaces, ¥1,500/night (reservation; vehicle size limits).
 
 **Luggage**
-The front desk stores bags before check-in, and you can ship luggage ahead to arrive the day before (mark the reservation name in katakana and stay date, addressed to the front desk). After-check-out storage is not published — ask at the desk. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+The front desk stores bags before check-in, and you can ship luggage ahead to arrive the day before (mark the reservation name in katakana and stay date, addressed to the front desk). After-check-out storage is not published — ask at the desk. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free throughout.

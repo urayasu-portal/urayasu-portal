@@ -83,7 +83,7 @@ Available.
 50 spaces, first-come.
 
 **Luggage**
-Front-desk storage on the day of your stay (before check-in) and until the end of check-out day — this is the chain-wide policy, and a few branches differ, so confirm with this hotel directly. Outgoing parcels can be sent from the desk during front-desk hours. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Front-desk storage on the day of your stay (before check-in) and until the end of check-out day — this is the chain-wide policy, and a few branches differ, so confirm with this hotel directly. Outgoing parcels can be sent from the desk during front-desk hours. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Available.

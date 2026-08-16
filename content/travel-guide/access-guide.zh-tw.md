@@ -55,7 +55,7 @@ factChecked: "2026-08-11"
       <div style="font-size:10.5px;color:#94A3B8;margin-bottom:24px"><i class="ti ti-info-circle" style="font-size:12px"></i> 位置關係僅為示意。迪士尼度假區線為4站循環單軌（省略2個樂園車站）。從浦安站·元町可搭路線巴士前往舞濱站·新浦安站方向（虛線）。新浦安站出發的路線巴士經運動公園·OLC總部前直達舞濱站（不經過新町）。葛西站（市外）也有機場利木津巴士停靠。</div>
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② 從機場·東京站前往樂園</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">先看直達樂園當天的出行方式。搭乘軌道交通前來的人，也可在此確認「從舞濱站的最後一段」。</div>
-      <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>想把行李先寄過去：</strong>行李箱可從機場或東京車站當日配送到飯店。不過辦理截止時間在早上9:50到下午2點之間，較早，請先參閱<a href="/zh-tw/travel-guide/hotels/luggage-airport/" style="color:#E05535;font-weight:700">從羽田·成田機場把行李寄到舞濱·浦安飯店的方法</a>確認。</div>
+      <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>想把行李先寄過去：</strong>行李箱可從機場或東京車站當日配送到飯店。不過辦理截止時間在早上9:50到下午2點之間，較早，請先參閱<a href="/zh-tw/travel-guide/luggage-airport/" style="color:#E05535;font-weight:700">從羽田·成田機場把行李寄到舞濱·浦安飯店的方法</a>確認。</div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>

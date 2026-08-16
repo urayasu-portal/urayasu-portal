@@ -90,7 +90,7 @@ Free shuttle to Maihama Station, Ikspiari, and Bayside in approx. 5 min. One of 
 Confirm details on official website.
 
 **Luggage**
-As an Official Hotel, **free** baggage delivery from the Welcome Center by JR Maihama Station to the hotel (about 8:00–15:00). On departure, paid Station Delivery the other way at **¥800 per item** (drop-off reception 7:00–12:30; pick-up at the Welcome Center from 13:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+As an Official Hotel, **free** baggage delivery from the Welcome Center by JR Maihama Station to the hotel (about 8:00–15:00). On departure, paid Station Delivery the other way at **¥800 per item** (drop-off reception 7:00–12:30; pick-up at the Welcome Center from 13:00). See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms (confirm on official website post-rebrand).

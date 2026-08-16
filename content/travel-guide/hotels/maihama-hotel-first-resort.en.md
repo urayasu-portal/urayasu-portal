@@ -89,7 +89,7 @@ Available in the South building only. Guests in other buildings need to travel t
 Free Wi-Fi is available in the 1F lobby area for all guests.
 
 **Luggage**
-Free guest-only lockers on the West side 1F (7:00–22:00), plus early-arrival storage at Guest Service. As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); on departure, paid Station Delivery at ¥800 per item, and a same-day delivery (¥940/item) to other Disney/Official hotels in the Maihama area. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Free guest-only lockers on the West side 1F (7:00–22:00), plus early-arrival storage at Guest Service. As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); on departure, paid Station Delivery at ¥800 per item, and a same-day delivery (¥940/item) to other Disney/Official hotels in the Maihama area. See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Parking**
 Confirm details on official website.

@@ -94,7 +94,7 @@ Available in-house.
 In-house shops (confirm hours and types on official website).
 
 **Luggage**
-Guest-only self-service lockers on 1F, with the bell captain desk as backup for storage before and after your stay. As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); a paid Station Delivery runs the other way on departure. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Guest-only self-service lockers on 1F, with the bell captain desk as backup for storage before and after your stay. As an Official Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (8:00–15:00); a paid Station Delivery runs the other way on departure. See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

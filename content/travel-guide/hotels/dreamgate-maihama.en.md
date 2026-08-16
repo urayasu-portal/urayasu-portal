@@ -95,7 +95,7 @@ Saizeriya Italian family restaurant on the ground floor. Open daily (confirm hou
 Confirm details on official website.
 
 **Luggage**
-Free guest-only lockers in the main building (usable from the morning of your stay and after check-out) and a self-service cloak room in the annex — no fee. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free guest-only lockers in the main building (usable from the morning of your stay and after check-out) and a self-service cloak room in the annex — no fee. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

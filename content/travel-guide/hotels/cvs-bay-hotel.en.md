@@ -84,7 +84,7 @@ Breakfast buffet available (depending on plan).
 No dedicated lot; partner Times parking (around ¥1,500, discount tickets provided).
 
 **Luggage**
-Early-morning storage before check-in at the front desk. After check-out, bags are held the same day only — from the next day a ¥1,000/day storage fee applies. There is no station baggage-delivery service, and the front desk does not handle outgoing parcels (use the Lawson next door). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Early-morning storage before check-in at the front desk. After check-out, bags are held the same day only — from the next day a ¥1,000/day storage fee applies. There is no station baggage-delivery service, and the front desk does not handle outgoing parcels (use the Lawson next door). See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Wired LAN / Wi-Fi in all rooms.

@@ -1,5 +1,6 @@
 ---
 title: "舞浜・浦安ホテルの荷物預かり＆バゲッジデリバリー完全ガイド｜チェックイン前に預けるには"
+aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
 lastmod: 2026-08-16
 factChecked: "2026-08-16"
@@ -27,7 +28,7 @@ faq:
 「チェックイン前にスーツケースをどこに置くか」「荷物を誰かに運んでもらえないか」は、東京ディズニーリゾート旅行の定番の悩みです。舞浜・浦安エリアの答えは**「どの方向に運ぶか」と「どの区分のホテルか」**で決まります。本ページで仕組みを整理します。情報は2025〜2026年の公式情報照合に基づきます。最新の詳細は各ホテル公式サイトでご確認ください。
 
 <div class="tg-notice-info">
-<i class="ti ti-luggage" aria-hidden="true"></i> <strong>このページは「舞浜駅から先」の話です：</strong>羽田・成田空港や東京駅から、ホテルへ荷物だけ先に送りたい方は <strong><a href="/travel-guide/hotels/luggage-airport/">羽田・成田空港から舞浜・浦安のホテルへ荷物を送る方法</a></strong> をご覧ください。当日配送の締切は空港によって朝9:50〜午後2時と早く、間に合うかどうかで取るべき手段が変わります。
+<i class="ti ti-luggage" aria-hidden="true"></i> <strong>このページは「舞浜駅から先」の話です：</strong>羽田・成田空港や東京駅から、ホテルへ荷物だけ先に送りたい方は <strong><a href="/travel-guide/luggage-airport/">羽田・成田空港から舞浜・浦安のホテルへ荷物を送る方法</a></strong> をご覧ください。当日配送の締切は空港によって朝9:50〜午後2時と早く、間に合うかどうかで取るべき手段が変わります。
 </div>
 
 ---
@@ -44,7 +45,7 @@ faq:
 
 いずれも**貴重品・壊れ物・飲み物・精密機器**（PC・カメラ等）は預けられません。
 
-> 改札からの行き方・受付時間・支払い方法まで、当日の手順を知りたい方は **[舞浜駅からホテルへ荷物を送る方法（手順ガイド）](/travel-guide/hotels/luggage-howto/)** をご覧ください。
+> 改札からの行き方・受付時間・支払い方法まで、当日の手順を知りたい方は **[舞浜駅からホテルへ荷物を送る方法（手順ガイド）](/travel-guide/luggage-howto/)** をご覧ください。
 
 ---
 
@@ -93,8 +94,8 @@ faq:
 
 ## 関連ページ
 
-- [舞浜駅からホテルへ荷物を送る方法（当日の手順ガイド）](/travel-guide/hotels/luggage-howto/)
-- [羽田・成田空港から舞浜・浦安のホテルへ荷物を送る方法](/travel-guide/hotels/luggage-airport/)
+- [舞浜駅からホテルへ荷物を送る方法（当日の手順ガイド）](/travel-guide/luggage-howto/)
+- [羽田・成田空港から舞浜・浦安のホテルへ荷物を送る方法](/travel-guide/luggage-airport/)
 - [無料シャトルバスで行けるホテルまとめ](/travel-guide/hotels/shuttle/)
 - [ホテルの区分（ディズニー/オフィシャル/パートナー）解説](/travel-guide/hotels/types/)
 - [アクセス比較ガイド](/travel-guide/hotels/access/)

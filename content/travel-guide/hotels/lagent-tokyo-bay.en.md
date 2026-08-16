@@ -89,7 +89,7 @@ Availability and details: confirm on official website.
 4 machines in-house (fee applies). 4 machines reduces the waiting time common with smaller laundry rooms.
 
 **Luggage**
-Storage before check-in and after check-out at the front desk, and provisional check-in paperwork is accepted from 6:00 on arrival day. There is no station baggage-delivery service; outgoing courier shipments from the front desk are cash-on-delivery only. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Storage before check-in and after check-out at the front desk, and provisional check-in paperwork is accepted from 6:00 on arrival day. There is no station baggage-delivery service; outgoing courier shipments from the front desk are cash-on-delivery only. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

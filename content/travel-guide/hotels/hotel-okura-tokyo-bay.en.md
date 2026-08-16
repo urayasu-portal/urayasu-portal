@@ -92,7 +92,7 @@ Not available in-house. Nearest external convenience store: confirm distance at 
 Available (confirm rates on official website).
 
 **Luggage**
-The 1F bell desk stores bags 6:00–23:00 (same-day courier forwarding if handed in by 13:00). As an Official Hotel, **free** baggage delivery from the Welcome Center counter (1F, about 8:00–15:00) to the hotel; paid Station Delivery on departure; airport and home courier also available. See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+The 1F bell desk stores bags 6:00–23:00 (same-day courier forwarding if handed in by 13:00). As an Official Hotel, **free** baggage delivery from the Welcome Center counter (1F, about 8:00–15:00) to the hotel; paid Station Delivery on departure; airport and home courier also available. See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

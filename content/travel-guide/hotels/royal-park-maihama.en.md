@@ -94,7 +94,7 @@ Dedicated shuttle to both parks (independent from TDR's official shuttle network
 Confirm details and hours on official website.
 
 **Luggage**
-Same-day storage at the front desk, plus 225 guest lockers beside the 1F front desk (5:00–23:00; no frozen or chilled items). There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Same-day storage at the front desk, plus 225 guest lockers beside the 1F front desk (5:00–23:00; no frozen or chilled items). There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

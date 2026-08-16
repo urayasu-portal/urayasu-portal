@@ -82,7 +82,7 @@ Buffet at the in-house restaurant "GOOD PIZZA FACTORY K6" (breakfast-included pl
 6 outdoor spaces, ¥3,000/night (reservation required).
 
 **Luggage**
-Free storage before check-in and after check-out (same-day pick-up; valuables, fragile items and food are not accepted). There is no station baggage-delivery service; the front desk can arrange same-day airport delivery (Airporter). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free storage before check-in and after check-out (same-day pick-up; valuables, fragile items and food are not accepted). There is no station baggage-delivery service; the front desk can arrange same-day airport delivery (Airporter). See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free in-room Wi-Fi.

@@ -93,7 +93,7 @@ Lawson within 5 min on foot of the hotel, open late. For supermarkets, take the 
 ¥2,000/night (per standard car, cash only). Available from 12:00 on check-in day to 12:00 on check-out day; in/out allowed.
 
 **Luggage**
-Same-day storage at the Guest Service desk from 6:00, held until 24:00 on check-out day. Like its sister wing, the Celebration Hotels cannot use the free Welcome Center delivery or the Station Delivery service — instead, guests use the paid "Bon Voyage" counter by JR Maihama Station for station-to-hotel delivery (fee not published; confirm locally). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Same-day storage at the Guest Service desk from 6:00, held until 24:00 on check-out day. Like its sister wing, the Celebration Hotels cannot use the free Welcome Center delivery or the Station Delivery service — instead, guests use the paid "Bon Voyage" counter by JR Maihama Station for station-to-hotel delivery (fee not published; confirm locally). See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in rooms.

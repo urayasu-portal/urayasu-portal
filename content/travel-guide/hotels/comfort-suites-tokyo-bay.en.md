@@ -89,7 +89,7 @@ In-house convenience store (store name and hours: confirm on official website).
 Available (when full, nearby parking is offered). Confirm rates on official website.
 
 **Luggage**
-Free self-service cloak room before check-in and after check-out (luggage carts available in the lobby). There is no station baggage-delivery service; an in-house courier counter is available 7:00–13:00. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free self-service cloak room before check-in and after check-out (luggage carts available in the lobby). There is no station baggage-delivery service; an in-house courier counter is available 7:00–13:00. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi throughout (FREESPOT also available in lobby and breakfast area).

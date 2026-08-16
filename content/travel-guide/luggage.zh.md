@@ -1,5 +1,6 @@
 ---
 title: "东京迪士尼周边饭店行李寄存与配送指南｜入住前寄存·车站配送"
+aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
 lastmod: 2026-08-16
 factChecked: "2026-08-16"
@@ -27,7 +28,7 @@ faq:
 "入住前行李放哪里""能不能有人帮忙运行李"是东京迪士尼度假区之旅的常见疑问。在舞滨·浦安地区，答案取决于**运送方向**和**饭店类别**。本页为您整理其中的规则。信息基于2025–2026年的官方信息核对，出行前请在各饭店官网确认最新详情。
 
 <div class="tg-notice-info">
-<i class="ti ti-luggage" aria-hidden="true"></i> <strong>本页讲的是「舞滨站之后」：</strong>若想从羽田·成田机场或东京站把行李先寄到饭店，请参阅<strong><a href="/zh/travel-guide/hotels/luggage-airport/">从羽田·成田机场把行李寄到舞滨·浦安酒店的方法</a></strong>。当日配送的截止时间因航站楼而异，在早上9:50到下午2点之间，能否赶上会决定该采取哪种方式。
+<i class="ti ti-luggage" aria-hidden="true"></i> <strong>本页讲的是「舞滨站之后」：</strong>若想从羽田·成田机场或东京站把行李先寄到饭店，请参阅<strong><a href="/zh/travel-guide/luggage-airport/">从羽田·成田机场把行李寄到舞滨·浦安酒店的方法</a></strong>。当日配送的截止时间因航站楼而异，在早上9:50到下午2点之间，能否赶上会决定该采取哪种方式。
 </div>
 
 ---
@@ -91,8 +92,8 @@ faq:
 
 ## 相关页面
 
-- [如何把行李从舞滨站送到饭店（当天使用步骤）](/zh/travel-guide/hotels/luggage-howto/)
-- [从羽田·成田机场把行李寄到舞滨·浦安酒店的方法](/zh/travel-guide/hotels/luggage-airport/)
+- [如何把行李从舞滨站送到饭店（当天使用步骤）](/zh/travel-guide/luggage-howto/)
+- [从羽田·成田机场把行李寄到舞滨·浦安酒店的方法](/zh/travel-guide/luggage-airport/)
 - [提供免费班车的饭店一览](/zh/travel-guide/hotels/shuttle/)
 - [饭店类别解说（迪士尼/官方/合作）](/zh/travel-guide/hotels/types/)
 - [交通比较指南](/zh/travel-guide/hotels/access/)

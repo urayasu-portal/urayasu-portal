@@ -1,5 +1,6 @@
 ---
 title: "Luggage Storage & Baggage Delivery near Tokyo Disney Resort | Maihama & Urayasu Hotels"
+aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
 lastmod: 2026-08-16
 factChecked: "2026-08-16"
@@ -27,7 +28,7 @@ faq:
 "Where do I put my suitcases before check-in, and can someone carry them to my hotel?" is one of the most common questions overseas visitors ask before a Tokyo Disney Resort trip. Around Maihama and Urayasu the answer depends on **which direction** you're moving your bags and **which category** your hotel is. This guide sorts it out. Details are from our 2025–2026 research against official sources — always reconfirm on your hotel's official site before you travel.
 
 <div class="tg-notice-info">
-<i class="ti ti-luggage" aria-hidden="true"></i> <strong>This page starts at Maihama Station:</strong> if you want to send your bags ahead from Haneda, Narita or Tokyo Station, see <strong><a href="/en/travel-guide/hotels/luggage-airport/">Sending luggage from Haneda or Narita to your Maihama / Urayasu hotel</a></strong>. Same-day cut-off times run from 9:50 to 14:00 depending on the terminal, and whether you can make them changes what you should do.
+<i class="ti ti-luggage" aria-hidden="true"></i> <strong>This page starts at Maihama Station:</strong> if you want to send your bags ahead from Haneda, Narita or Tokyo Station, see <strong><a href="/en/travel-guide/luggage-airport/">Sending luggage from Haneda or Narita to your Maihama / Urayasu hotel</a></strong>. Same-day cut-off times run from 9:50 to 14:00 depending on the terminal, and whether you can make them changes what you should do.
 </div>
 
 ---
@@ -44,7 +45,7 @@ Most of the area's baggage services run through **JR Maihama Station**, the gate
 
 All of these services exclude **valuables, fragile items, drinks, and precision devices** (laptops, cameras). Keep those with you.
 
-> Want the step-by-step version — where to go from the ticket gates, reception hours, and how to pay? See **[How to send your luggage from Maihama Station to your hotel](/en/travel-guide/hotels/luggage-howto/)**.
+> Want the step-by-step version — where to go from the ticket gates, reception hours, and how to pay? See **[How to send your luggage from Maihama Station to your hotel](/en/travel-guide/luggage-howto/)**.
 
 ---
 
@@ -93,8 +94,8 @@ You don't always need a delivery service. Almost every hotel will simply **hold 
 
 ## Related
 
-- [How to Send Your Luggage from Maihama Station to Your Hotel (step by step)](/en/travel-guide/hotels/luggage-howto/)
-- [Sending Luggage from Haneda or Narita to Your Maihama / Urayasu Hotel](/en/travel-guide/hotels/luggage-airport/)
+- [How to Send Your Luggage from Maihama Station to Your Hotel (step by step)](/en/travel-guide/luggage-howto/)
+- [Sending Luggage from Haneda or Narita to Your Maihama / Urayasu Hotel](/en/travel-guide/luggage-airport/)
 - [Tokyo Disney Resort Hotels with Free Shuttle Buses](/en/travel-guide/hotels/shuttle/)
 - [How to Get to Tokyo Disney Resort & Urayasu](/en/travel-guide/urayasu-maihama-access-guide/)
 - [Hotel Categories Explained (Disney / Official / Partner)](/en/travel-guide/hotels/types/)

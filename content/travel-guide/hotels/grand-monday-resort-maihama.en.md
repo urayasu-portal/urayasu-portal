@@ -84,7 +84,7 @@ From Superior Twin (25.44 sqm, 4–5 guests) to Suites (50.88 sqm, 6 guests, in-
 All-day dining "ISLE -Pool Club Restaurant-" (planned 6:30–24:00) plus room service (last order 24:00). Limited on-site parking at ¥3,000/night (partner lot with free shuttle when full). Free Wi-Fi in all rooms; AI translation devices available.
 
 **Luggage**
-Free storage before check-in and after check-out (same-day pick-up; valuables, fragile items and food are not accepted). There is no station baggage-delivery service; the front desk can arrange same-day airport delivery (Airporter). As a newly opened hotel, reconfirm details on the official site. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free storage before check-in and after check-out (same-day pick-up; valuables, fragile items and food are not accepted). There is no station baggage-delivery service; the front desk can arrange same-day airport delivery (Airporter). As a newly opened hotel, reconfirm details on the official site. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 ---
 

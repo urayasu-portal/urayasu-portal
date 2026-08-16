@@ -99,7 +99,7 @@ Buffet and à la carte options (confirm hours on official website).
 Progressive rate system (the longer you stay, the lower the nightly rate). Confirm current rates on official website.
 
 **Luggage**
-Storage before and after your stay at the 2F front / bell desk, with a guest-only baggage/locker room. As a Partner Hotel, station-to-hotel delivery uses the paid "Bon Voyage" counter by JR Maihama Station (about ¥800 per item, until around 15:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Storage before and after your stay at the 2F front / bell desk, with a guest-only baggage/locker room. As a Partner Hotel, station-to-hotel delivery uses the paid "Bon Voyage" counter by JR Maihama Station (about ¥800 per item, until around 15:00). See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

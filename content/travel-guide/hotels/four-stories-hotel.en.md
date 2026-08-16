@@ -89,7 +89,7 @@ Nearest convenience store is 19 minutes on foot — plan accordingly. Food deliv
 8 spaces, ¥1,500/night (first-come, first-served). Contact the hotel in advance if parking is needed.
 
 **Luggage**
-Storage from 6:00 on arrival day — and even from the day before (front desk staffed 6:00–24:00; valuables excluded). After check-out, bags are held until 23:00 the same day. There is no station baggage-delivery service; outgoing shipments go via Sagawa at the desk (packing materials sold if you have no box). See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Storage from 6:00 on arrival day — and even from the day before (front desk staffed 6:00–24:00; valuables excluded). After check-out, bags are held until 23:00 the same day. There is no station baggage-delivery service; outgoing shipments go via Sagawa at the desk (packing materials sold if you have no box). See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi (confirm on official website).

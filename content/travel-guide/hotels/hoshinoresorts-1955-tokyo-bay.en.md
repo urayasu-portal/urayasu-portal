@@ -94,7 +94,7 @@ Confirm availability on official website.
 No large communal bath.
 
 **Luggage**
-Free lockers you can use before check-in and after check-out, plus pre-check-in so you only collect your room key on return. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Free lockers you can use before check-in and after check-out, plus pre-check-in so you only collect your room key on return. There is no station baggage-delivery service. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.

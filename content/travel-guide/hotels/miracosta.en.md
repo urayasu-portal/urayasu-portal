@@ -92,7 +92,7 @@ In lieu of a large public bath, this paid spa and pool for hotel guests offers a
 No coin laundry available. Paid laundry service is available.
 
 **Luggage**
-Same-day storage at the bell desk from 6:00 (Speciale guests from 7:00 in the lounge), held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); on departure, paid Station Delivery the other way at ¥800 per item (pick-up 13:00–21:00). See [how Maihama luggage delivery works](/en/travel-guide/hotels/luggage/).
+Same-day storage at the bell desk from 6:00 (Speciale guests from 7:00 in the lounge), held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); on departure, paid Station Delivery the other way at ¥800 per item (pick-up 13:00–21:00). See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Parking**
 ¥3,000 for the 1st night; ¥1,000 per additional night (from 0:00 on check-in day to 24:00 on check-out day). **A rate revision (increase) is scheduled for check-ins on or after Thu, Oct 1, 2026** — please confirm the latest fee on the official website.

@@ -89,7 +89,7 @@ Available in-house (fee applies).
 Available (fee applies; confirm at booking).
 
 **Luggage**
-Storage before and after your stay at the front desk (bags can be received before your arrival date). The hotel does not run a delivery service to Maihama Station — it suggests in-park lockers or a courier instead. See [luggage storage & delivery near the parks](/en/travel-guide/hotels/luggage/).
+Storage before and after your stay at the front desk (bags can be received before your arrival date). The hotel does not run a delivery service to Maihama Station — it suggests in-park lockers or a courier instead. See [luggage storage & delivery near the parks](/en/travel-guide/luggage/).
 
 **Wi-Fi**
 Free Wi-Fi in all rooms.
