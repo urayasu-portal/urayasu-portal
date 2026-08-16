@@ -194,3 +194,7 @@
   translation: "行李寄存"
 - id: hl_luggage_desc
   translation: "入住前寄存与车站行李配送指南"
+- id: hl_wherestay
+  translation: "住浦安还是住市区？"
+- id: hl_wherestay_desc
+  translation: "据点选择比较"

@@ -194,3 +194,7 @@
   translation: "荷物・配送"
 - id: hl_luggage_desc
   translation: "チェックイン前の預かり・駅からの配送の仕組み"
+- id: hl_wherestay
+  translation: "浦安泊か、都心泊か"
+- id: hl_wherestay_desc
+  translation: "拠点の選び方を比較"

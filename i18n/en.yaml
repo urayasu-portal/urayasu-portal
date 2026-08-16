@@ -194,3 +194,7 @@
   translation: "Luggage"
 - id: hl_luggage_desc
   translation: "Storage before check-in & station baggage delivery"
+- id: hl_wherestay
+  translation: "Urayasu or central Tokyo?"
+- id: hl_wherestay_desc
+  translation: "Choosing your base"

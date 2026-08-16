@@ -1,7 +1,7 @@
 ---
 title: "Best Family Hotels near Tokyo Disneyland & DisneySea | Kid-Friendly Picks by Locals"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-06-16
+lastmod: 2026-08-16
 factChecked: "2026-08-08"
 description: "Visiting Tokyo Disney Resort with kids. A local-media comparison of family-friendly hotels among Urayasu's 40, chosen for large baths, spacious rooms, in-house convenience stores, and closeness to the parks."
 tags:
@@ -66,6 +66,8 @@ With kids, whether four can share one room — and whether co-sleeping is free �
 - **The Royal Park Hotel Maihama Resort Tokyo Bay (Chidori area)** … a large new hotel opened February 2026, with rooms for 4 (up to 6) themed on the world's seas, popular with children.
 - **La'gent Hotel Tokyo Bay (Shin-Urayasu area)** … up to six; value pricing yet all non-smoking with air purifiers, reassuring for families.
 - **Mitsui Garden Hotel Prana Tokyo Bay (Shin-Urayasu area)** … besides the observation bath above, it has large rooms for up to six.
+- **[Premium hotel MONday Maihama View I](/en/travel-guide/hotels/premium-monday-maihama-view-1/) (just outside Urayasu)** … an apartment-style hotel opened December 2025, with larger-than-usual rooms, a sauna-equipped large bath, and a free TDR shuttle.
+- **[GRAND MONday Resort Tokyo Bay Maihama](/en/travel-guide/hotels/grand-monday-resort-maihama/) (Chidori area)** … opened July 2026 — every room ocean-front, plus a year-round lagoon pool. The new treat-yourself option for families.
 
 If you want to be immersed in the Disney world, **Toy Story Hotel** and **Tokyo Disney Celebration Hotel (Wish / Discover)** also accommodate 4 plus 2 co-sleeping children of elementary age or younger. Many hotels offer free co-sleeping for young children, so confirm conditions when booking.
 

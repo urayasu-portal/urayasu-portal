@@ -194,3 +194,7 @@
   translation: "수하물"
 - id: hl_luggage_desc
   translation: "체크인 전 보관·역 수하물 배송 안내"
+- id: hl_wherestay
+  translation: "우라야스 vs 도쿄 시내"
+- id: hl_wherestay_desc
+  translation: "거점 고르는 법 비교"

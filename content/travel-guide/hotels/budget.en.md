@@ -1,7 +1,7 @@
 ---
-title: "Cheap Hotels near Tokyo Disneyland | Budget Stays from Around ¥10,000 for Two (Local Guide)"
+title: "Cheap Hotels in Urayasu & Maihama near Tokyo Disneyland | From Around ¥10,000 for Two (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-08-08
+lastmod: 2026-08-16
 factChecked: "2026-08-08"
 description: "Enjoy Tokyo Disney Resort for less. A local-media comparison of budget hotels in Urayasu where two can stay from around ¥10,000, balancing price and location — plus tips for making 'cheap' actually pay off."
 tags:
@@ -73,6 +73,9 @@ A value price from around ¥8,000, with rooms for up to six and a 24-hour conven
 **Ibis Styles Tokyo Bay**
 From around ¥10,000. A design hotel in the Accor group, balancing style and affordability. About a 15-minute walk from Shin-Urayasu Station.
 
+**[Hiyori Hotel Maihama](/en/travel-guide/hotels/hiyori-hotel-maihama/)**
+From around ¥10,000, in the Higashino area. Every room has a shoe dryer and a foot massager — equipment made for walk-all-day park trips — plus a Japanese-Western buffet breakfast and 40 parking spaces for families arriving by car.
+
 ### Urayasu Station area | The sweet spot of "cheap × near the station × Tokyo sightseeing"
 
 The Tozai Line / Urayasu Station area has no free TDR shuttle, but its appeal is **one train ride to central Tokyo.** It suits "Disney on day one, Asakusa or Ginza on day two," with reasonable rates.
@@ -93,6 +96,28 @@ From around ¥14,000, which looks higher, but it is an apartment type with **a k
 
 **Four Stories Hotel Maihama**
 A stay-focused hotel from around ¥10,000, among the cheapest in the Maihama area. A small 26-room hotel with rooms themed by a different story on each floor. Note there is no direct TDR shuttle — the public local bus is assumed (about 7 min to Maihama Station, last bus 23:00) — so take care with late-night returns.
+
+### Just outside Urayasu (Kasai, Myoden, Ichikawa-Shiohama) | The cheapest rates of all
+
+If you don't insist on Urayasu City itself, the station-front hotels one stop away — Kasai (Edogawa, Tokyo), Myoden (Ichikawa) and Ichikawa-Shiohama — offer the lowest rates in the area, all within 10–25 minutes of Maihama and Urayasu by train or bus.
+
+**[Hotel Livemax Kasai-Ekimae](/en/travel-guide/hotels/livemax-kasai-ekimae/)**
+From the ¥5,000s, 3 minutes from Kasai Station, with a laundry-café attached.
+
+**[Hotel Il Fiore Kasai ANNEX](/en/travel-guide/hotels/hotel-ilfiore-kasai-annex/) / [main building](/en/travel-guide/hotels/hotel-ilfiore-kasai/)**
+The ANNEX starts around ¥5,500 with deluxe rooms for up to six; the main building (from the ¥7,800s) has family rooms for up to four. About 20–25 minutes to TDR by bus.
+
+**[CVS BAY HOTEL](/en/travel-guide/hotels/cvs-bay-hotel/)**
+From the ¥5,600s, right at Ichikawa-Shiohama Station — **two stops, six minutes to Maihama**. A large bay hotel with a women-only capsule floor.
+
+**[Super Hotel Myoden-Ekimae](/en/travel-guide/hotels/superhotel-myoden/)**
+From ¥7,400, 2 minutes from Myoden Station with a free healthy breakfast. The Tozai Line puts both Urayasu and central Tokyo within easy reach.
+
+**[Hotel Lumiere Kasai](/en/travel-guide/hotels/hotel-lumiere-kasai/)**
+From ¥9,700 with free breakfast; some rooms have a mini-kitchen, good for longer self-catering stays.
+
+**[Premium hotel MONday Maihama View I](/en/travel-guide/hotels/premium-monday-maihama-view-1/)**
+From ¥11,000. An apartment-style hotel opened December 2025 — larger-than-usual rooms, a sauna-equipped large bath, and even a **free shuttle to TDR**.
 
 ### The Disney world, as cheaply as possible
 
