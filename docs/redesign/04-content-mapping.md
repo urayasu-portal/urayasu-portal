@@ -74,7 +74,7 @@ grand-monday-resort-maihama（→budget・kids）／premium-monday-maihama-view-
 | 記事 | 実績 | 処遇 | W | 指示 |
 |---|---|---|---|---|
 | access-guide | 2/929 | **改稿（ハブ昇格）** | W1 | 冒頭を「どこに着きますか」診断に再編: 羽田T1/T2/T3・成田T1/T2/**T3**・東京駅・車の8分岐（G4）。airport-limousine の内容を「リムジンバス」節として吸収。帰路節を新設。荷物3部作への文脈リンク。**zh-tw第一席**で分岐ラベル設計（LCC・台湾便はT3/T2着） |
-| airport-limousine | 0/31 | **統合** | W1 | 全内容を access-guide リムジンバス節へ。`aliases` を access-guide 側に付与×5言語 |
+| airport-limousine | 0/31 | **統合** | ~~W1~~ **W2** | 【2026-08-16変更】実体は `layout: facility-list`（data駆動のホテル一覧）で、価値は「どのホテルにリムジンが停まるか」＝ホテル選びの情報。access-guide は手段としてのリムジンバス（運賃・のりば・予約）を吸収済みのため、ホテル一覧は **facilities に吸収**し301先も facilities に変更 |
 | taxi-guide | 4/450 | 軽改修 | W1 | ハブからのスポーク導線を明示。構成は維持 |
 | tokyo-sightseeing-access | 5/475 | 軽改修 | W1 | 同上。滞在ハブ（W3）からも副リンク |
 | luggage | 7/267 | **移設＋軽改修** | W1 | `/travel-guide/luggage/` へ。3部作の役割分担注記を統一 |
@@ -108,7 +108,7 @@ grand-monday-resort-maihama（→budget・kids）／premium-monday-maihama-view-
 | 1 | /travel-guide/hotels/luggage/ | /travel-guide/luggage/ | W1 |
 | 2 | /travel-guide/hotels/luggage-howto/ | /travel-guide/luggage-howto/ | W1 |
 | 3 | /travel-guide/hotels/luggage-airport/ | /travel-guide/luggage-airport/ | W1 |
-| 4 | /travel-guide/hotels/airport-limousine/ | /travel-guide/urayasu-maihama-access-guide/ | W1 |
+| 4 | /travel-guide/hotels/airport-limousine/ | /travel-guide/hotels/facilities/（2026-08-16に吸収先変更） | W2 |
 | 5 | /travel-guide/hotels/pool/ | /travel-guide/hotels/facilities/ | W2 |
 | 6 | /travel-guide/hotels/near-station/ | /travel-guide/hotels/facilities/ | W2 |
 | 7 | /travel-guide/hotels/in-house-store/ | /travel-guide/hotels/facilities/ | W2 |
