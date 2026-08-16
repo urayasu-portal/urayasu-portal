@@ -1,0 +1,72 @@
+{{- /* 設備逆引きのホテル一覧をインライン描画するショートコード。
+     使用例: {{< facility-table "bath" >}}
+     キー: bath / pool / laundry / convenience / station / limousine（data/hotels_map.yaml の flags）
+     data/hotels.yaml の区分・エリア・特徴を合流し価格昇順。旧 facility-list レイアウトの後継。
+     現状 ja/en の二言語対応（データに ko/zh 名が未整備のため）。 */ -}}
+{{- $fac := .Get 0 -}}
+{{- $isEN := eq .Page.Language.Lang "en" -}}
+{{- $info := dict -}}
+{{- range hugo.Data.hotels.areas -}}
+  {{- $area := cond $isEN (.name_en | default .name) .name -}}
+  {{- range .hotels -}}
+    {{- if .slug -}}
+      {{- $info = merge $info (dict .slug (dict
+            "category" (.category | default "")
+            "feature" (cond $isEN (.feature_en | default "") (.feature | default ""))
+            "area" $area)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $catEN := dict
+    "ディズニーホテル" "Disney Hotel"
+    "オフィシャルホテル" "Official Hotel"
+    "パートナーホテル" "Partner Hotel" -}}
+{{- $noteEN := dict
+    "有料" "Paid" "無料" "Free" "天然温泉" "Natural hot spring" "サウナ" "Sauna"
+    "温水" "Heated" "屋内外" "Indoor & outdoor" "展望" "With a view" "無料・展望" "Free, with a view"
+    "大浴場・サウナ" "Bath & sauna" "通年屋外ラグーンプール" "Year-round outdoor lagoon pool" -}}
+{{- $rows := slice -}}
+{{- range hugo.Data.hotels_map.hotels -}}
+  {{- if in .flags $fac -}}
+    {{- $note := "" -}}
+    {{- range .facilities -}}
+      {{- if eq .key $fac }}{{ with .note }}{{ $note = cond $isEN ((index $noteEN .) | default .) . }}{{ end }}{{ end -}}
+    {{- end -}}
+    {{- $meta := index $info .slug | default dict -}}
+    {{- $rows = $rows | append (dict
+          "slug" .slug
+          "name" (cond $isEN (.name_en | default .name) .name)
+          "price" (.price_min | default 999999)
+          "note" $note
+          "cat" (index $meta "category" | default "")
+          "area" (index $meta "area" | default "")
+          "feature" (index $meta "feature" | default "")) -}}
+  {{- end -}}
+{{- end -}}
+{{- $rows = sort $rows "price" "asc" -}}
+{{- $hotelsURL := "/travel-guide/hotels/" | relLangURL -}}
+<p class="fl-count">
+  {{- if $isEN }}<strong>{{ len $rows }}</strong> hotels ・ prices are typical off-peak rates for 2 adults per room
+  {{- else }}該当<strong>{{ len $rows }}</strong>軒・価格は2名1室・通常期の目安
+  {{- end -}}
+</p>
+<div class="fl-list">
+  {{- range $rows }}
+  {{- $pg := site.GetPage (printf "/travel-guide/hotels/%s" .slug) }}
+  <a class="fl-row" {{ with $pg }}href="{{ .RelPermalink }}"{{ else }}href="{{ $hotelsURL }}"{{ end }}>
+    <span class="fl-main">
+      <span class="fl-name">{{ .name }}</span>
+      <span class="fl-meta">
+        {{- if .cat }}<span class="fl-cat">{{ if $isEN }}{{ index $catEN .cat | default .cat }}{{ else }}{{ .cat }}{{ end }}</span>{{ end }}
+        {{- with .area }}<span class="fl-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+        {{- with .note }}<span class="fl-note">{{ . }}</span>{{ end }}
+      </span>
+      {{- with .feature }}<span class="fl-feature">{{ . }}</span>{{ end }}
+    </span>
+    <span class="fl-price">
+      {{- if lt .price 999999 }}{{ if $isEN }}from ¥{{ lang.FormatNumberCustom 0 .price }}{{ else }}¥{{ lang.FormatNumberCustom 0 .price }}〜{{ end }}{{ end }}
+      <i class="ti ti-chevron-right" aria-hidden="true"></i>
+    </span>
+  </a>
+  {{- end }}
+</div>
