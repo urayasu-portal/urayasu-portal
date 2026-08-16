@@ -1,7 +1,7 @@
 ---
 title: "Where to Eat near Tokyo Disney Resort | Food & Souvenirs in Urayasu, Shin-Urayasu & Maihama"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-06-19
+lastmod: 2026-08-16
 slug: "urayasu-gourmet-souvenir-guide"
 description: "Area-by-area food and souvenir guide for Urayasu, Shin-Urayasu, and Maihama. Covers everyday lunch spots, family dining, food before/after Disney, hotel restaurants, and gift shops — with tips for finding what you need."
 tags:
@@ -280,6 +280,8 @@ Urayasu Portal is looking for information on food, cafes, sweets, souvenirs, and
 When sharing information, please include the shop name, address, official URL, or SNS for verification.
 
 ---
+
+- [Maihama, Urayasu & Shin-Urayasu sightseeing guide (rest-day hub)](/en/travel-guide/urayasu-maihama-shinurayasu-tourism/)
 
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>

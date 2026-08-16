@@ -1,6 +1,7 @@
 ---
 title: "마이하마 유라시아 천연 온천: 파크 다녀오는 길에 담그는, 마이하마 유일의 당일 온천"
 description: "3만 보를 걸은 다리를 천연 온천이 살립니다. 마이하마 지역 유일의 천연 온천 「SPA&HOTEL 마이하마 유라시아」 당일 이용을 현지인이 해설: 요금, 영업시간, 아이 동반 주의점, 3개 역에서 오는 무료 셔틀까지."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -72,3 +73,4 @@ factChecked: "2026-08-11"
 - [SPA&HOTEL 마이하마 유라시아(숙박 리뷰)](/ko/travel-guide/hotels/maihama-eurasia/)
 - [우라야스시 교통공원: 무료로 노는 아이들의 천국](/ko/travel-guide/urayasu-traffic-park/)
 - [가사이 임해공원: 디즈니 옆 정거장, 참치와 대관람차의 거대 공원](/ko/travel-guide/kasai-rinkai-park/)
+- [마이하마·우라야스·신우라야스 관광 가이드（휴식일 허브）](/ko/travel-guide/urayasu-maihama-shinurayasu-tourism/)

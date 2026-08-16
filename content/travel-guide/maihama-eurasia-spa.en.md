@@ -1,6 +1,7 @@
 ---
 title: "The Natural Hot Spring at Maihama Eurasia: A Real Onsen 5 Minutes from the Disney Parks"
 description: "After 20,000 steps at Disney, soak in Maihama's only natural hot spring. A local guide to day-use bathing at Spa & Hotel Maihama Eurasia: prices, hours, kids' rules, tattoo policy, and the free shuttle from three stations."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -68,3 +69,4 @@ Or simply stay the night — hotel guests get the onsen all evening and all morn
 - [Spa & Hotel Maihama Eurasia (Hotel Review)](/en/travel-guide/hotels/maihama-eurasia/)
 - [Urayasu Traffic Park: A Free Kids' Paradise One Stop from Tokyo Disney Resort](/en/travel-guide/urayasu-traffic-park/)
 - [Kasai Rinkai Park & Aquarium: The Other Giant Park One Stop from Disney](/en/travel-guide/kasai-rinkai-park/)
+- [Maihama, Urayasu & Shin-Urayasu sightseeing guide (rest-day hub)](/en/travel-guide/urayasu-maihama-shinurayasu-tourism/)

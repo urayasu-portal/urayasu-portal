@@ -1,6 +1,7 @@
 ---
 title: "teamLab Planets (Toyosu): Barefoot Digital Art 30 Minutes from Disney"
 description: "Wade knee-deep through glowing water and walk barefoot through rooms of light — the world-famous digital art museum is just 30 minutes by train from Maihama. The perfect rainy-day plan B for a Tokyo Disney trip, with ticket and clothing tips from locals."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -77,3 +78,4 @@ Toyosu is home to **Toyosu Market**, with a food-and-hot-spring complex next doo
 - [Kasai Rinkai Park & Aquarium: The Other Giant Park One Stop from Disney](/en/travel-guide/kasai-rinkai-park/)
 - [The Natural Hot Spring at Maihama Eurasia: A Day-Use Onsen Near the Parks](/en/travel-guide/maihama-eurasia-spa/)
 - [Urayasu Traffic Park: A Free Kids' Paradise One Stop from Tokyo Disney Resort](/en/travel-guide/urayasu-traffic-park/)
+- [Maihama, Urayasu & Shin-Urayasu sightseeing guide (rest-day hub)](/en/travel-guide/urayasu-maihama-shinurayasu-tourism/)

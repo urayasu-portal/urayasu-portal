@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼周边游览指南 | 舞滨·浦安·新浦安的观光景点"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-01
+lastmod: 2026-08-16
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -148,6 +148,19 @@ faq:
     <span style="font-size:28px;">👶</span>
     <span style="font-size:12px;font-weight:600;line-height:1.4;">家庭·<br>婴儿车友好</span>
   </a>
+</div>
+
+<div style="background:#FFF7F5;border:1px solid #F3C9BF;border-radius:10px;padding:14px 16px;margin:0 0 24px;">
+  <div style="font-size:14px;font-weight:700;margin-bottom:8px;">📚 用专题指南深入了解（休息日从这里开始）</div>
+  <ul style="margin:0;padding-left:1.2em;font-size:13.5px;line-height:2;">
+    <li><a href="/zh/travel-guide/maihama-eurasia-spa/">舞滨Eurasia的天然温泉</a> — 乐园归途·雨天的经典选择</li>
+    <li><a href="/zh/travel-guide/urayasu-traffic-park/">浦安市交通公园</a> — 免费·带孩子的半天好去处</li>
+    <li><a href="/zh/travel-guide/kasai-rinkai-park/">葛西临海公园</a> — 邻站的大摩天轮与水族馆</li>
+    <li><a href="/zh/travel-guide/teamlab-planets/">teamLab Planets（丰洲）</a> — 雨天的室内艺术·距舞滨约30分钟</li>
+    <li><a href="/zh/travel-guide/urayasu-gourmet-souvenir-guide/">美食·伴手礼指南</a> — 乐园外的餐饮与礼品</li>
+    <li><a href="/zh/travel-guide/urayasu-map/">生活·购物地图</a> — 最近的便利店·药妆店·ATM</li>
+    <li><a href="/zh/travel-guide/kids-emergency/">孩子生病了怎么办</a> — 建议提前读一遍备用</li>
+  </ul>
 </div>
 
 <h2 id="recommended">不知道从哪里开始的话</h2>

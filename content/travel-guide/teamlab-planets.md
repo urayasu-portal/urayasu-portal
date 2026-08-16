@@ -1,6 +1,7 @@
 ---
 title: "チームラボプラネッツ（豊洲）：ディズニーから30分、裸足で水の中を歩くアート"
 description: "舞浜から電車で約30分。膝まで水に入り、裸足で光の中を歩く世界的人気のデジタルアートミュージアム。雨の日プランBにも、パークとは違う「もうひとつの非日常」にも。チケットの買い方と服装の注意まで地元が解説します。"
+lastmod: 2026-08-16
 date: 2026-07-07
 factChecked: "2026-08-01"
 draft: false
@@ -84,3 +85,5 @@ tags:
 - [葛西臨海公園：ディズニーの隣駅、マグロと大観覧車の巨大公園](/travel-guide/kasai-rinkai-park/)
 - [舞浜ユーラシアの天然温泉：パーク帰りの日帰り湯](/travel-guide/maihama-eurasia-spa/)
 - [浦安市交通公園：無料で遊べる子どもの楽園](/travel-guide/urayasu-traffic-park/)
+
+- [舞浜・浦安・新浦安観光ガイド（休息日の過ごし方まとめ）](/travel-guide/urayasu-maihama-shinurayasu-tourism/)

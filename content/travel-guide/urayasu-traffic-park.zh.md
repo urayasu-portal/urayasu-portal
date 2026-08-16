@@ -1,6 +1,7 @@
 ---
 title: "浦安市交通公园：离迪士尼一站，免费畅玩的儿童乐园"
 description: "免费骑自行车、骑迷你马、抱豚鼠，就在离迪士尼酒店一站的地方。适合住在东京迪士尼度假区附近家庭的「休息日」好去处，由本地人带你逛。"
+lastmod: 2026-08-16
 date: 2026-07-07
 factChecked: "2026-08-08"
 draft: false
@@ -89,3 +90,4 @@ tags:
 - [葛西临海公园：迪士尼隔壁站，金枪鱼与大摩天轮的巨型公园](/zh/travel-guide/kasai-rinkai-park/)
 - [teamLab Planets（丰洲）：赤脚走进水中的数字艺术](/zh/travel-guide/teamlab-planets/)
 - [舞滨欧亚天然温泉：逛完乐园的当日泡汤](/zh/travel-guide/maihama-eurasia-spa/)
+- [舞滨·浦安·新浦安观光指南（休息日总览）](/zh/travel-guide/urayasu-maihama-shinurayasu-tourism/)

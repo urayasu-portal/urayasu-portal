@@ -1,6 +1,7 @@
 ---
 title: "舞濱歐亞天然溫泉：逛完樂園就能泡的舞濱唯一當日溫泉"
 description: "走了3萬步的雙腿，交給天然溫泉來拯救。舞濱地區唯一的天然溫泉「SPA&HOTEL舞濱歐亞」當日泡湯，由在地人解說：價格、營業時間、親子注意事項、從3站發出的免費接駁車。"
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -72,3 +73,4 @@ factChecked: "2026-08-11"
 - [SPA&HOTEL舞濱歐亞（住宿評測）](/zh-tw/travel-guide/hotels/maihama-eurasia/)
 - [浦安市交通公園：免費暢玩的兒童樂園](/zh-tw/travel-guide/urayasu-traffic-park/)
 - [葛西臨海公園：迪士尼隔壁站，鮪魚與大摩天輪的巨型公園](/zh-tw/travel-guide/kasai-rinkai-park/)
+- [舞濱·浦安·新浦安觀光指南（休息日總覽）](/zh-tw/travel-guide/urayasu-maihama-shinurayasu-tourism/)

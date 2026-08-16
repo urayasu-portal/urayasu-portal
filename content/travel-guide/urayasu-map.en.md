@@ -1,7 +1,7 @@
 ---
 title: "Urayasu Shopping & Essentials Map | Convenience, Pharmacy, ATM, Laundry by Need"
 date: 2026-07-09T10:00:00+09:00
-lastmod: 2026-07-09
+lastmod: 2026-08-16
 factChecked: "2026-08-08"
 description: "Find convenience stores, supermarkets, pharmacies, 100-yen shops, electronics, coin laundries and foreign-card ATMs around Urayasu & Maihama. Filter the map by need (diapers, bento, late-night meals, cash, laundry) and pick your hotel to see walking times."
 tags:
@@ -25,3 +25,5 @@ Everything you might need outside the parks, on one map. Pick the hotel you are 
 - **Open now** — shows only places open at the current time (a simple estimate based on listed hours).
 
 Hours and walking times are estimates and may vary late at night, early morning, or on holidays. Check each store's official page ("Find stores" in the popup) for the latest information.
+
+- [Maihama, Urayasu & Shin-Urayasu sightseeing guide (rest-day hub)](/en/travel-guide/urayasu-maihama-shinurayasu-tourism/)

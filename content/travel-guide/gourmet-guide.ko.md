@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 맛집·기념품 가이드 | 우라야스·신우라야스·마이하마"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-08-16
 slug: "urayasu-gourmet-souvenir-guide"
 description: "우라야스·신우라야스·마이하마 지역의 맛집과 기념품 지역별 가이드. 일상 점심·가족 식사·디즈니 전후 식사·호텔 레스토랑, 그리고 선물 구매 조언을 다룹니다."
 tags:
@@ -266,6 +266,8 @@ Grand Café, Galleria Café, 일식 아스카, 마이하마 철판구이+, Café
 마이하마 지역은 주말, 공휴일, 파크 폐장 후에 붐비기 쉽습니다. 예약을 받는 레스토랑은 미리 자리를 잡고 충분한 시간을 두는 것을 권합니다.
 
 ---
+
+- [마이하마·우라야스·신우라야스 관광 가이드（휴식일 허브）](/ko/travel-guide/urayasu-maihama-shinurayasu-tourism/)
 
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>

@@ -1,6 +1,7 @@
 ---
 title: "가사이 임해공원과 수족원: 디즈니에서 한 정거장, 또 하나의 거대 공원"
 description: "마이하마에서 전철로 3분: 무료 해변 대공원에 참치가 헤엄치는 수족원(초등학생 이하 무료)과 117m 높이의 대관람차. 도쿄 디즈니 리조트에서 벗어나는 완벽한 「휴식일」."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -85,3 +86,4 @@ factChecked: "2026-08-11"
 - [우라야스시 교통공원: 무료로 노는 아이들의 천국](/ko/travel-guide/urayasu-traffic-park/)
 - [teamLab Planets(도요스): 맨발로 걷는 물속 디지털 아트](/ko/travel-guide/teamlab-planets/)
 - [마이하마 유라시아 천연 온천: 파크 다녀오는 길의 당일 온천](/ko/travel-guide/maihama-eurasia-spa/)
+- [마이하마·우라야스·신우라야스 관광 가이드（휴식일 허브）](/ko/travel-guide/urayasu-maihama-shinurayasu-tourism/)

@@ -1,6 +1,7 @@
 ---
 title: "舞浜ユーラシアの天然温泉：パーク帰りに浸かれる、舞浜唯一の日帰り湯"
 description: "1日3万歩歩いた足を、天然温泉が救う。舞浜エリア唯一の天然温泉「スパ＆ホテル舞浜ユーラシア」の日帰り利用を地元が解説。料金・営業時間・子連れの注意点・3駅からの無料シャトルまで。"
+lastmod: 2026-08-16
 date: 2026-07-07
 factChecked: "2026-08-01"
 draft: false
@@ -76,3 +77,5 @@ tags:
 - [スパ＆ホテル舞浜ユーラシア（宿泊レビュー）](/travel-guide/hotels/maihama-eurasia/)
 - [浦安市交通公園：無料で遊べる子どもの楽園](/travel-guide/urayasu-traffic-park/)
 - [葛西臨海公園：ディズニーの隣駅、マグロと大観覧車の巨大公園](/travel-guide/kasai-rinkai-park/)
+
+- [舞浜・浦安・新浦安観光ガイド（休息日の過ごし方まとめ）](/travel-guide/urayasu-maihama-shinurayasu-tourism/)

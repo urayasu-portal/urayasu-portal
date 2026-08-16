@@ -1,6 +1,7 @@
 ---
 title: "浦安市交通公園：ディズニーから1駅、無料で遊べる子どもの楽園"
 description: "自転車・ポニー乗馬・モルモットとのふれあいがすべて無料。ディズニー旅行の合間の「休息日」にぴったりの、地元・浦安のファミリー向けスポットを紹介します。"
+lastmod: 2026-08-16
 date: 2026-07-07
 factChecked: "2026-08-01"
 draft: false
@@ -90,3 +91,5 @@ tags:
 - [葛西臨海公園：ディズニーの隣駅、マグロと大観覧車の巨大公園](/travel-guide/kasai-rinkai-park/)
 - [チームラボプラネッツ（豊洲）：裸足で歩く水のデジタルアート](/travel-guide/teamlab-planets/)
 - [舞浜ユーラシアの天然温泉：パーク帰りの日帰り湯](/travel-guide/maihama-eurasia-spa/)
+
+- [舞浜・浦安・新浦安観光ガイド（休息日の過ごし方まとめ）](/travel-guide/urayasu-maihama-shinurayasu-tourism/)

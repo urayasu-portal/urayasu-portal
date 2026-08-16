@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disney Hotels Compared by Access | Parks, Stations & Airports (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-08-08
+lastmod: 2026-08-16
 factChecked: "2026-08-08"
 description: "A local-media comparison of all 40 Urayasu hotels by how easy they are to reach: the parks, JR stations, the airports, and central Tokyo. Limousine bus fares, which hotels you can actually walk to from Maihama Station, and more."
 tags:
@@ -82,9 +82,10 @@ For every other official hotel, even the official sites assume "taxi from Maiham
 
 ---
 
-## 3. Airport access: the limousine bus is a flat ¥1,300 — the difference is "distance to the stop"
+## 3. Airport access: the limousine bus is a flat fare — the difference is "distance to the stop"
+For terminal-by-terminal boarding (including Narita T3 and Haneda T3) and routes from Tokyo Station, see the [access guide](/en/travel-guide/urayasu-maihama-access-guide/); for the auto-generated list of every hotel with a limousine stop, see [find by facility](/en/travel-guide/hotels/facilities/#limousine).
 
-A key point for Haneda access: **the limousine bus is a flat ¥1,300 for adults to any hotel** (jointly operated by Airport Transport Service and Keisei Bus Chiba West). There is no fare difference by area. What differs is only "the distance from your hotel to the stop" and "the travel time."
+A key point for Haneda access: **the limousine bus is a flat {{< fact "limousine.haneda_fare" >}} for adults to any hotel** (jointly operated by Airport Transport Service and Keisei Bus Chiba West). There is no fare difference by area. What differs is only "the distance from your hotel to the stop" and "the travel time."
 
 **Hotels with a dedicated stop right out front (0 min walk)**
 **Tokyo Disneyland Hotel**, **Disney Ambassador Hotel**, **Hotel MiraCosta**, **Fantasy Springs Hotel**, **Hilton Tokyo Bay**, **Hotel Okura Tokyo Bay**, **Sheraton**, **Grand Nikko**, and **Tokyo Bay Maihama Hotel First Resort** (reservation required).

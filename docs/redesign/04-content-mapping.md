@@ -53,7 +53,7 @@
 | kids | 1/170 | 軽改修 | W2 | grand-monday・四季ホテル等の新顔を追記 |
 | shuttle | 10/1,018 | 軽改修 | W2 | **TG最強ページ・構成は触らない**。en改題のみ（「urayasu hotels with shuttle」10.8位CTR0の回収）。トップ直リンク維持（検証Q3） |
 | compare | 1/150 | 維持 | — | ツールとして現状維持 |
-| hotels/access | 0/131 | **改稿** | W2 | 空港アクセス節を access-guide へ移譲し、「パーク・駅への近さ比較」に純化。タイトルも合わせて変更 |
+| hotels/access | 0/131 | **改稿** | ~~W2~~ **W3済** | 【2026-08-16変更】読んだ結果、空港節は「どのホテルの前に停留所があるか」＝ホテル別情報で access-guide と重複していなかった。移譲せず、見出しから価格を外して fact 化＋access-guide（ターミナル診断）と facilities#limousine（自動生成一覧）への相互リンクを追加する形で完了 |
 | pool | 0/14 | **統合** | W2 | → facilities。301 |
 | near-station | 0/4 | **統合** | W2 | → facilities。301 |
 | in-house-store | 0/1 | **統合** | W2 | → facilities。301 |

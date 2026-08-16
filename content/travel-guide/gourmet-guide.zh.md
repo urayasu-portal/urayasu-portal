@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼周边美食·纪念品指南 | 浦安·新浦安·舞滨的午餐·咖啡·礼品"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-08-16
 slug: "urayasu-gourmet-souvenir-guide"
 description: "浦安·新浦安·舞滨地区的美食与纪念品分区指南，涵盖日常午餐·家庭用餐·迪士尼前后用餐·酒店餐厅，以及礼品购买建议。"
 tags:
@@ -266,6 +266,8 @@ Ikspiari是舞滨站步行可达的购物·餐饮设施，可在一处找到餐�
 舞滨地区在周末、节假日和乐园闭园后容易拥挤。接受预约的餐厅建议提前订位，并预留充裕时间。
 
 ---
+
+- [舞滨·浦安·新浦安观光指南（休息日总览）](/zh/travel-guide/urayasu-maihama-shinurayasu-tourism/)
 
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>

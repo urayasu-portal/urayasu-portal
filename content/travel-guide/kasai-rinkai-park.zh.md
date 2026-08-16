@@ -1,6 +1,7 @@
 ---
 title: "葛西临海公园与水族园：离迪士尼一站的另一座巨型公园"
 description: "从舞滨坐电车3分钟：一座免费的海滨大公园，有金枪鱼环游的水族园（小学及以下免费）和117米高的大摩天轮。逃离东京迪士尼度假区的完美「休息日」。"
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -85,3 +86,4 @@ factChecked: "2026-08-11"
 - [浦安市交通公园：免费畅玩的儿童乐园](/zh/travel-guide/urayasu-traffic-park/)
 - [teamLab Planets（丰洲）：赤脚走进水中的数字艺术](/zh/travel-guide/teamlab-planets/)
 - [舞滨欧亚天然温泉：逛完乐园的当日泡汤](/zh/travel-guide/maihama-eurasia-spa/)
+- [舞滨·浦安·新浦安观光指南（休息日总览）](/zh/travel-guide/urayasu-maihama-shinurayasu-tourism/)

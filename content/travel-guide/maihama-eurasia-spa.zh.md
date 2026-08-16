@@ -1,6 +1,7 @@
 ---
 title: "舞滨欧亚天然温泉：逛完乐园就能泡的舞滨唯一当日温泉"
 description: "走了3万步的双腿，交给天然温泉来拯救。舞滨地区唯一的天然温泉「SPA&HOTEL舞滨欧亚」当日泡汤，由本地人解说：价格、营业时间、亲子注意事项、从3站发出的免费班车。"
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -72,3 +73,4 @@ factChecked: "2026-08-11"
 - [SPA&HOTEL舞滨欧亚（住宿评测）](/zh/travel-guide/hotels/maihama-eurasia/)
 - [浦安市交通公园：免费畅玩的儿童乐园](/zh/travel-guide/urayasu-traffic-park/)
 - [葛西临海公园：迪士尼隔壁站，金枪鱼与大摩天轮的巨型公园](/zh/travel-guide/kasai-rinkai-park/)
+- [舞滨·浦安·新浦安观光指南（休息日总览）](/zh/travel-guide/urayasu-maihama-shinurayasu-tourism/)

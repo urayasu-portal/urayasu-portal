@@ -1,6 +1,7 @@
 ---
 title: "우라야스시 교통공원: 디즈니에서 한 정거장, 무료로 노는 아이들의 천국"
 description: "무료 자전거 타기, 조랑말 타기, 기니피그 쓰다듬기가 디즈니 호텔에서 한 정거장 거리에. 도쿄 디즈니 리조트 근처에 묵는 가족의 「휴식일」에 딱 맞는 곳을 현지인이 안내합니다."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -89,3 +90,4 @@ factChecked: "2026-08-11"
 - [가사이 임해공원: 디즈니 옆 정거장, 참치와 대관람차의 거대 공원](/ko/travel-guide/kasai-rinkai-park/)
 - [teamLab Planets(도요스): 맨발로 걷는 물속 디지털 아트](/ko/travel-guide/teamlab-planets/)
 - [마이하마 유라시아 천연 온천: 파크 다녀오는 길의 당일 온천](/ko/travel-guide/maihama-eurasia-spa/)
+- [마이하마·우라야스·신우라야스 관광 가이드（휴식일 허브）](/ko/travel-guide/urayasu-maihama-shinurayasu-tourism/)

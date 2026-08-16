@@ -1,6 +1,7 @@
 ---
 title: "Urayasu Traffic Park: A Free Kids' Paradise One Stop from Tokyo Disney Resort"
 description: "Free bike riding, pony rides, and guinea pig cuddles 10 minutes from your Disney hotel. The perfect rest-day spot for families staying near Tokyo Disney Resort."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -82,3 +83,4 @@ Make it a relaxed local half-day: spend the morning at the Traffic Park, then he
 - [Kasai Rinkai Park & Aquarium: The Other Giant Park One Stop from Disney](/en/travel-guide/kasai-rinkai-park/)
 - [teamLab Planets (Toyosu): Barefoot Digital Art 30 Minutes from Disney](/en/travel-guide/teamlab-planets/)
 - [The Natural Hot Spring at Maihama Eurasia: A Day-Use Onsen Near the Parks](/en/travel-guide/maihama-eurasia-spa/)
+- [Maihama, Urayasu & Shin-Urayasu sightseeing guide (rest-day hub)](/en/travel-guide/urayasu-maihama-shinurayasu-tourism/)

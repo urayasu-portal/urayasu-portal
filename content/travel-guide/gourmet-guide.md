@@ -1,7 +1,7 @@
 ---
 title: "浦安・新浦安・舞浜のグルメ＆お土産ガイド｜ランチ・カフェ・手土産スポットまとめ"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-06-19
+lastmod: 2026-08-16
 factChecked: "2026-08-01"
 slug: "urayasu-gourmet-souvenir-guide"
 description: "浦安・新浦安・舞浜周辺のランチ、カフェ、手土産、ホテルグルメをエリア別・目的別に整理した保存版ガイド。普段使いのランチから子連れ、ディズニー前後の食事、記念日まで。"
@@ -280,6 +280,7 @@ Grand Café・Galleria Café・日本料理「飛鳥」・Maihama Teppanyaki+・
 
 ---
 
+- [舞浜・浦安・新浦安観光ガイド（休息日の過ごし方まとめ）](/travel-guide/urayasu-maihama-shinurayasu-tourism/)
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>ホテル選びに迷ったら</h3>

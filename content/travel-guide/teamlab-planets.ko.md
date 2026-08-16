@@ -1,6 +1,7 @@
 ---
 title: "teamLab Planets(도요스): 디즈니에서 30분, 맨발로 물속을 걷는 아트"
 description: "마이하마에서 전철로 약 30분. 무릎까지 물에 잠기고 맨발로 빛 속을 걷는 세계적 인기 디지털 아트 뮤지엄. 비 오는 날 플랜B로도, 파크와는 다른 「또 하나의 비일상」으로도. 티켓 구매법과 복장 주의까지 현지인이 해설합니다."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -82,3 +83,4 @@ teamLab은 **날짜·시간 지정 사전 예매제**이고 주말 시간대는 
 - [가사이 임해공원: 디즈니 옆 정거장, 참치와 대관람차의 거대 공원](/ko/travel-guide/kasai-rinkai-park/)
 - [마이하마 유라시아 천연 온천: 파크 다녀오는 길의 당일 온천](/ko/travel-guide/maihama-eurasia-spa/)
 - [우라야스시 교통공원: 무료로 노는 아이들의 천국](/ko/travel-guide/urayasu-traffic-park/)
+- [마이하마·우라야스·신우라야스 관광 가이드（휴식일 허브）](/ko/travel-guide/urayasu-maihama-shinurayasu-tourism/)

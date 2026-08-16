@@ -1,6 +1,7 @@
 ---
 title: "Kasai Rinkai Park & Aquarium: The Other Giant Park One Stop from Disney"
 description: "Three minutes by train from Maihama: a huge free waterfront park with a tuna-filled aquarium (free for kids 12 and under) and a 117-meter Ferris wheel. The perfect rest-day escape from Tokyo Disney Resort."
+lastmod: 2026-08-16
 date: 2026-07-07
 draft: false
 cover:
@@ -80,3 +81,4 @@ Locals often make it a double-header: a half day here, then [Urayasu Traffic Par
 - [Urayasu Traffic Park: A Free Kids' Paradise One Stop from Tokyo Disney Resort](/en/travel-guide/urayasu-traffic-park/)
 - [teamLab Planets (Toyosu): Barefoot Digital Art 30 Minutes from Disney](/en/travel-guide/teamlab-planets/)
 - [The Natural Hot Spring at Maihama Eurasia: A Day-Use Onsen Near the Parks](/en/travel-guide/maihama-eurasia-spa/)
+- [Maihama, Urayasu & Shin-Urayasu sightseeing guide (rest-day hub)](/en/travel-guide/urayasu-maihama-shinurayasu-tourism/)

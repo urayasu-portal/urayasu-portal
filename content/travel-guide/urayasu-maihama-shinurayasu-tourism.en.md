@@ -1,7 +1,7 @@
 ---
 title: "Things to Do near Tokyo Disney Resort | Maihama, Urayasu & Shin-Urayasu Sightseeing Guide"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-08-01T00:00:00+09:00
+lastmod: 2026-08-16
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -148,6 +148,19 @@ faq:
     <span style="font-size:28px;">👶</span>
     <span style="font-size:12px;font-weight:600;line-height:1.4;">Family &amp;<br>stroller-friendly</span>
   </a>
+</div>
+
+<div style="background:#FFF7F5;border:1px solid #F3C9BF;border-radius:10px;padding:14px 16px;margin:0 0 24px;">
+  <div style="font-size:14px;font-weight:700;margin-bottom:8px;">📚 Dig deeper with our dedicated guides (start here on a rest day)</div>
+  <ul style="margin:0;padding-left:1.2em;font-size:13.5px;line-height:2;">
+    <li><a href="/en/travel-guide/maihama-eurasia-spa/">The natural hot spring at Maihama Eurasia</a> — the classic after-park and rainy-day answer</li>
+    <li><a href="/en/travel-guide/urayasu-traffic-park/">Urayasu Traffic Park</a> — free, perfect half day with kids</li>
+    <li><a href="/en/travel-guide/kasai-rinkai-park/">Kasai Rinkai Park</a> — giant Ferris wheel and aquarium, one stop away</li>
+    <li><a href="/en/travel-guide/teamlab-planets/">teamLab Planets (Toyosu)</a> — indoor art for rainy days, about 30 min from Maihama</li>
+    <li><a href="/en/travel-guide/urayasu-gourmet-souvenir-guide/">Food & souvenir guide</a> — eating outside the parks</li>
+    <li><a href="/en/travel-guide/urayasu-map/">Shopping & essentials map</a> — nearest konbini, pharmacy, ATM</li>
+    <li><a href="/en/travel-guide/kids-emergency/">If your child gets sick</a> — read once, just in case</li>
+  </ul>
 </div>
 
 <h2 id="recommended">If You're Not Sure Where to Start</h2>
