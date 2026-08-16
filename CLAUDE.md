@@ -15,7 +15,7 @@ lastmod: YYYY-MM-DD  # 例: 2026-06-13
 ## ビルド & デプロイ
 
 ```powershell
-cd C:\Users\kadoh\OneDrive\Desktop\urayasu-portal
+cd "C:\Users\kadoh\OneDrive\ドキュメント\02-2 副業\urayasu-portal"
 hugo --minify
 git add -A
 git commit -m "メッセージ"

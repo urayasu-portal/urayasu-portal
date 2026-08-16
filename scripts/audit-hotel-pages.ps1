@@ -1,7 +1,7 @@
 ﻿# Audit hotel pages (JA) against hotel-database-full.csv
 # Checks: tel / address / IN-OUT / price / official URL / happy-entry / stale "yotei" dates
 $ErrorActionPreference = "Stop"
-$root = "C:\Users\kadoh\OneDrive\Desktop\urayasu-portal"
+$root = Split-Path -Parent $PSScriptRoot
 $csv = Import-Csv (Join-Path $root "hotel-database-full.csv") -Encoding UTF8
 
 # Column names (Japanese headers) via variables to keep code ASCII-safe
