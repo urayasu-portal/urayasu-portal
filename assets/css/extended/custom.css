@@ -818,6 +818,15 @@ body.pillar-travel .post-single .post-content th {
   border-color: var(--accent);
 }
 
+/* ---------- 生活ガイド：このテーマの最新ニュース枠（posts連動・再設計W0） ---------- */
+.lg-news-box { margin: 24px 0; }
+.lg-news-list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 0; }
+.lg-news-list li { display: flex; align-items: baseline; gap: 12px; padding: 9px 2px; border-bottom: 1px dashed var(--border); font-size: 14px; }
+.lg-news-list li:last-child { border-bottom: none; }
+.lg-news-list time { flex-shrink: 0; font-size: 12px; color: var(--secondary); font-variant-numeric: tabular-nums; }
+.lg-news-list a { color: var(--primary); text-decoration: none; line-height: 1.6; }
+.lg-news-list a:hover { color: var(--accent, #0F8A74); }
+
 /* ---------- rowspan で行をまとめる表（例：空港ターミナル別の締切一覧） ---------- */
 /* tbody の行見出しはヘッダー行と区別したいので、アクセント色ではなく淡い背景にする */
 .post-single .post-content table.tg-rowspan-table tbody th,

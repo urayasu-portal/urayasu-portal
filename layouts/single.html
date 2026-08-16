@@ -192,6 +192,11 @@
 
       {{- partial "extend_post_content.html" . }}
 
+      {{/* 関連する常設ガイド（postsのみ・タグ→data/guide_map.yaml連動・生活ガイド再設計W0） */}}
+      {{- if eq .Section "posts" }}
+      {{- partial "related-guide.html" . }}
+      {{- end }}
+
       {{/* 記事末尾 自動CTA（カテゴリ/タグ連動・data/affiliate_ctas.yaml） */}}
       {{- partial "topic-cta.html" . }}
 

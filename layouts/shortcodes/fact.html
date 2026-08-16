@@ -1,10 +1,16 @@
-{{- /* 事実の単一情報源（data/travel_facts.yaml）をドットパスで参照するインラインショートコード。
-     使用例: {{< fact "limousine.haneda_fare" >}}
+{{- /* 事実の単一情報源をドットパスで参照するインラインショートコード。
+     使用例: {{< fact "limousine.haneda_fare" >}}        → data/travel_facts.yaml
+             {{< fact "life.gomi.sodai_fee" >}}          → data/life_facts.yaml（life.プレフィックス）
      葉が {v, u:yen} の形なら言語別に通貨表記を付け、文字列ならそのまま出す。
      未定義キーはビルドエラーにして誤参照を検出する。 */ -}}
 {{- $key := .Get 0 -}}
 {{- $node := hugo.Data.travel_facts -}}
-{{- range split $key "." -}}
+{{- $path := $key -}}
+{{- if hasPrefix $key "life." -}}
+  {{- $node = hugo.Data.life_facts -}}
+  {{- $path = strings.TrimPrefix "life." $key -}}
+{{- end -}}
+{{- range split $path "." -}}
   {{- if $node -}}{{- $node = index $node . -}}{{- end -}}
 {{- end -}}
 {{- if eq $node nil -}}

@@ -1,0 +1,26 @@
+{{- /* 生活ガイド記事内の「このテーマの最新ニュース」自動枠（再設計 W0）。
+     ガイド frontmatter の newsTags: ["防災", ...] と posts のタグを交差させ、
+     最新4件を表示する。posts は毎日ビルドされるため、ガイド側は放置でも常に最新。
+     ヒット0件のときは枠ごと非表示（空枠を出さない）。 */ -}}
+{{- $wanted := .Params.newsTags }}
+{{- if $wanted }}
+{{- $matched := slice }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- if gt (len (intersect (.Params.tags | default slice) $wanted)) 0 }}
+    {{- $matched = $matched | append . }}
+  {{- end }}
+{{- end }}
+{{- with first 4 $matched }}
+<div class="lg-news-box">
+  <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>このテーマの最新ニュース</h2></div>
+  <ul class="lg-news-list">
+    {{- range . }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "1/2" }}</time>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+{{- end }}

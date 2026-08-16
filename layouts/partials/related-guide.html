@@ -1,0 +1,31 @@
+{{- /* posts 記事末尾の「関連する常設ガイド」カード（生活ガイド再設計 W0）。
+     判定順: ①frontmatter guide:（URL手動指定）→ ②data/guide_map.yaml のタグ対応（先勝ち1件）。
+     大票田タグ（イベント等）は guide_map に載せない運用（誤誘導防止）。 */ -}}
+{{- $url := "" }}{{- $title := "" }}{{- $icon := "ti-book-2" }}
+{{- with .Params.guide }}
+  {{- $url = . }}
+  {{- with site.GetPage . }}{{ $title = .Title }}{{ end }}
+  {{- range hugo.Data.guide_map.mappings }}{{ if eq .url $url }}{{ $title = .title }}{{ $icon = .icon }}{{ end }}{{ end }}
+{{- end }}
+{{- if not $url }}
+  {{- $postTags := .Params.tags | default slice }}
+  {{- range hugo.Data.guide_map.mappings }}
+    {{- if and (not $url) (gt (len (intersect .tags $postTags)) 0) }}
+      {{- $url = .url }}{{ $title = .title }}{{ $icon = .icon }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- if and $url $title }}
+<div class="lg-related" style="margin-top:20px;">
+  <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>関連する常設ガイド</h2></div>
+  <div class="lg-guide-grid">
+    <a class="lg-guide-card" href="{{ $url }}">
+      <span class="lg-guide-card-icon" aria-hidden="true"><i class="ti {{ $icon }}"></i></span>
+      <div class="lg-guide-card-body">
+        <div class="lg-guide-card-title">{{ $title }}</div>
+        <div class="lg-guide-card-desc">このニュースの背景・制度・使い方を保存版ガイドで確認できます</div>
+      </div>
+    </a>
+  </div>
+</div>
+{{- end }}

@@ -1,0 +1,49 @@
+# posts のタグ → 常設ガイド対応表（生活ガイド再設計 W0・2026-08-16）
+#
+# 仕組み: posts の記事タグが下記 tags のいずれかにヒットすると、
+#   記事末尾に「関連する常設ガイド」カードが自動表示される（related-guide.html）。
+#   上から順に評価し、最初にマッチした1件だけを表示（多重表示しない）。
+#   記事側 frontmatter の guide:（URL指定）があればそちらを優先。
+#
+# ルール:
+#   - 「イベント」「開店・閉店」などの大票田・汎用タグは意図的に対応させない（誤誘導防止）
+#   - 新しいガイドを作ったら、ここにタグ対応を追加する（CLAUDE.md 運用ルール）
+#   - 緊急性の高いガイド（防災・ごみ・医療）を上位に置く
+
+mappings:
+  - tags: ["防災", "台風", "地震", "大雨", "気象"]
+    url: "/life-guide/disaster-prevention/"
+    title: "浦安市の防災・避難所・ハザードマップガイド"
+    icon: "ti-shield-half"
+  - tags: ["ごみ", "リサイクル", "粗大ごみ"]
+    url: "/life-guide/trash-recycling/"
+    title: "浦安市のごみ分別・収集日・粗大ごみガイド"
+    icon: "ti-trash"
+  - tags: ["医療", "健康", "病院"]
+    url: "/life-guide/holiday-night-medical/"
+    title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
+    icon: "ti-stethoscope"
+  - tags: ["バス", "交通", "おさんぽバス"]
+    url: "/life-guide/urayasu-bus-kotsu/"
+    title: "浦安市の交通・バスガイド"
+    icon: "ti-bus"
+  - tags: ["子育て・教育", "子育て", "保育園", "幼稚園", "小学校", "中学校"]
+    url: "/life-guide/urayasu-kosodate-shien-matome/"
+    title: "浦安市の子育て支援・手当・助成まとめ"
+    icon: "ti-baby-carriage"
+  - tags: ["スポーツ", "バルドラール浦安", "浦安D-Rocks", "フットサル", "ラグビー"]
+    url: "/life-guide/sports-teams/"
+    title: "浦安3大スポーツチーム観戦ガイド"
+    icon: "ti-ball-football"
+  - tags: ["高齢者", "介護", "福祉"]
+    url: "/life-guide/urayasu-koreisha-kaigo/"
+    title: "浦安市の高齢者・介護ガイド"
+    icon: "ti-heart-handshake"
+  - tags: ["税金", "国民健康保険", "年金"]
+    url: "/life-guide/urayasu-hoken-nenkin-zei/"
+    title: "浦安市の国民健康保険・年金・税ガイド"
+    icon: "ti-coin-yen"
+  - tags: ["引っ越し", "住まい", "不動産"]
+    url: "/life-guide/urayasu-sumai-hikkoshi/"
+    title: "浦安市の住まい・引っ越しガイド"
+    icon: "ti-home-move"

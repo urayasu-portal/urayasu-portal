@@ -5,6 +5,7 @@ lastmod: 2026-06-13T11:00:00+09:00
 factChecked: "2026-07-14"
 categories:
   - "お知らせ"
+newsTags: ["防災", "台風", "大雨"]
 tags:
   - 防災
   - 避難所
