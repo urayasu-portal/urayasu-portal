@@ -44,41 +44,31 @@
 </div>
 
 {{/* ────────────────────────────────────────
-     旅の目的から探す / Find by purpose（6カード）
+     旅程から探す / By journey stage（4分岐・再設計W4）
      ──────────────────────────────────────── */}}
 <div class="section-head">
-  <h2>{{ if $isEN }}Find by purpose{{ else if $isZH }}按目的搜索{{ else if $isKO }}여행 목적으로 찾기{{ else if $isZHTW }}依目的搜尋{{ else }}旅の目的から探す{{ end }}</h2>
+  <h2>{{ if $isEN }}Where are you in your trip?{{ else if $isZH }}您的旅程进行到哪一步？{{ else if $isKO }}여행의 어느 단계인가요?{{ else if $isZHTW }}您的旅程進行到哪一步？{{ else }}いま、旅のどの段階ですか{{ end }}</h2>
 </div>
 <div class="tg-purpose-grid">
+  <a class="tg-purpose-card" href="#plan-prepare">
+    <i class="ti ti-checklist" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}1. Plan &amp; prepare{{ else if $isZH }}1. 计划·准备{{ else if $isKO }}1. 계획·준비{{ else if $isZHTW }}1. 計劃·準備{{ else }}1. 計画・準備する{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Tickets, luggage forwarding, checklists{{ else if $isZH }}门票·行李寄送·行前清单{{ else if $isKO }}티켓·짐 보내기·체크리스트{{ else if $isZHTW }}門票·行李寄送·行前清單{{ else }}チケット・荷物の配送・持ち物{{ end }}</div>
+  </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/hotels/" | absLangURL }}">
     <i class="ti ti-bed" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Hotels{{ else if $isZH }}酒店{{ else if $isKO }}호텔{{ else if $isZHTW }}飯店{{ else }}ホテル{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Official to budget — compared{{ else if $isZH }}官方到平价，全面比较{{ else if $isKO }}공식부터 가성비까지 비교{{ else if $isZHTW }}從官方到平價，全面比較{{ else }}オフィシャル〜格安まで比較{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}2. Choose where to stay{{ else if $isZH }}2. 选择住宿{{ else if $isKO }}2. 숙소 고르기{{ else if $isZHTW }}2. 選擇住宿{{ else }}2. 泊まる先を選ぶ{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}All 48 hotels — Urayasu or central Tokyo?{{ else if $isZH }}全部48家酒店·住浦安还是市区？{{ else if $isKO }}전체 48곳·우라야스 vs 도쿄 시내{{ else if $isZHTW }}全部48家飯店·住浦安還是市區？{{ else }}全48軒比較・浦安泊か都心泊か{{ end }}</div>
   </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-access-guide/" | absLangURL }}">
     <i class="ti ti-route" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Access{{ else if $isZH }}交通{{ else if $isKO }}교통{{ else if $isZHTW }}交通{{ else }}アクセス{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}From the airports &amp; Tokyo Stn.{{ else if $isZH }}从机场·东京站前往{{ else if $isKO }}공항·도쿄역에서 가는 법{{ else if $isZHTW }}從機場·東京站前往{{ else }}空港・東京駅からの行き方{{ end }}</div>
-  </a>
-  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-map/" | absLangURL }}">
-    <i class="ti ti-map-pin-check" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Essentials map{{ else if $isZH }}生活购物地图{{ else if $isKO }}생활·쇼핑 지도{{ else if $isZHTW }}生活購物地圖{{ else }}生活・買い物マップ{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Convenience, ATM &amp; laundry by need{{ else if $isZH }}便利店·ATM·洗衣按需查找{{ else if $isKO }}편의점·ATM·세탁 니즈별로{{ else if $isZHTW }}便利商店·ATM·洗衣依需求查找{{ else }}コンビニ・ATM・ランドリーをニーズ別に{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}3. Getting here &amp; around{{ else if $isZH }}3. 交通移动{{ else if $isKO }}3. 이동하기{{ else if $isZHTW }}3. 交通移動{{ else }}3. 移動する{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}By terminal — incl. Narita T3 &amp; the trip home{{ else if $isZH }}按航站楼查（含成田T3）·回程{{ else if $isKO }}터미널별（나리타T3 포함）·귀갓길{{ else if $isZHTW }}按航廈查（含成田T3）·回程{{ else }}ターミナル別・帰る日の動きまで{{ end }}</div>
   </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}">
     <i class="ti ti-camera" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Sightseeing{{ else if $isZH }}观光景点{{ else if $isKO }}관광 명소{{ else if $isZHTW }}觀光景點{{ else }}観光スポット{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Maihama · Urayasu · Shin-Urayasu{{ else if $isZH }}舞滨·浦安·新浦安散步{{ else if $isKO }}마이하마·우라야스·신우라야스 산책{{ else if $isZHTW }}舞濱·浦安·新浦安散步{{ else }}舞浜・浦安・新浦安を歩く{{ end }}</div>
-  </a>
-  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}">
-    <i class="ti ti-gift" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Food &amp; Souvenirs{{ else if $isZH }}美食与伴手礼{{ else if $isKO }}맛집·기념품{{ else if $isZHTW }}美食與伴手禮{{ else }}グルメ・お土産{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Local eats &amp; gifts to take home{{ else if $isZH }}本地美食与伴手礼推荐{{ else if $isKO }}현지 맛집과 선물 고르기{{ else if $isZHTW }}在地美食與伴手禮推薦{{ else }}地元の味と手土産選び{{ end }}</div>
-  </a>
-  <a class="tg-purpose-card" href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}">
-    <i class="ti ti-car" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Taxi{{ else if $isZH }}出租车{{ else if $isKO }}택시{{ else if $isZHTW }}計程車{{ else }}タクシー{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Fixed-fare airport taxis{{ else if $isZH }}机场定额出租车攻略{{ else if $isKO }}공항 정액 택시 이용법{{ else if $isZHTW }}機場定額計程車攻略{{ else }}空港定額タクシーの使い方{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}4. Enjoy your stay{{ else if $isZH }}4. 享受旅程{{ else if $isKO }}4. 즐기기{{ else if $isZHTW }}4. 享受旅程{{ else }}4. 滞在を楽しむ{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Rest days, food, onsen &amp; the essentials map{{ else if $isZH }}休息日·美食·温泉·购物地图{{ else if $isKO }}휴식일·맛집·온천·쇼핑 지도{{ else if $isZHTW }}休息日·美食·溫泉·購物地圖{{ else }}休息日・グルメ・温泉・買い物マップ{{ end }}</div>
   </a>
 </div>
 
@@ -175,10 +165,15 @@
 {{/* ────────────────────────────────────────
      旅の準備と安心 / Plan & prepare
      ──────────────────────────────────────── */}}
-<div class="section-head">
+<div class="section-head" id="plan-prepare">
   <h2>{{ if $isEN }}Plan &amp; prepare{{ else if $isZH }}行前准备与安心{{ else if $isKO }}여행 준비와 안심{{ else if $isZHTW }}行前準備與安心{{ else }}旅の準備と安心{{ end }}</h2>
 </div>
 <div class="tg-purpose-grid">
+  <a class="tg-purpose-card" href="{{ "/travel-guide/luggage-airport/" | absLangURL }}">
+    <i class="ti ti-luggage" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Send luggage ahead{{ else if $isZH }}行李寄到酒店{{ else if $isKO }}짐 먼저 보내기{{ else if $isZHTW }}行李寄到飯店{{ else }}空港から荷物を送る{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Same-day delivery — cut-offs 9:50–14:00{{ else if $isZH }}当日配送·截止9:50〜14:00{{ else if $isKO }}당일 배송·마감 9:50〜14:00{{ else if $isZHTW }}當日配送·截止9:50〜14:00{{ else }}当日配送・締切は9:50〜14:00{{ end }}</div>
+  </a>
   <a class="tg-purpose-card" href="{{ "/travel-guide/disney-tickets/" | absLangURL }}">
     <i class="ti ti-ticket" aria-hidden="true"></i>
     <div class="tg-purpose-title">{{ if $isEN }}Park tickets{{ else if $isZH }}门票怎么买{{ else if $isKO }}티켓 사는 법{{ else if $isZHTW }}門票怎麼買{{ else }}チケットの買い方{{ end }}</div>
