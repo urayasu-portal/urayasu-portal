@@ -1,7 +1,8 @@
 ---
 title: "Luggage Storage & Baggage Delivery near Tokyo Disney Resort | Maihama & Urayasu Hotels"
 date: 2026-07-21T10:00:00+09:00
-factChecked: "2026-07-22"
+lastmod: 2026-08-16
+factChecked: "2026-08-16"
 description: "How luggage storage and baggage delivery really work at hotels near Tokyo Disneyland and DisneySea. The free station-to-hotel delivery for Disney & Official hotels, the paid Bon Voyage service, front-desk storage before check-in, and what's excluded — checked against official sources."
 tags:
   - Hotel
@@ -24,6 +25,10 @@ faq:
 ---
 
 "Where do I put my suitcases before check-in, and can someone carry them to my hotel?" is one of the most common questions overseas visitors ask before a Tokyo Disney Resort trip. Around Maihama and Urayasu the answer depends on **which direction** you're moving your bags and **which category** your hotel is. This guide sorts it out. Details are from our 2025–2026 research against official sources — always reconfirm on your hotel's official site before you travel.
+
+<div class="tg-notice-info">
+<i class="ti ti-luggage" aria-hidden="true"></i> <strong>This page starts at Maihama Station:</strong> if you want to send your bags ahead from Haneda, Narita or Tokyo Station, see <strong><a href="/en/travel-guide/hotels/luggage-airport/">Sending luggage from Haneda or Narita to your Maihama / Urayasu hotel</a></strong>. Same-day cut-off times run from 9:50 to 14:00 depending on the terminal, and whether you can make them changes what you should do.
+</div>
 
 ---
 
@@ -64,7 +69,7 @@ Guests at **Partner Hotels** and other independent hotels near Maihama use the p
 
 ## Departure day: hotel-to-station "Station Delivery"
 
-Going the other way, the **Station Delivery** service lets you drop your bags at the hotel after check-out and pick them up at the **Welcome Center 1st-floor counter** (roughly **13:00–21:00**) on your way to the station. It is a **paid** service at **¥800 per item** — listed by the Disney Hotels, [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/) and [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/); a few hotels don't publish the price, so confirm at the bell desk.
+Going the other way, the **Station Delivery** service lets you drop your bags at the hotel after check-out (**accepted 7:00–12:30**) and pick them up at the **Welcome Center 1st-floor counter** (roughly **13:00–21:00**) on your way to the station. It is a **paid** service at **¥800 per item** — listed by the Disney Hotels, [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/) and [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/); a few hotels don't publish the price, so confirm at the bell desk.
 
 ---
 
@@ -89,6 +94,7 @@ You don't always need a delivery service. Almost every hotel will simply **hold 
 ## Related
 
 - [How to Send Your Luggage from Maihama Station to Your Hotel (step by step)](/en/travel-guide/hotels/luggage-howto/)
+- [Sending Luggage from Haneda or Narita to Your Maihama / Urayasu Hotel](/en/travel-guide/hotels/luggage-airport/)
 - [Tokyo Disney Resort Hotels with Free Shuttle Buses](/en/travel-guide/hotels/shuttle/)
 - [How to Get to Tokyo Disney Resort & Urayasu](/en/travel-guide/urayasu-maihama-access-guide/)
 - [Hotel Categories Explained (Disney / Official / Partner)](/en/travel-guide/hotels/types/)

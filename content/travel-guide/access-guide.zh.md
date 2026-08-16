@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼·浦安交通指南 | 从机场·东京站出发的路线"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-11
+lastmod: 2026-08-16
 slug: "urayasu-maihama-access-guide"
 badge: "交通"
 description: "比较从羽田机场、成田机场、东京站前往浦安站·新浦安站·舞滨站·东京迪士尼度假区的电车·机场大巴·出租车路线。含轮椅·婴儿车·大型行李旅客注意事项。"
@@ -55,6 +55,7 @@ factChecked: "2026-08-11"
       <div style="font-size:10.5px;color:#94A3B8;margin-bottom:24px"><i class="ti ti-info-circle" style="font-size:12px"></i> 位置关系仅为示意。迪士尼度假区线为4站循环单轨（省略2个乐园车站）。从浦安站·元町可乘公交巴士前往舞滨站·新浦安站方向（虚线）。新浦安站出发的公交巴士经运动公园·OLC总部前直达舞滨站（不经过新町）。葛西站（市外）也有机场利木津巴士停靠。</div>
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② 从机场·东京站前往乐园</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">先看直达乐园当天的出行方式。乘坐轨道交通前来的人，也可在此确认「从舞滨站的最后一段」。</div>
+      <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>想把行李先寄过去：</strong>行李箱可从机场或东京站当日配送到饭店。不过办理截止时间在早上9:50到下午2点之间，较早，请先参阅<a href="/zh/travel-guide/hotels/luggage-airport/" style="color:#E05535;font-weight:700">从羽田·成田机场把行李寄到舞滨·浦安酒店的方法</a>确认。</div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>

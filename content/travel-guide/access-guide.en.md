@@ -1,7 +1,7 @@
 ---
 title: "How to Get to Tokyo Disney Resort & Urayasu | Routes from Airports & Tokyo Station"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-08-11
+lastmod: 2026-08-16
 slug: "urayasu-maihama-access-guide"
 badge: "Access"
 description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort. Includes notes for guests with wheelchairs, strollers, or heavy luggage."
@@ -56,6 +56,7 @@ factChecked: "2026-08-11"
       <div style="font-size:10.5px;color:#94A3B8;margin-bottom:24px"><i class="ti ti-info-circle" style="font-size:12px"></i> Positions are approximate. The Disney Resort Line is a 4-station loop monorail (the 2 park stations are omitted). From Urayasu Station and Motomachi you can reach the Maihama and Shin-Urayasu areas by local bus (dashed). The local bus from Shin-Urayasu Station runs via Sports Park and OLC Head Office to Maihama Station (it does not pass through Shinmachi). Airport limousine buses also serve Kasai Station (outside the city).</div>
       <h2 style="font-size:17px;font-weight:800;color:#0F172A;margin:0 0 6px;padding-left:11px;border-left:4px solid #E05535">② From the airports and Tokyo Station to the parks</h2>
       <div style="font-size:11px;color:#64748B;margin-bottom:12px">How to move on a day you head straight to the parks. If you arrive by rail, you can also check "the last leg from Maihama Station" here.</div>
+      <div style="background:#FFF7F5;border:0.5px solid #F3C9BF;border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;color:#7A2E1C;line-height:1.7"><i class="ti ti-luggage" style="font-size:13px"></i> <strong>Want to send your bags ahead?</strong> Suitcases can be delivered to your hotel the same day from the airport or Tokyo Station. Cut-off times are early — between 9:50 and 14:00 — so check <a href="/en/travel-guide/hotels/luggage-airport/" style="color:#E05535;font-weight:700">Sending luggage from Haneda or Narita to your Maihama / Urayasu hotel</a> first.</div>
       <div style="background:#fff;border:0.5px solid #E2E8F0;border-left:4px solid #1A5C8A;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:2px">
           <i class="ti ti-plane-arrival" style="font-size:17px;color:#1A5C8A"></i>

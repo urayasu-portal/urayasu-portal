@@ -1,7 +1,8 @@
 ---
 title: "도쿄 디즈니 주변 호텔 수하물 보관·배송 가이드｜체크인 전 맡기기·역 배송"
 date: 2026-07-21T10:00:00+09:00
-factChecked: "2026-07-22"
+lastmod: 2026-08-16
+factChecked: "2026-08-16"
 description: "도쿄 디즈니 리조트 주변 호텔의 수하물 보관과 배송 정리. 디즈니 호텔·공식 호텔은 마이하마역에서 호텔까지 무료 배송, 파트너 호텔은 Bon Voyage 유료 카운터(800엔/개)를 이용. 체크인 전 보관, 체크아웃 후 보관, 맡길 수 없는 물품까지 공식 정보 기반으로 안내."
 tags:
   - Hotel
@@ -24,6 +25,10 @@ faq:
 ---
 
 "체크인 전에 캐리어를 어디에 둘까" "짐을 누가 옮겨 줄 수는 없을까"는 도쿄 디즈니 리조트 여행의 단골 고민입니다. 마이하마·우라야스 지역의 답은 **'어느 방향으로 옮기는가'와 '호텔 구분'**으로 정해집니다. 이 페이지에서 구조를 정리합니다. 정보는 2025–2026년 공식 정보 대조 기준이며, 최신 상세는 각 호텔 공식 사이트에서 확인하세요.
+
+<div class="tg-notice-info">
+<i class="ti ti-luggage" aria-hidden="true"></i> <strong>이 페이지는 '마이하마역부터'의 이야기입니다:</strong> 하네다·나리타 공항이나 도쿄역에서 호텔로 짐만 먼저 보내고 싶다면 <strong><a href="/ko/travel-guide/hotels/luggage-airport/">하네다·나리타 공항에서 마이하마·우라야스 호텔로 짐 보내는 법</a></strong>을 참고하세요. 당일 배송 마감은 터미널에 따라 아침 9:50~오후 2시로 이르며, 맞출 수 있는지에 따라 취해야 할 수단이 달라집니다.
+</div>
 
 ---
 
@@ -62,7 +67,7 @@ faq:
 
 ## 출발일: 호텔→역 "스테이션 딜리버리"
 
-반대 방향은 **스테이션 딜리버리**입니다. 체크아웃 후 호텔에 짐을 맡기고, 역으로 가는 길에 **웰컴 센터 1층 인도 카운터**(약 **13:00–21:00**)에서 수령합니다. **유료·1개 800엔**——디즈니 호텔 각 관, [힐튼](/ko/travel-guide/hotels/hilton-tokyo-bay/), [쉐라톤](/ko/travel-guide/hotels/sheraton-grande-tokyo-bay/), [퍼스트 리조트](/ko/travel-guide/hotels/maihama-hotel-first-resort/), [마이하마 뷰 호텔](/ko/travel-guide/hotels/maihama-view-hotel/)이 800엔을 명시하고 있습니다. 요금 미공개 호텔도 있으니 벨데스크에서 확인하세요.
+반대 방향은 **스테이션 딜리버리**입니다. 체크아웃 후 호텔에 짐을 맡기고(**접수는 7:00–12:30**), 역으로 가는 길에 **웰컴 센터 1층 인도 카운터**(약 **13:00–21:00**)에서 수령합니다. **유료·1개 800엔**——디즈니 호텔 각 관, [힐튼](/ko/travel-guide/hotels/hilton-tokyo-bay/), [쉐라톤](/ko/travel-guide/hotels/sheraton-grande-tokyo-bay/), [퍼스트 리조트](/ko/travel-guide/hotels/maihama-hotel-first-resort/), [마이하마 뷰 호텔](/ko/travel-guide/hotels/maihama-view-hotel/)이 800엔을 명시하고 있습니다. 요금 미공개 호텔도 있으니 벨데스크에서 확인하세요.
 
 ---
 
@@ -87,6 +92,7 @@ faq:
 ## 관련 페이지
 
 - [마이하마역에서 호텔로 짐을 보내는 방법(당일 이용 순서)](/ko/travel-guide/hotels/luggage-howto/)
+- [하네다·나리타 공항에서 마이하마·우라야스 호텔로 짐 보내는 법](/ko/travel-guide/hotels/luggage-airport/)
 - [무료 셔틀버스가 있는 호텔 정리](/ko/travel-guide/hotels/shuttle/)
 - [호텔 구분 해설(디즈니/공식/파트너)](/ko/travel-guide/hotels/types/)
 - [교통 비교 가이드](/ko/travel-guide/hotels/access/)
