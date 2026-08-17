@@ -74,6 +74,9 @@
       </div>
       {{- end }}
 
+      {{/* ホテル名×設備FAQ（enの個別ホテルページのみ・hotels_map.yaml flags連動） */}}
+      {{- partial "hotel-facility-faq.html" . }}
+
       {{/* 出典・確認時点（frontmatter に sources/checkDate がある場合のみ表示） */}}
       {{- partial "source-info.html" . }}
 
