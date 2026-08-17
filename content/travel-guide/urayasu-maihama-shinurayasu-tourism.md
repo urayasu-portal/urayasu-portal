@@ -1,7 +1,7 @@
 ---
 title: "舞浜・浦安・新浦安観光ガイド｜ディズニー周辺の過ごし方・観光スポットまとめ"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-08-17
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -151,6 +151,7 @@ faq:
 <div style="background:#FFF7F5;border:1px solid #F3C9BF;border-radius:10px;padding:14px 16px;margin:0 0 24px;">
   <div style="font-size:14px;font-weight:700;margin-bottom:8px;">📚 個別ガイドで深掘り（休息日はここから）</div>
   <ul style="margin:0;padding-left:1.2em;font-size:13.5px;line-height:2;">
+    <li><a href="/travel-guide/rainy-day/">雨の日ガイド</a> — 雨でもパーク・屋内スポットで1日楽しむ</li>
     <li><a href="/travel-guide/maihama-eurasia-spa/">舞浜ユーラシアの天然温泉</a> — パーク帰り・雨の日の定番</li>
     <li><a href="/travel-guide/urayasu-traffic-park/">浦安市交通公園</a> — 無料・子連れの半日に</li>
     <li><a href="/travel-guide/kasai-rinkai-park/">葛西臨海公園</a> — 隣駅の大観覧車と水族館</li>

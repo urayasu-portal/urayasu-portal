@@ -54,4 +54,7 @@ factChecked: "2026-08-11"
 - [도쿄 디즈니 리조트 근처에서 아이가 아프면](/ko/travel-guide/kids-emergency/)
 - [파크 주변 호텔 48곳 전체](/ko/travel-guide/hotels/)
 - [도심으로 가는 경로와 요금 총정리](/ko/travel-guide/tokyo-sightseeing-access/)
+- [교통 IC카드·결제 가이드](/ko/travel-guide/ic-card-payment/)
+- [아이와 함께: 준비물 체크리스트](/ko/travel-guide/family-packing/)
+- [비 오는 날 가이드](/ko/travel-guide/rainy-day/)
 - [공항에서 오는 법](/ko/travel-guide/urayasu-maihama-access-guide/)

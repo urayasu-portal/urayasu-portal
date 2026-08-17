@@ -51,4 +51,7 @@ Nothing on this list is sponsored. It's simply the set of steps that separates t
 - [If Your Child Gets Sick near Tokyo Disney Resort](/en/travel-guide/kids-emergency/)
 - [All 48 Hotels near the Parks](/en/travel-guide/hotels/)
 - [Day Trips into Tokyo: Route Cheat Sheet](/en/travel-guide/tokyo-sightseeing-access/)
+- [Suica & IC Cards: Buying, Charging & Where They Work](/en/travel-guide/ic-card-payment/)
+- [Tokyo Disney with Kids: Packing Checklist](/en/travel-guide/family-packing/)
+- [Tokyo Disney on a Rainy Day](/en/travel-guide/rainy-day/)
 - [How to Get Here from the Airports](/en/travel-guide/urayasu-maihama-access-guide/)

@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 볼거리 가이드 | 마이하마·우라야스·신우라야스 관광"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-08-17
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -153,6 +153,7 @@ faq:
 <div style="background:#FFF7F5;border:1px solid #F3C9BF;border-radius:10px;padding:14px 16px;margin:0 0 24px;">
   <div style="font-size:14px;font-weight:700;margin-bottom:8px;">📚 개별 가이드로 깊이 알아보기（휴식일은 여기부터）</div>
   <ul style="margin:0;padding-left:1.2em;font-size:13.5px;line-height:2;">
+    <li><a href="/ko/travel-guide/rainy-day/">비 오는 날 가이드</a> — 비가 와도 파크와 실내 명소로 하루를 즐기기</li>
     <li><a href="/ko/travel-guide/maihama-eurasia-spa/">마이하마 유라시아의 천연 온천</a> — 파크 귀갓길·비 오는 날의 정석</li>
     <li><a href="/ko/travel-guide/urayasu-traffic-park/">우라야스시 교통공원</a> — 무료·아이와 반나절</li>
     <li><a href="/ko/travel-guide/kasai-rinkai-park/">가사이 임해공원</a> — 옆 역의 대관람차와 수족관</li>

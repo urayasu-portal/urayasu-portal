@@ -1,7 +1,7 @@
 ---
 title: "Things to Do near Tokyo Disney Resort | Maihama, Urayasu & Shin-Urayasu Sightseeing Guide"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-08-17
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -153,6 +153,7 @@ faq:
 <div style="background:#FFF7F5;border:1px solid #F3C9BF;border-radius:10px;padding:14px 16px;margin:0 0 24px;">
   <div style="font-size:14px;font-weight:700;margin-bottom:8px;">📚 Dig deeper with our dedicated guides (start here on a rest day)</div>
   <ul style="margin:0;padding-left:1.2em;font-size:13.5px;line-height:2;">
+    <li><a href="/en/travel-guide/rainy-day/">Rainy day guide</a> — enjoy the parks and indoor spots even in the rain</li>
     <li><a href="/en/travel-guide/maihama-eurasia-spa/">The natural hot spring at Maihama Eurasia</a> — the classic after-park and rainy-day answer</li>
     <li><a href="/en/travel-guide/urayasu-traffic-park/">Urayasu Traffic Park</a> — free, perfect half day with kids</li>
     <li><a href="/en/travel-guide/kasai-rinkai-park/">Kasai Rinkai Park</a> — giant Ferris wheel and aquarium, one stop away</li>

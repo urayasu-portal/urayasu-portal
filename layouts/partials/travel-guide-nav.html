@@ -9,6 +9,7 @@
         {{- if ne .Lang "ja" }}
         <a href="{{ "/travel-guide/pre-trip-checklist/" | absLangURL }}"{{- if eq $cur "/travel-guide/pre-trip-checklist/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Pre-trip checklist{{- else if eq .Lang "zh" }}行前清单{{- else if eq .Lang "ko" }}여행 준비 체크리스트{{- else if eq .Lang "zh-tw" }}行前清單{{- end }}</a>
         {{- end }}
+        <a href="{{ "/travel-guide/family-packing/" | absLangURL }}"{{- if eq $cur "/travel-guide/family-packing/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Family packing list{{- else if eq .Lang "zh" }}亲子准备清单{{- else if eq .Lang "ko" }}가족 준비물 리스트{{- else if eq .Lang "zh-tw" }}親子準備清單{{- else }}子連れ準備リスト{{- end }}</a>
         <a href="{{ "/travel-guide/kids-emergency/" | absLangURL }}"{{- if eq $cur "/travel-guide/kids-emergency/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}If your child gets sick{{- else if eq .Lang "zh" }}孩子生病了怎么办{{- else if eq .Lang "ko" }}아이가 아플 때{{- else if eq .Lang "zh-tw" }}孩子生病了怎麼辦{{- else }}子どもの急病ガイド{{- end }}</a>
       </div>
     </div>
@@ -35,11 +36,13 @@
         <a href="{{ "/travel-guide/luggage/" | absLangURL }}"{{- if eq $cur "/travel-guide/luggage/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Luggage at Maihama Stn.{{- else if eq .Lang "zh" }}舞滨站的行李服务{{- else if eq .Lang "ko" }}마이하마역의 짐 서비스{{- else if eq .Lang "zh-tw" }}舞濱站的行李服務{{- else }}舞浜駅の荷物サービス{{- end }}</a>
         <a href="{{ "/travel-guide/tokyo-sightseeing-access/" | absLangURL }}"{{- if eq $cur "/travel-guide/tokyo-sightseeing-access/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Day trips into Tokyo{{- else if eq .Lang "zh" }}去东京市区观光{{- else if eq .Lang "ko" }}도쿄 시내 관광으로{{- else if eq .Lang "zh-tw" }}去東京市區觀光{{- else }}都心の観光地へ{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-taxi-airport-flat-rate-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Taxi guide{{- else if eq .Lang "zh" }}出租车攻略{{- else if eq .Lang "ko" }}택시 가이드{{- else if eq .Lang "zh-tw" }}計程車攻略{{- else }}タクシーガイド{{- end }}</a>
+        <a href="{{ "/travel-guide/ic-card-payment/" | absLangURL }}"{{- if eq $cur "/travel-guide/ic-card-payment/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Suica & IC cards{{- else if eq .Lang "zh" }}IC卡·支付{{- else if eq .Lang "ko" }}IC카드·결제{{- else if eq .Lang "zh-tw" }}IC卡·付款{{- else }}ICカード・支払い{{- end }}</a>
       </div>
     </div>
     <div class="tg-snav-group">
       <span class="tg-snav-label"><i class="ti ti-map" aria-hidden="true"></i> {{- if eq .Lang "en" }}4. Enjoy your stay{{- else if eq .Lang "zh" }}4. 享受旅程·休息日{{- else if eq .Lang "ko" }}4. 즐기기·휴식일{{- else if eq .Lang "zh-tw" }}4. 享受旅程·休息日{{- else }}4. 滞在を楽しむ・休息日{{- end }}</span>
       <div class="tg-snav-links">
+        <a href="{{ "/travel-guide/rainy-day/" | absLangURL }}"{{- if eq $cur "/travel-guide/rainy-day/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Rainy day guide{{- else if eq .Lang "zh" }}雨天攻略{{- else if eq .Lang "ko" }}비 오는 날 가이드{{- else if eq .Lang "zh-tw" }}雨天攻略{{- else }}雨の日ガイド{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-map/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-map/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Shopping & essentials map{{- else if eq .Lang "zh" }}生活购物地图{{- else if eq .Lang "ko" }}생활·쇼핑 지도{{- else if eq .Lang "zh-tw" }}生活購物地圖{{- else }}生活・買い物マップ{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-maihama-shinurayasu-tourism/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-maihama-shinurayasu-tourism/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Sightseeing{{- else if eq .Lang "zh" }}观光指南{{- else if eq .Lang "ko" }}관광 가이드{{- else if eq .Lang "zh-tw" }}觀光指南{{- else }}観光ガイド{{- end }}</a>
         <a href="{{ "/travel-guide/urayasu-gourmet-souvenir-guide/" | absLangURL }}"{{- if eq $cur "/travel-guide/urayasu-gourmet-souvenir-guide/" }} class="tg-snav-cur"{{- end }}>{{- if eq .Lang "en" }}Food & Souvenirs{{- else if eq .Lang "zh" }}美食·伴手礼{{- else if eq .Lang "ko" }}맛집·기념품{{- else if eq .Lang "zh-tw" }}美食·伴手禮{{- else }}グルメ・お土産{{- end }}</a>

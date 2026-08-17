@@ -54,4 +54,7 @@ factChecked: "2026-08-11"
 - [在东京迪士尼度假区附近孩子生病了怎么办](/zh/travel-guide/kids-emergency/)
 - [园区周边全48家酒店](/zh/travel-guide/hotels/)
 - [进东京市区的路线与车费一览](/zh/travel-guide/tokyo-sightseeing-access/)
+- [交通IC卡·支付攻略（Suica西瓜卡）](/zh/travel-guide/ic-card-payment/)
+- [带孩子出行：行前准备清单](/zh/travel-guide/family-packing/)
+- [雨天攻略](/zh/travel-guide/rainy-day/)
 - [从机场怎么来](/zh/travel-guide/urayasu-maihama-access-guide/)

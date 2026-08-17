@@ -54,4 +54,7 @@ tags:
 - [東京ディズニーリゾート周辺で子どもが急病になったら](/travel-guide/kids-emergency/)
 - [パーク周辺の全48ホテル](/travel-guide/hotels/)
 - [都心観光への路線別アクセス早見表](/travel-guide/tokyo-sightseeing-access/)
+- [交通ICカード・支払いガイド](/travel-guide/ic-card-payment/)
+- [子連れ準備ガイド（持ち物チェックリスト）](/travel-guide/family-packing/)
+- [雨の日ガイド](/travel-guide/rainy-day/)
 - [空港からの行き方ガイド](/travel-guide/urayasu-maihama-access-guide/)
