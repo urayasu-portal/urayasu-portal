@@ -152,6 +152,9 @@
       </div>
       {{- end }}
 
+      {{/* ホテル名×設備FAQ（enのみ・hotels_map.yaml flags連動） */}}
+      {{- partial "hotel-facility-faq.html" . }}
+
       {{/* 出典・確認時点 */}}
       {{- partial "source-info.html" . }}
 

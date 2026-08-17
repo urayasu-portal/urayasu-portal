@@ -1,7 +1,7 @@
 ---
 title: "How to Get to Tokyo Disney Resort & Urayasu | Routes from Airports & Tokyo Station"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-08-17
 slug: "urayasu-maihama-access-guide"
 badge: "Access"
 description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort — including arrivals at Narita Terminal 3 (LCC) and Haneda Terminal 3, departure-day tips, and notes for guests with wheelchairs, strollers, or heavy luggage."
@@ -30,6 +30,8 @@ faq:
     a: "The Keiyo Line platform at Tokyo Station is far from other lines. Allow extra time for walking inside the station, not just the train ride itself."
   - q: "What is the difference between Urayasu Station, Shin-Urayasu Station, and Maihama Station?"
     a: "Maihama Station (JR Keiyo Line) is the gateway to Tokyo Disney Resort. Shin-Urayasu Station (JR Keiyo Line) is the nearest station for bay-area hotels. Urayasu Station (Tokyo Metro Tozai Line) serves the city center area."
+  - q: "How do I get from Tokyo Station to Urayasu Station?"
+    a: "Urayasu Station (Tokyo Metro Tozai Line) is not the Disney station. From Tokyo Station, walk through the underground passage to Otemachi Station and take the Tozai Line to Urayasu. If you are heading to Tokyo Disney Resort, take the JR Keiyo Line to Maihama Station instead."
   - q: "How do I get from a Shin-Urayasu hotel to Disney?"
     a: "Options include hotel shuttle, local bus, taxi, or train. Shuttles vary by hotel, so check the official hotel website before your stay."
   - q: "Which transport is best for wheelchair users?"

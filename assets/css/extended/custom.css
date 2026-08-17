@@ -4526,3 +4526,10 @@ body.pillar-travel .post-single .post-content a.hg-sv-maplink:hover { background
   .fl-row { flex-wrap: wrap; }
   .fl-price { margin-left: auto; }
 }
+
+/* ===== ホテル名×設備FAQ（en個別ホテルページ・hotel-facility-faq.html） ===== */
+.tg-hotel-faq { margin: 28px 0 8px; }
+.tg-hotel-faq h2 { font-size: 1.15rem; margin-bottom: 12px; }
+.tg-hotel-faq-item { border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; background: var(--code-bg); }
+.tg-hotel-faq-q { font-weight: 700; margin: 0 0 6px; }
+.tg-hotel-faq-a { margin: 0; font-size: 0.92rem; line-height: 1.7; color: var(--secondary); }
