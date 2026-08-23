@@ -2,6 +2,7 @@
 title: "Tokyo Disney with Kids | Packing Checklist & What You Can Buy Locally"
 date: 2026-08-17T20:00:00+09:00
 lastmod: 2026-08-17
+factChecked: "2026-08-24"
 slug: "family-packing"
 badge: "Family Prep"
 description: "Preparing for Tokyo Disney Resort with children, organized by age: a packing checklist, stroller vs. carrier decisions, what you can buy locally in Maihama and Urayasu, and a plan for sudden illness — compiled by locals."

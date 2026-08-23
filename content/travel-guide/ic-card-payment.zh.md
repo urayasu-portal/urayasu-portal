@@ -2,6 +2,7 @@
 title: "东京迪士尼交通IC卡攻略｜Suica（西瓜卡）购买·充值与可用范围"
 date: 2026-08-17T20:00:00+09:00
 lastmod: 2026-08-17
+factChecked: "2026-08-24"
 slug: "ic-card-payment"
 badge: "IC卡·支付"
 description: "去东京迪士尼·浦安旅行要用的交通IC卡（Suica西瓜卡·PASMO）怎么买、怎么充值？京叶线·东西线·迪士尼度假区线·巴士·便利店等可用范围一次整理，并介绍访日游客专用的Welcome Suica和手机版设置。"

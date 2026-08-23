@@ -2,6 +2,7 @@
 title: "Suica & IC Cards for Your Tokyo Disney Trip | Buying, Charging & Where They Work"
 date: 2026-08-17T20:00:00+09:00
 lastmod: 2026-08-17
+factChecked: "2026-08-24"
 slug: "ic-card-payment"
 badge: "IC & Payment"
 description: "How to buy and top up a transit IC card (Suica / PASMO) for a Tokyo Disney Resort & Urayasu trip, and where it works — Keiyo Line, Tozai Line, Disney Resort Line, buses and convenience stores — plus the tourist-only Welcome Suica and phone setup."

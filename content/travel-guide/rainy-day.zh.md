@@ -2,6 +2,7 @@
 title: "东京迪士尼下雨天攻略｜雨天游园对策与舞滨室内景点"
 date: 2026-08-17T20:00:00+09:00
 lastmod: 2026-08-17
+factChecked: "2026-08-24"
 slug: "rainy-day"
 badge: "雨天"
 description: "东京迪士尼旅行遇到下雨怎么办？雨天照样玩乐园的诀窍，加上Ikspiari、天然温泉、水族馆、teamLab等舞滨·浦安周边的室内景点，由当地人整理成一页。"

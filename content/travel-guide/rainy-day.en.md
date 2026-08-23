@@ -2,6 +2,7 @@
 title: "Tokyo Disney Resort on a Rainy Day | Park Tips & Indoor Spots in Maihama"
 date: 2026-08-17T20:00:00+09:00
 lastmod: 2026-08-17
+factChecked: "2026-08-24"
 slug: "rainy-day"
 badge: "Rainy Day"
 description: "Rain during your Tokyo Disney trip? How to enjoy the parks in the rain, plus indoor spots around Maihama and Urayasu — Ikspiari, a natural hot spring, an aquarium, and teamLab — compiled by locals."

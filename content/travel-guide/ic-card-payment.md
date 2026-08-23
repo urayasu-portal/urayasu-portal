@@ -2,6 +2,7 @@
 title: "ディズニー旅行の交通ICカード・支払いガイド｜Suica・PASMOの買い方と使える場所"
 date: 2026-08-17T20:00:00+09:00
 lastmod: 2026-08-17
+factChecked: "2026-08-24"
 slug: "ic-card-payment"
 badge: "IC・支払い"
 description: "東京ディズニーリゾート・浦安への旅行で使う交通ICカード（Suica・PASMO）の買い方・チャージ方法と、京葉線・東西線・リゾートライン・バス・コンビニなど使える場所を整理。訪日客向けWelcome Suicaやスマホ設定も案内します。"
