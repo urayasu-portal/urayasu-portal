@@ -1,8 +1,8 @@
 ---
 title: "Tokyo Disney Hotels Compared by Access | Parks, Stations & Airports (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-08-16
-factChecked: "2026-08-08"
+lastmod: 2026-08-24
+factChecked: "2026-08-24"
 description: "A local-media comparison of all 40 Urayasu hotels by how easy they are to reach: the parks, JR stations, the airports, and central Tokyo. Limousine bus fares, which hotels you can actually walk to from Maihama Station, and more."
 tags:
   - Hotel
@@ -117,7 +117,7 @@ From Urayasu Station on the Tokyo Metro Tozai Line: **about 18 min to Otemachi (
 - **BAYHOTEL Urayasu Station** (1–2 min walk, kitchen in every room)
 - **Urayasu Sun Hotel** (3 min walk from Urayasu Station)
 
-The trade-off: **there is no free shuttle to the parks; it is 25–30 min by local bus** (from Urayasu Station toward Maihama, ¥240 for adults). This area trades park-closeness for central-Tokyo access and room rates.
+The trade-off: **there is no free shuttle to the parks; it is about {{< fact "local_bus.urayasu_maihama_minutes" >}} min by local bus to Maihama Station** (route {{< fact "local_bus.urayasu_maihama_route" >}} "Maihama Line" from the Urayasu-eki-iriguchi stop, {{< fact "local_bus.urayasu_maihama_fare" >}} for adults). Route 2 via Shin-Urayasu is slower and pricier at {{< fact "local_bus.urayasu_maihama_fare_via_shin" >}} / about {{< fact "local_bus.urayasu_maihama_minutes_via_shin" >}} min, so route 9 is the cheaper, faster pick. This area trades park-closeness for central-Tokyo access and room rates.
 
 ---
 

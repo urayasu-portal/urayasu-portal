@@ -1,7 +1,7 @@
 ---
 title: "Urayasu or Central Tokyo: Where to Stay for Tokyo Disney Resort? | A Local's Honest Comparison"
 date: 2026-08-16T08:00:00+09:00
-factChecked: "2026-08-16"
+factChecked: "2026-08-24"
 description: "The first decision for a Tokyo trip with Disney days isn't which hotel — it's which base. A local guide honestly compares staying in Urayasu / Maihama next to the parks, basing yourself in central Tokyo, or splitting the stay — covering Happy Entry, luggage, cost and evenings."
 tags:
   - Hotel
@@ -41,7 +41,7 @@ As the local guide here, we'll be honest: **staying in Urayasu is not always the
 The essence of staying next to the parks: **your morning energy goes straight into the day.**
 
 - **Make rope drop without pain** — from central Tokyo, lining up for opening means a 7am departure; next door, you walk (or shuttle) over after breakfast
-- **Happy Entry** — Disney Hotel guests enter **{{< fact "happy_entry.minutes" >}} minutes before** general opening ([how it works and which hotels qualify](/en/travel-guide/hotels/happy-entry/))
+- **Happy Entry** — Disney Hotel guests enter before general opening (**{{< fact "happy_entry.land_minutes" >}} min** at Land, **{{< fact "happy_entry.sea_minutes" >}} min** at Sea due to construction) ([how it works and which hotels qualify](/en/travel-guide/hotels/happy-entry/))
 - **The nap reset** — when a small child crashes, you can go back to the room. Commuters can't copy this
 - **Luggage is genuinely easy** — [delivery services from Maihama Station and the airports](/en/travel-guide/luggage/) mean you move hands-free
 - **Bigger family rooms for the money** — rooms for 4–6 people are easier to find and better priced in Shin-Urayasu than central Tokyo ([family guide](/en/travel-guide/hotels/kids/) / [budget comparison](/en/travel-guide/hotels/budget/))

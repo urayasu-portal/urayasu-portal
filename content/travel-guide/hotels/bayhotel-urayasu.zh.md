@@ -1,8 +1,8 @@
 ---
 title: "浦安站前 BAY HOTEL | 全室30㎡公寓式·室内洗衣机·正对面24小时超市（Trial西友浦安）"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
-lastmod: 2026-06-17
+factChecked: "2026-08-24"
+lastmod: 2026-08-24
 description: "本地媒体实地评测浦安站前 BAY HOTEL。距浦安站步行1–2分钟。全室30㎡，配厨房·冰箱·微波炉·洗衣机，浴室与卫生间独立。正对面为24小时超市「Trial西友浦安」（2026年7月10日重开）。东西线快速约18分钟到大手町。适合结合迪士尼与东京市区观光的旅客。无早餐。"
 area: "浦安站周边"
 tags:
@@ -47,10 +47,10 @@ noDate: true
 ## 交通
 
 ### 前往东京迪士尼乐园
-从浦安站乘东京湾城市巴士至舞滨站约25–30分钟（¥240），再乘迪士尼度假区线至东京迪士尼乐园站。
+从浦安站入口站牌乘{{< fact "local_bus.urayasu_maihama_route" >}}路·舞滨线至舞滨站约{{< fact "local_bus.urayasu_maihama_minutes" >}}分钟（{{< fact "local_bus.urayasu_maihama_fare" >}}），再乘迪士尼度假区线至东京迪士尼乐园站。
 
 ### 前往东京迪士尼海洋
-从浦安站乘东京湾城市巴士至舞滨站约25–30分钟（¥240），再乘迪士尼度假区线至东京迪士尼海洋站。
+从浦安站入口站牌乘{{< fact "local_bus.urayasu_maihama_route" >}}路·舞滨线至舞滨站约{{< fact "local_bus.urayasu_maihama_minutes" >}}分钟（{{< fact "local_bus.urayasu_maihama_fare" >}}），再乘迪士尼度假区线至东京迪士尼海洋站。
 
 ### 前往最近车站
 步行约1–2分钟到浦安站（东西线快速停靠站）。

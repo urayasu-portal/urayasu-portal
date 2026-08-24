@@ -1,8 +1,8 @@
 ---
 title: "Cheap Hotels in Urayasu & Maihama near Tokyo Disneyland | From Around ¥10,000 for Two (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-08-16
-factChecked: "2026-08-08"
+lastmod: 2026-08-24
+factChecked: "2026-08-24"
 description: "Enjoy Tokyo Disney Resort for less. A local-media comparison of budget hotels in Urayasu where two can stay from around ¥10,000, balancing price and location — plus tips for making 'cheap' actually pay off."
 tags:
   - Hotel
@@ -134,7 +134,7 @@ When choosing a cheap hotel, here are cautions only a local would flag.
 **MyStays Shin-Urayasu**'s direct Disney shuttle runs only a few times at night, and travelers report a taxi is realistic on the ground. If "cheap room but ¥3,000 round-trip taxi," a hotel nearer the station can be cheaper overall.
 
 **The Urayasu Station area has no TDR shuttle**
-Hotels around Urayasu Station have no free park shuttle; it is 25–30 min by local bus (toward Maihama, ¥240 for adults). Treat it as an area you win on room rate and central-Tokyo access.
+Hotels around Urayasu Station have no free park shuttle; it is about {{< fact "local_bus.urayasu_maihama_minutes" >}} min by local bus to Maihama Station (route {{< fact "local_bus.urayasu_maihama_route" >}} "Maihama Line", {{< fact "local_bus.urayasu_maihama_fare" >}} for adults). Treat it as an area you win on room rate and central-Tokyo access.
 
 **In peak season, "the cheaper the hotel, the faster it fills"**
 During Golden Week, summer, and year-end, the best-value hotels sell out first. Except for flat-rate cases like **Hotel Daigo**, booking early is the rule for budget hunters.

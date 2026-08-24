@@ -1,7 +1,7 @@
 ---
 title: "去東京迪士尼要住哪裡？浦安·舞濱 vs 東京市區｜在地人的誠實比較"
 date: 2026-08-16T08:00:00+09:00
-factChecked: "2026-08-16"
+factChecked: "2026-08-24"
 description: "規劃含迪士尼的東京之旅，第一個要決定的不是「哪家飯店」，而是「以哪裡為據點」。在地媒體誠實比較住在樂園旁的浦安·舞濱、以東京市區為據點通勤、以及分開住宿三種選擇——涵蓋提早入園、行李、費用與夜晚的過法。"
 tags:
   - Hotel
@@ -41,7 +41,7 @@ faq:
 住在樂園旁的本質是：**早晨的體力直接變成玩樂的品質**。
 
 - **趕得上開園排隊** — 從市區出發要7點多出門；住隔壁的話，吃完早餐走路（或搭接駁車）就到大門
-- **提早入園** — 迪士尼飯店住客可比一般開園**早{{< fact "happy_entry.minutes" >}}分鐘**入園（[制度與適用飯店](/zh-tw/travel-guide/hotels/happy-entry/)）
+- **提早入園** — 迪士尼飯店住客可比一般開園更早入園（樂園**早{{< fact "happy_entry.land_minutes" >}}分鐘**／海洋因施工**早{{< fact "happy_entry.sea_minutes" >}}分鐘**）（[制度與適用飯店](/zh-tw/travel-guide/hotels/happy-entry/)）
 - **午睡重置** — 小孩沒電時可以回房間睡一下再出發。通勤組模仿不來
 - **行李超級輕鬆** — [舞濱站·機場的配送服務](/zh-tw/travel-guide/luggage/)完善，可以空手移動
 - **家庭房CP值高** — 4〜6人房的選擇與價格，新浦安比市區有利（[親子選法](/zh-tw/travel-guide/hotels/kids/)／[實惠比較](/zh-tw/travel-guide/hotels/budget/)）

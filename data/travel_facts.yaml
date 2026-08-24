@@ -23,11 +23,30 @@ limousine:
   baggage_size_limit: "50×60×120cm"          # 1個あたり上限サイズ
   baggage_weight_limit: "30kg"               # 1個あたり上限重量
 
+# ── 路線バス（浦安駅⇔舞浜駅／京成バス千葉ウエスト 千鳥営業所）───────
+# source: https://transfer-cloud.navitime.biz/keiseibus-group （京成バスグループ公式 経路・運賃検索）
+# checked: 2026-08-24
+# 注意: 旧公式サイト baycity-bus.co.jp / transitbus.co.jp は2026年4月1日のリニューアルで閉鎖。
+#       リンクするなら https://www.keiseibus.co.jp/ を使う。
+#       9系統（舞浜線・堀江/富士見経由）が最安・最速。2系統（今川線・新浦安経由）は遠回りで高い。
+local_bus:
+  urayasu_maihama_fare: { v: "210", u: yen }     # 浦安駅入口→舞浜駅南口 9系統 大人（現金・IC同額）
+  urayasu_maihama_minutes: "20"                  # 同 乗車時間（約19分・4.7km）
+  urayasu_maihama_route: "9"                     # 系統番号（舞浜線）
+  urayasu_maihama_fare_via_shin: { v: "280", u: yen }  # 2系統（今川線・新浦安経由）大人
+  urayasu_maihama_minutes_via_shin: "25"         # 同 乗車時間（6.8km）
+
 # ── ハッピーエントリー ───────────────────────────────
 # source: https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html
-# checked: 2026-08-08
+# source: https://faq.tokyodisneyresort.jp/answer/67eaa65f57951a27c885671c/
+# checked: 2026-08-24
+# 注意: 東京ディズニーシーは2025年9月から入口周辺の工事に伴い「5〜15分前」の変動制。
+#       工事は2028年度終了予定。ランドは15分前のまま。
+#       minutes は「ランドの分数」を指す。両パークをまとめて書く場合は both_label を使う。
 happy_entry:
-  minutes: "15"                              # 一般開園より早く入園できる分数
+  minutes: "15"                              # 東京ディズニーランド：一般開園より早く入園できる分数
+  land_minutes: "15"                         # ランド（同上・明示用）
+  sea_minutes: "5〜15"                       # シー：工事に伴う変動制
 
 # ── 舞浜駅の荷物サービス ─────────────────────────────
 # source: https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html
