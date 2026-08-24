@@ -8,7 +8,7 @@ tags:
   - "浦安"
   - "北栄"
   - "PERCH DINER"
-  - "HatchWINE Labo."
+  - "HatchWINE Labo"
   - "ハンバーガー"
   - "ワイン"
 description: "北栄のPERCH DINERで2026年8月21・22日、HatchWINE Labo.とのコラボイベントが開催予定。特別なバルサミコマッシュバーガーと、浦安で造られたワインなどを楽しめる2日間です。"

@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼交通IC卡攻略｜Suica（西瓜卡）購買·加值與可用範圍"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "ic-card-payment"
 badge: "IC卡·付款"
@@ -69,6 +69,17 @@ faq:
 </tbody>
 </table>
 </div>
+
+<h2 id="touch">可以直接感應信用卡嗎？</h2>
+
+<p>2026年3月25日起，關東地區多家鐵路公司開始支援信用卡感應支付。不過<strong>在本地區，對應情況分得很清楚</strong>。</p>
+
+<ul>
+  <li><strong>東京地鐵東西線（浦安站）＝支援。</strong>可直接用卡片或手機在閘門感應</li>
+  <li><strong>JR京葉線（舞濱·新浦安）＝不支援。</strong>JR東日本不在本次範圍內，仍需<strong>Suica或PASMO</strong></li>
+</ul>
+
+<p>由於前往樂園的車站是舞濱站，最後還是需要準備一張IC卡。只有從浦安站前往東京市中心的那天，可以用信用卡感應代替。※截至2026年8月</p>
 
 <h2 id="cash">只用現金也沒問題</h2>
 

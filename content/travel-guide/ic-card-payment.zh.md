@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼交通IC卡攻略｜Suica（西瓜卡）购买·充值与可用范围"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "ic-card-payment"
 badge: "IC卡·支付"
@@ -69,6 +69,17 @@ faq:
 </tbody>
 </table>
 </div>
+
+<h2 id="touch">可以直接刷信用卡（Contactless）吗？</h2>
+
+<p>2026年3月25日起，关东地区多家铁路公司开始支持信用卡Contactless（感应式）支付。不过<strong>在本地区，对应情况分得很清楚</strong>。</p>
+
+<ul>
+  <li><strong>东京地铁东西线（浦安站）＝支持。</strong>可直接用卡或手机在闸机感应</li>
+  <li><strong>JR京叶线（舞滨·新浦安）＝不支持。</strong>JR东日本不在本次范围内，仍需<strong>Suica或PASMO</strong></li>
+</ul>
+
+<p>由于前往乐园的车站是舞滨站，最终还是需要准备一张IC卡。只有从浦安站前往东京市中心的那天，可以用信用卡Contactless代替。※截至2026年8月</p>
 
 <h2 id="cash">只用现金也没问题</h2>
 

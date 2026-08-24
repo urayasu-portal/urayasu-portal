@@ -1,7 +1,7 @@
 ---
 title: "子連れディズニー旅行の準備ガイド｜持ち物チェックリストと現地調達のコツ"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "family-packing"
 badge: "子連れ準備"
@@ -71,7 +71,7 @@ faq:
 <h2 id="before">予約段階で決めておく3つ</h2>
 
 <ul>
-  <li><strong>ホテル：</strong><a href="/travel-guide/hotels/kids/">子連れ向けホテル比較</a>から。ディズニーホテルなら<a href="/travel-guide/hotels/happy-entry/">ハッピーエントリー（15分早く入園）</a>も確認</li>
+  <li><strong>ホテル：</strong><a href="/travel-guide/hotels/kids/">子連れ向けホテル比較</a>から。ディズニーホテルなら<a href="/travel-guide/hotels/happy-entry/">ハッピーエントリー（ランド15分前／シー5〜15分前に入園）</a>も確認</li>
   <li><strong>スーツケースの配送：</strong>子連れの大荷物移動は<a href="/travel-guide/luggage-airport/">空港からの荷物配送</a>で手ぶらに</li>
   <li><strong>チケット：</strong><a href="/travel-guide/disney-tickets/">チケットガイド</a>で事前購入を</li>
 </ul>

@@ -1,7 +1,7 @@
 ---
 title: "带孩子去东京迪士尼｜行前准备清单与当地采购攻略"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "family-packing"
 badge: "亲子准备"
@@ -71,7 +71,7 @@ faq:
 <h2 id="before">订房阶段就要决定的3件事</h2>
 
 <ul>
-  <li><strong>酒店：</strong>从<a href="/zh/travel-guide/hotels/kids/">亲子酒店比较</a>挑选。住迪士尼酒店的话，也确认<a href="/zh/travel-guide/hotels/happy-entry/">Happy Entry（提前15分钟入园）</a></li>
+  <li><strong>酒店：</strong>从<a href="/zh/travel-guide/hotels/kids/">亲子酒店比较</a>挑选。住迪士尼酒店的话，也确认<a href="/zh/travel-guide/hotels/happy-entry/">Happy Entry（乐园提前15分钟／海洋提前5〜15分钟入园）</a></li>
   <li><strong>行李箱宅配：</strong>带孩子拖大行李很辛苦，用<a href="/zh/travel-guide/luggage-airport/">机场行李宅配</a>空手出行</li>
   <li><strong>门票：</strong>看<a href="/zh/travel-guide/disney-tickets/">门票攻略</a>提前买好</li>
 </ul>

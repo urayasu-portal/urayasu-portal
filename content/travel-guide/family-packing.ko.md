@@ -1,7 +1,7 @@
 ---
 title: "아이와 함께 도쿄 디즈니｜출발 전 준비물 체크리스트와 현지 조달 요령"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "family-packing"
 badge: "가족 준비"
@@ -71,7 +71,7 @@ faq:
 <h2 id="before">예약 단계에서 정해 둘 3가지</h2>
 
 <ul>
-  <li><strong>호텔:</strong> <a href="/ko/travel-guide/hotels/kids/">가족 호텔 비교</a>에서 선택. 디즈니 호텔에 묵는다면 <a href="/ko/travel-guide/hotels/happy-entry/">해피 엔트리(15분 조기 입장)</a>도 확인</li>
+  <li><strong>호텔:</strong> <a href="/ko/travel-guide/hotels/kids/">가족 호텔 비교</a>에서 선택. 디즈니 호텔에 묵는다면 <a href="/ko/travel-guide/hotels/happy-entry/">해피 엔트리(랜드 15분 전／씨 5〜15분 전 입장)</a>도 확인</li>
   <li><strong>캐리어 배송:</strong> 아이와 큰 짐을 끌기는 힘듭니다. <a href="/ko/travel-guide/luggage-airport/">공항 짐 배송</a>으로 빈손 이동</li>
   <li><strong>티켓:</strong> <a href="/ko/travel-guide/disney-tickets/">티켓 가이드</a>에서 미리 구입</li>
 </ul>

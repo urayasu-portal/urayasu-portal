@@ -1,7 +1,7 @@
 ---
 title: "帶小孩去東京迪士尼｜行前準備清單與當地採買攻略"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "family-packing"
 badge: "親子準備"
@@ -71,7 +71,7 @@ faq:
 <h2 id="before">訂房階段就要決定的3件事</h2>
 
 <ul>
-  <li><strong>飯店：</strong>從<a href="/zh-tw/travel-guide/hotels/kids/">親子飯店比較</a>挑選。住迪士尼飯店的話，也確認<a href="/zh-tw/travel-guide/hotels/happy-entry/">Happy Entry（提早15分鐘入園）</a></li>
+  <li><strong>飯店：</strong>從<a href="/zh-tw/travel-guide/hotels/kids/">親子飯店比較</a>挑選。住迪士尼飯店的話，也確認<a href="/zh-tw/travel-guide/hotels/happy-entry/">Happy Entry（樂園提早15分鐘／海洋提早5〜15分鐘入園）</a></li>
   <li><strong>行李箱宅配：</strong>帶小孩拖大行李很辛苦，用<a href="/zh-tw/travel-guide/luggage-airport/">機場行李宅配</a>空手移動</li>
   <li><strong>門票：</strong>看<a href="/zh-tw/travel-guide/disney-tickets/">門票攻略</a>提前買好</li>
 </ul>

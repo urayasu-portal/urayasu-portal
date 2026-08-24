@@ -1,7 +1,7 @@
 ---
 title: "Suica & IC Cards for Your Tokyo Disney Trip | Buying, Charging & Where They Work"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "ic-card-payment"
 badge: "IC & Payment"
@@ -69,6 +69,17 @@ faq:
 </tbody>
 </table>
 </div>
+
+<h2 id="touch">Can I tap a credit card instead?</h2>
+
+<p>Since 25 March 2026, contactless credit card payment works on many railways in the Kanto area. In this area, though, <strong>the split is clean and worth knowing</strong>.</p>
+
+<ul>
+  <li><strong>Tokyo Metro Tozai Line (Urayasu Station) — supported.</strong> Tap your card or phone straight at the gate</li>
+  <li><strong>JR Keiyo Line (Maihama, Shin-Urayasu) — not supported.</strong> JR East is not part of this rollout, so you still need <strong>Suica or PASMO</strong></li>
+</ul>
+
+<p>Since Maihama is the station for the parks, you will end up needing an IC card anyway. Tapping a credit card is an option for days you head into central Tokyo from Urayasu Station. (As of August 2026)</p>
 
 <h2 id="cash">Cash-only works too</h2>
 

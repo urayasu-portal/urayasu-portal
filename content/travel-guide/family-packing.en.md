@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disney with Kids | Packing Checklist & What You Can Buy Locally"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 factChecked: "2026-08-24"
 slug: "family-packing"
 badge: "Family Prep"
@@ -71,7 +71,7 @@ faq:
 <h2 id="before">Three things to decide at booking time</h2>
 
 <ul>
-  <li><strong>Hotel:</strong> start from the <a href="/en/travel-guide/hotels/kids/">family hotel comparison</a>. Staying at a Disney hotel? Check <a href="/en/travel-guide/hotels/happy-entry/">Happy Entry (15 minutes early park entry)</a></li>
+  <li><strong>Hotel:</strong> start from the <a href="/en/travel-guide/hotels/kids/">family hotel comparison</a>. Staying at a Disney hotel? Check <a href="/en/travel-guide/hotels/happy-entry/">Happy Entry (Land 15 min / Sea 5–15 min early entry)</a></li>
   <li><strong>Luggage:</strong> hauling suitcases with kids is tough — go hands-free with <a href="/en/travel-guide/luggage-airport/">airport luggage delivery</a></li>
   <li><strong>Tickets:</strong> buy ahead via the <a href="/en/travel-guide/disney-tickets/">ticket guide</a></li>
 </ul>
