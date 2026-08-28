@@ -1,8 +1,8 @@
 ---
 title: "Fantasy Springs Hotel | Newest Disney Hotel (2024), Grand Chateau Direct Fantasy Springs Access + 8 Attraction Tickets"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
-lastmod: 2026-07-22
+factChecked: "2026-08-29"
+lastmod: 2026-08-29
 description: "Local review of Fantasy Springs Hotel. Disney Hotel opened June 2024 with two tiers: Grand Chateau (56 rooms, direct access to Fantasy Springs + 8 attraction tickets, luxury pricing) and Fantasy Chateau (419 rooms, deluxe). Happy Entry applies to both. A complete guide to the newest TDS Disney Hotel."
 tags:
   - Hotel
@@ -35,7 +35,7 @@ Fantasy Springs Hotel, which opened in June 2024 alongside the Fantasy Springs e
 
 - **Guests who want to be the first into Fantasy Springs at the highest level of access** — Grand Chateau guests have direct access into Fantasy Springs plus 8 attraction tickets (included in room rate); the most privileged Fantasy Springs experience available
 - **Guests wanting to stay in the newest Disney Hotel (2024)** — Fantasy Springs Hotel as a whole is the most recently opened Disney Hotel at TDS, with brand-new interiors and facilities
-- **Guests who want Happy Entry early park admission** — 15-minute early admission to the parks applies to both buildings (confirm on official website for current scope)
+- **Guests who want Happy Entry early park admission** — Early admission applies to both buildings (TDL: 15 min; TDS: 5–15 min during the entrance construction) (confirm on official website for current scope)
 - **Couples and guests seeking a luxurious Disney Hotel experience** — Fantasy Chateau is a high-end deluxe Disney Hotel on par with Grand Nikko
 
 ## May Not Suit
@@ -86,7 +86,7 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 - Breakfast available (details: confirm on official website)
 
 **Happy Entry**
-15-minute early park admission applies to both buildings. Grand Chateau guests also have the direct access benefit (confirm full scope on official website).
+Early park admission applies to both buildings (TDL: 15 minutes; TDS: 5–15 minutes during the entrance construction). Grand Chateau guests also have the direct access benefit (confirm full scope on official website).
 
 **Pools / Baths**
 Large pool and relaxation facilities (confirm current operating status and fees on official website).

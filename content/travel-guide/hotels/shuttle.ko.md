@@ -1,8 +1,8 @@
 ---
 title: "도쿄 디즈니 무료 셔틀버스 호텔 총정리 | 파크 셔틀의 4가지 유형과 예약 전 체크포인트"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-08
-factChecked: "2026-08-08"
+lastmod: 2026-08-29
+factChecked: "2026-08-29"
 description: "도쿄 디즈니랜드·디즈니씨 주변 어느 호텔에 무료 셔틀이 있나? 현지 시선으로 4가지 셔틀 유형(셔틀 불필요·리조트 크루저·파트너 호텔 셔틀·호텔 자체 버스)과 예약 전 반드시 확인할 시간표 함정을 정리했습니다."
 tags:
   - 호텔
@@ -106,6 +106,6 @@ faq:
 
 - [호텔 교통 비교](/ko/travel-guide/hotels/access/)
 - [호텔 분류 해설(디즈니/공식/파트너)](/ko/travel-guide/hotels/types/)
-- [해피 엔트리(15분 전 입장) 해설](/ko/travel-guide/hotels/happy-entry/)
+- [해피 엔트리(조기 입장) 해설](/ko/travel-guide/hotels/happy-entry/)
 - [도쿄 디즈니 티켓 구매 완전 가이드](/ko/travel-guide/disney-tickets/)
 - [호텔 가이드 톱](/ko/travel-guide/hotels/)

@@ -1,8 +1,8 @@
 ---
 title: "How to Buy Tokyo Disneyland & DisneySea Tickets | Prices, Sold-Out Days & Where to Buy"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-13
-factChecked: "2026-07-13"
+lastmod: 2026-08-29
+factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "Tickets"
 description: "A local guide to buying Tokyo Disneyland and Tokyo DisneySea tickets: date-based prices, age bands, sold-out days, official site vs authorized resellers like Trip.com, hotel ticket plans, and how Disney Premier Access works."
@@ -95,7 +95,7 @@ Practical notes for overseas visitors:
 
 - **Set up the official Tokyo Disney Resort app before your trip** if it is available in your region's app store, and make sure you can link your tickets to it.
 - If you cannot use the app, your QR ticket still gets you in — but in-app features like DPA are hard to use, which makes **arriving before opening** even more valuable.
-- Guests of Disney Hotels get **[Happy Entry](/en/travel-guide/hotels/happy-entry/)** (entry up to 15 minutes before official opening) — a hotel perk, not a ticket type. Don't confuse the two.
+- Guests of Disney Hotels get **[Happy Entry](/en/travel-guide/hotels/happy-entry/)** (entry before official opening — 15 min at TDL, 5–15 min at TDS during construction) — a hotel perk, not a ticket type. Don't confuse the two.
 
 ---
 
@@ -115,6 +115,6 @@ Practical notes for overseas visitors:
 ## Related
 
 - [Hotel Categories Explained (ticket-purchase plans)](/en/travel-guide/hotels/types/)
-- [Happy Entry (15-Minute Early Entry) Explained](/en/travel-guide/hotels/happy-entry/)
+- [Happy Entry (Early Park Entry) Explained](/en/travel-guide/hotels/happy-entry/)
 - [All 48 Hotels near the Parks](/en/travel-guide/hotels/)
 - [How to Get to Tokyo Disney Resort](/en/travel-guide/urayasu-maihama-access-guide/)

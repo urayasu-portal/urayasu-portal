@@ -1,8 +1,8 @@
 ---
 title: "Tokyo DisneySea Hotel MiraCosta | The Only Hotel Located Inside TDS"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
-lastmod: 2026-07-22
+factChecked: "2026-08-29"
+lastmod: 2026-08-29
 description: "Local review of Tokyo DisneySea Hotel MiraCosta. The only hotel physically inside Tokyo DisneySea, with harbor-view rooms, Happy Entry early admission, and Spa & Pool Terme Venezia. The most exclusive Disney Hotel experience — and what to be aware of."
 tags:
   - Hotel
@@ -14,7 +14,7 @@ cover:
 noDate: true
 ---
 
-Among all Disney Hotels at Tokyo Disney Resort, Tokyo DisneySea Hotel MiraCosta stands alone as the **only hotel located inside the park**. Guest rooms overlook the Mediterranean Harbor and Porto Paradiso, creating an atmosphere reminiscent of the Italian coastline. Hotel guests enjoy Happy Entry — exclusive 15-minute early admission to the parks. This review covers the hotel's strengths, weaknesses, and actual access from a local perspective. Prices and times are estimates based on 2025–2026 research.
+Among all Disney Hotels at Tokyo Disney Resort, Tokyo DisneySea Hotel MiraCosta stands alone as the **only hotel located inside the park**. Guest rooms overlook the Mediterranean Harbor and Porto Paradiso, creating an atmosphere reminiscent of the Italian coastline. Hotel guests enjoy Happy Entry — exclusive early admission (5–15 minutes before general admission at TDS during the entrance construction). This review covers the hotel's strengths, weaknesses, and actual access from a local perspective. Prices and times are estimates based on 2025–2026 research.
 
 ---
 
@@ -35,7 +35,7 @@ Among all Disney Hotels at Tokyo Disney Resort, Tokyo DisneySea Hotel MiraCosta 
 
 - **Guests who want to view TDS from their room** — Harbor-side and Porto Paradiso views available only here
 - **Guests who want to enjoy the park atmosphere even after closing** — The hotel is inside TDS; you can return freely after park closing
-- **Guests who want 15-minute early admission to TDS** — Happy Entry lets you enter 15 minutes before general admission
+- **Guests who want early admission to TDS** — Happy Entry lets you enter 5–15 minutes before general admission (varies by day during the entrance construction)
 - **Special occasions and honeymoons** — Lavish Italian Mediterranean theme and high-end service
 
 ## May Not Suit
@@ -80,7 +80,7 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 A globally rare hotel set inside the park itself. Three sides — Toscana, Venezia, and Porto Paradiso — offer different views from the windows. Porto Paradiso Side overlooks the canal; Venezia Side commands a panoramic view of the Mediterranean Harbor.
 
 **Happy Entry**
-Hotel guests may enter the park 15 minutes before general admission. The "Hotel & Park Gateway" entrance is available from 1 hour after opening — to rush for popular attractions at opening, use the main gate with your early admission benefit.
+Hotel guests may enter the park 5–15 minutes before general admission (it varies by day during the entrance-area construction). The "Hotel & Park Gateway" entrance is available from 1 hour after opening — to rush for popular attractions at opening, use the main gate with your early admission benefit.
 
 **Breakfast**
 "Oceano" on the 1F: Japanese and Western buffet (6:30–10:00), 286 seats. Breakfast overlooking the harbor offers a truly immersive atmosphere. "Silk Road Garden" is also available.

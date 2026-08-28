@@ -1,8 +1,8 @@
 ---
 title: "도쿄 디즈니 티켓 구매 완전 가이드 | 가격·매진일·어디서 사야 하나(현지 시선)"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-13
-factChecked: "2026-07-13"
+lastmod: 2026-08-29
+factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "티켓"
 description: "현지 시선의 도쿄 디즈니랜드·디즈니씨 티켓 가이드: 날짜별 변동 가격, 연령 구분, 매진일 패턴, 공식 사이트와 Trip.com 등 공인 판매처 비교, 호텔 티켓 플랜, Disney Premier Access 사용법까지."
@@ -95,7 +95,7 @@ Trip.com은 두 파크 모두 취급하며 e티켓이 즉시 발급됩니다. �
 
 - 여러분 지역 앱스토어에서 받을 수 있다면 **여행 전에 공식 도쿄 디즈니 리조트 앱을 설치·설정**하고, 티켓 연동이 되는지 확인하세요.
 - 앱을 쓸 수 없어도 QR 티켓으로 입장은 가능합니다. 다만 DPA 등 앱 기능을 쓰기 어려우므로 **개장 전 도착**이 더욱 중요해집니다.
-- 디즈니 호텔 투숙객은 **[해피 엔트리(개장 15분 전 입장)](/ko/travel-guide/hotels/happy-entry/)** 혜택이 있습니다. 이는 호텔 특전이지 티켓 종류가 아니니 혼동하지 마세요.
+- 디즈니 호텔 투숙객은 **[해피 엔트리(개장 전 입장: 랜드 15분·씨는 공사로 5〜15분)](/ko/travel-guide/hotels/happy-entry/)** 혜택이 있습니다. 이는 호텔 특전이지 티켓 종류가 아니니 혼동하지 마세요.
 
 ---
 
@@ -115,6 +115,6 @@ Trip.com은 두 파크 모두 취급하며 e티켓이 즉시 발급됩니다. �
 ## 관련 글
 
 - [호텔 분류 해설(티켓 구매 플랜)](/ko/travel-guide/hotels/types/)
-- [해피 엔트리(15분 전 입장) 해설](/ko/travel-guide/hotels/happy-entry/)
+- [해피 엔트리(조기 입장) 해설](/ko/travel-guide/hotels/happy-entry/)
 - [파크 주변 호텔 48곳 전체](/ko/travel-guide/hotels/)
 - [도쿄 디즈니 가는 길](/ko/travel-guide/urayasu-maihama-access-guide/)

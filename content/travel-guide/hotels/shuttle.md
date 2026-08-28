@@ -1,8 +1,8 @@
 ---
 title: "無料シャトルバスのある東京ディズニーリゾート周辺ホテル｜パークシャトルの実態を解説"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-08
-factChecked: "2026-08-08"
+lastmod: 2026-08-29
+factChecked: "2026-08-29"
 description: "東京ディズニーランド・シー周辺で無料シャトルバスのあるホテルは？シャトル不要・ディズニーリゾートクルーザー・パートナーホテルシャトル・各ホテル独自バスの4パターンと、予約前に確認したい時刻表の落とし穴を地元メディアが解説します。"
 tags:
   - ホテル
@@ -106,6 +106,6 @@ faq:
 
 - [ホテルのアクセス比較](/travel-guide/hotels/access/)
 - [ホテル区分をやさしく解説（ディズニー／オフィシャル／パートナー）](/travel-guide/hotels/types/)
-- [ハッピーエントリー（15分早入園）とは](/travel-guide/hotels/happy-entry/)
+- [ハッピーエントリー（早入園）とは](/travel-guide/hotels/happy-entry/)
 - [東京ディズニーのチケットの買い方](/travel-guide/disney-tickets/)
 - [ホテルガイドトップ](/travel-guide/hotels/)

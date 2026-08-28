@@ -1,7 +1,8 @@
 ---
 title: "Urayasu or Central Tokyo: Where to Stay for Tokyo Disney Resort? | A Local's Honest Comparison"
 date: 2026-08-16T08:00:00+09:00
-factChecked: "2026-08-24"
+factChecked: "2026-08-29"
+lastmod: 2026-08-29
 description: "The first decision for a Tokyo trip with Disney days isn't which hotel — it's which base. A local guide honestly compares staying in Urayasu / Maihama next to the parks, basing yourself in central Tokyo, or splitting the stay — covering Happy Entry, luggage, cost and evenings."
 tags:
   - Hotel
@@ -18,7 +19,7 @@ faq:
   - q: "How do I handle luggage on a split stay (Tokyo + Disney)?"
     a: "Hotel-to-hotel courier forwarding is next-day as standard, so send bags the day before you move. If you need them the same day, the Sagawa counter at Tokyo Station delivers to Urayasu hotels with a 13:00 cut-off — see our luggage guide for details."
   - q: "Is Happy Entry worth staying in Urayasu for?"
-    a: "Happy Entry (entering 15 minutes before general opening) is a perk for Disney Hotel guests only — Official and Partner hotels don't qualify. It matters most in busy seasons when you want the first ride on a headliner; on quiet weekdays a central Tokyo base can still get you there early enough."
+    a: "Happy Entry (entering before general opening — 15 minutes at TDL, 5–15 minutes at TDS during the entrance construction) is a perk for Disney Hotel guests only — Official and Partner hotels don't qualify. It matters most in busy seasons when you want the first ride on a headliner; on quiet weekdays a central Tokyo base can still get you there early enough."
 ---
 
 The first decision for a Tokyo trip with Disney days isn't which hotel to book. It's **which base to use**: sleep next to the parks, or stay in central Tokyo and commute? Get this wrong and no amount of hotel research will fix the itinerary.

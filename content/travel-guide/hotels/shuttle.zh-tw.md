@@ -1,8 +1,8 @@
 ---
 title: "東京迪士尼免費接駁車飯店全指南 | 樂園接駁車的4種類型與訂房前必查事項"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-08
-factChecked: "2026-08-08"
+lastmod: 2026-08-29
+factChecked: "2026-08-29"
 description: "哪些東京迪士尼周邊飯店有免費接駁車？在地視角整理4種接駁車類型——無需接駁、迪士尼度假區巡遊車、合作飯店專用接駁車、飯店自營接駁車——以及訂房前必須確認的班次陷阱。"
 tags:
   - 飯店
@@ -106,6 +106,6 @@ faq:
 
 - [飯店交通比較](/zh-tw/travel-guide/hotels/access/)
 - [飯店分類解說（迪士尼/官方/合作）](/zh-tw/travel-guide/hotels/types/)
-- [Happy Entry（提前15分鐘入園）解說](/zh-tw/travel-guide/hotels/happy-entry/)
+- [Happy Entry（提前入園）解說](/zh-tw/travel-guide/hotels/happy-entry/)
 - [東京迪士尼門票購買全攻略](/zh-tw/travel-guide/disney-tickets/)
 - [飯店指南首頁](/zh-tw/travel-guide/hotels/)

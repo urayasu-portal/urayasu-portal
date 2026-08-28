@@ -1,8 +1,8 @@
 ---
 title: "东京迪士尼门票购买全攻略｜价格·售罄日·在哪买最稳妥（本地视角）"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-13
-factChecked: "2026-07-13"
+lastmod: 2026-08-29
+factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "门票"
 description: "本地视角的东京迪士尼乐园·迪士尼海洋门票指南：按日期浮动的价格、年龄分档、售罄日规律、官网与Trip.com等授权渠道的对比、酒店购票方案，以及Disney Premier Access的用法。"
@@ -95,7 +95,7 @@ Trip.com 覆盖两个园区，电子票即时出票。其他授权渠道还有 K
 
 - **行前先安装并设置好东京迪士尼度假区官方App**（如你所在地区的应用商店可下载），确认门票能关联到App。
 - 如果无法使用App，二维码门票仍可正常入园——但DPA等App内功能难以使用，因此**开园前到场**变得更加重要。
-- 迪士尼酒店住客享有[**Happy Entry（提前15分钟入园）**](/zh/travel-guide/hotels/happy-entry/)——这是酒店权益，不是门票种类，请勿混淆。
+- 迪士尼酒店住客享有[**Happy Entry（提前入园：乐园15分钟／海洋因施工5〜15分钟）**](/zh/travel-guide/hotels/happy-entry/)——这是酒店权益，不是门票种类，请勿混淆。
 
 ---
 
@@ -115,6 +115,6 @@ Trip.com 覆盖两个园区，电子票即时出票。其他授权渠道还有 K
 ## 相关阅读
 
 - [酒店分类解说（含购票权益方案）](/zh/travel-guide/hotels/types/)
-- [Happy Entry（提前15分钟入园）解说](/zh/travel-guide/hotels/happy-entry/)
+- [Happy Entry（提前入园）解说](/zh/travel-guide/hotels/happy-entry/)
 - [乐园周边全部48家酒店](/zh/travel-guide/hotels/)
 - [东京迪士尼交通指南](/zh/travel-guide/urayasu-maihama-access-guide/)

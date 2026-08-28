@@ -1,9 +1,9 @@
 ---
-title: "Happy Entry at Tokyo Disney Resort Explained | 15-Minute Early Entry & Which Hotels Get It"
+title: "Happy Entry at Tokyo Disney Resort Explained | How Early Entry Works & Which Hotels Get It"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-08
-factChecked: "2026-08-08"
-description: "Happy Entry lets Tokyo Disney Resort hotel guests enter the park up to 15 minutes before official opening — but only guests of the Disney Hotels. A local guide to how it works, which hotels qualify, common misconceptions, and what to do if you are not staying at a Disney Hotel."
+lastmod: 2026-08-29
+factChecked: "2026-08-29"
+description: "Happy Entry lets Tokyo Disney Resort hotel guests enter before official opening (15 min at Land, 5–15 min at Sea due to construction) — but only guests of the Disney Hotels. A local guide to how it works, which hotels qualify, common misconceptions, and what to do if you are not staying at a Disney Hotel."
 tags:
   - Hotel
   - Disney
@@ -82,7 +82,7 @@ No early entry — but you can still play the morning well:
 
 ## Summary
 
-- Happy Entry = **up to 15 minutes early entry, Disney Hotel guests only**
+- Happy Entry = **early entry before general opening, Disney Hotel guests only** (15 min at Land / 5–15 min at Sea)
 - Eligible park and conditions **vary by hotel and season** — always check the official site for your dates
 - Official, Partner and independent hotels **do not** get it, regardless of location
 - Cheapest eligible option: Tokyo Disney Celebration Hotel; strongest combination of early entry and zero commute: the three park-connected hotels
