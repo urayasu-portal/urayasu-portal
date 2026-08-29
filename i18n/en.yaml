@@ -198,3 +198,17 @@
   translation: "Urayasu or central Tokyo?"
 - id: hl_wherestay_desc
   translation: "Choosing your base"
+- id: topics_title
+  translation: "Maihama & Urayasu Topics"
+- id: topics_lead
+  translation: "Seasonal news from the Tokyo Disney Resort area — hotel dining fairs, park updates and new openings, reported by a local team in Urayasu."
+- id: topics_latest
+  translation: "Latest from the Maihama area"
+- id: topics_view_all
+  translation: "All topics →"
+- id: topics_related_hotels
+  translation: "Hotels in this article"
+- id: topics_disclaimer
+  translation: "Dates, prices and other details are as announced at the time of writing and may change. Please check the official websites for the latest information before your visit."
+- id: hotel_topics_title
+  translation: "Latest news about this hotel"

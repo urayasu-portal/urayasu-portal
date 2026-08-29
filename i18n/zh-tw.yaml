@@ -198,3 +198,17 @@
   translation: "住浦安還是住市區？"
 - id: hl_wherestay_desc
   translation: "據點選擇比較"
+- id: topics_title
+  translation: "舞濱·浦安 最新情報"
+- id: topics_lead
+  translation: "東京迪士尼度假區周邊的當季消息——飯店餐飲活動、樂園動態與新開幕資訊，由浦安在地團隊親自整理。"
+- id: topics_latest
+  translation: "舞濱周邊最新消息"
+- id: topics_view_all
+  translation: "查看全部 →"
+- id: topics_related_hotels
+  translation: "本文提到的飯店"
+- id: topics_disclaimer
+  translation: "文中的日期、價格與活動內容為撰稿時的公告資訊，之後可能變動。出發前請以各官方網站的最新資訊為準。"
+- id: hotel_topics_title
+  translation: "這間飯店的最新消息"

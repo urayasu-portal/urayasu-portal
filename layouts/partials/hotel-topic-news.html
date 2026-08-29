@@ -1,0 +1,28 @@
+{{- /* ホテル個別ページの「このホテルの最新トピックス」自動枠。
+     posts の frontmatter `hotels: [slug, ...]` と当ページのスラッグ（TranslationBaseName）を
+     突き合わせ、同一言語の記事を最新3件表示する。ヒット0件なら枠ごと非表示。
+     生活ガイドの guide-related-news.html（newsTags方式）のホテル版。
+     書き手は posts 側に hotels: を付けるだけで、ホテルページは無編集で連動する。 */ -}}
+{{- $slug := "" }}
+{{- with .File }}{{ $slug = .TranslationBaseName }}{{ end }}
+{{- if $slug }}
+{{- $matched := slice }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- if in (.Params.hotels | default slice) $slug }}
+    {{- $matched = $matched | append . }}
+  {{- end }}
+{{- end }}
+{{- with first 3 $matched }}
+<div class="lg-news-box tg-hotel-news">
+  <div class="section-head"><h2><span class="lg-related-bar" aria-hidden="true"></span>{{ i18n "hotel_topics_title" }}</h2></div>
+  <ul class="lg-news-list">
+    {{- range . }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+{{- end }}

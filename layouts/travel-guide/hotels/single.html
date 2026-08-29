@@ -155,6 +155,9 @@
       {{/* ホテル名×設備FAQ（enのみ・hotels_map.yaml flags連動） */}}
       {{- partial "hotel-facility-faq.html" . }}
 
+      {{/* このホテルの最新トピックス（posts の hotels: スラッグ連動・0件なら非表示） */}}
+      {{- partial "hotel-topic-news.html" . }}
+
       {{/* 出典・確認時点 */}}
       {{- partial "source-info.html" . }}
 

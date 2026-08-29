@@ -198,3 +198,17 @@
   translation: "우라야스 vs 도쿄 시내"
 - id: hl_wherestay_desc
   translation: "거점 고르는 법 비교"
+- id: topics_title
+  translation: "마이하마·우라야스 토픽"
+- id: topics_lead
+  translation: "도쿄 디즈니 리조트 주변의 계절 소식——호텔 다이닝 페어, 파크 소식, 새 매장 정보를 우라야스 현지 팀이 전합니다."
+- id: topics_latest
+  translation: "마이하마 주변 최신 소식"
+- id: topics_view_all
+  translation: "전체 보기 →"
+- id: topics_related_hotels
+  translation: "이 기사에 나오는 호텔"
+- id: topics_disclaimer
+  translation: "기사 속 날짜·가격·내용은 작성 시점의 발표 정보이며 변경될 수 있습니다. 방문 전 공식 웹사이트에서 최신 정보를 확인해 주세요."
+- id: hotel_topics_title
+  translation: "이 호텔의 최신 소식"

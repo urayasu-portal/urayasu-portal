@@ -14,6 +14,9 @@ tags:
 description: "舞浜のシェラトン「グランカフェ」で9月1日からタイフードブッフェを開催。シェフX監修のタイ料理に加え、THANNとコラボした期間限定スイーツも登場します。"
 eventDate: "2026-09-01/2026-10-31"
 hideEventBox: true
+hotels:
+  - "sheraton-grande-tokyo-bay"
+lastmod: 2026-08-30T12:00:00+09:00
 checkDate: "2026-08"
 sources:
   - name: "シェラトン・グランデ・トーキョーベイ・ホテル グランカフェ"

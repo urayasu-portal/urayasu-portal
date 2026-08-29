@@ -198,3 +198,17 @@
   translation: "浦安泊か、都心泊か"
 - id: hl_wherestay_desc
   translation: "拠点の選び方を比較"
+- id: topics_title
+  translation: "舞浜・浦安トピックス"
+- id: topics_lead
+  translation: "東京ディズニーリゾート周辺の季節の話題。ホテルのフェア、パークの動き、新店情報を地元からお届けします。"
+- id: topics_latest
+  translation: "舞浜周辺の最新トピックス"
+- id: topics_view_all
+  translation: "一覧を見る →"
+- id: topics_related_hotels
+  translation: "この記事に登場するホテル"
+- id: topics_disclaimer
+  translation: "記事中の日程・料金・内容は執筆時点の発表情報です。変更される場合があるため、おでかけ前に公式サイトで最新情報をご確認ください。"
+- id: hotel_topics_title
+  translation: "このホテルの最新トピックス"

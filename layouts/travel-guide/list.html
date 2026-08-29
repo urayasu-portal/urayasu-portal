@@ -128,6 +128,32 @@
 {{ partial "featured-hotels.html" . }}
 
 {{/* ────────────────────────────────────────
+     最新トピックス / Latest topics（非日本語のみ）
+     その言語に翻訳済みの posts の最新3件。0件なら枠ごと非表示
+     （zh・ko は翻訳を置いた時点で自動的に出現する）。
+     ──────────────────────────────────────── */}}
+{{- if ne .Lang "ja" }}
+{{- $topics := first 3 (where site.RegularPages "Section" "posts") }}
+{{- if $topics }}
+<div class="section-head">
+  <h2>{{ i18n "topics_latest" }}</h2>
+  {{- with site.GetPage "/posts" }}
+  <a class="section-more" href="{{ .RelPermalink }}">{{ i18n "topics_view_all" }}</a>
+  {{- end }}
+</div>
+<div class="tg-topics-strip">
+  {{- range $topics }}
+  <a class="tg-topic-card" href="{{ .RelPermalink }}">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    <div class="tg-topic-card-title">{{ .Title }}</div>
+    {{- with .Description }}<div class="tg-topic-card-desc">{{ . | truncate 90 }}</div>{{- end }}
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{/* ────────────────────────────────────────
      休息日・パークの外で / Beyond the parks
      ──────────────────────────────────────── */}}
 <div class="section-head">

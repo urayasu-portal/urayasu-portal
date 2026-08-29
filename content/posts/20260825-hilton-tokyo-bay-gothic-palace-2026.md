@@ -13,6 +13,9 @@ tags:
 description: "舞浜のヒルトン東京ベイで9月5日からハロウィーンスイーツビュッフェ「Gothic Palace」を開催。土日祝日限定で約20種のスイーツと約15種のセイボリーを楽しめます。"
 eventDate: "2026-09-05/2026-11-03"
 hideEventBox: true
+hotels:
+  - "hilton-tokyo-bay"
+lastmod: 2026-08-30T12:00:00+09:00
 checkDate: "2026-08"
 sources:
   - name: "ヒルトン東京ベイ ハロウィーンスイーツビュッフェ「Gothic Palace」"

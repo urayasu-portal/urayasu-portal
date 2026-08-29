@@ -13,6 +13,9 @@ tags:
 description: "新浦安駅直結のオリエンタルホテル東京ベイで9月1日から「北海道 味覚紀行」を開催。本ズワイガニと紅ズワイガニの食べ比べや点心、北海道グルメを楽しめます。"
 eventDate: "2026-09-01/2026-11-03"
 hideEventBox: true
+hotels:
+  - "oriental-tokyo-bay"
+lastmod: 2026-08-30T12:00:00+09:00
 checkDate: "2026-08"
 sources:
   - name: "オリエンタルホテル東京ベイ"

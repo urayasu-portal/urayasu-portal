@@ -1,0 +1,41 @@
+{{- /* 多言語トピックスのアーカイブ一覧（/en/posts/・/zh-tw/posts/）。
+     layouts/posts/list.<lang>.html から呼ばれる。日本語 /posts/ は従来テンプレのまま。 */ -}}
+<div class="tg-topic-single">
+
+  <nav class="tg-topic-crumbs" aria-label="{{ i18n "breadcrumb" }}">
+    <a href="{{ "/travel-guide/" | relLangURL }}">{{ i18n "nav_travel_guide" }}</a>
+    <span aria-hidden="true">›</span>
+    <span>{{ i18n "topics_title" }}</span>
+  </nav>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ i18n "topics_title" }}</h1>
+    <p class="post-description">{{ i18n "topics_lead" }}</p>
+  </header>
+
+  {{- $paged := .Paginate .Pages }}
+  <div class="tg-topics-archive">
+    {{- range $paged.Pages }}
+    <a class="tg-topic-item" href="{{ .RelPermalink }}">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <div class="tg-topic-item-body">
+        <h2>{{ .Title }}</h2>
+        {{- with .Description }}<p>{{ . }}</p>{{- end }}
+      </div>
+    </a>
+    {{- end }}
+  </div>
+
+  {{- if gt $paged.TotalPages 1 }}
+  <nav class="tg-topic-pager">
+    {{- if $paged.HasPrev }}<a href="{{ $paged.Prev.URL }}">← {{ i18n "pager_newer" }}</a>{{- end }}
+    <span>{{ $paged.PageNumber }} / {{ $paged.TotalPages }}</span>
+    {{- if $paged.HasNext }}<a href="{{ $paged.Next.URL }}">{{ i18n "pager_older" }} →</a>{{- end }}
+  </nav>
+  {{- end }}
+
+  <div class="tg-topic-backlinks">
+    <a class="tg-topic-back" href="{{ "/travel-guide/" | relLangURL }}">{{ i18n "nav_travel_guide" }} →</a>
+  </div>
+
+</div>

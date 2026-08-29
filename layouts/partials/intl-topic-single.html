@@ -1,0 +1,79 @@
+{{- /* 多言語トピックス記事の本文レイアウト（en / zh-tw）。
+     posts の翻訳版（xxx.en.md / xxx.zh-tw.md）は layouts/posts/single.<lang>.html 経由で
+     このパーシャルを使う。日本語 posts は従来どおり layouts/single.html（本パーシャル不使用）。
+     日本語版の重装UI（サイドバー・日本語CTA・カテゴリバッジ等）を持ち込まない軽量版。
+     frontmatter `hotels: [slug, ...]` があれば該当ホテルの多言語個別ページへのリンクを表示。 */ -}}
+{{- $lang := .Lang }}
+{{- $topicsPage := site.GetPage "/posts" }}
+
+<article class="post-single tg-topic-single">
+
+  <nav class="tg-topic-crumbs" aria-label="{{ i18n "breadcrumb" }}">
+    <a href="{{ "/travel-guide/" | relLangURL }}">{{ i18n "nav_travel_guide" }}</a>
+    <span aria-hidden="true">›</span>
+    {{- with $topicsPage }}
+    <a href="{{ .RelPermalink }}">{{ i18n "topics_title" }}</a>
+    {{- end }}
+  </nav>
+
+  <header class="post-header">
+    <div class="post-meta-line">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{- if gt .Lastmod .Date }}
+      <span class="post-updated-badge"><i class="ti ti-refresh" aria-hidden="true"></i> {{ i18n "updated_on" (dict "date" (.Lastmod.Format "2006-01-02")) }}</span>
+      {{- end }}
+    </div>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Description }}<p class="post-description">{{ . }}</p>{{- end }}
+  </header>
+
+  {{- $coverReal := partial "cover-image.html" (dict "page" . "size" "full" "real" true) }}
+  {{- if $coverReal }}
+  <div class="post-cover"><img src="{{ $coverReal }}" alt="{{ .Title }}" loading="lazy"></div>
+  {{- end }}
+
+  <div class="post-content md-content">
+    {{ .Content }}
+  </div>
+
+  {{- /* 記事内で言及したホテルの個別ページへのピル型リンク */ -}}
+  {{- with .Params.hotels }}
+  <div class="tg-topic-hotels">
+    <div class="tg-topic-hotels-label"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "topics_related_hotels" }}</div>
+    <div class="tg-topic-hotels-pills">
+      {{- range $slug := . }}
+      {{- $hm := where (hugo.Data.hotels_map.hotels | default slice) "slug" $slug }}
+      {{- $nm := $slug }}
+      {{- with index $hm 0 }}
+        {{- $nm = index . (printf "name_%s" $lang) | default (.name_en | default .name) }}
+      {{- end }}
+      <a class="tg-topic-hotel-pill" href="{{ printf "/travel-guide/hotels/%s/" $slug | relLangURL }}">{{ $nm }} →</a>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+
+  <div class="tg-topic-disclaimer">
+    <i class="ti ti-info-circle" aria-hidden="true"></i>
+    <span>{{ i18n "topics_disclaimer" }}</span>
+  </div>
+
+  {{- /* 言語切替（翻訳が存在する言語のみ） */ -}}
+  {{- with .AllTranslations }}
+  {{- if gt (len .) 1 }}
+  <div class="tg-lang-switch tg-topic-langs">
+    {{- range . }}
+    <a class="tg-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }}>{{ .Language.LanguageName }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- end }}
+
+  <div class="tg-topic-backlinks">
+    {{- with $topicsPage }}
+    <a class="tg-topic-back" href="{{ .RelPermalink }}">← {{ i18n "topics_title" }}</a>
+    {{- end }}
+    <a class="tg-topic-back" href="{{ "/travel-guide/" | relLangURL }}">{{ i18n "nav_travel_guide" }} →</a>
+  </div>
+
+</article>

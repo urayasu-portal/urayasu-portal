@@ -13,6 +13,11 @@ tags:
 description: "舞浜のディズニーアンバサダーホテル、ホテルミラコスタ、東京ディズニーランドホテルで、2026年9月15日から10月31日までハロウィーン限定メニューを提供。ブッフェやコース、限定ドリンクなどが登場します。"
 eventDate: "2026-09-15/2026-10-31"
 hideEventBox: true
+hotels:
+  - "ambassador-hotel"
+  - "miracosta"
+  - "tdl-hotel"
+lastmod: 2026-08-30T12:00:00+09:00
 checkDate: "2026-08"
 sources:
   - name: "ディズニーアンバサダーホテル｜ディズニー・ハロウィーン スペシャルメニュー"
