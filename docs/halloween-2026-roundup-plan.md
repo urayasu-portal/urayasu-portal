@@ -162,15 +162,32 @@ A. 仮装してパークへ行く → §2へ ／ B. ホテルでハロウィン�
 
 `hilton-gothic-palace-2026`（8/11公開）と `hilton-tokyo-bay-gothic-palace-2026`（8/25公開）が**同一イベントの重複記事**。出典URL・会場・期間（9/5〜11/3の土日祝）・料金（大人5,000円/9〜12歳2,700円/4〜8歳1,900円）・4部制まで一致。同一キーワードで共食いしている状態。まとめ記事からは新しい方のみリンクした。統合（片方に aliases を張って集約）を推奨するが、公開済み記事の削除・統合は影響が大きいため未実施。
 
-### Phase 3: ビルド・検証・公開（半日）
+### Phase 3: ビルド・検証・公開（2026-08-30 完了）
 
-| # | 作業 | 完了条件 |
+| # | 作業 | 状態 |
 |---|---|---|
-| 3-1 | `hugo --minify` でビルド | エラーなし |
-| 3-2 | `public/` に対する grep で内部リンク全数到達チェック（新設URL・追記リンク先の実在確認） | リンク切れゼロ |
-| 3-3 | FAQ JSON-LD が出力されているか `public/travel-guide/maihama-halloween/index.html` を確認 | FAQPage 出力あり |
-| 3-4 | コミット・push（push 主体ビルドでデプロイ） | GitHub Actions 成功 |
-| 3-5 | 公開後: Search Console リッチリザルトテスト＋インデックス登録リクエスト | 登録申請済み |
+| 3-1 | `hugo --minify` でビルド | ✅ エラーなし |
+| 3-2 | `public/` への grep で内部リンク全数到達チェック | ✅ 40本・DEAD 0 |
+| 3-3 | FAQ JSON-LD 出力確認 | ✅ FAQPage 6問 |
+| 3-4 | コミット・push | ✅ コミット `0a29447`（13ファイル・852行追加）／`main` へ push 済み。GitHub Actions のデプロイ反映を実サイトで確認 |
+| 3-5 | Search Console 登録 | ⬜ **未実施（手動作業）**。下記参照 |
+
+**公開後の実サイト検証（https://urayasu-portal.com）**
+
+| 検証 | 結果 |
+|---|---|
+| ページ公開 | ✅ `/travel-guide/maihama-halloween/` が200で応答 |
+| FAQ JSON-LD | ✅ 本番HTMLに FAQPage 出力を確認 |
+| posts→まとめ の逆方向リンク | ✅ **9本すべて**本番で到達 |
+| ハブ→まとめ | ✅ 旅行ガイドトップ・観光ハブとも到達 |
+| 多言語トップへの混入 | ✅ en / zh / zh-tw / ko すべて混入なし（ja限定が正しく機能） |
+
+**残る手動作業（3-5）**
+
+Google Search Console で以下を実施する。
+1. リッチリザルトテストで `/travel-guide/maihama-halloween/` の FAQPage 認識を確認
+2. URL検査 → インデックス登録をリクエスト
+3. lastmod を更新した既報9本は sitemap 経由で自動再クロールされるため個別申請は不要
 
 ### Phase 4: 多言語版（公開後2〜3日以内）
 
