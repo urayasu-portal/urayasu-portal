@@ -7,6 +7,7 @@ eventDate: "2026-09-05/2026-11-03"
 hideEventBox: true
 hotels:
   - "hilton-tokyo-bay"
+lastmod: 2026-08-30
 draft: false
 ---
 <p>東京迪士尼度假區公認飯店「<strong>希爾頓東京灣</strong>」的Lounge O，將於2026年9月5日（六）至11月3日（二·假日）舉辦萬聖節甜點自助餐「<strong>Gothic Palace（哥德宮殿）</strong>」。</p>
@@ -24,6 +25,8 @@ draft: false
 <h2>飯店秋季活動的選擇之一</h2>
 
 <p>會場入口附近設有主題拍照區。希爾頓東京灣自9月1日起另在別的會場推出秋季下午茶——想與家人朋友熱鬧同樂就選自助餐，想悠閒度過午後則可選下午茶。</p>
+
+<p>浦安·舞濱一帶的變裝規則、換裝地點、飯店住宿企劃與其他萬聖節甜點，整理於<a href="/zh-tw/travel-guide/maihama-halloween/"><strong>2026浦安·舞濱萬聖節攻略</strong></a>。</p>
 
 {{< map q="ヒルトン東京ベイ 浦安市舞浜1-8" >}}
 

@@ -7,6 +7,7 @@ eventDate: "2026-09-05/2026-11-03"
 hideEventBox: true
 hotels:
   - "hilton-tokyo-bay"
+lastmod: 2026-08-30
 draft: false
 ---
 <p>Lounge O at <strong>Hilton Tokyo Bay</strong> — one of the official hotels next to Tokyo Disney Resort — holds a Halloween sweets buffet called <strong>"Gothic Palace"</strong> from September 5 to November 3, 2026.</p>
@@ -24,6 +25,8 @@ draft: false
 <h2>One of several autumn options at the hotel</h2>
 
 <p>A photo booth matching the theme is set up near the venue entrance. Hilton Tokyo Bay also starts an autumn afternoon tea at a separate venue from September 1 — the buffet suits a lively weekend visit with family or friends, while the afternoon tea suits a slower afternoon.</p>
+
+<p>For the wider picture — costume rules, where to change, hotel stay plans and other Halloween sweets across Urayasu and Maihama — see our <a href="/en/travel-guide/maihama-halloween/"><strong>Halloween in Urayasu &amp; Maihama 2026 guide</strong></a>.</p>
 
 {{< map q="ヒルトン東京ベイ 浦安市舞浜1-8" >}}
 

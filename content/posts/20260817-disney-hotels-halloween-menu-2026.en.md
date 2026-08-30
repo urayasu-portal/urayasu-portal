@@ -9,6 +9,7 @@ hotels:
   - "ambassador-hotel"
   - "miracosta"
   - "tdl-hotel"
+lastmod: 2026-08-30
 draft: false
 ---
 <p>Three Disney hotels in the Maihama area serve <strong>Disney Halloween special menus</strong> from September 15 to October 31, 2026.</p>
@@ -28,5 +29,7 @@ draft: false
 <h2>Picking a restaurant for your Halloween trip</h2>
 
 <p>The three hotels differ in style — buffet, course dining or casual sets — so you can choose by budget and occasion. Reservations for Disney hotel restaurants can fill up quickly during the Halloween season, so booking early is recommended.</p>
+
+<p>Beyond the Disney hotels, our <a href="/en/travel-guide/maihama-halloween/"><strong>Halloween in Urayasu &amp; Maihama 2026 guide</strong></a> compares costume rules, where to change, hotel stay plans and the rest of the area's Halloween sweets.</p>
 
 {{< map q="東京ディズニーリゾート" >}}

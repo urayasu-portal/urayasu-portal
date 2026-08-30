@@ -9,6 +9,7 @@ hotels:
   - "ambassador-hotel"
   - "miracosta"
   - "tdl-hotel"
+lastmod: 2026-08-30
 draft: false
 ---
 <p>舞濱地區的3間迪士尼飯店，將於2026年9月15日至10月31日推出「<strong>迪士尼萬聖節</strong>」限定菜單。</p>
@@ -28,5 +29,7 @@ draft: false
 <h2>萬聖節舞濱之旅的餐廳選擇</h2>
 
 <p>3間飯店的形式各異——自助餐、套餐或輕鬆的簡餐——可依預算與場合選擇。萬聖節期間迪士尼飯店餐廳的訂位相當搶手，建議及早預約。</p>
+
+<p>迪士尼飯店以外的資訊，可參閱<a href="/zh-tw/travel-guide/maihama-halloween/"><strong>2026浦安·舞濱萬聖節攻略</strong></a>，當中比較了變裝規則、換裝地點、飯店住宿企劃與其他限定甜點。</p>
 
 {{< map q="東京ディズニーリゾート" >}}
