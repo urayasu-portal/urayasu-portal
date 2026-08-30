@@ -19,6 +19,7 @@ sources:
     url: "https://www.viewhotels.co.jp/maihama/news/2026/afternoontea_halloween_night.html"
   - name: "舞浜ビューホテル by HULIC Maihama Halloween Stories"
     url: "https://www.viewhotels.co.jp/maihama/news/2026/maihama_halloween_stories.html"
+lastmod: 2026-08-30
 draft: false
 ---
 <p>舞浜ビューホテル by HULICで、2026年9月1日（火）から10月31日（土）まで、アフタヌーンティー「Halloween Night」が提供されます。10月24日・25日は対象外です。</p>
@@ -40,6 +41,8 @@ draft: false
 <p>9月4日からはハロウィーン仕様の客室が登場し、10月24日・25日にはスイーツビュッフェ「Trick or Sweets！」も開催。宿泊しなくても楽しめるスイーツやフォトスポットも予定されています。</p>
 
 <p>ホテルの宿泊・アクセス情報は、<a href="/travel-guide/hotels/maihama-view-hotel/">舞浜ビューホテル by HULICのホテルガイド</a>でも紹介しています。</p>
+
+<p>浦安・舞浜エリアのハロウィーンスイーツやホテル企画は、<a href="/travel-guide/maihama-halloween/"><strong>浦安・舞浜ハロウィーンガイド2026</strong></a>で横断的に比較できます。</p>
 
 {{< map q="舞浜ビューホテル by HULIC 浦安市舞浜1-34" >}}
 

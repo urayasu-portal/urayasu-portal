@@ -20,6 +20,7 @@ sources:
     url: "https://urayasu.brightonhotels.co.jp/restaurant/lanes/"
   - name: "浦安ブライトンホテル東京ベイ 季節のおすすめメニュー"
     url: "https://urayasu.brightonhotels.co.jp/restaurant/lanes/recommend.html"
+lastmod: 2026-08-30
 draft: false
 ---
 <p>新浦安駅直結の浦安ブライトンホテル東京ベイで、2026年9月1日（火）から秋限定スイーツが登場します。</p>
@@ -41,6 +42,8 @@ draft: false
 <p>新浦安駅から外に出ずにアクセスしやすいホテルなので、宿泊客だけでなく、地元での手土産や誕生日・記念日のケーキを探す際にも選択肢になりそうです。</p>
 
 <p>浦安・舞浜エリアのホテル情報は、<a href="/travel-guide/hotels/">浦安・舞浜ホテルガイド</a>でも紹介しています。</p>
+
+<p>市内のほかのホテルのハロウィーンスイーツやビュッフェは、<a href="/travel-guide/maihama-halloween/"><strong>浦安・舞浜ハロウィーンガイド2026</strong></a>でまとめて比較できます。</p>
 
 {{< map q="浦安ブライトンホテル東京ベイ" >}}
 

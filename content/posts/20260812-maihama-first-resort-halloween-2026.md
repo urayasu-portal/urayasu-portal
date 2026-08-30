@@ -19,6 +19,7 @@ sources:
     url: "https://www.maihamahotel-firstresort.jp/stay-plan/halloween-spooky-night-plan-2026/"
   - name: "株式会社ファーストリゾート プレスリリース"
     url: "https://prtimes.jp/main/html/rd/p/000000072.000040733.html"
+lastmod: 2026-08-30
 draft: false
 ---
 <p>東京ベイ舞浜ホテル ファーストリゾートで、2026年9月15日（火）から10月31日（土）まで、ハロウィーン仕様の客室に泊まれる「ハロウィーン・スプーキーナイトステイ」が提供されます。</p>
@@ -38,6 +39,8 @@ draft: false
 <p>東京ベイ舞浜ホテル ファーストリゾートは、浦安市舞浜1-6にある東京ディズニーリゾート・オフィシャルホテルです。浦安ぽーたるの<a href="/travel-guide/hotels/maihama-hotel-first-resort/">東京ベイ舞浜ホテル ファーストリゾート宿泊ガイド</a>では、客室や館内設備、パークへのアクセスなども紹介しています。</p>
 
 <p>テーマパークだけでなく、ホテルに戻ったあとも季節感のある時間を楽しみたい人には、宿泊先選びの選択肢の一つになりそうです。</p>
+
+<p>オフィシャルホテル5館共通の限定ポーチ付きプランや、ほかのホテルのハロウィーン企画は<a href="/travel-guide/maihama-halloween/"><strong>浦安・舞浜ハロウィーンガイド2026</strong></a>で比較できます。</p>
 
 {{< map q="東京ベイ舞浜ホテル ファーストリゾート 千葉県浦安市舞浜1-6" >}}
 
