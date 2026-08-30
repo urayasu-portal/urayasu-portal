@@ -13,6 +13,9 @@ tags:
 description: "バルドラール浦安はFリーグカップ1回戦で立川と4-4、PK戦2-4で敗退。一時4-2とリードしましたが終盤に追いつかれました。次戦は9月5日のホーム・名古屋戦です。"
 eventDate: "2026-08-28"
 hideEventBox: true
+cover:
+  image: /images/posts/bardral.jpg
+  alt: "【浦安】バルドラール浦安、Fリーグカップ初戦でPK敗退"
 draft: false
 ---
 <p>バルドラール浦安プリメーロは、2026年8月28日（金）に長崎・HAPPINESS ARENAで行われたメットライフ生命Fリーグカップ2026の1回戦で立川アスレティックFCと対戦しました。</p>
