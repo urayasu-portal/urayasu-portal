@@ -189,13 +189,30 @@ Google Search Console で以下を実施する。
 2. URL検査 → インデックス登録をリクエスト
 3. lastmod を更新した既報9本は sitemap 経由で自動再クロールされるため個別申請は不要
 
-### Phase 4: 多言語版（公開後2〜3日以内）
+### Phase 4: 多言語版（2026-08-30 完了）
 
-| # | 作業 | 完了条件 |
+| # | 作業 | 状態 |
 |---|---|---|
-| 4-1 | zh-tw 版作成（読者優先順位: 台湾が最上位。タイトル語彙は zh-tw の検索意図優先） | 構造が ja と同一で公開 |
-| 4-2 | en 版作成 | 同上 |
-| 4-3 | 多言語トピックス（2026-08-30新設の枠）との連携確認・必要なら選抜記事に追加 | 導線確認済み |
+| 4-1 | zh-tw 版作成 | ✅ `maihama-halloween.zh-tw.md`。タイトル「2026浦安·舞濱萬聖節攻略｜變裝期間·換裝地點·飯店企劃與限定甜點」 |
+| 4-2 | en 版作成 | ✅ `maihama-halloween.en.md`。タイトル「Halloween in Urayasu & Maihama 2026 \| Costume Rules, Where to Change, Hotel Events & Sweets」 |
+| 4-3 | 旅行ガイドトップの言語分岐を更新 | ✅ ja 限定 → **ja / en / zh-tw** の3言語表示に変更（zh・ko は未訳のため非表示を維持） |
+
+**Phase 4 の検証結果**
+
+| 検証 | ja | en | zh-tw |
+|---|---|---|---|
+| 内部リンク / DEAD | 43 / 0 | 33 / 0 | 33 / 0 |
+| h2 / h3 / table / tr | 9 / 26 / 4 / 21 | 同一 | 同一 |
+| 記事本文の li（本文＋出典） | 26 ＋ 11 | 同一 | 同一 |
+| FAQPage JSON-LD | 6問 | 6問 | 6問 |
+| hreflang | ja / en / zh-Hant-TW / x-default が3言語すべてで相互参照 | | |
+| トップの季節カード | ja・en・zh-tw に表示、zh・ko には非表示（意図どおり） | | |
+
+**Phase 4 で採用した判断**
+
+- **多言語版から ja の posts へはリンクしない**。posts は大半が未翻訳のため、代わりに各言語で実在する**ホテル個別ページ**（`/en/travel-guide/hotels/...` 等）へ誘導した。翻訳済みの2本（`hilton-tokyo-bay-gothic-palace-2026`・`disney-hotels-halloween-menu-2026`）のみ各言語版へリンク。結果として en / zh-tw のリンク数は ja より少ないが DEAD は 0
+- 構造（見出し・表・分岐）は CLAUDE.md のルールどおり3言語で同一。比較表・診断カード・「谷間」期間の警告もすべて同じ位置に配置
+- zh・ko は未訳。翻訳時は `layouts/travel-guide/list.html` の季節カード条件に足すこと（テンプレートにコメント記載済み）
 
 ### Phase 5: 公開後の更新運用（〜11月）
 

@@ -186,12 +186,12 @@
     <div class="tg-purpose-title">{{ if $isEN }}Day trips into Tokyo{{ else if $isZH }}去东京市区{{ else if $isKO }}도쿄 시내로{{ else if $isZHTW }}去東京市區{{ else }}都心の観光地へ{{ end }}</div>
     <div class="tg-purpose-desc">{{ if $isEN }}Asakusa, Shibuya, Skytree — routes &amp; fares{{ else if $isZH }}浅草·涩谷·晴空塔的路线与车费{{ else if $isKO }}아사쿠사·시부야·스카이트리 경로와 요금{{ else if $isZHTW }}淺草·澀谷·晴空塔的路線與車資{{ else }}浅草・渋谷・スカイツリーへの行き方{{ end }}</div>
   </a>
-  {{/* 季節企画（日本語のみ）。多言語版を公開したら言語分岐を外す */}}
-  {{- if eq .Lang "ja" }}
+  {{/* 季節企画。ja / en / zh-tw のみ記事が存在する（zh・ko 未訳）。翻訳を追加したら条件に足す */}}
+  {{- if or (eq .Lang "ja") $isEN $isZHTW }}
   <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/maihama-halloween/" | absLangURL }}">
     <i class="ti ti-ghost-2" aria-hidden="true"></i>
-    <div class="tg-purpose-title">ハロウィーンガイド2026</div>
-    <div class="tg-purpose-desc">仮装の着替え場所・ホテル企画・限定スイーツ</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Halloween guide 2026{{ else if $isZHTW }}2026萬聖節攻略{{ else }}ハロウィーンガイド2026{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Costume rules, where to change, hotel events{{ else if $isZHTW }}變裝規則·換裝地點·飯店企劃{{ else }}仮装の着替え場所・ホテル企画・限定スイーツ{{ end }}</div>
   </a>
   {{- end }}
 </div>
