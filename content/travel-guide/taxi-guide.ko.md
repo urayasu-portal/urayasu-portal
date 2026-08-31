@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 택시 가이드 | 승차장·공항 정액(우라야스·마이하마·신우라야스)"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-09-01
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "역별(우라야스·신우라야스·마이하마) 택시 승차장과 배차 회사, 하네다·나리타 공항행 정액 요금, 우라야스 지역 휠체어·복지 택시 이용 팁을 소개합니다."
 tags:
@@ -34,7 +34,7 @@ faq:
     a: "일반 택시도 보통 유모차와 짐을 실을 수 있지만, 짐이 많으면 밴 차량을 지정해야 할 수 있습니다. 예약 시 짐 상황을 알려주세요."
   - q: "디즈니 파크 폐장 후 택시를 바로 잡을 수 있나요?"
     a: "폐장 후와 비 오는 날에는 수요가 급증해 기다려야 할 수 있습니다. 충분한 시간을 두거나 호텔 셔틀, 디즈니 리조트 라인, 노선버스를 대안으로 두세요."
-factChecked: "2026-08-11"
+factChecked: "2026-09-01"
 ---
 
 이 가이드는 역별 택시 승차장과 배차 회사, 공항 정액 택시 요금, 우라야스·신우라야스·마이하마 지역의 휠체어·복지 택시 이용 팁을 소개합니다.
@@ -98,7 +98,7 @@ factChecked: "2026-08-11"
 |---|---|
 | <a href="https://chiba.0152.jp/" target="_blank" rel="noopener">히노데 다이이치 교통</a> | 047-328-4530 |
 | <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">우라야스 택시</a> | 047-701-2000 |
-| <a href="https://kunugiyama.net/" target="_blank" rel="noopener">구누기야마 교통</a> | 047-442-1515 |
+| 구누기야마 교통 | 047-442-1515 |
 | <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">미쓰야 에미타스 택시</a> | 0120-566-678 |
 | <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">도요 택시</a> | 047-397-3222 |
 | <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">게이세이 택시 중앙</a> | 047-495-5519 |

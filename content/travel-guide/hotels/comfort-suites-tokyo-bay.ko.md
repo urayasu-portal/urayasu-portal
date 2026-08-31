@@ -2,7 +2,7 @@
 title: "컴포트 스위트 도쿄 베이 | 셔틀이 파크 폐장 30분 후까지 운행·초등학생 이하 무료·무료 짐 보관(체크인 전 가능)"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-01"
-lastmod: 2026-06-17
+lastmod: 2026-09-01
 description: "현지 미디어가 직접 다녀온 컴포트 스위트 도쿄 베이(Choice Hotels) 리뷰. TDL/TDS 매일 무료 셔틀——파크가 22:00 전 폐장하면 셔틀이 폐장 30분 후까지 운행. 312객실. 초등 6학년 이하 어린이 무료(객실당 최대 2명). 체크인 전 무료 셀프 짐 보관. 전관 무료 Wi-Fi."
 area: "신우라야스 지역"
 tags:
@@ -27,7 +27,7 @@ noDate: true
 | 지역 | 신우라야스 (비즈니스 호텔) |
 | 객실 수 | 312 |
 | 체크인 / 체크아웃 | 15:00 / 11:00 |
-| 공식 사이트 | [choicehotels.com(컴포트 스위트)](https://www.choicehotels.com/japan/urayasu-city/comfort-suites-hotels/jp085) |
+| 공식 사이트 | [choice-hotels.jp(컴포트 스위트)](https://choice-hotels.jp/suites/tokyobay/) |
 
 ---
 

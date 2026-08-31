@@ -2,7 +2,7 @@
 title: "東京灣凱富套房飯店 | 接駁車運行至樂園閉園後30分鐘‧國小生以下免費入住‧免費行李寄放（入住前可用）"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-01"
-lastmod: 2026-06-17
+lastmod: 2026-09-01
 description: "本地媒體實地評測東京灣凱富套房飯店（Choice Hotels）。TDL/TDS每日免費接駁車——樂園22:00前閉園時，接駁車運行至閉園後30分鐘。312間客房。國小六年級以下兒童免費入住（每房最多2名）。入住前可免費使用自助行李寄放櫃。全館免費Wi-Fi。"
 area: "新浦安地區"
 tags:
@@ -27,7 +27,7 @@ noDate: true
 | 區域 | 新浦安（商務飯店） |
 | 客房數 | 312 |
 | 入住 / 退房 | 15:00 / 11:00 |
-| 官方網站 | [choicehotels.com（凱富套房）](https://www.choicehotels.com/japan/urayasu-city/comfort-suites-hotels/jp085) |
+| 官方網站 | [choice-hotels.jp（凱富套房）](https://choice-hotels.jp/suites/tokyobay/) |
 
 ---
 

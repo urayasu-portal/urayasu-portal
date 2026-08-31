@@ -1,8 +1,8 @@
 ---
 title: "浦安市の子ども向け屋内・公共の遊び場まとめ｜雨の日・暑い日にも使える親子のおでかけガイド"
 date: 2026-06-07T10:00:00+09:00
-lastmod: 2026-08-01
-factChecked: "2026-08-01"
+lastmod: 2026-09-01
+factChecked: "2026-09-01"
 categories:
   - "子育て・教育"
 tags:
@@ -185,7 +185,7 @@ aliases:
     <p class="lg-art-card-desc">未就学の親子から小学生・中高生まで、世代に分けて過ごせる施設。未就学児と保護者は午前9時〜午後1時、小学生以上は初回に登録のうえ利用します。対象は市内在住・在勤・在学のおおむね22歳までです。</p>
     <ul class="lg-art-card-meta"><li><b>所在地</b><span>浦安市東野一丁目</span></li><li><b>対象</b><span>未就学〜おおむね22歳（市内在住・在勤・在学）</span></li><li><b>料金</b><span>無料</span></li></ul>
     <div class="lg-art-badges"><span class="lg-art-badge is-teal">雨の日OK</span><span class="lg-art-badge">未就学〜中高生</span></div>
-    <div style="margin-top:10px"><a class="lg-art-btn" href="https://www.city.urayasu.lg.jp/kodomo/seishonen/torikumi/1048026.html" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> 公式ページ</a></div>
+    <div style="margin-top:10px"><a class="lg-art-btn" href="{{< relref "posts/浦安駅前に子どもと若者の居場所「こども・青少.md" >}}"><i class="ti ti-article" aria-hidden="true"></i> 施設の紹介記事</a></div>
   </div>
 </div>
 

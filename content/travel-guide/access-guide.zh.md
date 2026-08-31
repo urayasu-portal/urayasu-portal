@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼·浦安交通指南 | 从机场·东京站出发的路线"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-01
 slug: "urayasu-maihama-access-guide"
 badge: "交通"
 description: "比较从羽田机场、成田机场、东京站前往浦安站·新浦安站·舞滨站·东京迪士尼度假区的电车·机场大巴·出租车路线。含成田第3航站楼（LCC）·羽田第3航站楼抵达时的走法、回程日提示，以及轮椅·婴儿车·大型行李旅客注意事项。"
@@ -39,7 +39,7 @@ faq:
     a: "从机场直达酒店选机场大巴比较方便，时间可控性高则选电车。在东京站换乘京叶线时，请预留额外步行时间。"
   - q: "迪士尼乐园闭园后能方便地叫到出租车吗？"
     a: "闭园后和雨天出租车需求会激增，可能需要等待。也请考虑酒店班车、路线巴士和打车软件。"
-factChecked: "2026-08-16"
+factChecked: "2026-09-01"
 ---
 
 <div class="access-journey">
@@ -208,7 +208,7 @@ factChecked: "2026-08-16"
 
 ## 参考来源
 
-- <a href="https://www.limousinebus.co.jp/ch1/" target="_blank" rel="noopener">东京空港交通（机场利木津巴士）</a>
+- <a href="https://www.limousinebus.co.jp/zh-cn/" target="_blank" rel="noopener">东京空港交通（机场利木津巴士）</a>
 - <a href="https://www.jreast.co.jp/sc/" target="_blank" rel="noopener">JR东日本</a>
 - <a href="https://www.tokyometro.jp/tcn/" target="_blank" rel="noopener">东京地铁</a>
 - <a href="https://www.tokyodisneyresort.jp/tc/" target="_blank" rel="noopener">东京迪士尼度假区官方网站</a>

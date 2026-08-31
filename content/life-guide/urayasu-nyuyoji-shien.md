@@ -3,9 +3,9 @@ title: "【浦安市】乳幼児期の子育て支援ガイド｜健診・予防
 slug: "urayasu-nyuyoji-shien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:10:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-01
 newsTags: ["子育て", "子ども"]
-factChecked: "2026-07-15"
+factChecked: "2026-09-01"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "乳幼児", "健診", "予防接種", "浦安市"]
@@ -94,12 +94,12 @@ sources:
 <h3>理由を問わない一時預かり（半日・1日利用）</h3>
 <p>理由を問わず、半日または1日単位で子どもを預けられる事業です。</p>
 <p><strong>対象：</strong>市内在住の乳幼児（施設ごとの条件あり）</p>
-{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/hoiku/1000818.html" >}}理由を問わない一時預かり（浦安市公式）{{< /gov-link >}}
+{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/hoiku/1048347/1000818.html" >}}理由を問わない一時預かり（浦安市公式）{{< /gov-link >}}
 
 <h3>一時預かり（非定型・緊急・私的事由）</h3>
 <p>就労・就学・出産・病気・介護などで家庭での保育が難しいとき、保育園・認定こども園などで一時的に預けられる事業です。</p>
 <p><strong>対象：</strong>家庭での保育が一時的に難しい市内在住の乳幼児</p>
-{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/hoiku/1000813.html" >}}一時預かり（浦安市公式）{{< /gov-link >}}
+{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/hoiku/1048347/1041328.html" >}}一時預かり（浦安市公式）{{< /gov-link >}}
 
 <h3>うらやすファミリー・サポート・センター</h3>
 <p>子どもの送迎や預かりなどを、地域で「お願いしたい人」と「手伝える人」が会員同士で助け合う仕組みです。利用には事前の会員登録が必要です。</p>

@@ -1,7 +1,7 @@
 ---
 title: "Taxi Guide for Tokyo Disney Resort Area | Stands & Flat-Rate Airport Taxis (Urayasu & Maihama)"
 date: 2026-06-19T00:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-09-01
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "Taxi stands and dispatch companies by station (Urayasu, Shin-Urayasu, Maihama), flat-rate fares to Haneda and Narita airports, and tips for wheelchair-accessible and welfare taxis in Urayasu."
 tags:
@@ -35,7 +35,7 @@ faq:
     a: "Standard taxis can usually accommodate strollers and luggage, but wagon-style vehicles may be needed for larger loads. Specify your luggage when booking."
   - q: "Can I get a taxi immediately after Disney park closing?"
     a: "Demand spikes after closing and in rainy weather. For guaranteed service, allow extra time or check hotel shuttles, the Disney Resort Line, and local buses as backup options."
-factChecked: "2026-08-11"
+factChecked: "2026-09-01"
 ---
 
 This guide covers taxi stands and dispatch companies by station, flat-rate airport taxi fares, and tips for wheelchair-accessible and welfare taxis in the Urayasu, Shin-Urayasu, and Maihama areas.
@@ -101,7 +101,7 @@ Listed in the Chiba Taxi Association's station directory:
 |---|---|
 | <a href="https://chiba.0152.jp/" target="_blank" rel="noopener">Hinode Daiichi Kotsu</a> | 047-328-4530 |
 | <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">Urayasu Taxi</a> | 047-701-2000 |
-| <a href="https://kunugiyama.net/" target="_blank" rel="noopener">Kunugiyama Kotsu</a> | 047-442-1515 |
+| Kunugiyama Kotsu | 047-442-1515 |
 | <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">Mitsuya Emitas Taxi</a> | 0120-566-678 |
 | <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">Toyo Taxi</a> | 047-397-3222 |
 | <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">Keisei Taxi Central</a> | 047-495-5519 |

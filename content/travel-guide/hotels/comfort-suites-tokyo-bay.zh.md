@@ -2,7 +2,7 @@
 title: "东京湾凯富套房酒店 | 班车运行至乐园闭园后30分钟·小学生以下免费入住·免费行李寄存（入住前可用）"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-01"
-lastmod: 2026-06-17
+lastmod: 2026-09-01
 description: "本地媒体实地评测东京湾凯富套房酒店（Choice Hotels）。TDL/TDS每日免费班车——乐园22:00前闭园时，班车运行至闭园后30分钟。312间客房。小学6年级以下儿童免费入住（每房最多2名）。入住前可免费使用自助行李寄存。全馆免费Wi-Fi。"
 area: "新浦安地区"
 tags:
@@ -27,7 +27,7 @@ noDate: true
 | 区域 | 新浦安（商务酒店） |
 | 客房数 | 312 |
 | 入住 / 退房 | 15:00 / 11:00 |
-| 官方网站 | [choicehotels.com（凯富套房）](https://www.choicehotels.com/japan/urayasu-city/comfort-suites-hotels/jp085) |
+| 官方网站 | [choice-hotels.jp（凯富套房）](https://choice-hotels.jp/suites/tokyobay/) |
 
 ---
 

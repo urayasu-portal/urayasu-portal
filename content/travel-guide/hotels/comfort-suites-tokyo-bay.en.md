@@ -2,7 +2,7 @@
 title: "Comfort Suites Tokyo Bay | Shuttle Runs Until 30 Min After Park Closing, Free Self-Cloakroom, Children Sleep Free"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-01"
-lastmod: 2026-07-22
+lastmod: 2026-09-01
 description: "Local review of Comfort Suites Tokyo Bay (Choice Hotels). TDL/TDS free shuttle daily — if park closes by 22:00, shuttle runs until 30 min after closing. 312 rooms. Children through elementary school 6th grade sleep free (up to 2 per room). Free self-cloakroom from before check-in. Free Wi-Fi throughout."
 tags:
   - Hotel
@@ -27,7 +27,7 @@ Comfort Suites Tokyo Bay (Choice Hotels). A free shuttle to TDL and TDS runs dai
 | Area | Shin-Urayasu (Business Hotel) |
 | Rooms | 312 |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | [choicehotels.com (EN)](https://www.choicehotels.com/japan/urayasu-city/comfort-suites-hotels/jp085) |
+| Official Website | [choice-hotels.jp (Japanese)](https://choice-hotels.jp/suites/tokyobay/) |
 
 ---
 
