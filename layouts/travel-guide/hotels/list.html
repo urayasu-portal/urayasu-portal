@@ -16,6 +16,9 @@
     <span class="tg-hotels-eyebrow">{{ i18n "hl_eyebrow2" }}</span>
   </div>
   <h1 class="tg-hotels-title">{{ i18n "hl_title" }}</h1>
+  <div class="hg-meta">
+    {{- partial "meta-badges.html" . }}
+  </div>
   <p class="tg-hotels-lead">{{ i18n "hl_lead" (dict "total" $total) | safeHTML }}</p>
   <div class="tg-hotels-stats">
     <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $total }}</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_hotels" }}</span></div>

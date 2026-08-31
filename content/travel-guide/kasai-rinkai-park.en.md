@@ -53,7 +53,7 @@ Cross the footbridge to **Nishi-nagisa**, a calm artificial beach where local fa
 
 ### Renewal in progress
 
-A brand-new aquarium building is under construction next to the current one as part of a long-term renewal (as of July 2026 the existing aquarium operates normally). Check the official site for the latest status before visiting.
+A brand-new aquarium is under construction on the adjacent site. The Tokyo Metropolitan Government plans to open it in **September 2028**; until then the current aquarium operates normally (as of September 2026). The closing date of the current facility depends on when the animals are moved and has not been announced yet. Check the official site for the latest status before visiting.
 
 ## Practical information
 
