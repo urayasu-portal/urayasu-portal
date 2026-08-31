@@ -1,7 +1,7 @@
 ---
 title: "Hoshino Resorts BEB5 Tokyo Bay | Opened June 2024, 1955 America Vintage Theme, In-House Lawson, 339 Parking ¥500/12hrs"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Hoshino Resorts BEB5 Tokyo Bay (opened June 2024, Hoshino Resorts' first Chiba location). 638 rooms in 23 types. 1955 America vintage diner theme. In-house Lawson convenience store. 339 parking spaces ¥500/12hrs (the lowest rate among area hotels). Shuttle 'Bus Number 1955' to TDR approx. 30 min. No large communal bath. Price range ¥18,000–¥50,000."
 tags:
@@ -59,7 +59,7 @@ Dedicated free shuttle '1955' to TDR, approx. 30 min (daily; schedule on officia
 Confirm walking distance and bus options from Shin-Urayasu Station on the official website.
 
 ### To the Airport
-From "Shin-Urayasu Station" bus stop (South Exit, stop H; confirm walking time or hotel shuttle): Haneda approx. 40–45 min, ¥1,300. Narita approx. 60 min (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+From "Shin-Urayasu Station" bus stop (South Exit, stop H; confirm walking time or hotel shuttle): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}}. Narita approx. 60 min (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

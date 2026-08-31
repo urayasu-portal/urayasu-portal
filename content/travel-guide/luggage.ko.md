@@ -3,7 +3,7 @@ title: "도쿄 디즈니 주변 호텔 수하물 보관·배송 가이드｜체�
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
 lastmod: 2026-08-16
-factChecked: "2026-08-16"
+factChecked: "2026-09-01"
 description: "도쿄 디즈니 리조트 주변 호텔의 수하물 보관과 배송 정리. 디즈니 호텔·공식 호텔은 마이하마역에서 호텔까지 무료 배송, 파트너 호텔은 Bon Voyage 유료 카운터(800엔/개)를 이용. 체크인 전 보관, 체크아웃 후 보관, 맡길 수 없는 물품까지 공식 정보 기반으로 안내."
 tags:
   - Hotel
@@ -39,8 +39,8 @@ faq:
 
 | 방향 | 디즈니 호텔·공식 호텔 | 파트너·독립 호텔 |
 |---|---|---|
-| **역→호텔**(도착일) | **무료**(웰컴 센터 호텔 서비스 카운터) | **유료 약 800엔/개**(Bon Voyage 1층 카운터) |
-| **호텔→역**(출발일) | **유료** "스테이션 딜리버리"(다수 800엔/개) | 보통 벨데스크에서 택배 발송 |
+| **역→호텔**(도착일) | **무료**(웰컴 센터 호텔 서비스 카운터) | **유료 약 {{< fact "bon_voyage.fee" >}}/개**(Bon Voyage 1층 카운터) |
+| **호텔→역**(출발일) | **유료** "스테이션 딜리버리"(다수 {{< fact "station_delivery.fee" >}}/개) | 보통 벨데스크에서 택배 발송 |
 | **파크→호텔** | 서비스 없음 | 서비스 없음 |
 
 모든 서비스에서 **귀중품·깨지기 쉬운 물품·음료·정밀 기기**(노트북·카메라 등)는 맡길 수 없습니다.
@@ -62,13 +62,13 @@ faq:
 
 ## Bon Voyage 유료 배송(파트너·독립 호텔)
 
-**파트너 호텔** 등의 투숙객은 JR 마이하마역 앞 **"Bon Voyage" 1층 홈 딜리버리 서비스 카운터**를 이용합니다: **1개 약 800엔**, 접수는 개점부터 **15:00경**까지, 역→호텔 편도입니다. [호텔 에미온 도쿄 베이](/ko/travel-guide/hotels/emion-tokyo-bay/), [우라야스 브라이튼 호텔](/ko/travel-guide/hotels/brighton-tokyo-bay/) 등이 대상입니다.
+**파트너 호텔** 등의 투숙객은 JR 마이하마역 앞 **"Bon Voyage" 1층 홈 딜리버리 서비스 카운터**를 이용합니다: **1개 약 {{< fact "bon_voyage.fee" >}}**, 접수는 개점부터 **15:00경**까지, 역→호텔 편도입니다. [호텔 에미온 도쿄 베이](/ko/travel-guide/hotels/emion-tokyo-bay/), [우라야스 브라이튼 호텔](/ko/travel-guide/hotels/brighton-tokyo-bay/) 등이 대상입니다.
 
 ---
 
 ## 출발일: 호텔→역 "스테이션 딜리버리"
 
-반대 방향은 **스테이션 딜리버리**입니다. 체크아웃 후 호텔에 짐을 맡기고(**접수는 7:00–12:30**), 역으로 가는 길에 **웰컴 센터 1층 인도 카운터**(약 **13:00–21:00**)에서 수령합니다. **유료·1개 800엔**——디즈니 호텔 각 관, [힐튼](/ko/travel-guide/hotels/hilton-tokyo-bay/), [쉐라톤](/ko/travel-guide/hotels/sheraton-grande-tokyo-bay/), [퍼스트 리조트](/ko/travel-guide/hotels/maihama-hotel-first-resort/), [마이하마 뷰 호텔](/ko/travel-guide/hotels/maihama-view-hotel/)이 800엔을 명시하고 있습니다. 요금 미공개 호텔도 있으니 벨데스크에서 확인하세요.
+반대 방향은 **스테이션 딜리버리**입니다. 체크아웃 후 호텔에 짐을 맡기고(**접수는 7:00–12:30**), 역으로 가는 길에 **웰컴 센터 1층 인도 카운터**(약 **13:00–21:00**)에서 수령합니다. **유료·1개 {{< fact "station_delivery.fee" >}}**——디즈니 호텔 각 관, [힐튼](/ko/travel-guide/hotels/hilton-tokyo-bay/), [쉐라톤](/ko/travel-guide/hotels/sheraton-grande-tokyo-bay/), [퍼스트 리조트](/ko/travel-guide/hotels/maihama-hotel-first-resort/), [마이하마 뷰 호텔](/ko/travel-guide/hotels/maihama-view-hotel/)이 {{< fact "station_delivery.fee" >}}을 명시하고 있습니다. 요금 미공개 호텔도 있으니 벨데스크에서 확인하세요.
 
 ---
 

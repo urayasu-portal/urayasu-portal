@@ -1,7 +1,7 @@
 ---
 title: "Hyatt Regency Tokyo Bay | Dedicated Limousine Stop Added Dec 2024, Club Lounge, Chromecast in All Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Hyatt Regency Tokyo Bay. Dedicated airport limousine bus stop added December 20, 2024 (direct airport access with zero-minute walk). Hyatt brand with club lounge. All rooms with separated bathroom and wash area. Children 12 and under sleep free. Chromecast in all rooms. Price range ¥25,000–¥60,000."
 tags:
@@ -57,7 +57,7 @@ Free shuttle bus (not eligible for TDR official benefits), approx. 20 min.
 About 10 min on foot to Shin-Urayasu Station. Also accessible by hotel shuttle (confirm schedule). Covered walkway access to the Shin-Urayasu Station area via the deck (confirm exact route at front desk).
 
 ### To the Airport
-**Dedicated airport limousine stop at the hotel entrance (added December 20, 2024).** Haneda: approx. 40–45 min, ¥1,300. Narita: approx. 60 min, ¥2,900 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+**Dedicated airport limousine stop at the hotel entrance (added December 20, 2024).** Haneda: approx. 40–45 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 60 min, {{< fact "limousine.narita_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

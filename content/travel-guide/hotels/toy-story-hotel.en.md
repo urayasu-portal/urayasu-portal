@@ -1,7 +1,7 @@
 ---
 title: "Toy Story Hotel | Andy's Room Theme Disney Hotel, Close to Bayside Station, Fantasy Springs Entrance from 10:00"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Toy Story Hotel (Disney Hotel opened 2022). 595 rooms with Andy's room theme. Adjacent to Bayside Station (Disney Resort Line). Fantasy Springs entrance accessible from 10:00 (1 hour after park opening). 3F coin laundry. In-house shop 6:00–24:00. Airport limousine at the hotel front. Price range ¥45,000–¥65,000."
 tags:
@@ -59,7 +59,7 @@ Bayside Station + Disney Resort Line to Tokyo DisneySea Station.
 Via Disney Resort Line from Bayside Station to Resort Gateway Station, then to Maihama Station, approx. 10–15 min total.
 
 ### To the Airport
-**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, ¥1,300. Narita: approx. 62–67 min, ¥2,900 (advance reservation recommended during peak seasons).
+**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 62–67 min, {{< fact "limousine.narita_fare" >}} (advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

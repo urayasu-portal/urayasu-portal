@@ -2,7 +2,7 @@
 title: "2026浦安·舞濱萬聖節攻略｜變裝期間·換裝地點·飯店企劃與限定甜點"
 date: 2026-08-30T06:00:00+09:00
 lastmod: 2026-08-30
-factChecked: "2026-08-30"
+factChecked: "2026-09-01"
 slug: "maihama-halloween"
 badge: "萬聖節"
 tags:

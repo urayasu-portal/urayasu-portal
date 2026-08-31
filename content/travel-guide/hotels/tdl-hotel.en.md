@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disneyland Hotel | 1-Minute Covered Walkway to TDL, Happy Entry 15 Min, Breakfast from 6:30am — The Prestige TDL Hotel"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Tokyo Disneyland Hotel. 706 rooms. Covered walkway to TDL entrance (approx. 1 min). Happy Entry early admission (15 min before general). Breakfast from 6:30am. Concierge lounge. Nearest convenience store 6 min on foot (7-Eleven). Airport limousine at front. Price range ¥55,000–¥100,000+."
 tags:
@@ -58,7 +58,7 @@ Via the Disney Resort Line (paid).
 From the hotel, the Disney Resort Cruiser (free) or Disney Resort Line runs to Maihama Station area. Walking directly to Maihama Station is possible but takes approximately 10–15 min.
 
 ### To the Airport
-**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, ¥1,300. Narita: approx. 62–67 min, ¥2,900 (advance reservation recommended during peak seasons).
+**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 62–67 min, {{< fact "limousine.narita_fare" >}} (advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

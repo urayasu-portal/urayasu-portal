@@ -1,7 +1,7 @@
 ---
 title: "Hilton Tokyo Bay | 24-Hour Convenience Store In-House, Large Official Hotel Near Tokyo Disney Resort"
 date: 2026-06-16T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Hilton Tokyo Bay. 24-hour in-house convenience store, family rooms for 2–6 guests, dedicated airport limousine stop at the hotel entrance, and 24-hour coin laundry in B1. One of the most family-friendly Official Hotels near Tokyo Disney Resort."
 tags:
@@ -59,7 +59,7 @@ Free shuttle + Disney Resort Line to Tokyo DisneySea Station, approx. 10 min.
 A free shuttle bus runs to Maihama Station in about 7 minutes. The stop is at the rotary to the right of Maihama Station South Exit. Walking is not practical; the shuttle or a taxi is the realistic option.
 
 ### To the Airport
-**The hotel has a dedicated airport limousine bus stop** at the entrance. Haneda Airport: approx. 60 min, ¥1,300. Narita Airport: approx. 90 min, ¥1,300. Boarding and alighting at the hotel entrance — convenient even with heavy luggage.
+**The hotel has a dedicated airport limousine bus stop** at the entrance. Haneda Airport: approx. 60 min, {{< fact "limousine.haneda_fare" >}}. Narita Airport: approx. 90 min, {{< fact "limousine.haneda_fare" >}}. Boarding and alighting at the hotel entrance — convenient even with heavy luggage.
 > Note: Advance reservation required for the limousine bus (reserved seating).
 
 ### To Central Tokyo

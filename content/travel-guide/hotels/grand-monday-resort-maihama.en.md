@@ -1,7 +1,7 @@
 ---
 title: "GRAND MONday Resort Tokyo Bay Maihama | Opens July 18, 2026 — All-Oceanfront Rooms & Year-Round Lagoon Pool"
 date: 2026-07-06T21:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of GRAND MONday Resort Tokyo Bay Maihama. Opening July 18, 2026 — the first property of the new GRAND MONday Resort brand. 140 rooms, all facing Tokyo Bay, year-round outdoor lagoon pool 'MAIHAMA LAGOON' with barrel sauna, large public bath & magma-spa sauna. Honest notes on shuttle frequency and no Happy Entry."
 tags:
@@ -55,7 +55,7 @@ Free shuttle between the hotel and Maihama Station (South Exit stop C-3), about 
 Free shuttle (~7–9 min). Alternatively Keisei Bus route 20 (Chidori loop) to "Chidori-Nishi," a 1-minute walk from the hotel. Taxi ~9 minutes.
 
 ### To the Airport
-No dedicated limousine stop. Use limousine buses from Maihama Station (Haneda ¥1,300) or trains via Tokyo Station.
+No dedicated limousine stop. Use limousine buses from Maihama Station (Haneda {{< fact "limousine.haneda_fare" >}}) or trains via Tokyo Station.
 
 ### To Central Tokyo
 From Maihama Station, about 15–20 minutes to Tokyo Station on the JR Keiyo Line.

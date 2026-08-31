@@ -1,7 +1,7 @@
 ---
 title: "Tokyo DisneySea Hotel MiraCosta | The Only Hotel Located Inside TDS"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-08-29"
+factChecked: "2026-09-01"
 lastmod: 2026-08-29
 description: "Local review of Tokyo DisneySea Hotel MiraCosta. The only hotel physically inside Tokyo DisneySea, with harbor-view rooms, Happy Entry early admission, and Spa & Pool Terme Venezia. The most exclusive Disney Hotel experience — and what to be aware of."
 tags:
@@ -60,7 +60,7 @@ Direct from the in-park private entrance (entry from 1 hour after opening).
 To Maihama Station: the Disney Resort Line (paid) to Resort Gateway Station is the standard route. No walking route is officially provided.
 
 ### To the Airport
-**Dedicated airport limousine stop at the hotel entrance**. Haneda: approx. 40–50 min, ¥1,300. Narita: approx. 75 min, ¥2,900 (Tokyo Airport Transport / Keiseibus Chiba West joint operation; advance reservation recommended during peak seasons). Bell Desk handles limousine reservations.
+**Dedicated airport limousine stop at the hotel entrance**. Haneda: approx. 40–50 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 75 min, {{< fact "limousine.narita_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West joint operation; advance reservation recommended during peak seasons). Bell Desk handles limousine reservations.
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

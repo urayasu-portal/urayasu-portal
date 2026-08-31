@@ -3,7 +3,7 @@ title: "东京迪士尼周边饭店行李寄存与配送指南｜入住前寄存
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
 lastmod: 2026-08-16
-factChecked: "2026-08-16"
+factChecked: "2026-09-01"
 description: "东京迪士尼度假区周边饭店的行李寄存与配送攻略。迪士尼饭店·官方饭店可从舞滨站免费配送行李到饭店，合作饭店使用Bon Voyage付费柜台（800日元/件）。入住前寄存、退房后寄存、不可寄存物品等，均基于官方信息整理。"
 tags:
   - Hotel
@@ -39,8 +39,8 @@ faq:
 
 | 方向 | 迪士尼饭店·官方饭店 | 合作饭店·独立饭店 |
 |---|---|---|
-| **车站→饭店**（抵达日） | **免费**（欢迎中心饭店服务柜台） | **付费 约800日元/件**（Bon Voyage一楼柜台） |
-| **饭店→车站**（离店日） | **付费**"车站配送服务"（多为800日元/件） | 通常经行李部寄快递 |
+| **车站→饭店**（抵达日） | **免费**（欢迎中心饭店服务柜台） | **付费 约{{< fact "bon_voyage.fee" >}}/件**（Bon Voyage一楼柜台） |
+| **饭店→车站**（离店日） | **付费**"车站配送服务"（多为{{< fact "station_delivery.fee" >}}/件） | 通常经行李部寄快递 |
 | **乐园→饭店** | 无此服务 | 无此服务 |
 
 所有服务均**不可寄存贵重物品、易碎品、饮料、精密设备**（电脑·相机等）。
@@ -62,13 +62,13 @@ faq:
 
 ## Bon Voyage付费配送（合作饭店·独立饭店）
 
-**合作饭店**等的住客使用JR舞滨站前**"Bon Voyage"一楼的宅配服务柜台**：**约800日元/件**，受理时间为开店至**15:00左右**，方向为车站→饭店单程。[东京湾艾米恩酒店](/zh/travel-guide/hotels/emion-tokyo-bay/)、[浦安布莱顿酒店](/zh/travel-guide/hotels/brighton-tokyo-bay/)等适用。
+**合作饭店**等的住客使用JR舞滨站前**"Bon Voyage"一楼的宅配服务柜台**：**约{{< fact "bon_voyage.fee" >}}/件**，受理时间为开店至**15:00左右**，方向为车站→饭店单程。[东京湾艾米恩酒店](/zh/travel-guide/hotels/emion-tokyo-bay/)、[浦安布莱顿酒店](/zh/travel-guide/hotels/brighton-tokyo-bay/)等适用。
 
 ---
 
 ## 离店日：饭店→车站"车站配送服务"
 
-反方向则是**车站配送服务（Station Delivery）**：退房后在饭店寄存行李（**受理时间7:00–12:30**），前往车站途中在**欢迎中心1楼领取柜台**（约**13:00–21:00**）取件。**付费·800日元/件**——迪士尼饭店各馆、[希尔顿东京湾](/zh/travel-guide/hotels/hilton-tokyo-bay/)、[喜来登](/zh/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[第一度假村](/zh/travel-guide/hotels/maihama-hotel-first-resort/)、[舞滨观景酒店](/zh/travel-guide/hotels/maihama-view-hotel/)均明示800日元。部分饭店未公开价格，请向行李部确认。
+反方向则是**车站配送服务（Station Delivery）**：退房后在饭店寄存行李（**受理时间7:00–12:30**），前往车站途中在**欢迎中心1楼领取柜台**（约**13:00–21:00**）取件。**付费·{{< fact "station_delivery.fee" >}}/件**——迪士尼饭店各馆、[希尔顿东京湾](/zh/travel-guide/hotels/hilton-tokyo-bay/)、[喜来登](/zh/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[第一度假村](/zh/travel-guide/hotels/maihama-hotel-first-resort/)、[舞滨观景酒店](/zh/travel-guide/hotels/maihama-view-hotel/)均明示{{< fact "station_delivery.fee" >}}。部分饭店未公开价格，请向行李部确认。
 
 ---
 

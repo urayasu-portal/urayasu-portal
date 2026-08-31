@@ -1,7 +1,7 @@
 ---
 title: "LAGENT HOTEL Tokyo Bay | 2024 Rakuten Silver Award, Adjacent Convenience Store Open 24 Hours, 190 Parking Spaces"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of LAGENT HOTEL Tokyo Bay. Won the Rakuten Travel Silver Award 2024. 24-hour convenience store adjacent to the hotel. 190 parking spaces (first-come). Up to 6-person rooms. 4 coin laundry machines. Return shuttle from TDR runs until approx. 21:00. No large communal bath. Price range ¥8,000–¥20,000."
 tags:
@@ -57,7 +57,7 @@ Free hotel shuttle, approx. 25 min (return service until ~21:00).
 Confirm walking distance and bus options from Shin-Urayasu Station on the official website.
 
 ### To the Airport
-From "Shin-Urayasu Station" bus stop (South Exit, stop H): Haneda approx. 40–45 min, ¥1,300 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). Narita also available.
+From "Shin-Urayasu Station" bus stop (South Exit, stop H): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). Narita also available.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

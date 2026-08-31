@@ -1,7 +1,7 @@
 ---
 title: "Maihama Eurasia | The Only Natural Hot Spring in the Maihama Resort Area, Shuttles from 3 Stations, Day-Trip Spa Available"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Maihama Eurasia. The only hotel in the Maihama resort zone with a natural hot spring open to the public. Outdoor, cave, sauna, stone bath, and foot bath. Shuttle buses from 3 stations (Maihama/Urayasu/Shin-Urayasu). Day-trip hot spring use also available. Nearest convenience store 10 min walk. Check-out 10:00."
 tags:
@@ -56,7 +56,7 @@ Hotel-Maihama Station (C-3) free shuttle ~5 min (every ~20 min), then Disney Res
 Shuttle from Maihama Station (approx. 10–15 min). Also from Urayasu Station and Shin-Urayasu Station (shuttle route serves all three).
 
 ### To the Airport
-From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, ¥1,300. Narita: approx. 75 min, ¥2,900.
+From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 75 min, {{< fact "limousine.narita_fare" >}}.
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

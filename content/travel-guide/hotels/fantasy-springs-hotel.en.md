@@ -1,7 +1,7 @@
 ---
 title: "Fantasy Springs Hotel | Newest Disney Hotel (2024), Grand Chateau Direct Fantasy Springs Access + 8 Attraction Tickets"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-08-29"
+factChecked: "2026-09-01"
 lastmod: 2026-08-29
 description: "Local review of Fantasy Springs Hotel. Disney Hotel opened June 2024 with two tiers: Grand Chateau (56 rooms, direct access to Fantasy Springs + 8 attraction tickets, luxury pricing) and Fantasy Chateau (419 rooms, deluxe). Happy Entry applies to both. A complete guide to the newest TDS Disney Hotel."
 tags:
@@ -58,7 +58,7 @@ Direct from the private 'Grand Chateau Gateway' entrance (Grand guests); 15-min 
 To Maihama Station: the Disney Resort Line (paid) to Resort Gateway Station. No practical walking route.
 
 ### To the Airport
-**Dedicated airport limousine bus stop at the hotel.** Haneda: approx. 40–50 min, ¥1,300. Narita: approx. 75 min, ¥2,900 (advance reservation recommended during peak seasons).
+**Dedicated airport limousine bus stop at the hotel.** Haneda: approx. 40–50 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 75 min, {{< fact "limousine.narita_fare" >}} (advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

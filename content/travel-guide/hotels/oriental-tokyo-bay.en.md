@@ -1,7 +1,7 @@
 ---
 title: "Hotel Oriental Tokyo Bay | 1-Minute from Shin-Urayasu Station, 69 Shuttles/Day, 24-Hour In-House Convenience Store, Cinderella Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Hotel Oriental Tokyo Bay (TDR Partner Hotel). Deck connection to Shin-Urayasu Station (1 min walk). 69 free shuttle buses per day — the highest frequency among Partner Hotels. 24-hour in-house convenience store. 2F coin laundry. Cinderella Castle themed rooms. 8.5m projection mapping. ¥16,500+."
 tags:
@@ -57,7 +57,7 @@ Free shuttle bus (up to 69/day, first bus 7:00), approx. 15 min.
 **Deck connection to Shin-Urayasu Station: approx. 1 min (deck bridge)**. Same as Brighton — both are directly deck-connected to the station. Convenient for train travelers even in rain.
 
 ### To the Airport
-From "Shin-Urayasu Station" bus stop (South Exit, stop H; 1–2 min from hotel via deck): Haneda approx. 40–45 min, ¥1,300. Narita approx. 60 min, ¥2,900 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+From "Shin-Urayasu Station" bus stop (South Exit, stop H; 1–2 min from hotel via deck): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}}. Narita approx. 60 min, {{< fact "limousine.narita_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 > Note: No dedicated hotel stop; a short walk to Shin-Urayasu Station bus stop is required.
 
 ### To Central Tokyo

@@ -1,7 +1,7 @@
 ---
 title: "Hiyori Hotel Maihama | Foot Massager + Shoe Dryer in All Rooms, 30-Item Buffet Breakfast, Shuttle from Maihama South Exit C3"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-09-01"
 lastmod: 2026-06-17
 description: "Local review of Hiyori Hotel Maihama (Higashino district). Foot massager and shoe dryer in all guest rooms. Infused water server free of charge. 30+ item Japanese/Western buffet breakfast. 40 parking spaces ¥1,000/night (first-come). Shuttle from Maihama Station South Exit C3: approx. 10 min."
 tags:
@@ -57,7 +57,7 @@ Hotel-Maihama Station free shuttle ~10 min, then Disney Resort Line to Tokyo Dis
 Hotel shuttle to/from Maihama Station South Exit stop C3: approx. 10 min.
 
 ### To the Airport
-From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, ¥1,300. Narita: approx. 75 min, ¥2,900 (confirm schedule before departure).
+From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 75 min, {{< fact "limousine.narita_fare" >}} (confirm schedule before departure).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

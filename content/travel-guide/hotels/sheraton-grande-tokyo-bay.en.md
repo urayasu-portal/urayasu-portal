@@ -1,7 +1,7 @@
 ---
 title: "Sheraton Grande Tokyo Bay Hotel | Large Bath 'Maiyu' with Sauna, Year-Round Indoor Pool, OASIS Recreation Facility, Official Hotel"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Sheraton Grande Tokyo Bay Hotel (TDR Official Hotel). Large bath 'Maiyu' (marble interior, sauna). Year-round indoor pool + summer outdoor pool. OASIS recreation facility (mini golf, flight simulator, etc.). Two chapels. Bayside Station 1-min walk. Airport limousine at front. Price range ¥30,000–¥80,000+."
 tags:
@@ -56,7 +56,7 @@ Bayside Station + Disney Resort Line to Tokyo DisneySea Station (1-min walk to s
 Via Disney Resort Line from Bayside Station to Resort Gateway Station, then to Maihama Station. Or free shuttle bus (confirm schedule on official website).
 
 ### To the Airport
-**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, ¥1,300. Narita: approx. 62–67 min, ¥2,900 (advance reservation recommended during peak seasons).
+**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 62–67 min, {{< fact "limousine.narita_fare" >}} (advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

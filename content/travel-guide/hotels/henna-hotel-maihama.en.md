@@ -1,7 +1,7 @@
 ---
 title: "Henn na Hotel Maihama Tokyo Bay | World's First Robot Hotel (Guinness Record), Dinosaur Check-In, Deep Bathtub in All Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Henn na Hotel Maihama Tokyo Bay. Guinness World Record for world's first robot hotel. Dinosaur robot at front desk; Henn na robot in all rooms. All rooms with bath/toilet separate and deep soaking tub. Shuttle to Maihama Station: approx. 7–10 min. Price range ¥11,200–¥79,600."
 tags:
@@ -59,7 +59,7 @@ Hotel-Maihama Station free shuttle, daily (reduced/rescheduled from July 1, 2026
 Hotel shuttle to Maihama Station: approx. 7–10 min. Hotel is not within walkable distance of Maihama Station.
 
 ### To the Airport
-From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, ¥1,300. Narita: approx. 75 min, ¥2,900 (confirm details on site).
+From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 75 min, {{< fact "limousine.narita_fare" >}} (confirm details on site).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

@@ -1,7 +1,7 @@
 ---
 title: "Hotel Emion Tokyo Bay | The Only Natural Hot Spring Among TDR Partner Hotels, Welcome Baby Certified, Rooms for Up to 6"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Hotel Emion Tokyo Bay. The only natural hot spring (saline spring, amber-colored) among TDR's four Partner Hotels. Welcome Baby certified for infants. 584 rooms including Family Wonder up to 6 guests. Free bike rental. 7 min from Shin-Urayasu Station by shuttle."
 tags:
@@ -57,7 +57,7 @@ Partner Hotel free shuttle, approx. 15 min (every 10-20 min in the morning).
 Hotel shuttle to Shin-Urayasu Station: approx. 7 min. Or approx. 15 min on foot from the station's North Exit A2.
 
 ### To the Airport
-From "Shin-Urayasu Station" bus stop (South Exit, stop H; approx. 7 min by hotel shuttle + 3 min walk): Haneda approx. 40–45 min, ¥1,300 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). Narita also available.
+From "Shin-Urayasu Station" bus stop (South Exit, stop H; approx. 7 min by hotel shuttle + 3 min walk): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). Narita also available.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

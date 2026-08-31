@@ -1,7 +1,7 @@
 ---
 title: "Tokyo DisneySea Hotel MiraCosta — No, Tokyo Bay Grand Nikko | Japan's Largest Hotel Atrium, Pink European Exterior, Official Hotel"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Grand Nikko Tokyo Bay Maihama. Japan's largest hotel atrium (37m / 4,300 m²), South European pink exterior. TDR Official Hotel. 319 parking spaces with EV chargers. Dedicated airport limousine stop. Price range ¥30,000–¥80,000+."
 tags:
@@ -56,7 +56,7 @@ Free shuttle + Disney Resort Line to Tokyo DisneySea Station (shuttle approx. 2-
 Free shuttle to Maihama Station (approx. 7–10 min). Shuttle also connects to Bayside Station (Disney Resort Line). The pink hotel exterior is visible from the Keiyo Line — a recognizable landmark.
 
 ### To the Airport
-**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, ¥1,300. Narita: approx. 62–67 min, ¥2,900 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+**Dedicated airport limousine stop at the hotel entrance.** Haneda: approx. 40–50 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 62–67 min, {{< fact "limousine.narita_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

@@ -1,7 +1,7 @@
 ---
 title: "Tokyo DisneySea Celebration Hotel: Discover | Budget Disney Hotel with Beds for 4, Adventure & Discovery Theme"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Tokyo DisneySea Celebration Hotel: Discover. Among the most affordable Disney Hotels, with standard rooms sleeping 4 (Happy Entry included). Themed after TDS's adventure and discovery concept. Key notes: bus access from Shin-Urayasu, no Narita limousine, 11:00 checkout."
 tags:
@@ -58,7 +58,7 @@ Free shuttle bus, approx. 20 min.
 From **Shin-Urayasu Station South Exit stop D, take Route 11 "Symbol Road Line" (bound for Sogo Koen) to "Bayside Hotel Area" stop**, then 2 min on foot. Approx. 15 min, ¥147 IC / ¥150 cash. Bus is essential as walking is far.
 
 ### To the Airport
-From "Bayside Hotel Area" stop (approx. 2 min from hotel) to Haneda Airport: approx. 60 min, ¥1,300 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). **No direct limousine to Narita.** For Narita, use JR from Shin-Urayasu Station.
+From "Bayside Hotel Area" stop (approx. 2 min from hotel) to Haneda Airport: approx. 60 min, {{< fact "limousine.haneda_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). **No direct limousine to Narita.** For Narita, use JR from Shin-Urayasu Station.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

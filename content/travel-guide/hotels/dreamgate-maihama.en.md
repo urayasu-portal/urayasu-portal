@@ -1,7 +1,7 @@
 ---
 title: "Dreamgate Maihama | Directly Connected to JR Maihama Station, NewDays Inside, Children 6 and Under Sleep Free"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Dreamgate Maihama. Main building: directly connected left of Maihama Station ticket gate. Annex: directly connected right. NewDays convenience store inside (6:30–23:00). Children 6 and under sleep free. 3 coin laundry machines per building (room status viewable on TV). Ground-floor Saizeriya for breakfast. Price range ¥15,000–¥35,000."
 tags:
@@ -57,7 +57,7 @@ Directly connected to JR Maihama Station, then Disney Resort Line to Tokyo Disne
 **Direct connection** to JR Maihama Station. Main building left of the ticket gate, Annex right of the ticket gate. No exterior walk needed even in rain.
 
 ### To the Airport
-From Maihama Station bus stop (steps from the hotel exit): Haneda approx. 40 min, ¥1,300. Narita approx. 75 min, ¥2,900 (advance reservation recommended during peak seasons).
+From Maihama Station bus stop (steps from the hotel exit): Haneda approx. 40 min, {{< fact "limousine.haneda_fare" >}}. Narita approx. 75 min, {{< fact "limousine.narita_fare" >}} (advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line (direct line).

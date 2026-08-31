@@ -1,7 +1,7 @@
 ---
 title: "Mitsui Garden Hotel Prana Tokyo Bay | Rooftop Sea-View Large Bath Free for Guests, 24-Hour Convenience Store In-House, Airport Limousine at the Door"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-09-01"
 lastmod: 2026-06-17
 description: "Local review of Mitsui Garden Hotel Prana Tokyo Bay (TDR Partner Hotel). Rooftop large bath with ocean view (free for guests, 18:00–9:00). 24-hour convenience store inside the hotel. Dedicated airport limousine stop on the premises. Up to 6-person rooms. Shuttle from Shin-Urayasu Station approx. 20 min, up to 10-minute intervals. Price range ¥18,000+."
 tags:
@@ -56,7 +56,7 @@ Partner Hotel free shuttle (no reservation), approx. 20 min (up to every 10 min)
 Shuttle from Shin-Urayasu Station: approx. 20 min to the hotel (confirm schedule and stop location on official website). Or local bus from Shin-Urayasu Station South Exit.
 
 ### To the Airport
-**Dedicated airport limousine stop on the hotel premises.** Haneda: approx. 40–45 min, ¥1,300. Narita: approx. 60 min, ¥2,900 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). No need to walk to Shin-Urayasu Station bus stop.
+**Dedicated airport limousine stop on the hotel premises.** Haneda: approx. 40–45 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 60 min, {{< fact "limousine.narita_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). No need to walk to Shin-Urayasu Station bus stop.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

@@ -1,7 +1,7 @@
 ---
 title: "Disney Ambassador Hotel | Chef Mickey Character Dining, Close to Ikspiari — A Hollywood-Themed Disney Hotel"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Disney Ambassador Hotel. Exclusive character dining 'Chef Mickey' (Mickey Mouse at breakfast), proximity to Ikspiari, family rooms for up to 5 adults, and Happy Entry early admission. A 1930s Hollywood Art Deco Disney Hotel — with honest notes on what to expect."
 tags:
@@ -59,7 +59,7 @@ Disney Resort Cruiser + Disney Resort Line.
 About 8 minutes on foot to Maihama Station (official estimate). Part of the route via Ikspiari has roof coverage, making rainy days more manageable. A realistic walking distance if you aren't carrying much luggage.
 
 ### To the Airport
-**Dedicated airport limousine stop at the hotel entrance**. Haneda: approx. 40–50 min, ¥1,300. Narita: approx. 62–67 min, ¥2,900 (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+**Dedicated airport limousine stop at the hotel entrance**. Haneda: approx. 40–50 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 62–67 min, {{< fact "limousine.narita_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

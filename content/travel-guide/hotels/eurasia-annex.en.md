@@ -1,7 +1,7 @@
 ---
 title: "Maihama Eurasia Annex | Southern France Theme, Discounted Hot Spring Access at Main Building, Shuttle from Maihama 15 Min"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Maihama Eurasia Annex. Nice/Côte d'Azur theme; guests receive a 50% discount on the natural hot spring at the main Eurasia building (campaign valid Apr–Jul 2026, others vary by period). Shuttle from Maihama Station: approx. 15 min. Check-out 11:00. Price range ¥8,000–¥20,000."
 tags:
@@ -56,7 +56,7 @@ Hotel-Maihama Station free shuttle ~15 min, then Disney Resort Line to Tokyo Dis
 Hotel shuttle to Maihama Station: approx. 15 min.
 
 ### To the Airport
-From Maihama Station bus stop, airport limousine bus to Haneda: approx. 40 min, ¥1,300. Narita: approx. 75 min, ¥2,900 (advance reservation recommended during peak seasons).
+From Maihama Station bus stop, airport limousine bus to Haneda: approx. 40 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 75 min, {{< fact "limousine.narita_fare" >}} (advance reservation recommended during peak seasons).
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

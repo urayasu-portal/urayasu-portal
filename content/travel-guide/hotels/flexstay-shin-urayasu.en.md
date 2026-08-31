@@ -1,7 +1,7 @@
 ---
 title: "Flexstay Inn Shin-Urayasu | Extended-Stay Hotel with In-Room Mini Kitchen, 14:00 Check-in"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
+factChecked: "2026-09-01"
 lastmod: 2026-06-17
 description: "Local review of Flexstay Inn Shin-Urayasu (MyStays group). All rooms with mini kitchen, 14:00 check-in (early for the Shin-Urayasu area), convenience store 2 minutes on foot, reserved parking ¥1,630/night. Practical budget option for extended stays in Shin-Urayasu."
 tags:
@@ -56,7 +56,7 @@ Free shuttle bus (schedule on official website), or local bus ~10-15 min from Ma
 About 15 minutes on foot from Shin-Urayasu Station North Exit A2 (approx. 1.2 km). Or take a local bus from the A2 exit (approx. 5 min, "Shin-Urayasu Station North Exit" stop). From Maihama Station by local bus: approx. 10–15 min to "Sankopo Nishiguchi" stop, then 2 min on foot.
 
 ### To the Airport
-No dedicated limousine stop. From "Shin-Urayasu Station" bus stop (South Exit, stop H; 15 min on foot or 5 min by bus): approx. 40–45 min to Haneda Airport, ¥1,300 (Tokyo Airport Transport / Keiseibus Chiba West). Narita also from the same stop.
+No dedicated limousine stop. From "Shin-Urayasu Station" bus stop (South Exit, stop H; 15 min on foot or 5 min by bus): approx. 40–45 min to Haneda Airport, {{< fact "limousine.haneda_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West). Narita also from the same stop.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

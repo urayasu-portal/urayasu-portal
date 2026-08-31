@@ -3,7 +3,7 @@ title: "Luggage Storage & Baggage Delivery near Tokyo Disney Resort | Maihama & 
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
 lastmod: 2026-08-16
-factChecked: "2026-08-16"
+factChecked: "2026-09-01"
 description: "How luggage storage and baggage delivery really work at hotels near Tokyo Disneyland and DisneySea. The free station-to-hotel delivery for Disney & Official hotels, the paid Bon Voyage service, front-desk storage before check-in, and what's excluded — checked against official sources."
 tags:
   - Hotel
@@ -39,8 +39,8 @@ Most of the area's baggage services run through **JR Maihama Station**, the gate
 
 | Direction | Disney & Official hotels | Partner & independent hotels |
 |---|---|---|
-| **Station → hotel** (arrival day) | **Free** "Baggage Delivery" at the Welcome Center Hotel Service Counter | **Paid**, about **¥800/item**, at the Bon Voyage counter |
-| **Hotel → station** (departure) | **Paid** "Station Delivery" (Hilton and Maihama View list **¥800/item**) | Usually by courier from the bell desk |
+| **Station → hotel** (arrival day) | **Free** "Baggage Delivery" at the Welcome Center Hotel Service Counter | **Paid**, about **{{< fact "bon_voyage.fee" >}}/item**, at the Bon Voyage counter |
+| **Hotel → station** (departure) | **Paid** "Station Delivery" (Hilton and Maihama View list **{{< fact "station_delivery.fee" >}}/item**) | Usually by courier from the bell desk |
 | **Park → hotel** | Not offered | Not offered |
 
 All of these services exclude **valuables, fragile items, drinks, and precision devices** (laptops, cameras). Keep those with you.
@@ -64,13 +64,13 @@ This is one of the quiet perks of the Official-hotel tier: drop the bags at the 
 
 ## Paid Bon Voyage delivery (Partner & independent hotels)
 
-Guests at **Partner Hotels** and other independent hotels near Maihama use the paid **"Bon Voyage" home-delivery counter** by JR Maihama Station instead: about **¥800 per item**, reception from store opening until around **15:00**, one-way from the station to the hotel. Hotels that use this route include [Hotel Emion Tokyo Bay](/en/travel-guide/hotels/emion-tokyo-bay/) and [Urayasu Brighton Hotel Tokyo Bay](/en/travel-guide/hotels/brighton-tokyo-bay/).
+Guests at **Partner Hotels** and other independent hotels near Maihama use the paid **"Bon Voyage" home-delivery counter** by JR Maihama Station instead: about **{{< fact "bon_voyage.fee" >}} per item**, reception from store opening until around **15:00**, one-way from the station to the hotel. Hotels that use this route include [Hotel Emion Tokyo Bay](/en/travel-guide/hotels/emion-tokyo-bay/) and [Urayasu Brighton Hotel Tokyo Bay](/en/travel-guide/hotels/brighton-tokyo-bay/).
 
 ---
 
 ## Departure day: hotel-to-station "Station Delivery"
 
-Going the other way, the **Station Delivery** service lets you drop your bags at the hotel after check-out (**accepted 7:00–12:30**) and pick them up at the **Welcome Center 1st-floor counter** (roughly **13:00–21:00**) on your way to the station. It is a **paid** service at **¥800 per item** — listed by the Disney Hotels, [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/) and [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/); a few hotels don't publish the price, so confirm at the bell desk.
+Going the other way, the **Station Delivery** service lets you drop your bags at the hotel after check-out (**accepted 7:00–12:30**) and pick them up at the **Welcome Center 1st-floor counter** (roughly **13:00–21:00**) on your way to the station. It is a **paid** service at **{{< fact "station_delivery.fee" >}} per item** — listed by the Disney Hotels, [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/) and [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/); a few hotels don't publish the price, so confirm at the bell desk.
 
 ---
 

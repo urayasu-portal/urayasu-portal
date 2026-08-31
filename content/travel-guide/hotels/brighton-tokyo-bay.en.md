@@ -1,7 +1,7 @@
 ---
 title: "Urayasu Brighton Hotel Tokyo Bay | 1-Minute Walk from Shin-Urayasu Station, Up to 34 Shuttles Per Day to TDR"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-23
 description: "Local review of Urayasu Brighton Hotel Tokyo Bay. Covered deck connection to Shin-Urayasu Station (approx. 80m, 1 min). Up to 34 free shuttle buses per day from opening to after park closing. Luggage storage before check-in, 42 m² rooms, up to 5 guests. No large bath or coin laundry — key trade-offs covered honestly."
 tags:
@@ -67,7 +67,7 @@ Free Partner Hotel shuttle (up to 34/day), approx. 15 min.
 **Covered deck connection to Shin-Urayasu Station: approx. 1 min (approx. 80m)**. The closest station connection among all four Partner Hotels; no umbrella needed even in heavy rain. Very practical for guests with large suitcases.
 
 ### To the Airport
-Haneda: approx. 40–45 min, ¥1,300 from "Shin-Urayasu Station" bus stop (1–2 min walk from hotel, South Exit stop H). Narita: approx. 60 min, ¥2,900 from the same stop (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
+Haneda: approx. 40–45 min, {{< fact "limousine.haneda_fare" >}} from "Shin-Urayasu Station" bus stop (1–2 min walk from hotel, South Exit stop H). Narita: approx. 60 min, {{< fact "limousine.narita_fare" >}} from the same stop (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons).
 > Note: No dedicated hotel stop; a short walk to Shin-Urayasu Station bus stop is required.
 
 ### To Central Tokyo

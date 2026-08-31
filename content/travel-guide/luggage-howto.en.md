@@ -2,7 +2,7 @@
 title: "How to Send Your Luggage from Maihama Station to Your Hotel | Welcome Center & Bon Voyage, Step by Step"
 aliases: ["/travel-guide/hotels/luggage-howto/"]
 date: 2026-07-22T10:00:00+09:00
-factChecked: "2026-07-23"
+factChecked: "2026-09-01"
 description: "Arrive at JR Maihama Station, drop your bags, and head into the parks hands-free. A step-by-step guide to the free baggage delivery for Disney & Official hotels, the paid Bon Voyage counter for Partner hotels, and the return Station Delivery — with locations, hours, and fees."
 tags:
   - Hotel
@@ -36,7 +36,7 @@ For the bigger picture of *which* hotels use *which* system, see our [complete g
 |---|---|---|
 | Disney Hotels | **Free** | Welcome Center 2F |
 | Official Hotels | **Free** | Welcome Center 1F |
-| Partner Hotels | **Paid — ¥800/item** | Bon Voyage 1F |
+| Partner Hotels | **Paid — {{< fact "bon_voyage.fee" >}}/item** | Bon Voyage 1F |
 | Celebration Hotels | **Paid** (fee not published) | Bon Voyage 1F |
 | Other hotels | No station delivery | — |
 
@@ -76,7 +76,7 @@ As you leave the station ticket gates, look **ahead and to the right** for a dis
 Reception runs on your **check-in day**, from when Bon Voyage opens (hours are usually **8:00**–22:00) until **15:00**. Even on days when Bon Voyage requires an advance entry reservation for shopping, **baggage delivery needs no reservation** — just tell the staff at the entrance you'd like to use it.
 
 ### Step 3｜Drop your bags at the 1F counter
-Use the "Home Delivery Service Counter" on the store's 1st floor. The fee is **¥800 per item (tax included) for the four Partner Hotels**. Celebration Hotel guests use the same counter, but the **fee is not published** — confirm it on site. As in Pattern A, valuables, fragile items, precision devices, and drinks can't be sent.
+Use the "Home Delivery Service Counter" on the store's 1st floor. The fee is **{{< fact "bon_voyage.fee" >}} per item (tax included) for the four Partner Hotels**. Celebration Hotel guests use the same counter, but the **fee is not published** — confirm it on site. As in Pattern A, valuables, fragile items, precision devices, and drinks can't be sent.
 
 ### Step 4｜Head into the parks hands-free
 Your bags are delivered to your hotel the same day. As with Pattern A, the pick-up point and arrival time aren't published, so confirm at the front desk when you check in.
@@ -87,7 +87,7 @@ Your bags are delivered to your hotel the same day. As with Pattern A, the pick-
 
 Send your bags to the station after check-out and you can enjoy the final day hands-free too. This works for **Disney and Official hotels** (not Celebration Hotels).
 
-1. **Drop at the hotel**: after check-out, arrange it at the bell desk (**¥800 per item**; pay by cash, credit card, or some e-money). **The drop-off deadline is set by each hotel** (e.g. Sheraton takes bags at the 2F bell desk until **12:30**).
+1. **Drop at the hotel**: after check-out, arrange it at the bell desk (**{{< fact "station_delivery.fee" >}} per item**; pay by cash, credit card, or some e-money). **The drop-off deadline is set by each hotel** (e.g. Sheraton takes bags at the 2F bell desk until **12:30**).
 2. **Earlier is better**: at Maihama View Hotel, your drop-off time sets when pick-up opens (by 9:00 → from 13:00 / 9:00–10:30 → from 14:00 / 10:30–12:30 → from 15:30).
 3. **Collect at the Welcome Center 1F counter**: pick-up hours differ — **13:00–21:00 for Disney Hotels, until 20:00 for Official hotels**.
 4. **Mind the deadline**: bags left past the pick-up window are returned to the hotel (per Maihama View). Even if you're staying for the nighttime show, **collect your bags before wandering off after park close**.

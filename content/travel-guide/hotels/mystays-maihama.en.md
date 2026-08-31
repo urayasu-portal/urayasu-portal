@@ -1,7 +1,7 @@
 ---
 title: "MyStays Maihama | 6-Minute Walk to TDS (Closest in Area B), Foot Massager in All Rooms, Fresh-Baked Bread Breakfast"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of MyStays Hotel Maihama. Only 90 rooms — 6-minute walk to Tokyo DisneySea, the shortest walking distance among 'non-Disney-Hotel' properties in Area B. Foot massager in all rooms. Fresh-baked bread for breakfast. Check-out 10:00. Price range ¥5,000–¥20,000."
 tags:
@@ -57,7 +57,7 @@ Free shuttle bus, or via Maihama Station (schedule on the official PC site).
 Maihama Station: approx. 10–15 min on foot or by local transport.
 
 ### To the Airport
-From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, ¥1,300. Narita: approx. 75 min, ¥2,900.
+From Maihama Station bus stop, airport limousine to Haneda: approx. 40 min, {{< fact "limousine.haneda_fare" >}}. Narita: approx. 75 min, {{< fact "limousine.narita_fare" >}}.
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.

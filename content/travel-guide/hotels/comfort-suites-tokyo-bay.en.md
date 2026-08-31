@@ -1,7 +1,7 @@
 ---
 title: "Comfort Suites Tokyo Bay | Shuttle Runs Until 30 Min After Park Closing, Free Self-Cloakroom, Children Sleep Free"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
+factChecked: "2026-09-01"
 lastmod: 2026-07-22
 description: "Local review of Comfort Suites Tokyo Bay (Choice Hotels). TDL/TDS free shuttle daily — if park closes by 22:00, shuttle runs until 30 min after closing. 312 rooms. Children through elementary school 6th grade sleep free (up to 2 per room). Free self-cloakroom from before check-in. Free Wi-Fi throughout."
 tags:
@@ -57,7 +57,7 @@ Free hotel shuttle bus (runs until ~30 min after park closing).
 From Shin-Urayasu Station South Exit bus terminal, stop D: Tokyo Baycity Bus Routes 3 or 23 (bound for Sogo Koen), approx. 10 min to "Akemi 5-chome" stop, then 1 min on foot.
 
 ### To the Airport
-From "Bayside Hotel Area" bus stop (approx. 5 min walk): approx. 47–52 min to Haneda Airport, ¥1,300 (Tokyo Airport Transport / Keiseibus Chiba West; some departures may not stop — confirm). Narita also from same stop.
+From "Bayside Hotel Area" bus stop (approx. 5 min walk): approx. 47–52 min to Haneda Airport, {{< fact "limousine.haneda_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; some departures may not stop — confirm). Narita also from same stop.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line or Musashino Line.

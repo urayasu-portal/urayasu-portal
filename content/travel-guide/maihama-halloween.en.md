@@ -2,7 +2,7 @@
 title: "Halloween in Urayasu & Maihama 2026 | Costume Rules, Where to Change, Hotel Events & Sweets"
 date: 2026-08-30T06:00:00+09:00
 lastmod: 2026-08-30
-factChecked: "2026-08-30"
+factChecked: "2026-09-01"
 slug: "maihama-halloween"
 badge: "Halloween"
 tags:
