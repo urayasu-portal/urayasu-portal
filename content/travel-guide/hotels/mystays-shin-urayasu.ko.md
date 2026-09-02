@@ -1,8 +1,8 @@
 ---
 title: "마이스테이즈 신우라야스 컨퍼런스 센터 | 24시간 코인 세탁 200엔/회(지역 최저)·컨퍼런스 센터·7,500엔부터"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-06-17
+factChecked: "2026-09-02"
+lastmod: 2026-09-02
 description: "현지 미디어가 직접 다녀온 마이스테이즈 신우라야스 컨퍼런스 센터 리뷰. 175객실. 24시간 코인 세탁 단 200엔/회(세탁+건조), 지역 최저가 중 하나. 관내 컨퍼런스 센터. TDR행 셔틀은 저녁 한정(약 21:00–22:00 약 3편, 다른 마이스테이즈와 공용). 관내 편의점 없음. 가격 약 7,500엔부터."
 area: "신우라야스 지역"
 tags:
@@ -27,7 +27,7 @@ noDate: true
 | 지역 | 신우라야스 (비즈니스 호텔·컨퍼런스 센터) |
 | 객실 수 | 175 |
 | 체크인 / 체크아웃 | 15:00 / 11:00 |
-| 공식 사이트 | [mystays.com(신우라야스 CC)](https://www.mystays.com/en-us/facilities-hotel-mystays-shin-urayasu-cc-chiba/) |
+| 공식 사이트 | [iconia.co.jp(신우라야스 CC)](https://iconia.co.jp/en-us/hotel-mystays-shin-urayasu-cc-chiba) |
 
 ---
 

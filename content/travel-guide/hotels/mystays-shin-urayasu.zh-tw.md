@@ -1,8 +1,8 @@
 ---
 title: "新浦安MyStays會議中心飯店 | 24小時自助洗衣¥200/次（區域最低）·會議中心·¥7,500起"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-06-17
+factChecked: "2026-09-02"
+lastmod: 2026-09-02
 description: "本地媒體實地評測新浦安MyStays會議中心飯店。175間客房。24小時自助洗衣僅¥200/次（洗衣+烘乾），是區域最低價格之一。館內設會議中心。前往TDR的接駁車僅限傍晚（約21:00–22:00約3班，與其他MyStays共用）。無館內便利商店。價格約¥7,500起。"
 area: "新浦安地區"
 tags:
@@ -27,7 +27,7 @@ noDate: true
 | 區域 | 新浦安（商務飯店·會議中心） |
 | 客房數 | 175 |
 | 入住 / 退房 | 15:00 / 11:00 |
-| 官方網站 | [mystays.com（新浦安CC）](https://www.mystays.com/en-us/facilities-hotel-mystays-shin-urayasu-cc-chiba/) |
+| 官方網站 | [iconia.co.jp（新浦安CC）](https://iconia.co.jp/en-us/hotel-mystays-shin-urayasu-cc-chiba) |
 
 ---
 

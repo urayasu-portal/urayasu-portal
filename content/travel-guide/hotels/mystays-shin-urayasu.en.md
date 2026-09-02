@@ -1,8 +1,8 @@
 ---
 title: "MyStays Hotel Shin-Urayasu Conference Center | 24-Hour Coin Laundry ¥200, Conference Center, Budget Price in Shin-Urayasu"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-06-17
+factChecked: "2026-09-02"
+lastmod: 2026-09-02
 description: "Local review of MyStays Hotel Shin-Urayasu Conference Center. 175 rooms. 24-hour coin laundry (just ¥200 wash/dry cycle — cheapest in the area). Conference center on site. Evening-only TDR shuttle (3 departures approx. 21:00–22:00, shared with MyStays properties). No in-house convenience store. Price range ¥7,500+."
 tags:
   - Hotel
@@ -27,7 +27,7 @@ MyStays Hotel Shin-Urayasu Conference Center is a 175-room business hotel in the
 | Area | Shin-Urayasu (Business Hotel with Conference Center) |
 | Rooms | 175 |
 | Check-in / Check-out | 15:00 / 11:00 |
-| Official Website | [mystays.com (EN)](https://www.mystays.com/en-us/facilities-hotel-mystays-shin-urayasu-cc-chiba/) |
+| Official Website | [iconia.co.jp (EN)](https://iconia.co.jp/en-us/hotel-mystays-shin-urayasu-cc-chiba) |
 
 ---
 

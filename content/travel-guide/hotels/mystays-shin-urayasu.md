@@ -1,8 +1,8 @@
 ---
 title: "マイステイズ新浦安コンファレンスセンター｜コスパ最優先・朝食和洋ビュッフェ・コインランドリー24時間のビジネスホテル【地元レビュー】"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-06-17
+factChecked: "2026-09-02"
+lastmod: 2026-09-02
 description: "マイステイズ新浦安コンファレンスセンターを地元メディアがレビュー。通常期1室7,500円台〜の新浦安エリア最安値クラス。1Fレストラン「旬彩ダイニング四季菜」和洋ビュッフェ朝食（7:00〜9:30）・24時間コインランドリー・Wi-Fi完備。TDRシャトルは夜間3本のみで注意点も正直に解説。"
 area: "新町エリア"
 tags:
@@ -25,7 +25,7 @@ noDate: true
     <dt>チェックアウト</dt><dd>10:00</dd>
     <dt>価格の目安</dt><dd>1室 7,500〜20,000円（変動制・新浦安エリア最安値クラス）</dd>
   </dl>
-  <a class="hg-info-btn" href="https://mystays.com/hotel-shin-urayasu/">公式サイト</a>
+  <a class="hg-info-btn" href="https://iconia.co.jp/hotel-mystays-shin-urayasu-cc-chiba">公式サイト</a>
 </div>
 
 ## おすすめな人・向かない人

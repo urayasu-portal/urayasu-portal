@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼周边出租车指南 | 乘车点·机场定额（浦安·舞滨·新浦安）"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-09-01
+lastmod: 2026-09-02
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "按各车站（浦安·新浦安·舞滨）介绍出租车乘车点和派车公司、前往羽田·成田机场的定额费用，以及浦安地区轮椅·福祉出租车使用提示。"
 tags:
@@ -34,7 +34,7 @@ faq:
     a: "普通出租车通常可放置婴儿车和行李，但较大的行李量可能需要指定厢式车。预约时请说明行李情况。"
   - q: "迪士尼乐园闭园后能马上叫到出租车吗？"
     a: "闭园后和雨天需求激增，可能需要等待。建议预留充裕时间，或将酒店班车、迪士尼度假区线和路线巴士作为备选。"
-factChecked: "2026-09-01"
+factChecked: "2026-09-02"
 ---
 
 本指南按各车站介绍出租车乘车点和派车公司、机场定额出租车费用，以及浦安·新浦安·舞滨地区轮椅·福祉出租车的使用提示。
@@ -151,7 +151,7 @@ JR京叶·武蔵野线的车站，是新浦安·日出·明海·高洲地区湾�
 | <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">三矢Emitas出租车</a> | 0120-566-678 |
 | <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">浦安出租车</a> | 047-701-2000 |
 | <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">东洋出租车</a> | 047-397-3222 |
-| <a href="https://ytaxi.jp/" target="_blank" rel="noopener">八千代出租车</a> | 047-483-1234 |
+| <a href="https://yachiyotaxi.jp/" target="_blank" rel="noopener">八千代出租车</a> | 047-483-1234 |
 | <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">京成出租车中央</a> | 047-495-5519 |
 
 ※ 派车可用性·预约条件·费用因公司而异，请直接确认。
