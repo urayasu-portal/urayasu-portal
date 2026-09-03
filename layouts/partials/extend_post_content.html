@@ -88,6 +88,34 @@
   {{- $guideTitle = "浦安市の生活ガイド" }}
   {{- $guideUrl   = "/life-guide/" }}
   {{- $guideDesc  = "ごみ・防災・医療・公共施設・子育て・スポーツなど、浦安市での暮らしに役立つ情報を9テーマでまとめた保存版ガイドです。" }}
+{{- else }}
+  {{- /* 地名タグ フォールバック（SEO監査 Phase 1 / A-1・2026-09-04 追加）
+       上のテーマ判定すべてに外れた記事（大半はカテゴリ「イベント」）の受け皿。
+       特定ガイドではなくセクションのハブへ送るので誤誘導にならない。
+       重複防止: data/guide_map.yaml 側で related-guide.html のカードが出る記事では
+       ガイドへの箱が2つ並ぶため、ここでは出さない（$gmMatch で判定）。
+       行徳・妙典・南行徳・市川市は含めない（生活ガイドは浦安市の制度・施設に
+       特化しており、市川市側の記事には合わないため）。 */}}
+  {{- $gmMatch := false }}
+  {{- if .Params.guide }}{{ $gmMatch = true }}{{ end }}
+  {{- range hugo.Data.guide_map.mappings }}
+    {{- if gt (len (intersect .tags $tags)) 0 }}{{ $gmMatch = true }}{{ end }}
+  {{- end }}
+  {{- if not $gmMatch }}
+    {{- $travelTags := slice "舞浜" "舞浜駅" "東京ディズニーリゾート" "東京ディズニーランド" "東京ディズニーシー" "ディズニーリゾートライン" "ディズニー" "イクスピアリ" "シネマイクスピアリ" "舞浜ユーラシア" }}
+    {{- $lifeTags   := slice "浦安市" "浦安" "新浦安" "浦安駅" "新浦安駅" "浦安市役所" "高洲" "日の出" "明海" "富岡" "今川" "入船" "当代島" "猫実" "堀江" "北栄" "東野" "弁天" "美浜" "海楽" }}
+    {{- if gt (len (intersect $travelTags $tags)) 0 }}
+      {{- $guideEmoji = "ti-map-2" }}
+      {{- $guideTitle = "浦安・舞浜 旅行ガイド" }}
+      {{- $guideUrl   = "/travel-guide/" }}
+      {{- $guideDesc  = "舞浜エリアのホテル・アクセス・観光・グルメを地元目線でまとめた保存版ガイドです。" }}
+    {{- else if gt (len (intersect $lifeTags $tags)) 0 }}
+      {{- $guideEmoji = "ti-home" }}
+      {{- $guideTitle = "浦安市の生活ガイド" }}
+      {{- $guideUrl   = "/life-guide/" }}
+      {{- $guideDesc  = "ごみ・防災・医療・公共施設・子育て・スポーツなど、浦安市での暮らしに役立つ情報を9テーマでまとめた保存版ガイドです。" }}
+    {{- end }}
+  {{- end }}
 {{- end }}
 
 {{/* ──────────────────────────────────────────
