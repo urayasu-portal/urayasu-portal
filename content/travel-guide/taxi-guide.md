@@ -1,8 +1,8 @@
 ---
 title: "浦安市内のタクシー乗り場・空港定額タクシーガイド｜舞浜・新浦安・浦安から空港・ホテルへ"
 date: 2026-06-19T00:00:00+09:00
-lastmod: 2026-09-02
-factChecked: "2026-09-02"
+lastmod: 2026-09-03
+factChecked: "2026-09-03"
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "浦安駅・新浦安駅・舞浜駅のタクシー乗り場と配車会社一覧、羽田・成田空港への空港定額料金、UDタクシー・福祉タクシーの確認ポイントをまとめました。"
 tags:
@@ -99,7 +99,7 @@ faq:
 |---|---|
 | <a href="https://chiba.0152.jp/" target="_blank" rel="noopener">ヒノデ第一交通</a> | 047-328-4530 |
 | <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">浦安タクシー</a> | 047-701-2000 |
-| 櫟山交通 | 047-442-1515 |
+| 櫟山交通 | 047-355-1486 |
 | <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">三ツ矢エミタスタクシー</a> | 0120-566-678 |
 | <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">東洋タクシー</a> | 047-397-3222 |
 | <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">京成タクシーセントラル</a> | 047-495-5519 |

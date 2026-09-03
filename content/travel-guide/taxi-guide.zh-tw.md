@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼周邊計程車指南 | 搭乘處·機場定額（浦安·舞濱·新浦安）"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-09-02
+lastmod: 2026-09-03
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "依各車站（浦安·新浦安·舞濱）介紹計程車搭乘處和派車公司、前往羽田·成田機場的定額費用，以及浦安地區輪椅·福祉計程車使用提示。"
 tags:
@@ -34,7 +34,7 @@ faq:
     a: "普通計程車通常可放置嬰兒車和行李，但較大的行李量可能需要指定廂型車。預約時請說明行李情況。"
   - q: "迪士尼樂園閉園後能馬上叫到計程車嗎？"
     a: "閉園後和雨天需求激增，可能需要等待。建議預留充裕時間，或將飯店班車、迪士尼度假區線和路線巴士作為備選。"
-factChecked: "2026-09-02"
+factChecked: "2026-09-03"
 ---
 
 本指南依各車站介紹計程車搭乘處和派車公司、機場定額計程車費用，以及浦安·新浦安·舞濱地區輪椅·福祉計程車的使用提示。
@@ -98,7 +98,7 @@ factChecked: "2026-09-02"
 |---|---|
 | <a href="https://chiba.0152.jp/" target="_blank" rel="noopener">日出第一交通</a> | 047-328-4530 |
 | <a href="https://urayasutaxi.jp/" target="_blank" rel="noopener">浦安計程車</a> | 047-701-2000 |
-| 橡樹山交通 | 047-442-1515 |
+| 橡樹山交通 | 047-355-1486 |
 | <a href="https://mitsuya-emitas.co.jp/" target="_blank" rel="noopener">三矢Emitas計程車</a> | 0120-566-678 |
 | <a href="https://www.toyo-taxi.jp/" target="_blank" rel="noopener">東洋計程車</a> | 047-397-3222 |
 | <a href="https://keiseitaxi.jp/central/" target="_blank" rel="noopener">京成計程車中央</a> | 047-495-5519 |
