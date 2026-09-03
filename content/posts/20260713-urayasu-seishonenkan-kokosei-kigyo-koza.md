@@ -1,6 +1,7 @@
 ---
-title: "【浦安市】青少年館で高校生向け起業講座"
+title: "【浦安市】青少年館で高校生向け起業講座（続報）"
 date: 2026-07-13T07:00:00+09:00
+lastmod: 2026-09-04
 slug: "urayasu-seishonenkan-kokosei-kigyo-koza"
 categories:
   - "子育て・教育"
@@ -19,6 +20,8 @@ sources:
     url: "https://www.city.urayasu.lg.jp/events/kodomo/seishonen/1048605.html"
 draft: false
 ---
+{{< note >}}この記事は[7月3日に公開した告知記事](/posts/seishonenkan-kokosei-kigyo-koza-2026/)の続報です。開催時間、会場となる多目的ホール、申し込み開始日、市外在住の高校生の参加条件など、その後に判明した詳細を追記しています。{{< /note >}}
+
 <p>浦安市青少年館で、「高校生のための起業講座」が2026年7月29日（水）に開催されます。</p>
 
 <p>時間は13時から16時までで、会場は青少年館の多目的ホールです。対象は市内在住・在学の高校生で、市内参加者の友人であれば市外在住の高校生も参加できます。定員は先着9人、費用は不要です。</p>
