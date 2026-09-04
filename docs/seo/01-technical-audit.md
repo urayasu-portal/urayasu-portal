@@ -208,7 +208,7 @@ ja ガイド101本のうち、本文からの被リンクが0本なのは3件。
 
 | 項目 | 結果 |
 |---|---|
-| 内部リンク切れ | ユニーク2,804件中0件（検出1件は `/tools/post-tool.html` 内のテンプレート変数 `${slug}` で実リンクではない） |
+| 内部リンク切れ | ⚠️ **この判定は誤りだった**（2026-09-04 訂正）。検査時の `public/` に旧ビルドの残骸が残っていたため、実際には存在しないページが「存在する」と判定されていた。`rm -rf public` してから再検査すると `/travel-guide/pre-trip-checklist/`（ja）へのリンク切れが3ページで見つかる。詳細は7章の申し送り。**リンク検査の前に必ず `public/` を消すこと** |
 | 構造化データ | 1,079ページに実装。posts 609/609 が BlogPosting＋BreadcrumbList、うち290が Event。travel-guide 365/376 が Article、375が BreadcrumbList、140が FAQPage。life-guide 24/25 が Article、25が BreadcrumbList、16が FAQPage |
 | 画像 alt | index対象1,494ページの `<img>` 3,413個すべてに alt あり。欠落0 |
 | h1 | index対象の1,488ページが h1 ちょうど1個。0個は6ページ（404・検索・管理画面などの機能ページ） |
@@ -230,7 +230,7 @@ ja ガイド101本のうち、本文からの被リンクが0本なのは3件。
 - **JSON-LD**: `--minify` は `application/ld+json` の中身を圧縮しないため、`"@type": "` は**コロンの後に半角スペースが入る**。ここを詰めたパターンで検索すると全件0になるので注意
 - **被リンク**: `content/{travel-guide,life-guide}/**/*.md`（ja のみ）本文の `href="/..."` と `](/...)` の**両形式**を集計。ナビ・カード・list テンプレートは含まない。生活ガイドは HTML の `href=` 形式が主で、markdown 記法だけを見ると全件0になる
 - **URLの突合**: ファイル名ではなく**ビルド後の実URL**で行う。`access-guide.md` の実URLは `/travel-guide/urayasu-maihama-access-guide/` のようにずれる例がある
-- **リンク切れ**: index対象ページから出る内部リンクをユニーク化し、パーセントデコード後に `public/` 上の実体を確認
+- **リンク切れ**: index対象ページから出る内部リンクをユニーク化し、パーセントデコード後に `public/` 上の実体を確認。**必ず `rm -rf public resources` してからビルドすること**。Hugo は出力先の古いファイルを消さないため、以前は公開していて今は `draft: true` になったページの残骸が「存在する」と誤判定される（初版でこの誤りを踏んだ）
 - **サイトマップ差分**: `public/*/sitemap.xml` の `<loc>` をデコードし、robots が noindex でない実ページ集合と `comm` で比較
 - **本番実測**: ブラウザで `PerformanceObserver`（`buffered: true`）により LCP と CLS を取得。キャッシュが効くと `transferSize` が0になるため、転送量はディスク上の実サイズを正とした
 - **PageSpeed Insights API はキーなし共有枠が枯渇（HTTP 429）で使えなかった**。フィールドデータは Phase 0 の GSC「ウェブに関する主な指標」エクスポートで代替する
