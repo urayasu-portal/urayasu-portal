@@ -1,7 +1,7 @@
 ---
 title: "浦安市の交通・バスガイド｜おさんぽバス・墓地公園への無料バス・市内の移動"
 date: 2026-06-28T13:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-04
 factChecked: "2026-08-17"
 newsTags: ["バス", "交通", "おさんぽバス", "シャトルバス", "浦安市墓地公園"]
 categories:
@@ -81,6 +81,8 @@ aliases:
   <div class="lg-art-card"><i class="ti ti-bus lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">路線バス</div><p class="lg-art-card-desc">市内・近隣を結ぶ路線バスが運行しています。浦安・新浦安・舞浜の各駅を起点に、住宅地や商業施設へのアクセスに使えます。</p></div>
   <div class="lg-art-card"><i class="ti ti-train lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">鉄道</div><p class="lg-art-card-desc">東京メトロ東西線（浦安駅）とJR京葉線（新浦安駅・舞浜駅）が市内の主要な鉄道。都心や千葉方面へのアクセスに使えます。</p></div>
 </div>
+
+<p>京葉線は湾岸を走る区間があるため、強風や大雨で遅れや運転見合わせが出ることがあります。運行情報の公式な確認先、遅延証明書の取り方、止まったときに浦安から使える代替ルートは<a href="/life-guide/keiyo-line-unko-joho/">京葉線の運行情報・遅延の調べ方</a>にまとめています。</p>
 
 <h2 id="bochi-koen">墓地公園への無料シャトルバス（お盆などの墓参時期）</h2>
 
