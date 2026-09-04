@@ -1,6 +1,7 @@
 ---
-title: "【舞浜】イクスピアリのゴンチャが改装再開"
+title: "【イクスピアリ】ゴンチャがリニューアルオープン｜場所は2F・20席"
 date: 2026-07-01T07:00:00+09:00
+lastmod: 2026-09-04
 slug: "gongcha-ikspiari-renewal"
 categories:
   - "開店・閉店"
@@ -16,7 +17,7 @@ eventDate: "2026-06-30"
 hideEventBox: true
 cover:
   catimg: cat-open
-  alt: "【舞浜】イクスピアリのゴンチャが改装再開"
+  alt: "イクスピアリ2Fのゴンチャがリニューアルオープン"
 draft: false
 ---
 <p>舞浜の商業施設「イクスピアリ」2F ミュージアム・レーンにある「ゴンチャ」が、2026年6月30日（火）にリニューアルオープンしました。</p>
