@@ -303,3 +303,8 @@
   type: close
   when: "2025-06"
   area: "新浦安"
+"20260904-urayasu-daiso-shops":
+  shop: "ダイソー イクスピアリ店（改装・3業態複合店化／市内3店まとめ）"
+  type: renewal
+  when: "2026-02"
+  area: "舞浜"
