@@ -17,6 +17,9 @@ checkDate: "2026-09"
 sources:
   - name: "ニューコースト新浦安「浦安ラグビーファン倶楽部」"
     url: "https://www.newcoast.jp/event/20260827240/"
+cover:
+  image: /images/posts/d-rocks.png
+  alt: "【浦安】D-Rocks選手とラグビー体験 9月19日開催"
 draft: false
 ---
 
