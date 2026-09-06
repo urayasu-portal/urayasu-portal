@@ -1,9 +1,9 @@
 ---
-title: "Urayasu Brighton Hotel Tokyo Bay | 1-Minute Walk from Shin-Urayasu Station, Up to 34 Shuttles Per Day to TDR"
+title: "Urayasu Brighton Hotel Tokyo Bay | Bell Desk Luggage Storage Before Check-in, 1 Min from Shin-Urayasu Station"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-07-23
-description: "Local review of Urayasu Brighton Hotel Tokyo Bay. Covered deck connection to Shin-Urayasu Station (approx. 80m, 1 min). Up to 34 free shuttle buses per day from opening to after park closing. Luggage storage before check-in, 42 m² rooms, up to 5 guests. No large bath or coin laundry — key trade-offs covered honestly."
+factChecked: "2026-09-06"
+lastmod: 2026-09-06
+description: "Local review of Urayasu Brighton Hotel Tokyo Bay. The bell desk holds luggage before the 15:00 check-in, and you can also ship bags to the hotel ahead of arrival. Covered deck to Shin-Urayasu Station (approx. 80m, 1 min), up to 34 free shuttle buses per day, 42 m² rooms for up to 5 guests. No large bath or coin laundry — trade-offs covered honestly."
 tags:
   - Hotel
   - Disney
@@ -14,7 +14,7 @@ cover:
 noDate: true
 faq:
   - q: "Can I store my luggage at Urayasu Brighton Hotel before check-in?"
-    a: "Yes. If you arrive before the 15:00 check-in, the front desk will hold your luggage on the day of your stay, so you can head to Tokyo Disneyland or DisneySea first and settle into your room later. The hotel also connects to Shin-Urayasu Station by an 80 m covered deck (about 1 minute), so arriving with large suitcases is easy even in the rain."
+    a: "Yes. The hotel's own FAQ states that if you arrive before the 15:00 check-in, the bell desk will hold your luggage — and you can complete check-in formalities at the front desk at the same time. So you can drop the suitcases, head to Tokyo Disneyland or DisneySea, and settle into your room later. You can also ship bags to the hotel before you arrive. The hotel connects to Shin-Urayasu Station by an 80 m covered deck (about 1 minute), so arriving with large suitcases is easy even in the rain."
   - q: "Does Urayasu Brighton Hotel have a free shuttle bus to Tokyo Disney Resort?"
     a: "Yes. It runs the free Tokyo Disney Resort Partner Hotel shuttle — up to 34 buses per day, about 15 minutes to the parks, no reservation needed, from before park opening until after closing. Right after park close the Shin-Urayasu-bound stops get crowded, so allow a little extra time."
   - q: "Does Urayasu Brighton Hotel have a large public bath or coin laundry?"
@@ -79,12 +79,14 @@ From Shin-Urayasu Station, about 17 min to Tokyo Station on the JR Keiyo Line ex
 
 One of the most common questions we hear about this hotel is whether you can drop your bags **before check-in** — handy when you land in the morning and want to head straight to the parks. The short answer: yes.
 
-- **Before check-in (same-day storage):** Arriving early? The front desk will hold your luggage on the day of your stay, so you can leave your suitcases and go to Tokyo Disneyland or DisneySea before the 15:00 check-in.
+- **Before check-in — hand bags to the bell desk:** Arriving early? The hotel's own FAQ says the **bell desk** holds your luggage before the 15:00 check-in, and you can complete check-in formalities at the front desk while you are there. Drop the suitcases and go straight to Tokyo Disneyland or DisneySea.
+- **Shipping bags to the hotel before you arrive:** The hotel also accepts luggage sent ahead by courier, so your cases can be waiting in the room. Address the parcel to Urayasu Brighton Hotel Tokyo Bay, 1-9 Mihama, Urayasu, Chiba 279-0011, with your name and check-in date on it.
 - **Easy arrival with heavy suitcases:** Shin-Urayasu Station connects to the hotel by an **80 m covered deck (about 1 minute)** — the closest station link among the four Partner Hotels — so you can wheel large cases straight from the train without stepping outside, even in the rain.
 - **Baggage delivery from JR Maihama Station (paid):** On arrival day you can drop bags at the "Bon Voyage" home-delivery counter beside JR Maihama Station and have them delivered to the hotel — a paid service at **¥800 per item**, reception from store opening until about 15:00. (This is a one-way *station → hotel* service; it is not a park pick-up.) Valuables, fragile items, drinks and precision devices are excluded.
-- **Sending bags home / to the airport:** The bell desk also handles takkyubin courier shipments (to your home, or same-day to the airport / Tokyo Station on a cash-on-delivery basis).
+- **Sending bags home:** The 1F bell captain's desk accepts takkyubin courier shipments to your home **24 hours a day**.
+- **Sending bags to Haneda Airport or Tokyo Station:** Also handled at the 1F bell captain's desk, but the hotel's **cut-off is 10:00** — so sort this out before you leave for the parks on your last morning, not when you check out.
 
-Check-in is 15:00 and check-out is 12:00; same-day storage around these times is standard, but confirm the details with the hotel when you book. For how the area's paid Bon Voyage delivery compares with the free service at Disney and Official hotels, see [how Maihama luggage delivery works](/en/travel-guide/luggage/).
+Check-in is 15:00 and check-out is 12:00; storage around these times is standard, but confirm the details with the hotel when you book. For how the area's paid Bon Voyage delivery compares with the free service at Disney and Official hotels, see [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 ---
 

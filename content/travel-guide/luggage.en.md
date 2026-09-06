@@ -2,8 +2,8 @@
 title: "Luggage Storage & Baggage Delivery near Tokyo Disney Resort | Maihama & Urayasu Hotels"
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
-lastmod: 2026-08-16
-factChecked: "2026-09-01"
+lastmod: 2026-09-06
+factChecked: "2026-09-06"
 description: "How luggage storage and baggage delivery really work at hotels near Tokyo Disneyland and DisneySea. The free station-to-hotel delivery for Disney & Official hotels, the paid Bon Voyage service, front-desk storage before check-in, and what's excluded — checked against official sources."
 tags:
   - Hotel
@@ -85,6 +85,7 @@ You don't always need a delivery service. Almost every hotel will simply **hold 
 - **[Hoshino Resorts 1955 Tokyo Bay](/en/travel-guide/hotels/hoshinoresorts-1955-tokyo-bay/)** — free lockers before and after your stay, plus pre-check-in so you only pick up the key later
 - **[Comfort Suites Tokyo Bay](/en/travel-guide/hotels/comfort-suites-tokyo-bay/)** — free self-service cloak room before check-in and after check-out
 - **[Oriental Hotel Tokyo Bay](/en/travel-guide/hotels/oriental-tokyo-bay/)** — a guest-only baggage/locker room, with before- and after-stay storage at the bell desk
+- **[Urayasu Brighton Hotel Tokyo Bay](/en/travel-guide/hotels/brighton-tokyo-bay/)** — the **bell desk** holds bags before the 15:00 check-in, and you can finish check-in formalities at the front desk at the same time. You can also ship bags to the hotel ahead of arrival. Note the **10:00 cut-off** if you want to send luggage on to Haneda Airport or Tokyo Station on departure day
 
 ---
 
