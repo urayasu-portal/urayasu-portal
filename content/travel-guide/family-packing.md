@@ -1,7 +1,7 @@
 ---
 title: "子連れディズニー旅行の準備ガイド｜持ち物チェックリストと現地調達のコツ"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-24
+lastmod: 2026-09-06
 factChecked: "2026-08-24"
 slug: "family-packing"
 badge: "子連れ準備"
@@ -76,4 +76,4 @@ faq:
   <li><strong>チケット：</strong><a href="/travel-guide/disney-tickets/">チケットガイド</a>で事前購入を</li>
 </ul>
 
-<p>旅行準備の全体像は<a href="/travel-guide/pre-trip-checklist/">出発前チェックリスト</a>をどうぞ。</p>
+<p>旅行準備の全体像は<a href="/travel-guide/">浦安・舞浜 旅行ガイド</a>にまとめています。</p>

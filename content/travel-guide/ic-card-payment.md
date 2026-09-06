@@ -1,7 +1,7 @@
 ---
 title: "ディズニー旅行の交通ICカード・支払いガイド｜Suica・PASMOの買い方と使える場所"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-24
+lastmod: 2026-09-06
 factChecked: "2026-08-24"
 slug: "ic-card-payment"
 badge: "IC・支払い"
@@ -85,4 +85,4 @@ faq:
 
 <p>ICカードがなくても、券売機できっぷを買えばすべての電車・バスに乗れます。ただし乗り換えのたびに券売機に並ぶことになるため、<strong>2日以上滞在するならICカード（またはスマホ設定）が結局いちばん楽</strong>です。なお、夜間の急病診療所など<a href="/travel-guide/kids-emergency/">現金のみの場面</a>もあるので、現金もいくらか持っておくと安心です。</p>
 
-<p>空港からの移動全体は<a href="/travel-guide/urayasu-maihama-access-guide/">浦安・舞浜への行き方ガイド</a>、旅行前の準備は<a href="/travel-guide/pre-trip-checklist/">出発前チェックリスト</a>をどうぞ。</p>
+<p>空港からの移動全体は<a href="/travel-guide/urayasu-maihama-access-guide/">浦安・舞浜への行き方ガイド</a>、旅行前の準備は<a href="/travel-guide/">浦安・舞浜 旅行ガイド</a>をどうぞ。</p>

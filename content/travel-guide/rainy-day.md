@@ -1,7 +1,7 @@
 ---
 title: "東京ディズニー雨の日ガイド｜パークの雨対策と舞浜の屋内スポット"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-06
 factChecked: "2026-08-24"
 slug: "rainy-day"
 badge: "雨の日"
@@ -70,4 +70,4 @@ faq:
   <li><strong>スーツケースは配送で手ぶらに。</strong>雨の中の大荷物移動を避けたい人は<a href="/travel-guide/luggage-airport/">空港からホテルへの荷物配送</a>を検討してください。</li>
 </ul>
 
-<p>滞在全体の過ごし方は<a href="/travel-guide/urayasu-maihama-shinurayasu-tourism/">舞浜・浦安観光ガイド</a>、旅行前の準備は<a href="/travel-guide/pre-trip-checklist/">出発前チェックリスト</a>にまとめています。</p>
+<p>滞在全体の過ごし方は<a href="/travel-guide/urayasu-maihama-shinurayasu-tourism/">舞浜・浦安観光ガイド</a>、旅行前の準備は<a href="/travel-guide/">浦安・舞浜 旅行ガイド</a>にまとめています。</p>
