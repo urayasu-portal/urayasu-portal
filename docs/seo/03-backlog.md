@@ -114,33 +114,27 @@ ja版が draft である理由は frontmatter の description に「英語版の
 
 **Phase 1 がこれを見落とした原因**: リンク検査を実行した `public/` に旧ビルドの残骸が残っていた。Hugo は出力先の古いファイルを消さないため、以前公開していたページが「存在する」と誤判定された。`01-technical-audit.md` の該当箇所と計測メモを訂正済み。**今後リンク検査の前は必ず `rm -rf public resources` する。**
 
-### 2-2. モバイルで表の右側が読めない記事がある【要対応】
+### 2-2. ~~モバイルで表の右側が読めない記事がある~~ → **誤診だった（2026-09-06 訂正）**
 
-新規記事の表示確認中に発見した。**素の `<table>` を使っている posts では、モバイル（375px幅）で表の右側が切れて読めない。**
+**この項目は取り下げる。表は最初からスクロールできていた。**
 
-`.post-single .post-content table` には `width: 100%` が指定されているが、スクロール用のラッパーがないため、幅に収まらない内容は `article.post-single` の `overflow-x: hidden` で切り落とされる。横スクロールもできない。
+初版では「素の `<table>` を使う posts では表の右側が切れて読めない」と書いたが、これは計測の解釈を誤ったものだった。`scrollWidth > clientWidth` を「切れている」と読んだが、この状態は正しくは「その要素の中でスクロールできる」ことを意味する。
 
-実測例（ビューポート375px）。
-
-| 記事 | 表の表示幅 | 内容の幅 | 状態 |
-|---|---|---|---|
-| `/posts/urayasu-hanabi-taikai-2026/`（1つ目の表） | 315px | 360px | 右端が切れる |
-| `/posts/urayasu-daiso-shops/`（修正前） | 315px | 612px | 大きく切れる |
-
-**素の `<table>` を使っている posts は79本ある。** すべて同じ条件なので、列数や内容の長い表を持つ記事は同様に切れている可能性が高い。
-
-CSS には未使用のスクロール用クラスが既に用意されている。
+実際にはテーマの CSS リセットに次の定義があり、**サイト上のすべての表は最初から横スクロールできる**。
 
 ```css
-.post-single .post-content .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; border-spacing: 0; overflow-x: auto; word-break: keep-all; }
 ```
 
-対応の選択肢は2つ。
+加えて `custom.css` にも `@media (max-width: 640px) { .post-content table { display: block; overflow-x: auto; ... } }` が既にあり、モバイルでの挙動は二重に担保されていた。
 
-- (a) **テンプレート側で一括対応**（推奨）。`extend_post_content.html` などで `<table>` を自動的にスクロールコンテナで包む、または `.post-content table` を包む CSS を当てる。79本を触らずに済む
-- (b) 記事ごとに `<div class="table-scroll">` を追記する。確実だが79本の手作業
+**検証方法**: 375px幅で `table.scrollLeft` に値を入れて読み返し、右端セルの位置が動くことを確認した。CSS を変更する前の状態で `canScroll: true`、右端セルの右辺が 390px → 345px に移動しており、スクロールは機能していた。700px幅でも `overflow-x: auto` が効いている。
 
-**今回の新規2本は先に修正済み。** 京葉線ガイドは生活ガイドの規約どおり `lg-art-table-wrap` + `lg-art-table` を使い、ダイソー記事は `table-scroll` で包んだ。いずれもモバイルで横スクロールできることを実機幅375pxで確認した。
+Phase 4 で一度 `@media (max-width: 700px)` のルールを追加したが、既存ルールと重複するだけで意味がないため**取り消した**。79本の記事にも手を入れていない。
+
+**Phase 3 で新規2記事に追加したラッパーはそのままにしている。** 京葉線ガイドの `lg-art-table-wrap` は生活ガイドの記法どおりで正しい。ダイソー記事の `table-scroll` は冗長だが、マークダウン表を `render-table.html` が出力する形と同じHTMLなので害はない。
+
+**教訓**: 「切れている」と判断する前に、実際にスクロールできるかを操作して確かめること。`scrollWidth > clientWidth` だけでは不具合の証拠にならない。
 
 ### 2-3. 拡張子と中身が一致しない画像が2枚残っている
 
