@@ -1,7 +1,7 @@
 ---
 title: "浦安・舞浜ハロウィーンガイド2026｜仮装の着替え場所・ホテル企画・限定スイーツまとめ"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-08
+lastmod: 2026-09-09
 factChecked: "2026-09-08"
 slug: "maihama-halloween"
 tags:
@@ -17,6 +17,8 @@ tags:
 description: "2026年の浦安・舞浜でハロウィーンを楽しむための保存版ガイド。全身仮装できる期間と着替え場所の比較（イクスピアリ・舞浜ユーラシア・コンフォートスイーツ）、ホテルの宿泊企画、限定スイーツ、パークの外で楽しめる企画までまとめます。"
 images:
   - "/images/og-travel-urayasu.png"
+cover:
+  image: "/images/travel-guide/maihama-halloween-family.jpg"
 tgNav: true
 draft: false
 faq:
