@@ -2,13 +2,15 @@
 title: "ディズニー旅行は浦安泊か、都心泊か｜拠点の選び方を地元が比較"
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-08-29"
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 description: "東京旅行にディズニーを組み込むとき、最初の分かれ道は「どのホテルか」ではなく「どこを拠点にするか」。パーク日数と旅の形から、浦安・舞浜泊／都心泊／分泊のどれが合うかを地元メディアが正直に比較します。ハッピーエントリー・荷物・費用・夜の過ごし方まで。"
 tags:
   - Hotel
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/where-to-stay-odaiba-skyline.jpg"
 noDate: true
 tgNav: true
 faq:
