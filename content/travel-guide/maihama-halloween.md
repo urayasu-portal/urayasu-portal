@@ -112,6 +112,10 @@ faq:
 
 <h2 id="costume">仮装する人へ：ルールと着替え場所</h2>
 
+<figure>
+<img src="/images/travel-guide/halloween-costume-change.jpg" alt="ホテルの客室でハロウィーンの衣装に着替え、鏡の前で身支度をする女性2人。スーツケースと衣装カバー、メイク道具が並ぶ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>パークに着替えスペースはない</h3>
 
 <p>東京ディズニーリゾートの公式サイトは、着替えについて次のように案内しています。</p>
@@ -255,6 +259,10 @@ faq:
 
 <h2 id="stay">ハロウィーン気分で泊まる</h2>
 
+<figure>
+<img src="/images/travel-guide/halloween-hotel-stay.jpg" alt="ハロウィーン装飾が施されたホテルのロビー。かぼちゃとランタン、紅葉の飾りの横をスーツケースを引く家族連れが歩く。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>東京ベイ舞浜ホテル ファーストリゾート</h3>
 
 <p>9月15日（火）から10月31日（土）まで、ハロウィーン仕様の客室に泊まれる「ハロウィーン・スプーキーナイトステイ」を販売します。「お城のサロン」をイメージした客室を「スプーキーなファンタジー」をテーマに装飾し、<strong>記念撮影に使える魔女のマントと帽子</strong>も用意されます。</p>
@@ -328,6 +336,10 @@ faq:
 
 <h2 id="sweets">ハロウィーン限定スイーツ・グルメ</h2>
 
+<figure>
+<img src="/images/travel-guide/halloween-sweets.jpg" alt="ホテルのスイーツビュッフェ台に並ぶハロウィーン限定ケーキ。かぼちゃ形のムースやモンブラン、おばけの形のスイーツが並ぶ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>ヒルトン東京ベイ「Gothic Palace」</h3>
 
 <p>9月5日（土）から11月3日（火・祝）までの<strong>土日祝限定</strong>で、ラウンジ・オーにてハロウィーンスイーツビュッフェを開催します。約20種類のスイーツと約15種類のセイボリーを2時間制で楽しめます。料金は大人5,000円、9〜12歳2,700円、4〜8歳1,900円。12時・12時30分・14時30分・15時からの4部制です。詳細は<a href="/posts/hilton-tokyo-bay-gothic-palace-2026/">Gothic Palaceの記事</a>へ。</p>
@@ -386,6 +398,10 @@ faq:
 <hr>
 
 <h2 id="outside">パークの外でも楽しめる企画</h2>
+
+<figure>
+<img src="/images/travel-guide/halloween-outside-park.jpg" alt="夜のイクスピアリ周辺。ハロウィーンのバナーとかぼちゃのランタンが灯る遊歩道を家族連れが歩き、奥をディズニーリゾートラインが走る。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>シネマイクスピアリでディズニー作品のリバイバル上映</h3>
 
