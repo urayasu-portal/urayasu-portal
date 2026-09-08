@@ -1,7 +1,7 @@
 ---
 title: "無料シャトルバスのある東京ディズニーリゾート周辺ホテル｜パークシャトルの実態を解説"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-08
 factChecked: "2026-08-29"
 description: "東京ディズニーランド・シー周辺で無料シャトルバスのあるホテルは？シャトル不要・ディズニーリゾートクルーザー・パートナーホテルシャトル・各ホテル独自バスの4パターンと、予約前に確認したい時刻表の落とし穴を地元メディアが解説します。"
 tags:
@@ -11,6 +11,8 @@ tags:
   - ディズニー
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/shuttle-buses.jpg"
 noDate: true
 tgNav: true
 faq:
