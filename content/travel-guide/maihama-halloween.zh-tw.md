@@ -1,8 +1,8 @@
 ---
 title: "2026浦安·舞濱萬聖節攻略｜變裝期間·換裝地點·飯店企劃與限定甜點"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-08-30
-factChecked: "2026-09-01"
+lastmod: 2026-09-08
+factChecked: "2026-09-08"
 slug: "maihama-halloween"
 badge: "萬聖節"
 tags:
@@ -32,7 +32,7 @@ faq:
 ---
 
 <div class="tg-notice-warn">
-  <strong>ℹ️ 注意</strong>　本頁內容為2026年8月30日確認各設施與東京迪士尼度假區官方資訊後彙整。期間·價格·實施內容可能變動，預約·前往前請務必至各官方網站確認最新資訊。
+  <strong>ℹ️ 注意</strong>　本頁內容為2026年9月8日確認各設施與東京迪士尼度假區官方資訊後彙整。期間·價格·實施內容可能變動，預約·前往前請務必至各官方網站確認最新資訊。
 </div>
 
 <p>秋天的浦安·舞濱，會配合東京迪士尼度假區的「Disney Halloween」，讓市內的飯店與商業設施一齊推出季節企劃。本文從<strong>2026年在浦安·舞濱該怎麼過萬聖節</strong>的角度出發，分別整理給想變裝的人、想住宿的人、想吃甜點的人，以及不進樂園的人。</p>
@@ -184,6 +184,7 @@ faq:
 <p>這是東京迪士尼度假區官方唯一公告的換裝空間。採付費·事先指定日期時間預約制，當天無法預約或延長時間。</p>
 
 <ul>
+  <li><strong>行李寄放</strong>：使用換裝空間者可另行付費寄放行李。最後領取時間為22:00</li>
   <li><strong>隔間</strong>：女性用30間、全性別·無障礙2間。男性使用全性別·無障礙隔間</li>
   <li><strong>人數</strong>：每間1人。國中生以上每人1間。18歲以上每1名可帶2名小學生以下同行</li>
   <li><strong>實際換裝時間</strong>：雖以30分鐘為單位，但因含櫃檯受理·清潔·換場，官方說明約為<strong>25分鐘</strong></li>
@@ -215,7 +216,7 @@ faq:
 
 <p>此外還販售<strong>早上7點可入住、隔天12點退房的限量房間方案</strong>（純住宿）。這是設想在飯店整理好裝扮後再前往樂園的內容。訂房網站上雖然只能選擇10:00以後的預定入住時間，但官方明確說明實際上7:00起即可利用。</p>
 
-<p>另有住宿者可參加的企劃，但截至2026年8月30日尚未公布詳情。詳情亦可參閱<a href="/zh-tw/travel-guide/hotels/comfort-suites-tokyo-bay/">Comfort Suites東京灣住宿指南</a>。</p>
+<p>另有住宿者可參加的企劃，但截至2026年9月8日尚未公布詳情。詳情亦可參閱<a href="/zh-tw/travel-guide/hotels/comfort-suites-tokyo-bay/">Comfort Suites東京灣住宿指南</a>。</p>
 
 <h3>變裝規則的重點</h3>
 
@@ -361,7 +362,7 @@ faq:
 
 <ul>
   <li><strong>Seasonal Select Lunch 〜Harvest Halloween〜</strong>（10月1日〜31日）：於餐廳「Fontana」12:00〜14:00·90分鐘制。3,200日圓（平日限定）起。使用栗子南瓜與紫薯等秋季食材的午餐</li>
-  <li><strong>Grand Sweets Buffet 〜萬聖節的甜蜜誘惑〜</strong>（10月26日〜30日共5天）：於<strong>Cafe Restaurant Terrace</strong>14:00〜15:30。成人6,500日圓、One Harmony會員5,900日圓、4〜12歲3,000日圓（會員2,500日圓）</li>
+  <li><strong>Grand Sweets Buffet 〜萬聖節的甜蜜誘惑〜</strong>（<strong>10月26日（一）〜31日（六）共6天</strong>）：於<strong>Cafe Restaurant Terrace</strong>14:00〜15:30。成人6,500日圓、One Harmony會員5,900日圓、4〜12歲3,000日圓（會員2,500日圓）。<strong>含消費稅與服務費</strong>，建議事先預約。除了使用番薯·栗子·南瓜的甜點外，還有現場製作的甜點、限定麵包與法式主廚的鹹點</li>
 </ul>
 
 <h3>浦安Brighton Hotel東京灣（新浦安）</h3>
@@ -451,6 +452,13 @@ faq:
 
 <hr>
 
+<h2 id="changelog">更新紀錄</h2>
+
+<ul>
+  <li><strong>2026年9月8日</strong>：依9月7日的正式發表，將Hotel Okura東京灣「Grand Sweets Buffet 〜萬聖節的甜蜜誘惑〜」的會期更新為<strong>10月26日（一）〜31日（六）共6天</strong>。並補充含稅與服務費、供應內容。另於迪士尼官方換裝空間補充行李寄放的說明</li>
+  <li><strong>2026年8月30日</strong>：文章公開</li>
+</ul>
+
 <h2 id="references">官方資訊·參考連結</h2>
 
 <ul>
@@ -469,4 +477,4 @@ faq:
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-<p style="font-size:12px;color:#6b7a8d;">※本文依據2026年8月30日的公開資訊彙整。期間·價格·實施內容可能變動，最新資訊請至各設施官方網站確認。</p>
+<p style="font-size:12px;color:#6b7a8d;">※本文依據2026年9月8日的公開資訊彙整。期間·價格·實施內容可能變動，最新資訊請至各設施官方網站確認。</p>

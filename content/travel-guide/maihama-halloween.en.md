@@ -1,8 +1,8 @@
 ---
 title: "Halloween in Urayasu & Maihama 2026 | Costume Rules, Where to Change, Hotel Events & Sweets"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-08-30
-factChecked: "2026-09-01"
+lastmod: 2026-09-08
+factChecked: "2026-09-08"
 slug: "maihama-halloween"
 badge: "Halloween"
 tags:
@@ -32,7 +32,7 @@ faq:
 ---
 
 <div class="tg-notice-warn">
-  <strong>ℹ️ Please note</strong>　This page was compiled on August 30, 2026 from official information published by each facility and Tokyo Disney Resort. Dates, prices and content are subject to change. Always check the official websites before booking or visiting.
+  <strong>ℹ️ Please note</strong>　This page was compiled on September 8, 2026 from official information published by each facility and Tokyo Disney Resort. Dates, prices and content are subject to change. Always check the official websites before booking or visiting.
 </div>
 
 <p>Every autumn, hotels and shopping complexes across Urayasu and Maihama launch seasonal programs timed to Tokyo Disney Resort's "Disney Halloween." This guide covers <strong>how to enjoy Halloween 2026 in Urayasu and Maihama</strong>, organized around four kinds of visitor: people who want to wear costumes, people looking for a hotel, people chasing seasonal sweets, and people who are not going into the parks at all.</p>
@@ -184,6 +184,7 @@ faq:
 <p>This is the only changing space Tokyo Disney Resort officially provides. It is paid, requires a reserved date and time, and cannot be booked or extended on the day.</p>
 
 <ul>
+  <li><strong>Baggage storage</strong>: Users of the changing space can also pay separately for baggage storage. Final pick-up is 22:00</li>
   <li><strong>Booths</strong>: 30 for women, plus 2 all-gender / accessible booths. Men use the all-gender / accessible booths</li>
   <li><strong>Occupancy</strong>: One person per booth. Junior high school students and older need their own booth. Each adult aged 18 or over may accompany up to two children of elementary school age or younger</li>
   <li><strong>Actual changing time</strong>: Slots are in 30-minute increments, but because reception, cleaning and turnover are included, the official guidance is <strong>about 25 minutes</strong></li>
@@ -215,7 +216,7 @@ faq:
 
 <p>The hotel additionally sells a <strong>limited-availability room plan with check-in from 7:00 a.m. and check-out at noon the following day</strong> (room only), designed for guests who want to get ready at the hotel before heading to the parks. The booking site only lets you select an estimated check-in time from 10:00 onwards, but the hotel states that arrival from 7:00 is in fact available.</p>
 
-<p>A guest participation event is also planned, though no details had been announced as of August 30, 2026. See our <a href="/en/travel-guide/hotels/comfort-suites-tokyo-bay/">Comfort Suites Tokyo Bay hotel guide</a> for more.</p>
+<p>A guest participation event is also planned, though no details had been announced as of September 8, 2026. See our <a href="/en/travel-guide/hotels/comfort-suites-tokyo-bay/">Comfort Suites Tokyo Bay hotel guide</a> for more.</p>
 
 <h3>Costume rules worth knowing before you go</h3>
 
@@ -361,7 +362,7 @@ faq:
 
 <ul>
   <li><strong>Seasonal Select Lunch - Harvest Halloween</strong> (October 1-31): At the restaurant Fontana, 12:00-14:00, 90 minutes, from 3,200 yen (weekdays only). Built around autumn produce such as chestnut pumpkin and purple sweet potato</li>
-  <li><strong>Grand Sweets Buffet - Halloween's Sweet Temptation</strong> (October 26-30, five days): At <strong>Cafe Restaurant Terrace</strong>, 14:00-15:30. 6,500 yen for adults, 5,900 yen for One Harmony members, 3,000 yen for ages 4-12 (2,500 yen for members)</li>
+  <li><strong>Grand Sweets Buffet - Halloween's Sweet Temptation</strong> (<strong>October 26 (Mon) - 31 (Sat), six days</strong>): At <strong>Cafe Restaurant Terrace</strong>, 14:00-15:30. 6,500 yen for adults, 5,900 yen for One Harmony members, 3,000 yen for ages 4-12 (2,500 yen for members). <strong>Tax and service charge included</strong>; advance reservation is recommended. Sweets built on sweet potato, chestnut and pumpkin, plus desserts finished in front of you, limited-edition breads and savouries from the French chef</li>
 </ul>
 
 <h3>Urayasu Brighton Hotel Tokyo Bay (Shin-Urayasu)</h3>
@@ -451,6 +452,13 @@ faq:
 
 <hr>
 
+<h2 id="changelog">Update history</h2>
+
+<ul>
+  <li><strong>September 8, 2026</strong>: Updated the Hotel Okura Tokyo Bay "Grand Sweets Buffet - Halloween's Sweet Temptation" run to <strong>October 26 (Mon) - 31 (Sat), six days</strong>, reflecting the official announcement of September 7. Added that tax and service charge are included, plus what is served. Added baggage storage information for the official TDR changing space</li>
+  <li><strong>August 30, 2026</strong>: Article published</li>
+</ul>
+
 <h2 id="references">Official sources and further reading</h2>
 
 <ul>
@@ -469,4 +477,4 @@ faq:
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-<p style="font-size:12px;color:#6b7a8d;">※ This article was compiled from information published as of August 30, 2026. Dates, prices and content may change. Please check each facility's official website for the latest details.</p>
+<p style="font-size:12px;color:#6b7a8d;">※ This article was compiled from information published as of September 8, 2026. Dates, prices and content may change. Please check each facility's official website for the latest details.</p>
