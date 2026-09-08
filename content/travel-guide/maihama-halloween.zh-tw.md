@@ -177,7 +177,7 @@ faq:
 </table>
 </div>
 
-{{< warn >}}舞濱Eurasia的後半場次自<strong>10月17日</strong>開始，比樂園可全身變裝的期間（10月16日起）晚一天。預計10月16日變裝的人請特別留意。{{< /warn >}}
+{{< warn >}}舞濱Eurasia的後半場次自<strong>10月17日</strong>開始，比樂園可全身變裝的期間（10月16日起）晚一天。官方說明「10月16日（五）因會場無法使用，不舉辦本方案」。<strong>預計10月16日變裝的人，當天無法在Eurasia換裝</strong>，請特別留意。{{< /warn >}}
 
 <h3>伊克斯皮兒莉影城區1樓「Garden Site」（迪士尼官方）</h3>
 
@@ -204,7 +204,8 @@ faq:
   <li><strong>價格</strong>：平日4,000日圓／週末假日5,300日圓（含稅）。9月21日·22日·23日適用週末假日價格</li>
   <li><strong>再入場</strong>：換裝後可以返回<strong>無限次重新換裝</strong>。想在白天與夜晚更換造型時很方便</li>
   <li><strong>對象</strong>：4歲以上為統一價格，3歲以下不可利用</li>
-  <li><strong>住宿者優惠</strong>：SPA &amp; HOTEL 舞濱Eurasia與HOTEL Eurasia舞濱ANNEX的退房後利用為平日2,500日圓／週末假日3,800日圓</li>
+  <li><strong>行李寄放</strong>：每人含2件。若要寄放3件以上，請於預約時加購追加選項（500日圓）</li>
+  <li><strong>住宿者優惠</strong>：SPA &amp; HOTEL 舞濱Eurasia與HOTEL Eurasia舞濱ANNEX的住宿者，退房時於本館3樓櫃台申請可享較原價便宜1,500日圓（平日2,500日圓／週末假日3,800日圓）</li>
   <li><strong>預約</strong>：僅限票券預約網站Gettii。已自2026年8月3日開始受理</li>
 </ul>
 
@@ -455,7 +456,7 @@ faq:
 <h2 id="changelog">更新紀錄</h2>
 
 <ul>
-  <li><strong>2026年9月8日</strong>：依9月7日的正式發表，將Hotel Okura東京灣「Grand Sweets Buffet 〜萬聖節的甜蜜誘惑〜」的會期更新為<strong>10月26日（一）〜31日（六）共6天</strong>。並補充含稅與服務費、供應內容。另於迪士尼官方換裝空間補充行李寄放的說明</li>
+  <li><strong>2026年9月8日</strong>：依9月7日的正式發表，將Hotel Okura東京灣「Grand Sweets Buffet 〜萬聖節的甜蜜誘惑〜」的會期更新為<strong>10月26日（一）〜31日（六）共6天</strong>。並補充含稅與服務費、供應內容。另於迪士尼官方換裝空間補充行李寄放的說明。並依官方頁面重新確認舞濱Eurasia的換裝方案，補充10月16日不舉辦的理由、行李追加選項與住宿者優惠的申請方式</li>
   <li><strong>2026年8月30日</strong>：文章公開</li>
 </ul>
 

@@ -177,7 +177,7 @@ faq:
 </table>
 </div>
 
-{{< warn >}}The second window at Maihama Eurasia begins on <strong>October 17</strong>, one day later than the park's full-costume period, which resumes on October 16. Plan accordingly if you intend to wear a costume on October 16.{{< /warn >}}
+{{< warn >}}The second window at Maihama Eurasia begins on <strong>October 17</strong>, one day later than the park's full-costume period, which resumes on October 16. The official page explains that the plan is not run on Friday October 16 because the venue is unavailable. <strong>If you are wearing a costume on October 16, you cannot change at Eurasia that day.</strong>{{< /warn >}}
 
 <h3>Ikspiari Cinema Area 1F "Garden Site" (official)</h3>
 
@@ -204,7 +204,8 @@ faq:
   <li><strong>Price</strong>: 4,000 yen on weekdays, 5,300 yen on weekends and holidays (tax included). September 21, 22 and 23 are charged at the weekend rate</li>
   <li><strong>Re-entry</strong>: You can come back and <strong>change as many times as you like</strong>, which is useful if you want a different look for day and night</li>
   <li><strong>Eligibility</strong>: One flat rate for ages 4 and over. Children aged 3 and under cannot use the facility</li>
-  <li><strong>Hotel guest discount</strong>: Guests checking out of SPA &amp; HOTEL Maihama Eurasia or HOTEL Eurasia Maihama ANNEX pay 2,500 yen on weekdays and 3,800 yen on weekends and holidays</li>
+  <li><strong>Baggage storage</strong>: Two items per person are included. To leave three or more, add the extra-baggage option (500 yen) when you book</li>
+  <li><strong>Hotel guest discount</strong>: Guests of SPA &amp; HOTEL Maihama Eurasia or HOTEL Eurasia Maihama ANNEX apply at the main building 3F front desk when checking out and get 1,500 yen off — 2,500 yen on weekdays, 3,800 yen on weekends and holidays</li>
   <li><strong>Booking</strong>: Through the ticketing site Gettii only. Reservations opened on August 3, 2026</li>
 </ul>
 
@@ -455,7 +456,7 @@ faq:
 <h2 id="changelog">Update history</h2>
 
 <ul>
-  <li><strong>September 8, 2026</strong>: Updated the Hotel Okura Tokyo Bay "Grand Sweets Buffet - Halloween's Sweet Temptation" run to <strong>October 26 (Mon) - 31 (Sat), six days</strong>, reflecting the official announcement of September 7. Added that tax and service charge are included, plus what is served. Added baggage storage information for the official TDR changing space</li>
+  <li><strong>September 8, 2026</strong>: Updated the Hotel Okura Tokyo Bay "Grand Sweets Buffet - Halloween's Sweet Temptation" run to <strong>October 26 (Mon) - 31 (Sat), six days</strong>, reflecting the official announcement of September 7. Added that tax and service charge are included, plus what is served. Added baggage storage information for the official TDR changing space. Re-checked the Maihama Eurasia costume plan against the official page and added why October 16 is skipped, the extra-baggage option, and how the hotel-guest discount is applied</li>
   <li><strong>August 30, 2026</strong>: Article published</li>
 </ul>
 
