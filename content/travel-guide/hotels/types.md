@@ -1,7 +1,7 @@
 ---
 title: "ディズニーホテル・オフィシャル・パートナー・グッドネイバーの違い｜TDR提携ホテル4区分を地元が解説"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-08
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "東京ディズニーリゾートの提携ホテルは『ディズニーホテル（直営）』『オフィシャルホテル』『パートナーホテル』『グッドネイバーホテル』の4区分に分かれます。ハッピーエントリー（早期入園）・パークチケット購入・無料シャトル・荷物配送など特典の違いと、立地・価格帯を地元メディアが整理。どの区分を選ぶべきかの考え方も解説します。"
 tags:
@@ -9,6 +9,8 @@ tags:
   - ディズニー
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/types-hotel-view.jpg"
 noDate: true
 tgNav: true
 faq:
