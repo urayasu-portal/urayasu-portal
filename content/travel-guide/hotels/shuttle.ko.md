@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 무료 셔틀버스 호텔 총정리 | 파크 셔틀의 4가지 유형과 예약 전 체크포인트"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 description: "도쿄 디즈니랜드·디즈니씨 주변 어느 호텔에 무료 셔틀이 있나? 현지 시선으로 4가지 셔틀 유형(셔틀 불필요·리조트 크루저·파트너 호텔 셔틀·호텔 자체 버스)과 예약 전 반드시 확인할 시간표 함정을 정리했습니다."
 tags:
@@ -11,6 +11,8 @@ tags:
   - 디즈니
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/shuttle-buses.jpg"
 noDate: true
 tgNav: true
 faq:

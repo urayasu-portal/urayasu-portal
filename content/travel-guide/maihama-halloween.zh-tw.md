@@ -1,7 +1,7 @@
 ---
 title: "2026浦安·舞濱萬聖節攻略｜變裝期間·換裝地點·飯店企劃與限定甜點"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-08
+lastmod: 2026-09-09
 factChecked: "2026-09-08"
 slug: "maihama-halloween"
 badge: "萬聖節"
@@ -14,6 +14,8 @@ tags:
   - 飯店
 description: "2026年在浦安·舞濱過萬聖節的完整攻略。全身變裝的可行期間、三處換裝地點的比較（伊克斯皮兒莉·舞濱Eurasia·Comfort Suites）、飯店住宿企劃、限定甜點，以及不進樂園也能玩的活動。"
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/maihama-halloween-family.jpg"
 tgNav: true
 draft: false
 faq:
@@ -106,6 +108,10 @@ faq:
 <hr>
 
 <h2 id="costume">給變裝的人：規則與換裝地點</h2>
+
+<figure>
+<img src="/images/travel-guide/halloween-costume-change.jpg" alt="在飯店客房換上萬聖節服裝、於鏡前整理儀容的兩位女性，一旁放著行李箱、服裝套與化妝用品。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>園區內沒有換裝空間</h3>
 
@@ -250,6 +256,10 @@ faq:
 
 <h2 id="stay">住進萬聖節氛圍</h2>
 
+<figure>
+<img src="/images/travel-guide/halloween-hotel-stay.jpg" alt="以萬聖節裝飾的飯店大廳，南瓜、提燈與紅葉裝飾旁，一家人拉著行李箱走過。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>東京灣舞濱飯店First Resort</h3>
 
 <p>9月15日（二）至10月31日（六），推出可入住萬聖節佈置客房的「Halloween Spooky Night Stay」。以「城堡沙龍」為意象的客房，依「spooky幻想」主題佈置，房內還備有<strong>可用於拍照留念的女巫斗篷與帽子</strong>。</p>
@@ -323,6 +333,10 @@ faq:
 
 <h2 id="sweets">萬聖節限定甜點</h2>
 
+<figure>
+<img src="/images/travel-guide/halloween-sweets.jpg" alt="飯店甜點自助餐台上的萬聖節限定蛋糕，有南瓜造型慕斯、蒙布朗與幽靈造型甜點。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>東京灣希爾頓飯店「Gothic Palace」</h3>
 
 <p>9月5日（六）至11月3日（二·假日）的<strong>週末假日限定</strong>，於Lounge O舉辦萬聖節甜點自助餐。可在2小時內享用約20種甜點與約15種鹹點。價格為成人5,000日圓、9〜12歲2,700日圓、4〜8歲1,900日圓。分為12:00、12:30、14:30、15:00開始的4個場次。詳情請見<a href="/zh-tw/posts/hilton-tokyo-bay-gothic-palace-2026/">Gothic Palace報導</a>。</p>
@@ -379,6 +393,10 @@ faq:
 <hr>
 
 <h2 id="outside">不進樂園也能玩的企劃</h2>
+
+<figure>
+<img src="/images/travel-guide/halloween-outside-park.jpg" alt="夜晚的伊克斯皮兒莉周邊，萬聖節旗幟與南瓜提燈點亮的步道上一家人漫步，後方是行駛中的迪士尼度假區線。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>伊克斯皮兒莉影城的迪士尼作品重映</h3>
 

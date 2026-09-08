@@ -1,7 +1,7 @@
 ---
 title: "Happy Entry at Tokyo Disney Resort Explained | How Early Entry Works & Which Hotels Get It"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 description: "Happy Entry lets Tokyo Disney Resort hotel guests enter before official opening (15 min at Land, 5–15 min at Sea due to construction) — but only guests of the Disney Hotels. A local guide to how it works, which hotels qualify, common misconceptions, and what to do if you are not staying at a Disney Hotel."
 tags:
@@ -10,6 +10,8 @@ tags:
   - Happy Entry
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/happy-entry-park-gate.jpg"
 noDate: true
 tgNav: true
 faq:

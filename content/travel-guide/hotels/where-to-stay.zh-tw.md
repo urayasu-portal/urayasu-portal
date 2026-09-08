@@ -8,6 +8,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/where-to-stay-odaiba-skyline.jpg"
 noDate: true
 tgNav: true
 faq:

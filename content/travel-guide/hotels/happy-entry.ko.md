@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 해피 엔트리(조기 입장) 완전 해설 | 어느 호텔이 대상인가"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 description: "해피 엔트리는 도쿄 디즈니 리조트 호텔 투숙객이 일반 개장보다 먼저 입장하는 특전(랜드 15분 전, 씨는 공사로 5〜15분 전) — 단, 디즈니 호텔 투숙객만 해당됩니다. 현지 시선으로 작동 방식, 대상 호텔, 흔한 오해, 그리고 디즈니 호텔에 묵지 않을 때의 대안을 해설합니다."
 tags:
@@ -10,6 +10,8 @@ tags:
   - 해피 엔트리
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/happy-entry-park-gate.jpg"
 noDate: true
 tgNav: true
 faq:

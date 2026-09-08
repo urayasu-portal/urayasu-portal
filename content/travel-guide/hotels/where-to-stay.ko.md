@@ -2,13 +2,15 @@
 title: "도쿄 디즈니 여행, 우라야스에 묵을까 도쿄 시내에 묵을까 | 현지인의 솔직 비교"
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-08-29"
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 description: "디즈니가 포함된 도쿄 여행에서 처음 정할 것은 '어느 호텔'이 아니라 '어디를 거점으로 할까'입니다. 파크 옆 우라야스·마이하마 숙박, 도쿄 시내 거점 통근, 나눠 묵기의 세 가지를 현지 매체가 솔직하게 비교합니다. 해피 엔트리·짐·비용·밤 시간까지."
 tags:
   - Hotel
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/where-to-stay-odaiba-skyline.jpg"
 noDate: true
 tgNav: true
 faq:

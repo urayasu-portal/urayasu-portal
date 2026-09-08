@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼附近实惠酒店比较 | 各地区价格·隐藏费用·本地警示"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-24
+lastmod: 2026-09-09
 factChecked: "2026-08-24"
 description: "本地媒体比较浦安·舞滨各地区的实惠酒店，涵盖千鸟地区·新浦安·浦安站周边·舞滨各区的价格范围，以及交通费·停车费等容易被忽视的隐藏费用，并点出当地常见陷阱。"
 tags:
@@ -9,6 +9,8 @@ tags:
   - 价格
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/budget-hotel-room.jpg"
 noDate: true
 tgNav: true
 faq:

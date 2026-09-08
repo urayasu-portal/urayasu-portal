@@ -1,7 +1,7 @@
 ---
 title: "Best Family Hotels near Tokyo Disneyland & DisneySea | Kid-Friendly Picks by Locals"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "Visiting Tokyo Disney Resort with kids. A local-media comparison of family-friendly hotels among Urayasu's 40, chosen for large baths, spacious rooms, in-house convenience stores, and closeness to the parks."
 tags:
@@ -10,6 +10,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/kids-family-hotel-room.jpg"
 noDate: true
 tgNav: true
 faq:

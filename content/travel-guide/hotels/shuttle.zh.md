@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼免费班车酒店全指南 | 乐园班车的4种类型与预订前必查事项"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 description: "哪些东京迪士尼周边酒店有免费班车？本地视角整理4种班车类型——无需班车、迪士尼度假区巡游车、合作酒店专用班车、酒店自营班车——以及预订前必须确认的班次陷阱。"
 tags:
@@ -11,6 +11,8 @@ tags:
   - 迪士尼
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/shuttle-buses.jpg"
 noDate: true
 tgNav: true
 faq:

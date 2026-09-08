@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼亲子酒店推荐 | 大浴场·宽敞客房·便利店·距乐园近（本地视角）"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "本地媒体从5个视角（大浴场·温泉、宽敞客房、附近便利店、距乐园距离、行李·洗衣）比较浦安·舞滨的家庭向酒店。附本地注意事项，避免常见误解。"
 tags:
@@ -9,6 +9,8 @@ tags:
   - 家庭
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/kids-family-hotel-room.jpg"
 noDate: true
 tgNav: true
 faq:

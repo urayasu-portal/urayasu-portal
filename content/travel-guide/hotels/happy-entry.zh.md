@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼Happy Entry（提前入园）全解说 | 哪些酒店有资格"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 description: "Happy Entry让东京迪士尼度假区酒店住客比一般开园更早入园（乐园提前15分钟，海洋因施工提前5〜15分钟）——但仅限迪士尼酒店住客。本地视角解说它的运作方式、哪些酒店有资格、常见误解，以及不住迪士尼酒店时的替代策略。"
 tags:
@@ -10,6 +10,8 @@ tags:
   - Happy Entry
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/happy-entry-park-gate.jpg"
 noDate: true
 tgNav: true
 faq:

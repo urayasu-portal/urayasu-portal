@@ -1,7 +1,7 @@
 ---
 title: "Urayasu Hotels with Free Shuttle Buses to Tokyo Disney Resort | How Park Shuttles Really Work"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 description: "Which hotels near Tokyo Disneyland and DisneySea have a free shuttle bus? A local guide to the four shuttle patterns — no shuttle needed, Disney Resort Cruiser, the Partner Hotel Shuttle, and each hotel's own bus — plus the timetable traps to check before booking."
 tags:
@@ -11,6 +11,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/shuttle-buses.jpg"
 noDate: true
 tgNav: true
 faq:

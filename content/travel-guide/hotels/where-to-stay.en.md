@@ -2,13 +2,15 @@
 title: "Urayasu or Central Tokyo: Where to Stay for Tokyo Disney Resort? | A Local's Honest Comparison"
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-08-29"
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 description: "The first decision for a Tokyo trip with Disney days isn't which hotel — it's which base. A local guide honestly compares staying in Urayasu / Maihama next to the parks, basing yourself in central Tokyo, or splitting the stay — covering Happy Entry, luggage, cost and evenings."
 tags:
   - Hotel
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/where-to-stay-odaiba-skyline.jpg"
 noDate: true
 tgNav: true
 faq:

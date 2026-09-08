@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼度假区酒店4大类解说 | 迪士尼酒店·指定酒店·合作酒店·周边优良酒店的区别"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-08
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "东京迪士尼度假区的酒店分为迪士尼酒店（直营）、指定酒店、合作酒店、周边优良酒店四类。本文解说各类别的实际差异——乐园优先入场（Happy Entry）、馆内购票、免费班车、行李快递——以及地理位置和价格，帮助您选出最合适的类别。"
 tags:
@@ -9,6 +9,8 @@ tags:
   - 迪士尼
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/types-hotel-view.jpg"
 noDate: true
 tgNav: true
 faq:

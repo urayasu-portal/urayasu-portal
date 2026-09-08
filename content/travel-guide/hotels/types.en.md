@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disney Resort Hotel Categories Explained | Disney, Official, Partner & Good Neighbor Hotels"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-08
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "Tokyo Disney Resort's hotels split into four categories: Disney Hotels (operated by the resort), Official Hotels, Partner Hotels, and Good Neighbor Hotels. We break down the real differences — early park entry (Happy Entry), in-hotel ticket purchase, free shuttles, baggage delivery — plus location and price, so you can pick the right category for your trip."
 tags:
@@ -9,6 +9,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/types-hotel-view.jpg"
 noDate: true
 tgNav: true
 faq:

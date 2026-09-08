@@ -1,7 +1,7 @@
 ---
 title: "Halloween in Urayasu & Maihama 2026 | Costume Rules, Where to Change, Hotel Events & Sweets"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-08
+lastmod: 2026-09-09
 factChecked: "2026-09-08"
 slug: "maihama-halloween"
 badge: "Halloween"
@@ -14,6 +14,8 @@ tags:
   - Hotels
 description: "A local guide to Halloween 2026 in Urayasu and Maihama: exactly when full costumes are allowed, three places to change (Ikspiari, Maihama Eurasia, Comfort Suites) compared on price and access, hotel stay plans, limited-edition sweets, and what you can enjoy without a park ticket."
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/maihama-halloween-family.jpg"
 tgNav: true
 draft: false
 faq:
@@ -106,6 +108,10 @@ faq:
 <hr>
 
 <h2 id="costume">If you are wearing a costume: rules and where to change</h2>
+
+<figure>
+<img src="/images/travel-guide/halloween-costume-change.jpg" alt="Two women changing into Halloween costumes in a hotel room, doing their hair and make-up at the mirror, with a suitcase, garment bag and cosmetics laid out." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>There is no changing space in the parks</h3>
 
@@ -250,6 +256,10 @@ faq:
 
 <h2 id="stay">Staying in the Halloween mood</h2>
 
+<figure>
+<img src="/images/travel-guide/halloween-hotel-stay.jpg" alt="A hotel lobby decorated for Halloween with pumpkins, lanterns and autumn foliage, as a family walks past pulling suitcases." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>Tokyo Bay Maihama Hotel First Resort</h3>
 
 <p>From September 15 (Tue) to October 31 (Sat), the hotel sells the "Halloween Spooky Night Stay," which puts you in a Halloween-decorated room. Rooms modeled on a "castle salon" are dressed to a "spooky fantasy" theme, and each comes with a <strong>witch's cape and hat you can use for photos</strong>.</p>
@@ -323,6 +333,10 @@ faq:
 
 <h2 id="sweets">Halloween sweets and dining</h2>
 
+<figure>
+<img src="/images/travel-guide/halloween-sweets.jpg" alt="Halloween cakes on a hotel dessert buffet: a pumpkin-shaped mousse, a purple Mont Blanc and ghost-shaped sweets." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>Hilton Tokyo Bay "Gothic Palace"</h3>
 
 <p>From September 5 (Sat) to November 3 (Mon, holiday), <strong>on weekends and public holidays only</strong>, Lounge O hosts a Halloween dessert buffet with roughly 20 sweets and 15 savory items over a two-hour seating. Prices are 5,000 yen for adults, 2,700 yen for ages 9-12 and 1,900 yen for ages 4-8, across four seatings starting at 12:00, 12:30, 14:30 and 15:00. See our <a href="/en/posts/hilton-tokyo-bay-gothic-palace-2026/">Gothic Palace article</a>.</p>
@@ -379,6 +393,10 @@ faq:
 <hr>
 
 <h2 id="outside">What you can enjoy outside the parks</h2>
+
+<figure>
+<img src="/images/travel-guide/halloween-outside-park.jpg" alt="Ikspiari at night: a family walks along a promenade lit by Halloween banners and pumpkin lanterns, with the Disney Resort Line passing behind." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>Disney revival screenings at Cinema Ikspiari</h3>
 

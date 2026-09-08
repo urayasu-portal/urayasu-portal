@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼度假區飯店4大分類解說 | 迪士尼飯店·官方飯店·合作飯店·周邊優良飯店的差別"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-08
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "東京迪士尼度假區的飯店分為迪士尼飯店（直營）、官方飯店、合作飯店、周邊優良飯店四類。本文解說各分類的實際差異——樂園優先入場（Happy Entry）、館內購票、免費班車、行李快遞——以及地理位置和價格，幫助您選出最合適的分類。"
 tags:
@@ -9,6 +9,8 @@ tags:
   - 迪士尼
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/types-hotel-view.jpg"
 noDate: true
 tgNav: true
 faq:

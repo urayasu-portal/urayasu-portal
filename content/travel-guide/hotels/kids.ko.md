@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 가족 호텔 추천 | 대욕장·넓은 객실·편의점·파크 근접(현지 시선)"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-06-30
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "현지 미디어가 5가지 관점(대욕장·온천, 넓은 객실, 인근 편의점, 파크까지 거리, 짐·세탁)으로 우라야스·마이하마의 가족 호텔을 비교합니다. 흔한 오해를 피하기 위한 현지 주의사항 포함."
 tags:
@@ -9,6 +9,8 @@ tags:
   - 가족
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/kids-family-hotel-room.jpg"
 noDate: true
 tgNav: true
 faq:

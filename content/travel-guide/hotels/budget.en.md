@@ -1,7 +1,7 @@
 ---
 title: "Cheap Hotels in Urayasu & Maihama near Tokyo Disneyland | From Around ¥10,000 for Two (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-08-24
+lastmod: 2026-09-09
 factChecked: "2026-08-24"
 description: "Enjoy Tokyo Disney Resort for less. A local-media comparison of budget hotels in Urayasu where two can stay from around ¥10,000, balancing price and location — plus tips for making 'cheap' actually pay off."
 tags:
@@ -11,6 +11,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/budget-hotel-room.jpg"
 noDate: true
 tgNav: true
 faq:

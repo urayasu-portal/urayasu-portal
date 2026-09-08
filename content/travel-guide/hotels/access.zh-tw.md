@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼飯店交通比較 | 樂園·車站·機場·東京市中心（在地視角）"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-24
+lastmod: 2026-09-09
 factChecked: "2026-08-24"
 description: "在地媒體比較浦安全部飯店的交通便利性：距樂園遠近、JR車站可達性、機場巴士、前往東京市中心——四個維度一次看清。機場巴士費用、哪些飯店真的能從舞濱站步行等實用資訊。"
 tags:
@@ -9,6 +9,8 @@ tags:
   - 交通
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/access-hotel-shuttle.jpg"
 noDate: true
 tgNav: true
 faq:

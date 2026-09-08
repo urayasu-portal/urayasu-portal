@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼酒店交通比较 | 乐园·车站·机场·东京市中心（本地视角）"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-24
+lastmod: 2026-09-09
 factChecked: "2026-08-24"
 description: "本地媒体比较浦安全部酒店的交通便利性：距乐园远近、JR车站可达性、机场大巴、前往东京市中心——四个维度一次看清。机场大巴费用、哪些酒店真的能从舞滨站步行等实用信息。"
 tags:
@@ -9,6 +9,8 @@ tags:
   - 交通
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/access-hotel-shuttle.jpg"
 noDate: true
 tgNav: true
 faq:

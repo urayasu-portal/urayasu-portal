@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 리조트 호텔 4대 분류 해설 | 디즈니·공식·파트너·굿네이버 호텔의 차이"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-08
+lastmod: 2026-09-09
 factChecked: "2026-08-08"
 description: "도쿄 디즈니 리조트의 호텔은 디즈니 호텔(직영), 공식 호텔, 파트너 호텔, 굿네이버 호텔 네 가지로 나뉩니다. 이 글에서는 각 분류의 실제 차이——파크 우선 입장(해피 엔트리), 관내 티켓 구매, 무료 셔틀, 짐 배송——와 입지·가격을 해설해 가장 알맞은 분류를 고르도록 돕습니다."
 tags:
@@ -9,6 +9,8 @@ tags:
   - 디즈니
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/types-hotel-view.jpg"
 noDate: true
 tgNav: true
 faq:
