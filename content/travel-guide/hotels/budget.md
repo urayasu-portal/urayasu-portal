@@ -1,7 +1,7 @@
 ---
 title: "浦安・舞浜エリアの格安ホテル徹底比較｜2名1万円台から泊まれる宿【地元発】"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-08-24
+lastmod: 2026-09-09
 factChecked: "2026-08-24"
 description: "東京ディズニーリゾートを安く楽しむ。浦安市内で2名1万円前後から泊まれる格安ホテルを、価格と立地のバランスで地元メディアが徹底比較。安さを活かすコツも紹介。"
 tags:
@@ -12,6 +12,8 @@ tags:
   - 舞浜
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/budget-hotel-room.jpg"
 noDate: true
 tgNav: true
 faq:
