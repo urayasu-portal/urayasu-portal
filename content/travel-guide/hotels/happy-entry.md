@@ -1,7 +1,7 @@
 ---
 title: "東京ディズニーリゾートのハッピーエントリーとは｜早入園の仕組みと対象ホテルを地元が解説"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 description: "ハッピーエントリーは、東京ディズニーリゾートのホテル宿泊者が一般開園より早く入園できる特典（ランドは15分前、シーは工事に伴い5〜15分前）──ただし対象はディズニーホテルの宿泊者だけ。仕組み・対象ホテル・よくある誤解・ディズニーホテルに泊まらない場合の対処法を地元メディアが解説します。"
 tags:
@@ -10,6 +10,8 @@ tags:
   - ハッピーエントリー
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/happy-entry-park-gate.jpg"
 noDate: true
 tgNav: true
 faq:
