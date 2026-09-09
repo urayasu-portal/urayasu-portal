@@ -3,6 +3,7 @@ title: "하네다·나리타 공항에서 마이하마·우라야스 호텔로 �
 aliases: ["/travel-guide/hotels/luggage-airport/"]
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-09-01"
+lastmod: 2026-09-09
 description: "하네다·나리타 공항이나 도쿄역에서 도쿄디즈니리조트 주변 호텔로 캐리어만 먼저 보내는 방법을 현지 매체가 정리했습니다. 터미널별 당일 배송 마감 시각(나리타 제3터미널은 9:50), 야마토·사가와·JAL ABC의 크기별 요금, 대상 호텔 19곳, 마감에 못 맞췄을 때의 대안까지 공식 정보를 바탕으로 설명합니다."
 tags:
   - Hotel
@@ -11,6 +12,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/luggage-airport-hero.jpg"
 noDate: true
 tgNav: true
 faq:
@@ -35,6 +38,10 @@ faq:
 ---
 
 ## 먼저 확인: 마감에 맞출 수 있나요?
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-cutoff.jpg" alt="공항 택배 카운터 근처에서 캐리어를 곁에 두고 스마트폰으로 마감 시간을 확인하는 여성." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 이용 가능한 서비스는 **도착하는 터미널에 따라 다릅니다**. 공항 단위가 아니라 터미널 단위로 정해진다는 점에 주의하세요.
 
@@ -208,6 +215,10 @@ faq:
 
 ## 짐은 저녁 이후에 도착합니다 — 손에 남길 것
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-keep-with-you.jpg" alt="공항 벤치에서 캐리어에서 당일 필요한 물건을 꺼내 배낭으로 옮기는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 이 글에서 가장 전하고 싶은 부분입니다. **공항에서 보낸 짐이 호텔에 도착하는 것은 16시에서 20시경**으로, 체크인해도 바로 손에 들어오지 않습니다. 파크에서 하루 놀고 돌아왔을 무렵에야 방으로 옮길 수 있는 시간 감각입니다.
 
 캐리어에 넣으면 곤란한 물건은 맡기기 전에 빼두세요.
@@ -246,6 +257,10 @@ faq:
 
 ## 마감에 맞추지 못했다면
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-limousine-bus.jpg" alt="공항 버스 승차장에서 리무진 버스 짐칸에 직원이 캐리어를 싣는 모습을 지켜보는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 오후에 도착하는 항공편으로는 당일 배송 마감에 좀처럼 맞출 수 없습니다. 그럴 때는 짐을 들고 이동해 **마이하마역에서 보내는 방법**으로 바꿉니다. 마이하마역은 이 지역 짐의 거점으로, 역에서 호텔로 가는 배송이 따로 마련되어 있습니다.
 
 - **디즈니호텔·오피셜호텔** — JR 마이하마역에 인접한 웰컴센터에서 **무료**
@@ -267,6 +282,10 @@ faq:
 ---
 
 ## 돌아갈 때: 호텔에서 공항으로
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-hotel-return.jpg" alt="호텔 프런트에서 귀국 편을 위해 캐리어에 배송 전표를 붙여 받는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 출발일도 마찬가지로 가볍게 다닐 수 있습니다. **여기서 주의할 점은 목적지가 "공항"이냐 "마이하마역"이냐에 따라 다른 서비스가 된다는 것**입니다.
 

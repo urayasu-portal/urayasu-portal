@@ -3,6 +3,7 @@ title: "Sending Luggage from Haneda or Narita to Your Maihama / Urayasu Hotel | 
 aliases: ["/travel-guide/hotels/luggage-airport/"]
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-09-01"
+lastmod: 2026-09-09
 description: "How to send your suitcase straight from Haneda, Narita or Tokyo Station to your hotel near Tokyo Disney Resort. Same-day cut-off times by terminal (Narita Terminal 3 closes at 9:50), prices by size for Yamato, Sagawa and JAL ABC, the 19 eligible hotels, and what to do if you miss the cut-off — checked against official sources."
 tags:
   - Hotel
@@ -11,6 +12,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/luggage-airport-hero.jpg"
 noDate: true
 tgNav: true
 faq:
@@ -35,6 +38,10 @@ Information reflects official sources as of August 2026. All prices include tax;
 ---
 
 ## First check: can you make the cut-off?
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-cutoff.jpg" alt="A woman checking the cut-off time on her smartphone beside her suitcase near the airport delivery counter." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 Which services you can use **depends on your terminal**, not just the airport.
 
@@ -208,6 +215,10 @@ If you miss the same-day cut-off, **standard delivery** is still available (unti
 
 ## Your bags arrive in the evening — what to keep with you
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-keep-with-you.jpg" alt="A family on an airport bench moving the items they need today from a suitcase into a backpack." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 This is the part worth remembering. **Luggage sent from the airport reaches the hotel between 16:00 and 20:00**, so it will not be waiting for you at check-in. In practice it lands in your room about the time you get back from a day in the parks.
 
 Take these out of your suitcase before you hand it over.
@@ -246,6 +257,10 @@ Neither service delivers to **private lodgings**.
 
 ## If you miss the cut-off
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-limousine-bus.jpg" alt="A family watching a crew member load their suitcases into the luggage hold of an airport limousine bus." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 Afternoon arrivals will simply not make the same-day cut-off. In that case, carry your bags and switch to **sending them from Maihama Station**. The station is the luggage hub for this area, with its own delivery service to the hotels.
 
 - **Disney Hotels and Official Hotels** — **free**, from the Welcome Center next to JR Maihama Station
@@ -267,6 +282,10 @@ For a comparison of the journey itself, see [Getting to Urayasu and Maihama](/en
 ---
 
 ## Going home: hotel to airport
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-hotel-return.jpg" alt="A family at a hotel front desk having delivery tags attached to their suitcases for the trip home." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 You can travel light on departure day too. **The key point is that "to the airport" and "to Maihama Station" are two different services.**
 

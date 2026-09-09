@@ -3,6 +3,7 @@ title: "从羽田·成田机场把行李寄到舞滨·浦安酒店的方法 | �
 aliases: ["/travel-guide/hotels/luggage-airport/"]
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-09-01"
+lastmod: 2026-09-09
 description: "本地媒体整理：如何从羽田机场、成田机场或东京站把行李先寄到东京迪士尼度假区周边的酒店。按航站楼列出当日配送截止时间（成田第3航站楼为9:50）、雅玛多·佐川·JAL ABC的尺寸别费用、19家适用酒店，以及赶不上截止时间时的替代方案，全部基于官方信息。"
 tags:
   - Hotel
@@ -11,6 +12,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/luggage-airport-hero.jpg"
 noDate: true
 tgNav: true
 faq:
@@ -35,6 +38,10 @@ faq:
 ---
 
 ## 首先确认：您赶得上截止时间吗
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-cutoff.jpg" alt="在机场快递柜台附近，把行李箱放在身边、用手机确认截止时间的女性。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 可用的服务**因抵达的航站楼而异**。请注意这不是按机场划分，而是按航站楼划分。
 
@@ -208,6 +215,10 @@ faq:
 
 ## 行李在傍晚以后才到 —— 需要留在手边的东西
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-keep-with-you.jpg" alt="在机场长椅上，从行李箱里取出当天要用的物品放进背包的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 这是本文最想传达的部分。**从机场寄出的行李送到酒店是在16点到20点左右**，即使办完入住也不会马上拿到。感觉上是在乐园玩了一整天回来后，才终于能把行李搬进房间。
 
 放进行李箱会造成困扰的物品，请在寄送前取出。
@@ -246,6 +257,10 @@ faq:
 
 ## 赶不上截止时间时
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-limousine-bus.jpg" alt="在机场巴士乘车处，看着工作人员将行李箱装入利木津巴士行李舱的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 搭乘下午抵达的航班，几乎不可能赶上当日配送的截止时间。这种情况请带着行李移动，改用**从舞滨站寄送的方法**。舞滨站是本地区行李的枢纽，另有从车站送往酒店的服务。
 
 - **迪士尼酒店·官方酒店** — 在JR舞滨站旁的欢迎中心**免费**
@@ -267,6 +282,10 @@ faq:
 ---
 
 ## 回程：从酒店到机场
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-hotel-return.jpg" alt="在酒店前台，为回程航班在行李箱上挂上配送单的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 出发当天同样可以轻装。**这里要注意的是，目的地是「机场」还是「舞滨站」，属于不同的服务**。
 

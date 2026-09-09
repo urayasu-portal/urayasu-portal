@@ -3,6 +3,7 @@ title: "羽田・成田空港から舞浜・浦安のホテルへ荷物を送る
 aliases: ["/travel-guide/hotels/luggage-airport/"]
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-09-01"
+lastmod: 2026-09-09
 description: "羽田空港・成田空港・東京駅から東京ディズニーリゾート周辺のホテルへ、荷物だけ先に送る方法を地元メディアが整理。ヤマト・佐川急便・JAL ABCの当日配送の締切時刻（成田第3ターミナルは9:50）、サイズ別料金、対象ホテル19施設、間に合わなかったときの代替まで公式情報ベースで解説します。"
 tags:
   - Hotel
@@ -11,6 +12,8 @@ tags:
   - Disney
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/luggage-airport-hero.jpg"
 noDate: true
 tgNav: true
 faq:
@@ -35,6 +38,10 @@ faq:
 ---
 
 ## まず確認：あなたは締切に間に合いますか
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-cutoff.jpg" alt="空港の宅配カウンター近くで、スーツケースを手元に置いたままスマートフォンで締切時刻を確認する女性。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 使えるサービスは**到着するターミナルによって違います**。空港単位ではなくターミナル単位で決まる点にご注意ください。
 
@@ -208,6 +215,10 @@ faq:
 
 ## 荷物は夕方以降に届く——手元に残すもの
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-keep-with-you.jpg" alt="空港のベンチで、スーツケースから当日必要なものを取り出してリュックに移し替える家族。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 この記事でいちばんお伝えしたいのはここです。**空港から送った荷物がホテルに届くのは16時から20時ごろ**で、チェックインしてもすぐには手元に戻りません。パークで一日遊んで戻ってきたころ、ようやく部屋に運べる——という時間感覚になります。
 
 スーツケースに入れてしまうと困るものを、預ける前に抜き出しておいてください。
@@ -246,6 +257,10 @@ faq:
 
 ## 締切に間に合わなかったら
 
+<figure>
+<img src="/images/travel-guide/luggage-airport-limousine-bus.jpg" alt="空港のバス乗り場で、リムジンバスのトランクに係員がスーツケースを積み込むのを見守る家族。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 午後に到着する便では、当日配送の締切にはまず間に合いません。その場合は荷物を持って移動し、**舞浜駅から送る方法**に切り替えます。舞浜駅はこのエリアの荷物の拠点で、駅からホテルへの配送が別に用意されています。
 
 - **ディズニーホテル・オフィシャルホテル** — JR舞浜駅隣接のウェルカムセンターから**無料**
@@ -267,6 +282,10 @@ faq:
 ---
 
 ## 帰り：ホテルから空港へ送る
+
+<figure>
+<img src="/images/travel-guide/luggage-airport-hotel-return.jpg" alt="ホテルのフロントで、帰り便に向けてスーツケースに配送伝票を付けてもらう家族連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 出発日も同じように身軽にできます。**ここで注意したいのは、行き先が「空港」か「舞浜駅」かで別のサービスになる**ことです。
 
