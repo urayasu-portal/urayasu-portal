@@ -2,10 +2,11 @@
 title: "從舞濱·浦安去東京觀光：淺草·澀谷·晴空塔等7大景點路線與車資一覽"
 description: "從京葉線（舞濱·新浦安）和東西線（浦安站）分別前往淺草、東京晴空塔、東京鐵塔、皇居、秋葉原、澀谷、原宿的最短路線與IC車資一覽。附感應信用卡與Suica（西瓜卡）的區別、東京站京葉線月台很遠等在地小撇步。"
 date: 2026-07-07
+lastmod: 2026-09-10
 factChecked: "2026-08-08"
 draft: false
 cover:
-  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
+  image: "/images/travel-guide/tokyo-access-hero.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "交通"
@@ -70,6 +71,10 @@ tags:
 
 {{< ad-disclosure >}}
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-skytree.jpg" alt="在隅田川沿岸步道仰望東京晴空塔的一家人，近處是淺草寺的朱紅建築。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ### 東京鐵塔
 
 | 出發 | 路線 | 時間 | 車資(IC) |
@@ -78,6 +83,10 @@ tags:
 | 東西線 | 浦安 →（東西線）→ 茅場町 →（日比谷線）→ 神谷町 → 步行約7分 | 約45分 | **¥252** |
 
 **勝者：時間相當，車資東西線勝。** 兩條最後都匯入同一條日比谷線，均轉乘1次。從神谷町站到鐵塔需走約7分鐘上坡路。
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-tokyo-tower.jpg" alt="在芝公園的林蔭道上仰望東京鐵塔的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ### 皇居（東御苑·二重橋）
 
@@ -115,6 +124,10 @@ tags:
 
 **勝者：東西線更省時省錢。** 千代田線的明治神宮前站緊鄰JR原宿站，直通明治神宮與竹下通。澀谷與原宿步行也就15分鐘，**通常一起逛**。
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-shibuya.jpg" alt="以大型螢幕大樓為背景，手牽手走過澀谷十字路口的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 車資怎麼付：感應信用卡與Suica（悠遊卡）（2026年3月最新）
 
 日本坐電車跟台灣一樣是「嗶卡進站」。**Suica／PASMO**就相當於日本的悠遊卡，把卡或手機貼在閘門即可。另外從**2026年3月起，東京地鐵、都營地鐵、關東各私鐵與成田特快，也開始支援Visa／Mastercard／JCB／美國運通等感應式信用卡直接嗶閘門**乘車。但**JR不在此列**。
@@ -123,6 +136,10 @@ tags:
 - **JR線（舞濱站的京葉線、山手線等）**：**不支援**信用卡感應，需要**Suica或PASMO**（可加進手機，或在機場買Welcome Suica）。
 - 對本文的路線來說：**東西線可直接嗶你的信用卡；但只要用到舞濱的京葉線（JR），就要備一張Suica／PASMO。** 一天內兩條都要搭，就統一用Suica，全線通用最省事。
 - **兒童不適用信用卡感應乘車。** 只對應成人票價，小學生請另備**兒童IC卡**或紙票。
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-fare-gate.jpg" alt="在車站自動閘門上感應手機通過的乘客。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ## 三個在地小撇步
 

@@ -2,10 +2,11 @@
 title: "舞浜・浦安から東京観光へ：浅草・渋谷・スカイツリーほか7大スポット行き方＆運賃早見表"
 description: "浅草・東京スカイツリー・東京タワー・皇居・秋葉原・渋谷・原宿へ、京葉線（舞浜・新浦安）と東西線（浦安駅）それぞれからの最短ルートと運賃（IC）を一覧表で。タッチ決済とSuicaの使い分け、東京駅の京葉線ホームが遠い問題、朝ラッシュ回避など地元のコツも。"
 date: 2026-07-07
+lastmod: 2026-09-10
 factChecked: "2026-08-01"
 draft: false
 cover:
-  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
+  image: "/images/travel-guide/tokyo-access-hero.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "アクセス"
@@ -70,6 +71,10 @@ tags:
 
 {{< ad-disclosure >}}
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-skytree.jpg" alt="隅田川沿いの遊歩道から東京スカイツリーを見上げる家族連れ。手前には浅草寺の朱塗りの建物。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ### 東京タワー
 
 | 出発 | ルート | 時間 | 運賃(IC) |
@@ -78,6 +83,10 @@ tags:
 | 東西線から | 浦安 →（東西線）→ 茅場町 →（日比谷線）→ 神谷町 → 徒歩約7分 | 約45分 | **¥252** |
 
 **軍配：時間は互角、運賃は東西線。** どちらも最後は同じ日比谷線に合流します。乗り換えは1回だけ、神谷町駅からタワーまでは上り坂を7分ほど歩きます。
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-tokyo-tower.jpg" alt="芝公園の並木道から東京タワーを見上げる家族連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ### 皇居（東御苑・二重橋）
 
@@ -115,6 +124,10 @@ tags:
 
 **軍配：東西線がやや楽・安い。** 千代田線の明治神宮前駅はJR原宿駅の真横で、明治神宮にも竹下通りにも直結です。渋谷と原宿は歩いても15分ほどなので、**セットで回るのが定番**です。
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-shibuya.jpg" alt="渋谷スクランブル交差点を、大型ビジョンのビルを背に手をつないで渡る家族連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 運賃の払い方：Suica／PASMOとタッチ決済（2026年3月最新）
 
 日本の電車は、改札にカードやスマホを**タッチ**して乗ります。2026年3月から状況が変わり、**東京メトロ・都営地下鉄・関東の私鉄各線・成田エクスプレスで、クレジットカード等の「タッチ決済」（Visa／Mastercard／JCB／Amex／銀聯など）による乗車に対応**しました。ただし**JRは対象外**です。
@@ -123,6 +136,10 @@ tags:
 - **JR京葉線（舞浜駅）・山手線などJR各線**：タッチ決済は**非対応**。**Suica／PASMO**（スマホに搭載可・空港でWelcome Suica購入可）が必要です。
 - この記事のルートで言うと、**東西線ルートは手持ちのカードで乗れますが、舞浜の京葉線を使うならSuica／PASMOが必要**。両方をまたぐ日は、Suicaに一本化すれば全線カバーできて楽です。
 - **子どもはタッチ決済（後払い）を使えません。** 大人運賃のみの対応なので、小学生には**こども用ICカード**か切符を用意してください。
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-fare-gate.jpg" alt="駅の自動改札機に、スマートフォンをタッチして通過する乗客。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ## 地元の3つのコツ
 

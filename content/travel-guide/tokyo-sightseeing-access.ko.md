@@ -2,9 +2,10 @@
 title: "마이하마·우라야스에서 도쿄 관광: 아사쿠사·시부야·스카이트리 등 7대 명소 경로와 요금 총정리"
 description: "게이요선(마이하마·신우라야스)과 도자이선(우라야스역)에서 아사쿠사, 도쿄 스카이트리, 도쿄 타워, 고쿄, 아키하바라, 시부야, 하라주쿠로 가는 최단 경로와 IC 요금을 한눈에. 터치 결제 신용카드와 Suica의 구분, 도쿄역 게이요선 승강장이 먼 문제 등 현지 팁까지."
 date: 2026-07-07
+lastmod: 2026-09-10
 draft: false
 cover:
-  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
+  image: "/images/travel-guide/tokyo-access-hero.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "교통"
@@ -70,6 +71,10 @@ factChecked: "2026-08-11"
 
 {{< ad-disclosure >}}
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-skytree.jpg" alt="스미다강 산책로에서 도쿄 스카이트리를 올려다보는 가족. 앞쪽에는 센소지의 붉은 건물." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ### 도쿄 타워
 
 | 출발 | 경로 | 시간 | 요금(IC) |
@@ -78,6 +83,10 @@ factChecked: "2026-08-11"
 | 도자이선 | 우라야스 →(도자이선)→ 가야바초 →(히비야선)→ 가미야초 → 도보 약 7분 | 약 45분 | **¥252** |
 
 **추천: 시간은 비슷, 요금은 도자이선.** 두 경로 모두 마지막에 같은 히비야선에 합류하며 환승은 1회. 가미야초역에서 타워까지 약 7분 오르막을 걷습니다.
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-tokyo-tower.jpg" alt="시바공원 가로수길에서 도쿄 타워를 올려다보는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ### 고쿄(동어원·니주바시)
 
@@ -115,6 +124,10 @@ factChecked: "2026-08-11"
 
 **추천: 도자이선이 빠르고 저렴.** 치요다선 메이지진구마에역은 JR 하라주쿠역 바로 옆으로, 메이지 신궁과 다케시타 거리에 모두 직결됩니다. 시부야와 하라주쿠는 걸어서 15분 거리라 **보통 함께 둘러봅니다**.
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-shibuya.jpg" alt="대형 전광판 건물을 배경으로 시부야 스크램블 교차로를 손잡고 건너는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 교통비 내는 법: 터치 결제 신용카드와 Suica (2026년 3월 최신)
 
 일본 전철도 한국처럼 개찰구에 **카드를 태그**해서 탑니다. **Suica·PASMO**가 일본의 교통카드에 해당하며, 카드나 휴대폰을 개찰구에 대면 됩니다. 또한 **2026년 3월부터 도쿄 메트로·도에이·주요 사철·나리타 익스프레스에서 Visa·Mastercard·JCB·아멕스 등 비접촉(터치) 신용카드로 바로 태그 승차**가 가능해졌습니다. 다만 **JR은 대상 외**입니다.
@@ -123,6 +136,10 @@ factChecked: "2026-08-11"
 - **JR선(마이하마역의 게이요선, 야마노테선 등)**: 신용카드 터치 **불가**. **Suica·PASMO**가 필요합니다(휴대폰에 추가하거나 공항에서 Welcome Suica 구입).
 - 이 글의 경로로 말하면: **도자이선 경로는 본인 카드로 바로 탈 수 있지만, 마이하마의 게이요선(JR)을 이용하면 Suica·PASMO가 필요합니다.** 하루에 둘 다 탄다면 Suica로 통일하는 편이 전 노선 커버돼 편합니다.
 - **어린이는 신용카드 터치 승차를 쓸 수 없습니다.** 성인 요금만 대응하므로, 초등학생은 **어린이용 IC카드**나 종이 승차권을 준비하세요.
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-fare-gate.jpg" alt="역 자동 개찰구에 스마트폰을 터치해 통과하는 승객." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ## 현지 팁 세 가지
 

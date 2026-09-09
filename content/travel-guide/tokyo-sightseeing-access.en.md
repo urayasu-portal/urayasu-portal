@@ -2,9 +2,10 @@
 title: "Day Trips into Tokyo from Your Disney Hotel: Routes & Fares for Asakusa, Shibuya, Skytree & More"
 description: "The fastest routes and IC fares from the Tokyo Disney Resort area to Asakusa, Skytree, Tokyo Tower, the Imperial Palace, Akihabara, Shibuya and Harajuku — compared from the JR Keiyo Line (Maihama) and the Tozai Line (Urayasu). Plus how to pay: tap your own card vs. Suica, and why it depends on the line."
 date: 2026-07-07
+lastmod: 2026-09-10
 draft: false
 cover:
-  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
+  image: "/images/travel-guide/tokyo-access-hero.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "Access"
@@ -64,6 +65,10 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 {{< ad-disclosure >}}
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-skytree.jpg" alt="A family looking up at Tokyo Skytree from the Sumida riverside promenade, with the vermilion halls of Senso-ji in the foreground." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ### Tokyo Tower
 
 | From | Route | Time | Fare (IC) |
@@ -72,6 +77,10 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 | Tozai Line | Urayasu → (Tozai) → Kayabacho → (Hibiya Line) → Kamiyacho → ~7 min walk | ~45 min | **¥252** |
 
 **Verdict: tie on time, Tozai on fare.** Both routes merge onto the same Hibiya Line with one transfer, then a gentle 7-minute uphill walk from Kamiyacho Station.
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-tokyo-tower.jpg" alt="A family looking up at Tokyo Tower from the tree-lined path in Shiba Park." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ### The Imperial Palace (East Gardens & Nijubashi Bridge)
 
@@ -109,6 +118,10 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 **Verdict: Tozai, easier and cheaper.** Meiji-jingumae Station on the Chiyoda Line sits right beside JR Harajuku Station, steps from both Meiji Shrine and Takeshita Street. Shibuya and Harajuku are a 15-minute walk apart — **most people do them as a pair**.
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-shibuya.jpg" alt="A family crossing Shibuya Scramble Crossing hand in hand, with the big-screen buildings behind them." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## How to pay: tap your own card vs. Suica (2026 update)
 
 You ride Tokyo trains by **tapping** a card or phone at the gate — and since **March 2026 there's a second option that will feel familiar from home**: on many lines you can now tap your own contactless Visa, Mastercard, JCB or Amex (or your phone), no local card required. The catch is *which* lines.
@@ -117,6 +130,10 @@ You ride Tokyo trains by **tapping** a card or phone at the gate — and since *
 - **JR lines** — including the **Keiyo Line from Maihama** and the Yamanote Line — are **not** in this network. For JR you still need a **Suica or PASMO**: add one to Apple Wallet or Google Wallet before you travel, or buy a physical *Welcome Suica* at the airport.
 - For this guide that means the Tozai routes work with a tap of your own credit card, but **anything on the Keiyo Line (Maihama) needs Suica/PASMO**. Traveling on both in one day? Put everything on a mobile Suica — it covers every line here, JR included.
 - **Kids can't use the contactless-card tap** — it's adult-fare only. Get each elementary-schooler their own child IC card (or a paper ticket).
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-fare-gate.jpg" alt="A passenger tapping a smartphone on a station ticket gate to pass through." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ## Three local tips
 
