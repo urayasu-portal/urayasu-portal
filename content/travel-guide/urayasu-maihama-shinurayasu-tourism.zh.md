@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼周边游览指南 | 舞滨·浦安·新浦安的观光景点"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-10
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -17,6 +17,8 @@ tags:
 description: "舞滨·新浦安·浦安站周边的观光与活动本地指南。涵盖迪士尼周边游览地、雨天方案、家庭旅行提示，以及酒店住客的办理入住前后建议。"
 images:
   - "/images/og-tourism.png"
+cover:
+  image: "/images/travel-guide/tourism-hero.jpg"
 noDate: true
 tgNav: true
 draft: false
@@ -118,6 +120,10 @@ faq:
   </tbody>
 </table>
 </div>
+
+<figure>
+<img src="/images/travel-guide/tourism-three-areas.jpg" alt="舞滨·新浦安·浦安站周边三个区域的对比照片：度假区风格的街道、海边步道、老城区的境川沿岸。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p>三个区域之间无法步行往来，需乘电车。（舞滨→新浦安：京叶线1站约3–4分钟；舞滨→浦安站：换乘共约30–40分钟。）计划同日游览多个区域时，请预留充足交通时间。</p>
 
@@ -241,6 +247,10 @@ faq:
 
 <h2 id="maihama">舞滨地区：观光·停靠点</h2>
 
+<figure>
+<img src="/images/travel-guide/tourism-maihama.jpg" alt="在舞滨的度假区林荫道上，以单轨列车为背景漫步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>Ikspiari</h3>
 <p>与JR舞滨站直连的购物·餐饮设施，无需门票即可进入。内有餐厅、咖啡厅、时装、商品和电影院综合体。内部的<strong>Bon Voyage</strong>销售TDR官方角色商品，深受不想在园内排队购物的游客欢迎。</p>
 <ul>
@@ -273,6 +283,10 @@ faq:
 </div>
 
 <h2 id="shinurayasu">新浦安地区：观光·停靠点</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu.jpg" alt="在新浦安的海边步道上，沿着棕榈树与住宅楼散步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>Atre新浦安</h3>
 <p>与JR新浦安站直连的5层购物设施，有超市（成城石井）、餐厅、时装、药妆店和商品，本地居民和酒店住客都经常使用。</p>
@@ -324,6 +338,10 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">浦安站周边：历史·町步行</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="浦安站周边的境川沿岸。停着小船的水边与老屋林立的步道上走着的两人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p>东京地铁东西线浦安站周边的"元町地区"，保留着东京迪士尼乐园开业前的浦安风貌。讲述这座城市渔村历史的设施和建筑散布其中，能体验与TDR截然不同的静谧观光体验。</p>
 

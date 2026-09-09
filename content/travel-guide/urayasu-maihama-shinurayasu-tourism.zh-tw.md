@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼周邊遊覽指南 | 舞濱·浦安·新浦安的觀光景點"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-10
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -17,6 +17,8 @@ tags:
 description: "舞濱·新浦安·浦安站周邊的觀光與活動在地指南。涵蓋迪士尼周邊遊覽地、雨天方案、家庭旅行提示，以及飯店住客的辦理入住前後建議。"
 images:
   - "/images/og-tourism.png"
+cover:
+  image: "/images/travel-guide/tourism-hero.jpg"
 noDate: true
 tgNav: true
 draft: false
@@ -118,6 +120,10 @@ faq:
   </tbody>
 </table>
 </div>
+
+<figure>
+<img src="/images/travel-guide/tourism-three-areas.jpg" alt="舞濱·新浦安·浦安站周邊三個區域的對比照片：度假區風格的街道、海邊步道、舊城區的境川沿岸。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p>三個區域之間無法步行往來，需搭電車。（舞濱→新浦安：京葉線1站約3–4分鐘；舞濱→浦安站：轉乘共約30–40分鐘。）計劃同日遊覽多個區域時，請預留充足交通時間。</p>
 
@@ -241,6 +247,10 @@ faq:
 
 <h2 id="maihama">舞濱地區：觀光·停靠點</h2>
 
+<figure>
+<img src="/images/travel-guide/tourism-maihama.jpg" alt="在舞濱的度假區林蔭道上，以單軌列車為背景漫步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>Ikspiari</h3>
 <p>與JR舞濱站直通的購物·餐飲設施，無需門票即可進入。內有餐廳、咖啡廳、時裝、商品和電影院綜合體。內部的<strong>Bon Voyage</strong>販售TDR官方角色商品，深受不想在園內排隊購物的遊客歡迎。</p>
 <ul>
@@ -273,6 +283,10 @@ faq:
 </div>
 
 <h2 id="shinurayasu">新浦安地區：觀光·停靠點</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu.jpg" alt="在新浦安的海邊步道上，沿著棕櫚樹與住宅大樓散步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>Atre新浦安</h3>
 <p>與JR新浦安站直通的5層購物設施，有超市（成城石井）、餐廳、時裝、藥妝店和商品，在地居民和飯店住客都經常使用。</p>
@@ -324,6 +338,10 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">浦安站周邊：歷史·町散步</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="浦安站周邊的境川沿岸。停著小船的水邊與老屋林立的步道上走著的兩人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p>東京地鐵東西線浦安站周邊的「元町地區」，保留著東京迪士尼樂園開幕前的浦安風貌。講述這座城市漁村歷史的設施和建築散布其中，能體驗與TDR截然不同的靜謐觀光體驗。</p>
 

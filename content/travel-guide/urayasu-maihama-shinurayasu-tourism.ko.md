@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 볼거리 가이드 | 마이하마·우라야스·신우라야스 관광"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-10
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -17,6 +17,8 @@ tags:
 description: "마이하마·신우라야스·우라야스역 주변의 관광과 액티비티 현지 가이드. 디즈니 주변 둘러볼 곳, 비 오는 날 플랜, 가족 여행 팁, 호텔 투숙객의 체크인 전후 활용 조언을 다룹니다."
 images:
   - "/images/og-tourism.png"
+cover:
+  image: "/images/travel-guide/tourism-hero.jpg"
 noDate: true
 tgNav: true
 draft: false
@@ -118,6 +120,10 @@ faq:
   </tbody>
 </table>
 </div>
+
+<figure>
+<img src="/images/travel-guide/tourism-three-areas.jpg" alt="마이하마·신우라야스·우라야스역 주변 세 지역을 나란히 비교한 사진. 리조트풍 거리, 바닷가 산책로, 옛 시가지의 사카이가와 강변." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p>세 지역 사이는 걸어서 오갈 수 없어 전철을 타야 합니다.(마이하마→신우라야스: 게이요선 1정거장 약 3~4분; 마이하마→우라야스역: 환승 포함 약 30~40분.) 같은 날 여러 지역을 둘러볼 때는 충분한 교통 시간을 두세요.</p>
 
@@ -241,6 +247,10 @@ faq:
 
 <h2 id="maihama">마이하마 지역: 관광·정차점</h2>
 
+<figure>
+<img src="/images/travel-guide/tourism-maihama.jpg" alt="마이하마의 리조트 가로수길을 모노레일을 배경으로 걷는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>익스피아리</h3>
 <p>JR 마이하마역과 직결된 쇼핑·식음 시설로, 입장권 없이 들어갈 수 있습니다. 안에 레스토랑, 카페, 패션, 상품, 영화관 복합관이 있습니다. 내부의 <strong>봉 보야지</strong>는 TDR 공식 캐릭터 상품을 팔아, 파크 안에서 줄 서서 쇼핑하고 싶지 않은 방문객에게 인기입니다.</p>
 <ul>
@@ -273,6 +283,10 @@ faq:
 </div>
 
 <h2 id="shinurayasu">신우라야스 지역: 관광·정차점</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu.jpg" alt="신우라야스의 바닷가 산책로를 야자수와 아파트 단지를 옆에 두고 산책하는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>아트레 신우라야스</h3>
 <p>JR 신우라야스역과 직결된 5층 쇼핑 시설로, 슈퍼(세이조 이시이), 레스토랑, 패션, 드러그스토어, 상품이 있어 현지 주민과 호텔 투숙객이 자주 이용합니다.</p>
@@ -324,6 +338,10 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">우라야스역 주변: 역사·동네 산책</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="우라야스역 주변 사카이가와 강변. 배가 정박한 물가와 오래된 집들이 늘어선 산책로를 걷는 두 사람." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p>도쿄 메트로 도자이선 우라야스역 주변의 '모토마치 지역'은 도쿄 디즈니랜드 개업 전의 우라야스 모습을 간직하고 있습니다. 이 도시의 어촌 역사를 들려주는 시설과 건축이 흩어져 있어, TDR와는 전혀 다른 고요한 관광 경험을 할 수 있습니다.</p>
 
