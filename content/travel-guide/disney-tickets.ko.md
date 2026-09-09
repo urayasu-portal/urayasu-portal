@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 티켓 구매 완전 가이드 | 가격·매진일·어디서 사야 하나(현지 시선)"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "티켓"
@@ -12,6 +12,8 @@ tags:
   - 도쿄 디즈니 리조트
   - 우라야스
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/disney-tickets-hero.jpg"
 noDate: true
 faq:
   - q: "도쿄 디즈니 티켓은 어디서 사는 게 좋나요?"
@@ -31,6 +33,10 @@ faq:
 ---
 
 ## 티켓의 기본: 날짜 지정·파크 지정
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-basics.jpg" alt="호텔 객실에서 창밖으로 도쿄 디즈니씨를 바라보며 스마트폰과 가이드북으로 파크 일정을 확인하는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 도쿄 디즈니 티켓 시스템의 3가지 기본 규칙:
 
@@ -71,6 +77,10 @@ Trip.com은 두 파크 모두 취급하며 e티켓이 즉시 발급됩니다. �
 
 ### 3. 호텔 티켓 플랜 — 매진일의 구명줄
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-hotel-desk.jpg" alt="호텔 프런트에서 직원에게 파크 티켓 안내를 받는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 **디즈니 호텔·공식 호텔·파트너 호텔·굿네이버 호텔**의 티켓 포함/구매 권리 플랜 투숙객은 **온라인 매진일에도 호텔에서 티켓을 구매할 수 있는 경우가 있습니다.** 성수기에는 이것이 가장 확실한 경로이며, 호텔 선택이 중요한 또 하나의 이유입니다. 자세한 내용은 [호텔 분류 해설](/ko/travel-guide/hotels/types/)에서.
 
 ### 4. 당일 현장 구매 — 최후의 수단
@@ -81,6 +91,10 @@ Trip.com은 두 파크 모두 취급하며 e티켓이 즉시 발급됩니다. �
 
 ## 언제 사나: 매진은 실제로 일어납니다
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-when-to-buy.jpg" alt="집 식탁에서 노트북 달력을 보며 파크에 갈 날짜를 상의하는 부부." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 - 티켓은 **방문일 약 2개월 전**부터 판매.
 - **사전 매진이 잦은 날짜:** 토·일요일, 일본 방학(7월 하순〜8월, 12월 하순〜1월 초, 3월 하순), 핼러윈 시즌(9〜10월), 크리스마스 시즌(11〜12월).
 - **경험칙:** 여행 날짜가 확정되는 순간 티켓부터. 파크 방문일이 주말이라면 항공권·호텔보다 티켓이 먼저입니다.
@@ -88,6 +102,10 @@ Trip.com은 두 파크 모두 취급하며 e티켓이 즉시 발급됩니다. �
 ---
 
 ## 파크에서: Disney Premier Access와 공식 앱
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-entry-gate.jpg" alt="파크 입구 게이트에서 스마트폰 QR코드를 리더기에 대고 입장하는 방문객과 뒤에서 기다리는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 **Disney Premier Access**(DPA)는 어트랙션별 유료 시간 지정권(조사 기준 1인 1회 약 1,500〜2,500엔)으로, **당일 파크 입장 후 공식 앱에서** 구매합니다. 인기 어트랙션의 DPA는 오전에 매진되기도 합니다. 시즌에 따라 일부 어트랙션·쇼에 무료 패스가 운영된 적도 있으니 당일 앱에서 확인하세요.
 

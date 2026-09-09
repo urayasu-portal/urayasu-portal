@@ -1,7 +1,7 @@
 ---
 title: "東京ディズニーランド・シーのチケット購入ガイド｜料金・売り切れ・買える場所を地元が解説"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "チケット"
@@ -12,6 +12,8 @@ tags:
   - 東京ディズニーリゾート
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/disney-tickets-hero.jpg"
 noDate: true
 faq:
   - q: "東京ディズニーランド・シーのチケットはどこで買うのがよいですか？"
@@ -31,6 +33,10 @@ faq:
 ---
 
 ## チケットの基本：日付指定・パーク指定
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-basics.jpg" alt="ホテルの客室で、窓の外にディズニーシーを望みながらスマートフォンとガイドブックでパークの日程を確認する家族。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 東京ディズニーのチケットは、3つのルールで成り立っています。
 
@@ -71,6 +77,10 @@ Trip.comは両パークに対応し、eチケットが即時発行されます�
 
 ### 3. ホテルのチケットプラン（売り切れ日の生命線）
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-hotel-desk.jpg" alt="ホテルのフロントで、スタッフからパークチケットの案内を受ける家族連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 **ディズニーホテル・オフィシャルホテル・パートナーホテル・グッドネイバーホテルの、チケット付きまたは購入権付きプランの宿泊者は、オンライン販売が売り切れた日でもホテルでパークチケットを購入できます。** 繁忙日にはこれが最も確実なルートであり、ホテル選びが重要になる理由のひとつです。詳しくは[ホテル区分ガイド](/travel-guide/hotels/types/)をご覧ください。
 
 ### 4. 当日パークで購入（最後の手段）
@@ -81,6 +91,10 @@ Trip.comは両パークに対応し、eチケットが即時発行されます�
 
 ## いつ買う？売り切れは本当に起きる
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-when-to-buy.jpg" alt="自宅のダイニングでノートパソコンのカレンダーを見ながら、パークに行く日を相談する夫婦。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 - チケットの販売は**来園日の約2か月前**に始まります。
 - **事前に売り切れやすい日：** 土曜・日曜、日本の学校の長期休み（7月下旬〜8月、12月下旬〜1月上旬、3月下旬）、ハロウィンシーズン（9〜10月）、クリスマスシーズン（11〜12月）。
 - **鉄則：** 旅行の日程が決まった瞬間にチケットを買う。パーク日が週末なら、航空券やホテルより先に押さえましょう。
@@ -88,6 +102,10 @@ Trip.comは両パークに対応し、eチケットが即時発行されます�
 ---
 
 ## パーク内で：ディズニー・プレミアアクセスと公式アプリ
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-entry-gate.jpg" alt="パーク入口のゲートで、スマートフォンのQRコードを読み取り機にかざして入園する来園者と、後ろで待つ家族。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 **ディズニー・プレミアアクセス（DPA）** は、アトラクションごとに時間帯を有料で確保する仕組み（調査時点で1回1名あたりおおむね¥1,500〜2,500）で、**当日パーク内で公式アプリから**購入します。人気アトラクションのDPA枠は午前中に売り切れることもあります。時期によっては一部のアトラクションやショーで無料のパスが用意されたこともあるので、当日アプリで確認しましょう。
 

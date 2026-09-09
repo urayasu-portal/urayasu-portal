@@ -1,7 +1,7 @@
 ---
 title: "How to Buy Tokyo Disneyland & DisneySea Tickets | Prices, Sold-Out Days & Where to Buy"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "Tickets"
@@ -12,6 +12,8 @@ tags:
   - Tokyo Disney Resort
   - Urayasu
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/disney-tickets-hero.jpg"
 noDate: true
 faq:
   - q: "Where should I buy Tokyo Disneyland or DisneySea tickets?"
@@ -31,6 +33,10 @@ Here is the complete picture: how pricing works, when tickets sell out, and ever
 ---
 
 ## Ticket basics: date-specified, park-specified
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-basics.jpg" alt="A family in a hotel room checking park dates on a smartphone and guidebook, with Tokyo DisneySea visible through the window." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 Three rules define the Tokyo Disney ticket system:
 
@@ -71,6 +77,10 @@ Trip.com covers both parks with instant e-ticket delivery. Other authorized chan
 
 ### 3. Hotel ticket plans — the sold-out-day lifeline
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-hotel-desk.jpg" alt="A family at a hotel front desk being shown park ticket options by a staff member." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 Guests staying at **Disney Hotels, Official Hotels, Partner Hotels or Good Neighbor Hotels on eligible ticket-included or ticket-purchase plans can buy park tickets at the hotel even on days when online sales are sold out.** On peak dates this is the single most reliable route — and one more reason hotel choice matters. Details in our [hotel categories guide](/en/travel-guide/hotels/types/).
 
 ### 4. Same-day at the park — the last resort
@@ -81,6 +91,10 @@ When capacity allows, same-day tickets exist, but on the exact days you'd want t
 
 ## When to buy: sold-out days are real
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-when-to-buy.jpg" alt="A couple at their dining table looking at a calendar on a laptop, deciding which day to visit the parks." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 - Tickets go on sale **about two months before the visit date**.
 - **Regularly sold out in advance:** Saturdays and Sundays, Japanese school holidays (late July–August, late December–early January, late March), Halloween season (September–October) and Christmas season (November–December).
 - **Rule of thumb:** the moment your travel dates are fixed, buy the tickets — before flights and hotels if your park day falls on a weekend.
@@ -88,6 +102,10 @@ When capacity allows, same-day tickets exist, but on the exact days you'd want t
 ---
 
 ## In the park: Disney Premier Access and the official app
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-entry-gate.jpg" alt="A guest holding a smartphone QR code to the scanner at a park entrance turnstile, with family waiting behind." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 **Disney Premier Access (DPA)** is a paid per-attraction time slot (roughly ¥1,500–2,500 per ride per person, as of our research) bought **in the official app on the day, inside the park**. Popular attractions' DPA slots can sell out in the morning. Free passes for some attractions and shows have also existed depending on the season — check the app on the day.
 

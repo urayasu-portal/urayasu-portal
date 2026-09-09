@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼門票購買全攻略｜價格·售罄日·在哪買最穩妥（在地視角）"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-08-29
+lastmod: 2026-09-09
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "門票"
@@ -12,6 +12,8 @@ tags:
   - 東京迪士尼度假區
   - 浦安
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/disney-tickets-hero.jpg"
 noDate: true
 faq:
   - q: "東京迪士尼門票在哪裡買比較好？"
@@ -31,6 +33,10 @@ faq:
 ---
 
 ## 門票基礎：指定日期·指定園區
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-basics.jpg" alt="在飯店客房裡，一家人望著窗外的東京迪士尼海洋，用手機與導覽書確認入園日期。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 東京迪士尼的票務體系有三條基本規則：
 
@@ -71,6 +77,10 @@ Trip.com 涵蓋兩個園區，電子票即時出票。其他授權通路還有 K
 
 ### 3. 飯店購票方案——售罄日的救命通道
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-hotel-desk.jpg" alt="在飯店櫃檯，工作人員向一家人介紹園區門票方案。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 入住**迪士尼飯店·官方飯店·合作飯店·周邊優良飯店**且預訂含門票或含購票權益方案的房客，**即使線上售罄，仍可在飯店購買門票**。熱門日期這是最可靠的一條路——這也是飯店選擇重要的另一個原因。詳見[飯店分類解說](/zh-tw/travel-guide/hotels/types/)。
 
 ### 4. 當日現場購票——最後手段
@@ -81,6 +91,10 @@ Trip.com 涵蓋兩個園區，電子票即時出票。其他授權通路還有 K
 
 ## 什麼時候買：售罄是真實存在的
 
+<figure>
+<img src="/images/travel-guide/disney-tickets-when-to-buy.jpg" alt="夫妻倆在家中餐桌前看著筆記型電腦上的日曆，討論哪天前往園區。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 - 門票約**提前兩個月**開賣。
 - **經常提前售罄的日期：** 週六日、日本學校假期（7月下旬〜8月、12月下旬〜1月上旬、3月下旬）、萬聖節季（9〜10月）、聖誕季（11〜12月）。
 - **經驗法則：** 行程一確定就買票——如果入園日在週末，買票甚至應早於訂機票和飯店。
@@ -88,6 +102,10 @@ Trip.com 涵蓋兩個園區，電子票即時出票。其他授權通路還有 K
 ---
 
 ## 入園後：Disney Premier Access 與官方App
+
+<figure>
+<img src="/images/travel-guide/disney-tickets-entry-gate.jpg" alt="在園區入口閘門前，遊客將手機上的QR碼對準讀取機入園，家人在後方等候。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 **Disney Premier Access**（DPA）是付費的單項目時間預約（據調查約每人每項1,500〜2,500日圓），需**當天入園後在官方App內購買**。熱門設施的DPA可能上午就賣完。部分設施和表演也曾有免費的抽選·預約通道，視季節而定——當天在App內確認。
 
