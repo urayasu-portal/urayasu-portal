@@ -147,6 +147,10 @@ tags:
 2. **東西線平日早尖峰（約7:30〜9:00往市區方向）是日本數一數二的擁擠。** 帶孩子觀光就改在9點後出發；傍晚（17:30〜19:00從市區返回）同理。
 3. **強風天京葉線容易停駛**（沿海高架路線）。回不了舞濱時，在地常用的繞行辦法是搭東西線到浦安站再搭計程車或巴士——可參考[計程車指南](/zh-tw/travel-guide/urayasu-taxi-airport-flat-rate-guide/)。
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-local-tips.jpg" alt="在東京車站長長的連接通道自動步道上，走向京葉線月台的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 相關文章
 
 - [浦安·舞濱交通指南（從機場·東京站）](/zh-tw/travel-guide/urayasu-maihama-access-guide/)

@@ -141,6 +141,10 @@ You ride Tokyo trains by **tapping** a card or phone at the gate — and since *
 2. **Avoid the Tozai Line's weekday morning rush (roughly 7:30–9:00 toward central Tokyo)** — it's one of the most crowded trains in Japan. With kids, leave after 9:00, and skip the evening crush out of the city around 17:30–19:00 too.
 3. **On very windy days the Keiyo Line stops easily** (it's an elevated line along the bay). If you're stranded, the local workaround is the Tozai Line to Urayasu Station plus a taxi or bus — see our [taxi guide](/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/).
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-local-tips.jpg" alt="A family walking the moving walkway along Tokyo Station's long connecting passage toward the Keiyo Line platforms." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## Related
 
 - [How to Get to Urayasu & Maihama (from the airports and Tokyo Station)](/en/travel-guide/urayasu-maihama-access-guide/)

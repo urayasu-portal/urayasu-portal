@@ -148,6 +148,10 @@ tags:
 2. **东西线工作日早高峰（约7:30〜9:00往市区方向）是日本数一数二的拥挤。** 带孩子观光就改在9点后出发；傍晚（17:30〜19:00从市区返回）同理。
 3. **大风天京叶线容易停运**（沿海高架线路）。回不了舞滨时，本地常用的绕行办法是坐东西线到浦安站再打车或坐巴士——可参考[出租车指南](/zh/travel-guide/urayasu-taxi-airport-flat-rate-guide/)。
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-local-tips.jpg" alt="在东京站长长的连接通道自动步道上，走向京叶线站台的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 相关文章
 
 - [浦安·舞滨交通指南（从机场·东京站）](/zh/travel-guide/urayasu-maihama-access-guide/)

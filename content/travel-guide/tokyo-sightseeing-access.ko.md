@@ -147,6 +147,10 @@ factChecked: "2026-08-11"
 2. **도자이선 평일 아침 러시(시내 방향 대략 7:30〜9:00)는 일본에서 손꼽히는 혼잡입니다.** 아이와 관광이라면 9시 이후로 출발을 늦추세요. 저녁 러시(17:30〜19:00 시내발)도 마찬가지입니다.
 3. **바람이 강한 날에는 게이요선이 자주 멈춥니다**(바닷가 고가 노선). 마이하마로 못 돌아갈 때는 도자이선으로 우라야스역까지 간 뒤 택시나 버스로 우회하는 것이 현지의 정석입니다——[택시 가이드](/ko/travel-guide/urayasu-taxi-airport-flat-rate-guide/)도 참고하세요.
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-local-tips.jpg" alt="도쿄역의 긴 연결 통로 무빙워크를 따라 게이요선 승강장으로 향하는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 관련 글
 
 - [우라야스·마이하마 가는 길(공항·도쿄역에서)](/ko/travel-guide/urayasu-maihama-access-guide/)

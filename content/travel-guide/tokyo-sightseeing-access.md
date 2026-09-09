@@ -147,6 +147,10 @@ tags:
 2. **東西線の平日朝ラッシュ（都心方面7:30〜9:00ごろ）は日本屈指の混雑です。** 子連れの観光なら9時以降の出発にずらしましょう。帰りの夕ラッシュ（17:30〜19:00の都心発）も同様です。
 3. **強風の日は京葉線が止まりやすい**（海沿いの高架路線のため）。舞浜へ帰れなくなったら、東西線浦安駅からタクシーやバスという迂回が地元の定番です。[タクシーガイド](/travel-guide/urayasu-taxi-airport-flat-rate-guide/)も参考に。
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-local-tips.jpg" alt="東京駅の長い連絡通路の動く歩道を、京葉線ホームへ向かって歩く家族連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 関連記事
 
 - [浦安・舞浜への行き方ガイド（空港・東京駅から）](/travel-guide/urayasu-maihama-access-guide/)
