@@ -1,7 +1,7 @@
 ---
 title: "東京ディズニーリゾート周辺で子どもが急病になったら｜緊急連絡先・夜間診療・地元の対処法"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-06
+lastmod: 2026-09-09
 factChecked: "2026-08-07"
 slug: "kids-emergency"
 badge: "救急・医療"
@@ -13,6 +13,8 @@ tags:
   - 浦安
   - 東京ディズニーリゾート
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/kids-emergency-hero.jpg"
 noDate: true
 faq:
   - q: "東京ディズニーランド周辺で夜に子どもが発熱しました。どこで診てもらえますか？"
@@ -49,11 +51,19 @@ faq:
 
 ## パーク内では：まず救護室へ
 
+<figure>
+<img src="/images/travel-guide/kids-emergency-park-cast.jpg" alt="パーク内のベンチで水を飲む子どもに付き添う母親と、キャストから救護室の場所を案内される父親。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 **東京ディズニーランドやディズニーシーの中で**子どもの具合が悪くなったら、**救護室**へ向かいましょう（パークマップに記載。キャストが案内してくれます）。看護師が常駐し、無料で、診療所に行くべきか、休んで続けられるかの判断を手伝ってくれます。必要ならパークのスタッフが救急車を呼ぶこともできます。
 
 ---
 
 ## 夜間は：浦安市急病診療所
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-night-clinic.jpg" alt="夜、明かりのついた診療所の入口へ子どもの手を引いて歩く家族と、車寄せに停まるタクシー。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 発熱・お腹の風邪・その他の急な体調不良には、パークの営業時間外でも、浦安市が運営する**急病診療所**があります──内科・小児科の当日受付の応急診療です。
 
@@ -77,6 +87,10 @@ faq:
 ---
 
 ## 地元の人が実際にしていること：予防のひと工夫
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-hotel-desk.jpg" alt="夜のホテルのロビーで、フロント係が電話をかけて対応し、傍らのソファで母親が体調の悪い子どもに寄り添う。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 - **建物の中か隣にコンビニがあるホテルを選ぶ**──夜間の冷却シート・飲み物・子ども用品を、外に出ずに手に入れられます。[ファミリー向けホテルガイド](/travel-guide/hotels/kids/)に一覧があります（ヒルトン東京ベイの24時間店、ホテルドリームゲート舞浜の館内NewDaysなど）。
 - 舞浜・新浦安・浦安の各駅周辺の**ドラッグストア**（薬局／ドラッグストアの表示が目印）には、子ども用の解熱薬・経口補水液・体温計があります。翻訳アプリを見せれば薬剤師が助けてくれます。

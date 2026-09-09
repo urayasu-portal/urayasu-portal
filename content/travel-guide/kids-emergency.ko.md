@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 여행 중 아이가 아플 때 | 긴급 전화·야간 진료·현지인의 대처법"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-06
+lastmod: 2026-09-09
 slug: "kids-emergency"
 badge: "긴급"
 description: "디즈니 여행 첫날 밤 아이가 열이 난다면? 우라야스의 야간 응급 진료소, 긴급 전화(119·방일 여행자 핫라인), 파크 내 구호실, 그리고 한국어로 도움받는 방법을 현지 팀이 정리했습니다."
@@ -12,6 +12,8 @@ tags:
   - 우라야스
   - 도쿄 디즈니 리조트
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/kids-emergency-hero.jpg"
 noDate: true
 faq:
   - q: "도쿄 디즈니 근처에서 밤에 아이가 열이 나면 어디서 진료받을 수 있나요?"
@@ -49,11 +51,19 @@ factChecked: "2026-08-11"
 
 ## 파크 안에서: 먼저 구호실로
 
+<figure>
+<img src="/images/travel-guide/kids-emergency-park-cast.jpg" alt="파크 벤치에서 물을 마시는 아이 곁을 지키는 어머니와, 캐스트에게 구호실 위치를 안내받는 아버지." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 아이가 **도쿄 디즈니랜드·디즈니씨 파크 안에서** 아프면 **구호실**(First Aid)로 가세요(파크 지도에 표시, 캐스트가 안내해 줍니다). 간호사가 상주하고 무료이며, 진료가 필요한지 쉬고 계속 놀아도 되는지 판단을 도와줍니다. 필요하면 파크 측이 구급차도 불러줍니다.
 
 ---
 
 ## 밤에는: 우라야스시 급병진료소
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-night-clinic.jpg" alt="밤에 불이 켜진 진료소 입구로 아이의 손을 잡고 걸어가는 가족과 차대는 곳에 서 있는 택시." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 폐장 후의 발열·장염 등 갑작스러운 질병은 우라야스시가 운영하는 **급병진료소**(내과·소아과 응급 외래)로.
 
@@ -77,6 +87,10 @@ factChecked: "2026-08-11"
 ---
 
 ## 현지인의 예방책
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-hotel-desk.jpg" alt="밤 호텔 로비에서 프런트 직원이 전화로 대응하고, 옆 소파에서 어머니가 아픈 아이를 돌보는 모습." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 - **관내 또는 바로 옆에 편의점이 있는 호텔을 고르세요** — 한밤중 해열 시트·음료·유아용품을 건물 밖에 나가지 않고 살 수 있습니다. [가족 호텔 가이드](/ko/travel-guide/hotels/kids/)에 목록이 있습니다(힐튼 도쿄 베이의 24시간 매점, 호텔 드림게이트 마이하마 건물 내 NewDays 등).
 - 마이하마·신우라야스·우라야스 역 근처 **드럭스토어**(「薬局／ドラッグストア」 간판)에서 어린이 해열제·경구 수분 보충 음료·체온계를 살 수 있습니다. 번역 앱을 보여주면 약사와 소통할 수 있습니다.

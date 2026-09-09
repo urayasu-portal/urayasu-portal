@@ -1,7 +1,7 @@
 ---
 title: "孩子在东京迪士尼旅行中突然生病怎么办｜急救电话·夜间诊所·本地人的应对法"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-06
+lastmod: 2026-09-09
 slug: "kids-emergency"
 badge: "急病"
 description: "迪士尼旅行第一晚孩子发烧了怎么办？本地视角整理浦安的夜间急病诊所、急救电话（119·访日游客热线）、园内救护室，以及用中文获得帮助的方法。由住在这里的本地团队撰写。"
@@ -12,6 +12,8 @@ tags:
   - 浦安
   - 东京迪士尼度假区
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/kids-emergency-hero.jpg"
 noDate: true
 faq:
   - q: "孩子在东京迪士尼附近夜里发烧，能去哪里就诊？"
@@ -49,11 +51,19 @@ factChecked: "2026-08-11"
 
 ## 在园内：先去救护室
 
+<figure>
+<img src="/images/travel-guide/kids-emergency-park-cast.jpg" alt="在园内长椅上陪着喝水的孩子的母亲，以及正被演职人员指引救护室位置的父亲。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 如果孩子在**东京迪士尼乐园或迪士尼海洋园内**感到不适，请前往**救护室**（First Aid，园区地图有标注，演职人员会指引）。救护室有护士常驻、免费，能帮你判断需要就医还是休息后继续游玩。必要时园方也能叫救护车。
 
 ---
 
 ## 夜间：浦安市急病诊疗所
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-night-clinic.jpg" alt="夜里牵着孩子的手走向亮着灯的诊疗所入口的一家人，车道旁停着出租车。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 闭园后的发烧、肠胃炎等突发疾病，可前往浦安市运营的**急病诊疗所**——内科·小儿科的应急门诊。
 
@@ -77,6 +87,10 @@ factChecked: "2026-08-11"
 ---
 
 ## 本地人的预防层
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-hotel-desk.jpg" alt="深夜的酒店大堂，前台人员正打电话协助，一旁沙发上母亲照看着身体不适的孩子。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 - **选一家馆内或隔壁有便利店的酒店**——深夜买退热贴、饮料和儿童用品不用出楼。[亲子酒店指南](/zh/travel-guide/hotels/kids/)里有清单（东京湾希尔顿酒店的24小时便利店、舞滨梦想之门酒店楼内的NewDays等）。
 - 舞滨·新浦安·浦安各站附近的**药妆店**（认准「薬局／ドラッグストア」招牌）有儿童退烧药、口服补液和体温计。给药剂师看翻译App就能沟通。
