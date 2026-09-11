@@ -125,10 +125,6 @@ faq:
 </table>
 </div>
 
-<figure>
-<img src="/images/travel-guide/tourism-three-areas.jpg" alt="舞濱·新浦安·浦安站周邊三個區域的對比照片：度假區風格的街道、海邊步道、舊城區的境川沿岸。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
 <p>三個區域之間無法步行往來，需搭電車。（舞濱→新浦安：京葉線1站約3–4分鐘；舞濱→浦安站：轉乘共約30–40分鐘。）計劃同日遊覽多個區域時，請預留充足交通時間。</p>
 
 <h2 id="purpose-table">依目的快速查找</h2>
@@ -252,10 +248,6 @@ faq:
 <h2 id="maihama">舞濱地區：觀光·停靠點</h2>
 
 <figure>
-<img src="/images/travel-guide/tourism-maihama.jpg" alt="在舞濱的度假區林蔭道上，以單軌列車為背景漫步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
-<figure>
 <img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="拖著行李箱的一家人走過舞濱度假區風格的站前廣場，後方是伊克斯皮亞莉的建築。" loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
@@ -350,10 +342,6 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">浦安站周邊：歷史·町散步</h2>
-
-<figure>
-<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="浦安站周邊的境川沿岸。停著小船的水邊與老屋林立的步道上走著的兩人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
 
 <p>東京地鐵東西線浦安站周邊的「元町地區」，保留著東京迪士尼樂園開幕前的浦安風貌。講述這座城市漁村歷史的設施和建築散布其中，能體驗與TDR截然不同的靜謐觀光體驗。</p>
 

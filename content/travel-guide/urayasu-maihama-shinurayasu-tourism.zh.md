@@ -125,10 +125,6 @@ faq:
 </table>
 </div>
 
-<figure>
-<img src="/images/travel-guide/tourism-three-areas.jpg" alt="舞滨·新浦安·浦安站周边三个区域的对比照片：度假区风格的街道、海边步道、老城区的境川沿岸。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
 <p>三个区域之间无法步行往来，需乘电车。（舞滨→新浦安：京叶线1站约3–4分钟；舞滨→浦安站：换乘共约30–40分钟。）计划同日游览多个区域时，请预留充足交通时间。</p>
 
 <h2 id="purpose-table">按目的快速查找</h2>
@@ -252,10 +248,6 @@ faq:
 <h2 id="maihama">舞滨地区：观光·停靠点</h2>
 
 <figure>
-<img src="/images/travel-guide/tourism-maihama.jpg" alt="在舞滨的度假区林荫道上，以单轨列车为背景漫步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
-<figure>
 <img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="拖着行李箱的一家人走过舞滨度假区风格的站前广场，后方是伊克斯皮亚利的建筑。" loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
@@ -350,10 +342,6 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">浦安站周边：历史·町步行</h2>
-
-<figure>
-<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="浦安站周边的境川沿岸。停着小船的水边与老屋林立的步道上走着的两人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
 
 <p>东京地铁东西线浦安站周边的"元町地区"，保留着东京迪士尼乐园开业前的浦安风貌。讲述这座城市渔村历史的设施和建筑散布其中，能体验与TDR截然不同的静谧观光体验。</p>
 

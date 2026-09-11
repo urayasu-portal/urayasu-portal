@@ -125,10 +125,6 @@ faq:
 </table>
 </div>
 
-<figure>
-<img src="/images/travel-guide/tourism-three-areas.jpg" alt="A side-by-side comparison of the three areas: the resort-style streets of Maihama, the seaside promenade of Shin-Urayasu, and the old-town canal in Urayasu." loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
 <p>The three areas are separated by train and cannot be reached on foot. (Maihama to Shin-Urayasu: 1 stop on the Keiyo Line, about 3–4 minutes. Maihama to Urayasu Station: including transfer, about 30–40 minutes.) If you plan to visit multiple areas in one trip, allow generous travel time.</p>
 
 <h2 id="purpose-table">Quick Guide by Purpose</h2>
@@ -317,10 +313,6 @@ faq:
 <h2 id="maihama">Maihama Area: Sightseeing & Stops</h2>
 
 <figure>
-<img src="/images/travel-guide/tourism-maihama.jpg" alt="A family walking along a tree-lined resort street in Maihama with the monorail passing behind them." loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
-<figure>
 <img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="A family pulling suitcases across the resort-style plaza in front of Maihama Station, Ikspiari's buildings in the background." loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
@@ -416,10 +408,6 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">Urayasu Station Area: History & Town Walk</h2>
-
-<figure>
-<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="The Sakaigawa canal near Urayasu Station: a couple walking the waterside path past moored boats and old houses." loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
 
 <p>The "Moto-machi area" around Tokyo Metro Tozai Line's Urayasu Station retains the character of Urayasu before the opening of Tokyo Disneyland. Facilities and buildings that tell the history of the city's former life as a fishing town are scattered through the district, offering a quiet sightseeing experience that feels very different from TDR.</p>
 

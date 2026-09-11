@@ -125,10 +125,6 @@ faq:
 </table>
 </div>
 
-<figure>
-<img src="/images/travel-guide/tourism-three-areas.jpg" alt="마이하마·신우라야스·우라야스역 주변 세 지역을 나란히 비교한 사진. 리조트풍 거리, 바닷가 산책로, 옛 시가지의 사카이가와 강변." loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
 <p>세 지역 사이는 걸어서 오갈 수 없어 전철을 타야 합니다.(마이하마→신우라야스: 게이요선 1정거장 약 3~4분; 마이하마→우라야스역: 환승 포함 약 30~40분.) 같은 날 여러 지역을 둘러볼 때는 충분한 교통 시간을 두세요.</p>
 
 <h2 id="purpose-table">목적별 빠른 찾기</h2>
@@ -252,10 +248,6 @@ faq:
 <h2 id="maihama">마이하마 지역: 관광·정차점</h2>
 
 <figure>
-<img src="/images/travel-guide/tourism-maihama.jpg" alt="마이하마의 리조트 가로수길을 모노레일을 배경으로 걷는 가족." loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
-<figure>
 <img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="캐리어를 끄는 가족이 마이하마의 리조트풍 역전 광장을 걷는다. 안쪽으로 이쿠스피아리 건물." loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
@@ -350,10 +342,6 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">우라야스역 주변: 역사·동네 산책</h2>
-
-<figure>
-<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="우라야스역 주변 사카이가와 강변. 배가 정박한 물가와 오래된 집들이 늘어선 산책로를 걷는 두 사람." loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
 
 <p>도쿄 메트로 도자이선 우라야스역 주변의 '모토마치 지역'은 도쿄 디즈니랜드 개업 전의 우라야스 모습을 간직하고 있습니다. 이 도시의 어촌 역사를 들려주는 시설과 건축이 흩어져 있어, TDR와는 전혀 다른 고요한 관광 경험을 할 수 있습니다.</p>
 

@@ -123,10 +123,6 @@ faq:
 </table>
 </div>
 
-<figure>
-<img src="/images/travel-guide/tourism-three-areas.jpg" alt="舞浜・新浦安・浦安駅周辺の3エリアを並べた比較写真。リゾート風の街並み、海沿いの遊歩道、旧市街の境川沿いの風景。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
 <p>3エリアはそれぞれ電車で離れており、徒歩での移動はできません（舞浜〜新浦安間は京葉線で1駅、舞浜〜浦安駅間は乗り換え含めて30〜40分程度）。滞在中に複数エリアを回る場合は、移動時間を余裕を持って計画してください。</p>
 
 <h2 id="purpose-table">目的別おすすめ早見表</h2>
@@ -315,10 +311,6 @@ faq:
 <h2 id="maihama">舞浜エリアの観光・立ち寄りスポット</h2>
 
 <figure>
-<img src="/images/travel-guide/tourism-maihama.jpg" alt="舞浜のリゾート施設前の並木道を、モノレールを背に歩く家族連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
-
-<figure>
 <img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="舞浜のリゾート風の駅前広場を、スーツケースを引く家族連れが歩く。奥にイクスピアリの建物。" loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
@@ -414,10 +406,6 @@ faq:
 </div>
 
 <h2 id="urayasu-eki">浦安駅周辺エリアの観光・まち歩きスポット</h2>
-
-<figure>
-<img src="/images/travel-guide/tourism-urayasu-eki.jpg" alt="浦安駅周辺の境川沿い。舟が停まる水辺と古い家並みの遊歩道を歩くふたり連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
-</figure>
 
 <p>東京メトロ東西線・浦安駅周辺の「元町エリア」は、東京ディズニーランド開業以前の浦安の姿が残る地区です。漁師町として栄えた歴史を今に伝える施設・建物が点在しており、TDRとは一味違う静かな観光体験ができます。</p>
 
