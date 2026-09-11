@@ -1,7 +1,7 @@
 ---
 title: "Things to Do near Tokyo Disney Resort | Maihama, Urayasu & Shin-Urayasu Sightseeing Guide"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-09-10
+lastmod: 2026-09-12
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -85,6 +85,10 @@ faq:
   <li><strong>Shin-Urayasu area</strong>: The mid-city and new-town district centered on JR Keiyo Line's Shin-Urayasu Station. Shopping facilities, hotels, and a concert hall.</li>
   <li><strong>Urayasu Station area (Moto-machi)</strong>: The area around Tokyo Metro Tozai Line's Urayasu Station. A historic old town where the character of a former fishing village from the Edo–Meiji era remains.</li>
 </ul>
+
+<figure>
+<img src="/images/travel-guide/tourism-areas-collage-2.jpg" alt="A side-by-side comparison of the three areas: the plaza in front of a resort-style station crowded with groups, a palm-lined seaside road, and an old-town canal with moored boats." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h2 id="area-comparison">The 3 Areas at a Glance</h2>
 
@@ -316,6 +320,10 @@ faq:
 <img src="/images/travel-guide/tourism-maihama.jpg" alt="A family walking along a tree-lined resort street in Maihama with the monorail passing behind them." loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
+<figure>
+<img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="A family pulling suitcases across the resort-style plaza in front of Maihama Station, Ikspiari's buildings in the background." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>Ikspiari</h3>
 <p>A shopping and dining facility directly connected to JR Maihama Station. Restaurants, cafes, fashion, goods, and a cinema complex — all accessible without a park admission ticket. <strong>Bon Voyage</strong>, which sells official TDR character merchandise, is inside Ikspiari and popular with guests who want to buy goods without dealing with park crowds.</p>
 
@@ -352,6 +360,10 @@ faq:
 
 <figure>
 <img src="/images/travel-guide/tourism-shinurayasu.jpg" alt="A family strolling the seaside promenade in Shin-Urayasu, palm trees and apartment towers alongside." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu-promenade.jpg" alt="A parent and child walking along a palm-lined seaside path in Shin-Urayasu, high-rise apartment towers behind them." loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
 <h3>Atre Shin-Urayasu</h3>
@@ -410,6 +422,10 @@ faq:
 </figure>
 
 <p>The "Moto-machi area" around Tokyo Metro Tozai Line's Urayasu Station retains the character of Urayasu before the opening of Tokyo Disneyland. Facilities and buildings that tell the history of the city's former life as a fishing town are scattered through the district, offering a quiet sightseeing experience that feels very different from TDR.</p>
+
+<figure>
+<img src="/images/travel-guide/tourism-urayasu-eki-canal.jpg" alt="A couple walking beside the Sakaigawa canal near Urayasu Station, past moored boats and old wooden houses." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>Urayasu City Local History Museum</h3>
 <p>A city museum exhibiting Urayasu's history and culture. The outdoor exhibit area preserves and displays actual fishing huts, wooden boats, and tools that were once in use. A facility popular with both locals and visitors who want to understand old ways of life in the city.</p>
@@ -511,6 +527,10 @@ faq:
   </tbody>
 </table>
 </div>
+
+<figure>
+<img src="/images/travel-guide/tourism-rainy-day-mall.jpg" alt="A family carrying umbrellas walks through an indoor shopping mall on a rainy day." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p style="font-size:12px;color:#6b7a8d;">※ Facility hours and conditions are subject to change — check before visiting.</p>
 
