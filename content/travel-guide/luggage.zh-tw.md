@@ -2,7 +2,7 @@
 title: "東京迪士尼周邊飯店行李寄存與配送指南｜入住前寄存·車站配送"
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-09-12
 factChecked: "2026-09-01"
 description: "東京迪士尼度假區周邊飯店的行李寄存與配送攻略。迪士尼飯店·官方飯店可從舞濱站免費配送行李到飯店，合作飯店使用Bon Voyage付費櫃台（800日圓/件）。入住前寄存、退房後寄存、不可寄存物品等，均基於官方資訊整理。"
 tags:
@@ -11,7 +11,7 @@ tags:
   - Luggage
   - Disney
   - Urayasu
-images: ["/images/og-travel-urayasu.png"]
+images: ["/images/travel-guide/luggage-maihama-arrival.webp"]
 noDate: true
 tgNav: true
 faq:
@@ -24,6 +24,10 @@ faq:
   - q: "行李配送有不可寄存的物品嗎？"
     a: "貴重物品、易碎品、飲料、電腦相機等精密設備在所有配送服務中均不可寄存，請隨身攜帶。"
 ---
+
+<figure>
+<img src="/images/travel-guide/luggage-maihama-arrival.webp" alt="一家人在舞濱站附近把兩個大型行李箱交給飯店工作人員。" width="1200" height="630" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 「入住前行李放哪裡」「能不能有人幫忙運行李」是東京迪士尼度假區之旅的常見疑問。在舞濱·浦安地區，答案取決於**運送方向**和**飯店類別**。本頁為您整理其中的規則。資訊基於2025–2026年的官方資訊核對，出行前請在各飯店官網確認最新詳情。
 
@@ -43,6 +47,10 @@ faq:
 | **飯店→車站**（離店日） | **付費**「車站配送服務」（多為{{< fact "station_delivery.fee" >}}/件） | 通常經行李部寄宅配 |
 | **樂園→飯店** | 無此服務 | 無此服務 |
 
+<figure>
+<img src="/images/travel-guide/luggage-maihama-station.webp" alt="一家人在JR舞濱站前廣場拉著大型行李箱，前往車站的行李服務設施。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 所有服務均**不可寄存貴重物品、易碎品、飲料、精密設備**（電腦·相機等）。
 
 ---
@@ -50,6 +58,10 @@ faq:
 ## 車站→飯店免費配送（迪士尼·官方飯店）
 
 入住**迪士尼飯店**或**官方飯店**可輕裝抵達：在JR舞濱站旁**歡迎中心的飯店服務櫃台**寄存行李，即可**免費**送達飯店。
+
+<figure>
+<img src="/images/travel-guide/luggage-welcome-center-counter.webp" alt="一家人在舞濱站附近的飯店服務櫃台寄存已貼配送標籤的行李箱。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **迪士尼飯店** — 2樓櫃台·約**7:30–16:00**（如[東京迪士尼樂園大飯店](/zh-tw/travel-guide/hotels/tdl-hotel/)、[米拉柯斯達](/zh-tw/travel-guide/hotels/miracosta/)、[夢幻泉鄉大飯店](/zh-tw/travel-guide/hotels/fantasy-springs-hotel/)、[玩具總動員飯店](/zh-tw/travel-guide/hotels/toy-story-hotel/)、[迪士尼大使大飯店](/zh-tw/travel-guide/hotels/ambassador-hotel/)）
 - **官方飯店** — 1樓櫃台·約**8:00–15:00**（如[東京灣大倉飯店](/zh-tw/travel-guide/hotels/hotel-okura-tokyo-bay/)、[格蘭日航飯店](/zh-tw/travel-guide/hotels/grand-nikko-tokyo-bay/)、[希爾頓東京灣](/zh-tw/travel-guide/hotels/hilton-tokyo-bay/)、[喜來登大飯店](/zh-tw/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[第一度假村](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/)、[舞濱觀景飯店](/zh-tw/travel-guide/hotels/maihama-view-hotel/)）
@@ -68,6 +80,10 @@ faq:
 
 ## 離店日：飯店→車站「車站配送服務」
 
+<figure>
+<img src="/images/travel-guide/luggage-station-delivery-hotel.webp" alt="旅行最後一天，一家人在飯店大廳請工作人員為行李箱貼上送往車站的配送標籤。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 反方向則是**車站配送服務（Station Delivery）**：退房後在飯店寄存行李（**受理時間7:00–12:30**），前往車站途中在**歡迎中心1樓領取櫃台**（約**13:00–21:00**）取件。**付費·{{< fact "station_delivery.fee" >}}/件**——迪士尼飯店各館、[希爾頓東京灣](/zh-tw/travel-guide/hotels/hilton-tokyo-bay/)、[喜來登](/zh-tw/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[第一度假村](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/)、[舞濱觀景飯店](/zh-tw/travel-guide/hotels/maihama-view-hotel/)均明示{{< fact "station_delivery.fee" >}}。部分飯店未公開價格，請向行李部確認。
 
 ---
@@ -75,6 +91,10 @@ faq:
 ## 只想寄存？入住前的櫃台寄存
 
 不使用配送服務也沒問題：幾乎所有飯店都提供**入住前·退房後的當日寄存**（通常在櫃台/行李部，免費）。特別方便的有：
+
+<figure>
+<img src="/images/travel-guide/luggage-hotel-self-cloak.webp" alt="一家人在飯店住客自助行李寄存區放入行李箱並確認鎖具。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **[舞濱夢想之門飯店](/zh-tw/travel-guide/hotels/dreamgate-maihama/)** — 住客專用免費置物櫃＋別館自助衣帽間（當天早上起·退房後亦可）
 - **[舞濱MyStays飯店](/zh-tw/travel-guide/hotels/mystays-maihama/)** — 免費投幣置物櫃（100日圓退還式）＋櫃台寄存

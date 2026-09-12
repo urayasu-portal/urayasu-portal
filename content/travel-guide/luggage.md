@@ -2,7 +2,7 @@
 title: "舞浜・浦安ホテルの荷物預かり＆バゲッジデリバリー完全ガイド｜チェックイン前に預けるには"
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-09-12
 factChecked: "2026-09-01"
 description: "東京ディズニーリゾート周辺ホテルの荷物預かりとバゲッジデリバリーの仕組みを地元メディアが整理。舞浜駅を起点に、ディズニー/オフィシャルホテルの駅→ホテル無料配送、ボン・ヴォヤッジュの有料便、チェックイン前のフロント預かり、預けられない物まで、公式情報ベースで解説。"
 tags:
@@ -11,7 +11,7 @@ tags:
   - Luggage
   - Disney
   - Urayasu
-images: ["/images/og-travel-urayasu.png"]
+images: ["/images/travel-guide/luggage-maihama-arrival.webp"]
 noDate: true
 tgNav: true
 faq:
@@ -24,6 +24,10 @@ faq:
   - q: "バゲッジデリバリーに預けられない物はありますか？"
     a: "貴重品・壊れ物・飲み物・パソコンやカメラ等の精密機器は全サービス共通で預けられません。手元で持ち歩いてください。"
 ---
+
+<figure>
+<img src="/images/travel-guide/luggage-maihama-arrival.webp" alt="舞浜駅近くで、大型スーツケースをホテルスタッフに預ける家族。" width="1200" height="630" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 「チェックイン前にスーツケースをどこに置くか」「荷物を誰かに運んでもらえないか」は、東京ディズニーリゾート旅行の定番の悩みです。舞浜・浦安エリアの答えは**「どの方向に運ぶか」と「どの区分のホテルか」**で決まります。本ページで仕組みを整理します。情報は2025〜2026年の公式情報照合に基づきます。最新の詳細は各ホテル公式サイトでご確認ください。
 
@@ -43,6 +47,10 @@ faq:
 | **ホテル→駅**（出発日） | **有料**「ステーションデリバリー」（多くが{{< fact "station_delivery.fee" >}}/個） | 通常はベルデスクからの宅配便 |
 | **パーク→ホテル** | サービスなし | サービスなし |
 
+<figure>
+<img src="/images/travel-guide/luggage-maihama-station.webp" alt="JR舞浜駅前で、大型スーツケースを引いて駅のサービス施設へ向かう家族。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 いずれも**貴重品・壊れ物・飲み物・精密機器**（PC・カメラ等）は預けられません。
 
 > 改札からの行き方・受付時間・支払い方法まで、当日の手順を知りたい方は **[舞浜駅からホテルへ荷物を送る方法（手順ガイド）](/travel-guide/luggage-howto/)** をご覧ください。
@@ -52,6 +60,10 @@ faq:
 ## 駅→ホテル無料配送（ディズニー・オフィシャルホテル）
 
 **ディズニーホテル**または**オフィシャルホテル**に泊まるなら、身軽に到着できます。JR舞浜駅隣接の**ウェルカムセンター ホテルサービスカウンター**に荷物を預ければ、**無料**でホテルまで届きます。
+
+<figure>
+<img src="/images/travel-guide/luggage-welcome-center-counter.webp" alt="舞浜駅近くのホテルサービスカウンターで、配送タグを付けたスーツケースを預ける家族。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **ディズニーホテル** — 2階カウンター・約**7:30〜16:00**（例：[東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/)、[ホテルミラコスタ](/travel-guide/hotels/miracosta/)、[ファンタジースプリングスホテル](/travel-guide/hotels/fantasy-springs-hotel/)、[トイ・ストーリーホテル](/travel-guide/hotels/toy-story-hotel/)、[ディズニーアンバサダーホテル](/travel-guide/hotels/ambassador-hotel/)）
 - **オフィシャルホテル** — 1階カウンター・約**8:00〜15:00**（例：[ホテルオークラ東京ベイ](/travel-guide/hotels/hotel-okura-tokyo-bay/)、[グランドニッコー東京ベイ舞浜](/travel-guide/hotels/grand-nikko-tokyo-bay/)、[ヒルトン東京ベイ](/travel-guide/hotels/hilton-tokyo-bay/)、[シェラトン・グランデ・トーキョーベイ](/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[東京ベイ舞浜ホテル ファーストリゾート](/travel-guide/hotels/maihama-hotel-first-resort/)、[舞浜ビューホテル](/travel-guide/hotels/maihama-view-hotel/)）
@@ -70,6 +82,10 @@ faq:
 
 ## 出発日：ホテル→駅「ステーションデリバリー」
 
+<figure>
+<img src="/images/travel-guide/luggage-station-delivery-hotel.webp" alt="旅行最終日のホテルロビーで、駅への配送用タグをスーツケースに付けてもらう家族。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 逆方向は**ステーションデリバリー**。チェックアウト後にホテルで荷物を預け（**受付は7:00〜12:30**）、駅に向かう途中で**ウェルカムセンター1階のお渡しカウンター**（約**13:00〜21:00**）で受け取れます。**有料・1個{{< fact "station_delivery.fee" >}}**——ディズニーホテル各館・[ヒルトン東京ベイ](/travel-guide/hotels/hilton-tokyo-bay/)・[シェラトン](/travel-guide/hotels/sheraton-grande-tokyo-bay/)・[ファーストリゾート](/travel-guide/hotels/maihama-hotel-first-resort/)・[舞浜ビューホテル](/travel-guide/hotels/maihama-view-hotel/)が{{< fact "station_delivery.fee" >}}を明示しています。金額非公開のホテルもあるためベルデスクでご確認を。
 
 ---
@@ -77,6 +93,10 @@ faq:
 ## 「預けるだけ」なら：チェックイン前のフロント預かり
 
 配送を使わなくても、ほぼすべてのホテルが**チェックイン前・チェックアウト後の当日預かり**に対応しています（通常フロント/ベルデスクで無料）。特に便利なのは：
+
+<figure>
+<img src="/images/travel-guide/luggage-hotel-self-cloak.webp" alt="ホテルの宿泊者用セルフクロークで、スーツケースを収納してロックを確認する家族。" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **[ホテルドリームゲート舞浜](/travel-guide/hotels/dreamgate-maihama/)** — 宿泊者専用の無料ロッカー＋アネックスのセルフクローク（当日朝から・アウト後も可）
 - **[ホテルマイステイズ舞浜](/travel-guide/hotels/mystays-maihama/)** — 無料コインロッカー（100円返金式）＋フロント預かり
