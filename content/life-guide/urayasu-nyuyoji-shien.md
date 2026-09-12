@@ -3,7 +3,7 @@ title: "【浦安市】乳幼児期の子育て支援ガイド｜健診・予防
 slug: "urayasu-nyuyoji-shien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:10:00+09:00
-lastmod: 2026-09-01
+lastmod: 2026-09-12T20:21:00+09:00
 newsTags: ["子育て", "子ども"]
 factChecked: "2026-09-01"
 checkDate: "2026年6月"
@@ -15,6 +15,8 @@ sources:
     url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/index.html"
   - name: "子どもの予防接種（浦安市公式 カテゴリトップ）"
     url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/index.html"
+  - name: "子どものインフルエンザ予防接種（任意接種）の費用を一部助成します（浦安市公式）"
+    url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/1015846.html"
   - name: "保育・一時預かり・訪問支援（浦安市公式 カテゴリトップ）"
     url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/hoiku/index.html"
   - name: "子育て・青少年施設（浦安市公式 カテゴリトップ）"
@@ -23,7 +25,7 @@ sources:
     url: "https://www.city.urayasu.lg.jp/shisetsu/kosodate/kosodate/1005525.html"
 ---
 
-<p>赤ちゃんが生まれてから就学前までの乳幼児期には、節目の健康診査や予防接種、親子で過ごせる場所、ちょっと預けたいときの支援など、浦安市のさまざまなサポートがあります。このページは「自分に関係しそうな支援に気づき、正しい窓口にたどり着く」ための地図です。<strong>対象年齢・料金・申込み方法などの詳細は、必ず各リンク先の浦安市公式ページでご確認ください</strong>（掲載情報は2026年6月時点のものです）。</p>
+<p>赤ちゃんが生まれてから就学前までの乳幼児期には、節目の健康診査や予防接種、親子で過ごせる場所、ちょっと預けたいときの支援など、浦安市のさまざまなサポートがあります。このページは「自分に関係しそうな支援に気づき、正しい窓口にたどり着く」ための地図です。<strong>対象年齢・料金・申込み方法などの詳細は、必ず各リンク先の浦安市公式ページでご確認ください</strong>（掲載情報は原則2026年6月時点のものです。子どものインフルエンザ予防接種費用助成は、2026年9月12日に確認した令和8年度情報を反映しています）。</p>
 
 {{< note >}}
 <strong>困ったときの入口は2つ</strong><br>
@@ -33,7 +35,6 @@ sources:
 {{< /note >}}
 
 <h2>① 節目で受ける健康診査</h2>
-
 <p>乳幼児健診は対象の月齢・年齢になると個別に通知が届きます（公費で受けられます）。発育・発達の確認のほか、育児の相談もできる機会です。</p>
 
 <h3>乳児健康診査</h3>
@@ -59,9 +60,25 @@ sources:
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/index.html" >}}子どもの予防接種（浦安市公式）{{< /gov-link >}}
 
 <h3>子どものインフルエンザ予防接種費用の助成（任意接種）</h3>
-<p>任意接種であるインフルエンザ予防接種の費用の一部を助成します（1回あたり上限2,000円。2026年6月時点。例年10月開始で年度ごとに実施）。申込書は市内の協力医療機関にあります。</p>
-<p><strong>対象：</strong>接種日に浦安市に住民票がある生後6か月〜高校3年生相当の方</p>
-{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/index.html" >}}子どもの予防接種・インフルエンザ費用助成（浦安市公式）{{< /gov-link >}}
+
+{{< note >}}<strong>【2026年9月12日更新】</strong>令和8年度の助成内容が公表されました。助成期間は2026年10月1日から2027年3月31日までです。{{< /note >}}
+
+<p>浦安市では、任意接種である子どものインフルエンザ予防接種について、接種費用の一部を助成します。対象は、<strong>接種日時点で浦安市に住民登録がある生後6カ月以上から高校3年生相当の方</strong>です。令和8年度は平成20年4月2日以降に生まれた方が対象となります。</p>
+
+<ul>
+<li><strong>不活化インフルエンザHAワクチン（注射）：</strong>1回につき上限2,000円。13歳未満は2回、13歳以上は1回まで助成されます。</li>
+<li><strong>経鼻弱毒生インフルエンザワクチン（経鼻）：</strong>2歳以上が対象で、1回につき上限4,000円。助成は1回までです。</li>
+</ul>
+
+<p>注射と経鼻の両方で助成を受けることはできず、いずれか一方を選びます。また、対象者への個別通知は行われません。</p>
+
+<p>助成を利用する場合は、市内の協力医療機関などで、医療機関に用意されている予診票と申請書を窓口へ提出し、接種費用から助成額を差し引いた金額を支払います。医療機関によって接種費用は異なるため、予約時などに確認しておくと安心です。</p>
+
+<p><strong>主な持ち物：</strong>母子健康手帳、マイナ保険証または資格確認書、子ども医療費助成受給券（お持ちの方）、現金、そのほか医療機関から指定されたもの</p>
+
+<p><strong>問い合わせ：</strong>浦安市予防接種専用ダイヤル　047-381-9051</p>
+
+{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/1015846.html" >}}子どものインフルエンザ予防接種費用助成（浦安市公式）{{< /gov-link >}}
 
 <h2>③ 親子で通える・相談できる場</h2>
 
@@ -86,7 +103,6 @@ sources:
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/joho/1006623.html" >}}子育て相談（浦安市公式）{{< /gov-link >}}
 
 <h2>④ 預ける・ちょっと手伝ってほしいとき</h2>
-
 <p>仕事や用事、リフレッシュ、急な事情などで一時的に子どもを預けたいときの支援です。</p>
 
 {{< warn >}}一時預かりやファミリー・サポート・センターの利用料は、施設・形態・利用時間によって異なります。また事前の登録や予約が必要な場合があります。利用を予定している施設・事業のページで必ずご確認ください。{{< /warn >}}
@@ -119,11 +135,8 @@ sources:
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/ninshin/soudan/1006621.html" >}}こどもの発達などの相談（浦安市公式）{{< /gov-link >}}
 
 <h2 id="series-nav">子育てステージ順ガイド</h2>
-
 <div class="lg-art-links">
   <a class="lg-art-link" href="/life-guide/urayasu-ninshin-shussan-shien/">前のステージ：妊娠・出産時の支援ガイド<span>健診助成・給付金・産後ケア</span></a>
   <a class="lg-art-link" href="/life-guide/urayasu-hoiku-youchien/">次のステージ：保育園・幼稚園・預かりガイド<span>入園申込み・保育料・無償化・病児保育</span></a>
   <a class="lg-art-link" href="/life-guide/urayasu-kosodate-shien-matome/">子育て支援・手当・助成まとめ（全体像）<span>妊娠・出産から小中学生までの入口ページ</span></a>
 </div>
-
-<div class="lg-art-note">全ステージ共通：<a href="/life-guide/urayasu-kodomo-iryohi/">子どもの医療費・健康ガイド</a>／<a href="/life-guide/urayasu-jido-teate/">児童手当・経済的支援ガイド</a></div>
