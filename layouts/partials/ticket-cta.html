@@ -1,42 +1,54 @@
 {{- /* パークチケットの購入CTA（KKday / Klook）。disney-tickets・happy-entry などの末尾に shortcode ticket-cta で置く。
        収益経路は Travelpayouts（partials/tp-link.html）。hugo.yaml の affiliate.travelpayouts の marker・trs と
-       kkdayP / klookP が揃ったプログラムのボタンだけを描画し、1つも揃っていなければ CTA 自体を出さない（誤計測防止）。
-       遷移先は affiliate.tickets.kkday / .klook（ロケール無しの基準URL）。言語別ロケールはここで差し替える。
-       表示順: zh-tw / zh は KKday → Klook（台湾での利用率）、それ以外は Klook → KKday。 */ -}}
+       kkdayP / klookP が揃ったプログラムのカードだけを描画し、1つも揃っていなければ CTA 自体を出さない（誤計測防止）。
+       遷移先は affiliate.tickets.kkday / .klook の言語別マップ（キー: ja / en / zh / zh-tw / ko）。
+       KKday は言語サイトごとに商品IDが異なる（zh-tw=32488 など）ため、言語ごとに検証済みURLを置く。空ならその言語ではカード非表示。
+       表示順: zh-tw / zh は KKday → Klook（台湾での利用率）、それ以外は Klook → KKday。先頭カードに「よく使われる」バッジ。 */ -}}
 {{- $lang := .Lang }}
 {{- $tp := site.Params.affiliate.travelpayouts | default dict }}
 {{- $tk := site.Params.affiliate.tickets | default dict }}
 {{- $ready := and $tp.marker $tp.trs }}
 
-{{- /* KKday: パスの /zh-tw/ を言語別ロケールへ */ -}}
 {{- $kkdayHref := "" }}
-{{- if and $ready $tp.kkdayP $tk.kkday }}
-  {{- $loc := "zh-tw" }}
-  {{- if eq $lang "zh" }}{{ $loc = "zh-cn" }}{{ else if eq $lang "en" }}{{ $loc = "en" }}{{ else if eq $lang "ko" }}{{ $loc = "ko" }}{{ else if eq $lang "ja" }}{{ $loc = "ja" }}{{ end }}
-  {{- $u := replace $tk.kkday "https://www.kkday.com/zh-tw/" (printf "https://www.kkday.com/%s/" $loc) }}
-  {{- $kkdayHref = partial "tp-link.html" (dict "url" $u "p" $tp.kkdayP "campaign" $tp.kkdayCampaign) }}
+{{- if and $ready $tp.kkdayP }}
+  {{- with index ($tk.kkday | default dict) $lang }}
+    {{- $kkdayHref = partial "tp-link.html" (dict "url" . "p" $tp.kkdayP "campaign" $tp.kkdayCampaign) }}
+  {{- end }}
 {{- end }}
 
-{{- /* Klook: パスの /zh-TW/ を言語別ロケールへ */ -}}
 {{- $klookHref := "" }}
-{{- if and $ready $tp.klookP $tk.klook }}
-  {{- $loc := "zh-TW" }}
-  {{- if eq $lang "zh" }}{{ $loc = "zh-CN" }}{{ else if eq $lang "en" }}{{ $loc = "en-US" }}{{ else if eq $lang "ko" }}{{ $loc = "ko" }}{{ else if eq $lang "ja" }}{{ $loc = "ja" }}{{ end }}
-  {{- $u := replace $tk.klook "https://www.klook.com/zh-TW/" (printf "https://www.klook.com/%s/" $loc) }}
-  {{- $klookHref = partial "tp-link.html" (dict "url" $u "p" $tp.klookP "campaign" $tp.klookCampaign) }}
+{{- if and $ready $tp.klookP }}
+  {{- with index ($tk.klook | default dict) $lang }}
+    {{- $klookHref = partial "tp-link.html" (dict "url" . "p" $tp.klookP "campaign" $tp.klookCampaign) }}
+  {{- end }}
 {{- end }}
 
-{{- if or $kkdayHref $klookHref }}
-<aside class="lg-book-cta lg-ticket-cta">
-  <div class="lg-book-cta-title"><i class="ti ti-ticket" aria-hidden="true"></i> {{ i18n "ticket_cta_title" }}</div>
-  <p class="lg-ticket-cta-desc">{{ i18n "ticket_cta_desc" }}</p>
-  <div class="lg-book-btns">
-    {{- if or (eq $lang "zh-tw") (eq $lang "zh") }}
-      {{- if $kkdayHref }}<a class="lg-book-btn book-kkday" href="{{ $kkdayHref }}" target="_blank" rel="sponsored noopener">KKday</a>{{ end }}
-      {{- if $klookHref }}<a class="lg-book-btn book-klook" href="{{ $klookHref }}" target="_blank" rel="sponsored noopener">Klook</a>{{ end }}
-    {{- else }}
-      {{- if $klookHref }}<a class="lg-book-btn book-klook" href="{{ $klookHref }}" target="_blank" rel="sponsored noopener">Klook</a>{{ end }}
-      {{- if $kkdayHref }}<a class="lg-book-btn book-kkday" href="{{ $kkdayHref }}" target="_blank" rel="sponsored noopener">KKday</a>{{ end }}
+{{- $kkdayFirst := or (eq $lang "zh-tw") (eq $lang "zh") }}
+{{- $cards := slice }}
+{{- if $kkdayFirst }}
+  {{- if $kkdayHref }}{{ $cards = $cards | append (dict "id" "kkday" "name" "KKday" "href" $kkdayHref "sub" (i18n "ticket_kkday_sub")) }}{{ end }}
+  {{- if $klookHref }}{{ $cards = $cards | append (dict "id" "klook" "name" "Klook" "href" $klookHref "sub" (i18n "ticket_klook_sub")) }}{{ end }}
+{{- else }}
+  {{- if $klookHref }}{{ $cards = $cards | append (dict "id" "klook" "name" "Klook" "href" $klookHref "sub" (i18n "ticket_klook_sub")) }}{{ end }}
+  {{- if $kkdayHref }}{{ $cards = $cards | append (dict "id" "kkday" "name" "KKday" "href" $kkdayHref "sub" (i18n "ticket_kkday_sub")) }}{{ end }}
+{{- end }}
+
+{{- if gt (len $cards) 0 }}
+<aside class="lg-ticket-cta">
+  <div class="lg-ticket-head">
+    <span class="lg-ticket-ic"><i class="ti ti-ticket" aria-hidden="true"></i></span>
+    <div>
+      <div class="lg-ticket-title">{{ i18n "ticket_cta_title" }}</div>
+      <p class="lg-ticket-desc">{{ i18n "ticket_cta_desc" }}</p>
+    </div>
+  </div>
+  <div class="lg-ticket-grid{{ if eq (len $cards) 1 }} is-single{{ end }}">
+    {{- range $i, $c := $cards }}
+    <a class="lg-ticket-card is-{{ $c.id }}" href="{{ $c.href }}" target="_blank" rel="sponsored noopener">
+      <span class="lg-ticket-brand">{{ $c.name }}{{ if and (eq $i 0) (gt (len $cards) 1) }} <span class="lg-ticket-badge">{{ i18n "ticket_badge_popular" }}</span>{{ end }}</span>
+      <span class="lg-ticket-sub">{{ $c.sub }}</span>
+      <span class="lg-ticket-go">{{ i18n "ticket_go" }} <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+    </a>
     {{- end }}
   </div>
   <div class="lg-book-pr">{{ i18n "includes_pr" }}</div>

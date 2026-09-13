@@ -13,10 +13,14 @@
 {{- $lang := .lang }}
 {{- $cur2 := .cur2 }}
 {{- $tp := site.Params.affiliate.travelpayouts | default dict }}
+{{- /* 遷移先OTAの表示通貨（hugo.yaml affiliate.currency の言語別マップ。未定義なら付与しない） */ -}}
+{{- $curr := index (site.Params.affiliate.currency | default dict) $lang | default "" }}
 
-{{- /* Booking.com: 個別ページURL(CSVのBookingURL列)があれば直接遷移。無ければ英語施設名の検索結果へフォールバック */ -}}
+{{- /* Booking.com: 個別ページURL(CSVのBookingURL列)があれば直接遷移。無ければ英語施設名の検索結果へフォールバック。
+       表示通貨は selected_currency で指定。 */ -}}
 {{- $bookingHref := "" }}
 {{- with $bk.booking }}{{ $bookingHref = . }}{{ else }}{{ with $cur2.name_en }}{{ $bookingHref = printf "https://www.booking.com/searchresults.html?ss=%s" (. | urlquery) }}{{ end }}{{ end }}
+{{- if and $bookingHref $curr }}{{ $bookingHref = printf "%s%sselected_currency=%s" $bookingHref (cond (in $bookingHref "?") "&" "?") $curr }}{{ end }}
 {{- if $bookingHref }}{{ $bookingHref = partial "tp-link.html" (dict "url" $bookingHref "p" $tp.bookingP "campaign" $tp.bookingCampaign) }}{{ end }}
 
 {{- /* Agoda: CSVのAgodaURL列（https://www.agoda.com/<slug>/hotel/<city>-jp.html 形式・ロケール無し）があるホテルのみ。
@@ -54,6 +58,8 @@
   {{- else if eq $lang "ko" }}{{ $host = "kr.trip.com" }}
   {{- else if eq $lang "ja" }}{{ $host = "jp.trip.com" }}{{ end }}
   {{- if $host }}{{ $tripHref = replace $tripHref "https://www.trip.com/" (printf "https://%s/" $host) }}{{ end }}
+  {{- /* 表示通貨（curr=）。個別ページ・検索URLのどちらにも付与 */ -}}
+  {{- if $curr }}{{ $tripHref = printf "%s%scurr=%s" $tripHref (cond (in $tripHref "?") "&" "?") $curr }}{{ end }}
   {{- if and $tc.allianceId $tc.sid }}
     {{- $sep := cond (in $tripHref "?") "&" "?" }}
     {{- $tripHref = printf "%s%sAllianceid=%s&SID=%s" $tripHref $sep $tc.allianceId $tc.sid }}

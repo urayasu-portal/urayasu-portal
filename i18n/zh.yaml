@@ -220,3 +220,11 @@
   translation: "迪士尼海洋附近的酒店"
 - id: hl_neardisneysea_desc
   translation: "以海洋为主的话住哪里？步行·单轨·班车别比较"
+- id: ticket_kkday_sub
+  translation: "中文界面・多币种支付・电子票二维码入园"
+- id: ticket_klook_sub
+  translation: "中文界面・多种支付方式・App出示二维码即可入园"
+- id: ticket_go
+  translation: "查看票价与日期"
+- id: ticket_badge_popular
+  translation: "常用平台"

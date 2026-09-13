@@ -220,3 +220,11 @@
   translation: "ディズニーシー寄りのホテル"
 - id: hl_neardisneysea_desc
   translation: "シー中心の旅ならどこに泊まる？徒歩・モノレール・シャトル別に比較"
+- id: ticket_kkday_sub
+  translation: "日本語対応・電子チケットのQRコードで入園"
+- id: ticket_klook_sub
+  translation: "日本語対応・支払い方法が豊富・アプリのQRコードで入園"
+- id: ticket_go
+  translation: "料金・日程を見る"
+- id: ticket_badge_popular
+  translation: "人気"

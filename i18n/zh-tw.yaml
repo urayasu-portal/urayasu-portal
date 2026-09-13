@@ -220,3 +220,11 @@
   translation: "迪士尼海洋附近的飯店"
 - id: hl_neardisneysea_desc
   translation: "以海洋為主的話要住哪裡？步行·單軌·接駁車別比較"
+- id: ticket_kkday_sub
+  translation: "台灣旅遊平台・繁中介面・可用新台幣付款・電子票QR入園"
+- id: ticket_klook_sub
+  translation: "中文介面・多種付款方式・App出示QR即可入園"
+- id: ticket_go
+  translation: "查看票價與日期"
+- id: ticket_badge_popular
+  translation: "台灣人最常用"

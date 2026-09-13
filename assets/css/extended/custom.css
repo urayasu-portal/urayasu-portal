@@ -4619,10 +4619,26 @@ body.pillar-travel .post-single .post-content a.hg-sv-maplink:hover { background
 .tg-topic-backlinks { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 24px 0 8px; }
 .tg-topic-back { color: var(--up-accent, #E05535); text-decoration: none; font-weight: 600; font-size: 0.9em; }
 
-/* ── パークチケットCTA（partials/ticket-cta.html・KKday/Klook）。予約CTA（.lg-book-cta）の意匠を流用 ── */
-.book-kkday   { background: #1cb5c1; }
-.book-klook   { background: #ff5b00; }
-.lg-ticket-cta { margin: 28px 0 8px; }
-.lg-ticket-cta .lg-book-btns { display: flex; gap: 8px; flex-wrap: wrap; }
-.lg-ticket-cta .lg-book-btn { flex: 1 1 140px; }
-.lg-ticket-cta-desc { margin: -4px 0 12px; font-size: 13px; line-height: 1.6; color: var(--up-text-muted, #5b6470); }
+/* ── パークチケットCTA（partials/ticket-cta.html・KKday / Klook）。ブランドカード2枚のグリッド ── */
+.lg-ticket-cta { background: var(--up-surface); border: 1px solid var(--up-border); border-radius: var(--up-radius-lg, 14px); padding: 18px 18px 14px; margin: 28px 0 8px; box-shadow: var(--up-shadow-sm); }
+.lg-ticket-head { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.lg-ticket-ic { flex: 0 0 40px; width: 40px; height: 40px; border-radius: 10px; background: var(--accent-bg, #FCEEE9); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.lg-ticket-title { font-size: 15px; font-weight: 800; color: var(--up-text); line-height: 1.35; margin: 2px 0 4px; }
+.lg-ticket-desc { margin: 0; font-size: 13px; line-height: 1.6; color: var(--up-muted); }
+.lg-ticket-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.lg-ticket-card { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 14px 14px 12px 16px; border: 1px solid var(--up-border); border-left: 5px solid var(--tk-color, var(--accent)); border-radius: 10px; background: var(--up-card); text-decoration: none !important; color: var(--up-text) !important; transition: transform .15s, box-shadow .15s, border-color .15s; }
+.lg-ticket-card:hover { transform: translateY(-2px); box-shadow: var(--up-shadow-md); border-color: var(--tk-color, var(--accent)); }
+.lg-ticket-card.is-kkday { --tk-color: #1cb5c1; }
+.lg-ticket-card.is-klook { --tk-color: #ff5b00; }
+.lg-ticket-brand { font-size: 17px; font-weight: 800; letter-spacing: .01em; color: var(--tk-color); display: flex; align-items: center; gap: 8px; }
+.lg-ticket-badge { font-size: 10px; font-weight: 700; color: #fff; background: var(--tk-color); padding: 2px 7px; border-radius: 999px; letter-spacing: .02em; }
+.lg-ticket-sub { font-size: 12px; line-height: 1.55; color: var(--up-muted); }
+.lg-ticket-go { margin-top: 4px; font-size: 13px; font-weight: 700; color: var(--tk-color); display: inline-flex; align-items: center; gap: 4px; }
+.lg-ticket-go i { font-size: 15px; transition: transform .15s; }
+.lg-ticket-card:hover .lg-ticket-go i { transform: translateX(3px); }
+.lg-ticket-cta .lg-book-pr { margin-top: 10px; }
+@media (max-width: 560px) {
+  .lg-ticket-cta { padding: 16px 14px 12px; }
+  .lg-ticket-grid { grid-template-columns: 1fr; }
+}
+.lg-ticket-grid.is-single { grid-template-columns: minmax(0, 420px); }

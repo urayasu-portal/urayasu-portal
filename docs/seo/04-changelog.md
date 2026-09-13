@@ -193,3 +193,15 @@ Phase 3 で「素の `<table>` を使う posts 79本でモバイル時に表の�
 **ID の設定状況（2026-09-13 時点）**: `travelpayouts.marker`・`trs`・`kkdayP`（campaign 633）・`klookP`（campaign 137）は設定済み＝チケットCTAは5言語で表示中。**未設定**: `affiliate.agoda.cid`（Agoda Partners で urayasu-portal.com のサイト登録・認証を完了し、その行のウェブサイトIDを貼る。1974852 は審査用の Approval Site なので使わない）／`bookingP`（Travelpayouts 承認待ち）。貼るまで Agoda・Booking のボタンは素URL。
 
 **検証**: `rm -rf public resources && hugo --minify` ERROR 0件。zh-tw／en／ko／zh のヒルトンで Agoda（ロケール付き）・Trip.com（tw./kr. 個別ページ＋Allianceid）を確認。ja は楽天のみで不変。ホテル醍醐（OTA未掲載）は従来どおり Trip.com 検索＋Booking 検索。チケットCTAは未設定時に非描画を確認。新設2本のハブカード・ナビは zh-tw のみ出現し en では非表示を確認。
+
+### 2026-09-13（Phase 5 追補・チケットCTAの改修と通貨設定）
+
+運営者の指摘: ①CTAのデザインが乏しい ②どの言語から遷移しても KKday が「東京迪士尼門票」の検索画面になる ③遷移先の通貨表示をどうするか。
+
+| # | 対象 | 変更 | 狙い |
+|---|---|---|---|
+| 20 | `layouts/partials/ticket-cta.html` ＋ CSS ＋ i18n 5言語 | 全幅の色ベタ2段ボタンを、ブランドカード2枚のグリッド（ブランド名・一言説明・「票價を見る→」・先頭に「台灣人最常用」等のバッジ）に変更。カード1枚のときは幅を絞る。旧CSSの `flex: 1 1 140px` が縦積み時に高さ140pxになっていた不具合も解消 | 見た目と可読性 |
+| 21 | `hugo.yaml` `affiliate.tickets` | KKday／Klook を**言語別URLマップ**に変更。KKday は商品 19252（表示番号 #32488）を zh-tw／en／ko／zh-cn で実ブラウザ確認、ja は未販売のため空（カード非表示・Klook のみ表示）。Klook は ID 695 を全ロケールで使用 | 言語ごとに正しい商品ページへ |
+| 22 | `hugo.yaml` `affiliate.currency` ＋ `hotel-book-buttons.html` | 言語別の表示通貨（ja=JPY／en=USD／zh=CNY／zh-tw=TWD／ko=KRW）を Booking（`selected_currency`）と Trip.com（`curr`）のURLに付与。Agoda はパラメータの効きを実ブラウザで確認できなかったため未付与（Agoda はロケール／IPで自動選択） | 読者の母国通貨で価格比較できるように |
+
+**通貨の方針**: サイト本文は日本円（施設の公式価格・fact ショートコードが言語別に「日圓／¥／엔」表記）。予約サイト側は読者の母国通貨。KKday／Klook は言語サイトが通貨を自動選択するためパラメータ不要。
