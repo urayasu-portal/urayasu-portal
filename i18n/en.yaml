@@ -221,7 +221,7 @@
 - id: hl_neardisneysea_desc
   translation: "Walk, monorail or shuttle: where to stay for a DisneySea-first trip"
 - id: ticket_kkday_sub
-  translation: "English site & app · pay in your own currency · e-ticket QR at the gate"
+  translation: "English site & app · multiple currencies · e-ticket QR at the gate"
 - id: ticket_klook_sub
   translation: "English site & app · many payment options · show the QR code in the app"
 - id: ticket_go

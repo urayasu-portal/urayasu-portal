@@ -32,8 +32,8 @@
   {{- if eq $lang "zh-tw" }}{{ $locale = "zh-tw" }}
   {{- else if eq $lang "zh" }}{{ $locale = "zh-cn" }}
   {{- else if eq $lang "ko" }}{{ $locale = "ko-kr" }}
-  {{- else if eq $lang "en" }}{{ $locale = "en-us" }}
   {{- else if eq $lang "ja" }}{{ $locale = "ja-jp" }}{{ end }}
+  {{- /* en はロケール無し（Agoda の既定が英語。/en-us/ を付けると 301 で1ホップ増える。2026-09-13 確認） */ -}}
   {{- $u := . }}
   {{- if and $locale (hasPrefix $u "https://www.agoda.com/") }}
     {{- $u = printf "https://www.agoda.com/%s/%s" $locale (strings.TrimPrefix "https://www.agoda.com/" $u) }}

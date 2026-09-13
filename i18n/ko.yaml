@@ -221,7 +221,7 @@
 - id: hl_neardisneysea_desc
   translation: "디즈니씨 위주라면 어디에 묵을까? 도보·모노레일·셔틀별 비교"
 - id: ticket_kkday_sub
-  translation: "한국어 화면 · 원화 결제 가능 · 전자 티켓 QR로 입장"
+  translation: "한국어 화면 · 다양한 통화로 결제 · 전자 티켓 QR로 입장"
 - id: ticket_klook_sub
   translation: "한국어 화면 · 다양한 결제 수단 · 앱에서 QR 제시로 입장"
 - id: ticket_go

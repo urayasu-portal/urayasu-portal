@@ -205,3 +205,12 @@ Phase 3 で「素の `<table>` を使う posts 79本でモバイル時に表の�
 | 22 | `hugo.yaml` `affiliate.currency` ＋ `hotel-book-buttons.html` | 言語別の表示通貨（ja=JPY／en=USD／zh=CNY／zh-tw=TWD／ko=KRW）を Booking（`selected_currency`）と Trip.com（`curr`）のURLに付与。Agoda はパラメータの効きを実ブラウザで確認できなかったため未付与（Agoda はロケール／IPで自動選択） | 読者の母国通貨で価格比較できるように |
 
 **通貨の方針**: サイト本文は日本円（施設の公式価格・fact ショートコードが言語別に「日圓／¥／엔」表記）。予約サイト側は読者の母国通貨。KKday／Klook は言語サイトが通貨を自動選択するためパラメータ不要。
+
+### 2026-09-13（Phase 5 追補2・自己点検で出た軽微修正）
+
+| # | 対象 | 変更 | 理由 |
+|---|---|---|---|
+| 23 | `hotel-book-buttons.html` | Agoda の英語版リンクからロケール `/en-us/` を外す | Agoda が 301 でロケール無しURLへ転送していた（cid は保持されるが1ホップ無駄） |
+| 24 | `i18n/ko.yaml`・`i18n/en.yaml` | KKday カードの文言を「원화 결제 가능」→「다양한 통화로 결제」、"pay in your own currency" → "multiple currencies" に | KKday の対応通貨一覧を確認できず、言い過ぎを避けるため（zh-tw の「新台幣付款」は確認済み） |
+
+**要観察**: Trip.com の tw./kr. サブドメイン経由で Allianceid が計上されるか（初週に管理画面で確認。計上されなければ www.trip.com＋locale に戻す）。
