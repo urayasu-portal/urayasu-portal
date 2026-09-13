@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼Happy Entry（提前入园）全解说 | 哪些酒店有资格"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-13
 factChecked: "2026-08-29"
 description: "Happy Entry让东京迪士尼度假区酒店住客比一般开园更早入园（乐园提前15分钟，海洋因施工提前5〜15分钟）——但仅限迪士尼酒店住客。本地视角解说它的运作方式、哪些酒店有资格、常见误解，以及不住迪士尼酒店时的替代策略。"
 tags:
@@ -96,6 +96,8 @@ faq:
 <div class="tg-notice-info">
 <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>关于本特典：</strong>Happy Entry的规则、适用乐园和条件由东京迪士尼度假区制定并可能变动。预订前请务必按你的酒店和出行日期确认最新官方信息。
 </div>
+
+{{< ticket-cta >}}
 
 ## 相关阅读
 

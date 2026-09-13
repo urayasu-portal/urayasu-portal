@@ -212,3 +212,11 @@
   translation: "文中的日期、價格與活動內容為撰稿時的公告資訊，之後可能變動。出發前請以各官方網站的最新資訊為準。"
 - id: hotel_topics_title
   translation: "這間飯店的最新消息"
+- id: ticket_cta_title
+  translation: "門票在哪買？（電子票·手機出示QR即可入園）"
+- id: ticket_cta_desc
+  translation: "門票採指定日期·浮動票價，熱門日期會售罄。透過台灣常用的平台可用中文介面與新台幣付款，購買後憑電子票QR入園。"
+- id: hl_neardisneysea
+  translation: "迪士尼海洋附近的飯店"
+- id: hl_neardisneysea_desc
+  translation: "以海洋為主的話要住哪裡？步行·單軌·接駁車別比較"

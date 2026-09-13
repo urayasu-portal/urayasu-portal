@@ -212,3 +212,11 @@
   translation: "記事中の日程・料金・内容は執筆時点の発表情報です。変更される場合があるため、おでかけ前に公式サイトで最新情報をご確認ください。"
 - id: hotel_topics_title
   translation: "このホテルの最新トピックス"
+- id: ticket_cta_title
+  translation: "パークチケットはどこで買う？（電子チケット・QR提示で入園）"
+- id: ticket_cta_desc
+  translation: "チケットは日付指定・変動価格制で、人気日は売り切れます。以下の予約サイトでも公式の電子チケットを購入でき、購入後はQRコードの提示で入園できます。"
+- id: hl_neardisneysea
+  translation: "ディズニーシー寄りのホテル"
+- id: hl_neardisneysea_desc
+  translation: "シー中心の旅ならどこに泊まる？徒歩・モノレール・シャトル別に比較"

@@ -212,3 +212,11 @@
   translation: "Dates, prices and other details are as announced at the time of writing and may change. Please check the official websites for the latest information before your visit."
 - id: hotel_topics_title
   translation: "Latest news about this hotel"
+- id: ticket_cta_title
+  translation: "Where to buy park tickets (e-tickets, scan the QR code at the gate)"
+- id: ticket_cta_desc
+  translation: "Tickets are date-specific with variable pricing, and popular dates sell out. These platforms sell official e-tickets in English with local payment options."
+- id: hl_neardisneysea
+  translation: "Hotels near Tokyo DisneySea"
+- id: hl_neardisneysea_desc
+  translation: "Walk, monorail or shuttle: where to stay for a DisneySea-first trip"

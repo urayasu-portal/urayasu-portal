@@ -1,7 +1,7 @@
 ---
 title: "How to Buy Tokyo Disneyland & DisneySea Tickets | Prices, Sold-Out Days & Where to Buy"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-13
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "Tickets"
@@ -129,6 +129,8 @@ Practical notes for overseas visitors:
 <div class="tg-notice-info">
 <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>About prices and rules:</strong> Ticket prices, sale schedules, DPA pricing and app availability change. Always confirm the latest conditions on the official Tokyo Disney Resort website before purchasing.
 </div>
+
+{{< ticket-cta >}}
 
 ## Related
 

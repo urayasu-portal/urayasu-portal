@@ -80,14 +80,30 @@ params:
       allianceId: "D18374029"
       sid: "322202616"
     travelpayouts:
-      marker: ""
-      trs: ""
+      marker: "745385"
+      trs: "545197"
       bookingP: ""
       bookingCampaign: ""
       tripP: ""
       tripCampaign: ""
       agodaP: ""
       agodaCampaign: ""
+      # チケット（KKday / Klook）。Travelpayouts のリンクジェネレーターで各プログラムのリンクを1本生成し、
+      # p 値（と campaign_id があれば）を転記すると、disney-tickets / happy-entry 末尾のチケットCTAが有効化される。
+      # marker・trs・該当 p が揃うまでは CTA 自体を描画しない（誤計測防止）。表示先: partials/ticket-cta.html
+      kkdayP: "9074"
+      kkdayCampaign: "633"
+      klookP: "4110"
+      klookCampaign: "137"
+    # Agoda 直接提携（Agoda Partners）。承認後に発行される Partner ID（cid）を貼ると、
+    # 全言語の Agoda ボタン（CSV AgodaURL 列があるホテル）に ?cid= が付与される。未設定のあいだは Travelpayouts agodaP → 素URL の順。
+    agoda:
+      cid: ""
+    # チケットCTAの遷移先（ロケール無しの基準URL。言語別ロケールはテンプレートが差し替える）。
+    # kkday: KKday の東京ディズニー門票 商品一覧（個別商品ページに差し替え可）／klook: Klook の東京ディズニーリゾート 1デーパスポート
+    tickets:
+      kkday: "https://www.kkday.com/zh-tw/product/productlist/%E6%9D%B1%E4%BA%AC%E8%BF%AA%E5%A3%AB%E5%B0%BC%E9%96%80%E7%A5%A8"
+      klook: "https://www.klook.com/zh-TW/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
   # ヘッダーロゴの主表示。英語サイトでもブランド名は「浦安ぽーたる」で統一（site.Title はSEOの<title>接尾辞用に言語別のまま）
   label:
     text: 浦安ぽーたる

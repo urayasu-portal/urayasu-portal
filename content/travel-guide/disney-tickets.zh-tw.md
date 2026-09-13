@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼門票購買全攻略｜價格·售罄日·在哪買最穩妥（在地視角）"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-13
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "門票"
@@ -129,6 +129,8 @@ Trip.com 涵蓋兩個園區，電子票即時出票。其他授權通路還有 K
 <div class="tg-notice-info">
 <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>關於價格與規則：</strong>門票價格、開賣時間、DPA價格和App可用性均可能變動。購票前請務必在東京迪士尼度假區官網確認最新資訊。
 </div>
+
+{{< ticket-cta >}}
 
 ## 相關閱讀
 

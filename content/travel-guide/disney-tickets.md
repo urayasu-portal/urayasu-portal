@@ -1,7 +1,7 @@
 ---
 title: "東京ディズニーランド・シーのチケット購入ガイド｜料金・売り切れ・買える場所を地元が解説"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-13
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "チケット"
@@ -129,6 +129,8 @@ Trip.comは両パークに対応し、eチケットが即時発行されます�
 <div class="tg-notice-info">
 <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>料金・ルールについて：</strong> チケット料金・販売スケジュール・DPAの価格・アプリの提供状況は変わります。購入前に必ず東京ディズニーリゾート公式サイトで最新の条件をご確認ください。
 </div>
+
+{{< ticket-cta >}}
 
 ## 関連記事
 

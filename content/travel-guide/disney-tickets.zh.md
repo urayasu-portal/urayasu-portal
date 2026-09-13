@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼门票购买全攻略｜价格·售罄日·在哪买最稳妥（本地视角）"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-13
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "门票"
@@ -129,6 +129,8 @@ Trip.com 覆盖两个园区，电子票即时出票。其他授权渠道还有 K
 <div class="tg-notice-info">
 <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>关于价格与规则：</strong>门票价格、开售时间、DPA价格和App可用性均可能变动。购票前请务必在东京迪士尼度假区官网确认最新信息。
 </div>
+
+{{< ticket-cta >}}
 
 ## 相关阅读
 

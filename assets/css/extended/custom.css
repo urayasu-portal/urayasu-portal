@@ -4618,3 +4618,11 @@ body.pillar-travel .post-single .post-content a.hg-sv-maplink:hover { background
 .tg-topic-pager a { color: var(--up-accent, #E05535); text-decoration: none; font-weight: 600; }
 .tg-topic-backlinks { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 24px 0 8px; }
 .tg-topic-back { color: var(--up-accent, #E05535); text-decoration: none; font-weight: 600; font-size: 0.9em; }
+
+/* ── パークチケットCTA（partials/ticket-cta.html・KKday/Klook）。予約CTA（.lg-book-cta）の意匠を流用 ── */
+.book-kkday   { background: #1cb5c1; }
+.book-klook   { background: #ff5b00; }
+.lg-ticket-cta { margin: 28px 0 8px; }
+.lg-ticket-cta .lg-book-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.lg-ticket-cta .lg-book-btn { flex: 1 1 140px; }
+.lg-ticket-cta-desc { margin: -4px 0 12px; font-size: 13px; line-height: 1.6; color: var(--up-text-muted, #5b6470); }

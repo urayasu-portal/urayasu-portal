@@ -162,3 +162,34 @@ Phase 3 で「素の `<table>` を使う posts 79本でモバイル時に表の�
    - あわせて16か月分のページ別データ（Group by: Page + Date）を取り、季節性を切り分ける
 3. GA4 で「記事 → ガイド」の遷移率を確認（ベースライン 8.5% / 1.9%）
 4. `/open-close/` と `/categories/開店閉店/` に着地しているクエリを確認し、表示30以上で個別記事がないものを記事化候補に上げる（03-backlog 1-3 の恒久ルール）
+
+### 2026-09-13（Phase 5・台湾向け収益導線と繁体字の取りこぼし回収）
+
+判断の経緯は `05-overseas-growth-strategy.md` 6章。運営者の決定: Agoda はサイト直接提携（ドメイン認証中）／KKday・Klook は Travelpayouts で提携可能／Threads 繁体字は当面やらない／Bing 未登録／新規2本は zh-tw 先行。
+
+| # | 対象 | 変更 | 狙い |
+|---|---|---|---|
+| 11 | `hotel-database-full.csv` ＋ `data/hotels_map.yaml` | AgodaURL 列を 44/45 軒埋め、Trip.comURL 列を新設して 44/45 軒に個別ページURLを登録（ホテル醍醐のみ両OTAに掲載なし）。`scripts/build-hotels-map.ps1` が `tripcom:` を出力するよう拡張 | 収益導線の穴 R-1（Agoda 無し）・R-2（Trip.com が検索一覧リンク）の解消 |
+| 12 | `layouts/partials/hotel-book-buttons.html` | Agoda ボタンを zh-tw / zh / en に追加（順序: zh-tw・zh は Agoda→Trip.com→Booking、en は Agoda→Booking→Trip.com）。Agoda URL に言語別ロケール（/zh-tw/ /zh-cn/ /ko-kr/ /en-us/）を挿入し、`affiliate.agoda.cid` 設定後は `?cid=` を付与。Trip.com は個別ページURLを優先し、zh-tw→tw.trip.com／ko→kr.trip.com／ja→jp.trip.com に切替 | 成約率（一覧離脱の防止・母国語ページ） |
+| 13 | `hugo.yaml` | `affiliate.agoda.cid`（空）／`travelpayouts.kkdayP・klookP`（空）／`affiliate.tickets.kkday・klook`（遷移先URL）を追加 | 承認後にIDを貼るだけで有効化 |
+| 14 | `layouts/partials/ticket-cta.html` ＋ `layouts/shortcodes/ticket-cta.html` ＋ i18n 5言語 ＋ CSS | パークチケット購入CTA（KKday / Klook）。`disney-tickets`（5言語）と `hotels/happy-entry`（5言語）の末尾に shortcode を設置。Travelpayouts の marker・trs・p が揃うまでは**何も描画しない** | 収益導線の穴 R-4。台湾向けで最初に収益が立つ枠 |
+| 15 | `content/travel-guide/tokyo-sightseeing-access.zh-tw.md` | 改題（東京鐵塔・淺草をタイトル先頭側へ） | 「舞濱去東京鐵塔」系 約300表示・0クリック |
+| 16 | `content/travel-guide/hotels/_index.zh-tw.md` | 改題（「浦安住宿·舞濱飯店」を含める） | 浦安飯店／住宿／酒店 約100表示・36〜48位 |
+| 17 | `content/travel-guide/hotels/happy-entry.zh-tw.md` | title・description に対象6飯店と分数を明記 | 1ページ目でクリック1〜2の CTR 改善 |
+| 18 | **`content/travel-guide/hotels/near-disneysea.zh-tw.md`（新設）** | ディズニーシー寄りの飯店を「到海洋的方式」で5級比較。導線: hotels ハブのカード（`list.html`・翻訳がある言語だけ表示）／`travel-guide-nav`／where-to-stay／hotels/access | 「東京迪士尼海洋附近酒店」hkg 38＋sgp 52表示の空白 |
+| 19 | **`content/travel-guide/shin-urayasu-gourmet.zh-tw.md`（新設）** | 新浦安駅周辺の美食を診断型で。Atre 2026年7月・9月改装、New Coast の麻辣湯、飯店自助餐、開店閉店の年表。導線: tourism ハブ深掘りリスト／gourmet-guide／`travel-guide-nav` | 「新浦安美食」twn 64＋hkg 55表示・21〜23位の空白 |
+
+**ベースライン追加（Phase 5 で測るもの・82日間）**
+
+| URL | click | impr | CTR | 順位 | 変更 |
+|---|---|---|---|---|---|
+| `/zh-tw/travel-guide/tokyo-sightseeing-access/` | 4 | 418 | 1.0% | 9.0 | #15 改題 |
+| `/zh-tw/travel-guide/hotels/` | 0 | 12 | 0% | 36 | #16 改題 |
+| `/zh-tw/travel-guide/hotels/happy-entry/` | 6 | 238 | 2.5% | 8.9 | #17 改題 |
+| `/zh-tw/travel-guide/hotels/near-disneysea/` | — | — | — | — | #18 新設 |
+| `/zh-tw/travel-guide/shin-urayasu-gourmet/` | — | — | — | — | #19 新設 |
+| GA4 affiliate_click（zh-tw） | 3 | — | — | — | #11〜14 |
+
+**ID の設定状況（2026-09-13 時点）**: `travelpayouts.marker`・`trs`・`kkdayP`（campaign 633）・`klookP`（campaign 137）は設定済み＝チケットCTAは5言語で表示中。**未設定**: `affiliate.agoda.cid`（Agoda Partners で urayasu-portal.com のサイト登録・認証を完了し、その行のウェブサイトIDを貼る。1974852 は審査用の Approval Site なので使わない）／`bookingP`（Travelpayouts 承認待ち）。貼るまで Agoda・Booking のボタンは素URL。
+
+**検証**: `rm -rf public resources && hugo --minify` ERROR 0件。zh-tw／en／ko／zh のヒルトンで Agoda（ロケール付き）・Trip.com（tw./kr. 個別ページ＋Allianceid）を確認。ja は楽天のみで不変。ホテル醍醐（OTA未掲載）は従来どおり Trip.com 検索＋Booking 検索。チケットCTAは未設定時に非描画を確認。新設2本のハブカード・ナビは zh-tw のみ出現し en では非表示を確認。

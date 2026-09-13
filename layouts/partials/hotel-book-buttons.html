@@ -1,7 +1,14 @@
 {{- /* 予約ボタン一式（<a>タグのみ）。サイドバーCTA・モバイル固定バー・本文内CTAの3箇所で共通利用。
        引数: bk（data/hotels_map.yaml の booking dict）, lang（言語コード）, cur2（hotels_map.yaml の該当ホテル。name_en参照用）
-       非JAのアフィリ化は Travelpayouts（partials/tp-link.html でラップ。個別URL・検索フォールバックの両方が対象）。
-       hugo.yaml の affiliate.travelpayouts が未設定のあいだは素のURLで表示される。 */ -}}
+
+       アフィリエイトの経路（2026-09-13 整理）:
+         Agoda    … サイト直接提携（affiliate.agoda.cid）。CSV AgodaURL 列の個別ページURLに ?cid= を付与し、
+                    言語別のロケール（/zh-tw/ /zh-cn/ /ko-kr/ /en-us/）をパスに挿入。cid 未設定のあいだは
+                    Travelpayouts（agodaP）でラップ、それも無ければ素URL。
+         Trip.com … サイト直接提携（affiliate.tripcom）。CSV Trip.comURL 列の個別ページURLがあればそれを使い、
+                    無ければ英語施設名の検索URLへフォールバック。言語別に tw./hk./kr. のリージョナルホストへ切替。
+         Booking  … Travelpayouts（bookingP）。未承認のあいだは素URL。
+       hugo.yaml の各IDが未設定のあいだは素のURLで表示される（誤計測防止）。 */ -}}
 {{- $bk := .bk }}
 {{- $lang := .lang }}
 {{- $cur2 := .cur2 }}
@@ -12,29 +19,56 @@
 {{- with $bk.booking }}{{ $bookingHref = . }}{{ else }}{{ with $cur2.name_en }}{{ $bookingHref = printf "https://www.booking.com/searchresults.html?ss=%s" (. | urlquery) }}{{ end }}{{ end }}
 {{- if $bookingHref }}{{ $bookingHref = partial "tp-link.html" (dict "url" $bookingHref "p" $tp.bookingP "campaign" $tp.bookingCampaign) }}{{ end }}
 
-{{- /* Agoda: CSVのAgodaURL列があるホテルのみ */ -}}
+{{- /* Agoda: CSVのAgodaURL列（https://www.agoda.com/<slug>/hotel/<city>-jp.html 形式・ロケール無し）があるホテルのみ。
+       言語別ロケールをパスに挿入し、直接提携の cid があれば付与。cid が無ければ Travelpayouts でラップ。 */ -}}
+{{- $ag := site.Params.affiliate.agoda | default dict }}
 {{- $agodaHref := "" }}
-{{- with $bk.agoda }}{{ $agodaHref = partial "tp-link.html" (dict "url" . "p" $tp.agodaP "campaign" $tp.agodaCampaign) }}{{ end }}
+{{- with $bk.agoda }}
+  {{- $locale := "" }}
+  {{- if eq $lang "zh-tw" }}{{ $locale = "zh-tw" }}
+  {{- else if eq $lang "zh" }}{{ $locale = "zh-cn" }}
+  {{- else if eq $lang "ko" }}{{ $locale = "ko-kr" }}
+  {{- else if eq $lang "en" }}{{ $locale = "en-us" }}
+  {{- else if eq $lang "ja" }}{{ $locale = "ja-jp" }}{{ end }}
+  {{- $u := . }}
+  {{- if and $locale (hasPrefix $u "https://www.agoda.com/") }}
+    {{- $u = printf "https://www.agoda.com/%s/%s" $locale (strings.TrimPrefix "https://www.agoda.com/" $u) }}
+  {{- end }}
+  {{- if $ag.cid }}
+    {{- $sep := cond (in $u "?") "&" "?" }}
+    {{- $agodaHref = printf "%s%scid=%s" $u $sep $ag.cid }}
+  {{- else }}
+    {{- $agodaHref = partial "tp-link.html" (dict "url" $u "p" $tp.agodaP "campaign" $tp.agodaCampaign) }}
+  {{- end }}
+{{- end }}
 
-{{- /* Trip.com: 英語施設名の検索URL。直接アフィリ（affiliate.tripcom の Allianceid/SID）が
-       設定済みならパラメータ付与、無ければ Travelpayouts tripP でラップ（それも未設定なら素URL）。
-       Trip.com はサイト直接提携が承認済みのため、Booking/Agoda 承認までの主収益導線として全非JA言語に表示。 */ -}}
+{{- /* Trip.com: CSVのTrip.comURL列（https://www.trip.com/hotels/<city>-hotel-detail-<id>/<slug>/ 形式）があれば個別ページへ、
+       無ければ英語施設名の検索URLへフォールバック。言語別にリージョナルホストへ切替（ホテルIDは共通）。
+       直接提携（affiliate.tripcom の Allianceid/SID）が設定済みならパラメータ付与、無ければ Travelpayouts tripP でラップ。 */ -}}
 {{- $tc := site.Params.affiliate.tripcom | default dict }}
 {{- $tripHref := "" }}
-{{- with $cur2.name_en }}
-  {{- $tripHref = printf "https://www.trip.com/hotels/list?cityName=Tokyo&keyword=%s" (. | urlquery) }}
+{{- with $bk.tripcom }}{{ $tripHref = . }}{{ else }}{{ with $cur2.name_en }}{{ $tripHref = printf "https://www.trip.com/hotels/list?cityName=Tokyo&keyword=%s" (. | urlquery) }}{{ end }}{{ end }}
+{{- if $tripHref }}
+  {{- $host := "" }}
+  {{- if eq $lang "zh-tw" }}{{ $host = "tw.trip.com" }}
+  {{- else if eq $lang "ko" }}{{ $host = "kr.trip.com" }}
+  {{- else if eq $lang "ja" }}{{ $host = "jp.trip.com" }}{{ end }}
+  {{- if $host }}{{ $tripHref = replace $tripHref "https://www.trip.com/" (printf "https://%s/" $host) }}{{ end }}
   {{- if and $tc.allianceId $tc.sid }}
-    {{- $tripHref = printf "%s&Allianceid=%s&SID=%s" $tripHref $tc.allianceId $tc.sid }}
+    {{- $sep := cond (in $tripHref "?") "&" "?" }}
+    {{- $tripHref = printf "%s%sAllianceid=%s&SID=%s" $tripHref $sep $tc.allianceId $tc.sid }}
   {{- else }}
     {{- $tripHref = partial "tp-link.html" (dict "url" $tripHref "p" $tp.tripP "campaign" $tp.tripCampaign) }}
   {{- end }}
 {{- end }}
 
 {{- if eq $lang "en" }}
+  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
   {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
   {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
-  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
 {{- else if or (eq $lang "zh") (eq $lang "zh-tw") }}
+  {{- /* 台湾・華語圏は Agoda の利用率が高いため先頭に。Trip.com は直接提携済みで確実に収益化できるため2番目。 */ -}}
+  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
   {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
   {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
 {{- else if eq $lang "ko" }}

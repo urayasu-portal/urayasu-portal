@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 티켓 구매 완전 가이드 | 가격·매진일·어디서 사야 하나(현지 시선)"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-13
 factChecked: "2026-08-29"
 slug: "disney-tickets"
 badge: "티켓"
@@ -129,6 +129,8 @@ Trip.com은 두 파크 모두 취급하며 e티켓이 즉시 발급됩니다. �
 <div class="tg-notice-info">
 <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>가격·규정 안내:</strong> 티켓 가격, 판매 일정, DPA 가격, 앱 사용 가능 여부는 변동됩니다. 구매 전 반드시 도쿄 디즈니 리조트 공식 사이트에서 최신 조건을 확인하세요.
 </div>
+
+{{< ticket-cta >}}
 
 ## 관련 글
 

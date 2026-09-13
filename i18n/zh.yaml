@@ -212,3 +212,11 @@
   translation: "文中的日期、价格与活动内容为撰稿时的公告信息，之后可能变动。出行前请以各官方网站的最新信息为准。"
 - id: hotel_topics_title
   translation: "这家酒店的最新消息"
+- id: ticket_cta_title
+  translation: "门票在哪买？（电子票·手机出示二维码即可入园）"
+- id: ticket_cta_desc
+  translation: "门票为指定日期·浮动票价，热门日期会售罄。通过常用的预订平台可用中文界面购买，凭电子票二维码入园。"
+- id: hl_neardisneysea
+  translation: "迪士尼海洋附近的酒店"
+- id: hl_neardisneysea_desc
+  translation: "以海洋为主的话住哪里？步行·单轨·班车别比较"
