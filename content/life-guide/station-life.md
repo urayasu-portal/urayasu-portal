@@ -1,7 +1,7 @@
 ---
 title: "浦安市の駅別生活ガイド｜浦安駅・新浦安駅・舞浜駅の暮らしやすさを比較"
 date: 2026-06-13
-lastmod: 2026-09-04
+lastmod: 2026-09-14
 factChecked: "2026-07-15"
 newsTags: ["浦安駅", "新浦安駅", "舞浜駅", "新浦安", "舞浜"]
 description: "浦安市内の3つの駅「浦安駅」「新浦安駅」「舞浜駅」について、交通・買い物・子育て・医療・公園・公共施設など、日々の暮らしに関わる情報を駅別に整理しました。"
@@ -93,7 +93,7 @@ aliases:
 <p>浦安駅周辺は、東京メトロ東西線を利用しやすい元町エリアの玄関口です。駅前にはスーパー、飲食店、クリニック、商店が集まり、日常生活の利便性が高い一方、駅前の道路や歩行者・自転車の動線には注意したいエリアです。</p>
 
 <div class="lg-art-cols">
-  <div class="lg-art-col"><span class="lg-art-col-title">交通</span><p>東西線で大手町・日本橋方面へアクセスしやすい。朝夕の混雑は要確認。</p></div>
+  <div class="lg-art-col"><span class="lg-art-col-title">交通</span><p>東西線で大手町・日本橋方面へアクセスしやすい。朝夕の混雑は要確認。路線バスの乗り場は駅の周りに7か所分散しているので、<a href="/life-guide/urayasu-station-bus-noriba/">浦安駅のバス乗り場ガイド</a>で行き先別に確認を。</p></div>
   <div class="lg-art-col"><span class="lg-art-col-title">買い物</span><p>駅前スーパー、ドラッグストア、商店街など日常買い物の選択肢が多い。</p></div>
   <div class="lg-art-col"><span class="lg-art-col-title">子育て・医療</span><p>東京ベイ・浦安市川医療センター方面に近く、駅周辺のクリニックも確認しやすい。</p></div>
   <div class="lg-art-col"><span class="lg-art-col-title">注意点</span><p>道路幅、自転車動線、夜のにぎわいなど、現地で見ておきたい要素もある。</p></div>
