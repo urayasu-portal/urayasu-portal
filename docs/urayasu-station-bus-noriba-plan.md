@@ -221,7 +221,7 @@ frontmatter
 - [x] `/life-guide/station-life/` 浦安駅節: 交通欄に導線（2026-09-14）
 - [x] `/posts/urayasu-station-bus-stop-e-relocation-plan/` 冒頭 note ＋ frontmatter `guide:`（2026-09-14）
 - [x] `/life-guide/keiyo-line-unko-joho/` 代替ルート節: 「Eのりば」＋リンク（2026-09-14）
-- [ ] `/travel-guide/hotels/access.md` §4 浦安駅エリア: 旅行ガイドは5言語同期ルールがあり、新記事は ja のみのため見送り。ja 版だけに載せるか判断待ち
+- [x] `/travel-guide/hotels/access.md` §4 浦安駅エリア: **ja 版のみ**に導線を追加（2026-09-14・判断済み）。en / zh-tw / zh / ko は新記事の多言語展開を検討してから同期する
 
 ### 5-2. データファイル
 
