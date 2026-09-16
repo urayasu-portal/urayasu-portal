@@ -1,7 +1,7 @@
 ---
 title: "Halloween in Urayasu & Maihama 2026 | Costume Rules, Where to Change, Hotel Events & Sweets"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-17
 factChecked: "2026-09-08"
 slug: "maihama-halloween"
 badge: "Halloween"
@@ -34,7 +34,7 @@ faq:
 ---
 
 <div class="tg-notice-warn">
-  <strong>ℹ️ Please note</strong>　This page was compiled on September 8, 2026 from official information published by each facility and Tokyo Disney Resort. Dates, prices and content are subject to change. Always check the official websites before booking or visiting.
+  <strong>ℹ️ Please note</strong>　This page was compiled on September 8, 2026 from official information published by each facility and Tokyo Disney Resort. On September 16 we added Sheraton Grande Tokyo Bay's new Halloween offerings. Dates, prices and content are subject to change. Always check the official websites before booking or visiting.
 </div>
 
 <p>Every autumn, hotels and shopping complexes across Urayasu and Maihama launch seasonal programs timed to Tokyo Disney Resort's "Disney Halloween." This guide covers <strong>how to enjoy Halloween 2026 in Urayasu and Maihama</strong>, organized around four kinds of visitor: people who want to wear costumes, people looking for a hotel, people chasing seasonal sweets, and people who are not going into the parks at all.</p>
@@ -337,6 +337,16 @@ faq:
 <img src="/images/travel-guide/halloween-sweets.jpg" alt="Halloween cakes on a hotel dessert buffet: a pumpkin-shaped mousse, a purple Mont Blanc and ghost-shaped sweets." loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
+<h3>Sheraton Grande Tokyo Bay Hotel</h3>
+
+<p>From October 1 (Thu) to 31 (Sat), 2026, Sheraton Grande Tokyo Bay (Maihama 1-9) holds <strong>"Halloween Sweets &amp; Bakery"</strong> at Tostina, the café on the hotel's 2nd floor.</p>
+
+<p>The monthly sweets are the pumpkin "Kabocha Debi," "Minuit," a black-cat-themed chestnut tiramisu, and the apple-based "Witch's Apple," at <strong>1,100 yen each</strong>. A Halloween melon pan (650 yen) and a closed burger (1,000 yen) are also on sale.</p>
+
+<p>The <strong>"Sheraton Sweets Box" (3,400 yen)</strong>, packed with mini versions of the limited sweets, is sold in limited numbers each day and must be reserved at least three days ahead. The October-only <strong>afternoon tea costs 3,900 yen</strong> and requires a reservation by 17:00 two days before.</p>
+
+<p>In addition, <strong>every Friday</strong> from October 2 to 30, Galleria Café on the 1st floor hosts a "Friday Sweets Buffet." No hotel stay or park ticket is needed, so it is a good option for a Halloween-flavored day in Maihama.</p>
+
 <h3>Hilton Tokyo Bay "Gothic Palace"</h3>
 
 <p>From September 5 (Sat) to November 3 (Mon, holiday), <strong>on weekends and public holidays only</strong>, Lounge O hosts a Halloween dessert buffet with roughly 20 sweets and 15 savory items over a two-hour seating. Prices are 5,000 yen for adults, 2,700 yen for ages 9-12 and 1,900 yen for ages 4-8, across four seatings starting at 12:00, 12:30, 14:30 and 15:00. See our <a href="/en/posts/hilton-tokyo-bay-gothic-palace-2026/">Gothic Palace article</a>.</p>
@@ -474,6 +484,7 @@ faq:
 <h2 id="changelog">Update history</h2>
 
 <ul>
+  <li><strong>September 16, 2026</strong>: Added Sheraton Grande Tokyo Bay Hotel's "Halloween Sweets &amp; Bakery," covering the monthly sweets, bakery items, sweets box, afternoon tea and the Friday-only sweets buffet</li>
   <li><strong>September 8, 2026</strong>: Updated the Hotel Okura Tokyo Bay "Grand Sweets Buffet - Halloween's Sweet Temptation" run to <strong>October 26 (Mon) - 31 (Sat), six days</strong>, reflecting the official announcement of September 7. Added that tax and service charge are included, plus what is served. Added baggage storage information for the official TDR changing space. Re-checked the Maihama Eurasia costume plan against the official page and added why October 16 is skipped, the extra-baggage option, and how the hotel-guest discount is applied</li>
   <li><strong>August 30, 2026</strong>: Article published</li>
 </ul>
@@ -492,8 +503,9 @@ faq:
   <li><a href="https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-halloween" target="_blank" rel="noopener">Hilton Tokyo Bay "Gothic Palace"</a></li>
   <li><a href="https://www.maihamahotel-firstresort.jp/stay-plan/halloween-spooky-night-plan-2026/" target="_blank" rel="noopener">Tokyo Bay Maihama Hotel First Resort Halloween stay plan</a></li>
   <li><a href="https://hoshinoresorts.com/ja/hotels/1955tokyobay/sp/halloween1955/" target="_blank" rel="noopener">1955 Tokyo Bay by Hoshino Resorts "OLDIES HALLOWEEN NIGHT"</a></li>
+  <li><a href="https://prtimes.jp/main/html/rd/p/000000288.000015667.html" target="_blank" rel="noopener">Sheraton Grande Tokyo Bay Hotel "Halloween Sweets &amp; Bakery" (Japanese)</a></li>
 </ul>
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-<p style="font-size:12px;color:#6b7a8d;">※ This article was compiled from information published as of September 8, 2026. Dates, prices and content may change. Please check each facility's official website for the latest details.</p>
+<p style="font-size:12px;color:#6b7a8d;">※ This article was compiled from information published as of September 8, 2026; the Sheraton section reflects information published as of September 16, 2026. Dates, prices and content may change. Please check each facility's official website for the latest details.</p>

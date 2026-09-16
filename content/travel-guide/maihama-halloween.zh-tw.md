@@ -1,7 +1,7 @@
 ---
 title: "2026浦安·舞濱萬聖節攻略｜變裝期間·換裝地點·飯店企劃與限定甜點"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-09-17
 factChecked: "2026-09-08"
 slug: "maihama-halloween"
 badge: "萬聖節"
@@ -34,7 +34,7 @@ faq:
 ---
 
 <div class="tg-notice-warn">
-  <strong>ℹ️ 注意</strong>　本頁內容為2026年9月8日確認各設施與東京迪士尼度假區官方資訊後彙整。期間·價格·實施內容可能變動，預約·前往前請務必至各官方網站確認最新資訊。
+  <strong>ℹ️ 注意</strong>　本頁內容為2026年9月8日確認各設施與東京迪士尼度假區官方資訊後彙整，並於9月16日補充東京灣喜來登大飯店的全新萬聖節企劃。期間·價格·實施內容可能變動，預約·前往前請務必至各官方網站確認最新資訊。
 </div>
 
 <p>秋天的浦安·舞濱，會配合東京迪士尼度假區的「Disney Halloween」，讓市內的飯店與商業設施一齊推出季節企劃。本文從<strong>2026年在浦安·舞濱該怎麼過萬聖節</strong>的角度出發，分別整理給想變裝的人、想住宿的人、想吃甜點的人，以及不進樂園的人。</p>
@@ -337,6 +337,16 @@ faq:
 <img src="/images/travel-guide/halloween-sweets.jpg" alt="飯店甜點自助餐台上的萬聖節限定蛋糕，有南瓜造型慕斯、蒙布朗與幽靈造型甜點。" loading="lazy" style="width:100%;display:block;border-radius:8px">
 </figure>
 
+<h3>東京灣喜來登大飯店</h3>
+
+<p>位於舞濱1-9的喜來登，將於2026年10月1日（四）〜31日（六）在飯店2樓咖啡廳「Tostina」舉辦<strong>「Halloween Sweets &amp; Bakery」</strong>。</p>
+
+<p>月度甜點有使用南瓜的「Kabocha Debi」、以黑貓為主題的栗子提拉米蘇「Minuit」、使用蘋果的「Witch's Apple」，<strong>各1,100日圓</strong>。另外也販售萬聖節菠蘿麵包650日圓、Closed Burger 1,000日圓。</p>
+
+<p>裝入迷你尺寸限定甜點的<strong>「Sheraton Sweets Box」3,400日圓</strong>每日限量，需於3天前預約。10月限定的<strong>下午茶為3,900日圓</strong>，需於2天前17:00前預約。</p>
+
+<p>此外，10月2日〜30日的<strong>每週五</strong>，飯店1樓「Galleria Café」也會舉辦「Friday Sweets Buffet」。不需住宿也不需入園即可利用，想在舞濱感受萬聖節氣氛的日子可以列入候選。</p>
+
 <h3>東京灣希爾頓飯店「Gothic Palace」</h3>
 
 <p>9月5日（六）至11月3日（二·假日）的<strong>週末假日限定</strong>，於Lounge O舉辦萬聖節甜點自助餐。可在2小時內享用約20種甜點與約15種鹹點。價格為成人5,000日圓、9〜12歲2,700日圓、4〜8歲1,900日圓。分為12:00、12:30、14:30、15:00開始的4個場次。詳情請見<a href="/zh-tw/posts/hilton-tokyo-bay-gothic-palace-2026/">Gothic Palace報導</a>。</p>
@@ -474,6 +484,7 @@ faq:
 <h2 id="changelog">更新紀錄</h2>
 
 <ul>
+  <li><strong>2026年9月16日</strong>：新增東京灣喜來登大飯店「Halloween Sweets &amp; Bakery」，補充月度甜點、麵包、甜點禮盒、下午茶與週五限定甜點自助餐的資訊</li>
   <li><strong>2026年9月8日</strong>：依9月7日的正式發表，將Hotel Okura東京灣「Grand Sweets Buffet 〜萬聖節的甜蜜誘惑〜」的會期更新為<strong>10月26日（一）〜31日（六）共6天</strong>。並補充含稅與服務費、供應內容。另於迪士尼官方換裝空間補充行李寄放的說明。並依官方頁面重新確認舞濱Eurasia的換裝方案，補充10月16日不舉辦的理由、行李追加選項與住宿者優惠的申請方式</li>
   <li><strong>2026年8月30日</strong>：文章公開</li>
 </ul>
@@ -492,8 +503,9 @@ faq:
   <li><a href="https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-halloween" target="_blank" rel="noopener">東京灣希爾頓飯店「Gothic Palace」</a></li>
   <li><a href="https://www.maihamahotel-firstresort.jp/stay-plan/halloween-spooky-night-plan-2026/" target="_blank" rel="noopener">東京灣舞濱飯店First Resort 萬聖節住宿方案</a></li>
   <li><a href="https://hoshinoresorts.com/ja/hotels/1955tokyobay/sp/halloween1955/" target="_blank" rel="noopener">1955 東京灣 by 星野集團「OLDIES HALLOWEEN NIGHT」</a></li>
+  <li><a href="https://prtimes.jp/main/html/rd/p/000000288.000015667.html" target="_blank" rel="noopener">東京灣喜來登大飯店「Halloween Sweets &amp; Bakery」（日文）</a></li>
 </ul>
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-<p style="font-size:12px;color:#6b7a8d;">※本文依據2026年9月8日的公開資訊彙整。期間·價格·實施內容可能變動，最新資訊請至各設施官方網站確認。</p>
+<p style="font-size:12px;color:#6b7a8d;">※本文依據2026年9月8日的公開資訊彙整，新增的喜來登資訊則依據2026年9月16日的公開資訊。期間·價格·實施內容可能變動，最新資訊請至各設施官方網站確認。</p>
