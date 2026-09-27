@@ -1,7 +1,7 @@
 ---
 title: "浦安・舞浜ハロウィーンガイド2026｜仮装の着替え場所・ホテル企画・限定スイーツまとめ"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-25T18:19:00+09:00
+lastmod: 2026-09-27
 factChecked: "2026-09-25"
 slug: "maihama-halloween"
 tags:
@@ -213,10 +213,9 @@ TDR公式スペースにはオールジェンダー・バリアフリー対応�
 
 ## 公式情報・参考リンク
 
-- [「ディズニー・ハロウィーン」での仮装（東京ディズニーリゾート公式）](https://www.tokyodisneyresort.jp/)
+- [「ディズニー・ハロウィーン」での仮装（東京ディズニーリゾート公式）](https://www.tokyodisneyresort.jp/dream/event/costumes2026.html)
 - [オリエンタルホテル 東京ベイ「パンプキンゲート」](https://www.oriental-hotels.com/news/2140/)
 - [オリエンタルホテル東京ベイ 宿泊施設からのお知らせ（じゃらん）](https://www.jalan.net/yad312544/topics/)
-- [WELL PILATESではなく各ホテル・施設の公式情報を予約前にご確認ください](https://urayasu-portal.com/travel-guide/)
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
