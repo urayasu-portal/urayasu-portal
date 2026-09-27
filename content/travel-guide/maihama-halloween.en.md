@@ -1,8 +1,8 @@
 ---
 title: "Halloween in Urayasu & Maihama 2026 | Costume Rules, Where to Change, Hotel Events & Sweets"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-17
-factChecked: "2026-09-08"
+lastmod: 2026-09-27
+factChecked: "2026-09-25"
 slug: "maihama-halloween"
 badge: "Halloween"
 tags:
@@ -12,7 +12,7 @@ tags:
   - Maihama
   - Urayasu
   - Hotels
-description: "A local guide to Halloween 2026 in Urayasu and Maihama: exactly when full costumes are allowed, three places to change (Ikspiari, Maihama Eurasia, Comfort Suites) compared on price and access, hotel stay plans, limited-edition sweets, and what you can enjoy without a park ticket."
+description: "A local guide to Halloween 2026 in Urayasu and Maihama: exactly when full costumes are allowed, three places to change (Ikspiari, Maihama Eurasia, Comfort Suites) compared on price and access, hotel stay plans in Maihama and Shin-Urayasu, limited-edition sweets, and what you can enjoy without a park ticket."
 images: ["/images/og-travel-urayasu.png"]
 cover:
   image: "/images/travel-guide/maihama-halloween-family.jpg"
@@ -28,13 +28,13 @@ faq:
   - q: "Can men use the changing spaces?"
     a: "The official changing space has 30 women's booths plus 2 all-gender / accessible booths, and men use the latter. Because there are so few, book early. SPA & HOTEL Maihama Eurasia has a dedicated men's changing booth. The changing room at Comfort Suites Tokyo Bay is women-only."
   - q: "Can I enjoy Halloween without a park ticket?"
-    a: "Yes. Cinema Ikspiari screens Tim Burton's The Nightmare Before Christmas in Disney Digital 3D (Japanese dub) from October 9 to November 5. Hotel Halloween sweets, afternoon teas and dessert buffets are also open to non-staying, non-park visitors."
+    a: "Yes. Cinema Ikspiari screens Tim Burton's The Nightmare Before Christmas in Disney Digital 3D (Japanese dub) from October 9 to November 5. Hotel Halloween sweets, afternoon teas and dessert buffets, as well as the Pumpkin Gate photo spot at Oriental Hotel Tokyo Bay in Shin-Urayasu, are also open to non-staying, non-park visitors."
   - q: "Are there stay plans with limited-edition Halloween merchandise?"
-    a: "Yes. Five Tokyo Disney Resort Official Hotels (Sheraton Grande Tokyo Bay, Hotel Okura Tokyo Bay, Grand Nikko Tokyo Bay Maihama, Maihama View Hotel by HULIC and Tokyo Bay Maihama Hotel First Resort) offer stay plans from September 16 to October 31 that include a Halloween-exclusive pouch with a handle."
+    a: "Yes. Five Tokyo Disney Resort Official Hotels (Sheraton Grande Tokyo Bay, Hotel Okura Tokyo Bay, Grand Nikko Tokyo Bay Maihama, Maihama View Hotel by HULIC and Tokyo Bay Maihama Hotel First Resort) offer stay plans from September 16 to October 31 that include a Halloween-exclusive pouch with a handle. Oriental Hotel Tokyo Bay also offers a limited-time stay plan with Halloween perks."
 ---
 
 <div class="tg-notice-warn">
-  <strong>ℹ️ Please note</strong>　This page was compiled on September 8, 2026 from official information published by each facility and Tokyo Disney Resort. On September 16 we added Sheraton Grande Tokyo Bay's new Halloween offerings. Dates, prices and content are subject to change. Always check the official websites before booking or visiting.
+  <strong>ℹ️ Please note</strong>　This page was compiled on September 8, 2026 from official information published by each facility and Tokyo Disney Resort. On September 16 we added Sheraton Grande Tokyo Bay's new Halloween offerings, and on September 25 Oriental Hotel Tokyo Bay's "Pumpkin Gate." Dates, prices and content are subject to change. Always check the official websites before booking or visiting.
 </div>
 
 <p>Every autumn, hotels and shopping complexes across Urayasu and Maihama launch seasonal programs timed to Tokyo Disney Resort's "Disney Halloween." This guide covers <strong>how to enjoy Halloween 2026 in Urayasu and Maihama</strong>, organized around four kinds of visitor: people who want to wear costumes, people looking for a hotel, people chasing seasonal sweets, and people who are not going into the parks at all.</p>
@@ -288,6 +288,18 @@ faq:
 
 <p>The hotel is themed on 1950s America, so the atmosphere is quite different from the Maihama hotels. See our <a href="/en/travel-guide/hotels/hoshinoresorts-1955-tokyo-bay/">1955 Tokyo Bay guide</a>.</p>
 
+<h3>Oriental Hotel Tokyo Bay (Shin-Urayasu)</h3>
+
+<p>At Oriental Hotel Tokyo Bay, directly connected to Shin-Urayasu Station, a giant pumpkin archway called the <strong>"Pumpkin Gate"</strong> stands in the 2nd-floor lobby from September 11 to November 3.</p>
+
+<p>The Pumpkin Gate is an interactive photo spot open to <strong>anyone visiting the hotel, not just overnight guests</strong>. You can walk through the big pumpkin arch or peek out of it for photos.</p>
+
+<p>On October 23 (Fri), 24 (Sat) and 30 (Fri), the hotel holds <strong>"Pumpkin Gate ★ Photo Time"</strong> in the guests-only Welcome Lounge, twice a day at 15:00-15:30 and 17:00-17:30. Guests can take photos with characters such as a pumpkin, a witch and a ghost, and children who say "Trick or Treat!" receive Halloween sweets and toys.</p>
+
+<p>The hotel's notice on the booking site Jalan also lists a limited-availability dinner-and-breakfast plan with Halloween perks from September 24 to October 31. The perks include baked sweets and face-paint stickers for children. See our <a href="/en/travel-guide/hotels/oriental-tokyo-bay/">Oriental Hotel Tokyo Bay guide</a> for the hotel itself.</p>
+
+{{< warn >}}The Pumpkin Gate itself is open to all visitors, but "Pumpkin Gate ★ Photo Time" is only for guests staying at the hotel on the event dates. Check plan availability and rates when booking.{{< /warn >}}
+
 <h3>The five Official Hotels and their shared pouch plan</h3>
 
 <p>Tokyo Disney Resort Official Hotels run "Disney Halloween" tie-in stay plans from September 16 (Wed) to October 31 (Sat). The five participating hotels in 2026 are as follows.</p>
@@ -420,6 +432,10 @@ faq:
 
 <p>The price is the same as the standard one-day free pass, 700 yen for adults and 350 yen for children, with no premium for the seasonal design. Four Halloween souvenir medals are also on offer. On a day spent moving between the hotels and the parks from Maihama Station, the pass doubles as a keepsake.</p>
 
+<h3>Pumpkin Gate at Oriental Hotel Tokyo Bay (Shin-Urayasu)</h3>
+
+<p>Even on a day you are not entering the parks, you can visit the <a href="#stay">Pumpkin Gate at Oriental Hotel Tokyo Bay</a> (until November 3). The hotel is directly connected to Shin-Urayasu Station, so it is an easy stop to add to a day of eating and shopping around Shin-Urayasu.</p>
+
 <hr>
 
 <h2 id="faq">Frequently asked questions</h2>
@@ -437,10 +453,10 @@ faq:
 <p>The official changing space has 30 women's booths plus 2 all-gender / accessible booths, and men use the latter. Because there are so few, book early. SPA &amp; HOTEL Maihama Eurasia has a dedicated men's changing booth. The changing room at Comfort Suites Tokyo Bay is women-only.</p>
 
 <h3>Can I enjoy Halloween without a park ticket?</h3>
-<p>Yes. Beyond the 3D screenings of The Nightmare Before Christmas at Cinema Ikspiari (October 9 - November 5), the hotel dessert buffets and afternoon teas are open to anyone.</p>
+<p>Yes. Beyond the 3D screenings of The Nightmare Before Christmas at Cinema Ikspiari (October 9 - November 5), the hotel dessert buffets and afternoon teas, as well as the Pumpkin Gate at Oriental Hotel Tokyo Bay, are open to anyone.</p>
 
 <h3>Are there stay plans with limited-edition Halloween merchandise?</h3>
-<p>Five Official Hotels offer stay plans from September 16 to October 31 that include a Halloween-exclusive pouch with a handle. See <a href="#stay">Staying in the Halloween mood</a>.</p>
+<p>Five Official Hotels offer stay plans from September 16 to October 31 that include a Halloween-exclusive pouch with a handle. Oriental Hotel Tokyo Bay also offers a limited-time stay plan with Halloween perks. See <a href="#stay">Staying in the Halloween mood</a>.</p>
 
 <hr>
 
@@ -484,6 +500,7 @@ faq:
 <h2 id="changelog">Update history</h2>
 
 <ul>
+  <li><strong>September 25, 2026</strong>: Added Oriental Hotel Tokyo Bay's "Pumpkin Gate," the guests-only Photo Time, and its stay plan with Halloween perks</li>
   <li><strong>September 16, 2026</strong>: Added Sheraton Grande Tokyo Bay Hotel's "Halloween Sweets &amp; Bakery," covering the monthly sweets, bakery items, sweets box, afternoon tea and the Friday-only sweets buffet</li>
   <li><strong>September 8, 2026</strong>: Updated the Hotel Okura Tokyo Bay "Grand Sweets Buffet - Halloween's Sweet Temptation" run to <strong>October 26 (Mon) - 31 (Sat), six days</strong>, reflecting the official announcement of September 7. Added that tax and service charge are included, plus what is served. Added baggage storage information for the official TDR changing space. Re-checked the Maihama Eurasia costume plan against the official page and added why October 16 is skipped, the extra-baggage option, and how the hotel-guest discount is applied</li>
   <li><strong>August 30, 2026</strong>: Article published</li>
@@ -504,8 +521,10 @@ faq:
   <li><a href="https://www.maihamahotel-firstresort.jp/stay-plan/halloween-spooky-night-plan-2026/" target="_blank" rel="noopener">Tokyo Bay Maihama Hotel First Resort Halloween stay plan</a></li>
   <li><a href="https://hoshinoresorts.com/ja/hotels/1955tokyobay/sp/halloween1955/" target="_blank" rel="noopener">1955 Tokyo Bay by Hoshino Resorts "OLDIES HALLOWEEN NIGHT"</a></li>
   <li><a href="https://prtimes.jp/main/html/rd/p/000000288.000015667.html" target="_blank" rel="noopener">Sheraton Grande Tokyo Bay Hotel "Halloween Sweets &amp; Bakery" (Japanese)</a></li>
+  <li><a href="https://www.oriental-hotels.com/news/2140/" target="_blank" rel="noopener">Oriental Hotel Tokyo Bay "Pumpkin Gate" (Japanese)</a></li>
+  <li><a href="https://www.jalan.net/yad312544/topics/" target="_blank" rel="noopener">Oriental Hotel Tokyo Bay notices on Jalan (Japanese)</a></li>
 </ul>
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-<p style="font-size:12px;color:#6b7a8d;">※ This article was compiled from information published as of September 8, 2026; the Sheraton section reflects information published as of September 16, 2026. Dates, prices and content may change. Please check each facility's official website for the latest details.</p>
+<p style="font-size:12px;color:#6b7a8d;">※ This article was compiled from information published as of September 8, 2026; the Sheraton section reflects information published as of September 16, 2026, and the Oriental Hotel Tokyo Bay section as of September 25, 2026. Dates, prices and content may change. Please check each facility's official website for the latest details.</p>
