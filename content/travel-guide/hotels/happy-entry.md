@@ -1,8 +1,8 @@
 ---
 title: "東京ディズニーリゾートのハッピーエントリーとは｜早入園の仕組みと対象ホテルを地元が解説"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-09-13
-factChecked: "2026-08-29"
+lastmod: 2026-09-30
+factChecked: "2026-09-30"
 description: "ハッピーエントリーは、東京ディズニーリゾートのホテル宿泊者が一般開園より早く入園できる特典（ランドは15分前、シーは工事に伴い5〜15分前）──ただし対象はディズニーホテルの宿泊者だけ。仕組み・対象ホテル・よくある誤解・ディズニーホテルに泊まらない場合の対処法を地元メディアが解説します。"
 tags:
   - ホテル
@@ -49,8 +49,8 @@ faq:
 |---|---|
 | [ホテルミラコスタ](/travel-guide/hotels/miracosta/) | ランド・シー**両方** |
 | [ファンタジースプリングスホテル](/travel-guide/hotels/fantasy-springs-hotel/) | ランド・シー**両方** |
-| [東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/) | **ランド**（シーは2026年9月14日入園分まで期間限定で対象） |
-| [ディズニーアンバサダーホテル](/travel-guide/hotels/ambassador-hotel/) | **ランド**（同上） |
+| [東京ディズニーランドホテル](/travel-guide/hotels/tdl-hotel/) | **ランドのみ** |
+| [ディズニーアンバサダーホテル](/travel-guide/hotels/ambassador-hotel/) | **ランドのみ** |
 | [トイ・ストーリーホテル](/travel-guide/hotels/toy-story-hotel/) | **ランドのみ** |
 | 東京ディズニーセレブレーションホテル：[ウィッシュ](/travel-guide/hotels/celebration-wish/) ／ [ディスカバー](/travel-guide/hotels/celebration-discover/) | **ランドのみ** |
 

@@ -1,8 +1,8 @@
 ---
 title: "Tokyo Disneyland Hotel | 1-Minute Covered Walkway to TDL, Happy Entry 15 Min, Breakfast from 6:30am — The Prestige TDL Hotel"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-07-22
+factChecked: "2026-09-30"
+lastmod: 2026-09-30
 description: "Local review of Tokyo Disneyland Hotel. 706 rooms. Covered walkway to TDL entrance (approx. 1 min). Happy Entry early admission (15 min before general). Breakfast from 6:30am. Concierge lounge. Nearest convenience store 6 min on foot (7-Eleven). Airport limousine at front. Price range ¥55,000–¥100,000+."
 tags:
   - Hotel
@@ -93,7 +93,7 @@ Victorian European-themed rooms and suites. Wide variety of standard, character,
 "Looking Glass Gifts" on 1F (6:00–24:00, open to non-guests too) sells drinks, light meals, snacks, daily goods, baby items and Disney merchandise (no medicine). Nearest external convenience store: 7-Eleven approximately 6 min on foot (24h).
 
 **Parking**
-¥3,000 for 1st night; ¥1,000 per additional night.
+¥4,000 for 1st night; ¥2,000 per additional night.
 
 **Luggage**
 Same-day storage at the bell desk from 6:00 (concierge/suite guests from 7:00 in the lounge), held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); on departure, paid Station Delivery the other way at ¥800 per item (pick-up 13:00–21:00). See [how Maihama luggage delivery works](/en/travel-guide/luggage/).

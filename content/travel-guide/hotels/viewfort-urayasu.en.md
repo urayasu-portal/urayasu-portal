@@ -1,8 +1,8 @@
 ---
 title: "Urayasu Viewfort Hotel | 1-Minute Walk from Urayasu Station, Buffet Breakfast with Fresh-Baked Croissants"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-06-28"
-lastmod: 2026-06-17
+factChecked: "2026-09-30"
+lastmod: 2026-09-30
 description: "Local review of Urayasu Viewfort Hotel. About 1-minute walk from Urayasu Station. Buffet breakfast 7:00–9:30 (famous for fresh-baked croissants). Convenience store at the back of the hotel. Parking ¥1,100/night (reserved, height limit 1.55m). Quick Tozai Line access to central Tokyo."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ A business hotel about 1-minute walk from Urayasu Station on the Tokyo Metro Toz
 
 | Item | Details |
 |---|---|
-| Address | 4-18-28 Nekonomi, Urayasu, Chiba |
+| Address | 4-18-28 Nekozane, Urayasu, Chiba |
 | Phone | 047-355-8888 |
 | Area | Urayasu Station area (Business Hotel) |
 | Check-in / Check-out | 15:00 / 11:00 |

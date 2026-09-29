@@ -1,8 +1,8 @@
 ---
 title: "Tokyo DisneySea Hotel MiraCosta | The Only Hotel Located Inside TDS"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-08-29
+factChecked: "2026-09-30"
+lastmod: 2026-09-30
 description: "Local review of Tokyo DisneySea Hotel MiraCosta. The only hotel physically inside Tokyo DisneySea, with harbor-view rooms, Happy Entry early admission, and Spa & Pool Terme Venezia. The most exclusive Disney Hotel experience — and what to be aware of."
 tags:
   - Hotel
@@ -95,7 +95,7 @@ No coin laundry available. Paid laundry service is available.
 Same-day storage at the bell desk from 6:00 (Speciale guests from 7:00 in the lounge), held until 24:00 on check-out day. As a Disney Hotel, free baggage delivery from the Welcome Center by JR Maihama Station to the hotel (7:30–16:00); on departure, paid Station Delivery the other way at ¥800 per item (pick-up 13:00–21:00). See [how Maihama luggage delivery works](/en/travel-guide/luggage/).
 
 **Parking**
-¥3,000 for the 1st night; ¥1,000 per additional night (from 0:00 on check-in day to 24:00 on check-out day). **A rate revision (increase) is scheduled for check-ins on or after Thu, Oct 1, 2026** — please confirm the latest fee on the official website.
+¥4,000 for the 1st night; ¥2,000 per additional night (from 0:00 on check-in day to 24:00 on check-out day). **Revised for check-ins on or after Thu, Oct 1, 2026** (previously ¥3,000 for the 1st night and ¥1,000 per additional night).
 
 **In-House Shop**
 "Mickyrangelo's Gifts" on 2F (8:00–22:00; hours vary by season/day). A gift shop with a small in-house store selling snacks, sweet rolls, cup noodles and daily goods — also open to Tokyo DisneySea visitors. It does not sell rice balls or boxed meals, and is not a convenience store. The nearest external convenience store (NewDays Maihama) is 13+ minutes on foot.

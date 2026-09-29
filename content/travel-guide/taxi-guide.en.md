@@ -1,7 +1,7 @@
 ---
 title: "Taxi Guide for Tokyo Disney Resort Area | Stands & Flat-Rate Airport Taxis (Urayasu & Maihama)"
 date: 2026-06-19T00:00:00+09:00
-lastmod: 2026-09-03
+lastmod: 2026-09-30
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "Taxi stands and dispatch companies by station (Urayasu, Shin-Urayasu, Maihama), flat-rate fares to Haneda and Narita airports, and tips for wheelchair-accessible and welfare taxis in Urayasu."
 tags:
@@ -35,7 +35,7 @@ faq:
     a: "Standard taxis can usually accommodate strollers and luggage, but wagon-style vehicles may be needed for larger loads. Specify your luggage when booking."
   - q: "Can I get a taxi immediately after Disney park closing?"
     a: "Demand spikes after closing and in rainy weather. For guaranteed service, allow extra time or check hotel shuttles, the Disney Resort Line, and local buses as backup options."
-factChecked: "2026-09-03"
+factChecked: "2026-09-30"
 ---
 
 This guide covers taxi stands and dispatch companies by station, flat-rate airport taxi fares, and tips for wheelchair-accessible and welfare taxis in the Urayasu, Shin-Urayasu, and Maihama areas.
@@ -85,7 +85,7 @@ Park closing time, rain, and early morning airport runs are particularly high-de
 
 ### Urayasu Station
 
-This is a Tokyo Metro Tozai Line station. Since the hotels, restaurants, and city center around the station are mostly within walking distance, a taxi here is most useful for **destinations that are hard to reach on foot**. Specifically, it helps when you want to head directly to Tokyo Disney Resort by means other than train or bus, reach a hotel a little further out in the Motomachi area (Nekonomi, Kitaei, Horie, etc.), or transfer to JR Shin-Urayasu Station. Note, too, that it is on a different line from the TDR area (Maihama and Shin-Urayasu Stations).
+This is a Tokyo Metro Tozai Line station. Since the hotels, restaurants, and city center around the station are mostly within walking distance, a taxi here is most useful for **destinations that are hard to reach on foot**. Specifically, it helps when you want to head directly to Tokyo Disney Resort by means other than train or bus, reach a hotel a little further out in the Motomachi area (Nekozane, Kitaei, Horie, etc.), or transfer to JR Shin-Urayasu Station. Note, too, that it is on a different line from the TDR area (Maihama and Shin-Urayasu Stations).
 
 | Item | Details |
 |---|---|
@@ -273,10 +273,10 @@ Urayasu City's official website publishes a list of welfare taxi operators, incl
 | Operator | Location | Phone | Wheelchair | Stretcher |
 |---|---|---|:---:|:---:|
 | <a href="http://kaigotaxi-rakuraku.com/" target="_blank" rel="noopener">Rakuraku Kaigo Taxi</a> | Urayasu-shi Tomigaoka | 090-8687-2843 | ○ | ○ |
-| <a href="https://marinaze.com/" target="_blank" rel="noopener">Marinaze Kaigo Taxi</a> | Urayasu-shi Nekonomi | 090-2625-0119 | ○ | ○ |
-| Daigo Care Taxi | Urayasu-shi Nekonomi | 090-1664-0557 | ○ | — |
+| <a href="https://marinaze.com/" target="_blank" rel="noopener">Marinaze Kaigo Taxi</a> | Urayasu-shi Nekozane | 090-2625-0119 | ○ | ○ |
+| Daigo Care Taxi | Urayasu-shi Nekozane | 090-1664-0557 | ○ | — |
 | <a href="https://www.respaitcare.com/" target="_blank" rel="noopener">Goodo Kaisha Respite</a> | Urayasu-shi Kitaei | 047-727-4479 | ○ | ○ |
-| <a href="https://www.kscare.me/" target="_blank" rel="noopener">K's Care LLC</a> | Urayasu-shi Nekonomi | 047-711-2224 | ○ | ○ |
+| <a href="https://www.kscare.me/" target="_blank" rel="noopener">K's Care LLC</a> | Urayasu-shi Nekozane | 047-711-2224 | ○ | ○ |
 
 ※ Partial data from Urayasu City official materials. Confirm availability, fares, booking conditions, and tourism/airport trip coverage directly with each operator before use.
 
