@@ -57,5 +57,5 @@ sources:
 {{< note >}}
 ・子どもの医療費の負担を抑える「子ども医療費助成（マル子）」は<a href="/life-guide/urayasu-kodomo-iryohi/">子どもの医療費・健康ガイド</a>へ。<br>
 ・保育料・給食費・無償化は<a href="/life-guide/urayasu-hoiku-youchien/">保育園・幼稚園・預かりガイド</a>へ。<br>
-・ひとり親家庭向けの児童扶養手当や、障がいのある子ども向けの手当は、ひとり親・障がいのある子どもへの支援ページ（準備中）でまとめる予定です。
+・ひとり親家庭向けの児童扶養手当や、障がいのある子ども向けの手当は、<a href="/life-guide/urayasu-hitorioya-shogai/">ひとり親・障がいのある子どもへの支援ガイド</a>へ。
 {{< /note >}}
