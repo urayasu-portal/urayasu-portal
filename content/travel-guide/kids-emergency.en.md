@@ -1,7 +1,7 @@
 ---
 title: "If Your Child Gets Sick near Tokyo Disney Resort | Emergency Numbers, Night Clinics & What Locals Do"
 date: 2026-07-06T10:00:00+09:00
-lastmod: 2026-07-06
+lastmod: 2026-09-09
 slug: "kids-emergency"
 badge: "Emergency"
 description: "A fever at 9 pm on your Disney trip — now what? A local guide to Urayasu's night clinic, emergency numbers (119, Japan Visitor Hotline), the in-park First Aid rooms, and how to get help in English. Written by the local team that lives here."
@@ -12,6 +12,8 @@ tags:
   - Urayasu
   - Tokyo Disney Resort
 images: ["/images/og-travel-urayasu.png"]
+cover:
+  image: "/images/travel-guide/kids-emergency-hero.jpg"
 noDate: true
 faq:
   - q: "My child has a fever at night near Tokyo Disneyland. Where can we be seen?"
@@ -49,11 +51,19 @@ We live in Urayasu, the city where Tokyo Disney Resort sits, and this is the sam
 
 ## Inside the parks: go to First Aid first
 
+<figure>
+<img src="/images/travel-guide/kids-emergency-park-cast.jpg" alt="A mother sitting with her child drinking water on a park bench while a cast member directs the father to First Aid." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 If your child feels unwell **inside Tokyo Disneyland or DisneySea**, go to the **First Aid room** (marked on the park map; cast members will guide you). It is staffed by nurses, free of charge, and they will help you judge whether you need a clinic or can rest and continue. Park staff can also call an ambulance if needed.
 
 ---
 
 ## At night: the Urayasu Emergency Clinic
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-night-clinic.jpg" alt="A family walking hand in hand toward a lit clinic entrance at night, with a taxi waiting at the driveway." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 For fevers, stomach bugs and other sudden illness outside park hours, Urayasu City runs an **Emergency Clinic (急病診療所, Kyubyo Shinryojo)** — internal medicine and pediatrics, walk-in urgent care.
 
@@ -77,6 +87,10 @@ Three things to know before you go:
 ---
 
 ## What locals actually do: the prevention layer
+
+<figure>
+<img src="/images/travel-guide/kids-emergency-hotel-desk.jpg" alt="A hotel front desk clerk making a phone call at night while a mother comforts her unwell child on a nearby sofa." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 - **Choose a hotel with a convenience store in or next to the building** — night-time fever cooling sheets, drinks, and children's supplies without leaving the property. Our [family hotel guide](/en/travel-guide/hotels/kids/) lists them (Hilton Tokyo Bay's 24-hour store, Hotel Dream Gate Maihama's in-building NewDays, and more).
 - **Drugstores** (look for 薬局 / ドラッグストア signs) near Maihama, Shin-Urayasu and Urayasu stations stock children's fever relief, oral rehydration drinks and thermometers. Pharmacists can help if you show a translation app.

@@ -51,9 +51,9 @@
 
 検証結果（2026-09-30）：
 
-- `hugo --minify --cleanDestinationDir` 成功。テーマ等の既存の非推奨警告のみ。
-- リポジトリの内部リンク検査：3,922種類、実害のあるリンク切れ0（JavaScript内の未展開変数による誤検出1）。
-- 新記事と関連記事6ページ：内部リンク490件を、ページ内アンカーを含めて検査し、リンク切れ0。
+- `hugo --minify --cleanDestinationDir` 成功。続けて最新origin/main（62421fc）を取り込み、新規の出力先 `public/verify-bus-guide-20260930/` へ `hugo --minify --destination public/verify-bus-guide-20260930` でクリーンビルド成功。テーマ等の既存の非推奨警告のみ。
+- 最終生成物の内部リンク検査：4,308種類、実害のあるリンク切れ0（JavaScript内の未展開変数による誤検出1）。
+- 新記事と関連記事6ページ：内部リンク491件を、ページ内アンカーを含めて検査し、リンク切れ0。
 - FAQ本文6件・frontmatter・生成されたFAQPage JSON-LDの回答が一致。
 - 変更記事3ファイルのlastmod=2026-09-30、元のdate保持を機械確認。
 - `git diff --check` 成功。

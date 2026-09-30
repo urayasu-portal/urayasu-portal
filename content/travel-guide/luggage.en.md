@@ -2,7 +2,7 @@
 title: "Luggage Storage & Baggage Delivery near Tokyo Disney Resort | Maihama & Urayasu Hotels"
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
-lastmod: 2026-09-06
+lastmod: 2026-09-12
 factChecked: "2026-09-06"
 description: "How luggage storage and baggage delivery really work at hotels near Tokyo Disneyland and DisneySea. The free station-to-hotel delivery for Disney & Official hotels, the paid Bon Voyage service, front-desk storage before check-in, and what's excluded — checked against official sources."
 tags:
@@ -11,7 +11,7 @@ tags:
   - Luggage
   - Disney
   - Urayasu
-images: ["/images/og-travel-urayasu.png"]
+images: ["/images/travel-guide/luggage-maihama-arrival.webp"]
 noDate: true
 tgNav: true
 faq:
@@ -24,6 +24,10 @@ faq:
   - q: "What items can't be handed to the baggage delivery service?"
     a: "Valuables, fragile items, drinks, and precision devices such as laptops and cameras are excluded from all of these delivery services. Keep those with you."
 ---
+
+<figure>
+<img src="/images/travel-guide/luggage-maihama-arrival.webp" alt="A family handing over two large suitcases to hotel staff near Maihama Station." width="1200" height="630" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 "Where do I put my suitcases before check-in, and can someone carry them to my hotel?" is one of the most common questions overseas visitors ask before a Tokyo Disney Resort trip. Around Maihama and Urayasu the answer depends on **which direction** you're moving your bags and **which category** your hotel is. This guide sorts it out. Details are from our 2025–2026 research against official sources — always reconfirm on your hotel's official site before you travel.
 
@@ -43,6 +47,10 @@ Most of the area's baggage services run through **JR Maihama Station**, the gate
 | **Hotel → station** (departure) | **Paid** "Station Delivery" (Hilton and Maihama View list **{{< fact "station_delivery.fee" >}}/item**) | Usually by courier from the bell desk |
 | **Park → hotel** | Not offered | Not offered |
 
+<figure>
+<img src="/images/travel-guide/luggage-maihama-station.webp" alt="A family pulling large suitcases across the plaza toward the service facilities at JR Maihama Station." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 All of these services exclude **valuables, fragile items, drinks, and precision devices** (laptops, cameras). Keep those with you.
 
 > Want the step-by-step version — where to go from the ticket gates, reception hours, and how to pay? See **[How to send your luggage from Maihama Station to your hotel](/en/travel-guide/luggage-howto/)**.
@@ -52,6 +60,10 @@ All of these services exclude **valuables, fragile items, drinks, and precision 
 ## Free station-to-hotel delivery (Disney & Official hotels)
 
 If you stay at a **Disney Hotel** or an **Official Hotel**, you can arrive light. At the **Welcome Center Hotel Service Counter** beside JR Maihama Station, hand over your bags and they are delivered to your hotel **free of charge**:
+
+<figure>
+<img src="/images/travel-guide/luggage-welcome-center-counter.webp" alt="A family checking in tagged suitcases at a hotel service counter near Maihama Station." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **Disney Hotels** — 2nd-floor counter, roughly **7:30–16:00** (e.g. [Tokyo Disneyland Hotel](/en/travel-guide/hotels/tdl-hotel/), [Hotel MiraCosta](/en/travel-guide/hotels/miracosta/), [Fantasy Springs Hotel](/en/travel-guide/hotels/fantasy-springs-hotel/), [Toy Story Hotel](/en/travel-guide/hotels/toy-story-hotel/), [Disney Ambassador Hotel](/en/travel-guide/hotels/ambassador-hotel/))
 - **Official Hotels** — 1st-floor counter, roughly **8:00–15:00** (e.g. [Hotel Okura Tokyo Bay](/en/travel-guide/hotels/hotel-okura-tokyo-bay/), [Grand Nikko Tokyo Bay Maihama](/en/travel-guide/hotels/grand-nikko-tokyo-bay/), [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/), [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/))
@@ -70,6 +82,10 @@ Guests at **Partner Hotels** and other independent hotels near Maihama use the p
 
 ## Departure day: hotel-to-station "Station Delivery"
 
+<figure>
+<img src="/images/travel-guide/luggage-station-delivery-hotel.webp" alt="A family having delivery tags attached to their suitcases in a hotel lobby on departure day." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 Going the other way, the **Station Delivery** service lets you drop your bags at the hotel after check-out (**accepted 7:00–12:30**) and pick them up at the **Welcome Center 1st-floor counter** (roughly **13:00–21:00**) on your way to the station. It is a **paid** service at **{{< fact "station_delivery.fee" >}} per item** — listed by the Disney Hotels, [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/), [Sheraton Grande Tokyo Bay](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/), [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/) and [Maihama View Hotel](/en/travel-guide/hotels/maihama-view-hotel/); a few hotels don't publish the price, so confirm at the bell desk.
 
 ---
@@ -77,6 +93,10 @@ Going the other way, the **Station Delivery** service lets you drop your bags at
 ## Just need to leave bags at the hotel? Storage before check-in
 
 You don't always need a delivery service. Almost every hotel will simply **hold your luggage before check-in and after check-out** on the day of your stay — usually free at the bell or front desk. A few make it especially easy:
+
+<figure>
+<img src="/images/travel-guide/luggage-hotel-self-cloak.webp" alt="A family placing a suitcase in a hotel guest self-service cloakroom and checking the lock." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **[Hotel Dream Gate Maihama](/en/travel-guide/hotels/dreamgate-maihama/)** — free guest-only lockers and a self-service cloak room, usable from the morning of your stay and after check-out
 - **[HOTEL MYSTAYS Maihama](/en/travel-guide/hotels/mystays-maihama/)** — free coin lockers (a ¥100 refundable type) plus front-desk storage

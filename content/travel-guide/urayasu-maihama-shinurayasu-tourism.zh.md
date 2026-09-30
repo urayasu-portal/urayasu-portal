@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼周边游览指南 | 舞滨·浦安·新浦安的观光景点"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-12
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -17,6 +17,8 @@ tags:
 description: "舞滨·新浦安·浦安站周边的观光与活动本地指南。涵盖迪士尼周边游览地、雨天方案、家庭旅行提示，以及酒店住客的办理入住前后建议。"
 images:
   - "/images/og-tourism.png"
+cover:
+  image: "/images/travel-guide/tourism-hero.jpg"
 noDate: true
 tgNav: true
 draft: false
@@ -83,6 +85,10 @@ faq:
   <li><strong>新浦安地区</strong>：以JR京叶线新浦安站为中心的城市中部·新城区。购物设施、酒店、音乐厅等。</li>
   <li><strong>浦安站地区（元町）</strong>：东京地铁东西线浦安站周边。保留着昔日渔村风情的历史老城区。</li>
 </ul>
+
+<figure>
+<img src="/images/travel-guide/tourism-areas-collage-2.jpg" alt="舞滨·新浦安·浦安站周边三个区域的对比照片：挤满团体游客的度假区风格站前广场、棕榈树林立的海边道路、停泊小船的老城区水路。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h2 id="area-comparison">3个区域速览</h2>
 
@@ -241,6 +247,10 @@ faq:
 
 <h2 id="maihama">舞滨地区：观光·停靠点</h2>
 
+<figure>
+<img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="拖着行李箱的一家人走过舞滨度假区风格的站前广场，后方是伊克斯皮亚利的建筑。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>Ikspiari</h3>
 <p>与JR舞滨站直连的购物·餐饮设施，无需门票即可进入。内有餐厅、咖啡厅、时装、商品和电影院综合体。内部的<strong>Bon Voyage</strong>销售TDR官方角色商品，深受不想在园内排队购物的游客欢迎。</p>
 <ul>
@@ -273,6 +283,14 @@ faq:
 </div>
 
 <h2 id="shinurayasu">新浦安地区：观光·停靠点</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu.jpg" alt="在新浦安的海边步道上，沿着棕榈树与住宅楼散步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu-promenade.jpg" alt="在新浦安棕榈树林立的海边小路上散步的父母与孩子，身后是高层住宅楼群。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>Atre新浦安</h3>
 <p>与JR新浦安站直连的5层购物设施，有超市（成城石井）、餐厅、时装、药妆店和商品，本地居民和酒店住客都经常使用。</p>
@@ -326,6 +344,10 @@ faq:
 <h2 id="urayasu-eki">浦安站周边：历史·町步行</h2>
 
 <p>东京地铁东西线浦安站周边的"元町地区"，保留着东京迪士尼乐园开业前的浦安风貌。讲述这座城市渔村历史的设施和建筑散布其中，能体验与TDR截然不同的静谧观光体验。</p>
+
+<figure>
+<img src="/images/travel-guide/tourism-urayasu-eki-canal.jpg" alt="在浦安站周边境川沿岸，经过停泊小船的水路与老式木造房屋的两人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>浦安市乡土博物馆</h3>
 <p>展示浦安历史与文化的市立博物馆。室外展示区保存并陈列着曾经实际使用过的渔屋、木船和工具，深受希望了解这座城市旧日生活的本地居民和游客喜爱。</p>
@@ -382,6 +404,10 @@ faq:
   </tbody>
 </table>
 </div>
+
+<figure>
+<img src="/images/travel-guide/tourism-rainy-day-mall.jpg" alt="雨天，撑伞的一家人走在室内购物中心里。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p style="font-size:12px;color:#6b7a8d;">※ 各设施的营业时间和条件可能变更，出发前请确认。</p>
 

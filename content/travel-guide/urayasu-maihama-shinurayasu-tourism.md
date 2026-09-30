@@ -1,7 +1,7 @@
 ---
 title: "舞浜・浦安・新浦安観光ガイド｜ディズニー周辺の過ごし方・観光スポットまとめ"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-08-30
+lastmod: 2026-09-12
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -17,6 +17,8 @@ tags:
 description: "舞浜・新浦安・浦安駅周辺で観光や散策を楽しみたい方向けに、ディズニー周辺の過ごし方、観光スポット、雨の日・子連れ向け情報、ホテル宿泊者向けの立ち寄り先をまとめます。"
 images:
   - "/images/og-tourism.png"
+cover:
+  image: "/images/travel-guide/tourism-hero.jpg"
 noDate: true
 tgNav: true
 draft: false
@@ -81,6 +83,10 @@ faq:
   <li><strong>新浦安エリア</strong>：JR京葉線・新浦安駅を中心とした中町・新町地区。ショッピング施設・ホテル・音楽ホールが集まる。</li>
   <li><strong>浦安駅エリア（元町）</strong>：東京メトロ東西線・浦安駅周辺。江戸〜明治期の漁師町の歴史が残る旧市街。</li>
 </ul>
+
+<figure>
+<img src="/images/travel-guide/tourism-areas-collage-2.jpg" alt="舞浜・新浦安・浦安駅周辺の3エリアを並べた比較写真。団体客が行き交う駅前広場、ヤシ並木の海沿い道路、舟の浮かぶ旧市街の水路。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h2 id="area-comparison">まず知っておきたい3エリアの違い</h2>
 
@@ -304,6 +310,10 @@ faq:
 
 <h2 id="maihama">舞浜エリアの観光・立ち寄りスポット</h2>
 
+<figure>
+<img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="舞浜のリゾート風の駅前広場を、スーツケースを引く家族連れが歩く。奥にイクスピアリの建物。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>イクスピアリ</h3>
 <p>JR舞浜駅に直結するショッピング・ダイニング施設。レストラン・カフェ・ファッション・雑貨・シネマコンプレックスが揃い、パーク入場券なしで利用できます。TDR公式キャラクターグッズを扱う<strong>ボン・ヴォヤージュ</strong>が入居しており、パークの混雑を避けてグッズを購入したい方にも人気です。</p>
 
@@ -337,6 +347,14 @@ faq:
 </div>
 
 <h2 id="shinurayasu">新浦安エリアの観光・立ち寄りスポット</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu.jpg" alt="新浦安の海沿いの遊歩道を、ヤシ並木とマンション群を横に散歩する家族連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu-promenade.jpg" alt="新浦安の海沿いをヤシ並木沿いに歩く親子。奥に高層マンション群。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>アトレ新浦安</h3>
 <p>JR新浦安駅に直結する5フロアのショッピング施設。スーパーマーケット（成城石井）・飲食店・ファッション・薬局・雑貨が集まり、地元住民とホテル宿泊者の両方に使われています。</p>
@@ -390,6 +408,10 @@ faq:
 <h2 id="urayasu-eki">浦安駅周辺エリアの観光・まち歩きスポット</h2>
 
 <p>東京メトロ東西線・浦安駅周辺の「元町エリア」は、東京ディズニーランド開業以前の浦安の姿が残る地区です。漁師町として栄えた歴史を今に伝える施設・建物が点在しており、TDRとは一味違う静かな観光体験ができます。</p>
+
+<figure>
+<img src="/images/travel-guide/tourism-urayasu-eki-canal.jpg" alt="浦安駅周辺の境川沿い、舟の浮かぶ水路と古い木造家屋の並びを歩くふたり連れ。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>浦安市郷土博物館</h3>
 <p>浦安の歴史と文化を展示する市立博物館。野外展示エリアでは、実際に使われていた漁師小屋・木造船・道具が保存・公開されています。市内の文化財や昔の暮らしを知ることができる、地元民にも人気の施設です。</p>
@@ -491,6 +513,10 @@ faq:
   </tbody>
 </table>
 </div>
+
+<figure>
+<img src="/images/travel-guide/tourism-rainy-day-mall.jpg" alt="雨の日、傘を手にした家族連れが屋内のショッピングモールを歩く。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p style="font-size:12px;color:#6b7a8d;">※施設の営業時間・状況は変更される場合があります。訪問前にご確認ください。</p>
 

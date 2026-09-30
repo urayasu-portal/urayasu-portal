@@ -2,7 +2,7 @@
 title: "도쿄 디즈니 주변 호텔 수하물 보관·배송 가이드｜체크인 전 맡기기·역 배송"
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-09-12
 factChecked: "2026-09-01"
 description: "도쿄 디즈니 리조트 주변 호텔의 수하물 보관과 배송 정리. 디즈니 호텔·공식 호텔은 마이하마역에서 호텔까지 무료 배송, 파트너 호텔은 Bon Voyage 유료 카운터(800엔/개)를 이용. 체크인 전 보관, 체크아웃 후 보관, 맡길 수 없는 물품까지 공식 정보 기반으로 안내."
 tags:
@@ -11,7 +11,7 @@ tags:
   - Luggage
   - Disney
   - Urayasu
-images: ["/images/og-travel-urayasu.png"]
+images: ["/images/travel-guide/luggage-maihama-arrival.webp"]
 noDate: true
 tgNav: true
 faq:
@@ -24,6 +24,10 @@ faq:
   - q: "배송 서비스에 맡길 수 없는 물품이 있나요?"
     a: "귀중품·깨지기 쉬운 물품·음료·노트북과 카메라 등 정밀 기기는 모든 배송 서비스에서 공통적으로 맡길 수 없습니다. 직접 휴대하세요."
 ---
+
+<figure>
+<img src="/images/travel-guide/luggage-maihama-arrival.webp" alt="마이하마역 근처에서 대형 캐리어 두 개를 호텔 직원에게 맡기는 가족." width="1200" height="630" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 "체크인 전에 캐리어를 어디에 둘까" "짐을 누가 옮겨 줄 수는 없을까"는 도쿄 디즈니 리조트 여행의 단골 고민입니다. 마이하마·우라야스 지역의 답은 **'어느 방향으로 옮기는가'와 '호텔 구분'**으로 정해집니다. 이 페이지에서 구조를 정리합니다. 정보는 2025–2026년 공식 정보 대조 기준이며, 최신 상세는 각 호텔 공식 사이트에서 확인하세요.
 
@@ -43,6 +47,10 @@ faq:
 | **호텔→역**(출발일) | **유료** "스테이션 딜리버리"(다수 {{< fact "station_delivery.fee" >}}/개) | 보통 벨데스크에서 택배 발송 |
 | **파크→호텔** | 서비스 없음 | 서비스 없음 |
 
+<figure>
+<img src="/images/travel-guide/luggage-maihama-station.webp" alt="JR 마이하마역 앞 광장에서 대형 캐리어를 끌고 서비스 시설로 향하는 가족." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 모든 서비스에서 **귀중품·깨지기 쉬운 물품·음료·정밀 기기**(노트북·카메라 등)는 맡길 수 없습니다.
 
 ---
@@ -50,6 +58,10 @@ faq:
 ## 역→호텔 무료 배송(디즈니·공식 호텔)
 
 **디즈니 호텔** 또는 **공식 호텔**에 묵는다면 가볍게 도착할 수 있습니다. JR 마이하마역 옆 **웰컴 센터 호텔 서비스 카운터**에 짐을 맡기면 **무료**로 호텔까지 배송됩니다.
+
+<figure>
+<img src="/images/travel-guide/luggage-welcome-center-counter.webp" alt="마이하마역 근처 호텔 서비스 카운터에서 배송 태그가 달린 캐리어를 맡기는 가족." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **디즈니 호텔** — 2층 카운터·약 **7:30–16:00**(예: [도쿄디즈니랜드 호텔](/ko/travel-guide/hotels/tdl-hotel/), [호텔 미라코스타](/ko/travel-guide/hotels/miracosta/), [판타지 스프링스 호텔](/ko/travel-guide/hotels/fantasy-springs-hotel/), [토이 스토리 호텔](/ko/travel-guide/hotels/toy-story-hotel/), [디즈니 앰버서더 호텔](/ko/travel-guide/hotels/ambassador-hotel/))
 - **공식 호텔** — 1층 카운터·약 **8:00–15:00**(예: [호텔 오쿠라 도쿄 베이](/ko/travel-guide/hotels/hotel-okura-tokyo-bay/), [그랜드 니코](/ko/travel-guide/hotels/grand-nikko-tokyo-bay/), [힐튼 도쿄 베이](/ko/travel-guide/hotels/hilton-tokyo-bay/), [쉐라톤 그란데](/ko/travel-guide/hotels/sheraton-grande-tokyo-bay/), [퍼스트 리조트](/ko/travel-guide/hotels/maihama-hotel-first-resort/), [마이하마 뷰 호텔](/ko/travel-guide/hotels/maihama-view-hotel/))
@@ -68,6 +80,10 @@ faq:
 
 ## 출발일: 호텔→역 "스테이션 딜리버리"
 
+<figure>
+<img src="/images/travel-guide/luggage-station-delivery-hotel.webp" alt="여행 마지막 날 호텔 로비에서 역 배송용 태그를 캐리어에 부착받는 가족." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
+
 반대 방향은 **스테이션 딜리버리**입니다. 체크아웃 후 호텔에 짐을 맡기고(**접수는 7:00–12:30**), 역으로 가는 길에 **웰컴 센터 1층 인도 카운터**(약 **13:00–21:00**)에서 수령합니다. **유료·1개 {{< fact "station_delivery.fee" >}}**——디즈니 호텔 각 관, [힐튼](/ko/travel-guide/hotels/hilton-tokyo-bay/), [쉐라톤](/ko/travel-guide/hotels/sheraton-grande-tokyo-bay/), [퍼스트 리조트](/ko/travel-guide/hotels/maihama-hotel-first-resort/), [마이하마 뷰 호텔](/ko/travel-guide/hotels/maihama-view-hotel/)이 {{< fact "station_delivery.fee" >}}을 명시하고 있습니다. 요금 미공개 호텔도 있으니 벨데스크에서 확인하세요.
 
 ---
@@ -75,6 +91,10 @@ faq:
 ## 그냥 맡기기만 한다면: 체크인 전 프런트 보관
 
 배송 서비스를 쓰지 않아도 괜찮습니다. 거의 모든 호텔이 **체크인 전·체크아웃 후 당일 보관**에 응합니다(보통 프런트/벨데스크·무료). 특히 편리한 곳:
+
+<figure>
+<img src="/images/travel-guide/luggage-hotel-self-cloak.webp" alt="호텔 투숙객용 셀프 클로크에 캐리어를 넣고 잠금 장치를 확인하는 가족." width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+</figure>
 
 - **[호텔 드림게이트 마이하마](/ko/travel-guide/hotels/dreamgate-maihama/)** — 투숙객 전용 무료 로커＋별관 셀프 클로크(당일 아침부터·체크아웃 후에도)
 - **[호텔 마이스테이즈 마이하마](/ko/travel-guide/hotels/mystays-maihama/)** — 무료 코인 로커(100엔 반환식)＋프런트 보관

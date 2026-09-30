@@ -80,14 +80,50 @@ params:
       allianceId: "D18374029"
       sid: "322202616"
     travelpayouts:
-      marker: ""
-      trs: ""
+      marker: "745385"
+      trs: "545197"
       bookingP: ""
       bookingCampaign: ""
       tripP: ""
       tripCampaign: ""
       agodaP: ""
       agodaCampaign: ""
+      # チケット（KKday / Klook）。Travelpayouts のリンクジェネレーターで各プログラムのリンクを1本生成し、
+      # p 値（と campaign_id があれば）を転記すると、disney-tickets / happy-entry 末尾のチケットCTAが有効化される。
+      # marker・trs・該当 p が揃うまでは CTA 自体を描画しない（誤計測防止）。表示先: partials/ticket-cta.html
+      kkdayP: "9074"
+      kkdayCampaign: "633"
+      klookP: "4110"
+      klookCampaign: "137"
+    # Agoda 直接提携（Agoda Partners）。承認後に発行される Partner ID（cid）を貼ると、
+    # 全言語の Agoda ボタン（CSV AgodaURL 列があるホテル）に ?cid= が付与される。未設定のあいだは Travelpayouts agodaP → 素URL の順。
+    agoda:
+      cid: ""
+    # チケットCTAの遷移先（言語別）。KKday は言語サイトごとに販売商品が異なるため、言語ごとに検証済みURLを置く。
+    #   2026-09-13 実ブラウザ確認: KKday 商品19252（表示上の商品番号 #32488「東京迪士尼樂園 & 東京迪士尼海洋門票」）は
+    #   zh-tw / en / ko / zh-cn で有効、ja は「この表示言語では利用不可」→ ja は空（カード非表示）。
+    #   Klook はアクティビティID 695 が全ロケール共通。空欄の言語ではそのカードを出さない。
+    tickets:
+      kkday:
+        zh-tw: "https://www.kkday.com/zh-tw/product/19252"
+        zh: "https://www.kkday.com/zh-cn/product/19252"
+        en: "https://www.kkday.com/en/product/19252"
+        ko: "https://www.kkday.com/ko/product/19252"
+        ja: ""
+      klook:
+        zh-tw: "https://www.klook.com/zh-TW/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
+        zh: "https://www.klook.com/zh-CN/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
+        en: "https://www.klook.com/en-US/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
+        ko: "https://www.klook.com/ko/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
+        ja: "https://www.klook.com/ja/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
+    # 遷移先OTAの表示通貨（言語別）。サイト本文は日本円（施設の公式価格）で統一し、
+    # 予約サイトでは読者の母国通貨で表示させる（Booking=selected_currency / Trip.com=curr / Agoda=currencyCode）。
+    currency:
+      ja: "JPY"
+      en: "USD"
+      zh: "CNY"
+      zh-tw: "TWD"
+      ko: "KRW"
   # ヘッダーロゴの主表示。英語サイトでもブランド名は「浦安ぽーたる」で統一（site.Title はSEOの<title>接尾辞用に言語別のまま）
   label:
     text: 浦安ぽーたる

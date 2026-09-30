@@ -48,7 +48,7 @@ document.querySelectorAll('.contact-type-btn').forEach(function(btn) {
   <!-- formsubmit.co 設定 -->
   <input type="hidden" name="_subject" value="【浦安ぽーたる】お問い合わせ">
   <input type="hidden" name="_next" value="https://urayasu-portal.com/thanks/">
-  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_captcha" value="true">
   <input type="hidden" name="_template" value="table">
   <!-- スパム対策ハニーポット -->
   <input type="text" name="_honey" style="display:none">

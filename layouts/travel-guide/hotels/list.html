@@ -112,6 +112,14 @@
     <div class="tg-hotelneed-title">{{ i18n "hl_luggage" }}</div>
     <div class="tg-hotelneed-desc">{{ i18n "hl_luggage_desc" }}</div>
   </a>
+  {{- /* ディズニーシー寄りのホテル比較（zh-tw先行・2026-09-13）。その言語に翻訳が存在するときだけカードを出す */ -}}
+  {{- with .Site.GetPage "/travel-guide/hotels/near-disneysea" }}
+  <a class="tg-hotelneed-card" href="{{ .RelPermalink }}">
+    <i class="ti ti-ship" aria-hidden="true"></i>
+    <div class="tg-hotelneed-title">{{ i18n "hl_neardisneysea" }}</div>
+    <div class="tg-hotelneed-desc">{{ i18n "hl_neardisneysea_desc" }}</div>
+  </a>
+  {{- end }}
 </div>
 
 {{/* 設備で探す（facilities ページの節アンカーへ・日英のみ。ko/zh/zh-twはデータ未整備のため非表示） */}}

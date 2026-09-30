@@ -2,9 +2,10 @@
 title: "Day Trips into Tokyo from Your Disney Hotel: Routes & Fares for Asakusa, Shibuya, Skytree & More"
 description: "The fastest routes and IC fares from the Tokyo Disney Resort area to Asakusa, Skytree, Tokyo Tower, the Imperial Palace, Akihabara, Shibuya and Harajuku — compared from the JR Keiyo Line (Maihama) and the Tozai Line (Urayasu). Plus how to pay: tap your own card vs. Suica, and why it depends on the line."
 date: 2026-07-07
+lastmod: 2026-09-10
 draft: false
 cover:
-  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
+  image: "/images/travel-guide/tokyo-access-hero.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "Access"
@@ -64,6 +65,10 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 {{< ad-disclosure >}}
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-skytree.jpg" alt="A family looking up at Tokyo Skytree from the Sumida riverside promenade, with the vermilion halls of Senso-ji in the foreground." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ### Tokyo Tower
 
 | From | Route | Time | Fare (IC) |
@@ -72,6 +77,10 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 | Tozai Line | Urayasu → (Tozai) → Kayabacho → (Hibiya Line) → Kamiyacho → ~7 min walk | ~45 min | **¥252** |
 
 **Verdict: tie on time, Tozai on fare.** Both routes merge onto the same Hibiya Line with one transfer, then a gentle 7-minute uphill walk from Kamiyacho Station.
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-tokyo-tower.jpg" alt="A family looking up at Tokyo Tower from the tree-lined path in Shiba Park." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ### The Imperial Palace (East Gardens & Nijubashi Bridge)
 
@@ -109,6 +118,10 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 **Verdict: Tozai, easier and cheaper.** Meiji-jingumae Station on the Chiyoda Line sits right beside JR Harajuku Station, steps from both Meiji Shrine and Takeshita Street. Shibuya and Harajuku are a 15-minute walk apart — **most people do them as a pair**.
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-shibuya.jpg" alt="A family crossing Shibuya Scramble Crossing hand in hand, with the big-screen buildings behind them." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## How to pay: tap your own card vs. Suica (2026 update)
 
 You ride Tokyo trains by **tapping** a card or phone at the gate — and since **March 2026 there's a second option that will feel familiar from home**: on many lines you can now tap your own contactless Visa, Mastercard, JCB or Amex (or your phone), no local card required. The catch is *which* lines.
@@ -118,11 +131,19 @@ You ride Tokyo trains by **tapping** a card or phone at the gate — and since *
 - For this guide that means the Tozai routes work with a tap of your own credit card, but **anything on the Keiyo Line (Maihama) needs Suica/PASMO**. Traveling on both in one day? Put everything on a mobile Suica — it covers every line here, JR included.
 - **Kids can't use the contactless-card tap** — it's adult-fare only. Get each elementary-schooler their own child IC card (or a paper ticket).
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-fare-gate.jpg" alt="A passenger tapping a smartphone on a station ticket gate to pass through." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## Three local tips
 
 1. **Treat Tokyo Station's Keiyo platform as a separate station.** It's a 10–15 minute walk (moving walkways included) from the rest of Tokyo Station. Transfer apps often underestimate it — build in slack.
 2. **Avoid the Tozai Line's weekday morning rush (roughly 7:30–9:00 toward central Tokyo)** — it's one of the most crowded trains in Japan. With kids, leave after 9:00, and skip the evening crush out of the city around 17:30–19:00 too.
 3. **On very windy days the Keiyo Line stops easily** (it's an elevated line along the bay). If you're stranded, the local workaround is the Tozai Line to Urayasu Station plus a taxi or bus — see our [taxi guide](/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/).
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-local-tips.jpg" alt="A family walking the moving walkway along Tokyo Station's long connecting passage toward the Keiyo Line platforms." loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ## Related
 

@@ -2,10 +2,11 @@
 title: "从舞滨·浦安去东京观光：浅草·涩谷·晴空塔等7大景点路线与车费一览"
 description: "从京叶线（舞滨·新浦安）和东西线（浦安站）分别前往浅草、东京晴空塔、东京铁塔、皇居、秋叶原、涩谷、原宿的最短路线与IC车费一览。附刷卡（闪付）与西瓜卡Suica的区别、东京站京叶线站台很远等本地贴士。"
 date: 2026-07-07
+lastmod: 2026-09-10
 factChecked: "2026-08-08"
 draft: false
 cover:
-  image: "/images/travel-guide/tokyo-sightseeing-access.jpg"
+  image: "/images/travel-guide/tokyo-access-hero.jpg"
 hideEventBox: true
 slug: "tokyo-sightseeing-access"
 badge: "交通"
@@ -70,6 +71,10 @@ tags:
 
 {{< ad-disclosure >}}
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-skytree.jpg" alt="在隅田川沿岸步道仰望东京晴空塔的一家人，近处是浅草寺的朱红建筑。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ### 东京铁塔
 
 | 出发 | 路线 | 时间 | 车费(IC) |
@@ -78,6 +83,10 @@ tags:
 | 东西线 | 浦安 →（东西线）→ 茅场町 →（日比谷线）→ 神谷町 → 步行约7分 | 约45分 | **¥252** |
 
 **胜者：时间相当，车费东西线胜。** 两条最后都汇入同一条日比谷线，均换乘1次。从神谷町站到铁塔需走约7分钟上坡路。
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-tokyo-tower.jpg" alt="在芝公园的林荫道上仰望东京铁塔的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ### 皇居（东御苑·二重桥）
 
@@ -115,6 +124,10 @@ tags:
 
 **胜者：东西线更省时省钱。** 千代田线的明治神宫前站紧邻JR原宿站，直通明治神宫与竹下通。涩谷与原宿步行也就15分钟，**通常一起逛**。
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-shibuya.jpg" alt="以大型屏幕大楼为背景，手牵手走过涩谷十字路口的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 车费怎么付：别用支付宝扫码，日本是「贴卡进闸」（2026年3月最新）
 
 在国内坐地铁习惯用支付宝／微信扫二维码，但要注意：**日本的检票闸机不能扫支付宝或微信二维码。** 日本是把卡或手机**贴在闸机感应区**进站。好消息是，**2026年3月起，东京地铁、都营地铁、关东各私铁及成田特快，开始支持信用卡「闪付」乘车**（Visa／Mastercard／JCB／美国运通／**银联 UnionPay** 等）。但**JR不在此列**。
@@ -125,11 +138,19 @@ tags:
 - **儿童不能用信用卡闪付。** 闪付只对应成人票价，小学生请另备**儿童IC卡**或纸质车票。
 - 支付宝／微信在便利店、商场购物大多可以用，只是**不能刷二维码过闸乘车**。
 
+<figure>
+<img src="/images/travel-guide/tokyo-access-fare-gate.jpg" alt="在车站自动闸机上贴手机通过的乘客。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 ## 三个本地贴士
 
 1. **请把东京站的京叶线站台当成「另一个车站」。** 从其他线路走过去（含自动步道）要10〜15分钟。换乘App显示的时间常常不够走，请留足余量。
 2. **东西线工作日早高峰（约7:30〜9:00往市区方向）是日本数一数二的拥挤。** 带孩子观光就改在9点后出发；傍晚（17:30〜19:00从市区返回）同理。
 3. **大风天京叶线容易停运**（沿海高架线路）。回不了舞滨时，本地常用的绕行办法是坐东西线到浦安站再打车或坐巴士——可参考[出租车指南](/zh/travel-guide/urayasu-taxi-airport-flat-rate-guide/)。
+
+<figure>
+<img src="/images/travel-guide/tokyo-access-local-tips.jpg" alt="在东京站长长的连接通道自动步道上，走向京叶线站台的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 ## 相关文章
 

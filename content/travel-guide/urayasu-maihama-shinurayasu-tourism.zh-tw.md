@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼周邊遊覽指南 | 舞濱·浦安·新浦安的觀光景點"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-09-13
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -17,6 +17,8 @@ tags:
 description: "舞濱·新浦安·浦安站周邊的觀光與活動在地指南。涵蓋迪士尼周邊遊覽地、雨天方案、家庭旅行提示，以及飯店住客的辦理入住前後建議。"
 images:
   - "/images/og-tourism.png"
+cover:
+  image: "/images/travel-guide/tourism-hero.jpg"
 noDate: true
 tgNav: true
 draft: false
@@ -83,6 +85,10 @@ faq:
   <li><strong>新浦安地區</strong>：以JR京葉線新浦安站為中心的城市中部·新城區。購物設施、飯店、音樂廳等。</li>
   <li><strong>浦安站地區（元町）</strong>：東京地鐵東西線浦安站周邊。保留著昔日漁村風情的歷史舊城區。</li>
 </ul>
+
+<figure>
+<img src="/images/travel-guide/tourism-areas-collage-2.jpg" alt="舞濱·新浦安·浦安站周邊三個區域的對比照片：擠滿團體遊客的度假區風格站前廣場、棕櫚樹林立的海邊道路、停泊小船的舊城區水路。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h2 id="area-comparison">3個區域速覽</h2>
 
@@ -159,6 +165,7 @@ faq:
     <li><a href="/zh-tw/travel-guide/kasai-rinkai-park/">葛西臨海公園</a> — 鄰站的大摩天輪與水族館</li>
     <li><a href="/zh-tw/travel-guide/teamlab-planets/">teamLab Planets（豐洲）</a> — 雨天的室內藝術·距舞濱約30分鐘</li>
     <li><a href="/zh-tw/travel-guide/urayasu-gourmet-souvenir-guide/">美食·伴手禮指南</a> — 樂園外的餐飲與禮品</li>
+    <li><a href="/zh-tw/travel-guide/shin-urayasu-gourmet/">新浦安美食指南</a> — 住新浦安飯店的晚餐·甜點·超市補給</li>
     <li><a href="/zh-tw/travel-guide/urayasu-map/">生活·購物地圖</a> — 最近的便利商店·藥妝店·ATM</li>
     <li><a href="/zh-tw/travel-guide/kids-emergency/">孩子生病了怎麼辦</a> — 建議提前讀一遍備用</li>
   </ul>
@@ -241,6 +248,10 @@ faq:
 
 <h2 id="maihama">舞濱地區：觀光·停靠點</h2>
 
+<figure>
+<img src="/images/travel-guide/tourism-maihama-plaza.jpg" alt="拖著行李箱的一家人走過舞濱度假區風格的站前廣場，後方是伊克斯皮亞莉的建築。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
 <h3>Ikspiari</h3>
 <p>與JR舞濱站直通的購物·餐飲設施，無需門票即可進入。內有餐廳、咖啡廳、時裝、商品和電影院綜合體。內部的<strong>Bon Voyage</strong>販售TDR官方角色商品，深受不想在園內排隊購物的遊客歡迎。</p>
 <ul>
@@ -273,6 +284,14 @@ faq:
 </div>
 
 <h2 id="shinurayasu">新浦安地區：觀光·停靠點</h2>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu.jpg" alt="在新浦安的海邊步道上，沿著棕櫚樹與住宅大樓散步的一家人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
+
+<figure>
+<img src="/images/travel-guide/tourism-shinurayasu-promenade.jpg" alt="在新浦安棕櫚樹林立的海邊小路上散步的父母與孩子，身後是高層住宅大樓群。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>Atre新浦安</h3>
 <p>與JR新浦安站直通的5層購物設施，有超市（成城石井）、餐廳、時裝、藥妝店和商品，在地居民和飯店住客都經常使用。</p>
@@ -326,6 +345,10 @@ faq:
 <h2 id="urayasu-eki">浦安站周邊：歷史·町散步</h2>
 
 <p>東京地鐵東西線浦安站周邊的「元町地區」，保留著東京迪士尼樂園開幕前的浦安風貌。講述這座城市漁村歷史的設施和建築散布其中，能體驗與TDR截然不同的靜謐觀光體驗。</p>
+
+<figure>
+<img src="/images/travel-guide/tourism-urayasu-eki-canal.jpg" alt="在浦安站周邊境川沿岸，經過停泊小船的水路與老式木造房屋的兩人。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <h3>浦安市鄉土博物館</h3>
 <p>展示浦安歷史與文化的市立博物館。室外展示區保存並陳列著曾經實際使用過的漁屋、木船和工具，深受希望了解這座城市舊日生活的在地居民和遊客喜愛。</p>
@@ -382,6 +405,10 @@ faq:
   </tbody>
 </table>
 </div>
+
+<figure>
+<img src="/images/travel-guide/tourism-rainy-day-mall.jpg" alt="雨天，撐傘的一家人走在室內購物中心裡。" loading="lazy" style="width:100%;display:block;border-radius:8px">
+</figure>
 
 <p style="font-size:12px;color:#6b7a8d;">※ 各設施的營業時間和條件可能異動，出發前請確認。</p>
 

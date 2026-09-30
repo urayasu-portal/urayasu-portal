@@ -189,7 +189,7 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("#         convenience=館内売店, shuttle=無料シャトル, station=駅直結/徒歩1分,")
 [void]$sb.AppendLine("#         limousine=空港リムジン, kitchen=ミニキッチン")
 [void]$sb.AppendLine("# facilities: 個別ページの設備アイコン用（key + 任意のnote）。CSV機能フラグの key:note を展開。")
-[void]$sb.AppendLine("# booking: 予約リンク（rakuten/jalan/booking/agoda）。CSVの各URL列に値がある時だけ出力。")
+[void]$sb.AppendLine("# booking: 予約リンク（rakuten/jalan/booking/agoda/tripcom）。CSVの各URL列に値がある時だけ出力。")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("hotels:")
 
@@ -249,6 +249,7 @@ foreach ($r in $csv) {
   $exquery = [uri]::EscapeDataString($exname)
   $bk += "      expedia: ""https://www.expedia.co.jp/Hotel-Search?destination=$exquery"""
   if (($r.'AgodaURL').Trim())        { $bk += "      agoda: ""$(($r.'AgodaURL').Trim())""" }
+  if ($r.PSObject.Properties['Trip.comURL'] -and ($r.'Trip.comURL').Trim()) { $bk += "      tripcom: ""$(($r.'Trip.comURL').Trim())""" }
   if ($bk.Count -gt 0) {
     [void]$sb.AppendLine("    booking:")
     foreach ($b in $bk) { [void]$sb.AppendLine($b) }
