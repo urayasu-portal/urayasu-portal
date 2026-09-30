@@ -1,7 +1,7 @@
 ---
 title: "浦安市の交通・バスガイド｜おさんぽバス・墓地公園への無料バス・市内の移動"
 date: 2026-06-28T13:00:00+09:00
-lastmod: 2026-09-04
+lastmod: 2026-09-14
 factChecked: "2026-08-17"
 newsTags: ["バス", "交通", "おさんぽバス", "シャトルバス", "浦安市墓地公園"]
 categories:
@@ -78,7 +78,7 @@ aliases:
 <h2 id="other">路線バス・鉄道</h2>
 
 <div class="lg-art-cards cols-2">
-  <div class="lg-art-card"><i class="ti ti-bus lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">路線バス</div><p class="lg-art-card-desc">市内・近隣を結ぶ路線バスが運行しています。浦安・新浦安・舞浜の各駅を起点に、住宅地や商業施設へのアクセスに使えます。</p></div>
+  <div class="lg-art-card"><i class="ti ti-bus lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">路線バス</div><p class="lg-art-card-desc">市内・近隣を結ぶ路線バスが運行しています。浦安・新浦安・舞浜の各駅を起点に、住宅地や商業施設へのアクセスに使えます。浦安駅は乗り場が駅の周りに分散しているため、行き先別の乗り場は<a href="/life-guide/urayasu-station-bus-noriba/">浦安駅のバス乗り場ガイド</a>で確認できます。</p></div>
   <div class="lg-art-card"><i class="ti ti-train lg-art-card-ic" aria-hidden="true"></i><div class="lg-art-card-title">鉄道</div><p class="lg-art-card-desc">東京メトロ東西線（浦安駅）とJR京葉線（新浦安駅・舞浜駅）が市内の主要な鉄道。都心や千葉方面へのアクセスに使えます。</p></div>
 </div>
 

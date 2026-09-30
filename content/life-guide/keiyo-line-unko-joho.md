@@ -1,7 +1,7 @@
 ---
 title: "京葉線の運行情報・遅延の調べ方｜止まったとき浦安から使える代替ルート"
 date: 2026-09-04T10:51:00+09:00
-lastmod: 2026-09-04
+lastmod: 2026-09-14
 factChecked: "2026-09-04"
 newsTags: ["京葉線", "交通", "電車", "交通規制"]
 categories:
@@ -107,7 +107,7 @@ faq:
 <p>舞浜駅と浦安駅の間は京成バスが結んでいます。当サイトで確認している運賃・所要時間は次のとおりです。</p>
 
 <ul>
-  <li>浦安駅入口から舞浜駅南口：京成バス{{< fact "local_bus.urayasu_maihama_route" >}}系統・{{< fact "local_bus.urayasu_maihama_fare" >}}・約{{< fact "local_bus.urayasu_maihama_minutes" >}}分</li>
+  <li>浦安駅入口から舞浜駅南口：京成バス{{< fact "local_bus.urayasu_maihama_route" >}}系統・{{< fact "local_bus.urayasu_maihama_fare" >}}・約{{< fact "local_bus.urayasu_maihama_minutes" >}}分（浦安駅側はEのりば。乗り場の場所は<a href="/life-guide/urayasu-station-bus-noriba/">浦安駅のバス乗り場ガイド</a>）</li>
 </ul>
 
 <p>新浦安駅からの移動手段や市内のバス路線は、<a href="/life-guide/urayasu-bus-kotsu/">浦安市の交通・バスガイド</a>にまとめています。駅ごとの周辺環境や使える路線は<a href="/life-guide/station-life/">浦安市の駅別生活ガイド</a>を参考にしてください。</p>
