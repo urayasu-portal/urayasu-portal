@@ -2,7 +2,7 @@
 title: "MyStays Hotel Shin-Urayasu Conference Center | 24-Hour Coin Laundry ¥200, Conference Center, Budget Price in Shin-Urayasu"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-02"
-lastmod: 2026-09-02
+lastmod: 2026-10-01
 description: "Local review of MyStays Hotel Shin-Urayasu Conference Center. 175 rooms. 24-hour coin laundry (just ¥200 wash/dry cycle — cheapest in the area). Conference center on site. Evening-only TDR shuttle (3 departures approx. 21:00–22:00, shared with MyStays properties). No in-house convenience store. Price range ¥7,500+."
 tags:
   - Hotel
@@ -57,7 +57,7 @@ Free shuttle has only ~3 evening departures; for the outbound trip, Tokyo Baycit
 About 10–15 min on foot from Shin-Urayasu Station. Local bus also available (confirm stop from official website).
 
 ### To the Airport
-From "Shin-Urayasu Station" bus stop (South Exit, stop H; approx. 10–15 min walk or local bus): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}}. Narita also available.
+From "Shin-Urayasu Station" bus stop (North Exit, stop J, since October 1, 2026; the station is approx. 10–15 min on foot or by local bus): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}}. Narita also available.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.

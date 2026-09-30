@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disney Hotels Compared by Access | Parks, Stations & Airports (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-10-01
 factChecked: "2026-08-24"
 description: "A local-media comparison of all 40 Urayasu hotels by how easy they are to reach: the parks, JR stations, the airports, and central Tokyo. Limousine bus fares, which hotels you can actually walk to from Maihama Station, and more."
 tags:
@@ -100,7 +100,7 @@ Many major Maihama-area hotels let you board the limousine bus right in front of
 These two are especially smooth for airport transfers in the Shin-Urayasu area.
 
 **Hotels that use the Shin-Urayasu Station bus stop**
-**Urayasu Brighton Hotel** (1–2 min walk), **Oriental Hotel Tokyo Bay** (1 min walk), and others. About 40–45 min to Haneda from the limousine stop (Stop H) at the south exit of Shin-Urayasu Station.
+**Urayasu Brighton Hotel** (1–2 min walk), **Oriental Hotel Tokyo Bay** (1 min walk), and others. About 40–45 min to Haneda from the limousine stop at the north exit of Shin-Urayasu Station (Stop J, since October 1, 2026).
 
 **The Urayasu Station area is train-based**
 Hotels around Urayasu Station have no limousine stop; the basic route is by train (Urayasu → Nihonbashi → Keikyu / Toei Asakusa Line → Haneda), about 60 min.
