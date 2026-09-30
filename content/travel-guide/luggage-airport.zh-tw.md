@@ -3,7 +3,7 @@ title: "從羽田·成田機場把行李寄到舞濱·浦安飯店的方法 | �
 aliases: ["/travel-guide/hotels/luggage-airport/"]
 date: 2026-08-16T08:00:00+09:00
 factChecked: "2026-09-01"
-lastmod: 2026-09-09
+lastmod: 2026-10-01
 description: "在地媒體整理：如何從羽田機場、成田機場或東京車站把行李先寄到東京迪士尼度假區周邊的飯店。依航廈列出當日配送截止時間（成田第3航廈為9:50）、黑貓宅急便·佐川·JAL ABC的尺寸別費用、19家適用飯店，以及趕不上截止時間時的替代方案，全部依據官方資訊。"
 tags:
   - Hotel
@@ -126,7 +126,7 @@ faq:
 
 **SAGAWA輕裝服務**的行李寄放·宅配櫃檯，是連接機場與飯店的選項中最便宜的。配送範圍為**東京10個區（品川·新宿·大田·澀谷·中央·文京·千代田·台東·港·江東）與浦安市內的飯店**，**也包含舞濱地區**。
 
-**羽田機場出發** — 櫃檯設在[第1航廈1樓](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/haneda_airport1.html)與[第2航廈1樓](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/haneda_airport2.html)。營業7:00~20:00，當日配送13:00截止。
+**羽田機場出發** — 櫃檯設在[第1航廈1樓](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/haneda_airport1.html)與[第2航廈1樓](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/haneda_airport2.html)。營業7:00–20:00，當日配送13:00截止。
 
 | 尺寸（三邊合計） | 重量 | 費用 |
 |---|---|---|
@@ -136,7 +136,7 @@ faq:
 | **140cm以內**（常見的行李箱） | 20kg | **2,180日圓** |
 | 160cm以內 | 30kg | 2,440日圓 |
 
-**成田機場出發** — 櫃檯設在[第1航廈北翼1樓到達大廳](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/narita_airport1_north1.html)與[第2航廈主樓1樓到達大廳](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/narita_airport2_1.html)。營業6:30~國際線末班機抵達1小時後，當日配送14:00截止、飯店到達16:00以後。
+**成田機場出發** — 櫃檯設在[第1航廈北翼1樓到達大廳](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/narita_airport1_north1.html)與[第2航廈主樓1樓到達大廳](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/narita_airport2_1.html)。營業6:30–國際線末班機抵達1小時後，當日配送14:00截止、飯店到達16:00以後。
 
 | 尺寸（三邊合計） | 費用 |
 |---|---|
@@ -148,7 +148,7 @@ faq:
 | 180cm以內 | 4,100日圓 |
 | 200cm以內 | 4,690日圓 |
 
-**東京車站出發** — 搭新幹線抵達東京車站時也可使用同樣的機制。櫃檯是[東京車站一番街1樓（日本橋口）服務中心](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/tokyo_station.html)。營業7:00~21:00，飯店配送13:00截止，費用與羽田機場出發相同（140cm以內2,180日圓）。配送範圍為東京23區內與浦安市內的飯店。
+**東京車站出發** — 搭新幹線抵達東京車站時也可使用同樣的機制。櫃檯是[東京車站一番街1樓（日本橋口）服務中心](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/tokyo_station.html)。營業7:00–21:00，飯店配送13:00截止，費用與羽田機場出發相同（140cm以內2,180日圓）。配送範圍為東京23區內與浦安市內的飯店。
 
 同一櫃檯也辦理**臨時寄放**。羽田為三邊合計100cm以內800日圓·160cm以內1,000日圓·161cm以上2,000日圓（每件每日），成田為100cm以內500日圓·160cm以內700日圓·200cm以內1,150日圓，東京車站為100cm以內1,000日圓·140cm以內1,300日圓·160cm以內1,500日圓·161cm以上2,000日圓。搭紅眼班機清晨抵達、還沒決定行程時很好用。
 
@@ -156,8 +156,8 @@ faq:
 
 **JAL ABC飯店宅配服務**僅限舞濱·新浦安的合作飯店，**不論尺寸單程統一1,800日圓**。行李箱越大越划算。
 
-- 受理：**羽田機場第1航廈 國內線到達大廳南側（1樓）**，營業7:30~20:00（[查看位置](https://www.jalabc.com/delivery_service/hotel_delivery/haneda-airport.html)）
-- 申請**7:30~13:00**／20:00前送抵飯店，**領取為20:00以後**
+- 受理：**羽田機場第1航廈 國內線到達大廳南側（1樓）**，營業7:30–20:00（[查看位置](https://www.jalabc.com/delivery_service/hotel_delivery/haneda-airport.html)）
+- 申請**7:30–13:00**／20:00前送抵飯店，**領取為20:00以後**
 - 無需預約·**僅限現金支付**
 - **每件20kg以內**
 
@@ -266,7 +266,7 @@ faq:
 - **迪士尼飯店·官方飯店** — 在JR舞濱站旁的歡迎中心**免費**
 - **合作飯店** — 在站前Bon Voyage 1樓櫃檯**每件{{< fact "bon_voyage.fee" >}}**
 
-受理至15點~16點，比機場的截止時間寬裕得多。詳細步驟整理在[從舞濱站把行李寄到飯店的方法](/zh-tw/travel-guide/luggage-howto/)。
+受理至15點–16點，比機場的截止時間寬裕得多。詳細步驟整理在[從舞濱站把行李寄到飯店的方法](/zh-tw/travel-guide/luggage-howto/)。
 
 把行李運到舞濱的方式中，**利木津巴士**最為輕鬆。每人可託運**2件**（每件50×60×120cm以內·30kg以內），直達飯店附近的巴士站。
 
@@ -289,8 +289,8 @@ faq:
 
 出發當天同樣可以輕裝。**這裡要注意的是，目的地是「機場」還是「舞濱站」，屬於不同的服務**。
 
-- **飯店 → 機場** — 若是JAL ABC的19家合作飯店，在行李服務台**10:00前**申請，於羽田機場第1航廈**16:00~20:00**領取（單程1,800日圓）。若經由東京車站，也可從[佐川急便東京車站（日本橋口）服務中心](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/tokyo_station.html)寄往羽田機場（11:00截止·140cm以內2,840日圓）。
-- **飯店 → 舞濱站** — 迪士尼飯店·官方飯店的「車站配送服務」（受理7:00~12:30·每件{{< fact "station_delivery.fee" >}}）。若打算在樂園玩過之後到車站領取，請選這一種。詳情請見[行李寄放與行李配送完全指南](/zh-tw/travel-guide/luggage/)。
+- **飯店 → 機場** — 若是JAL ABC的19家合作飯店，在行李服務台**10:00前**申請，於羽田機場第1航廈**16:00–20:00**領取（單程1,800日圓）。若經由東京車站，也可從[佐川急便東京車站（日本橋口）服務中心](https://www.sagawa-exp.co.jp/hands-freetravel/servicecenter/tokyo_station.html)寄往羽田機場（11:00截止·140cm以內2,840日圓）。
+- **飯店 → 舞濱站** — 迪士尼飯店·官方飯店的「車站配送服務」（受理7:00–12:30·每件{{< fact "station_delivery.fee" >}}）。若打算在樂園玩過之後到車站領取，請選這一種。詳情請見[行李寄放與行李配送完全指南](/zh-tw/travel-guide/luggage/)。
 
 回程班機在下午就寄往機場，最後一天還要去樂園就寄往舞濱站，請依情況區分使用。
 
@@ -329,7 +329,7 @@ faq:
 | 成田 第3航廈 | **9:50** | **黑貓宅急便**（無其他選擇） | 請在櫃檯確認 |
 | 東京車站 | 13:00 | **佐川急便** | 2,180日圓 |
 
-**趕不上截止時間時**，請帶著行李移動到舞濱，改用[從舞濱站寄送的方法](/zh-tw/travel-guide/luggage-howto/)。迪士尼飯店·官方飯店免費，合作飯店每件800日圓，受理至15點~16點，比機場寬裕得多。
+**趕不上截止時間時**，請帶著行李移動到舞濱，改用[從舞濱站寄送的方法](/zh-tw/travel-guide/luggage-howto/)。迪士尼飯店·官方飯店免費，合作飯店每件800日圓，受理至15點–16點，比機場寬裕得多。
 
 **貴重物品·精密儀器·液體在任何服務都無法寄送。** 也無法配送至民宿。
 
