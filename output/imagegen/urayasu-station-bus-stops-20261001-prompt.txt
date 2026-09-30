@@ -1,0 +1,11 @@
+Tool: built-in image_gen
+Source: user-attached screenshot of Urayasu station bus stops.
+Final image: urayasu-station-bus-stops-20261001.png
+Initial specification: Create a clean Japanese illustrated map based on the attached screenshot, preserving station exits, railway, streets, seven red bus stop locations and the gray northern bus stop. Emphasize the station and bus stops. Retain useful hotel and convenience-store landmarks. Use Japanese labels and a legend, with a footer explaining that this is a schematic based on the attachment. Do not invent bus routes, official stop numbers, compass, or scale.
+
+Final refinement prompt (verbatim):
+Edit image 1, the illustrated map. Image 2 is the geographic source screenshot. Keep the existing map style, all Japanese wording, title, legend, station, exits, landmarks, railway and overall composition. Correct ONLY the arrangement of coral bus-stop symbols and their corresponding leader lines, and very local small road detail needed for accuracy.
+Exactly seven coral stop symbols in map body, plus coral legend icon. The original screenshot red stop coordinates in 738x287 source are (197,265), (355,223), (385,203), (465,219), (486,225), (466,244), (461,265).
+The CENTRAL two stops must NOT sit side by side on the same main road. Keep central southwest stop currently near (880,574) on image 1. Move its companion currently near (1031,578) NORTH AND SLIGHTLY EAST of it, onto the small side street ABOVE the main road, around (951,510) in image 1. It must clearly read as one stop on main road and one diagonally upper-right on the small side street. Relocate the central 「浦安駅入口」 label locally to avoid overlap and lead to both icons.
+For EASTERN four-stop cluster, preserve top-left around (1227,578), top-right around (1298,603), and lower-left around (1244,660). Move the fourth bottom-right icon currently at (1312,690) to almost directly BELOW the lower-left, slightly LEFT, around (1233,725). This accurately makes three icons descending near the same north-south street, with a fourth just upper-right of topmost. Adjust the eastern callout leaders neatly.
+Keep southwest lone stop, gray north bus stop, both station exit locations unchanged. Do not add icons, routes or official stop numbers. Maintain professional high-resolution crisp Japanese illustrated map.
