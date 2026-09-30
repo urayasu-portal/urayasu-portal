@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼·浦安交通指南 | 從機場·東京站出發的路線"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-09-01
+lastmod: 2026-10-01
 slug: "urayasu-maihama-access-guide"
 badge: "交通"
 description: "比較從羽田機場、成田機場、東京站前往浦安站·新浦安站·舞濱站·東京迪士尼度假區的電車·機場巴士·計程車路線。含成田第3航廈（LCC）·羽田第3航廈抵達時的走法、回程日提示，以及輪椅·嬰兒車·大型行李旅客注意事項。"
@@ -204,6 +204,7 @@ factChecked: "2026-09-01"
         </div>
       </div>
       <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> 停留期間要去淺草·澀谷等市區的日子，請參閱「<a href="/zh-tw/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">從舞濱·浦安去東京觀光</a>」。</div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-bus-stop" style="font-size:12px"></i> 要從車站搭乘路線公車或飯店接駁車時，可在「<a href="/zh-tw/travel-guide/station-bus-stops/" style="color:#E05535;font-weight:700">浦安·新浦安·舞濱 各站公車乘車處指南</a>」查詢乘車處。</div>
 </div>
 
 ## 參考來源

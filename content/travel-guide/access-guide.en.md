@@ -1,7 +1,7 @@
 ---
 title: "How to Get to Tokyo Disney Resort & Urayasu | Routes from Airports & Tokyo Station"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-01
 slug: "urayasu-maihama-access-guide"
 badge: "Access"
 description: "Comparing trains, airport limousine buses, and taxis from Haneda Airport, Narita Airport, and Tokyo Station to Urayasu Station, Shin-Urayasu Station, Maihama Station, and Tokyo Disney Resort — including arrivals at Narita Terminal 3 (LCC) and Haneda Terminal 3, departure-day tips, and notes for guests with wheelchairs, strollers, or heavy luggage."
@@ -206,6 +206,7 @@ factChecked: "2026-08-16"
         </div>
       </div>
       <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> Heading into central Tokyo during your stay? See <a href="/en/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">Day trips into Tokyo</a>.</div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-bus-stop" style="font-size:12px"></i> Taking a local bus or hotel shuttle from the station? Find your stop in the <a href="/en/travel-guide/station-bus-stops/" style="color:#E05535;font-weight:700">bus stop guides for Urayasu, Shin-Urayasu and Maihama stations</a>.</div>
 </div>
 
 ## Sources

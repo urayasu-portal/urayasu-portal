@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니·우라야스 가는 길 | 공항·도쿄역에서 가는 경로"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-01
 slug: "urayasu-maihama-access-guide"
 badge: "교통"
 description: "하네다 공항, 나리타 공항, 도쿄역에서 우라야스역·신우라야스역·마이하마역·도쿄 디즈니 리조트로 가는 전철·공항버스·택시 경로를 비교합니다. 나리타 제3터미널(LCC)·하네다 제3터미널 도착 시의 이동 방법과 귀국일 팁, 휠체어·유모차·대형 짐 여행자 주의사항 포함."
@@ -204,6 +204,7 @@ factChecked: "2026-08-16"
         </div>
       </div>
       <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> 체류 중 아사쿠사·시부야 등 도심으로 나가는 날은 「<a href="/ko/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">마이하마·우라야스에서 도쿄 관광으로</a>」를 참고하세요.</div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-bus-stop" style="font-size:12px"></i> 역에서 노선버스나 호텔 셔틀버스를 탈 때는 「<a href="/ko/travel-guide/station-bus-stops/" style="color:#E05535;font-weight:700">우라야스·신우라야스·마이하마 역별 버스 승차장 가이드</a>」에서 승차장을 확인하세요.</div>
 </div>
 
 ## 참고 출처
