@@ -204,6 +204,7 @@ factChecked: "2026-08-16"
         </div>
       </div>
       <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> 체류 중 아사쿠사·시부야 등 도심으로 나가는 날은 「<a href="/ko/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">마이하마·우라야스에서 도쿄 관광으로</a>」를 참고하세요.</div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-bus-stop" style="font-size:12px"></i> 역에서 노선버스나 호텔 셔틀버스를 탈 때는 「<a href="/ko/travel-guide/station-bus-stops/" style="color:#E05535;font-weight:700">우라야스·신우라야스·마이하마 역별 버스 승차장 가이드</a>」에서 승차장을 확인하세요.</div>
 </div>
 
 ## 참고 출처

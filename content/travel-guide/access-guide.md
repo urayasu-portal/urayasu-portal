@@ -1,7 +1,7 @@
 ---
 title: "浦安・舞浜への行き方ガイド （目的地別移動ルート）"
 date: 2026-06-18T10:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-01
 factChecked: "2026-08-16"
 slug: "urayasu-maihama-access-guide"
 badge: "アクセス"
@@ -215,6 +215,7 @@ faq:
         </div>
       </div>
       <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-map-2" style="font-size:12px"></i> 滞在中に浅草・渋谷など都心へ出る日は「<a href="/travel-guide/tokyo-sightseeing-access/" style="color:#E05535;font-weight:700">舞浜・浦安から東京観光へ</a>」をご覧ください。</div>
+      <div style="font-size:11px;color:#64748B;margin-bottom:4px"><i class="ti ti-bus-stop" style="font-size:12px"></i> 駅前から路線バスやホテル送迎バスに乗るときは「<a href="/life-guide/bus-noriba/" style="color:#E05535;font-weight:700">浦安・新浦安・舞浜の駅別バス乗り場ガイド</a>」でのりばを確認できます。</div>
 </div>
 
 ## 参考出典

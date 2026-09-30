@@ -1,5 +1,6 @@
 ---
 title: "浦安駅のバス乗り場ガイド｜A・B・D・Eのりばの場所と行き先別の乗り場一覧"
+translationKey: "bus-noriba-urayasu"
 date: 2026-09-14T19:00:00+09:00
 lastmod: 2026-10-01
 guideParent: "/life-guide/bus-noriba"

@@ -150,6 +150,7 @@ og:image の優先順位: `cover.image` frontmatter → `images:` frontmatter �
 6. **URL変更・統合時は aliases 必須** — 移動先ファイルの frontmatter に旧URLを列挙（GitHub Pages のため meta refresh + canonical になる）
 7. **公開当日の記事は date を現在時刻より前に** — `buildFuture: false` のため未来時刻はビルドから落ちる
 8. **ビルド後検証** — 内部リンクの全数到達チェック（`public/` に対する grep で機械確認）をしてからコミット
+9. **ja が生活ガイドにある記事の他言語版** — 駅別バス乗り場ガイドは、ja を生活ガイド（`content/life-guide/bus-noriba.md` ほか3駅）、他言語を旅行ガイドの移動柱（`content/travel-guide/station-bus-stops.{en,zh-tw,zh,ko}.md` ほか3駅）に置く。パスが違うため frontmatter の `translationKey`（`bus-noriba-hub` / `-urayasu` / `-shinurayasu` / `-maihama`）で紐付けて言語切替と hreflang を成立させる。ja の内容を直したら、旅行ガイド側の4言語も同じ構造で直す
 
 ### データソース管理
 

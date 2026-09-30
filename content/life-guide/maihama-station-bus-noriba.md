@@ -1,5 +1,6 @@
 ---
 title: "舞浜駅のバス乗り場ガイド｜南口01〜04番・ホテル送迎C-3の行き先別一覧"
+translationKey: "bus-noriba-maihama"
 date: 2026-09-30T20:00:00+09:00
 lastmod: 2026-10-01
 guideParent: "/life-guide/bus-noriba"
