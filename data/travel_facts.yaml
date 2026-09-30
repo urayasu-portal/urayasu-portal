@@ -25,7 +25,10 @@ limousine:
 
 # ── 路線バス（浦安駅⇔舞浜駅／京成バス千葉ウエスト 千鳥営業所）───────
 # source: https://transfer-cloud.navitime.biz/keiseibus-group （京成バスグループ公式 経路・運賃検索）
-# checked: 2026-08-24
+# source: https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200244-1 （9系統。通過時刻表で舞浜駅南口210円、6:10発→6:29着を確認）
+# source: https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200206-1 （2系統。通過時刻表で舞浜駅南口280円、6:17発→6:43着を確認）
+# checked: 2026-09-30
+# 所要時間は概数。上記確認便は9系統19分、2系統26分。便・道路状況で変動する。
 # 注意: 旧公式サイト baycity-bus.co.jp / transitbus.co.jp は2026年4月1日のリニューアルで閉鎖。
 #       リンクするなら https://www.keiseibus.co.jp/ を使う。
 #       9系統（舞浜線・堀江/富士見経由）が最安・最速。2系統（今川線・新浦安経由）は遠回りで高い。
