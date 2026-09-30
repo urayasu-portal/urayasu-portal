@@ -2,7 +2,7 @@
 title: "ibis Styles Tokyo Bay | Accor Design Hotel, 14:00 Check-In (1 Hour Earlier), Coin Laundry, Children 11 and Under Sleep Free"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-01"
-lastmod: 2026-06-17
+lastmod: 2026-10-01
 description: "Local review of ibis Styles Tokyo Bay (Accor). 14:00 check-in (1 hour earlier than typical 15:00). Japanese and Western buffet breakfast. Coin laundry available. Children 11 and under sleep free (same-bed sharing). 36 parking spaces (first-come). Free baggage storage at check-in and after check-out. Price range ¥10,000–¥25,000."
 tags:
   - Hotel
@@ -57,7 +57,7 @@ Free hotel shuttle bus (schedule on the official site / LINE).
 Confirm walking distance and bus options from Shin-Urayasu Station on the official website.
 
 ### To the Airport
-From "Shin-Urayasu Station" bus stop (South Exit, stop H): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). Narita also available.
+From "Shin-Urayasu Station" bus stop (North Exit, stop J, since October 1, 2026): Haneda approx. 40–45 min, {{< fact "limousine.haneda_fare" >}} (Tokyo Airport Transport / Keiseibus Chiba West; advance reservation recommended during peak seasons). Narita also available.
 
 ### To Central Tokyo
 From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Line.
