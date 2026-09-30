@@ -2,7 +2,7 @@
 title: "オリエンタルホテル東京ベイ｜新浦安駅デッキ直結・シャトル1日69便でTDRへ直行するパートナーホテル【地元レビュー】"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-01"
-lastmod: 2026-06-17
+lastmod: 2026-10-01
 description: "オリエンタルホテル東京ベイを地元メディアがレビュー。新浦安駅デッキ直結・無料シャトル1日最大69便。館内コンビニ、2Fコインランドリー、累進型駐車料金など実用設備も充実。価格帯・アクセス・注意点を正直に解説。"
 area: "新浦安エリア"
 tags:
@@ -63,7 +63,7 @@ noDate: true
 <tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーランド</td><td>無料シャトルバス（1日最大69便・始発7時）</td><td>約15分</td></tr>
 <tr><td><i class="ti ti-building-castle" aria-hidden="true"></i> 東京ディズニーシー</td><td>無料シャトルバス（1日最大69便・始発7時）</td><td>約15分</td></tr>
 <tr><td><i class="ti ti-train" aria-hidden="true"></i> JR駅</td><td>新浦安駅へ屋根付きデッキ直結</td><td>徒歩約1分（舞浜まで1駅3分）</td></tr>
-<tr><td><i class="ti ti-plane" aria-hidden="true"></i> 空港</td><td>新浦安駅バス停（徒歩1分）からリムジン</td><td>羽田約40〜45分／成田約60分</td></tr>
+<tr><td><i class="ti ti-plane" aria-hidden="true"></i> 空港</td><td>新浦安駅北口Jのりば（2026年10月1日から）からリムジン</td><td>羽田約40〜45分／成田約60分</td></tr>
 <tr><td><i class="ti ti-building" aria-hidden="true"></i> 都心</td><td>新浦安駅からJR京葉線</td><td>東京駅約20分</td></tr>
 </tbody>
 </table>

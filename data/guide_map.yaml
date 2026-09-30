@@ -26,6 +26,11 @@ mappings:
     url: "/life-guide/holiday-night-medical/"
     title: "浦安市の休日・夜間診療、急病時の相談先まとめ"
     icon: "ti-stethoscope"
+  - tags: ["浦安駅入口バス停"]
+    url: "/life-guide/urayasu-station-bus-noriba/"
+    title: "浦安駅のバス乗り場ガイド"
+    icon: "ti-bus-stop"
+    desc: "駅の周りに分散する乗り場を、行き先から逆引きできる保存版ガイドです"
   - tags: ["バス", "交通", "おさんぽバス"]
     url: "/life-guide/urayasu-bus-kotsu/"
     title: "浦安市の交通・バスガイド"

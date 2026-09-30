@@ -179,6 +179,11 @@ categories:
         icon: "ti-train"
         url: "/life-guide/keiyo-line-unko-joho/"
         published: true
+      - title: "駅別バス乗り場ガイド（浦安駅・新浦安駅・舞浜駅）"
+        desc: "3駅ののりばを行き先から逆引き。駅から駅への早見表つき。"
+        icon: "ti-bus-stop"
+        url: "/life-guide/bus-noriba/"
+        published: true
       - title: "浦安3大スポーツチーム観戦ガイド"
         desc: "D-Rocks、バルドラール、ブリオベッカの観戦情報を紹介。"
         icon: "ti-ball-american-football"
@@ -216,6 +221,12 @@ situations:
     url: "/life-guide/urayasu-pet/"
 
 updates:
+  - text: "新浦安駅・舞浜駅のバス乗り場ガイドを公開し、3駅の入口ページを新設"
+    date: "2026.09"
+    url: "/life-guide/bus-noriba/"
+  - text: "「浦安駅のバス乗り場ガイド」を公開"
+    date: "2026.09"
+    url: "/life-guide/urayasu-station-bus-noriba/"
   - text: "「京葉線の運行情報・遅延の調べ方」を公開"
     date: "2026.09"
     url: "/life-guide/keiyo-line-unko-joho/"
