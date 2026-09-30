@@ -1,7 +1,7 @@
 ---
 title: "浦安駅のバス乗り場ガイド｜A・B・D・Eのりばの場所と行き先別の乗り場一覧"
 date: 2026-09-14T19:00:00+09:00
-lastmod: 2026-09-30
+lastmod: 2026-10-01
 guideParent: "/life-guide/bus-noriba"
 newsTags: ["浦安駅", "浦安駅入口バス停", "路線バス", "シャトルバス"]
 categories:
@@ -207,7 +207,7 @@ aliases:
 
 <div class="lg-art-links">
   <a class="lg-art-link" href="/life-guide/urayasu-station-bus-noriba/">浦安駅のバス乗り場ガイド<span>このページ</span></a>
-  <a class="lg-art-link" href="/life-guide/shinurayasu-station-bus-noriba/">新浦安駅のバス乗り場ガイド<span>南口A〜Gと北口</span></a>
+  <a class="lg-art-link" href="/life-guide/shinurayasu-station-bus-noriba/">新浦安駅のバス乗り場ガイド<span>南口A〜G・H、北口・空港J</span></a>
   <a class="lg-art-link" href="/life-guide/maihama-station-bus-noriba/">舞浜駅のバス乗り場ガイド<span>南口01〜04番とホテル送迎C-3</span></a>
   <a class="lg-art-link" href="/life-guide/bus-noriba/">駅別バス乗り場ガイド（入口）<span>駅から駅への早見表</span></a>
 </div>
