@@ -2,6 +2,7 @@
 title: "浦安駅のバス乗り場ガイド｜A・B・D・Eのりばの場所と行き先別の乗り場一覧"
 date: 2026-09-14T19:00:00+09:00
 lastmod: 2026-09-30
+guideParent: "/life-guide/bus-noriba"
 newsTags: ["浦安駅", "浦安駅入口バス停", "路線バス", "シャトルバス"]
 categories:
   - "お知らせ"
@@ -162,7 +163,7 @@ aliases:
 
 <p>浦安駅入口行きのバスは、乗車場とは別の降車場を利用します。市の配置図では<strong>降車場1・2・3の3か所</strong>があり、1はやなぎ通り南側のA・B付近、2はやなぎ通り南側のDより西、3はやなぎ通り北側のDの向かい側付近です。降りた場所に応じて歩道橋や横断歩道を利用し、浦安駅の案内表示に従ってください。</p>
 
-<p>舞浜駅から浦安駅入口へ戻るときは、<strong>9系統の浦安駅入口行き</strong>を選び、舞浜駅での乗り場は京成の公式案内で確認してください。6系統も市役所経由で浦安駅入口へ行きます。37系統の南行徳駅行きは浦安駅入口を通りません。</p>
+<p>舞浜駅から浦安駅入口へ戻るときは、<strong>9系統の浦安駅入口行き</strong>を選びます。舞浜駅側の乗り場は<a href="/life-guide/maihama-station-bus-noriba/">舞浜駅のバス乗り場ガイド</a>にまとめています。6系統も市役所経由で浦安駅入口へ行きます。37系統の南行徳駅行きは浦安駅入口を通りません。</p>
 
 <h2 id="shuttle">墓地公園の無料シャトルバス（お盆・お彼岸）</h2>
 
@@ -201,3 +202,12 @@ aliases:
 <p>問い合わせ：京成バス千葉ウエスト 千鳥営業所（旧 東京ベイシティ交通）電話 <a href="tel:05018093651">050-1809-3651</a>（営業所受付 9:00〜19:00）。</p>
 
 <p>市内のバス全体（おさんぽバスの路線・運賃、高齢者の交通支援）は<a href="/life-guide/urayasu-bus-kotsu/">浦安市の交通・バスガイド</a>、京葉線が止まったときの浦安駅経由の代替ルートは<a href="/life-guide/keiyo-line-unko-joho/">京葉線の運行情報・遅延の調べ方</a>、駅ごとの暮らしやすさは<a href="/life-guide/station-life/">浦安市の駅別生活ガイド</a>をあわせてどうぞ。</p>
+
+<h2 id="station-nav">3駅のバス乗り場ガイド</h2>
+
+<div class="lg-art-links">
+  <a class="lg-art-link" href="/life-guide/urayasu-station-bus-noriba/">浦安駅のバス乗り場ガイド<span>このページ</span></a>
+  <a class="lg-art-link" href="/life-guide/shinurayasu-station-bus-noriba/">新浦安駅のバス乗り場ガイド<span>南口A〜Gと北口</span></a>
+  <a class="lg-art-link" href="/life-guide/maihama-station-bus-noriba/">舞浜駅のバス乗り場ガイド<span>南口01〜04番とホテル送迎C-3</span></a>
+  <a class="lg-art-link" href="/life-guide/bus-noriba/">駅別バス乗り場ガイド（入口）<span>駅から駅への早見表</span></a>
+</div>
