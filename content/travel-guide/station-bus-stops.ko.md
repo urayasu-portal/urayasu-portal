@@ -1,5 +1,6 @@
 ---
 title: "우라야스·신우라야스·마이하마역 버스 승차장 가이드 | 역별 승차장과 역 간 이동 한눈에"
+linkTitle: "역별 버스 승차장"
 slug: "station-bus-stops"
 translationKey: "bus-noriba-hub"
 badge: "교통"

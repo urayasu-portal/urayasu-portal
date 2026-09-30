@@ -1,5 +1,6 @@
 ---
 title: "Bus Stops at Urayasu, Shin-Urayasu & Maihama Stations | Station-by-Station Guide"
+linkTitle: "Bus stops by station"
 slug: "station-bus-stops"
 translationKey: "bus-noriba-hub"
 badge: "Access"

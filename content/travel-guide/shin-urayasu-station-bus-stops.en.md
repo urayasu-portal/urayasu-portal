@@ -64,7 +64,7 @@ The South Exit bus terminal has stops **A–G** in front of the station. **H** i
 | **South Exit B** | 14, 22, 24, 38 | Maihama Station and Chidori Shako (千鳥車庫) (14); Chidori Shako (22); Fujimi loop (富士見循環) (24); Express toward Akemi Shogakko (明海小学校) and Quon Shin-Urayasu (クオン新浦安) (38) |
 | **South Exit C** | 16, 17 | 16: Hinode 7-chome (日の出七丁目) via Proud Shin-Urayasu Park Marina (プラウド新浦安パークマリーナ). 17: Hinode 7-chome and Bay City Urayasu (ベイシティ浦安) |
 | **South Exit D** | 3, 11, 23 | Sogo Koen (総合公園) via Akemi 5-chome (明海五丁目) and others (3, 23); Sogo Koen and Hinode-minami (日の出南) via Bay Park (ベイパーク) (11). Check the destination display |
-| **South Exit E** | 15, 18 | 15: Takasu Kaihin Koen (高洲海浜公園) via Tokyo Gakkan-mae (東京学館前). 18: Takasu Kaihin Koen / Takasu-kita Shogakko (高洲北小学校) via Yumemi no Machi (夢海の街) and Shioto no Machi (潮音の街) |
+| **South Exit E** | 15, 18 | 15: Takasu Kaihin Koen (高洲海浜公園) via Tokyo Gakkan-mae (東京学館前). 18: Takasu Kaihin Koen / Takasu-kita Shogakko (高洲北小学校) via 夢海の街 and 潮音の街 |
 | **South Exit F** | 10, 19 | 10: Minato-minami (Tekko Danchi) (みなと南（鉄鋼団地）) via Tokyo Gakkan-mae and Takasu 4-chome (高洲四丁目). 19: Takasu Kaihin Koen via Urayasu-minami Koko (浦安南高校) and Tokuyo Home (特養ホーム) |
 | **South Exit G** | 浦安03 | Gyotoku-eki (行徳駅) / Moto-Yawata-eki Minamiguchi (本八幡駅南口) via High Town Shiohama (ハイタウン塩浜) |
 | **H (South Exit side, along Symbol Road)** | 3, 11, 18, 23 | 3, 11, 18: Urayasu-eki Iriguchi via Shobo Honbu-mae (消防本部前). 23: Maihama Station via Juntendo Byoin-mae (順天堂病院前) (check operating days and times) |
@@ -103,7 +103,7 @@ Route 11 to Hinode-minami is a year-round route that goes to the nearest stop fo
 
 ## Takasu & Takasu Kaihin Koen (South Exit E & F) {#takasu}
 
-Buses to the Takasu area are split between **South Exit E** and **South Exit F**. E serves Route 15 (Shioto no Machi Line) and Route 18 (Akemi-Takasu Line); F serves Route 10 (Takasu Line) and Route 19 (Takasu-minami Line). **Route 10 terminates at Minato-minami (Tekko Danchi)**, and **Route 19 at Takasu Kaihin Koen**. Routes 15 and 18 also differ in their stops on the way and final destinations, so check the official timetable for a bus that stops where you want to go.
+Buses to the Takasu area are split between **South Exit E** and **South Exit F**. E serves Route 15 (潮音の街 Line) and Route 18 (Akemi-Takasu Line); F serves Route 10 (Takasu Line) and Route 19 (Takasu-minami Line). **Route 10 terminates at Minato-minami (Tekko Danchi)**, and **Route 19 at Takasu Kaihin Koen**. Routes 15 and 18 also differ in their stops on the way and final destinations, so check the official timetable for a bus that stops where you want to go.
 
 ## Gyotoku, Moto-Yawata & Minami-Gyotoku {#gyotoku}
 

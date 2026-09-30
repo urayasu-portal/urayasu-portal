@@ -1,5 +1,6 @@
 ---
 title: "浦安·新浦安·舞濱站公車乘車處指南 | 3站乘車處一覽與車站間移動速查表"
+linkTitle: "各站公車乘車處"
 slug: "station-bus-stops"
 translationKey: "bus-noriba-hub"
 badge: "交通"
