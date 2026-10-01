@@ -3,9 +3,9 @@ title: "【浦安市】保育園・幼稚園・預かりガイド｜入園申込
 slug: "urayasu-hoiku-youchien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:20:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-02
 newsTags: ["子育て", "保育園"]
-factChecked: "2026-07-15"
+factChecked: "2026-10-02"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "保育園", "幼稚園", "認定こども園", "浦安市"]
@@ -82,7 +82,7 @@ sources:
 
 <h3>家庭的保育（保育ママ）</h3>
 <p>保育士などの資格を持つ「保育ママ」が、少人数の子どもを家庭的な雰囲気で預かる事業です。</p>
-<p><strong>対象：</strong>保育の必要性が認められる生後6か月〜3歳未満の子ども</p>
+<p><strong>対象：</strong>保育の必要性が認められる生後6か月〜2歳児クラスの子ども（施設により1歳児クラスから）</p>
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/hoiku/hoikuen/1000850.html" >}}家庭的保育（保育ママ）事業（浦安市公式）{{< /gov-link >}}
 
 <h3>病児・病後児保育</h3>
