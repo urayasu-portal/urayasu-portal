@@ -1,8 +1,8 @@
 ---
 title: "浦安3大スポーツチーム観戦ガイド｜D-Rocks・ブリオベッカ・バルドラールの試合日程・会場・チケットまとめ"
 date: 2026-06-13
-lastmod: 2026-08-17
-factChecked: "2026-07-14"
+lastmod: 2026-10-01
+factChecked: "2026-10-01"
 description: "浦安市を拠点に活動するラグビー・サッカー・フットサルのチームを、初めて観戦する人や子連れで行きたい人向けにわかりやすく整理しました。"
 categories: ["スポーツ"]
 newsTags: ["スポーツ", "バルドラール浦安", "浦安D-Rocks", "フットサル", "ラグビー"]
@@ -12,7 +12,7 @@ checkDate: "2026年6月"
 sources:
   - name: "浦安D-Rocks 公式サイト"
     url: "https://urayasu-d-rocks.com/"
-  - name: "ブリオベッカ浦安 公式サイト"
+  - name: "ブリオベッカ浦安・市川 公式サイト"
     url: "https://briobecca.jp/"
   - name: "バルドラール浦安 公式サイト"
     url: "https://www.bardral-urayasu.com/"
