@@ -2,9 +2,9 @@
 title: "浦安市の子育て支援・手当・助成まとめ｜妊娠・出産から小中学生まで使える制度ガイド"
 linkTitle: "子育て支援まとめ"
 date: 2026-06-07T09:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-01
 newsTags: ["子育て", "子ども", "保育園", "学校"]
-factChecked: "2026-08-01"
+factChecked: "2026-10-01"
 categories:
   - "子育て・教育"
 tags:
@@ -185,7 +185,7 @@ cover:
 
 <h3>子ども医療費助成（マル子）</h3>
 <p>浦安市では、18歳（18歳に達する日以後の最初の3月31日まで）までのお子さんの医療費（保険診療の自己負担分）を助成しています。市の医療証（マル子）を提示することで、窓口での支払いが原則0円になります。</p>
-<p>出生届提出後、速やかに子育て支援課で申請してください。</p>
+<p>出生届提出後、速やかにこども課（市役所2階）で申請してください。</p>
 
 <h3>予防接種（定期・任意）</h3>
 <p>定期予防接種は無料で受けられます。子どものインフルエンザ予防接種など一部の任意接種には費用助成があります（対象・助成内容は年度により異なるため、公式ページでご確認ください）。</p>
@@ -216,7 +216,7 @@ cover:
 
 <div class="lg-art-infobox-title"><i class="ti ti-building-community" aria-hidden="true"></i> 児童手当・経済的支援の申請窓口</div>
 <dl class="lg-art-infobox">
-  <dt>担当課</dt><dd>浦安市役所 子育て支援課（児童手当・就学援助）</dd>
+  <dt>担当課</dt><dd>浦安市役所 こども課（児童手当）／学務課（就学援助・申請は在籍校を通じて）</dd>
   <dt>電話</dt><dd>047-351-1111（代表）</dd>
   <dt>公式情報</dt><dd><a href="https://www.city.urayasu.lg.jp/kodomo/kosodate/teate/index.html" target="_blank" rel="noopener">浦安市公式サイト｜児童手当</a></dd>
 </dl>
@@ -265,7 +265,7 @@ cover:
 
 <div class="lg-art-infobox-title"><i class="ti ti-building-community" aria-hidden="true"></i> ひとり親・障がい支援の申請窓口</div>
 <dl class="lg-art-infobox">
-  <dt>担当課</dt><dd>浦安市 子育て支援課（ひとり親）／こども発達センター（障がいのある子どもの相談）</dd>
+  <dt>担当課</dt><dd>浦安市 こども課（ひとり親の手当）・こども家庭支援センター（ひとり親の相談）／こども発達センター（障がいのある子どもの相談）</dd>
   <dt>電話</dt><dd>047-351-1111（代表）</dd>
   <dt>公式情報</dt><dd><a href="https://www.city.urayasu.lg.jp/kodomo/kosodate/teate/index.html" target="_blank" rel="noopener">浦安市公式サイト｜ひとり親家庭支援</a></dd>
 </dl>
@@ -276,12 +276,12 @@ cover:
 <table class="lg-art-table">
 <thead><tr><th>相談内容</th><th>窓口・連絡先</th></tr></thead>
 <tbody>
-<tr><td>妊娠・出産・育児全般</td><td>浦安市役所 子育て支援課<br>047-351-1111（代表）平日 8:30〜17:00</td></tr>
+<tr><td>妊娠・出産・育児全般</td><td>浦安市 母子保健課（母子健康手帳・乳幼児健診）<br>047-351-1111（代表）平日 8:30〜17:00</td></tr>
 <tr><td>保育園・幼稚園の入園・保育料</td><td>浦安市役所 保育幼稚園課<br>047-351-1111（代表）</td></tr>
 <tr><td>子どもの発達・育児不安</td><td>浦安市 子育て支援センター<br>浦安市 こども発達センター（発達相談）</td></tr>
 <tr><td>教育相談・不登校・いじめ</td><td>浦安市教育センター<br>047-381-7961</td></tr>
 <tr><td>夜間・休日の子どもの急病</td><td>#8000（子ども医療電話相談）<br>浦安市急病診療所</td></tr>
-<tr><td>DV・虐待・緊急の相談</td><td>浦安市 家庭相談員（子育て支援課）<br>189（いちはやく）児童相談所全国共通ダイヤル</td></tr>
+<tr><td>DV・虐待・緊急の相談</td><td>浦安市 こども家庭支援センター（家庭相談・児童虐待）<br>189（いちはやく）児童相談所全国共通ダイヤル</td></tr>
 </tbody>
 </table>
 </div>

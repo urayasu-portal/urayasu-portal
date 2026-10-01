@@ -310,10 +310,11 @@ hotels:
     lat: 35.6307
     lng: 139.8739
     price_min: 20000
-    flags: [bath, shuttle, limousine, delivery]
+    flags: [bath, laundry, shuttle, limousine, delivery]
     facilities:
       - key: "bath"
         note: "有料"
+      - key: "laundry"
       - key: "shuttle"
       - key: "limousine"
       - key: "delivery"

@@ -1,8 +1,8 @@
 ---
 title: "Best Family Hotels near Tokyo Disneyland & DisneySea | Kid-Friendly Picks by Locals"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-09-09
-factChecked: "2026-08-08"
+lastmod: 2026-10-01
+factChecked: "2026-10-01"
 description: "Visiting Tokyo Disney Resort with kids. A local-media comparison of family-friendly hotels among Urayasu's 40, chosen for large baths, spacious rooms, in-house convenience stores, and closeness to the parks."
 tags:
   - Hotel
@@ -143,7 +143,7 @@ Many Disney and official hotels hold bags at the front desk. **Mitsui Garden Hot
 On multi-night stays where kids' clothes get dirty, a coin laundry helps.
 - **Tokyo Bay Maihama Hotel First Resort (Maihama area)** … wash ¥500 / dry ¥200 per 15 min, auto-detergent
 - **Hoshino Resorts 1955 Tokyo Bay (Shin-Urayasu area)** … coin laundry available
-- **Maihama View Hotel by HULIC (Maihama area)** … has the "Spa Rose" large bath. A coin laundry is being prepared; confirm availability when booking.
+- **Maihama View Hotel by HULIC (Maihama area)** … has the "Spa Rose" large bath. A 24-hour coin laundry is on 2F (¥100 coins only).
 
 ---
 

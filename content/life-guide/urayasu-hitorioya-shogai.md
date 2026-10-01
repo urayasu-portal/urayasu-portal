@@ -3,9 +3,9 @@ title: "【浦安市】ひとり親・障がいのある子どもへの支援ガ
 slug: "urayasu-hitorioya-shogai"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T08:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-01
 newsTags: ["子育て", "子ども"]
-factChecked: "2026-07-15"
+factChecked: "2026-10-01"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "ひとり親", "障がい児", "療育", "浦安市"]
@@ -29,7 +29,7 @@ sources:
 
 {{< note >}}
 <strong>相談の入口</strong><br>
-・ひとり親家庭の手当・くらしの相談 → <strong>子育て支援課</strong><br>
+・ひとり親家庭の手当 → <strong>こども課</strong>／くらしの相談 → <strong>こども家庭支援センター</strong><br>
 ・障がい・発達に関する相談 → <strong>こども発達センター</strong>、障がい福祉課<br>
 どこに相談すればよいか迷うときも、まずは上の窓口へお問い合わせください。
 {{< /note >}}

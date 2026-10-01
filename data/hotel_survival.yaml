@@ -915,20 +915,8 @@ hotels:
         address: "千葉県浦安市舞浜1-4-109 舞浜イクスピアリ1F"
         url: "https://shop.seijoishii.com/seijoishii/"
       - role: "laundry"
-        in_building: false
-        name: "wash+ 富士見3丁目店"
-        name_en: "wash+ Fujimi 3-chome (Coin Laundry)"
-        hours: "24時間営業"
-        hours_en: "24h"
-        hours_zh: "24小时营业"
-        hours_ko: "24시간 영업"
-        hours_zhtw: "24小時營業"
-        is_24h: true
-        walk_min: 31
-        lat: 35.649422
-        lng: 139.887482
-        address: "千葉県浦安市富士見3-4-8"
-        url: "https://www.wash-plus.jp/store/"
+        in_building: true
+        walk_min: 0
       - role: "atm"
         in_building: false
         name: "セブンイレブン 浦安舞浜店"
