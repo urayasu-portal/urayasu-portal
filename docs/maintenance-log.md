@@ -1042,15 +1042,15 @@ jido-teate・kodomo-iryohi は第24回の照合結果と合わせ、確認日を
 - 「バルドラール浦安アリーナ」（R2.4.1〜R12.3.31）も有効
 - 参考：運動公園野球場は2026年6月から「**京葉ガス クラシモスタジアム浦安**」。固定記事に旧称の記載はなかった
 
-### 承認待ち：市役所の開庁時間
+### 訂正（ユーザー承認済み）：市役所の開庁時間
 
 city-hall-procedures:110 が「開庁時間：月〜金 8:30〜17:15（日曜開庁あり・要確認）」。公式は**平日・日曜とも 8:30〜17:00**（日曜は12/29〜1/3を除き、転出入・印鑑登録・証明発行など一部業務。市民課は市役所1階）。17:15 は誤りで、「要確認」も確定情報に置き換えられる。
 
-修正案：「開庁時間：月〜金 8:30〜17:00／日曜 8:30〜17:00（一部業務・12/29〜1/3を除く）」
+→ 「開庁時間：月〜金 8:30〜17:00／日曜 8:30〜17:00（一部業務・12/29〜1/3を除く）」に訂正済み（factChecked・lastmod を 2026-10-01 に更新）
 
 ### 検証
 
-`hugo --minify` exit 0、内部リンクの実害0件。照合のみの disaster-prevention・parks-playgrounds は factChecked のみ、sports-teams は lastmod も 2026-10-01 に更新。city-hall-procedures は訂正後に更新する。
+`hugo --minify` exit 0、内部リンクの実害0件。照合のみの disaster-prevention・parks-playgrounds は factChecked のみ、sports-teams は lastmod も 2026-10-01 に更新。city-hall-procedures は訂正と同時に更新。
 
 ---
 
