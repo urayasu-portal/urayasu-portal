@@ -3,7 +3,7 @@ title: "浦安市のペットガイド｜犬の登録・狂犬病予防注射・
 date: 2026-06-28T12:00:00+09:00
 lastmod: 2026-08-17
 newsTags: ["ペット", "ドッグラン", "動物"]
-factChecked: "2026-07-15"
+factChecked: "2026-10-02"
 categories:
   - "お知らせ"
 tags:
