@@ -1,8 +1,8 @@
 ---
 title: "浦安市の駅別生活ガイド｜浦安駅・新浦安駅・舞浜駅の暮らしやすさを比較"
 date: 2026-06-13
-lastmod: 2026-09-30
-factChecked: "2026-07-15"
+lastmod: 2026-10-02
+factChecked: "2026-10-02"
 newsTags: ["浦安駅", "新浦安駅", "舞浜駅", "新浦安", "舞浜"]
 description: "浦安市内の3つの駅「浦安駅」「新浦安駅」「舞浜駅」について、交通・買い物・子育て・医療・公園・公共施設など、日々の暮らしに関わる情報を駅別に整理しました。"
 categories: ["お知らせ"]
@@ -114,7 +114,7 @@ aliases:
 <div class="lg-art-cols">
   <div class="lg-art-col"><span class="lg-art-col-title">交通</span><p>東京駅方面、海浜幕張方面へアクセス。市内各方面へのバスは南口バスターミナルと北口に分かれるので、<a href="/life-guide/shinurayasu-station-bus-noriba/">新浦安駅のバス乗り場ガイド</a>で確認を。</p></div>
   <div class="lg-art-col"><span class="lg-art-col-title">買い物</span><p>アトレ、MONA、イオン、ニューコースト方面など大型商業施設を使いやすい。</p></div>
-  <div class="lg-art-col"><span class="lg-art-col-title">子育て・公共施設</span><p>公園、図書館、文化施設、健康センターなどと相性がよい。</p></div>
+  <div class="lg-art-col"><span class="lg-art-col-title">子育て・公共施設</span><p>公園、図書館、文化施設などと相性がよい。</p></div>
   <div class="lg-art-col"><span class="lg-art-col-title">注意点</span><p>駅から離れた新町方面は、バス・自転車移動が前提になりやすい。</p></div>
 </div>
 
