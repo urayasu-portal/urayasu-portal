@@ -1,0 +1,27 @@
+﻿# check-parking-fees.ps1 の許可リスト。駐車キーワードの近くにあるが「そのホテルの駐車料金」ではない金額。
+# 書式: ファイル名<TAB>金額（カンマ無しの整数）<TAB>理由
+# 料金改定などで本当に食い違ったときに見逃さないよう、ファイル×金額の組でだけ除外する。
+hoshinoresorts-1955-tokyo-bay.en.md	1000	周辺ホテルとの比較（多くは1泊1,000〜3,000円）
+hoshinoresorts-1955-tokyo-bay.en.md	3000	同上
+hoshinoresorts-1955-tokyo-bay.en.md	4000	周辺ホテルとの比較（連泊合計4,000〜6,000円）
+hoshinoresorts-1955-tokyo-bay.en.md	6000	同上
+hoshinoresorts-1955-tokyo-bay.en.md	18000	宿泊料金の価格帯（18,000〜50,000円）
+hoshinoresorts-1955-tokyo-bay.en.md	50000	同上
+hoshinoresorts-1955-tokyo-bay.ko.md	2000	連泊時の駐車料金合計（500円×12時間ごと）
+hoshinoresorts-1955-tokyo-bay.ko.md	3000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.ko.md	6000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh.md	1000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh.md	2000	連泊時の駐車料金合計
+hoshinoresorts-1955-tokyo-bay.zh.md	3000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh.md	4000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh.md	6000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh.md	18000	宿泊料金の価格帯
+hoshinoresorts-1955-tokyo-bay.zh.md	50000	宿泊料金の価格帯
+hoshinoresorts-1955-tokyo-bay.zh-tw.md	1000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh-tw.md	2000	連泊時の駐車料金合計
+hoshinoresorts-1955-tokyo-bay.zh-tw.md	3000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh-tw.md	4000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh-tw.md	6000	周辺ホテルとの比較
+hoshinoresorts-1955-tokyo-bay.zh-tw.md	18000	宿泊料金の価格帯
+hoshinoresorts-1955-tokyo-bay.zh-tw.md	50000	宿泊料金の価格帯
+urayasu-sun-hotel.en.md	8800	同じ文の日帰りプラン料金
