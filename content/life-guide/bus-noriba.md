@@ -4,6 +4,7 @@ title: "浦安市の駅別バス乗り場ガイド｜浦安駅・新浦安駅・
 translationKey: "bus-noriba-hub"
 date: 2026-09-30T20:00:00+09:00
 lastmod: 2026-10-01
+factChecked: "2026-10-01"
 newsTags: ["浦安駅", "新浦安駅", "路線バス", "シャトルバス", "おさんぽバス"]
 categories:
   - "お知らせ"

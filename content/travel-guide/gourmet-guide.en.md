@@ -25,8 +25,6 @@ This guide organizes **Urayasu Station area, Shin-Urayasu Station area, Maihama 
 > Opening hours, closing days, menus, prices, reservation requirements, and takeout availability are subject to change. Check the official website or SNS of each restaurant or facility before visiting.
 > This guide is based on publicly available official information.
 
-**Last updated: June 19, 2026**
-
 ---
 
 ## Area Overview

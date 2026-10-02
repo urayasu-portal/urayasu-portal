@@ -20,7 +20,7 @@ sources:
   - name: "Atre新浦安 咖啡·餐廳一覽（官方）"
     url: "https://www.atre.co.jp/shin_urayasu/caferestaurant/"
   - name: "New Coast新浦安 官方網站"
-    url: "https://www.newcoast-shinurayasu.com/"
+    url: "https://www.newcoast.jp/"
   - name: "浦安布萊頓飯店 東京灣 餐廳（官方）"
     url: "https://urayasu.brightonhotels.co.jp/restaurant/"
   - name: "東京灣東方飯店 餐廳（官方）"
@@ -90,7 +90,7 @@ faq:
 
 在地媒體特別提的是**麻辣湯專門店「麻辣湯天宝」**（3樓302）：2026年7月19日開幕，**營業時間11:00〜22:00（最後點餐21:30）**，店內60席、可外帶。從冬粉、蔬菜、菇類、肉類、海鮮中自選食材，搭配藥膳湯底，辣度分6段。開幕初期店外曾大排長龍，想避開人潮請錯開午晚餐尖峰。對於在Atre打烊後還想吃熱食的人，這是這一區少數營業到22:00的選擇。
 
-[官方資訊：New Coast新浦安](https://www.newcoast-shinurayasu.com/)
+[官方資訊：New Coast新浦安](https://www.newcoast.jp/)
 
 ---
 

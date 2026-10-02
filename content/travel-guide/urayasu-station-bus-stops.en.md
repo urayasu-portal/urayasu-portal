@@ -111,7 +111,7 @@ Buses to Shin-Urayasu Station are concentrated at **Stop B**. Every bus that com
 | **11** Symbol Road Line | B | Shin-Urayasu Station, Bay Park (ベイパーク) | Sogo Koen, Hinode-minami |
 | **18** Akemi-Takasu Line | B | Shin-Urayasu Station, Takasu-bashi (高洲橋) | Takasu Kaihin Koen |
 | **5** Horie Line | E | Horie 6-chome, Higashino Chuo (東野中央) | Shin-Urayasu Station |
-| **1** Hokuei Line | Urayasu-eki Higashiguchi (shown as 02 in the official information) | Hokuei 2-chome (北栄二丁目), Mihama Chugakko (美浜中学校). Some buses go via Tokyo Bay Medical Center | Shin-Urayasu Station (check the destination and stops on the way) |
+| **1** Kitazakae Line | Urayasu-eki Higashiguchi (shown as 02 in the official information) | Kitazakae 2-chome (北栄二丁目), Mihama Chugakko (美浜中学校). Some buses go via Tokyo Bay Medical Center | Shin-Urayasu Station (check the destination and stops on the way) |
 
 If you have business in the Horie or Higashino area, Route 5 from Stop E is convenient.
 
@@ -127,9 +127,9 @@ Route 11 to Hinode-minami is a year-round route that goes to the nearest stop fo
 
 The Medical Center Line of the city's community bus, the Osampo Bus, links Tokyo Bay Urayasu Ichikawa Medical Center with Shin-Urayasu Station, stopping at Urayasu Station on the way. Its stop is in a **different place** from the local buses' Urayasu-eki Iriguchi. According to the Cultural Hall's official directions, go from the ticket gates under the elevated tracks, turn left without crossing the crosswalk, and cross the scramble intersection toward the Sukiya restaurant. Walk past the restaurant and, without crossing at the first crosswalk, keep left to reach the stop for buses to Shin-Urayasu Station. For the stop for buses to Tokyo Bay Medical Center, check the city's bus stop map. The fare is a flat ¥100. For route and fare details, see [Urayasu City's official Osampo Bus page](https://www.city.urayasu.lg.jp/todokede/machi/bus/1046220.html).
 
-### Urayasu-eki Higashiguchi Stop (Route 1, Hokuei Line)
+### Urayasu-eki Higashiguchi Stop (Route 1, Kitazakae Line)
 
-Route 1 boards at **Urayasu-eki Higashiguchi**, and the official timetable shows the stop as **02**. Buses to Shin-Urayasu Station run either via Hokuei 2-chome and Mihama Chugakko or via Tokyo Bay Medical Center. If you're going to the medical center, choose a bus marked "医療" (medical) on the timetable. Some buses are bound for Urayasu-eki Iriguchi, so check the destination too. This is a separate stop from Urayasu-eki Iriguchi A, B, D and E.
+Route 1 boards at **Urayasu-eki Higashiguchi**, and the official timetable shows the stop as **02**. Buses to Shin-Urayasu Station run either via Kitazakae 2-chome and Mihama Chugakko or via Tokyo Bay Medical Center. If you're going to the medical center, choose a bus marked "医療" (medical) on the timetable. Some buses are bound for Urayasu-eki Iriguchi, so check the destination too. This is a separate stop from Urayasu-eki Iriguchi A, B, D and E.
 
 ## Getting Off the Bus and Walking to the Station {#alight}
 

@@ -1,7 +1,7 @@
 ---
 title: "The Natural Hot Spring at Maihama Eurasia: A Real Onsen 5 Minutes from the Disney Parks"
 description: "After 20,000 steps at Disney, soak in Maihama's only natural hot spring. A local guide to day-use bathing at Spa & Hotel Maihama Eurasia: prices, hours, kids' rules, tattoo policy, and the free shuttle from three stations."
-lastmod: 2026-08-16
+lastmod: 2026-10-03
 date: 2026-07-07
 draft: false
 cover:
@@ -14,10 +14,10 @@ sources:
   - name: "Spa & Hotel Maihama Eurasia Official Site – Hours & Prices"
     url: "https://my-spa.jp/spa/price/"
 tags: ["onsen", "maihama", "rest-day"]
-factChecked: "2026-08-11"
+factChecked: "2026-10-03"
 ---
 
-A full Disney day puts 20,000–30,000 steps on adult legs. The cure is five minutes from Maihama Station by free shuttle: **Spa & Hotel Maihama Eurasia**, the only place in the Maihama area with a genuine **natural hot spring (onsen)**. You don't need to stay overnight — day-use bathing gets you open-air baths, a cave bath, saunas and a foot bath. "Play at the park, soak in an onsen, sleep like a stone" is the perfect Japanese day, and you can have it without leaving Disney's doorstep.
+A full Disney day puts 20,000–30,000 steps on adult legs. The cure is about seven minutes from Maihama Station by free shuttle: **Spa & Hotel Maihama Eurasia**, the only place in the Maihama area with a genuine **natural hot spring (onsen)**. You don't need to stay overnight — day-use bathing gets you open-air baths, a cave bath, saunas and a foot bath. "Play at the park, soak in an onsen, sleep like a stone" is the perfect Japanese day, and you can have it without leaving Disney's doorstep.
 
 ## Who is this for?
 
@@ -40,7 +40,7 @@ Gender-separated bathing floors offer open-air baths, a cave bath, a lie-down ba
 For ¥950 extra you get the ganbanyoku (heated stone) floor with its own outfit and towels — a quiet, lie-down-and-sweat space with reclining lounge chairs. It's **junior-high age and up only**, so traveling parents tend to take turns while the other supervises bath time.
 
 {{< warn >}}
-**Guests with tattoos may be refused entry** — the standard rule at Japanese bathing facilities; consider cover stickers and check ahead. Also, the free shuttle from Maihama runs about every 20 minutes, so photograph the return timetable at the entrance when you arrive.
+**Guests with tattoos may be refused entry** — the standard rule at Japanese bathing facilities; consider cover stickers and check ahead. Also, the free shuttle from Maihama runs about every 15–20 minutes, so photograph the return timetable at the entrance when you arrive.
 {{< /warn >}}
 
 ## Practical information
@@ -50,7 +50,7 @@ For ¥950 extra you get the ganbanyoku (heated stone) floor with its own outfit 
 | **Day-use admission** | Adults (12+) ¥2,100 weekdays / ¥2,600 weekends & holidays. Kids (4 – elementary) ¥1,000 / ¥1,300. Ages 3 and under free (no bath access). Towels & loungewear included |
 | **SPA+ stone sauna** | +¥950 (junior high age and up) |
 | **Hours** | 11:00–1:00 am, plus morning bath 5:00–9:00 |
-| **Getting there** | **Free shuttle** from Maihama, Urayasu and Shin-Urayasu stations (Maihama South Exit stop C-3, about every 20 min, ~5 min ride) |
+| **Getting there** | **Free shuttle** from Maihama, Urayasu and Shin-Urayasu stations (Maihama South Exit stop C-3, about every 15–20 min, ~7 min ride) |
 | **Address** | 13-20 Chidori, Urayasu, Chiba |
 | **Parking** | Free for 6 hours with spa use |
 | **Best for** | The night after a park day / a rest-day morning / a dawn bath on departure day |
@@ -59,8 +59,8 @@ For ¥950 extra you get the ganbanyoku (heated stone) floor with its own outfit 
 
 ## How to get there from Maihama
 
-1. At **Maihama Station South Exit**, find bus stop **C-3** and board the free Eurasia shuttle (about every 20 minutes).
-2. You're there in about 5 minutes. For the return trip, shuttles also run to **Urayasu and Shin-Urayasu stations**, so you can ride back toward whichever station is closest to your hotel.
+1. At **Maihama Station South Exit**, find bus stop **C-3** and board the free Eurasia shuttle (about every 15–20 minutes).
+2. You're there in about 7 minutes. For the return trip, shuttles also run to **Urayasu and Shin-Urayasu stations**, so you can ride back toward whichever station is closest to your hotel.
 
 ## Pair it with
 

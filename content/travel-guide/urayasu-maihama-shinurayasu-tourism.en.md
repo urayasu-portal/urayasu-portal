@@ -41,8 +41,6 @@ faq:
   <strong>ℹ️ Please note</strong>　Opening hours, closed days, admission fees, transport information, hotel shuttles, and airport limousine bus schedules are subject to change. Always check the latest information on official facility and transport websites before visiting.
 </div>
 
-<p style="font-size:13px;color:#6b7a8d;margin-bottom:24px;">Last updated: June 18, 2026</p>
-
 <p>Many visitors come to Urayasu for Tokyo Disney Resort (TDR), but there are other places to enjoy beyond the parks. This guide divides the city into <strong>three areas — Maihama, Shin-Urayasu, and Urayasu Station</strong> — and covers sightseeing spots, dining, rainy-day options, and family tips from a local media perspective. Whether you have time before check-in, want to eat after park closing, or plan to explore the next day, this guide is for you.</p>
 
 <h2 id="overview">What You'll Find in This Guide</h2>

@@ -1,7 +1,7 @@
 {{- /*
   参照・出典ブロック
   フロントマター:
-    checkDate: "2026年5月"  — 情報確認時点の表示
+    checkDate: "2026年5月"  — 情報確認時点の表示（factChecked があればそちらの年月を優先）
     sources:                 — 参照・出典リスト
       - name: "浦安市公式サイト"
         url:  "https://www.city.urayasu.lg.jp/..."
@@ -11,9 +11,15 @@
 {{- $isZH := eq .Lang "zh" }}
 {{- $isKO := eq .Lang "ko" }}
 {{- $isZHTW := eq .Lang "zh-tw" }}
-{{- if or .Params.sources .Params.checkDate }}
+{{- /* factChecked（情報確認バッジ）があればその年月を優先し、checkDate との食い違いを防ぐ */ -}}
+{{- $asOf := .Params.checkDate }}
+{{- with .Params.factChecked }}
+  {{- $t := time.AsTime . }}
+  {{- if $isEN }}{{ $asOf = $t.Format "January 2006" }}{{ else if $isKO }}{{ $asOf = $t.Format "2006년 1월" }}{{ else }}{{ $asOf = $t.Format "2006年1月" }}{{ end }}
+{{- end }}
+{{- if or .Params.sources $asOf }}
 <div class="source-block">
-  {{- with .Params.checkDate }}
+  {{- with $asOf }}
   <p class="source-header"><i class="ti ti-calendar" aria-hidden="true"></i> {{ if $isEN }}This article is based on information as of <strong>{{ . }}</strong>. Hours, prices and services may change — please check the official sites for the latest information.{{ else if $isZH }}本文基于<strong>{{ . }}</strong>的信息编写。营业时间、费用等可能有变动，请以各官方网站的最新信息为准。{{ else if $isZHTW }}本文基於<strong>{{ . }}</strong>的資訊撰寫。營業時間、費用等可能有變動，請以各官方網站的最新資訊為準。{{ else if $isKO }}이 글은 <strong>{{ . }}</strong> 기준 정보를 바탕으로 작성되었습니다. 운영 시간・요금 등은 변경될 수 있으니 최신 정보는 각 공식 사이트에서 확인해 주세요.{{ else }}この記事は<strong>{{ . }}時点</strong>の情報をもとにしています。制度・営業時間・料金等は変更される場合があります。最新情報は各公式サイト等でご確認ください。{{ end }}</p>
   {{- end }}
   {{- with .Params.sources }}

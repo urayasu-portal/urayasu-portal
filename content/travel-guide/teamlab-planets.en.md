@@ -1,7 +1,7 @@
 ---
 title: "teamLab Planets (Toyosu): Barefoot Digital Art 30 Minutes from Disney"
 description: "Wade knee-deep through glowing water and walk barefoot through rooms of light — the world-famous digital art museum is just 30 minutes by train from Maihama. The perfect rainy-day plan B for a Tokyo Disney trip, with ticket and clothing tips from locals."
-lastmod: 2026-08-16
+lastmod: 2026-10-03
 date: 2026-07-07
 draft: false
 cover:
@@ -14,7 +14,7 @@ sources:
   - name: "teamLab Planets TOKYO DMM Official Site"
     url: "https://teamlabplanets.dmm.com/"
 tags: ["rainy-day", "with-kids", "toyosu", "teamlab"]
-factChecked: "2026-08-11"
+factChecked: "2026-10-03"
 ---
 
 You take off your shoes and socks, wade in up to your knees, and glowing koi swim across the water around your legs — **teamLab Planets TOKYO** is the "museum you walk into water" that travelers all over the world put on their Tokyo list. Here's the part most of them don't know: it's in Toyosu, **about 30 minutes by train from Maihama** — one of the easiest world-class Tokyo experiences to reach from a Disney hotel. Fully indoors, rain or shine, and utterly unlike anything in the parks.
@@ -47,7 +47,7 @@ Newer areas add athletic, bouncy, climb-on-it play and an interactive forest whe
 
 | | |
 |---|---|
-| **Tickets** | Adults (18+) from ¥3,600 (varies by date/time) / ages 13–17 ¥2,800 / kids (4–12) ¥1,500 / 3 and under free |
+| **Tickets** | Adults (18+) from ¥3,800 (varies by date/time; as of October 2026) / ages 13–17 ¥2,800 / kids (4–12) ¥1,500 / 3 and under free |
 | **How to buy** | **Date- and time-specified, buy online in advance** (official store). Weekends and holidays sell out — book as soon as your itinerary is set |
 | **Hours** | Vary by date — check the official site |
 | **Running until** | Scheduled through the end of 2027 |

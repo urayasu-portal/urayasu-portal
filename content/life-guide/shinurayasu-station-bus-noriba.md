@@ -3,6 +3,7 @@ title: "新浦安駅のバス乗り場ガイド｜南口A〜H・北口・空港�
 translationKey: "bus-noriba-shinurayasu"
 date: 2026-09-30T20:00:00+09:00
 lastmod: 2026-10-01
+factChecked: "2026-10-01"
 guideParent: "/life-guide/bus-noriba"
 newsTags: ["新浦安駅", "路線バス", "シャトルバス", "おさんぽバス"]
 categories:

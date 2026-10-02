@@ -3,6 +3,7 @@ title: "浦安駅のバス乗り場ガイド｜A・B・D・Eのりばの場所�
 translationKey: "bus-noriba-urayasu"
 date: 2026-09-14T19:00:00+09:00
 lastmod: 2026-10-01
+factChecked: "2026-09-30"
 guideParent: "/life-guide/bus-noriba"
 newsTags: ["浦安駅", "浦安駅入口バス停", "路線バス", "シャトルバス"]
 categories:

@@ -215,8 +215,6 @@ factChecked: "2026-08-16"
 - <a href="https://www.tokyodisneyresort.jp/kr/" target="_blank" rel="noopener">도쿄 디즈니 리조트 공식 사이트</a>
 - 각 호텔 공식 사이트·각 택시 회사 공식 사이트
 
-최종 확인일: 2026년 7월 5일
-
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>호텔 선택이 고민이라면</h3>

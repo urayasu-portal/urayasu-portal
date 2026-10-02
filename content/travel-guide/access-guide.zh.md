@@ -215,8 +215,6 @@ factChecked: "2026-09-01"
 - <a href="https://www.tokyodisneyresort.jp/tc/" target="_blank" rel="noopener">东京迪士尼度假区官方网站</a>
 - 各酒店官方网站·各出租车公司官方网站
 
-最后确认日期：2026年7月5日
-
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>选酒店拿不定主意？</h3>

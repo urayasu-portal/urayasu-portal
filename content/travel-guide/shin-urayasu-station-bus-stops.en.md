@@ -28,7 +28,7 @@ faq:
   - q: "Where are the bus stops at Shin-Urayasu Station?"
     a: "They are split between stops A–G at the South Exit bus terminal, stop H along Symbol Road on the South Exit side, and the North Exit. From October 1, 2026, limousine buses to Haneda and Narita airports leave from North Exit J."
   - q: "Which stop do I use from Shin-Urayasu Station to Urayasu Station?"
-    a: "Routes 3, 11 and 18 bound for Urayasu-eki Iriguchi (浦安駅入口) leave from H. At the North Exit, Route 2 leaves from 02 and Route 5 from 03 in the official search, and Route 5 also leaves from South Exit A. Route 1 from A is the Hokuei loop via Urayasu-eki Higashiguchi (浦安駅東口), with some buses via the medical center and some terminating at Urayasu-eki Iriguchi. Check the notes on the destination."
+    a: "Routes 3, 11 and 18 bound for Urayasu-eki Iriguchi (浦安駅入口) leave from H. At the North Exit, Route 2 leaves from 02 and Route 5 from 03 in the official search, and Route 5 also leaves from South Exit A. Route 1 from A is the Kitazakae loop via Urayasu-eki Higashiguchi (浦安駅東口), with some buses via the medical center and some terminating at Urayasu-eki Iriguchi. Check the notes on the destination."
   - q: "Which stop do I use from Shin-Urayasu Station to Maihama Station?"
     a: "Options include Route 14 from South Exit B and Route 14 from North Exit 05 in the official search. Route 23 to Maihama Station also leaves from H, but check its operating days and times. The Osampo Bus Maihama Line winds through the city and takes about 60 minutes."
   - q: "Where do I catch the limousine bus from Shin-Urayasu Station to Haneda or Narita Airport?"
@@ -60,7 +60,7 @@ The South Exit bus terminal has stops **A–G** in front of the station. **H** i
 
 | Stop | Routes | Main destinations |
 |---|---|---|
-| **South Exit A** | 1, 5 | 1: Hokuei loop toward Mihama Chugakko (美浜中学校), Hokuei Chuo (北栄中央) and Urayasu-eki Higashiguchi (浦安駅東口). Some buses go via the medical center and some terminate at Urayasu-eki Iriguchi. 5: Urayasu-eki Iriguchi via Higashino 2-chome (東野二丁目) |
+| **South Exit A** | 1, 5 | 1: Kitazakae loop toward Mihama Chugakko (美浜中学校), Kitazakae Chuo (北栄中央) and Urayasu-eki Higashiguchi (浦安駅東口). Some buses go via the medical center and some terminate at Urayasu-eki Iriguchi. 5: Urayasu-eki Iriguchi via Higashino 2-chome (東野二丁目) |
 | **South Exit B** | 14, 22, 24, 38 | Maihama Station and Chidori Shako (千鳥車庫) (14); Chidori Shako (22); Fujimi loop (富士見循環) (24); Express toward Akemi Shogakko (明海小学校) and Quon Shin-Urayasu (クオン新浦安) (38) |
 | **South Exit C** | 16, 17 | 16: Hinode 7-chome (日の出七丁目) via Proud Shin-Urayasu Park Marina (プラウド新浦安パークマリーナ). 17: Hinode 7-chome and Bay City Urayasu (ベイシティ浦安) |
 | **South Exit D** | 3, 11, 23 | Sogo Koen (総合公園) via Akemi 5-chome (明海五丁目) and others (3, 23); Sogo Koen and Hinode-minami (日の出南) via Bay Park (ベイパーク) (11). Check the destination display |
@@ -83,7 +83,7 @@ The South Exit bus terminal has stops **A–G** in front of the station. **H** i
 
 **Routes 3, 11 and 18 bound for Urayasu-eki Iriguchi leave from H.** H is outside the South Exit bus terminal, along Symbol Road. If you board at the North Exit, **Route 2 leaves from 02 and Route 5 from 03** in the official search. Route 5 also runs from South Exit A to Urayasu-eki Iriguchi.
 
-**Route 1 from South Exit A** is the Hokuei loop and goes via Urayasu-eki Higashiguchi. On the timetable, **"医療" means buses toward Tokyo Bay Medical Center, and "浦" means buses terminating at Urayasu-eki Iriguchi**. Choose the bus that suits your destination, including unmarked buses.
+**Route 1 from South Exit A** is the Kitazakae loop and goes via Urayasu-eki Higashiguchi. On the timetable, **"医療" means buses toward Tokyo Bay Medical Center, and "浦" means buses terminating at Urayasu-eki Iriguchi**. Choose the bus that suits your destination, including unmarked buses.
 
 The drop-off point for buses bound for Urayasu-eki Iriguchi and the Urayasu-eki Higashiguchi stop served by Route 1 are separate stops. The locations on the Urayasu Station side are covered in the [Urayasu Station bus stop guide](/en/travel-guide/urayasu-station-bus-stops/).
 
@@ -139,7 +139,7 @@ They are split between stops A–G at the South Exit bus terminal, stop H along 
 
 ### Which stop do I use from Shin-Urayasu Station to Urayasu Station?
 
-Routes 3, 11 and 18 bound for Urayasu-eki Iriguchi (浦安駅入口) leave from H. At the North Exit, Route 2 leaves from 02 and Route 5 from 03 in the official search, and Route 5 also leaves from South Exit A. Route 1 from A is the Hokuei loop via Urayasu-eki Higashiguchi (浦安駅東口), with some buses via the medical center and some terminating at Urayasu-eki Iriguchi. Check the notes on the destination.
+Routes 3, 11 and 18 bound for Urayasu-eki Iriguchi (浦安駅入口) leave from H. At the North Exit, Route 2 leaves from 02 and Route 5 from 03 in the official search, and Route 5 also leaves from South Exit A. Route 1 from A is the Kitazakae loop via Urayasu-eki Higashiguchi (浦安駅東口), with some buses via the medical center and some terminating at Urayasu-eki Iriguchi. Check the notes on the destination.
 
 ### Which stop do I use from Shin-Urayasu Station to Maihama Station?
 

@@ -46,8 +46,6 @@ Taxi demand has been rising in recent years, and you may find **long queues at s
 
 > **Please note**
 > Taxi fares, flat-rate airport fares, booking fees, pick-up fees, coverage areas, and dispatch conditions are subject to change. Before use, check the latest information on individual taxi company websites, the Chiba Taxi Association website, and official airport websites.
->
-> Last verified: June 19, 2026
 
 ---
 

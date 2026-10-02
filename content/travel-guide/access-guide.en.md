@@ -217,8 +217,6 @@ factChecked: "2026-08-16"
 - <a href="https://www.tokyodisneyresort.jp/en/" target="_blank" rel="noopener">Tokyo Disney Resort official site</a>
 - Official websites of each hotel and taxi company
 
-Last verified: July 5, 2026
-
 <div class="tg-cross-link" style="margin-top:32px;">
   <div>
     <h3>Not sure which hotel to pick?</h3>
