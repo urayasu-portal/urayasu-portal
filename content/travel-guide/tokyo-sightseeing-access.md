@@ -2,7 +2,7 @@
 title: "舞浜・浦安から東京観光へ：浅草・渋谷・スカイツリーほか7大スポット行き方＆運賃早見表"
 description: "浅草・東京スカイツリー・東京タワー・皇居・秋葉原・渋谷・原宿へ、京葉線（舞浜・新浦安）と東西線（浦安駅）それぞれからの最短ルートと運賃（IC）を一覧表で。タッチ決済とSuicaの使い分け、東京駅の京葉線ホームが遠い問題、朝ラッシュ回避など地元のコツも。"
 date: 2026-07-07
-lastmod: 2026-09-10
+lastmod: 2026-10-03
 factChecked: "2026-08-01"
 draft: false
 cover:
@@ -67,7 +67,7 @@ tags:
 
 展望デッキ（天望デッキ350m／天望回廊450m）は当日券もありますが、混雑日は入場までの列を避けられる**日時指定の前売り券**が便利です。
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.comでスカイツリー展望券を見る →</a></p>
+日時指定券は<a href="https://www.tokyo-skytree.jp/ticket/" target="_blank" rel="noopener">東京スカイツリー公式のチケットページ</a>からWEBで購入できます（天望デッキ＆天望回廊のセット券が基本）。
 
 {{< ad-disclosure >}}
 
