@@ -1,8 +1,8 @@
 ---
 title: "Hiyori Hotel Maihama | Foot Massager + Shoe Dryer in All Rooms, 30-Item Buffet Breakfast, Shuttle from Maihama South Exit C3"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-06-17
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Hiyori Hotel Maihama (Higashino district). Foot massager and shoe dryer in all guest rooms. Infused water server free of charge. 30+ item Japanese/Western buffet breakfast. 40 parking spaces ¥1,000/night (first-come). Shuttle from Maihama Station South Exit C3: approx. 10 min."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Hiyori Hotel Maihama is a hotel in the Higashino district offering some genuinel
 
 | Item | Details |
 |---|---|
-| Address | Higashino district, Urayasu, Chiba (confirm exact address on official website) |
+| Address | 2-25-8 Higashino, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Higashino (Business Hotel) |
 | Check-in / Check-out | 15:00 / 11:00 |

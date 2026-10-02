@@ -1,8 +1,8 @@
 ---
 title: "LAGENT HOTEL Tokyo Bay | 2024 Rakuten Silver Award, Adjacent Convenience Store Open 24 Hours, 190 Parking Spaces"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-10-01
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of LAGENT HOTEL Tokyo Bay. Won the Rakuten Travel Silver Award 2024. 24-hour convenience store adjacent to the hotel. 190 parking spaces (first-come). Up to 6-person rooms. 4 coin laundry machines. Return shuttle from TDR runs until approx. 21:00. No large communal bath. Price range ¥8,000–¥20,000."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ LAGENT HOTEL Tokyo Bay won the Rakuten Travel Silver Award in 2024 with consiste
 
 | Item | Details |
 |---|---|
-| Address | Maihama/Shin-Urayasu area, Urayasu, Chiba (confirm exact address on official website) |
+| Address | 5-7-1 Hinode, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Shin-Urayasu area (Business Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |

@@ -1,8 +1,8 @@
 ---
 title: "Four Stories Hotel | Area's Most Affordable, Last Shuttle 23:00, Parking ¥1,500/Night — Small Hotel with Unique Floor Themes"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-07-22"
-lastmod: 2026-07-22
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Four Stories Hotel. 26 rooms across 4 floors, each with a different story theme. Last shuttle to the hotel at 23:00 (critical!). Nearest convenience store 19 min on foot. Parking ¥1,500/night (8 spaces, first-come). The area's most affordable option. Price range ¥10,000–¥25,000."
 tags:
   - Hotel
@@ -22,11 +22,11 @@ Four Stories Hotel is a small boutique hotel with 26 rooms across 4 floors, each
 
 | Item | Details |
 |---|---|
-| Address | Maihama/Shin-Urayasu area (confirm exact address on official website) |
+| Address | 1-11-31 Fujimi, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Near Maihama (Boutique Hotel) |
 | Rooms | 26 |
-| Check-in / Check-out | 15:00 / 11:00 |
+| Check-in / Check-out | 15:00 / 10:00 |
 | Official Website | [hpdsp.jp (EN)](https://hpdsp.jp/fourstorieshotel/en/) |
 
 ---

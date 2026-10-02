@@ -1,8 +1,8 @@
 ---
 title: "Dreamgate Maihama | Directly Connected to JR Maihama Station, NewDays Inside, Children 6 and Under Sleep Free"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-07-22
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Dreamgate Maihama. Main building: directly connected left of Maihama Station ticket gate. Annex: directly connected right. NewDays convenience store inside (6:30–23:00). Children 6 and under sleep free. 3 coin laundry machines per building (room status viewable on TV). Ground-floor Saizeriya for breakfast. Price range ¥15,000–¥35,000."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Dreamgate Maihama has an access advantage that stands alone in the area: **both 
 
 | Item | Details |
 |---|---|
-| Address | 1 Maihama, Urayasu, Chiba (directly connected to JR Maihama Station) |
+| Address | 26-5 Maihama, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Maihama Station (direct connection) |
 | Check-in / Check-out | 15:00 / 11:00 |

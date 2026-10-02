@@ -1,8 +1,8 @@
 ---
 title: "Hyatt Regency Tokyo Bay | Dedicated Limousine Stop Added Dec 2024, Club Lounge, Chromecast in All Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-07-22
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Hyatt Regency Tokyo Bay. Dedicated airport limousine bus stop added December 20, 2024 (direct airport access with zero-minute walk). Hyatt brand with club lounge. All rooms with separated bathroom and wash area. Children 12 and under sleep free. Chromecast in all rooms. Price range ¥25,000–¥60,000."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Hyatt Regency Tokyo Bay is a Shin-Urayasu hotel from the Hyatt brand, carrying t
 
 | Item | Details |
 |---|---|
-| Address | 1-1-1 Mihama, Urayasu, Chiba |
+| Address | 5-8-23 Akemi, Urayasu, Chiba |
 | Phone | 047-305-1234 |
 | Area | Shin-Urayasu (Upscale Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |

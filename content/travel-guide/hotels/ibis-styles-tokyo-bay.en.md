@@ -1,8 +1,8 @@
 ---
 title: "ibis Styles Tokyo Bay | Accor Design Hotel, 14:00 Check-In (1 Hour Earlier), Coin Laundry, Children 11 and Under Sleep Free"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-10-01
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of ibis Styles Tokyo Bay (Accor). 14:00 check-in (1 hour earlier than typical 15:00). Japanese and Western buffet breakfast. Coin laundry available. Children 11 and under sleep free (same-bed sharing). 36 parking spaces (first-come). Free baggage storage at check-in and after check-out. Price range ¥10,000–¥25,000."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ ibis Styles Tokyo Bay is an Accor design hotel in the Shin-Urayasu area. The 14:
 
 | Item | Details |
 |---|---|
-| Address | Shin-Urayasu area, Urayasu, Chiba (confirm exact address on official website) |
+| Address | 2-1-1 Hinode, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Shin-Urayasu (Design Hotel) |
 | Check-in / Check-out | 14:00 / 12:00 |

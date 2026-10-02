@@ -1,8 +1,8 @@
 ---
 title: "Maihama Eurasia | The Only Natural Hot Spring in the Maihama Resort Area, Shuttles from 3 Stations, Day-Trip Spa Available"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-07-22
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Maihama Eurasia. The only hotel in the Maihama resort zone with a natural hot spring open to the public. Outdoor, cave, sauna, stone bath, and foot bath. Shuttle buses from 3 stations (Maihama/Urayasu/Shin-Urayasu). Day-trip hot spring use also available. Nearest convenience store 10 min walk. Check-out 10:00."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Maihama Eurasia is uniquely positioned as the **only hotel in the Maihama resort
 
 | Item | Details |
 |---|---|
-| Address | Maihama resort area, Urayasu, Chiba (confirm exact address on official website) |
+| Address | 13-20 Chidori, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Maihama resort zone (Hot Spring Hotel) |
 | Check-in / Check-out | 15:00 / 10:00 |

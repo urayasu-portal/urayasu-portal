@@ -1,8 +1,8 @@
 ---
 title: "Fantasy Springs Hotel | Newest Disney Hotel (2024), Grand Chateau Direct Fantasy Springs Access + 8 Attraction Tickets"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-30"
-lastmod: 2026-09-30
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Fantasy Springs Hotel. Disney Hotel opened June 2024 with two tiers: Grand Chateau (56 rooms, direct access to Fantasy Springs + 8 attraction tickets, luxury pricing) and Fantasy Chateau (419 rooms, deluxe). Happy Entry applies to both. A complete guide to the newest TDS Disney Hotel."
 tags:
   - Hotel
@@ -22,8 +22,8 @@ Fantasy Springs Hotel, which opened in June 2024 alongside the Fantasy Springs e
 
 | Item | Details |
 |---|---|
-| Address | 1-13 Maihama, Urayasu, Chiba (Fantasy Springs, TDS) |
-| Phone | 0570-05-1118 (Disney Hotel reservation line) |
+| Address | 1-2 Maihama, Urayasu, Chiba |
+| Phone | 047-305-8888 |
 | Area | Maihama (TDR Disney Hotel, 2024 newest opening) |
 | Rooms | Grand Chateau: 56 / Fantasy Chateau: 419 (total 475) |
 | Check-in / Check-out | 15:00 / 12:00 |

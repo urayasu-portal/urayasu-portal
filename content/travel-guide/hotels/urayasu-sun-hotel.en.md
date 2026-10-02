@@ -1,8 +1,8 @@
 ---
 title: "Urayasu Sun Hotel | 3-Min Walk from Urayasu Station, Free Continental Breakfast from 6:00, 24-Hour Front Desk"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-30"
-lastmod: 2026-09-30
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Urayasu Sun Hotel. 3-min walk from Urayasu Station (Tozai Line). Free continental breakfast from 6:00am. 24-hour front desk (last check-in 0:30). 2F coin laundry (2 washers + 2 dryers). 10 parking spaces ¥900/night (first-come). Day-use plan ¥8,800+. Weekly plans available."
 tags:
   - Hotel
@@ -22,10 +22,10 @@ Urayasu Sun Hotel is a compact business hotel approximately 3 minutes on foot fr
 
 | Item | Details |
 |---|---|
-| Address | 4-13-3 Nekozane, Urayasu, Chiba |
-| Phone | 047-355-2611 |
+| Address | 1-19-13 Todaijima, Urayasu, Chiba |
+| Phone | 047-382-8811 |
 | Area | Urayasu Station area (Business Hotel) |
-| Check-in / Check-out | 15:00 / 11:00 |
+| Check-in / Check-out | 15:00 / 10:00 |
 | Official Website | [urayasu-sun-hotel.com (EN)](https://www.urayasu-sun-hotel.com/english/) |
 
 ---

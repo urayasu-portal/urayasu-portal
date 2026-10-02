@@ -1,8 +1,8 @@
 ---
 title: "Maihama View Hotel | TDR Official Hotel Rebranded 2025, Large Bath 'Spa Rose', Free Shuttle to Maihama and Ikspiari"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-10-01"
-lastmod: 2026-10-01
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Maihama View Hotel (rebranded from Tokyo Bay Maihama Hotel in 2025, operated by HULIC). TDR Official Hotel with large bath 'Spa Rose' — unusual among Official Hotels. Free shuttle to Maihama Station, Ikspiari, and Bayside (5 min). 24-hour coin laundry on 2F. Price range ¥20,000–¥40,000."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Maihama View Hotel (formerly Tokyo Bay Maihama Hotel, rebranded and reopened in 
 
 | Item | Details |
 |---|---|
-| Address | 1-6 Maihama, Urayasu, Chiba |
+| Address | 1-34 Maihama, Urayasu, Chiba |
 | Phone | 047-355-1222 |
 | Area | Maihama (TDR Official Hotel) |
 | Check-in / Check-out | 15:00 / 12:00 |

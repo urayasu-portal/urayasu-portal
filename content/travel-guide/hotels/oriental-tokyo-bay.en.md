@@ -1,8 +1,8 @@
 ---
 title: "Hotel Oriental Tokyo Bay | 1-Minute from Shin-Urayasu Station, 69 Shuttles/Day, 24-Hour In-House Convenience Store, Cinderella Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-10-01
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Hotel Oriental Tokyo Bay (TDR Partner Hotel). Deck connection to Shin-Urayasu Station (1 min walk). 69 free shuttle buses per day — the highest frequency among Partner Hotels. 24-hour in-house convenience store. 2F coin laundry. Cinderella Castle themed rooms. 8.5m projection mapping. ¥16,500+."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Hotel Oriental Tokyo Bay is a TDR Partner Hotel offering an exceptional shuttle 
 
 | Item | Details |
 |---|---|
-| Address | 1-6 Mihama, Urayasu, Chiba |
+| Address | 1-8-2 Mihama, Urayasu, Chiba |
 | Phone | 047-350-8111 |
 | Area | Shin-Urayasu (TDR Partner Hotel) |
 | Rooms | 511 |

@@ -1,8 +1,8 @@
 ---
 title: "Henn na Hotel Maihama Tokyo Bay | World's First Robot Hotel (Guinness Record), Dinosaur Check-In, Deep Bathtub in All Rooms"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-07-22
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Henn na Hotel Maihama Tokyo Bay. Guinness World Record for world's first robot hotel. Dinosaur robot at front desk; Henn na robot in all rooms. All rooms with bath/toilet separate and deep soaking tub. Shuttle to Maihama Station: approx. 7–10 min. Price range ¥11,200–¥79,600."
 tags:
   - Hotel
@@ -24,7 +24,7 @@ Note: From July 2026, the TDR shuttle service from this hotel is being reduced �
 
 | Item | Details |
 |---|---|
-| Address | Maihama area, Urayasu, Chiba (confirm exact address on official website) |
+| Address | 5-3-23 Fujimi, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Maihama area |
 | Rooms | 100 |

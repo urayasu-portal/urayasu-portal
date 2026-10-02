@@ -1,8 +1,8 @@
 ---
 title: "Tokyo Disneyland Hotel | 1-Minute Covered Walkway to TDL, Happy Entry 15 Min, Breakfast from 6:30am — The Prestige TDL Hotel"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-30"
-lastmod: 2026-09-30
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Tokyo Disneyland Hotel. 706 rooms. Covered walkway to TDL entrance (approx. 1 min). Happy Entry early admission (15 min before general). Breakfast from 6:30am. Concierge lounge. Nearest convenience store 6 min on foot (7-Eleven). Airport limousine at front. Price range ¥55,000–¥100,000+."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Tokyo Disneyland Hotel is the highest-prestige Disney Hotel at Tokyo Disneyland.
 
 | Item | Details |
 |---|---|
-| Address | 1-1 Maihama, Urayasu, Chiba 279-8511 |
+| Address | 29-1 Maihama, Urayasu, Chiba |
 | Phone | 047-305-3333 |
 | Area | Maihama (TDR Disney Hotel) |
 | Rooms | 706 |

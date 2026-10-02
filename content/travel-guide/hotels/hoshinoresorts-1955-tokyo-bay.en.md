@@ -1,8 +1,8 @@
 ---
 title: "Hoshino Resorts BEB5 Tokyo Bay | Opened June 2024, 1955 America Vintage Theme, In-House Lawson, 339 Parking ¥500/12hrs"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-10-01
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Hoshino Resorts BEB5 Tokyo Bay (opened June 2024, Hoshino Resorts' first Chiba location). 638 rooms in 23 types. 1955 America vintage diner theme. In-house Lawson convenience store. 339 parking spaces ¥500/12hrs (the lowest rate among area hotels). Shuttle 'Bus Number 1955' to TDR approx. 30 min. No large communal bath. Price range ¥18,000–¥50,000."
 tags:
   - Hotel
@@ -22,7 +22,7 @@ Hoshino Resorts BEB5 Tokyo Bay opened in June 2024 as Hoshino Resorts' first pro
 
 | Item | Details |
 |---|---|
-| Address | Shin-Urayasu area, Urayasu, Chiba (confirm exact address on official website) |
+| Address | 7-2-3 Hinode, Urayasu, Chiba |
 | Phone | Confirm on official website |
 | Area | Shin-Urayasu (Design Hotel, Hoshino Resorts brand) |
 | Rooms | 638 (23 types) |

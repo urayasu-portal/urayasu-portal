@@ -1,8 +1,8 @@
 ---
 title: "MyStays Maihama | 6-Minute Walk to TDS (Closest in Area B), Foot Massager in All Rooms, Fresh-Baked Bread Breakfast"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-07-22
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of MyStays Hotel Maihama. Only 90 rooms — 6-minute walk to Tokyo DisneySea, the shortest walking distance among 'non-Disney-Hotel' properties in Area B. Foot massager in all rooms. Fresh-baked bread for breakfast. Check-out 10:00. Price range ¥5,000–¥20,000."
 tags:
   - Hotel
@@ -22,8 +22,8 @@ MyStays Hotel Maihama is a compact 90-room hotel with a distinctive advantage: a
 
 | Item | Details |
 |---|---|
-| Address | 2-4 Maihama, Urayasu, Chiba (Area B, TDS adjacent) |
-| Phone | 047-380-5055 |
+| Address | 3-5-1 Tekkodori, Urayasu, Chiba |
+| Phone | 047-304-3939 |
 | Area | Maihama Area B (Budget Hotel) |
 | Rooms | 90 |
 | Check-in / Check-out | 15:00 / 10:00 |

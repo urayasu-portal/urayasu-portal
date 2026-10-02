@@ -1,8 +1,8 @@
 ---
 title: "Hotel Emion Tokyo Bay | The Only Natural Hot Spring Among TDR Partner Hotels, Welcome Baby Certified, Rooms for Up to 6"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-01"
-lastmod: 2026-10-01
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Hotel Emion Tokyo Bay. The only natural hot spring (saline spring, amber-colored) among TDR's four Partner Hotels. Welcome Baby certified for infants. 584 rooms including Family Wonder up to 6 guests. Free bike rental. 7 min from Shin-Urayasu Station by shuttle."
 tags:
   - Hotel
@@ -22,8 +22,8 @@ Hotel Emion Tokyo Bay is the only Tokyo Disney Resort Partner Hotel with a natur
 
 | Item | Details |
 |---|---|
-| Address | 2-14 Mihama, Urayasu, Chiba |
-| Phone | 047-387-6000 |
+| Address | 1-1-1 Hinode, Urayasu, Chiba |
+| Phone | 047-304-2727 |
 | Area | Shin-Urayasu (TDR Partner Hotel) |
 | Rooms | 584 |
 | Check-in / Check-out | 15:00 / 12:00 |

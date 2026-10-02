@@ -1,8 +1,8 @@
 ---
 title: "Hotel Daigo Urayasu | Year-Round Flat Rate (No Peak Pricing), Japanese-Style Rooms, Cash Only — 3 Min from Urayasu Station"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-30"
-lastmod: 2026-06-17
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Hotel Daigo Urayasu. Year-round flat rate — no price increase during summer, Golden Week, or year-end holidays. Japanese-style rooms available. 3-min walk from Urayasu Station. Convenience store below the hotel. 8 free parking spaces (first-come). Check-in 16:00. CASH ONLY — no credit cards accepted. Reference rate: ¥25,000/4 people."
 tags:
   - Hotel
@@ -22,8 +22,8 @@ Hotel Daigo Urayasu is a small 31-room inn approximately 3 minutes on foot from 
 
 | Item | Details |
 |---|---|
-| Address | 4-5-3 Hokuei, Urayasu, Chiba |
-| Phone | 047-353-1811 |
+| Address | 1-11-1 Kitazakae, Urayasu, Chiba |
+| Phone | 047-351-3772 |
 | Area | Urayasu Station area (Small Inn) |
 | Rooms | 31 |
 | Check-in / Check-out | 16:00 / 10:00 |

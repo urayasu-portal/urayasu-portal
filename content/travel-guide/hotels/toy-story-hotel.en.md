@@ -1,8 +1,8 @@
 ---
 title: "Toy Story Hotel | Andy's Room Theme Disney Hotel, Close to Bayside Station, Fantasy Springs Entrance from 10:00"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-30"
-lastmod: 2026-09-30
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Toy Story Hotel (Disney Hotel opened 2022). 595 rooms with Andy's room theme. Adjacent to Bayside Station (Disney Resort Line). Fantasy Springs entrance accessible from 10:00 (1 hour after park opening). 3F coin laundry. In-house shop 6:00–24:00. Airport limousine at the hotel front. Price range ¥45,000–¥65,000."
 tags:
   - Hotel
@@ -22,8 +22,8 @@ Toy Story Hotel is a Disney Hotel opened in 2022 with a theme based on the inter
 
 | Item | Details |
 |---|---|
-| Address | 1-13 Maihama, Urayasu, Chiba |
-| Phone | 0570-05-1118 (Disney Hotel reservation line) |
+| Address | 1-47 Maihama, Urayasu, Chiba |
+| Phone | 047-305-5555 |
 | Area | Maihama (TDR Disney Hotel, 2022 opening) |
 | Rooms | 595 |
 | Check-in / Check-out | 15:00 / 12:00 |

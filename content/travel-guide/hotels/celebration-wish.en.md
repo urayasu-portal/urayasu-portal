@@ -1,8 +1,8 @@
 ---
 title: "Tokyo Disneyland Celebration Hotel: Wish | Budget Disney Hotel with Beds for 4, Dreams & Fantasy Theme"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-09-30"
-lastmod: 2026-09-30
+factChecked: "2026-10-02"
+lastmod: 2026-10-02
 description: "Local review of Tokyo Disneyland Celebration Hotel: Wish. Among the most affordable Disney Hotels with standard rooms sleeping 4 and Happy Entry included. Dreams and fantasy theme inspired by TDL. Key notes: bus access from Shin-Urayasu, no Narita limousine, 11:00 checkout."
 tags:
   - Hotel
@@ -23,7 +23,7 @@ Tokyo Disneyland Celebration Hotel: Wish is a value-type Disney Hotel operated b
 | Item | Details |
 |---|---|
 | Address | 7-1-1 Akemi, Urayasu, Chiba |
-| Phone | 0570-05-1118 (Disney Hotel reservation line) |
+| Phone | 047-381-1188 |
 | Area | Shin-Urayasu (TDR Value-Type Disney Hotel) |
 | Check-in / Check-out | 15:00–24:00 / 11:00 |
 | Official Website | [tokyodisneyresort.jp (EN)](https://www.tokyodisneyresort.jp/en/hotel/dch.html) |
