@@ -228,3 +228,7 @@
   translation: "查看票價與日期"
 - id: ticket_badge_popular
   translation: "台灣人最常用"
+- id: past_notice
+  translation: "本文是<strong>在{{ .date }}之前發布的預告</strong>。該日期已過，最新狀況請以官方網站等為準。"
+- id: event_ended
+  translation: "<strong>本活動已結束</strong>（{{ .date }}）。文中內容為舉辦當時的資訊，最新資訊請以官方網站為準。"

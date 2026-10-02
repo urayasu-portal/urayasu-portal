@@ -228,3 +228,7 @@
   translation: "查看票价与日期"
 - id: ticket_badge_popular
   translation: "常用平台"
+- id: past_notice
+  translation: "本文是<strong>在{{ .date }}之前发布的预告</strong>。该日期已过，最新情况请以官方网站等为准。"
+- id: event_ended
+  translation: "<strong>本活动已结束</strong>（{{ .date }}）。文中内容为举办当时的信息，最新信息请以官方网站为准。"

@@ -228,3 +228,7 @@
   translation: "Check prices & dates"
 - id: ticket_badge_popular
   translation: "Popular"
+- id: past_notice
+  translation: "This article was <strong>published before {{ .date }}</strong> as an advance notice. That date has passed, so please check the official website for the current situation."
+- id: event_ended
+  translation: "<strong>This event has ended</strong> ({{ .date }}). The details reflect the information at the time. Please check the official website for the latest information."

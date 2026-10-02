@@ -27,6 +27,8 @@
     {{- with .Description }}<p class="post-description">{{ . }}</p>{{- end }}
   </header>
 
+  {{- partial "event-ended-notice.html" . }}
+
   {{- $coverReal := partial "cover-image.html" (dict "page" . "size" "full" "real" true) }}
   {{- if $coverReal }}
   <div class="post-cover"><img src="{{ $coverReal }}" alt="{{ .Title }}" loading="lazy"></div>

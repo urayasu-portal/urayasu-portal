@@ -228,3 +228,7 @@
   translation: "가격·날짜 확인"
 - id: ticket_badge_popular
   translation: "인기"
+- id: past_notice
+  translation: "이 글은 <strong>{{ .date }} 이전에 게시한 안내</strong>입니다. 해당 날짜가 지났으므로 현재 상황은 공식 사이트 등에서 확인해 주세요."
+- id: event_ended
+  translation: "<strong>이 이벤트는 종료되었습니다</strong>({{ .date }}). 게재 내용은 개최 당시의 정보입니다. 최신 정보는 공식 사이트에서 확인해 주세요."

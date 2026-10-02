@@ -228,3 +228,7 @@
   translation: "料金・日程を見る"
 - id: ticket_badge_popular
   translation: "人気"
+- id: past_notice
+  translation: "この記事は<strong>{{ .date }}より前に掲載した告知</strong>です。日付を過ぎているため、現在の状況は公式サイト等でご確認ください。"
+- id: event_ended
+  translation: "<strong>このイベントは終了しました</strong>（{{ .date }}）。掲載内容は開催当時の情報です。最新情報は公式サイトをご確認ください。"

@@ -109,28 +109,8 @@
       </div>
       {{- end }}
 
-      {{- /* 終了通知は「イベント」カテゴリの記事だけに表示する。
-            eventOngoing: true（終了日未定の開催中イベント）の場合は表示しない */}}
-      {{- if and (in (.Params.categories | default slice) "イベント") (not .Params.eventOngoing) }}
-      {{- with .Params.eventDate }}
-      {{- /* eventDate は文字列・スラッシュ範囲・リストのいずれかを許容する */}}
-      {{- $endDateStr := "" }}
-      {{- if reflect.IsSlice . }}
-        {{- $endDateStr = index (last 1 .) 0 }}
-      {{- else }}
-        {{- $endDateStr = index (last 1 (split (printf "%s" .) "/")) 0 }}
-      {{- end }}
-      {{- if $endDateStr }}
-        {{- $evTime := time $endDateStr }}
-        {{- /* 最終日の翌日0時を過ぎてから表示（開催当日に「終了」と出さない） */}}
-        {{- if ($evTime.AddDate 0 0 1).Before now }}
-        <div class="event-ended-warn">
-          <i class="ti ti-alert-triangle" aria-hidden="true"></i> <strong>このイベントは終了しました</strong>（{{ $endDateStr }}）。掲載内容は開催当時の情報です。最新情報は公式サイトをご確認ください。
-        </div>
-        {{- end }}
-      {{- end }}
-      {{- end }}
-      {{- end }}
+      {{- /* 日付経過の通知（イベント終了／予告記事）。判定は partials/event-ended-notice.html */}}
+      {{- partial "event-ended-notice.html" . }}
 
       {{/* ─ 目次生成 + 見出しID付与（生HTML <h2> も対応） ─ */}}
       {{- $content := .Content }}

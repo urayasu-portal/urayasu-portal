@@ -3389,6 +3389,12 @@ a.tg-lang-pill.is-active:hover { background: var(--accent); }
 @media (max-width: 640px) {
   .event-ended-warn { margin-left: 16px; margin-right: 16px; }
 }
+/* 予告記事の日付経過（イベント以外）：警告ではなく案内のトーン */
+.event-ended-warn--notice {
+  background: #eef4fb;
+  border-left-color: #5b8bd0;
+  color: #2f4a6b;
+}
 
 /* ---------- 注意・ノートボックス (記事本文内ショートコード) ---------- */
 .post-content .warn-box {
