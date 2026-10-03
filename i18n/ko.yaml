@@ -185,7 +185,7 @@
 - id: hl_narrow_shuttle_cta
   translation: "무료 셔틀 가이드 보기 →"
 - id: hl_narrow_cheap
-  translation: "가장 저렴한 객실은 비수기 기준 1실 약 ¥5,000부터입니다."
+  translation: "가장 저렴한 객실은 비수기 기준 1실 약 5,000엔부터입니다."
 - id: hl_narrow_cheap_cta
   translation: "가성비 추천 보기 →"
 - id: hl_closed_until
