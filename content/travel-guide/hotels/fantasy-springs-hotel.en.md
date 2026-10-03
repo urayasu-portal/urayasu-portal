@@ -2,7 +2,7 @@
 title: "Fantasy Springs Hotel | Newest Disney Hotel (2024), Grand Chateau Direct Fantasy Springs Access + 8 Attraction Tickets"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-10-02"
-lastmod: 2026-10-02
+lastmod: 2026-10-04
 description: "Local review of Fantasy Springs Hotel. Disney Hotel opened June 2024 with two tiers: Grand Chateau (56 rooms, direct access to Fantasy Springs + 8 attraction tickets, luxury pricing) and Fantasy Chateau (419 rooms, deluxe). Happy Entry applies to both. A complete guide to the newest TDS Disney Hotel."
 tags:
   - Hotel
@@ -87,6 +87,8 @@ From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
 
 **Happy Entry**
 Early park admission applies to both buildings (TDL: 15 minutes; TDS: 5–15 minutes during the entrance construction). Grand Chateau guests also have the direct access benefit (confirm full scope on official website).
+
+{{< happy-entry-excluded >}}
 
 **Pools / Baths**
 Large pool and relaxation facilities (confirm current operating status and fees on official website).

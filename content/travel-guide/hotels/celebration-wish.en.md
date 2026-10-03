@@ -2,7 +2,7 @@
 title: "Tokyo Disneyland Celebration Hotel: Wish | Budget Disney Hotel with Beds for 4, Dreams & Fantasy Theme"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-10-02"
-lastmod: 2026-10-02
+lastmod: 2026-10-04
 description: "Local review of Tokyo Disneyland Celebration Hotel: Wish. Among the most affordable Disney Hotels with standard rooms sleeping 4 and Happy Entry included. Dreams and fantasy theme inspired by TDL. Key notes: bus access from Shin-Urayasu, no Narita limousine, 11:00 checkout."
 tags:
   - Hotel
@@ -78,6 +78,8 @@ From Shin-Urayasu Station, about 20 minutes to Tokyo Station on the JR Keiyo Lin
 
 **Happy Entry**
 Disney Hotel guests enter the park 15 minutes before general admission via the dedicated hotel entrance. Park ticket required separately.
+
+{{< happy-entry-excluded >}}
 
 **Breakfast**
 Breakfast plan: simple boxed meal and small water bottle served in the 1F lounge. Drink bar available 14:00–24:00 (not during breakfast hours). "Snacks & Sundries" in-house shop on 1F has a wide selection of rice balls, sandwiches, and packed meals.

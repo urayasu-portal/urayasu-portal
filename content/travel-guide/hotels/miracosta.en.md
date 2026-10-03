@@ -2,7 +2,7 @@
 title: "Tokyo DisneySea Hotel MiraCosta | The Only Hotel Located Inside TDS"
 date: 2026-06-17T10:00:00+09:00
 factChecked: "2026-09-30"
-lastmod: 2026-09-30
+lastmod: 2026-10-04
 description: "Local review of Tokyo DisneySea Hotel MiraCosta. The only hotel physically inside Tokyo DisneySea, with harbor-view rooms, Happy Entry early admission, and Spa & Pool Terme Venezia. The most exclusive Disney Hotel experience — and what to be aware of."
 tags:
   - Hotel
@@ -81,6 +81,8 @@ A globally rare hotel set inside the park itself. Three sides — Toscana, Venez
 
 **Happy Entry**
 Hotel guests may enter the park 5–15 minutes before general admission (it varies by day during the entrance-area construction). The "Hotel & Park Gateway" entrance is available from 1 hour after opening — to rush for popular attractions at opening, use the main gate with your early admission benefit.
+
+{{< happy-entry-excluded >}}
 
 **Breakfast**
 "Oceano" on the 1F: Japanese and Western buffet (6:30–10:00), 286 seats. Breakfast overlooking the harbor offers a truly immersive atmosphere. "Silk Road Garden" is also available.

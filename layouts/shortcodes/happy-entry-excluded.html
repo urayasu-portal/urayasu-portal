@@ -1,0 +1,104 @@
+{{- /* ハッピーエントリーの対象外日（5言語）。使用例: {{< happy-entry-excluded >}}
+     データ: data/travel_facts.yaml の happy_entry.excluded（through / land_dates / sea_dates）。
+     ・ビルド日（日本時間）より前の日付は表示しない → 過ぎた日付を手で消す必要はない
+     ・through（公式が決定済みとしている最終月）を過ぎたら、日付一覧は出さず「公式で確認」の案内だけにする
+       （古い「対象外日はありません」が残り続けるのを防ぐ）
+     ・各言語の公式ページ（ja / en / kr / sc / tc）へリンクする
+     2026-10-04 新設（第36回）。 */ -}}
+{{- $lang := .Page.Language.Lang -}}
+{{- $d := hugo.Data.travel_facts.happy_entry.excluded -}}
+{{- $jst := now.UTC.Add (time.ParseDuration "9h") -}}
+{{- $today := $jst.Format "2006-01-02" -}}
+{{- $valid := le ($jst.Format "2006-01") $d.through -}}
+
+{{- /* 言語別の文言 */ -}}
+{{- $wd := dict
+    "ja"    (slice "日" "月" "火" "水" "木" "金" "土")
+    "en"    (slice "Sun" "Mon" "Tue" "Wed" "Thu" "Fri" "Sat")
+    "ko"    (slice "일" "월" "화" "수" "목" "금" "토")
+    "zh"    (slice "周日" "周一" "周二" "周三" "周四" "周五" "周六")
+    "zh-tw" (slice "週日" "週一" "週二" "週三" "週四" "週五" "週六") -}}
+{{- $sep := dict "ja" "・" "en" " / " "ko" " · " "zh" "、" "zh-tw" "、" -}}
+{{- $url := dict
+    "ja"    "https://www.tokyodisneyresort.jp/hotel/topics/info/happy_entry.html"
+    "en"    "https://www.tokyodisneyresort.jp/en/hotel/topics/info/happy_entry.html"
+    "ko"    "https://www.tokyodisneyresort.jp/kr/hotel/topics/info/happy_entry.html"
+    "zh"    "https://www.tokyodisneyresort.jp/sc/hotel/topics/info/happy_entry.html"
+    "zh-tw" "https://www.tokyodisneyresort.jp/tc/hotel/topics/info/happy_entry.html" -}}
+{{- $t := index (dict
+  "ja" (dict
+    "title"   "ハッピーエントリーの対象外日"
+    "land"    "<strong>東京ディズニーランド</strong>：%sは、ホテルミラコスタ・ファンタジースプリングスホテル（ファンタジーシャトー）・東京ディズニーセレブレーションホテルの宿泊者はハッピーエントリーを利用できません（ファンタジースプリングスホテルのグランドシャトーは利用できます）。"
+    "landNone" "<strong>東京ディズニーランド</strong>：%sまで、発表されている対象外日はありません。"
+    "sea"     "<strong>東京ディズニーシー</strong>：%sは、一部のホテルの宿泊者がハッピーエントリーを利用できません。対象ホテルは公式サイトで確認してください。"
+    "seaNone" "<strong>東京ディズニーシー</strong>：%sまで、対象外日はありません。"
+    "tail"    "%sより後の対象外日は約4か月前を目途に決まり、変更されることもあります。宿泊前に<a href=\"%s\" target=\"_blank\" rel=\"noopener\">公式サイト</a>で確認してください。"
+    "expired" "対象外日は約4か月前を目途に決まり、変更されることもあります。宿泊日が決まったら<a href=\"%s\" target=\"_blank\" rel=\"noopener\">公式サイト</a>で確認してください。"
+    "month"   "2006年1月")
+  "en" (dict
+    "title"   "Days when Happy Entry is not available"
+    "land"    "<strong>Tokyo Disneyland</strong>: on %s, guests of Hotel MiraCosta, Fantasy Springs Hotel (Fantasy Chateau) and Tokyo Disney Celebration Hotel cannot use Happy Entry (Grand Chateau guests at Fantasy Springs Hotel can)."
+    "landNone" "<strong>Tokyo Disneyland</strong>: no excluded days have been announced through %s."
+    "sea"     "<strong>Tokyo DisneySea</strong>: on %s, guests of some hotels cannot use Happy Entry. Check the official site for which hotels."
+    "seaNone" "<strong>Tokyo DisneySea</strong>: no excluded days through %s."
+    "tail"    "Excluded days after %s are usually set about four months ahead and can change. Check the <a href=\"%s\" target=\"_blank\" rel=\"noopener\">official page</a> before your stay."
+    "expired" "Excluded days are usually set about four months ahead and can change. Check the <a href=\"%s\" target=\"_blank\" rel=\"noopener\">official page</a> once your dates are fixed."
+    "month"   "January 2006")
+  "ko" (dict
+    "title"   "해피 엔트리 이용 불가일"
+    "land"    "<strong>도쿄디즈니랜드</strong>: %s에는 도쿄디즈니씨 호텔 미라코스타, 판타지 스프링스 호텔(판타지 샤토), 도쿄디즈니 셀러브레이션 호텔 투숙객은 해피 엔트리를 이용할 수 없습니다(판타지 스프링스 호텔 그랜드 샤토는 이용 가능)."
+    "landNone" "<strong>도쿄디즈니랜드</strong>: %s까지 발표된 이용 불가일은 없습니다."
+    "sea"     "<strong>도쿄디즈니씨</strong>: %s에는 일부 호텔 투숙객이 해피 엔트리를 이용할 수 없습니다. 대상 호텔은 공식 사이트에서 확인하세요."
+    "seaNone" "<strong>도쿄디즈니씨</strong>: %s까지 이용 불가일이 없습니다."
+    "tail"    "%s 이후의 이용 불가일은 약 4개월 전에 정해지며 변경될 수 있습니다. 숙박 전에 <a href=\"%s\" target=\"_blank\" rel=\"noopener\">공식 사이트</a>에서 확인하세요."
+    "expired" "이용 불가일은 약 4개월 전에 정해지며 변경될 수 있습니다. 숙박 일정이 정해지면 <a href=\"%s\" target=\"_blank\" rel=\"noopener\">공식 사이트</a>에서 확인하세요."
+    "month"   "2006년 1월")
+  "zh" (dict
+    "title"   "Happy Entry 不适用日"
+    "land"    "<strong>东京迪士尼乐园</strong>：%s，入住米拉柯斯达、梦幻泉乡大饭店（梦幻城堡）、迪士尼欢庆饭店的住客无法使用 Happy Entry（梦幻泉乡大饭店豪华城堡的住客可以使用）。"
+    "landNone" "<strong>东京迪士尼乐园</strong>：截至%s，暂无公布的不适用日。"
+    "sea"     "<strong>东京迪士尼海洋</strong>：%s部分酒店的住客无法使用 Happy Entry，对象酒店请以官网为准。"
+    "seaNone" "<strong>东京迪士尼海洋</strong>：截至%s没有不适用日。"
+    "tail"    "%s之后的不适用日通常约在4个月前确定，也可能变更。入住前请在<a href=\"%s\" target=\"_blank\" rel=\"noopener\">官网</a>确认。"
+    "expired" "不适用日通常约在4个月前确定，也可能变更。确定住宿日期后，请在<a href=\"%s\" target=\"_blank\" rel=\"noopener\">官网</a>确认。"
+    "month"   "2006年1月")
+  "zh-tw" (dict
+    "title"   "Happy Entry 不適用日"
+    "land"    "<strong>東京迪士尼樂園</strong>：%s，入住米拉柯斯達、夢幻泉鄉大飯店（夢幻城堡）、迪士尼樂祥飯店的房客無法使用 Happy Entry（夢幻泉鄉大飯店豪華城堡的房客可以使用）。"
+    "landNone" "<strong>東京迪士尼樂園</strong>：截至%s，尚無公布的不適用日。"
+    "sea"     "<strong>東京迪士尼海洋</strong>：%s部分飯店的房客無法使用 Happy Entry，對象飯店請以官網為準。"
+    "seaNone" "<strong>東京迪士尼海洋</strong>：截至%s沒有不適用日。"
+    "tail"    "%s之後的不適用日通常約在4個月前確定，也可能變更。入住前請在<a href=\"%s\" target=\"_blank\" rel=\"noopener\">官網</a>確認。"
+    "expired" "不適用日通常約在4個月前確定，也可能變更。確定住宿日期後，請在<a href=\"%s\" target=\"_blank\" rel=\"noopener\">官網</a>確認。"
+    "month"   "2006年1月")
+) $lang -}}
+{{- $w := index $wd $lang -}}
+{{- $u := index $url $lang -}}
+{{- $throughLabel := (time.AsTime (printf "%s-01" $d.through)).Format $t.month -}}
+
+{{- /* 日付リスト → 今日以降だけを言語別の書式で */ -}}
+{{- $fmt := dict "ja" "2006年1月2日" "en" "Jan 2, 2006" "ko" "2006년 1월 2일" "zh" "2006年1月2日" "zh-tw" "2006年1月2日" -}}
+{{- $open := dict "ja" "（" "en" " (" "ko" "(" "zh" "（" "zh-tw" "（" -}}
+{{- $close := dict "ja" "）" "en" ")" "ko" ")" "zh" "）" "zh-tw" "）" -}}
+{{- $parts := dict -}}
+{{- range $park := slice "land" "sea" -}}
+  {{- $list := slice -}}
+  {{- range (index $d (printf "%s_dates" $park)) -}}
+    {{- if ge . $today -}}
+      {{- $dt := time.AsTime . -}}
+      {{- $list = $list | append (printf "%s%s%s%s" ($dt.Format (index $fmt $lang)) (index $open $lang) (index $w (int $dt.Weekday)) (index $close $lang)) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $parts = merge $parts (dict $park (delimit $list (index $sep $lang))) -}}
+{{- end -}}
+
+<div class="warn-box happy-entry-excluded">
+<p><strong>{{ $t.title }}</strong></p>
+{{- if $valid }}
+<p>{{ if $parts.land }}{{ printf $t.land $parts.land | safeHTML }}{{ else }}{{ printf $t.landNone $throughLabel | safeHTML }}{{ end }}</p>
+<p>{{ if $parts.sea }}{{ printf $t.sea $parts.sea | safeHTML }}{{ else }}{{ printf $t.seaNone $throughLabel | safeHTML }}{{ end }}</p>
+<p>{{ printf $t.tail $throughLabel $u | safeHTML }}</p>
+{{- else }}
+<p>{{ printf $t.expired $u | safeHTML }}</p>
+{{- end }}
+</div>

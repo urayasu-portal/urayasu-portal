@@ -40,9 +40,9 @@ local_bus:
   urayasu_maihama_minutes_via_shin: "25"         # 同 乗車時間（6.8km）
 
 # ── ハッピーエントリー ───────────────────────────────
-# source: https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html
+# source: https://www.tokyodisneyresort.jp/hotel/topics/info/happy_entry.html （分数・対象外日。en/kr/sc/tc 版あり）
 # source: https://faq.tokyodisneyresort.jp/answer/67eaa65f57951a27c885671c/
-# checked: 2026-08-24
+# checked: 2026-10-04（旧 source の hotel_privilege.html は提携ホテル特典のページでハッピーエントリーの記載が無かったため差し替え）
 # 注意: 東京ディズニーシーは2025年9月から入口周辺の工事に伴い「5〜15分前」の変動制。
 #       工事は2028年度終了予定。ランドは15分前のまま。
 #       minutes は「ランドの分数」を指す。両パークをまとめて書く場合は both_label を使う。
@@ -50,6 +50,16 @@ happy_entry:
   minutes: "15"                              # 東京ディズニーランド：一般開園より早く入園できる分数
   land_minutes: "15"                         # ランド（同上・明示用）
   sea_minutes: "5〜15"                       # シー：工事に伴う変動制
+  # 対象外日（公式「2026年9月24日現在」）。ショートコード {{< happy-entry-excluded >}} が表示する。
+  #   ・ランドの対象外日は、ミラコスタ／ファンタジースプリングスホテル ファンタジーシャトー／セレブレーションホテルの宿泊者が利用不可
+  #     （ファンタジースプリングスホテル グランドシャトーは利用可）
+  #   ・日付は ISO 形式。ビルド日より前の日付はショートコードが自動で表示しない（手で消さなくてよい）
+  #   ・through＝公式が決定済みとしている最終月。これを過ぎると日付一覧を出さず「公式で確認」の案内だけにする
+  #   ・新しい日程が発表されたら（約4か月前）land_dates / sea_dates に追記し through と checked を更新する
+  excluded:
+    through: "2027-02"
+    land_dates: ["2026-10-31", "2026-11-10", "2027-01-12"]
+    sea_dates: []
 
 # ── 舞浜駅の荷物サービス ─────────────────────────────
 # source: https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html
