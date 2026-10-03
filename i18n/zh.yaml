@@ -185,7 +185,7 @@
 - id: hl_narrow_shuttle_cta
   translation: "查看免费班车指南 →"
 - id: hl_narrow_cheap
-  translation: "最便宜的房型平日约¥5,000起。"
+  translation: "最便宜的房型平日约5,000日元起。"
 - id: hl_narrow_cheap_cta
   translation: "查看超值之选 →"
 - id: hl_closed_until

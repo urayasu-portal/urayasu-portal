@@ -55,7 +55,7 @@
           "cat"         $cat
           "grp"         $grp
           "category"    $catLabel
-          "price_guide" .price_guide
+          "price_guide" (partial "yen-text.html" (dict "s" .price_guide "lang" $.Lang))
           "price_min"   ($md.price_min | default 0)
           "feature"     $hfeat
           "lat"         ($md.lat | default 0)

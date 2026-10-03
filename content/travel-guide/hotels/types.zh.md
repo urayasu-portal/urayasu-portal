@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼度假区酒店4大类解说 | 迪士尼酒店·指定酒店·合作酒店·周边优良酒店的区别"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-10-04
 factChecked: "2026-08-08"
 description: "东京迪士尼度假区的酒店分为迪士尼酒店（直营）、指定酒店、合作酒店、周边优良酒店四类。本文解说各类别的实际差异——乐园优先入场（Happy Entry）、馆内购票、免费班车、行李快递——以及地理位置和价格，帮助您选出最合适的类别。"
 tags:
@@ -61,7 +61,7 @@ faq:
 - 免费行李配送
 - 住宿专属商品及迪士尼主题客房
 
-**价格参考：** 约¥20,000起/2人（旺季大幅上涨）
+**价格参考：** 约20,000日元起/2人（旺季大幅上涨）
 
 **本站收录的迪士尼酒店（7家）**
 [东京迪士尼乐园大酒店](/zh/travel-guide/hotels/tdl-hotel/)、[米拉科斯达酒店](/zh/travel-guide/hotels/miracosta/)、[梦幻泉乡酒店](/zh/travel-guide/hotels/fantasy-springs-hotel/)、[迪士尼大使酒店](/zh/travel-guide/hotels/ambassador-hotel/)、[反斗奇兵大饭店](/zh/travel-guide/hotels/toy-story-hotel/)、[庆典酒店：许愿](/zh/travel-guide/hotels/celebration-wish/) / [发现](/zh/travel-guide/hotels/celebration-discover/)。
@@ -81,7 +81,7 @@ faq:
 - **舞滨站免费行李配送** — 到达当天可以空手进乐园
 - **不适用** Happy Entry（优先入场）
 
-**价格参考：** 约¥20,000起/2人
+**价格参考：** 约20,000日元起/2人
 
 **本站收录的指定酒店（6家）**
 [东京湾希尔顿酒店](/zh/travel-guide/hotels/hilton-tokyo-bay/)、[东京湾喜来登格兰特酒店](/zh/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[东京湾大仓酒店](/zh/travel-guide/hotels/hotel-okura-tokyo-bay/)、[舞滨日航大饭店](/zh/travel-guide/hotels/grand-nikko-tokyo-bay/)、[东京湾舞滨第一度假酒店](/zh/travel-guide/hotels/maihama-hotel-first-resort/)、[舞滨景观酒店（HULIC）](/zh/travel-guide/hotels/maihama-view-hotel/)。
@@ -101,7 +101,7 @@ faq:
 - 行李配送**收费**
 - **不适用** Happy Entry（优先入场）
 
-**价格参考：** 约¥15,000起/2人
+**价格参考：** 约15,000日元起/2人
 
 **本站收录的合作酒店（4家）**
 [浦安布莱顿酒店 东京湾](/zh/travel-guide/hotels/brighton-tokyo-bay/)、[东方酒店 东京湾](/zh/travel-guide/hotels/oriental-tokyo-bay/)、[艾米恩酒店 东京湾](/zh/travel-guide/hotels/emion-tokyo-bay/)、[三井花园PRANA东京湾酒店](/zh/travel-guide/hotels/mitsui-garden-prana/)。

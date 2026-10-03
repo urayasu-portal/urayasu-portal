@@ -5,6 +5,7 @@
      現状 ja/en の二言語対応（データに ko/zh 名が未整備のため）。 */ -}}
 {{- $fac := .Get 0 -}}
 {{- $isEN := eq .Page.Language.Lang "en" -}}
+{{- $lang := .Page.Language.Lang -}}
 {{- $info := dict -}}
 {{- range hugo.Data.hotels.areas -}}
   {{- $area := cond $isEN (.name_en | default .name) .name -}}
@@ -64,7 +65,7 @@
       {{- with .feature }}<span class="fl-feature">{{ . }}</span>{{ end }}
     </span>
     <span class="fl-price">
-      {{- if lt .price 999999 }}{{ if $isEN }}from ¥{{ lang.FormatNumberCustom 0 .price }}{{ else }}¥{{ lang.FormatNumberCustom 0 .price }}〜{{ end }}{{ end }}
+      {{- if lt .price 999999 }}{{ if $isEN }}from ¥{{ lang.FormatNumberCustom 0 .price }}{{ else }}{{ partial "yen-text.html" (dict "s" (printf "¥%s〜" (lang.FormatNumberCustom 0 .price)) "lang" $lang) }}{{ end }}{{ end }}
       <i class="ti ti-chevron-right" aria-hidden="true"></i>
     </span>
   </a>

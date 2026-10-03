@@ -33,14 +33,17 @@ param(
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 $csv  = Import-Csv (Join-Path $Root 'hotel-database-full.csv') -Encoding UTF8
 $kwRe  = '駐車|[Pp]arking|주차|停车|停車'
-$amtRe = '(?:¥\s*([\d,]{3,}))|(?:([\d,]{3,})\s*(?:円|엔|日元|日圓))'
+# ¥N ／ A–B円（範囲。zh/zh-tw は 2026-10-04 から「1,000–3,000日元」のように末尾にだけ通貨名）／ N円
+$amtRe = '(?:¥\s*([\d,]{3,}))|(?:([\d,]{3,})\s?[–〜～~\-]\s?([\d,]{3,})\s*(?:円|엔|日元|日圓))|(?:([\d,]{3,})\s*(?:円|엔|日元|日圓))'
 
 function Get-Amounts([string]$s) {
   $set = New-Object 'System.Collections.Generic.SortedSet[int]'
   foreach ($m in [regex]::Matches($s, $amtRe)) {
-    $v = if ($m.Groups[1].Success) { $m.Groups[1].Value } else { $m.Groups[2].Value }
-    $n = 0
-    if ([int]::TryParse(($v -replace ',', ''), [ref]$n) -and $n -ge 100) { [void]$set.Add($n) }
+    foreach ($g in 1..4) {
+      if (-not $m.Groups[$g].Success) { continue }
+      $n = 0
+      if ([int]::TryParse(($m.Groups[$g].Value -replace ',', ''), [ref]$n) -and $n -ge 100) { [void]$set.Add($n) }
+    }
   }
   return ,$set
 }

@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼附近实惠酒店比较 | 各地区价格·隐藏费用·本地警示"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-10-04
 factChecked: "2026-08-24"
 description: "本地媒体比较浦安·舞滨各地区的实惠酒店，涵盖千鸟地区·新浦安·浦安站周边·舞滨各区的价格范围，以及交通费·停车费等容易被忽视的隐藏费用，并点出当地常见陷阱。"
 tags:
@@ -48,26 +48,26 @@ faq:
 
 | 酒店 | 价格参考 | 特点 |
 |---|---|---|
-| [舞滨MyStays酒店](/zh/travel-guide/hotels/mystays-maihama/) | 约¥5,000起/2人 | 步行约6分钟至TDS（B区）；全室足部按摩机；现烤面包早餐 |
-| 欧亚舞滨酒店ANNEX | 约¥8,000起/2人 | 舞滨度假区内唯一大浴场（详见下方） |
+| [舞滨MyStays酒店](/zh/travel-guide/hotels/mystays-maihama/) | 约5,000日元起/2人 | 步行约6分钟至TDS（B区）；全室足部按摩机；现烤面包早餐 |
+| 欧亚舞滨酒店ANNEX | 约8,000日元起/2人 | 舞滨度假区内唯一大浴场（详见下方） |
 
 ### 新浦安地区
 
 | 酒店 | 价格参考 | 特点 |
 |---|---|---|
-| [新浦安MyStays会议中心酒店](/zh/travel-guide/hotels/mystays-shin-urayasu/) | 约¥7,500起/2人 | 自助洗衣¥200（区域最低）；TDR班车仅傍晚约3班 |
-| [新浦安Flexstay Inn](/zh/travel-guide/hotels/flexstay-shin-urayasu/) | 约¥7,800起/2人 | 全室迷你厨房；14:00可入住 |
-| [东京湾拉珍特酒店](/zh/travel-guide/hotels/lagent-tokyo-bay/) | 约¥8,000起/2人 | 最多6人房；紧邻24h便利店；190个停车位 |
-| [东京湾宜必思尚品酒店](/zh/travel-guide/hotels/ibis-styles-tokyo-bay/) | 约¥10,000起/2人 | 雅高旗下设计酒店；11岁以下免费 |
+| [新浦安MyStays会议中心酒店](/zh/travel-guide/hotels/mystays-shin-urayasu/) | 约7,500日元起/2人 | 自助洗衣200日元（区域最低）；TDR班车仅傍晚约3班 |
+| [新浦安Flexstay Inn](/zh/travel-guide/hotels/flexstay-shin-urayasu/) | 约7,800日元起/2人 | 全室迷你厨房；14:00可入住 |
+| [东京湾拉珍特酒店](/zh/travel-guide/hotels/lagent-tokyo-bay/) | 约8,000日元起/2人 | 最多6人房；紧邻24h便利店；190个停车位 |
+| [东京湾宜必思尚品酒店](/zh/travel-guide/hotels/ibis-styles-tokyo-bay/) | 约10,000日元起/2人 | 雅高旗下设计酒店；11岁以下免费 |
 
 ### 浦安站周边
 
 | 酒店 | 价格参考 | 特点 |
 |---|---|---|
-| [浦安阳光酒店](/zh/travel-guide/hotels/urayasu-sun-hotel/) | 约¥5,000起/2人 | 早餐6:00最早；停车¥900 |
-| [浦安景堡酒店](/zh/travel-guide/hotels/viewfort-urayasu/) | 约¥9,000起/2人 | 距浦安站步行1分钟；现烤可颂早餐 |
-| [醍醐酒店](/zh/travel-guide/hotels/hotel-daigo-urayasu/) | 约¥11,000起/2人 | **仅限现金**；固定房价；免费停车8个 |
-| [浦安站前 BAY HOTEL](/zh/travel-guide/hotels/bayhotel-urayasu/) | 约¥14,000起/2人 | 价格较高但全室配厨房；对面有24h超市 |
+| [浦安阳光酒店](/zh/travel-guide/hotels/urayasu-sun-hotel/) | 约5,000日元起/2人 | 早餐6:00最早；停车900日元 |
+| [浦安景堡酒店](/zh/travel-guide/hotels/viewfort-urayasu/) | 约9,000日元起/2人 | 距浦安站步行1分钟；现烤可颂早餐 |
+| [醍醐酒店](/zh/travel-guide/hotels/hotel-daigo-urayasu/) | 约11,000日元起/2人 | **仅限现金**；固定房价；免费停车8个 |
+| [浦安站前 BAY HOTEL](/zh/travel-guide/hotels/bayhotel-urayasu/) | 约14,000日元起/2人 | 价格较高但全室配厨房；对面有24h超市 |
 
 > **注：** 浦安站周边酒店**无前往TDR的免费班车**，需乘路线巴士（{{< fact "local_bus.urayasu_maihama_route" >}}路·舞滨线 约{{< fact "local_bus.urayasu_maihama_fare" >}}/人）或出租车。
 
@@ -75,13 +75,13 @@ faq:
 
 | 酒店 | 价格参考 | 特点 |
 |---|---|---|
-| 舞滨Four Stories酒店 | 约¥10,000起/2人 | 舞滨地区；无直达TDR班车，需乘路线巴士 |
+| 舞滨Four Stories酒店 | 约10,000日元起/2人 | 舞滨地区；无直达TDR班车，需乘路线巴士 |
 
 ### 最便宜的迪士尼直营
 
 | 酒店 | 价格参考 | 特点 |
 |---|---|---|
-| [庆典酒店（许愿/发现）](/zh/travel-guide/hotels/celebration-wish/) | 约¥20,000起/3人 | 迪士尼附属中最实惠；有Happy Entry权益 |
+| [庆典酒店（许愿/发现）](/zh/travel-guide/hotels/celebration-wish/) | 约20,000日元起/3人 | 迪士尼附属中最实惠；有Happy Entry权益 |
 
 ---
 
@@ -94,18 +94,18 @@ faq:
 浦安站周边的酒店**完全没有直达TDR的免费班车**，需乘路线巴士（{{< fact "local_bus.urayasu_maihama_route" >}}路·舞滨线 约{{< fact "local_bus.urayasu_maihama_minutes" >}}分钟，{{< fact "local_bus.urayasu_maihama_fare" >}}/人）或出租车。适合以东京市中心观光为主、迪士尼不是每天必去的行程。
 
 ### ③ 旺季容易全满
-¥5,000–7,000的实惠酒店在黄金周、暑假、年末年始时会迅速预满。如计划旺季出行，请尽早预订。
+5,000–7,000日元的实惠酒店在黄金周、暑假、年末年始时会迅速预满。如计划旺季出行，请尽早预订。
 
 ### ④ 停车费需确认
-部分酒店的停车费（¥900–¥1,630/晚）可能超出预期。有车旅客需提前确认停车场情况。
+部分酒店的停车费（900–1,630日元/晚）可能超出预期。有车旅客需提前确认停车场情况。
 
 ---
 
 ## 选法总结
 
-- **预算最低** → 浦安阳光酒店（约¥5,000）或舞滨MyStays酒店（约¥5,000）
-- **新浦安+想省钱** → 新浦安MyStays（约¥7,500）或Flexstay Inn（约¥7,800）
-- **想要迪士尼权益但控制费用** → 庆典酒店（约¥20,000/3人，最低价的迪士尼附属）
+- **预算最低** → 浦安阳光酒店（约5,000日元）或舞滨MyStays酒店（约5,000日元）
+- **新浦安+想省钱** → 新浦安MyStays（约7,500日元）或Flexstay Inn（约7,800日元）
+- **想要迪士尼权益但控制费用** → 庆典酒店（约20,000日元/3人，最低价的迪士尼附属）
 - **方便东京市中心** → 浦安站周边酒店（东西线直达大手町约18分钟）
 
 所有酒店一览及筛选功能请见[酒店指南首页](/zh/travel-guide/hotels/)。交通便利性比较请看[交通比较](/zh/travel-guide/hotels/access/)。

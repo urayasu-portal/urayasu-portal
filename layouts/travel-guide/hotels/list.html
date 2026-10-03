@@ -23,7 +23,7 @@
   <div class="tg-hotels-stats">
     <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $total }}</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_hotels" }}</span></div>
     <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ $areaCount }}</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_areas" }}</span></div>
-    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">¥5,000</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_andup" }}</span></div>
+    <div class="tg-hotels-stat"><span class="tg-hotels-stat-num">{{ partial "yen-text.html" (dict "s" "¥5,000" "lang" $lang) }}</span><span class="tg-hotels-stat-label">{{ i18n "hl_stat_andup" }}</span></div>
   </div>
 </div>
 
@@ -171,16 +171,16 @@
 <div class="tg-pyramid-wrap">
   <div class="tg-pyramid">
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="disney">{{ i18n "cat_full_disney" }} <span class="tg-pyr-price">¥20,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="disney">{{ i18n "cat_full_disney" }} <span class="tg-pyr-price">{{ partial "yen-text.html" (dict "s" "¥20,000〜" "lang" $lang) }}</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="official">{{ i18n "cat_full_official" }} <span class="tg-pyr-price">¥20,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="official">{{ i18n "cat_full_official" }} <span class="tg-pyr-price">{{ partial "yen-text.html" (dict "s" "¥20,000〜" "lang" $lang) }}</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="partner">{{ i18n "cat_full_partner" }} <span class="tg-pyr-price">¥15,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="partner">{{ i18n "cat_full_partner" }} <span class="tg-pyr-price">{{ partial "yen-text.html" (dict "s" "¥15,000〜" "lang" $lang) }}</span></button>
     </div>
     <div class="tg-pyr-row">
-      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="other">{{ i18n "cat_other" }} <span class="tg-pyr-price">¥5,000〜</span></button>
+      <button type="button" class="tg-pyr-bar" data-filter-type="cat" data-filter-val="other">{{ i18n "cat_other" }} <span class="tg-pyr-price">{{ partial "yen-text.html" (dict "s" "¥5,000〜" "lang" $lang) }}</span></button>
     </div>
   </div>
   <p style="font-size:0.78em;color:var(--up-muted);text-align:center;margin-top:6px;">{{ i18n "hl_peak_note" }}</p>
@@ -252,7 +252,7 @@
           {{- else }}{{ .category }}{{- end }}
         </td>
         <td style="white-space:nowrap;">
-          {{- if .price_guide }}{{ .price_guide }}{{- else }}&mdash;{{- end }}
+          {{- if .price_guide }}{{ partial "yen-text.html" (dict "s" .price_guide "lang" $lang) }}{{- else }}&mdash;{{- end }}
         </td>
         <td style="font-size:0.82em;color:var(--up-muted);">
           {{- $feat := cond (eq $lang "ja") .feature (index . (printf "feature_%s" $lang)) }}{{ with $feat }}{{ . }}{{ end }}

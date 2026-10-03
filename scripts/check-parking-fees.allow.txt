@@ -25,3 +25,5 @@ hoshinoresorts-1955-tokyo-bay.zh-tw.md	6000	周辺ホテルとの比較
 hoshinoresorts-1955-tokyo-bay.zh-tw.md	18000	宿泊料金の価格帯
 hoshinoresorts-1955-tokyo-bay.zh-tw.md	50000	宿泊料金の価格帯
 urayasu-sun-hotel.en.md	8800	同じ文の日帰りプラン料金
+hoshinoresorts-1955-tokyo-bay.ko.md	1000	周辺ホテルとの比較（範囲の下限。2026-10-04 の範囲読み取り対応で検出）
+hoshinoresorts-1955-tokyo-bay.ko.md	4000	周辺ホテルとの比較（範囲の下限）

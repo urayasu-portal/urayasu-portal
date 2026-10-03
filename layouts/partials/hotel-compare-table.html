@@ -67,7 +67,7 @@
             "area" $areaName
             "category" .category
             "catkey" $ck
-            "price" .price_guide
+            "price" (partial "yen-text.html" (dict "s" .price_guide "lang" $lang))
             "priceSort" $sp
             "shuttle" .shuttle
             "stype" .shuttle_type

@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼亲子酒店推荐 | 大浴场·宽敞客房·便利店·距乐园近（本地视角）"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-10-04
 factChecked: "2026-08-08"
 description: "本地媒体从5个视角（大浴场·温泉、宽敞客房、附近便利店、距乐园距离、行李·洗衣）比较浦安·舞滨的家庭向酒店。附本地注意事项，避免常见误解。"
 tags:
@@ -104,9 +104,9 @@ faq:
 
 | 酒店 | 交通 | 价格参考 |
 |---|---|---|
-| [舞滨MyStays酒店](/zh/travel-guide/hotels/mystays-maihama/) | 步行约6分钟至TDS（千鸟地区B区） | 约¥5,000起/2人 |
-| [新浦安MyStays会议中心酒店](/zh/travel-guide/hotels/mystays-shin-urayasu/) | 合作酒店班车约15分钟 | 约¥7,500起/2人 |
-| [新浦安Flexstay Inn](/zh/travel-guide/hotels/flexstay-shin-urayasu/) | 路线巴士 | 约¥7,800起/2人 |
+| [舞滨MyStays酒店](/zh/travel-guide/hotels/mystays-maihama/) | 步行约6分钟至TDS（千鸟地区B区） | 约5,000日元起/2人 |
+| [新浦安MyStays会议中心酒店](/zh/travel-guide/hotels/mystays-shin-urayasu/) | 合作酒店班车约15分钟 | 约7,500日元起/2人 |
+| [新浦安Flexstay Inn](/zh/travel-guide/hotels/flexstay-shin-urayasu/) | 路线巴士 | 约7,800日元起/2人 |
 
 **【本地注意事项】**
 
@@ -127,7 +127,7 @@ faq:
 
 | 酒店类别 | 代表例 |
 |---|---|
-| 新浦安地区实惠酒店 | 新浦安MyStays（区域最低¥200/次）、Flexstay Inn（全室配） |
+| 新浦安地区实惠酒店 | 新浦安MyStays（区域最低200日元/次）、Flexstay Inn（全室配） |
 | 葛西近郊酒店 | 葛西卢米埃尔酒店（多楼层）、葛西菲奥雷酒店（馆内） |
 
 ---
@@ -140,7 +140,7 @@ faq:
 | 需要宽敞客房（4人以上） | Royal Park Maihama / 拉珍特酒店 / 三井花园PRANA |
 | 便利店随手可及 | 东京湾希尔顿 / 梦幻门酒店 / 星野1955 / 拉珍特 |
 | 最近进乐园（Happy Entry） | 东京迪士尼乐园大酒店（唯一有优先入场权） |
-| 控制预算·家庭 | 舞滨MyStays¥5,000 / 新浦安MyStays·Flexstay¥7,500–7,800 / 庆典酒店（最便宜的迪士尼附属） |
+| 控制预算·家庭 | 舞滨MyStays5,000日元 / 新浦安MyStays·Flexstay7,500–7,800日元 / 庆典酒店（最便宜的迪士尼附属） |
 
 所有酒店一览及筛选功能请见[酒店指南首页](/zh/travel-guide/hotels/)。按价格选择请看[实惠酒店比较](/zh/travel-guide/hotels/budget/)；交通比较请看[交通比较](/zh/travel-guide/hotels/access/)。
 

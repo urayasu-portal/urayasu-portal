@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼海洋附近飯店怎麼選｜園內·直通·步行·單軌一站·接駁車，依距離分5級（在地版）"
 date: 2026-09-13T09:30:00+09:00
-lastmod: 2026-09-13
+lastmod: 2026-10-04
 factChecked: "2026-09-13"
 description: "以東京迪士尼海洋為主的旅程，飯店該住哪？在地媒體把浦安·舞濱的飯店依「到迪士尼海洋的方式」分成5級：園內的米拉柯斯達、直通夢幻泉鄉的夢幻泉鄉大飯店、海灣站步行1〜3分鐘的喜來登與玩具總動員、步行約6分鐘到正門的舞濱MyStays、接駁車＋單軌的官方飯店。附價位參考與海洋入口施工中的注意事項。"
 tags:
@@ -50,20 +50,20 @@ faq:
 
 | 飯店 | 分類 | 到海洋的方式 | 價位參考 |
 |---|---|---|---|
-| [米拉柯斯達](/zh-tw/travel-guide/hotels/miracosta/) | 迪士尼飯店 | **位於園區內**，房客專用入口 | ¥83,000〜 |
-| [夢幻泉鄉大飯店](/zh-tw/travel-guide/hotels/fantasy-springs-hotel/) | 迪士尼飯店 | **直通**新區域「夢幻泉鄉」 | ¥50,000〜 |
-| [東京灣喜來登大飯店](/zh-tw/travel-guide/hotels/sheraton-grande-tokyo-bay/) | 官方飯店 | 海灣站步行1分鐘＋單軌1站 | ¥30,000〜 |
-| [玩具總動員飯店](/zh-tw/travel-guide/hotels/toy-story-hotel/) | 迪士尼飯店 | 海灣站步行3分鐘＋單軌1站 | ¥45,000〜 |
-| [舞濱MyStays飯店](/zh-tw/travel-guide/hotels/mystays-maihama/) | 其他 | **步行約6分鐘到海洋正門**（另有免費接駁車） | ¥8,000〜 |
-| [東京灣希爾頓飯店](/zh-tw/travel-guide/hotels/hilton-tokyo-bay/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站（約10分鐘） | ¥30,000〜 |
-| [東京灣大倉飯店](/zh-tw/travel-guide/hotels/hotel-okura-tokyo-bay/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | ¥30,000〜 |
-| [東京灣舞濱格蘭日航飯店](/zh-tw/travel-guide/hotels/grand-nikko-tokyo-bay/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | ¥30,000〜 |
-| [東京灣舞濱飯店 第一度假村](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | ¥20,000〜 |
-| [舞濱觀景飯店 by HULIC](/zh-tw/travel-guide/hotels/maihama-view-hotel/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | ¥20,000〜 |
-| [迪士尼大使大飯店](/zh-tw/travel-guide/hotels/ambassador-hotel/) | 迪士尼飯店 | 迪士尼度假區巡遊巴士＋單軌 | ¥40,000〜 |
-| [東京迪士尼樂園大飯店](/zh-tw/travel-guide/hotels/tdl-hotel/) | 迪士尼飯店 | 東京迪士尼樂園站搭單軌2站 | ¥55,000〜 |
-| [舞濱夢想之門飯店](/zh-tw/travel-guide/hotels/dreamgate-maihama/) | 其他 | 舞濱站直通→度假區總站搭單軌3站 | ¥15,000〜 |
-| [東京迪士尼樂祥飯店](/zh-tw/travel-guide/hotels/celebration-wish/) | 迪士尼飯店 | 免費接駁車約20分鐘 | ¥20,000〜 |
+| [米拉柯斯達](/zh-tw/travel-guide/hotels/miracosta/) | 迪士尼飯店 | **位於園區內**，房客專用入口 | 83,000日圓〜 |
+| [夢幻泉鄉大飯店](/zh-tw/travel-guide/hotels/fantasy-springs-hotel/) | 迪士尼飯店 | **直通**新區域「夢幻泉鄉」 | 50,000日圓〜 |
+| [東京灣喜來登大飯店](/zh-tw/travel-guide/hotels/sheraton-grande-tokyo-bay/) | 官方飯店 | 海灣站步行1分鐘＋單軌1站 | 30,000日圓〜 |
+| [玩具總動員飯店](/zh-tw/travel-guide/hotels/toy-story-hotel/) | 迪士尼飯店 | 海灣站步行3分鐘＋單軌1站 | 45,000日圓〜 |
+| [舞濱MyStays飯店](/zh-tw/travel-guide/hotels/mystays-maihama/) | 其他 | **步行約6分鐘到海洋正門**（另有免費接駁車） | 8,000日圓〜 |
+| [東京灣希爾頓飯店](/zh-tw/travel-guide/hotels/hilton-tokyo-bay/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站（約10分鐘） | 30,000日圓〜 |
+| [東京灣大倉飯店](/zh-tw/travel-guide/hotels/hotel-okura-tokyo-bay/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | 30,000日圓〜 |
+| [東京灣舞濱格蘭日航飯店](/zh-tw/travel-guide/hotels/grand-nikko-tokyo-bay/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | 30,000日圓〜 |
+| [東京灣舞濱飯店 第一度假村](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | 20,000日圓〜 |
+| [舞濱觀景飯店 by HULIC](/zh-tw/travel-guide/hotels/maihama-view-hotel/) | 官方飯店 | 免費接駁車→海灣站＋單軌1站 | 20,000日圓〜 |
+| [迪士尼大使大飯店](/zh-tw/travel-guide/hotels/ambassador-hotel/) | 迪士尼飯店 | 迪士尼度假區巡遊巴士＋單軌 | 40,000日圓〜 |
+| [東京迪士尼樂園大飯店](/zh-tw/travel-guide/hotels/tdl-hotel/) | 迪士尼飯店 | 東京迪士尼樂園站搭單軌2站 | 55,000日圓〜 |
+| [舞濱夢想之門飯店](/zh-tw/travel-guide/hotels/dreamgate-maihama/) | 其他 | 舞濱站直通→度假區總站搭單軌3站 | 15,000日圓〜 |
+| [東京迪士尼樂祥飯店](/zh-tw/travel-guide/hotels/celebration-wish/) | 迪士尼飯店 | 免費接駁車約20分鐘 | 20,000日圓〜 |
 
 ---
 
@@ -84,7 +84,7 @@ faq:
 
 ## 第3級｜走路到海洋正門：舞濱MyStays飯店
 
-千鳥地區的**舞濱MyStays飯店**是在地人才會特別提的選擇：**步行約6分鐘就到迪士尼海洋正門**，是非迪士尼飯店中最近的一家，另外每天也有免費接駁車。價位¥8,000〜，和第1、2級差了好幾倍。缺點是周邊是物流倉庫區，晚上沒有什麼店；想省下住宿費投入樂園的家庭最適合。同一區還有天然溫泉的[SPA&HOTEL 舞濱歐亞](/zh-tw/travel-guide/hotels/maihama-eurasia/)可以比較。
+千鳥地區的**舞濱MyStays飯店**是在地人才會特別提的選擇：**步行約6分鐘就到迪士尼海洋正門**，是非迪士尼飯店中最近的一家，另外每天也有免費接駁車。價位8,000日圓〜，和第1、2級差了好幾倍。缺點是周邊是物流倉庫區，晚上沒有什麼店；想省下住宿費投入樂園的家庭最適合。同一區還有天然溫泉的[SPA&HOTEL 舞濱歐亞](/zh-tw/travel-guide/hotels/maihama-eurasia/)可以比較。
 
 ## 第4級｜接駁車＋單軌：官方飯店群
 

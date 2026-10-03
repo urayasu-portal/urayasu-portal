@@ -26,7 +26,7 @@
         {{- $hfeat := cond (eq $lang "ja") .feature (index . (printf "feature_%s" $lang)) }}
         {{- $himg := "" }}
         {{- if fileExists (printf "static/images/hotels/%s.jpg" .slug) }}{{ $himg = printf "/images/hotels/%s.jpg" .slug }}{{ end }}
-        {{- $item := dict "name" $hname "area" $aname "price" .price_guide "feature" $hfeat "url" (printf "/travel-guide/hotels/%s/" .slug | absLangURL) "cat" $ck "badge" (index $catBadge $ck) "icon" (index $catIcon $ck) "img" $himg }}
+        {{- $item := dict "name" $hname "area" $aname "price" (partial "yen-text.html" (dict "s" .price_guide "lang" $lang)) "feature" $hfeat "url" (printf "/travel-guide/hotels/%s/" .slug | absLangURL) "cat" $ck "badge" (index $catBadge $ck) "icon" (index $catIcon $ck) "img" $himg }}
         {{- if or (eq $ck "disney") (eq $ck "official") }}{{ $premium = $premium | append $item }}{{ end }}
         {{- if eq $ck "partner" }}{{ $partner = $partner | append $item }}{{ end }}
         {{- if eq $ck "other" }}{{ $value = $value | append $item }}{{ end }}

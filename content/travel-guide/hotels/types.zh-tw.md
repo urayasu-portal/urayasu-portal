@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼度假區飯店4大分類解說 | 迪士尼飯店·官方飯店·合作飯店·周邊優良飯店的差別"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-09-09
+lastmod: 2026-10-04
 factChecked: "2026-08-08"
 description: "東京迪士尼度假區的飯店分為迪士尼飯店（直營）、官方飯店、合作飯店、周邊優良飯店四類。本文解說各分類的實際差異——樂園優先入場（Happy Entry）、館內購票、免費班車、行李快遞——以及地理位置和價格，幫助您選出最合適的分類。"
 tags:
@@ -61,7 +61,7 @@ faq:
 - 免費行李配送
 - 住宿專屬商品及迪士尼主題客房
 
-**價格參考：** 約¥20,000起/2人（旺季大幅上漲）
+**價格參考：** 約20,000日圓起/2人（旺季大幅上漲）
 
 **本站收錄的迪士尼飯店（7家）**
 [東京迪士尼樂園大飯店](/zh-tw/travel-guide/hotels/tdl-hotel/)、[東京迪士尼海洋觀海景大飯店 米拉柯斯達](/zh-tw/travel-guide/hotels/miracosta/)、[東京迪士尼海洋夢幻泉鄉大飯店](/zh-tw/travel-guide/hotels/fantasy-springs-hotel/)、[迪士尼大使大飯店](/zh-tw/travel-guide/hotels/ambassador-hotel/)、[東京迪士尼度假區玩具總動員飯店](/zh-tw/travel-guide/hotels/toy-story-hotel/)、[東京迪士尼樂祥飯店：願望](/zh-tw/travel-guide/hotels/celebration-wish/) / [探索](/zh-tw/travel-guide/hotels/celebration-discover/)。
@@ -81,7 +81,7 @@ faq:
 - **舞濱站免費行李配送** — 到達當天可以空手進樂園
 - **不適用** Happy Entry（優先入場）
 
-**價格參考：** 約¥20,000起/2人
+**價格參考：** 約20,000日圓起/2人
 
 **本站收錄的官方飯店（6家）**
 [東京灣希爾頓飯店](/zh-tw/travel-guide/hotels/hilton-tokyo-bay/)、[東京灣喜來登大飯店](/zh-tw/travel-guide/hotels/sheraton-grande-tokyo-bay/)、[東京灣大倉飯店](/zh-tw/travel-guide/hotels/hotel-okura-tokyo-bay/)、[東京灣舞濱格蘭日航飯店](/zh-tw/travel-guide/hotels/grand-nikko-tokyo-bay/)、[東京灣舞濱飯店 第一度假村](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/)、[舞濱觀景飯店（HULIC）](/zh-tw/travel-guide/hotels/maihama-view-hotel/)。
@@ -101,7 +101,7 @@ faq:
 - 行李配送**收費**
 - **不適用** Happy Entry（優先入場）
 
-**價格參考：** 約¥15,000起/2人
+**價格參考：** 約15,000日圓起/2人
 
 **本站收錄的合作飯店（4家）**
 [浦安布萊頓飯店 東京灣](/zh-tw/travel-guide/hotels/brighton-tokyo-bay/)、[東京灣東方飯店](/zh-tw/travel-guide/hotels/oriental-tokyo-bay/)、[東京灣艾米恩飯店](/zh-tw/travel-guide/hotels/emion-tokyo-bay/)、[三井花園飯店 普拉納東京灣](/zh-tw/travel-guide/hotels/mitsui-garden-prana/)。
