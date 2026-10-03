@@ -2,7 +2,7 @@
 title: "Luggage Storage & Baggage Delivery near Tokyo Disney Resort | Maihama & Urayasu Hotels"
 aliases: ["/travel-guide/hotels/luggage/"]
 date: 2026-07-21T10:00:00+09:00
-lastmod: 2026-09-12
+lastmod: 2026-10-04
 factChecked: "2026-09-06"
 description: "How luggage storage and baggage delivery really work at hotels near Tokyo Disneyland and DisneySea. The free station-to-hotel delivery for Disney & Official hotels, the paid Bon Voyage service, front-desk storage before check-in, and what's excluded — checked against official sources."
 tags:
@@ -70,7 +70,7 @@ If you stay at a **Disney Hotel** or an **Official Hotel**, you can arrive light
 
 This is one of the quiet perks of the Official-hotel tier: drop the bags at the station and head straight into your day.
 
-> Note: the **Celebration Hotels** are the exception among Disney-run hotels — they can't use this free counter or the Station Delivery service. Instead, guests there use the **paid Bon Voyage counter** by the station (fee unpublished — confirm locally). The Welcome Center also does not offer plain walk-up luggage storage, and there is no delivery from inside the parks.
+> Note: the **Celebration Hotels** are the exception among Disney-run hotels — they can't use this free counter or the Station Delivery service. Instead, guests there use the **paid Bon Voyage counter** by the station ({{< fact "bon_voyage.fee" >}} per item, from opening until 15:00). The Welcome Center also does not offer plain walk-up luggage storage, and there is no delivery from inside the parks.
 
 ---
 

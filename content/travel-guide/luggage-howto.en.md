@@ -17,7 +17,7 @@ faq:
   - q: "Which hotels can send luggage from Maihama Station to the hotel for free?"
     a: "Disney Hotels and Official Hotels. At the Tokyo Disney Resort Welcome Center — on your left as you leave the JR Maihama Station south exit — hand your bags to the counter (Disney Hotels 2F, 7:30–16:00; Official Hotels 1F, 8:00–15:00) and they are delivered to your hotel free of charge. Partner Hotels and Celebration Hotels use the paid Bon Voyage counter by the station instead."
   - q: "How much is the Bon Voyage baggage delivery, and until what time is it open?"
-    a: "For the four Partner Hotels (Urayasu Brighton, Oriental, Emion, Mitsui Garden Prana) it is ¥800 per item (tax included). Reception runs on your check-in day from when Bon Voyage opens (usually 8:00) until 15:00. Even on days when Bon Voyage requires an entry reservation to shop, baggage delivery needs no reservation — just tell the staff at the entrance you want to use it. Celebration Hotel guests use the same counter, but the fee is not published, so confirm it on site."
+    a: "For the four Partner Hotels (Urayasu Brighton, Oriental, Emion, Mitsui Garden Prana) it is ¥800 per item (tax included). Reception runs on your check-in day from when Bon Voyage opens (usually 8:00) until 15:00. Even on days when Bon Voyage requires an entry reservation to shop, baggage delivery needs no reservation — just tell the staff at the entrance you want to use it. Celebration Hotel guests use the same counter at the same fee (¥800 per item) and pick up their bags at the hotel's Guest Service counter."
   - q: "Can I send my bags from the hotel back to Maihama Station on the way home?"
     a: "Yes, for Disney and Official hotels, via the Station Delivery service. Drop your bags at the hotel bell desk after check-out (¥800 per item) and collect them at the Welcome Center 1st-floor counter. Pick-up hours differ: 13:00–21:00 for Disney Hotels and until 20:00 for Official hotels. Bags left past the deadline are sent back to the hotel, so collect them before leaving the area."
   - q: "What can't I hand to the delivery service?"
@@ -37,7 +37,7 @@ For the bigger picture of *which* hotels use *which* system, see our [complete g
 | Disney Hotels | **Free** | Welcome Center 2F |
 | Official Hotels | **Free** | Welcome Center 1F |
 | Partner Hotels | **Paid — {{< fact "bon_voyage.fee" >}}/item** | Bon Voyage 1F |
-| Celebration Hotels | **Paid** (fee not published) | Bon Voyage 1F |
+| Celebration Hotels | **Paid** ({{< fact "bon_voyage.fee" >}} per item) | Bon Voyage 1F |
 | Other hotels | No station delivery | — |
 
 Staying at an "other" hotel? There's no station delivery, so use the hotel's own front-desk storage instead (see [each hotel's luggage handling](/en/travel-guide/luggage/)).
@@ -76,7 +76,7 @@ As you leave the station ticket gates, look **ahead and to the right** for a dis
 Reception runs on your **check-in day**, from when Bon Voyage opens (hours are usually **8:00**–22:00) until **15:00**. Even on days when Bon Voyage requires an advance entry reservation for shopping, **baggage delivery needs no reservation** — just tell the staff at the entrance you'd like to use it.
 
 ### Step 3｜Drop your bags at the 1F counter
-Use the "Home Delivery Service Counter" on the store's 1st floor. The fee is **{{< fact "bon_voyage.fee" >}} per item (tax included) for the four Partner Hotels**. Celebration Hotel guests use the same counter, but the **fee is not published** — confirm it on site. As in Pattern A, valuables, fragile items, precision devices, and drinks can't be sent.
+Use the "Home Delivery Service Counter" on the store's 1st floor. The fee is **{{< fact "bon_voyage.fee" >}} per item (tax included) for the four Partner Hotels**. Celebration Hotel guests use the same counter at the same fee ({{< fact "bon_voyage.fee" >}} per item) and pick up their bags at the hotel's Guest Service counter. As in Pattern A, valuables, fragile items, precision devices, and drinks can't be sent.
 
 ### Step 4｜Head into the parks hands-free
 Your bags are delivered to your hotel the same day. As with Pattern A, the pick-up point and arrival time aren't published, so confirm at the front desk when you check in.

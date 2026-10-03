@@ -62,9 +62,17 @@ happy_entry:
     sea_dates: []
 
 # ── 舞浜駅の荷物サービス ─────────────────────────────
-# source: https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html
-# source: https://faq.tokyodisneyresort.jp/answer/67eaa647f939746b30956686/
-# checked: 2026-08-16
+# 値ごとの出典（2026-10-04 に全値を照合し、出典を値ごとに整理）：
+#   bon_voyage（800円・開店〜15:00）… https://www.tokyodisneyresort.jp/hotel/hotel_privilege.html の「パートナーホテル宿泊者特典」
+#   welcome_center（2F 7:30〜16:00／1F 8:00〜15:00）… https://www.tokyodisneyresort.jp/tdr/facility/welcomecenter.html
+#     （2F は FAQ ID:00119 https://faq.tokyodisneyresort.jp/answer/67eaa647f939746b30956686/ にも記載）
+#   station_delivery.fee（800円）… FAQ ID:00364 https://faq.tokyodisneyresort.jp/answer/67eaa6537605a4cb7775bf21/（ディズニーホテル）
+#     ／ https://tokyobay.hiltonjapan.co.jp/faq/rooms（オフィシャルホテルの例：ヒルトン東京ベイ）
+#   station_delivery の受付 7:00〜12:30 … hotel_privilege.html の「オフィシャルホテル宿泊者特典」
+#     ／ https://www.tokyodisneyresort.jp/hotel/tdh/service.html の詳細（ディズニーホテルの例：ランドホテル）
+#   ※ hotel_privilege.html はステーションデリバリーを「有料」とだけ書き、金額は載せていない
+#   ※ セレブレーションホテルはウェルカムセンターのサービス・ステーションデリバリーの対象外（ボン・ヴォヤージュで有料のバゲッジデリバリー）
+# checked: 2026-10-04
 bon_voyage:
   fee: { v: "800", u: yen }                  # バゲッジデリバリー 1個
   deadline: "15:00"                          # 受付締切（開店〜）
