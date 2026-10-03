@@ -69,7 +69,7 @@ faq:
 
 授權通路銷售**同樣的指定日期電子票**（入園時出示QR碼），提供中文介面、客服支援和對海外卡友善的付款方式。
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">在 Trip.com 查看東京迪士尼門票</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=8989807&SID=322202616&trip_sub1=tdr_zh-tw&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">在 Trip.com 查看東京迪士尼門票</a></p>
 
 Trip.com 涵蓋兩個園區，電子票即時出票。其他授權通路還有 KKday、Klook、JTB 等。無論使用哪家，請確認商品頁寫明是你要去園區的指定日期票。
 

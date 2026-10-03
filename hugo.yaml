@@ -76,9 +76,13 @@ params:
     # Trip.com 直接アフィリエイト（サイト直申請・承認済み）。管理画面で生成したリンクの
     # Allianceid / SID を転記すると、全言語（EN/ZH/KO/ZH-TW）の Trip.com ボタンがアフィリリンク化。
     # 未設定のあいだは素URL（Travelpayouts tripP が設定されればそちらでラップ）。
+    # ⚠ 2026-07-07〜10-04 は allianceId に trip_sub3 形式の値（D18374029）を誤って入れており、全期間クリック0だった。
+    #   正しい形式は管理画面「アフィリエイトリンク」で生成したURLで確認（Allianceid=数字・SID=数字・trip_sub3=D＋数字）。
+    # sub3: 生成リンクの trip_sub3 をそのまま付与。trip_sub1 は配置別のサブID（hotel_<lang> 等）をテンプレート側で付ける。
     tripcom:
-      allianceId: "D18374029"
+      allianceId: "8989807"
       sid: "322202616"
+      sub3: "D20075309"
     travelpayouts:
       marker: "745385"
       trs: "545197"

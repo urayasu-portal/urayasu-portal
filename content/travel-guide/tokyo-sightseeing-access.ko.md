@@ -67,7 +67,7 @@ factChecked: "2026-08-11"
 
 전망대(덴보 데크 350m／덴보 갤러리아 450m)는 당일권도 있지만, 혼잡한 날에는 **날짜·시간 지정 예매권**으로 입장 줄을 건너뛸 수 있습니다.
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.com에서 스카이트리 티켓 확인 →</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=8989807&SID=322202616&trip_sub1=skytree_ko&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">Trip.com에서 스카이트리 티켓 확인 →</a></p>
 
 {{< ad-disclosure >}}
 

@@ -69,7 +69,7 @@ faq:
 
 授权渠道销售**同样的指定日期电子票**（入园时出示二维码），提供中文界面、中文客服，并支持**支付宝·微信支付**等国内常用付款方式——官网刷不了卡时，这里几乎不会卡壳。Trip.com 是携程集团旗下的国际平台，用起来和国内订票体验接近。
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">在 Trip.com 查看东京迪士尼门票</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=8989807&SID=322202616&trip_sub1=tdr_zh&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">在 Trip.com 查看东京迪士尼门票</a></p>
 
 Trip.com 覆盖两个园区，电子票即时出票。其他授权渠道还有 Klook、KKday、JTB 等。无论使用哪家，请确认商品页写明是你想去园区的指定日期票。
 

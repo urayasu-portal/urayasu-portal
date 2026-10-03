@@ -61,7 +61,7 @@ The surprise: **for central-Tokyo sightseeing, the humble Tozai Line often beats
 
 Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m) exist, but on busy days a **date-and-time ticket bought ahead** lets you skip the entry line.
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Check Tokyo Skytree tickets on Trip.com →</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=8989807&SID=322202616&trip_sub1=skytree_en&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">Check Tokyo Skytree tickets on Trip.com →</a></p>
 
 {{< ad-disclosure >}}
 

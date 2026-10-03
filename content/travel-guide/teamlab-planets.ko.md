@@ -62,7 +62,7 @@ teamLab의 상설관은 도쿄에 여러 곳 있지만, 마이하마에서 가�
 
 teamLab은 **날짜·시간 지정 사전 예매제**이고 주말 시간대는 매진되니, 일정이 정해지면 서둘러 예약하세요.
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.com에서 teamLab 티켓 확인 →</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=8989807&SID=322202616&trip_sub1=teamlab_ko&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">Trip.com에서 teamLab 티켓 확인 →</a></p>
 
 {{< ad-disclosure >}}
 

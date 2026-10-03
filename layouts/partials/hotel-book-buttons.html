@@ -48,7 +48,7 @@
 
 {{- /* Trip.com: CSVのTrip.comURL列（https://www.trip.com/hotels/<city>-hotel-detail-<id>/<slug>/ 形式）があれば個別ページへ、
        無ければ英語施設名の検索URLへフォールバック。言語別にリージョナルホストへ切替（ホテルIDは共通）。
-       直接提携（affiliate.tripcom の Allianceid/SID）が設定済みならパラメータ付与、無ければ Travelpayouts tripP でラップ。 */ -}}
+       直接提携（affiliate.tripcom の Allianceid/SID）が設定済みならパラメータ付与（trip_sub1=hotel_<lang> で配置別に集計、sub3 があれば trip_sub3 も）、無ければ Travelpayouts tripP でラップ。 */ -}}
 {{- $tc := site.Params.affiliate.tripcom | default dict }}
 {{- $tripHref := "" }}
 {{- with $bk.tripcom }}{{ $tripHref = . }}{{ else }}{{ with $cur2.name_en }}{{ $tripHref = printf "https://www.trip.com/hotels/list?cityName=Tokyo&keyword=%s" (. | urlquery) }}{{ end }}{{ end }}
@@ -62,7 +62,8 @@
   {{- if $curr }}{{ $tripHref = printf "%s%scurr=%s" $tripHref (cond (in $tripHref "?") "&" "?") $curr }}{{ end }}
   {{- if and $tc.allianceId $tc.sid }}
     {{- $sep := cond (in $tripHref "?") "&" "?" }}
-    {{- $tripHref = printf "%s%sAllianceid=%s&SID=%s" $tripHref $sep $tc.allianceId $tc.sid }}
+    {{- $tripHref = printf "%s%sAllianceid=%s&SID=%s&trip_sub1=hotel_%s" $tripHref $sep $tc.allianceId $tc.sid $lang }}
+    {{- with $tc.sub3 }}{{ $tripHref = printf "%s&trip_sub3=%s" $tripHref . }}{{ end }}
   {{- else }}
     {{- $tripHref = partial "tp-link.html" (dict "url" $tripHref "p" $tp.tripP "campaign" $tp.tripCampaign) }}
   {{- end }}

@@ -62,7 +62,7 @@ teamLab在東京有多座常設館，但**離舞濱近的是豐洲的「Planets�
 
 teamLab 採**日期時段指定的預售制**，週末時段常常售罄，行程一定就盡早預訂。
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">在 Trip.com 查看 teamLab 門票 →</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/21427367/?Allianceid=8989807&SID=322202616&trip_sub1=teamlab_zh-tw&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">在 Trip.com 查看 teamLab 門票 →</a></p>
 
 {{< ad-disclosure >}}
 

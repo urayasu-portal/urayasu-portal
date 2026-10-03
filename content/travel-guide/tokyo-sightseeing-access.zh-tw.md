@@ -67,7 +67,7 @@ tags:
 
 展望台（天望甲板350m／天望迴廊450m）也有當日票，但旺日用**指定日期時段的預售票**可以免去入場排隊。
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">在 Trip.com 查看晴空塔門票 →</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/31060921/?Allianceid=8989807&SID=322202616&trip_sub1=skytree_zh-tw&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">在 Trip.com 查看晴空塔門票 →</a></p>
 
 {{< ad-disclosure >}}
 

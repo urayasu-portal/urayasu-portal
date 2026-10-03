@@ -69,7 +69,7 @@ The official Tokyo Disney Resort website and app sell tickets at list price, abo
 
 Authorized resellers sell **the same date-specified e-tickets** (QR codes you show at the park gate), with checkout and support in your language and payment methods that work reliably with overseas cards.
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Check Tokyo Disney Resort tickets on Trip.com</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=8989807&SID=322202616&trip_sub1=tdr_en&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">Check Tokyo Disney Resort tickets on Trip.com</a></p>
 
 Trip.com covers both parks with instant e-ticket delivery. Other authorized channels include Klook, KKday and JTB. Whichever you use, confirm the product page states the ticket is date-specified for the park you want.
 

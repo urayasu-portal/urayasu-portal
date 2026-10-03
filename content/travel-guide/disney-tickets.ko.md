@@ -69,7 +69,7 @@ faq:
 
 공인 판매처는 **같은 날짜 지정 e티켓**(입장 게이트에서 QR코드 제시)을 한국어 인터페이스·고객 지원·해외 카드 친화적 결제 수단으로 판매합니다.
 
-<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=D18374029&SID=322202616" target="_blank" rel="sponsored noopener">Trip.com에서 도쿄 디즈니 티켓 확인하기</a></p>
+<p><a class="lg-book-btn book-trip" href="https://www.trip.com/things-to-do/detail/44938465/?Allianceid=8989807&SID=322202616&trip_sub1=tdr_ko&trip_sub3=D20075309" target="_blank" rel="sponsored noopener">Trip.com에서 도쿄 디즈니 티켓 확인하기</a></p>
 
 Trip.com은 두 파크 모두 취급하며 e티켓이 즉시 발급됩니다. 그 밖에 Klook, KKday, JTB 등도 공인 채널입니다. 어디를 쓰든 상품 페이지에 원하는 파크의 날짜 지정 티켓이라고 명시돼 있는지 확인하세요.
 
