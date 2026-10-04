@@ -2,7 +2,8 @@
   "_readme": [
     "既存の不備リスト（CI はここに無い不備だけを「新しい不備」として失敗させる）。",
     "解消したら該当行を消すこと（CI の結果に「解消済み」として表示される）。無期限の許容リストではない。",
-    "再生成: node scripts/validate/validate-content.mjs --hugo-list <csv> --hugo-log <log> --write-known"
+    "再生成: node scripts/validate/validate-content.mjs --hugo-list <csv> --hugo-log <log> --write-known",
+    "2026-10-04: T01（カテゴリページの出力衝突）は工程0.5で修正したため削除。"
   ],
   "generatedAt": "2026-10-04T03:00:00.000Z",
   "issues": {
@@ -502,21 +503,6 @@
     }
   ],
   "hugoDuplicatePaths": [
-    {
-      "url": "/categories/グルメカフェ/",
-      "id": "T01",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#t01"
-    },
-    {
-      "url": "/categories/子育て教育/",
-      "id": "T01",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#t01"
-    },
-    {
-      "url": "/categories/開店閉店/",
-      "id": "T01",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#t01"
-    },
     {
       "url": "/guides/urayasu-bus-kotsu/",
       "id": "C11",

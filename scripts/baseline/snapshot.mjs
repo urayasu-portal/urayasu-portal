@@ -129,7 +129,7 @@ const nDup = write('duplicate-paths.txt', '', dups);
 write('build-warnings.txt', '', warns);
 
 const byAsp = {};
-aff.forEach((r) => { const a = r.split('\t')[1]; byAsp[a] = (byAsp[a] || 0) + 1; });
+[...new Set(aff)].forEach((r) => { const a = r.split('\t')[1]; byAsp[a] = (byAsp[a] || 0) + 1; });
 const summary = {
   generatedAt: new Date().toISOString(),
   contentFiles: nInv, pages: nPages, aliasPages: nAlias, sitemapUrls: nLoc,

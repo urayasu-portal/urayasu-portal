@@ -884,7 +884,7 @@ async function checkArticleQuality(content, path, hdrs, existing) {
   }
   const cf = await findUrlConflicts(hdrs, path, data, ownUrls);
   const sug = (typeof data.slug === 'string' && data.slug) ? `（例：${data.slug}-${(path.match(/\/(\d{8})-/) || [, 'yyyymmdd'])[1]}）` : '';
-  cf.conflicts.forEach(c => errors.push(`指定された slug（URL ${c.url}）は既存記事で使用されています：${c.other}。続報などの別記事にする場合は別の slug ${sug}にしてください`));
+  cf.conflicts.forEach(c => errors.push(`指定された slug（URL ${c.url}）は既存記事で使用されています：${c.other}。続報などの別記事にする場合は別の slug${sug}にしてください`));
   cf.notes.forEach(n => warns.push(n));
   return { errors, warns };
 }
