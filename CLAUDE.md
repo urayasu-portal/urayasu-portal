@@ -56,6 +56,15 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 4. Actions の実行履歴を確認する。GitHub API は git の保存済み認証情報（`git credential fill`）で叩ける
 5. 復旧は `workflow_dispatch` の手動実行
 
+### 記事データの検証（2026-10 工程0.5で導入）
+
+詳細は [scripts/validate/README.md](scripts/validate/README.md)。
+
+- **slug は記事ごとに一意**。続報を別記事で出すときは slug を変える（目安: `<元の slug>-<YYYYMMDD>`）。同じ slug は後の記事が旧記事の URL を上書きし、旧記事が消える（2026-06〜10 に10本が消失）
+- 検証ルールの単一ソースは `static/tools/post-rules.js`（投稿ツールと CI が共通で使う）。ルールを変えたら `scripts/validate/test/run-tests.mjs` を通す
+- CI の `validate` ジョブは**公開を止めない**。新しい不備があるとこのジョブだけ失敗して通知が届く。既存の不備は `scripts/validate/known-issues.json` に記録し、解消したら行を消す
+- Hugo（0.167.0）と Pagefind（1.5.2）は `.github/workflows/hugo.yml` の `env` で固定。上げるときは `scripts/baseline/` で改修前後のビルド差分を確認する
+
 ## ファイル構成メモ
 
 - 記事: `content/guides/*.md`
