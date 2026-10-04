@@ -6,6 +6,8 @@
 - 作業ブランチ: `claude/phase05-stability-and-validation`（worktree: `.claude/worktrees/phase05-stability`）
 - 関連資料: [工程0 報告書](phase0-site-audit.md)／[slug・URL 衝突の対応案](phase05-slug-collision-plan.md)／[基準データ](phase05-baseline/README.md)／[検証の運用手順](../../scripts/validate/README.md)
 
+> **2026-10-04 追記**: 本書で「承認待ち」とした衝突 C01〜C11・タグ T02/T03・壊れた記事の修復は、同日の残作業で実施した。結果と最新の状態は [phase05-completion-report.md](phase05-completion-report.md) を参照。本書は残作業前の記録として残す。
+
 > **状態の区別**
 > - **作業環境内での実装**: 完了（ブランチにコミット済み。**push・main への反映・本番デプロイはしていない**）
 > - **工程0.5全体**: **未完了**。slug・URL 衝突は対応案を整理済みで承認待ち。CI の実地動作（GitHub Actions 上の実行）は main 反映後でないと確認できない

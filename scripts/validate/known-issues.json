@@ -3,9 +3,10 @@
     "既存の不備リスト（CI はここに無い不備だけを「新しい不備」として失敗させる）。",
     "解消したら該当行を消すこと（CI の結果に「解消済み」として表示される）。無期限の許容リストではない。",
     "再生成: node scripts/validate/validate-content.mjs --hugo-list <csv> --hugo-log <log> --write-known",
-    "2026-10-04: T01（カテゴリページの出力衝突）は工程0.5で修正したため削除。"
+    "2026-10-04 工程0.5: T01（カテゴリページの出力衝突）を修正し削除。",
+    "2026-10-04 工程0.5残作業: 衝突 C01〜C11・タグ T02/T03・壊れた記事（kitchen-origin）を解消し削除。残りは既存記事の SLUG_MISSING / DRAFT_MISSING / EVENT_HIDEBOX のみ（表示に影響なし。slug を後付けすると URL が変わるため一括修正しない方針）。"
   ],
-  "generatedAt": "2026-10-04T03:00:00.000Z",
+  "generatedAt": "2026-10-04T09:00:00.000Z",
   "issues": {
     "SLUG_MISSING": [
       "content/posts/2025年5月31日-浦安市の主なニュース・トピックスまと.md",
@@ -29,7 +30,6 @@
       "content/posts/「中華料理-泰興」浦安駅高架下再開発で3月上旬に.md",
       "content/posts/「事故にあいませんように」浦安市の保育園児ら.md",
       "content/posts/「子どもの邪魔をしない教育と、次の社会のため.md",
-      "content/posts/「浦安万華郷跡地」活用方針が決定.md",
       "content/posts/「浦安乗合屋形船」6月8日開催、夜景と旬の味覚を.md",
       "content/posts/【新浦安】アトレ新浦安1f食料品ゾーンが7月リニ.md",
       "content/posts/【浦安d-rocks】4-24（金）秩父宮でfri-d-night開催！浦安市民優.md",
@@ -201,7 +201,6 @@
       "content/posts/「中華料理-泰興」浦安駅高架下再開発で3月上旬に.md",
       "content/posts/「事故にあいませんように」浦安市の保育園児ら.md",
       "content/posts/「子どもの邪魔をしない教育と、次の社会のため.md",
-      "content/posts/「浦安万華郷跡地」活用方針が決定.md",
       "content/posts/「浦安乗合屋形船」6月8日開催、夜景と旬の味覚を.md",
       "content/posts/【新浦安】アトレ新浦安1f食料品ゾーンが7月リニ.md",
       "content/posts/【浦安d-rocks】4-24（金）秩父宮でfri-d-night開催！浦安市民優.md",
@@ -374,199 +373,8 @@
       "content/posts/【浦安市】第28回浦安市民まつりが4-25土・26日開催.md",
       "content/posts/【浦安市】第28回浦安市民まつりが4月25日・26日に開.md",
       "content/posts/【行徳】行徳街バル2026が4-23・24開催！35店舗でチケッ.md"
-    ],
-    "FM_SYNTAX": [
-      "content/posts/20260626-kitchen-origin-minami-gyotoku-open.md"
     ]
   },
-  "collisions": [
-    {
-      "id": "C11",
-      "url": "/guides/urayasu-bus-kotsu/",
-      "files": [
-        "content/life-guide/urayasu-bus-kotsu.md",
-        "content/posts/20260628-urayasu-bus-kotsu.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c11"
-    },
-    {
-      "id": "C11",
-      "url": "/life-guide/guides/urayasu-bus-kotsu/",
-      "files": [
-        "content/life-guide/urayasu-bus-kotsu.md",
-        "content/posts/20260628-urayasu-bus-kotsu.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c11"
-    },
-    {
-      "id": "C01",
-      "url": "/posts/aloha-urayasu-2026/",
-      "files": [
-        "content/posts/20260914-aloha-urayasu-2026.md",
-        "content/posts/20260926-aloha-urayasu-2026.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c01"
-    },
-    {
-      "id": "C02",
-      "url": "/posts/gyotoku-machibar-october-2026/",
-      "files": [
-        "content/posts/20260923-gyotoku-machibar-october-2026.md",
-        "content/posts/20261003-gyotoku-machibar-october-2026.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c02"
-    },
-    {
-      "id": "C03",
-      "url": "/posts/nhk-symphony-urayasu-pre-event-2026/",
-      "files": [
-        "content/posts/20260521-nhk-symphony-urayasu-pre-event-2026.md",
-        "content/posts/20260620-nhk-symphony-urayasu-pre-event-2026.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c03"
-    },
-    {
-      "id": "C04",
-      "url": "/posts/sheraton-thai-food-buffet-2026/",
-      "files": [
-        "content/posts/20260820-sheraton-thai-food-buffet-2026.md",
-        "content/posts/20260823-sheraton-thai-food-buffet-2026.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c04"
-    },
-    {
-      "id": "C05",
-      "url": "/posts/tds-bring-the-rhythm-2027/",
-      "files": [
-        "content/posts/20260917-tds-bring-the-rhythm-2027.md",
-        "content/posts/20260923-tds-bring-the-rhythm-2027.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c05"
-    },
-    {
-      "id": "C06",
-      "url": "/posts/trial-seiyu-urayasu-open/",
-      "files": [
-        "content/posts/20260609-trial-seiyu-urayasu-open.md",
-        "content/posts/20260630-trial-seiyu-urayasu-open.md",
-        "content/posts/20260715-trial-seiyu-urayasu-open.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c06"
-    },
-    {
-      "id": "C10",
-      "url": "/posts/urayasu-d-rocks-mayor-visit-2026/",
-      "files": [
-        "content/posts/20260528-urayasu-d-rocks-mayor-visit-2026.md",
-        "content/posts/20260606-urayasu-d-rocks-mayor-visit-2026.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c10"
-    },
-    {
-      "id": "C07",
-      "url": "/posts/urayasu-u-center-festival-2026/",
-      "files": [
-        "content/posts/20260821-urayasu-u-center-festival-2026.md",
-        "content/posts/20260905-urayasu-u-center-festival-2026.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c07"
-    },
-    {
-      "id": "C08",
-      "url": "/posts/usagi-tea-garden-gohoubi-marche-2026/",
-      "files": [
-        "content/posts/20260821-usagi-tea-garden-gohoubi-marche-2026.md",
-        "content/posts/20260824-usagi-tea-garden-gohoubi-marche-2026.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c08"
-    },
-    {
-      "id": "C09",
-      "url": "/posts/浦安万華郷跡地活用方針が決定/",
-      "files": [
-        "content/posts/20250604-urayasu-mangekyo-site-redevelopment.md",
-        "content/posts/「浦安万華郷跡地」活用方針が決定.md"
-      ],
-      "status": "pending-approval",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c09"
-    }
-  ],
-  "hugoDuplicatePaths": [
-    {
-      "url": "/guides/urayasu-bus-kotsu/",
-      "id": "C11",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c11"
-    },
-    {
-      "url": "/life-guide/guides/urayasu-bus-kotsu/",
-      "id": "C11",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c11"
-    },
-    {
-      "url": "/posts/aloha-urayasu-2026/",
-      "id": "C01",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c01"
-    },
-    {
-      "url": "/posts/gyotoku-machibar-october-2026/",
-      "id": "C02",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c02"
-    },
-    {
-      "url": "/posts/nhk-symphony-urayasu-pre-event-2026/",
-      "id": "C03",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c03"
-    },
-    {
-      "url": "/posts/sheraton-thai-food-buffet-2026/",
-      "id": "C04",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c04"
-    },
-    {
-      "url": "/posts/tds-bring-the-rhythm-2027/",
-      "id": "C05",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c05"
-    },
-    {
-      "url": "/posts/trial-seiyu-urayasu-open/",
-      "id": "C06",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c06"
-    },
-    {
-      "url": "/posts/urayasu-u-center-festival-2026/",
-      "id": "C07",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c07"
-    },
-    {
-      "url": "/posts/usagi-tea-garden-gohoubi-marche-2026/",
-      "id": "C08",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c08"
-    },
-    {
-      "url": "/posts/浦安万華郷跡地活用方針が決定/",
-      "id": "C09",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#c09"
-    },
-    {
-      "url": "/tags/jcom浦安音楽ホール/",
-      "id": "T02",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#t02"
-    },
-    {
-      "url": "/tags/ブリオベッカ浦安市川/",
-      "id": "T02",
-      "plan": "docs/audits/phase05-slug-collision-plan.md#t02"
-    }
-  ]
+  "collisions": [],
+  "hugoDuplicatePaths": []
 }

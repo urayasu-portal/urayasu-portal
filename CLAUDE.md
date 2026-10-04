@@ -63,7 +63,9 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 - **slug は記事ごとに一意**。続報を別記事で出すときは slug を変える（目安: `<元の slug>-<YYYYMMDD>`）。同じ slug は後の記事が旧記事の URL を上書きし、旧記事が消える（2026-06〜10 に10本が消失）
 - 検証ルールの単一ソースは `static/tools/post-rules.js`（投稿ツールと CI が共通で使う）。ルールを変えたら `scripts/validate/test/run-tests.mjs` を通す
 - CI の `validate` ジョブは**公開を止めない**。新しい不備があるとこのジョブだけ失敗して通知が届く。既存の不備は `scripts/validate/known-issues.json` に記録し、解消したら行を消す
-- Hugo（0.167.0）と Pagefind（1.5.2）は `.github/workflows/hugo.yml` の `env` で固定。上げるときは `scripts/baseline/` で改修前後のビルド差分を確認する
+- Hugo（0.167.0）と Pagefind（1.5.2）は `.github/workflows/hugo.yml` と `pr-check.yml` の `env` で固定（両方そろえる）。上げるときは `scripts/baseline/` で改修前後のビルド差分を確認する
+- Pull Request では `pr-check.yml` がビルドと検証だけを行う（デプロイしない）。本番公開は main への push のみ
+- 同じイベント・店舗の続報は、原則**既存記事を更新**する（2026-10 の衝突解消で、重複記事は最新記事へ統合する方針に決定）
 
 ## ファイル構成メモ
 

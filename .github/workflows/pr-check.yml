@@ -1,0 +1,64 @@
+name: PR check (build and validate, no deploy)
+
+# Pull Request の段階で、本番公開をせずにビルドと記事データの検証を行う（2026-10-04 工程0.5で追加）。
+# 本番の公開は hugo.yml（main への push）だけが行う。このワークフローは Pages へのアップロードもデプロイもしない。
+# 版は hugo.yml の env と揃えること（片方だけ上げない）。
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: '0.167.0'
+  PAGEFIND_VERSION: '1.5.2'
+  NODE_VERSION: '22'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Test validation rules
+        run: node scripts/validate/test/run-tests.mjs --unit-only
+
+      - name: Build (same options as production)
+        env:
+          HUGO_ENVIRONMENT: production
+        run: |
+          hugo list all > "$RUNNER_TEMP/hugo-list.csv"
+          hugo --minify --baseURL "https://urayasu-portal.com/" --printPathWarnings 2>&1 | tee "$RUNNER_TEMP/hugo-build.log"
+
+      - name: Build search index (Pagefind)
+        run: npx --yes pagefind@${{ env.PAGEFIND_VERSION }} --site public
+
+      - name: Check search index version
+        run: grep -o '"version":"[^"]*"' public/pagefind/pagefind-entry.json
+
+      - name: Validate content
+        run: >-
+          node scripts/validate/validate-content.mjs
+          --hugo-list "$RUNNER_TEMP/hugo-list.csv"
+          --hugo-log "$RUNNER_TEMP/hugo-build.log"
+          --summary "$GITHUB_STEP_SUMMARY"

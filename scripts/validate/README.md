@@ -12,6 +12,7 @@
 | `scripts/validate/known-issues.json` | **既存の不備リスト**。ここに載っている不備は失敗にしない（新しい不備だけを失敗にする） |
 | `scripts/validate/test/run-tests.mjs` | ルールのテスト（BOM・CRLF・インライン配列・日付・衝突など）と既存記事の回帰テスト |
 | `.github/workflows/hugo.yml` の `validate` ジョブ | push・schedule・手動実行のたびに上記を実行 |
+| `.github/workflows/pr-check.yml` | Pull Request 時にビルド（本番と同じオプション）・Pagefind・検証を実行。**デプロイはしない**。Hugo／Pagefind の版は hugo.yml と揃える |
 
 ## ルール（新規記事）
 

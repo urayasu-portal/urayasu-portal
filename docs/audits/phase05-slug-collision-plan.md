@@ -3,7 +3,7 @@
 - 作成日: 2026-10-04
 - 対象コミット: `origin/main` = `4c24564e`（本番と同一）
 - 検出方法: Hugo 自身が計算した URL（`hugo list all`）＋ aliases ＋ `url:` 指定を突合（`scripts/validate/validate-content.mjs`）し、Hugo の `--printPathWarnings`（重複出力パス警告）と照合。本番の `<title>` を取得して、どちらの記事が表示されているかを確認した
-- 状態: **すべて未解消（運営判断待ち）**。ID は `scripts/validate/known-issues.json` の `id` と一致する（CI は既知の衝突として扱い、新しい衝突だけを失敗にする）
+- 状態: ~~すべて未解消（運営判断待ち）~~ → **2026-10-04 の残作業で C01〜C11・T02・T03 をすべて解消**（運営方針「現行 URL を維持し、最新記事への統合を優先」に基づく。本書の「復活」推奨は採用せず、全件を統合で処理した）。結果は [phase05-completion-report.md](phase05-completion-report.md)。`known-issues.json` の衝突一覧は空になった
 - 例外: T01（カテゴリページの出力衝突）は記事・URL に影響しない技術的な修正のため、工程0.5で修正した（本書 T01 参照）
 
 ## 0. 判断の基準
