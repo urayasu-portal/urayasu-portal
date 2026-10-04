@@ -137,7 +137,7 @@
           {{- if $fcat }}<span class="cat-badge cat-badge-sm {{ $fcls }}">{{ $fcat }}</span>{{- end }}
           <h3 class="lfc-title">{{ .Title }}</h3>
           {{- with .Description }}<p class="lfc-desc">{{ . }}</p>{{- end }}
-          <time class="lfc-date" datetime="{{ .Date.Format "2006-01-02" }}"><i class="ti ti-clock" aria-hidden="true"></i> {{ .Date.Format "2006年1月2日" }}</time>
+          {{ partial "card-dates.html" (dict "page" . "class" "lfc-date" "icon" "ti-clock" "event" true) }}
         </div>
       </a>
       {{- end }}
@@ -228,7 +228,7 @@
           {{- partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "recent-thumb") }}
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+            {{ partial "card-dates.html" (dict "page" .) }}
           </div>
         </a>
         {{- end }}

@@ -12,8 +12,8 @@ const [A, B] = process.argv.slice(2).filter((x) => !x.startsWith('--'));
 const mi = process.argv.indexOf('--max');
 const MAX = mi > 0 ? +process.argv[mi + 1] : 20;
 if (!A || !B) { console.error('usage: compare.mjs <before> <after>'); process.exit(2); }
-const FILES = ['content-inventory.tsv', 'pages.tsv', 'aliases.tsv', 'sitemap-urls.txt', 'affiliate-links.tsv', 'duplicate-paths.txt', 'build-warnings.txt'];
-const read = (d, f) => (fs.existsSync(path.join(d, f)) ? fs.readFileSync(path.join(d, f), 'utf8').split('\n').filter(Boolean) : null);
+const FILES = ['content-inventory.tsv', 'pages.tsv', 'aliases.tsv', 'sitemap-urls.txt', 'affiliate-links.tsv', 'jsonld.tsv', 'cards.tsv', 'duplicate-paths.txt', 'build-warnings.txt'];
+const read = (d, f) => (fs.existsSync(path.join(d, f)) ? fs.readFileSync(path.join(d, f), 'utf8').split(/\r?\n/).filter(Boolean) : null);
 let changed = false;
 for (const f of FILES) {
   const a = read(A, f), b = read(B, f);

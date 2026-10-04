@@ -41,7 +41,7 @@
         <div class="post-meta-line">
           {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
           {{- if not (.Param "noDate") }}
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          {{ partial "card-dates.html" (dict "page" .) }}
           {{- end }}
           {{- if gt .Lastmod .Date }}
           <span class="post-updated-badge"><i class="ti ti-refresh" aria-hidden="true"></i> {{ .Lastmod.Format "2006年1月2日" }}更新</span>
@@ -58,9 +58,9 @@
         <img src="{{ $coverReal }}" alt="{{ .Title }}" loading="lazy">
       </div>
       {{- else }}
-      <div class="post-cover up-ph {{ $cls }}">
-        <i class="ti {{ $icon }}" aria-hidden="true"></i>
-        <span class="up-ph-label">{{ if $cat }}{{ $cat }}{{ else }}記事{{ end }}</span>
+      {{- /* 代替カバーはアイコンのみ（カテゴリ名は見出し上のバッジにあるため繰り返さない。工程1b） */}}
+      <div class="post-cover up-ph {{ $cls }}" aria-hidden="true">
+        <i class="ti {{ $icon }}"></i>
       </div>
       {{- end }}
 
@@ -312,7 +312,7 @@
           {{- partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "recent-thumb") }}
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+            {{ partial "card-dates.html" (dict "page" .) }}
           </div>
         </a>
         {{- end }}
