@@ -67,6 +67,30 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 - Pull Request では `pr-check.yml` がビルドと検証だけを行う（デプロイしない）。本番公開は main への push のみ
 - 同じイベント・店舗の続報は、原則**既存記事を更新**する（2026-10 の衝突解消で、重複記事は最新記事へ統合する方針に決定）
 
+### 日付・店舗情報の項目（2026-10 工程1a）
+
+**現行の運用（記事化プロンプト v20260907）は変えていない。** `eventDate` は「注目の日」（イベント・式典の開催日、試合日、開店日・閉店日・リニューアル日、愛称使用開始日など）。単日は `"YYYY-MM-DD"`、期間は `"YYYY-MM-DD/YYYY-MM-DD"`（`/` の前後に空白を入れない。入れると Hugo のビルドが止まる）、複数日程は `eventDates` のリスト、終了日未定は単日＋`eventOngoing: true`、いずれも `hideEventBox: true` を併記する。形式と実在性は投稿ツールと CI が検証する（PR 1a-1）。
+
+下表の7項目は、**投稿ツールと CI が受け付けて形式を検証する段階**（PR 1a-2）。すべて任意項目。表示への影響は項目によって異なる:
+
+- `eventKind`・`shopStatus`・`shopDate`・`shopUnconfirmed`・`calendar` の5項目は**新設で、現時点ではどの表示（記事カード・サイドバー・`/daily/`・イベントカレンダー・Event 構造化データ・開店・閉店年表）にも使われていない**
+- `notableDate`・`notableDates` は**以前からある項目**で、サイドバーのカレンダーが点灯に使っている（PR 1a-2 では定義と検証を加えただけで、動作は変えていない）。`/daily/` など他の表示は読まない
+
+**記事化プロンプトは引き続き v20260907 を使い、新仕様への切り替えはまだ行わない**（v20260907 は上の7項目を出力しない）。切り替えは、表示側の対応（設計書 `docs/audits/phase1a-design.md` 第12章の PR 3〜5）と連動させ、記事の種類ごとに段階的に行う（`docs/audits/phase1a-new-fields-report.md` 第9章）。それまでは既存の `eventDate` を削除・置き換えしない。
+
+| 項目 | 値 | 用途（予定） | 現在の表示への影響 |
+|---|---|---|---|
+| `eventKind` | `event`／`match`／`fair` | 開催日の種別（催し・講座／試合・大会／期間限定フェア・販売） | なし |
+| `notableDate` | `"YYYY-MM-DD"` | イベントではない注目の日（制度の開始日・告知の対象日・申込期限・休館日など） | サイドバーのカレンダーが点灯（従来から） |
+| `notableDates` | `"YYYY-MM-DD"` のリスト | 同上（複数） | 同上 |
+| `shopStatus` | `open`／`open_planned`／`close`／`close_planned`／`temp_close`／`reopen`／`renewal`／`move`／`feature` | 店舗の状態 | なし |
+| `shopDate` | `"YYYY-MM-DD"` または `"YYYY-MM"`（年月だけ） | 店舗の状態が発生する日。年月を月初・月末の日付に読み替えない | なし |
+| `shopUnconfirmed` | `true`／`false`（引用符なし） | 求人で判明・「〜か」など未確定の情報 | なし |
+| `calendar` | `true`／`false`（引用符なし） | イベントカレンダー掲載の記事単位の上書き | なし（掲載条件は未変更） |
+
+- 予定日が過ぎても `shopStatus` を自動で `open`・`close` に変えない（開店・閉店を確認したら記事を更新する）
+- 規則とエラーコードの一覧は [scripts/validate/README.md](scripts/validate/README.md)
+
 ## ファイル構成メモ
 
 - 記事: `content/guides/*.md`

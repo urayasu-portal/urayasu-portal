@@ -52,6 +52,22 @@
 - **CI**: 全記事を新規と同じ基準で検証する（main へ直接コミットされた不正な値も検出する）。既存記事に該当は無い（2026-10-05 時点、開催日を持つ 465 本）ため、`known-issues.json` への追加は無い
 - `eventOngoing: true` の記事で終了日が無いことはエラーにしない。カテゴリやタイトルから終了日の要否を推測しない
 
+### 新しい日付・店舗情報の項目の検証（工程1a PR 1a-2）
+
+項目を**受け入れて形式を検証するだけ**。すべて任意項目で、無いことは警告にしない。カテゴリとの組み合わせ（例: 開店・閉店記事の `eventDate`）も検証しない。表示への反映は後続の PR（定義と表示の状況は CLAUDE.md）。
+
+| 項目 | 許可する値 | エラー |
+|---|---|---|
+| `eventKind` | `event`／`match`／`fair` | `EVENTKIND_INVALID`（それ以外の値・空・真偽値） |
+| `notableDate` | `"YYYY-MM-DD"`（単日。期間・時刻・リストは不可） | `NOTABLEDATE_FORMAT`・`_INVALID`・`_EMPTY`・`_SPACED`・`_SEPARATOR`・`_RANGE_NOT_ALLOWED` |
+| `notableDates` | `"YYYY-MM-DD"` のリスト | `NOTABLEDATES_NOT_LIST`（文字列だと Hugo のサイドバーでビルドが止まる）・`_EMPTY`・要素ごとの `_FORMAT`・`_INVALID` 等 |
+| `shopStatus` | `open`／`open_planned`／`close`／`close_planned`／`temp_close`／`reopen`／`renewal`／`move`／`feature` | `SHOPSTATUS_INVALID` |
+| `shopDate` | `"YYYY-MM-DD"` または `"YYYY-MM"`（年月だけ。月初・月末に読み替えない） | `SHOPDATE_FORMAT`・`_INVALID`（13月・2月30日等）・`_EMPTY` |
+| `shopUnconfirmed` | 真偽値 `true`／`false`（引用符なし） | `SHOPUNCONFIRMED_NOT_BOOLEAN`（`"true"` は文字列なのでエラー） |
+| `calendar` | 真偽値 `true`／`false`（引用符なし） | `CALENDAR_NOT_BOOLEAN` |
+
+警告は `NOTABLEDATES_UNSORTED`（日付順でない）・`NOTABLEDATES_DUPLICATE`（重複）だけ。更新時は開催日と同じく、追加・変更した項目だけにエラーを適用し、値を変えていない項目のエラーは警告に下げる。既存記事で新項目を持つのは `notableDate` の1本だけで、該当する不備は無い（2026-10-05 時点）。
+
 ## CI の動き（公開は止めない）
 
 - `validate` ジョブは `build`／`deploy` と**独立**している。不備があっても公開は従来どおり進む

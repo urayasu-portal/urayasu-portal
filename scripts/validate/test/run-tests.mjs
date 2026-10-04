@@ -248,6 +248,95 @@ t('date・lastmod の検証は開催日の検証と分離（不正な開催日�
   eq(codes(r.errors), ['EVENTDATE_INVALID']); eq(r.date && r.date.jst.d, 4);
 });
 
+/* ── 新しい日付・店舗情報の項目（工程1a PR 1a-2） ── */
+console.log('■ 新項目（eventKind・notableDate(s)・shopStatus・shopDate・shopUnconfirmed・calendar）');
+/* 開店・閉店記事の例。現行プロンプト v20260907 どおり eventDate（開店日）も持つ */
+const SHOP = GOOD.replace('  - "イベント"', '  - "開店・閉店"').replace('eventDate: "2026-10-10"', 'eventDate: "2026-10-20"');
+const withNew = (lines, base) => (base || SHOP).replace('hideEventBox: true', lines + '\nhideEventBox: true');
+const nerr = (lines, base) => codes(v(withNew(lines, base)).errors);
+const nwarn = (lines, base) => codes(v(withNew(lines, base)).warnings);
+t('新項目が無い記事 → 従来どおり（新しいエラー・警告なし）', () => { eq(codes(v(SHOP).errors), []); eq(codes(v(SHOP).warnings), []); eq(codes(v(GOOD).warnings), []); });
+t('eventKind の正常値3種類 → 通過', () => { R.EVENT_KINDS.forEach((k) => { eq(nerr('eventKind: "' + k + '"', GOOD), [], k); eq(nwarn('eventKind: "' + k + '"', GOOD), [], k); }); eq(R.EVENT_KINDS, ['event', 'match', 'fair']); });
+t('eventKind の不正な値 → エラー', () => {
+  ['festival', 'Event', '', 'イベント'].forEach((k) => eq(nerr('eventKind: "' + k + '"', GOOD), ['EVENTKIND_INVALID'], k));
+  eq(nerr('eventKind: true', GOOD), ['EVENTKIND_INVALID']);
+});
+t('shopStatus の正常値9種類 → 通過', () => {
+  eq(R.SHOP_STATUSES, ['open', 'open_planned', 'close', 'close_planned', 'temp_close', 'reopen', 'renewal', 'move', 'feature']);
+  R.SHOP_STATUSES.forEach((s) => { eq(nerr('shopStatus: "' + s + '"'), [], s); eq(nwarn('shopStatus: "' + s + '"'), [], s); });
+  eq(nerr('shopStatus: open'), []);
+});
+t('shopStatus の不正な値 → エラー', () => { ['opened', 'OPEN', 'closed', '開店', ''].forEach((s) => eq(nerr('shopStatus: "' + s + '"'), ['SHOPSTATUS_INVALID'], s)); });
+t('notableDate の正常な日付 → 通過（引用符なしも可）', () => { eq(nerr('notableDate: "2026-11-19"'), []); eq(nerr('notableDate: 2026-11-19'), []); });
+t('notableDate の不正な日付・形式 → エラー', () => {
+  eq(nerr('notableDate: "2026-02-30"'), ['NOTABLEDATE_INVALID']);
+  eq(nerr('notableDate: "2026-13-01"'), ['NOTABLEDATE_INVALID']);
+  eq(nerr('notableDate: "11月19日"'), ['NOTABLEDATE_FORMAT']);
+  eq(nerr('notableDate: "2026-11-19/2026-11-20"'), ['NOTABLEDATE_RANGE_NOT_ALLOWED']);
+  eq(nerr('notableDate: "2026-11-19T10:00:00+09:00"'), ['NOTABLEDATE_FORMAT']);
+  eq(nerr('notableDate: ""'), ['NOTABLEDATE_EMPTY']);
+  eq(nerr('notableDate:\n  - "2026-11-19"'), ['NOTABLEDATE_FORMAT']);
+});
+t('notableDates の正常な配列 → 通過', () => { eq(nerr('notableDates:\n  - "2026-11-19"\n  - "2026-12-01"'), []); eq(nwarn('notableDates:\n  - "2026-11-19"\n  - "2026-12-01"'), []); });
+t('notableDates の不正な要素・形式 → エラー（どの要素かを示す）', () => {
+  const r = v(withNew('notableDates:\n  - "2026-11-19"\n  - "2026-02-30"'));
+  eq(codes(r.errors), ['NOTABLEDATES_INVALID']); if (!/notableDates の2番目/.test(r.errors[0].msg)) throw new Error(r.errors[0].msg);
+  eq(nerr('notableDates:\n  - "2026-11-19"\n  - "10月1日"'), ['NOTABLEDATES_FORMAT']);
+  eq(nerr('notableDates:\n  - "2026-11-19/2026-11-20"'), ['NOTABLEDATES_RANGE_NOT_ALLOWED']);
+  /* リストでないと Hugo のサイドバーでビルドが止まる */
+  eq(nerr('notableDates: "2026-11-19"'), ['NOTABLEDATES_NOT_LIST']);
+  eq(nerr('notableDates: []'), ['NOTABLEDATES_EMPTY']);
+});
+t('notableDates の未整列・重複 → 警告のみ', () => {
+  eq(nwarn('notableDates:\n  - "2026-12-01"\n  - "2026-11-19"'), ['NOTABLEDATES_UNSORTED']);
+  eq(nwarn('notableDates:\n  - "2026-11-19"\n  - "2026-11-19"'), ['NOTABLEDATES_DUPLICATE']);
+});
+t('shopDate の正常な日付・年月だけの値 → 通過', () => {
+  eq(nerr('shopDate: "2026-10-20"'), []); eq(nerr('shopDate: "2026-10"'), []); eq(nerr('shopDate: 2026-10-20'), []);
+  eq(nwarn('shopDate: "2026-10"'), []);
+});
+t('shopDate の存在しない年月・日付・不正な形式 → エラー', () => {
+  eq(nerr('shopDate: "2026-13"'), ['SHOPDATE_INVALID']); eq(nerr('shopDate: "2026-00"'), ['SHOPDATE_INVALID']);
+  eq(nerr('shopDate: "2026-02-30"'), ['SHOPDATE_INVALID']); eq(nerr('shopDate: "2027-02-29"'), ['SHOPDATE_INVALID']);
+  eq(nerr('shopDate: "2028-02-29"'), []);
+  ['2026/10/20', '2026-10-20/2026-10-31', '10月下旬', '2026-1', '2026'].forEach((x) => eq(nerr('shopDate: "' + x + '"'), ['SHOPDATE_FORMAT'], x));
+  eq(nerr('shopDate: ""'), ['SHOPDATE_EMPTY']);
+});
+t('shopUnconfirmed の真偽値 → 通過、文字列 → エラー', () => {
+  eq(nerr('shopUnconfirmed: true'), []); eq(nerr('shopUnconfirmed: false'), []);
+  eq(nerr('shopUnconfirmed: "true"'), ['SHOPUNCONFIRMED_NOT_BOOLEAN']); eq(nerr('shopUnconfirmed: "false"'), ['SHOPUNCONFIRMED_NOT_BOOLEAN']);
+  eq(nerr('shopUnconfirmed: yes'), ['SHOPUNCONFIRMED_NOT_BOOLEAN']); eq(nerr('shopUnconfirmed: True'), ['SHOPUNCONFIRMED_NOT_BOOLEAN']);
+});
+t('calendar の真偽値 → 通過、文字列 → エラー', () => {
+  eq(nerr('calendar: true', GOOD), []); eq(nerr('calendar: false', GOOD), []);
+  eq(nerr('calendar: "true"', GOOD), ['CALENDAR_NOT_BOOLEAN']); eq(nerr('calendar: 1', GOOD), ['CALENDAR_NOT_BOOLEAN']);
+});
+t('新項目をすべて追加した記事の新規投稿 → 通過（既存の eventDate との併用も可）', () => {
+  const all = 'eventKind: "event"\nnotableDate: "2026-11-01"\nnotableDates:\n  - "2026-11-02"\n  - "2026-11-03"\nshopStatus: "open_planned"\nshopDate: "2026-11"\nshopUnconfirmed: true\ncalendar: false';
+  eq(nerr(all), []); eq(nwarn(all), []);
+  /* 現行プロンプトどおりの eventDate（開店日）＋ eventOngoing ＋ 新項目 */
+  eq(codes(v(withNew('shopStatus: "open"\nshopDate: "2026-10-20"').replace('eventDate: "2026-10-20"', 'eventDate: "2026-10-20"\neventOngoing: true')).errors), []);
+});
+t('開店・閉店記事の eventDate に新しい警告を出さない（カテゴリとの組み合わせは問わない）', () => {
+  eq(codes(v(SHOP).warnings), []); eq(nwarn('shopStatus: "open"'), []);
+});
+t('新項目を保持した既存記事の全文置換（本文・lastmod だけの更新）→ 通過', () => {
+  const before = withNew('eventKind: "fair"\nshopStatus: "open"\nshopDate: "2026-10"\nshopUnconfirmed: false\nnotableDates:\n  - "2026-11-02"\n  - "2026-11-03"');
+  const r = upd(addLastmod(before).replace('<p>本文</p>', '<p>本文</p><p>追記</p>'), before);
+  eq(codes(r.errors), []); eq(codes(r.warnings), []);
+});
+t('既存の不正な新項目の値を変えない更新 → 警告に下げる／値を不正に変えた更新 → エラー', () => {
+  const bad = withNew('shopStatus: "opened"\nshopDate: "2026-13"');
+  const r = upd(addLastmod(bad), bad); eq(codes(r.errors), []); eq(codes(r.warnings), ['SHOPDATE_INVALID', 'SHOPSTATUS_INVALID']);
+  const good = withNew('shopStatus: "open"\nshopDate: "2026-10"');
+  eq(codes(upd(addLastmod(withNew('shopStatus: "open"\nshopDate: "2026-13"')), good).errors), ['SHOPDATE_INVALID']);
+  eq(codes(upd(addLastmod(withNew('shopStatus: "open"\ncalendar: "true"')), good).errors), ['CALENDAR_NOT_BOOLEAN']);
+});
+t('新項目付きの意図的な予約投稿 → 従来どおり警告・確認のみ', () => {
+  const r = v(replaceLine(withNew('shopStatus: "open_planned"\nshopDate: "2026-11"'), 'date:', 'date: 2026-10-05T19:00:00+09:00').replace('20261004', '20261005'), { path: 'content/posts/20261005-example-slug.md' });
+  eq(codes(r.errors), []); eq(codes(r.warnings), ['DATE_FUTURE']);
+});
+
 console.log('■ date');
 t('date なし → DATE_MISSING', () => { eq(codes(v(GOOD.replace(/date: .*\n/, '')).errors), ['DATE_MISSING']); });
 t('形式不正 → DATE_FORMAT', () => { eq(codes(v(replaceLine(GOOD, 'date:', 'date: 2026/10/04 10:00')).errors), ['DATE_FORMAT']); });
@@ -356,6 +445,19 @@ t('既存記事の本文・lastmod だけの更新が、開催日の検証で止
   if (evUpdate.length) throw new Error(evUpdate.length + ' 件: ' + evUpdate.slice(0, 5).join(' / '));
 });
 console.log('       （参考）開催日を持つ既存記事: ' + evPosts + ' 本 / 警告・情報の内訳: ' + (Object.entries(evWarn).map(([k, n]) => k + ' ' + n).join('、') || 'なし'));
+
+/* 新項目（工程1a PR 1a-2）: 既存記事の実データで、新しい規則に当たるものが無いこと（新項目を持つ記事は既存の notableDate 1本だけ） */
+const NF_CODE = /^(EVENTKIND|NOTABLEDATE|NOTABLEDATES|SHOPSTATUS|SHOPDATE|SHOPUNCONFIRMED|CALENDAR)_/;
+const nfFound = [], nfUsing = {};
+for (const f of files) {
+  const text = fs.readFileSync(path.join(dir, f), 'utf8');
+  const d = R.parseFrontmatter(text).data;
+  R.NEW_FIELDS.forEach((k) => { if (d[k] !== undefined) nfUsing[k] = (nfUsing[k] || 0) + 1; });
+  const s = R.validatePost(text, { path: 'content/posts/' + f, isNew: true, now: NOW, skipBodyChecks: true, skipLastmodChecks: true });
+  s.errors.concat(s.warnings).filter((e) => NF_CODE.test(e.code)).forEach((e) => nfFound.push(f + ' → ' + e.code));
+}
+t('既存記事に、新項目の規則でエラー・警告になる値が無い', () => { if (nfFound.length) throw new Error(nfFound.length + ' 件: ' + nfFound.slice(0, 5).join(' / ')); });
+console.log('       （参考）新項目を持つ既存記事: ' + (Object.entries(nfUsing).map(([k, n]) => k + ' ' + n).join('、') || 'なし'));
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);

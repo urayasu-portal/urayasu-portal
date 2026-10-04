@@ -257,6 +257,7 @@
     var dt = EVENT_DATETIME_RE.exec(s);
     if (dt) {
       if (!isRealYmd(dt[1])) { put('error', 'INVALID', '存在しない日付です（「' + s + '」）'); return res; }
+      if (p.allowTime === false) { put('error', 'FORMAT', '時刻を付けずに "YYYY-MM-DD" で書いてください（「' + s + '」）'); return res; }
       put('warning', 'HAS_TIME', '時刻が付いています（「' + s + '」）。時刻は使われないため、"YYYY-MM-DD" だけで書いてください');
       res.ok = true; res.start = res.end = dt[1]; return res;
     }
@@ -361,6 +362,90 @@
   function canonValue(v) {
     if (v === undefined) return '\u0000none';
     return JSON.stringify(v);
+  }
+
+  /* ───────────── 新しい日付・店舗情報の項目（工程1a PR 1a-2） ─────────────
+   * 項目を「受け入れて形式を検証する」だけ。現時点では eventKind・shopStatus・shopDate・shopUnconfirmed・calendar を
+   * 表示に使うテンプレートは無い（notableDate(s) だけは、従来からサイドバーのカレンダーが点灯に使っている）。
+   * すべて任意項目で、無いことは警告にしない。カテゴリとの組み合わせ（例: 開店・閉店記事の eventDate）も問わない。
+   *
+   * Hugo 0.167.0 で実際にビルドを止める値（2026-10-05 に確認）→ エラー: notableDates がリストでない（サイドバーの range）
+   * ビルドは通るが、意図どおりに動かない値 → エラー: 語彙外の値、実在しない日付・年月、日付として読めない値、
+   *   真偽値でない shopUnconfirmed・calendar（引用符付きの "true" は文字列）
+   */
+  var EVENT_KINDS = ['event', 'match', 'fair'];
+  var SHOP_STATUSES = ['open', 'open_planned', 'close', 'close_planned', 'temp_close', 'reopen', 'renewal', 'move', 'feature'];
+  var NEW_FIELDS = ['eventKind', 'notableDate', 'notableDates', 'shopStatus', 'shopDate', 'shopUnconfirmed', 'calendar'];
+
+  function checkVocab(v, field, code, vocab, out) {
+    if (v === undefined) return;
+    if (typeof v !== 'string' || vocab.indexOf(v) < 0) {
+      out.push({ level: 'error', code: code, msg: field + ' の値「' + showVal(v) + '」は使えません（' + vocab.join('／') + ' のいずれか）' });
+    }
+  }
+  function checkBool(v, field, code, out) {
+    if (v === undefined || v === true || v === false) return;
+    var quoted = v === 'true' || v === 'false';
+    out.push({ level: 'error', code: code, msg: field + ' は真偽値の true または false で書いてください（「' + showVal(v) + '」' + (quoted ? '。引用符で囲むと文字列になります' : '') + '）' });
+  }
+
+  /**
+   * 新項目をまとめて検証する。返り値: { 項目名: [problem] }（更新時の「変更していない項目」の判定のため項目ごとに分ける）
+   */
+  function checkNewFields(d) {
+    var out = {};
+    NEW_FIELDS.forEach(function (f) { out[f] = []; });
+
+    checkVocab(d.eventKind, 'eventKind', 'EVENTKIND_INVALID', EVENT_KINDS, out.eventKind);
+    checkVocab(d.shopStatus, 'shopStatus', 'SHOPSTATUS_INVALID', SHOP_STATUSES, out.shopStatus);
+    checkBool(d.shopUnconfirmed, 'shopUnconfirmed', 'SHOPUNCONFIRMED_NOT_BOOLEAN', out.shopUnconfirmed);
+    checkBool(d.calendar, 'calendar', 'CALENDAR_NOT_BOOLEAN', out.calendar);
+
+    /* notableDate: 単日 "YYYY-MM-DD" のみ（期間・時刻は不可。サイドバーは値をそのまま日付キーに使うため） */
+    if (d.notableDate !== undefined) {
+      if (Array.isArray(d.notableDate)) out.notableDate.push({ level: 'error', code: 'NOTABLEDATE_FORMAT', msg: 'notableDate には日付を1つだけ書いてください。複数の日付は notableDates のリストに書いてください' });
+      else parseEventValue(d.notableDate, { code: 'NOTABLEDATE', label: 'notableDate', allowRange: false, allowTime: false }).problems.forEach(function (x) { out.notableDate.push(x); });
+    }
+    /* notableDates: 単日のリスト（リストでないとサイドバーでビルドが止まる） */
+    if (d.notableDates !== undefined) {
+      var nds = d.notableDates;
+      if (!Array.isArray(nds)) {
+        out.notableDates.push(nds === ''
+          ? { level: 'error', code: 'NOTABLEDATES_EMPTY', msg: 'notableDates が空です。日付が無い場合は項目ごと削除してください' }
+          : { level: 'error', code: 'NOTABLEDATES_NOT_LIST', msg: 'notableDates がリストになっていません（「' + showVal(nds) + '」）。リストでないとサイトのビルドが止まります。1日ずつ「  - "YYYY-MM-DD"」の行で書くか、1日だけなら notableDate を使ってください' });
+      } else if (!nds.length) {
+        out.notableDates.push({ level: 'error', code: 'NOTABLEDATES_EMPTY', msg: 'notableDates が空のリストです。日付が無い場合は項目ごと削除してください' });
+      } else {
+        var allOk = true;
+        nds.forEach(function (x, i) {
+          var r = parseEventValue(x, { code: 'NOTABLEDATES', label: 'notableDates の' + (i + 1) + '番目', allowRange: false, allowTime: false });
+          r.problems.forEach(function (pb) { out.notableDates.push(pb); });
+          if (!r.ok) allOk = false;
+        });
+        if (allOk) {
+          if (nds.some(function (x, i) { return i > 0 && x < nds[i - 1]; })) out.notableDates.push({ level: 'warning', code: 'NOTABLEDATES_UNSORTED', msg: 'notableDates の日付が古い順に並んでいません（' + showVal(nds) + '）' });
+          var seen = {}, dups = [];
+          nds.forEach(function (x) { if (seen[x]) dups.push(x); seen[x] = true; });
+          if (dups.length) out.notableDates.push({ level: 'warning', code: 'NOTABLEDATES_DUPLICATE', msg: 'notableDates に同じ日付が重複しています（' + dups.join(', ') + '）' });
+        }
+      }
+    }
+
+    /* shopDate: "YYYY-MM-DD" または "YYYY-MM"（年月だけ。月初・月末の日付に読み替えない） */
+    if (d.shopDate !== undefined) {
+      var sd = d.shopDate;
+      var ym = typeof sd === 'string' ? /^(\d{4})-(\d{2})$/.exec(sd) : null;
+      if (typeof sd !== 'string') out.shopDate.push({ level: 'error', code: 'SHOPDATE_FORMAT', msg: 'shopDate は "YYYY-MM-DD" または "YYYY-MM" で書いてください（「' + showVal(sd) + '」）' });
+      else if (sd.trim() === '') out.shopDate.push({ level: 'error', code: 'SHOPDATE_EMPTY', msg: 'shopDate が空です。日付が未公表の場合は項目ごと削除してください' });
+      else if (ym) {
+        if (+ym[2] < 1 || +ym[2] > 12) out.shopDate.push({ level: 'error', code: 'SHOPDATE_INVALID', msg: 'shopDate：存在しない年月です（「' + sd + '」）' });
+      } else if (YMD_RE.test(sd)) {
+        if (!isRealYmd(sd)) out.shopDate.push({ level: 'error', code: 'SHOPDATE_INVALID', msg: 'shopDate：存在しない日付です（「' + sd + '」）' });
+      } else {
+        out.shopDate.push({ level: 'error', code: 'SHOPDATE_FORMAT', msg: 'shopDate の形式が正しくありません（「' + sd + '」）。"YYYY-MM-DD"（日まで判明）または "YYYY-MM"（年月だけ判明）で書いてください' });
+      }
+    }
+    return out;
   }
 
   /* ───────────── ファイル名・URL ───────────── */
@@ -482,10 +567,13 @@
     if (!isNew && typeof ctx.prevText === 'string') {
       var pfm = ctx.prevText.trim() ? parseFrontmatter(ctx.prevText) : null;
       if (pfm && pfm.ok) prev = pfm.data;
-      else if (hasEvent) add(warnings, 'EVENT_PREV_UNAVAILABLE','既存記事の内容を読み取れなかったため、開催日（eventDate・eventDates）は新規入力として検証しました');
+      else if (hasEvent || NEW_FIELDS.some(function (f) { return d[f] !== undefined; })) add(warnings, 'EVENT_PREV_UNAVAILABLE', '既存記事の内容を読み取れなかったため、日付・店舗情報の項目（eventDate・eventDates・notableDate など）は新規入力として検証しました');
     }
+    /* 新項目（工程1a PR 1a-2）も同じ方式: 追加・変更した項目だけエラー、変えていない項目は警告に下げる */
     var ev = checkEventFields(d);
-    ['eventDate', 'eventDates', 'common'].forEach(function (field) {
+    var nf = checkNewFields(d);
+    NEW_FIELDS.forEach(function (f) { ev[f] = nf[f]; });
+    ['eventDate', 'eventDates', 'common'].concat(NEW_FIELDS).forEach(function (field) {
       var unchanged = field !== 'common' && prev && canonValue(prev[field]) === canonValue(d[field]);
       ev[field].forEach(function (x) {
         if (x.level === 'error' && unchanged) add(warnings, x.code, x.msg + '（既存の値で、今回の更新では変更されていないため投稿は止めません。修正を推奨します）');
@@ -563,6 +651,10 @@
     fmtJst: fmtJst,
     checkEventDate: checkEventDate,
     checkEventFields: checkEventFields,
+    checkNewFields: checkNewFields,
+    EVENT_KINDS: EVENT_KINDS,
+    SHOP_STATUSES: SHOP_STATUSES,
+    NEW_FIELDS: NEW_FIELDS,
     isRealYmd: isRealYmd,
     langOfPath: langOfPath,
     splitFileName: splitFileName,
