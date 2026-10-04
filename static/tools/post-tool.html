@@ -705,8 +705,9 @@ function buildCoverBlock() {
 /* カバーブロックをフロントマターに適用 */
 function applyCoverBlock(content, coverBlock) {
   if (!coverBlock) return content;
-  // フロントマターを分離
-  const m = content.match(/^(---\n)([\s\S]*?)(\n---)/m);
+  // フロントマターを分離。文字列の先頭に固定する（m フラグだと途中の --- にも一致し、
+  // 下の slice(m[0].length) が誤った位置で切れて本文が壊れる。2026-06 のキッチンオリジン記事の破損原因）
+  const m = content.match(/^(---\n)([\s\S]*?)(\n---)/);
   if (!m) return content;
   let fm   = m[2];
   const rest = content.slice(m[0].length);

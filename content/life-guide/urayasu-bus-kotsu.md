@@ -36,6 +36,7 @@ images: ["/images/og-guides.png"]
 aliases:
   - /life-guide/guides/urayasu-bus-kotsu/
   - /guides/urayasu-bus-kotsu/
+  - /posts/urayasu-bus-kotsu/
 ---
 
 <p>浦安市内の移動に便利な「おさんぽバス」（市のコミュニティバス）を中心に、路線バスや鉄道、高齢者の交通支援までを整理しました。路線・時刻・運賃は改定されることがあるため、実際のおでかけの際は公式情報で最新の内容をご確認ください。駅を起点にした暮らしの比較は<a href="/life-guide/station-life/">駅別生活ガイド</a>もあわせてどうぞ。</p>
