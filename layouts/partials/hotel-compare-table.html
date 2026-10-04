@@ -47,7 +47,7 @@
 
 {{- /* 行を収集（フィルタ適用）→ 価格昇順ソート */ -}}
 {{- $rows := slice }}
-{{- range site.Data.hotels.areas }}
+{{- range hugo.Data.hotels.areas }}
   {{- $areaTag := .tag }}
   {{- $areaName := cond (eq $lang "ja") (.name | replaceRE "エリア$" "") (index . (printf "name_%s" $lang)) }}
   {{- if or (eq $zone "") (eq $zone $areaTag) }}

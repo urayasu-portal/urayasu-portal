@@ -65,7 +65,7 @@
   {{- if gt (len .) 1 }}
   <div class="tg-lang-switch tg-topic-langs">
     {{- range . }}
-    <a class="tg-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }}>{{ .Language.LanguageName }}</a>
+    <a class="tg-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a>
     {{- end }}
   </div>
   {{- end }}

@@ -280,6 +280,8 @@ draft: false
   <div id="status"></div>
 
 </div>
+<!-- 検証ルール（CI と共通の単一ソース）。本番では /tools/post-rules.js、リポジトリ直下 tools/ から開いたときは static/tools/ を読む -->
+<script src="post-rules.js" onerror="var s=document.createElement('script');s.src='../static/tools/post-rules.js';document.head.appendChild(s);"></script>
 <script>
 const OWNER  = 'urayasu-portal';
 const REPO   = 'urayasu-portal';
@@ -496,25 +498,37 @@ function savePat() {
   showStatus('success','✅ トークンを保存しました');
 }
 
-/* ── フロントマターパース ── */
+/* ── フロントマターパース（post-rules.js の解析器を使用。BOM・CRLF・インライン配列に対応） ── */
+function rulesReady() { return typeof window.PostRules === 'object' && window.PostRules; }
+/* 投稿前の正規化：先頭 BOM を除去し改行を LF に統一（Hugo の解釈は変わらない） */
+function normalizeContent(text) { return rulesReady() ? PostRules.normalizeText(text) : String(text).replace(/^﻿/, '').replace(/\r\n?/g, '\n'); }
 function parseFrontmatter(text) {
+  if (!rulesReady()) return { date: null, slug: null, title: null };
+  const fm = PostRules.parseFrontmatter(text);
+  const d  = fm.data || {};
+  const dp = PostRules.parseDate(d.date);
+  const pad = n => String(n).padStart(2, '0');
   return {
-    date:  (text.match(/^date:\s*["']?(\d{4})-(\d{2})-(\d{2})/m) || [,'','','']  ).slice(1,4).join('') || null,
-    slug:  (text.match(/^slug:\s*["']?([a-z0-9][a-z0-9-]*)["']?/m)||[])[1] || null,
-    title: (text.match(/^title:\s*["'](.+?)["']\s*$/m)||[])[1] || null,
+    /* ファイル名用の日付は日本時間の日付（YYYYMMDD） */
+    date:  dp.ok ? `${dp.jst.y}${pad(dp.jst.m)}${pad(dp.jst.d)}` : null,
+    slug:  typeof d.slug === 'string' && PostRules.SLUG_RE.test(d.slug) ? d.slug : null,
+    title: typeof d.title === 'string' && d.title ? d.title : null,
+    dateInfo: dp.ok ? dp : null,
+    fm,
   };
 }
 function updateParsedInfo() {
   const content = document.getElementById('content').value;
   const info = document.getElementById('parsedInfo');
   if (!content.includes('---')) { info.style.display='none'; return; }
-  const {date,slug,title} = parseFrontmatter(content);
+  const {date,slug,title,dateInfo} = parseFrontmatter(content);
   if (!date&&!slug&&!title) { info.style.display='none'; return; }
   const p = [];
   if (title) p.push(`<strong>タイトル：</strong>${escHtml(title)}`);
   if (date)  p.push(`<strong>日付：</strong>${date.slice(0,4)}-${date.slice(4,6)}-${date.slice(6,8)}`);
   if (slug)  p.push(`<strong>スラッグ：</strong>${escHtml(slug)}`);
   if (date&&slug) p.push(`<strong>推奨ファイル名：</strong>${date}-${slug}.md`);
+  if (dateInfo && dateInfo.epochMs > Date.now()) p.push(`<strong style="color:#b9770e">⏰ 予約投稿：</strong>日本時間 ${PostRules.fmtJst(dateInfo)} より後のビルドで公開`);
   info.innerHTML = p.join('　　');
   info.style.display = 'block';
 }
@@ -788,55 +802,97 @@ async function uploadImage(pat, filename, b64) {
   return `/images/posts/${filename}`;
 }
 
-/* ── 投稿前の自動品質チェック ── */
-const ALLOWED_CATEGORIES = ['開店・閉店','ニュース','イベント','グルメ・カフェ','スポーツ','子育て・教育','お知らせ'];
-function checkArticleQuality(content, isUpdate) {
-  const errors = [], warns = [];
-  const m = content.match(/^---\n([\s\S]*?)\n---([\s\S]*)$/);
-  if (!m) { errors.push('フロントマターの形式が正しくありません（--- で囲まれていません）'); return {errors, warns}; }
-  const fm = m[1], body = m[2];
+/* ── 投稿前チェック ──
+   ルール本体は post-rules.js（CI の scripts/validate/validate-content.mjs と共通）。
+   ここでは「既存記事との URL 重複」を2段階で確認する：
+     ① リポジトリの記事ファイル（未公開・予約投稿も含む）… GitHub API でファイル一覧を取得し、
+        slug が同じと思われるファイルの中身を読んで実際の URL を照合
+     ② 公開中のページ … 本番の投稿ツール（同一オリジン）からのみ、その URL が既に存在するかを確認
+   どちらも投稿の直前時点の確認であり、確認後に別の記事が入る可能性は CI 側で検出する。 */
+const b64ToUtf8 = b64 => new TextDecoder().decode(Uint8Array.from(atob(String(b64).replace(/\s/g, '')), ch => ch.charCodeAt(0)));
+const ghPath = p => p.split('/').map(encodeURIComponent).join('/');
 
-  const catMatch = fm.match(/^categories:\n((?:[ \t]*-[ \t]*.+\n?)*)/m);
-  if (catMatch) {
-    const cats = Array.from(catMatch[1].matchAll(/-\s*["']?([^"'\n]+?)["']?\s*$/gm)).map(x => x[1].trim());
-    cats.forEach(c => {
-      if (c.startsWith('cat-')) errors.push(`categories に不正な値が含まれています：${c}`);
-      else if (!ALLOWED_CATEGORIES.includes(c)) errors.push(`categories に許可されていない値が含まれています：${c}`);
-    });
+async function findUrlConflicts(hdrs, path, data, ownUrls) {
+  const out = { conflicts: [], notes: [] };
+  const lang = PostRules.langOfPath(path);
+  const url  = PostRules.expectedUrl(path, data);
+  if (!url) return out;
+  const cands = [{ u: url, via: 'url' }].concat(PostRules.aliasesOf(data, lang).map(a => ({ u: PostRules.normUrl(a), via: 'alias' })));
+  const want = new Set(cands.map(c => c.u));
+
+  /* ① リポジトリ内の記事 */
+  try {
+    const t = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/git/trees/${BRANCH}?recursive=1`, { headers: hdrs, cache: 'no-store' });
+    if (!t.ok) throw new Error('HTTP ' + t.status);
+    const tree = ((await t.json()).tree || []).filter(e => e.type === 'blob' && /^content\/posts\/.+\.md$/.test(e.path) && e.path !== path);
+    /* ファイル名の slug 部分が一致するもの（同じ言語）だけ中身を読む。続報で slug を使い回した既存の衝突はすべてこの形だった */
+    const suspects = tree.filter(e => PostRules.langOfPath(e.path) === lang &&
+      want.has(PostRules.normUrl(PostRules.langPrefix(lang) + '/posts/' + PostRules.splitFileName(e.path).stem + '/'))).slice(0, 10);
+    for (const e of suspects) {
+      const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${ghPath(e.path)}?ref=${BRANCH}`, { headers: hdrs, cache: 'no-store' });
+      if (!r.ok) { out.notes.push(`既存記事 ${e.path} の内容を確認できませんでした（HTTP ${r.status}）。CI で検出されます`); continue; }
+      const ofm = PostRules.parseFrontmatter(b64ToUtf8((await r.json()).content)).data;
+      const oUrls = [PostRules.expectedUrl(e.path, ofm)].concat(PostRules.aliasesOf(ofm, lang).map(PostRules.normUrl)).filter(Boolean);
+      oUrls.filter(u => want.has(u)).forEach(u => out.conflicts.push({ url: u, other: e.path }));
+    }
+  } catch (err) {
+    out.notes.push(`リポジトリ内の記事との重複チェックを完了できませんでした（${err.message}）。重複があれば CI で検出されます`);
   }
 
-  const hasEventDate    = /^eventDates?:/m.test(fm);
-  const hasHideEventBox = /^hideEventBox:\s*true/m.test(fm);
-  if (hasEventDate && !hasHideEventBox) errors.push('eventDate(s) があるのに hideEventBox: true がありません');
-
-  if (!/^draft:\s*false/m.test(fm)) errors.push('draft: false がありません');
-
-  const hasLastmod = /^lastmod:/m.test(fm);
-  if (!isUpdate && hasLastmod) warns.push('新規投稿なのに lastmod が設定されています');
-  if (isUpdate && !hasLastmod) warns.push('更新なのに lastmod が設定されていません');
-
-  const hasCheckDate = /^checkDate:/m.test(fm);
-  const hasSources   = /^sources:/m.test(fm);
-  if (hasCheckDate && /<h2>\s*参考情報\s*<\/h2>/.test(body)) warns.push('checkDate があるのに本文に「参考情報」見出しが残っています（sources移行漏れ）');
-  if (hasCheckDate && !hasSources) warns.push('checkDate があるのに frontmatter に sources: がありません');
-
-  if (/<div\s+style=/.test(body)) warns.push('本文に <div style=...> が含まれています');
-  // iframe は Googleマップ埋め込み（google.com/maps・maps.google）を除外し、それ以外のみ warn
-  const nonMapIframe = (body.match(/<iframe[^>]*>/gi) || []).some(t => !/google\.com\/maps|maps\.google/i.test(t));
-  if (nonMapIframe) warns.push('本文に地図以外の <iframe> が含まれています');
-
-  const plainLen = body.replace(/<[^>]+>/g,'').replace(/\s+/g,'').length;
-  if (plainLen < 300) warns.push(`本文が${plainLen}字と短めです（まとめ記事への統合を検討してください）`);
-
-  if (/<img[^>]*\balt=""[^>]*>/.test(body)) warns.push('alt が空の画像があります');
-
-  return { errors, warns };
+  /* ② 公開中のページ（同一オリジンでのみ可能） */
+  if (location.origin === BASE) {
+    for (const c of cands) {
+      if (ownUrls.has(c.u)) continue;
+      try {
+        const r = await fetch(encodeURI(c.u), { method: 'HEAD', cache: 'no-store' });
+        if (r.ok && !out.conflicts.some(x => x.url === c.u)) out.conflicts.push({ url: c.u, other: '公開中のページ' });
+      } catch (err) { out.notes.push(`公開中のページの確認に失敗しました（${c.u}）`); }
+    }
+  } else {
+    out.notes.push(`公開中のページとの重複チェックは本番の投稿ツール（${BASE}/tools/post-tool.html）から開いたときだけ行います。重複があれば CI で検出されます`);
+  }
+  return out;
 }
 
+/**
+ * 投稿前の品質チェック。
+ * existing: 同名ファイルが既にある場合 { text }（更新）／ 無ければ null（新規）
+ * 返り値: { errors: [文字列], warns: [文字列] }
+ */
+async function checkArticleQuality(content, path, hdrs, existing) {
+  if (!rulesReady()) return { errors: ['検証ルール（post-rules.js）を読み込めませんでした。ページを再読み込みしてください'], warns: [] };
+  const isUpdate = !!existing;
+  const v = PostRules.validatePost(content, { path, isNew: !isUpdate, now: Date.now() });
+  const errors = v.errors.map(e => e.msg);
+  /* 予約投稿の警告は見落としを防ぐため先頭に出す */
+  const warns = v.warnings.slice().sort((a, b) => (/^DATE_(FAR_)?FUTURE$/.test(b.code) ? 1 : 0) - (/^DATE_(FAR_)?FUTURE$/.test(a.code) ? 1 : 0)).map(w => w.msg);
+  const fmBroken = v.errors.some(e => /^FM_/.test(e.code));
+  if (fmBroken) return { errors, warns };
+
+  const data = v.fm.data;
+  const lang = PostRules.langOfPath(path);
+  const ownUrls = new Set();
+  if (isUpdate) {
+    const odata = PostRules.parseFrontmatter(existing.text).data;
+    const oldUrl = PostRules.expectedUrl(path, odata);
+    const newUrl = PostRules.expectedUrl(path, data);
+    if (oldUrl) ownUrls.add(oldUrl);
+    PostRules.aliasesOf(odata, lang).forEach(a => ownUrls.add(PostRules.normUrl(a)));
+    if (oldUrl !== newUrl) {
+      warns.unshift(`この更新で記事の URL が変わります（旧：${oldUrl || 'ファイル名から決まる URL'} → 新：${newUrl || 'ファイル名から決まる URL'}）。公開済み記事の URL 変更は検索評価やリンクに影響します。意図した変更か確認してください`);
+    }
+  }
+  const cf = await findUrlConflicts(hdrs, path, data, ownUrls);
+  const sug = (typeof data.slug === 'string' && data.slug) ? `（例：${data.slug}-${(path.match(/\/(\d{8})-/) || [, 'yyyymmdd'])[1]}）` : '';
+  cf.conflicts.forEach(c => errors.push(`指定された slug（URL ${c.url}）は既存記事で使用されています：${c.other}。続報などの別記事にする場合は別の slug ${sug}にしてください`));
+  cf.notes.forEach(n => warns.push(n));
+  return { errors, warns };
+}
 /* ── 記事投稿 ── */
 async function submitArticle() {
   const pat     = localStorage.getItem('urayasu_gh_pat');
-  let   content = document.getElementById('content').value;
+  /* BOM・CRLF を正規化してから検証・投稿する（以前は BOM 付きの貼り付けが「--- で囲まれていません」でブロックされていた） */
+  let   content = normalizeContent(document.getElementById('content').value);
   const fn      = document.getElementById('filename').value.trim();
   const btn     = document.getElementById('submitBtn');
 
@@ -852,15 +908,19 @@ async function submitArticle() {
     const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
     const hdrs   = ghHeaders(pat);
 
-    let sha; const c = await fetch(apiUrl,{headers:hdrs}); if(c.ok) sha=(await c.json()).sha;
+    let sha, existing = null;
+    const c = await fetch(apiUrl,{headers:hdrs, cache:'no-store'});
+    if (c.ok) { const j = await c.json(); sha = j.sha; try { existing = { text: b64ToUtf8(j.content || '') }; } catch (e) { existing = { text: '' }; } }
     const isUpdate = !!sha;
 
-    // ① 自動品質チェック
-    const {errors, warns} = checkArticleQuality(content, isUpdate);
+    // ① 自動品質チェック（frontmatter の検証＋既存記事との URL 重複）
+    showStatus('loading','⏳ 記事の内容と既存記事との重複を確認しています...');
+    const {errors, warns} = await checkArticleQuality(content, path, hdrs, existing);
     if (errors.length) {
-      showStatus('error', '❌ 投稿をブロックしました：\n' + errors.map(x=>'・'+escHtml(x)).join('\n'));
+      showStatus('error', '❌ 投稿をブロックしました。次の点を修正してください：\n' + errors.map(x=>'・'+escHtml(x)).join('\n'));
       btn.disabled = false; return;
     }
+    if (!warns.length) showStatus('loading','⏳ 確認が完了しました');
     if (warns.length) {
       showStatus('warn', '⚠️ 確認してください：\n' + warns.map(x=>'・'+escHtml(x)).join('\n'));
       if (!confirm('以下の点を確認してください。このまま投稿を続行しますか？\n\n' + warns.map(x=>'・'+x).join('\n'))) {
@@ -908,12 +968,15 @@ async function submitArticle() {
     const res = await fetch(apiUrl,{method:'PUT',headers:hdrs,body:JSON.stringify(body)});
     if (res.ok) {
       const action = isUpdate?'更新':'新規投稿';
-      const slug   = fn.replace(/^\d{8}-/,'').replace('.md','');
+      /* 記事の URL は slug（または url）で決まる。どちらも無い既存記事はファイル名から決まるため従来どおり推定する */
+      const pf     = parseFrontmatter(content);
+      const pageUrl = (pf.fm && PostRules.expectedUrl(path, pf.fm.data)) || `/posts/${fn.replace(/^\d{8}-/,'').replace(/\.md$/,'')}/`;
+      const sched  = pf.dateInfo && pf.dateInfo.epochMs > Date.now() ? `\n⏰ 予約投稿です。日本時間 ${PostRules.fmtJst(pf.dateInfo)} より後のビルドで公開されます（確実に出すには Actions の手動実行）` : '';
       showStatus('success',
         (title ? `📌 <strong>${escHtml(title)}</strong>\n` : '') +
         `✅ ${action}しました！\n📄 <strong>${escHtml(fn)}</strong>\n` +
         `🔗 <a href="https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}" target="_blank">GitHubで確認</a>\n` +
-        `🌐 ビルド完了後：<a href="https://urayasu-portal.com/posts/${slug}/" target="_blank">記事ページを開く</a>`
+        `🌐 ビルド完了後：<a href="${BASE}${encodeURI(pageUrl)}" target="_blank">記事ページを開く</a>` + sched
       );
       // リセット
       document.getElementById('filename').value = '';

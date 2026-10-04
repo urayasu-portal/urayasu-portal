@@ -6,7 +6,7 @@
 {{- $isEN := eq .Page.Language.Lang "en" }}
 {{- $lang := .Page.Language.Lang }}
 {{- $h := false }}
-{{- range .Site.Data.hotels_map.hotels }}
+{{- range hugo.Data.hotels_map.hotels }}
   {{- if eq .slug $slug }}{{ $h = . }}{{ end }}
 {{- end }}
 {{- $icon := dict

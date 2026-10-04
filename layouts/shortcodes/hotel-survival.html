@@ -6,7 +6,7 @@
 {{- $lang := .Page.Language.Lang }}
 {{- $isJA := eq $lang "ja" }}
 {{- $sv := false }}
-{{- range .Site.Data.hotel_survival.hotels }}{{ if eq .slug $slug }}{{ $sv = . }}{{ end }}{{- end }}
+{{- range hugo.Data.hotel_survival.hotels }}{{ if eq .slug $slug }}{{ $sv = . }}{{ end }}{{- end }}
 {{- $icon := dict "conbini" "ti-building-store" "drugstore" "ti-pill" "supermarket" "ti-shopping-cart" "laundry" "ti-wash-machine" "atm" "ti-cash" }}
 {{- $roles := dict
   "ja" (dict "conbini" "コンビニ" "drugstore" "ドラッグストア" "supermarket" "スーパー" "laundry" "コインランドリー" "atm" "海外カード対応ATM")
