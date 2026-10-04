@@ -7,7 +7,7 @@
 {{- if eq .Language.Lang "en" }}
 {{- $slug := .File.ContentBaseName }}
 {{- $h := false }}
-{{- range site.Data.hotels_map.hotels }}{{ if eq .slug $slug }}{{ $h = . }}{{ end }}{{ end }}
+{{- range hugo.Data.hotels_map.hotels }}{{ if eq .slug $slug }}{{ $h = . }}{{ end }}{{ end }}
 {{- if and $h $h.flags }}
 {{- $n := $h.name_en | default $h.name }}
 {{- $shuttleURL := "travel-guide/hotels/shuttle/" | relLangURL }}

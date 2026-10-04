@@ -1,0 +1,1 @@
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio

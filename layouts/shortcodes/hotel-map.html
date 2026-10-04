@@ -3,7 +3,7 @@
        本文中に hotel-map ショートコードを置くだけで描画される。 */ -}}
 {{- $slug := .Page.File.ContentBaseName }}
 {{- $h := false }}
-{{- range .Site.Data.hotels_map.hotels }}
+{{- range hugo.Data.hotels_map.hotels }}
   {{- if eq .slug $slug }}{{ $h = . }}{{ end }}
 {{- end }}
 {{- $lang := .Page.Language.Lang }}

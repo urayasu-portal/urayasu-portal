@@ -37,7 +37,7 @@
   <div class="tg-lang-switch">
     <span class="tg-lang-label">{{ if $isEN }}Language{{ else if $isZH }}语言{{ else if $isKO }}언어{{ else if $isZHTW }}語言{{ else }}言語{{ end }}</span>
     {{- range . }}
-    <a class="tg-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }}>{{ .Language.LanguageName }}</a>
+    <a class="tg-lang-pill{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a>
     {{- end }}
   </div>
   {{- end }}

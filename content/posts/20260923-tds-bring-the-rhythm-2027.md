@@ -1,6 +1,7 @@
 ---
 title: "【浦安】「ブリング・ザ・リズム！」2027年秋スタート"
 date: 2026-09-23T18:50:00+09:00
+lastmod: 2026-10-04
 slug: "tds-bring-the-rhythm-2027"
 categories:
   - "ニュース"
@@ -28,17 +29,19 @@ draft: false
 
 <p>会場となるブロードウェイ・ミュージックシアターは、東京ディズニーシーのアメリカンウォーターフロントにある屋内劇場です。</p>
 
-<p>同劇場では、長年親しまれた「ビッグバンドビート～ア・スペシャルトリート～」が2025年9月30日に公演を終了しました。今回の「ブリング・ザ・リズム！」も、生歌唱や生演奏を取り入れた本格的なライブエンターテインメントとなります。</p>
+<p>同劇場では、約20年にわたって親しまれた「ビッグバンドビート～ア・スペシャルトリート～」が2025年9月30日に公演を終了しました。今回の「ブリング・ザ・リズム！」も、生歌唱や生演奏を取り入れた本格的なライブエンターテインメントとなります。</p>
 
 <p>浦安・舞浜で秋のパーク周辺を楽しむ予定の方は、<a href="/travel-guide/maihama-halloween/">浦安・舞浜ハロウィーンガイド2026</a>も参考にしてください。</p>
 
 {{< map q="東京ディズニーシー ブロードウェイ・ミュージックシアター" >}}
 
-<p>具体的な開始日や公演回数、鑑賞方法などはまだ発表されていません。2027年秋の来園を検討する際は、東京ディズニーリゾートの公式サイトで最新情報を確認してください。</p>
+<p>具体的な開始日や公演回数、登場するディズニーの仲間たち、鑑賞方法（予約・抽選の有無など）は、9月17日の発表時点では明らかにされていません。2027年秋の来園を検討する際は、東京ディズニーリゾートの公式サイトで最新情報を確認してください。</p>
 
 <h2>参考情報</h2>
 <ul>
 <li><a href="https://www.olc.co.jp/ja/news/news_tdr/20260917_01/main/0/link/20260917_01.pdf" target="_blank" rel="noopener">オリエンタルランド「ブリング・ザ・リズム！」ニュースリリース</a></li>
 <li><a href="https://www.tokyodisneyresort.jp/tds/show" target="_blank" rel="noopener">東京ディズニーシー パレード／ショー</a></li>
 <li><a href="https://urayasu.keizai.biz/headline/527/" target="_blank" rel="noopener">浦安経済新聞</a></li>
+<li><a href="https://prtimes.jp/main/html/rd/p/000000176.000119340.html" target="_blank" rel="noopener">オリエンタルランド「ブリング・ザ・リズム！」発表（PR TIMES）</a></li>
+<li><a href="https://travel.watch.impress.co.jp/docs/news/2141847.html" target="_blank" rel="noopener">トラベル Watch</a></li>
 </ul>

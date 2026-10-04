@@ -29,7 +29,57 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+# ビルド環境のバージョン固定（2026-10-04 工程0.5）。
+# 以前は hugo-version: latest / npx pagefind（最新）で、新版の公開と同時に本番ビルドの挙動が変わりうる状態だった。
+# 0.167.0 は固定前に本番が実際に使っていた版（latest が 2026-09-28 リリースの 0.167.0 を指していた）。
+# 1.5.2 は本番の /pagefind/pagefind-entry.json に記録されていた版。
+# 上げるときは docs/audits/phase05-stability-report.md の「バージョン更新手順」に従い、改修前後のビルド差分を確認すること。
+env:
+  HUGO_VERSION: '0.167.0'
+  PAGEFIND_VERSION: '1.5.2'
+  NODE_VERSION: '22'
+
 jobs:
+  # 記事データの検証（scripts/validate/）。公開は止めない設計：
+  #   build / deploy はこのジョブを待たない（needs に入れていない）。新しい不備があるとこのジョブだけが失敗し、
+  #   GitHub から失敗通知が届く（Actions の結果画面に不備の一覧が出る）。既存の不備は known-issues.json で区別している。
+  #   不正な記事を公開前に止めたくなったら、build に `needs: validate` を足す（運営判断。公開が止まる副作用あり）。
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Test validation rules
+        run: node scripts/validate/test/run-tests.mjs --unit-only
+
+      - name: Collect Hugo URLs and path warnings
+        # frontmatter が壊れていると Hugo 自体が失敗するが、検証は続ける（エラー内容はログとこの後の結果に出る）
+        run: |
+          hugo list all > "$RUNNER_TEMP/hugo-list.csv" || echo "::warning::hugo list all が失敗しました"
+          hugo --minify --printPathWarnings --destination "$RUNNER_TEMP/validate-public" > "$RUNNER_TEMP/hugo-build.log" 2>&1 || echo "::error::Hugo のビルドが失敗しました（下のログを確認）"
+          grep -E 'WARN|ERROR' "$RUNNER_TEMP/hugo-build.log" || true
+
+      - name: Validate content
+        run: >-
+          node scripts/validate/validate-content.mjs
+          --hugo-list "$RUNNER_TEMP/hugo-list.csv"
+          --hugo-log "$RUNNER_TEMP/hugo-build.log"
+          --summary "$GITHUB_STEP_SUMMARY"
+
   build:
     runs-on: ubuntu-latest
 
@@ -43,7 +93,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: latest
+          hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
       - name: Setup Pages
@@ -58,7 +108,7 @@ jobs:
         run: hugo --minify --baseURL "https://urayasu-portal.com/"
 
       - name: Run Pagefind (search index)
-        run: npx pagefind --site public
+        run: npx --yes pagefind@${{ env.PAGEFIND_VERSION }} --site public
 
       - name: Add CNAME
         run: echo "urayasu-portal.com" > ./public/CNAME

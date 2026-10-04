@@ -13,7 +13,7 @@ checkDate: "July 2026"
 sources:
   - name: "teamLab Planets TOKYO DMM Official Site"
     url: "https://teamlabplanets.dmm.com/"
-tags: ["rainy-day", "with-kids", "toyosu", "teamlab"]
+tags: ["Rainy Day", "with-kids", "toyosu", "teamlab"]
 factChecked: "2026-10-03"
 ---
 

@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-10-04T08:57:05.080Z",
+  "contentFiles": 1197,
+  "pages": 2914,
+  "aliasPages": 1512,
+  "sitemapUrls": 1456,
+  "affiliateLinks": 721,
+  "affiliateLinksByAsp": {
+    "trip": 194,
+    "travelpayouts": 18,
+    "agoda": 176,
+    "booking": 180,
+    "jalan": 3,
+    "expedia": 45,
+    "a8": 59,
+    "rakuten": 43,
+    "asoview": 3
+  },
+  "duplicateTargetPaths": 0,
+  "buildWarnings": 1
+}

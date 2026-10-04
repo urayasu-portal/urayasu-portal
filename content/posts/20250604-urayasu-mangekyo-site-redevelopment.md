@@ -1,7 +1,7 @@
 ---
 title: "「浦安万華郷跡地」活用方針が決定"
 date: 2025-06-04T00:00:00+09:00
-lastmod: 2026-09-03T18:51:00+09:00
+lastmod: 2026-10-04
 slug: "urayasu-mangekyo-site-redevelopment"
 url: "/posts/浦安万華郷跡地活用方針が決定/"
 categories:
@@ -18,6 +18,8 @@ sources:
     url: "https://www.city.urayasu.lg.jp/shisei/machi/torikumi/1047015.html"
   - name: "浦安市「（仮称）日の出地区防災スポーツ施設等整備事業に関するサウンディング型市場調査」"
     url: "https://www.city.urayasu.lg.jp/shisei/jigyosha/1040407/1048855.html"
+  - name: "【浦安ニュース号外】「浦安万華郷跡地」の方針が大筋決定！（2025年3月6日）"
+    url: "https://sumitai.ne.jp/urayasu/2025-03-06/140639.html"
 draft: false
 ---
 
