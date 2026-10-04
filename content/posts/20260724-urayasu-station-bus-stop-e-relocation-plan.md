@@ -12,31 +12,34 @@ tags:
   - "やなぎ通り"
   - "まちづくり"
 description: "浦安市が2026年7月、「浦安駅入口E」バス停を宮前通りからやなぎ通り南側の市有地へ移す基本計画素案を公表しました。3台分の乗降場や屋根、広い歩道を整備し、2031年度の供用を目標とする内容です。現在の乗車場・降車場の配置もまとめます。"
-checkDate: "2026-07"
-lastmod: 2026-09-30
+checkDate: "2026-10"
+lastmod: "2026-10-04T21:56:00+09:00"
 guide: "/life-guide/urayasu-station-bus-noriba/"
 sources:
-  - name: "浦安市 浦安駅入口バス停留所集約化基本計画（素案）※意見募集の終了に伴い掲載終了"
+  - name: "浦安市 浦安駅入口バス停留所集約化基本計画（素案）に対する意見募集結果"
+    url: "https://www.city.urayasu.lg.jp/shisei/kocho/public/1007206/1048654/1049141.html"
+  - name: "浦安市 浦安駅入口バス停留所集約化基本計画（素案）"
     url: "https://www.city.urayasu.lg.jp/_res/projects/default_project/_page_/001/048/537/kihonkeikakusoan.pdf"
   - name: "浦安市 浦安駅入口バス停留所集約化事業"
     url: "https://www.city.urayasu.lg.jp/shisei/machi/torikumi/1047327/1047421.html"
-  - name: "浦安市 浦安駅周辺地区まちづくりだより第5号（2025年12月1日発行）"
+  - name: "浦安市 浦安駅周辺地区まちづくりだより第5号"
     url: "https://www.city.urayasu.lg.jp/_res/projects/default_project/_page_/001/047/342/05.pdf"
 draft: false
 ---
-
 <p>浦安市は2026年7月、宮前通り沿いにある「浦安駅入口E」バス停を、やなぎ通り南側の市有地へ移す「浦安駅入口バス停留所集約化基本計画」の素案を公表しました。7月30日（木）まで市民意見を募集しました。</p>
 
-{{< note >}}2026年9月30日更新：意見募集は終了し、素案は市のサイトから外れています。本文の計画内容は、7月に公表された素案に基づくものです。整備内容や供用時期の最新情報は<a href="https://www.city.urayasu.lg.jp/shisei/machi/torikumi/1047327/1047421.html" target="_blank" rel="noopener">市の集約化事業ページ</a>で確認してください。{{< /note >}}
+{{< note >}}【2026年10月4日追記】浦安市は10月1日、計画素案に対するパブリックコメントの結果を公表しました。7人から25件の意見が寄せられましたが、意見を受けた素案の加筆・修正はありませんでした。{{< /note >}}
 
 {{< note >}}いま現在のEバス停の場所や、舞浜駅・新浦安駅方面の乗り場は<a href="/life-guide/urayasu-station-bus-noriba/">浦安駅のバス乗り場ガイド</a>で行き先別にまとめています。{{< /note >}}
 
 <h2>浦安駅周辺には7つのバス停が分散</h2>
+
 <p>「浦安駅入口」の名称を持つ乗降場所は7カ所あり、駅から約150～250メートルの範囲に分散しています。内訳は乗車場がA・B・D・Eの4カ所、降車場が1・2・3の3カ所です。A・Bはやなぎ通り北側、Dはやなぎ通り南側、Eは宮前通り沿いにあります。</p>
 
 <p>素案によると、9系統が乗り入れ、休日には1日547便が発着します。Eバス停では、通勤・通学時間帯に最大約50メートルの待機列が確認されています。</p>
 
 <h2>素案の内容：Eバス停を3台分の乗降場へ移転</h2>
+
 <table>
   <tr><th>移転対象</th><td>浦安駅入口Eバス停</td></tr>
   <tr><th>現在地</th><td>宮前通り沿い</td></tr>
@@ -50,11 +53,33 @@ draft: false
 {{< warn >}}この計画は、すべての「浦安駅入口」バス停を1カ所へ移すものではありません。乗車場A・Bや降車場3などは今回の集約の対象外です。供用開始時期は素案の時点での目標です。{{< /warn >}}
 
 <h2>通勤・通学時の安全性向上を目指す計画</h2>
+
 <p>現在のEバス停では、待機列によって歩行者や自転車がすれ違いにくくなることが課題となっています。屋根や広い待機スペースが整備されれば、雨天時や混雑時の利用環境の改善が期待されます。</p>
 
 <p>市は2025年12月発行の「浦安駅周辺地区まちづくりだより第5号」で、まずEバス停をやなぎ通り南側街区の市有地へ集約する方向性を示し、基本計画の作成に向けて現地測量を行うと案内していました。今回の素案はその基本計画にあたります。</p>
 
+<h2>10月1日、市民意見25件への対応結果を公表</h2>
+
+<p>浦安市は、7月1日から30日まで実施したパブリックコメントの結果を、10月1日に公表しました。</p>
+
+<p>意見を提出したのは7人で、合計25件の意見が寄せられました。意見と市の対応結果は、次のとおりです。</p>
+
+<table>
+<tr><th>対応区分</th><th>件数</th></tr>
+<tr><td>意見を受けて素案を加筆・修正</td><td>0件</td></tr>
+<tr><td>考え方が素案に既に含まれている</td><td>8件</td></tr>
+<tr><td>考え方を素案に反映しなかった</td><td>2件</td></tr>
+<tr><td>質問・感想など、その他</td><td>15件</td></tr>
+</table>
+
+<p>意見を受けて計画素案を加筆・修正した項目はありませんでした。個別の意見と市の考えは、<a href="https://www.city.urayasu.lg.jp/shisei/kocho/public/1007206/1048654/1049141.html" target="_blank" rel="noopener">浦安市公式サイトの意見募集結果</a>から確認できます。</p>
+
+<p>今回の結果公表によって、工事開始日や実際の停留所移設日が確定したわけではありません。引き続き事業の進捗を確認する必要があります。</p>
+
 <h2>最新の事業案内と現在の乗り場を確認</h2>
-<p>事業の進捗は<a href="https://www.city.urayasu.lg.jp/shisei/machi/torikumi/1047327/1047421.html" target="_blank" rel="noopener">浦安市の集約化事業ページ</a>、現在の乗り場は<a href="https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020739" target="_blank" rel="noopener">京成バス千葉ウエスト 千鳥営業所（旧 東京ベイシティ交通）の公式案内</a>で確認できます。市内バスの利用方法は<a href="/life-guide/urayasu-bus-kotsu/">浦安市内のバス・交通ガイド</a>もあわせてご覧ください。</p>
+
+<p>事業の進捗は<a href="https://www.city.urayasu.lg.jp/shisei/machi/torikumi/1047327/1047421.html" target="_blank" rel="noopener">浦安市の集約化事業ページ</a>、現在の乗り場は<a href="https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020739" target="_blank" rel="noopener">京成バス千葉ウエストの公式案内</a>で確認できます。</p>
+
+<p>市内バスの利用方法は<a href="/life-guide/urayasu-bus-kotsu/">浦安市内のバス・交通ガイド</a>もあわせてご覧ください。</p>
 
 {{< map q="浦安駅" >}}
