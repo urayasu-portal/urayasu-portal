@@ -202,15 +202,165 @@
   function pad2(n) { return (n < 10 ? '0' : '') + n; }
   function fmtJst(p) { return p.jst.y + '-' + pad2(p.jst.m) + '-' + pad2(p.jst.d) + ' ' + pad2(p.jst.hh) + ':' + pad2(p.jst.mm); }
 
-  /* eventDate は "YYYY-MM-DD" / "YYYY-MM-DD/YYYY-MM-DD" / 配列 を許容（layouts/_default/events.html と同じ） */
-  function checkEventDate(v) {
-    var list = Array.isArray(v) ? v : String(v).split('/');
-    for (var i = 0; i < list.length; i++) {
-      var s = String(list[i]).trim().slice(0, 10);
-      var p = parseDate(s);
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(s) || !p.ok) return false;
+  /* ───────────── 開催日（eventDate / eventDates） ─────────────
+   * 値の「形式と実在性」だけを検証する。どのカテゴリの記事に付けるかは問わない
+   * （記事化プロンプト v20260907 では eventDate は「注目の日」で、開店日・閉店日・試合日などにも使う）。
+   *
+   * 書式（プロンプト v20260907・既存記事と同じ）:
+   *   eventDate:  "YYYY-MM-DD"（単日）／"YYYY-MM-DD/YYYY-MM-DD"（連続期間）。終了日未定は単日＋eventOngoing: true
+   *   eventDates: リスト。要素は "YYYY-MM-DD" または "YYYY-MM-DD/YYYY-MM-DD"（複数の会期）
+   *
+   * Hugo 0.167.0 で実際にビルドを止める値（2026-10-05 に1件ずつビルドして確認）→ エラー:
+   *   実在しない日付（2026-02-30・2026-13-01・平年の 2/29）、日付として読めない値、期間の区切りの前後の空白、
+   *   「〜」「,」による区切り、YYYY/MM/DD 形式（いずれも終了通知 partial の time 関数）、
+   *   eventDate の配列要素に期間を書く（同上）、eventDates がリストでない（/daily/ の range）
+   * ビルドは通るが誤った表示・構造化データになる値 → エラー: 逆順の期間、3つ以上の区切り、空の値
+   * ビルドが通り表示も保てる値 → 警告: eventDate の配列、eventDate と eventDates の併用、時刻付き、
+   *   eventDates の1件だけ・未整列・重複。連続する日だけの eventDates は情報
+   */
+  var YMD_RE = /^(\d{4})-(\d{2})-(\d{2})$/;
+  var EVENT_DATETIME_RE = /^(\d{4}-\d{2}-\d{2})T\d{2}:\d{2}(?::\d{2})?(?:Z|[+-]\d{2}:\d{2})?$/;
+
+  function isRealYmd(s) {
+    var m = YMD_RE.exec(s);
+    if (!m) return false;
+    var y = +m[1], mo = +m[2], d = +m[3];
+    var p = new Date(Date.UTC(y, mo - 1, d));
+    return p.getUTCFullYear() === y && p.getUTCMonth() === mo - 1 && p.getUTCDate() === d;
+  }
+  function nextYmd(s) {
+    var m = YMD_RE.exec(s);
+    var p = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3] + 1));
+    return p.getUTCFullYear() + '-' + pad2(p.getUTCMonth() + 1) + '-' + pad2(p.getUTCDate());
+  }
+  function showVal(v) { return Array.isArray(v) ? '[' + v.join(', ') + ']' : String(v); }
+
+  /**
+   * 開催日の値1つ（単日、または期間 "A/B"）を解析する。
+   * p: { code: 'EVENTDATE' | 'EVENTDATES'（コードの接頭辞）, label: 表示名, allowRange: 期間を許すか }
+   * 返り値: { ok, start, end, isRange, problems: [{ level: 'error'|'warning'|'info', code, msg }] }
+   */
+  function parseEventValue(raw, p) {
+    var probs = [];
+    var put = function (level, code, msg) { probs.push({ level: level, code: p.code + '_' + code, msg: p.label + '：' + msg }); };
+    var res = { ok: false, start: null, end: null, isRange: false, problems: probs };
+    if (typeof raw !== 'string') { put('error', 'FORMAT', '日付ではない値です（「' + showVal(raw) + '」）。"YYYY-MM-DD" の形式で書いてください'); return res; }
+    if (raw.trim() === '') { put('error', 'EMPTY', '値が空です。日付が無い場合は項目ごと削除してください'); return res; }
+    var s = raw;
+    if (s !== s.trim()) { put('error', 'SPACED', '値の前後に空白があります（「' + s + '」）。空白があるとサイトのビルドが止まります'); return res; }
+    if (/[０-９－／]/.test(s)) { put('error', 'FORMAT', '全角の数字・記号が含まれています（「' + s + '」）。半角の "YYYY-MM-DD" で書いてください'); return res; }
+    if (/[〜～~,，、]/.test(s)) {
+      put('error', 'SEPARATOR', '区切り文字が正しくありません（「' + s + '」）。期間は "開始日/終了日"、飛び飛びの日程は eventDates のリストで書いてください');
+      return res;
     }
-    return list.length > 0;
+    if (/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(s)) { put('error', 'FORMAT', 'スラッシュ区切りの日付は使えません（「' + s + '」）。"YYYY-MM-DD" の形式で書いてください'); return res; }
+    var dt = EVENT_DATETIME_RE.exec(s);
+    if (dt) {
+      if (!isRealYmd(dt[1])) { put('error', 'INVALID', '存在しない日付です（「' + s + '」）'); return res; }
+      put('warning', 'HAS_TIME', '時刻が付いています（「' + s + '」）。時刻は使われないため、"YYYY-MM-DD" だけで書いてください');
+      res.ok = true; res.start = res.end = dt[1]; return res;
+    }
+    var parts = s.split('/');
+    if (parts.length > 2) { put('error', 'TOO_MANY_PARTS', '区切り「/」が2つ以上あります（「' + s + '」）。期間は "開始日/終了日" の2つまで。飛び飛びの日程は eventDates のリストで書いてください'); return res; }
+    if (parts.length === 2 && !p.allowRange) { put('error', 'RANGE_NOT_ALLOWED', 'ここには期間（「' + s + '」）を書けません。単日の "YYYY-MM-DD" にしてください'); return res; }
+    if (parts.length === 2 && /\s/.test(s)) { put('error', 'SPACED', '区切り「/」の前後に空白があります（「' + s + '」）。空白があるとサイトのビルドが止まります。"YYYY-MM-DD/YYYY-MM-DD" と詰めて書いてください'); return res; }
+    for (var i = 0; i < parts.length; i++) {
+      if (!YMD_RE.test(parts[i])) { put('error', 'FORMAT', '日付の形式が正しくありません（「' + s + '」）。"YYYY-MM-DD"' + (p.allowRange ? ' または "YYYY-MM-DD/YYYY-MM-DD"' : '') + ' で書いてください'); return res; }
+      if (!isRealYmd(parts[i])) { put('error', 'INVALID', '存在しない日付です（「' + parts[i] + '」）。月日を確認してください'); return res; }
+    }
+    res.start = parts[0]; res.end = parts[parts.length - 1]; res.isRange = parts.length === 2;
+    if (res.isRange && res.end < res.start) { put('error', 'REVERSED', '期間の終了日が開始日より前です（「' + s + '」）'); return res; }
+    if (res.isRange && res.end === res.start) put('info', 'SAME_DAY', '開始日と終了日が同じ期間です（「' + s + '」）。単日の "' + res.start + '" と同じ扱いになります');
+    res.ok = true;
+    return res;
+  }
+
+  /**
+   * eventDate・eventDates・eventOngoing をまとめて検証する。
+   * 返り値: { eventDate: [problem], eventDates: [problem], common: [problem] }（項目ごとに分ける＝更新時に「変更していない項目」を区別するため）
+   */
+  function checkEventFields(d) {
+    var out = { eventDate: [], eventDates: [], common: [] };
+    var pushAll = function (list, probs) { probs.forEach(function (x) { list.push(x); }); };
+    var single = null, multi = null;
+
+    if (d.eventDate !== undefined) {
+      var ed = d.eventDate;
+      if (Array.isArray(ed)) {
+        if (!ed.length) out.eventDate.push({ level: 'error', code: 'EVENTDATE_EMPTY', msg: 'eventDate が空のリストです。日付が無い場合は項目ごと削除してください' });
+        else {
+          out.eventDate.push({ level: 'warning', code: 'EVENTDATE_ARRAY', msg: 'eventDate がリストになっています（' + showVal(ed) + '）。複数の日程は eventDates のリストに書いてください（現在は初日〜最終日の期間として扱われます）' });
+          var okAll = true;
+          ed.forEach(function (x, i) {
+            var r = parseEventValue(x, { code: 'EVENTDATE', label: 'eventDate の' + (i + 1) + '番目', allowRange: false });
+            pushAll(out.eventDate, r.problems); if (!r.ok) okAll = false;
+          });
+          if (okAll) single = ed.slice();
+        }
+      } else if (d.eventDate === '') {
+        out.eventDate.push({ level: 'error', code: 'EVENTDATE_EMPTY', msg: 'eventDate が空です。日付が無い場合は項目ごと削除してください' });
+      } else {
+        var r1 = parseEventValue(ed, { code: 'EVENTDATE', label: 'eventDate', allowRange: true });
+        pushAll(out.eventDate, r1.problems);
+        if (r1.ok) single = r1.isRange ? [r1.start, r1.end] : [r1.start];
+        if (r1.ok && r1.isRange && d.eventOngoing === true) {
+          out.common.push({ level: 'warning', code: 'EVENTONGOING_WITH_RANGE', msg: 'eventOngoing: true と終了日のある期間（「' + ed + '」）が両方あります。終了日が判明したら eventOngoing を削除してください' });
+        }
+      }
+    }
+
+    if (d.eventDates !== undefined) {
+      var eds = d.eventDates;
+      if (!Array.isArray(eds)) {
+        if (eds === '') out.eventDates.push({ level: 'error', code: 'EVENTDATES_EMPTY', msg: 'eventDates が空です。日付が無い場合は項目ごと削除してください' });
+        else out.eventDates.push({ level: 'error', code: 'EVENTDATES_NOT_LIST', msg: 'eventDates がリストになっていません（「' + showVal(eds) + '」）。リストでないとサイトのビルドが止まります。1日ずつ「  - "YYYY-MM-DD"」の行で書くか、単日・連続期間なら eventDate を使ってください' });
+      } else if (!eds.length) {
+        out.eventDates.push({ level: 'error', code: 'EVENTDATES_EMPTY', msg: 'eventDates が空のリストです。日付が無い場合は項目ごと削除してください' });
+      } else {
+        var parsed = [], allOk = true;
+        eds.forEach(function (x, i) {
+          var r = parseEventValue(x, { code: 'EVENTDATES', label: 'eventDates の' + (i + 1) + '番目', allowRange: true });
+          pushAll(out.eventDates, r.problems);
+          if (r.ok) parsed.push(r); else allOk = false;
+        });
+        if (allOk) {
+          multi = eds.slice();
+          if (eds.length === 1) out.eventDates.push({ level: 'warning', code: 'EVENTDATES_SINGLE', msg: 'eventDates の日付が1つだけです（「' + eds[0] + '」）。単日・連続期間は eventDate に書いてください' });
+          var unsorted = parsed.some(function (r, i) { return i > 0 && r.start < parsed[i - 1].start; });
+          if (unsorted) out.eventDates.push({ level: 'warning', code: 'EVENTDATES_UNSORTED', msg: 'eventDates の日付が古い順に並んでいません（' + showVal(eds) + '）' });
+          var seen = {}, dups = [];
+          eds.forEach(function (x) { if (seen[x]) dups.push(x); seen[x] = true; });
+          if (dups.length) out.eventDates.push({ level: 'warning', code: 'EVENTDATES_DUPLICATE', msg: 'eventDates に同じ日付が重複しています（' + dups.join(', ') + '）' });
+          var consecutive = eds.length > 1 && !unsorted && parsed.every(function (r, i) { return !r.isRange && (i === 0 || r.start === nextYmd(parsed[i - 1].start)); });
+          if (consecutive) out.eventDates.push({ level: 'info', code: 'EVENTDATES_CONSECUTIVE', msg: 'eventDates が連続した日付だけです。連続期間は eventDate: "' + eds[0] + '/' + eds[eds.length - 1] + '" とも書けます' });
+        }
+      }
+    }
+
+    var hasEd = d.eventDate !== undefined && d.eventDate !== '' && !(Array.isArray(d.eventDate) && !d.eventDate.length);
+    var hasEds = Array.isArray(d.eventDates) && d.eventDates.length > 0;
+    if (hasEd && hasEds) {
+      var same = single && multi && single.slice().sort().join('|') === multi.slice().sort().join('|');
+      out.common.push(same
+        ? { level: 'info', code: 'EVENT_BOTH_SAME', msg: 'eventDate と eventDates に同じ日付が書かれています。どちらか一方にしてください' }
+        : { level: 'warning', code: 'EVENT_BOTH', msg: 'eventDate と eventDates が両方あります（イベントカレンダーは eventDate だけを使います）。どちらか一方にしてください' });
+    }
+    if (d.eventOngoing === true && !hasEd) {
+      out.common.push({ level: 'warning', code: 'EVENTONGOING_NO_DATE', msg: 'eventOngoing: true がありますが eventDate がありません（開始日を eventDate に書いてください）' });
+    }
+    return out;
+  }
+
+  /* 後方互換: 以前の公開関数（true = 形式に問題なし）。新しい検証は checkEventFields を使う */
+  function checkEventDate(v) {
+    var r = checkEventFields({ eventDate: v });
+    return !r.eventDate.some(function (x) { return x.level === 'error'; });
+  }
+
+  /* 更新時の比較用に値を正規化（クォートの有無などの書き方の違いは無視し、値の違いだけを見る） */
+  function canonValue(v) {
+    if (v === undefined) return '\u0000none';
+    return JSON.stringify(v);
   }
 
   /* ───────────── ファイル名・URL ───────────── */
@@ -252,7 +402,9 @@
 
   /**
    * 記事1本を検証する。
-   * ctx: { path, isNew, now(Date|ms), skipBodyChecks, skipLastmodChecks }
+   * ctx: { path, isNew, now(Date|ms), skipBodyChecks, skipLastmodChecks, prevText }
+   *   prevText … 更新時の既存ファイルの全文（投稿ツールが GitHub から取得したもの）。開催日の「変更していない項目」の判定に使う。
+   *              CI は全記事を新規と同じ基準（isNew: true）で検証するため渡さない
    * 返り値: { errors:[{code,msg}], warnings:[{code,msg}], info:[{code,msg}], fm, date }
    */
   function validatePost(text, ctx) {
@@ -321,10 +473,25 @@
     /* eventDate（既存の運用ルール：hideEventBox: true が必須） */
     var hasEvent = (d.eventDate !== undefined && d.eventDate !== '') || d.eventDates !== undefined;
     if (hasEvent && d.hideEventBox !== true) add(errors, 'EVENT_HIDEBOX', 'eventDate(s) があるのに hideEventBox: true がありません');
-    if (d.eventDate !== undefined && d.eventDate !== '' && !checkEventDate(d.eventDate)) {
-      add(warnings, 'EVENTDATE_FORMAT', 'eventDate の形式が正しくありません：「' + (Array.isArray(d.eventDate) ? d.eventDate.join(', ') : d.eventDate) + '」（"2026-10-04" または "2026-10-04/2026-10-05"）。イベントカレンダーに載りません');
+
+    /* 開催日の形式・実在性（工程1a PR 1a-1）。
+       エラーは「新規投稿」と「その項目を追加・変更した更新」に適用する。
+       更新で値を変えていない項目は警告に下げる（続報の全文置換で、既存の値のせいに投稿が止まらないように）。
+       更新前の内容（ctx.prevText）が無い・読めない場合は変更の有無を判定できないため、新規と同じく厳格に検証する */
+    var prev = null;
+    if (!isNew && typeof ctx.prevText === 'string') {
+      var pfm = ctx.prevText.trim() ? parseFrontmatter(ctx.prevText) : null;
+      if (pfm && pfm.ok) prev = pfm.data;
+      else if (hasEvent) add(warnings, 'EVENT_PREV_UNAVAILABLE','既存記事の内容を読み取れなかったため、開催日（eventDate・eventDates）は新規入力として検証しました');
     }
-    if (d.eventDate === '') add(warnings, 'EVENTDATE_EMPTY', 'eventDate が空です');
+    var ev = checkEventFields(d);
+    ['eventDate', 'eventDates', 'common'].forEach(function (field) {
+      var unchanged = field !== 'common' && prev && canonValue(prev[field]) === canonValue(d[field]);
+      ev[field].forEach(function (x) {
+        if (x.level === 'error' && unchanged) add(warnings, x.code, x.msg + '（既存の値で、今回の更新では変更されていないため投稿は止めません。修正を推奨します）');
+        else add(x.level === 'error' ? errors : x.level === 'warning' ? warnings : info, x.code, x.msg);
+      });
+    });
 
     /* lastmod（CLAUDE.md の運用ルール） */
     var hasLastmod = d.lastmod !== undefined && d.lastmod !== '';
@@ -395,6 +562,8 @@
     parseDate: parseDate,
     fmtJst: fmtJst,
     checkEventDate: checkEventDate,
+    checkEventFields: checkEventFields,
+    isRealYmd: isRealYmd,
     langOfPath: langOfPath,
     splitFileName: splitFileName,
     langPrefix: langPrefix,

@@ -863,7 +863,7 @@ async function findUrlConflicts(hdrs, path, data, ownUrls) {
 async function checkArticleQuality(content, path, hdrs, existing) {
   if (!rulesReady()) return { errors: ['検証ルール（post-rules.js）を読み込めませんでした。ページを再読み込みしてください'], warns: [] };
   const isUpdate = !!existing;
-  const v = PostRules.validatePost(content, { path, isNew: !isUpdate, now: Date.now() });
+  const v = PostRules.validatePost(content, { path, isNew: !isUpdate, now: Date.now(), prevText: isUpdate ? existing.text : undefined });
   const errors = v.errors.map(e => e.msg);
   /* 予約投稿の警告は見落としを防ぐため先頭に出す */
   const warns = v.warnings.slice().sort((a, b) => (/^DATE_(FAR_)?FUTURE$/.test(b.code) ? 1 : 0) - (/^DATE_(FAR_)?FUTURE$/.test(a.code) ? 1 : 0)).map(w => w.msg);
