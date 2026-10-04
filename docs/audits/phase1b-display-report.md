@@ -312,7 +312,7 @@
 
 ### 9.4 本番確認で見つけた既存記事のリンク切れ
 
-工程1b 着手後に main に入った記事 `20261004-urayasu-fire-prevention-poster-exhibition-2026.md` の本文に、存在しない `/life-guide/disaster/` へのリンクがあった（正しくは `/life-guide/disaster-prevention/`）。工程1b とは無関係のため、別の修正 PR urayasu-portal/urayasu-portal#9 とした（リンク先の修正と `lastmod` の更新のみ。マージは運営者の確認後）。CI は内部リンクを検査しないため、同種の誤りは投稿時に検出されない。
+工程1b 着手後に main に入った記事 `20261004-urayasu-fire-prevention-poster-exhibition-2026.md` の本文に、存在しない `/life-guide/disaster/` へのリンクがあった（正しくは `/life-guide/disaster-prevention/`）。工程1b とは無関係のため、別の修正 PR urayasu-portal/urayasu-portal#9 とした（リンク先の修正と `lastmod` の更新のみ）。運営者の承認後、2026-10-05 02:14 JST に通常のマージコミットでマージ（修正コミット `26fa1195`、main = `28a574eb`）。本番の validate・build・deploy の成功後、記事内のリンクが `/life-guide/disaster-prevention/` になり、リンク先のページが正常に表示（200）されること、記事に「2026年10月5日更新」が出ることを確認した。CI は内部リンクを検査しないため、同種の誤りは投稿時に検出されない（再発防止は工程1a で検討）。
 
 ### 9.5 工程1a への引き継ぎ（日付・イベントデータ）
 
