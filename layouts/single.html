@@ -91,13 +91,15 @@
         フロントマター情報ボックス — イベント情報
         eventDate / eventLocation いずれか1つ以上が設定されている場合のみ表示。
         hideEventBox: true を指定するとボックスを非表示にできる（カレンダー反映は維持）。
+        日付は partials/event-dates.html で解釈し、event-dates-text.html の書式で出す（工程1a PR 3。生の値は出さない。
+        eventEndDate は期間の終了日として開催日の表示に含める。解釈できない値は出さない）。
       */}}
       {{- if and .Params.eventDate (not .Params.hideEventBox) }}
+      {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
       <div class="info-box frontmatter-infobox infobox-event">
         <h2><i class="ti ti-calendar-star" aria-hidden="true"></i> イベント情報</h2>
         <dl>
-          {{- with .Params.eventDate }}<dt>開催日</dt><dd>{{ . }}</dd>{{- end }}
-          {{- with .Params.eventEndDate }}<dt>終了日</dt><dd>{{ . }}</dd>{{- end }}
+          {{- with partial "event-dates-text.html" (dict "ev" $ev "year" 0) }}<dt>{{ index (dict "match" "試合日" "fair" "期間") $ev.kind | default "開催日" }}</dt><dd>{{ . | safeHTML }}</dd>{{- end }}
           {{- with .Params.eventLocation }}<dt>会場</dt><dd>{{ . }}</dd>{{- end }}
           {{- with .Params.eventFee }}<dt>料金</dt><dd>{{ . }}</dd>{{- end }}
         </dl>

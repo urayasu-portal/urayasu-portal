@@ -1,0 +1,28 @@
+{{- /*
+  sidebar-calendar-data.html — サイドバーのカレンダーに埋め込む日付データを集計して返す（工程1a PR 3）
+  呼び出し: {{ $cal := partialCached "sidebar-calendar-data.html" site site.Language.Lang }}
+    結果は全ページで同じなので、言語ごとに1回だけ集計する（以前は sidebar-calendar.html がページごとに集計していた）
+  返す値
+    postDates   : posts の投稿日（YYYY-MM-DD）
+    eventDates  : 「注目の日」として点灯する日。日付の解釈は partials/event-dates.html に従う
+                  （開催日程は 14日以下の期間は全日、15日以上は初日と最終日、終了日未定は開始日だけ。
+                   イベントではない注目の日 notableDate(s)・日付まで確定した shopDate・openDate・closeDate も含む。
+                   解釈できない値は点灯しない）
+    monthCounts : 月ごとの記事数（YYYY-MM → 件数）
+*/ -}}
+{{- $allPosts := where site.RegularPages "Section" "posts" }}
+{{- $postDates  := slice }}
+{{- $eventDates := slice }}
+{{- $monthCounts := dict }}
+{{- range $allPosts }}
+  {{- $postDates = $postDates | append (.Date.Format "2006-01-02") }}
+  {{- $mk := .Date.Format "2006-01" }}
+  {{- $monthCounts = merge $monthCounts (dict $mk (add (index $monthCounts $mk | default 0) 1)) }}
+{{- end }}
+{{- range $allPosts }}
+  {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
+  {{- $eventDates = $eventDates | append $ev.days }}
+  {{- $eventDates = $eventDates | append $ev.notable }}
+{{- end }}
+{{- $eventDates = $eventDates | uniq | sort }}
+{{- return dict "postDates" $postDates "eventDates" $eventDates "monthCounts" $monthCounts }}

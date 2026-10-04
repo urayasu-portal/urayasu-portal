@@ -16,32 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-{{- $allPosts := where site.RegularPages "Section" "posts" }}
+{{- $cal := partialCached "sidebar-calendar-data.html" site site.Language.Lang }}
 
-{{/* 投稿日・eventDate・月別記事数を収集 */}}
-{{- $postDates  := slice }}
-{{- $eventDates := slice }}
-{{- $monthCounts := dict }}
-{{- range $allPosts }}
-  {{- $postDates = $postDates | append (.Date.Format "2006-01-02") }}
-  {{- $mk := .Date.Format "2006-01" }}
-  {{- $monthCounts = merge $monthCounts (dict $mk (add (index $monthCounts $mk | default 0) 1)) }}
-{{- end }}
-{{- range $allPosts }}
-  {{- /* eventDate はスラッシュ範囲（"開始日/終了日"）やリストも許容。先頭10文字＝開始日をカレンダーに点灯させる */}}
-  {{- with .Params.eventDate }}
-    {{- if reflect.IsSlice . }}
-      {{- range . }}{{- $eventDates = $eventDates | append (substr (printf "%s" .) 0 10) }}{{- end }}
-    {{- else }}
-      {{- $eventDates = $eventDates | append (substr (printf "%s" .) 0 10) }}
-    {{- end }}
-  {{- end }}
-  {{- range .Params.eventDates  }}{{- $eventDates = $eventDates | append (substr (printf "%s" .) 0 10) }}{{- end }}
-  {{- with .Params.notableDate  }}{{- $eventDates = $eventDates | append . }}{{- end }}
-  {{- range .Params.notableDates }}{{- $eventDates = $eventDates | append . }}{{- end }}
-  {{- with .Params.openDate     }}{{- $eventDates = $eventDates | append . }}{{- end }}
-  {{- with .Params.closeDate    }}{{- $eventDates = $eventDates | append . }}{{- end }}
-{{- end }}
+{{/* 投稿日・注目の日・月別記事数（集計は partials/sidebar-calendar-data.html。全ページで同じなので言語ごとに1回だけ集計する） */}}
+{{- $postDates  := $cal.postDates }}
+{{- $eventDates := $cal.eventDates }}
+{{- $monthCounts := $cal.monthCounts }}
 
 {{/* 検索ウィジェット */}}
 <div class="sidebar-widget">

@@ -1,0 +1,45 @@
+{{- /*
+  event-dates-text.html — event-dates.html の結果を日本語の日付表示（<time> 付き HTML）にして返す（工程1a PR 3）
+  呼び出し: {{ partial "event-dates-text.html" (dict "ev" $ev "year" $page.Date.Year) | safeHTML }}
+    ev   : event-dates.html の戻り値
+    year : 1件目の日付がこの年なら年を省く（記事カードは公開日の年）。0 なら1件目は常に年を出す（情報ボックス）。
+           2件目以降・期間の終了日は、直前の日付と同じ年なら年を省く
+  表示ルール
+    - 単日:            10月17日(土)
+    - 期間:            8月14日(金)〜15日(土) ／ 9月28日(月)〜10月3日(土) ／ 12月28日(月)〜2027年1月4日(月)
+    - 2〜3日程:        10月25日(日)・11月3日(火) ／ 2027年1月22日(金)・2月5日(金)（日程ごとに上の書式）
+    - 4日程以上:       10月25日(日)ほか全4日程
+    - 終了日未定:      8月26日(水)から（終了日未定）
+    日程が無ければ "" を返す
+*/ -}}
+{{- $ev := .ev }}
+{{- $year := .year | default 0 }}
+{{- $wd := slice "日" "月" "火" "水" "木" "金" "土" }}
+{{- $out := "" }}
+{{- if gt $ev.count 0 }}
+  {{- $list := $ev.groups }}
+  {{- $suffix := "" }}
+  {{- if $ev.ongoing }}
+    {{- $list = slice (dict "start" $ev.start "end" $ev.start) }}{{ $suffix = "から（終了日未定）" }}
+  {{- else if gt $ev.count 3 }}
+    {{- $list = slice (dict "start" $ev.start "end" $ev.start) }}{{ $suffix = printf "ほか全%d日程" $ev.count }}
+  {{- end }}
+  {{- $ref := $year }}
+  {{- range $i, $g := $list }}
+    {{- $st := time.AsTime $g.start }}
+    {{- /* 年は、1件目は year と、2件目以降は直前の日付と同じ年なら省く */ -}}
+    {{- $sf := cond (eq $st.Year $ref) "1月2日" "2006年1月2日" }}
+    {{- $ref = $st.Year }}
+    {{- if $i }}{{ $out = printf "%s・" $out }}{{ end }}
+    {{- $out = printf "%s<time datetime=\"%s\">%s(%s)</time>" $out $g.start ($st.Format $sf) (index $wd (int (printf "%d" $st.Weekday))) }}
+    {{- if ne $g.end $g.start }}
+      {{- $et := time.AsTime $g.end }}
+      {{- $ef := "2006年1月2日" }}
+      {{- if eq $et.Year $st.Year }}{{ $ef = cond (eq $et.Month $st.Month) "2日" "1月2日" }}{{ end }}
+      {{- $ref = $et.Year }}
+      {{- $out = printf "%s〜<time datetime=\"%s\">%s(%s)</time>" $out $g.end ($et.Format $ef) (index $wd (int (printf "%d" $et.Weekday))) }}
+    {{- end }}
+  {{- end }}
+  {{- $out = printf "%s%s" $out $suffix }}
+{{- end }}
+{{- return $out }}

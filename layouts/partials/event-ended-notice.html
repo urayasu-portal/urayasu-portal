@@ -5,31 +5,30 @@
        掲載日（記事の date の日付）が対象日より前の予告型の記事だけに「◯◯より前に掲載した告知です」（案内トーン）。
        当日以降に書いた試合結果・開店報告などの事後記事には出さない（当日掲載は予告か結果か判別できないため出さない）
        （2026-06 に全記事へ「イベントは終了しました」を出して誤表示になった経緯があるため）。
-     いずれも最終日の翌日0時を過ぎてから表示（当日に「終了」と出さない）。 */ -}}
+     いずれも最終日の翌日0時を過ぎてから表示（当日に「終了」と出さない）。
+     日付の解釈は partials/event-dates.html（工程1a PR 3）。最終日は全日程のうち最も遅い日なので、
+     今後の開催日が残っている複数日程の記事は終了扱いにしない。解釈できない値は無視し、ビルドを止めない。
+     対象: eventDate を持つ記事（従来どおり）と、eventDates だけを持つ記事のうち種別（event／match／fair）がある記事。
+     notableDate(s) などイベントではない注目の日には、終了の通知を出さない。 */ -}}
 {{- $isEventCat := in (.Params.categories | default slice) "イベント" }}
 {{- if not .Params.eventOngoing }}
-{{- with .Params.eventDate }}
-  {{- /* eventDate は文字列・スラッシュ範囲・リストのいずれかを許容する */}}
-  {{- $endDateStr := "" }}
-  {{- if reflect.IsSlice . }}
-    {{- $endDateStr = index (last 1 .) 0 }}
-  {{- else }}
-    {{- $endDateStr = index (last 1 (split (printf "%s" .) "/")) 0 }}
-  {{- end }}
-  {{- if $endDateStr }}
-    {{- $endTime := time $endDateStr }}
-    {{- $cutoff := $endTime.AddDate 0 0 1 }}
-    {{- if $cutoff.Before now }}
-      {{- if $isEventCat }}
+{{- $ev := partialCached "event-dates.html" . .RelPermalink }}
+{{- if or .Params.eventDate (and .Params.eventDates $ev.kind) }}
+{{- with $ev.end }}
+  {{- $endDateStr := . }}
+  {{- $endTime := time.AsTime $endDateStr }}
+  {{- $cutoff := $endTime.AddDate 0 0 1 }}
+  {{- if $cutoff.Before now }}
+    {{- if $isEventCat }}
 <div class="event-ended-warn">
   <i class="ti ti-alert-triangle" aria-hidden="true"></i> {{ i18n "event_ended" (dict "date" $endDateStr) | safeHTML }}
 </div>
-      {{- else if lt ($.Date.Format "2006-01-02") ($endTime.Format "2006-01-02") }}
+    {{- else if lt ($.Date.Format "2006-01-02") ($endTime.Format "2006-01-02") }}
 <div class="event-ended-warn event-ended-warn--notice">
   <i class="ti ti-info-circle" aria-hidden="true"></i> {{ i18n "past_notice" (dict "date" $endDateStr) | safeHTML }}
 </div>
-      {{- end }}
     {{- end }}
   {{- end }}
+{{- end }}
 {{- end }}
 {{- end }}

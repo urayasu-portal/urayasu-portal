@@ -1,0 +1,21 @@
+{{- /*
+  date-ymd.html — 日付の値を1つ受け取り、"YYYY-MM-DD" に正規化して返す（工程1a PR 3）
+  呼び出し: {{ $ymd := partial "date-ymd.html" $value }}
+    - 受け付ける値: "YYYY-MM-DD"、時刻付きの "YYYY-MM-DDTHH:MM(:SS)(+09:00|Z)"（日付部分だけを使う）、
+      YAML の日付型（引用符なし）。前後の半角空白は無視する
+    - 実在しない日付（2026-02-30 など）・"YYYY/MM/DD"・"YYYY-MM"・和文表記などは "" を返す。
+      値を推測して補ったり、月の初日に読み替えたりしない
+    - time 関数は try で包むので、どんな値でもビルドは止まらない
+*/ -}}
+{{- $out := "" }}
+{{- if eq (printf "%T" .) "time.Time" }}
+  {{- $out = .Format "2006-01-02" }}
+{{- else }}
+  {{- $s := trim (printf "%v" .) " " }}
+  {{- if findRE `^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2})?(Z|[+-]\d{2}:\d{2})?)?$` $s }}
+    {{- $ymd := substr $s 0 10 }}
+    {{- $t := try (time.AsTime $ymd) }}
+    {{- if and (not $t.Err) (eq ($t.Value.Format "2006-01-02") $ymd) }}{{ $out = $ymd }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- return $out }}

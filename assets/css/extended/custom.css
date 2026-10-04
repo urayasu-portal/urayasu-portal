@@ -370,6 +370,9 @@ body.list { --main-width: 1160px; }
 .article-body .card-event time,
 .hero-body .card-event time { display: inline; margin: 0; font-size: inherit; color: inherit; }
 .card-event + time { margin-top: 0; }
+/* 種別ごとの文言（工程1a PR 3）: 試合日はスポーツ、期間（フェア）はグルメの色。開催（event）は上の既定色 */
+.card-event--match { color: var(--cat-sports); }
+.card-event--fair { color: var(--cat-gourmet); }
 .article-desc {
   font-size: 11px;
   color: var(--up-text-3);
