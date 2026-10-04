@@ -52,7 +52,7 @@
           {{- if $cat }}<span class="cat-badge {{ $cls }}">{{ $cat }}</span>{{- end }}
           <h2>{{ .Title }}</h2>
           {{- with .Description }}<p>{{ . }}</p>{{- end }}
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          {{ partial "card-dates.html" (dict "page" . "event" true) }}
         </div>
       </a>
       {{- end }}
@@ -64,7 +64,7 @@
         <div class="hero-body">
           {{- if $cat }}<span class="cat-badge cat-badge-sm {{ $cls }}">{{ $cat }}</span>{{- end }}
           <h3>{{ .Title }}</h3>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+          {{ partial "card-dates.html" (dict "page" . "event" true) }}
         </div>
       </a>
       {{- end }}
@@ -130,7 +130,7 @@
           {{- partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "recent-thumb") }}
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time>
+            {{ partial "card-dates.html" (dict "page" .) }}
           </div>
         </a>
         {{- end }}

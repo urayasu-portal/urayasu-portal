@@ -81,7 +81,7 @@
           {{- partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "recent-thumb") }}
           <div class="recent-body">
             <h4>{{ .Title }}</h4>
-            <time>{{ .Date.Format "2006年1月2日" }}</time>
+            {{ partial "card-dates.html" (dict "page" .) }}
           </div>
         </a>
         {{- end }}
@@ -136,7 +136,7 @@
     const icon      = CAT_ICON[p.category]  || 'ti-photo';
     const thumbHtml = p.thumb
       ? `<div class="article-thumb"><img src="${p.thumb}" alt="" loading="lazy"></div>`
-      : `<div class="article-thumb up-ph ${cls}"><i class="ti ${icon}" aria-hidden="true"></i><span class="up-ph-label">${p.category || '記事'}</span></div>`;
+      : `<div class="article-thumb up-ph ${cls}" aria-hidden="true"><i class="ti ${icon}"></i></div>`;
     const badge     = p.category
       ? `<span class="cat-badge cat-badge-sm ${cls}">${p.category}</span>` : '';
     // 注目の日バッジ：日別モードのみ・eventDatesに一致・投稿日とは別の場合

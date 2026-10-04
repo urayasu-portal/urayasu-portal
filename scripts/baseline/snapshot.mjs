@@ -17,9 +17,12 @@
  *   affiliate-links.tsv    … 予約・アフィリエイト系リンク: ページ / ASP / URL（クエリ込み）
  *   duplicate-paths.txt    … Hugo の重複出力パス警告
  *   build-warnings.txt     … Hugo の WARN / ERROR 行
+ *   cards.tsv              … 記事カード1枚ごと: ページ / 出現順 / 種類 / リンク先 / カテゴリバッジ / サムネイル種別 / 代替表示のラベル / 表示日 / 開催日ラベル（工程1bで追加）
+ *   jsonld.tsv             … 構造化データ（JSON-LD）1ブロックごと: ページ / 順番 / @type / 内容の SHA-1（工程1bで追加）
  *   summary.json           … 件数のまとめ
  * 認証情報は扱わない（公開 HTML とリポジトリの内容だけを読む）。
  */
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
@@ -78,7 +81,20 @@ for (const abs of walk(path.join(ROOT, 'content'), (n) => n.endsWith('.md'))) {
 const nInv = write('content-inventory.tsv', 'path\tlang\tkind\turl\ttitle\tslug\tdate\tlastmod\tcategory\teventDate\tdraft', inv);
 
 /* ── 生成 HTML ── */
-const pages = [], aliases = [], aff = [];
+const pages = [], aliases = [], aff = [], cards = [], jsonld = [];
+/* 記事カード: 一覧・関連記事などのカード1枚ごとに、表示日とカテゴリ表示を1行で記録する */
+const CARD_RE = /<a class="(article-card|hero-card hero-main|hero-card hero-sub|list-feature-card|recent-item)\b[^"]*" href="([^"]+)">([\s\S]*?)<\/a>/g;
+const strip = (s) => decodeEnt(s.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
+const cardRow = (rel, seq, kind, href, inner) => {
+  const badge = (/<span class="cat-badge[^"]*">([^<]*)<\/span>/.exec(inner) || [, ''])[1];
+  const thumb = /<img\b/.test(inner) ? 'img' : /\bup-ph\b/.test(inner) ? 'ph' : '';
+  const phLabel = (/<span class="up-ph-label">([^<]*)<\/span>/.exec(inner) || [, ''])[1];
+  const ev = /<span class="card-event\b[^>]*>[\s\S]*?<\/span>/.exec(inner); // 開催日ラベル（中に span を入れない前提）
+  const rest = ev ? inner.replace(ev[0], '') : inner;
+  const pub = [...rest.matchAll(/<time\b([^>]*)>([\s\S]*?)<\/time>/g)].map((m) => ((/datetime="([^"]*)"/.exec(m[1]) || [, '-'])[1]) + '=' + strip(m[2])).join(' | ');
+  const evText = ev ? strip(ev[0]) + ' [' + [...ev[0].matchAll(/datetime="([^"]*)"/g)].map((m) => m[1]).join(',') + ']' : '';
+  return tsv([rel, String(seq).padStart(3, '0'), kind.replace('hero-card ', ''), href, badge, thumb, phLabel, pub, evText]);
+};
 const ASP = [
   ['rakuten', /hb\.afl\.rakuten\.co\.jp|travel\.rakuten/], ['jalan', /jalan\.net/], ['yahoo', /travel\.yahoo/],
   ['booking', /booking\.com/], ['agoda', /agoda\.com/], ['trip', /trip\.com/], ['expedia', /expedia\./],
@@ -97,6 +113,13 @@ for (const abs of walk(PUB, (n) => n === 'index.html' || n === '404.html')) {
   const types = [...html.matchAll(/"@type":\s*"([A-Za-z]+)"/g)].map((m) => m[1]);
   const typeSet = [...new Set(types)].sort().join(',');
   pages.push(tsv([rel, g(/<title>([^<]*)<\/title>/), g(/<link rel="canonical" href="([^"]*)"/), g(/<meta name="robots" content="([^"]*)"/), hreflang, typeSet, (html.match(/<h1[\s>]/g) || []).length]));
+  let ci = 0;
+  for (const m of html.matchAll(CARD_RE)) cards.push(cardRow(rel, ci++, m[1], m[2], m[3]));
+  let ji = 0;
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    const t = (/"@type":\s*"([A-Za-z]+)"/.exec(m[1]) || [, ''])[1];
+    jsonld.push(tsv([rel, ji++, t, crypto.createHash('sha1').update(m[1]).digest('hex').slice(0, 16)]));
+  }
   for (const m of html.matchAll(/<a\b[^>]*\bhref="(https?:\/\/[^"]+)"[^>]*>/g)) {
     const u = decodeEnt(m[1]); const a = aspOf(u);
     if (a) aff.push(tsv([rel, a, u, /rel="[^"]*sponsored/.test(m[0]) ? 'sponsored' : '']));
@@ -105,6 +128,8 @@ for (const abs of walk(PUB, (n) => n === 'index.html' || n === '404.html')) {
 const nPages = write('pages.tsv', 'path\ttitle\tcanonical\trobots\threflang\tjsonld\th1', pages);
 const nAlias = write('aliases.tsv', 'path\ttarget', aliases);
 const nAff = write('affiliate-links.tsv', 'page\tasp\turl\trel', aff);
+const nCards = write('cards.tsv', 'page\tseq\tkind\thref\tbadge\tthumb\tphLabel\tdates\tevent', cards);
+const nJsonld = write('jsonld.tsv', 'page\tindex\ttype\tsha1', jsonld);
 
 /* ── サイトマップ ── */
 const locs = [];
@@ -133,7 +158,8 @@ const byAsp = {};
 const summary = {
   generatedAt: new Date().toISOString(),
   contentFiles: nInv, pages: nPages, aliasPages: nAlias, sitemapUrls: nLoc,
-  affiliateLinks: nAff, affiliateLinksByAsp: byAsp, duplicateTargetPaths: nDup, buildWarnings: warns.length
+  affiliateLinks: nAff, affiliateLinksByAsp: byAsp, duplicateTargetPaths: nDup, buildWarnings: warns.length,
+  cards: nCards, jsonldBlocks: nJsonld
 };
 fs.writeFileSync(path.join(OUT, 'summary.json'), JSON.stringify(summary, null, 2) + '\n');
 console.log(JSON.stringify(summary, null, 2));
