@@ -15,7 +15,8 @@
 
   返す値（dict）
     spans      : 開催日程（{start,end}。日付順・同じ日程の重複を除いたもの）
-    groups     : 表示用の日程。spans のうち、連続する単日を1つの期間にまとめたもの
+    groups     : 表示用の日程。spans と同じ。ただし全体が「連続する単日だけ」なら1つの期間にまとめる
+                 （単日と飛び日が混在する場合はまとめない）
     count      : groups の数（＝開催日程の数。暦日数ではない）
     start, end : 最初の日・最後の日（日程が無ければ ""）
     days       : サイドバー・/daily/ で開催日として扱う日。日程ごとに 14日以下は全日、15日以上は初日と最終日、
@@ -25,8 +26,9 @@
     kindSource : "eventKind" ／ "category" ／ ""
     ongoing    : eventOngoing が真か
     invalid    : 除外した値の数
-  種別の推定（eventKind が無いときだけ）: 1件目のカテゴリが「イベント」→ event、「スポーツ」→ match。
-    それ以外のカテゴリ（子育て・教育、グルメ・カフェ、開店・閉店、お知らせ、ニュース など）は推定しない。
+  種別の推定（eventKind が無いときだけ）: 1件目のカテゴリが「イベント」なら event（従来互換）。
+    それ以外のカテゴリ（スポーツ、子育て・教育、グルメ・カフェ、開店・閉店、お知らせ、ニュース など）は推定しない。
+    スポーツには試合ではない記事（施設のオープン・表敬訪問・体験会など）が多いため、試合は eventKind: "match" で明示する。
   calendar はカレンダー掲載の制御用で、ここでは扱わない。
 */ -}}
 {{- $p := . }}
@@ -82,23 +84,24 @@
   {{- if ne .key $prevKey }}{{ $uniq = $uniq | append (dict "start" .start "end" .end) }}{{ $prevKey = .key }}{{ end }}
 {{- end }}
 
-{{- /* 4. 表示用: 連続する単日を1つの期間にまとめる（明示された期間とはまとめない） */ -}}
-{{- $groups := slice }}
-{{- $gs := "" }}{{ $ge := "" }}{{ $gSingles := false }}
-{{- range $uniq }}
-  {{- $single := eq .start .end }}
-  {{- $merge := false }}
-  {{- if and $gs $single $gSingles }}
-    {{- if eq (((time.AsTime $ge).AddDate 0 0 1).Format "2006-01-02") .start }}{{ $merge = true }}{{ end }}
+{{- /* 4. 表示用の日程。原則は spans のとおり（単日は独立した日程、期間の要素はその期間）。
+       例外として、日程が「連続する単日だけ」で構成される場合（例: 8/14・8/15）だけ、1つの期間にまとめる。
+       連続する単日と飛び日が混在する場合（例: 7/24・7/25・7/27）は、別々の開催回の可能性があるのでまとめない */ -}}
+{{- $groups := $uniq }}
+{{- if gt (len $uniq) 1 }}
+  {{- $run := true }}
+  {{- $prev := "" }}
+  {{- range $uniq }}
+    {{- if ne .start .end }}{{ $run = false }}{{ end }}
+    {{- if and $run $prev }}
+      {{- if ne (((time.AsTime $prev).AddDate 0 0 1).Format "2006-01-02") .start }}{{ $run = false }}{{ end }}
+    {{- end }}
+    {{- $prev = .start }}
   {{- end }}
-  {{- if $merge }}
-    {{- $ge = .start }}
-  {{- else }}
-    {{- if $gs }}{{ $groups = $groups | append (dict "start" $gs "end" $ge) }}{{ end }}
-    {{- $gs = .start }}{{ $ge = .end }}{{ $gSingles = $single }}
+  {{- if $run }}
+    {{- $groups = slice (dict "start" (index $uniq 0).start "end" (index (last 1 $uniq) 0).end) }}
   {{- end }}
 {{- end }}
-{{- if $gs }}{{ $groups = $groups | append (dict "start" $gs "end" $ge) }}{{ end }}
 
 {{- $ongoing := not (not $p.Params.eventOngoing) }}
 
@@ -143,7 +146,7 @@
 {{- else }}
   {{- $cat := "" }}
   {{- with $p.Params.categories }}{{ if reflect.IsSlice . }}{{ with index . 0 }}{{ $cat = printf "%v" . }}{{ end }}{{ else }}{{ $cat = printf "%v" . }}{{ end }}{{ end }}
-  {{- $kind = index (dict "イベント" "event" "スポーツ" "match") $cat | default "" }}
+  {{- $kind = index (dict "イベント" "event") $cat | default "" }}
   {{- if $kind }}{{ $kindSource = "category" }}{{ end }}
 {{- end }}
 

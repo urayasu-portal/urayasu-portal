@@ -43,6 +43,11 @@ jobs:
       - name: Test validation rules
         run: node scripts/validate/test/run-tests.mjs --unit-only
 
+      # 表示側の日付解釈（layouts/partials/event-dates.html ほか）のテスト（工程1a PR 3）。
+      # 上で入れた Hugo を使い、一時ディレクトリの最小サイトをビルドする（数秒。追加の依存なし）
+      - name: Test date display partials
+        run: node scripts/validate/test/event-dates-hugo.mjs
+
       - name: Build (same options as production)
         env:
           HUGO_ENVIRONMENT: production
