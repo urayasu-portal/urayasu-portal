@@ -9,7 +9,10 @@
 # status      : 状態。open / open_planned / close / close_planned / temp_close / reopen / renewal / move / feature / popup
 # date        : 状態の起きる（起きた）日。"YYYY-MM-DD"（日まで確定）または "YYYY-MM"（月だけ）。下旬・夏などは日付にしない
 # unconfirmed : true なら未確認の情報（求人・第三者情報だけなど）。件数に数えない
+# year        : "YYYY"。date が分からないが、状態変化の年が記事・一次情報で確認できるときだけ書く（件数の年に使う。年表では「時期未定」）。
+#               掲載年を代わりに書かない
 # count       : false なら件数に数えない（同じ店舗・同じ改装の続報・重複記事。年表の行は残る）
+# year・count は記事に shopStatus がある場合も効く
 # ここに無い「開店・閉店」カテゴリの記事は、タイトルから自動分類する（legacy 記事のための最後の手段。掲載漏れは起きない）
 "2026-05-19-nisyakugosun-urayasuekimae":
   shop: "二尺五寸 浦安駅前店（焼鳥・蕎麦居酒屋）"

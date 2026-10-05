@@ -12,7 +12,7 @@
 | `scripts/validate/known-issues.json` | **既存の不備リスト**。ここに載っている不備は失敗にしない（新しい不備だけを失敗にする） |
 | `scripts/validate/test/run-tests.mjs` | ルールのテスト（BOM・CRLF・インライン配列・日付・衝突など）と既存記事の回帰テスト |
 | `scripts/validate/test/event-dates-hugo.mjs` | 表示側の日付解釈（`layouts/partials/event-dates.html` ほか、工程1a PR 3）のテスト。最小の Hugo サイトで85通りを確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
-| `scripts/validate/test/open-close-hugo.mjs` | 開店・閉店年表と店舗の状態（工程1a PR 5）のテスト。最小の Hugo サイトで41記事分（10種類の状態・年月日／年月／日付なし・予定日経過・yaml の上書きと `count: false`・legacy のタイトル分類）を確かめ、`/daily/` の文言（生成された script を実行）・サイドバーの点灯・`/events/` と Event JSON-LD に入らないこと・日本時間の境目も確かめる。Hugo が必要。`pr-check.yml` で実行する |
+| `scripts/validate/test/open-close-hugo.mjs` | 開店・閉店年表と店舗の状態（工程1a PR 5）のテスト。最小の Hugo サイトで47記事分（10種類の状態・年月日／年月／日付なし・状態変化の年（yaml の `year`）・予定日経過・yaml の上書きと `count: false`・legacy のタイトル分類）を確かめ、`/daily/` の文言（生成された script を実行）・サイドバーの点灯・`/events/` と Event JSON-LD に入らないこと・日本時間の境目も確かめる。Hugo が必要。`pr-check.yml` で実行する |
 | `scripts/validate/test/events-hugo.mjs` | イベントカレンダー（`/events/`）の掲載・状態・並び順と Event 構造化データ（工程1a PR 4）のテスト。最小の Hugo サイトで25記事分を確かめ、判定する時刻を固定して日本時間の日付の境目（0時・15時・23時59分・年の境目、環境変数 TZ を4通り）も確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
 | `.github/workflows/hugo.yml` の `validate` ジョブ | push・schedule・手動実行のたびに上記を実行 |
 | `.github/workflows/pr-check.yml` | Pull Request 時にビルド（本番と同じオプション）・Pagefind・検証を実行。**デプロイはしない**。Hugo／Pagefind の版は hugo.yml と揃える |
@@ -96,7 +96,7 @@ Event 構造化データは `eventLocation` が書かれた記事にだけ出し
 | `SHOP_PLANNED_PASSED` | `open_planned`・`close_planned` の予定日を過ぎた（日付は翌日から、年月はその月が終わってから）。CI では Summary の「店舗の予定日経過・未確認」に一覧で出す |
 | `SHOP_UNCONFIRMED_FEATURE` | `feature`（まとめ）に `shopUnconfirmed: true` |
 
-`data/openclose.yaml`（年表のキュレーション）も CI が検証する: `status`・`type` の語彙外・`date` の形式不正（`OPENCLOSE_STATUS_INVALID`・`OPENCLOSE_DATE_INVALID`）、`unconfirmed`・`count` が真偽値でない（`OPENCLOSE_BOOL`）はエラー。記事の無いキーは警告（`OPENCLOSE_ORPHAN`）。`status` が予定で `date` を過ぎたものは「店舗の予定日経過・未確認」に出す。
+`data/openclose.yaml`（年表のキュレーション）も CI が検証する: `status`・`type` の語彙外・`date` の形式不正（`OPENCLOSE_STATUS_INVALID`・`OPENCLOSE_DATE_INVALID`）、`unconfirmed`・`count` が真偽値でない（`OPENCLOSE_BOOL`）、`year` が "YYYY" でない（`OPENCLOSE_YEAR_INVALID`）はエラー。記事の無いキー（`OPENCLOSE_ORPHAN`）、`year` と `date` の年の食い違い（`OPENCLOSE_YEAR_MISMATCH`）は警告。`status` が予定で `date` を過ぎたものは「店舗の予定日経過・未確認」に出す。
 
 ## CI の動き（公開は止めない）
 

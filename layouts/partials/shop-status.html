@@ -16,6 +16,8 @@
     dateSource  : "shopDate"／"yaml-date"／"yaml-when"（status の無い旧い行だけ）／"eventDate"／""
     passed      : 予定（open_planned・close_planned）の予定日が日本時間の今日より前か。
                   "YYYY-MM-DD" は翌日から、"YYYY-MM" はその月が終わってから経過とする
+    year        : 状態変化の年（件数の年）。日付があればその年、無ければ yaml の year。分からなければ ""（掲載年で代用しない）
+    yearSource  : "date"／"yaml-year"／""
     countable   : 件数の対象にしてよいか（yaml の count: false で同じ店舗の続報・重複記事を除く）
     shop        : 表示名（shopName → yaml の shop → タイトル）
     area        : yaml の area
@@ -95,6 +97,15 @@
   {{- if eq $dateKind "day" }}{{ $passed = lt $date $today }}{{ else }}{{ $passed = lt $date (substr $today 0 7) }}{{ end }}
 {{- end }}
 
+{{- /* 状態変化の年（件数の年）。shopDate（年月日・年月）があればその年。日付が分からなくても、年が記事・監査で確認できる場合は
+       yaml の year（"YYYY"）で示す。掲載日・掲載年では代用しない。yaml の count: false・year は frontmatter の記事にも効く */ -}}
+{{- $year := "" }}{{ $yearSource := "" }}
+{{- if $date }}{{ $year = substr $date 0 4 }}{{ $yearSource = "date" }}
+{{- else if $meta }}
+  {{- with $meta.year }}{{ $y := trim (printf "%v" .) " " }}{{ if findRE `^\d{4}$` $y }}{{ $year = $y }}{{ $yearSource = "yaml-year" }}{{ end }}{{ end }}
+{{- end }}
+{{- if and $meta (eq $meta.count false) }}{{ $countable = false }}{{ end }}
+
 {{- $shop := $p.Title }}
 {{- with $p.Params.shopName }}{{ $shop = . }}{{ else }}{{ if $meta }}{{ with $meta.shop }}{{ $shop = . }}{{ end }}{{ end }}{{ end }}
 {{- $area := "" }}{{ if $meta }}{{ with $meta.area }}{{ $area = . }}{{ end }}{{ end }}
@@ -102,4 +113,4 @@
 {{- return dict
   "status" $status "source" $source "unconfirmed" $unconf
   "date" $date "dateKind" $dateKind "dateSource" $dateSource "passed" $passed
-  "countable" $countable "shop" $shop "area" $area "today" $today }}
+  "year" $year "yearSource" $yearSource "countable" $countable "shop" $shop "area" $area "today" $today }}

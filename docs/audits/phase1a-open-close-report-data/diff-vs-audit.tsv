@@ -1,0 +1,14 @@
+# 監査時（設計書）の2026年件数と、補正案適用後の確認済み件数の差（記事ごと）。audit・final は数えた区分（空は数えない）
+reason	audit	final	title	url	note
+重複	open		【浦安】海楽にBambi DROPSがオープン	/posts/bambi-drops-kairaku-open/	20260603-bambi-drops-kaigaku と同じ店舗
+重複	renewal		【新浦安】アトレ新浦安で食品店が7月リニューアルへ	/posts/atre-shin-urayasu-food-renewal-202607/	アトレ食品フロア改装（同じ改装の記事が3本）
+重複	renewal		【新浦安】アトレ新浦安1F食料品ゾーンが7月リニューアル｜クイーンズ伊勢丹など3店舗が新規オープン	/posts/新浦安アトレ新浦安1f食料品ゾーンが7月リニ/	アトレ食品フロア改装（同じ改装の記事が3本）
+年不明	close		【浦安】西友浦安1階のたい焼き店「たい夢」が閉店	/posts/taimu-urayasu-closed/	閉店は公式フロアガイドからの削除と報道で確認。7/10以降営業せず。閉店の年は本文に明記なし（旧西友時代からの営業。最終営業日不明）→年は要確認で件数に入れない
+年不明	open		【行徳】キッチンオリジン南行徳店が新規開店	/posts/kitchen-origin-minami-gyotoku-open/	「新規開店していることが確認できます」。開店日・開店年の記載なし（掲載年だけでは年を決めない）→件数に入れない
+未確認	close		【行徳】石黒産婦人科が7月31日閉院との情報	/posts/gyotoku-ishiguro-sanfujinka-close-2026/	閉院。現行は open（タイトルの「閉院」を拾えない）
+未確認	open		【行徳】「町の中華 かすみ」が8月9日オープンとの情報	/posts/gyotoku-machinocyuuka-kasumi-open-2026/	店舗公式は未確認と本文に記載
+未確認	open		【行徳】トルコ料理SARAYがオープンか	/posts/gyotoku-turkish-restaurant-saray-open/	「6月中旬とみられる」→年月
+要確認（判断保留。現行の分類のまま）	renewal	open	【浦安】堀江にラーメン店「和麺 善」がオープン	/posts/wamen-zen-horie-open/	「すし処 善」が約2年休業後にラーメン店として再スタート。本文は同一事業の継続を示唆（「すし店として培った和食のノウハウ」）するが、運営主体の同一性は明記なし（推奨候補 renewal）
+要確認（判断保留。現行の分類のまま）	renewal	open	【浦安】トライアル西友浦安店に注目　千葉県1号店を各メディアが報道	/posts/trial-seiyu-urayasu-open/	西友浦安店の業態転換（トライアル西友）。本文は「西友浦安店のリニューアル」と書くが、同一事業の継続か入れ替えかは本文だけでは判断できない（推奨候補 renewal）
+要確認（判断保留。現行の分類のまま）	renewal	open	【浦安市】MONA新浦安2FにDENBAラウンジ4月25日オープン｜リラクゼーション体験スペース	/posts/浦安市mona新浦安2fにdenbaラウンジ4月25日オープン/	「アロマブルームがリニューアルオープンする形」。同一事業の業態変更か別事業への入れ替えかは本文だけでは判断できない（推奨候補 renewal）
+要確認の再確認で判断を更新		renewal	【浦安】ナナズグリーンティーが9月18日営業再開	/posts/ikspiari-nanas-green-tea-reopen-2026/	設備改修で7/1〜休業→9/18再開、キッズスペース新設。基準「改装を伴う営業再開は renewal」により renewal

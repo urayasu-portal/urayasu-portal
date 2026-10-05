@@ -143,8 +143,9 @@ for (const f of allMd) {
 }
 
 /* data/openclose.yaml（開店・閉店年表のキュレーション）の検証（工程1a PR 5）
- *   エラー: status・type が語彙外、date が "YYYY-MM-DD"／"YYYY-MM" でない・実在しない、unconfirmed・count が真偽値でない
- *   警告  : キーに対応する記事が無い（OPENCLOSE_ORPHAN）
+ *   エラー: status・type が語彙外、date が "YYYY-MM-DD"／"YYYY-MM" でない・実在しない、unconfirmed・count が真偽値でない、
+ *           year が "YYYY" でない
+ *   警告  : キーに対応する記事が無い（OPENCLOSE_ORPHAN）、year と date の年が違う（OPENCLOSE_YEAR_MISMATCH）
  *   status が open_planned・close_planned で date が過ぎたものは「予定日経過・未確認」の一覧に出す（失敗にはしない） */
 const OC_FILE = path.join(ROOT, 'data/openclose.yaml');
 if (fs.existsSync(OC_FILE)) {
@@ -177,6 +178,11 @@ if (fs.existsSync(OC_FILE)) {
     }
     for (const field of ['unconfirmed', 'count']) {
       if (e[field] !== undefined && e[field] !== true && e[field] !== false) issues.push({ rule: 'OPENCLOSE_BOOL', path: P, msg: `${at} の ${field} は true または false（引用符なし）で書いてください`, severity: 'error' });
+    }
+    if (e.year !== undefined) {
+      const y = String(e.year);
+      if (!/^\d{4}$/.test(y)) issues.push({ rule: 'OPENCLOSE_YEAR_INVALID', path: P, msg: `${at} の year「${y}」は "YYYY"（状態変化の年）で書いてください`, severity: 'error' });
+      else if (kind && String(e.date).slice(0, 4) !== y) issues.push({ rule: 'OPENCLOSE_YEAR_MISMATCH', path: P, msg: `${at} の year（${y}）と date（${e.date}）の年が違います。date があれば year は不要です`, severity: 'warning' });
     }
     if ((e.status === 'open_planned' || e.status === 'close_planned') && kind) {
       const d = String(e.date);

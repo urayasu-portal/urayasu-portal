@@ -1,4 +1,4 @@
-# PR 5 だけを入れた年表（main d62600e2＋PR 5、判定日 2026-10-06 JST）の全行。recStatus は監査の推奨、match は推奨と一致するか（NG は補正 PR の対象）
+# PR 5 だけを入れた年表（main d62600e2＋PR 5、判定日 2026-10-06 JST）の全行。recStatus は推奨（要確認11本の再確認を反映）、match は推奨と一致するか（NG は補正 PR の対象）
 href	section	sub	label	cls	shop	date	passed	recStatus	recShopDate	match
 /posts/papabubble-maihama-new-store-2026/	2026年11月		オープン予定	oc-open-planned	【浦安】舞浜に「PAPABUBBLE」出店予定か、求人で判明	11月21日		open_planned	2026-11-21	ok
 /posts/ikspiari-fint-open-20261022/	2026年10月		オープン予定	oc-open-planned	【浦安】イクスピアリに「フィント」10月22日オープン	10月22日		open_planned	2026-10-22	ok
@@ -11,7 +11,7 @@ href	section	sub	label	cls	shop	date	passed	recStatus	recShopDate	match
 /posts/ikspiari-poeme-popup-2026/	2026年9月		期間限定出店	oc-popup	【浦安】イクスピアリに「母恵夢」期間限定出店	9月28日		popup		ok
 /posts/tadokoro-shoten-shinurayasu-planned/	2026年9月		オープン予定	oc-open-planned	【浦安】鉄鋼通りに「麺場 田所商店 新浦安店」9月下旬オープン予定	9月28日	yes	open	2026-09-28	NG
 /posts/minamigyotoku-koppepan-close-2026/	2026年9月		閉店予定	oc-close-planned	【行徳】南行徳駅「焼きたてコッペ製パン」が9月27日閉店	9月27日	yes	close_planned	2026-09-27	ok
-/posts/ikspiari-nanas-green-tea-reopen-2026/	2026年9月		営業再開	oc-reopen	【浦安】ナナズグリーンティーが9月18日営業再開	9月18日		reopen	2026-09-18	ok
+/posts/ikspiari-nanas-green-tea-reopen-2026/	2026年9月		営業再開	oc-reopen	【浦安】ナナズグリーンティーが9月18日営業再開	9月18日		renewal	2026-09-18	NG
 /posts/ikspiari-tsukemen-tetsu-open-2026/	2026年9月		オープン予定	oc-open-planned	【浦安】イクスピアリに「つけめんTETSU」9月17日オープン	9月17日	yes	open_planned	2026-09-17	ok
 /posts/atre-shinurayasu-oimo-motch-open-202609/	2026年9月		オープン予定	oc-open-planned	【浦安】アトレ新浦安に「OIMO&amp;MOTCH」出店予定か 求人情報で判明	9月17日	yes	open	2026-09-17	NG
 /posts/atre-shinurayasu-sweets-renewal-202609/	2026年9月		リニューアル	oc-renewal	【新浦安】アトレ1Fスイーツ売場、9月17日刷新	9月14日		renewal	2026-09-17	ok
@@ -116,7 +116,7 @@ href	section	sub	label	cls	shop	date	passed	recStatus	recShopDate	match
 /posts/taimu-urayasu-closed/	時期未定		閉店	oc-close	【浦安】西友浦安1階のたい焼き店「たい夢」が閉店			close		ok
 /posts/eyecity-ichikawa-myoden-open-202609/	時期未定		オープン予定	oc-open-planned	【妙典】アイシティ市川妙典店が9月出店予定、求人で判明			open_planned	2026-09	ok
 /posts/seria-sundrug-gyotoku-open/	時期未定		オープン予定	oc-open-planned	【行徳】サンドラッグ行徳店2階にSeria出店予定			open_planned	2026-10	ok
-/posts/takasu-yoga-pilates-bluva-open/	時期未定		オープン	oc-open	【浦安】高洲で少人数制ヨガ・ピラティス「Bluva」が始動			open		ok
+/posts/takasu-yoga-pilates-bluva-open/	時期未定		オープン	oc-open	【浦安】高洲で少人数制ヨガ・ピラティス「Bluva」が始動			open	2026-07	ok
 /posts/caps-clinic-ichikawa-myoden-open/	時期未定		オープン	oc-open	【妙典】キャップスクリニック市川妙典が開院			open	2026-08-01	ok
 /posts/takumi-myoden-seitai-planned-202609/	時期未定		オープン予定	oc-open-planned	【妙典】匠 妙典駅前整体院が9月出店予定か			open_planned	2026-09	ok
 /posts/takumi-shinurayasu-seitai-planned-202610/	時期未定		オープン予定	oc-open-planned	【新浦安】匠 新浦安駅前整体院が10月出店予定か			open_planned	2026-10	ok

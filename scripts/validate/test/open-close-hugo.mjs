@@ -61,6 +61,12 @@ post('yaml-dup-b', '店U 続報', '');
 post('yaml-override-fm', '店V', 'shopStatus: "close"\nshopDate: "2026-08-20"');
 post('yaml-unconf', '店W', '');
 post('yaml-status-nodate', '店X', '');
+post('yaml-year-open', '店Y1', '');
+post('yaml-year-old', '店Y2', '');
+post('yaml-year-unconf', '店Y3', '');
+post('yaml-year-renewal', '店Y4', '');
+post('fm-nodate-yaml-year', '店Y5', 'shopStatus: "close"');
+post('fm-dup-count-false', '店Y6', 'shopStatus: "open"\nshopDate: "2026-09-21"');
 post('legacy-temp', '【浦安】喫茶Xが一時休業　年内リニューアル予定', '');
 post('legacy-reopen', '【浦安】カフェYが9月18日営業再開', '');
 post('legacy-move', '「中華Z」浦安駅高架下再開発で3月上旬に移転予定', '');
@@ -85,6 +91,12 @@ w('data/openclose.yaml', [
   '"yaml-override-fm":\n  shop: "店V（yaml）"\n  type: open\n  when: "2026-07"',
   '"yaml-unconf":\n  shop: "店W"\n  status: open_planned\n  unconfirmed: true\n  date: "2026-11"',
   '"yaml-status-nodate":\n  shop: "店X"\n  type: open\n  when: "2026-04"\n  status: open_planned',
+  '"yaml-year-open":\n  shop: "店Y1"\n  status: open\n  year: "2026"',
+  '"yaml-year-old":\n  shop: "店Y2"\n  status: close\n  year: "2025"',
+  '"yaml-year-unconf":\n  shop: "店Y3"\n  status: open\n  unconfirmed: true\n  year: "2026"',
+  '"yaml-year-renewal":\n  shop: "店Y4"\n  status: renewal\n  year: "2026"',
+  '"fm-nodate-yaml-year":\n  year: "2026"',
+  '"fm-dup-count-false":\n  count: false',
 ].join('\n') + '\n');
 
 let pass = 0, fail = 0;
@@ -156,6 +168,12 @@ const EXP = {
   'yaml-override-fm': ['2026年8月', '閉店', '8月20日', false],
   'yaml-unconf': ['2026年11月/日付未定', '出店予定（未確認）', '', false],
   'yaml-status-nodate': ['時期未定', 'オープン予定', '', false], /* status を書いた行は旧 when（報道月）を使わない */
+  'yaml-year-open': ['時期未定', 'オープン', '2026年', false], /* 日付不明でも年が確認できれば件数に入る */
+  'yaml-year-old': ['時期未定', '閉店', '2025年', false],
+  'yaml-year-unconf': ['時期未定', 'オープン（未確認）', '2026年', false],
+  'yaml-year-renewal': ['時期未定', 'リニューアル', '2026年', false],
+  'fm-nodate-yaml-year': ['時期未定', '閉店', '2026年', false], /* yaml の year は frontmatter の記事にも効く */
+  'fm-dup-count-false': ['2026年9月', 'オープン', '9月21日', false],
   'legacy-temp': ['時期未定', '休業', '', false],
   'legacy-reopen': ['時期未定', '営業再開', '', false],
   'legacy-move': ['時期未定', '移転', '', false],
@@ -185,8 +203,8 @@ check('yaml の shop が表示名になる・frontmatter があれば yaml の�
   if (oc.rows['yaml-type'].shop !== '店S（キュレーション名）') e.push('yaml-type の表示名 ' + oc.rows['yaml-type'].shop);
   if (oc.rows['yaml-override-fm'].label !== '閉店') e.push('frontmatter が優先されていない');
 });
-check('件数: 確認済みの開店・閉店、日付を過ぎたリニューアル。未確認・予定・期間限定・日付不明・count: false は数えない', (e) => {
-  const want = { '開店': 5, '閉店': 3, 'リニューアル': 2 };
+check('件数: 確認済みの開店・閉店と日付を過ぎたリニューアル（日付不明でも年が確認できれば数える）。未確認・予定・期間限定・年不明・count: false は数えない', (e) => {
+  const want = { '開店': 6, '閉店': 4, 'リニューアル': 3 };
   for (const [k, n] of Object.entries(want)) if (oc.stats[k] !== n) e.push(k + ': 期待 ' + n + ' 実際 ' + oc.stats[k]);
 });
 check('月の中の並び: 日付の新しい順 → 「日付未定」（年月だけ）', (e) => {
@@ -251,7 +269,7 @@ for (const [now, label, passed] of [['2026-10-31T14:59:59Z', 'JST 10/31 23:59:59
   const o = parseOC(build(now)('open-close/index.html'));
   check('予定日経過の境目: ' + label, (e) => {
     for (const s of ['fm-close-planned', 'fm-planned-month-current']) if (o.rows[s].passed !== passed) e.push(s + ': 期待 ' + passed + ' 実際 ' + o.rows[s].passed);
-    if (o.stats['開店'] !== 5) e.push('年が変わっていないのに開店の件数が変わった: ' + o.stats['開店']);
+    if (o.stats['開店'] !== 6) e.push('年が変わっていないのに開店の件数が変わった: ' + o.stats['開店']);
   });
 }
 check('年の境目: 日本時間で年が変わると件数の年も変わる', (e) => {
