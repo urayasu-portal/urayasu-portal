@@ -5,7 +5,7 @@
  *   HUGO=/path/to/hugo node scripts/validate/test/event-dates-hugo.mjs
  * 一時ディレクトリに最小の Hugo サイトを作り、リポジトリの partial をそのまま使って約40通りの記事をビルドし、
  * 解釈結果（spans・groups・days・notable・kind・ongoing・invalid）、記事カードの日付ラベル、終了通知、
- * イベント情報ボックスの表示を期待値と比べる。不正な値を含む記事があってもビルドが止まらないことも確かめる。
+ * イベント情報ボックスの表示、サイドバーのカレンダーのデータ（partials/sidebar-calendar-data.html）を期待値と比べる。不正な値を含む記事があってもビルドが止まらないことも確かめる。
  * 本番と同じ Hugo 0.167.0 で確認している。依存ライブラリなし。失敗があれば終了コード 1。
  */
 import fs from 'node:fs';
@@ -22,11 +22,13 @@ const w = (rel, text) => { const p = path.join(DIR, rel); fs.mkdirSync(path.dirn
 w('hugo.toml', [
   'baseURL = "https://example.test/"',
   'defaultContentLanguage = "ja"',
-  'disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "home", "section"]',
+  'disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "section"]',
   '[languages.ja]', 'weight = 1', '[languages.en]', 'weight = 2', ''].join('\n'));
-for (const f of ['date-ymd.html', 'event-dates.html', 'event-dates-text.html', 'card-dates.html', 'event-ended-notice.html']) {
+for (const f of ['date-ymd.html', 'event-dates.html', 'event-dates-text.html', 'card-dates.html', 'event-ended-notice.html', 'sidebar-calendar-data.html']) {
   w('layouts/partials/' + f, fs.readFileSync(path.join(ROOT, 'layouts/partials', f), 'utf8'));
 }
+// サイドバーのカレンダーのデータ（言語ごと）はホームに書き出して確かめる
+w('layouts/home.html', '{{- $cal := partialCached "sidebar-calendar-data.html" site site.Language.Lang -}}<pre id="cal">{{ $cal | jsonify }}</pre>\n');
 // 終了通知の文言は本番の i18n から取る
 const i18n = (lang) => fs.readFileSync(path.join(ROOT, 'i18n', lang + '.yaml'), 'utf8').split(/\r?\n/)
   .reduce((acc, l, i, a) => (/^- id: (event_ended|past_notice)$/.test(l) ? acc + l + '\n' + a[i + 1] + '\n' : acc), '');
@@ -168,10 +170,13 @@ pass++;
 
 const text = (html) => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+const pre = (html, id) => JSON.parse(new RegExp('<pre id="' + id + '">([\\s\\S]*?)</pre>').exec(html)[1].replace(/&#34;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
+const evByLang = {};
 for (const k of CASES) {
   const file = path.join(DIR, 'public', k.lang === 'ja' ? '' : k.lang, 'posts', k.slug, 'index.html');
   const html = fs.readFileSync(file, 'utf8');
-  const ev = JSON.parse(/<pre id="ev">([\s\S]*?)<\/pre>/.exec(html)[1].replace(/&#34;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
+  const ev = pre(html, 'ev');
+  (evByLang[k.lang] = evByLang[k.lang] || []).push(ev);
   const cardHtml = /<div id="card">([\s\S]*?)<\/div>/.exec(html)[1];
   const label = /<span class="card-event[^"]*"[^>]*>([\s\S]*?)<\/span>/.exec(cardHtml);
   const got = {
@@ -193,6 +198,18 @@ for (const k of CASES) {
   else if (/^公開 /.test(pub[2]) !== !!label) errs.push('「公開」の付き方が違う: ' + pub[2]);
   if (errs.length) { fail++; console.log('  FAIL ' + k.id + '\n       ' + errs.join('\n       ')); }
   else { pass++; console.log('  ok   ' + k.id); }
+}
+// サイドバー: eventDates は全記事の days・notable を合わせた平らな日付の配列（重複なし・昇順）。
+// 配列ごと append すると Hugo の版によって入れ子になる不具合があったため、構造と中身の両方を確かめる
+for (const [lang, evs] of Object.entries(evByLang)) {
+  const errs = [];
+  const cal = pre(fs.readFileSync(path.join(DIR, 'public', lang === 'ja' ? '' : lang, 'index.html'), 'utf8'), 'cal');
+  const want = [...new Set(evs.flatMap((ev) => [...(ev.days || []), ...(ev.notable || [])]))].sort();
+  for (const d of cal.eventDates || []) if (typeof d !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(d)) errs.push('eventDates に日付でない値: ' + JSON.stringify(d));
+  if (!eq(cal.eventDates, want)) errs.push('eventDates: 期待 ' + want.length + ' 件 実際 ' + (cal.eventDates || []).length + ' 件');
+  if (!Array.isArray(cal.postDates) || cal.postDates.length !== evs.length || !cal.postDates.every((d) => typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d))) errs.push('postDates が記事ごとの日付の平らな配列でない');
+  if (errs.length) { fail++; console.log('  FAIL サイドバーのデータ（' + lang + '）\n       ' + errs.join('\n       ')); }
+  else { pass++; console.log('  ok   サイドバーのデータ（' + lang + '）: eventDates ' + want.length + ' 件・平ら'); }
 }
 fs.rmSync(DIR, { recursive: true, force: true });
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
