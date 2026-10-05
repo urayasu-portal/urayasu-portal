@@ -1,0 +1,7 @@
+{{- /*
+  date-jst.html — 時刻を日本時間（Asia/Tokyo）の日付 "YYYY-MM-DD" にして返す（工程1a PR 4）
+  呼び出し: {{ $today := partial "date-jst.html" now }}
+  時刻をタイムゾーン Asia/Tokyo に変換してから日付を取り出す。ビルドする環境のタイムゾーン
+  （ローカル PC の日本時間・GitHub Actions の UTC など）には左右されない。タイムゾーンのデータは Hugo に組み込まれている
+*/ -}}
+{{- return (time.In "Asia/Tokyo" .).Format "2006-01-02" }}

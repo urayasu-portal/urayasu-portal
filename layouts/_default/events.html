@@ -5,11 +5,18 @@
     それ以外は種別が event・match の記事。fair と種別なしは載せない）
   - 開催状態と表示する日程: partials/event-calendar-status.html（全日程で判定。今後の日程が1つでも残れば終了扱いにしない。
     eventOngoing は開始日以降「開催中」で、終了日を推測しない）
-  - 1記事1行。日付の列は「次回（開催中なら現在）の日程」、複数の日程がある記事は下に日程の要約（記事カードと同じ書式）
+  - 1記事1行。日付の列は「次回（開催中なら現在）の日程」。複数の日程がある記事は、下に「今後の日程」として
+    今日の時点で残っている日程（開催中の会期を含む。終わった日程・会期は含めない）だけを要約する。
+    書式は記事カードと同じ部品（1日程はその日、2〜3日程は列挙、4日程以上は「次回の日程ほか全N日程」。N は残っている日程の数）。
+    この要約は /events/ だけの表示で、記事カード・/daily/・サイドバー・終了通知の表示は変えない
+  - eventOngoing（終了日未定）は開催前・開催中とも「〜」と「終了日未定」を表示する
   - 並び: 開催中（終了日の近い順、終了日未定は最後）→ 開催予定（次回の開始日順、月ごとの見出し）→ 終了（最後の日の新しい順に30件）
-  - 今日は UTC に +9h した日本時間の日付（ビルドする PC のタイムゾーンに左右されない）
+  - 今日は日本時間（Asia/Tokyo）の日付（partials/date-jst.html）。ビルドする環境のタイムゾーンに左右されない。
+    site.Params.eventsNow はテスト専用（判定する時刻を固定する。本番の設定には置かない）
 */ -}}
-{{- $today := (now.UTC.Add (time.ParseDuration "9h")).Format "2006-01-02" }}
+{{- $now := now }}
+{{- with site.Params.eventsNow }}{{ $now = time.AsTime . }}{{ end }}
+{{- $today := partial "date-jst.html" $now }}
 {{- $todayYear := int (substr $today 0 4) }}
 {{- $wdays := slice "日" "月" "火" "水" "木" "金" "土" }}
 {{- $ongoing := slice }}{{ $upcoming := slice }}{{ $past := slice }}
@@ -17,10 +24,20 @@
   {{- if partialCached "event-calendar-eligible.html" . .RelPermalink }}
     {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
     {{- $st := partial "event-calendar-status.html" (dict "ev" $ev "today" $today) }}
+    {{- /* 今後の日程の要約（今日の時点で終わっていない日程だけ。日程は日付順に並んでいる） */ -}}
     {{- $summary := "" }}
-    {{- if gt $ev.count 1 }}{{ $summary = partial "event-dates-text.html" (dict "ev" $ev "year" $todayYear) }}{{ end }}
+    {{- if and (gt $ev.count 1) (not $ev.ongoing) }}
+      {{- $rest := slice }}
+      {{- range $ev.groups }}{{ if ge .end $today }}{{ $rest = $rest | append . }}{{ end }}{{ end }}
+      {{- if gt (len $rest) 3 }}
+        {{- $head := partial "event-dates-text.html" (dict "ev" (dict "groups" (first 1 $rest) "count" 1 "start" (index $rest 0).start "ongoing" false) "year" $todayYear) }}
+        {{- $summary = printf "%sほか全%d日程" $head (len $rest) }}
+      {{- else if $rest }}
+        {{- $summary = partial "event-dates-text.html" (dict "ev" (dict "groups" $rest "count" (len $rest) "start" (index $rest 0).start "ongoing" false) "year" $todayYear) }}
+      {{- end }}
+    {{- end }}
     {{- $row := dict
-          "start" $st.start "end" $st.end "openEnd" $st.openEnd "sortKey" $st.sortKey
+          "start" $st.start "end" $st.end "openEnd" $ev.ongoing "sortKey" $st.sortKey
           "title" .Title "href" .RelPermalink "kind" $ev.kind "count" $ev.count "summary" $summary
           "loc" (.Params.eventLocation | default "") "first" $ev.start }}
     {{- if eq $st.status "ongoing" }}{{ $ongoing = $ongoing | append $row }}
@@ -117,7 +134,7 @@
         {{ $r.title }}
       </span>
       {{- if $r.openEnd }}<span class="ev-sched">終了日未定</span>{{ end }}
-      {{- with $r.summary }}<span class="ev-sched">日程：{{ . | safeHTML }}</span>{{ end }}
+      {{- with $r.summary }}<span class="ev-sched">今後の日程：{{ . | safeHTML }}</span>{{ end }}
       {{- with $r.loc }}<span class="ev-loc"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
     </span>
   </a>

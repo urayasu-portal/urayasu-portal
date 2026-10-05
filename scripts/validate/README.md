@@ -12,7 +12,7 @@
 | `scripts/validate/known-issues.json` | **既存の不備リスト**。ここに載っている不備は失敗にしない（新しい不備だけを失敗にする） |
 | `scripts/validate/test/run-tests.mjs` | ルールのテスト（BOM・CRLF・インライン配列・日付・衝突など）と既存記事の回帰テスト |
 | `scripts/validate/test/event-dates-hugo.mjs` | 表示側の日付解釈（`layouts/partials/event-dates.html` ほか、工程1a PR 3）のテスト。最小の Hugo サイトで85通りを確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
-| `scripts/validate/test/events-hugo.mjs` | イベントカレンダー（`/events/`）の掲載・状態・並び順と Event 構造化データ（工程1a PR 4）のテスト。最小の Hugo サイトで22記事分を確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
+| `scripts/validate/test/events-hugo.mjs` | イベントカレンダー（`/events/`）の掲載・状態・並び順と Event 構造化データ（工程1a PR 4）のテスト。最小の Hugo サイトで25記事分を確かめ、判定する時刻を固定して日本時間の日付の境目（0時・15時・23時59分・年の境目、環境変数 TZ を4通り）も確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
 | `.github/workflows/hugo.yml` の `validate` ジョブ | push・schedule・手動実行のたびに上記を実行 |
 | `.github/workflows/pr-check.yml` | Pull Request 時にビルド（本番と同じオプション）・Pagefind・検証を実行。**デプロイはしない**。Hugo／Pagefind の版は hugo.yml と揃える |
 
