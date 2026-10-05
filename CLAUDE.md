@@ -28,7 +28,7 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 
 ### `date` の設定（最重要）
 
-`date` が **push 時点より未来だと、その記事はビルドから落ちて公開されない**（`--buildFuture` を付けていないため）。記事化プロンプト側と以下のルールで揃えている（現行の記事化プロンプトは **v20260907**「②_記事化プロンプト_v20260907.md」。リポジトリ外で運営者が管理。開催日の書式と検証は `scripts/validate/README.md`）。
+`date` が **push 時点より未来だと、その記事はビルドから落ちて公開されない**（`--buildFuture` を付けていないため）。記事化プロンプト側と以下のルールで揃えている（現行の記事化プロンプトは **v20261005β-StageB**「②_記事化プロンプト_v20261005β-StageB.md」。リポジトリ外で運営者が管理。旧 v20260907 は標準ではない。開催日の書式と検証は `scripts/validate/README.md`）。
 
 | ケース | `date` |
 |---|---|
@@ -69,7 +69,16 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 
 ### 日付・店舗情報の項目（2026-10 工程1a）
 
-**現行の運用（記事化プロンプト v20260907）は変えていない。** `eventDate` は「注目の日」（イベント・式典の開催日、試合日、開店日・閉店日・リニューアル日、愛称使用開始日など）。単日は `"YYYY-MM-DD"`、期間は `"YYYY-MM-DD/YYYY-MM-DD"`（`/` の前後に空白を入れない。入れると Hugo のビルドが止まる）、複数日程は `eventDates` のリスト、終了日未定は単日＋`eventOngoing: true`、いずれも `hideEventBox: true` を併記する。形式と実在性は投稿ツールと CI が検証する（PR 1a-1）。
+**現行の運用は記事化プロンプト v20261005β-StageB（2026-10-05〜）。** Stage B で有効な日付のルール:
+
+- `eventDate`・`eventDates` は、**読者が実際に行ける催し・試合・フェアの日程**
+- `eventKind` は `event`（催し・講座）／`match`（試合・大会）／`fair`（期間限定フェア・販売）
+- お知らせ・制度の開始日・申込期限など、行ける催しではない日は `notableDate`・`notableDates`
+- `calendar` は `/events/` の掲載を例外的に上書きするときだけ書く
+- `eventLocation`・`organizer` は、一次情報で確定した場合だけ書く（未定・不明なら書かない）
+- 店舗系（`shopStatus`・`shopDate`）への全面移行は PR 5 完了後。それまでは行わない
+
+書式: 単日は `"YYYY-MM-DD"`、期間は `"YYYY-MM-DD/YYYY-MM-DD"`（`/` の前後に空白を入れない。入れると Hugo のビルドが止まる）、複数日程は `eventDates` のリスト、終了日未定は単日＋`eventOngoing: true`、いずれも `hideEventBox: true` を併記する。形式と実在性は投稿ツールと CI が検証する（PR 1a-1）。
 
 **日付の解釈は `layouts/partials/event-dates.html` に共通化している**（PR 3）。記事カード・サイドバーのカレンダー・`/daily/`・終了通知・イベント情報ボックスはこの部品を使い、解釈できない値（実在しない日付・逆順の期間など）は表示から除くだけでビルドを止めない。表示のルール:
 
@@ -87,7 +96,7 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 - `calendar` はイベントカレンダーの掲載の上書きに使う（PR 4）。`eventKind` はイベントカレンダーと Event 構造化データの対象判定にも使う（PR 4）
 - `shopStatus`・`shopUnconfirmed` は、まだどの表示にも使われていない。開店・閉店年表は、どの新項目も読まない（PR 5 で対応）
 
-**記事化プロンプトは引き続き v20260907 を使い、新仕様への切り替えはまだ行わない**（v20260907 は上の7項目を出力しない）。切り替えは、表示側の対応（設計書 `docs/audits/phase1a-design.md` 第12章の PR 3〜5）と連動させ、記事の種類ごとに段階的に行う（`docs/audits/phase1a-new-fields-report.md` 第9章）。それまでは既存の `eventDate` を削除・置き換えしない。
+**記事化プロンプト v20261005β-StageB で、`eventKind`・`notableDate(s)`・`calendar`・`eventLocation`・`organizer` の運用をサイトの実装（PR 3・PR 4）と揃えた。** 店舗系の項目（`shopStatus`・`shopDate`・`shopUnconfirmed`）への全面移行は、開店・閉店年表の対応（PR 5）の完了後に行う（`docs/audits/phase1a-new-fields-report.md` 第9章）。
 
 | 項目 | 値 | 用途（予定） | 現在の表示への影響 |
 |---|---|---|---|
