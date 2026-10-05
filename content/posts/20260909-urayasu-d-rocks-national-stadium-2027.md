@@ -15,6 +15,7 @@ description: "浦安D-Rocksが2026-27シーズン、MUFGスタジアム（国立
 eventDates:
   - "2027-01-22"
   - "2027-02-05"
+eventKind: "match"
 hideEventBox: true
 cover:
   image: /images/posts/d-rocks.png

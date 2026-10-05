@@ -12,6 +12,7 @@ tags:
   - "環境学習"
 description: "浦安市三番瀬環境観察館で2026年10月24日、市内在住者を対象に「三番瀬カニ釣り体験」を開催。護岸で実際にカニを釣りながら海の豊かさを学びます。定員約15人、参加費100円で、申込は10月6～12日です。"
 eventDate: "2026-10-24"
+eventKind: "event"
 hideEventBox: true
 checkDate: "2026-08"
 sources:

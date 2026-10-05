@@ -21,6 +21,7 @@ eventDates:
   - "2026-10-31/2026-11-01"
   - "2026-11-03"
   - "2026-11-05/2026-11-07"
+eventKind: "event"
 hideEventBox: true
 draft: false
 ---
