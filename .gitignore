@@ -5,3 +5,6 @@ public/
 # ローカルのプレビュー/ツール設定
 .claude/
 hotel-database-full.backup.csv
+
+# 画像生成のローカル出力（記事採用分は static/ へ配置する）
+output/
