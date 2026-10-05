@@ -4477,6 +4477,10 @@ body.pillar-travel .post-single .post-content a.hg-sv-maplink:hover { background
 .ev-title { font-size: 14px; font-weight: 600; line-height: 1.55; }
 .ev-now { display: inline-block; font-size: 10.5px; font-weight: 700; color: #fff; background: #C2421F; border-radius: 4px; padding: 1px 6px; margin-right: 6px; vertical-align: 1px; }
 .ev-loc { font-size: 11.5px; color: var(--secondary); display: inline-flex; align-items: center; gap: 3px; }
+/* 工程1a PR 4: 試合のラベル、日程の要約・終了日未定（既存のカテゴリ色の変数を使う） */
+.ev-kind { display: inline-block; font-size: 10.5px; font-weight: 700; color: var(--cat-sports); border: 1px solid var(--cat-sports); border-radius: 4px; padding: 0 5px; margin-right: 6px; vertical-align: 1px; }
+.ev-sched { font-size: 11.5px; color: var(--secondary); line-height: 1.5; }
+.ev-sched time { font-size: inherit; color: inherit; }
 .ev-empty { padding: 18px; background: var(--entry); border: 1px solid var(--border); border-radius: 10px; font-size: 14px; color: var(--secondary); }
 .ev-past { margin-top: 30px; }
 .ev-past summary { cursor: pointer; font-size: 14px; font-weight: 700; color: var(--primary); padding: 10px 0; }

@@ -1,0 +1,85 @@
+# /events/ の開催予定・開催中の改修前後（判定日 2026-10-05。改修前は main 0d7c9d78 の旧テンプレートの処理を再現、改修後は PR 4 のビルドの HTML）
+url	title	group	eventKind	calendar	eventDate	eventDates	eventOngoing	before	after	change	reason	afterRow
+/posts/hotel-okura-tokyo-bay-christmas-room-2026/	【浦安】ホテルオークラ東京ベイ、クリスマス特別客室を販売	eventKind なし＋お知らせ			2026-11-06/2026-12-25			upcoming		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/hotel-okura-tokyo-bay-halloween-plan-2026/	【浦安】ホテルオークラ舞浜にハロウィーン限定宿泊プラン	eventKind なし＋お知らせ			2026-09-16/2026-10-31			ongoing		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/urayasu-convenience-certificate-suspension-202610/	【浦安市】コンビニ証明書交付、10月23日夕方から一時停止	eventKind なし＋お知らせ			2026-10-23/2026-10-25			upcoming		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/urayasu-tv-interference-november-2026/	【浦安市】11月19日からテレビ受信障害の可能性、市内のほぼ全域が対象	eventKind なし＋お知らせ			2026-11-19			upcoming		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/brighton-cache-cache-harvest-buffet-2026/	【新浦安】ブライトン「カシュカシュ」で秋ビュッフェ	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-30			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/comfort-suites-tokyo-bay-autumn-breakfast-2026/	【浦安】コンフォートスイーツ東京ベイに秋限定朝食17種	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-30			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/disney-hotels-halloween-menu-2026/	【舞浜】ディズニーホテル3館でハロウィーン限定メニュー	eventKind なし＋グルメ・カフェ			2026-09-15/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/grand-nikko-halloween-sweets-buffet-2026/	【舞浜】グランドニッコーでハロウィーンスイーツブッフェ開催	eventKind なし＋グルメ・カフェ			2026-10-10/2026-10-12			upcoming		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/hilton-gothic-palace-2026/	【浦安】ヒルトン東京ベイでハロウィーンスイーツビュッフェ開催	eventKind なし＋グルメ・カフェ			2026-09-05/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/hilton-tokyo-bay-autumn-afternoon-tea-2026/	【浦安】ヒルトン東京ベイで秋のアフタヌーンティー	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-04			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/hilton-tokyo-bay-gothic-palace-2026/	【浦安】ヒルトン東京ベイでハロウィーンスイーツビュッフェ	eventKind なし＋グルメ・カフェ			2026-09-05/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/ibis-styles-tokyo-bay-seafood-breakfast-2026/	【浦安】日の出イビスで海鮮朝食フェア、10月1日から	eventKind なし＋グルメ・カフェ			2026-10-01/2026-12-23			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-first-resort-autumn-sweets-buffet-2026/	【舞浜】ファーストリゾートで秋スイーツビュッフェ	eventKind なし＋グルメ・カフェ			2026-10-10/2026-10-12			upcoming		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-first-resort-steak-buffet-202611/	【浦安】舞浜ホテルでサーロインステーキ食べ放題	eventKind なし＋グルメ・カフェ			2026-11-21/2026-11-23			upcoming		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-view-hotel-halloween-2026/	【浦安】舞浜ビューホテルでハロウィーンスイーツ	eventKind なし＋グルメ・カフェ			2026-09-01/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-view-hotel-halloween-afternoon-tea-2026/	【浦安】舞浜ビューホテルでハロウィーンアフタヌーンティー	eventKind なし＋グルメ・カフェ			2026-09-01/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/oriental-hotel-oktoberfest-2026/	【浦安】オリエンタルホテル東京ベイで秋のブッフェ開催	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/oriental-hotel-tokyo-bay-hokkaido-buffet-2026/	【浦安】オリエンタルホテルで北海道ブッフェ、カニ食べ比べも	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/oriental-hotel-tokyo-bay-oktoberfest-2026/	【新浦安】グランサンクで秋のオクトーバーフェスト	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/sheraton-thai-food-buffet-2026/	【浦安】シェラトン舞浜で「タイフードブッフェ」9月1日から	eventKind なし＋グルメ・カフェ			2026-09-01/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/urayasu-brighton-autumn-sweets-2026/	【浦安】ブライトンに秋限定スイーツ、9月1日から	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-30			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/tokyo-disneysea-indiana-jones-reopen-20261130/	【舞浜】ディズニーシー「インディ・ジョーンズ」11月30日再開	eventKind なし＋ニュース			2026-11-30			upcoming		外れる	種別なし（ニュース。カテゴリからは推定しない）	
+/posts/atre-shinurayasu-yanaka-fukumaru-202610/	【浦安】アトレ新浦安に谷中福丸饅頭、10月1日から限定出店	eventKind なし＋開店・閉店			2026-10-01/2026-10-07			ongoing		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/ikspiari-fint-open-20261022/	【浦安】イクスピアリに「フィント」10月22日オープン	eventKind なし＋開店・閉店			2026-10-22			upcoming		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/ikspiari-poeme-popup-2026/	【浦安】イクスピアリに「母恵夢」期間限定出店	eventKind なし＋開店・閉店			2026-09-28/2026-10-15			ongoing		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/ikspiari-saisai-maratan-open-20261019/	【浦安】イクスピアリに菜菜麻辣湯、10月19日オープン	eventKind なし＋開店・閉店			2026-10-19			upcoming		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/papabubble-maihama-new-store-2026/	【浦安】舞浜に「PAPABUBBLE」出店予定か、求人で判明	eventKind なし＋開店・閉店			2026-11-21			upcoming		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/urayasu-second-book-2026/	【浦安市】3歳児へ絵本「セカンドブック」10月14日開始	eventKind なし＋子育て・教育			2026-10-14			upcoming		外れる	種別なし（子育て・教育。カテゴリからは推定しない）	
+/posts/1955-halloween-night-2026/	【浦安】1955 東京ベイで宿泊者限定ハロウィーン企画を開催	eventKind なし＋イベント			2026-09-16/2026-10-31			ongoing	ongoing	継続		9/16 (水) 〜 10/31 (土) 開催中 【浦安】1955 東京ベイで宿泊者限定ハロウィーン企画を開催
+/posts/akemi-no-oka-matsuri-2026/	【浦安市】「明海の丘まつり」10月10日開催、今年で20周年	eventKind なし＋イベント			2026-10-10			upcoming	upcoming	継続		10/10 (土) 【浦安市】「明海の丘まつり」10月10日開催、今年で20周年
+/posts/artgrace-urayasu-fireworks-buffet-2026/	【浦安市】花火大会をチャペルから鑑賞｜アートグレイスで限定ブッフェ	eventKind なし＋イベント			2026-10-17			upcoming	upcoming	継続		10/17 (土) 【浦安市】花火大会をチャペルから鑑賞｜アートグレイスで限定ブッフェ
+/posts/disney-christmas-2026/	【浦安】ディズニー・クリスマス、11月11日から開催	eventKind なし＋イベント			2026-11-11/2026-12-25			upcoming	upcoming	継続		11/11 (水) 〜 12/25 (金) 【浦安】ディズニー・クリスマス、11月11日から開催
+/posts/eboat-chiba-urayasu-2026/	【浦安市】境川で「第13回Eボート千葉大会」10月18日開催	eventKind なし＋イベント			2026-10-18			upcoming	upcoming	継続		10/18 (日) 【浦安市】境川で「第13回Eボート千葉大会」10月18日開催
+/posts/grand-monday-autumn-festival-2026/	【浦安】GRAND MONdayで秋イベント、10月31日まで	eventKind なし＋イベント			2026-09-17/2026-10-31			ongoing	ongoing	継続		9/17 (木) 〜 10/31 (土) 開催中 【浦安】GRAND MONdayで秋イベント、10月31日まで
+/posts/grand-nikko-maihama-halloween-event-2026/	【舞浜】グランドニッコーでハロウィーン企画、9月16日から	eventKind なし＋イベント			2026-09-16/2026-10-31			ongoing	ongoing	継続		9/16 (水) 〜 10/31 (土) 開催中 【舞浜】グランドニッコーでハロウィーン企画、9月16日から
+/posts/gyotoku-machibar-october-2026/	【行徳】31店舗が参加！行徳街バルが10月8・9日に開催	eventKind なし＋イベント			2026-10-08/2026-10-09			upcoming	upcoming	継続		10/8 (木) 〜 10/9 (金) 【行徳】31店舗が参加！行徳街バルが10月8・9日に開催
+/posts/ikspiari-halloween-piari-gacha-2026/	【浦安】イクスピアリで巨大ガチャ＆ハロウィーン企画、10月23日から	eventKind なし＋イベント			2026-10-23/2026-10-31			upcoming	upcoming	継続		10/23 (金) 〜 10/31 (土) 【浦安】イクスピアリで巨大ガチャ＆ハロウィーン企画、10月23日から
+/posts/ikspiari-salon-de-sweets-halloween-2026/	【浦安】イクスピアリでハロウィーンスイーツビュッフェ	eventKind なし＋イベント			2026-09-15/2026-10-31			ongoing	ongoing	継続		9/15 (火) 〜 10/31 (土) 開催中 【浦安】イクスピアリでハロウィーンスイーツビュッフェ
+/posts/maihama-first-resort-halloween-2026/	【浦安】ファーストリゾートでハロウィーン宿泊プラン開催	eventKind なし＋イベント			2026-09-15/2026-10-31			ongoing	ongoing	継続		9/15 (火) 〜 10/31 (土) 開催中 【浦安】ファーストリゾートでハロウィーン宿泊プラン開催
+/posts/marine-festival-2026/	【浦安】「マリンフェスティバル2026」10月11日開催	eventKind なし＋イベント			2026-10-11			upcoming	upcoming	継続		10/11 (日) 【浦安】「マリンフェスティバル2026」10月11日開催
+/posts/nhk-symphony-urayasu-special-concert-2026/	【浦安市】N響浦安特別公演2026開催	eventKind なし＋イベント			2026-11-03			upcoming	upcoming	継続		11/3 (火) 【浦安市】N響浦安特別公演2026開催
+/posts/oriental-hotel-pumpkin-gate-2026/	【新浦安】オリエンタルホテルに巨大「パンプキンゲート」	eventKind なし＋イベント			2026-09-11/2026-11-03			ongoing	ongoing	継続		9/11 (金) 〜 11/3 (火) 開催中 【新浦安】オリエンタルホテルに巨大「パンプキンゲート」
+/posts/prague-cello-republic-urayasu-2026/	【浦安市】文化会館でプラハ・チェロ公演開催	eventKind なし＋イベント			2026-11-27			upcoming	upcoming	継続		11/27 (金) 【浦安市】文化会館でプラハ・チェロ公演開催
+/posts/resort-line-magic-in-motion/	【舞浜】リゾートライン初の体験型映像がスタート	eventKind なし＋イベント			2026-07-24/2027-03-31			ongoing	ongoing	継続		7/24 (金) 〜 2027/3/31 (水) 開催中 【舞浜】リゾートライン初の体験型映像がスタート
+/posts/shinura-music-festival-autumn-2026/	【浦安市】しんうら音楽文化祭、10月10日にイオン新浦安で開催	eventKind なし＋イベント			2026-10-10			upcoming	upcoming	継続		10/10 (土) 【浦安市】しんうら音楽文化祭、10月10日にイオン新浦安で開催
+/posts/shinurayasu-illumination-2026/	【浦安市】新浦安駅前で3万球のイルミネーション、11月6日から点灯	eventKind なし＋イベント			2026-11-06/2027-02-27			upcoming	upcoming	継続		11/6 (金) 〜 2027/2/27 (土) 【浦安市】新浦安駅前で3万球のイルミネーション、11月6日から点灯
+/posts/shinurayasu-station-festival-performers-2026/	【浦安市】新浦安駅前まつりの出演者を募集	eventKind なし＋イベント			2026-11-07/2026-11-08			upcoming	upcoming	継続		11/7 (土) 〜 11/8 (日) 【浦安市】新浦安駅前まつりの出演者を募集
+/posts/shunputei-koasa-urayasu-20261115/	【浦安】春風亭小朝独演会、8月17日から一般発売	eventKind なし＋イベント			2026-11-15			upcoming	upcoming	継続		11/15 (日) 【浦安】春風亭小朝独演会、8月17日から一般発売
+/posts/socola-minami-gyotoku-pan-dorobou-2026/	【行徳】SOCOLA南行徳に「パンどろぼう」10/11登場	eventKind なし＋イベント			2026-10-11			upcoming	upcoming	継続		10/11 (日) 【行徳】SOCOLA南行徳に「パンどろぼう」10/11登場
+/posts/tatsumi-yuto-concert-urayasu-20261009/	【浦安市】辰巳ゆうとコンサート、10月9日文化会館で開催	eventKind なし＋イベント			2026-10-09			upcoming	upcoming	継続		10/9 (金) 【浦安市】辰巳ゆうとコンサート、10月9日文化会館で開催
+/posts/tds25-smiles-stamp-rally-2026/	【舞浜】TDS25周年、9月4日から寄付企画＆スタンプラリー	eventKind なし＋イベント			2026-09-04/2026-10-31			ongoing	ongoing	継続		9/4 (金) 〜 10/31 (土) 開催中 【舞浜】TDS25周年、9月4日から寄付企画＆スタンプラリー
+/posts/toyouke-jinja-aki-matsuri-2026/	【浦安】豊受神社「秋まつり」10月11日開催	eventKind なし＋イベント			2026-10-11			upcoming	upcoming	継続		10/11 (日) 【浦安】豊受神社「秋まつり」10月11日開催
+/posts/urakko-matsuri-2026/	【浦安市】第11回うらっこまつり、10月24・25日開催	eventKind なし＋イベント			2026-10-24/2026-10-25			upcoming	upcoming	継続		10/24 (土) 〜 10/25 (日) 【浦安市】第11回うらっこまつり、10月24・25日開催
+/posts/urayasu-d-park-bosai-fes-20261018/	【浦安市】Dパークで親子向け防災フェス、10月18日開催	eventKind なし＋イベント			2026-10-18			upcoming	upcoming	継続		10/18 (日) 【浦安市】Dパークで親子向け防災フェス、10月18日開催
+/posts/urayasu-d-park-fireworks-viewing-20261017/	【浦安】Dパークで10月17日に花火観覧企画、入場条件も	eventKind なし＋イベント			2026-10-17			upcoming	upcoming	継続		10/17 (土) 【浦安】Dパークで10月17日に花火観覧企画、入場条件も
+/posts/urayasu-geidai-balloon-dome-2026/	【浦安市】巨大バルーンドーム制作、11月7日開催	eventKind なし＋イベント			2026-11-07			upcoming	upcoming	継続		11/7 (土) 【浦安市】巨大バルーンドーム制作、11月7日開催
+/posts/urayasu-geidai-silent-voices-workshop-2026/	【浦安市】浦安藝大の音のワークショップ、11月1日に開催	eventKind なし＋イベント			2026-11-01			upcoming	upcoming	継続		11/1 (日) 【浦安市】浦安藝大の音のワークショップ、11月1日に開催
+/posts/urayasu-hanabi-taikai-2026/	浦安市花火大会2026｜10月17日18時開始・約3,600発｜観覧は招待席のみ	eventKind なし＋イベント			2026-10-17	2026-10-17		upcoming	upcoming	継続		10/17 (土) 浦安市花火大会2026｜10月17日18時開始・約3,600発｜観覧は招待席のみ 浦安市総合公園・高洲海浜公園
+/posts/urayasu-indonesia-day-2026/	【浦安市】インドネシアDay、11月8日に新浦安で開催	eventKind なし＋イベント			2026-11-08			upcoming	upcoming	継続		11/8 (日) 【浦安市】インドネシアDay、11月8日に新浦安で開催
+/posts/urayasu-mori-trip-2026/	【浦安市】1泊2日「森とりっぷ」11月14・15日開催	eventKind なし＋イベント			2026-11-14/2026-11-15			upcoming	upcoming	継続		11/14 (土) 〜 11/15 (日) 【浦安市】1泊2日「森とりっぷ」11月14・15日開催
+/posts/urayasu-sports-fair-2026/	【浦安市】浦安スポーツフェア2026、10月11日に運動公園で開催	eventKind なし＋イベント			2026-10-11			upcoming	upcoming	継続		10/11 (日) 【浦安市】浦安スポーツフェア2026、10月11日に運動公園で開催
+/posts/yuzuru-hanyu-pooh-exhibition-maihama-2026/	【舞浜】丸善で羽生結弦さん衣装のプーさん展示	eventKind なし＋イベント			2026-09-04/2026-10-20			ongoing	ongoing	継続		9/4 (金) 〜 10/20 (火) 開催中 【舞浜】丸善で羽生結弦さん衣装のプーさん展示
+/posts/sanbanze-crab-fishing-2026/	【浦安市】三番瀬でカニ釣り体験、10月24日開催（続報）	eventKind: event	event		2026-10-24			upcoming	upcoming	継続		10/24 (土) 【浦安市】三番瀬でカニ釣り体験、10月24日開催（続報）
+/posts/seishonenkan-climbing-2026/	【浦安市】青少年館でクライミング体験、10月12日開催	eventKind: event	event		2026-10-12			upcoming	upcoming	継続		10/12 (月) 【浦安市】青少年館でクライミング体験、10月12日開催
+/posts/spogomi-seishonenkan-2026/	【浦安市】青少年館で「スポGOMI」10月18日開催	eventKind: event	event		2026-10-18			upcoming	upcoming	継続		10/18 (日) 【浦安市】青少年館で「スポGOMI」10月18日開催
+/posts/urayasu-fire-prevention-poster-exhibition-2026/	【浦安市】小中学生535作品の防火ポスター展、消防庁舎で10月16日まで	eventKind: event	event		2026-10-04/2026-10-16			ongoing	ongoing	継続		10/4 (日) 〜 10/16 (金) 開催中 【浦安市】小中学生535作品の防火ポスター展、消防庁舎で10月16日まで
+/posts/urayasu-javascript-game-workshop/	【浦安市】小中学生向けゲーム制作講座、11月15日に青少年館で開催	eventKind: event	event		2026-11-15			upcoming	upcoming	継続		11/15 (日) 【浦安市】小中学生向けゲーム制作講座、11月15日に青少年館で開催
+/posts/urayasu-sanbanze-crab-fishing-202610/	【浦安市】三番瀬でカニ釣り体験、10月24日開催	eventKind: event	event		2026-10-24			upcoming	upcoming	継続		10/24 (土) 【浦安市】三番瀬でカニ釣り体験、10月24日開催
+/posts/urayasu-boccia-open-2026/	【浦安市】市民ボッチャ大会、11月14日開催	eventKind: match	match		2026-11-14			upcoming	upcoming	継続		11/14 (土) 試合 【浦安市】市民ボッチャ大会、11月14日開催
+/posts/urayasu-criterium-2026-entry/	【浦安市】第3回浦安クリテリウム、11月28日開催へ	eventKind: match	match		2026-11-28			upcoming	upcoming	継続		11/28 (土) 試合 【浦安市】第3回浦安クリテリウム、11月28日開催へ
+/posts/cinema-ikspiari-disney-revival-2026/	【舞浜】シネマイクスピアリでディズニー3作品を特別上映	eventKind なし＋イベント				2026-09-18/2026-10-15 | 2026-10-09/2026-11-05 | 2026-10-30/2026-11-26			ongoing	新しく載る	eventDates だけの記事（旧版は読まない）	9/18 (金) 〜 10/15 (木) 開催中 【舞浜】シネマイクスピアリでディズニー3作品を特別上映 日程： 9月18日(金) 〜 10月15日(木) ・ 10月9日(金) 〜 11月5日(木) ・ 10月30日(金) 〜 11月26日(木)
+/posts/disney-resort-line-25th-anniversary-events/	【舞浜】リゾートライン25周年企画始動　貸切乗車や限定きっぷ	eventKind なし＋イベント				2026-07-24/2027-03-31 | 2026-07-25/2026-08-31 | 2026-07-27			ongoing	新しく載る	eventDates だけの記事（旧版は読まない）	7/24 (金) 〜 2027/3/31 (水) 開催中 【舞浜】リゾートライン25周年企画始動 貸切乗車や限定きっぷ 日程： 7月24日(金) 〜 2027年3月31日(水) ・ 2026年7月25日(土) 〜 8月31日(月) ・ 7月27日(月)
+/posts/little-mermaid-maihama-opening/	【浦安】劇団四季「リトルマーメイド」8月26日舞浜で開幕	eventKind なし＋イベント			2026-08-26		true		ongoing	新しく載る	eventOngoing（旧版は開始日で終了扱い）	8/26 (水) 〜 開催中 【浦安】劇団四季「リトルマーメイド」8月26日舞浜で開幕 終了日未定
+/posts/urayasu-bar-gai-2026/	【浦安市】第13回浦安バル街が10月開催へ	eventKind なし＋イベント				2026-10-20 | 2026-10-21			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	10/20 (火) 〜 10/21 (水) 【浦安市】第13回浦安バル街が10月開催へ
+/posts/urayasu-bonodori-fireworks-2026/	【浦安市】盆踊り大会・花火大会2026まとめ｜日程・会場・送迎バス・交通規制	eventKind なし＋イベント				2026-08-14 | 2026-08-15 | 2026-10-17			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	10/17 (土) 【浦安市】盆踊り大会・花火大会2026まとめ｜日程・会場・送迎バス・交通規制 日程： 8月14日(金) ・ 8月15日(土) ・ 10月17日(土)
+/posts/urayasu-geidai-bekappo-workshop-2026/	【浦安市】べか舟の帆をつくる親子向けアート体験、10月25日・11月3日開催	eventKind なし＋イベント				2026-10-25 | 2026-11-03			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	10/25 (日) 【浦安市】べか舟の帆をつくる親子向けアート体験、10月25日・11月3日開催 日程： 10月25日(日) ・ 11月3日(火)
+/posts/urayasu-neighborhood-summer-festivals-2026/	【浦安市】夏祭り・秋祭り2026まとめ｜自治会・神社・地域のお祭り	eventKind なし＋イベント				2026-10-03 | 2026-10-04 | 2026-10-10 | 2026-10-11 | 2026-10-18 | 2026-10-24 | 2026-10-25			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	10/10 (土) 【浦安市】夏祭り・秋祭り2026まとめ｜自治会・神社・地域のお祭り 日程： 10月3日(土) ほか全7日程
+/posts/briobecca-public-viewing-aeon-shinurayasu-2026/	【新浦安】ブリオベッカPV、10月4日・11月8日開催	eventKind: event	event			2026-10-04 | 2026-11-08			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	11/8 (日) 【新浦安】ブリオベッカPV、10月4日・11月8日開催 日程： 10月4日(日) ・ 11月8日(日)
+/posts/furusato-urayasu-works-2026/	【浦安市】「ふるさと浦安作品展」11月7日まで開催	eventKind: event	event			2026-09-26/2026-09-27 | 2026-10-01/2026-10-04 | 2026-10-06/2026-10-12 | 2026-10-15/2026-10-18 | 2026-10-20/2026-10-25 | 2026-10-27/2026-10-29 | 2026-10-31/2026-11-01 | 2026-11-03 | 2026-11-05/2026-11-07			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	10/6 (火) 〜 10/12 (月) 【浦安市】「ふるさと浦安作品展」11月7日まで開催 日程： 9月26日(土) ほか全9日程
+/posts/urayasu-new-bayshore-road-panel-2026/	【浦安市】新湾岸道路のパネル展、市内3会場で開催	eventKind: event	event			2026-09-14/2026-09-18 | 2026-09-19/2026-09-23 | 2026-10-05/2026-10-09			ongoing	新しく載る	eventDates だけの記事（旧版は読まない）	10/5 (月) 〜 10/9 (金) 開催中 【浦安市】新湾岸道路のパネル展、市内3会場で開催 日程： 9月14日(月) 〜 18日(金) ・ 9月19日(土) 〜 23日(水) ・ 10月5日(月) 〜 9日(金)
+/posts/urayasu-d-rocks-national-stadium-2027/	【浦安】D-Rocks、国立競技場でリーグ戦2試合開催	eventKind: match	match			2027-01-22 | 2027-02-05			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	1/22 (金) 試合 【浦安】D-Rocks、国立競技場でリーグ戦2試合開催 日程： 2027年1月22日(金) ・ 2月5日(金)
+/posts/urayasu-d-rocks-national-stadium-invitation/	【浦安】D-Rocks、国立競技場の2試合に3万人を抽選で無料招待	eventKind: match	match			2027-01-22 | 2027-02-05			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	1/22 (金) 試合 【浦安】D-Rocks、国立競技場の2試合に3万人を抽選で無料招待 日程： 2027年1月22日(金) ・ 2月5日(金)
+/posts/urayasu-d-rocks-preseason-free-invitation/	【浦安】D-Rocks、Dパーク5試合を抽選で無料招待	eventKind: match	match			2026-10-10 | 2026-10-17 | 2026-10-23 | 2026-11-21			upcoming	新しく載る	eventDates だけの記事（旧版は読まない）	10/10 (土) 試合 【浦安】D-Rocks、Dパーク5試合を抽選で無料招待 日程： 10月10日(土) ほか全4日程

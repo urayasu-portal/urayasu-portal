@@ -48,6 +48,10 @@ jobs:
       - name: Test date display partials
         run: node scripts/validate/test/event-dates-hugo.mjs
 
+      # イベントカレンダー（/events/）と Event 構造化データのテスト（工程1a PR 4）。同じく最小サイトで確認する
+      - name: Test events page and Event JSON-LD
+        run: node scripts/validate/test/events-hugo.mjs
+
       - name: Build (same options as production)
         env:
           HUGO_ENVIRONMENT: production

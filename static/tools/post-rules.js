@@ -389,6 +389,40 @@
     out.push({ level: 'error', code: code, msg: field + ' は真偽値の true または false で書いてください（「' + showVal(v) + '」' + (quoted ? '。引用符で囲むと文字列になります' : '') + '）' });
   }
 
+  /* ---------- 会場・主催者（工程1a PR 4） ----------
+   * eventLocation（会場名）・organizer（主催者名）は Event 構造化データの根拠になる任意項目。
+   * テンプレートは値をそのまま使い、推測・補完しない。不明・未定なら項目自体を書かない運用。
+   *   エラー: 空・空白だけ、文字列でない（リスト・マップ・真偽値・引用符なしの数値・null）
+   *   警告: 確定していない値（未定・未発表・不明・TBD など）、80文字を超える値
+   */
+  var EVENT_TEXT_FIELDS = ['eventLocation', 'organizer'];
+  var UNCONFIRMED_RE = /未定|未発表|不明|未確定|調整中|確認中|要確認|\bTBD\b|\bTBA\b|\bTBC\b/i;
+  function checkEventTextFields(d, fmText) {
+    var out = {};
+    EVENT_TEXT_FIELDS.forEach(function (f) {
+      out[f] = [];
+      var v = d[f];
+      if (v === undefined) return;
+      var code = f.toUpperCase();
+      var raw = (new RegExp('^' + f + '\\s*:\\s*(.*)$', 'm').exec(fmText || '') || [])[1];
+      raw = raw === undefined ? '' : raw.replace(/\s+#.*$/, '').trim();
+      var unquotedScalar = raw !== '' && !/^["']/.test(raw);
+      var notString = typeof v !== 'string' || (unquotedScalar && /^(-?\d+(\.\d+)?|null|~|yes|no|on|off)$/i.test(raw));
+      if (notString) {
+        out[f].push({ level: 'error', code: code + '_NOT_STRING', msg: f + ' は文字列で書いてください（「' + showVal(v) + '」）。リスト・真偽値・数値は使えません。値が無い場合は項目ごと削除してください' });
+        return;
+      }
+      var t = v.replace(/[\s　]+/g, ' ').trim();
+      if (t === '') {
+        out[f].push({ level: 'error', code: code + '_EMPTY', msg: f + ' が空です。分からない場合は「未定」などと書かず、項目ごと削除してください' });
+        return;
+      }
+      if (UNCONFIRMED_RE.test(t)) out[f].push({ level: 'warning', code: code + '_UNCONFIRMED', msg: f + ' に確定していない値が入っています（「' + t + '」）。構造化データにそのまま出るため、確定するまでは項目ごと削除してください' });
+      if (t.length > 80) out[f].push({ level: 'warning', code: code + '_LONG', msg: f + ' が' + t.length + '文字と長すぎます（80文字まで）。' + (f === 'eventLocation' ? '会場名だけ' : '主催者名だけ') + 'を書いてください' });
+    });
+    return out;
+  }
+
   /**
    * 新項目をまとめて検証する。返り値: { 項目名: [problem] }（更新時の「変更していない項目」の判定のため項目ごとに分ける）
    */
@@ -567,13 +601,16 @@
     if (!isNew && typeof ctx.prevText === 'string') {
       var pfm = ctx.prevText.trim() ? parseFrontmatter(ctx.prevText) : null;
       if (pfm && pfm.ok) prev = pfm.data;
-      else if (hasEvent || NEW_FIELDS.some(function (f) { return d[f] !== undefined; })) add(warnings, 'EVENT_PREV_UNAVAILABLE', '既存記事の内容を読み取れなかったため、日付・店舗情報の項目（eventDate・eventDates・notableDate など）は新規入力として検証しました');
+      else if (hasEvent || NEW_FIELDS.concat(EVENT_TEXT_FIELDS).some(function (f) { return d[f] !== undefined; })) add(warnings, 'EVENT_PREV_UNAVAILABLE', '既存記事の内容を読み取れなかったため、日付・店舗情報の項目（eventDate・eventDates・notableDate など）は新規入力として検証しました');
     }
     /* 新項目（工程1a PR 1a-2）も同じ方式: 追加・変更した項目だけエラー、変えていない項目は警告に下げる */
     var ev = checkEventFields(d);
     var nf = checkNewFields(d);
     NEW_FIELDS.forEach(function (f) { ev[f] = nf[f]; });
-    ['eventDate', 'eventDates', 'common'].concat(NEW_FIELDS).forEach(function (field) {
+    /* 会場・主催者（工程1a PR 4）も同じ方式 */
+    var tf = checkEventTextFields(d, fm.fmText);
+    EVENT_TEXT_FIELDS.forEach(function (f) { ev[f] = tf[f]; });
+    ['eventDate', 'eventDates', 'common'].concat(NEW_FIELDS, EVENT_TEXT_FIELDS).forEach(function (field) {
       var unchanged = field !== 'common' && prev && canonValue(prev[field]) === canonValue(d[field]);
       ev[field].forEach(function (x) {
         if (x.level === 'error' && unchanged) add(warnings, x.code, x.msg + '（既存の値で、今回の更新では変更されていないため投稿は止めません。修正を推奨します）');
@@ -655,6 +692,8 @@
     EVENT_KINDS: EVENT_KINDS,
     SHOP_STATUSES: SHOP_STATUSES,
     NEW_FIELDS: NEW_FIELDS,
+    EVENT_TEXT_FIELDS: EVENT_TEXT_FIELDS,
+    checkEventTextFields: checkEventTextFields,
     isRealYmd: isRealYmd,
     langOfPath: langOfPath,
     splitFileName: splitFileName,

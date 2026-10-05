@@ -76,25 +76,35 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 - 記事カードのラベルは種別ごとに「開催」（event）・「試合日」（match）・「期間」（fair）。`eventKind` が無い記事は、1件目のカテゴリが「イベント」なら event と推定し、それ以外のカテゴリ（スポーツを含む）には付けない（スポーツには試合ではない記事が多いため、試合は `eventKind: "match"` で明示する）。2〜3日程は列挙、4日程以上は「初日ほか全N日程」、終了日未定は「◯月◯日から（終了日未定）」。日程は記載どおりに扱い、全体が連続する単日だけのときだけ1つの期間にまとめる
 - サイドバー・`/daily/` は、期間が14日以下なら全日、15日以上なら初日と最終日、終了日未定は開始日だけを対象にする
 - 終了通知は、`eventDate` を持つ記事（従来どおり）と、`eventDates` だけを持つ記事のうち種別がある記事に、全日程の最終日の翌日から出す。`eventOngoing: true` と `notableDate(s)` には出さない
-- `/events/`（イベントカレンダー）と Event 構造化データは、掲載基準・出力を変えていない（PR 4 で見直す）
+- `/events/`（イベントカレンダー）の掲載は `layouts/partials/event-calendar-eligible.html` で決める（PR 4）。解釈できる開催日があることが前提で、`calendar: false` は除外、`calendar: true` は掲載、それ以外は種別が event・match（1件目のカテゴリ「イベント」からの推定を含む）なら掲載。fair と種別なしは `calendar: true` のときだけ掲載する。`calendar` は種別を書き換えず、`notableDate(s)`・`shopDate` は使わない
+- `/events/` は1記事1行。状態は全日程で判定し（未来の日程が残る間は終了扱いにしない）、日付欄は開催中の期間か次回の日程、2日程以上は「日程：」に全体を要約する。開催中は終了日の近い順で、`eventOngoing: true`（終了日未定）は開始日を過ぎたら開催中の末尾に置く（終了日を推測しない）。match には「試合」の印を付ける
+- Event 構造化データは `layouts/partials/event-jsonld-eligible.html` で決める（カレンダーとは別の条件・別の部品。混ぜない）。種別が event・match（推定を含む）で、**`eventLocation` を書いた記事だけ**に出す。`calendar` は見ない。会場は `eventLocation` の値だけ（住所は出さない）、主催者は `organizer` を書いたときだけ出す。「浦安市」などの既定値で補わない。日付は共通の解釈を使い、単日は startDate だけ、期間は startDate・endDate、終了日未定は startDate だけ、複数日程は日程ごとに1つの Event（同じ日程は1回だけ、最大10件）
 
 下表の7項目は、投稿ツールと CI が受け付けて形式を検証する（PR 1a-2）。すべて任意項目。表示への影響は項目によって異なる:
 
 - `eventKind` は記事カードのラベルと `/daily/` の日付バッジに使う（PR 3）
 - `notableDate`・`notableDates`・日付まで確定した `shopDate` は、サイドバーの点灯と `/daily/`（「注目の日」）に使う（`notableDate(s)` は従来からサイドバーが点灯に使っていた。`/daily/` と `shopDate` は PR 3 から）
-- `shopStatus`・`shopUnconfirmed`・`calendar` は、まだどの表示にも使われていない。イベントカレンダー・Event 構造化データ・開店・閉店年表は、どの新項目も読まない（PR 4・5 で対応）
+- `calendar` はイベントカレンダーの掲載の上書きに使う（PR 4）。`eventKind` はイベントカレンダーと Event 構造化データの対象判定にも使う（PR 4）
+- `shopStatus`・`shopUnconfirmed` は、まだどの表示にも使われていない。開店・閉店年表は、どの新項目も読まない（PR 5 で対応）
 
 **記事化プロンプトは引き続き v20260907 を使い、新仕様への切り替えはまだ行わない**（v20260907 は上の7項目を出力しない）。切り替えは、表示側の対応（設計書 `docs/audits/phase1a-design.md` 第12章の PR 3〜5）と連動させ、記事の種類ごとに段階的に行う（`docs/audits/phase1a-new-fields-report.md` 第9章）。それまでは既存の `eventDate` を削除・置き換えしない。
 
 | 項目 | 値 | 用途（予定） | 現在の表示への影響 |
 |---|---|---|---|
-| `eventKind` | `event`／`match`／`fair` | 開催日の種別（催し・講座／試合・大会／期間限定フェア・販売） | 記事カードのラベル（開催／試合日／期間）、`/daily/` の日付バッジ |
+| `eventKind` | `event`／`match`／`fair` | 開催日の種別（催し・講座／試合・大会／期間限定フェア・販売） | 記事カードのラベル（開催／試合日／期間）、`/daily/` の日付バッジ、イベントカレンダーと Event 構造化データの対象（event・match） |
 | `notableDate` | `"YYYY-MM-DD"` | イベントではない注目の日（制度の開始日・告知の対象日・申込期限・休館日など） | サイドバーの点灯（従来から）、`/daily/` |
 | `notableDates` | `"YYYY-MM-DD"` のリスト | 同上（複数） | 同上 |
 | `shopStatus` | `open`／`open_planned`／`close`／`close_planned`／`temp_close`／`reopen`／`renewal`／`move`／`feature` | 店舗の状態 | なし |
 | `shopDate` | `"YYYY-MM-DD"` または `"YYYY-MM"`（年月だけ） | 店舗の状態が発生する日。年月を月初・月末の日付に読み替えない | 日付まで確定していればサイドバーの点灯と `/daily/`（年月だけのものは使わない） |
 | `shopUnconfirmed` | `true`／`false`（引用符なし） | 求人で判明・「〜か」など未確定の情報 | なし |
-| `calendar` | `true`／`false`（引用符なし） | イベントカレンダー掲載の記事単位の上書き | なし（掲載条件は未変更） |
+| `calendar` | `true`／`false`（引用符なし） | イベントカレンダー掲載の記事単位の上書き | `true` で掲載（fair・種別なしも）、`false` で除外。Event 構造化データには影響しない |
+
+Event 構造化データ用の任意項目（PR 4。投稿ツールと CI が検証する）:
+
+| 項目 | 値 | 用途 |
+|---|---|---|
+| `eventLocation` | 文字列（会場名だけ・80文字まで） | Event 構造化データの会場名。**書いた記事にだけ Event 構造化データを出す**。未定・不明のときは書かない |
+| `organizer` | 文字列（主催者名だけ・80文字まで） | Event 構造化データの主催者。書いたときだけ出す |
 
 - 予定日が過ぎても `shopStatus` を自動で `open`・`close` に変えない（開店・閉店を確認したら記事を更新する）
 - 規則とエラーコードの一覧は [scripts/validate/README.md](scripts/validate/README.md)
@@ -114,6 +124,7 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 - `layouts/partials/faq-jsonld.html` が `faq:` frontmatter を FAQPage JSON-LD に変換する
 - `extend_head.html` の末尾で呼び出し済み
 - Google Search Console で "リッチリザルトテスト" を使って確認可能
+- Event JSON-LD は `layouts/partials/event-jsonld.html`（対象判定は `event-jsonld-eligible.html`）。`eventLocation` の無い記事には出さない（上の「日付・店舗情報の項目」参照）
 
 ## テーマ
 

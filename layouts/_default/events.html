@@ -1,50 +1,37 @@
 {{- define "main" }}
 {{- /*
-  イベントカレンダー（/events/）
-  データソース＝posts の eventDate frontmatter（"2026-07-18" または "2026-07-18/2026-07-19"）。
-  eventEndDate があれば終了日として優先。開催予定は月別・日付昇順、終了分は直近30件を折りたたみ表示。
-  ビルド時刻基準（CIはUTC）なので JST に +9h 補正してから今日を判定する。
+  イベントカレンダー（/events/）（工程1a PR 4 で全面改修）
+  - 掲載する記事: partials/event-calendar-eligible.html（calendar: false は除外、calendar: true は掲載、
+    それ以外は種別が event・match の記事。fair と種別なしは載せない）
+  - 開催状態と表示する日程: partials/event-calendar-status.html（全日程で判定。今後の日程が1つでも残れば終了扱いにしない。
+    eventOngoing は開始日以降「開催中」で、終了日を推測しない）
+  - 1記事1行。日付の列は「次回（開催中なら現在）の日程」、複数の日程がある記事は下に日程の要約（記事カードと同じ書式）
+  - 並び: 開催中（終了日の近い順、終了日未定は最後）→ 開催予定（次回の開始日順、月ごとの見出し）→ 終了（最後の日の新しい順に30件）
+  - 今日は UTC に +9h した日本時間の日付（ビルドする PC のタイムゾーンに左右されない）
 */ -}}
-{{- $today := (now.Add (time.ParseDuration "9h")).Format "2006-01-02" }}
+{{- $today := (now.UTC.Add (time.ParseDuration "9h")).Format "2006-01-02" }}
+{{- $todayYear := int (substr $today 0 4) }}
 {{- $wdays := slice "日" "月" "火" "水" "木" "金" "土" }}
-{{- $events := slice }}
+{{- $ongoing := slice }}{{ $upcoming := slice }}{{ $past := slice }}
 {{- range where site.RegularPages "Section" "posts" }}
-  {{- if .Params.eventDate }}
-    {{- /* eventDate は "2026-07-18" / "2026-07-18/2026-07-19" / YAML配列 の3形式が混在する */ -}}
-    {{- $edParam := .Params.eventDate }}
-    {{- $start := "" }}
-    {{- $end := "" }}
-    {{- if reflect.IsSlice $edParam }}
-      {{- $start = printf "%v" (index $edParam 0) }}
-      {{- $end = printf "%v" (index $edParam (sub (len $edParam) 1)) }}
-    {{- else }}
-      {{- $parts := split (printf "%v" $edParam) "/" }}
-      {{- $start = index $parts 0 }}
-      {{- $end = index $parts (sub (len $parts) 1) }}
-    {{- end }}
-    {{- with .Params.eventEndDate }}{{ $end = printf "%v" . }}{{ end }}
-    {{- $start = substr (trim $start " ") 0 10 }}
-    {{- $end = substr (trim $end " ") 0 10 }}
-    {{- /* 実在しない日付（2026-02-30 など）で下の time がビルドを止めないよう、日付の検証は共通部品
-           partials/date-ymd.html で行う（工程1a PR 3）。開始日が不正な記事は載せず、終了日が不正なら開始日と同じ扱い
-           （形式が崩れた終了日の従来の扱いと同じ）。掲載基準・並び順・表示は変えない（PR 4 で見直す） */ -}}
-    {{- if partial "date-ymd.html" $start }}
-      {{- if not (partial "date-ymd.html" $end) }}{{ $end = $start }}{{ end }}
-      {{- $events = $events | append (dict
-            "start" $start
-            "end" $end
-            "title" .Title
-            "href" .RelPermalink
-            "loc" (.Params.eventLocation | default "")) }}
+  {{- if partialCached "event-calendar-eligible.html" . .RelPermalink }}
+    {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
+    {{- $st := partial "event-calendar-status.html" (dict "ev" $ev "today" $today) }}
+    {{- $summary := "" }}
+    {{- if gt $ev.count 1 }}{{ $summary = partial "event-dates-text.html" (dict "ev" $ev "year" $todayYear) }}{{ end }}
+    {{- $row := dict
+          "start" $st.start "end" $st.end "openEnd" $st.openEnd "sortKey" $st.sortKey
+          "title" .Title "href" .RelPermalink "kind" $ev.kind "count" $ev.count "summary" $summary
+          "loc" (.Params.eventLocation | default "") "first" $ev.start }}
+    {{- if eq $st.status "ongoing" }}{{ $ongoing = $ongoing | append $row }}
+    {{- else if eq $st.status "upcoming" }}{{ $upcoming = $upcoming | append $row }}
+    {{- else if eq $st.status "ended" }}{{ $past = $past | append $row }}
     {{- end }}
   {{- end }}
 {{- end }}
-{{- $upcoming := slice }}{{- $past := slice }}
-{{- range $events }}
-  {{- if ge .end $today }}{{ $upcoming = $upcoming | append . }}{{ else }}{{ $past = $past | append . }}{{ end }}
-{{- end }}
-{{- $upcoming = sort $upcoming "start" "asc" }}
-{{- $past = sort $past "start" "desc" }}
+{{- $ongoing = sort $ongoing "sortKey" "asc" }}
+{{- $upcoming = sort $upcoming "sortKey" "asc" }}
+{{- $past = sort $past "sortKey" "desc" }}
 
 <article class="ev-page">
   <header class="ev-header">
@@ -54,7 +41,14 @@
 
   <div class="ev-intro">{{ .Content }}</div>
 
-  {{- if $upcoming }}
+
+  {{- if or $ongoing $upcoming }}
+  {{- if $ongoing }}
+  <h2 class="ev-month">開催中</h2>
+  <div class="ev-group">
+    {{- range $ongoing }}{{ partial "ev-row.html" (dict "row" . "wdays" $wdays "now" true) }}{{ end }}
+  </div>
+  {{- end }}
   {{- $prev := "" }}
   {{- range $upcoming }}
     {{- $m := substr .start 0 7 }}
@@ -65,25 +59,7 @@
       <div class="ev-group">
     {{- $prev = $m }}
     {{- end }}
-    {{- $sd := time .start }}
-    {{- $sw := index $wdays (int (printf "%d" $sd.Weekday)) }}
-    <a class="ev-row" href="{{ .href }}">
-      <span class="ev-date">
-        {{ $sd.Format "1/2" }}<span class="ev-wd">({{ $sw }})</span>
-        {{- if ne .end .start }}
-          {{- $edt := time .end }}
-          {{- $ew := index $wdays (int (printf "%d" $edt.Weekday)) }}
-          <span class="ev-tilde">〜</span>{{ $edt.Format "1/2" }}<span class="ev-wd">({{ $ew }})</span>
-        {{- end }}
-      </span>
-      <span class="ev-body">
-        <span class="ev-title">
-          {{- if and (le .start $today) (ge .end $today) }}<span class="ev-now">開催中</span>{{ end -}}
-          {{ .title }}
-        </span>
-        {{- with .loc }}<span class="ev-loc"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
-      </span>
-    </a>
+    {{ partial "ev-row.html" (dict "row" . "wdays" $wdays "now" false) }}
   {{- end }}
   {{- if ne $prev "" }}</div>{{ end }}
   {{- else }}
@@ -96,7 +72,7 @@
     <div class="ev-past-list">
       {{- range first 30 $past }}
       <a class="ev-row is-past" href="{{ .href }}">
-        <span class="ev-date">{{ (time .start).Format "2006/1/2" }}</span>
+        <span class="ev-date">{{ (time.AsTime .first).Format "2006/1/2" }}</span>
         <span class="ev-body"><span class="ev-title">{{ .title }}</span></span>
       </a>
       {{- end }}
@@ -110,12 +86,39 @@
   </div>
 </article>
 
-{{- /* ItemList 構造化データ（開催予定） */ -}}
-{{- if $upcoming }}
+{{- /* ItemList 構造化データ（開催中・開催予定の表示順に先頭30件） */ -}}
+{{- $listed := $ongoing | append $upcoming }}
+{{- if $listed }}
 {{- $items := slice }}
-{{- range $i, $e := first 30 $upcoming }}
+{{- range $i, $e := first 30 $listed }}
   {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "url" (absURL $e.href) "name" $e.title) }}
 {{- end }}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "itemListElement" $items | jsonify | safeJS }}</script>
 {{- end }}
+{{- end }}
+
+{{- /* 1行分の表示（インライン partial） */ -}}
+{{- define "partials/ev-row.html" }}
+  {{- $r := .row }}{{ $wdays := .wdays }}
+  {{- $sd := time.AsTime $r.start }}
+  <a class="ev-row" href="{{ $r.href }}">
+    <span class="ev-date">
+      {{ $sd.Format "1/2" }}<span class="ev-wd">({{ index $wdays (int (printf "%d" $sd.Weekday)) }})</span>
+      {{- if $r.openEnd }}<span class="ev-tilde">〜</span>
+      {{- else if and $r.end (ne $r.end $r.start) }}
+        {{- $ed := time.AsTime $r.end }}
+        <span class="ev-tilde">〜</span>{{ $ed.Format (cond (eq $ed.Year $sd.Year) "1/2" "2006/1/2") }}<span class="ev-wd">({{ index $wdays (int (printf "%d" $ed.Weekday)) }})</span>
+      {{- end }}
+    </span>
+    <span class="ev-body">
+      <span class="ev-title">
+        {{- if .now }}<span class="ev-now">開催中</span>{{ end -}}
+        {{- if eq $r.kind "match" }}<span class="ev-kind">試合</span>{{ end -}}
+        {{ $r.title }}
+      </span>
+      {{- if $r.openEnd }}<span class="ev-sched">終了日未定</span>{{ end }}
+      {{- with $r.summary }}<span class="ev-sched">日程：{{ . | safeHTML }}</span>{{ end }}
+      {{- with $r.loc }}<span class="ev-loc"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+    </span>
+  </a>
 {{- end }}

@@ -1,0 +1,30 @@
+# /events/ から外れる記事
+url	title	group	eventKind	calendar	eventDate	eventDates	eventOngoing	before	after	change	reason	afterRow
+/posts/hotel-okura-tokyo-bay-christmas-room-2026/	【浦安】ホテルオークラ東京ベイ、クリスマス特別客室を販売	eventKind なし＋お知らせ			2026-11-06/2026-12-25			upcoming		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/hotel-okura-tokyo-bay-halloween-plan-2026/	【浦安】ホテルオークラ舞浜にハロウィーン限定宿泊プラン	eventKind なし＋お知らせ			2026-09-16/2026-10-31			ongoing		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/urayasu-convenience-certificate-suspension-202610/	【浦安市】コンビニ証明書交付、10月23日夕方から一時停止	eventKind なし＋お知らせ			2026-10-23/2026-10-25			upcoming		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/urayasu-tv-interference-november-2026/	【浦安市】11月19日からテレビ受信障害の可能性、市内のほぼ全域が対象	eventKind なし＋お知らせ			2026-11-19			upcoming		外れる	種別なし（お知らせ。カテゴリからは推定しない）	
+/posts/brighton-cache-cache-harvest-buffet-2026/	【新浦安】ブライトン「カシュカシュ」で秋ビュッフェ	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-30			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/comfort-suites-tokyo-bay-autumn-breakfast-2026/	【浦安】コンフォートスイーツ東京ベイに秋限定朝食17種	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-30			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/disney-hotels-halloween-menu-2026/	【舞浜】ディズニーホテル3館でハロウィーン限定メニュー	eventKind なし＋グルメ・カフェ			2026-09-15/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/grand-nikko-halloween-sweets-buffet-2026/	【舞浜】グランドニッコーでハロウィーンスイーツブッフェ開催	eventKind なし＋グルメ・カフェ			2026-10-10/2026-10-12			upcoming		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/hilton-gothic-palace-2026/	【浦安】ヒルトン東京ベイでハロウィーンスイーツビュッフェ開催	eventKind なし＋グルメ・カフェ			2026-09-05/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/hilton-tokyo-bay-autumn-afternoon-tea-2026/	【浦安】ヒルトン東京ベイで秋のアフタヌーンティー	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-04			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/hilton-tokyo-bay-gothic-palace-2026/	【浦安】ヒルトン東京ベイでハロウィーンスイーツビュッフェ	eventKind なし＋グルメ・カフェ			2026-09-05/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/ibis-styles-tokyo-bay-seafood-breakfast-2026/	【浦安】日の出イビスで海鮮朝食フェア、10月1日から	eventKind なし＋グルメ・カフェ			2026-10-01/2026-12-23			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-first-resort-autumn-sweets-buffet-2026/	【舞浜】ファーストリゾートで秋スイーツビュッフェ	eventKind なし＋グルメ・カフェ			2026-10-10/2026-10-12			upcoming		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-first-resort-steak-buffet-202611/	【浦安】舞浜ホテルでサーロインステーキ食べ放題	eventKind なし＋グルメ・カフェ			2026-11-21/2026-11-23			upcoming		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-view-hotel-halloween-2026/	【浦安】舞浜ビューホテルでハロウィーンスイーツ	eventKind なし＋グルメ・カフェ			2026-09-01/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/maihama-view-hotel-halloween-afternoon-tea-2026/	【浦安】舞浜ビューホテルでハロウィーンアフタヌーンティー	eventKind なし＋グルメ・カフェ			2026-09-01/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/oriental-hotel-oktoberfest-2026/	【浦安】オリエンタルホテル東京ベイで秋のブッフェ開催	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/oriental-hotel-tokyo-bay-hokkaido-buffet-2026/	【浦安】オリエンタルホテルで北海道ブッフェ、カニ食べ比べも	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/oriental-hotel-tokyo-bay-oktoberfest-2026/	【新浦安】グランサンクで秋のオクトーバーフェスト	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-03			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/sheraton-thai-food-buffet-2026/	【浦安】シェラトン舞浜で「タイフードブッフェ」9月1日から	eventKind なし＋グルメ・カフェ			2026-09-01/2026-10-31			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/urayasu-brighton-autumn-sweets-2026/	【浦安】ブライトンに秋限定スイーツ、9月1日から	eventKind なし＋グルメ・カフェ			2026-09-01/2026-11-30			ongoing		外れる	種別なし（グルメ・カフェ。カテゴリからは推定しない）	
+/posts/tokyo-disneysea-indiana-jones-reopen-20261130/	【舞浜】ディズニーシー「インディ・ジョーンズ」11月30日再開	eventKind なし＋ニュース			2026-11-30			upcoming		外れる	種別なし（ニュース。カテゴリからは推定しない）	
+/posts/atre-shinurayasu-yanaka-fukumaru-202610/	【浦安】アトレ新浦安に谷中福丸饅頭、10月1日から限定出店	eventKind なし＋開店・閉店			2026-10-01/2026-10-07			ongoing		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/ikspiari-fint-open-20261022/	【浦安】イクスピアリに「フィント」10月22日オープン	eventKind なし＋開店・閉店			2026-10-22			upcoming		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/ikspiari-poeme-popup-2026/	【浦安】イクスピアリに「母恵夢」期間限定出店	eventKind なし＋開店・閉店			2026-09-28/2026-10-15			ongoing		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/ikspiari-saisai-maratan-open-20261019/	【浦安】イクスピアリに菜菜麻辣湯、10月19日オープン	eventKind なし＋開店・閉店			2026-10-19			upcoming		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/papabubble-maihama-new-store-2026/	【浦安】舞浜に「PAPABUBBLE」出店予定か、求人で判明	eventKind なし＋開店・閉店			2026-11-21			upcoming		外れる	種別なし（開店・閉店。カテゴリからは推定しない）	
+/posts/urayasu-second-book-2026/	【浦安市】3歳児へ絵本「セカンドブック」10月14日開始	eventKind なし＋子育て・教育			2026-10-14			upcoming		外れる	種別なし（子育て・教育。カテゴリからは推定しない）	

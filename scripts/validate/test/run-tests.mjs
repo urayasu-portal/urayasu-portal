@@ -337,6 +337,48 @@ t('新項目付きの意図的な予約投稿 → 従来どおり警告・確認
   eq(codes(r.errors), []); eq(codes(r.warnings), ['DATE_FUTURE']);
 });
 
+console.log('■ 会場・主催者（eventLocation・organizer、工程1a PR 4）');
+const terr = (lines) => codes(v(withNew(lines, GOOD)).errors);
+const twarn = (lines) => codes(v(withNew(lines, GOOD)).warnings);
+t('無い → エラー・警告なし（任意項目）', () => { eq(codes(v(GOOD).errors), []); eq(codes(v(GOOD).warnings), []); });
+t('正常な会場名・主催者名 → 通過', () => {
+  eq(terr('eventLocation: "浦安市総合公園・高洲海浜公園"\norganizer: "浦安市・浦安市ふるさとづくり推進協議会"'), []);
+  eq(twarn('eventLocation: "浦安市総合公園・高洲海浜公園"\norganizer: "浦安市・浦安市ふるさとづくり推進協議会"'), []);
+  eq(terr('eventLocation: 浦安市文化会館'), []); /* 引用符なしの文字列も可 */
+});
+t('空・空白だけ → *_EMPTY', () => {
+  eq(terr('eventLocation: ""'), ['EVENTLOCATION_EMPTY']);
+  eq(terr('organizer: "   "'), ['ORGANIZER_EMPTY']);
+  eq(terr('eventLocation:'), ['EVENTLOCATION_EMPTY']);
+  eq(terr('organizer: "　"'), ['ORGANIZER_EMPTY']);
+});
+t('文字列でない（リスト・真偽値・数値・null）→ *_NOT_STRING', () => {
+  eq(terr('eventLocation:\n  - "文化会館"\n  - "中央公民館"'), ['EVENTLOCATION_NOT_STRING']);
+  eq(terr('eventLocation: ["文化会館"]'), ['EVENTLOCATION_NOT_STRING']);
+  eq(terr('organizer: true'), ['ORGANIZER_NOT_STRING']);
+  eq(terr('organizer: 123'), ['ORGANIZER_NOT_STRING']);
+  eq(terr('eventLocation: null'), ['EVENTLOCATION_NOT_STRING']);
+  eq(terr('organizer: "123"'), []); /* 引用符付きなら文字列 */
+});
+t('確定していない値 → *_UNCONFIRMED（警告）', () => {
+  eq(twarn('eventLocation: "未定"'), ['EVENTLOCATION_UNCONFIRMED']);
+  eq(twarn('eventLocation: "会場は未発表"'), ['EVENTLOCATION_UNCONFIRMED']);
+  eq(twarn('organizer: "不明"'), ['ORGANIZER_UNCONFIRMED']);
+  eq(twarn('organizer: "TBD"'), ['ORGANIZER_UNCONFIRMED']);
+  eq(terr('eventLocation: "未定"'), []); /* エラーにはしない */
+});
+t('80文字を超える値 → *_LONG（警告）', () => {
+  eq(twarn('eventLocation: "' + 'あ'.repeat(81) + '"'), ['EVENTLOCATION_LONG']);
+  eq(twarn('organizer: "' + 'あ'.repeat(80) + '"'), []);
+});
+t('既存の不正な値を変えない更新 → 警告に下げる／値を不正に変えた更新 → エラー', () => {
+  const bad = withNew('eventLocation: ""', GOOD);
+  const r = upd(addLastmod(bad), bad);
+  eq(codes(r.errors), []); eq(codes(r.warnings).includes('EVENTLOCATION_EMPTY'), true);
+  const good = withNew('eventLocation: "文化会館"', GOOD);
+  eq(codes(upd(addLastmod(withNew('eventLocation: true', GOOD)), good).errors), ['EVENTLOCATION_NOT_STRING']);
+});
+
 console.log('■ date');
 t('date なし → DATE_MISSING', () => { eq(codes(v(GOOD.replace(/date: .*\n/, '')).errors), ['DATE_MISSING']); });
 t('形式不正 → DATE_FORMAT', () => { eq(codes(v(replaceLine(GOOD, 'date:', 'date: 2026/10/04 10:00')).errors), ['DATE_FORMAT']); });
@@ -458,6 +500,19 @@ for (const f of files) {
 }
 t('既存記事に、新項目の規則でエラー・警告になる値が無い', () => { if (nfFound.length) throw new Error(nfFound.length + ' 件: ' + nfFound.slice(0, 5).join(' / ')); });
 console.log('       （参考）新項目を持つ既存記事: ' + (Object.entries(nfUsing).map(([k, n]) => k + ' ' + n).join('、') || 'なし'));
+
+/* 会場・主催者（工程1a PR 4）: 既存記事の実データで、新しい規則に当たるものが無いこと */
+const TF_CODE = /^(EVENTLOCATION|ORGANIZER)_/;
+const tfFound = [], tfUsing = {};
+for (const f of files) {
+  const text = fs.readFileSync(path.join(dir, f), 'utf8');
+  const d = R.parseFrontmatter(text).data;
+  R.EVENT_TEXT_FIELDS.forEach((k) => { if (d[k] !== undefined) tfUsing[k] = (tfUsing[k] || 0) + 1; });
+  const s = R.validatePost(text, { path: 'content/posts/' + f, isNew: true, now: NOW, skipBodyChecks: true, skipLastmodChecks: true });
+  s.errors.concat(s.warnings).filter((e) => TF_CODE.test(e.code)).forEach((e) => tfFound.push(f + ' → ' + e.code));
+}
+t('既存記事に、会場・主催者の規則でエラー・警告になる値が無い', () => { if (tfFound.length) throw new Error(tfFound.length + ' 件: ' + tfFound.slice(0, 5).join(' / ')); });
+console.log('       （参考）会場・主催者を持つ既存記事: ' + (Object.entries(tfUsing).map(([k, n]) => k + ' ' + n).join('、') || 'なし'));
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);
