@@ -52,6 +52,10 @@ jobs:
       - name: Test events page and Event JSON-LD
         run: node scripts/validate/test/events-hugo.mjs
 
+      # 開店・閉店年表と店舗の状態（shopStatus・shopDate）のテスト（工程1a PR 5）。同じく最小サイトで確認する
+      - name: Test open-close timeline and shop status
+        run: node scripts/validate/test/open-close-hugo.mjs
+
       - name: Build (same options as production)
         env:
           HUGO_ENVIRONMENT: production

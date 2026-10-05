@@ -1,0 +1,36 @@
+# 予定日（shopDate）が判定日 2026-10-06 より前の open_planned・close_planned（34本）。開店・閉店したかは記事に無く、確認できたら open・close に更新する候補
+file	title	recStatus	recShopDate	confidence	basis	nowType	note
+20260928-zen-place-pilates-urayasu-open-20261001.md	【浦安】zen place pilatesが10月1日オープン	open_planned	2026-10-01	予定	公式	open	予定日経過・開店の確認記事なし
+20260925-yamazaki-shop-shimamura-close-202609.md	【浦安】創業100年超の「ヤマザキショップ島村」が9月末閉店へ	close_planned	2026-09	予定	店頭掲示	close	「9月末で閉店」（最終営業日不明→年月）
+20260924-hokushinzushi-minamigyotoku-open.md	【行徳】北辰鮨 南行徳店が9月30日オープン予定	open_planned	2026-09-30	予定	店頭掲示	open	
+20260919-minamigyotoku-koppepan-close-2026.md	【行徳】南行徳駅「焼きたてコッペ製パン」が9月27日閉店	close_planned	2026-09-27	予定	公式	close	公式の閉店日あり
+20260903-ikspiari-tsukemen-tetsu-open-2026.md	【浦安】イクスピアリに「つけめんTETSU」9月17日オープン	open_planned	2026-09-17	予定	公式	open	
+20260827-d-nest-shin-urayasu-open.md	【浦安】新浦安駅前に設計者専用「D-NEST」9月開業	open_planned	2026-09-01	予定	公式	open	シェアオフィス開業
+20260821-urayasu-zaitaku-neuro-clinic-open.md	【新浦安】浦安在宅神経内科クリニック、9月1日開院	open_planned	2026-09-01	予定	公式	open	開院
+20260813-eyecity-ichikawa-myoden-open-202609.md	【妙典】アイシティ市川妙典店が9月出店予定、求人で判明	open_planned	2026-09	未確定	求人	open	
+20260813-atre-shinurayasu-kasei-close-20260820.md	【新浦安】アトレ「点心・惣菜KASEI」が8月20日閉店	close_planned	2026-08-20	予定	公式	close	
+20260802-the-golf-base-shinurayasu-open-20260813.md	【新浦安】THE GOLF BASEが海楽に8月13日開店	open_planned	2026-08-13	予定	公式・現地掲示	open	後続記事 20260829 で開店確認
+20260802-revoist-urayasu-horie-open-202608.md	【浦安】REVOIST浦安堀江店が堀江2丁目に出店	open_planned	2026-08-01	予定	公式・現地看板	open	記事時点で予定日を経過
+20260731-takumi-myoden-seitai-planned-202609.md	【妙典】匠 妙典駅前整体院が9月出店予定か	open_planned	2026-09	未確定	求人	open	
+20260714-ikspiari-club-cpla-open-20260717.md	【浦安】イクスピアリに「CLUB #C-pla」7月17日オープン	open_planned	2026-07-17	予定	公式	open	
+20260707-spalab-urayasu-kairaku-open.md	【浦安】海楽にトランクルーム「スペラボ」8月1日オープン予定	open_planned	2026-08-01	予定	公式（プレスリリース）	open	トランクルーム
+20260704-curves-aeon-shinurayasu-open.md	【浦安】イオン新浦安にカーブスが開店予定	open_planned	2026-07-21	予定	公式	open	
+20260701-ikspiari-sugary-open-date-20260728.md	【舞浜】SUGARYの開店日が7月28日に決定	open_planned	2026-07-28	予定	公式	open	SUGARY 3記事目のうち2本目（20260614 と同じ店舗）
+20260627-gyotoku-yakitori-takeout-open.md	【行徳】駅近くに焼き鳥店が出店予定か	open_planned	2026-07	未確定	求人	open	店名不明
+20260624-daiso-maruesu-gyotoku-close.md	【行徳】ダイソーマルエツ行徳店が7月19日閉店へ	close_planned	2026-07-19	未確定	第三者メディアのみ	close	後続記事（20260914 サンドラッグ）で7/19の閉店を確認
+20260623-nanohana-shokudo-gyotoku-close.md	【行徳】なのはな食堂が6月28日閉店へ	close_planned	2026-06-28	予定	店舗Instagram（第三者経由）	close	
+20260620-maruetsu-gyotoku-close-2026.md	【行徳】マルエツ行徳店が7月19日閉店予定か	close_planned	2026-07-19	未確定	第三者メディアのみ	close	後続記事（20260914 サンドラッグ）で7/19の閉店を確認
+20260613-gyotoku-horumon-shoryuen-open-2026.md	【行徳】ホルモン将龍苑が出店予定か	open_planned	2026-06	未確定	地域メディア	open	
+【浦安】マーヴ浦安に「ら～めん-きんとうん」が6.md	【浦安】マーヴ浦安に「ら～めん きんとうん」が6月末オープン予定か	open_planned	2026-06	未確定	第三者メディアのみ（「見込み」）	open	M’av浦安WEST（6/30開業）の1店
+【浦安】「grand-monday-resort-東京ベイ舞浜」7月18日グランドオ.md	【浦安】「GRAND MONday Resort 東京ベイ舞浜」7月18日グランドオープン｜全室オーシャンフロント	open_planned	2026-07-18	予定	公式	open	ホテル
+【浦安】リンツ-ショコラ-ブティックが北栄エリア.md	【浦安】リンツ ショコラ ブティックが北栄エリアに6月オープン予定か	open_planned	2026-06	未確定	不明（「とみられます」）	open	M’av浦安WEST（6/30開業）の1店
+ドラッグストア「スギ薬局-浦安さくら通り店」が5.md	【浦安市】ドラッグストア「スギ薬局 浦安さくら通り店」が5月21日オープン予定【堀江】	open_planned	2026-05-21	予定	公式	open	TSUTAYA 跡地
+【浦安市】浦安駅前に「焼肉きんぐ」が2026年6月下.md	【浦安市】浦安駅前に「焼肉きんぐ」が2026年6月下旬オープン予定	open_planned	2026-06	要確認	不明（「判明している情報によると」）	open	M’av浦安WEST（6/30開業）の1店。6月下旬
+稲庭うどんx丼めし「金子半之助」がイクスピア.md	稲庭うどん×丼めし「金子半之助」がイクスピアリに！千葉県初出店・4月21日グランドオープン	open_planned	2026-04-21	予定	公式	open	
+イクスピアリに韓国料理「ベジゴー」が登場！108.md	イクスピアリに韓国料理「ベジゴー」が登場！108席の大型店・4月28日オープン	open_planned	2026-04-28	予定	公式	open	
+【浦安】マクドナルド新浦安明海店が明海5丁目に.md	【浦安】マクドナルド新浦安明海店が明海5丁目にオープン予定	open_planned	2026-06-30	予定	不明	open	openDate・notableDate・shopName を持つ唯一の記事
+ニューコースト新浦安に精肉専門店「肉匠かみむ.md	ニューコースト新浦安に精肉専門店「肉匠かみむら新浦安店」7月10日オープン	open_planned	2025-07-10	予定	不明	open	
+ザ-ロイヤルパークホテル舞浜リゾート東京ベイ2026.md	ザ ロイヤルパークホテル舞浜リゾート東京ベイ2026年2月13日開業決定・予約受付開始	open_planned	2026-02-13	予定	公式	open	ホテル。記事は2025年7月、開業予定日は2026年2月
+いちご飴専門店「strawberry-fetish」がイクスピアリに8月オー.md	いちご飴専門店「Strawberry Fetish」がイクスピアリに8月オープン予定	open_planned	2025-08	予定	公式	open	
+tsutaya浦安さくら通り店が7月6日で閉店、6月14日から閉.md	TSUTAYA浦安さくら通り店が7月6日で閉店、6月14日から閉店セール	close_planned	2025-07-06	予定	不明	close	跡地にスギ薬局（2026年5月）の記事で閉店を確認
+肉処-大久保（ニューコースト新浦安）閉店.md	肉処 大久保（ニューコースト新浦安）閉店	close_planned	2025-06-26	予定	公式（ニューコースト）	close	

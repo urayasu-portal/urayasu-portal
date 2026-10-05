@@ -261,8 +261,8 @@ t('eventKind の不正な値 → エラー', () => {
   ['festival', 'Event', '', 'イベント'].forEach((k) => eq(nerr('eventKind: "' + k + '"', GOOD), ['EVENTKIND_INVALID'], k));
   eq(nerr('eventKind: true', GOOD), ['EVENTKIND_INVALID']);
 });
-t('shopStatus の正常値9種類 → 通過', () => {
-  eq(R.SHOP_STATUSES, ['open', 'open_planned', 'close', 'close_planned', 'temp_close', 'reopen', 'renewal', 'move', 'feature']);
+t('shopStatus の正常値10種類 → 通過', () => {
+  eq(R.SHOP_STATUSES, ['open', 'open_planned', 'close', 'close_planned', 'temp_close', 'reopen', 'renewal', 'move', 'feature', 'popup']);
   R.SHOP_STATUSES.forEach((s) => { eq(nerr('shopStatus: "' + s + '"'), [], s); eq(nwarn('shopStatus: "' + s + '"'), [], s); });
   eq(nerr('shopStatus: open'), []);
 });
@@ -293,7 +293,7 @@ t('notableDates の未整列・重複 → 警告のみ', () => {
 });
 t('shopDate の正常な日付・年月だけの値 → 通過', () => {
   eq(nerr('shopDate: "2026-10-20"'), []); eq(nerr('shopDate: "2026-10"'), []); eq(nerr('shopDate: 2026-10-20'), []);
-  eq(nwarn('shopDate: "2026-10"'), []);
+  eq(nwarn('shopStatus: "open_planned"\nshopDate: "2026-10"'), []); /* shopStatus なしの shopDate は工程1a PR 5 から警告 */
 });
 t('shopDate の存在しない年月・日付・不正な形式 → エラー', () => {
   eq(nerr('shopDate: "2026-13"'), ['SHOPDATE_INVALID']); eq(nerr('shopDate: "2026-00"'), ['SHOPDATE_INVALID']);
@@ -377,6 +377,58 @@ t('既存の不正な値を変えない更新 → 警告に下げる／値を不
   eq(codes(r.errors), []); eq(codes(r.warnings).includes('EVENTLOCATION_EMPTY'), true);
   const good = withNew('eventLocation: "文化会館"', GOOD);
   eq(codes(upd(addLastmod(withNew('eventLocation: true', GOOD)), good).errors), ['EVENTLOCATION_NOT_STRING']);
+});
+
+console.log('■ 店舗の状態（shopStatus・shopDate・shopUnconfirmed の整合、工程1a PR 5）');
+const swarn = (lines, extra) => codes(v(withNew(lines), extra).warnings).filter((c) => /^SHOP/.test(c));
+const at = (iso) => ({ now: Date.parse(iso) });
+t('popup は正式な値（10種類目）', () => { eq(R.SHOP_STATUSES.includes('popup'), true); eq(nerr('shopStatus: "popup"'), []); eq(swarn('shopStatus: "popup"'), []); });
+t('開店・閉店の新規記事で shopStatus が無い → SHOPSTATUS_MISSING（SHOP_STATUS_FROM 以降の date だけ）', () => {
+  const late = replaceLine(SHOP, 'date:', 'date: 2026-10-07T10:00:00+09:00');
+  const ctx = { path: 'content/posts/20261007-example-slug.md', now: Date.parse('2026-10-08T12:00:00+09:00') };
+  eq(codes(v(late, ctx).warnings).includes('SHOPSTATUS_MISSING'), true);
+  eq(codes(v(late.replace('hideEventBox: true', 'shopStatus: "open"\nhideEventBox: true'), ctx).warnings).includes('SHOPSTATUS_MISSING'), false);
+  eq(codes(v(SHOP).warnings).includes('SHOPSTATUS_MISSING'), false); /* SHOP_STATUS_FROM より前の date（既存記事）は警告しない */
+  eq(codes(v(replaceLine(GOOD, 'date:', 'date: 2026-10-07T10:00:00+09:00'), ctx).warnings).includes('SHOPSTATUS_MISSING'), false); /* 開店・閉店以外 */
+  eq(codes(R.validatePost(late, Object.assign({ isNew: false, skipBodyChecks: true, prevText: late }, ctx)).warnings).includes('SHOPSTATUS_MISSING'), false); /* 更新は対象外 */
+});
+t('shopDate・shopUnconfirmed だけで shopStatus が無い → SHOP_FIELDS_WITHOUT_STATUS', () => {
+  eq(swarn('shopDate: "2026-10"'), ['SHOP_FIELDS_WITHOUT_STATUS']);
+  eq(swarn('shopUnconfirmed: true'), ['SHOP_FIELDS_WITHOUT_STATUS']);
+});
+t('open・close なのに shopDate が未来 → SHOP_CONFIRMED_FUTURE（年月は翌月以降が未来）', () => {
+  eq(swarn('shopStatus: "open"\nshopDate: "2026-10-20"'), ['SHOP_CONFIRMED_FUTURE']); /* 判定は 2026-10-04 */
+  eq(swarn('shopStatus: "close"\nshopDate: "2026-11"'), ['SHOP_CONFIRMED_FUTURE']);
+  eq(swarn('shopStatus: "open"\nshopDate: "2026-10"'), []);
+  eq(swarn('shopStatus: "open"\nshopDate: "2026-10-04"'), []);
+  eq(swarn('shopStatus: "open_planned"\nshopDate: "2026-10-20"'), []);
+  eq(swarn('shopStatus: "renewal"\nshopDate: "2026-10-20"'), []);
+});
+t('予定日経過 → SHOP_PLANNED_PASSED（日付は翌日から、年月はその月が終わってから）', () => {
+  eq(swarn('shopStatus: "open_planned"\nshopDate: "2026-10-03"'), ['SHOP_PLANNED_PASSED']);
+  eq(swarn('shopStatus: "open_planned"\nshopDate: "2026-10-04"'), []); /* 当日はまだ */
+  eq(swarn('shopStatus: "close_planned"\nshopDate: "2026-09"'), ['SHOP_PLANNED_PASSED']);
+  eq(swarn('shopStatus: "close_planned"\nshopDate: "2026-10"'), []); /* 月の途中は経過扱いにしない */
+  eq(swarn('shopStatus: "open_planned"\nshopUnconfirmed: true\nshopDate: "2026-09"'), ['SHOP_PLANNED_PASSED']);
+  eq(swarn('shopStatus: "open_planned"'), []); /* 日付なし */
+});
+t('予定日経過の日本時間の境目（UTC と日付が違う時間帯を含む）', () => {
+  const day = 'shopStatus: "open_planned"\nshopDate: "2026-10-31"', mon = 'shopStatus: "open_planned"\nshopDate: "2026-10"';
+  eq(swarn(day, at('2026-10-31T14:59:59Z')), []); /* JST 10/31 23:59:59 */
+  eq(swarn(mon, at('2026-10-31T14:59:59Z')), []);
+  eq(swarn(day, at('2026-10-31T15:00:01Z')), ['SHOP_PLANNED_PASSED']); /* JST 11/1 00:00:01（UTC は 10/31） */
+  eq(swarn(mon, at('2026-10-31T15:00:01Z')), ['SHOP_PLANNED_PASSED']);
+  eq(swarn('shopStatus: "open_planned"\nshopDate: "2026-10-04"', at('2026-10-04T15:30:00Z')), ['SHOP_PLANNED_PASSED']); /* UTC 10/4・JST 10/5 */
+});
+t('まとめに shopUnconfirmed: true → SHOP_UNCONFIRMED_FEATURE', () => {
+  eq(swarn('shopStatus: "feature"\nshopUnconfirmed: true'), ['SHOP_UNCONFIRMED_FEATURE']);
+  eq(swarn('shopStatus: "open_planned"\nshopUnconfirmed: true\nshopDate: "2026-11"'), []);
+});
+t('不正な shopDate・shopUnconfirmed・shopStatus はエラー（警告は重ねない）', () => {
+  eq(nerr('shopStatus: "open_planned"\nshopDate: "2026-10-32"'), ['SHOPDATE_INVALID']);
+  eq(nerr('shopStatus: "open_planned"\nshopDate: "10月下旬"'), ['SHOPDATE_FORMAT']);
+  eq(nerr('shopStatus: "open_planned"\nshopUnconfirmed: "true"'), ['SHOPUNCONFIRMED_NOT_BOOLEAN']);
+  eq(nerr('shopStatus: "pop-up"'), ['SHOPSTATUS_INVALID']); eq(swarn('shopStatus: "pop-up"'), []);
 });
 
 console.log('■ date');

@@ -1,0 +1,15 @@
+# 同じ店舗・同じ改装を扱う複数の記事（推奨の区分で数えると二重になるのは Bambi DROPS の open 2本だけ）
+group	file	title	date	nowType	recStatus	recShopDate	note
+THE GOLF BASE 新浦安レンジ	20260623-the-golf-base-shinurayasu-range-open.md	【浦安】海楽にTHE GOLF BASE新浦安レンジが夏開業予定	2026-06-23T07:00	open	open_planned		「夏開業予定」。GOLF BASE 3記事の1本目
+THE GOLF BASE 新浦安レンジ	20260802-the-golf-base-shinurayasu-open-20260813.md	【新浦安】THE GOLF BASEが海楽に8月13日開店	2026-08-02T22:00	open	open_planned	2026-08-13	後続記事 20260829 で開店確認
+THE GOLF BASE 新浦安レンジ	20260829-the-golf-base-shinurayasu-open.md	【浦安】海楽に「THE GOLF BASE 新浦安レンジ」オープン	2026-08-29T22:00	open	open	2026-08-13	20260802-the-golf-base-shinurayasu-open-20260813 と同じ店舗
+SUGARY（イクスピアリ）	イクスピアリにアサイー専門店「sugary」が2026年夏オー.md	イクスピアリにアサイー専門店「SUGARY」が2026年夏オープン予定【浦安・舞浜】	2026-04-29T07:00	open	open_planned		「6月〜7月頃（見込み）」。SUGARY の最初の記事
+SUGARY（イクスピアリ）	20260614-ikspiari-sugary-open-2026.md	【舞浜】イクスピアリにSUGARY出店予定	2026-06-14T07:00	open	open_planned		「2026年予定」。SUGARY の1本目
+SUGARY（イクスピアリ）	20260701-ikspiari-sugary-open-date-20260728.md	【舞浜】SUGARYの開店日が7月28日に決定	2026-07-01T07:00	open	open_planned	2026-07-28	SUGARY 3記事目のうち2本目（20260614 と同じ店舗）
+アトレ新浦安 1階食料品ゾーンの改装	【新浦安】アトレ新浦安1f食料品ゾーンが7月リニ.md	【新浦安】アトレ新浦安1F食料品ゾーンが7月リニューアル｜クイーンズ伊勢丹など3店舗が新規オープン	2026-05-13T09:04	renewal	renewal	2026-07	アトレ食品フロア改装（同じ改装の記事が3本）
+アトレ新浦安 1階食料品ゾーンの改装	20260609-atre-shin-urayasu-food-renewal-202607.md	【新浦安】アトレ新浦安で食品店が7月リニューアルへ	2026-06-09T07:00	renewal	renewal	2026-07	アトレ食品フロア改装（同じ改装の記事が3本）
+アトレ新浦安 1階食料品ゾーンの改装	20260627-atre-shinurayasu-food-renewal-20260709.md	【新浦安】アトレ1階が7月9日リニューアル	2026-06-27T07:00	renewal	renewal	2026-07-09	アトレ食品フロア改装（同じ改装の記事が3本）
+Bambi DROPS（海楽）	20260603-bambi-drops-kaigaku.md	【浦安市】海楽にテイクアウトカフェ「バンビドロップス」が6/2オープン	2026-06-03T07:00	open	open	2026-06-02	
+Bambi DROPS（海楽）	20260623-bambi-drops-kairaku-open.md	【浦安】海楽にBambi DROPSがオープン	2026-06-23T07:00	open	open	2026-06-02	20260603-bambi-drops-kaigaku と同じ店舗
+M’av浦安WEST	20260620-mav-urayasu-west-open-2026.md	【浦安】M’av浦安WESTが6月30日開業へ	2026-06-20T07:00	open	feature	2026-06-30	施設の開業予告（20260701 のまとめと同じ施設）。yaml は open
+M’av浦安WEST	20260701-mav-urayasu-west-grand-open-stores.md	【浦安】M’av浦安WESTが開業 8店舗まとめ	2026-07-01T07:00	feature	feature	2026-06-30	施設（M’av浦安WEST）開業と8店舗のまとめ

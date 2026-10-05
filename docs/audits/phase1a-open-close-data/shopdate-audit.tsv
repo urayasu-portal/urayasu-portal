@@ -1,0 +1,122 @@
+# shopDate の形式と根拠（推奨値。下旬・夏・年内などは日付に変換せず年月か空）
+file	title	recStatus	recShopDate	shopDateFormat	shopDateSource	eventDate	eventDates	openDate	date	note
+20261002-kissa-sakura-urayasu-renewal-2026.md	【浦安】北栄の「喫茶さくら」が一時休業　年内リニューアル予定	temp_close	2026-09-28	YYYY-MM-DD	本文（eventDate なし）				2026-10-02T23:01	年内リニューアル予定（再開日未発表）
+20261001-ikspiari-sweets-limited-shops-october-2026.md	【浦安】イクスピアリに限定スイーツ4店、10月1日から出店	popup		不明	不明（掲載日・掲載月のみ）		2026-10-01/2026-10-15 | 2026-10-01/2026-10-31		2026-10-01T19:00	期間限定4店（10/1〜10/15・10/31）。常設店の開店ではない
+20260930-myoden-cpla-opening-2026.md	【妙典】「#C-pla」10月下旬出店予定か　求人で判明	open_planned	2026-10	YYYY-MM	本文（eventDate なし）				2026-09-30T19:21	10月下旬（求人）。施設名非公表
+20260929-ikspiari-saisai-maratan-open-20261019.md	【浦安】イクスピアリに菜菜麻辣湯、10月19日オープン	open_planned	2026-10-19	YYYY-MM-DD	eventDate と一致（移せる）	2026-10-19			2026-09-29T20:16	
+20260929-ikspiari-fint-open-20261022.md	【浦安】イクスピアリに「フィント」10月22日オープン	open_planned	2026-10-22	YYYY-MM-DD	eventDate と一致（移せる）	2026-10-22			2026-09-29T20:16	
+20260929-atre-shinurayasu-yanaka-fukumaru-202610.md	【浦安】アトレ新浦安に谷中福丸饅頭、10月1日から限定出店	popup		不明	不明（掲載日・掲載月のみ）	2026-10-01/2026-10-07			2026-09-29T20:16	10/1〜10/7 の期間限定販売（本文で常設ではないと明記）
+20260928-yakushima-izakaya-temporary-closure.md	【浦安】北栄の「居酒屋 屋久島」が臨時休業　再開は改めて案内	temp_close		不明	不明（掲載日・掲載月のみ）				2026-09-28T20:43	休業開始日・再開日とも未公表
+20260928-zen-place-pilates-urayasu-open-20261001.md	【浦安】zen place pilatesが10月1日オープン	open_planned	2026-10-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-10-01			2026-09-28T19:02	予定日経過・開店の確認記事なし
+20260925-yamazaki-shop-shimamura-close-202609.md	【浦安】創業100年超の「ヤマザキショップ島村」が9月末閉店へ	close_planned	2026-09	YYYY-MM	本文（eventDate なし）				2026-09-25T22:44	「9月末で閉店」（最終営業日不明→年月）
+20260925-well-pilates-urayasu-open-202611.md	【浦安】WELL PILATESが11月出店予定か	open_planned	2026-11	YYYY-MM	本文（eventDate なし）				2026-09-25T18:18	
+20260924-hokushinzushi-minamigyotoku-open.md	【行徳】北辰鮨 南行徳店が9月30日オープン予定	open_planned	2026-09-30	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-30			2026-09-24T22:03	
+20260924-gnome-de-taber-nekozane-relocation.md	【浦安】GNOME de TABER・肉じるや5が猫実へ移転	move	2026-10-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-10-01			2026-09-24T22:03	移転オープン予定。同記事の「肉じるや5」は当面休業
+20260922-ikspiari-poeme-popup-2026.md	【浦安】イクスピアリに「母恵夢」期間限定出店	popup		不明	不明（掲載日・掲載月のみ）	2026-09-28/2026-10-15			2026-09-22T16:57	9/28〜10/15 期間限定
+20260921-otakaraya-urayasu-open-202609.md	【浦安】当代島に「おたからや浦安店」9月21日オープン	open	2026-09-21	YYYY-MM-DD	本文（eventDate なし）				2026-09-21T21:30	
+20260920-sekachoco-gyotoku-open.md	【行徳】「世界一小さいチョコレート工場」出店予定か	open_planned	2026-11	YYYY-MM	本文（eventDate なし）				2026-09-20T17:58	11月中旬（求人）
+20260919-myoden-magical-bake-opening.md	【妙典】「Magical Bake」が10月上旬出店予定か　求人で判明	open_planned	2026-10	YYYY-MM	本文（eventDate なし）				2026-09-19T17:53	10月上旬（求人）
+20260919-minamigyotoku-koppepan-close-2026.md	【行徳】南行徳駅「焼きたてコッペ製パン」が9月27日閉店	close_planned	2026-09-27	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-27			2026-09-19T17:52	公式の閉店日あり
+20260916-urayasu-conditioning-lab-open.md	【浦安】猫実に「浦安コンディショニングラボ」がオープン｜整体×ピラティス	open	2026-07-02	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-02			2026-09-16T18:56	
+20260914-jizake-wonderland-muyu-gyotoku-open.md	【行徳】「地酒のワンダーランド 夢遊」がオープン	open	2026-09-04	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-04			2026-09-14T19:45	
+20260914-296-fukurosoba-gyotoku-open.md	【行徳】十割そば「296Fukurosoba」が9月10日オープン	open	2026-09-10	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-10			2026-09-14T19:44	
+20260914-sundrug-gyotoku-new-store.md	【行徳】旧マルエツ跡にサンドラッグ、11月下旬オープン予定	open_planned	2026-11	YYYY-MM	本文（eventDate なし）				2026-09-14T19:43	11月下旬予定。正式な開店日は未確認と本文に記載
+20260912-myoden-nail-eyelash-momo-open-202609.md	【妙典】Nail&eyelash Momoが9月1日オープン	open	2026-09-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-01			2026-09-12T19:03	
+20260911-neoxia-urayasu-open-20260901.md	【浦安】まつげ・ネイルサロン「NEOXIA」がオープン	open	2026-09-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-01			2026-09-11T20:03	
+20260909-minamigyotoku-shoku-toiro-open.md	【行徳】南行徳に定食＆BAR「食TOIRO」がオープン	open	2026-09-04	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-04			2026-09-09T22:45	
+20260904-ikspiari-nanas-green-tea-reopen-2026.md	【浦安】ナナズグリーンティーが9月18日営業再開	reopen	2026-09-18	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-18			2026-09-04T18:07	設備改修で休業→再開。キッズスペース新設あり（renewal とも読める）
+20260904-urayasu-daiso-shops.md	【イクスピアリ】ダイソーは閉店していません｜3階で営業中｜浦安市内のダイソー一覧	feature		不明	不明（掲載日・掲載月のみ）				2026-09-04T10:50	「閉店していません」の訂正・店舗一覧
+20260903-ikspiari-tsukemen-tetsu-open-2026.md	【浦安】イクスピアリに「つけめんTETSU」9月17日オープン	open_planned	2026-09-17	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-17			2026-09-03T18:51	
+20260829-the-golf-base-shinurayasu-open.md	【浦安】海楽に「THE GOLF BASE 新浦安レンジ」オープン	open	2026-08-13	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-13			2026-08-29T22:00	20260802-the-golf-base-shinurayasu-open-20260813 と同じ店舗
+20260829-taimu-urayasu-closed.md	【浦安】西友浦安1階のたい焼き店「たい夢」が閉店	close		不明	不明（掲載日・掲載月のみ）				2026-08-29T22:00	7/10以降営業せず。正式な閉店日は不明
+20260828-papabubble-maihama-new-store-2026.md	【浦安】舞浜に「PAPABUBBLE」出店予定か、求人で判明	open_planned	2026-11-21	YYYY-MM-DD	eventDate と一致（移せる）	2026-11-21			2026-08-28T22:00	タイトルは「出店予定か、求人で判明」のまま
+20260827-ikspiari-limited-shops-september-2026.md	【浦安】イクスピアリに期間限定5店、9月1日から	popup		不明	不明（掲載日・掲載月のみ）		2026-09-01/2026-09-17 | 2026-09-01/2026-09-30 | 2026-09-01/2026-09-15 | 2026-09-01/2026-09-15 | 2026-09-01/2026-09-30		2026-08-27T22:00	期間限定5店
+20260827-d-nest-shin-urayasu-open.md	【浦安】新浦安駅前に設計者専用「D-NEST」9月開業	open_planned	2026-09-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-01			2026-08-27T22:00	シェアオフィス開業
+20260827-atre-shin-urayasu-handmade-gardens-2026.md	【浦安】アトレ新浦安に「ハンドメイドガーデンズ」期間限定出店	popup		不明	不明（掲載日・掲載月のみ）	2026-09-02/2026-09-13			2026-08-27T22:00	9/2〜9/13 期間限定
+20260821-urayasu-zaitaku-neuro-clinic-open.md	【新浦安】浦安在宅神経内科クリニック、9月1日開院	open_planned	2026-09-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-01			2026-08-21T22:00	開院
+20260818-atre-shinurayasu-sweets-renewal-202609.md	【新浦安】アトレ1Fスイーツ売場、9月17日刷新	renewal	2026-09-17	YYYY-MM-DD	eventDate と同じ月（日は本文）		2026-09-14 | 2026-09-17		2026-08-18T22:00	売場の刷新（新規4・改装2店）。現行は open
+20260817-ichikawa-myoden-ogawa-clinic-open.md	【妙典】市川妙典おがわ泌尿器科・内科が8月3日開院	open	2026-08-03	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-03			2026-08-17T22:00	開院
+20260814-ikspiari-limited-shops-20260817.md	【浦安】イクスピアリに期間限定3店、8月17日から	popup		不明	不明（掲載日・掲載月のみ）	2026-08-17/2026-08-31			2026-08-14T22:00	8/17〜8/31 期間限定3店
+20260813-eyecity-ichikawa-myoden-open-202609.md	【妙典】アイシティ市川妙典店が9月出店予定、求人で判明	open_planned	2026-09	YYYY-MM	本文（eventDate なし）				2026-08-13T22:00	
+20260813-atre-shinurayasu-kasei-close-20260820.md	【新浦安】アトレ「点心・惣菜KASEI」が8月20日閉店	close_planned	2026-08-20	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-20			2026-08-13T22:00	
+20260812-gyotoku-machinocyuuka-kasumi-open-2026.md	【行徳】「町の中華 かすみ」が8月9日オープンとの情報	open	2026-08-09	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-09			2026-08-12T22:00	店舗公式は未確認と本文に記載
+20260811-gyotoku-ishiguro-sanfujinka-close-2026.md	【行徳】石黒産婦人科が7月31日閉院との情報	close	2026-07-31	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-31			2026-08-11T22:00	閉院。現行は open（タイトルの「閉院」を拾えない）
+20260809-nishidaba-minami-gyotoku-open.md	【南行徳】駅前に「やきとり にしだ場」がオープン	open	2026-08-03	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-03			2026-08-09T22:00	
+20260807-wamen-zen-horie-open.md	【浦安】堀江にラーメン店「和麺 善」がオープン	renewal	2026-08-07	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-07			2026-08-07T22:00	「すし処 善」が約2年休業後にラーメン店として再スタート（業態変更）
+20260805-seria-sundrug-gyotoku-open.md	【行徳】サンドラッグ行徳店2階にSeria出店予定	open_planned	2026-10	YYYY-MM	本文（eventDate なし）				2026-08-05T22:00	10月下旬
+20260804-atre-shinurayasu-boulmich-temporary-closure.md	【新浦安】ブールミッシュ、9月1日から一時休業	temp_close	2026-09-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-01			2026-08-04T22:00	改装で一時休業、9月中旬再開予定。現行は close
+20260803-takasu-yoga-pilates-bluva-open.md	【浦安】高洲で少人数制ヨガ・ピラティス「Bluva」が始動	open		不明	不明（掲載日・掲載月のみ）				2026-08-03T22:00	「始動」。開始日・所在地の記載が乏しい
+20260802-the-golf-base-shinurayasu-open-20260813.md	【新浦安】THE GOLF BASEが海楽に8月13日開店	open_planned	2026-08-13	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-13			2026-08-02T22:00	後続記事 20260829 で開店確認
+20260802-revoist-urayasu-horie-open-202608.md	【浦安】REVOIST浦安堀江店が堀江2丁目に出店	open_planned	2026-08-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-01			2026-08-02T22:00	記事時点で予定日を経過
+20260801-caps-clinic-ichikawa-myoden-open.md	【妙典】キャップスクリニック市川妙典が開院	open	2026-08-01	YYYY-MM-DD	本文（eventDate なし）				2026-08-01T22:00	開院
+20260731-takumi-myoden-seitai-planned-202609.md	【妙典】匠 妙典駅前整体院が9月出店予定か	open_planned	2026-09	YYYY-MM	本文（eventDate なし）				2026-07-31T22:00	
+20260729-takumi-shinurayasu-seitai-planned-202610.md	【新浦安】匠 新浦安駅前整体院が10月出店予定か	open_planned	2026-10	YYYY-MM	本文（eventDate なし）				2026-07-29T22:00	
+20260729-sushi-yamaguchi-gyotoku-opening-202608.md	【行徳】鮨やまぐちが8月8日オープン、営業時間も判明	open	2026-08-08	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-08			2026-07-29T22:00	
+20260726-ikspiari-limited-shops-202608.md	【浦安】イクスピアリに期間限定3店が8月1日登場	popup		不明	不明（掲載日・掲載月のみ）	2026-08-01			2026-07-26T07:00	8/1〜 期間限定3店
+20260723-tadokoro-shoten-shinurayasu-planned.md	【浦安】鉄鋼通りに「麺場 田所商店 新浦安店」9月下旬オープン予定	open	2026-09-28	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-28			2026-07-23T22:00	タイトルは「9月下旬オープン予定」のまま
+20260723-pooch-you-coffee-tomioka-open.md	【浦安】富岡に「pooch＋you coffee」がオープン	open	2026-07-19	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-19			2026-07-23T07:00	
+20260722-ikspiari-tokiiro-popup-2026.md	【舞浜】イクスピアリに「TokiiRo」が期間限定出店	popup		不明	不明（掲載日・掲載月のみ）	2026-07-23			2026-07-22T07:00	7/23〜8/16 期間限定
+20260721-osouzai-bovi-horie-open.md	【浦安】堀江に「おそうざいボビ」がオープン	open	2026-07-16	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-16			2026-07-21T07:00	
+20260715-trial-seiyu-urayasu-open.md	【浦安】トライアル西友浦安店に注目　千葉県1号店を各メディアが報道	renewal	2026-07-10	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-10			2026-07-15T07:00	西友浦安店の業態転換（トライアル西友）。yaml は open
+20260715-atre-shinurayasu-oimo-motch-open-202609.md	【浦安】アトレ新浦安に「OIMO&MOTCH」出店予定か　求人情報で判明	open	2026-09-17	YYYY-MM-DD	eventDate と一致（移せる）	2026-09-17			2026-07-15T07:00	タイトルは「出店予定か　求人情報で判明」のまま
+20260714-ikspiari-club-cpla-open-20260717.md	【浦安】イクスピアリに「CLUB #C-pla」7月17日オープン	open_planned	2026-07-17	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-17			2026-07-14T07:00	
+20260708-kaitori-daikichi-seiyu-urayasu.md	【浦安】西友浦安店に買取大吉が出店予定か	open_planned		不明	不明（掲載日・掲載月のみ）				2026-07-08T07:00	「2026夏」（求人）。日付に変換しない
+20260707-spalab-urayasu-kairaku-open.md	【浦安】海楽にトランクルーム「スペラボ」8月1日オープン予定	open_planned	2026-08-01	YYYY-MM-DD	eventDate と一致（移せる）	2026-08-01			2026-07-07T07:00	トランクルーム
+20260705-sagami-mona-shinurayasu-open.md	【浦安】MONA新浦安にさが美がオープン	open	2026-06-12	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-12			2026-07-05T07:00	yaml の when は 2026-07（公開月）で実施月とずれる
+20260704-curves-aeon-shinurayasu-open.md	【浦安】イオン新浦安にカーブスが開店予定	open_planned	2026-07-21	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-21			2026-07-04T07:00	
+20260702-ikspiari-limited-shops-202607.md	【舞浜】イクスピアリに期間限定3店舗が登場	popup		不明	不明（掲載日・掲載月のみ）	2026-07-01			2026-07-02T07:00	7/1〜 期間限定3店（yaml は open）
+20260701-mav-urayasu-west-grand-open-stores.md	【浦安】M’av浦安WESTが開業 8店舗まとめ	feature	2026-06-30	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-30			2026-07-01T07:00	施設（M’av浦安WEST）開業と8店舗のまとめ
+20260701-ikspiari-sugary-open-date-20260728.md	【舞浜】SUGARYの開店日が7月28日に決定	open_planned	2026-07-28	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-28			2026-07-01T07:00	SUGARY 3記事目のうち2本目（20260614 と同じ店舗）
+20260701-gongcha-ikspiari-renewal.md	【イクスピアリ】ゴンチャがリニューアルオープン｜場所は2F・20席	renewal	2026-06-30	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-30			2026-07-01T07:00	
+20260627-gyotoku-yakitori-takeout-open.md	【行徳】駅近くに焼き鳥店が出店予定か	open_planned	2026-07	YYYY-MM	本文（eventDate なし）				2026-06-27T07:00	店名不明
+20260627-familymart-shinurayasu-mare-open.md	【新浦安】マーレにファミリーマートが開店	open	2026-06	YYYY-MM	本文（eventDate なし）				2026-06-27T07:00	開店日は不明。求人の「6月下旬」を年月で
+20260627-atre-shinurayasu-food-renewal-20260709.md	【新浦安】アトレ1階が7月9日リニューアル	renewal	2026-07-09	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-09			2026-06-27T07:00	アトレ食品フロア改装（同じ改装の記事が3本）
+20260626-kitchen-origin-minami-gyotoku-open.md	【行徳】キッチンオリジン南行徳店が新規開店	open		不明	不明（掲載日・掲載月のみ）				2026-06-26T07:00	開店日の記載なし
+20260624-malatang-tenpo-newcoast-shinurayasu-open.md	【新浦安】ニューコースト3階に麻辣湯専門店「麻辣湯天宝」オープン	open	2026-07-19	YYYY-MM-DD	本文（eventDate なし）				2026-06-24T07:00	yaml の店名は「（出店予定）」のまま
+20260624-daiso-maruesu-gyotoku-close.md	【行徳】ダイソーマルエツ行徳店が7月19日閉店へ	close_planned	2026-07-19	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-19			2026-06-24T07:00	後続記事（20260914 サンドラッグ）で7/19の閉店を確認
+20260623-the-golf-base-shinurayasu-range-open.md	【浦安】海楽にTHE GOLF BASE新浦安レンジが夏開業予定	open_planned		不明	不明（掲載日・掲載月のみ）				2026-06-23T07:00	「夏開業予定」。GOLF BASE 3記事の1本目
+20260623-nanohana-shokudo-gyotoku-close.md	【行徳】なのはな食堂が6月28日閉店へ	close_planned	2026-06-28	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-28			2026-06-23T07:00	
+20260623-bambi-drops-kairaku-open.md	【浦安】海楽にBambi DROPSがオープン	open	2026-06-02	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-02			2026-06-23T07:00	20260603-bambi-drops-kaigaku と同じ店舗
+20260620-mav-urayasu-west-open-2026.md	【浦安】M’av浦安WESTが6月30日開業へ	feature	2026-06-30	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-30			2026-06-20T07:00	施設の開業予告（20260701 のまとめと同じ施設）。yaml は open
+20260620-maruetsu-gyotoku-close-2026.md	【行徳】マルエツ行徳店が7月19日閉店予定か	close_planned	2026-07-19	YYYY-MM-DD	eventDate と一致（移せる）	2026-07-19			2026-06-20T07:00	後続記事（20260914 サンドラッグ）で7/19の閉店を確認
+20260617-gyotoku-turkish-restaurant-saray-open.md	【行徳】トルコ料理SARAYがオープンか	open	2026-06	YYYY-MM	本文（eventDate なし）				2026-06-17T07:00	「6月中旬とみられる」→年月
+20260617-atre-shinurayasu-kurikorean-renewal.md	【新浦安】アトレ新浦安の横浜くりこ庵が再開	renewal	2026-06-16	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-16			2026-06-17T07:00	アトレ食品フロア改装に伴うリニューアルオープン
+20260614-ikspiari-sugary-open-2026.md	【舞浜】イクスピアリにSUGARY出店予定	open_planned		不明	不明（掲載日・掲載月のみ）				2026-06-14T07:00	「2026年予定」。SUGARY の1本目
+20260614-eyecarelabo-urayasu-open.md	【浦安】アイケアLaBo浦安駅前店がオープン	open	2026-06-08	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-08			2026-06-14T07:00	
+20260613-gyotoku-horumon-shoryuen-open-2026.md	【行徳】ホルモン将龍苑が出店予定か	open_planned	2026-06	YYYY-MM	本文（eventDate なし）				2026-06-13T07:00	
+20260609-atre-shin-urayasu-food-renewal-202607.md	【新浦安】アトレ新浦安で食品店が7月リニューアルへ	renewal	2026-07	YYYY-MM	本文（eventDate なし）				2026-06-09T07:00	アトレ食品フロア改装（同じ改装の記事が3本）
+20260608-atre-shinurayasu-wagashi-renewal.md	【新浦安】アトレ新浦安の和菓子店が改装休業へ	temp_close	2026-06-22	YYYY-MM-DD	eventDate と一致（移せる）		2026-06-22 | 2026-06-27		2026-06-08T07:00	改装休業→6/27 リニューアルオープン予定（同記事）
+20260603-bambi-drops-kaigaku.md	【浦安市】海楽にテイクアウトカフェ「バンビドロップス」が6/2オープン	open	2026-06-02	YYYY-MM-DD	eventDate と一致（移せる）	2026-06-02			2026-06-03T07:00	
+20260531-urayasu-kourai-closed.md	【浦安市】ハマグリ出汁の「浦安そば」が名物の「浦安 幸来」が5月29日に閉店	close	2026-05-29	YYYY-MM-DD	本文（eventDate なし）				2026-06-01T07:00	
+urayasu-station-new-open-2026.md	【浦安市】浦安駅周辺で続々ニューオープン予定！2026年6〜7月に注目の新店まとめ	feature		不明	不明（掲載日・掲載月のみ）				2026-05-29T07:00	新店まとめ
+2026-05-19-nisyakugosun-urayasuekimae.md	【浦安】焼鳥・蕎麦居酒屋「二尺五寸 浦安駅前店」が浦安駅直結にオープン予定	open_planned		不明	不明（掲載日・掲載月のみ）				2026-05-19T07:00	M’av浦安WEST（6/30開業）の1店。開店日は記事時点で未定
+【新浦安】アトレ新浦安1f食料品ゾーンが7月リニ.md	【新浦安】アトレ新浦安1F食料品ゾーンが7月リニューアル｜クイーンズ伊勢丹など3店舗が新規オープン	renewal	2026-07	YYYY-MM	本文（eventDate なし）				2026-05-13T09:04	アトレ食品フロア改装（同じ改装の記事が3本）
+【浦安】マーヴ浦安に「ら～めん-きんとうん」が6.md	【浦安】マーヴ浦安に「ら～めん きんとうん」が6月末オープン予定か	open_planned	2026-06	YYYY-MM	本文（eventDate なし）				2026-05-12T07:00	M’av浦安WEST（6/30開業）の1店
+【浦安】「grand-monday-resort-東京ベイ舞浜」7月18日グランドオ.md	【浦安】「GRAND MONday Resort 東京ベイ舞浜」7月18日グランドオープン｜全室オーシャンフロント	open_planned	2026-07-18	YYYY-MM-DD	本文（eventDate なし）				2026-05-10T07:00	ホテル
+【浦安】西友浦安店が5月31日に一時閉店、夏に「.md	【浦安】西友浦安店が5月31日に一時閉店、夏に「トライアル西友」へリニューアル	temp_close	2026-05-31	YYYY-MM-DD	eventDate と一致（移せる）	2026-05-31			2026-05-02T07:00	改装のため一時閉店→夏に「トライアル西友」
+20260501-big-smile-cafe-urayasu-closed-20260430.md	【浦安】当代島の「Big Smile CAFE.」が4月30日閉店、今後はイベント出店へ	close	2026-04-30	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-30			2026-05-01T19:00	
+【舞浜・イクスピアリ】月島もんじゃ「モヘジ」.md	【舞浜・イクスピアリ】月島もんじゃ「モヘジ」が4/28オープン！全国初のカタカナ表記店舗	open	2026-04-28	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-28			2026-04-30T22:00	
+【浦安】ローソンストア100浦安当代島店が本日4-30（.md	【浦安】ローソンストア100浦安当代島店が本日4/30（木）をもって閉店	close	2026-04-30	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-30			2026-04-30T07:00	記事当日が閉店日
+【浦安】リンツ-ショコラ-ブティックが北栄エリア.md	【浦安】リンツ ショコラ ブティックが北栄エリアに6月オープン予定か	open_planned	2026-06	YYYY-MM	本文（eventDate なし）				2026-04-30T07:00	M’av浦安WEST（6/30開業）の1店
+【浦安】ファミリーマート浦安富士見三丁目店が.md	【浦安】ファミリーマート浦安富士見三丁目店が本日4/30（木）をもって閉店	close	2026-04-30	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-30			2026-04-30T07:00	記事当日が閉店日
+イクスピアリにアサイー専門店「sugary」が2026年夏オー.md	イクスピアリにアサイー専門店「SUGARY」が2026年夏オープン予定【浦安・舞浜】	open_planned		不明	不明（掲載日・掲載月のみ）				2026-04-29T07:00	「6月〜7月頃（見込み）」。SUGARY の最初の記事
+【浦安】オムライス専門店「yellow-浦安」が2026年6月〜7.md	【浦安】オムライス専門店「Yellow 浦安」が2026年6月〜7月オープン予定｜当代島	open_planned		不明	不明（掲載日・掲載月のみ）				2026-04-29T03:22	「6月〜7月見込み」
+ドラッグストア「スギ薬局-浦安さくら通り店」が5.md	【浦安市】ドラッグストア「スギ薬局 浦安さくら通り店」が5月21日オープン予定【堀江】	open_planned	2026-05-21	YYYY-MM-DD	eventDate と一致（移せる）	2026-05-21			2026-04-28T07:00	TSUTAYA 跡地
+【浦安市】浦安駅前に「焼肉きんぐ」が2026年6月下.md	【浦安市】浦安駅前に「焼肉きんぐ」が2026年6月下旬オープン予定	open_planned	2026-06	YYYY-MM	本文（eventDate なし）				2026-04-24T23:53	M’av浦安WEST（6/30開業）の1店。6月下旬
+【浦安市】mona新浦安2fにdenbaラウンジ4月25日オープン｜.md	【浦安市】MONA新浦安2FにDENBAラウンジ4月25日オープン｜リラクゼーション体験スペース	renewal	2026-04-25	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-25			2026-04-24T07:16	同フロアの「アロマブルーム」がリニューアルする形（業態変更）
+【浦安市】北栄にハンバーガー店「perch-diner」が4月21日.md	【浦安市】北栄にハンバーガー店「PERCH DINER」が4月21日オープン	open	2026-04-21	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-21			2026-04-22T07:20	
+稲庭うどんx丼めし「金子半之助」がイクスピア.md	稲庭うどん×丼めし「金子半之助」がイクスピアリに！千葉県初出店・4月21日グランドオープン	open_planned	2026-04-21	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-21			2026-04-19T07:00	
+イクスピアリに韓国料理「ベジゴー」が登場！108.md	イクスピアリに韓国料理「ベジゴー」が登場！108席の大型店・4月28日オープン	open_planned	2026-04-28	YYYY-MM-DD	eventDate と一致（移せる）	2026-04-28			2026-04-19T07:00	
+【浦安】マクドナルド新浦安明海店が明海5丁目に.md	【浦安】マクドナルド新浦安明海店が明海5丁目にオープン予定	open_planned	2026-06-30	YYYY-MM-DD	openDate と一致			2026-06-30	2026-04-19T05:16	openDate・notableDate・shopName を持つ唯一の記事
+「中華料理-泰興」浦安駅高架下再開発で3月上旬に.md	「中華料理 泰興」浦安駅高架下再開発で3月上旬に移転予定	move	2026-03	YYYY-MM	本文（eventDate なし）				2026-02-27T00:05	3月上旬→年月。移転先のオープン日は未定
+「イオン新浦安ショッピングセンター」にサン.md	 「イオン新浦安ショッピングセンター」にサンリオカフェワゴンがオープン	popup	2025-07-18	YYYY-MM-DD	本文（eventDate なし）				2025-07-05T07:00	キッチンカー型のワゴン（常設店かどうか本文から不明）
+ニューコースト新浦安に精肉専門店「肉匠かみむ.md	ニューコースト新浦安に精肉専門店「肉匠かみむら新浦安店」7月10日オープン	open_planned	2025-07-10	YYYY-MM-DD	本文（eventDate なし）				2025-07-04T07:00	
+ザ-ロイヤルパークホテル舞浜リゾート東京ベイ2026.md	ザ ロイヤルパークホテル舞浜リゾート東京ベイ2026年2月13日開業決定・予約受付開始	open_planned	2026-02-13	YYYY-MM-DD	本文（eventDate なし）				2025-07-04T07:00	ホテル。記事は2025年7月、開業予定日は2026年2月
+ドン・キホーテ西友行徳店がオープン　行徳エリ.md	ドン・キホーテ西友行徳店がオープン　行徳エリア2店舗目	open	2025-06-30	YYYY-MM-DD	本文（eventDate なし）				2025-07-01T23:00	
+一風堂イクスピアリ店-6月27日リニューアルオープ.md	一風堂イクスピアリ店 6月27日リニューアルオープン 店内改装完了	renewal	2025-06-27	YYYY-MM-DD	本文（eventDate なし）				2025-06-30T07:00	店内改装の休業→リニューアルオープン
+イクスピアリ25周年リニューアル-ディズニースト.md	イクスピアリ25周年リニューアル ディズニーストア7月6日新装開店	renewal	2025-07-06	YYYY-MM-DD	本文（eventDate なし）				2025-06-30T07:00	
+いちご飴専門店「strawberry-fetish」がイクスピアリに8月オー.md	いちご飴専門店「Strawberry Fetish」がイクスピアリに8月オープン予定	open_planned	2025-08	YYYY-MM	本文（eventDate なし）				2025-06-24T22:27	
+フェリシモのワンピースショップがイクスピアリ.md	フェリシモのワンピースショップがイクスピアリに7月1日オープン予定を発表	popup		不明	不明（掲載日・掲載月のみ）				2025-06-24T22:24	7/1〜7/31 のポップアップ
+ワイズマート＊ディスカ浦安弁天店が6月23日より.md	ワイズマート＊ディスカ浦安弁天店が6月23日より長期休業	temp_close	2025-06-23	YYYY-MM-DD	本文（eventDate なし）				2025-06-11T22:50	長期休業・再開時期未定。現行は close
+tsutaya浦安さくら通り店が7月6日で閉店、6月14日から閉.md	TSUTAYA浦安さくら通り店が7月6日で閉店、6月14日から閉店セール	close_planned	2025-07-06	YYYY-MM-DD	本文（eventDate なし）				2025-06-11T22:48	跡地にスギ薬局（2026年5月）の記事で閉店を確認
+肉処-大久保（ニューコースト新浦安）閉店.md	肉処 大久保（ニューコースト新浦安）閉店	close_planned	2025-06-26	YYYY-MM-DD	本文（eventDate なし）				2025-06-08T07:29	

@@ -10,8 +10,23 @@
      今後の開催日が残っている複数日程の記事は終了扱いにしない。解釈できない値は無視し、ビルドを止めない。
      対象: eventDate を持つ記事（従来どおり）と、eventDates だけを持つ記事のうち種別（event／match／fair）がある記事。
      notableDate(s) などイベントではない注目の日には、終了の通知を出さない。 */ -}}
+{{- /* 店舗の予定（工程1a PR 5）: 記事に shopStatus: open_planned／close_planned を書き、予定日（shopDate）を過ぎた記事には、
+     開店・閉店を確認していないことを伝える通知を出す（自動で開店・閉店扱いにしない）。予定日の判定は partials/shop-status.html
+     （日付は翌日から、年月だけならその月が終わってから。日本時間）。この通知を出した記事には下の開催日の通知を重ねて出さない */ -}}
+{{- $shopNotice := false }}
+{{- if .Params.shopStatus }}
+  {{- $s := partialCached "shop-status.html" . .RelPermalink }}
+  {{- if and (eq $s.source "frontmatter") $s.passed }}
+    {{- $shopNotice = true }}
+    {{- $when := printf "%s年%d月" (substr $s.date 0 4) (int (strings.TrimLeft "0" (substr $s.date 5 2))) }}
+    {{- if eq $s.dateKind "day" }}{{ $when = (time.AsTime $s.date).Format "2006年1月2日" }}{{ end }}
+<div class="event-ended-warn event-ended-warn--notice">
+  <i class="ti ti-info-circle" aria-hidden="true"></i> この記事は{{ $when }}の{{ cond (eq $s.status "open_planned") "開店" "閉店" }}予定としてお伝えしたものです。予定日を過ぎていますが、{{ cond (eq $s.status "open_planned") "開店" "閉店" }}の確認はまだ記事に反映していません。最新の状況は公式情報をご確認ください。
+</div>
+  {{- end }}
+{{- end }}
 {{- $isEventCat := in (.Params.categories | default slice) "イベント" }}
-{{- if not .Params.eventOngoing }}
+{{- if and (not .Params.eventOngoing) (not $shopNotice) }}
 {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
 {{- if or .Params.eventDate (and .Params.eventDates $ev.kind) }}
 {{- with $ev.end }}
