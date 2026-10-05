@@ -1,0 +1,26 @@
+{{- /*
+  event-calendar-eligible.html — 記事をイベントカレンダー（/events/）に載せるかを返す（工程1a PR 4）
+  呼び出し: {{ $show := partialCached "event-calendar-eligible.html" $page $page.RelPermalink }}
+  判定（上から順に）:
+    1. calendar: false                         → 載せない
+    2. calendar: true                          → 有効な eventDate・eventDates の日程があれば載せる（種別は問わない）
+    3. 種別が event・match                      → 載せる（eventKind の明示、または eventKind が無く1件目のカテゴリが「イベント」）
+    4. それ以外（fair、種別なし）                → 載せない
+  - 日程は partials/event-dates.html の spans（eventDate・eventDates だけ）。notableDate(s)・shopDate は使わない
+  - calendar は掲載の制御だけで、種別（eventKind）を変えない
+  - スポーツ・子育て・グルメなどのカテゴリからは種別を推定しない（event-dates.html の kind に従う）
+  - Event 構造化データの判定（event-jsonld-eligible.html）とは別。calendar は構造化データに影響しない
+*/ -}}
+{{- $p := . }}
+{{- $ev := partialCached "event-dates.html" $p $p.RelPermalink }}
+{{- $ok := false }}
+{{- if $ev.spans }}
+  {{- if eq $p.Params.calendar false }}
+    {{- $ok = false }}
+  {{- else if eq $p.Params.calendar true }}
+    {{- $ok = true }}
+  {{- else if in (slice "event" "match") $ev.kind }}
+    {{- $ok = true }}
+  {{- end }}
+{{- end }}
+{{- return $ok }}

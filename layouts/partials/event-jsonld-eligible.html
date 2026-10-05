@@ -1,0 +1,23 @@
+{{- /*
+  event-jsonld-eligible.html — 記事に Event 構造化データ（JSON-LD）を出すかを返す（工程1a PR 4）
+  呼び出し: {{ $ok := partialCached "event-jsonld-eligible.html" $page $page.RelPermalink }}
+  条件（すべて満たすとき）:
+    - posts の記事で、有効な eventDate・eventDates の日程がある
+    - 種別が event・match（eventKind の明示、または eventKind が無く1件目のカテゴリが「イベント」）
+    - 会場 eventLocation が空でない文字列で明示されている
+  - 会場を本文・タイトル・カテゴリから推測しない。既定値（「浦安市」など）で補わない
+  - calendar は使わない（/events/ の掲載の制御であり、構造化データの条件ではない）。
+    /events/ の判定（event-calendar-eligible.html）とは別の条件
+  - fair・種別なし（開店・閉店、お知らせ、ニュース、スポーツ、子育て・教育、グルメ・カフェなど）には出さない
+*/ -}}
+{{- $p := . }}
+{{- $ok := false }}
+{{- if eq $p.Section "posts" }}
+  {{- $ev := partialCached "event-dates.html" $p $p.RelPermalink }}
+  {{- if and $ev.spans (in (slice "event" "match") $ev.kind) }}
+    {{- with $p.Params.eventLocation }}
+      {{- if and (eq (printf "%T" .) "string") (ne (trim . " 　") "") }}{{ $ok = true }}{{ end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- return $ok }}

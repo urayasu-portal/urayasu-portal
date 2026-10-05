@@ -1,0 +1,47 @@
+{{- /*
+  event-calendar-status.html — イベントカレンダー用に、記事の開催状態と表示する日程を返す（工程1a PR 4）
+  呼び出し: {{ $st := partial "event-calendar-status.html" (dict "ev" $ev "today" "YYYY-MM-DD") }}
+    ev    : partials/event-dates.html の戻り値
+    today : 判定日（日本時間の YYYY-MM-DD）
+  返す値（dict）
+    status   : "upcoming"（開催予定）／"ongoing"（開催中）／"ended"（終了）／""（日程なし）
+    start    : 表示する日程の初日。開催予定なら次回の日程、開催中なら今日を含む日程、終了なら最後の日程
+    end      : 同じ日程の最終日（単日なら start と同じ。終了日未定なら ""）
+    openEnd  : 終了日未定（eventOngoing）で開始日を過ぎているか
+    sortKey  : 並び替え用。開催中は「終了日が近い順・終了日未定は最後」、開催予定は「次回の開始日順」、終了は最後の日の新しい順に使う
+  判定:
+    - 日程は表示用の日程（groups。連続する単日だけの配列は1期間）で見る。最初の日付や値の先頭10文字では判定しない
+    - eventOngoing: 開始日前は開催予定、開始日以降は開催中。終了日は推測しない
+    - それ以外: 今日を含む日程があれば開催中、今後の日程が1つでも残っていれば開催予定、すべて過ぎていれば終了
+*/ -}}
+{{- $ev := .ev }}
+{{- $today := .today }}
+{{- $status := "" }}{{ $start := "" }}{{ $end := "" }}{{ $openEnd := false }}{{ $sortKey := "" }}
+{{- if $ev.groups }}
+  {{- if $ev.ongoing }}
+    {{- $start = $ev.start }}
+    {{- if gt $ev.start $today }}
+      {{- $status = "upcoming" }}{{ $end = $ev.start }}{{ $sortKey = $ev.start }}
+    {{- else }}
+      {{- $status = "ongoing" }}{{ $openEnd = true }}{{ $sortKey = printf "9999-12-31|%s" $ev.start }}
+    {{- end }}
+  {{- else }}
+    {{- $cur := dict }}{{ $next := dict }}{{ $last := dict }}
+    {{- range $ev.groups }}
+      {{- if and (le .start $today) (ge .end $today) }}
+        {{- /* 今日を含む日程が複数ある（会期が重なる）場合は、終了日が近いほう */ -}}
+        {{- if or (not $cur.end) (lt .end $cur.end) }}{{ $cur = . }}{{ end }}
+      {{- end }}
+      {{- if and (gt .start $today) (or (not $next.start) (lt .start $next.start)) }}{{ $next = . }}{{ end }}
+      {{- if or (not $last.end) (gt .end $last.end) }}{{ $last = . }}{{ end }}
+    {{- end }}
+    {{- if $cur.start }}
+      {{- $status = "ongoing" }}{{ $start = $cur.start }}{{ $end = $cur.end }}{{ $sortKey = printf "%s|%s" $cur.end $cur.start }}
+    {{- else if $next.start }}
+      {{- $status = "upcoming" }}{{ $start = $next.start }}{{ $end = $next.end }}{{ $sortKey = $next.start }}
+    {{- else }}
+      {{- $status = "ended" }}{{ $start = $last.start }}{{ $end = $last.end }}{{ $sortKey = $last.end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- return dict "status" $status "start" $start "end" $end "openEnd" $openEnd "sortKey" $sortKey }}

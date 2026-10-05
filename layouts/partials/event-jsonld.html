@@ -1,84 +1,58 @@
 {{- /*
-  イベント構造化データ (schema.org/Event)
-  フロントマターに eventDate がある記事に JSON-LD を出力。
-  推奨フィールド:
-    eventDate       : 開催日 (required)
-    eventEndDate    : 終了日 (endDate 警告対策)
-    eventLocation   : 会場名
-    eventFee        : 料金 (例: "無料", "500円")
-    eventUrl        : 公式URL
-    performer       : 出演者・チーム名 (文字列 or リスト)
-    organizer       : 主催者名
+  イベント構造化データ (schema.org/Event)（工程1a PR 4 で全面改修）
+  出すかどうかは partials/event-jsonld-eligible.html で判定する（種別が event・match で、会場 eventLocation が明示された posts の記事だけ）。
+  /events/ の掲載条件とは別で、calendar は使わない。
+  - 日付は partials/event-dates.html の解釈結果だけを使う（生の "開始/終了" などは出さない。不正な値は除かれる）
+      単日 → startDate のみ ／ 期間 → startDate と endDate ／ eventOngoing（終了日未定）→ startDate のみ（終了日を作らない）
+  - 複数の日程は、表示用の日程（groups）ごとに別の Event を出す（上限10件）。同じ日程は重複しない。
+    各 Event は同じ記事 URL を参照し、@id を「記事URL#event-1」のように分ける
+  - 会場は eventLocation の値だけ（住所は出さない）。主催者は organizer が明示されているときだけ。
+    「浦安市」「千葉県」などの既定値で補わない。本文・タイトル・カテゴリから推測しない
+  - 料金（offers）は eventFee があるときだけ。価格は「無料」のときだけ 0 を入れる（それ以外の文字列を price に入れない）
+  frontmatter:
+    eventLocation : 会場名（必須条件）       organizer : 主催者名（任意）
+    eventFee      : 料金（任意）             eventUrl  : 公式 URL（任意。offers の url に使う）
+    performer     : 出演者・チーム名（任意。文字列またはリスト）
 */ -}}
-{{- if and (eq .Section "posts") .Params.eventDate }}
-
-{{- $name   := .Title | plainify }}
-{{- /* eventDate は 単日 / スラッシュ範囲("A/B") / YAMLリスト を許容。
-       startDate=初日・endDate=最終日 に正規化してから出力する（不正なJSON-LDを防ぐ）。 */ -}}
-{{- $ed := .Params.eventDate }}
-{{- $start := "" }}{{- $end := "" }}
-{{- if reflect.IsSlice $ed }}
-  {{- $start = printf "%v" (index $ed 0) }}
-  {{- $end   = printf "%v" (index (last 1 $ed) 0) }}
-{{- else }}
-  {{- $parts := split (printf "%v" $ed) "/" }}
-  {{- $start = index $parts 0 }}
-  {{- $end   = index (last 1 $parts) 0 }}
+{{- if partialCached "event-jsonld-eligible.html" . .RelPermalink }}
+{{- $p := . }}
+{{- $ev := partialCached "event-dates.html" $p $p.RelPermalink }}
+{{- $desc := .Summary | plainify | truncate 120 }}
+{{- with .Description }}{{ $desc = . | plainify }}{{ end }}
+{{- $base := dict
+    "@context" "https://schema.org"
+    "@type" "Event"
+    "name" (.Title | plainify)
+    "eventStatus" "https://schema.org/EventScheduled"
+    "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"
+    "location" (dict "@type" "Place" "name" (trim (printf "%s" .Params.eventLocation) " 　"))
+    "description" $desc
+    "url" .Permalink }}
+{{- with partial "cover-image.html" (dict "page" . "size" "full") }}{{ $base = merge $base (dict "image" (. | absURL)) }}{{ end }}
+{{- with .Params.organizer }}
+  {{- if and (eq (printf "%T" .) "string") (ne (trim . " 　") "") }}
+    {{- $base = merge $base (dict "organizer" (dict "@type" "Organization" "name" (trim . " 　"))) }}
+  {{- end }}
 {{- end }}
-{{- with .Params.eventEndDate }}{{- $end = . }}{{- end }}
-{{- $loc    := .Params.eventLocation | default "浦安市" }}
-{{- $desc   := .Summary | plainify | truncate 120 }}
-{{- with .Description }}{{- $desc = . | plainify }}{{- end }}
-{{- $img    := partial "cover-image.html" (dict "page" . "size" "full") }}
-{{- $url    := .Permalink }}
-{{- $evUrl  := .Params.eventUrl | default .Permalink }}
-{{- $org    := .Params.organizer | default "浦安市" }}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "{{ $name }}",
-  "startDate": "{{ $start }}",
-  "endDate": "{{ $end }}",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "{{ $loc }}",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "浦安市",
-      "addressRegion": "千葉県",
-      "addressCountry": "JP"
-    }
-  },
-  "description": "{{ $desc }}",
-  {{- if $img }}
-  "image": "{{ $img | absURL }}",
-  {{- end }}
-  "url": "{{ $url }}",
-  {{- with .Params.eventFee }}
-  "offers": {
-    "@type": "Offer",
-    "name": "{{ . }}",
-    "price": "{{ cond (eq . "無料") "0" . }}",
-    "priceCurrency": "JPY",
-    "url": "{{ $evUrl }}",
-    "availability": "https://schema.org/InStock"
-  },
-  {{- end }}
-  {{- with .Params.performer }}
-  "performer": {{ if (reflect.IsSlice .) }}[
-    {{- range $i, $p := . }}{{ if $i }},{{ end }}
-    {"@type": "PerformingGroup", "name": "{{ $p }}"}
-    {{- end }}
-  ],{{ else }}{"@type": "PerformingGroup", "name": "{{ . }}"},{{ end }}
-  {{- end }}
-  "organizer": {
-    "@type": "Organization",
-    "name": "{{ $org }}"
-  }
-}
-</script>
+{{- with .Params.eventFee }}
+  {{- $offer := dict "@type" "Offer" "name" (printf "%v" .) "priceCurrency" "JPY" "url" ($p.Params.eventUrl | default $p.Permalink) "availability" "https://schema.org/InStock" }}
+  {{- if eq (printf "%v" .) "無料" }}{{ $offer = merge $offer (dict "price" "0") }}{{ end }}
+  {{- $base = merge $base (dict "offers" $offer) }}
+{{- end }}
+{{- with .Params.performer }}
+  {{- $perf := slice }}
+  {{- range (cond (reflect.IsSlice .) . (slice .)) }}{{ $perf = $perf | append (dict "@type" "PerformingGroup" "name" (printf "%v" .)) }}{{ end }}
+  {{- $base = merge $base (dict "performer" (cond (eq (len $perf) 1) (index $perf 0) $perf)) }}
+{{- end }}
+{{- $sched := $ev.groups }}
+{{- if $ev.ongoing }}{{ $sched = slice (dict "start" $ev.start "end" "") }}{{ end }}
+{{- $sched = first 10 $sched }}
+{{- $items := slice }}
+{{- range $i, $g := $sched }}
+  {{- $it := merge $base (dict "startDate" $g.start) }}
+  {{- if and $g.end (ne $g.end $g.start) }}{{ $it = merge $it (dict "endDate" $g.end) }}{{ end }}
+  {{- if gt (len $sched) 1 }}{{ $it = merge $it (dict "@id" (printf "%s#event-%d" $p.Permalink (add $i 1))) }}{{ end }}
+  {{- $items = $items | append $it }}
+{{- end }}
+<script type="application/ld+json">{{ cond (eq (len $items) 1) (index $items 0) $items | jsonify | safeJS }}</script>
 {{- end }}

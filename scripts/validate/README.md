@@ -12,6 +12,7 @@
 | `scripts/validate/known-issues.json` | **既存の不備リスト**。ここに載っている不備は失敗にしない（新しい不備だけを失敗にする） |
 | `scripts/validate/test/run-tests.mjs` | ルールのテスト（BOM・CRLF・インライン配列・日付・衝突など）と既存記事の回帰テスト |
 | `scripts/validate/test/event-dates-hugo.mjs` | 表示側の日付解釈（`layouts/partials/event-dates.html` ほか、工程1a PR 3）のテスト。最小の Hugo サイトで85通りを確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
+| `scripts/validate/test/events-hugo.mjs` | イベントカレンダー（`/events/`）の掲載・状態・並び順と Event 構造化データ（工程1a PR 4）のテスト。最小の Hugo サイトで25記事分を確かめ、判定する時刻を固定して日本時間の日付の境目（0時・15時・23時59分・年の境目、環境変数 TZ を4通り）も確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
 | `.github/workflows/hugo.yml` の `validate` ジョブ | push・schedule・手動実行のたびに上記を実行 |
 | `.github/workflows/pr-check.yml` | Pull Request 時にビルド（本番と同じオプション）・Pagefind・検証を実行。**デプロイはしない**。Hugo／Pagefind の版は hugo.yml と揃える |
 
@@ -69,6 +70,19 @@
 
 警告は `NOTABLEDATES_UNSORTED`（日付順でない）・`NOTABLEDATES_DUPLICATE`（重複）だけ。更新時は開催日と同じく、追加・変更した項目だけにエラーを適用し、値を変えていない項目のエラーは警告に下げる。既存記事で新項目を持つのは `notableDate` の1本だけで、該当する不備は無い（2026-10-05 時点）。
 
+### 会場・主催者（`eventLocation`・`organizer`）の検証（工程1a PR 4）
+
+Event 構造化データは `eventLocation` が書かれた記事にだけ出し、その値をそのまま会場名にする（`organizer` も書かれた場合だけ出す）。推測で補わないため、値の誤りがそのまま検索エンジンに渡る。どちらも任意項目で、無いことは警告にしない。
+
+| 区分 | コード | 内容 |
+|---|---|---|
+| エラー | `EVENTLOCATION_NOT_STRING`・`ORGANIZER_NOT_STRING` | 文字列でない（リスト・真偽値・数値・`null`。引用符なしの `123`・`yes`・`no`・`on`・`off` も含む） |
+| エラー | `EVENTLOCATION_EMPTY`・`ORGANIZER_EMPTY` | 空・空白だけ |
+| 警告 | `EVENTLOCATION_UNCONFIRMED`・`ORGANIZER_UNCONFIRMED` | 「未定」「未発表」「不明」「未確定」「調整中」「確認中」「要確認」「TBD」「TBA」「TBC」を含む |
+| 警告 | `EVENTLOCATION_LONG`・`ORGANIZER_LONG` | 80文字を超える（会場名・主催者名だけを書く） |
+
+更新時は開催日と同じく、値を変えていない項目のエラーは警告に下げる。既存記事でこの2項目を持つのは各1本（浦安市花火大会2026）で、不備は無い（2026-10-05 時点）。
+
 ## CI の動き（公開は止めない）
 
 - `validate` ジョブは `build`／`deploy` と**独立**している。不備があっても公開は従来どおり進む
@@ -113,6 +127,7 @@ ELECTRON_RUN_AS_NODE=1 "/c/Users/kadoh/AppData/Local/Programs/Microsoft VS Code/
 
 ```bash
 HUGO=/path/to/hugo ELECTRON_RUN_AS_NODE=1 "/c/Users/kadoh/AppData/Local/Programs/Microsoft VS Code/Code.exe" scripts/validate/test/event-dates-hugo.mjs
+HUGO=/path/to/hugo ELECTRON_RUN_AS_NODE=1 "/c/Users/kadoh/AppData/Local/Programs/Microsoft VS Code/Code.exe" scripts/validate/test/events-hugo.mjs
 ```
 
 ## 将来の選択肢（運営判断）
