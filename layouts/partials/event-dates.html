@@ -1,0 +1,156 @@
+{{- /*
+  event-dates.html — 記事の日付情報を1か所で解釈して返す共通部品（工程1a PR 3）
+  呼び出し: {{ $ev := partialCached "event-dates.html" $page $page.RelPermalink }}
+    （結果はページだけで決まるので partialCached でよい。キーは言語ごとに異なる RelPermalink）
+
+  読む項目（現行プロンプト v20260907 の書式と、それ以前の書式をすべて読む）
+    eventDate    : "YYYY-MM-DD" ／ "YYYY-MM-DD/YYYY-MM-DD"（連続期間）／ 単日・期間の配列（旧書式）／ 引用符なしの日付
+    eventDates   : 単日・期間を並べた配列（要素1つでも可）。配列でない値は解釈しない
+    eventEndDate : 文字列の eventDate の終了日を上書きする（旧書式。/events/・旧カードと同じ扱い）
+    eventOngoing : 終了日未定
+    eventKind    : event ／ match ／ fair
+    notableDate(s)・shopDate（日付まで確定しているもの）・openDate・closeDate : イベントではない注目の日
+  解釈できない値（実在しない日付・逆順の期間・"〜" や "," の区切り・3つ以上の区切り・空の値など）は
+  その値だけを除外し、invalid に数える。値を推測して補ったり、直したりしない。
+
+  返す値（dict）
+    spans      : 開催日程（{start,end}。日付順・同じ日程の重複を除いたもの）
+    groups     : 表示用の日程。spans と同じ。ただし全体が「連続する単日だけ」なら1つの期間にまとめる
+                 （単日と飛び日が混在する場合はまとめない）
+    count      : groups の数（＝開催日程の数。暦日数ではない）
+    start, end : 最初の日・最後の日（日程が無ければ ""）
+    days       : サイドバー・/daily/ で開催日として扱う日。日程ごとに 14日以下は全日、15日以上は初日と最終日、
+                 終了日未定（ongoing）は開始日だけ
+    notable    : イベントではない注目の日（notableDate(s)・日付まで確定した shopDate・openDate・closeDate）
+    kind       : "event" ／ "match" ／ "fair" ／ ""（推定しない）
+    kindSource : "eventKind" ／ "category" ／ ""
+    ongoing    : eventOngoing が真か
+    invalid    : 除外した値の数
+  種別の推定（eventKind が無いときだけ）: 1件目のカテゴリが「イベント」なら event（従来互換）。
+    それ以外のカテゴリ（スポーツ、子育て・教育、グルメ・カフェ、開店・閉店、お知らせ、ニュース など）は推定しない。
+    スポーツには試合ではない記事（施設のオープン・表敬訪問・体験会など）が多いため、試合は eventKind: "match" で明示する。
+  calendar はカレンダー掲載の制御用で、ここでは扱わない。
+*/ -}}
+{{- $p := . }}
+{{- $invalid := 0 }}
+
+{{- /* 1. 解釈する値を集める（v: 値、end: eventEndDate） */ -}}
+{{- $raw := slice }}
+{{- with $p.Params.eventDate }}
+  {{- if reflect.IsSlice . }}
+    {{- range . }}{{ $raw = $raw | append (dict "v" .) }}{{ end }}
+  {{- else }}
+    {{- $raw = $raw | append (dict "v" . "end" $p.Params.eventEndDate) }}
+  {{- end }}
+{{- end }}
+{{- with $p.Params.eventDates }}
+  {{- if reflect.IsSlice . }}
+    {{- range . }}{{ $raw = $raw | append (dict "v" .) }}{{ end }}
+  {{- else }}
+    {{- $invalid = add $invalid 1 }}
+  {{- end }}
+{{- end }}
+
+{{- /* 2. 単日・期間に分解して検証する */ -}}
+{{- $spans := slice }}
+{{- range $raw }}
+  {{- $s := "" }}{{ $e := "" }}
+  {{- if eq (printf "%T" .v) "time.Time" }}
+    {{- $s = partial "date-ymd.html" .v }}{{ $e = $s }}
+  {{- else }}
+    {{- $parts := split (printf "%v" .v) "/" }}
+    {{- if eq (len $parts) 1 }}
+      {{- $s = partial "date-ymd.html" (index $parts 0) }}{{ $e = $s }}
+    {{- else if eq (len $parts) 2 }}
+      {{- $s = partial "date-ymd.html" (index $parts 0) }}
+      {{- $e = partial "date-ymd.html" (index $parts 1) }}
+    {{- end }}
+  {{- end }}
+  {{- if and $s $e (le $s $e) }}
+    {{- with .end }}
+      {{- $e2 := partial "date-ymd.html" . }}
+      {{- if and $e2 (ge $e2 $s) }}{{ $e = $e2 }}{{ else }}{{ $invalid = add $invalid 1 }}{{ end }}
+    {{- end }}
+    {{- $spans = $spans | append (dict "start" $s "end" $e "key" (printf "%s/%s" $s $e)) }}
+  {{- else }}
+    {{- $invalid = add $invalid 1 }}
+  {{- end }}
+{{- end }}
+
+{{- /* 3. 日付順に並べ、同じ日程の重複（eventDate と eventDates の併用など）を除く */ -}}
+{{- $uniq := slice }}
+{{- $prevKey := "" }}
+{{- range sort $spans "key" }}
+  {{- if ne .key $prevKey }}{{ $uniq = $uniq | append (dict "start" .start "end" .end) }}{{ $prevKey = .key }}{{ end }}
+{{- end }}
+
+{{- /* 4. 表示用の日程。原則は spans のとおり（単日は独立した日程、期間の要素はその期間）。
+       例外として、日程が「連続する単日だけ」で構成される場合（例: 8/14・8/15）だけ、1つの期間にまとめる。
+       連続する単日と飛び日が混在する場合（例: 7/24・7/25・7/27）は、別々の開催回の可能性があるのでまとめない */ -}}
+{{- $groups := $uniq }}
+{{- if gt (len $uniq) 1 }}
+  {{- $run := true }}
+  {{- $prev := "" }}
+  {{- range $uniq }}
+    {{- if ne .start .end }}{{ $run = false }}{{ end }}
+    {{- if and $run $prev }}
+      {{- if ne (((time.AsTime $prev).AddDate 0 0 1).Format "2006-01-02") .start }}{{ $run = false }}{{ end }}
+    {{- end }}
+    {{- $prev = .start }}
+  {{- end }}
+  {{- if $run }}
+    {{- $groups = slice (dict "start" (index $uniq 0).start "end" (index (last 1 $uniq) 0).end) }}
+  {{- end }}
+{{- end }}
+
+{{- $ongoing := not (not $p.Params.eventOngoing) }}
+
+{{- /* 5. 最初の日・最後の日、サイドバー・/daily/ で扱う日 */ -}}
+{{- $start := "" }}{{ $end := "" }}
+{{- $days := slice }}
+{{- range $uniq }}
+  {{- if not $start }}{{ $start = .start }}{{ end }}
+  {{- if gt .end $end }}{{ $end = .end }}{{ end }}
+  {{- if $ongoing }}
+    {{- $days = $days | append .start }}
+  {{- else }}
+    {{- $st := time.AsTime .start }}
+    {{- $n := add (div (sub (time.AsTime .end).Unix $st.Unix) 86400) 1 }}
+    {{- if le $n 14 }}
+      {{- range seq 0 (sub $n 1) }}{{ $days = $days | append (($st.AddDate 0 0 .).Format "2006-01-02") }}{{ end }}
+    {{- else }}
+      {{- $days = $days | append .start .end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $days = $days | uniq | sort }}
+
+{{- /* 6. イベントではない注目の日 */ -}}
+{{- $notable := slice }}
+{{- $singleVals := slice $p.Params.notableDate $p.Params.shopDate $p.Params.openDate $p.Params.closeDate }}
+{{- with $p.Params.notableDates }}
+  {{- if reflect.IsSlice . }}{{ $singleVals = $singleVals | append . }}{{ else }}{{ $invalid = add $invalid 1 }}{{ end }}
+{{- end }}
+{{- range $singleVals }}
+  {{- with . }}
+    {{- with partial "date-ymd.html" . }}{{ $notable = $notable | append . }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- $notable = $notable | uniq | sort }}
+
+{{- /* 7. 種別 */ -}}
+{{- $kind := "" }}{{ $kindSource := "" }}
+{{- $ek := printf "%v" ($p.Params.eventKind | default "") }}
+{{- if in (slice "event" "match" "fair") $ek }}
+  {{- $kind = $ek }}{{ $kindSource = "eventKind" }}
+{{- else }}
+  {{- $cat := "" }}
+  {{- with $p.Params.categories }}{{ if reflect.IsSlice . }}{{ with index . 0 }}{{ $cat = printf "%v" . }}{{ end }}{{ else }}{{ $cat = printf "%v" . }}{{ end }}{{ end }}
+  {{- $kind = index (dict "イベント" "event") $cat | default "" }}
+  {{- if $kind }}{{ $kindSource = "category" }}{{ end }}
+{{- end }}
+
+{{- return dict
+  "spans" $uniq "groups" $groups "count" (len $groups) "start" $start "end" $end
+  "days" $days "notable" $notable
+  "kind" $kind "kindSource" $kindSource "ongoing" $ongoing "invalid" $invalid }}

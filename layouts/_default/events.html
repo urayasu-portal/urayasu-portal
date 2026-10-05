@@ -25,8 +25,11 @@
     {{- with .Params.eventEndDate }}{{ $end = printf "%v" . }}{{ end }}
     {{- $start = substr (trim $start " ") 0 10 }}
     {{- $end = substr (trim $end " ") 0 10 }}
-    {{- if findRE `^\d{4}-\d{2}-\d{2}$` $start }}
-      {{- if not (findRE `^\d{4}-\d{2}-\d{2}$` $end) }}{{ $end = $start }}{{ end }}
+    {{- /* 実在しない日付（2026-02-30 など）で下の time がビルドを止めないよう、日付の検証は共通部品
+           partials/date-ymd.html で行う（工程1a PR 3）。開始日が不正な記事は載せず、終了日が不正なら開始日と同じ扱い
+           （形式が崩れた終了日の従来の扱いと同じ）。掲載基準・並び順・表示は変えない（PR 4 で見直す） */ -}}
+    {{- if partial "date-ymd.html" $start }}
+      {{- if not (partial "date-ymd.html" $end) }}{{ $end = $start }}{{ end }}
       {{- $events = $events | append (dict
             "start" $start
             "end" $end

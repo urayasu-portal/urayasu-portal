@@ -1,62 +1,32 @@
 {{- /*
-  card-dates.html — 記事の公開日（＋イベントの開催日ラベル）を出す共通 partial（工程1b）
+  card-dates.html — 記事の公開日（＋開催日・試合日・期間のラベル）を出す共通 partial（工程1b、工程1a PR 3 で日付解釈を共通化）
   呼び出し: {{ partial "card-dates.html" (dict "page" . "class" "article-date" "icon" "ti-clock" "event" true) }}
     class : <time> の class（省略可）
     icon  : 公開日の前に出す Tabler アイコン名（省略可）
-    event : true のとき、条件を満たせば開催日ラベルを公開日の前に出す（記事カード用）。
+    event : true のとき、条件を満たせば開催日などのラベルを公開日の前に出す（記事カード用）。
             サイドバーの「最近の記事」・記事詳細の見出しでは指定しない
   表示ルール:
     - 主たる日付は常に公開日（.Date）。datetime 属性と表示は同じ日付。並び順・frontmatter には関与しない
-    - 開催日ラベルは「日本語ページ」かつ「1件目のカテゴリが イベント」かつ「eventDate を解釈できる」場合だけ出す。
-      eventDate はイベント以外（開店日・試合日・お知らせの対象日など）にも使われているため、カテゴリで限定する
-    - eventDate の形式は /events/ と同じ3形式: "YYYY-MM-DD" / "YYYY-MM-DD/YYYY-MM-DD"（期間）/ YAML 配列（飛び石の複数日）。
-      eventEndDate があれば期間の終了日に使う（/events/ と同じ）
-    - 解釈できない値・実在しない日付・終了日が開始日より前の期間は、開催日ラベルを出さない（生の文字列は出さない）
-    - 開催日の年は、公開日と同じ年なら省略する
+    - 日付の解釈は partials/event-dates.html、表示の書式は partials/event-dates-text.html に従う
+    - ラベルは「日本語ページ」かつ「種別がある」（eventKind、無ければ1件目のカテゴリが イベント なら event）
+      かつ「解釈できる日程がある」場合だけ出す。スポーツ、開店・閉店、お知らせ、ニュース、子育て・教育、グルメ・カフェなどは
+      eventKind が無ければ出さない（eventDate がイベント以外の日にも使われているため）
+    - 種別ごとの文言: event＝開催、match＝試合日、fair＝期間
+    - 解釈できない値・実在しない日付・逆順の期間はラベルから除く（生の文字列は出さない）
+    - 年は、公開日と同じ年なら省略する
 */ -}}
 {{- $p := .page }}
 {{- $d := $p.Date }}
-{{- $wd := slice "日" "月" "火" "水" "木" "金" "土" }}
-{{- $start := "" }}{{- $end := "" }}{{- $multi := false }}
-{{- $cat := index $p.Params.categories 0 | default "" }}
-{{- if and .event (eq $p.Lang "ja") (eq $cat "イベント") $p.Params.eventDate }}
-  {{- /* 文字列・期間・配列を YYYY-MM-DD の並びに正規化する（YAML の日付型は先頭10文字を使う） */ -}}
-  {{- $raw := $p.Params.eventDate }}
-  {{- $list := slice }}
-  {{- if reflect.IsSlice $raw }}
-    {{- range $raw }}{{ $list = $list | append (substr (trim (printf "%v" .) " ") 0 10) }}{{ end }}
-    {{- $multi = gt (len $list) 1 }}
-  {{- else }}
-    {{- range split (printf "%v" $raw) "/" }}{{ $list = $list | append (substr (trim . " ") 0 10) }}{{ end }}
-    {{- if gt (len $list) 2 }}{{ $list = slice }}{{ end }}
-    {{- $first := "" }}{{ with $list }}{{ $first = index . 0 }}{{ end }}
-    {{- with $p.Params.eventEndDate }}{{ $list = slice $first (substr (trim (printf "%v" .) " ") 0 10) }}{{ end }}
-  {{- end }}
-  {{- $ok := gt (len $list) 0 }}
-  {{- range $list }}
-    {{- if not (findRE `^\d{4}-\d{2}-\d{2}$` .) }}{{ $ok = false }}
-    {{- else }}
-      {{- $t := try (time.AsTime .) }}
-      {{- if or $t.Err (ne ($t.Value.Format "2006-01-02") .) }}{{ $ok = false }}{{ end }}
-    {{- end }}
-  {{- end }}
-  {{- if $ok }}
-    {{- $start = index $list 0 }}
-    {{- if not $multi }}{{ $end = index (last 1 $list) 0 }}{{ end }}
-    {{- if and $end (lt $end $start) }}{{ $ok = false }}{{ $start = "" }}{{ end }}
-    {{- if eq $end $start }}{{ $end = "" }}{{ end }}
+{{- $label := "" }}{{- $text := "" }}{{- $kind := "" }}
+{{- if and .event (eq $p.Lang "ja") }}
+  {{- $ev := partialCached "event-dates.html" $p $p.RelPermalink }}
+  {{- if $ev.kind }}
+    {{- $text = partial "event-dates-text.html" (dict "ev" $ev "year" $d.Year) }}
+    {{- if $text }}{{ $kind = $ev.kind }}{{ $label = index (dict "event" "開催" "match" "試合日" "fair" "期間") $kind }}{{ end }}
   {{- end }}
 {{- end }}
-{{- with $start }}
-  {{- $st := time.AsTime . }}
-  {{- $stFmt := cond (eq $st.Year $d.Year) "1月2日" "2006年1月2日" }}
-  <span class="card-event"><i class="ti ti-calendar-event" aria-hidden="true"></i>開催 <time datetime="{{ . }}">{{ $st.Format $stFmt }}({{ index $wd (int (printf "%d" $st.Weekday)) }})</time>
-  {{- with $end }}
-    {{- $et := time.AsTime . }}
-    {{- $etFmt := cond (eq $et.Year $st.Year) "1月2日" "2006年1月2日" -}}
-    〜<time datetime="{{ . }}">{{ $et.Format $etFmt }}({{ index $wd (int (printf "%d" $et.Weekday)) }})</time>
-  {{- end }}
-  {{- if $multi }}ほか{{ end }}</span>
+{{- with $label }}
+  <span class="card-event{{ if ne $kind "event" }} card-event--{{ $kind }}{{ end }}"><i class="ti ti-calendar-event" aria-hidden="true"></i>{{ . }} {{ $text | safeHTML }}</span>
 {{- end -}}
-<time{{ with .class }} class="{{ . }}"{{ end }} datetime="{{ $d.Format "2006-01-02" }}">{{ with .icon }}<i class="ti {{ . }}" aria-hidden="true"></i> {{ end }}{{ if $start }}公開 {{ end }}{{ $d.Format "2006年1月2日" }}</time>
-{{- /* 前後に空白を出さない（開催日ラベルが無い場合は改修前と同じバイト列になる） */ -}}
+<time{{ with .class }} class="{{ . }}"{{ end }} datetime="{{ $d.Format "2006-01-02" }}">{{ with .icon }}<i class="ti {{ . }}" aria-hidden="true"></i> {{ end }}{{ if $label }}公開 {{ end }}{{ $d.Format "2006年1月2日" }}</time>
+{{- /* 前後に空白を出さない（ラベルが無い場合は改修前と同じバイト列になる） */ -}}

@@ -1,0 +1,86 @@
+# 日付を持つスポーツ記事と eventKind の案（工程1a PR 3 の調整で、スポーツは種別を推定しないことにした。後続の個別修正 PR で eventKind を付ける）
+url	title	date	field	dates	classification	proposedKind	reason
+/posts/wheelchair-basketball-3x3-court-open/	浦安市に車いすバスケットボール3×3コートがオープン！誰でも無料で利用できます	2026-05-26	eventDate	2026-05-01	試合ではない	付けない	施設（コート）のオープン日。行ける日ではあるが催しではない。将来は notableDate
+/posts/urayasu-d-rocks-mayor-visit-preview-2026/	【浦安市】浦安D-Rocksが市長を訪問へ	2026-05-28	eventDate	2026-06-05	試合ではない	付けない	市長への表敬訪問の報告（事後）
+/posts/d-rocks-fes-2026/	【浦安市】浦安D-Rocksのファン感謝祭「D-Rocks Fes 2026」が6月6日に開催！	2026-05-31	eventDate	2026-06-06	試合ではない	event	ファン感謝祭
+/posts/urayasu-d-rocks-mayor-visit-2026/	【浦安】浦安D-Rocksが市長を訪問、D1残留を報告	2026-06-06	eventDate	2026-06-05	試合ではない	付けない	市長への表敬訪問の報告（事後）
+/posts/urayasu-slackline-2026/	【浦安市】運動公園でスラックライン体験開催	2026-06-14	eventDate	2026-06-20	試合ではない	event	スラックライン体験会
+/posts/d-rocks-summer-camp-2026/	【浦安】D-Rocks夏休みラグビーキャンプ開催	2026-06-26	eventDates	2026-08-03 2026-08-04 2026-08-05	試合ではない	event	参加型のラグビーキャンプ
+/posts/urayasu-d-rocks-rugby-fan-event-2026/	【浦安】D-Rocks選手とラグビー体験 9月19日開催	2026-09-05	eventDate	2026-09-19	試合ではない	event	選手とのラグビー体験
+/posts/d-rockers-dialogue-meetup-2026/	【浦安】D-Rockers対話会・交流会を9月25日開催	2026-09-15	eventDate	2026-09-25	試合ではない	event	ファンとの対話会・交流会
+/posts/浦安市ブリオベッカ浦安のパブリックビュー/	【浦安市】ブリオベッカ浦安のパブリックビューイング、5月17日（日）にイオン新浦安で開催	2026-05-11	eventDate	2026-05-17	判断が分かれる	event	パブリックビューイング（同上）
+/posts/briobecca-urayasu-ichikawa-emperors-cup-2026/	【浦安市】ブリオベッカが天皇杯出場を報告	2026-06-03	eventDate	2026-05-09	判断が分かれる	付けない（または match）	天皇杯出場を市長に報告した記事。日付は過去の県大会決勝の日
+/posts/bardral-urayasu-shonan-away-bus-tour-2026/	【浦安】バルドラール湘南戦応援バスツアー、9月26日実施予定	2026-08-22	eventDate	2026-09-26	判断が分かれる	event	アウェイ戦の応援バスツアー（日付は試合日と同じ）
+/posts/briobecca-public-viewing-aeon-shinurayasu-2026/	【新浦安】ブリオベッカPV、10月4日・11月8日開催	2026-09-30	eventDates	2026-10-04 2026-11-08	判断が分かれる	event	アウェイ戦のパブリックビューイング（会場の催し。日付は試合日と同じ）
+/posts/浦安d-rocks4-24金秩父宮でfri-d-night開催浦安市民優/	【浦安D-Rocks】4/24（金）秩父宮でFRI D-NIGHT開催！浦安市民優待あり	2026-04-23	eventDate	2026-04-24	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/浦安市ブリオベッカ浦安市川-5月2日土ホー/	【浦安市】ブリオベッカ浦安・市川 5月2日(土)ホームゲーム開催、無料チケットプレゼントあり	2026-04-24	eventDate	2026-05-02	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/浦安d-rocksd1-d2入替戦への出場が決定-第2戦は5-30夢の/	【浦安D-Rocks】D1/D2入替戦への出場が決定　第2戦は5/30夢の島競技場でホスト開催	2026-04-30	eventDate	2026-05-30	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/浦安市ブリオベッカ浦安市川が天皇杯千葉/	【浦安市】ブリオベッカ浦安・市川が天皇杯千葉県代表決定戦決勝へ！5月9日フクアリで開催	2026-05-08	eventDate	2026-05-09	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/d-rocks-d1d2-host-game-0530/	【浦安D-Rocks】5/30 D1/D2入替戦ホストゲーム｜浦安市在住・勤務者は1,000円優待あり	2026-05-19	eventDate	2026-05-30	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/bardral-fleague-2026-27-opener/	バルドラール浦安、Fリーグ新シーズン開幕戦は5/30ホームゲーム！	2026-05-24	eventDate	2026-05-30	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/briobecca-emperors-cup-schedule-2026/	【浦安市】ブリオベッカ、天皇杯1回戦は栃木SC戦	2026-06-11	eventDate	2026-08-19	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/bardral-urayasu-hokkaido-laumelia-2026/	【浦安市】バルドラール浦安が北海道戦、グルメ出店も	2026-06-12	eventDate	2026-06-13	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/bardral-urayasu-fleague-five-matches-2026/	【浦安市】バルアリで男女Fリーグ5試合開催	2026-06-13	eventDates	2026-06-27 2026-06-28	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/briobecca-jfl-opening-match-2026/	【浦安市】ブリオベッカ、JFL開幕カード決定	2026-06-19	eventDate	2026-08-29	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-marines-giants-farm-202608/	【浦安市】クラシモスタジアム浦安でロッテ対巨人3連戦を開催	2026-07-14	eventDates	2026-08-07 2026-08-08 2026-08-09	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/briobecca-emperors-cup-tochigi-2026/	【浦安】ブリオベッカ、8月19日に天皇杯で栃木SC戦	2026-08-05	eventDate	2026-08-19	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/marines-giants-farm-urayasu-2026/	【浦安】ロッテ対巨人のファーム公式戦、8月9日まで	2026-08-07	eventDate	2026-08-07/2026-08-09	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/all-japan-id-volleyball-urayasu-2026/	【浦安】全日本IDバレー選手権、8月9・10日に開催	2026-08-08	eventDate	2026-08-09/2026-08-10	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-high-school-baseball-autumn-2026/	【浦安】秋季高校野球予選を8月16日から開催　東海大浦安も登場	2026-08-15	eventDate	2026-08-16/2026-08-19	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/bardral-urayasu-nagoya-free-invitation-20260905/	【浦安市】バルドラール浦安、名古屋戦に市民200人無料招待	2026-08-18	eventDate	2026-09-05	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-boccia-open-2026/	【浦安市】市民ボッチャ大会、11月14日開催	2026-09-04	eventDate	2026-11-14	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-d-rocks-preseason-2026/	【浦安】D-Rocks、浦安Dパークでプレシーズン戦を有観客開催	2026-09-07	eventDates	2026-09-25 2026-10-10 2026-10-17 2026-10-23 2026-11-21	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/bardral-urayasu-keiyo-team6-10th-anniversary-20260913/	【浦安市】バルドラール大阪戦でKEIYO TEAM6+10周年企画	2026-09-08	eventDate	2026-09-13	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-d-rocks-national-stadium-2027/	【浦安】D-Rocks、国立競技場でリーグ戦2試合開催	2026-09-09	eventDates	2027-01-22 2027-02-05	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-criterium-2026-entry/	【浦安市】第3回浦安クリテリウム、11月28日開催へ	2026-09-15	eventDate	2026-11-28	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-d-rocks-preseason-free-invitation/	【浦安】D-Rocks、Dパーク5試合を抽選で無料招待	2026-09-19	eventDates	2026-10-10 2026-10-17 2026-10-23 2026-11-21	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/urayasu-d-rocks-national-stadium-invitation/	【浦安】D-Rocks、国立競技場の2試合に3万人を抽選で無料招待	2026-10-02	eventDates	2027-01-22 2027-02-05	試合（予告）	match	試合・大会の予告。日付は試合日（追加前に本文で確認）
+/posts/浦安d-rocks首位埼玉wkを逆転撃破第17節で連敗12で/	浦安D-Rocks、首位・埼玉WKを逆転撃破！第17節で連敗12でストップ	2026-05-02	eventDate	2026-05-01	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/浦安市東学浦安春季千葉県大会で創部初の/	【浦安市】東学浦安、春季千葉県大会で創部初の準優勝！関東大会出場へ	2026-05-06	eventDate	2026-05-03	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/浦安市ブリオベッカ浦安市川がホームで2-1/	【浦安市】ブリオベッカ浦安・市川がPK戦制しホームで勝利｜2026JFLカップ第6節	2026-05-08	eventDate	2026-05-02	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/浦安市ブリオベッカ浦安市川が天皇杯出場/	【浦安市】ブリオベッカ浦安・市川が天皇杯出場決定！決勝でFC GRASION東葛に4-1快勝	2026-05-10	eventDate	2026-05-10	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/浦安d-rocks最終節も勝利で入替戦へ対戦相手/	【浦安】D-Rocks、最終節も勝利で入替戦へ｜対戦相手は清水建設江東ブルーシャークス	2026-05-11	eventDates	2026-05-10 2026-05-23 2026-05-30	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/wanpaku-sumo-urayasu-2026/	第38回わんぱく相撲浦安場所が5月9日に開催されました【バルドラール浦安アリーナ】	2026-05-12	eventDates	2026-05-09	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/briobecca-jflcup-final-2026/	ブリオベッカ浦安・市川、JFL CUP最終節は0-2で敗戦——秋春制新シーズンへ	2026-05-24	eventDate	2026-05-17	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/d-rocks-replacement-match-1-win/	浦安D-Rocks、入替戦第1戦を37-15で制しD1残留へ前進	2026-05-24	eventDate	2026-05-23	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-2026-27-sec1-win/	【浦安市】バルドラール浦安、Fリーグ2026-27開幕戦を4-2で制し白星発進！	2026-05-31	eventDate	2026-05-30	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/d-rocks-d1-survival-2026/	【浦安市】浦安D-Rocks、入替戦2連勝でD1残留確定！石井魁が4トライの活躍	2026-05-31	eventDate	2026-05-30	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-kitakyushu-20260606/	【浦安市】バルドラール浦安が北九州に5-2で勝利	2026-06-08	eventDate	2026-06-06 2026-06-13	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-lasbonitas-saitama-20260613/	【浦安市】ラス・ボニータス、開幕戦11-0勝利	2026-06-14	eventDate	2026-06-13	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-primero-hokkaido-20260613/	【浦安市】バルドラール浦安、北海道に6-2勝利	2026-06-14	eventDate	2026-06-13	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-defio-20260620-result/	【浦安市】バルドラール浦安デフィオが3-1で勝利	2026-06-21	eventDate	2026-06-20	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-lasbonitas-ryukei-20260621-result/	【浦安市】ラス・ボニータスが16-0で大勝	2026-06-22	eventDate	2026-06-21	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-oita-20260621-result/	【浦安市】バルドラール浦安、大分に2-3で敗れる	2026-06-22	eventDate	2026-06-21	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-las-bonitas-minerva-ube-20260627/	【浦安】ラス・ボニータスが7-1で快勝	2026-06-29	eventDate	2026-06-27	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-fuga-sumida-20260627/	【浦安】バルドラール浦安がホームで3-2勝利	2026-06-29	eventDate	2026-06-27	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-osaka-20260704/	【浦安市】バルドラール浦安が大阪と引き分け	2026-07-05	eventDate	2026-07-04	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-bonitas-hokkaido-20260704/	【浦安市】ラス・ボニータスが北海道に9-0勝利	2026-07-06	eventDate	2026-07-04	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-shonan-20260710-result/	【浦安市】バルドラール浦安、湘南と1-1で引き分け	2026-07-12	eventDate	2026-07-10	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-segundo-tochigi-20260711-result/	【浦安市】バルドラール浦安セグンドが4-0勝利	2026-07-13	eventDate	2026-07-11	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-segundo-higashikurume-20260719/	【浦安市】バルドラール浦安セグンドが東久留米に2-0勝利	2026-07-21	eventDate	2026-07-19	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-bonitas-shonan-20260719/	【浦安市】ラス・ボニータスが湘南に5-1勝利	2026-07-21	eventDate	2026-07-19	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-tercero-national-u18-first-match-2026/	【浦安市】テルセーロが全国大会初戦で7-0勝利	2026-07-24	eventDate	2026-07-23	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-tercero-group-stage-first-2026/	【浦安市】テルセーロが3連勝で決勝トーナメント進出	2026-07-25	eventDate	2026-07-24	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-las-bonitas-fukui-maruoka-20260725/	【浦安市】ラス・ボニータスが福井丸岡に4-0勝利	2026-07-26	eventDate	2026-07-25	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-shinagawa-20260803/	【浦安】バルドラール浦安、しながわシティに3-7で敗戦	2026-08-03	eventDate	2026-08-03	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-chulas-first-win-2026/	【浦安】ラス・チュラスが逆転で今季初勝利、葛飾に2-1	2026-08-10	eventDate	2026-08-09	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-segundo-gunma-20260809/	【浦安】バルドラール浦安セグンドが群馬に7-2で勝利	2026-08-11	eventDate	2026-08-09	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-las-chulas-win-20260815/	【浦安】ラス・チュラスが3-0完封、2連勝で勝敗五分に	2026-08-16	eventDate	2026-08-15	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/briobecca-tochigi-emperors-cup-result-2026/	【浦安】ブリオベッカ、天皇杯1回戦で栃木SCに0-2	2026-08-20	eventDate	2026-08-19	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-bonitas-tachikawa-win-20260823/	【浦安】ラス・ボニータスが立川に3-2勝利、開幕8連勝	2026-08-23	eventDate	2026-08-23	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-chulas-viento-20260823/	【浦安】ラス・チュラス、ヴィエントFCに1-2で惜敗	2026-08-24	eventDate	2026-08-23	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-fleague-cup-tachikawa-20260828/	【浦安】バルドラール浦安、Fリーグカップ初戦でPK敗退	2026-08-29	eventDate	2026-08-28	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/briobecca-jfl-minebea-20260829/	【浦安】ブリオベッカ、JFL開幕戦は1-2で黒星	2026-08-30	eventDate	2026-08-29	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-segundo-machida-20260829-result/	【浦安市】セグンドが町田に6-3勝利、本長選手が3得点	2026-08-31	eventDate	2026-08-29	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-nagoya-win-20260905/	【浦安市】バルドラール浦安、首位名古屋に6-3勝利	2026-09-06	eventDate	2026-09-05	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-segundo-cafuringa-20260905/	【浦安】セグンド、東久留米と2-2　無敗で首位維持	2026-09-07	eventDate	2026-09-05	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/briobecca-numazu-20260906/	【浦安】ブリオベッカ、沼津に1-2で敗れ開幕2連敗	2026-09-07	eventDate	2026-09-06	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-bonitas-arco-kobe-20260905/	【浦安】ラス・ボニータス、神戸に4-2勝利で開幕9連勝	2026-09-07	eventDate	2026-09-05	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-chulas-hachioji-20260905/	【浦安】ラス・チュラス、八王子に4-1勝利　4位浮上	2026-09-07	eventDate	2026-09-05	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-osaka-20260913/	【浦安】バルドラール浦安、大阪に5-4で勝利	2026-09-14	eventDate	2026-09-13	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/briobecca-verspah-oita-20260913/	【浦安】ブリオベッカ、大分と0-0で今季初勝点	2026-09-14	eventDate	2026-09-13	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/briobecca-yscc-20260920/	【浦安市】ブリオベッカ浦安・市川、YS横浜に2－5で敗戦	2026-09-21	eventDate	2026-09-20	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/las-bonitas-regular-season-first-202609/	【浦安市】ラス・ボニータスが無敗でレギュラーシーズン1位	2026-09-21	eventDate	2026-09-20	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-segundo-opa-20260923/	【浦安市】バルドラール浦安セグンド、オーパと1-1	2026-09-24	eventDate	2026-09-23	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/briobecca-jlease-20260926/	【浦安】ブリオベッカ、ジェイリースFCに0-2で敗戦	2026-09-26	eventDate	2026-09-26	試合（結果）	match	試合結果の記事。日付は試合日
+/posts/bardral-urayasu-shonan-win-20260926/	【浦安】バルドラール浦安が湘南に3-2勝利、リーグ3連勝	2026-09-27	eventDate	2026-09-26	試合（結果）	match	試合結果の記事。日付は試合日

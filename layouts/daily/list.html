@@ -29,18 +29,23 @@
 {{- range $allPosts }}
   {{- $thumb := partial "cover-image.html" (dict "page" . "size" "thumb" "real" true) }}
   {{- $cat   := index .Params.categories 0 | default "" }}
-  {{- $evDates := slice }}
-  {{- with .Params.eventDate  }}{{- $evDates = $evDates | append . }}{{- end }}
-  {{- range .Params.eventDates }}{{- $evDates = $evDates | append . }}{{- end }}
-  {{- $postsData = $postsData | append (dict
+  {{- /* 日付の解釈は partials/event-dates.html（工程1a PR 3）。サイドバーのカレンダーと同じ日を対象にする。
+         eventDates   : 開催日程の日（14日以下の期間は全日、15日以上は初日と最終日、終了日未定は開始日だけ）
+         notableDates : イベントではない注目の日（notableDate(s)・日付まで確定した shopDate・openDate・closeDate）
+         kind         : 開催日程の種別（event／match／fair。推定しないカテゴリは出さない） */}}
+  {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
+  {{- $item := dict
     "title"      .Title
     "url"        .RelPermalink
     "date"       (.Date.Format "2006-01-02")
-    "eventDates" $evDates
+    "eventDates" $ev.days
     "category"   $cat
     "description" .Description
     "thumb"      $thumb
-  ) }}
+  }}
+  {{- with $ev.notable }}{{ $item = merge $item (dict "notableDates" .) }}{{ end }}
+  {{- with $ev.kind }}{{ $item = merge $item (dict "kind" .) }}{{ end }}
+  {{- $postsData = $postsData | append $item }}
 {{- end }}
 
 <div class="home-layout">
@@ -95,6 +100,7 @@
   const ALL_POSTS = {{ $postsData | jsonify | safeJS }};
   const CAT_CLASS = {{ $catClass | jsonify | safeJS }};
   const CAT_ICON  = {{ $catIcon | jsonify | safeJS }};
+  const KIND_NOTE = { event: '開催日', match: '試合日', fair: '期間中' };
 
   const params   = new URLSearchParams(window.location.search);
   const date     = params.get('date')  || '';
@@ -107,16 +113,19 @@
 
   let dispTitle, matched;
 
-  const hasEvent = (p, key) => (p.eventDates || []).some(d => d === key || d.startsWith(key));
+  // 開催日程の日（eventDates）と、イベントではない注目の日（notableDates）は分けて持つ（工程1a PR 3）
+  const inList     = (list, key) => (list || []).some(d => d === key || d.startsWith(key));
+  const hasEvent   = (p, key) => inList(p.eventDates, key);
+  const hasNotable = (p, key) => inList(p.notableDates, key);
 
   if (month) {
     const [y, m] = month.split('-');
     dispTitle = y + '年' + parseInt(m) + '月の記事';
-    matched = ALL_POSTS.filter(p => p.date.startsWith(month) || hasEvent(p, month));
+    matched = ALL_POSTS.filter(p => p.date.startsWith(month) || hasEvent(p, month) || hasNotable(p, month));
   } else {
     const [y, m, d] = date.split('-');
     dispTitle = y + '年' + parseInt(m) + '月' + parseInt(d) + '日の記事';
-    matched = ALL_POSTS.filter(p => p.date === date || hasEvent(p, date));
+    matched = ALL_POSTS.filter(p => p.date === date || hasEvent(p, date) || hasNotable(p, date));
   }
 
   document.getElementById('daily-title').textContent = dispTitle;
@@ -139,9 +148,13 @@
       : `<div class="article-thumb up-ph ${cls}" aria-hidden="true"><i class="ti ${icon}"></i></div>`;
     const badge     = p.category
       ? `<span class="cat-badge cat-badge-sm ${cls}">${p.category}</span>` : '';
-    // 注目の日バッジ：日別モードのみ・eventDatesに一致・投稿日とは別の場合
-    const eventNote = (!month && hasEvent(p, date) && p.date !== date)
-      ? `<span style="font-size:11px;color:#b85c00;display:block;margin-bottom:3px;"><i class="ti ti-calendar-star" aria-hidden="true"></i> 注目の日</span>` : '';
+    // 日付バッジ：日別モードのみ・投稿日とは別の場合。開催日程に一致すれば種別の文言（種別が無ければ「注目の日」）、
+    // イベントではない注目の日に一致すれば「注目の日」。開催日と店舗・制度などの日を混同しない
+    const noteText  = (month || p.date === date) ? ''
+      : hasEvent(p, date) ? (KIND_NOTE[p.kind] || '注目の日')
+      : hasNotable(p, date) ? '注目の日' : '';
+    const eventNote = noteText
+      ? `<span style="font-size:11px;color:#b85c00;display:block;margin-bottom:3px;"><i class="ti ti-calendar-star" aria-hidden="true"></i> ${noteText}</span>` : '';
     return `<a class="article-card ${cls}" href="${p.url}">
       ${thumbHtml}
       <div class="article-body">
