@@ -19,10 +19,12 @@
   {{- $mk := .Date.Format "2006-01" }}
   {{- $monthCounts = merge $monthCounts (dict $mk (add (index $monthCounts $mk | default 0) 1)) }}
 {{- end }}
+{{- /* 日付は1件ずつ文字列で足す。配列をまるごと append すると、配列の型（[]string か []interface{}）が記事ごとに違うとき、
+       Hugo の版によっては配列が1つの要素として入れ子になる（0.161.1 で発生、0.167.0 では平ら）。1件ずつなら版によらず平らな配列になる */ -}}
 {{- range $allPosts }}
   {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
-  {{- $eventDates = $eventDates | append $ev.days }}
-  {{- $eventDates = $eventDates | append $ev.notable }}
+  {{- range $ev.days }}{{ $eventDates = $eventDates | append (printf "%v" .) }}{{ end }}
+  {{- range $ev.notable }}{{ $eventDates = $eventDates | append (printf "%v" .) }}{{ end }}
 {{- end }}
 {{- $eventDates = $eventDates | uniq | sort }}
 {{- return dict "postDates" $postDates "eventDates" $eventDates "monthCounts" $monthCounts }}
