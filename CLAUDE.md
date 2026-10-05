@@ -87,6 +87,10 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 - 終了通知は、`eventDate` を持つ記事（従来どおり）と、`eventDates` だけを持つ記事のうち種別がある記事に、全日程の最終日の翌日から出す。`eventOngoing: true` と `notableDate(s)` には出さない
 - `/events/`（イベントカレンダー）の掲載は `layouts/partials/event-calendar-eligible.html` で決める（PR 4）。解釈できる開催日があることが前提で、`calendar: false` は除外、`calendar: true` は掲載、それ以外は種別が event・match（1件目のカテゴリ「イベント」からの推定を含む）なら掲載。fair と種別なしは `calendar: true` のときだけ掲載する。`calendar` は種別を書き換えず、`notableDate(s)`・`shopDate` は使わない
 - `/events/` は1記事1行。状態は全日程で判定し（未来の日程が残る間は終了扱いにしない）、日付欄は開催中の期間か次回の日程。2日程以上の記事は「今後の日程：」として、**判定日の時点で残っている日程だけ**（開催中の会期を含む）を要約する（1日程はその日、2〜3日程は列挙、4日程以上は「次回の日程ほか全N日程」）。この要約は `/events/` だけの表示で、記事カード・`/daily/`・サイドバー・終了通知の日付表示は変えない。開催中は終了日の近い順で、`eventOngoing: true`（終了日未定）は開始日を過ぎたら開催中の末尾に置き、開始前・開始後とも「終了日未定」と表示する（終了日を推測しない）。match には「試合」の印を付ける。「今日」は `layouts/partials/date-jst.html` で日本時間（Asia/Tokyo）を明示して求める（ビルド環境のタイムゾーンに左右されない）
+- 開店・閉店年表（`/open-close/`）は `layouts/partials/shop-status.html` で店舗の状態・日付・確度を決める（PR 5）。優先順位は ①記事の `shopStatus`（＋`shopDate`・`shopUnconfirmed`）②`data/openclose.yaml`（新しい `status`・`date`・`unconfirmed`・`count`、無ければ旧 `type`・`when`）③「開店・閉店」カテゴリの legacy 記事に限りタイトルの自動分類（`eventDate` が掲載日より後なら予定とみなす補助つき。`shopUnconfirmed` はタイトルから推定しない）。新規記事をタイトルの正規表現だけで分類する運用にしない
+- 年表の件数は今年（日本時間）の「開店（確認済み）」「閉店（確認済み）」と、日付を過ぎた「リニューアル」。予定・未確認・期間限定出店・休業・営業再開・移転・まとめ・日付不明は数えない。同じ店舗の続報・重複記事は yaml の `count: false` で件数から外す（行は残す。タイトルから同一店舗を推定しない）
+- 年表の並び: `shopDate`（年月日）は日付順、年月だけは同じ月の「日付未定」に、日付不明は最後の「時期未定」に置く（掲載日で代用しない）。予定（`open_planned`・`close_planned`）の予定日を過ぎた行は「予定日経過・未確認」と表示し、自動で開店・閉店にしない（日付は翌日から、年月だけはその月が終わってから。日本時間）。記事に `shopStatus` を書いた予定の記事には、予定日経過の通知も出る
+- `/daily/` は、記事の `shopDate` が日付まで確定しているときだけ、その日のバッジを状態別の文言（開店日・開店予定・閉店日・閉店予定・休業開始・営業再開・リニューアル・移転・期間限定出店。未確認なら「（未確認）」）にする。年月だけ・日付なしは日に置かない。店舗の `shopDate` は `/events/`・Event 構造化データに入れない
 - Event 構造化データは `layouts/partials/event-jsonld-eligible.html` で決める（カレンダーとは別の条件・別の部品。混ぜない）。種別が event・match（推定を含む）で、**`eventLocation` を書いた記事だけ**に出す。`calendar` は見ない。会場は `eventLocation` の値だけ（住所は出さない）、主催者は `organizer` を書いたときだけ出す。「浦安市」などの既定値で補わない。日付は共通の解釈を使い、単日は startDate だけ、期間は startDate・endDate、終了日未定は startDate だけ、複数日程は日程ごとに1つの Event（同じ日程は1回だけ、最大10件）
 
 下表の7項目は、投稿ツールと CI が受け付けて形式を検証する（PR 1a-2）。すべて任意項目。表示への影響は項目によって異なる:
@@ -94,7 +98,7 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 - `eventKind` は記事カードのラベルと `/daily/` の日付バッジに使う（PR 3）
 - `notableDate`・`notableDates`・日付まで確定した `shopDate` は、サイドバーの点灯と `/daily/`（「注目の日」）に使う（`notableDate(s)` は従来からサイドバーが点灯に使っていた。`/daily/` と `shopDate` は PR 3 から）
 - `calendar` はイベントカレンダーの掲載の上書きに使う（PR 4）。`eventKind` はイベントカレンダーと Event 構造化データの対象判定にも使う（PR 4）
-- `shopStatus`・`shopUnconfirmed` は、まだどの表示にも使われていない。開店・閉店年表は、どの新項目も読まない（PR 5 で対応）
+- `shopStatus`・`shopDate`・`shopUnconfirmed` は開店・閉店年表・`/daily/`・予定日経過の通知に使う（PR 5。上の説明）
 
 **記事化プロンプト v20261005β-StageB で、`eventKind`・`notableDate(s)`・`calendar`・`eventLocation`・`organizer` の運用をサイトの実装（PR 3・PR 4）と揃えた。** 店舗系の項目（`shopStatus`・`shopDate`・`shopUnconfirmed`）への全面移行は、開店・閉店年表の対応（PR 5）の完了後に行う（`docs/audits/phase1a-new-fields-report.md` 第9章）。
 
@@ -103,9 +107,9 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 | `eventKind` | `event`／`match`／`fair` | 開催日の種別（催し・講座／試合・大会／期間限定フェア・販売） | 記事カードのラベル（開催／試合日／期間）、`/daily/` の日付バッジ、イベントカレンダーと Event 構造化データの対象（event・match） |
 | `notableDate` | `"YYYY-MM-DD"` | イベントではない注目の日（制度の開始日・告知の対象日・申込期限・休館日など） | サイドバーの点灯（従来から）、`/daily/` |
 | `notableDates` | `"YYYY-MM-DD"` のリスト | 同上（複数） | 同上 |
-| `shopStatus` | `open`／`open_planned`／`close`／`close_planned`／`temp_close`／`reopen`／`renewal`／`move`／`feature` | 店舗の状態 | なし |
-| `shopDate` | `"YYYY-MM-DD"` または `"YYYY-MM"`（年月だけ） | 店舗の状態が発生する日。年月を月初・月末の日付に読み替えない | 日付まで確定していればサイドバーの点灯と `/daily/`（年月だけのものは使わない） |
-| `shopUnconfirmed` | `true`／`false`（引用符なし） | 求人で判明・「〜か」など未確定の情報 | なし |
+| `shopStatus` | `open`／`open_planned`／`close`／`close_planned`／`temp_close`／`reopen`／`renewal`／`move`／`feature`／`popup`（期間限定出店。PR 5 で追加） | 店舗の状態 | 開店・閉店年表の区分と件数、`/daily/` の文言 |
+| `shopDate` | `"YYYY-MM-DD"` または `"YYYY-MM"`（年月だけ） | 店舗の状態が発生する日。年月を月初・月末の日付に読み替えない | 年表の時期と並び。日付まで確定していればサイドバーの点灯と `/daily/`（年月だけのものは日に置かない） |
+| `shopUnconfirmed` | `true`／`false`（引用符なし） | 求人で判明・「〜か」など未確定の情報 | 年表で「出店予定（未確認）」などと表示し、件数に数えない。`/daily/` に「（未確認）」 |
 | `calendar` | `true`／`false`（引用符なし） | イベントカレンダー掲載の記事単位の上書き | `true` で掲載（fair・種別なしも）、`false` で除外。Event 構造化データには影響しない |
 
 Event 構造化データ用の任意項目（PR 4。投稿ツールと CI が検証する）:
@@ -115,7 +119,8 @@ Event 構造化データ用の任意項目（PR 4。投稿ツールと CI が検
 | `eventLocation` | 文字列（会場名だけ・80文字まで） | Event 構造化データの会場名。**書いた記事にだけ Event 構造化データを出す**。未定・不明のときは書かない |
 | `organizer` | 文字列（主催者名だけ・80文字まで） | Event 構造化データの主催者。書いたときだけ出す |
 
-- 予定日が過ぎても `shopStatus` を自動で `open`・`close` に変えない（開店・閉店を確認したら記事を更新する）
+- 予定日が過ぎても `shopStatus` を自動で `open`・`close` に変えない（開店・閉店を確認したら記事を更新する）。予定日を過ぎた予定は CI の Summary に「店舗の予定日経過・未確認」として一覧が出る（失敗にはしない）
+- `data/openclose.yaml` の新しい項目（PR 5）: `status`（上の10種類）・`date`（`shopDate` と同じ形式）・`unconfirmed`（真偽値）・`count`（`false` で件数から外す）。`status` を書いた行は `date` だけを時期に使う（旧 `when` は使わない）。値は CI が検証する
 - 規則とエラーコードの一覧は [scripts/validate/README.md](scripts/validate/README.md)
 
 ## ファイル構成メモ

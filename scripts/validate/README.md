@@ -12,6 +12,7 @@
 | `scripts/validate/known-issues.json` | **既存の不備リスト**。ここに載っている不備は失敗にしない（新しい不備だけを失敗にする） |
 | `scripts/validate/test/run-tests.mjs` | ルールのテスト（BOM・CRLF・インライン配列・日付・衝突など）と既存記事の回帰テスト |
 | `scripts/validate/test/event-dates-hugo.mjs` | 表示側の日付解釈（`layouts/partials/event-dates.html` ほか、工程1a PR 3）のテスト。最小の Hugo サイトで85通りを確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
+| `scripts/validate/test/open-close-hugo.mjs` | 開店・閉店年表と店舗の状態（工程1a PR 5）のテスト。最小の Hugo サイトで41記事分（10種類の状態・年月日／年月／日付なし・予定日経過・yaml の上書きと `count: false`・legacy のタイトル分類）を確かめ、`/daily/` の文言（生成された script を実行）・サイドバーの点灯・`/events/` と Event JSON-LD に入らないこと・日本時間の境目も確かめる。Hugo が必要。`pr-check.yml` で実行する |
 | `scripts/validate/test/events-hugo.mjs` | イベントカレンダー（`/events/`）の掲載・状態・並び順と Event 構造化データ（工程1a PR 4）のテスト。最小の Hugo サイトで25記事分を確かめ、判定する時刻を固定して日本時間の日付の境目（0時・15時・23時59分・年の境目、環境変数 TZ を4通り）も確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
 | `.github/workflows/hugo.yml` の `validate` ジョブ | push・schedule・手動実行のたびに上記を実行 |
 | `.github/workflows/pr-check.yml` | Pull Request 時にビルド（本番と同じオプション）・Pagefind・検証を実行。**デプロイはしない**。Hugo／Pagefind の版は hugo.yml と揃える |
@@ -63,7 +64,7 @@
 | `eventKind` | `event`／`match`／`fair` | `EVENTKIND_INVALID`（それ以外の値・空・真偽値） |
 | `notableDate` | `"YYYY-MM-DD"`（単日。期間・時刻・リストは不可） | `NOTABLEDATE_FORMAT`・`_INVALID`・`_EMPTY`・`_SPACED`・`_SEPARATOR`・`_RANGE_NOT_ALLOWED` |
 | `notableDates` | `"YYYY-MM-DD"` のリスト | `NOTABLEDATES_NOT_LIST`（文字列だと Hugo のサイドバーでビルドが止まる）・`_EMPTY`・要素ごとの `_FORMAT`・`_INVALID` 等 |
-| `shopStatus` | `open`／`open_planned`／`close`／`close_planned`／`temp_close`／`reopen`／`renewal`／`move`／`feature` | `SHOPSTATUS_INVALID` |
+| `shopStatus` | `open`／`open_planned`／`close`／`close_planned`／`temp_close`／`reopen`／`renewal`／`move`／`feature`／`popup`（PR 5 で追加） | `SHOPSTATUS_INVALID` |
 | `shopDate` | `"YYYY-MM-DD"` または `"YYYY-MM"`（年月だけ。月初・月末に読み替えない） | `SHOPDATE_FORMAT`・`_INVALID`（13月・2月30日等）・`_EMPTY` |
 | `shopUnconfirmed` | 真偽値 `true`／`false`（引用符なし） | `SHOPUNCONFIRMED_NOT_BOOLEAN`（`"true"` は文字列なのでエラー） |
 | `calendar` | 真偽値 `true`／`false`（引用符なし） | `CALENDAR_NOT_BOOLEAN` |
@@ -82,6 +83,20 @@ Event 構造化データは `eventLocation` が書かれた記事にだけ出し
 | 警告 | `EVENTLOCATION_LONG`・`ORGANIZER_LONG` | 80文字を超える（会場名・主催者名だけを書く） |
 
 更新時は開催日と同じく、値を変えていない項目のエラーは警告に下げる。既存記事でこの2項目を持つのは各1本（浦安市花火大会2026）で、不備は無い（2026-10-05 時点）。
+
+### 店舗の状態の整合（工程1a PR 5）
+
+形式（語彙・`shopDate`・`shopUnconfirmed`）のエラーは上の表のとおり。食い違いは警告だけ（投稿・公開は止めない）。日付は日本時間。
+
+| コード | 内容 |
+|---|---|
+| `SHOPSTATUS_MISSING` | 「開店・閉店」カテゴリの新規記事に `shopStatus` が無い。`date` が `SHOP_STATUS_FROM`（2026-10-07）以降の記事だけ（それより前の既存記事は年表が yaml・タイトルから分類するので警告しない）。更新は対象外 |
+| `SHOP_FIELDS_WITHOUT_STATUS` | `shopDate`・`shopUnconfirmed` があるのに `shopStatus` が無い |
+| `SHOP_CONFIRMED_FUTURE` | `open`・`close`（確認済み）なのに `shopDate` が未来（年月は翌月以降）。予定なら `open_planned`・`close_planned` |
+| `SHOP_PLANNED_PASSED` | `open_planned`・`close_planned` の予定日を過ぎた（日付は翌日から、年月はその月が終わってから）。CI では Summary の「店舗の予定日経過・未確認」に一覧で出す |
+| `SHOP_UNCONFIRMED_FEATURE` | `feature`（まとめ）に `shopUnconfirmed: true` |
+
+`data/openclose.yaml`（年表のキュレーション）も CI が検証する: `status`・`type` の語彙外・`date` の形式不正（`OPENCLOSE_STATUS_INVALID`・`OPENCLOSE_DATE_INVALID`）、`unconfirmed`・`count` が真偽値でない（`OPENCLOSE_BOOL`）はエラー。記事の無いキーは警告（`OPENCLOSE_ORPHAN`）。`status` が予定で `date` を過ぎたものは「店舗の予定日経過・未確認」に出す。
 
 ## CI の動き（公開は止めない）
 
@@ -128,6 +143,7 @@ ELECTRON_RUN_AS_NODE=1 "/c/Users/kadoh/AppData/Local/Programs/Microsoft VS Code/
 ```bash
 HUGO=/path/to/hugo ELECTRON_RUN_AS_NODE=1 "/c/Users/kadoh/AppData/Local/Programs/Microsoft VS Code/Code.exe" scripts/validate/test/event-dates-hugo.mjs
 HUGO=/path/to/hugo ELECTRON_RUN_AS_NODE=1 "/c/Users/kadoh/AppData/Local/Programs/Microsoft VS Code/Code.exe" scripts/validate/test/events-hugo.mjs
+HUGO=/path/to/hugo ELECTRON_RUN_AS_NODE=1 "/c/Users/kadoh/AppData/Local/Programs/Microsoft VS Code/Code.exe" scripts/validate/test/open-close-hugo.mjs
 ```
 
 ## 将来の選択肢（運営判断）

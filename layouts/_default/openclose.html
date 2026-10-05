@@ -1,67 +1,65 @@
 {{- define "main" }}
 {{- /*
-  開店・閉店 まとめ年表（/open-close/）
-  データソース＝posts の「開店・閉店」カテゴリ全記事。
-  data/openclose.yaml にキュレーション（店名・種別・実施時期・エリア）があればそれを使い、
-  無い記事はタイトルのキーワードから自動分類する（新記事の掲載漏れは起きない）。
+  開店・閉店 まとめ年表（/open-close/）（工程1a PR 5 で改修）
+  - 対象: posts のうち partials/shop-status.html が状態を返す記事（「開店・閉店」カテゴリの記事と、shopStatus を書いた記事）
+  - 状態の決め方: 記事の shopStatus → data/openclose.yaml（status、無ければ旧 type）→ legacy 記事に限りタイトルの自動分類
+  - 並び: 状態の起きる（起きた）年月の新しい順。月の中は日付まで分かる行（新しい順）→「日付未定」（年月だけ）の行。
+    日付の分からない行は掲載日で代用せず、最後の「時期未定」にまとめる
+  - 件数: 今年（日本時間）の「確認済み」の開店・閉店と、リニューアル（日付を過ぎたもの）。
+    予定・未確認（shopUnconfirmed）・期間限定出店・休業・営業再開・移転・まとめは数えない。
+    同じ店舗の続報・重複記事は yaml の count: false で件数から外す（行は残す）
+  - 予定（open_planned・close_planned）の予定日を過ぎた行は「予定日経過・未確認」と表示する（自動で open・close に変えない）
 */ -}}
-{{- $data := hugo.Data.openclose | default dict }}
-{{- $posts := where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" (slice "開店・閉店") }}
-{{- $typeLabel := dict "open" "オープン" "close" "閉店" "renewal" "リニューアル" "move" "移転" "feature" "まとめ" }}
-{{- $entries := slice }}
-{{- range $posts }}
-  {{- $key := "" }}
-  {{- with .File }}{{ $key = .ContentBaseName }}{{ end }}
-  {{- $meta := index $data $key }}
-  {{- $type := "open" }}
-  {{- $shop := .Title }}
-  {{- $when := .Date.Format "2006-01" }}
-  {{- $area := "" }}
-  {{- if $meta }}
-    {{- $type = $meta.type | default "open" }}
-    {{- $shop = $meta.shop | default .Title }}
-    {{- $when = $meta.when | default $when }}
-    {{- $area = $meta.area | default "" }}
-  {{- else }}
-    {{- $t := .Title }}
-    {{- if findRE `移転` $t }}{{ $type = "move" }}
-    {{- else if findRE `リニューアル|改装|再開|新装` $t }}{{ $type = "renewal" }}
-    {{- else if findRE `閉店|休業` $t }}{{ $type = "close" }}
-    {{- else if findRE `まとめ` $t }}{{ $type = "feature" }}
-    {{- end }}
-  {{- end }}
-  {{- $entries = $entries | append (dict
-        "type" $type
-        "shop" $shop
-        "when" $when
-        "area" $area
-        "href" .RelPermalink
-        "pub" (.Date.Format "2006/1/2")
-        "sortkey" (printf "%s|%s" $when (.Date.Format "2006-01-02"))) }}
-{{- end }}
-{{- $entries = sort $entries "sortkey" "desc" }}
-
-{{- /* 今年のオープン/閉店件数 */ -}}
-{{- $year := now.Format "2006" }}
-{{- $openN := 0 }}{{- $closeN := 0 }}{{- $renewN := 0 }}
-{{- range $entries }}
-  {{- if hasPrefix .when $year }}
-    {{- if eq .type "open" }}{{ $openN = add $openN 1 }}
-    {{- else if eq .type "close" }}{{ $closeN = add $closeN 1 }}
-    {{- else if eq .type "renewal" }}{{ $renewN = add $renewN 1 }}
+{{- $now := now }}
+{{- with site.Params.eventsNow }}{{ $now = time.AsTime . }}{{ end }}
+{{- $today := partial "date-jst.html" $now }}
+{{- $year := substr $today 0 4 }}
+{{- $thisMonth := substr $today 0 7 }}
+{{- $label := dict
+    "open" "オープン" "open_planned" "オープン予定" "close" "閉店" "close_planned" "閉店予定"
+    "temp_close" "休業" "reopen" "営業再開" "renewal" "リニューアル" "move" "移転"
+    "feature" "まとめ" "popup" "期間限定出店" }}
+{{- $labelUnconf := dict "open" "オープン（未確認）" "open_planned" "出店予定（未確認）" "close" "閉店（未確認）" "close_planned" "閉店予定（未確認）" }}
+{{- $dated := slice }}{{ $undated := slice }}
+{{- $openN := 0 }}{{ $closeN := 0 }}{{ $renewN := 0 }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- $s := partialCached "shop-status.html" . .RelPermalink }}
+  {{- if $s.status }}
+    {{- $lb := index $label $s.status }}
+    {{- if $s.unconfirmed }}{{ $lb = index $labelUnconf $s.status | default (printf "%s（未確認）" $lb) }}{{ end }}
+    {{- $dateText := "" }}
+    {{- if eq $s.dateKind "day" }}{{ $dateText = (time.AsTime $s.date).Format "1月2日" }}{{ end }}
+    {{- $ym := substr $s.date 0 7 }}
+    {{- $pub := .Date.Format "2006-01-02" }}
+    {{- $e := dict
+          "status" $s.status "cls" (replace $s.status "_" "-") "label" $lb "unconfirmed" $s.unconfirmed
+          "shop" $s.shop "area" $s.area "href" .RelPermalink "pub" (.Date.Format "2006/1/2")
+          "dateKind" $s.dateKind "dateText" $dateText "ym" $ym "passed" $s.passed
+          "sortkey" (printf "%s|%s|%s|%s" $ym (cond (eq $s.dateKind "day") "1" "0") $s.date $pub) "pubkey" $pub }}
+    {{- if $ym }}{{ $dated = $dated | append $e }}{{ else }}{{ $undated = $undated | append $e }}{{ end }}
+    {{- /* 今年の件数（確認済みだけ） */ -}}
+    {{- if and $s.countable (not $s.unconfirmed) (eq (substr $s.date 0 4) $year) }}
+      {{- if eq $s.status "open" }}{{ $openN = add $openN 1 }}
+      {{- else if eq $s.status "close" }}{{ $closeN = add $closeN 1 }}
+      {{- else if eq $s.status "renewal" }}
+        {{- /* リニューアルには予定の値が無いので、日付を過ぎたもの（年月だけなら今月まで）を数える */ -}}
+        {{- if or (and (eq $s.dateKind "day") (le $s.date $today)) (and (eq $s.dateKind "month") (le $s.date $thisMonth)) }}{{ $renewN = add $renewN 1 }}{{ end }}
+      {{- end }}
     {{- end }}
   {{- end }}
 {{- end }}
+{{- $dated = sort $dated "sortkey" "desc" }}
+{{- $undated = sort $undated "pubkey" "desc" }}
 
 <article class="oc-page">
   <header class="oc-header">
     <h1>{{ .Title }}</h1>
     {{- with .Description }}<p class="oc-lead">{{ . }}</p>{{ end }}
-    <div class="oc-stats" aria-label="{{ $year }}年の集計">
-      <span class="oc-stat"><strong>{{ $openN }}</strong> 件のオープン</span>
-      <span class="oc-stat"><strong>{{ $closeN }}</strong> 件の閉店</span>
+    <div class="oc-stats" aria-label="{{ $year }}年の集計（確認済み）">
+      <span class="oc-stat"><strong>{{ $openN }}</strong> 件の開店（確認済み）</span>
+      <span class="oc-stat"><strong>{{ $closeN }}</strong> 件の閉店（確認済み）</span>
       <span class="oc-stat"><strong>{{ $renewN }}</strong> 件のリニューアル</span>
-      <span class="oc-stat-note">（{{ $year }}年・当サイト掲載分）</span>
+      <span class="oc-stat-note">（{{ $year }}年・当サイト掲載分。開店予定・閉店予定・未確認の情報・期間限定出店は含みません）</span>
     </div>
   </header>
 
@@ -69,29 +67,42 @@
 
   <div class="oc-legend" aria-hidden="true">
     <span class="oc-badge oc-open">オープン</span>
+    <span class="oc-badge oc-open-planned">オープン予定</span>
+    <span class="oc-badge oc-open-planned oc-unconfirmed">出店予定（未確認）</span>
     <span class="oc-badge oc-close">閉店</span>
+    <span class="oc-badge oc-close-planned">閉店予定</span>
+    <span class="oc-badge oc-temp-close">休業</span>
+    <span class="oc-badge oc-reopen">営業再開</span>
     <span class="oc-badge oc-renewal">リニューアル</span>
     <span class="oc-badge oc-move">移転</span>
+    <span class="oc-badge oc-popup">期間限定出店</span>
     <span class="oc-badge oc-feature">まとめ</span>
   </div>
 
-  {{- $prev := "" }}
-  {{- range $entries }}
-    {{- if ne .when $prev }}
+  {{- $prev := "" }}{{ $prevKind := "" }}
+  {{- range $dated }}
+    {{- if ne .ym $prev }}
       {{- if ne $prev "" }}</div>{{ end }}
-      {{- $ym := split .when "-" }}
-      <h2 class="oc-month">{{ index $ym 0 }}年{{ int (strings.TrimLeft "0" (index $ym 1)) }}月</h2>
+      {{- $p := split .ym "-" }}
+      <h2 class="oc-month">{{ index $p 0 }}年{{ int (strings.TrimLeft "0" (index $p 1)) }}月</h2>
       <div class="oc-group">
-    {{- $prev = .when }}
+      {{- $prev = .ym }}{{ $prevKind = "" }}
     {{- end }}
-    <a class="oc-row" href="{{ .href }}">
-      <span class="oc-badge oc-{{ .type }}">{{ index $typeLabel .type | default .type }}</span>
-      <span class="oc-shop">{{ .shop }}</span>
-      {{- with .area }}<span class="oc-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
-      <span class="oc-pub">{{ .pub }}掲載</span>
-    </a>
+    {{- if and (eq .dateKind "month") (ne $prevKind "month") }}
+      <h3 class="oc-sub">日付未定</h3>
+    {{- end }}
+    {{- $prevKind = .dateKind }}
+    {{ partial "oc-row.html" . }}
   {{- end }}
   {{- if ne $prev "" }}</div>{{ end }}
+
+  {{- if $undated }}
+  <h2 class="oc-month">時期未定</h2>
+  <p class="oc-sub-note">開店・閉店などの時期が記事から分からないものです（掲載日の新しい順）。</p>
+  <div class="oc-group">
+    {{- range $undated }}{{ partial "oc-row.html" . }}{{ end }}
+  </div>
+  {{- end }}
 
   <div class="oc-footer-cta">
     <a href="/categories/%E9%96%8B%E5%BA%97%E9%96%89%E5%BA%97/">開店・閉店の記事一覧を見る <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
@@ -99,10 +110,28 @@
   </div>
 </article>
 
-{{- /* ItemList 構造化データ（最新30件） */ -}}
+{{- /* ItemList 構造化データ（表示順に先頭30件） */ -}}
 {{- $items := slice }}
-{{- range $i, $e := first 30 $entries }}
+{{- range $i, $e := first 30 ($dated | append $undated) }}
   {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "url" (absURL $e.href) "name" $e.shop) }}
 {{- end }}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "itemListElement" $items | jsonify | safeJS }}</script>
+{{- end }}
+
+{{- /* 1行分の表示（インライン partial） */ -}}
+{{- define "partials/oc-row.html" }}
+    <a class="oc-row" href="{{ .href }}">
+      <span class="oc-badge oc-{{ .cls }}{{ if .unconfirmed }} oc-unconfirmed{{ end }}">{{ .label }}</span>
+      <span class="oc-body">
+        <span class="oc-shop">{{ .shop }}</span>
+        {{- if or .dateText .area .passed }}
+        <span class="oc-meta">
+          {{- with .dateText }}<span class="oc-date">{{ . }}</span>{{ end }}
+          {{- with .area }}<span class="oc-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+          {{- if .passed }}<span class="oc-passed">予定日経過・未確認</span>{{ end }}
+        </span>
+        {{- end }}
+      </span>
+      <span class="oc-pub">{{ .pub }}掲載</span>
+    </a>
 {{- end }}

@@ -1,0 +1,122 @@
+# PR 5 だけを入れた年表（main d62600e2＋PR 5、判定日 2026-10-06 JST）の全行。recStatus は監査の推奨、match は推奨と一致するか（NG は補正 PR の対象）
+href	section	sub	label	cls	shop	date	passed	recStatus	recShopDate	match
+/posts/papabubble-maihama-new-store-2026/	2026年11月		オープン予定	oc-open-planned	【浦安】舞浜に「PAPABUBBLE」出店予定か、求人で判明	11月21日		open_planned	2026-11-21	ok
+/posts/ikspiari-fint-open-20261022/	2026年10月		オープン予定	oc-open-planned	【浦安】イクスピアリに「フィント」10月22日オープン	10月22日		open_planned	2026-10-22	ok
+/posts/ikspiari-saisai-maratan-open-20261019/	2026年10月		オープン予定	oc-open-planned	【浦安】イクスピアリに菜菜麻辣湯、10月19日オープン	10月19日		open_planned	2026-10-19	ok
+/posts/ikspiari-sweets-limited-shops-october-2026/	2026年10月		期間限定出店	oc-popup	【浦安】イクスピアリに限定スイーツ4店、10月1日から出店	10月1日		popup		ok
+/posts/atre-shinurayasu-yanaka-fukumaru-202610/	2026年10月		期間限定出店	oc-popup	【浦安】アトレ新浦安に谷中福丸饅頭、10月1日から限定出店	10月1日		popup		ok
+/posts/zen-place-pilates-urayasu-open-20261001/	2026年10月		オープン予定	oc-open-planned	【浦安】zen place pilatesが10月1日オープン	10月1日	yes	open_planned	2026-10-01	ok
+/posts/gnome-de-taber-nekozane-relocation/	2026年10月		移転	oc-move	【浦安】GNOME de TABER・肉じるや5が猫実へ移転	10月1日		move	2026-10-01	ok
+/posts/hokushinzushi-minamigyotoku-open/	2026年9月		オープン予定	oc-open-planned	【行徳】北辰鮨 南行徳店が9月30日オープン予定	9月30日	yes	open_planned	2026-09-30	ok
+/posts/ikspiari-poeme-popup-2026/	2026年9月		期間限定出店	oc-popup	【浦安】イクスピアリに「母恵夢」期間限定出店	9月28日		popup		ok
+/posts/tadokoro-shoten-shinurayasu-planned/	2026年9月		オープン予定	oc-open-planned	【浦安】鉄鋼通りに「麺場 田所商店 新浦安店」9月下旬オープン予定	9月28日	yes	open	2026-09-28	NG
+/posts/minamigyotoku-koppepan-close-2026/	2026年9月		閉店予定	oc-close-planned	【行徳】南行徳駅「焼きたてコッペ製パン」が9月27日閉店	9月27日	yes	close_planned	2026-09-27	ok
+/posts/ikspiari-nanas-green-tea-reopen-2026/	2026年9月		営業再開	oc-reopen	【浦安】ナナズグリーンティーが9月18日営業再開	9月18日		reopen	2026-09-18	ok
+/posts/ikspiari-tsukemen-tetsu-open-2026/	2026年9月		オープン予定	oc-open-planned	【浦安】イクスピアリに「つけめんTETSU」9月17日オープン	9月17日	yes	open_planned	2026-09-17	ok
+/posts/atre-shinurayasu-oimo-motch-open-202609/	2026年9月		オープン予定	oc-open-planned	【浦安】アトレ新浦安に「OIMO&amp;MOTCH」出店予定か 求人情報で判明	9月17日	yes	open	2026-09-17	NG
+/posts/atre-shinurayasu-sweets-renewal-202609/	2026年9月		リニューアル	oc-renewal	【新浦安】アトレ1Fスイーツ売場、9月17日刷新	9月14日		renewal	2026-09-17	ok
+/posts/296-fukurosoba-gyotoku-open/	2026年9月		オープン	oc-open	【行徳】十割そば「296Fukurosoba」が9月10日オープン	9月10日		open	2026-09-10	ok
+/posts/jizake-wonderland-muyu-gyotoku-open/	2026年9月		オープン	oc-open	【行徳】「地酒のワンダーランド 夢遊」がオープン	9月4日		open	2026-09-04	ok
+/posts/minamigyotoku-shoku-toiro-open/	2026年9月		オープン	oc-open	【行徳】南行徳に定食＆BAR「食TOIRO」がオープン	9月4日		open	2026-09-04	ok
+/posts/atre-shin-urayasu-handmade-gardens-2026/	2026年9月		期間限定出店	oc-popup	【浦安】アトレ新浦安に「ハンドメイドガーデンズ」期間限定出店	9月2日		popup		ok
+/posts/myoden-nail-eyelash-momo-open-202609/	2026年9月		オープン	oc-open	【妙典】Nail&amp;eyelash Momoが9月1日オープン	9月1日		open	2026-09-01	ok
+/posts/neoxia-urayasu-open-20260901/	2026年9月		オープン	oc-open	【浦安】まつげ・ネイルサロン「NEOXIA」がオープン	9月1日		open	2026-09-01	ok
+/posts/ikspiari-limited-shops-september-2026/	2026年9月		期間限定出店	oc-popup	【浦安】イクスピアリに期間限定5店、9月1日から	9月1日		popup		ok
+/posts/d-nest-shin-urayasu-open/	2026年9月		オープン予定	oc-open-planned	【浦安】新浦安駅前に設計者専用「D-NEST」9月開業	9月1日	yes	open_planned	2026-09-01	ok
+/posts/urayasu-zaitaku-neuro-clinic-open/	2026年9月		オープン予定	oc-open-planned	【新浦安】浦安在宅神経内科クリニック、9月1日開院	9月1日	yes	open_planned	2026-09-01	ok
+/posts/atre-shinurayasu-boulmich-temporary-closure/	2026年9月		休業	oc-temp-close	【新浦安】ブールミッシュ、9月1日から一時休業	9月1日		temp_close	2026-09-01	ok
+/posts/atre-shinurayasu-kasei-close-20260820/	2026年8月		閉店予定	oc-close-planned	【新浦安】アトレ「点心・惣菜KASEI」が8月20日閉店	8月20日	yes	close_planned	2026-08-20	ok
+/posts/ikspiari-limited-shops-20260817/	2026年8月		期間限定出店	oc-popup	【浦安】イクスピアリに期間限定3店、8月17日から	8月17日		popup		ok
+/posts/the-golf-base-shinurayasu-open/	2026年8月		オープン	oc-open	【浦安】海楽に「THE GOLF BASE 新浦安レンジ」オープン	8月13日		open	2026-08-13	ok
+/posts/the-golf-base-shinurayasu-open-20260813/	2026年8月		オープン予定	oc-open-planned	【新浦安】THE GOLF BASEが海楽に8月13日開店	8月13日	yes	open_planned	2026-08-13	ok
+/posts/gyotoku-machinocyuuka-kasumi-open-2026/	2026年8月		オープン	oc-open	【行徳】「町の中華 かすみ」が8月9日オープンとの情報	8月9日		open	2026-08-09	ok
+/posts/sushi-yamaguchi-gyotoku-opening-202608/	2026年8月		オープン予定	oc-open-planned	【行徳】鮨やまぐちが8月8日オープン、営業時間も判明	8月8日	yes	open	2026-08-08	NG
+/posts/wamen-zen-horie-open/	2026年8月		オープン	oc-open	【浦安】堀江にラーメン店「和麺 善」がオープン	8月7日		renewal	2026-08-07	NG
+/posts/ichikawa-myoden-ogawa-clinic-open/	2026年8月		オープン	oc-open	【妙典】市川妙典おがわ泌尿器科・内科が8月3日開院	8月3日		open	2026-08-03	ok
+/posts/nishidaba-minami-gyotoku-open/	2026年8月		オープン	oc-open	【南行徳】駅前に「やきとり にしだ場」がオープン	8月3日		open	2026-08-03	ok
+/posts/revoist-urayasu-horie-open-202608/	2026年8月		オープン	oc-open	【浦安】REVOIST浦安堀江店が堀江2丁目に出店	8月1日		open_planned	2026-08-01	NG
+/posts/ikspiari-limited-shops-202608/	2026年8月		期間限定出店	oc-popup	【浦安】イクスピアリに期間限定3店が8月1日登場	8月1日		popup		ok
+/posts/spalab-urayasu-kairaku-open/	2026年8月	日付未定	オープン	oc-open	スペラボ 浦安海楽店（トランクルーム）			open_planned	2026-08-01	NG
+/posts/gyotoku-ishiguro-sanfujinka-close-2026/	2026年7月		閉店	oc-close	【行徳】石黒産婦人科が7月31日閉院との情報	7月31日		close	2026-07-31	ok
+/posts/ikspiari-tokiiro-popup-2026/	2026年7月		期間限定出店	oc-popup	【舞浜】イクスピアリに「TokiiRo」が期間限定出店	7月23日		popup		ok
+/posts/pooch-you-coffee-tomioka-open/	2026年7月		オープン	oc-open	【浦安】富岡に「pooch＋you coffee」がオープン	7月19日		open	2026-07-19	ok
+/posts/ikspiari-club-cpla-open-20260717/	2026年7月		オープン予定	oc-open-planned	【浦安】イクスピアリに「CLUB #C-pla」7月17日オープン	7月17日	yes	open_planned	2026-07-17	ok
+/posts/osouzai-bovi-horie-open/	2026年7月		オープン	oc-open	【浦安】堀江に「おそうざいボビ」がオープン	7月16日		open	2026-07-16	ok
+/posts/urayasu-conditioning-lab-open/	2026年7月		オープン	oc-open	【浦安】猫実に「浦安コンディショニングラボ」がオープン｜整体×ピラティス	7月2日		open	2026-07-02	ok
+/posts/trial-seiyu-urayasu-open/	2026年7月	日付未定	オープン	oc-open	トライアル西友浦安店			renewal	2026-07-10	NG
+/posts/kaitori-daikichi-seiyu-urayasu/	2026年7月	日付未定	オープン	oc-open	買取大吉 西友浦安店（出店予定）			open_planned		NG
+/posts/sagami-mona-shinurayasu-open/	2026年7月	日付未定	オープン	oc-open	さが美 MONA新浦安店			open	2026-06-12	ok
+/posts/curves-aeon-shinurayasu-open/	2026年7月	日付未定	オープン	oc-open	カーブス イオン新浦安店（開店予定）			open_planned	2026-07-21	NG
+/posts/ikspiari-limited-shops-202607/	2026年7月	日付未定	オープン	oc-open	イクスピアリ 期間限定3店舗			popup		NG
+/posts/gongcha-ikspiari-renewal/	2026年7月	日付未定	リニューアル	oc-renewal	ゴンチャ イクスピアリ店（改装再開）			renewal	2026-06-30	ok
+/posts/mav-urayasu-west-grand-open-stores/	2026年7月	日付未定	まとめ	oc-feature	M’av浦安WEST 開業8店舗まとめ			feature	2026-06-30	ok
+/posts/ikspiari-sugary-open-date-20260728/	2026年7月	日付未定	オープン	oc-open	SUGARY（開店日7月28日に決定）			open_planned	2026-07-28	NG
+/posts/atre-shinurayasu-food-renewal-20260709/	2026年7月	日付未定	リニューアル	oc-renewal	アトレ新浦安 1階			renewal	2026-07-09	ok
+/posts/daiso-maruesu-gyotoku-close/	2026年7月	日付未定	閉店	oc-close	ダイソー マルエツ行徳店			close_planned	2026-07-19	NG
+/posts/malatang-tenpo-newcoast-shinurayasu-open/	2026年7月	日付未定	オープン	oc-open	麻辣湯 天宝（出店予定）			open	2026-07-19	ok
+/posts/the-golf-base-shinurayasu-range-open/	2026年7月	日付未定	オープン	oc-open	THE GOLF BASE 新浦安レンジ（夏開業予定）			open_planned		NG
+/posts/maruetsu-gyotoku-close-2026/	2026年7月	日付未定	閉店	oc-close	マルエツ行徳店			close_planned	2026-07-19	NG
+/posts/atre-shin-urayasu-food-renewal-202607/	2026年7月	日付未定	リニューアル	oc-renewal	アトレ新浦安 食品フロア			renewal	2026-07	ok
+/posts/新浦安アトレ新浦安1f食料品ゾーンが7月リニ/	2026年7月	日付未定	リニューアル	oc-renewal	アトレ新浦安 1F食料品ゾーン（クイーンズ伊勢丹など）			renewal	2026-07	ok
+/posts/浦安grand-monday-resort-東京ベイ舞浜7月18日グランドオ/	2026年7月	日付未定	オープン	oc-open	GRAND MONday Resort 東京ベイ舞浜			open_planned	2026-07-18	NG
+/posts/gyotoku-yakitori-takeout-open/	2026年6月	日付未定	オープン	oc-open	焼き鳥テイクアウト店（出店予定）			open_planned	2026-07	NG
+/posts/familymart-shinurayasu-mare-open/	2026年6月	日付未定	オープン	oc-open	ファミリーマート（マーレ新浦安）			open	2026-06	ok
+/posts/kitchen-origin-minami-gyotoku-open/	2026年6月	日付未定	オープン	oc-open	キッチンオリジン 南行徳店			open		ok
+/posts/bambi-drops-kairaku-open/	2026年6月	日付未定	オープン	oc-open	Bambi DROPS			open	2026-06-02	ok
+/posts/nanohana-shokudo-gyotoku-close/	2026年6月	日付未定	閉店	oc-close	なのはな食堂			close_planned	2026-06-28	NG
+/posts/mav-urayasu-west-open-2026/	2026年6月	日付未定	オープン	oc-open	M’av浦安WEST			feature	2026-06-30	NG
+/posts/gyotoku-turkish-restaurant-saray-open/	2026年6月	日付未定	オープン	oc-open	トルコ料理 SARAY			open	2026-06	ok
+/posts/atre-shinurayasu-kurikorean-renewal/	2026年6月	日付未定	リニューアル	oc-renewal	横浜くりこ庵 アトレ新浦安店（再開）			renewal	2026-06-16	ok
+/posts/eyecarelabo-urayasu-open/	2026年6月	日付未定	オープン	oc-open	アイケアLaBo 浦安駅前店			open	2026-06-08	ok
+/posts/ikspiari-sugary-open-2026/	2026年6月	日付未定	オープン	oc-open	SUGARY（イクスピアリ・出店予定）			open_planned		NG
+/posts/gyotoku-horumon-shoryuen-open-2026/	2026年6月	日付未定	オープン	oc-open	ホルモン将龍苑（出店予定）			open_planned	2026-06	NG
+/posts/atre-shinurayasu-wagashi-renewal/	2026年6月	日付未定	リニューアル	oc-renewal	アトレ新浦安の和菓子店（改装休業）			temp_close	2026-06-22	NG
+/posts/20260603-bambi-drops-kaigaku/	2026年6月	日付未定	オープン	oc-open	バンビドロップス（テイクアウトカフェ）			open	2026-06-02	ok
+/posts/urayasu-station-new-open-2026/	2026年6月	日付未定	まとめ	oc-feature	浦安駅周辺 新店まとめ（2026年6〜7月）			feature		ok
+/posts/浦安マーヴ浦安にらめん-きんとうんが6/	2026年6月	日付未定	オープン	oc-open	ら～めん きんとうん（マーヴ浦安・予定）			open_planned	2026-06	NG
+/posts/浦安リンツ-ショコラ-ブティックが北栄エリア/	2026年6月	日付未定	オープン	oc-open	リンツ ショコラ ブティック（出店予定）			open_planned	2026-06	NG
+/posts/浦安オムライス専門店yellow-浦安が2026年6月7/	2026年6月	日付未定	オープン	oc-open	Yellow 浦安（オムライス専門店・予定）			open_planned		NG
+/posts/浦安市浦安駅前に焼肉きんぐが2026年6月下/	2026年6月	日付未定	オープン	oc-open	焼肉きんぐ 浦安駅前店（開店予定）			open_planned	2026-06	NG
+/posts/urayasu-kourai-closed/	2026年5月	日付未定	閉店	oc-close	浦安 幸来（浦安そば）			close	2026-05-29	ok
+/posts/nisyakugosun-urayasuekimae/	2026年5月	日付未定	オープン	oc-open	二尺五寸 浦安駅前店（焼鳥・蕎麦居酒屋）			open_planned		NG
+/posts/浦安西友浦安店が5月31日に一時閉店夏に/	2026年5月	日付未定	リニューアル	oc-renewal	西友浦安店（一時閉店→トライアル西友へ）			temp_close	2026-05-31	NG
+/posts/ドラッグストアスギ薬局-浦安さくら通り店が5/	2026年5月	日付未定	オープン	oc-open	スギ薬局 浦安さくら通り店			open_planned	2026-05-21	NG
+/posts/big-smile-cafe-urayasu-closed-20260430/	2026年4月		閉店	oc-close	【浦安】当代島の「Big Smile CAFE.」が4月30日閉店、今後はイベント出店へ	4月30日		close	2026-04-30	ok
+/posts/舞浜イクスピアリ月島もんじゃモヘジ/	2026年4月	日付未定	オープン	oc-open	月島もんじゃ モヘジ（イクスピアリ）			open	2026-04-28	ok
+/posts/浦安ローソンストア100浦安当代島店が本日4-30/	2026年4月	日付未定	閉店	oc-close	ローソンストア100 浦安当代島店			close	2026-04-30	ok
+/posts/浦安ファミリーマート浦安富士見三丁目店が/	2026年4月	日付未定	閉店	oc-close	ファミリーマート 浦安富士見三丁目店			close	2026-04-30	ok
+/posts/イクスピアリにアサイー専門店sugaryが2026年夏オー/	2026年4月	日付未定	オープン	oc-open	SUGARY（アサイー専門店・2026年夏予定）			open_planned		NG
+/posts/浦安市mona新浦安2fにdenbaラウンジ4月25日オープン/	2026年4月	日付未定	オープン	oc-open	DENBAラウンジ（MONA新浦安）			renewal	2026-04-25	NG
+/posts/浦安市北栄にハンバーガー店perch-dinerが4月21日/	2026年4月	日付未定	オープン	oc-open	PERCH DINER（ハンバーガー）			open	2026-04-21	ok
+/posts/イクスピアリに韓国料理ベジゴーが登場108/	2026年4月	日付未定	オープン	oc-open	韓国料理 ベジゴー（イクスピアリ）			open_planned	2026-04-28	NG
+/posts/稲庭うどんx丼めし金子半之助がイクスピア/	2026年4月	日付未定	オープン	oc-open	金子半之助（イクスピアリ・千葉県初出店）			open_planned	2026-04-21	NG
+/posts/浦安マクドナルド新浦安明海店が明海5丁目に/	2026年4月	日付未定	オープン	oc-open	マクドナルド新浦安明海店			open_planned	2026-06-30	NG
+/posts/中華料理-泰興浦安駅高架下再開発で3月上旬に/	2026年3月	日付未定	移転	oc-move	中華料理 泰興（高架下再開発で移転）			move	2026-03	ok
+/posts/urayasu-daiso-shops/	2026年2月	日付未定	リニューアル	oc-renewal	ダイソー イクスピアリ店（改装・3業態複合店化／市内3店まとめ）			feature		NG
+/posts/ザ-ロイヤルパークホテル舞浜リゾート東京ベイ2026/	2026年2月	日付未定	オープン	oc-open	ザ ロイヤルパークホテル舞浜リゾート東京ベイ			open_planned	2026-02-13	NG
+/posts/いちご飴専門店strawberry-fetishがイクスピアリに8月オー/	2025年8月	日付未定	オープン	oc-open	Strawberry Fetish（いちご飴・出店予定）			open_planned	2025-08	NG
+/posts/イオン新浦安ショッピングセンターにサン/	2025年7月	日付未定	オープン	oc-open	サンリオカフェワゴン（イオン新浦安）			popup	2025-07-18	NG
+/posts/ニューコースト新浦安に精肉専門店肉匠かみむ/	2025年7月	日付未定	オープン	oc-open	肉匠かみむら 新浦安店（精肉）			open_planned	2025-07-10	NG
+/posts/ドンキホーテ西友行徳店がオープン-行徳エリ/	2025年7月	日付未定	オープン	oc-open	ドン・キホーテ 西友行徳店			open	2025-06-30	ok
+/posts/イクスピアリ25周年リニューアル-ディズニースト/	2025年7月	日付未定	リニューアル	oc-renewal	ディズニーストア（新装開店）			renewal	2025-07-06	ok
+/posts/フェリシモのワンピースショップがイクスピアリ/	2025年7月	日付未定	オープン	oc-open	フェリシモ ワンピースショップ（イクスピアリ）			popup		NG
+/posts/tsutaya浦安さくら通り店が7月6日で閉店6月14日から閉/	2025年7月	日付未定	閉店	oc-close	TSUTAYA 浦安さくら通り店			close_planned	2025-07-06	NG
+/posts/一風堂イクスピアリ店-6月27日リニューアルオープ/	2025年6月	日付未定	リニューアル	oc-renewal	一風堂 イクスピアリ店			renewal	2025-06-27	ok
+/posts/ワイズマートディスカ浦安弁天店が6月23日より/	2025年6月	日付未定	閉店	oc-close	ワイズマート＊ディスカ浦安弁天店（長期休業・再開未定）			temp_close	2025-06-23	NG
+/posts/肉処-大久保ニューコースト新浦安閉店/	2025年6月	日付未定	閉店	oc-close	肉処 大久保（ニューコースト新浦安）			close_planned	2025-06-26	NG
+/posts/kissa-sakura-urayasu-renewal-2026/	時期未定		休業	oc-temp-close	【浦安】北栄の「喫茶さくら」が一時休業 年内リニューアル予定			temp_close	2026-09-28	ok
+/posts/myoden-cpla-opening-2026/	時期未定		オープン予定	oc-open-planned	【妙典】「#C-pla」10月下旬出店予定か 求人で判明			open_planned	2026-10	ok
+/posts/yakushima-izakaya-temporary-closure/	時期未定		休業	oc-temp-close	【浦安】北栄の「居酒屋 屋久島」が臨時休業 再開は改めて案内			temp_close		ok
+/posts/yamazaki-shop-shimamura-close-202609/	時期未定		閉店予定	oc-close-planned	【浦安】創業100年超の「ヤマザキショップ島村」が9月末閉店へ			close_planned	2026-09	ok
+/posts/well-pilates-urayasu-open-202611/	時期未定		オープン予定	oc-open-planned	【浦安】WELL PILATESが11月出店予定か			open_planned	2026-11	ok
+/posts/otakaraya-urayasu-open-202609/	時期未定		オープン	oc-open	【浦安】当代島に「おたからや浦安店」9月21日オープン			open	2026-09-21	ok
+/posts/sekachoco-gyotoku-open/	時期未定		オープン予定	oc-open-planned	【行徳】「世界一小さいチョコレート工場」出店予定か			open_planned	2026-11	ok
+/posts/myoden-magical-bake-opening/	時期未定		オープン予定	oc-open-planned	【妙典】「Magical Bake」が10月上旬出店予定か 求人で判明			open_planned	2026-10	ok
+/posts/sundrug-gyotoku-new-store/	時期未定		オープン予定	oc-open-planned	【行徳】旧マルエツ跡にサンドラッグ、11月下旬オープン予定			open_planned	2026-11	ok
+/posts/taimu-urayasu-closed/	時期未定		閉店	oc-close	【浦安】西友浦安1階のたい焼き店「たい夢」が閉店			close		ok
+/posts/eyecity-ichikawa-myoden-open-202609/	時期未定		オープン予定	oc-open-planned	【妙典】アイシティ市川妙典店が9月出店予定、求人で判明			open_planned	2026-09	ok
+/posts/seria-sundrug-gyotoku-open/	時期未定		オープン予定	oc-open-planned	【行徳】サンドラッグ行徳店2階にSeria出店予定			open_planned	2026-10	ok
+/posts/takasu-yoga-pilates-bluva-open/	時期未定		オープン	oc-open	【浦安】高洲で少人数制ヨガ・ピラティス「Bluva」が始動			open		ok
+/posts/caps-clinic-ichikawa-myoden-open/	時期未定		オープン	oc-open	【妙典】キャップスクリニック市川妙典が開院			open	2026-08-01	ok
+/posts/takumi-myoden-seitai-planned-202609/	時期未定		オープン予定	oc-open-planned	【妙典】匠 妙典駅前整体院が9月出店予定か			open_planned	2026-09	ok
+/posts/takumi-shinurayasu-seitai-planned-202610/	時期未定		オープン予定	oc-open-planned	【新浦安】匠 新浦安駅前整体院が10月出店予定か			open_planned	2026-10	ok

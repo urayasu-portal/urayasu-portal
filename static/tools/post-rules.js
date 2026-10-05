@@ -365,17 +365,63 @@
   }
 
   /* ───────────── 新しい日付・店舗情報の項目（工程1a PR 1a-2） ─────────────
-   * 項目を「受け入れて形式を検証する」だけ。現時点では eventKind・shopStatus・shopDate・shopUnconfirmed・calendar を
-   * 表示に使うテンプレートは無い（notableDate(s) だけは、従来からサイドバーのカレンダーが点灯に使っている）。
-   * すべて任意項目で、無いことは警告にしない。カテゴリとの組み合わせ（例: 開店・閉店記事の eventDate）も問わない。
+   * 項目を受け入れて形式を検証する（表示での使い方は CLAUDE.md。eventKind・calendar は PR 3・4、shopStatus・shopDate・
+   * shopUnconfirmed は PR 5 の開店・閉店年表・/daily/ が使う）。shopStatus は PR 5 で popup（期間限定出店）を加えて10種類。
+   * すべて任意項目。店舗の状態の食い違い・新規の開店・閉店記事の shopStatus 無しは、下の checkShopConsistency が警告する。
    *
    * Hugo 0.167.0 で実際にビルドを止める値（2026-10-05 に確認）→ エラー: notableDates がリストでない（サイドバーの range）
    * ビルドは通るが、意図どおりに動かない値 → エラー: 語彙外の値、実在しない日付・年月、日付として読めない値、
    *   真偽値でない shopUnconfirmed・calendar（引用符付きの "true" は文字列）
    */
   var EVENT_KINDS = ['event', 'match', 'fair'];
-  var SHOP_STATUSES = ['open', 'open_planned', 'close', 'close_planned', 'temp_close', 'reopen', 'renewal', 'move', 'feature'];
+  var SHOP_STATUSES = ['open', 'open_planned', 'close', 'close_planned', 'temp_close', 'reopen', 'renewal', 'move', 'feature', 'popup'];
   var NEW_FIELDS = ['eventKind', 'notableDate', 'notableDates', 'shopStatus', 'shopDate', 'shopUnconfirmed', 'calendar'];
+
+  /* ---------- 店舗の状態の整合（工程1a PR 5） ----------
+   * 形式（語彙・shopDate・shopUnconfirmed）は上の checkNewFields がエラーにする。ここは食い違いの警告だけ（投稿・公開は止めない）。
+   *   SHOPSTATUS_MISSING        : 「開店・閉店」カテゴリの新規記事で shopStatus が無い（SHOP_STATUS_FROM 以降の date の記事だけ。
+   *                               それより前の既存記事は年表がタイトルなどから分類するので警告しない）
+   *   SHOP_FIELDS_WITHOUT_STATUS: shopDate・shopUnconfirmed があるのに shopStatus が無い
+   *   SHOP_CONFIRMED_FUTURE     : open・close（確認済み）なのに shopDate が未来（予定なら open_planned・close_planned）
+   *   SHOP_PLANNED_PASSED       : open_planned・close_planned の予定日を過ぎている（自動で open・close にしない。確認できたら更新）
+   *                               日付は翌日から、年月だけならその月が終わってから。日本時間
+   *   SHOP_UNCONFIRMED_FEATURE  : まとめ（feature）に shopUnconfirmed: true
+   */
+  var SHOP_STATUS_FROM = '2026-10-07';
+  function jstToday(now) { return new Date(now + 9 * 3600 * 1000).toISOString().slice(0, 10); }
+  function checkShopConsistency(d, now, isNew, dp) {
+    var out = [];
+    var cats = Array.isArray(d.categories) ? d.categories : (typeof d.categories === 'string' ? [d.categories] : []);
+    var st = d.shopStatus;
+    var postDay = dp && dp.ok ? dp.jst.y + '-' + pad2(dp.jst.m) + '-' + pad2(dp.jst.d) : '';
+    if (st === undefined) {
+      if (isNew && cats.indexOf('開店・閉店') >= 0 && postDay >= SHOP_STATUS_FROM) {
+        out.push({ code: 'SHOPSTATUS_MISSING', msg: '開店・閉店の記事に shopStatus がありません（' + SHOP_STATUSES.join('／') + '）。年表の分類と件数に使います' });
+      }
+      if (d.shopDate !== undefined || d.shopUnconfirmed !== undefined) {
+        out.push({ code: 'SHOP_FIELDS_WITHOUT_STATUS', msg: 'shopDate・shopUnconfirmed があるのに shopStatus がありません。状態（' + SHOP_STATUSES.join('／') + '）を書いてください' });
+      }
+      return out;
+    }
+    if (typeof st !== 'string' || SHOP_STATUSES.indexOf(st) < 0) return out;
+    var today = jstToday(now);
+    var sd = typeof d.shopDate === 'string' ? d.shopDate.trim() : '';
+    var kind = /^\d{4}-\d{2}-\d{2}$/.test(sd) && isRealYmd(sd) ? 'day' : (/^\d{4}-(0[1-9]|1[0-2])$/.test(sd) ? 'month' : '');
+    if (kind) {
+      var future = kind === 'day' ? sd > today : sd > today.slice(0, 7);
+      var passed = kind === 'day' ? sd < today : sd < today.slice(0, 7);
+      if ((st === 'open' || st === 'close') && future) {
+        out.push({ code: 'SHOP_CONFIRMED_FUTURE', msg: 'shopStatus が ' + st + '（確認済み）なのに shopDate（' + sd + '）が未来です。予定なら ' + st + '_planned にしてください' });
+      }
+      if ((st === 'open_planned' || st === 'close_planned') && passed) {
+        out.push({ code: 'SHOP_PLANNED_PASSED', msg: (st === 'open_planned' ? '開店' : '閉店') + '予定日（' + sd + '）を過ぎています（予定日経過・未確認）。' + (st === 'open_planned' ? '開店' : '閉店') + 'を確認できたら shopStatus を ' + st.replace('_planned', '') + ' にし、shopDate を実際の日にしてください' });
+      }
+    }
+    if (st === 'feature' && d.shopUnconfirmed === true) {
+      out.push({ code: 'SHOP_UNCONFIRMED_FEATURE', msg: 'まとめ（feature）に shopUnconfirmed: true が付いています。未確認の印は個別の店舗の状態に付けてください' });
+    }
+    return out;
+  }
 
   function checkVocab(v, field, code, vocab, out) {
     if (v === undefined) return;
@@ -617,6 +663,8 @@
         else add(x.level === 'error' ? errors : x.level === 'warning' ? warnings : info, x.code, x.msg);
       });
     });
+    /* 店舗の状態の食い違い（警告だけ。工程1a PR 5） */
+    checkShopConsistency(d, now, isNew, dp).forEach(function (x) { add(warnings, x.code, x.msg); });
 
     /* lastmod（CLAUDE.md の運用ルール） */
     var hasLastmod = d.lastmod !== undefined && d.lastmod !== '';
@@ -691,6 +739,8 @@
     checkNewFields: checkNewFields,
     EVENT_KINDS: EVENT_KINDS,
     SHOP_STATUSES: SHOP_STATUSES,
+    SHOP_STATUS_FROM: SHOP_STATUS_FROM,
+    checkShopConsistency: checkShopConsistency,
     NEW_FIELDS: NEW_FIELDS,
     EVENT_TEXT_FIELDS: EVENT_TEXT_FIELDS,
     checkEventTextFields: checkEventTextFields,

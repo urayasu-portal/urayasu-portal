@@ -117,7 +117,7 @@ const hugoList = loadHugoList();
 const hugoDups = loadHugoDuplicates();
 const issues = [];            /* { rule, path, msg, severity } */
 const urlEntries = [];
-const stats = { posts: 0, files: allMd.length, futurePosts: [] };
+const stats = { posts: 0, files: allMd.length, futurePosts: [], shopPlannedPassed: [] };
 
 for (const f of allMd) {
   const text = fs.readFileSync(f.abs, 'utf8');
@@ -136,9 +136,55 @@ for (const f of allMd) {
   v.errors.forEach((e) => issues.push({ rule: e.code, path: f.rel, msg: e.msg, severity: 'error' }));
   v.warnings.forEach((w) => {
     if (w.code === 'DATE_FUTURE' || w.code === 'DATE_FAR_FUTURE') stats.futurePosts.push({ path: f.rel, msg: w.msg });
+    if (w.code === 'SHOP_PLANNED_PASSED') stats.shopPlannedPassed.push({ path: f.rel, msg: w.msg });
     issues.push({ rule: w.code, path: f.rel, msg: w.msg, severity: 'warning' });
   });
   if (hugoList && !hl) issues.push({ rule: 'NOT_IN_HUGO_LIST', path: f.rel, msg: 'hugo list に出てこない記事です（Hugo が読み込めていない可能性）', severity: 'error' });
+}
+
+/* data/openclose.yaml（開店・閉店年表のキュレーション）の検証（工程1a PR 5）
+ *   エラー: status・type が語彙外、date が "YYYY-MM-DD"／"YYYY-MM" でない・実在しない、unconfirmed・count が真偽値でない
+ *   警告  : キーに対応する記事が無い（OPENCLOSE_ORPHAN）
+ *   status が open_planned・close_planned で date が過ぎたものは「予定日経過・未確認」の一覧に出す（失敗にはしない） */
+const OC_FILE = path.join(ROOT, 'data/openclose.yaml');
+if (fs.existsSync(OC_FILE)) {
+  const oc = {};
+  let key = null;
+  for (const line of fs.readFileSync(OC_FILE, 'utf8').split(/\r?\n/)) {
+    if (/^\s*#/.test(line) || !line.trim()) continue;
+    let m = /^"?([^"]+?)"?:\s*$/.exec(line);
+    if (m && !/^\s/.test(line)) { key = m[1]; oc[key] = {}; continue; }
+    m = /^\s+(\w+):\s*(.*?)\s*$/.exec(line);
+    if (m && key) {
+      const raw = m[2].replace(/\s+#.*$/, '');
+      oc[key][m[1]] = /^".*"$/.test(raw) ? raw.slice(1, -1) : raw === 'true' ? true : raw === 'false' ? false : raw;
+    }
+  }
+  const P = 'data/openclose.yaml';
+  const todayJst = new Date(NOW + 9 * 3600 * 1000).toISOString().slice(0, 10);
+  const postFiles = new Set(allMd.filter((f) => isPost(f.rel)).map((f) => f.rel.replace(/^content\/posts\//, '').replace(/\.md$/, '')));
+  for (const [k, e] of Object.entries(oc)) {
+    const at = `「${k}」`;
+    if (!postFiles.has(nfc(k))) issues.push({ rule: 'OPENCLOSE_ORPHAN', path: P, msg: `${at} に対応する記事（content/posts/${k}.md）がありません`, severity: 'warning' });
+    for (const field of ['status', 'type']) {
+      if (e[field] !== undefined && !R.SHOP_STATUSES.includes(e[field])) issues.push({ rule: 'OPENCLOSE_STATUS_INVALID', path: P, msg: `${at} の ${field}「${e[field]}」は使えません（${R.SHOP_STATUSES.join('／')}）`, severity: 'error' });
+    }
+    let kind = '';
+    if (e.date !== undefined) {
+      const s = String(e.date);
+      kind = /^\d{4}-\d{2}-\d{2}$/.test(s) && R.isRealYmd(s) ? 'day' : /^\d{4}-(0[1-9]|1[0-2])$/.test(s) ? 'month' : '';
+      if (!kind) issues.push({ rule: 'OPENCLOSE_DATE_INVALID', path: P, msg: `${at} の date「${s}」は "YYYY-MM-DD" または "YYYY-MM" の実在する日付で書いてください`, severity: 'error' });
+    }
+    for (const field of ['unconfirmed', 'count']) {
+      if (e[field] !== undefined && e[field] !== true && e[field] !== false) issues.push({ rule: 'OPENCLOSE_BOOL', path: P, msg: `${at} の ${field} は true または false（引用符なし）で書いてください`, severity: 'error' });
+    }
+    if ((e.status === 'open_planned' || e.status === 'close_planned') && kind) {
+      const d = String(e.date);
+      if (kind === 'day' ? d < todayJst : d < todayJst.slice(0, 7)) {
+        stats.shopPlannedPassed.push({ path: `${P}#${k}`, msg: `${e.status === 'open_planned' ? '開店' : '閉店'}予定日（${d}）を過ぎています（予定日経過・未確認）。確認できたら status を ${e.status.replace('_planned', '')} に` });
+      }
+    }
+  }
 }
 
 /* URL 衝突（Hugo の実 URL ＋ aliases ＋ 明示 url） */
@@ -218,6 +264,7 @@ if (isGha) {
   newCollisions.forEach((c) => console.log(`::error file=${c.files[c.files.length - 1]},title=URL_COLLISION::${esc(c.url + ' を複数のファイルが使っています: ' + c.files.join(' / '))}`));
   newDups.forEach((d) => console.log(`::error title=HUGO_DUPLICATE_PATH::${esc(d + ' に複数のページが出力されています（Hugo の警告）')}`));
   stats.futurePosts.forEach((f) => console.log(`::notice file=${f.path},title=予約投稿::${esc(f.msg)}`));
+  stats.shopPlannedPassed.forEach((f) => console.log(`::notice file=${f.path.replace(/#.*$/, '')},title=予定日経過・未確認::${esc(f.msg)}`));
 }
 const lines = [];
 lines.push('## 記事データの検証結果');
@@ -229,6 +276,7 @@ lines.push(`- 検査対象: content 配下 ${stats.files} ファイル（posts $
 lines.push(`- 新しい不備: ${newErrors.length} 件 / 新しい URL 衝突: ${newCollisions.length} 件 / 新しい重複出力パス: ${hugoDups ? newDups.length + ' 件' : '未検査（--hugo-log なし）'}`);
 lines.push(`- 既知の不備（known-issues.json で許容中）: ${knownErrors.length} 件 / 既知の URL 衝突: ${knownCollisions.length} 件`);
 lines.push(`- 予約投稿（未来の date）: ${stats.futurePosts.length} 本`);
+lines.push(`- 店舗の予定日経過・未確認（開店・閉店を確認したら更新）: ${stats.shopPlannedPassed.length} 件`);
 if (resolvedIssues.length || resolvedCollisions.length || resolvedDups.length) lines.push(`- 解消済み（known-issues.json から削除できます）: 不備 ${resolvedIssues.length} 件 / 衝突 ${resolvedCollisions.length} 件 / 重複パス ${resolvedDups.length} 件`);
 lines.push('');
 if (newErrors.length) {
@@ -250,6 +298,12 @@ if (newDups.length) {
 if (stats.futurePosts.length) {
   lines.push('### 予約投稿（この時刻より後のビルドで公開）');
   stats.futurePosts.forEach((f) => lines.push(`- \`${f.path}\`: ${f.msg}`));
+  lines.push('');
+}
+if (stats.shopPlannedPassed.length) {
+  /* 工程1a PR 5: shopStatus（または data/openclose.yaml の status）が予定のまま予定日を過ぎたもの。失敗にはしない */
+  lines.push('### 店舗の予定日経過・未確認（確認用。公開は止めません）');
+  stats.shopPlannedPassed.forEach((f) => lines.push(`- \`${f.path}\`: ${f.msg}`));
   lines.push('');
 }
 if (knownCollisions.length) {
@@ -276,7 +330,7 @@ if (opt('--summary')) fs.appendFileSync(opt('--summary'), md);
 if (opt('--json')) {
   fs.writeFileSync(opt('--json'), JSON.stringify({
     failed, newErrors, newCollisions, newDups, knownErrors: knownErrors.length, knownCollisions: knownCollisions.map((c) => ({ url: c.url, files: c.files, id: c.meta.id })),
-    resolvedIssues, resolvedCollisions, resolvedDups, futurePosts: stats.futurePosts, warnings: warnCount, collisions
+    resolvedIssues, resolvedCollisions, resolvedDups, futurePosts: stats.futurePosts, shopPlannedPassed: stats.shopPlannedPassed, warnings: warnCount, collisions
   }, null, 2));
 }
 process.exit(failed ? 1 : 0);

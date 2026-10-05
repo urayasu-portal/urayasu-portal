@@ -1,8 +1,16 @@
 # 開店・閉店 年表（/open-close/）のキュレーションデータ
 # キー = content/posts/ のファイル名（拡張子なし = .File.ContentBaseName）
-# type: open（オープン）/ close（閉店・休業）/ renewal（改装・再開）/ move（移転）/ feature（まとめ）
-# when: 実施時期が判明していればその年月、未定・不明なら報道月（YYYY-MM）
-# ここに無い記事は layouts/_default/openclose.html がタイトルから自動分類する（掲載漏れは起きない）
+# 読み取りは layouts/partials/shop-status.html。記事の frontmatter に shopStatus があれば、そちらが優先される
+# shop : 年表の表示名
+# area : エリア
+# type : 旧語彙（後方互換）。open（オープン）/ close（閉店）/ renewal（リニューアル）/ move（移転）/ feature（まとめ）
+# when : 旧項目（後方互換）。実施時期が判明していればその年月、未定・不明なら報道月（YYYY-MM）
+# 以下は工程1a PR 5 で追加（任意。あれば type・when より優先）
+# status      : 状態。open / open_planned / close / close_planned / temp_close / reopen / renewal / move / feature / popup
+# date        : 状態の起きる（起きた）日。"YYYY-MM-DD"（日まで確定）または "YYYY-MM"（月だけ）。下旬・夏などは日付にしない
+# unconfirmed : true なら未確認の情報（求人・第三者情報だけなど）。件数に数えない
+# count       : false なら件数に数えない（同じ店舗・同じ改装の続報・重複記事。年表の行は残る）
+# ここに無い「開店・閉店」カテゴリの記事は、タイトルから自動分類する（legacy 記事のための最後の手段。掲載漏れは起きない）
 "2026-05-19-nisyakugosun-urayasuekimae":
   shop: "二尺五寸 浦安駅前店（焼鳥・蕎麦居酒屋）"
   type: open

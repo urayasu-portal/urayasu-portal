@@ -1,0 +1,105 @@
+{{- /*
+  shop-status.html — 店舗記事の状態・日付・情報の確度を1つにまとめて返す（工程1a PR 5）
+  呼び出し: {{ $s := partialCached "shop-status.html" $page $page.RelPermalink }}
+  分類の優先順位（設計書 docs/audits/phase1a-open-close-design.md 第9章）
+    1. 記事の frontmatter の shopStatus（＋shopDate・shopUnconfirmed）
+    2. data/openclose.yaml のキュレーション（status があれば status、無ければ旧語彙の type。日付は date → 旧 when）
+    3. 1・2 が無い「開店・閉店」カテゴリの記事（legacy）に限り、タイトルの自動分類（下の順で判定）。
+       日付は eventDate（eventDates の初日）を代わりに使い、それが掲載日より後なら予告記事とみなす（open→open_planned、close→close_planned）
+       shopUnconfirmed はタイトルから推定しない
+  返す値（dict）
+    status      : open／open_planned／close／close_planned／temp_close／reopen／renewal／move／feature／popup／""（店舗記事でない）
+    source      : "frontmatter"／"yaml"／"title"／""
+    unconfirmed : 情報が未確認（shopUnconfirmed: true、yaml の unconfirmed: true）。タイトルからは立てない
+    date        : "YYYY-MM-DD"／"YYYY-MM"／""（不明。掲載日で代用しない）
+    dateKind    : "day"／"month"／""
+    dateSource  : "shopDate"／"yaml-date"／"yaml-when"（status の無い旧い行だけ）／"eventDate"／""
+    passed      : 予定（open_planned・close_planned）の予定日が日本時間の今日より前か。
+                  "YYYY-MM-DD" は翌日から、"YYYY-MM" はその月が終わってから経過とする
+    countable   : 件数の対象にしてよいか（yaml の count: false で同じ店舗の続報・重複記事を除く）
+    shop        : 表示名（shopName → yaml の shop → タイトル）
+    area        : yaml の area
+  今日は partials/date-jst.html（日本時間）。site.Params.eventsNow はテスト専用の判定時刻（/events/ と共用）
+*/ -}}
+{{- $p := . }}
+{{- $now := now }}
+{{- with site.Params.eventsNow }}{{ $now = time.AsTime . }}{{ end }}
+{{- $today := partial "date-jst.html" $now }}
+{{- $vocab := slice "open" "open_planned" "close" "close_planned" "temp_close" "reopen" "renewal" "move" "feature" "popup" }}
+{{- $key := "" }}{{ with $p.File }}{{ $key = .ContentBaseName }}{{ end }}
+{{- $meta := "" }}{{ with $key }}{{ $meta = index (hugo.Data.openclose | default dict) . }}{{ end }}
+{{- $cats := $p.Params.categories | default slice }}{{ if not (reflect.IsSlice $cats) }}{{ $cats = slice $cats }}{{ end }}
+{{- $inCat := in $cats "開店・閉店" }}
+
+{{- $status := "" }}{{ $source := "" }}{{ $unconf := false }}{{ $rawDate := "" }}{{ $dateSource := "" }}{{ $countable := true }}
+{{- $fs := printf "%v" ($p.Params.shopStatus | default "") }}
+{{- if in $vocab $fs }}
+  {{- $status = $fs }}{{ $source = "frontmatter" }}
+  {{- $unconf = eq $p.Params.shopUnconfirmed true }}
+  {{- with $p.Params.shopDate }}{{ $rawDate = . }}{{ $dateSource = "shopDate" }}{{ end }}
+{{- else if $meta }}
+  {{- $ys := printf "%v" ($meta.status | default "") }}
+  {{- $yt := printf "%v" ($meta.type | default "") }}
+  {{- if in $vocab $ys }}{{ $status = $ys }}{{ else if in $vocab $yt }}{{ $status = $yt }}{{ end }}
+  {{- if $status }}
+    {{- $source = "yaml" }}
+    {{- $unconf = eq $meta.unconfirmed true }}
+    {{- if eq $meta.count false }}{{ $countable = false }}{{ end }}
+    {{- /* 新しい status を書いた行は date だけを見る（無ければ時期未定）。旧 type だけの行は旧 when（実施月または報道月）を使う */ -}}
+    {{- if in $vocab $ys }}
+      {{- with $meta.date }}{{ $rawDate = . }}{{ $dateSource = "yaml-date" }}{{ end }}
+    {{- else }}
+      {{- with $meta.date }}{{ $rawDate = . }}{{ $dateSource = "yaml-date" }}{{ else }}{{ with $meta.when }}{{ $rawDate = . }}{{ $dateSource = "yaml-when" }}{{ end }}{{ end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- /* 3. legacy 記事のタイトル自動分類（frontmatter・yaml のどちらにも無いときだけ） */ -}}
+{{- if and (not $status) $inCat }}
+  {{- $t := $p.Title }}
+  {{- $status = "open" }}
+  {{- if findRE `閉店していません` $t }}{{ $status = "feature" }}
+  {{- else if findRE `一時休業|臨時休業|一時閉店|改装休業|長期休業|休館|休業` $t }}{{ $status = "temp_close" }}
+  {{- else if or (findRE `営業再開` $t) (and (findRE `再開` $t) (not (findRE `再開発` $t))) }}{{ $status = "reopen" }}
+  {{- else if findRE `移転` $t }}{{ $status = "move" }}
+  {{- else if findRE `リニューアル|改装|新装|刷新|業態転換` $t }}{{ $status = "renewal" }}
+  {{- else if findRE `(閉店|閉院|閉業|営業終了)(予定|へ|か)` $t }}{{ $status = "close_planned" }}
+  {{- else if findRE `閉店|閉院|閉業|営業終了` $t }}{{ $status = "close" }}
+  {{- else if findRE `期間限定|限定出店|限定ショップ|限定.{0,8}[0-9０-９]+店|ポップアップ|(?i:pop ?up)` $t }}{{ $status = "popup" }}
+  {{- else if findRE `まとめ|一覧` $t }}{{ $status = "feature" }}
+  {{- else if findRE `予定|見込み|出店へ|開業へ|オープンへ|か[　\s|｜、]|か$|求人` $t }}{{ $status = "open_planned" }}
+  {{- end }}
+  {{- $source = "title" }}
+  {{- $ev := partialCached "event-dates.html" $p $p.RelPermalink }}
+  {{- with $ev.start }}
+    {{- $rawDate = . }}{{ $dateSource = "eventDate" }}
+    {{- if gt . ($p.Date.Format "2006-01-02") }}
+      {{- if eq $status "open" }}{{ $status = "open_planned" }}{{ else if eq $status "close" }}{{ $status = "close_planned" }}{{ end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- /* 日付の正規化（"YYYY-MM-DD" か "YYYY-MM"。どちらでもない値・実在しない日付は "" ＝不明） */ -}}
+{{- $date := "" }}{{ $dateKind := "" }}
+{{- with $rawDate }}
+  {{- with partial "date-ymd.html" . }}{{ $date = . }}{{ $dateKind = "day" }}
+  {{- else }}
+    {{- $s := trim (printf "%v" $rawDate) " " }}
+    {{- if findRE `^\d{4}-(0[1-9]|1[0-2])$` $s }}{{ $date = $s }}{{ $dateKind = "month" }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- if not $date }}{{ $dateSource = "" }}{{ end }}
+
+{{- $passed := false }}
+{{- if and (in (slice "open_planned" "close_planned") $status) $date }}
+  {{- if eq $dateKind "day" }}{{ $passed = lt $date $today }}{{ else }}{{ $passed = lt $date (substr $today 0 7) }}{{ end }}
+{{- end }}
+
+{{- $shop := $p.Title }}
+{{- with $p.Params.shopName }}{{ $shop = . }}{{ else }}{{ if $meta }}{{ with $meta.shop }}{{ $shop = . }}{{ end }}{{ end }}{{ end }}
+{{- $area := "" }}{{ if $meta }}{{ with $meta.area }}{{ $area = . }}{{ end }}{{ end }}
+
+{{- return dict
+  "status" $status "source" $source "unconfirmed" $unconf
+  "date" $date "dateKind" $dateKind "dateSource" $dateSource "passed" $passed
+  "countable" $countable "shop" $shop "area" $area "today" $today }}

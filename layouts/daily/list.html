@@ -45,6 +45,14 @@
   }}
   {{- with $ev.notable }}{{ $item = merge $item (dict "notableDates" .) }}{{ end }}
   {{- with $ev.kind }}{{ $item = merge $item (dict "kind" .) }}{{ end }}
+  {{- /* 店舗の状態の日（工程1a PR 5）。記事の shopDate が日付まで確定しているときだけ（年月だけ・日付なしは日に置かない）。
+         shopDay は notableDates にも入っている。ここでは日付バッジの文言を状態別にするために持つ */ -}}
+  {{- if .Params.shopStatus }}
+    {{- $s := partialCached "shop-status.html" . .RelPermalink }}
+    {{- if and (eq $s.source "frontmatter") (eq $s.dateKind "day") }}
+      {{- $item = merge $item (dict "shopDay" $s.date "shopStatus" $s.status "shopUnconfirmed" $s.unconfirmed) }}
+    {{- end }}
+  {{- end }}
   {{- $postsData = $postsData | append $item }}
 {{- end }}
 
@@ -101,6 +109,9 @@
   const CAT_CLASS = {{ $catClass | jsonify | safeJS }};
   const CAT_ICON  = {{ $catIcon | jsonify | safeJS }};
   const KIND_NOTE = { event: '開催日', match: '試合日', fair: '期間中' };
+  // 店舗の状態の日の文言（工程1a PR 5）。まとめ（feature）は状態の日ではないので「注目の日」のまま
+  const SHOP_NOTE = { open: '開店日', open_planned: '開店予定', close: '閉店日', close_planned: '閉店予定', temp_close: '休業開始',
+    reopen: '営業再開', renewal: 'リニューアル', move: '移転', popup: '期間限定出店' };
 
   const params   = new URLSearchParams(window.location.search);
   const date     = params.get('date')  || '';
@@ -149,10 +160,12 @@
     const badge     = p.category
       ? `<span class="cat-badge cat-badge-sm ${cls}">${p.category}</span>` : '';
     // 日付バッジ：日別モードのみ・投稿日とは別の場合。開催日程に一致すれば種別の文言（種別が無ければ「注目の日」）、
+    // 店舗の状態の日（shopDate）に一致すれば状態の文言（開店日・閉店予定など。未確認なら「（未確認）」）、
     // イベントではない注目の日に一致すれば「注目の日」。開催日と店舗・制度などの日を混同しない
     const noteText  = (month || p.date === date) ? ''
-      : hasEvent(p, date) ? (KIND_NOTE[p.kind] || '注目の日')
-      : hasNotable(p, date) ? '注目の日' : '';
+      : (hasEvent(p, date) && KIND_NOTE[p.kind]) ? KIND_NOTE[p.kind]
+      : (p.shopDay === date && SHOP_NOTE[p.shopStatus]) ? SHOP_NOTE[p.shopStatus] + (p.shopUnconfirmed ? '（未確認）' : '')
+      : (hasEvent(p, date) || hasNotable(p, date)) ? '注目の日' : '';
     const eventNote = noteText
       ? `<span style="font-size:11px;color:#b85c00;display:block;margin-bottom:3px;"><i class="ti ti-calendar-star" aria-hidden="true"></i> ${noteText}</span>` : '';
     return `<a class="article-card ${cls}" href="${p.url}">
