@@ -1,0 +1,27 @@
+# shopUnconfirmed の候補（true 19本・要確認 6本）
+file	title	recStatus	recShopDate	recUnconfirmed	basis	autoNewUnconf	note
+20260930-myoden-cpla-opening-2026.md	【妙典】「#C-pla」10月下旬出店予定か　求人で判明	open_planned	2026-10	true	求人	true	10月下旬（求人）。施設名非公表
+20260925-well-pilates-urayasu-open-202611.md	【浦安】WELL PILATESが11月出店予定か	open_planned	2026-11	true	求人	true	
+20260920-sekachoco-gyotoku-open.md	【行徳】「世界一小さいチョコレート工場」出店予定か	open_planned	2026-11	true	求人	true	11月中旬（求人）
+20260919-myoden-magical-bake-opening.md	【妙典】「Magical Bake」が10月上旬出店予定か　求人で判明	open_planned	2026-10	true	求人	true	10月上旬（求人）
+20260914-sundrug-gyotoku-new-store.md	【行徳】旧マルエツ跡にサンドラッグ、11月下旬オープン予定	open_planned	2026-11	要確認	不明（本文に根拠の明記なし）		11月下旬予定。正式な開店日は未確認と本文に記載
+20260829-taimu-urayasu-closed.md	【浦安】西友浦安1階のたい焼き店「たい夢」が閉店	close		要確認	第三者・公式フロアガイド		7/10以降営業せず。正式な閉店日は不明
+20260813-eyecity-ichikawa-myoden-open-202609.md	【妙典】アイシティ市川妙典店が9月出店予定、求人で判明	open_planned	2026-09	true	求人	true	
+20260812-gyotoku-machinocyuuka-kasumi-open-2026.md	【行徳】「町の中華 かすみ」が8月9日オープンとの情報	open	2026-08-09	true	第三者メディアのみ	true	店舗公式は未確認と本文に記載
+20260811-gyotoku-ishiguro-sanfujinka-close-2026.md	【行徳】石黒産婦人科が7月31日閉院との情報	close	2026-07-31	true	第三者メディアのみ（院内掲示の報道）	true	閉院。現行は open（タイトルの「閉院」を拾えない）
+20260805-seria-sundrug-gyotoku-open.md	【行徳】サンドラッグ行徳店2階にSeria出店予定	open_planned	2026-10	true	地域メディア・求人		10月下旬
+20260803-takasu-yoga-pilates-bluva-open.md	【浦安】高洲で少人数制ヨガ・ピラティス「Bluva」が始動	open		要確認	不明		「始動」。開始日・所在地の記載が乏しい
+20260731-takumi-myoden-seitai-planned-202609.md	【妙典】匠 妙典駅前整体院が9月出店予定か	open_planned	2026-09	true	求人	true	
+20260729-takumi-shinurayasu-seitai-planned-202610.md	【新浦安】匠 新浦安駅前整体院が10月出店予定か	open_planned	2026-10	true	求人	true	
+20260708-kaitori-daikichi-seiyu-urayasu.md	【浦安】西友浦安店に買取大吉が出店予定か	open_planned		true	求人	true	「2026夏」（求人）。日付に変換しない
+20260627-gyotoku-yakitori-takeout-open.md	【行徳】駅近くに焼き鳥店が出店予定か	open_planned	2026-07	true	求人	true	店名不明
+20260624-daiso-maruesu-gyotoku-close.md	【行徳】ダイソーマルエツ行徳店が7月19日閉店へ	close_planned	2026-07-19	true	第三者メディアのみ		後続記事（20260914 サンドラッグ）で7/19の閉店を確認
+20260623-bambi-drops-kairaku-open.md	【浦安】海楽にBambi DROPSがオープン	open	2026-06-02	true	地域情報サイト		20260603-bambi-drops-kaigaku と同じ店舗
+20260620-maruetsu-gyotoku-close-2026.md	【行徳】マルエツ行徳店が7月19日閉店予定か	close_planned	2026-07-19	true	第三者メディアのみ	true	後続記事（20260914 サンドラッグ）で7/19の閉店を確認
+20260617-gyotoku-turkish-restaurant-saray-open.md	【行徳】トルコ料理SARAYがオープンか	open	2026-06	true	地域メディア・飲食店情報サイト	true	「6月中旬とみられる」→年月
+20260613-gyotoku-horumon-shoryuen-open-2026.md	【行徳】ホルモン将龍苑が出店予定か	open_planned	2026-06	true	地域メディア	true	
+【浦安】マーヴ浦安に「ら～めん-きんとうん」が6.md	【浦安】マーヴ浦安に「ら～めん きんとうん」が6月末オープン予定か	open_planned	2026-06	true	第三者メディアのみ（「見込み」）	true	M’av浦安WEST（6/30開業）の1店
+【浦安】リンツ-ショコラ-ブティックが北栄エリア.md	【浦安】リンツ ショコラ ブティックが北栄エリアに6月オープン予定か	open_planned	2026-06	true	不明（「とみられます」）	true	M’av浦安WEST（6/30開業）の1店
+イクスピアリにアサイー専門店「sugary」が2026年夏オー.md	イクスピアリにアサイー専門店「SUGARY」が2026年夏オープン予定【浦安・舞浜】	open_planned		要確認	不明		「6月〜7月頃（見込み）」。SUGARY の最初の記事
+【浦安】オムライス専門店「yellow-浦安」が2026年6月〜7.md	【浦安】オムライス専門店「Yellow 浦安」が2026年6月〜7月オープン予定｜当代島	open_planned		要確認	不明		「6月〜7月見込み」
+【浦安市】浦安駅前に「焼肉きんぐ」が2026年6月下.md	【浦安市】浦安駅前に「焼肉きんぐ」が2026年6月下旬オープン予定	open_planned	2026-06	要確認	不明（「判明している情報によると」）		M’av浦安WEST（6/30開業）の1店。6月下旬
