@@ -12,6 +12,7 @@ tags:
   - "小中学生"
 description: "浦安市青少年館で2026年11月15日、小学5年生から中学3年生を対象とした無料のJavaScriptゲーム制作ワークショップを開催。オリジナルゲームづくりに挑戦できる少人数講座で、定員は各回6人。申し込みは10月31日までです。"
 eventDate: "2026-11-15"
+eventKind: "event"
 hideEventBox: true
 checkDate: "2026-10"
 sources:

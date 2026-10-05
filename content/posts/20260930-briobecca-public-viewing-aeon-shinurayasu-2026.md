@@ -14,6 +14,7 @@ description: "ブリオベッカ浦安・市川のアウェイ戦を応援する
 eventDates:
   - "2026-10-04"
   - "2026-11-08"
+eventKind: "event"
 hideEventBox: true
 draft: false
 ---

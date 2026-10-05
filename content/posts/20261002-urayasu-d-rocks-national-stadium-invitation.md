@@ -15,6 +15,7 @@ description: "浦安D-Rocksが2027年1月22日と2月5日に国立競技場で�
 eventDates:
   - "2027-01-22"
   - "2027-02-05"
+eventKind: "match"
 hideEventBox: true
 checkDate: "2026-10"
 sources:

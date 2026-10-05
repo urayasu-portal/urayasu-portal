@@ -12,6 +12,7 @@ tags:
   - "パラスポーツ"
 description: "第16回浦安市民ボッチャ大会が2026年11月14日、順天堂大学浦安・日の出キャンパスで開催。2人1組・先着30組で、障がいのない方も条件を満たせば参加できます。申込締切は9月25日です。"
 eventDate: "2026-11-14"
+eventKind: "match"
 hideEventBox: true
 checkDate: "2026-09"
 sources:

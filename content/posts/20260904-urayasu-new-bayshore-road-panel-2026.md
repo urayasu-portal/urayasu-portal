@@ -15,6 +15,7 @@ eventDates:
   - "2026-09-14/2026-09-18"
   - "2026-09-19/2026-09-23"
   - "2026-10-05/2026-10-09"
+eventKind: "event"
 hideEventBox: true
 checkDate: "2026-09"
 sources:

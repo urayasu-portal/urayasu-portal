@@ -12,6 +12,7 @@ tags:
   - "環境"
 description: "浦安市青少年館で10月18日、街のごみ拾いを競技形式で楽しむ「スポGOMI」が開催されます。対象は市内在住・在学の小学1年生から中学3年生で、15チームを募集。参加無料で、9月16日から申し込みを受け付けます。"
 eventDate: "2026-10-18"
+eventKind: "event"
 hideEventBox: true
 checkDate: "2026-09"
 sources:
