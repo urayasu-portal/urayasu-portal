@@ -232,3 +232,12 @@
   translation: "本文是<strong>在{{ .date }}之前发布的预告</strong>。该日期已过，最新情况请以官方网站等为准。"
 - id: event_ended
   translation: "<strong>本活动已结束</strong>（{{ .date }}）。文中内容为举办当时的信息，最新信息请以官方网站为准。"
+# 工程2 Phase 2B-1: ホテル柱記事の厳選ホテルブロック（partials/hotel-pick-cards.html）。pick_rates_on の .asp は予約サービス名
+- id: pick_title
+  translation: "本文介绍的推荐酒店"
+- id: pick_detail
+  translation: "查看详情"
+- id: pick_detail_aria
+  translation: "查看{{ .name }}的详情"
+- id: pick_rates_on
+  translation: "在{{ .asp }}查看房价"
