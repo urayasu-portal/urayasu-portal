@@ -19,7 +19,7 @@ categories:
 <figure class="wp-block-table"><table>
 <tbody>
 <tr><th>名称</th><td>DENBAラウンジ MONA新浦安店</td></tr>
-<tr><th>住所</th><td>千葉県浦安市入船1-5-1 MONA新浦安 2F</td></tr>
+<tr><th>住所</th><td>千葉県浦安市入船1-5-1 MONA新浦安 A館2F</td></tr>
 <tr><th>オープン日</th><td>2026年4月25日（土）</td></tr>
 <tr><th>営業時間</th><td>要確認（公式サイトまたは店頭にてご確認ください）</td></tr>
 <tr><th>最寄り駅</th><td>JR京葉線「新浦安駅」下車すぐ</td></tr>
