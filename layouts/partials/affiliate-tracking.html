@@ -1,17 +1,28 @@
 {{- /* アフィリエイト/予約CTAのクリックをGA4イベント affiliate_click として計測。
        本番のみ・gtag定義時のみ送信。イベント委譲で全ページの動的CTAにも対応。
-       対象: .lg-book-btn（予約/チケットボタン）/ rel="sponsored" / data-aff="1" / 既知ASPドメイン。
+       対象: .lg-book-btn（予約/チケットボタン）/ rel="sponsored" / data-aff="1" /
+             アフィリエイト計測サーバー（AFF_HOSTS）へのリンク。内部リンクは対象外。
+       URL にサービス名（yahoo・trip.com 等）が含まれるだけでは対象にしない（工程3 Phase 3B-4B）。
+       ニュース出典・公式サイトなどの通常リンクを誤計上していたため。
 
        ⚠ バリューコマース LinkSwitch(vcdal.js) は読み込み時に提携広告主リンクを書き換え、
          href を dalr.valuecommerce.com/... に、rel を "nofollow" に差し替える（sponsored が消える）。
-         そのため rel と href だけで判定すると VC 経由のクリックを取りこぼす。
-         → 自前CTAには data-aff / data-asp をサーバー側で付与し、そちらを優先して判定する。
-         → 本文中の素リンク（アソビュー等）は書き換え後 asp='valuecommerce' として計上され、
-           広告主単位の内訳までは取れない（VCの管理画面側で確認する）。 */ -}}
+         → 自前CTAには data-aff / data-asp をサーバー側で付与し、書き換え後も判定できるようにしている。
+         → 本文中の素リンク（じゃらん・アソビュー・成城石井等）は、実際に書き換えられたときだけ
+           計測サーバーのホスト名で対象になる（LinkSwitch が動かず素リンクのままなら収益にならないので送らない）。
+           asp は書き換え後の URL から決めるため、広告主名（jalan 等）か 'valuecommerce' になる。
+           広告主単位の内訳は VC の管理画面側で確認する。
+       Travelpayouts Drive も tp.media のリンクを emrld.ltd に書き換える（rel は残る）。 */ -}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 <script>
 (function () {
-  var KNOWN = ['trip', 'rakuten', 'booking', 'agoda', 'jalan', 'asoview', 'expedia', 'kkday', 'klook', 'yahoo', 'valuecommerce', 'a8'];
+  /* アフィリエイト計測・リダイレクト専用のホスト名（完全一致で判定）。
+     yahoo・trip.com・jalan などの一般サービスのドメインは入れない。 */
+  var AFF_HOSTS = [
+    'dalr.valuecommerce.com', 'ck.jp.ap.valuecommerce.com', 'cks.jp.ap.valuecommerce.com',
+    'px.a8.net', 'hb.afl.rakuten.co.jp', 'tp.media', 'emrld.ltd'
+  ];
+  /* asp パラメータの値を決めるだけに使う（affiliate かどうかの判定には使わない） */
   function aspOf(href) {
     var h = (href || '').toLowerCase();
     if (h.indexOf('trip.com') > -1) return 'trip';
@@ -59,14 +70,18 @@
       });
     }
 
+    /* ここから affiliate_click。上の topic_cta_click・related_click は送信済みなので、
+       以下の return は affiliate_click だけに効く。内部リンクは affiliate_click の対象外 */
+    var host = (a.hostname || '').toLowerCase();
+    if (host === location.hostname) return;
     var isBtn = a.classList.contains('lg-book-btn');
     var isSponsored = (' ' + (a.getAttribute('rel') || '') + ' ').indexOf(' sponsored ') > -1;
     var isTagged = a.getAttribute('data-aff') === '1';
+    var isAffHost = AFF_HOSTS.indexOf(host) > -1;
+    if (!(isBtn || isSponsored || isTagged || isAffHost)) return;
     /* data-asp はサーバー側で埋めた値（記事内CTAは遷移先ホスト、ホテル予約ボタンは予約サービスの正規化名）。
        LinkSwitch に書き換えられても正しい広告主が残る */
     var asp = a.getAttribute('data-asp') || aspOf(href);
-    var known = KNOWN.indexOf(aspOf(href)) > -1;
-    if (!(isBtn || isSponsored || isTagged || known)) return;
     /* 遷移先 URL 全文（link_url）・文言（link_text）・ページのパス（page_path）は送らない（工程3 Phase 3B-3B）。
        URL はアフィリエイト ID やクエリを含み値の種類も多く、文言は翻訳・言い回しで変わり、
        ページのパスは GA4 が全イベントに付ける page_location（標準の「ページパス」）と重複するため。 */
