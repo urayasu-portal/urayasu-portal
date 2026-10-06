@@ -138,7 +138,7 @@
       <div class="lg-book-cta lg-book-cta-inline">
         <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
         <div class="lg-book-btns">
-          {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2) }}
+          {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2 "hotel" $curSlug "pos" "hotel_inline") }}
         </div>
         <div class="lg-book-pr">{{ i18n "includes_pr" }}</div>
       </div>
@@ -228,7 +228,7 @@
     <div class="lg-book-cta">
       <div class="lg-book-cta-title"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</div>
       <div class="lg-book-btns">
-        {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2) }}
+        {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2 "hotel" $curSlug "pos" "hotel_sidebar") }}
       </div>
       <div class="lg-book-pr">{{ i18n "includes_pr" }}</div>
     </div>
@@ -264,7 +264,7 @@
 <div class="lg-mobile-book-bar">
   <span class="lg-mobile-book-bar-label"><i class="ti ti-bed" aria-hidden="true"></i> {{ i18n "check_rates" }}</span>
   <div class="lg-mobile-book-bar-btns">
-    {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2) }}
+    {{- partial "hotel-book-buttons.html" (dict "bk" $bk "lang" $lang "cur2" $cur2 "hotel" $curSlug "pos" "hotel_mobile_bar") }}
   </div>
 </div>
 {{- end }}
