@@ -1,0 +1,33 @@
+# ホテル柱記事の「この記事で紹介したおすすめホテル」ブロック（partials/hotel-pick-cards.html）の厳選リスト。
+# 工程2 Phase 2B-1（2026-10-06）。表示するホテルの唯一の管理元。
+#
+# 運用ルール：
+# - キーは柱記事のファイル名（content/travel-guide/hotels/<キー>.md）。ここに無いページにはブロックを出さない
+# - 値はホテルの slug（data/hotels.yaml の individual_page: true のもの）。表示順はこの並び
+# - 選ぶのは「その記事の本文・まとめで実際に勧めているホテル」だけ。有名・高価格・成約しそう等を理由に選ばない
+# - 1ページ3〜4軒を目安（最大6軒）
+# - 選んだホテルは、表示する全言語の本文で紹介されていること（本文を合わせて書き換えるのではなく、このリストを直す）
+# - 言語ごとに紹介ホテルが違うときだけ langs: で上書きする（例: langs: { en: [slug, ...] }）。不要なら書かない
+# - 予約ボタンは hotel-book-buttons.html の並び順で最初に出せる1社（無いホテルは「詳細を見る」だけ）
+pages:
+  # 子連れ：まとめ「タイプ別・子連れにおすすめのホテル」の観点（近さ／温泉／夜の買い出し／広い部屋）から1軒ずつ。5言語とも本文で紹介
+  kids:
+    hotels:
+      - tdl-hotel
+      - emion-tokyo-bay
+      - hilton-tokyo-bay
+      - lagent-tokyo-bay
+  # 格安：まとめ「目的別・コスパ重視のおすすめ」から（安く＆パーク近く／価格と設備／ディズニー＋東京観光／繁忙期の均一料金）。5言語とも本文で紹介
+  budget:
+    hotels:
+      - mystays-maihama
+      - lagent-tokyo-bay
+      - urayasu-sun-hotel
+      - hotel-daigo-urayasu
+  # ディズニーシー寄り（zh-tw のみ）：冒頭の診断表の代表飯店から、状況の違う4軒（園内直結／海灣站徒歩圏／正門まで徒歩／舞浜駅直結）
+  near-disneysea:
+    hotels:
+      - miracosta
+      - sheraton-grande-tokyo-bay
+      - mystays-maihama
+      - dreamgate-maihama

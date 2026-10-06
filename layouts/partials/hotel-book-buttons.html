@@ -14,12 +14,21 @@
          Trip.com … サイト直接提携（affiliate.tripcom）。CSV Trip.comURL 列の個別ページURLがあればそれを使い、
                     無ければ英語施設名の検索URLへフォールバック。言語別に tw./hk./kr. のリージョナルホストへ切替。
          Booking  … Travelpayouts（bookingP）。未承認のあいだは素URL。
-       hugo.yaml の各IDが未設定のあいだは素のURLで表示される（誤計測防止）。 */ -}}
+       hugo.yaml の各IDが未設定のあいだは素のURLで表示される（誤計測防止）。
+
+       任意の引数（工程2 Phase 2B-1。ホテル柱記事の厳選ホテル partials/hotel-pick-cards.html だけが渡す）:
+         primaryOnly … true ならその言語の並び順で最初に出せる1社だけを出す（無い社は飛ばして次の社）
+         labelKey    … 文言を i18n キーで組み立てる（dict "asp" に社名を渡す。例: 「楽天トラベルで料金を見る」）
+       どちらも渡さない既存の3箇所（hotel_inline／hotel_sidebar／hotel_mobile_bar）の出力は変わらない。
+       URL の組み立てはここだけで行い、ほかの partial に複製しない。 */ -}}
 {{- $bk := .bk }}
 {{- $lang := .lang }}
 {{- $cur2 := .cur2 }}
 {{- $hotel := .hotel }}
 {{- $pos := .pos }}
+{{- $one := .primaryOnly | default false }}
+{{- $lbl := .labelKey | default "" }}
+{{- $done := false }}
 {{- $tp := site.Params.affiliate.travelpayouts | default dict }}
 {{- /* 遷移先OTAの表示通貨（hugo.yaml affiliate.currency の言語別マップ。未定義なら付与しない） */ -}}
 {{- $curr := index (site.Params.affiliate.currency | default dict) $lang | default "" }}
@@ -78,21 +87,21 @@
 {{- end }}
 
 {{- if eq $lang "en" }}
-  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">Agoda</a>{{ end }}
-  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">Booking.com</a>{{ end }}
-  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">Trip.com</a>{{ end }}
+  {{- if and $agodaHref (not $done) }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Agoda") }}{{ else }}Agoda{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $bookingHref (not $done) }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Booking.com") }}{{ else }}Booking.com{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $tripHref (not $done) }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Trip.com") }}{{ else }}Trip.com{{ end }}</a>{{ $done = $one }}{{ end }}
 {{- else if or (eq $lang "zh") (eq $lang "zh-tw") }}
   {{- /* 台湾・華語圏は Agoda の利用率が高いため先頭に。Trip.com は直接提携済みで確実に収益化できるため2番目。 */ -}}
-  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">Agoda</a>{{ end }}
-  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">Trip.com</a>{{ end }}
-  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">Booking.com</a>{{ end }}
+  {{- if and $agodaHref (not $done) }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Agoda") }}{{ else }}Agoda{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $tripHref (not $done) }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Trip.com") }}{{ else }}Trip.com{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $bookingHref (not $done) }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Booking.com") }}{{ else }}Booking.com{{ end }}</a>{{ $done = $one }}{{ end }}
 {{- else if eq $lang "ko" }}
-  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">Agoda</a>{{ end }}
-  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">Booking.com</a>{{ end }}
-  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">Trip.com</a>{{ end }}
-  {{- with $bk.expedia }}<a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="expedia">Expedia</a>{{ end }}
+  {{- if and $agodaHref (not $done) }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Agoda") }}{{ else }}Agoda{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $bookingHref (not $done) }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Booking.com") }}{{ else }}Booking.com{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $tripHref (not $done) }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Trip.com") }}{{ else }}Trip.com{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $bk.expedia (not $done) }}<a class="lg-book-btn book-expedia" href="{{ replace $bk.expedia "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="expedia">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Expedia") }}{{ else }}Expedia{{ end }}</a>{{ $done = $one }}{{ end }}
 {{- else }}
-  {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="rakuten">楽天トラベル</a>{{ end }}
-  {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="jalan">じゃらん</a>{{ end }}
-  {{- with $bk.yahoo }}<a class="lg-book-btn book-yahoo" href="{{ . }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="yahoo">Yahoo!トラベル</a>{{ end }}
+  {{- if and $bk.rakuten (not $done) }}<a class="lg-book-btn book-rakuten" href="{{ $bk.rakuten }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="rakuten">{{ if $lbl }}{{ i18n $lbl (dict "asp" "楽天トラベル") }}{{ else }}楽天トラベル{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $bk.jalan (not $done) }}<a class="lg-book-btn book-jalan" href="{{ $bk.jalan }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="jalan">{{ if $lbl }}{{ i18n $lbl (dict "asp" "じゃらん") }}{{ else }}じゃらん{{ end }}</a>{{ $done = $one }}{{ end }}
+  {{- if and $bk.yahoo (not $done) }}<a class="lg-book-btn book-yahoo" href="{{ $bk.yahoo }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="yahoo">{{ if $lbl }}{{ i18n $lbl (dict "asp" "Yahoo!トラベル") }}{{ else }}Yahoo!トラベル{{ end }}</a>{{ $done = $one }}{{ end }}
 {{- end }}

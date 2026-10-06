@@ -150,7 +150,8 @@
         {{- partial "anchored_headings.html" $content -}}
         {{- else }}{{ $content | safeHTML }}{{ end }}
       </div>
-      {{- end }}
+      {{- end }}{{/* 柱記事の「この記事で紹介したおすすめホテル」。data/hotel_picks.yaml に定義があるページだけ表示し、ホテル個別ページ（$cur2 あり）では呼ばない。
+                   出力の無いページで空白が変わらないよう、この行の末尾に置いている */}}{{ if not $cur2 }}{{ partial "hotel-pick-cards.html" . }}{{ end }}
 
       {{/* ホテル名×設備FAQ（enのみ・hotels_map.yaml flags連動） */}}
       {{- partial "hotel-facility-faq.html" . }}
