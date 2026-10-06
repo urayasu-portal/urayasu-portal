@@ -1,5 +1,11 @@
 {{- /* 予約ボタン一式（<a>タグのみ）。サイドバーCTA・モバイル固定バー・本文内CTAの3箇所で共通利用。
-       引数: bk（data/hotels_map.yaml の booking dict）, lang（言語コード）, cur2（hotels_map.yaml の該当ホテル。name_en参照用）
+       引数: bk（data/hotels_map.yaml の booking dict）, lang（言語コード）, cur2（hotels_map.yaml の該当ホテル。name_en参照用）,
+             hotel（ホテルの slug＝ページの .File.ContentBaseName。言語共通）, pos（表示位置 hotel_inline／hotel_sidebar／hotel_mobile_bar）
+
+       GA4 の affiliate_click 用に各ボタンへ data-hotel・data-cta-pos・data-asp を付ける（工程3 Phase 3B-2。layouts/partials/affiliate-tracking.html が読む）。
+       data-asp は予約サービスの正規化名（agoda／booking／trip／expedia／rakuten／jalan／yahoo）。
+       href を見て推定しないので、LinkSwitch などでリンクが書き換わっても本来の予約サービスで記録される。
+       href・rel・target・文言・順序はこの属性のために変えない。
 
        アフィリエイトの経路（2026-09-13 整理）:
          Agoda    … サイト直接提携（affiliate.agoda.cid）。CSV AgodaURL 列の個別ページURLに ?cid= を付与し、
@@ -12,6 +18,8 @@
 {{- $bk := .bk }}
 {{- $lang := .lang }}
 {{- $cur2 := .cur2 }}
+{{- $hotel := .hotel }}
+{{- $pos := .pos }}
 {{- $tp := site.Params.affiliate.travelpayouts | default dict }}
 {{- /* 遷移先OTAの表示通貨（hugo.yaml affiliate.currency の言語別マップ。未定義なら付与しない） */ -}}
 {{- $curr := index (site.Params.affiliate.currency | default dict) $lang | default "" }}
@@ -70,21 +78,21 @@
 {{- end }}
 
 {{- if eq $lang "en" }}
-  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
-  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
-  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
+  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">Agoda</a>{{ end }}
+  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">Booking.com</a>{{ end }}
+  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">Trip.com</a>{{ end }}
 {{- else if or (eq $lang "zh") (eq $lang "zh-tw") }}
   {{- /* 台湾・華語圏は Agoda の利用率が高いため先頭に。Trip.com は直接提携済みで確実に収益化できるため2番目。 */ -}}
-  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
-  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
-  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
+  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">Agoda</a>{{ end }}
+  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">Trip.com</a>{{ end }}
+  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">Booking.com</a>{{ end }}
 {{- else if eq $lang "ko" }}
-  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener">Agoda</a>{{ end }}
-  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener">Booking.com</a>{{ end }}
-  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener">Trip.com</a>{{ end }}
-  {{- with $bk.expedia }}<a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener">Expedia</a>{{ end }}
+  {{- if $agodaHref }}<a class="lg-book-btn book-agoda" href="{{ $agodaHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="agoda">Agoda</a>{{ end }}
+  {{- if $bookingHref }}<a class="lg-book-btn book-booking" href="{{ $bookingHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="booking">Booking.com</a>{{ end }}
+  {{- if $tripHref }}<a class="lg-book-btn book-trip" href="{{ $tripHref }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="trip">Trip.com</a>{{ end }}
+  {{- with $bk.expedia }}<a class="lg-book-btn book-expedia" href="{{ replace . "expedia.co.jp" "expedia.co.kr" }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="expedia">Expedia</a>{{ end }}
 {{- else }}
-  {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener">楽天トラベル</a>{{ end }}
-  {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener">じゃらん</a>{{ end }}
-  {{- with $bk.yahoo }}<a class="lg-book-btn book-yahoo" href="{{ . }}" target="_blank" rel="sponsored noopener">Yahoo!トラベル</a>{{ end }}
+  {{- with $bk.rakuten }}<a class="lg-book-btn book-rakuten" href="{{ . }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="rakuten">楽天トラベル</a>{{ end }}
+  {{- with $bk.jalan }}<a class="lg-book-btn book-jalan" href="{{ . }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="jalan">じゃらん</a>{{ end }}
+  {{- with $bk.yahoo }}<a class="lg-book-btn book-yahoo" href="{{ . }}" target="_blank" rel="sponsored noopener" data-hotel="{{ $hotel }}" data-cta-pos="{{ $pos }}" data-asp="yahoo">Yahoo!トラベル</a>{{ end }}
 {{- end }}

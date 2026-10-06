@@ -62,18 +62,24 @@
     var isBtn = a.classList.contains('lg-book-btn');
     var isSponsored = (' ' + (a.getAttribute('rel') || '') + ' ').indexOf(' sponsored ') > -1;
     var isTagged = a.getAttribute('data-aff') === '1';
-    /* data-asp はサーバー側で埋めた遷移先ホスト。LinkSwitch に書き換えられても正しい広告主が残る */
+    /* data-asp はサーバー側で埋めた値（記事内CTAは遷移先ホスト、ホテル予約ボタンは予約サービスの正規化名）。
+       LinkSwitch に書き換えられても正しい広告主が残る */
     var asp = a.getAttribute('data-asp') || aspOf(href);
     var known = KNOWN.indexOf(aspOf(href)) > -1;
     if (!(isBtn || isSponsored || isTagged || known)) return;
-    gtag('event', 'affiliate_click', {
+    var params = {
       asp: asp,
       cta_pos: a.getAttribute('data-cta-pos') || '',
       link_url: href,
       link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80),
       page_path: location.pathname,
       page_lang: document.documentElement.lang || 'ja'
-    });
+    };
+    /* ホテル予約ボタン（partials/hotel-book-buttons.html）だけ data-hotel（ホテルの slug）を持つ。
+       ホテル以外のリンクには hotel_id を付けない（空文字も送らない） */
+    var hotelId = a.getAttribute('data-hotel');
+    if (hotelId) params.hotel_id = hotelId;
+    gtag('event', 'affiliate_click', params);
   }, false);
 })();
 </script>
