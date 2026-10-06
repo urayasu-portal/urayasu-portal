@@ -1,0 +1,44 @@
+{{- /*
+  google_analytics.html — Hugo 組み込みの _partials/google_analytics.html を置き換える（工程3 Phase 3B-1）
+  呼び出し: layouts/partials/head.html の {{ partial "google_analytics.html" . }}（head.html は変更しない）
+
+  GA4 は正式本番ホスト（urayasu-portal.com）で表示されたときだけ有効にする。
+  HTML はどのホストでも同一のまま（本番と Cloudflare Pages のバイト比較を壊さない）、ブラウザ実行時にホスト名で判定する。
+  それ以外のホスト（urayasu-portal.pages.dev・Cloudflare Preview・localhost など）では
+  gtag.js を読み込まず、dataLayer・gtag も作らない（affiliate-tracking.html などの typeof gtag === 'function' の判定で送信されない）。
+
+  head.html の出力条件（hugo.IsProduction または params.env == "production"）は meta robots・OGP・schema と共通なので変えない。
+  hugo.yaml の params.env: production により localhost のビルドでもこの部品は呼ばれるため、ホスト名の判定はここで行う。
+
+  組み込みテンプレートと同じ設定を使う（測定 ID は hugo.yaml の googleAnalytics＝services.googleAnalytics.id を読むだけで、ここに書かない）:
+    - privacy.googleAnalytics.disable が true なら何も出さない
+    - privacy.googleAnalytics.respectDoNotTrack（Hugo 0.167.0 の既定は true）が true なら、DNT が有効なブラウザでは初期化しない。
+      組み込みテンプレートは DNT でも gtag.js 自体は読み込んでいたが、ここでは読み込みもしない
+    - UA- で始まる ID は組み込みテンプレートと同じく警告だけ出して何も出力しない
+*/ -}}
+{{- if not site.Config.Privacy.GoogleAnalytics.Disable }}
+  {{- with site.Config.Services.GoogleAnalytics.ID }}
+    {{- if strings.HasPrefix (lower .) "ua-" }}
+      {{- warnf "Google Analytics 4 (GA4) replaced Google Universal Analytics (UA) effective 1 July 2023. Replace the Google Analytics ID with a GA4 ID." }}
+    {{- else }}
+<script>
+(function () {
+  if (window.location.hostname !== "urayasu-portal.com") return;
+  if ({{ site.Config.Privacy.GoogleAnalytics.RespectDoNotTrack }}) {
+    var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+    if (dnt == "1" || dnt == "yes") return;
+  }
+  var id = {{ . }};
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", id);
+})();
+</script>
+    {{- end }}
+  {{- end }}
+{{- end -}}
