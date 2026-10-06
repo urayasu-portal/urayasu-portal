@@ -16,13 +16,19 @@ lastmod: YYYY-MM-DD  # 例: 2026-06-13
 
 ```powershell
 cd "C:\Users\kadoh\OneDrive\ドキュメント\02-2 副業\urayasu-portal"
-hugo --minify
+cmd /c hugo --minify
 git add -A
 git commit -m "メッセージ"
 git push origin main
 ```
 
 GitHub Actions が自動で GitHub Pages にデプロイする。
+
+ローカルの Hugo は本番と同じ **0.167.0 Extended**（winget の `Hugo.Hugo.Extended`、PATH 上）。
+
+- Git Bash・cmd: 通常どおり `hugo --minify`
+- Windows PowerShell 5.1: このWindowsローカル環境では、PowerShell 5.1 から `hugo` を直接実行すると Windows error 5（アクセスが拒否されました）になる（原因は未特定）。`cmd /c hugo --minify` のように `cmd /c` を付けて実行する
+- Claude（プレビュー）・Node から呼ぶテスト・`.claude/launch.json`: PATH 上の Hugo 0.167.0 を使うので追加の設定は不要
 
 ## posts（トピックス）の公開ルール
 
