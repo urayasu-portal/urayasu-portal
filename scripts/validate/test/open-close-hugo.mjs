@@ -4,7 +4,7 @@
  *   node scripts/validate/test/open-close-hugo.mjs            （hugo が PATH にある場合）
  *   HUGO=/path/to/hugo node scripts/validate/test/open-close-hugo.mjs
  * 一時ディレクトリに最小の Hugo サイトを作り、リポジトリの年表・/daily/・/events/ のテンプレートと関連 partial をそのまま使って
- * 判定時刻を固定（site.Params.eventsNow）してビルドし、年表の区分・並び・件数・予定日経過、/daily/ の日付バッジ、
+ * 判定時刻を固定（site.Params.eventsNow）してビルドし、年表の区分・並び・件数（予定日を過ぎても予定のまま、追加の表示なし）、/daily/ の日付バッジ、
  * サイドバーの点灯、/events/ と Event JSON-LD に入らないこと、記事の通知を確かめる。
  * /daily/ は生成された <script> を Node で実行して表示を確かめる。依存ライブラリなし。失敗があれば終了コード 1。
  */
@@ -155,9 +155,9 @@ const EXP = {
   'fm-popup': ['2026年10月', '期間限定出店', '10月1日', false],
   'fm-feature': ['時期未定', 'まとめ', '', false],
   'fm-nodate-open': ['時期未定', 'オープン', '', false],
-  'fm-planned-passed-day': ['2026年10月', 'オープン予定', '10月5日', true],
+  'fm-planned-passed-day': ['2026年10月', 'オープン予定', '10月5日', false], /* 予定日経過でも予定のまま・追加表示なし */
   'fm-planned-month-current': ['2026年10月/日付未定', 'オープン予定', '', false],
-  'fm-planned-month-past': ['2026年9月/日付未定', '閉店予定', '', true],
+  'fm-planned-month-past': ['2026年9月/日付未定', '閉店予定', '', false],
   'fm-open-unconf': ['2026年9月', 'オープン（未確認）', '9月10日', false],
   'fm-invalid-date': ['時期未定', 'オープン', '', false],
   'fm-other-cat': ['2026年9月', 'オープン', '9月2日', false],
@@ -185,7 +185,7 @@ const EXP = {
   'legacy-planned-ka': ['時期未定', 'オープン予定', '', false],
   'legacy-open-future': ['2026年10月', 'オープン予定', '10月19日', false],
   'legacy-open-past': ['2026年9月', 'オープン', '9月4日', false],
-  'legacy-planned-past': ['2026年9月', 'オープン予定', '9月30日', true],
+  'legacy-planned-past': ['2026年9月', 'オープン予定', '9月30日', false],
   'legacy-nodate': ['時期未定', 'オープン', '', false],
 };
 for (const [slug, [section, label, date, passed]] of Object.entries(EXP)) {
@@ -195,9 +195,17 @@ for (const [slug, [section, label, date, passed]] of Object.entries(EXP)) {
     if (r.section !== section) e.push('区分: 期待 ' + section + ' 実際 ' + r.section);
     if (r.label !== label) e.push('ラベル: 期待 ' + label + ' 実際 ' + r.label);
     if (r.date !== date) e.push('日付: 期待「' + date + '」 実際「' + r.date + '」');
-    if (r.passed !== passed) e.push('予定日経過: 期待 ' + passed + ' 実際 ' + r.passed);
+    if (r.passed !== passed) e.push('予定日経過の追加表示: 期待 ' + passed + ' 実際 ' + r.passed);
   });
 }
+check('「予定日経過・未確認」の表示が年表に1件も無い（2026-10 に廃止）', (e) => {
+  const h = get('open-close/index.html');
+  if (/予定日経過/.test(h)) e.push('「予定日経過」の文字列がある');
+  if (/oc-passed/.test(h)) e.push('oc-passed の要素がある');
+});
+check('予定日を過ぎた予定は open・close に自動で変わらない（予定のラベル・件数外のまま）', (e) => {
+  for (const s of ['fm-planned-passed-day', 'fm-planned-month-past', 'legacy-planned-past']) if (!/予定/.test(oc.rows[s].label)) e.push(s + ' のラベルが ' + oc.rows[s].label);
+});
 check('年表に載らない記事（イベント・お知らせ）', (e) => { for (const s of ['event-article', 'notice-only']) if (oc.rows[s]) e.push(s + ' が年表にある'); });
 check('yaml の shop が表示名になる・frontmatter があれば yaml の状態より優先', (e) => {
   if (oc.rows['yaml-type'].shop !== '店S（キュレーション名）') e.push('yaml-type の表示名 ' + oc.rows['yaml-type'].shop);
@@ -265,10 +273,13 @@ check('記事の通知: shopStatus の予定日経過だけに店舗の通知（
 });
 
 // ---- 日本時間の境目（10/31 の予定・2026-10 の予定） ----
-for (const [now, label, passed] of [['2026-10-31T14:59:59Z', 'JST 10/31 23:59:59', false], ['2026-10-31T15:00:01Z', 'JST 11/1 00:00:01（UTC は 10/31）', true]]) {
+for (const [now, label] of [['2026-10-31T14:59:59Z', 'JST 10/31 23:59:59'], ['2026-10-31T15:00:01Z', 'JST 11/1 00:00:01（UTC は 10/31）']]) {
   const o = parseOC(build(now)('open-close/index.html'));
-  check('予定日経過の境目: ' + label, (e) => {
-    for (const s of ['fm-close-planned', 'fm-planned-month-current']) if (o.rows[s].passed !== passed) e.push(s + ': 期待 ' + passed + ' 実際 ' + o.rows[s].passed);
+  check('予定日の境目の前後とも予定のまま・追加の表示なし: ' + label, (e) => {
+    for (const s of ['fm-close-planned', 'fm-planned-month-current']) {
+      if (o.rows[s].passed) e.push(s + ': 予定日経過の表示が出ている');
+      if (!/予定/.test(o.rows[s].label)) e.push(s + ': 予定でなくなった（' + o.rows[s].label + '）');
+    }
     if (o.stats['開店'] !== 6) e.push('年が変わっていないのに開店の件数が変わった: ' + o.stats['開店']);
   });
 }

@@ -9,7 +9,8 @@
     （shopDate の年。日付が不明でも年が確認できれば yaml の year で示し、「時期未定」の行も数える。年が不明なら数えない）。
     予定・未確認（shopUnconfirmed）・期間限定出店・休業・営業再開・移転・まとめは数えない。
     同じ店舗の続報・重複記事は yaml の count: false で件数から外す（行は残す）
-  - 予定（open_planned・close_planned）の予定日を過ぎた行は「予定日経過・未確認」と表示する（自動で open・close に変えない）
+  - 予定（open_planned・close_planned）は予定日を過ぎても予定のまま表示する（自動で open・close に変えない）。
+    予定日を過ぎたことを示す追加の表示は出さない（「予定日経過・未確認」の表示は 2026-10 に廃止）
 */ -}}
 {{- $now := now }}
 {{- with site.Params.eventsNow }}{{ $now = time.AsTime . }}{{ end }}
@@ -35,7 +36,7 @@
     {{- $e := dict
           "status" $s.status "cls" (replace $s.status "_" "-") "label" $lb "unconfirmed" $s.unconfirmed
           "shop" $s.shop "area" $s.area "href" .RelPermalink "pub" (.Date.Format "2006/1/2")
-          "dateKind" $s.dateKind "dateText" $dateText "ym" $ym "passed" $s.passed
+          "dateKind" $s.dateKind "dateText" $dateText "ym" $ym
           "sortkey" (printf "%s|%s|%s|%s" $ym (cond (eq $s.dateKind "day") "1" "0") $s.date $pub) "pubkey" $pub }}
     {{- if $ym }}{{ $dated = $dated | append $e }}{{ else }}{{ $undated = $undated | append $e }}{{ end }}
     {{- /* 今年の件数（確認済みだけ）。年は状態変化の年（shopDate の年、日付が無ければ yaml の year）。
@@ -126,11 +127,10 @@
       <span class="oc-badge oc-{{ .cls }}{{ if .unconfirmed }} oc-unconfirmed{{ end }}">{{ .label }}</span>
       <span class="oc-body">
         <span class="oc-shop">{{ .shop }}</span>
-        {{- if or .dateText .area .passed }}
+        {{- if or .dateText .area }}
         <span class="oc-meta">
           {{- with .dateText }}<span class="oc-date">{{ . }}</span>{{ end }}
           {{- with .area }}<span class="oc-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
-          {{- if .passed }}<span class="oc-passed">予定日経過・未確認</span>{{ end }}
         </span>
         {{- end }}
       </span>
