@@ -1,7 +1,7 @@
 ---
 title: "舞浜・浦安・新浦安観光ガイド｜ディズニー周辺の過ごし方・観光スポットまとめ"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-09-12
+lastmod: 2026-10-09
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -722,6 +722,13 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
+    <a class="rg-card" href="/travel-guide/maihama-christmas/">
+      <span class="rg-emoji">🎄</span>
+      <span class="rg-body">
+        <span class="rg-title">浦安・舞浜クリスマスガイド2026</span>
+        <span class="rg-go">ケーキ予約の比較・ディナー・無料イルミネーション →</span>
+      </span>
+    </a>
     <a class="rg-card" href="/travel-guide/maihama-halloween/">
       <span class="rg-emoji">🎃</span>
       <span class="rg-body">

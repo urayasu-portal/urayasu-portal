@@ -110,3 +110,5 @@ draft: false
 <p>新浦安駅を利用する方は、買い物や帰宅の際に立ち寄ってみてはいかがでしょうか。</p>
 
 <p>イベントの最新情報や出演者、当日のプログラムは、<a href="https://www.city.urayasu.lg.jp/events/shogai/shogai/1049155.html" target="_blank" rel="noopener">浦安市公式サイト</a>と<a href="https://www.urayasu-zaidan.or.jp/wave101/1001557/1006234.html" target="_blank" rel="noopener">浦安市民プラザWave101の案内</a>をご確認ください。</p>
+
+<p>パークに入らずに楽しめる浦安・舞浜のクリスマスイベントは、<a href="/travel-guide/maihama-christmas/"><strong>浦安・舞浜クリスマスガイド2026</strong></a>にまとめています。</p>
