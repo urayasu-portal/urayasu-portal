@@ -194,6 +194,14 @@
     <div class="tg-purpose-desc">{{ if $isEN }}Costume rules, where to change, hotel events{{ else if $isZHTW }}變裝規則·換裝地點·飯店企劃{{ else }}仮装の着替え場所・ホテル企画・限定スイーツ{{ end }}</div>
   </a>
   {{- end }}
+  {{/* クリスマスは ja のみ記事が存在する。en / zh-tw を追加したらハロウィンと同じ条件に広げる */}}
+  {{- if eq .Lang "ja" }}
+  <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/maihama-christmas/" | absLangURL }}">
+    <i class="ti ti-christmas-tree" aria-hidden="true"></i>
+    <div class="tg-purpose-title">クリスマスガイド2026</div>
+    <div class="tg-purpose-desc">ケーキ予約の比較・ディナー・無料イルミネーション</div>
+  </a>
+  {{- end }}
 </div>
 
 {{/* ────────────────────────────────────────
