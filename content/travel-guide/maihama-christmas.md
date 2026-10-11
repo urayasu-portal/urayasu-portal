@@ -17,6 +17,9 @@ tags:
 description: "2026年の浦安・舞浜でクリスマスを楽しむための保存版ガイド。ディズニー・クリスマスの要点、ホテルのクリスマスケーキ予約締切の比較、ディナー・ビュッフェ、クリスマスに泊まれる客室、パークに入らず無料で楽しめるイルミネーションやコンサートまでまとめます。"
 images:
   - "/images/og-travel-urayasu.png"
+cover:
+  image: "/images/travel-guide/maihama-christmas-hero.webp"
+  alt: "東京湾岸のリゾートをイメージしたクリスマスツリーと水辺のイルミネーション"
 tgNav: true
 draft: false
 faq:
@@ -64,6 +67,11 @@ faq:
 詳しいプログラムやメニューは、[ディズニー・クリスマス2026の開催情報](/posts/disney-christmas-2026/)と[限定フード・グッズの発表](/posts/disney-christmas-2026-goods-menu/)でも紹介しています。
 
 {{< warn >}}東京ディズニーシーは11月27日（金）、東京ディズニーランドは12月4日（金）が9:00〜18:30の短縮営業です。この日は夜の花火やパレードが休止になります。夜の演出を楽しみにしている場合は、来園日にご注意ください。{{< /warn >}}
+
+<figure>
+<img src="/images/travel-guide/maihama-christmas-park.webp" alt="クリスマス装飾で華やかに彩られたテーマパーク風の街並み" width="1400" height="788" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+<figcaption>クリスマスシーズンのテーマパークをイメージした画像</figcaption>
+</figure>
 
 ### チケットの目安
 
@@ -115,6 +123,11 @@ faq:
 
 {{< warn >}}多くのケーキが数量限定で、予定数に達すると締切前でも受付終了になります。受け取り時間や支払い方法もホテルごとに異なるため、予約前に各ホテルの公式ページで最新情報を確認してください。{{< /warn >}}
 
+<figure>
+<img src="/images/travel-guide/maihama-christmas-cakes.webp" alt="苺のショートケーキやチョコレートケーキなどが並ぶクリスマスのホテルラウンジ" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+<figcaption>舞浜・新浦安のホテルで楽しむクリスマスケーキ（イメージ画像）</figcaption>
+</figure>
+
 ### 各ホテルのラインナップ
 
 - **ホテルオークラ東京ベイ**：クリスマスショートケーキ（5号）6,500円、新作のクリスマスリースタルト（5号）7,000円とベイショコラ（5号）6,500円、12〜15名分の8号ショートケーキ25,000円。ローストチキンなどのデリカテッセンも同時に予約できます
@@ -136,6 +149,11 @@ faq:
 ## クリスマスのディナー・ビュッフェ・スイーツ
 
 クリスマスの食事企画は、開催日が週末や数日間に限られるものが多くあります。日程を先に確認してから予約しましょう。
+
+<figure>
+<img src="/images/travel-guide/maihama-christmas-dining.webp" alt="クリスマス装飾のあるホテルレストランに並ぶローストビーフや華やかな料理とスイーツ" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+<figcaption>舞浜・新浦安のホテルで楽しむクリスマスディナー＆ビュッフェ（イメージ画像）</figcaption>
+</figure>
 
 ### スイーツビュッフェ・アフタヌーンティー
 
@@ -170,6 +188,11 @@ faq:
 
 ## クリスマス気分で泊まる
 
+<figure>
+<img src="/images/travel-guide/maihama-christmas-hotel.webp" alt="クリスマスツリーが飾られたリゾートホテルの客室と窓越しの湾岸の夕景" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+<figcaption>舞浜・新浦安のホテルで過ごすクリスマスの特別な一夜（イメージ画像）</figcaption>
+</figure>
+
 ### オフィシャルホテル6館共通の限定ポーチ付きプラン
 
 11月11日〜12月25日の宿泊を対象に、東京ディズニーリゾート・オフィシャルホテル6館で、このプランでしか手に入らない限定の窓付きポーチ（星形チャーム付き）が付く宿泊プランが販売されています。ハロウィーンのときは対象外だったヒルトン東京ベイも、クリスマスは対象です。
@@ -201,6 +224,11 @@ faq:
 - **ホテルオークラ東京ベイ**：11月1日〜12月23日（12/19・20を除く）、宿泊者限定の「クリスマス・ルミエール・ディナー」（6,000円）
 
 ## パークに入らずクリスマスを楽しむ
+
+<figure>
+<img src="/images/travel-guide/maihama-christmas-illumination.webp" alt="新浦安駅前をイメージしたイルミネーションに彩られた広場と散策する人々" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+<figcaption>新浦安駅前のイルミネーションをイメージした画像。実際の装飾とは異なります</figcaption>
+</figure>
 
 ### 新浦安駅前のイルミネーション（無料）
 
