@@ -1,7 +1,7 @@
 ---
 title: "2026浦安·舞濱萬聖節攻略｜變裝期間·換裝地點·飯店企劃與限定甜點"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-27
+lastmod: 2026-10-12
 factChecked: "2026-09-25"
 slug: "maihama-halloween"
 badge: "萬聖節"
@@ -464,6 +464,13 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
+    <a class="rg-card" href="/zh-tw/travel-guide/maihama-christmas/">
+      <span class="rg-emoji">🎄</span>
+      <span class="rg-body">
+        <span class="rg-title">2026浦安·舞濱聖誕節攻略</span>
+        <span class="rg-go">飯店聖誕蛋糕·晚餐·免費燈飾 →</span>
+      </span>
+    </a>
     <a class="rg-card" href="/zh-tw/travel-guide/hotels/">
       <span class="rg-emoji">🏨</span>
       <span class="rg-body">
@@ -500,6 +507,7 @@ faq:
 <h2 id="changelog">更新紀錄</h2>
 
 <ul>
+  <li><strong>2026年10月12日</strong>：於相關指南新增「2026浦安·舞濱聖誕節攻略」</li>
   <li><strong>2026年9月25日</strong>：新增東京灣東方飯店「Pumpkin Gate」、住宿者限定Photo Time，以及附萬聖節特典的住宿方案</li>
   <li><strong>2026年9月16日</strong>：新增東京灣喜來登大飯店「Halloween Sweets &amp; Bakery」，補充月度甜點、麵包、甜點禮盒、下午茶與週五限定甜點自助餐的資訊</li>
   <li><strong>2026年9月8日</strong>：依9月7日的正式發表，將Hotel Okura東京灣「Grand Sweets Buffet 〜萬聖節的甜蜜誘惑〜」的會期更新為<strong>10月26日（一）〜31日（六）共6天</strong>。並補充含稅與服務費、供應內容。另於迪士尼官方換裝空間補充行李寄放的說明。並依官方頁面重新確認舞濱Eurasia的換裝方案，補充10月16日不舉辦的理由、行李追加選項與住宿者優惠的申請方式</li>
