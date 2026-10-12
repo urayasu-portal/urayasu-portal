@@ -1,7 +1,7 @@
 ---
 title: "Halloween in Urayasu & Maihama 2026 | Costume Rules, Where to Change, Hotel Events & Sweets"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-09-27
+lastmod: 2026-10-12
 factChecked: "2026-09-25"
 slug: "maihama-halloween"
 badge: "Halloween"
@@ -464,6 +464,13 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
+    <a class="rg-card" href="/en/travel-guide/maihama-christmas/">
+      <span class="rg-emoji">🎄</span>
+      <span class="rg-body">
+        <span class="rg-title">Christmas in Urayasu &amp; Maihama 2026</span>
+        <span class="rg-go">Hotel cakes, dinners and free illuminations →</span>
+      </span>
+    </a>
     <a class="rg-card" href="/en/travel-guide/hotels/">
       <span class="rg-emoji">🏨</span>
       <span class="rg-body">
@@ -500,6 +507,7 @@ faq:
 <h2 id="changelog">Update history</h2>
 
 <ul>
+  <li><strong>October 12, 2026</strong>: Added the Christmas in Urayasu &amp; Maihama 2026 guide to Related guides</li>
   <li><strong>September 25, 2026</strong>: Added Oriental Hotel Tokyo Bay's "Pumpkin Gate," the guests-only Photo Time, and its stay plan with Halloween perks</li>
   <li><strong>September 16, 2026</strong>: Added Sheraton Grande Tokyo Bay Hotel's "Halloween Sweets &amp; Bakery," covering the monthly sweets, bakery items, sweets box, afternoon tea and the Friday-only sweets buffet</li>
   <li><strong>September 8, 2026</strong>: Updated the Hotel Okura Tokyo Bay "Grand Sweets Buffet - Halloween's Sweet Temptation" run to <strong>October 26 (Mon) - 31 (Sat), six days</strong>, reflecting the official announcement of September 7. Added that tax and service charge are included, plus what is served. Added baggage storage information for the official TDR changing space. Re-checked the Maihama Eurasia costume plan against the official page and added why October 16 is skipped, the extra-baggage option, and how the hotel-guest discount is applied</li>
