@@ -2,7 +2,7 @@
 title: "Day Trips into Tokyo from Your Disney Hotel: Routes & Fares for Asakusa, Shibuya, Skytree & More"
 description: "The fastest routes and IC fares from the Tokyo Disney Resort area to Asakusa, Skytree, Tokyo Tower, the Imperial Palace, Akihabara, Shibuya and Harajuku — compared from the JR Keiyo Line (Maihama) and the Tozai Line (Urayasu). Plus how to pay: tap your own card vs. Suica, and why it depends on the line."
 date: 2026-07-07
-lastmod: 2026-10-15
+lastmod: 2026-10-16
 draft: false
 cover:
   image: "/images/travel-guide/tokyo-access-hero.jpg"
@@ -18,7 +18,7 @@ sources:
   - name: "Tokyo Metropolitan Bureau of Transportation – Contactless payment for transit"
     url: "https://www.kotsu.metro.tokyo.jp/subway/fare/contactless.html"
 tags: ["access", "tokyo", "asakusa", "shibuya", "skytree"]
-factChecked: "2026-08-11"
+factChecked: "2026-10-16"
 ---
 
 Planning one Tokyo sightseeing day in the middle of your Disney trip? The best route depends on **which station your hotel is near**. This area has two rail lines: the **JR Keiyo Line** (Maihama and Shin-Urayasu stations — the Disney-area and bayside hotels) and the **Tokyo Metro Tozai Line** (Urayasu Station — the downtown-Urayasu hotels). Below, the seven classic sights with routes and fares from both lines, side by side. Times and fares are rough estimates (transfer walking included; fares are IC-card, adult, one-way).
@@ -30,10 +30,10 @@ Planning one Tokyo sightseeing day in the middle of your Disney trip? The best r
 | Asakusa | ~40 min, 2 transfers<br>¥462 | **~40 min, 1 transfer<br>¥252** | Tozai: easier & cheaper |
 | Tokyo Skytree | Direct bus<br>¥1,000 | ~40 min, 1 transfer<br>**¥252** | Bus for ease, Tozai for price |
 | Tokyo Tower | ~45 min, 1 transfer<br>¥431 | ~45 min, 1 transfer<br>**¥252** | Tie on time, Tozai on fare |
-| Imperial Palace | ~35 min, no transfer<br>¥253 | **~30 min, no transfer<br>¥252** | Both direct |
-| Akihabara | ~35 min, 1 transfer<br>¥253 | ~30 min, 1 transfer<br>¥252 | Near tie |
-| Shibuya | ~55 min, 1 transfer<br>¥440 | **~45 min, 1 transfer<br>¥252** | Tozai: easier & cheaper |
-| Harajuku | ~55 min, 1 transfer<br>¥440 | **~45 min, 1 transfer<br>¥252** | Tozai: easier & cheaper |
+| Imperial Palace | ~35 min, no transfer<br>{{< fact "jr.maihama_tokyo" >}} | **~30 min, no transfer<br>¥252** | Both direct |
+| Akihabara | ~35 min, 1 transfer<br>{{< fact "jr.maihama_akihabara" >}} | ~30 min, 1 transfer<br>¥252 | Near tie |
+| Shibuya | ~55 min, 1 transfer<br>{{< fact "jr.maihama_shibuya" >}} | **~45 min, 1 transfer<br>¥252** | Tozai: easier & cheaper |
+| Harajuku | ~55 min, 1 transfer<br>{{< fact "jr.maihama_harajuku" >}} | **~45 min, 1 transfer<br>¥252** | Tozai: easier & cheaper |
 
 The surprise: **for central-Tokyo sightseeing, the humble Tozai Line often beats the Keiyo Line.** It plugs straight into the subway network at Nihombashi, Otemachi and Kudanshita, so transfers are simple. The Keiyo Line's trump card is a one-seat ride to Tokyo Station — but as explained below, **its platform at Tokyo Station is far from everything else**.
 
@@ -90,7 +90,7 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 | From | Route | Time | Fare (IC) |
 |---|---|---|---|
-| Keiyo Line | Maihama → (Keiyo) → Tokyo Station → 10–15 min walk from the Marunouchi side | **~35 min** | ¥253 |
+| Keiyo Line | Maihama → (Keiyo) → Tokyo Station → 10–15 min walk from the Marunouchi side | **~35 min** | {{< fact "jr.maihama_tokyo" >}} |
 | Tozai Line | Urayasu → (Tozai) → Otemachi → ~5 min walk to Ote-mon Gate | **~30 min** | ¥252 |
 
 **Verdict: both direct — the easiest day trip on this list.** The East Gardens (the old Edo Castle grounds, free entry) are entered via Ote-mon Gate by Otemachi Station. **Closed Mondays and Fridays.**
@@ -99,7 +99,7 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 | From | Route | Time | Fare (IC) |
 |---|---|---|---|
-| Keiyo Line | Maihama → (Keiyo) → Tokyo → (Yamanote/Keihin-Tohoku, 2 stops) → Akihabara | ~35 min | ¥253 |
+| Keiyo Line | Maihama → (Keiyo) → Tokyo → (Yamanote/Keihin-Tohoku, 2 stops) → Akihabara | ~35 min | {{< fact "jr.maihama_akihabara" >}} |
 | Tozai Line | Urayasu → (Tozai) → Kayabacho → (Hibiya Line) → Akihabara | ~30 min | ¥252 |
 
 **Verdict: near tie.** One transfer either way. Exit at the Electric Town gate and you're in the middle of anime-and-games country.
@@ -110,7 +110,7 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 | From | Route | Time | Fare (IC) |
 |---|---|---|---|
-| Keiyo Line | Maihama → (Keiyo) → Tokyo → (Yamanote Line) → Shibuya | ~55 min | ¥440 |
+| Keiyo Line | Maihama → (Keiyo) → Tokyo → (Yamanote Line) → Shibuya | ~55 min | {{< fact "jr.maihama_shibuya" >}} |
 | Tozai Line | Urayasu → (Tozai) → Kudanshita → (Hanzomon Line) → Shibuya | **~45 min** | **¥252** |
 
 **Verdict: Tozai, easier and cheaper.** At Kudanshita the transfer is inside the same gates, and the Hanzomon Line runs straight to Shibuya. From the Keiyo side, the walk to the Yamanote platforms at Tokyo Station is long.
@@ -119,7 +119,7 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 | From | Route | Time | Fare (IC) |
 |---|---|---|---|
-| Keiyo Line | Maihama → (Keiyo) → Tokyo → (Yamanote Line) → Harajuku | ~55 min | ¥440 |
+| Keiyo Line | Maihama → (Keiyo) → Tokyo → (Yamanote Line) → Harajuku | ~55 min | {{< fact "jr.maihama_harajuku" >}} |
 | Tozai Line | Urayasu → (Tozai) → Otemachi → (Chiyoda Line) → Meiji-jingumae ‹Harajuku› | **~45 min** | **¥252** |
 
 **Verdict: Tozai, easier and cheaper.** Meiji-jingumae Station on the Chiyoda Line sits right beside JR Harajuku Station, steps from both Meiji Shrine and Takeshita Street. Shibuya and Harajuku are a 15-minute walk apart — **most people do them as a pair**.
