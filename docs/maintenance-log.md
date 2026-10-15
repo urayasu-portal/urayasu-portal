@@ -1667,3 +1667,42 @@ libraries-public-facilities / urayasu-kosodate-shien-matome / indoor-playgrounds
 ### 教訓・今後の対応
 - 新しいレイアウトテンプレートを追加する際は、必ず `meta-badges.html` の呼び出しを含めること（life-guide/travel-guide/hotels共通のチェック項目として今後のfact-check運用に追加）
 - 過去にこの2レイアウトへfactCheckedを付与した記事は、日付自体は正しく記録されているため再照合は不要（今回はテンプレート側の修正のみで解決）
+
+---
+
+## 2026-10-16（臨時・JR運賃の改定後照合）
+
+JR東日本の 2026-03-14 運賃改定（電車特定区間・山手線内の運賃区分の廃止、IC運賃≦きっぷ運賃）を受け、旅行ガイドに書かれた JR 運賃を全言語で照合した。
+
+### 機械スキャン
+- 対象: `content/travel-guide/`（hotels/ 含む）全言語＋`data/travel_facts.yaml`
+- 方法: 金額表記（¥・円・日元・日圓・엔）と「京葉|Keiyo|게이요|京叶|JR|山手|総武|新木場|八丁堀|東京駅 ほか」が同じ行にあるものを抽出し、バス・リムジン・タクシー・モノレール・ランドリー・駐車場・配送などを除外して目視で確認
+- 結果: main 上で JR 運賃が書かれていたのは **tokyo-sightseeing-access（5言語）だけ**。access-guide・hotels/access・luggage 系・taxi-guide・ic-card-payment・kasai-rinkai-park には JR 運賃の記載なし（リムジン・路線バスは既に `{{< fact >}}` 化済み）。celebration-discover/wish の「IC 147円／現金150円」は新浦安駅からのバス運賃なので対象外
+
+### 照合表（IC大人片道・出典: Yahoo!路線情報 https://transit.yahoo.co.jp/ 2026-10-16 照合。JR東日本の運賃検索はWAFで自動取得できないため代替。改定の概要は https://travel.watch.impress.co.jp/docs/news/2036171.html）
+| 区間 | 記事の値（main） | 照合値 | 判定 |
+|---|---|---|---|
+| 舞浜→東京（皇居ルート） | ¥253 | 253円（12.7km） | 正しい（改定後の値） |
+| 舞浜→東京→秋葉原 | ¥253 | 253円（14.7km） | 正しい |
+| 舞浜→東京→渋谷 | ¥440 | 440円（25km） | 正しい |
+| 舞浜→東京→原宿 | ¥440 | 440円（25.2km） | 正しい |
+| 舞浜→八丁堀＋日比谷線→神谷町（東京タワー） | ¥431 | 253円＋178円＝431円 | 正しい |
+| 舞浜→浅草（京葉線→東京→京浜東北線→新橋→都営浅草線） | ¥473 | 253円＋220円＝473円 | **運賃は正しい**。ただし本文のルートが「東京 →（都営浅草線）」で新橋での乗換が抜けている（東京駅に都営浅草線は無い） |
+| 新浦安→東京（「京葉線ルートに数十円足す」の根拠） | — | 341円（16.1km）＝舞浜比+88円 | 表現として妥当 |
+
+参考で照合した区間（PR #37 の新規記事で使用・いずれも記事の値と一致）: 舞浜→新木場 199円／舞浜→両国（JRのみ）341円／舞浜→葛西臨海公園 155円／八丁堀→築地（日比谷線）178円。
+
+### 修正
+- **改定前の値は main に残っていなかった**（2026-08 の監査時点で改定後の値に更新済みだった）。値の訂正は無し
+- `data/travel_facts.yaml` に `jr:` セクションを新設（上記9区間・source・checked 付き）
+- tokyo-sightseeing-access 5言語で、JR だけで完結する区間（皇居・秋葉原・渋谷・原宿の早見表と詳細表）を `{{< fact "jr.…" >}}` 参照に置き換えた。ja 版は記事全体が「¥252」の前置き表記なので、`¥{{< fact "jr.maihama_tokyo.v" >}}` のように値だけを参照して表記をそろえた
+- 浅草の行と「京葉線は JR 運賃で¥253〜473」の文は、**PR #37 が同じ行を書き換えるため触っていない**（PR #37 は浅草ルートを「八丁堀→日比谷線→上野→銀座線」462円に変更。253円＋東京メトロ209円＝462円で計算は合っている。なお Yahoo!路線情報の最安は「東京→総武快速→馬喰町／東日本橋→都営浅草線」253円＋178円＝431円）
+- 表示される本文は変わらないため `lastmod` は動かさず、`factChecked` だけを 2026-10-16 にした（en/ko は今回が初めての factChecked）
+
+### 検証
+- `hugo --minify` exit 0。生成 HTML で 5 言語とも 253／440 が正しい通貨表記で出ることを確認
+- `scripts/check-internal-links.ps1`: リンク切れ 0 件
+
+### 持ち越し
+- PR #37 とのマージ: tokyo-sightseeing-access の ja・zh・zh-tw の frontmatter（PR #37 は `lastmod`、こちらは隣の行の `factChecked`）で衝突する（git merge-tree で確認。en・ko は自動マージ可）。両方の変更を残せばよい
+- PR #37 マージ後に、浅草の行と運賃幅の文（¥253〜462）、新規記事（asakusa・odaiba・kiyosumi-garden・ryogoku-sumo・small-worlds・toyosu-senkyakubanrai・tokyo-character-street・tsukiji-outer-market）の JR 運賃も `jr.*` の参照に置き換えられる

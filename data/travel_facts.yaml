@@ -39,6 +39,24 @@ local_bus:
   urayasu_maihama_fare_via_shin: { v: "280", u: yen }  # 2系統（今川線・新浦安経由）大人
   urayasu_maihama_minutes_via_shin: "25"         # 同 乗車時間（6.8km）
 
+# ── JR運賃（京葉線ほか・ICカード大人片道）────────────────────
+# 2026-03-14 の JR東日本運賃改定（電車特定区間・山手線内の運賃区分を廃止、IC運賃≦きっぷ運賃）後の値。
+# source: https://travel.watch.impress.co.jp/docs/news/2036171.html （改定の概要）
+# source: https://transit.yahoo.co.jp/ （Yahoo!路線情報で区間ごとに照合。JR東日本の運賃検索はWAFで自動取得不可のため代替）
+# checked: 2026-10-16
+# 注意: JRはクレジットカードのタッチ決済非対応（Suica/PASMOが必要）。
+#       複数社にまたがるルート（例: 舞浜→八丁堀→日比谷線→神谷町 431円）の合計はここに入れず、本文で直書きする。
+jr:
+  maihama_tokyo: { v: "253", u: yen }            # 舞浜→東京 12.7km（旧230円）
+  maihama_hatchobori: { v: "253", u: yen }       # 舞浜→八丁堀 11.5km
+  maihama_akihabara: { v: "253", u: yen }        # 舞浜→東京→秋葉原 14.7km（京葉線＋山手線/京浜東北線）
+  maihama_shibuya: { v: "440", u: yen }          # 舞浜→東京→渋谷 25km（京葉線＋山手線ほか）
+  maihama_harajuku: { v: "440", u: yen }         # 舞浜→東京→原宿 25.2km（同上）
+  maihama_shinkiba: { v: "199", u: yen }         # 舞浜→新木場 5.3km
+  maihama_kasairinkai: { v: "155", u: yen }      # 舞浜→葛西臨海公園 2.1km
+  maihama_ryogoku: { v: "341", u: yen }          # 舞浜→両国 JRのみ 16.6〜18.1km
+  shinurayasu_tokyo: { v: "341", u: yen }        # 新浦安→東京 16.1km
+
 # ── ハッピーエントリー ───────────────────────────────
 # source: https://www.tokyodisneyresort.jp/hotel/topics/info/happy_entry.html （分数・対象外日。en/kr/sc/tc 版あり）
 # source: https://faq.tokyodisneyresort.jp/answer/67eaa65f57951a27c885671c/
