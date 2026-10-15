@@ -1697,12 +1697,12 @@ JR東日本の 2026-03-14 運賃改定（電車特定区間・山手線内の運
 - `data/travel_facts.yaml` に `jr:` セクションを新設（上記9区間・source・checked 付き）
 - tokyo-sightseeing-access 5言語で、JR だけで完結する区間（皇居・秋葉原・渋谷・原宿の早見表と詳細表）を `{{< fact "jr.…" >}}` 参照に置き換えた。ja 版は記事全体が「¥252」の前置き表記なので、`¥{{< fact "jr.maihama_tokyo.v" >}}` のように値だけを参照して表記をそろえた
 - 浅草の行と「京葉線は JR 運賃で¥253〜473」の文は、**PR #37 が同じ行を書き換えるため触っていない**（PR #37 は浅草ルートを「八丁堀→日比谷線→上野→銀座線」462円に変更。253円＋東京メトロ209円＝462円で計算は合っている。なお Yahoo!路線情報の最安は「東京→総武快速→馬喰町／東日本橋→都営浅草線」253円＋178円＝431円）
-- 表示される本文は変わらないため `lastmod` は動かさず、`factChecked` だけを 2026-10-16 にした（en/ko は今回が初めての factChecked）
+- `factChecked` を 2026-10-16 に更新（5言語とも既存の値を書き換え）。表示される本文は変わらないが、PR #37 との統合（下記）で `lastmod` も 2026-10-16 にそろえた
 
 ### 検証
 - `hugo --minify` exit 0。生成 HTML で 5 言語とも 253／440 が正しい通貨表記で出ることを確認
 - `scripts/check-internal-links.ps1`: リンク切れ 0 件
 
 ### 持ち越し
-- PR #37 とのマージ: tokyo-sightseeing-access の ja・zh・zh-tw の frontmatter（PR #37 は `lastmod`、こちらは隣の行の `factChecked`）で衝突する（git merge-tree で確認。en・ko は自動マージ可）。両方の変更を残せばよい
-- PR #37 マージ後に、浅草の行と運賃幅の文（¥253〜462）、新規記事（asakusa・odaiba・kiyosumi-garden・ryogoku-sumo・small-worlds・toyosu-senkyakubanrai・tokyo-character-street・tsukiji-outer-market）の JR 運賃も `jr.*` の参照に置き換えられる
+- PR #37（4c3bf7c3）を取り込み済み: ja・zh・zh-tw の frontmatter が衝突したため `lastmod: 2026-10-16`／`factChecked: "2026-10-16"` で解消。浅草の行・運賃幅の文（¥253〜462）・個別ガイドへのリンクは main（#37）の内容をそのまま採用し、ビルド後の HTML に浅草ルートの ¥473 が無いことを確認
+- 次の作業: 浅草の行と運賃幅の文（¥253〜462）、新規記事（asakusa・odaiba・kiyosumi-garden・ryogoku-sumo・small-worlds・toyosu-senkyakubanrai・tokyo-character-street・tsukiji-outer-market）の JR 運賃も `jr.*` の参照に置き換えられる

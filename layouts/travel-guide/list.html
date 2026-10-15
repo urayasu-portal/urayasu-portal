@@ -186,6 +186,14 @@
     <div class="tg-purpose-title">{{ if $isEN }}Day trips into Tokyo{{ else if $isZH }}去东京市区{{ else if $isKO }}도쿄 시내로{{ else if $isZHTW }}去東京市區{{ else }}都心の観光地へ{{ end }}</div>
     <div class="tg-purpose-desc">{{ if $isEN }}Asakusa, Shibuya, Skytree — routes &amp; fares{{ else if $isZH }}浅草·涩谷·晴空塔的路线与车费{{ else if $isKO }}아사쿠사·시부야·스카이트리 경로와 요금{{ else if $isZHTW }}淺草·澀谷·晴空塔的路線與車資{{ else }}浅草・渋谷・スカイツリーへの行き方{{ end }}</div>
   </a>
+  {{/* 東京の休息日スポット ハブ（個別記事を目的別に束ねる）。その言語に記事がある場合のみ表示 */}}
+  {{- with site.GetPage "/travel-guide/tokyo-rest-day-trips" }}
+  <a class="tg-purpose-card tg-purpose-card--feature" href="{{ .RelPermalink }}">
+    <i class="ti ti-torii" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ if $isEN }}Tokyo rest-day spots{{ else if $isZH }}东京休息日景点{{ else if $isKO }}도쿄 휴식일 명소{{ else if $isZHTW }}東京休息日景點{{ else }}東京の休息日スポット{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}14 picks by purpose — relax, family, Japan culture, explore{{ else if $isZH }}按目的选：放松·亲子·日本文化·探索东京{{ else if $isKO }}목적별 14곳: 휴식·가족·일본 문화·도쿄 탐방{{ else if $isZHTW }}依目的選：放鬆·親子·日本文化·探索東京{{ else }}癒やす・家族・日本文化・都心探訪の14スポット{{ end }}</div>
+  </a>
+  {{- end }}
   {{/* 季節企画。ja / en / zh-tw のみ記事が存在する（zh・ko 未訳）。翻訳を追加したら条件に足す */}}
   {{- if or (eq .Lang "ja") $isEN $isZHTW }}
   <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/maihama-halloween/" | absLangURL }}">

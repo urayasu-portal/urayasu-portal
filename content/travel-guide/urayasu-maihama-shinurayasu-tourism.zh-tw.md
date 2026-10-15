@@ -1,7 +1,7 @@
 ---
 title: "東京迪士尼周邊遊覽指南 | 舞濱·浦安·新浦安的觀光景點"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-09-13
+lastmod: 2026-10-15
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -162,6 +162,8 @@ faq:
     <li><a href="/zh-tw/travel-guide/urayasu-traffic-park/">浦安市交通公園</a> — 免費·帶孩子的半天好去處</li>
     <li><a href="/zh-tw/travel-guide/kasai-rinkai-park/">葛西臨海公園</a> — 鄰站的大摩天輪與水族館</li>
     <li><a href="/zh-tw/travel-guide/teamlab-planets/">teamLab Planets（豐洲）</a> — 雨天的室內藝術·距舞濱約30分鐘</li>
+
+    <li><a href="/zh-tw/travel-guide/tokyo-rest-day-trips/">東京休息日景點14選</a> — 台場·淺草·晴空塔等依目的分類，附從舞濱出發的路線</li>
     <li><a href="/zh-tw/travel-guide/urayasu-gourmet-souvenir-guide/">美食·伴手禮指南</a> — 樂園外的餐飲與禮品</li>
     <li><a href="/zh-tw/travel-guide/shin-urayasu-gourmet/">新浦安美食指南</a> — 住新浦安飯店的晚餐·甜點·超市補給</li>
     <li><a href="/zh-tw/travel-guide/urayasu-map/">生活·購物地圖</a> — 最近的便利商店·藥妝店·ATM</li>

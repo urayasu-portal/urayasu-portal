@@ -4673,3 +4673,23 @@ body.pillar-travel .post-single .post-content a.hg-sv-maplink:hover { background
   .lg-ticket-grid { grid-template-columns: 1fr; }
 }
 .lg-ticket-grid.is-single { grid-template-columns: minmax(0, 420px); }
+
+/* ---------- 東京休息日スポット（shortcode tokyo-spots / data/tokyo_spots.yaml） ---------- */
+.post-content .tg-spot-grid { margin: 12px 0 28px; }
+.post-content .tg-spot-grid .tg-purpose-card { text-decoration: none; }
+.post-content .tg-spot-grid .tg-purpose-title { margin-top: 6px; }
+.post-content h2 > .ti { color: var(--accent); font-size: 0.95em; margin-right: 2px; }
+.tg-spot-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.tg-spot-chip {
+  font-size: 10px; line-height: 1; padding: 4px 7px; border-radius: 999px;
+  background: var(--up-surface-2); color: var(--up-text-3); border: 1px solid var(--up-border);
+}
+.tg-spot-chip.is-rain { background: #EAF4FB; color: #1F5F8B; border-color: #CFE3F1; }
+.tg-spot-chip.is-kids { background: #FFF6E5; color: #8A5A00; border-color: #F3DEB4; }
+.tg-spot-chip.is-free { background: #E9F7F0; color: #166A42; border-color: #BFE5D1; }
+.post-content table.tg-spot-table { min-width: 560px; }
+.post-content table.tg-spot-table td:first-child a { color: var(--up-text); text-decoration: none; }
+.post-content table.tg-spot-table td:first-child a:hover { color: var(--accent); }
+@media (max-width: 640px) {
+  .post-content .tg-spot-grid { grid-template-columns: 1fr 1fr; }
+}

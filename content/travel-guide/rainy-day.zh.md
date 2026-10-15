@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼下雨天攻略｜雨天游园对策与舞滨室内景点"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-15
 factChecked: "2026-08-24"
 slug: "rainy-day"
 badge: "雨天"

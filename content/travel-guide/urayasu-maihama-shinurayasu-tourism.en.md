@@ -1,7 +1,7 @@
 ---
 title: "Things to Do near Tokyo Disney Resort | Maihama, Urayasu & Shin-Urayasu Sightseeing Guide"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-09-12
+lastmod: 2026-10-15
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -162,6 +162,8 @@ faq:
     <li><a href="/en/travel-guide/urayasu-traffic-park/">Urayasu Traffic Park</a> — free, perfect half day with kids</li>
     <li><a href="/en/travel-guide/kasai-rinkai-park/">Kasai Rinkai Park</a> — giant Ferris wheel and aquarium, one stop away</li>
     <li><a href="/en/travel-guide/teamlab-planets/">teamLab Planets (Toyosu)</a> — indoor art for rainy days, about 30 min from Maihama</li>
+
+    <li><a href="/en/travel-guide/tokyo-rest-day-trips/">Tokyo rest-day spots (14, by purpose)</a> — Odaiba, Asakusa, Skytree and more, with routes from Maihama</li>
     <li><a href="/en/travel-guide/urayasu-gourmet-souvenir-guide/">Food & souvenir guide</a> — eating outside the parks</li>
     <li><a href="/en/travel-guide/urayasu-map/">Shopping & essentials map</a> — nearest konbini, pharmacy, ATM</li>
     <li><a href="/en/travel-guide/kids-emergency/">If your child gets sick</a> — read once, just in case</li>
