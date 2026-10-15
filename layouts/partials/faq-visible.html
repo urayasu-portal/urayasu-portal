@@ -1,0 +1,31 @@
+{{- /*
+  よくある質問（可視ブロック）
+  フロントマター faq:（{ q, a } のリスト）を本文末尾に表示する。
+  faq-jsonld.html が出す FAQPage JSON-LD と同じ内容をページ上でも読めるようにするため
+  （構造化データの内容はページ上で可視である必要がある）。
+  - 本文に既に FAQ 見出し（## よくある質問 / ## FAQ / id="faq" 等）がある記事は二重表示を避けて出さない
+  - a は Markdown リンク等を含みうるので markdownify で描画（JSON-LD 側の出力は変えない）
+  - JS 不使用の静的リスト（JS 無効でも全文が読める）
+*/ -}}
+{{- with .Params.faq }}
+{{- $hasBodyFAQ := findRE `(?is)<h2[^>]*(id="faq"|>\s*(FAQ|よくある質問|常见问题|常見問題|자주 묻는 질문))` $.Content 1 }}
+{{- if not $hasBodyFAQ }}
+{{- $isEN := eq $.Lang "en" }}
+{{- $isZH := eq $.Lang "zh" }}
+{{- $isKO := eq $.Lang "ko" }}
+{{- $isZHTW := eq $.Lang "zh-tw" }}
+{{- $qLabel := "Q" }}{{ $aLabel := "A" }}
+{{- if $isZH }}{{ $qLabel = "问" }}{{ $aLabel = "答" }}{{ else if $isZHTW }}{{ $qLabel = "問" }}{{ $aLabel = "答" }}{{ end }}
+<section class="faq-block" aria-labelledby="faq">
+  <div class="section-head"><h2 id="faq">{{ if $isEN }}Frequently asked questions{{ else if $isZH }}常见问题{{ else if $isKO }}자주 묻는 질문{{ else if $isZHTW }}常見問題{{ else }}よくある質問{{ end }}</h2></div>
+  <dl class="faq-list">
+    {{- range . }}
+    <div class="faq-item">
+      <dt class="faq-q"><span class="faq-label" aria-hidden="true">{{ $qLabel }}</span><span class="faq-text">{{ .q }}</span></dt>
+      <dd class="faq-a"><span class="faq-label" aria-hidden="true">{{ $aLabel }}</span><span class="faq-text">{{ .a | markdownify }}</span></dd>
+    </div>
+    {{- end }}
+  </dl>
+</section>
+{{- end }}
+{{- end }}

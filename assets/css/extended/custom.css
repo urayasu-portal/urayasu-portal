@@ -4673,3 +4673,16 @@ body.pillar-travel .post-single .post-content a.hg-sv-maplink:hover { background
   .lg-ticket-grid { grid-template-columns: 1fr; }
 }
 .lg-ticket-grid.is-single { grid-template-columns: minmax(0, 420px); }
+
+/* ===== よくある質問 可視ブロック（frontmatter faq: → faq-visible.html・旅行/生活ガイド共通） ===== */
+.faq-block { margin: 28px 0 8px; }
+.faq-list { margin: 0; padding: 0; }
+.faq-item { border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; background: var(--entry); }
+.faq-q, .faq-a { display: flex; gap: 10px; align-items: flex-start; margin: 0; }
+.faq-q { font-weight: 700; line-height: 1.6; color: var(--primary); }
+.faq-a { margin-top: 8px; font-size: 0.92rem; line-height: 1.75; color: var(--secondary); }
+.faq-label { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 4px; border-radius: 6px; font-size: 12px; font-weight: 700; line-height: 1; }
+.faq-q .faq-label { color: #fff; background: var(--accent); }
+.faq-a .faq-label { color: var(--accent); background: var(--accent-bg); }
+.faq-text { min-width: 0; overflow-wrap: anywhere; }
+.faq-a .faq-text a { color: var(--accent); font-weight: 600; }
