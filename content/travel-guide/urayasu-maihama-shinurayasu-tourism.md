@@ -1,7 +1,7 @@
 ---
 title: "舞浜・浦安・新浦安観光ガイド｜ディズニー周辺の過ごし方・観光スポットまとめ"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-10-09
+lastmod: 2026-10-15
 factChecked: "2026-08-01"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -162,6 +162,8 @@ faq:
     <li><a href="/travel-guide/urayasu-traffic-park/">浦安市交通公園</a> — 無料・子連れの半日に</li>
     <li><a href="/travel-guide/kasai-rinkai-park/">葛西臨海公園</a> — 隣駅の大観覧車と水族館</li>
     <li><a href="/travel-guide/teamlab-planets/">チームラボプラネッツ（豊洲）</a> — 雨の日の屋内アート・舞浜から約30分</li>
+
+    <li><a href="/travel-guide/tokyo-rest-day-trips/">東京の休息日スポット14選</a> — お台場・浅草・スカイツリーなど目的別に、舞浜からの行き方つき</li>
     <li><a href="/travel-guide/urayasu-gourmet-souvenir-guide/">グルメ・お土産ガイド</a> — パーク外の食事と手土産</li>
     <li><a href="/travel-guide/urayasu-map/">生活・買い物マップ</a> — 最寄りのコンビニ・薬局・ATM</li>
     <li><a href="/travel-guide/kids-emergency/">子どもの急病ガイド</a> — お守り代わりに一読を</li>

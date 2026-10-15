@@ -1,7 +1,7 @@
 ---
 title: "teamLab Planets（豐洲）：離迪士尼30分鐘，赤腳走進水中的藝術"
 description: "從舞濱搭電車約30分鐘。膝蓋沒入水中、赤腳走過光影的世界人氣數位藝術館。既是雨天Plan B，也是與樂園不同的「另一種非日常」。購票方式與服裝注意，由在地人解說。"
-lastmod: 2026-10-03
+lastmod: 2026-10-15
 date: 2026-07-07
 draft: false
 cover:
@@ -84,3 +84,5 @@ teamLab 採**日期時段指定的預售制**，週末時段常常售罄，行�
 - [舞濱歐亞天然溫泉：逛完樂園的當日泡湯](/zh-tw/travel-guide/maihama-eurasia-spa/)
 - [浦安市交通公園：免費暢玩的兒童樂園](/zh-tw/travel-guide/urayasu-traffic-park/)
 - [舞濱·浦安·新浦安觀光指南（休息日總覽）](/zh-tw/travel-guide/urayasu-maihama-shinurayasu-tourism/)
+- [豐洲 千客萬來：江戶風海鮮街·免費足湯·24小時溫泉（步行10分鐘）](/zh-tw/travel-guide/toyosu-senkyakubanrai/)
+- [從迪士尼周邊出發的東京休息日景點14選](/zh-tw/travel-guide/tokyo-rest-day-trips/)

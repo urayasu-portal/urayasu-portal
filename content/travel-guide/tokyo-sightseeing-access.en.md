@@ -2,7 +2,7 @@
 title: "Day Trips into Tokyo from Your Disney Hotel: Routes & Fares for Asakusa, Shibuya, Skytree & More"
 description: "The fastest routes and IC fares from the Tokyo Disney Resort area to Asakusa, Skytree, Tokyo Tower, the Imperial Palace, Akihabara, Shibuya and Harajuku — compared from the JR Keiyo Line (Maihama) and the Tozai Line (Urayasu). Plus how to pay: tap your own card vs. Suica, and why it depends on the line."
 date: 2026-07-07
-lastmod: 2026-09-10
+lastmod: 2026-10-15
 draft: false
 cover:
   image: "/images/travel-guide/tokyo-access-hero.jpg"
@@ -27,7 +27,7 @@ Planning one Tokyo sightseeing day in the middle of your Disney trip? The best r
 
 | Destination | From the Keiyo Line (Maihama) | From the Tozai Line (Urayasu) | Verdict |
 |---|---|---|---|
-| Asakusa | ~50 min, 2 transfers<br>¥473 | **~40 min, 1 transfer<br>¥252** | Tozai: easier & cheaper |
+| Asakusa | ~40 min, 2 transfers<br>¥462 | **~40 min, 1 transfer<br>¥252** | Tozai: easier & cheaper |
 | Tokyo Skytree | Direct bus<br>¥1,000 | ~40 min, 1 transfer<br>**¥252** | Bus for ease, Tozai for price |
 | Tokyo Tower | ~45 min, 1 transfer<br>¥431 | ~45 min, 1 transfer<br>**¥252** | Tie on time, Tozai on fare |
 | Imperial Palace | ~35 min, no transfer<br>¥253 | **~30 min, no transfer<br>¥252** | Both direct |
@@ -37,20 +37,24 @@ Planning one Tokyo sightseeing day in the middle of your Disney trip? The best r
 
 The surprise: **for central-Tokyo sightseeing, the humble Tozai Line often beats the Keiyo Line.** It plugs straight into the subway network at Nihombashi, Otemachi and Kudanshita, so transfers are simple. The Keiyo Line's trump card is a one-seat ride to Tokyo Station — but as explained below, **its platform at Tokyo Station is far from everything else**.
 
-**Fares favor the Tozai Line too.** Because it stays entirely on Tokyo Metro, it's a near-flat **¥252** to the major central stations, while the Keiyo Line runs on JR fares from **¥253 to ¥473**. From Shin-Urayasu, add about 4 minutes and a few tens of yen to the Keiyo routes.
+**Fares favor the Tozai Line too.** Because it stays entirely on Tokyo Metro, it's a near-flat **¥252** to the major central stations, while the Keiyo Line runs on JR fares from **¥253 to ¥462**. From Shin-Urayasu, add about 4 minutes and a few tens of yen to the Keiyo routes.
 
 ## Destination by destination
 
 ### Asakusa (Senso-ji Temple & Kaminarimon Gate)
 
+→ Full guide: [Asakusa: Senso-ji, kimono rental & a half-day of old Tokyo](/en/travel-guide/asakusa/)
+
 | From | Route | Time | Fare (IC) |
 |---|---|---|---|
-| Keiyo Line | Maihama → (Keiyo) → Tokyo → (Toei Asakusa Line) → Asakusa | ~50 min | ¥473 |
+| Keiyo Line | Maihama → (Keiyo) → Hatchobori → (Hibiya Line) → Ueno → (Ginza Line) → Asakusa | ~40 min | ¥462 |
 | Tozai Line | Urayasu → (Tozai) → Nihombashi → (Ginza Line) → Asakusa | **~40 min** | **¥252** |
 
 **Verdict: Tozai.** One transfer at Nihombashi, then the Ginza Line straight to Asakusa, for ¥252. In a hurry? Switch to the Toei Asakusa Line at Nihombashi instead — about 5 minutes faster, but ¥359.
 
 ### Tokyo Skytree
+
+→ Full guide: [Tokyo Skytree & Solamachi: direct bus, 2026 prices & Sumida Aquarium](/en/travel-guide/tokyo-skytree/)
 
 | From | Route | Time | Fare (IC) |
 |---|---|---|---|
@@ -102,6 +106,8 @@ Same-day tickets to the observation decks (Tembo Deck 350m / Tembo Galleria 450m
 
 ### Shibuya (Scramble Crossing)
 
+→ Full guide: [SHIBUYA SKY & Shibuya: ticket rules & the Scramble Crossing](/en/travel-guide/shibuya-sky/)
+
 | From | Route | Time | Fare (IC) |
 |---|---|---|---|
 | Keiyo Line | Maihama → (Keiyo) → Tokyo → (Yamanote Line) → Shibuya | ~55 min | ¥440 |
@@ -151,3 +157,4 @@ You ride Tokyo trains by **tapping** a card or phone at the gate — and since *
 - [teamLab Planets (Toyosu): Barefoot Digital Art 30 Minutes from Disney](/en/travel-guide/teamlab-planets/)
 - [Kasai Rinkai Park & Aquarium: The Other Giant Park One Stop from Disney](/en/travel-guide/kasai-rinkai-park/)
 - [Taxi Guide for the Tokyo Disney Resort Area](/en/travel-guide/urayasu-taxi-airport-flat-rate-guide/)
+- [Tokyo rest-day spots from Tokyo Disney Resort: 14 places by purpose](/en/travel-guide/tokyo-rest-day-trips/)
