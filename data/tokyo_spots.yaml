@@ -1,0 +1,354 @@
+# 東京の休息日スポット（旅行ガイド）— shortcode tokyo-spots のデータ
+#
+# 使い方: content/travel-guide/tokyo-rest-day-trips.*.md で {{< tokyo-spots >}} / {{< tokyo-spots "table" >}}
+# ルール:
+#   - page はサイト相対パス（言語接頭辞なし）。その言語に記事が無いスポットはカード・表とも自動で非表示
+#   - use: half(半日) / full(1日) / evening(午後〜夜) / hours(1〜2時間)
+#   - rain: ok(屋内) / part(一部屋内) / no(屋外)
+#   - cost: free / paid / mixed(入場無料・一部有料)
+#   - minutes: 舞浜駅からの目安（各記事の推奨ルート・乗換込み）。数値は各記事と揃える
+#   - kids: 10歳未満の子連れに向く（「入れる」ではなく「向く」）
+#   - 各カードの文言は編集用。料金・時刻など変わりやすい事実は記事本文に置き、ここには書かない
+categories:
+  - id: relax
+    icon: ti-leaf
+    label:
+      ja: "癒やす・休む"
+      en: "Relax & recharge"
+      zh: "放松·恢复"
+      zh-tw: "放鬆·恢復"
+      ko: "휴식·재충전"
+    sub:
+      ja: "公園・日本庭園・足湯・温泉。歩き疲れた翌日に"
+      en: "Parks, a Japanese garden, footbaths and an onsen — for the day after 20,000 steps"
+      zh: "公园·日本庭园·足汤·温泉。走累的第二天"
+      zh-tw: "公園·日本庭園·足湯·溫泉。走累的隔天"
+      ko: "공원·일본 정원·족욕·온천. 많이 걸은 다음 날에"
+    spots: [kasai-rinkai-park, maihama-eurasia-spa, kiyosumi-garden, toyosu-senkyakubanrai, urayasu-traffic-park]
+  - id: family
+    icon: ti-mood-kid
+    label:
+      ja: "家族で遊ぶ"
+      en: "Family fun"
+      zh: "亲子游玩"
+      zh-tw: "親子遊玩"
+      ko: "가족과 즐기기"
+    sub:
+      ja: "屋内のミュージアムとキャラクターショップ。雨の日の本命"
+      en: "Indoor museums and character shops — the rainy-day favourites"
+      zh: "室内博物馆与角色商店。雨天首选"
+      zh-tw: "室內博物館與角色商店。雨天首選"
+      ko: "실내 뮤지엄과 캐릭터 숍. 비 오는 날의 1순위"
+    spots: [small-worlds, teamlab-planets, tokyo-character-street]
+  - id: japan
+    icon: ti-torii
+    label:
+      ja: "日本を体験する"
+      en: "Experience Japan"
+      zh: "体验日本"
+      zh-tw: "體驗日本"
+      ko: "일본을 체험하기"
+    sub:
+      ja: "寺・市場・相撲・着物。「日本に来た」実感を"
+      en: "Temple, market, sumo, kimono — the 'we came to Japan' day"
+      zh: "寺庙·市场·相扑·和服。「来到日本了」的一天"
+      zh-tw: "寺廟·市場·相撲·和服。「來到日本了」的一天"
+      ko: "절·시장·스모·기모노. '일본에 왔다'를 실감하는 날"
+    spots: [asakusa, tsukiji-outer-market, ryogoku-sumo]
+  - id: explore
+    icon: ti-building-skyscraper
+    label:
+      ja: "東京を見る"
+      en: "Explore Tokyo"
+      zh: "探索东京"
+      zh-tw: "探索東京"
+      ko: "도쿄 둘러보기"
+    sub:
+      ja: "湾岸・タワー・スクランブル交差点。東京らしい景色を"
+      en: "The bay, the towers, the crossing — the big-city views"
+      zh: "湾岸·高塔·十字路口。最东京的风景"
+      zh-tw: "灣岸·高塔·十字路口。最東京的風景"
+      ko: "베이 에리어·타워·스크램블 교차로. 가장 도쿄다운 풍경"
+    spots: [odaiba, tokyo-skytree, shibuya-sky]
+
+spots:
+  kasai-rinkai-park:
+    page: /travel-guide/kasai-rinkai-park
+    icon: ti-fish
+    use: half
+    rain: part
+    kids: true
+    cost: mixed
+    minutes: "5"
+    title:
+      ja: "葛西臨海公園"
+      en: "Kasai Rinkai Park"
+      zh: "葛西临海公园"
+      zh-tw: "葛西臨海公園"
+      ko: "가사이 임해공원"
+    desc:
+      ja: "隣駅の無料の大公園。水族園と大観覧車"
+      en: "Free giant park one stop away — aquarium and Ferris wheel"
+      zh: "邻站的免费大公园，有水族园和大摩天轮"
+      zh-tw: "鄰站的免費大公園，有水族園和大摩天輪"
+      ko: "옆 역의 무료 대형 공원. 수족원과 대관람차"
+  maihama-eurasia-spa:
+    page: /travel-guide/maihama-eurasia-spa
+    icon: ti-bath
+    use: hours
+    rain: ok
+    kids: true
+    cost: paid
+    minutes: "10"
+    title:
+      ja: "舞浜ユーラシアの温泉"
+      en: "Maihama Eurasia onsen"
+      zh: "舞滨Eurasia温泉"
+      zh-tw: "舞濱Eurasia溫泉"
+      ko: "마이하마 유라시아 온천"
+    desc:
+      ja: "舞浜唯一の天然温泉。パーク帰りに"
+      en: "Maihama's only natural hot spring — the after-park soak"
+      zh: "舞滨唯一的天然温泉，乐园归途泡一泡"
+      zh-tw: "舞濱唯一的天然溫泉，樂園歸途泡一泡"
+      ko: "마이하마 유일의 천연 온천. 파크 귀갓길에"
+  kiyosumi-garden:
+    page: /travel-guide/kiyosumi-garden
+    icon: ti-leaf
+    use: half
+    rain: part
+    kids: true
+    cost: paid
+    minutes: "35"
+    title:
+      ja: "清澄庭園・清澄白河"
+      en: "Kiyosumi Garden"
+      zh: "清澄庭园·清澄白河"
+      zh-tw: "清澄庭園·清澄白河"
+      ko: "기요스미 정원·기요스미시라카와"
+    desc:
+      ja: "150円の日本庭園とコーヒーの街。いちばん静かな休息日"
+      en: "A ¥150 stroll garden and the coffee-roaster quarter — the quietest day"
+      zh: "150日元的日本庭园与咖啡街，最安静的休息日"
+      zh-tw: "150日圓的日本庭園與咖啡街，最安靜的休息日"
+      ko: "150엔의 일본 정원과 커피 거리. 가장 조용한 휴식일"
+  toyosu-senkyakubanrai:
+    page: /travel-guide/toyosu-senkyakubanrai
+    icon: ti-building-pavilion
+    use: half
+    rain: part
+    kids: true
+    cost: mixed
+    minutes: "30"
+    title:
+      ja: "豊洲 千客万来"
+      en: "Toyosu Senkyakubanrai"
+      zh: "丰洲 千客万来"
+      zh-tw: "豐洲 千客萬來"
+      ko: "도요스 센캬쿠반라이"
+    desc:
+      ja: "江戸風の海鮮街、無料の足湯、24時間温泉"
+      en: "Edo-style seafood lanes, a free rooftop footbath and a 24-hour onsen"
+      zh: "江户风海鲜街、免费足汤、24小时温泉"
+      zh-tw: "江戶風海鮮街、免費足湯、24小時溫泉"
+      ko: "에도풍 해산물 거리, 무료 족욕, 24시간 온천"
+  urayasu-traffic-park:
+    page: /travel-guide/urayasu-traffic-park
+    icon: ti-bike
+    use: hours
+    rain: no
+    kids: true
+    cost: free
+    minutes: "15"
+    title:
+      ja: "浦安市交通公園"
+      en: "Urayasu Traffic Park"
+      zh: "浦安市交通公园"
+      zh-tw: "浦安市交通公園"
+      ko: "우라야스시 교통공원"
+    desc:
+      ja: "無料で自転車・ポニー・小動物。幼児の半日に"
+      en: "Free bikes, ponies and small animals — a toddler's half day"
+      zh: "免费骑车·小马·小动物，幼儿的半天"
+      zh-tw: "免費騎車·小馬·小動物，幼兒的半天"
+      ko: "무료 자전거·포니·소동물. 유아의 반나절에"
+  small-worlds:
+    page: /travel-guide/small-worlds
+    icon: ti-buildings
+    use: half
+    rain: ok
+    kids: true
+    cost: paid
+    minutes: "25"
+    title:
+      ja: "SMALL WORLDS（有明）"
+      en: "SMALL WORLDS (Ariake)"
+      zh: "SMALL WORLDS（有明）"
+      zh-tw: "SMALL WORLDS（有明）"
+      ko: "SMALL WORLDS(아리아케)"
+    desc:
+      ja: "巨大ミニチュアの屋内ミュージアム。4〜12歳の雨の日に"
+      en: "Giant indoor miniature museum — ages 4–12 on a rainy day"
+      zh: "巨型室内微缩博物馆，4〜12岁雨天首选"
+      zh-tw: "巨型室內微縮博物館，4〜12歲雨天首選"
+      ko: "거대 미니어처 실내 뮤지엄. 4〜12세의 비 오는 날에"
+  teamlab-planets:
+    page: /travel-guide/teamlab-planets
+    icon: ti-ripple
+    use: half
+    rain: ok
+    kids: true
+    cost: paid
+    minutes: "35"
+    title:
+      ja: "チームラボプラネッツ"
+      en: "teamLab Planets"
+      zh: "teamLab Planets"
+      zh-tw: "teamLab Planets"
+      ko: "teamLab Planets"
+    desc:
+      ja: "裸足で水に入るアート。日時指定チケット"
+      en: "Barefoot art in water — timed tickets, book ahead"
+      zh: "赤脚走进水中的艺术，需预约指定时段"
+      zh-tw: "赤腳走進水中的藝術，需預約指定時段"
+      ko: "맨발로 물에 들어가는 아트. 날짜·시간 지정 티켓"
+  tokyo-character-street:
+    page: /travel-guide/tokyo-character-street
+    icon: ti-shopping-bag
+    use: hours
+    rain: ok
+    kids: true
+    cost: free
+    minutes: "20"
+    title:
+      ja: "東京キャラクターストリート"
+      en: "Tokyo Character Street"
+      zh: "东京角色街（东京站）"
+      zh-tw: "東京角色街（東京站）"
+      ko: "도쿄 캐릭터 스트리트"
+    desc:
+      ja: "東京駅地下のポケモン・ちいかわ・ジブリ等30店。帰国前のお土産に"
+      en: "Pokémon, Chiikawa, Ghibli and 30 shops under Tokyo Station — last-day souvenirs"
+      zh: "东京站地下的宝可梦·吉伊卡哇·吉卜力等30家店，回国前买伴手礼"
+      zh-tw: "東京站地下的寶可夢·吉伊卡哇·吉卜力等30家店，回國前買伴手禮"
+      ko: "도쿄역 지하의 포켓몬·치이카와·지브리 등 30개 숍. 귀국 전 기념품에"
+  asakusa:
+    page: /travel-guide/asakusa
+    icon: ti-torii
+    use: half
+    rain: no
+    kids: true
+    cost: free
+    minutes: "40"
+    title:
+      ja: "浅草"
+      en: "Asakusa"
+      zh: "浅草"
+      zh-tw: "淺草"
+      ko: "아사쿠사"
+    desc:
+      ja: "浅草寺・雷門・仲見世。着物レンタルと茶道体験も"
+      en: "Senso-ji, Kaminarimon and Nakamise — plus kimono rental and tea ceremony"
+      zh: "浅草寺·雷门·仲见世，还有和服租借与茶道体验"
+      zh-tw: "淺草寺·雷門·仲見世，還有和服租借與茶道體驗"
+      ko: "센소지·가미나리몬·나카미세. 기모노 대여와 다도 체험도"
+  tsukiji-outer-market:
+    page: /travel-guide/tsukiji-outer-market
+    icon: ti-fish
+    use: half
+    rain: part
+    kids: false
+    cost: free
+    minutes: "25"
+    title:
+      ja: "築地場外市場"
+      en: "Tsukiji Outer Market"
+      zh: "筑地场外市场"
+      zh-tw: "築地場外市場"
+      ko: "쓰키지 장외시장"
+    desc:
+      ja: "午前中の寿司と海鮮の食べ歩き。日・祝・水曜の多くは休み"
+      en: "Morning sushi and street seafood — closed Sundays, holidays and most Wednesdays"
+      zh: "上午的寿司与海鲜，周日·节假日·多数周三休息"
+      zh-tw: "上午的壽司與海鮮，週日·國定假日·多數週三休息"
+      ko: "오전의 스시와 해산물. 일·공휴일·대부분의 수요일 휴무"
+  ryogoku-sumo:
+    page: /travel-guide/ryogoku-sumo
+    icon: ti-building-stadium
+    use: half
+    rain: ok
+    kids: true
+    cost: mixed
+    minutes: "40"
+    title:
+      ja: "両国・相撲と江戸東京博物館"
+      en: "Ryogoku: sumo & Edo-Tokyo Museum"
+      zh: "两国·相扑与江户东京博物馆"
+      zh-tw: "兩國·相撲與江戶東京博物館"
+      ko: "료고쿠·스모와 에도도쿄박물관"
+    desc:
+      ja: "無料の相撲博物館、2026年再開の江戸東京博物館、ちゃんこ鍋"
+      en: "Free Sumo Museum, the museum reopened in 2026, chanko hot pot"
+      zh: "免费相扑博物馆、2026年重开的江户东京博物馆、相扑火锅"
+      zh-tw: "免費相撲博物館、2026年重開的江戶東京博物館、相撲火鍋"
+      ko: "무료 스모 박물관, 2026년 재개관한 에도도쿄박물관, 창코나베"
+  odaiba:
+    page: /travel-guide/odaiba
+    icon: ti-fountain
+    use: evening
+    rain: part
+    kids: true
+    cost: mixed
+    minutes: "30"
+    title:
+      ja: "お台場"
+      en: "Odaiba"
+      zh: "台场"
+      zh-tw: "台場"
+      ko: "오다이바"
+    desc:
+      ja: "無料の噴水ショー、海浜公園、レインボーブリッジ。乗換1回"
+      en: "Free fountain show, beach park and Rainbow Bridge — one easy transfer"
+      zh: "免费喷泉秀、海滨公园、彩虹大桥，只需换乘1次"
+      zh-tw: "免費噴泉秀、海濱公園、彩虹大橋，只需轉乘1次"
+      ko: "무료 분수 쇼, 해변 공원, 레인보우 브리지. 환승 1회"
+  tokyo-skytree:
+    page: /travel-guide/tokyo-skytree
+    icon: ti-tower
+    use: half
+    rain: ok
+    kids: true
+    cost: paid
+    minutes: "50"
+    title:
+      ja: "東京スカイツリー"
+      en: "Tokyo Skytree"
+      zh: "东京晴空塔"
+      zh-tw: "東京晴空塔"
+      ko: "도쿄 스카이트리"
+    desc:
+      ja: "パークから直行バス。展望台とすみだ水族館"
+      en: "Direct bus from the parks — the deck and Sumida Aquarium"
+      zh: "乐园直达巴士，展望台与墨田水族馆"
+      zh-tw: "樂園直達巴士，展望台與墨田水族館"
+      ko: "파크에서 직행 버스. 전망대와 스미다 수족관"
+  shibuya-sky:
+    page: /travel-guide/shibuya-sky
+    icon: ti-camera
+    use: half
+    rain: no
+    kids: false
+    cost: paid
+    minutes: "45"
+    title:
+      ja: "SHIBUYA SKY・渋谷"
+      en: "SHIBUYA SKY & Shibuya"
+      zh: "SHIBUYA SKY·涩谷"
+      zh-tw: "SHIBUYA SKY·澀谷"
+      ko: "SHIBUYA SKY·시부야"
+    desc:
+      ja: "屋上展望台とスクランブル交差点。2週間前の予約必須"
+      en: "Open-air rooftop over the Scramble Crossing — book 2 weeks ahead"
+      zh: "俯瞰十字路口的露天屋顶，须提前2周预约"
+      zh-tw: "俯瞰十字路口的露天屋頂，須提前2週預約"
+      ko: "스크램블 교차로 위의 야외 옥상. 2주 전 예약 필수"

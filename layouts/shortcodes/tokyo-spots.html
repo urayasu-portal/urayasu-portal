@@ -1,0 +1,90 @@
+{{- /* 東京休息日スポットのデータ駆動一覧（data/tokyo_spots.yaml）。
+     使用例: {{< tokyo-spots >}}        → 目的別カード（分類ごとに h2 見出し付き・目次に載る）
+             {{< tokyo-spots "table" >}} → 全スポット比較表（用途・雨・子連れ・無料/有料・舞浜からの所要）
+     その言語に記事が存在するスポットだけを描画する（未訳ページへのリンクを出さない）。
+     5言語のラベルは yaml 側に持ち、ここでは UI 文言だけ分岐する。 */ -}}
+{{- $mode := .Get 0 | default "cards" -}}
+{{- $lang := .Page.Language.Lang -}}
+{{- $d := hugo.Data.tokyo_spots -}}
+{{- $t := dict
+    "ja"    (dict "use" "用途" "rain" "雨の日" "kids" "子連れ" "cost" "料金" "from" "舞浜から" "spot" "スポット" "min" "約%s分"
+                  "rain_ok" "屋内OK" "rain_part" "一部屋内" "rain_no" "屋外" "kids_yes" "◎" "kids_no" "△"
+                  "cost_free" "無料" "cost_paid" "有料" "cost_mixed" "入場無料・一部有料"
+                  "use_half" "半日" "use_full" "1日" "use_evening" "午後〜夜" "use_hours" "1〜2時間")
+    "en"    (dict "use" "Best for" "rain" "Rain" "kids" "Kids" "cost" "Cost" "from" "From Maihama" "spot" "Spot" "min" "~%s min"
+                  "rain_ok" "Indoor" "rain_part" "Partly indoor" "rain_no" "Outdoor" "kids_yes" "Great" "kids_no" "OK"
+                  "cost_free" "Free" "cost_paid" "Paid" "cost_mixed" "Free entry, paid extras"
+                  "use_half" "Half day" "use_full" "Full day" "use_evening" "Afternoon–night" "use_hours" "1–2 hours")
+    "zh"    (dict "use" "用途" "rain" "雨天" "kids" "亲子" "cost" "费用" "from" "从舞滨" "spot" "景点" "min" "约%s分钟"
+                  "rain_ok" "室内OK" "rain_part" "部分室内" "rain_no" "户外" "kids_yes" "◎" "kids_no" "△"
+                  "cost_free" "免费" "cost_paid" "收费" "cost_mixed" "免费入场·部分收费"
+                  "use_half" "半天" "use_full" "一整天" "use_evening" "下午〜夜晚" "use_hours" "1〜2小时")
+    "zh-tw" (dict "use" "用途" "rain" "雨天" "kids" "親子" "cost" "費用" "from" "從舞濱" "spot" "景點" "min" "約%s分鐘"
+                  "rain_ok" "室內OK" "rain_part" "部分室內" "rain_no" "戶外" "kids_yes" "◎" "kids_no" "△"
+                  "cost_free" "免費" "cost_paid" "收費" "cost_mixed" "免費入場·部分收費"
+                  "use_half" "半天" "use_full" "一整天" "use_evening" "下午〜夜晚" "use_hours" "1〜2小時")
+    "ko"    (dict "use" "용도" "rain" "비 오는 날" "kids" "아이동반" "cost" "요금" "from" "마이하마에서" "spot" "스팟" "min" "약 %s분"
+                  "rain_ok" "실내 OK" "rain_part" "일부 실내" "rain_no" "야외" "kids_yes" "◎" "kids_no" "△"
+                  "cost_free" "무료" "cost_paid" "유료" "cost_mixed" "입장 무료·일부 유료"
+                  "use_half" "반나절" "use_full" "하루" "use_evening" "오후〜밤" "use_hours" "1〜2시간") -}}
+{{- $L := index $t $lang | default (index $t "en") -}}
+{{- $spots := $d.spots -}}
+{{- /* その言語に存在するページだけ集める */ -}}
+{{- $avail := dict -}}
+{{- range $k, $s := $spots -}}
+  {{- with site.GetPage $s.page -}}{{- $avail = merge $avail (dict $k .) -}}{{- end -}}
+{{- end -}}
+
+{{- if eq $mode "table" -}}
+<div class="lg-art-table-wrap tg-spot-table-wrap">
+<table class="lg-art-table tg-spot-table">
+<thead><tr><th>{{ $L.spot }}</th><th>{{ $L.use }}</th><th>{{ $L.rain }}</th><th>{{ $L.kids }}</th><th>{{ $L.cost }}</th><th>{{ $L.from }}</th></tr></thead>
+<tbody>
+{{- range $d.categories -}}
+  {{- range .spots -}}
+    {{- $s := index $spots . -}}
+    {{- with index $avail . -}}
+<tr>
+  <td><a href="{{ .RelPermalink }}"><strong>{{ index $s.title $lang | default (index $s.title "en") }}</strong></a></td>
+  <td>{{ index $L (printf "use_%s" $s.use) }}</td>
+  <td>{{ index $L (printf "rain_%s" $s.rain) }}</td>
+  <td>{{ if $s.kids }}{{ $L.kids_yes }}{{ else }}{{ $L.kids_no }}{{ end }}</td>
+  <td>{{ index $L (printf "cost_%s" $s.cost) }}</td>
+  <td>{{ printf $L.min $s.minutes }}</td>
+</tr>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+</tbody>
+</table>
+</div>
+{{- else -}}
+{{- range $d.categories -}}
+  {{- $cat := . -}}
+  {{- $has := false -}}
+  {{- range .spots -}}{{- if index $avail . -}}{{- $has = true -}}{{- end -}}{{- end -}}
+  {{- if $has }}
+<h2 id="cat-{{ $cat.id }}"><i class="ti {{ $cat.icon }}" aria-hidden="true"></i> {{ index $cat.label $lang | default (index $cat.label "en") }}</h2>
+<p class="tg-section-sub">{{ index $cat.sub $lang | default (index $cat.sub "en") }}</p>
+<div class="tg-purpose-grid tg-spot-grid">
+  {{- range .spots -}}
+    {{- $s := index $spots . -}}
+    {{- with index $avail . }}
+  <a class="tg-purpose-card tg-spot-card" href="{{ .RelPermalink }}">
+    <i class="ti {{ $s.icon }}" aria-hidden="true"></i>
+    <div class="tg-purpose-title">{{ index $s.title $lang | default (index $s.title "en") }}</div>
+    <div class="tg-purpose-desc">{{ index $s.desc $lang | default (index $s.desc "en") }}</div>
+    <div class="tg-spot-chips">
+      <span class="tg-spot-chip">{{ index $L (printf "use_%s" $s.use) }}</span>
+      {{- if eq $s.rain "ok" }}<span class="tg-spot-chip is-rain">{{ $L.rain_ok }}</span>{{ end }}
+      {{- if $s.kids }}<span class="tg-spot-chip is-kids">{{ $L.kids }}</span>{{ end }}
+      {{- if eq $s.cost "free" }}<span class="tg-spot-chip is-free">{{ $L.cost_free }}</span>{{ end }}
+      <span class="tg-spot-chip is-time">{{ printf $L.min $s.minutes }}</span>
+    </div>
+  </a>
+    {{- end -}}
+  {{- end }}
+</div>
+  {{- end -}}
+{{- end -}}
+{{- end -}}

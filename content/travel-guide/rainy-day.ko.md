@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 비 오는 날 가이드｜우천 시 파크 공략과 마이하마 실내 명소"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-15
 factChecked: "2026-08-24"
 slug: "rainy-day"
 badge: "비 오는 날"
