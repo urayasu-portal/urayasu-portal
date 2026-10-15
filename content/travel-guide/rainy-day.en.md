@@ -1,7 +1,7 @@
 ---
 title: "Tokyo Disney Resort on a Rainy Day | Park Tips & Indoor Spots in Maihama"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-08-17
+lastmod: 2026-10-15
 factChecked: "2026-08-24"
 slug: "rainy-day"
 badge: "Rainy Day"
