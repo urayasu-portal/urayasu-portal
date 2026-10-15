@@ -152,6 +152,9 @@
       </div>
       {{- end }}
 
+      {{/* よくある質問（frontmatter faq: を可視化・本文にFAQ見出しがあれば出さない） */}}
+      {{- partial "faq-visible.html" . }}
+
       {{/* ホテル名×設備FAQ（enのみ・hotels_map.yaml flags連動） */}}
       {{- partial "hotel-facility-faq.html" . }}
 
