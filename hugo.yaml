@@ -102,7 +102,7 @@ params:
     # Agoda 直接提携（Agoda Partners）。承認後に発行される Partner ID（cid）を貼ると、
     # 全言語の Agoda ボタン（CSV AgodaURL 列があるホテル）に ?cid= が付与される。未設定のあいだは Travelpayouts agodaP → 素URL の順。
     agoda:
-      cid: ""
+      cid: "1977025"
     # チケットCTAの遷移先（言語別）。KKday は言語サイトごとに販売商品が異なるため、言語ごとに検証済みURLを置く。
     #   2026-09-13 実ブラウザ確認: KKday 商品19252（表示上の商品番号 #32488「東京迪士尼樂園 & 東京迪士尼海洋門票」）は
     #   zh-tw / en / ko / zh-cn で有効、ja は「この表示言語では利用不可」→ ja は空（カード非表示）。
