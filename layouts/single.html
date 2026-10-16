@@ -172,6 +172,10 @@
       </div>
       {{- end }}
 
+      {{- /* よくある質問（frontmatter faq: を可視化・本文にFAQ見出しがあれば出さない。工程6 Phase 6B-1A）。
+             faq: の無い記事の出力が空白も含めて変わらないよう、partial の出力の前後の空白を除いている */}}
+      {{- partial "faq-visible.html" . | strings.TrimSpace | safeHTML }}
+
       {{- partial "extend_post_content.html" . }}
 
       {{/* 関連する常設ガイド（postsのみ・タグ→data/guide_map.yaml連動・生活ガイド再設計W0） */}}
