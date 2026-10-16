@@ -3,7 +3,7 @@
        hotels_map.yaml の flags からQ&Aをデータ駆動で描画する。
        - en のみ（クエリが英語のため）。slug が hotels_map に一致した場合のみ表示
        - フラグが「ある」設備だけ肯定形で答える（フラグ欠落からNoは導かない）
-       - FAQPage JSON-LD は frontmatter faq: が無いページのみ出力（二重スキーマ防止） */ -}}
+       - FAQPage JSON-LD は frontmatter faq: が無いページのみ出力（二重スキーマ防止）。質問・回答は画面の表示と同じ文言 */ -}}
 {{- if eq .Language.Lang "en" }}
 {{- $slug := .File.ContentBaseName }}
 {{- $h := false }}
@@ -15,31 +15,31 @@
 {{- $luggageURL := "travel-guide/luggage-airport/" | relLangURL }}
 {{- $faqs := slice }}
 {{- if in $h.flags "laundry" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have a coin laundry?" $n) "a" (printf "Yes — %s has guest laundry facilities. See the Facilities &amp; Services section on this page for details." $n) "p" (printf "Yes — %s has guest laundry facilities. See the Facilities & Services section on this page for details." $n)) }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have a coin laundry?" $n) "a" (printf "Yes — %s has guest laundry facilities. See the Facilities &amp; Services section on this page for details." $n)) }}
 {{- end }}
 {{- if in $h.flags "convenience" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Is there a convenience store or shop inside %s?" $n) "a" "Yes — there is an in-house store, handy for drinks, snacks and small essentials." "p" "Yes — there is an in-house store, handy for drinks, snacks and small essentials.") }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Is there a convenience store or shop inside %s?" $n) "a" "Yes — there is an in-house store, handy for drinks, snacks and small essentials.") }}
 {{- end }}
 {{- if in $h.flags "shuttle" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have a free shuttle bus?" $n) "a" (printf "Yes — %s operates a free shuttle. For how the park shuttles really work, see our <a href=\"%s\">shuttle bus guide</a>." $n $shuttleURL) "p" (printf "Yes — %s operates a free shuttle. See the shuttle bus guide on this site for how the park shuttles really work." $n)) }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have a free shuttle bus?" $n) "a" (printf "Yes — %s operates a free shuttle. For how the park shuttles really work, see our <a href=\"%s\">shuttle bus guide</a>." $n $shuttleURL)) }}
 {{- end }}
 {{- if in $h.flags "bath" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have a public bath or hot spring?" $n) "a" "Yes — large public bath facilities are available. See the Facilities &amp; Services section for details such as hours and fees." "p" "Yes — large public bath facilities are available. See the Facilities & Services section for details such as hours and fees.") }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have a public bath or hot spring?" $n) "a" "Yes — large public bath facilities are available. See the Facilities &amp; Services section for details such as hours and fees.") }}
 {{- end }}
 {{- if in $h.flags "pool" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have an indoor pool?" $n) "a" "Yes — an indoor pool is available. Hours and fees can vary by season, so check the official site before your stay." "p" "Yes — an indoor pool is available. Hours and fees can vary by season, so check the official site before your stay.") }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Does %s have an indoor pool?" $n) "a" "Yes — an indoor pool is available. Hours and fees can vary by season, so check the official site before your stay.") }}
 {{- end }}
 {{- if in $h.flags "station" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Is %s right by a train station?" $n) "a" "Yes — it is directly connected to, or about a one-minute walk from, the station. A big plus on rainy days or with heavy luggage." "p" "Yes — it is directly connected to, or about a one-minute walk from, the station. A big plus on rainy days or with heavy luggage.") }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Is %s right by a train station?" $n) "a" "Yes — it is directly connected to, or about a one-minute walk from, the station. A big plus on rainy days or with heavy luggage.") }}
 {{- end }}
 {{- if in $h.flags "limousine" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Do airport limousine buses stop at %s?" $n) "a" (printf "Yes — %s is served by airport limousine buses. See our <a href=\"%s\">access guide</a> for routes and fares." $n $accessURL) "p" (printf "Yes — %s is served by airport limousine buses. See the access guide on this site for routes and fares." $n)) }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Do airport limousine buses stop at %s?" $n) "a" (printf "Yes — %s is served by airport limousine buses. See our <a href=\"%s\">access guide</a> for routes and fares." $n $accessURL)) }}
 {{- end }}
 {{- if in $h.flags "kitchen" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Do rooms at %s have a kitchen?" $n) "a" "Yes — rooms with small kitchen facilities are available, which is useful for longer stays." "p" "Yes — rooms with small kitchen facilities are available, which is useful for longer stays.") }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Do rooms at %s have a kitchen?" $n) "a" "Yes — rooms with small kitchen facilities are available, which is useful for longer stays.") }}
 {{- end }}
 {{- if in $h.flags "delivery" }}
-  {{- $faqs = $faqs | append (dict "q" (printf "Can I send my luggage from the station to %s?" $n) "a" (printf "Yes — same-day baggage delivery from Maihama Station is available for this hotel. See our <a href=\"%s\">luggage delivery guide</a> for counters and cut-off times." $luggageURL) "p" "Yes — same-day baggage delivery from Maihama Station is available for this hotel. See the luggage delivery guide on this site for counters and cut-off times.") }}
+  {{- $faqs = $faqs | append (dict "q" (printf "Can I send my luggage from the station to %s?" $n) "a" (printf "Yes — same-day baggage delivery from Maihama Station is available for this hotel. See our <a href=\"%s\">luggage delivery guide</a> for counters and cut-off times." $luggageURL)) }}
 {{- end }}
 {{- with $faqs }}
 <section class="tg-hotel-faq">
@@ -52,16 +52,16 @@
   {{- end }}
 </section>
 {{- if not $.Params.faq }}
+{{- /* JSON-LD は faq-jsonld.html と同じく、データを組み立ててから jsonify で1回だけ JSON にする
+       （以前は値ごとに jsonify した文字列を script に直書きし、Hugo が script 文脈で再エスケープして
+       "\"Does …?\"" の二重エスケープになっていた。工程6 Phase 6B-1A）。
+       回答は画面の回答（.a）からタグを除いたテキストで、画面の文言と一致させる。 */ -}}
+{{- $items := slice }}
+{{- range . }}
+  {{- $items = $items | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" (.a | plainify | htmlUnescape))) }}
+{{- end }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {{- range $i, $f := . }}{{ if $i }},{{ end }}
-    { "@type": "Question", "name": {{ $f.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ $f.p | jsonify }} } }
-    {{- end }}
-  ]
-}
+{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $items | jsonify (dict "indent" "  ") | safeJS }}
 </script>
 {{- end }}
 {{- end }}
