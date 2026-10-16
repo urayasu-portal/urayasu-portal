@@ -1,0 +1,62 @@
+{{- /* ホテル柱記事の「この記事で紹介したおすすめホテル」（工程2 Phase 2B-1）。
+       呼び出し: layouts/travel-guide/hotels/single.html の本文の直後（ホテル個別ページでは呼ばない）
+       表示するのは data/hotel_picks.yaml に定義があるページだけ。ホテルはそのリストの順（最大6軒）。
+
+       各ホテルに出すもの:
+         ・ホテル名と区分・エリア（data/hotels.yaml）。価格は出さない
+         ・「詳細を見る」… 同じ言語のホテル個別ページへの内部リンク（affiliate の属性は付けない）
+         ・予約サイト1社 … partials/hotel-book-buttons.html に primaryOnly を渡し、その言語の並び順で最初に出せる1社。
+                           URL の組み立ては hotel-book-buttons.html だけが行う。予約先が無いホテルはボタンなし
+                           data-cta-pos="hotel_pick"（GA4 affiliate_click の cta_pos）
+       予約ボタンが1つでもあるときだけ、広告（PR）表記をブロックに1回出す。 */ -}}
+{{- $lang := site.Language.Lang }}
+{{- $def := index (hugo.Data.hotel_picks.pages | default dict) .File.ContentBaseName }}
+{{- with $def }}
+{{- $slugs := .hotels | default slice }}
+{{- with .langs }}{{ with index . $lang }}{{ $slugs = . }}{{ end }}{{ end }}
+{{- $mapIdx := dict }}
+{{- range hugo.Data.hotels_map.hotels }}{{ $mapIdx = merge $mapIdx (dict .slug .) }}{{- end }}
+{{- $catIdx := dict }}{{- $areaIdx := dict }}
+{{- range hugo.Data.hotels.areas }}{{- $an := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang)) }}{{- range .hotels }}{{- if .slug }}{{ $catIdx = merge $catIdx (dict .slug .category) }}{{ $areaIdx = merge $areaIdx (dict .slug $an) }}{{- end }}{{- end }}{{- end }}
+{{- $cards := slice }}{{- $anyBtn := false }}
+{{- range first 6 $slugs }}
+  {{- $slug := . }}
+  {{- with site.GetPage (printf "/travel-guide/hotels/%s" $slug) }}
+    {{- $m := index $mapIdx $slug }}
+    {{- $btn := "" }}
+    {{- with $m }}{{ with .booking }}{{ $btn = partial "hotel-book-buttons.html" (dict "bk" . "lang" $lang "cur2" $m "hotel" $slug "pos" "hotel_pick" "primaryOnly" true "labelKey" "pick_rates_on") }}{{ end }}{{ end }}
+    {{- if $btn }}{{ $anyBtn = true }}{{ end }}
+    {{- $cat := index $catIdx $slug | default "" }}
+    {{- $clabel := "" }}
+    {{- if eq $cat "ディズニーホテル" }}{{ $clabel = i18n "cat_disney" }}
+    {{- else if eq $cat "オフィシャルホテル" }}{{ $clabel = i18n "cat_official" }}
+    {{- else if eq $cat "パートナーホテル" }}{{ $clabel = i18n "cat_partner" }}{{- end }}
+    {{- $cards = $cards | append (dict "name" (.Title | replaceRE "\\s*[｜|].*$" "") "url" .RelPermalink "cat" $clabel "area" (index $areaIdx $slug | default "") "btn" $btn) }}
+  {{- end }}
+{{- end }}
+{{- if $cards -}}
+<section class="tg-pick" aria-labelledby="tg-pick-title">
+  <div class="section-head"><h2 id="tg-pick-title"><span class="lg-related-bar" aria-hidden="true"></span>{{ i18n "pick_title" }}</h2></div>
+  {{- if $anyBtn }}
+  <p class="tg-pick-pr"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ i18n "includes_pr" }}</p>
+  {{- end }}
+  <ul class="tg-pick-list">
+    {{- range $cards }}
+    <li class="tg-pick-card">
+      <div class="tg-pick-name">{{ .name }}</div>
+      {{- if or .cat .area }}
+      <div class="tg-pick-meta">
+        {{- with .cat }}<span class="tg-pick-cat">{{ . }}</span>{{ end }}
+        {{- with .area }}<span class="tg-pick-area"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+      </div>
+      {{- end }}
+      <div class="tg-pick-actions">
+        <a class="tg-pick-detail" href="{{ .url }}" aria-label="{{ i18n "pick_detail_aria" (dict "name" .name) }}">{{ i18n "pick_detail" }}</a>
+        {{- .btn }}
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+{{- end -}}

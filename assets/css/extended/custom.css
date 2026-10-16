@@ -3691,6 +3691,24 @@ i.bc-sep { margin: 0 1px; line-height: 1; }
   body:has(.lg-mobile-book-bar) { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 }
 
+/* ホテル柱記事の「この記事で紹介したおすすめホテル」（partials/hotel-pick-cards.html・工程2 Phase 2B-1）。
+   モバイルは1列、広い画面は2列。ボタンは高さ44px以上。固定（sticky）表示はしない */
+.tg-pick { margin: 28px 0 8px; }
+.tg-pick-pr { font-size: 11px; color: var(--up-text-3); margin: 0 0 10px; display: flex; align-items: center; gap: 4px; }
+.tg-pick-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 10px; }
+.tg-pick-card { margin: 0; background: var(--up-surface); border: 1px solid var(--up-border); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.tg-pick-name { font-size: 15px; font-weight: 700; color: var(--up-text); line-height: 1.45; }
+.tg-pick-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 12px; color: var(--up-text-3); }
+.tg-pick-cat { font-weight: 700; color: var(--accent); }
+.tg-pick-area { display: inline-flex; align-items: center; gap: 3px; }
+.tg-pick-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+.tg-pick-actions > a { flex: 1 1 100px; min-height: 44px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.35; box-sizing: border-box; }
+.tg-pick-detail { padding: 10px 12px; border: 1.5px solid var(--accent); border-radius: 8px; background: var(--up-surface); color: var(--accent) !important; font-size: 13px; font-weight: 700; text-decoration: none !important; }
+.tg-pick-detail:hover { background: var(--accent-bg); }
+.tg-pick-actions > .lg-book-btn { flex: 2 1 170px; padding: 10px 12px; }
+.tg-pick-actions > a:focus-visible { outline: 2px solid var(--up-text); outline-offset: 2px; }
+@media (min-width: 720px) { .tg-pick-list { grid-template-columns: 1fr 1fr; } }
+
 /* 広告（PR）表記（{{< ad-disclosure >}}） */
 .ad-disclosure { font-size: 12px; color: var(--up-text-3); background: var(--up-surface-2); border: 1px solid var(--up-border); border-radius: 8px; padding: 8px 12px; margin: 0 0 16px; display: flex; align-items: center; gap: 6px; line-height: 1.6; }
 .ad-disclosure i { color: var(--up-text-4); flex-shrink: 0; }

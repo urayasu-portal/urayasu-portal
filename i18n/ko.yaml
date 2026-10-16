@@ -232,3 +232,12 @@
   translation: "이 글은 <strong>{{ .date }} 이전에 게시한 안내</strong>입니다. 해당 날짜가 지났으므로 현재 상황은 공식 사이트 등에서 확인해 주세요."
 - id: event_ended
   translation: "<strong>이 이벤트는 종료되었습니다</strong>({{ .date }}). 게재 내용은 개최 당시의 정보입니다. 최신 정보는 공식 사이트에서 확인해 주세요."
+# 工程2 Phase 2B-1: ホテル柱記事の厳選ホテルブロック（partials/hotel-pick-cards.html）。pick_rates_on の .asp は予約サービス名
+- id: pick_title
+  translation: "이 글에서 소개한 추천 호텔"
+- id: pick_detail
+  translation: "자세히 보기"
+- id: pick_detail_aria
+  translation: "{{ .name }} 자세히 보기"
+- id: pick_rates_on
+  translation: "{{ .asp }}에서 요금 보기"
