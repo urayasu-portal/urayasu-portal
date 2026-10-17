@@ -1,7 +1,7 @@
 ---
 title: "Where to Eat near Tokyo Disney Resort | Food & Souvenirs in Urayasu, Shin-Urayasu & Maihama"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-08-16
+lastmod: 2026-10-17
 slug: "urayasu-gourmet-souvenir-guide"
 description: "Area-by-area food and souvenir guide for Urayasu, Shin-Urayasu, and Maihama. Covers everyday lunch spots, family dining, food before/after Disney, hotel restaurants, and gift shops — with tips for finding what you need."
 tags:
@@ -14,7 +14,7 @@ tags:
 images: ["/images/og-gourmet.png"]
 noDate: true
 tgNav: true
-factChecked: "2026-08-11"
+factChecked: "2026-10-17"
 ---
 
 The Urayasu, Shin-Urayasu, and Maihama area has a range of dining options depending on your purpose: everyday local lunches near Urayasu Station, cafes and restaurants easy to reach before or after Tokyo Disney Resort visits near Maihama Station, souvenir shops at Ikspiari, and hotel restaurants open to non-guests. Each area suits different needs.
@@ -155,7 +155,7 @@ Many hotels in the Shin-Urayasu and Maihama area have restaurants open to non-gu
 
 **Category:** Buffet, Chinese cuisine, lobby lounge, cafe, takeout | **Area:** Maihama, Bayside | **Access:** Disney Resort Line Bayside Station area
 
-Operates Forest Garden (buffet), Kodo (Chinese cuisine), Lounge, Oh! Beans by the Bay, and more — from lunch to cafe. Restaurant reservations available on the official page. Takeout is also available.
+Operates Forest Garden (buffet), Oucho (Chinese cuisine), Lounge O (lobby lounge), Bean by the Bay (cafe), and more — from lunch to cafe. Restaurant reservations available on the official page. Takeout is also available.
 
 **Best for:** Hotel lunch, special occasion, family dining, buffet
 
