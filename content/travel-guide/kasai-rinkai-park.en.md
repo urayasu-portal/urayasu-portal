@@ -1,7 +1,7 @@
 ---
 title: "Kasai Rinkai Park & Aquarium: The Other Giant Park One Stop from Disney"
 description: "Three minutes by train from Maihama: a huge free waterfront park with a tuna-filled aquarium (free for kids 12 and under) and a 117-meter Ferris wheel. The perfect rest-day escape from Tokyo Disney Resort."
-lastmod: 2026-08-16
+lastmod: 2026-10-17
 date: 2026-07-07
 draft: false
 cover:
@@ -18,7 +18,7 @@ sources:
   - name: "Diamond and Flower Ferris Wheel Official Site"
     url: "https://www.senyo.co.jp/kasai/"
 tags: ["rest-day", "with-kids", "kasai", "aquarium"]
-factChecked: "2026-08-11"
+factChecked: "2026-10-17"
 ---
 
 Look toward Tokyo from the Maihama Station platform and you'll see a giant Ferris wheel. That's **Kasai Rinkai Park** — one stop and about 3 minutes away on the JR Keiyo Line, and one of the largest parks in Tokyo. Entry is free. Inside you'll find **Tokyo Sea Life Park**, an aquarium where real bluefin tuna school around a doughnut-shaped tank (free for elementary-school kids and under), the 117-meter **Diamond and Flower Ferris Wheel**, and an artificial beach where kids splash barefoot. Three minutes from the Disney crowds, an entirely different kind of day.
@@ -61,7 +61,7 @@ A brand-new aquarium is under construction on the adjacent site. The Tokyo Metro
 |---|---|
 | **Park admission** | Free (open 24 hours) |
 | **Aquarium** | Adults ¥700, junior high ¥250, **elementary age & under free** / 9:30–17:00 (entry until 16:00) / closed Wed |
-| **Ferris wheel** | ¥800 (ages 3+) / 10:00–19:00 (until 20:00 Sat, Sun & holidays) / closed mostly on Wednesdays |
+| **Ferris wheel** | ¥800 (ages 3+) / 10:00–19:00 (until 20:00 Sat, Sun & holidays) / closed on the 3rd Wednesday of Mar–Dec (except Aug), the 4th and 5th Wednesdays of Jan, and every Wednesday in Feb (next day if a holiday) |
 | **Address** | Rinkai-cho 6, Edogawa, Tokyo |
 | **Best for** | Rest day / a sunny morning-to-afternoon |
 

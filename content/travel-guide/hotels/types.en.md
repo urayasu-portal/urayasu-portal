@@ -1,8 +1,8 @@
 ---
 title: "Tokyo Disney Resort Hotel Categories Explained | Disney, Official, Partner & Good Neighbor Hotels"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-09-09
-factChecked: "2026-08-08"
+lastmod: 2026-10-17
+factChecked: "2026-10-17"
 description: "Tokyo Disney Resort's hotels split into four categories: Disney Hotels (operated by the resort), Official Hotels, Partner Hotels, and Good Neighbor Hotels. We break down the real differences — early park entry (Happy Entry), in-hotel ticket purchase, free shuttles, baggage delivery — plus location and price, so you can pick the right category for your trip."
 tags:
   - Hotel
@@ -36,7 +36,7 @@ Benefits and prices are estimates based on 2025–2026 research. Always confirm 
 
 | Category | Location | Early entry<br>(Happy Entry) | Free park transport | Baggage delivery |
 |---|---|---|---|---|
-| **Disney Hotels** (resort-run) | Next to the parks / in-resort | ◯ Land 15 min / Sea 5–15 min | Walk / monorail | ◯ Free |
+| **Disney Hotels** (resort-run) | Next to the parks / in-resort | ◯ Land 15 min / Sea 5–15 min | Walk / monorail (Celebration Hotel: free shuttle bus) | ◯ Free (Celebration Hotel: paid) |
 | **Official Hotels** | In-resort, Bayside | ✗ | Resort Line / free shuttle | ◯ Free (at Maihama Stn.) |
 | **Partner Hotels** | Shin-Urayasu area | ✗ | Dedicated shuttle (free, no booking) | △ Paid |
 | **Good Neighbor Hotels** | Central Tokyo, Odaiba, Makuhari, etc. | ✗ | Direct bus (free, reservation required) | ✗ |
@@ -58,7 +58,7 @@ These are operated **directly by Tokyo Disney Resort.** They sit closest to the 
 
 - **Happy Entry** — guests-only early entry (Land 15 min early, Sea 5–15 min early due to construction; eligible park and conditions vary by hotel)
 - Buy park tickets inside the hotel
-- Free baggage delivery
+- Free baggage delivery (except Celebration Hotel, which uses the paid service at Bon Voyage by Maihama Station, {{< fact "bon_voyage.fee" >}} per item)
 - Guest-exclusive merchandise, and rooms immersed in Disney theming
 
 **Price guide:** from approx. ¥20,000 per room for 2 (much higher in peak seasons)
