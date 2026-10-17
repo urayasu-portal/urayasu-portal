@@ -1,8 +1,8 @@
 ---
 title: "浦安市の図書館・公共施設一覧ガイド｜図書館・公民館・文化施設・行政窓口を目的別に探せる便利帳"
 date: 2026-06-13T15:00:00+09:00
-lastmod: 2026-08-17
-factChecked: "2026-08-01"
+lastmod: 2026-10-17
+factChecked: "2026-10-17"
 categories:
   - "お知らせ"
 tags:
@@ -79,7 +79,7 @@ aliases:
 
 <div class="lg-art-cards">
   <div class="lg-art-card"><div class="lg-art-card-title">元町・市役所周辺</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>中央図書館</li><li>浦安市役所</li><li>文化会館</li><li>郷土博物館</li><li>中央公民館</li></ul></div>
-  <div class="lg-art-card"><div class="lg-art-card-title">浦安駅周辺</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>浦安駅前行政サービスセンター</li><li>当代島公民館</li><li>当代島・猫実方面の施設</li></ul></div>
+  <div class="lg-art-card"><div class="lg-art-card-title">浦安駅周辺</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>浦安駅前行政サービスセンター</li><li>当代島公民館（改修工事のため休館中・2028年1月再開予定）</li><li>当代島・猫実方面の施設</li></ul></div>
   <div class="lg-art-card"><div class="lg-art-card-title">新浦安駅周辺</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>新浦安駅前行政サービスセンター</li><li>Wave101</li><li>J:COM浦安音楽ホール</li><li>総合体育館</li></ul></div>
   <div class="lg-art-card"><div class="lg-art-card-title">中町エリア</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>富岡公民館（図書館分館あり）</li><li>美浜公民館（図書館分館あり）</li><li>中央武道館</li></ul></div>
   <div class="lg-art-card"><div class="lg-art-card-title">新町エリア</div><ul style="margin:4px 0 0;padding-left:1.2em;font-size:12px;color:var(--up-text-2);line-height:1.8"><li>高洲公民館（図書館分館あり）</li><li>日の出公民館（図書館分館あり）</li><li>健康センター</li></ul></div>
@@ -105,7 +105,7 @@ aliases:
 <table class="lg-art-table">
 <thead><tr><th>種別</th><th>施設・サービス</th><th>主な使い方</th></tr></thead>
 <tbody>
-<tr><td>分館</td><td>高洲・当代島・富岡・猫実・日の出・堀江・美浜</td><td>本の貸出・返却、地域の図書利用</td></tr>
+<tr><td>分館</td><td>高洲・当代島（休館中）・富岡・猫実・日の出・堀江・美浜</td><td>本の貸出・返却、地域の図書利用</td></tr>
 <tr><td>関連サービス</td><td>BOOKCAFE Dan、ファブスペース</td><td>読書・学び・ものづくり系の入口</td></tr>
 <tr><td>受取・返却</td><td>駅前行政サービスセンターなど</td><td>予約資料の受け取り、本などの返却</td></tr>
 </tbody>
@@ -124,7 +124,7 @@ aliases:
 <tbody>
 <tr><td>中央公民館</td><td>元町・市役所周辺</td><td>講座、会議、地域活動</td><td>体育館、調理室、和室など</td></tr>
 <tr><td>堀江公民館</td><td>元町</td><td>講座、会議、地域活動</td><td>アクセス、貸室、イベント</td></tr>
-<tr><td>当代島公民館</td><td>浦安駅周辺</td><td>講座、会議、地域活動</td><td>図書館分館、貸室</td></tr>
+<tr><td>当代島公民館</td><td>浦安駅周辺</td><td>講座、会議、地域活動</td><td><strong>改修工事のため2026年10月1日から休館中</strong>（2028年1月再開予定）。図書館当代島分館も休館し、ブックポスト・予約資料の受け取りは利用できません</td></tr>
 <tr><td>富岡公民館</td><td>中町</td><td>講座、会議、地域活動</td><td>図書館分館、貸室</td></tr>
 <tr><td>美浜公民館</td><td>中町</td><td>講座、会議、地域活動</td><td>図書館分館、貸室</td></tr>
 <tr><td>高洲公民館</td><td>新町</td><td>講座、会議、地域活動</td><td>図書館分館、貸室・予約方法</td></tr>

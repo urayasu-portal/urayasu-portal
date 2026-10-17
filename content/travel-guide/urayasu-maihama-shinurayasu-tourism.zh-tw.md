@@ -1,8 +1,8 @@
 ---
 title: "東京迪士尼周邊遊覽指南 | 舞濱·浦安·新浦安的觀光景點"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-10-15
-factChecked: "2026-08-01"
+lastmod: 2026-10-17
+factChecked: "2026-10-17"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - 舞濱
@@ -26,9 +26,9 @@ faq:
   - q: "有沒有能在迪士尼樂園以外度過半天的地方？"
     a: "有。舞濱的Ikspiari和Bon Voyage均無需門票即可進入。浦安站周邊，將浦安市鄉土博物館·古建築（宇田川家·大塚家）與境川散步道結合，可以充實地度過半天。"
   - q: "如何從舞濱站前往浦安站？"
-    a: "JR舞濱→JR新浦安約3–4分鐘（無需轉乘）。新浦安→浦安站（東西線）需轉乘，共約20–25分鐘。帶行李時也可考慮計程車。"
+    a: "搭路線巴士最方便。從JR舞濱站搭往浦安站入口的路線巴士（9系統）約20分鐘、210日圓。JR新浦安站與東西線浦安站之間沒有鐵路相連，從新浦安站出發也需搭巴士。帶行李時也可考慮計程車。"
   - q: "可以在不入園的情況下購買迪士尼周邊商品嗎？"
-    a: "可以。位於Ikspiari旁的Bon Voyage（JR舞濱站附近）無需門票即可購買官方迪士尼商品。"
+    a: "可以。位於JR舞濱站旁的Bon Voyage無需門票即可購買官方迪士尼商品。"
   - q: "帶小孩子去哪個區域比較方便？"
     a: "帶小孩子去，Ikspiari（舞濱）和Atre新浦安（新浦安）都是不錯的室內選項。浦安市鄉土博物館有深受小學生歡迎的體驗展示。"
   - q: "輪椅使用者方便嗎？"
@@ -180,7 +180,7 @@ faq:
     <div style="font-size:20px;margin-bottom:6px;">🏬 Ikspiari（舞濱）</div>
     <p style="margin:0;font-size:14px;"><strong>使用時機：</strong>購物、用餐、迪士尼周邊、雨天消磨時間<br>
     <strong>交通：</strong>與JR舞濱站直通，無需門票。<br>
-    <strong>營業時間：</strong>11:00–21:00（餐廳至22:00，部分有例外）</p>
+    <strong>營業時間：</strong>10:00–22:30（商店多至21:00，餐廳至22:00–22:30，各店不同）</p>
   </div>
   <div style="background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px 18px;">
     <div style="font-size:20px;margin-bottom:6px;">🏪 Atre新浦安（新浦安）</div>
@@ -191,8 +191,8 @@ faq:
   <div style="background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px 18px;">
     <div style="font-size:20px;margin-bottom:6px;">🏛️ 浦安市鄉土博物館（浦安站）</div>
     <p style="margin:0;font-size:14px;"><strong>使用時機：</strong>了解浦安歷史、半日觀光、悠閒散步<br>
-    <strong>交通：</strong>從東京地鐵東西線浦安站步行15–20分鐘（也可搭社區巴士）。免費參觀（截至2026年6月，如有異動請確認官方網站）。<br>
-    <strong>營業時間：</strong>9:30–17:00（週一休館）</p>
+    <strong>交通：</strong>從東京地鐵東西線浦安站步行約22分鐘（也可搭巴士）。免費參觀（截至2026年6月，如有異動請確認官方網站）。<br>
+    <strong>營業時間：</strong>9:30–17:00（16:30停止入館；週一、國定假日翌日等休館）</p>
   </div>
 </div>
 
@@ -253,15 +253,15 @@ faq:
 </figure>
 
 <h3>Ikspiari</h3>
-<p>與JR舞濱站直通的購物·餐飲設施，無需門票即可進入。內有餐廳、咖啡廳、時裝、商品和電影院綜合體。內部的<strong>Bon Voyage</strong>販售TDR官方角色商品，深受不想在園內排隊購物的遊客歡迎。</p>
+<p>與JR舞濱站直通的購物·餐飲設施，無需門票即可進入。內有餐廳、咖啡廳、時裝、商品和電影院綜合體。車站旁另一棟建築裡的<strong>Bon Voyage</strong>販售TDR官方角色商品，深受不想在園內排隊購物的遊客歡迎。</p>
 <ul>
   <li><strong>交通：</strong>與JR舞濱站直通</li>
-  <li><strong>營業時間：</strong>11:00–21:00（餐廳至22:00，電影院至末場）※各設施有所不同</li>
+  <li><strong>營業時間：</strong>10:00–22:30（商店多至21:00，餐廳至22:00–22:30，1樓部分店鋪8:00起）※各店不同・截至2026年10月</li>
   <li><strong>提示：</strong>樂園閉園後傍晚時段餐廳較擁擠，平日14:00–16:00相對寬鬆</li>
 </ul>
 
 <h3>Bon Voyage</h3>
-<p>緊鄰Ikspiari的大型迪士尼商品店，可從樂園外直接進入。是少數無需門票即可購買官方迪士尼商品的場所，常規及限定商品均有販售。</p>
+<p>位於JR舞濱站旁、日本規模最大的迪士尼商店之一（與Ikspiari分開的兩層獨棟建築，營業8:00–22:00，擁擠時需事先預約入店），可從樂園外直接進入。是少數無需門票即可購買官方迪士尼商品的場所，常規及限定商品均有販售。</p>
 <ul>
   <li><strong>交通：</strong>從JR舞濱站步行約3分鐘</li>
   <li><strong>提示：</strong>擁擠程度隨TDR開閉園時間波動</li>
@@ -312,7 +312,7 @@ faq:
 <p>距新浦安站步行約5–7分鐘的大型購物設施，有服裝、電器、食材和餐廳，方便大量採購和購買日用品。</p>
 <ul>
   <li><strong>交通：</strong>從JR新浦安站步行約5–7分鐘</li>
-  <li><strong>營業時間：</strong>10:00–21:00（各設施有所不同）</li>
+  <li><strong>營業時間：</strong>1樓（食品）8:00–23:00／2·3樓 9:00–21:00（各賣場·專賣店不同，截至2026年10月）</li>
 </ul>
 
 <h3>New Coast新浦安</h3>
@@ -353,8 +353,8 @@ faq:
 <h3>浦安市鄉土博物館</h3>
 <p>展示浦安歷史與文化的市立博物館。室外展示區保存並陳列著曾經實際使用過的漁屋、木船和工具，深受希望了解這座城市舊日生活的在地居民和遊客喜愛。</p>
 <ul>
-  <li><strong>交通：</strong>從東京地鐵東西線浦安站步行15–20分鐘（也可搭市循環巴士·社區巴士）</li>
-  <li><strong>營業時間：</strong>9:30–17:00（週一休館；若週一為國定假日，則順延至下一個工作日休館）</li>
+  <li><strong>交通：</strong>從東京地鐵東西線浦安站步行約22分鐘（也可搭路線巴士·社區巴士）</li>
+  <li><strong>營業時間：</strong>9:30–17:00（16:30停止入館）。休館：週一（如逢國定假日則翌日）、國定假日翌日、館內整理日、年末年初</li>
   <li><strong>入場費：</strong>免費（截至2026年6月，如有異動請查閱官方網站）</li>
 </ul>
 
@@ -380,7 +380,7 @@ faq:
   <dl>
     <dt>主要景點</dt><dd>浦安市鄉土博物館、舊宇田川家·舊大塚家住宅、境川散步道·商店街</dd>
     <dt>最近車站</dt><dd>東京地鐵東西線 浦安站</dd>
-    <dt>前往TDR</dt><dd>經舞濱站轉乘約30–40分鐘；搭路線巴士約25–30分鐘</dd>
+    <dt>前往TDR</dt><dd>從舞濱站搭路線巴士（往浦安站入口）約{{< fact "local_bus.urayasu_maihama_minutes" >}}分鐘；搭電車需轉乘，約30–40分鐘</dd>
   </dl>
 </div>
 
@@ -400,7 +400,7 @@ faq:
     <tr><td><strong>永旺Style新浦安</strong></td><td>新浦安</td><td>大型室內商城，可悠閒逛購</td><td>從JR新浦安站步行5–7分鐘</td></tr>
     <tr><td><strong>MONA新浦安</strong></td><td>新浦安</td><td>與車站直通的購物中心，時裝·商品·餐飲</td><td>JR新浦安站（直通）</td></tr>
     <tr><td><strong>New Coast新浦安</strong></td><td>新浦安</td><td>大型商場，超市·Nitori等約60家店鋪</td><td>從JR新浦安站步行15–20分鐘或搭巴士</td></tr>
-    <tr><td><strong>鄉土博物館</strong></td><td>浦安站</td><td>室內展示可參觀，雨天室外展示區可能部分限制</td><td>從浦安站步行15–20分鐘</td></tr>
+    <tr><td><strong>鄉土博物館</strong></td><td>浦安站</td><td>室內展示可參觀，雨天室外展示區可能部分限制</td><td>從浦安站步行約22分鐘</td></tr>
     <tr><td><strong>飯店大廳·休息廳</strong></td><td>舞濱·新浦安</td><td>住客可使用的休息區，部分提供茶飲服務（收費）</td><td>各飯店</td></tr>
   </tbody>
 </table>
@@ -493,7 +493,7 @@ faq:
     <tr><td>羽田機場</td><td>機場巴士約40–50分鐘/電車約45–55分鐘</td><td>機場巴士約40–45分鐘</td><td>電車（轉乘）約60分鐘</td></tr>
     <tr><td>成田機場</td><td>機場巴士約60–75分鐘/電車約80–90分鐘</td><td>機場巴士約60–70分鐘</td><td>電車（轉乘）約80分鐘</td></tr>
     <tr><td>東京站</td><td>JR京葉線約15–17分鐘</td><td>JR京葉線約19–21分鐘</td><td>東西線（直達）約18分鐘</td></tr>
-    <tr><td>區域間</td><td colspan="3">舞濱↔新浦安：京葉線約3–4分鐘 / 新浦安↔浦安站：轉乘約20–25分鐘</td></tr>
+    <tr><td>區域間</td><td colspan="3">舞濱↔新浦安：京葉線約3–4分鐘 / 舞濱↔浦安站：路線巴士約{{< fact "local_bus.urayasu_maihama_minutes" >}}分鐘（新浦安↔浦安站也需搭巴士，無鐵路相連）</td></tr>
   </tbody>
 </table>
 </div>
@@ -508,10 +508,10 @@ faq:
 <p>有。舞濱的Ikspiari和Bon Voyage均無需門票即可進入。浦安站周邊，將鄉土博物館、古建築與境川散步道結合，可充實地度過半天。</p>
 
 <h3>如何從舞濱站前往浦安站？</h3>
-<p>JR舞濱→JR新浦安約3–4分鐘（無需轉乘）。從新浦安→浦安站（東西線）需轉乘，共約20–25分鐘。帶行李時可考慮計程車。</p>
+<p>搭路線巴士最方便。從JR舞濱站搭往浦安站入口的路線巴士（{{< fact "local_bus.urayasu_maihama_route" >}}系統）約{{< fact "local_bus.urayasu_maihama_minutes" >}}分鐘、{{< fact "local_bus.urayasu_maihama_fare" >}}。JR新浦安站與東西線浦安站之間沒有鐵路相連，從新浦安站出發也需搭巴士。帶行李時可考慮計程車。</p>
 
 <h3>可以不入園就購買迪士尼商品嗎？</h3>
-<p>可以。位於Ikspiari旁的<strong>Bon Voyage</strong>（JR舞濱站附近）無需門票即可購買官方迪士尼商品。</p>
+<p>可以。位於JR舞濱站旁的<strong>Bon Voyage</strong>無需門票即可購買官方迪士尼商品。</p>
 
 <h3>帶小孩子去哪個區域比較方便？</h3>
 <p>帶小孩子去，<strong>Ikspiari（舞濱）</strong>和<strong>Atre新浦安</strong>都是不錯的室內選項。<strong>浦安市鄉土博物館</strong>有深受小學生歡迎的體驗展示。</p>

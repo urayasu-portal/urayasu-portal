@@ -5,7 +5,7 @@ guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:50:00+09:00
 lastmod: 2026-08-17
 newsTags: ["子育て", "学校"]
-factChecked: "2026-08-01"
+factChecked: "2026-10-16"
 checkDate: "2026年6月"
 categories: ["生活ガイド"]
 tags: ["子育て", "小学生", "中学生", "学童", "不登校", "浦安市"]

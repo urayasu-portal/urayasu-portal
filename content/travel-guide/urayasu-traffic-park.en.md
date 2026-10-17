@@ -1,7 +1,7 @@
 ---
 title: "Urayasu Traffic Park: A Free Kids' Paradise One Stop from Tokyo Disney Resort"
 description: "Free bike riding, pony rides, and guinea pig cuddles 10 minutes from your Disney hotel. The perfect rest-day spot for families staying near Tokyo Disney Resort."
-lastmod: 2026-08-16
+lastmod: 2026-10-17
 date: 2026-07-07
 draft: false
 cover:
@@ -15,7 +15,7 @@ sources:
     url: "https://www.city.urayasu.lg.jp/shisetsu/kouen/kotsu/1005852.html"
 tags: ["rest-day", "with-kids", "free", "shin-urayasu"]
 categories: ["travel-guide"]
-factChecked: "2026-08-11"
+factChecked: "2026-10-17"
 ---
 
 Your kids survived two full days of Disney queues — but somehow they still have energy to burn, and you don't. **Urayasu Traffic Park (交通公園, Kōtsū Kōen)** is the local answer: a free city-run park one train stop from Maihama where children ride bikes on a miniature road course, cuddle guinea pigs, and take a short pony ride. No tickets, no lines that matter, no gift shop ambush. It's where Urayasu families actually take their own kids.
@@ -38,9 +38,9 @@ The park is intended for children up to elementary-school age (roughly 12 and un
 
 The heart of the park is a miniature road course complete with working traffic lights, crosswalks, and Japanese road signs. Kids borrow bicycles, quirky pedal cycles, and battery cars for free and "drive" the course while learning traffic rules — a very Japanese concept of play. Bicycles and pedal cycles are for elementary schoolers and under (battery cars are for grade 2 and under), and parents can hop on the family-sized four-seater cycles to pedal around together. If your child is still wobbly on two wheels, staff are used to beginners; this is where many Urayasu kids first learn to ride.
 
-### The animal plaza: guinea pigs, ponies, and a binturong
+### The animal plaza: guinea pigs, ponies, and capybaras
 
-The animal area offers guinea pig petting sessions, short pony rides, and feeding time — plus a few animals you might not expect at a neighborhood park, like pocket monkeys and a binturong. Animal sessions run only at set times a few times per day and vary by day of the week, so check the schedule board when you arrive (or the park's official X account) and plan your visit around the session your kids care about most.
+The animal area offers guinea pig petting sessions, short pony rides, and feeding time — plus a few animals you might not expect at a neighborhood park, like capybaras and kangaroos, plus pocket monkeys (common marmosets) in the indoor learning center next door. Animal sessions run only at set times a few times per day and vary by day of the week, so check the schedule board when you arrive (or the park's official X account) and plan your visit around the session your kids care about most.
 
 {{< warn >}}
 Animal encounter times are limited and can be cancelled without notice for animal welfare reasons. If the guinea pigs are the main event for your child, arrive before a scheduled session rather than at random.
@@ -61,7 +61,7 @@ Expect a well-loved municipal park, not a polished attraction: signage is mostly
 | **Admission** | Free (all rides and animal sessions included) |
 | **Hours** | 9:00–16:30 |
 | **Closed** | Mondays (or the following day if Monday is a national holiday), Dec 28–Jan 4 |
-| **Stay limit** | Up to 2 hours per visit |
+| **Parking** | Available (up to 2 hours) |
 | **Address** | 2-15-1 Mihama, Urayasu, Chiba 279-0011 |
 | **Phone** | 047-351-4083 (Japanese) |
 | **Best for** | Rest day / arrival day / the morning after DisneySea |

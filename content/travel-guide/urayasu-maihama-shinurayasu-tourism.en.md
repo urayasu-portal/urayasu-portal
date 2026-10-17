@@ -1,8 +1,8 @@
 ---
 title: "Things to Do near Tokyo Disney Resort | Maihama, Urayasu & Shin-Urayasu Sightseeing Guide"
 date: 2026-06-18T00:00:00+09:00
-lastmod: 2026-10-15
-factChecked: "2026-08-01"
+lastmod: 2026-10-17
+factChecked: "2026-10-17"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
   - "Maihama"
@@ -26,9 +26,9 @@ faq:
   - q: "Are there places to spend half a day outside the Disney parks?"
     a: "Yes. Ikspiari and Bon Voyage in Maihama are both accessible without park admission. In the Urayasu Station area, combining the Local History Museum, historic houses (Uda-gawa, Otsuka), and a walk along Sakaigawa canal makes for a solid half-day course."
   - q: "How do I get from Maihama Station to Urayasu Station?"
-    a: "JR Maihama to JR Shin-Urayasu is about 3–4 minutes (no transfer). From Shin-Urayasu to Urayasu Station (Tozai Line) requires a transfer and takes about 20–25 minutes total. If you have a suitcase, a taxi is also an option."
+    a: "Take the local bus. From JR Maihama Station, route 9 bound for Urayasu-eki Iriguchi takes about 20 minutes (¥210). JR Shin-Urayasu Station and Urayasu Station (Tozai Line) are not connected by rail, so from Shin-Urayasu you also need a bus. If you have a suitcase, a taxi is also an option."
   - q: "Can I buy Disney goods without park admission?"
-    a: "Yes. Bon Voyage (adjacent to Ikspiari, near JR Maihama Station) sells official Disney merchandise without a park entry ticket."
+    a: "Yes. Bon Voyage (right by JR Maihama Station) sells official Disney merchandise without a park entry ticket."
   - q: "Which area is easiest to visit with small children?"
     a: "For young children, Ikspiari (Maihama) and Atre Shin-Urayasu (Shin-Urayasu) are good indoor options. The Urayasu City Local History Museum has hands-on exhibits popular with elementary-school-age children."
   - q: "Is the area accessible by wheelchair?"
@@ -179,7 +179,7 @@ faq:
     <div style="font-size:20px;margin-bottom:6px;">🏬 Ikspiari (Maihama)</div>
     <p style="margin:0;font-size:14px;"><strong>When to use:</strong> Shopping, dining, Disney goods, rainy-day time-filler<br>
     <strong>Access:</strong> Directly connected to JR Maihama Station. No park admission needed.<br>
-    <strong>Hours:</strong> 11:00–21:00 (restaurants until 22:00; some exceptions)</p>
+    <strong>Hours:</strong> 10:00–22:30 (most shops until 21:00, restaurants until 22:00–22:30; varies by store)</p>
   </div>
   <div style="background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px 18px;">
     <div style="font-size:20px;margin-bottom:6px;">🏪 Atre Shin-Urayasu (Shin-Urayasu)</div>
@@ -190,8 +190,8 @@ faq:
   <div style="background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px 18px;">
     <div style="font-size:20px;margin-bottom:6px;">🏛️ Urayasu City Local History Museum (Urayasu Station)</div>
     <p style="margin:0;font-size:14px;"><strong>When to use:</strong> Learning about Urayasu's history, half-day sightseeing, leisurely stroll<br>
-    <strong>Access:</strong> 15–20 min walk from Tokyo Metro Tozai Line Urayasu Station (community bus also available). Free admission (as of June 2026 — check official site for any changes).<br>
-    <strong>Hours:</strong> 9:30–17:00 (closed Mondays)</p>
+    <strong>Access:</strong> About 22 min walk from Tokyo Metro Tozai Line Urayasu Station (bus also available). Free admission (as of June 2026 — check official site for any changes).<br>
+    <strong>Hours:</strong> 9:30–17:00 (last entry 16:30; closed Mondays, the day after national holidays, and more)</p>
   </div>
 </div>
 
@@ -317,16 +317,16 @@ faq:
 </figure>
 
 <h3>Ikspiari</h3>
-<p>A shopping and dining facility directly connected to JR Maihama Station. Restaurants, cafes, fashion, goods, and a cinema complex — all accessible without a park admission ticket. <strong>Bon Voyage</strong>, which sells official TDR character merchandise, is inside Ikspiari and popular with guests who want to buy goods without dealing with park crowds.</p>
+<p>A shopping and dining facility directly connected to JR Maihama Station. Restaurants, cafes, fashion, goods, and a cinema complex — all accessible without a park admission ticket. <strong>Bon Voyage</strong>, which sells official TDR character merchandise, stands in its own building right by the station and is popular with guests who want to buy goods without dealing with park crowds.</p>
 
 <ul>
   <li><strong>Access:</strong> Directly connected to JR Maihama Station</li>
-  <li><strong>Hours:</strong> 11:00–21:00 (restaurants until 22:00, cinema until last showing) ※ varies by facility</li>
+  <li><strong>Hours:</strong> 10:00–22:30 (most shops until 21:00, restaurants until 22:00–22:30, some 1F stores from 8:00) ※ varies by store; as of October 2026</li>
   <li><strong>Note:</strong> Restaurants tend to be crowded right after park closing in the early evening. Weekday 14:00–16:00 is relatively quieter</li>
 </ul>
 
 <h3>Bon Voyage</h3>
-<p>A large Disney merchandise shop adjacent to Ikspiari, accessible directly from outside the park. One of the few places to buy official Disney goods without a park ticket. Carries both standard and limited items.</p>
+<p>One of Japan's largest Disney shops, in its own two-story building right by JR Maihama Station (separate from Ikspiari; open 8:00–22:00, entry by advance reservation on busy days), accessible directly from outside the park. One of the few places to buy official Disney goods without a park ticket. Carries both standard and limited items.</p>
 <ul>
   <li><strong>Access:</strong> About 3 minutes walk from JR Maihama Station</li>
   <li><strong>Note:</strong> Crowding fluctuates with TDR opening and closing times</li>
@@ -377,7 +377,7 @@ faq:
 <p>A large shopping facility about 5–7 minutes walk from Shin-Urayasu Station. Clothing, electronics, groceries, and restaurants — convenient for bulk purchases and daily supplies.</p>
 <ul>
   <li><strong>Access:</strong> About 5–7 minutes walk from JR Shin-Urayasu Station</li>
-  <li><strong>Hours:</strong> 10:00–21:00 (varies by facility)</li>
+  <li><strong>Hours:</strong> 1F (groceries) 8:00–23:00 / 2F–3F 9:00–21:00 (varies by section and tenant; as of October 2026)</li>
 </ul>
 
 <h3>New Coast Shin-Urayasu</h3>
@@ -418,8 +418,8 @@ faq:
 <h3>Urayasu City Local History Museum</h3>
 <p>A city museum exhibiting Urayasu's history and culture. The outdoor exhibit area preserves and displays actual fishing huts, wooden boats, and tools that were once in use. A facility popular with both locals and visitors who want to understand old ways of life in the city.</p>
 <ul>
-  <li><strong>Access:</strong> 15–20 minutes walk from Tokyo Metro Tozai Line Urayasu Station (city circulation bus / community bus also available)</li>
-  <li><strong>Hours:</strong> 9:30–17:00 (closed Mondays; if Monday is a national holiday, closed the following weekday)</li>
+  <li><strong>Access:</strong> About 22 minutes walk from Tokyo Metro Tozai Line Urayasu Station (local bus and the Osanpo community bus also available)</li>
+  <li><strong>Hours:</strong> 9:30–17:00 (last entry 16:30). Closed Mondays (or the next day if Monday is a national holiday), the day after national holidays, maintenance days, and over New Year</li>
   <li><strong>Admission:</strong> Free (as of June 2026 — check the official site if this changes)</li>
 </ul>
 
@@ -445,7 +445,7 @@ faq:
   <dl>
     <dt>Main Spots</dt><dd>Urayasu City Local History Museum, former Udagawa &amp; Otsuka residences, Sakaigawa promenade &amp; shopping street</dd>
     <dt>Nearest Station</dt><dd>Tokyo Metro Tozai Line, Urayasu Station</dd>
-    <dt>To TDR</dt><dd>About 30–40 minutes from Maihama Station including transfer; about 25–30 minutes by local bus</dd>
+    <dt>To TDR</dt><dd>About {{< fact "local_bus.urayasu_maihama_minutes" >}} minutes by local bus from Maihama Station (bound for Urayasu-eki Iriguchi); about 30–40 minutes by train with transfers</dd>
   </dl>
 </div>
 
@@ -504,7 +504,7 @@ faq:
       <td><strong>Local History Museum</strong></td>
       <td>Urayasu Station</td>
       <td>Indoor exhibits available. Outdoor exhibits may be partly restricted in rain</td>
-      <td>15–20 min walk from Urayasu Station</td>
+      <td>About 22 min walk from Urayasu Station</td>
     </tr>
     <tr>
       <td><strong>Hotel lobby / lounge</strong></td>
@@ -688,7 +688,7 @@ faq:
     </tr>
     <tr>
       <td>Between areas</td>
-      <td colspan="3">Maihama ↔ Shin-Urayasu: Keiyo Line ~3–4 min / Shin-Urayasu ↔ Urayasu Sta.: transfer ~20–25 min</td>
+      <td colspan="3">Maihama ↔ Shin-Urayasu: Keiyo Line ~3–4 min / Maihama ↔ Urayasu Sta.: local bus ~{{< fact "local_bus.urayasu_maihama_minutes" >}} min (Shin-Urayasu ↔ Urayasu Sta. is also by bus; there is no rail connection)</td>
     </tr>
   </tbody>
 </table>
@@ -704,10 +704,10 @@ faq:
 <p>Yes. Ikspiari and Bon Voyage in Maihama are both accessible without park admission. In the Urayasu Station area, combining the Local History Museum, historic houses, and a walk along the Sakaigawa canal makes for a half-day course.</p>
 
 <h3>How do I get from Maihama Station to Urayasu Station?</h3>
-<p>JR Maihama to JR Shin-Urayasu is about 3–4 minutes (no transfer). From Shin-Urayasu to Urayasu Station (Tozai Line) requires a transfer and takes about 20–25 minutes total. If you have a suitcase, a taxi is also an option.</p>
+<p>Take the local bus. From JR Maihama Station, route {{< fact "local_bus.urayasu_maihama_route" >}} bound for Urayasu-eki Iriguchi takes about {{< fact "local_bus.urayasu_maihama_minutes" >}} minutes ({{< fact "local_bus.urayasu_maihama_fare" >}}). JR Shin-Urayasu Station and Urayasu Station (Tozai Line) are not connected by rail, so from Shin-Urayasu you also need a bus. If you have a suitcase, a taxi is also an option.</p>
 
 <h3>Can I buy Disney goods without park admission?</h3>
-<p>Yes. <strong>Bon Voyage</strong> (adjacent to Ikspiari, near JR Maihama Station) sells official Disney merchandise without a park entry ticket.</p>
+<p>Yes. <strong>Bon Voyage</strong> (right by JR Maihama Station) sells official Disney merchandise without a park entry ticket.</p>
 
 <h3>Which area is easiest to visit with small children?</h3>
 <p>For young children, <strong>Ikspiari (Maihama)</strong> and <strong>Atre Shin-Urayasu</strong> are good indoor options. The <strong>Urayasu City Local History Museum</strong> has hands-on exhibits popular with elementary-school-age children.</p>
