@@ -16,6 +16,9 @@ eventDate: "2026-10-23"
 eventKind: "event"
 hideEventBox: true
 eventLocation: "浦安Dパーク"
+cover:
+  image: /images/posts/d-rocks.png
+  alt: "【浦安】Dパークで無料ヨガ体験、10月23日に開催"
 draft: false
 ---
 <p>浦安D-Rocksは2026年10月23日（金）、浦安市高洲の「浦安Dパーク」で無料のヨガイベントを開催します。</p>
