@@ -8,7 +8,7 @@ aliases:
   - "/travel-guide/hotels/coin-laundry/"
   - "/travel-guide/hotels/airport-limousine/"
 date: 2026-08-16T08:00:00+09:00
-factChecked: "2026-08-16"
+factChecked: "2026-10-18"
 description: "Find hotels near Tokyo Disney Resort by the facility that matters to you: large communal baths and natural hot springs, pools, station-front locations, in-house shops, coin laundry, and airport limousine bus stops — auto-generated lists from our hand-checked local hotel database."
 tags:
   - Hotel

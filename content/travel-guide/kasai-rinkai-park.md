@@ -3,7 +3,7 @@ title: "葛西臨海公園：ディズニーの隣駅、マグロと大観覧車
 description: "舞浜から京葉線で1駅3分。入園無料の広大な公園に、小学生以下無料の水族園と地上117mの大観覧車。ディズニー旅行の休息日にぴったりの「隣駅のもうひとつのパーク」を地元が案内します。"
 lastmod: 2026-08-24
 date: 2026-07-07
-factChecked: "2026-08-24"
+factChecked: "2026-10-18"
 draft: false
 cover:
   image: "/images/travel-guide/kasai-rinkai-park.jpg"

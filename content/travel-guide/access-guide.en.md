@@ -40,7 +40,7 @@ faq:
     a: "The limousine bus is good for going directly from the airport to your hotel. The train works well when you need predictable timing. When transferring to the Keiyo Line at Tokyo Station, allow extra time for the long walk."
   - q: "Can I easily get a taxi after Disney park closing?"
     a: "Taxi demand rises after park closing and on rainy days, so wait times may occur. Also consider hotel shuttles, local buses, and ride-hailing apps."
-factChecked: "2026-08-16"
+factChecked: "2026-10-18"
 ---
 
 <div class="access-journey">
