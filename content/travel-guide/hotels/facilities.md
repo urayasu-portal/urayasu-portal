@@ -8,7 +8,7 @@ aliases:
   - "/travel-guide/hotels/coin-laundry/"
   - "/travel-guide/hotels/airport-limousine/"
 date: 2026-08-16T08:00:00+09:00
-factChecked: "2026-08-16"
+factChecked: "2026-10-18"
 description: "東京ディズニーリゾート周辺のホテルを「設備」から逆引き。大浴場・天然温泉、プール、駅直結・駅近、館内売店、コインランドリー、空港リムジンバス停車の6条件で、実地確認のホテルデータベースから自動生成した一覧を地元メディアがまとめました。"
 tags:
   - Hotel

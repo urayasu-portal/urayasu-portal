@@ -4,5 +4,5 @@ description: "浦安・舞浜エリアの全48軒のホテルをマップと一�
 images: ["/images/og-travel-urayasu.png"]
 layout: compare
 noDate: true
-factChecked: "2026-08-08"
+factChecked: "2026-10-18"
 ---

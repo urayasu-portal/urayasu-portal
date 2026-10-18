@@ -4,5 +4,5 @@ description: "Compare the hotels of the Urayasu & Maihama area near Tokyo Disney
 images: ["/images/og-travel-urayasu.png"]
 layout: compare
 noDate: true
-factChecked: "2026-08-08"
+factChecked: "2026-10-18"
 ---
