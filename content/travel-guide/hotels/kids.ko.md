@@ -1,8 +1,8 @@
 ---
 title: "도쿄 디즈니 가족 호텔 추천 | 대욕장·넓은 객실·편의점·파크 근접(현지 시선)"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-10-01
-factChecked: "2026-08-08"
+lastmod: 2026-10-18
+factChecked: "2026-10-18"
 description: "현지 미디어가 5가지 관점(대욕장·온천, 넓은 객실, 인근 편의점, 파크까지 거리, 짐·세탁)으로 우라야스·마이하마의 가족 호텔을 비교합니다. 흔한 오해를 피하기 위한 현지 주의사항 포함."
 tags:
   - 호텔
@@ -81,7 +81,7 @@ faq:
 |---|---|---|
 | [힐튼 도쿄 베이](/ko/travel-guide/hotels/hilton-tokyo-bay/) | 관내 24시간 편의점 | **지정 호텔 중 유일**하게 관내 종일 편의점 보유 |
 | [드림게이트 마이하마](/ko/travel-guide/hotels/dreamgate-maihama/) | 관내 NewDays(JR 산하) | JR 마이하마역 직결, 역을 나가지 않고 쇼핑 |
-| [호시노 리조트 1955 도쿄 베이](/ko/travel-guide/hotels/hoshinoresorts-1955-tokyo-bay/) | 관내 패밀리마트 | 2024년 6월 개업; 운영 시간 확인 |
+| [호시노 리조트 1955 도쿄 베이](/ko/travel-guide/hotels/hoshinoresorts-1955-tokyo-bay/) | 관내 로손(Lawson) | 2024년 6월 개업; 운영 시간 확인 |
 | [라젠트 호텔 도쿄 베이](/ko/travel-guide/hotels/lagent-tokyo-bay/) | 24시간 편의점 인접 | 도보권 |
 
 > **중요 안내:** 디즈니 파크 내 '디즈니 스토어'는 **편의점이 아니며**, 도시락·주먹밥·음료 같은 일반 상품을 팔지 않습니다. 파크 안에서는 일상 식품을 편하게 보충할 수 없으니, 호텔 인근 편의점에서 미리 준비하세요.

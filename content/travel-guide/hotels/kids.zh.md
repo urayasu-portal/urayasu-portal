@@ -1,8 +1,8 @@
 ---
 title: "东京迪士尼亲子酒店推荐 | 大浴场·宽敞客房·便利店·距乐园近（本地视角）"
 date: 2026-06-30T10:00:00+09:00
-lastmod: 2026-10-04
-factChecked: "2026-08-08"
+lastmod: 2026-10-18
+factChecked: "2026-10-18"
 description: "本地媒体从5个视角（大浴场·温泉、宽敞客房、附近便利店、距乐园距离、行李·洗衣）比较浦安·舞滨的家庭向酒店。附本地注意事项，避免常见误解。"
 tags:
   - 酒店
@@ -81,7 +81,7 @@ faq:
 |---|---|---|
 | [东京湾希尔顿酒店](/zh/travel-guide/hotels/hilton-tokyo-bay/) | 馆内24h营业便利店 | **指定酒店中唯一**拥有馆内全天便利店 |
 | [舞滨梦幻门酒店](/zh/travel-guide/hotels/dreamgate-maihama/) | 馆内NewDays（JR旗下） | 与JR舞滨站直连，不出站就能购物 |
-| [星野集团 1955 东京湾](/zh/travel-guide/hotels/hoshinoresorts-1955-tokyo-bay/) | 馆内Lawson（全家） | 2024年6月开业；24h营业 |
+| [星野集团 1955 东京湾](/zh/travel-guide/hotels/hoshinoresorts-1955-tokyo-bay/) | 馆内罗森（Lawson） | 2024年6月开业；24h营业 |
 | [东京湾拉珍特酒店](/zh/travel-guide/hotels/lagent-tokyo-bay/) | 紧邻24h便利店 | 步行即达 |
 
 > **重要提示：** 迪士尼园区内的"迪士尼商店"**不是便利店**，不销售便当、饭团、饮料等一般商品。在园内无法方便地补充日常食品，请在酒店附近的便利店预先准备。
