@@ -106,7 +106,11 @@ params:
     # チケットCTAの遷移先（言語別）。KKday は言語サイトごとに販売商品が異なるため、言語ごとに検証済みURLを置く。
     #   2026-09-13 実ブラウザ確認: KKday 商品19252（表示上の商品番号 #32488「東京迪士尼樂園 & 東京迪士尼海洋門票」）は
     #   zh-tw / en / ko / zh-cn で有効、ja は「この表示言語では利用不可」→ ja は空（カード非表示）。
-    #   Klook はアクティビティID 695 が全ロケール共通。空欄の言語ではそのカードを出さない。
+    #   空欄の言語ではそのカードを出さない。
+    #   Klook は 2026-10-20 に全言語を空欄にした（TDR 1デーパスへの誘導を停止）。バリューコマースの Klook プログラムに
+    #   「東京ディズニーリゾート・USJ のチケットを含む商品は成果対象外、Klook で購入できると紹介しリンクを載せると提携解除の対象」
+    #   とあるため、提携維持を優先して予防的に止めている（Travelpayouts 経由のリンクに適用されるかは未確定）。
+    #   TDR・USJ のチケット商品の URL をここに戻さないこと。
     tickets:
       kkday:
         zh-tw: "https://www.kkday.com/zh-tw/product/19252"
@@ -115,11 +119,11 @@ params:
         ko: "https://www.kkday.com/ko/product/19252"
         ja: ""
       klook:
-        zh-tw: "https://www.klook.com/zh-TW/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
-        zh: "https://www.klook.com/zh-CN/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
-        en: "https://www.klook.com/en-US/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
-        ko: "https://www.klook.com/ko/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
-        ja: "https://www.klook.com/ja/activity/695-tokyo-disney-resort-1-day-pass-tokyo/"
+        zh-tw: ""
+        zh: ""
+        en: ""
+        ko: ""
+        ja: ""
     # 遷移先OTAの表示通貨（言語別）。サイト本文は日本円（施設の公式価格）で統一し、
     # 予約サイトでは読者の母国通貨で表示させる（Booking=selected_currency / Trip.com=curr / Agoda=currencyCode）。
     currency:
