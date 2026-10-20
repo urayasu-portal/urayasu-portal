@@ -1,0 +1,10 @@
+{{- /* サイト共通の広告（PR）表記。baseof.html の <main> 冒頭に全ページ共通で出す。
+       バリューコマース LinkSwitch と Travelpayouts Drive のタグを全ページで読み込んでおり
+       （extend_head.html）、LinkSwitch は「タグを設置したページ内では必ずPR表記」を求めているため、
+       広告ボックスの有無にかかわらず全ページのファーストビューに置く（A8 の表示例「ヘッダー部分に表示」に相当）。
+       広告ボックス内の PR バッジ（.pr-note 等）と、記事冒頭の {{< ad-disclosure >}} はそのまま併用する。
+       文言は i18n（site_ad_notice）。詳しい説明はプライバシーポリシー第4章（日本語のみのため ja だけリンク）。 */ -}}
+<p class="site-ad-notice" role="note">
+  <i class="ti ti-info-circle" aria-hidden="true"></i>
+  <span>{{ i18n "site_ad_notice" }}{{ if eq .Lang "ja" }} <a href="{{ "/privacy/#4-アフィリエイトプログラムについて" | relURL }}">{{ i18n "site_ad_notice_more" }}</a>{{ end }}</span>
+</p>

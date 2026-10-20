@@ -241,3 +241,7 @@
   translation: "View details: {{ .name }}"
 - id: pick_rates_on
   translation: "See rates on {{ .asp }}"
+- id: site_ad_notice
+  translation: "This site uses affiliate advertising (PR)."
+- id: site_ad_notice_more
+  translation: "About ads"

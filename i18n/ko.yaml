@@ -241,3 +241,7 @@
   translation: "{{ .name }} 자세히 보기"
 - id: pick_rates_on
   translation: "{{ .asp }}에서 요금 보기"
+- id: site_ad_notice
+  translation: "이 사이트는 제휴 광고(PR)를 이용합니다."
+- id: site_ad_notice_more
+  translation: "광고 안내"
