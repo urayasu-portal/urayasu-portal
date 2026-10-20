@@ -176,7 +176,8 @@
     var dir='https://www.google.com/maps/dir/?api=1&destination='+f.lat+','+f.lng;
     var da='data-t="'+esc(f.t)+'" data-n="'+esc(f.n)+'"';
     var links='<a data-fm="directions" '+da+' href="'+dir+'" target="_blank" rel="noopener">'+T.dir+'</a>';
-    if(f.u) links+=' <span class="fm-sep">·</span> <a data-fm="find" '+da+' href="'+esc(f.u)+'" target="_blank" rel="noopener">'+T.find+'</a>';
+    /* 店舗の公式ページは案内目的。data-nodal で LinkSwitch の自動広告化を止める */
+    if(f.u) links+=' <span class="fm-sep">·</span> <a data-fm="find" '+da+' href="'+esc(f.u)+'" target="_blank" rel="noopener" data-nodal>'+T.find+'</a>';
     return '<div class="fm-pop"><div class="fm-pop-cat">'+tlab(f.t)+'</div><div class="fm-pop-name">'+esc(name)+'</div>'+walk+hrs+(b?'<div class="fm-pop-badges">'+b+'</div>':'')+'<div class="fm-pop-links">'+links+'</div></div>';
   }
 

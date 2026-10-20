@@ -1,7 +1,7 @@
 ---
 title: "2026浦安·舞濱萬聖節攻略｜變裝期間·換裝地點·飯店企劃與限定甜點"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-10-12
+lastmod: 2026-10-20
 factChecked: "2026-09-25"
 slug: "maihama-halloween"
 badge: "萬聖節"
@@ -530,7 +530,7 @@ faq:
   <li><a href="https://hoshinoresorts.com/ja/hotels/1955tokyobay/sp/halloween1955/" target="_blank" rel="noopener">1955 東京灣 by 星野集團「OLDIES HALLOWEEN NIGHT」</a></li>
   <li><a href="https://prtimes.jp/main/html/rd/p/000000288.000015667.html" target="_blank" rel="noopener">東京灣喜來登大飯店「Halloween Sweets &amp; Bakery」（日文）</a></li>
   <li><a href="https://www.oriental-hotels.com/news/2140/" target="_blank" rel="noopener">東京灣東方飯店「Pumpkin Gate」（日文）</a></li>
-  <li><a href="https://www.jalan.net/yad312544/topics/" target="_blank" rel="noopener">東京灣東方飯店 Jalan住宿設施公告（日文）</a></li>
+  <li><a href="https://www.jalan.net/yad312544/topics/" target="_blank" rel="noopener" data-nodal>東京灣東方飯店 Jalan住宿設施公告（日文）</a></li>
 </ul>
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
