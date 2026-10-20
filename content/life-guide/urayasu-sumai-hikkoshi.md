@@ -1,7 +1,7 @@
 ---
 title: "浦安市の引っ越し・住まいガイド｜時系列チェックリスト・家賃の目安・初期費用を抑えるコツ"
 date: 2026-07-12
-lastmod: 2026-08-17
+lastmod: 2026-10-20
 factChecked: "2026-10-02"
 description: "浦安市への引っ越し・市内での住み替えを、時系列チェックリスト（2週間前→当日→14日以内→1か月）で整理。家賃の目安とエリアの傾向、賃貸の初期費用の抑え方、転入手続きまで地元目線でまとめました。"
 categories: ["お知らせ"]
@@ -134,13 +134,6 @@ images: ["/images/og-guides.png"]
 </ul>
 
 <p>特に電気は、引っ越しや契約の見直しのタイミングで切り替えると基本料金がお得になることがあります。<strong>浦安市は電気を東京ガスの新電力に切り替えられます</strong>（都市ガスは京葉ガスのエリアのため、ガスは対象外です）。</p>
-
-<div class="affiliate-box">
-  <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>引っ越しを機に電気を見直すなら</strong></p>
-  <p style="margin:0 0 4px;">東京ガスの新電力「基本プラン」。<strong>新規申し込みで電気の基本料金が1か月無料</strong>になります。浦安市も電気の供給エリアで、Webから手続きできます。</p>
-  <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX3+4Z7HV6+4R1I+BXQOI" target="_blank" rel="sponsored nofollow noopener"><i class="ti ti-bolt" aria-hidden="true"></i> 東京ガスの電気【基本プラン】を見る</a>
-  <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※上記リンクは広告（アフィリエイト）を含みます。料金・供給エリアは公式サイトで最新情報をご確認ください。</p>
-</div>
 
 <h2 id="tetsuzuki">引っ越しに伴う手続き</h2>
 
