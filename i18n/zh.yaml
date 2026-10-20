@@ -241,3 +241,7 @@
   translation: "查看{{ .name }}的详情"
 - id: pick_rates_on
   translation: "在{{ .asp }}查看房价"
+- id: site_ad_notice
+  translation: "本站使用联盟广告（PR）。"
+- id: site_ad_notice_more
+  translation: "关于广告"

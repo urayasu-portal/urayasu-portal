@@ -30,6 +30,7 @@
     {{ partial "pillar-switcher.html" . }}
     {{- end }}
     <main class="main">
+        {{- partialCached "site-ad-notice.html" . .Lang }}
         {{- if ne .Lang "ja" }}{{ partial "mt-banner.html" . }}{{ end }}
         {{- block "main" . }}{{ end }}
     </main>

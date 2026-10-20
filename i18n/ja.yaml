@@ -241,3 +241,7 @@
   translation: "{{ .name }}の詳細を見る"
 - id: pick_rates_on
   translation: "{{ .asp }}で料金を見る"
+- id: site_ad_notice
+  translation: "当サイトはアフィリエイト広告（PR）を利用しています。"
+- id: site_ad_notice_more
+  translation: "広告について"

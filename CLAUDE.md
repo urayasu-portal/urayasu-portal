@@ -157,6 +157,12 @@ Event 構造化データ用の任意項目（PR 4。投稿ツールと CI が検
 - Google Search Console で "リッチリザルトテスト" を使って確認可能
 - Event JSON-LD は `layouts/partials/event-jsonld.html`（対象判定は `event-jsonld-eligible.html`）。`eventLocation` の無い記事には出さない（上の「日付・店舗情報の項目」参照）
 
+## 広告（PR）表記
+
+- バリューコマース LinkSwitch と Travelpayouts Drive のタグは全ページで読み込んでいる（`extend_head.html`）。LinkSwitch は「タグを設置したページでは必ず PR 表記」を求めるため、全ページの `<main>` 冒頭に共通の広告表記を出している（`layouts/partials/site-ad-notice.html`、文言は i18n の `site_ad_notice`）。**消したり条件付きにしたりしない**
+- 広告ボックスの PR バッジ（`.pr-note` 等）や、記事冒頭の `{{</* ad-disclosure */>}}` は、共通表記と併用する（広告の直近での明示）
+- 編集目的のリンク（出典・店舗案内）には `data-nodal` を付けて LinkSwitch の自動広告化を止める（`source-info.html` などで付与済み）。Drive はこの属性を見ないので、管理画面のブランド／ページ除外で管理する
+
 ## テーマ
 
 PaperMod（git submodule: `themes/PaperMod`）。テーマファイルは直接編集しない。
