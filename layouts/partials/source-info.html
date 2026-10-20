@@ -6,6 +6,9 @@
       - name: "浦安市公式サイト"
         url:  "https://www.city.urayasu.lg.jp/..."
       - name: "読売新聞オンライン"   # url なしも可
+  出典リンクは編集目的なので data-nodal を付け、バリューコマース LinkSwitch による
+  自動アフィリエイト化を止める（食べログ・JTB 等の提携先ドメインでも広告にしない）。
+  Travelpayouts Drive はこの属性を見ないため、Drive 側はブランド／ページ除外で管理する。
 */ -}}
 {{- $isEN := eq .Lang "en" }}
 {{- $isZH := eq .Lang "zh" }}
@@ -27,7 +30,7 @@
   <ul class="source-list">
     {{- range . }}
     {{- if .url }}
-    <li><a href="{{ .url }}" rel="noopener" target="_blank">{{ .name | default .url }}</a></li>
+    <li><a href="{{ .url }}" rel="noopener" target="_blank" data-nodal>{{ .name | default .url }}</a></li>
     {{- else }}
     <li>{{ .name }}</li>
     {{- end }}
