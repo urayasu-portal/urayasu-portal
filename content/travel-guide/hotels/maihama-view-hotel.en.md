@@ -1,8 +1,8 @@
 ---
 title: "Maihama View Hotel | TDR Official Hotel Rebranded 2025, Large Bath 'Spa Rose', Free Shuttle to Maihama and Ikspiari"
 date: 2026-06-17T10:00:00+09:00
-factChecked: "2026-10-02"
-lastmod: 2026-10-02
+factChecked: "2026-10-21"
+lastmod: 2026-10-21
 description: "Local review of Maihama View Hotel (rebranded from Tokyo Bay Maihama Hotel in 2025, operated by HULIC). TDR Official Hotel with large bath 'Spa Rose' — unusual among Official Hotels. Free shuttle to Maihama Station, Ikspiari, and Bayside (5 min). 24-hour coin laundry on 2F. Price range ¥20,000–¥40,000."
 tags:
   - Hotel
@@ -38,7 +38,6 @@ Maihama View Hotel (formerly Tokyo Bay Maihama Hotel, rebranded and reopened in 
 
 ## May Not Suit
 
-- **Guests who rely on the airport limousine stop** — Limousine stop location post-rebrand requires confirmation on the official website
 - **Guests who want the most established Official Hotel with the longest track record** — Rebrand is recent (2025); some services are still settling in
 
 ---
@@ -55,7 +54,7 @@ Free shuttle (~5 min) + Disney Resort Line from Bayside Station to Tokyo DisneyS
 Free shuttle to Maihama Station: approx. 5 min (also to Bayside Station and Ikspiari on the same shuttle).
 
 ### To the Airport
-Airport limousine bus stop: confirm current situation on the official website post-rebrand (the former hotel had a limousine stop; verify continuity after the 2025 rebrand).
+Airport limousine bus stop right outside the hotel, serving both Haneda and Narita. Adults pay {{< fact "limousine.haneda_fare" >}} to Haneda. For rides to the airport, book and pay in advance on the limousine bus reservation website. (As of October 2026)
 
 ### To Central Tokyo
 From Maihama Station, about 15 minutes to Tokyo Station on the JR Keiyo Line.
@@ -101,7 +100,7 @@ Free Wi-Fi in all rooms (confirm on official website post-rebrand).
 
 The main story of Maihama View Hotel is the 2025 rebrand — from Tokyo Bay Maihama Hotel to Maihama View Hotel under HULIC — while retaining the TDR Official Hotel designation. The key elements that make this hotel distinctive are the "Spa Rose" large bath (unusual among Official Hotels) and the 5-minute shuttle to Maihama Station/Ikspiari (among the fastest in the area).
 
-For the 2025–2026 period, a few details remain in transition: the limousine stop location and post-rebrand service updates. Check the official website for current details before booking. If the large bath is your primary draw and you want Official Hotel Disney benefits, this is a strong candidate — once the transition details are confirmed.
+The airport limousine stop continues after the rebrand (confirmed October 2026). For other post-rebrand service details, check the official website before booking. If the large bath is your primary draw and you want Official Hotel Disney benefits, this is a strong candidate.
 
 ---
 

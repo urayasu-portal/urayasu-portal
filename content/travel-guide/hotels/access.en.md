@@ -1,9 +1,9 @@
 ---
 title: "Tokyo Disney Hotels Compared by Access | Parks, Stations & Airports (Local Guide)"
 date: 2026-06-16T10:00:00+09:00
-lastmod: 2026-10-01
-factChecked: "2026-08-24"
-description: "A local-media comparison of all 40 Urayasu hotels by how easy they are to reach: the parks, JR stations, the airports, and central Tokyo. Limousine bus fares, which hotels you can actually walk to from Maihama Station, and more."
+lastmod: 2026-10-21
+factChecked: "2026-10-21"
+description: "A local-media comparison of Urayasu hotels by how easy they are to reach: the parks, JR stations, the airports, and central Tokyo. Limousine bus fares, which hotels you can actually walk to from Maihama Station, and more."
 tags:
   - Hotel
   - Access
@@ -26,7 +26,7 @@ faq:
 
 When choosing a hotel for a Disney trip, "access" matters as much as price. But access is not one thing: **how close you are to the parks, how easy it is from a JR station, how you get in from the airport, and how easily you can reach central Tokyo** are four separate questions. Picking a hotel only because it is "close to Disney" can mean a painful airport transfer, or an inconvenient base if you also want to sightsee in Tokyo.
 
-This guide organizes all 40 hotels in Urayasu by four destinations and compares "what is easy to reach from where" from a local perspective. Times and fares are estimates based on 2025–2026 research.
+This guide organizes the hotels in Urayasu by four destinations and compares "what is easy to reach from where" from a local perspective. Times and fares are estimates based on 2025–2026 research.
 
 For getting to Urayasu/Maihama from the airports or Tokyo Station, see our separate [Airport & Tokyo Station Access Guide](/en/travel-guide/urayasu-maihama-access-guide/).
 
@@ -87,11 +87,13 @@ For every other official hotel, even the official sites assume "taxi from Maiham
 ## 3. Airport access: the limousine bus is a flat fare — the difference is "distance to the stop"
 For terminal-by-terminal boarding (including Narita T3 and Haneda T3) and routes from Tokyo Station, see the [access guide](/en/travel-guide/urayasu-maihama-access-guide/); for the auto-generated list of every hotel with a limousine stop, see [find by facility](/en/travel-guide/hotels/facilities/#limousine).
 
-A key point for Haneda access: **the limousine bus is a flat {{< fact "limousine.haneda_fare" >}} for adults to any hotel** (jointly operated by Airport Transport Service and Keisei Bus Chiba West). There is no fare difference by area. What differs is only "the distance from your hotel to the stop" and "the travel time."
+A key point for Haneda access: **the limousine bus is a flat {{< fact "limousine.haneda_fare" >}} for adults to any hotel** (jointly operated by Airport Transport Service, Keisei Bus, Keisei Bus Chiba West, and Keikyu Bus). There is no fare difference by area. What differs is only "the distance from your hotel to the stop" and "the travel time."
 
 **Hotels with a dedicated stop right out front (0 min walk)**
-**Tokyo Disneyland Hotel**, **Disney Ambassador Hotel**, **Hotel MiraCosta**, **Fantasy Springs Hotel**, **Hilton Tokyo Bay**, **Hotel Okura Tokyo Bay**, **Sheraton**, **Grand Nikko**, and **Tokyo Bay Maihama Hotel First Resort** (reservation required).
+**Tokyo Disneyland Hotel**, **Disney Ambassador Hotel**, **Hotel MiraCosta**, **Fantasy Springs Hotel**, **Hilton Tokyo Bay**, **Hotel Okura Tokyo Bay**, **Sheraton**, **Grand Nikko**, **Tokyo Bay Maihama Hotel First Resort**, **Toy Story Hotel**, and **Maihama View Hotel by HULIC**.
 Many major Maihama-area hotels let you board the limousine bus right in front of the hotel, making airport access very easy (about 40–50 min).
+
+\* To ride from a hotel stop to the airport, every hotel requires booking and paying in advance on the limousine bus reservation website (boarding without a reservation and paying cash when you get off is possible only from the Tokyo Disneyland and Tokyo DisneySea stops). As of October 2026.
 
 **Two Shin-Urayasu hotels also have an "in-front" stop**
 - **Mitsui Garden Hotel Prana Tokyo Bay** … dedicated stops for both Haneda and Narita directions on the hotel grounds

@@ -203,8 +203,11 @@
     <div class="sidebar-widget">
       <div class="widget-title"><i class="ti ti-tags" aria-hidden="true"></i> 関連タグ</div>
       <div class="tag-cloud">
+        {{/* URL は Hugo が生成したタグページから引く（urlize は「&」等の扱いが Hugo のパス生成と異なり 404 になる） */}}
+        {{- $tagURL := dict }}
+        {{- range site.Taxonomies.tags }}{{ $tagURL = merge $tagURL (dict (lower .Page.Title) .Page.RelPermalink) }}{{ end }}
         {{- range first 14 $catTags }}
-        <a class="tag-item" href="/tags/{{ . | urlize }}/"># {{ . }}</a>
+        <a class="tag-item" href="{{ index $tagURL (lower .) | default (printf "/tags/%s/" (. | urlize)) }}"># {{ . }}</a>
         {{- end }}
       </div>
     </div>
