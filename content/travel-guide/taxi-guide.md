@@ -1,7 +1,7 @@
 ---
 title: "浦安市内のタクシー乗り場・空港定額タクシーガイド｜舞浜・新浦安・浦安から空港・ホテルへ"
 date: 2026-06-19T00:00:00+09:00
-lastmod: 2026-09-03
+lastmod: 2026-10-22
 factChecked: "2026-09-03"
 slug: "urayasu-taxi-airport-flat-rate-guide"
 description: "浦安駅・新浦安駅・舞浜駅のタクシー乗り場と配車会社一覧、羽田・成田空港への空港定額料金、UDタクシー・福祉タクシーの確認ポイントをまとめました。"
@@ -209,6 +209,36 @@ JR京葉線・武蔵野線の駅で、新浦安駅周辺や日の出・明海・
 
 浦安市内から空港への空港定額タクシーは複数社で案内を確認できましたが、**空港発で浦安市内へ向かう場合の定額適用可否や乗車方法は、会社や予約方法により異なります**。羽田空港・成田空港公式の定額タクシーは主に東京都内・神奈川県内方面向けの案内となっています。空港発で浦安市内へ向かう場合は、事前に利用予定のタクシー会社へ確認してください。
 
+### 空港発で料金を先に決めたいとき：予約制の空港送迎
+
+羽田・成田に着いてから浦安市内のホテルへ向かう場合は、料金が予約時に決まる**空港送迎サービス**も選べます。空港でドライバーと待ち合わせ、指定したホテルや自宅の前まで乗換なしで移動できます。
+
+- **相乗り（ニアミー）** — 同じ方面の人と1台をシェアする方式で、料金は1人あたり。羽田⇔浦安市は1人{{< fact "airport_transfer.nearme_haneda_share" >}}〜、成田⇔浦安市は1人{{< fact "airport_transfer.nearme_narita_share" >}}〜（日程・人数・早割で変わる）
+- **貸切ハイヤー（エアポートタクシー）** — 5人乗りの大型車を1台貸し切る方式で、高速代込みの定額。羽田⇔浦安市は1台{{< fact "airport_transfer.airporttaxi_haneda" >}}、成田⇔浦安市は1台{{< fact "airport_transfer.airporttaxi_narita" >}}
+
+羽田からなら一般タクシー（メーターの目安 約9,500〜10,000円）のほうが安く済むことが多く、1〜2人ならリムジンバス（羽田 大人{{< fact "limousine.haneda_fare" >}}）が最も安い選択肢です。送迎サービスは「停車しないホテルへ直接行きたい」「荷物が多い」「料金を先に決めておきたい」ときに比べてみてください。リムジンバス・鉄道との比較は[浦安・舞浜への行き方ガイド](/travel-guide/urayasu-maihama-access-guide/#airport-transfer)にまとめています。
+
+<div class="affiliate-box">
+  <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>空港から浦安市内へ：送迎の料金を調べる</strong></p>
+  <div class="aff-plan">
+    <p class="aff-plan-name">相乗りの空港送迎（ニアミー）</p>
+    <p class="aff-plan-meta">子どもは大人の半額、乳児は無料、スーツケース1個まで無料。乗車時刻は前日18時までに確定し、フライトが遅れた場合は全額返金です。チャイルドシートは持ち込みが必要です</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX2+9PHGVM+4Q64+5ZEMQ" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="app.nearme.jp" data-cta-pos="taxi-airport"><i class="ti ti-users" aria-hidden="true"></i> 相乗り送迎の料金を確認する</a>
+      <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B7XX2+9PHGVM+4Q64+5ZEMQ" alt="" style="position:absolute;width:1px;height:1px;opacity:0">
+    </div>
+  </div>
+  <div class="aff-plan">
+    <p class="aff-plan-name">貸切の空港送迎ハイヤー（エアポートタクシー）</p>
+    <p class="aff-plan-meta">空港のタクシー乗り場で待ち合わせ、無料の待機は30分まで。日本語・英語・中国語で案内があります。チャイルドシートの貸出はなく、フライトの追跡もしないため、到着後の時間に余裕を持って予約してください</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX2+8P60Z6+5D2A+5YJRM" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="www.airport-taxi.tokyo" data-cta-pos="taxi-airport"><i class="ti ti-car-suv" aria-hidden="true"></i> 貸切送迎の料金を確認する</a>
+      <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7XX2+8P60Z6+5D2A+5YJRM" alt="" style="position:absolute;width:1px;height:1px;opacity:0">
+    </div>
+  </div>
+  <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※上記のボタンは広告（アフィリエイト）リンクです。料金・予約条件・運行エリアは各公式サイトで最新情報をご確認ください。</p>
+</div>
+
 ---
 
 ## 通常タクシー料金の目安
@@ -355,6 +385,8 @@ UDタクシーは車いす利用者・高齢者・ベビーカー利用者にも
 - <a href="https://www.city.urayasu.lg.jp/fukushi/shogai/enjo/gaishutsu/1001249.html" target="_blank" rel="noopener">浦安市公式サイト</a>「福祉タクシー協力機関一覧」
 - <a href="https://tokyo-haneda.com/text/access/taxi/index.html" target="_blank" rel="noopener">羽田空港公式サイト</a>「タクシー」
 - <a href="https://www.narita-airport.jp/ja/access/taxi/" target="_blank" rel="noopener">成田空港公式サイト</a>「タクシー」
+- <a href="https://app.nearme.jp/airport-shuttle/" target="_blank" rel="noopener" data-nodal>ニアミー</a>「空港送迎」羽田・成田のエリア別料金（2026年10月22日確認）
+- <a href="https://www.airport-taxi.tokyo/jp/rates" target="_blank" rel="noopener" data-nodal>エアポートタクシー</a>「ハイヤー料金表」（2026年10月22日確認）
 
 ---
 
