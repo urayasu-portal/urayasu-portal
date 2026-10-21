@@ -1,7 +1,7 @@
 ---
 title: "Christmas in Urayasu & Maihama 2026 | Disney Christmas Tips, Hotel Christmas Cakes, Dinners & Free Illuminations"
 date: 2026-10-09T09:50:00+09:00
-lastmod: 2026-10-12
+lastmod: 2026-10-21
 factChecked: "2026-10-09"
 slug: "maihama-christmas"
 badge: "Christmas"
@@ -34,7 +34,7 @@ faq:
     a: "Yes. For Christmas 2026, six Official Hotels including Hilton Tokyo Bay sell stay plans that come with a limited-edition windowed pouch. The plans cover stays from November 11 to December 25, and include the right to purchase a 1-Day Passport (the ticket itself costs extra)."
 ---
 
-{{< note >}}ℹ️ Please note　This page was compiled from information published as of October 9, 2026. Dates, prices and content are subject to change. Always check the official websites of each facility and Tokyo Disney Resort before booking or visiting.{{< /note >}}
+{{< note >}}ℹ️ Please note　This page is based on information published as of October 9, 2026, and the Disney Resort Line section reflects the official announcement of October 20. Dates, prices and content are subject to change. Always check the official websites of each facility and Tokyo Disney Resort before booking or visiting.{{< /note >}}
 
 In winter, Urayasu and Maihama fill with Christmas spirit to match Tokyo Disney Resort's "Disney Christmas," from the hotels to the station plazas and cultural venues. This guide covers how to enjoy Christmas 2026 in Urayasu and Maihama, organized around five kinds of visitor: people going to the parks, people who want to order a Christmas cake, people looking for a festive meal, people looking for a hotel, and people who are not going into the parks at all.
 
@@ -96,9 +96,50 @@ At some restaurants, the course content and price change between the period up t
 
 ### Disney Resort Line
 
-From November 11, the "Disney Christmas Liner," a monorail wrapped in a Disney Christmas design, goes into service, and riders receive an original Christmas sticker (while supplies last).
+From Wednesday, November 11 to Friday, December 25, 2026, the "Disney Christmas Liner," a train with a Christmas-themed interior, will be in service.
 
-A Christmas-design Free Ticket (one design) is sold at station ticket machines from November 10 to December 25. It costs the same as a regular Free Ticket: the 1-day ticket is 700 yen for adults and 350 yen for children. Original-design souvenir medals (100 yen each) also go on sale from November 1.
+Only one train, the purple one, runs as the Christmas Liner. Inside, you'll find characters such as Mickey Mouse and Minnie Mouse along with Christmas decorations, hand straps decorated to look like Santa hats, and Christmas songs.
+
+The operating schedule will be announced on the official website from Sunday, November 8. If you want to ride it, check the [official Disney Resort Line page (Japanese)](https://www.tokyodisneyresort.jp/tdr/resortline/) before you go.
+
+#### Christmas sticker
+
+From Wednesday, November 11 to Friday, December 25, Disney Resort Line riders can receive an original Christmas sticker.
+
+One sticker per person. To get one, ask a nearby cast member.
+
+#### Fan stamp rally with 7 stamps
+
+From Tuesday, November 10 to Friday, December 25, the "Disney Christmas 2026" fan stamp rally takes place.
+
+Collect all 7 stamps placed at the 4 stations to complete a Christmas artwork featuring Mickey Mouse, a snowman and a teddy bear.
+
+| Station | Stamp stands |
+| --- | --- |
+| Resort Gateway Station | 2 |
+| Tokyo Disneyland Station | 1 |
+| Bayside Station | 2 |
+| Tokyo DisneySea Station | 2 |
+
+To take part, you need a Free Ticket that is valid that day and has already been used to start your trip. Show it to a cast member at a station to receive one stamp card per ticket.
+
+Every station has stamp stands, so you can start from any of them. To cover all 4 stations in one day, using a Free Ticket to ride around is the easiest way.
+
+#### Two Christmas-design Free Tickets
+
+From Tuesday, November 10 to Friday, December 25, Christmas-design Free Tickets are sold at the ticket machines at each station.
+
+In 2026 there are two designs: one featuring Mickey Mouse and friends, and one featuring the character リルリンリン.
+
+They cost the same as a regular Free Ticket: the 1-day ticket is 700 yen for adults and 350 yen for children. The limited designs end when sold out.
+
+#### Four souvenir medals
+
+From Sunday, November 1 to Friday, December 25, four Christmas-design souvenir medals are available.
+
+Each station sells one design, so you can collect them by visiting all 4 stations. Each medal costs 100 yen.
+
+{{< note >}}The Resort Line's Christmas events start on different dates. Souvenir medals start on November 1, Free Tickets and the stamp rally on November 10, and the Christmas Liner and sticker giveaway on November 11.{{< /note >}}
 
 ## Ordering a hotel Christmas cake
 
@@ -300,6 +341,7 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 
 ## Update history
 
+- October 21, 2026: Updated the Disney Resort Line section based on the official announcement of October 20 (two limited Free Ticket designs, stamp rally rules, Christmas Liner and medal details)
 - October 12, 2026: English version published (based on information as of October 9, 2026)
 
 ## Official information and references
@@ -307,6 +349,8 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 - [Tokyo Disneyland "Disney Christmas" (Tokyo Disney Resort official)](https://www.tokyodisneyresort.jp/en/topics/event/christmas2026/tdl.html)
 - [Tokyo DisneySea "Disney Christmas" (Tokyo Disney Resort official)](https://www.tokyodisneyresort.jp/en/topics/event/christmas2026/tds.html)
 - [Tokyo Disney Resort Official Hotels stay plans (Japanese)](https://www.officialhotel.jp/plan)
+- [Maihama Resort Line: "Disney Resort Line Christmas 2026," announced October 20 (Japanese)](https://prtimes.jp/main/html/rd/p/000000102.000038492.html)
+- [Disney Resort Line official page (Japanese)](https://www.tokyodisneyresort.jp/tdr/resortline/)
 - [Disney Resort Line Free Tickets (Japanese)](https://www.tokyodisneyresort.jp/tdr/resortline/ticket.html)
 - [Hotel Okura Tokyo Bay Christmas (Japanese)](https://www.okuratokyobay.net/lp/christmas/)
 - [Maihama View Hotel by HULIC Christmas 2026 (Japanese)](https://www.viewhotels.co.jp/maihama/news/2026/chistmas.html)
@@ -320,4 +364,4 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-*This guide is based on information published as of October 9, 2026. Dates, prices and content are subject to change. Please check each facility's official website for the latest information.*
+*This guide is based on information published as of October 9, 2026, with the Disney Resort Line section reflecting the official announcement of October 20. Dates, prices and content are subject to change. Please check each facility's official website for the latest information.*
