@@ -214,9 +214,9 @@ JR京葉線・武蔵野線の駅で、新浦安駅周辺や日の出・明海・
 羽田・成田に着いてから浦安市内のホテルへ向かう場合は、料金が予約時に決まる**空港送迎サービス**も選べます。空港でドライバーと待ち合わせ、指定したホテルや自宅の前まで乗換なしで移動できます。
 
 - **相乗り（ニアミー）** — 同じ方面の人と1台をシェアする方式で、料金は1人あたり。羽田⇔浦安市は1人{{< fact "airport_transfer.nearme_haneda_share" >}}〜、成田⇔浦安市は1人{{< fact "airport_transfer.nearme_narita_share" >}}〜（日程・人数・早割で変わる）
-- **貸切ハイヤー（エアポートタクシー）** — 5人乗りの大型車を1台貸し切る方式で、高速代込みの定額。羽田⇔浦安市は1台{{< fact "airport_transfer.airporttaxi_haneda" >}}、成田⇔浦安市は1台{{< fact "airport_transfer.airporttaxi_narita" >}}
+- **貸切ハイヤー（エアポートタクシー）** — 5人乗りの大型車を1台貸し切る方式で、料金は高速・ガソリン代込み。公式の参考料金は浦安市まで羽田1台{{< fact "airport_transfer.airporttaxi_haneda" >}}・成田1台{{< fact "airport_transfer.airporttaxi_narita" >}}、ディズニーランドまで羽田{{< fact "airport_transfer.airporttaxi_haneda_tdl" >}}・成田{{< fact "airport_transfer.airporttaxi_narita_tdl" >}}。前日・当日の予約は+{{< fact "airport_transfer.airporttaxi_short_notice" >}}、22時〜翌5時59分の予約は+{{< fact "airport_transfer.airporttaxi_late_night" >}}が加算されるため、正確な料金は予約画面で確認してください
 
-羽田からなら一般タクシー（メーターの目安 約9,500〜10,000円）のほうが安く済むことが多く、1〜2人ならリムジンバス（羽田 大人{{< fact "limousine.haneda_fare" >}}）が最も安い選択肢です。送迎サービスは「停車しないホテルへ直接行きたい」「荷物が多い」「料金を先に決めておきたい」ときに比べてみてください。リムジンバス・鉄道との比較は[浦安・舞浜への行き方ガイド](/travel-guide/urayasu-maihama-access-guide/#airport-transfer)にまとめています。
+羽田からなら一般タクシー（メーターの目安 約9,500〜10,000円）のほうが安く済む場合が多く、リムジンバス（羽田 大人{{< fact "limousine.haneda_fare" >}}）は乗換なしで比較的安い選択肢です（運賃だけなら乗換のある鉄道のほうが安い場合もあります）。送迎サービスは「停車しないホテルへ直接行きたい」「荷物が多い」「料金を先に決めておきたい」ときに比べてみてください。リムジンバス・鉄道との比較は[浦安・舞浜への行き方ガイド](/travel-guide/urayasu-maihama-access-guide/#airport-transfer)にまとめています。
 
 <div class="affiliate-box">
   <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>空港から浦安市内へ：送迎の料金を調べる</strong></p>
@@ -230,7 +230,7 @@ JR京葉線・武蔵野線の駅で、新浦安駅周辺や日の出・明海・
   </div>
   <div class="aff-plan">
     <p class="aff-plan-name">貸切の空港送迎ハイヤー（エアポートタクシー）</p>
-    <p class="aff-plan-meta">空港のタクシー乗り場で待ち合わせ、無料の待機は30分まで。日本語・英語・中国語で案内があります。チャイルドシートの貸出はなく、フライトの追跡もしないため、到着後の時間に余裕を持って予約してください</p>
+    <p class="aff-plan-meta">上記は公式の参考料金で、直前・深夜早朝の予約は加算があります。空港のタクシー乗り場で待ち合わせ、無料の待機は30分まで。日本語・英語・中国語で案内があります。チャイルドシートの貸出はなく、フライトの追跡もしないため、到着後の時間に余裕を持って予約してください</p>
     <div class="aff-plan-links">
       <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX2+8P60Z6+5D2A+5YJRM" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="www.airport-taxi.tokyo" data-cta-pos="taxi-airport"><i class="ti ti-car-suv" aria-hidden="true"></i> 貸切送迎の料金を確認する</a>
       <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7XX2+8P60Z6+5D2A+5YJRM" alt="" style="position:absolute;width:1px;height:1px;opacity:0">

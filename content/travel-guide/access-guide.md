@@ -87,7 +87,7 @@ faq:
           <span class="conn"><span class="mode" style="color:#14506E"><i class="ti ti-bus"></i> リムジンバス</span><span class="lin"><span class="bar" style="background:#1A5C8A"></span><i class="ti ti-chevron-right" style="font-size:14px;color:#1A5C8A"></i></span><span class="time">約35〜60分・乗換なし</span></span>
           <span class="node" style="border-color:#1A5C8A"><i class="ti ti-castle" style="font-size:15px;color:#1A5C8A"></i>パーク（ランド・シー両方に停車）</span>
         </div>
-        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 成田空港から：リムジンバス直行 約60〜90分　／　<i class="ti ti-car" style="font-size:12px"></i> タクシー：羽田から約30〜50分（空港定額あり）</div>
+        <div class="alt"><i class="ti ti-bus" style="font-size:12px"></i> 成田空港から：リムジンバス直行 約60〜90分　／　<i class="ti ti-car" style="font-size:12px"></i> タクシー：羽田から約30〜50分（空港発の定額の扱いは会社・予約方法で異なります。料金を先に決めたいときは<a href="#airport-transfer" style="color:#E05535">予約制の空港送迎</a>）</div>
         <div class="alt"><i class="ti ti-train" style="font-size:12px"></i> 鉄道の場合：どちらの空港からも乗継ぎで<strong>舞浜駅</strong>着（羽田 約50〜70分／成田 約60〜90分）。舞浜駅からは下のカードへ</div>
         <div class="alt"><i class="ti ti-coin" style="font-size:12px"></i> リムジンバス運賃：羽田 大人{{< fact "limousine.haneda_fare" >}}・小児{{< fact "limousine.haneda_fare_child" >}}／成田 大人{{< fact "limousine.narita_fare" >}}・小児{{< fact "limousine.narita_fare_child" >}}。スーツケースはトランクに1人{{< fact "limousine.baggage_per_person" >}}個まで</div>
       </div>
@@ -105,16 +105,16 @@ faq:
             <tr><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0"><strong>鉄道</strong></td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">1人ごと（経路で変わる）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">乗換あり・舞浜駅／新浦安駅まで</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">時間を読みたい・荷物が少ない</td></tr>
             <tr><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0"><strong>リムジンバス</strong></td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">1人 羽田{{< fact "limousine.haneda_fare" >}}・成田{{< fact "limousine.narita_fare" >}}（大人）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">乗換なし・パークと一部ホテルに停車</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">費用を抑えたい・停車ホテルに泊まる</td></tr>
             <tr><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0"><strong>相乗りの空港送迎</strong><br>（ニアミー）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">1人 羽田{{< fact "airport_transfer.nearme_haneda_share" >}}〜・成田{{< fact "airport_transfer.nearme_narita_share" >}}〜</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">乗換なし・指定した場所まで（他の組と同乗）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">1〜2人・停車しないホテル・早朝深夜</td></tr>
-            <tr><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0"><strong>貸切ハイヤー</strong><br>（エアポートタクシー）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">1台 羽田{{< fact "airport_transfer.airporttaxi_haneda" >}}・成田{{< fact "airport_transfer.airporttaxi_narita" >}}（5人乗り）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">乗換なし・指定した場所まで（自分たちだけ）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">家族・グループ・大荷物・外国語で予約したい</td></tr>
+            <tr><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0"><strong>貸切ハイヤー</strong><br>（エアポートタクシー）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">1台 浦安市まで 羽田{{< fact "airport_transfer.airporttaxi_haneda" >}}・成田{{< fact "airport_transfer.airporttaxi_narita" >}}、ディズニーランドまで 羽田{{< fact "airport_transfer.airporttaxi_haneda_tdl" >}}・成田{{< fact "airport_transfer.airporttaxi_narita_tdl" >}}（参考料金・5人乗り）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">乗換なし・指定した場所まで（自分たちだけ）</td><td style="padding:6px 8px;border-bottom:1px dashed #E2E8F0">家族・グループ・大荷物・外国語で予約したい</td></tr>
             <tr><td style="padding:6px 8px"><strong>一般タクシー</strong></td><td style="padding:6px 8px">1台 羽田→舞浜駅 約9,500円・成田→舞浜駅 約25,000円（メーターの目安）</td><td style="padding:6px 8px">乗換なし・予約なしでも乗れる</td><td style="padding:6px 8px">着いてすぐ乗りたい（<a href="/travel-guide/urayasu-taxi-airport-flat-rate-guide/" style="color:#E05535">タクシーガイド</a>）</td></tr>
           </tbody>
         </table>
         </div>
-        <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin:6px 0 8px"><i class="ti ti-info-circle" style="font-size:12px"></i> 料金は2026年10月22日時点の各社公式サイトの表示です。相乗りの「〜」は下限で、日程・人数・乗降場所・早割によって変わります。貸切とタクシーは1台あたりの料金なので、人数が多いほど1人あたりは下がります。</div>
+        <div style="font-size:10.5px;color:#94A3B8;line-height:1.7;margin:6px 0 8px"><i class="ti ti-info-circle" style="font-size:12px"></i> 料金は2026年10月22日時点の各社公式サイトの表示です。相乗りの「〜」は下限で、日程・人数・乗降場所・早割によって変わります。貸切ハイヤーは公式の参考料金で、前日・当日の予約は+{{< fact "airport_transfer.airporttaxi_short_notice" >}}、22時〜翌5時59分の予約は+{{< fact "airport_transfer.airporttaxi_late_night" >}}が加算されます。正確な料金は予約画面で確認してください。貸切とタクシーは1台あたりの料金なので、人数が多いほど1人あたりは下がります。</div>
         <div style="font-size:11px;color:#334155;line-height:1.85">
           <div style="padding:4px 0"><i class="ti ti-baby-carriage" style="color:#534AB7"></i> <strong>小さな子ども連れ</strong> — 乗換をなくすならリムジンバスか送迎。相乗りは子どもが大人の半額・乳児無料ですが、<strong>チャイルドシートはどちらの送迎も持ち込み</strong>です</div>
           <div style="padding:4px 0"><i class="ti ti-world" style="color:#534AB7"></i> <strong>海外から到着する人</strong> — 入国審査に時間がかかるため、送迎は到着時刻に余裕を持って予約。貸切ハイヤーは英語・中国語で案内があります</div>
-          <div style="padding:4px 0"><i class="ti ti-user" style="color:#534AB7"></i> <strong>1〜2人</strong> — 最安はリムジンバス。ホテル前まで行きたいときに相乗りを比べる</div>
+          <div style="padding:4px 0"><i class="ti ti-user" style="color:#534AB7"></i> <strong>1〜2人</strong> — リムジンバスは乗換なしで比較的安い選択肢（運賃だけなら乗換のある鉄道のほうが安い場合も）。ホテル前まで行きたいときに相乗りを比べる</div>
           <div style="padding:4px 0"><i class="ti ti-users" style="color:#534AB7"></i> <strong>3〜5人のグループ</strong> — 1台の料金を人数で割ると、貸切やタクシーも候補に。スーツケースの数と車の定員を予約前に確認</div>
         </div>
       </div>
@@ -130,7 +130,7 @@ faq:
         </div>
         <div class="aff-plan">
           <p class="aff-plan-name">家族・グループで貸切る：エアポートタクシー</p>
-          <p class="aff-plan-meta">羽田⇔浦安市 1台{{< fact "airport_transfer.airporttaxi_haneda" >}}、成田⇔浦安市 1台{{< fact "airport_transfer.airporttaxi_narita" >}}（5人乗りのアルファードクラス、高速代込みの定額）。一般タクシーより高めですが、空港発でも運賃が予約時に決まり、日本語・英語・中国語で案内があります。チャイルドシートの貸出はなく、フライトの追跡もしないため、到着後の時間に余裕を持って予約してください</p>
+          <p class="aff-plan-meta">公式の参考料金は1台あたり、浦安市まで羽田{{< fact "airport_transfer.airporttaxi_haneda" >}}・成田{{< fact "airport_transfer.airporttaxi_narita" >}}、ディズニーランドまで羽田{{< fact "airport_transfer.airporttaxi_haneda_tdl" >}}・成田{{< fact "airport_transfer.airporttaxi_narita_tdl" >}}（5人乗りのアルファードクラス、高速・ガソリン代込み）。前日・当日の予約は+{{< fact "airport_transfer.airporttaxi_short_notice" >}}、22時〜翌5時59分は+{{< fact "airport_transfer.airporttaxi_late_night" >}}がかかり、正確な料金は予約画面で確認が必要です。一般タクシーより高めですが、空港発でも予約時に料金が決まり、日本語・英語・中国語で案内があります。チャイルドシートの貸出はなく、フライトの追跡もしないため、到着後の時間に余裕を持って予約してください</p>
           <div class="aff-plan-links">
             <a class="aff-btn" href="https://px.a8.net/svt/ejp?a8mat=4B7XX2+8P60Z6+5D2A+5YJRM" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="www.airport-taxi.tokyo" data-cta-pos="access-airport"><i class="ti ti-car-suv" aria-hidden="true"></i> 貸切送迎の料金を確認する</a>
             <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7XX2+8P60Z6+5D2A+5YJRM" alt="" style="position:absolute;width:1px;height:1px;opacity:0">
