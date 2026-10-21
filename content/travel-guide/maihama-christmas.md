@@ -1,7 +1,7 @@
 ---
 title: "浦安・舞浜クリスマスガイド2026｜ホテルのケーキ予約・ディナー・無料イルミネーションまとめ"
 date: 2026-10-09T09:50:00+09:00
-lastmod: 2026-10-20T18:05:00+09:00
+lastmod: 2026-10-21T22:00:00+09:00
 factChecked: "2026-10-09"
 slug: "maihama-christmas"
 tags:
@@ -36,7 +36,7 @@ faq:
   - q: "ヒルトン東京ベイもクリスマスの限定グッズ付き宿泊プランの対象ですか？"
     a: "はい。2026年のクリスマスは、ヒルトン東京ベイを含むオフィシャルホテル6館で、限定の窓付きポーチが付く宿泊プランが販売されています。宿泊対象は11月11日〜12月25日で、1デーパスポートは購入権利付き（チケット代は別）です。"
 ---
-{{< note >}}ℹ️ ご注意　本ページは2026年10月9日時点の公開情報を基本とし、ディズニーリゾートラインについては10月20日の公式発表を反映しています。期間・料金・実施内容は変更される場合があります。予約・来園前に各施設・東京ディズニーリゾートの公式サイトで最新情報をご確認ください。{{< /note >}}
+{{< note >}}ℹ️ ご注意　本ページは2026年10月9日時点の公開情報を基本とし、ディズニーリゾートラインについては10月20日の公式発表、ホテルのスイーツビュッフェ・アフタヌーンティーとコースディナーについては10月21日に確認した内容を反映しています。期間・料金・実施内容は変更される場合があります。予約・来園前に各施設・東京ディズニーリゾートの公式サイトで最新情報をご確認ください。{{< /note >}}
 
 冬の浦安・舞浜は、東京ディズニーリゾートの「ディズニー・クリスマス」に合わせて、ホテルや駅前、文化施設までクリスマスムードに包まれます。この記事では、2026年の浦安・舞浜でクリスマスをどう楽しむかを、パークへ行く人・ケーキを予約したい人・食事を楽しみたい人・泊まる人・パークに入らない人の目線でまとめます。
 
@@ -200,10 +200,40 @@ faq:
 | ホテル | 企画 | 日程 | 料金（大人） |
 | --- | --- | --- | --- |
 | [ヒルトン東京ベイ](/travel-guide/hotels/hilton-tokyo-bay/) | スイーツビュッフェ「Dream Santa Story」（ラウンジ・オー） | 11/7〜12/20の**土日祝のみ** | 5,000円（4〜8歳1,900円／9〜12歳2,700円） |
-| 舞浜ビューホテル by HULIC | アフタヌーンティー「Snow Globe Christmas」 | 11/1〜12/25（12/12・13を除く） | 4,500円 |
+| 舞浜ビューホテル by HULIC | アフタヌーンティー「Snow Globe Christmas」 | 11/1〜12/25（12/12・13を除く） | 4,700円 |
 | 舞浜ビューホテル by HULIC | スイーツビュッフェ「クリスマスホリデー」 | **12/12・13の2日間のみ** | 6,000円（4歳〜小学生3,000円） |
+| [グランドニッコー東京ベイ 舞浜](/posts/grand-nikko-maihama-christmas-afternoon-tea-2026/) | クリスマスアフタヌーンティー（ル・ジャルダン） | 11/13〜12/13の**金・土・日・祝のみ** | 4,200円 |
 
-ヒルトンのスイーツビュッフェはライブステーションでジンジャーブレッドハウスを提供する4部制（各120分）で、14:30・15:00の回はオンライン事前決済の早割があります。
+ヒルトンのスイーツビュッフェはライブステーションでジンジャーブレッドハウスを提供する4部制（各120分）で、14:30・15:00の回は公式サイトのオンライン事前決済で15%引き（毎日50名限定）になります。舞浜ビューホテルのアフタヌーンティーは1日20食限定で、スパークリングワイン1杯付き（5,300円）も選べます。グランドニッコーのアフタヌーンティーは1日30食限定です。
+
+<div class="affiliate-box">
+  <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>スイーツビュッフェ・アフタヌーンティーの予約プラン</strong></p>
+  <div class="aff-plan">
+    <p class="aff-plan-name">ヒルトン東京ベイ「Dream Santa Story」</p>
+    <p class="aff-plan-meta">11/7〜12/20の土日祝・大人5,000円。14:30・15:00の回を選ぶなら、公式サイトの事前決済（15%引き）がお得です</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://www.ozmall.co.jp/restaurant/2054/plan/794611/" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="www.ozmall.co.jp" data-cta-pos="xmas-sweets"><i class="ti ti-calendar-event" aria-hidden="true"></i> 予約プランを見る</a>
+      <a class="aff-sub" href="https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-christmas" target="_blank" rel="noopener" data-nodal>ホテル公式サイトで詳細を見る</a>
+    </div>
+  </div>
+  <div class="aff-plan">
+    <p class="aff-plan-name">舞浜ビューホテル by HULIC「Snow Globe Christmas」</p>
+    <p class="aff-plan-meta">11/1〜12/25（12/12・13を除く）・4,700円・コーヒーや紅茶などのソフトドリンク飲み放題付き。前日15時までの予約制</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://www.ozmall.co.jp/restaurant/11303/plan/796665/" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="www.ozmall.co.jp" data-cta-pos="xmas-sweets"><i class="ti ti-calendar-event" aria-hidden="true"></i> 予約プランを見る</a>
+      <a class="aff-sub" href="https://www.viewhotels.co.jp/maihama/news/2026/snowglobechristmas.html" target="_blank" rel="noopener" data-nodal>ホテル公式サイトで詳細を見る</a>
+    </div>
+  </div>
+  <div class="aff-plan">
+    <p class="aff-plan-name">グランドニッコー東京ベイ 舞浜 クリスマスアフタヌーンティー</p>
+    <p class="aff-plan-meta">11/13〜12/13の金土日祝。公式の予約は4,200円（コーヒーまたは紅茶付き）。予約サイトのプランはオリジナルのノンアルコールカクテル付きで4,700円です</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://www.ozmall.co.jp/restaurant/7369/plan/798406/" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="www.ozmall.co.jp" data-cta-pos="xmas-sweets"><i class="ti ti-calendar-event" aria-hidden="true"></i> カクテル付きプランを見る</a>
+      <a class="aff-sub" href="https://www.tablecheck.com/ja/tokyobay-grandnikko-lejardin/reserve/message" target="_blank" rel="noopener" data-nodal>公式の予約ページ（4,200円）</a>
+    </div>
+  </div>
+  <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※「予約プランを見る」「カクテル付きプランを見る」は広告（アフィリエイト）リンクです。料金・空席・販売状況は変わることがあるため、予約画面の表示をご確認ください。</p>
+</div>
 
 ### ディナービュッフェ
 
@@ -223,6 +253,26 @@ faq:
 | 東京ベイ舞浜ホテル ファーストリゾート（スカイレストラン サンセット） | クリスマス・プレミアムディナー | 12/23〜25 | 18,000円（予約は12/17まで） |
 | 東京ベイ舞浜ホテル ファーストリゾート（カリフォルニア） | クリスマスセット | 11/11〜12/25 | 5,800円（12歳以下3,500円） |
 | 舞浜ビューホテル by HULIC | クリスマスディナーセット | 11/4〜12/18の平日 | 4,200円 |
+
+<div class="affiliate-box">
+  <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>ホテルオークラ東京ベイ「フォンタナ」のクリスマスディナー</strong></p>
+  <div class="aff-plan">
+    <p class="aff-plan-name">アーリークリスマスディナー（全5皿）</p>
+    <p class="aff-plan-meta">12/1〜23（12/19・20を除く）・10,000円（税・サービス料込）</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://restaurant.ikyu.com/100087/plan12862718" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="restaurant.ikyu.com" data-cta-pos="xmas-dinner"><i class="ti ti-calendar-event" aria-hidden="true"></i> 予約プランを見る</a>
+    </div>
+  </div>
+  <div class="aff-plan">
+    <p class="aff-plan-name">ノエルディナーコース（全9皿）</p>
+    <p class="aff-plan-meta">12/19・20・24・25の4日間・19,000円（税・サービス料込）</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://restaurant.ikyu.com/100087/plan12862751" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="restaurant.ikyu.com" data-cta-pos="xmas-dinner"><i class="ti ti-calendar-event" aria-hidden="true"></i> 予約プランを見る</a>
+      <a class="aff-sub" href="https://www.okuratokyobay.net/lp/christmas/restaurant/" target="_blank" rel="noopener" data-nodal>ホテル公式サイトで詳細を見る</a>
+    </div>
+  </div>
+  <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※「予約プランを見る」は広告（アフィリエイト）リンクです。未就学児向けコースなど、プランにない内容はホテルへ直接お問い合わせください。</p>
+</div>
 
 ディズニーホテルのレストランでもクリスマスのスペシャルメニューが提供されます（[ディズニーホテルのクリスマス](#ディズニーホテルのクリスマス)を参照）。
 
@@ -343,6 +393,7 @@ faq:
 
 ## 更新履歴
 
+- 2026年10月21日：スイーツビュッフェ・アフタヌーンティーとオークラ「フォンタナ」のコースディナーに予約プランの案内を追加。舞浜ビューホテルのアフタヌーンティーの料金を公式の4,700円に訂正し、グランドニッコー東京ベイ 舞浜のクリスマスアフタヌーンティーを比較表に追加
 - 2026年10月20日：ディズニーリゾートラインのクリスマス企画を更新。限定フリーきっぷ2種類、スタンプラリーの参加条件、限定ライナーやメダルの詳細を追記
 - 2026年10月9日：記事を公開
 
@@ -360,10 +411,13 @@ faq:
 - [グランドニッコー東京ベイ 舞浜 クリスマスケーキ2026](https://tokyobay.grandnikko.com/news/510/)
 - [シェラトン・グランデ・トーキョーベイ・ホテル クリスマスケーキ（カフェ トスティーナ）](https://toastina.sheratontokyobay.com/lto-page)
 - [ヒルトン東京ベイ クリスマススイーツビュッフェ](https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-christmas)
+- [舞浜ビューホテル by HULIC アフタヌーンティー「Snow Globe Christmas」](https://www.viewhotels.co.jp/maihama/news/2026/snowglobechristmas.html)
+- [グランドニッコー東京ベイ 舞浜 クリスマスアフタヌーンティー（オークラ ニッコー ホテルマネジメント プレスリリース）](https://prtimes.jp/main/html/rd/p/000004412.000002213.html)
+- [ホテルオークラ東京ベイ クリスマスレストラン](https://www.okuratokyobay.net/lp/christmas/restaurant/)
 - [オリエンタルホテル 東京ベイ クリスマスケーキ](https://www.oriental-hotel.co.jp/news/detail.php?id=664)
 - [ピュアホワイトクリスマスコンサート17（うらやす財団）](https://www.urayasu-zaidan.or.jp/urayasu-bunka/1001543/1006233.html)
 - [新浦安駅前イルミネーション（浦安市）](https://www.city.urayasu.lg.jp/events/shogai/shogai/1049155.html)
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-※本記事は2026年10月9日時点の公開情報を基本とし、ディズニーリゾートラインについては10月20日の公式発表を反映しています。期間・料金・実施内容は変更される場合があります。最新情報は各施設の公式サイトでご確認ください。
+※本記事は2026年10月9日時点の公開情報を基本とし、ディズニーリゾートラインについては10月20日の公式発表、ホテルのスイーツビュッフェ・アフタヌーンティーとコースディナーについては10月21日に確認した内容を反映しています。期間・料金・実施内容は変更される場合があります。最新情報は各施設の公式サイトでご確認ください。

@@ -1,6 +1,7 @@
 ---
 title: "【舞浜】グランドニッコーでクリスマスアフタヌーンティー"
 date: 2026-10-14T19:04:00+09:00
+lastmod: 2026-10-21T22:00:00+09:00
 slug: "grand-nikko-maihama-christmas-afternoon-tea-2026"
 categories:
   - "グルメ・カフェ"
@@ -48,9 +49,26 @@ draft: false
 <li>予約電話：047-711-2427（10:00〜18:00）</li>
 </ul>
 
-<p>料金にはコーヒーまたは紅茶が含まれます。予約はホテル公式の案内から行えます。</p>
+<p>料金にはコーヒーまたは紅茶が含まれます。予約はホテル公式の予約ページのほか、オリジナルのノンアルコールカクテルが付くプラン（4,700円）を予約サイトでも扱っています。ホテルの会員料金や他の割引とは併用できません。</p>
 
-<p><a href="https://www.tablecheck.com/ja/tokyobay-grandnikko-lejardin/reserve/message" target="_blank" rel="noopener">ル・ジャルダンの予約ページ</a></p>
+<div class="affiliate-box">
+  <p style="margin:0 0 6px;"><span class="pr-note">PR</span><strong>クリスマスアフタヌーンティーを予約する</strong></p>
+  <div class="aff-plan">
+    <p class="aff-plan-name">公式の予約ページ（4,200円）</p>
+    <p class="aff-plan-meta">アフタヌーンティーにコーヒーまたは紅茶が付きます。席の予約は利用日の約1か月前から</p>
+    <div class="aff-plan-links">
+      <a class="aff-sub" href="https://www.tablecheck.com/ja/tokyobay-grandnikko-lejardin/reserve/message" target="_blank" rel="noopener" data-nodal>ル・ジャルダンの予約ページ</a>
+    </div>
+  </div>
+  <div class="aff-plan">
+    <p class="aff-plan-name">ノンアルコールカクテル付きプラン（4,700円）</p>
+    <p class="aff-plan-meta">11/13〜12/13の金土日祝。アフタヌーンティーにオリジナルのノンアルコールカクテルが付きます</p>
+    <div class="aff-plan-links">
+      <a class="aff-btn" href="https://www.ozmall.co.jp/restaurant/7369/plan/798406/" target="_blank" rel="sponsored nofollow noopener" data-aff="1" data-asp="www.ozmall.co.jp" data-cta-pos="xmas-post"><i class="ti ti-calendar-event" aria-hidden="true"></i> カクテル付きプランを見る</a>
+    </div>
+  </div>
+  <p style="margin:8px 0 0;font-size:11px;color:var(--up-muted);">※「カクテル付きプランを見る」は広告（アフィリエイト）リンクです。料金・空席は予約画面の表示をご確認ください。</p>
+</div>
 
 <h2>舞浜のクリスマスをホテルでも楽しむ</h2>
 
