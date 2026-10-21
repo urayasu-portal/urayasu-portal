@@ -1,8 +1,8 @@
 ---
 title: "子連れディズニー旅行の準備ガイド｜持ち物チェックリストと現地調達のコツ"
 date: 2026-08-17T20:00:00+09:00
-lastmod: 2026-09-06
-factChecked: "2026-08-24"
+lastmod: 2026-10-21
+factChecked: "2026-10-21"
 slug: "family-packing"
 badge: "子連れ準備"
 description: "子連れで東京ディズニーリゾートへ行く前の準備を年齢別に整理。持ち物チェックリスト、ベビーカー・抱っこ紐の考え方、舞浜・浦安で現地調達できるもの、急病時の備えまで地元目線でまとめました。"
@@ -58,7 +58,7 @@ faq:
 <h2 id="common">全年齢共通の持ち物チェックリスト</h2>
 
 <ul class="lg-art-checklist">
-  <li><strong>常備薬・解熱剤</strong>（使い慣れたもの）と健康保険証（国内の方）・旅行保険証券（海外からの方）</li>
+  <li><strong>常備薬・解熱剤</strong>（使い慣れたもの）とマイナ保険証（マイナンバーカード）または資格確認書（国内の方）・旅行保険証券（海外からの方）</li>
   <li><strong>モバイルバッテリーと充電ケーブル</strong></li>
   <li><strong>雨具</strong>（足りなければ現地調達可。<a href="/travel-guide/rainy-day/">雨の日ガイド</a>）</li>
   <li><strong>現金を少額。</strong>夜間の急病診療所は現金のみです（<a href="/travel-guide/kids-emergency/">子どもの急病ガイド</a>）</li>
