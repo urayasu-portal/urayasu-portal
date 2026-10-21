@@ -198,10 +198,11 @@ Many Christmas dining events run only on weekends or for a few days. Check the d
 | Hotel | Event | Dates | Price (adult) |
 | --- | --- | --- | --- |
 | [Hilton Tokyo Bay](/en/travel-guide/hotels/hilton-tokyo-bay/) | Dessert buffet "Dream Santa Story" (Lounge O) | 11/7-12/20, **weekends and holidays only** | 5,000 yen (ages 4-8: 1,900 yen / ages 9-12: 2,700 yen) |
-| Maihama View Hotel by HULIC | Afternoon tea "Snow Globe Christmas" | 11/1-12/25 (except 12/12 and 13) | 4,500 yen |
+| Maihama View Hotel by HULIC | Afternoon tea "Snow Globe Christmas" | 11/1-12/25 (except 12/12 and 13) | 4,700 yen |
 | Maihama View Hotel by HULIC | Dessert buffet "Christmas Holiday" | **12/12 and 13 only** | 6,000 yen (age 4 to elementary school: 3,000 yen) |
+| [Grand Nikko Tokyo Bay Maihama](/en/travel-guide/hotels/grand-nikko-tokyo-bay/) | Christmas afternoon tea (Le Jardin) | 11/13-12/13, **Fridays, weekends and holidays only** | 4,200 yen |
 
-Hilton's dessert buffet runs in four 120-minute seatings and features a live station serving gingerbread houses; the 14:30 and 15:00 seatings have an early-bird discount for advance online payment.
+Hilton's dessert buffet runs in four 120-minute seatings and features a live station serving gingerbread houses; the 14:30 and 15:00 seatings are 15% off with advance online payment on the official website (limited to 50 guests a day). Maihama View Hotel's afternoon tea is limited to 20 sets a day, with a version including a glass of sparkling wine for 5,300 yen. Grand Nikko's afternoon tea is limited to 30 sets a day.
 
 ### Dinner buffets
 
@@ -341,6 +342,7 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 
 ## Update history
 
+- October 21, 2026: Corrected the price of Maihama View Hotel's afternoon tea to the official 4,700 yen and added Grand Nikko Tokyo Bay Maihama's Christmas afternoon tea to the table
 - October 21, 2026: Updated the Disney Resort Line section based on the official announcement of October 20 (two limited Free Ticket designs, stamp rally rules, Christmas Liner and medal details)
 - October 12, 2026: English version published (based on information as of October 9, 2026)
 

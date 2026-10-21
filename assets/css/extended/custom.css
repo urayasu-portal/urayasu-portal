@@ -1638,6 +1638,13 @@ body.pillar-travel .post-single .post-content table.tg-rowspan-table tbody th {
   transition: filter .15s, transform .15s;
 }
 .aff-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+/* affiliate-box 内で企画ごとに予約先を並べる行（季節ガイドのレストラン予約など） */
+.aff-plan { padding: 12px 0 2px; border-top: 1px dashed #f0d080; }
+.affiliate-box > p + .aff-plan { border-top: 0; padding-top: 4px; }
+.aff-plan-name { font-weight: 700; margin: 0; line-height: 1.5; }
+.aff-plan-meta { font-size: 12px; color: var(--up-muted); margin: 2px 0 0; line-height: 1.6; }
+.aff-plan-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 16px; }
+.aff-plan-links .aff-sub { font-size: 13px; margin-top: 10px; }
 .rec-thumb { width: 80px; height: 60px; flex-shrink: 0; border-radius: 6px; overflow: hidden; background: #d8e8f0; }
 .rec-body { flex: 1; min-width: 0; }
 .rec-title { font-size: 13px; font-weight: 700; line-height: 1.5; }
