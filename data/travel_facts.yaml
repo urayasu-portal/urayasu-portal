@@ -23,6 +23,24 @@ limousine:
   baggage_size_limit: "50×60×120cm"          # 1個あたり上限サイズ
   baggage_weight_limit: "30kg"               # 1個あたり上限重量
 
+# ── 空港送迎（予約制。浦安市・東京ディズニーリゾート発着）───────────────
+# source: https://app.nearme.jp/airport-shuttle/ （羽田便のエリア別料金表「千葉県浦安市（東京ディズニーリゾートを含む）」）
+# source: https://app.nearme.jp/airport-shuttle/airports/nrt/ （成田便の同表）
+# source: https://www.airport-taxi.tokyo/jp/rates （ハイヤー料金表 千葉↔羽田空港／千葉↔成田空港 の「浦安市」「ディズニーランド」、オプションサービス）
+# checked: 2026-10-22
+# NearMe は相乗り（シェア乗り）の1人あたりの下限。日程・人数・乗降場所・早割で変わる。
+# エアポートタクシーは1台あたりの参考料金（公式表記「あくまでも参考のための目安料金」。高速・ガソリン代込み、税込、5人乗りのアルファードクラス）。
+#   加算：前日〜当日の予約（直前手配）、22:00〜翌5:59の予約（深夜早朝）、ミーティングサービス、経由地追加。
+airport_transfer:
+  nearme_haneda_share: { v: "3,980", u: yen }      # 羽田⇔浦安市 相乗り 1人〜
+  nearme_narita_share: { v: "4,980", u: yen }      # 成田⇔浦安市 相乗り 1人〜
+  airporttaxi_haneda: { v: "17,170", u: yen }      # 羽田⇔浦安市 貸切 1台（参考）
+  airporttaxi_narita: { v: "28,290", u: yen }      # 成田⇔浦安市 貸切 1台（参考）
+  airporttaxi_haneda_tdl: { v: "17,070", u: yen }  # 羽田⇔ディズニーランド 貸切 1台（参考）
+  airporttaxi_narita_tdl: { v: "25,650", u: yen }  # 成田⇔ディズニーランド 貸切 1台（参考）
+  airporttaxi_short_notice: { v: "2,000", u: yen } # 加算：前日〜当日の予約
+  airporttaxi_late_night: { v: "3,500", u: yen }   # 加算：22:00〜翌5:59の予約
+
 # ── 路線バス（浦安駅⇔舞浜駅／京成バス千葉ウエスト 千鳥営業所）───────
 # source: https://transfer-cloud.navitime.biz/keiseibus-group （京成バスグループ公式 経路・運賃検索）
 # source: https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200244-1 （9系統。通過時刻表で舞浜駅南口210円、6:10発→6:29着を確認）
