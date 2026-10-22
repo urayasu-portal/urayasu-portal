@@ -3,7 +3,7 @@ title: "【浦安市】乳幼児期の子育て支援ガイド｜健診・予防
 slug: "urayasu-nyuyoji-shien"
 guideParent: "/life-guide/urayasu-kosodate-shien-matome"
 date: 2026-06-27T07:10:00+09:00
-lastmod: 2026-09-12T20:21:00+09:00
+lastmod: 2026-10-22T18:04:00+09:00
 newsTags: ["子育て", "子ども"]
 factChecked: "2026-09-01"
 checkDate: "2026年6月"
@@ -17,15 +17,17 @@ sources:
     url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/index.html"
   - name: "子どものインフルエンザ予防接種（任意接種）の費用を一部助成します（浦安市公式）"
     url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/1015846.html"
+  - name: "令和8年度 浦安市子どもインフルエンザ予防接種助成協力医療機関（浦安市公式）"
+    url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/1043425.html"
   - name: "保育・一時預かり・訪問支援（浦安市公式 カテゴリトップ）"
     url: "https://www.city.urayasu.lg.jp/kodomo/kosodate/hoiku/index.html"
   - name: "子育て・青少年施設（浦安市公式 カテゴリトップ）"
     url: "https://www.city.urayasu.lg.jp/shisetsu/kosodate/kosodate/index.html"
   - name: "こども発達センター（浦安市公式）"
     url: "https://www.city.urayasu.lg.jp/shisetsu/kosodate/kosodate/1005525.html"
+draft: false
 ---
-
-<p>赤ちゃんが生まれてから就学前までの乳幼児期には、節目の健康診査や予防接種、親子で過ごせる場所、ちょっと預けたいときの支援など、浦安市のさまざまなサポートがあります。このページは「自分に関係しそうな支援に気づき、正しい窓口にたどり着く」ための地図です。<strong>対象年齢・料金・申込み方法などの詳細は、必ず各リンク先の浦安市公式ページでご確認ください</strong>（掲載情報は原則2026年6月時点のものです。子どものインフルエンザ予防接種費用助成は、2026年9月12日に確認した令和8年度情報を反映しています）。</p>
+<p>赤ちゃんが生まれてから就学前までの乳幼児期には、節目の健康診査や予防接種、親子で過ごせる場所、ちょっと預けたいときの支援など、浦安市のさまざまなサポートがあります。このページは「自分に関係しそうな支援に気づき、正しい窓口にたどり着く」ための地図です。<strong>対象年齢・料金・申込み方法などの詳細は、必ず各リンク先の浦安市公式ページでご確認ください</strong>（掲載情報は原則2026年6月時点のものです。子どものインフルエンザ予防接種費用助成は2026年9月12日に確認した令和8年度情報を反映し、協力医療機関一覧は2026年10月22日に確認しています）。</p>
 
 {{< note >}}
 <strong>困ったときの入口は2つ</strong><br>
@@ -53,13 +55,14 @@ sources:
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/1000782.html" >}}3歳児健康診査（浦安市公式）{{< /gov-link >}}
 
 <h2>② 予防接種</h2>
-
 <h3>子どもの定期予防接種</h3>
 <p>法令で定められた種類・回数・間隔にそって、対象年齢の間は公費（無料）で受けられます。接種には母子健康手帳が必要です。スケジュールは市の案内や「浦安市おやこ手帳」で確認できます。</p>
 <p><strong>対象：</strong>各ワクチンの対象年齢にある市内在住のお子さん</p>
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/index.html" >}}子どもの予防接種（浦安市公式）{{< /gov-link >}}
 
 <h3>子どものインフルエンザ予防接種費用の助成（任意接種）</h3>
+
+{{< note >}}<strong>【2026年10月22日追記】</strong>浦安市が10月19日に協力医療機関一覧を更新しました。接種対象年齢や実施時期は医療機関によって異なるため、下記の一覧から確認してください。{{< /note >}}
 
 {{< note >}}<strong>【2026年9月12日更新】</strong>令和8年度の助成内容が公表されました。助成期間は2026年10月1日から2027年3月31日までです。{{< /note >}}
 
@@ -80,8 +83,18 @@ sources:
 
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/1015846.html" >}}子どものインフルエンザ予防接種費用助成（浦安市公式）{{< /gov-link >}}
 
-<h2>③ 親子で通える・相談できる場</h2>
+<h3>令和8年度の協力医療機関一覧</h3>
+<p>浦安市は2026年10月19日、子どものインフルエンザ予防接種費用助成の対象となる協力医療機関一覧を更新しました。</p>
 
+<p>助成を受けられるのは、原則として市内の協力医療機関での接種です。医療機関によって、小学生以上・中学生以上などの接種対象年齢や、接種実施時期が異なります。</p>
+
+<p>また、注射ワクチンと経鼻ワクチンの実施状況も、利用を希望する医療機関に事前確認してください。</p>
+
+{{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/yobou/1043425.html" >}}令和8年度 子どもインフルエンザ予防接種助成協力医療機関一覧（浦安市公式）{{< /gov-link >}}
+
+{{< warn >}}予約受付状況やワクチンの在庫、実施期間は医療機関によって異なります。市の一覧に掲載されている場合でも、必ず医療機関に直接お問い合わせください。{{< /warn >}}
+
+<h2>③ 親子で通える・相談できる場</h2>
 <h3>子育て支援センター</h3>
 <p>就学前の子どもと保護者が気軽に集い、遊んだり交流したりできる場です。育児の相談や情報提供、小児科医による相談などもあります。</p>
 <p><strong>対象：</strong>市内の未就学児とその保護者</p>
@@ -98,7 +111,7 @@ sources:
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/kenko/1009019.html" >}}離乳食ステップアップクラス（浦安市公式）{{< /gov-link >}}
 
 <h3>子育て相談（育児の不安・悩み）</h3>
-<p>育児の不安や悩みを相談できる窓口です。どこに相談すればよいか分からないときの入口にもなります。</p>
+<p>育児の不安や悩みを相談できる窓口です。まずどこに相談すればよいか分からないときの入口にもなります。</p>
 <p><strong>対象：</strong>市内で子育てをしている方</p>
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/joho/1006623.html" >}}子育て相談（浦安市公式）{{< /gov-link >}}
 
@@ -123,7 +136,6 @@ sources:
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/kosodate/hoiku/1000815.html" >}}うらやすファミリー・サポート・センター（浦安市公式）{{< /gov-link >}}
 
 <h2>⑤ 発達やことばが気になるとき</h2>
-
 <h3>こども発達センター</h3>
 <p>発達の遅れや育てにくさが気になるとき、発達相談・個別療育・通所支援などを専門スタッフが行う施設です（総合福祉センター内）。</p>
 <p><strong>対象：</strong>発達に心配のある市内のお子さんとその家族</p>
@@ -133,7 +145,6 @@ sources:
 <p>ことばや行動、発育・発達などで気になることを相談できる窓口です。まずどこに相談すればよいか迷うときの入口になります。</p>
 <p><strong>対象：</strong>発達などに心配のある市内のお子さんの保護者</p>
 {{< gov-link url="https://www.city.urayasu.lg.jp/kodomo/ninshin/soudan/1006621.html" >}}こどもの発達などの相談（浦安市公式）{{< /gov-link >}}
-
 <h2 id="series-nav">子育てステージ順ガイド</h2>
 <div class="lg-art-links">
   <a class="lg-art-link" href="/life-guide/urayasu-ninshin-shussan-shien/">前のステージ：妊娠・出産時の支援ガイド<span>健診助成・給付金・産後ケア</span></a>
