@@ -1,7 +1,7 @@
 ---
 title: "Christmas in Urayasu & Maihama 2026 | Disney Christmas Tips, Hotel Christmas Cakes, Dinners & Free Illuminations"
 date: 2026-10-09T09:50:00+09:00
-lastmod: 2026-10-21
+lastmod: 2026-10-28
 factChecked: "2026-10-09"
 slug: "maihama-christmas"
 badge: "Christmas"
@@ -34,7 +34,7 @@ faq:
     a: "Yes. For Christmas 2026, six Official Hotels including Hilton Tokyo Bay sell stay plans that come with a limited-edition windowed pouch. The plans cover stays from November 11 to December 25, and include the right to purchase a 1-Day Passport (the ticket itself costs extra)."
 ---
 
-{{< note >}}ℹ️ Please note　This page is based on information published as of October 9, 2026, and the Disney Resort Line section reflects the official announcement of October 20. Dates, prices and content are subject to change. Always check the official websites of each facility and Tokyo Disney Resort before booking or visiting.{{< /note >}}
+{{< note >}}ℹ️ Please note　This page is based on information published as of October 9, 2026, and the Disney Resort Line section reflects the official announcement of October 20. The Urayasu Brighton Hotel Tokyo Bay Christmas cakes reflect information checked on October 28. Dates, prices and content are subject to change. Always check the official websites of each facility and Tokyo Disney Resort before booking or visiting.{{< /note >}}
 
 In winter, Urayasu and Maihama fill with Christmas spirit to match Tokyo Disney Resort's "Disney Christmas," from the hotels to the station plazas and cultural venues. This guide covers how to enjoy Christmas 2026 in Urayasu and Maihama, organized around five kinds of visitor: people going to the parks, people who want to order a Christmas cake, people looking for a festive meal, people looking for a hotel, and people who are not going into the parks at all.
 
@@ -143,7 +143,7 @@ Each station sells one design, so you can collect them by visiting all 4 station
 
 ## Ordering a hotel Christmas cake
 
-Hotels in Urayasu and Maihama began taking Christmas cake orders in October. Here they are in order of order deadline, earliest first.
+Hotels in Urayasu and Maihama began taking Christmas cake orders in October. Order deadlines and pick-up dates for each hotel are as follows.
 
 | Hotel | Order deadline | Pick-up period | Pick-up location | Price range |
 | --- | --- | --- | --- | --- |
@@ -152,6 +152,7 @@ Hotels in Urayasu and Maihama began taking Christmas cake orders in October. Her
 | [Tokyo Bay Maihama Hotel First Resort](/en/travel-guide/hotels/maihama-hotel-first-resort/) | 12/15 | 12/1-25 (11:00-21:30) | West Side 1F, Atelier California | 4,400-5,200 yen |
 | [Maihama View Hotel by HULIC](/en/travel-guide/hotels/maihama-view-hotel/) | 12/22 | 12/1-25 (11:00-22:30) | 1F, Restaurant Fine Terrace | 5,000-10,000 yen |
 | [Grand Nikko Tokyo Bay Maihama](/en/travel-guide/hotels/grand-nikko-tokyo-bay/) | 12/22 18:00 | 12/19-25 (11:30-22:30) | 3F, Le Jardin | 4,500-9,000 yen |
+| [Urayasu Brighton Hotel Tokyo Bay](/en/travel-guide/hotels/brighton-tokyo-bay/) | 3 days before pick-up, 18:00 | 12/19-25 | 1F, sweets corner "Lanes" | 4,900-7,200 yen |
 | [Sheraton Grande Tokyo Bay Hotel](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/) | 17:00 two days before pick-up | 12/19-25 (12:00-19:00) | Main Building 2F, Café Toastina | 5,500-12,000 yen |
 
 - **Pick-up from early December** is possible at two hotels: Maihama View Hotel and First Resort
@@ -173,6 +174,7 @@ Hotels in Urayasu and Maihama began taking Christmas cake orders in October. Her
 - **Tokyo Bay Maihama Hotel First Resort**: Noël aux Fraises (12 cm 4,400 yen / 15 cm 5,200 yen) and a bûche de Noël, 5,000 yen
 - **Maihama View Hotel by HULIC**: the two-tier "Rose Joyeux," limited to 20, 10,000 yen (order by December 18); "Filer le Coeur," 5,000 yen, and "Noël Chocolat," 5,500 yen (both 9 cm); and the classic "Snow Christmas" (12 cm 5,000 yen / 15 cm 6,500 yen). See our [Maihama View Hotel by HULIC guide](/en/travel-guide/hotels/maihama-view-hotel/) for the hotel itself
 - **Grand Nikko Tokyo Bay Maihama**: the "Sapin Fraise Tarte," with strawberries arranged like a tree, 9,000 yen (limited to 250); "Noël Rouge," 4,500 yen, and "Maison de Noël," shaped like a sweets house, 6,300 yen (each limited to 160); and fresh-cream decorated cakes from 4,500 yen. See our [Grand Nikko Tokyo Bay Maihama guide](/en/travel-guide/hotels/grand-nikko-tokyo-bay/) for the hotel itself
+- **Urayasu Brighton Hotel Tokyo Bay**: "Noël Gâteau aux Fraises," with whole strawberries sandwiched inside (No. 4, 4,900 yen / No. 5, 6,900 yen), and "Assortiment de Noël" (7,200 yen), which lets you enjoy two kinds: strawberry shortcake and chocolate. Orders open November 2 and pick-up is December 19-25. Reservation only, with no same-day sales
 - **Sheraton Grande Tokyo Bay Hotel**: Christmas assortment 5,500 yen, Christmas shortcake 6,500 yen, Christmas mille-feuille 10,000 yen and bûche de Noël 12,000 yen. Paying online in advance gives 5% off
 
 ### Stollen, too
@@ -342,6 +344,7 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 
 ## Update history
 
+- October 28, 2026: Added Urayasu Brighton Hotel Tokyo Bay to the Christmas cake table and line-up
 - October 21, 2026: Corrected the price of Maihama View Hotel's afternoon tea to the official 4,700 yen and added Grand Nikko Tokyo Bay Maihama's Christmas afternoon tea to the table
 - October 21, 2026: Updated the Disney Resort Line section based on the official announcement of October 20 (two limited Free Ticket designs, stamp rally rules, Christmas Liner and medal details)
 - October 12, 2026: English version published (based on information as of October 9, 2026)
@@ -359,6 +362,8 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 - [Tokyo Bay Maihama Hotel First Resort Christmas cakes 2026 (Japanese)](https://www.maihamahotel-firstresort.jp/restaurant-plan/christmas-cakes-2026/)
 - [Grand Nikko Tokyo Bay Maihama Christmas cakes 2026 (Japanese)](https://tokyobay.grandnikko.com/news/510/)
 - [Sheraton Grande Tokyo Bay Hotel Christmas cakes, Café Toastina (Japanese)](https://toastina.sheratontokyobay.com/lto-page)
+- [Urayasu Brighton Hotel Tokyo Bay, sweets corner "Lanes" (Japanese)](https://urayasu.brightonhotels.co.jp/restaurant/lanes/)
+- [Urayasu Brighton Hotel Tokyo Bay Christmas cakes, Brighton Hotels announcement of October 19, 2026 (Japanese)](https://www.value-press.com/pressrelease/382128)
 - [Hilton Tokyo Bay Christmas dessert buffet (Japanese)](https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-christmas)
 - [Oriental Hotel Tokyo Bay Christmas cakes (Japanese)](https://www.oriental-hotel.co.jp/news/detail.php?id=664)
 - [Pure White Christmas Concert 17 (Urayasu Foundation, Japanese)](https://www.urayasu-zaidan.or.jp/urayasu-bunka/1001543/1006233.html)
@@ -366,4 +371,4 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-*This guide is based on information published as of October 9, 2026, with the Disney Resort Line section reflecting the official announcement of October 20. Dates, prices and content are subject to change. Please check each facility's official website for the latest information.*
+*This guide is based on information published as of October 9, 2026, with the Disney Resort Line section reflecting the official announcement of October 20 and the Urayasu Brighton Hotel Tokyo Bay Christmas cakes reflecting information checked on October 28. Dates, prices and content are subject to change. Please check each facility's official website for the latest information.*
