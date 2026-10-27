@@ -56,12 +56,20 @@ jobs:
       - name: Test open-close timeline and shop status
         run: node scripts/validate/test/open-close-hugo.mjs
 
+      # FAQ の可視表示と FAQPage 構造化データのテスト（工程6 Phase 6B-1A）。同じく最小サイトで確認する
+      - name: Test FAQ display and FAQPage JSON-LD
+        run: node scripts/validate/test/faq-hugo.mjs
+
       - name: Build (same options as production)
         env:
           HUGO_ENVIRONMENT: production
         run: |
           hugo list all > "$RUNNER_TEMP/hugo-list.csv"
           hugo --minify --baseURL "https://urayasu-portal.com/" --printPathWarnings 2>&1 | tee "$RUNNER_TEMP/hugo-build.log"
+
+      # 生成した全ページで、FAQPage の質問・回答が画面の FAQ と一致するかを確認する（工程6 Phase 6B-1A）
+      - name: Check FAQPage matches visible FAQ
+        run: node scripts/validate/faq-audit.mjs --public public --data data/faq_jsonld.yaml
 
       - name: Build search index (Pagefind)
         run: npx --yes pagefind@${{ env.PAGEFIND_VERSION }} --site public
