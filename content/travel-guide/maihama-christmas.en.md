@@ -212,8 +212,25 @@ Hilton's dessert buffet runs in four 120-minute seatings and features a live sta
 | --- | --- | --- | --- |
 | Tokyo Bay Maihama Hotel First Resort | All-day dining California | 12/4-13 **Fridays, Saturdays and Sundays only**, then daily 12/18-25 | 8,000 yen (ages 4-12: 4,000 yen) |
 | Maihama View Hotel by HULIC | Restaurant Fine Terrace | 12/19-25 | 7,500 yen on 12/19, 20, 24 and 25; 6,800 yen on 12/21-23 (elementary school: 3,500 / 3,000 yen; preschoolers free) |
+| [Sheraton Grande Tokyo Bay Hotel](/en/travel-guide/hotels/sheraton-grande-tokyo-bay/) | Buffet Dining Grand Café | 11/1-12/25 | Varies by date and age group (check the [official website (Japanese)](https://grandcafe.sheratontokyobay.com/)) |
 
 First Resort's buffet features a live kitchen serving sirloin steak (see our [Tokyo Bay Maihama Hotel First Resort guide](/en/travel-guide/hotels/maihama-hotel-first-resort/)). In Shin-Urayasu, Oriental Hotel Tokyo Bay's winter buffet at Restaurant Grand Cinq, which starts on November 4, serves a special Christmas menu at special prices on December 24 and 25.
+
+### Christmas buffet at Sheraton's "Grand Café"
+
+At "Grand Café" on the 1st floor of Sheraton Grande Tokyo Bay Hotel, a Christmas buffet runs from Sunday, November 1 to Friday, December 25, 2026.
+
+Alongside appetizers made with lobster and snow crab, the menu includes bouillabaisse, bone-in pork loin confit and lamb stewed in tomato, all dishes to brighten a winter meal. The menu changes daily.
+
+From Saturday, December 19 to Friday, December 25, roast turkey is also served as a special.
+
+The buffet is held at both lunch and dinner. On weekends, holidays and specified days, there is a time limit of 90 minutes for lunch and 120 minutes for dinner.
+
+Prices vary by date and age group, so check the [Grand Café official website (Japanese)](https://grandcafe.sheratontokyobay.com/).
+
+Reservations and inquiries: 047-355-5555 (hotel main line)
+
+[The hotel's official Christmas buffet announcement (Japanese)](https://prtimes.jp/main/html/rd/p/000000291.000015667.html)
 
 ### Course dinners
 
@@ -344,7 +361,7 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 
 ## Update history
 
-- October 28, 2026: Added Urayasu Brighton Hotel Tokyo Bay to the Christmas cake table and line-up
+- October 28, 2026: Added Urayasu Brighton Hotel Tokyo Bay to the Christmas cake table and line-up. Added the Christmas buffet at Sheraton Grande Tokyo Bay Hotel's "Grand Café" to the dinner buffet table and text
 - October 21, 2026: Corrected the price of Maihama View Hotel's afternoon tea to the official 4,700 yen and added Grand Nikko Tokyo Bay Maihama's Christmas afternoon tea to the table
 - October 21, 2026: Updated the Disney Resort Line section based on the official announcement of October 20 (two limited Free Ticket designs, stamp rally rules, Christmas Liner and medal details)
 - October 12, 2026: English version published (based on information as of October 9, 2026)
@@ -362,6 +379,8 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 - [Tokyo Bay Maihama Hotel First Resort Christmas cakes 2026 (Japanese)](https://www.maihamahotel-firstresort.jp/restaurant-plan/christmas-cakes-2026/)
 - [Grand Nikko Tokyo Bay Maihama Christmas cakes 2026 (Japanese)](https://tokyobay.grandnikko.com/news/510/)
 - [Sheraton Grande Tokyo Bay Hotel Christmas cakes, Café Toastina (Japanese)](https://toastina.sheratontokyobay.com/lto-page)
+- [Sheraton Grande Tokyo Bay Hotel, Buffet Dining Grand Café (Japanese)](https://grandcafe.sheratontokyobay.com/)
+- [Sheraton Grande Tokyo Bay Hotel Christmas buffet, press release (Japanese)](https://prtimes.jp/main/html/rd/p/000000291.000015667.html)
 - [Urayasu Brighton Hotel Tokyo Bay, sweets corner "Lanes" (Japanese)](https://urayasu.brightonhotels.co.jp/restaurant/lanes/)
 - [Urayasu Brighton Hotel Tokyo Bay Christmas cakes, Brighton Hotels announcement of October 19, 2026 (Japanese)](https://www.value-press.com/pressrelease/382128)
 - [Hilton Tokyo Bay Christmas dessert buffet (Japanese)](https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-christmas)
