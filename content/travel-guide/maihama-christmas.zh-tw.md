@@ -212,8 +212,25 @@ faq:
 | --- | --- | --- | --- |
 | 東京灣舞濱飯店 第一度假村 | 全日餐廳 California | 12/4～13 **僅週五·六·日**，12/18～25每天 | 8,000日圓（4～12歲4,000日圓） |
 | 舞濱觀景飯店 by HULIC | Fine Terrace 餐廳 | 12/19～25 | 12/19·20·24·25為7,500日圓，12/21～23為6,800日圓（小學生3,500日圓／3,000日圓，學齡前免費） |
+| [東京灣喜來登大飯店](/zh-tw/travel-guide/hotels/sheraton-grande-tokyo-bay/) | 自助餐廳 Grand Café | 11/1～12/25 | 依日期與年齡區分而異（請至[官方網站（日文）](https://grandcafe.sheratontokyobay.com/)確認） |
 
 第一度假村的自助餐以供應沙朗牛排的現場廚房為特色（請見[東京灣舞濱飯店 第一度假村住宿指南](/zh-tw/travel-guide/hotels/maihama-hotel-first-resort/)）。新浦安的東京灣東方飯店也在11月4日開始的冬季自助餐（Grand Cinq餐廳）中，於12月24日·25日以聖誕特別菜單與特別價格營業。
+
+### 喜來登「Grand Café」的聖誕自助餐
+
+東京灣喜來登大飯店1樓的「Grand Café（グランカフェ）」，將於2026年11月1日（日）至12月25日（五）舉辦聖誕自助餐。
+
+除了使用龍蝦與松葉蟹的前菜外，還有馬賽魚湯、帶骨豬里肌油封、番茄燉羔羊等，為冬季餐桌增色的菜色。菜單每天更換。
+
+12月19日（六）至25日（五）另有烤火雞特別供應。
+
+午餐與晚餐皆有舉辦，週六·日、國定假日與特定日期，午餐限時90分鐘、晚餐限時120分鐘。
+
+價格依日期與年齡區分而異，請至[Grand Café官方網站（日文）](https://grandcafe.sheratontokyobay.com/)確認。
+
+預約·洽詢：047-355-5555（飯店總機）
+
+[飯店官方的聖誕自助餐公告（日文）](https://prtimes.jp/main/html/rd/p/000000291.000015667.html)
 
 ### 套餐晚餐
 
@@ -344,7 +361,7 @@ faq:
 
 ## 更新紀錄
 
-- 2026年10月28日：在聖誕蛋糕比較表與商品介紹中新增浦安布萊頓飯店 東京灣
+- 2026年10月28日：在聖誕蛋糕比較表與商品介紹中新增浦安布萊頓飯店 東京灣；在晚餐自助餐比較表與內文中新增東京灣喜來登大飯店「Grand Café」的聖誕自助餐
 - 2026年10月21日：將舞濱觀景飯店下午茶的價格更正為官方公布的4,700日圓，並在比較表中新增東京灣舞濱格蘭日航飯店的聖誕下午茶
 - 2026年10月21日：依10月20日的官方公告更新迪士尼度假區線的聖誕節活動（限定周遊券2款、集章活動參加條件、聖誕列車與紀念章幣詳情）
 - 2026年10月12日：發布繁體中文版（依據2026年10月9日的資訊）
@@ -362,6 +379,8 @@ faq:
 - [東京灣舞濱飯店 第一度假村 2026聖誕蛋糕（日文）](https://www.maihamahotel-firstresort.jp/restaurant-plan/christmas-cakes-2026/)
 - [東京灣舞濱格蘭日航飯店 2026聖誕蛋糕（日文）](https://tokyobay.grandnikko.com/news/510/)
 - [東京灣喜來登大飯店 聖誕蛋糕·Café Toastina（日文）](https://toastina.sheratontokyobay.com/lto-page)
+- [東京灣喜來登大飯店 自助餐廳 Grand Café（日文）](https://grandcafe.sheratontokyobay.com/)
+- [東京灣喜來登大飯店 聖誕自助餐 新聞稿（日文）](https://prtimes.jp/main/html/rd/p/000000291.000015667.html)
 - [浦安布萊頓飯店 東京灣｜甜點專區「Lanes」（日文）](https://urayasu.brightonhotels.co.jp/restaurant/lanes/)
 - [浦安布萊頓飯店 東京灣 聖誕蛋糕（Brighton Hotels 2026年10月19日公告，日文）](https://www.value-press.com/pressrelease/382128)
 - [東京灣希爾頓飯店 聖誕甜點自助餐（日文）](https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-christmas)
