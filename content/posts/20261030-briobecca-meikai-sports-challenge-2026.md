@@ -16,6 +16,9 @@ eventKind: "event"
 eventLocation: "明海大学浦安キャンパス"
 organizer: "NPO法人浦安スポーツ＆カルチャークラブ"
 hideEventBox: true
+cover:
+  image: /images/posts/burio.jpg
+  alt: "【浦安】ブリオベッカ選手とサッカー体験、11月1日開催"
 draft: false
 ---
 
