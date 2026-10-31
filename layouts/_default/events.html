@@ -13,6 +13,9 @@
   - 並び: 開催中（終了日の近い順、終了日未定は最後）→ 開催予定（次回の開始日順、月ごとの見出し）→ 終了（最後の日の新しい順に30件）
   - 今日は日本時間（Asia/Tokyo）の日付（partials/date-jst.html）。ビルドする環境のタイムゾーンに左右されない。
     site.Params.eventsNow はテスト専用（判定する時刻を固定する。本番の設定には置かない）
+  - 開催日の絞り込み「すべて／今日／今週末／今月」（工程5B-1）は assets/js/events-filter.js が閲覧時に行う。
+    各行の data-spans（event-dates の groups を「開始/終了」で空白区切り）と data-open（終了日未定）で判定する。
+    ボタンは hidden で出力し、JS が動いたときだけ表示する（JS が無ければ従来どおり全件を表示する）
 */ -}}
 {{- $now := now }}
 {{- with site.Params.eventsNow }}{{ $now = time.AsTime . }}{{ end }}
@@ -38,7 +41,7 @@
     {{- end }}
     {{- $row := dict
           "start" $st.start "end" $st.end "openEnd" $ev.ongoing "sortKey" $st.sortKey
-          "title" .Title "href" .RelPermalink "kind" $ev.kind "count" $ev.count "summary" $summary
+          "title" .Title "href" .RelPermalink "kind" $ev.kind "count" $ev.count "summary" $summary "spans" $ev.groups
           "loc" (.Params.eventLocation | default "") "first" $ev.start }}
     {{- if eq $st.status "ongoing" }}{{ $ongoing = $ongoing | append $row }}
     {{- else if eq $st.status "upcoming" }}{{ $upcoming = $upcoming | append $row }}
@@ -60,6 +63,15 @@
 
 
   {{- if or $ongoing $upcoming }}
+  <div class="ev-filter" role="group" aria-label="開催日で絞り込む" hidden>
+    <button type="button" class="ev-filter-btn" data-when="all" aria-pressed="true">すべて</button>
+    <button type="button" class="ev-filter-btn" data-when="today" aria-pressed="false">今日</button>
+    <button type="button" class="ev-filter-btn" data-when="weekend" aria-pressed="false">今週末</button>
+    <button type="button" class="ev-filter-btn" data-when="month" aria-pressed="false">今月</button>
+  </div>
+  <p class="ev-filter-status" aria-live="polite" hidden></p>
+  <p class="ev-empty ev-filter-empty" hidden>この期間に開催するイベントは、いまのところ掲載していません。<button type="button" class="ev-filter-reset" data-when="all">すべてのイベントを見る</button></p>
+  <div class="ev-list">
   {{- if $ongoing }}
   <h2 class="ev-month">開催中</h2>
   <div class="ev-group">
@@ -79,6 +91,10 @@
     {{ partial "ev-row.html" (dict "row" . "wdays" $wdays "now" false) }}
   {{- end }}
   {{- if ne $prev "" }}</div>{{ end }}
+  </div>
+  {{- with resources.Get "js/events-filter.js" }}{{ with . | minify | fingerprint }}
+  <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+  {{- end }}{{ end }}
   {{- else }}
   <p class="ev-empty">現在、開催予定として掲載中のイベントはありません。新しいイベント情報は<a href="/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/">イベントカテゴリ</a>に随時追加されます。</p>
   {{- end }}
@@ -114,28 +130,3 @@
 {{- end }}
 {{- end }}
 
-{{- /* 1行分の表示（インライン partial） */ -}}
-{{- define "partials/ev-row.html" }}
-  {{- $r := .row }}{{ $wdays := .wdays }}
-  {{- $sd := time.AsTime $r.start }}
-  <a class="ev-row" href="{{ $r.href }}">
-    <span class="ev-date">
-      {{ $sd.Format "1/2" }}<span class="ev-wd">({{ index $wdays (int (printf "%d" $sd.Weekday)) }})</span>
-      {{- if $r.openEnd }}<span class="ev-tilde">〜</span>
-      {{- else if and $r.end (ne $r.end $r.start) }}
-        {{- $ed := time.AsTime $r.end }}
-        <span class="ev-tilde">〜</span>{{ $ed.Format (cond (eq $ed.Year $sd.Year) "1/2" "2006/1/2") }}<span class="ev-wd">({{ index $wdays (int (printf "%d" $ed.Weekday)) }})</span>
-      {{- end }}
-    </span>
-    <span class="ev-body">
-      <span class="ev-title">
-        {{- if .now }}<span class="ev-now">開催中</span>{{ end -}}
-        {{- if eq $r.kind "match" }}<span class="ev-kind">試合</span>{{ end -}}
-        {{ $r.title }}
-      </span>
-      {{- if $r.openEnd }}<span class="ev-sched">終了日未定</span>{{ end }}
-      {{- with $r.summary }}<span class="ev-sched">今後の日程：{{ . | safeHTML }}</span>{{ end }}
-      {{- with $r.loc }}<span class="ev-loc"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
-    </span>
-  </a>
-{{- end }}
