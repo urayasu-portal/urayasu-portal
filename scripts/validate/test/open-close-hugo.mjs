@@ -20,7 +20,7 @@ const w = (rel, text) => { const p = path.join(DIR, rel); fs.mkdirSync(path.dirn
 const copy = (rel) => w(rel, fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 
 for (const f of ['date-ymd.html', 'date-jst.html', 'event-dates.html', 'event-dates-text.html', 'shop-status.html', 'event-calendar-eligible.html', 'event-calendar-status.html',
-  'event-jsonld-eligible.html', 'event-jsonld.html', 'sidebar-calendar-data.html', 'event-ended-notice.html']) copy('layouts/partials/' + f);
+  'event-jsonld-eligible.html', 'event-jsonld.html', 'sidebar-calendar-data.html', 'event-ended-notice.html', 'ev-row.html']) copy('layouts/partials/' + f);
 for (const f of ['cover-image.html', 'article-thumb.html', 'card-dates.html', 'sidebar-calendar.html', 'sidebar-cat-counts.html']) w('layouts/partials/' + f, f === 'cover-image.html' ? '{{- return "" -}}\n' : '');
 copy('layouts/_default/openclose.html'); copy('layouts/_default/events.html'); copy('layouts/daily/list.html');
 for (const f of fs.readdirSync(path.join(ROOT, 'i18n'))) copy('i18n/' + f);
