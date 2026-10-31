@@ -21,7 +21,7 @@ const DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'events-'));
 const w = (rel, text) => { const p = path.join(DIR, rel); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, text); };
 
 w('hugo.toml', 'baseURL = "https://example.test/"\ndefaultContentLanguage = "ja"\ndisableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "home", "section"]\n');
-const PARTIALS = ['date-ymd.html', 'date-jst.html', 'event-dates.html', 'event-dates-text.html', 'event-calendar-eligible.html', 'event-calendar-status.html', 'event-jsonld-eligible.html', 'event-jsonld.html'];
+const PARTIALS = ['date-ymd.html', 'date-jst.html', 'event-dates.html', 'event-dates-text.html', 'event-calendar-eligible.html', 'event-calendar-status.html', 'event-jsonld-eligible.html', 'event-jsonld.html', 'ev-row.html'];
 for (const f of PARTIALS) {
   w('layouts/partials/' + f, fs.readFileSync(path.join(ROOT, 'layouts/partials', f), 'utf8'));
 }

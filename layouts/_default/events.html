@@ -114,28 +114,3 @@
 {{- end }}
 {{- end }}
 
-{{- /* 1行分の表示（インライン partial） */ -}}
-{{- define "partials/ev-row.html" }}
-  {{- $r := .row }}{{ $wdays := .wdays }}
-  {{- $sd := time.AsTime $r.start }}
-  <a class="ev-row" href="{{ $r.href }}">
-    <span class="ev-date">
-      {{ $sd.Format "1/2" }}<span class="ev-wd">({{ index $wdays (int (printf "%d" $sd.Weekday)) }})</span>
-      {{- if $r.openEnd }}<span class="ev-tilde">〜</span>
-      {{- else if and $r.end (ne $r.end $r.start) }}
-        {{- $ed := time.AsTime $r.end }}
-        <span class="ev-tilde">〜</span>{{ $ed.Format (cond (eq $ed.Year $sd.Year) "1/2" "2006/1/2") }}<span class="ev-wd">({{ index $wdays (int (printf "%d" $ed.Weekday)) }})</span>
-      {{- end }}
-    </span>
-    <span class="ev-body">
-      <span class="ev-title">
-        {{- if .now }}<span class="ev-now">開催中</span>{{ end -}}
-        {{- if eq $r.kind "match" }}<span class="ev-kind">試合</span>{{ end -}}
-        {{ $r.title }}
-      </span>
-      {{- if $r.openEnd }}<span class="ev-sched">終了日未定</span>{{ end }}
-      {{- with $r.summary }}<span class="ev-sched">今後の日程：{{ . | safeHTML }}</span>{{ end }}
-      {{- with $r.loc }}<span class="ev-loc"><i class="ti ti-map-pin" aria-hidden="true"></i>{{ . }}</span>{{ end }}
-    </span>
-  </a>
-{{- end }}
