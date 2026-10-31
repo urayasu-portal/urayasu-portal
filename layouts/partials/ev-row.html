@@ -1,7 +1,9 @@
-{{- /* /events/ の1行分の表示（layouts/_default/events.html から呼ぶ）。引数: row（行のデータ）・wdays（曜日の表記）・now（開催中なら true） */ -}}
+{{- /* /events/ の1行分の表示（layouts/_default/events.html から呼ぶ）。引数: row（行のデータ）・wdays（曜日の表記）・now（開催中なら true）
+       data-spans・data-open は開催日の絞り込み（assets/js/events-filter.js）が読む */ -}}
   {{- $r := .row }}{{ $wdays := .wdays }}
   {{- $sd := time.AsTime $r.start }}
-  <a class="ev-row" href="{{ $r.href }}">
+  {{- $spans := slice }}{{ range $r.spans }}{{ $spans = $spans | append (printf "%s/%s" .start .end) }}{{ end }}
+  <a class="ev-row" href="{{ $r.href }}" data-spans="{{ delimit $spans " " }}"{{ if $r.openEnd }} data-open="1"{{ end }}>
     <span class="ev-date">
       {{ $sd.Format "1/2" }}<span class="ev-wd">({{ index $wdays (int (printf "%d" $sd.Weekday)) }})</span>
       {{- if $r.openEnd }}<span class="ev-tilde">〜</span>

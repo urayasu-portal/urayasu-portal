@@ -4531,6 +4531,14 @@ body.pillar-travel .post-single .post-content a.hg-sv-maplink:hover { background
 .ev-past-list { display: grid; gap: 6px; margin-top: 10px; }
 .ev-row.is-past { opacity: .75; }
 .ev-row.is-past .ev-date { min-width: 96px; font-size: 12.5px; font-weight: 600; color: var(--secondary); }
+/* 工程5B-1: 開催日の絞り込み（すべて／今日／今週末／今月）。JS が動くときだけ表示する（assets/js/events-filter.js） */
+.ev-filter { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 8px; }
+.ev-filter[hidden], .ev-filter-status[hidden], .ev-filter-empty[hidden], .ev-group[hidden], .ev-month[hidden], .ev-row[hidden] { display: none; }
+.ev-filter-btn { font: inherit; font-size: 13.5px; font-weight: 700; color: var(--primary); background: var(--entry); border: 1.5px solid var(--border); border-radius: 999px; padding: 6px 16px; cursor: pointer; }
+.ev-filter-btn:hover { border-color: var(--accent, #E4573D); }
+.ev-filter-btn[aria-pressed="true"] { color: var(--theme); background: var(--primary); border-color: var(--primary); }
+.ev-filter-status { font-size: 12.5px; color: var(--secondary); margin: 0 0 4px; }
+.ev-filter-reset { font: inherit; font-weight: 700; color: var(--primary); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
 @media (max-width: 560px) {
   .oc-row { flex-wrap: wrap; gap: 6px 8px; }
   .oc-body { flex-basis: 100%; order: 3; }
