@@ -2,6 +2,8 @@
 title: "【浦安】猫実に「生春巻きとタイ料理 エムズ」オープン！弁当や惣菜を販売"
 date: 2026-04-19T19:00:00+09:00
 slug: "urayasu-ms-thai-food-open-20260419"
+aliases:
+  - /posts/ems-urayasu-thai-open/
 categories:
   - "開店・閉店"
 tags:
