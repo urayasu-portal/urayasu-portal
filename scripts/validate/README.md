@@ -147,8 +147,8 @@ Event 構造化データは `eventLocation` が書かれた記事にだけ出し
 |---|---|---|---|
 | `validate` ジョブのエラー（このディレクトリのルール全部。P0-B の追加検査を含む） | **検知・通知** | 何も止めない。`validate` ジョブが失敗するだけ | main への push・schedule・手動実行 |
 | `validate` ジョブの警告（`SIMILAR_POST` 等） | 検知のみ | 何も止めない。失敗にもならない（Summary と注釈に出るだけ） | 同上 |
-| `pr-check.yml` の検証 | 検知（マージ前） | PR の check が失敗する。マージは止めない（必須チェックの設定なし） | Pull Request だけ。日次 posts は main へ直接 push されるため**通らない** |
-| 投稿ツール（`static/tools/post-tool.html`）のエラー | **公開ブロック** | ツールからの投稿ボタン | 投稿ツールを使った投稿だけ。別環境から git で push した記事には効かない |
+| `pr-check.yml` の検証 | 検知（マージ前） | PR の check が失敗する。マージは止めない（必須チェックの設定なし） | Pull Request だけ。日次 posts は main へ直接コミットされるため**通らない** |
+| 投稿ツール（`static/tools/post-tool.html`）のエラー | **公開ブロック**（`post-rules.js` のルールだけ） | ツールからの投稿（GitHub API で main へ直接コミット） | 投稿ツールを使った投稿だけ（日次 posts の大半。単一ファイルの `feat: …` コミット）。git で直接 push した記事には効かない。**P0-B の追加検査（`post-checks.mjs`）はツールに入っていないので、ツールでは止まらない** |
 | Hugo のビルド失敗（frontmatter の破損など） | 公開ブロック（意図したものではない） | **その回の公開全体**。本番は前回の内容のまま | 全記事 |
 | `date` が未来（buildFuture なし） | 公開されない（Hugo の仕様） | その記事だけ | 全記事。`DATE_NOT_PUBLISHED` はこれを**知らせる**だけで、止めているのは Hugo |
 
