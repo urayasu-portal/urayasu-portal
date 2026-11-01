@@ -202,12 +202,12 @@
     <div class="tg-purpose-desc">{{ if $isEN }}Costume rules, where to change, hotel events{{ else if $isZHTW }}變裝規則·換裝地點·飯店企劃{{ else }}仮装の着替え場所・ホテル企画・限定スイーツ{{ end }}</div>
   </a>
   {{- end }}
-  {{/* クリスマスも ja / en / zh-tw のみ記事が存在する（zh・ko 未訳）。翻訳を追加したら条件に足す */}}
-  {{- if or (eq .Lang "ja") $isEN $isZHTW }}
+  {{/* クリスマス。その言語に記事がある場合のみ表示（site.GetPage は現在の言語のページを返す） */}}
+  {{- with site.GetPage "/travel-guide/maihama-christmas" }}
   <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/maihama-christmas/" | absLangURL }}">
     <i class="ti ti-christmas-tree" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Christmas guide 2026{{ else if $isZHTW }}2026聖誕節攻略{{ else }}クリスマスガイド2026{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Hotel cakes, dinners, free illuminations{{ else if $isZHTW }}飯店聖誕蛋糕·晚餐·免費燈飾{{ else }}ケーキ予約の比較・ディナー・無料イルミネーション{{ end }}</div>
+    <div class="tg-purpose-title">{{ if $isEN }}Christmas guide 2026{{ else if $isZH }}2026圣诞节攻略{{ else if $isKO }}2026 크리스마스 가이드{{ else if $isZHTW }}2026聖誕節攻略{{ else }}クリスマスガイド2026{{ end }}</div>
+    <div class="tg-purpose-desc">{{ if $isEN }}Hotel cakes, dinners, free illuminations{{ else if $isZH }}酒店圣诞蛋糕·晚餐·免费灯饰{{ else if $isKO }}호텔 크리스마스 케이크·디너·무료 일루미네이션{{ else if $isZHTW }}飯店聖誕蛋糕·晚餐·免費燈飾{{ else }}ケーキ予約の比較・ディナー・無料イルミネーション{{ end }}</div>
   </a>
   {{- end }}
 </div>

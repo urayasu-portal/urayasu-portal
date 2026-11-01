@@ -1,7 +1,7 @@
 ---
 title: "Christmas in Urayasu & Maihama 2026 | Disney Christmas Tips, Hotel Christmas Cakes, Dinners & Free Illuminations"
 date: 2026-10-09T09:50:00+09:00
-lastmod: 2026-10-28
+lastmod: 2026-11-01
 factChecked: "2026-10-09"
 slug: "maihama-christmas"
 badge: "Christmas"
@@ -129,7 +129,7 @@ Every station has stamp stands, so you can start from any of them. To cover all 
 
 From Tuesday, November 10 to Friday, December 25, Christmas-design Free Tickets are sold at the ticket machines at each station.
 
-In 2026 there are two designs: one featuring Mickey Mouse and friends, and one featuring the character リルリンリン.
+In 2026 there are two designs: one featuring Mickey Mouse and friends, and one featuring Li'l RingRing, a Christmas fairy.
 
 They cost the same as a regular Free Ticket: the 1-day ticket is 700 yen for adults and 350 yen for children. The limited designs end when sold out.
 
