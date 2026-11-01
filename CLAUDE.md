@@ -68,7 +68,8 @@ GitHub Actions が自動で GitHub Pages にデプロイする。
 
 - **slug は記事ごとに一意**。続報を別記事で出すときは slug を変える（目安: `<元の slug>-<YYYYMMDD>`）。同じ slug は後の記事が旧記事の URL を上書きし、旧記事が消える（2026-06〜10 に10本が消失）
 - 検証ルールの単一ソースは `static/tools/post-rules.js`（投稿ツールと CI が共通で使う）。ルールを変えたら `scripts/validate/test/run-tests.mjs` を通す
-- CI の `validate` ジョブは**公開を止めない**。新しい不備があるとこのジョブだけ失敗して通知が届く。既存の不備は `scripts/validate/known-issues.json` に記録し、解消したら行を消す
+- CI の `validate` ジョブは**公開を止めない**（**検知・通知だけ。公開停止は保証しない**）。新しい不備があるとこのジョブだけ失敗し、エラーの記事もそのまま本番に出る。通知は push したアカウントの GitHub 通知設定しだいで、届かないこともある（警告は通知されない）。既存の不備は `scripts/validate/known-issues.json` に記録し、解消したら行を消す
+- 公開前に止まるのは、投稿ツール（`post-rules.js` のルールだけ）・Hugo のビルド失敗（公開全体が止まる）・未来の `date`（その記事だけ）。日次 posts の追加検査（`scripts/validate/post-checks.mjs`、2026-11-01〜の記事が対象）は CI だけで動き、投稿ツールでは止まらない。仕組みごとの区別は README の「検知・通知と公開ブロックの区別」
 - Hugo（0.167.0）と Pagefind（1.5.2）は `.github/workflows/hugo.yml` と `pr-check.yml` の `env` で固定（両方そろえる）。上げるときは `scripts/baseline/` で改修前後のビルド差分を確認する
 - Pull Request では `pr-check.yml` がビルドと検証だけを行う（デプロイしない）。本番公開は main への push のみ
 - 同じイベント・店舗の続報は、原則**既存記事を更新**する（2026-10 の衝突解消で、重複記事は最新記事へ統合する方針に決定）
