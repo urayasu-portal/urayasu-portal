@@ -22,6 +22,10 @@
 
 {{- /* ── ホテルJSON配列の構築 ─────────────────── */}}
 {{- $hotelData := slice }}
+{{- /* 予約ボタン（工程2 Phase 2B-2）。slug → partials/hotel-book-buttons.html の出力（primaryOnly＝その言語の先頭1社、cta_pos=hotel_compare）。
+       URL の組み立ては hotel-book-buttons.html だけが行い、HOTELS_DATA（JS）には予約 URL を入れない。
+       出力が空白だけのホテル（その言語で出せる予約先が無い）は登録しない。 */}}
+{{- $bookRows := dict }}
 {{- range $hotels.areas }}
   {{- $areaTag  := .tag }}
   {{- $areaName := cond (eq $lang "ja") .name (index . (printf "name_%s" $lang) | default .name_en) }}
@@ -64,6 +68,7 @@
           "url"         $url
       }}
       {{- $hotelData = $hotelData | append $entry }}
+      {{- with $md.booking }}{{- $b := partial "hotel-book-buttons.html" (dict "bk" . "lang" $lang "cur2" $md "hotel" $md.slug "pos" "hotel_compare" "primaryOnly" true "labelKey" "pick_rates_on") }}{{- if strings.TrimSpace $b }}{{ $bookRows = merge $bookRows (dict $md.slug $b) }}{{ end }}{{- end }}
     {{- end }}
   {{- end }}
 {{- end }}
@@ -152,10 +157,13 @@
 {{- /* ── 2カラムレイアウト ──────────────────────── */}}
 <div class="hcm-layout">
   <div class="hcm-list-col">
+    {{- if $bookRows }}
+    <p class="tg-pick-pr hcm-book-hint"><i class="ti ti-info-circle" aria-hidden="true"></i> {{ if $isEN }}Tap a hotel card to see a rates button.{{ else if $isZH }}点选酒店卡片即可查看价格按钮。{{ else if $isKO }}호텔 카드를 누르면 요금 확인 버튼이 표시됩니다.{{ else if $isZHTW }}點選飯店卡片即可查看價格按鈕。{{ else }}カードを選ぶと料金を見るボタンが出ます。{{ end }} {{ i18n "includes_pr" }}</p>
+    {{- end }}
     <div id="hcm-list">
       {{- /* 初期表示（JS有効時に上書き）*/}}
       {{- range $hotelData }}
-      <div class="hcm-card" id="hcm-card-{{ .id }}" data-id="{{ .id }}" onclick="hcmCardClick('{{ .id }}')">
+      <div class="hcm-card" id="hcm-card-{{ .id }}" data-id="{{ .id }}" onclick="hcmCardClick('{{ .id }}', event)">
         <div class="hcm-card-head">
           <div class="hcm-card-name"><a href="{{ .url }}" class="hcm-card-name-link" onclick="event.stopPropagation()">{{ .name }}</a></div>
           {{- if gt .price_min 0 }}<span class="hcm-card-price">{{ .price_guide }}</span>{{- end }}
@@ -178,6 +186,14 @@
       </div>
       {{- end }}
     </div>
+    {{- /* 予約ボタン行の置き場。JS が選択中のカードへ「移動」する（複製・URL 再生成はしない）。
+           <template> ではなく DOM に置くのは、Travelpayouts Drive 等が読み込み時に書き換えた href を保つため。
+           カード側で stopPropagation しない（affiliate-tracking.html は document で click を受ける）。 */}}
+    {{- if $bookRows }}
+    <div id="hcm-book-src" hidden data-pagefind-ignore>
+      {{- range $hotelData }}{{- $id := .id }}{{- with index $bookRows $id }}<div class="tg-pick-actions hcm-book" data-book-for="{{ $id }}">{{ . }}</div>{{- end }}{{- end }}
+    </div>
+    {{- end }}
   </div>
 
   <div class="hcm-map-col">
@@ -211,7 +227,9 @@
 (function () {
   'use strict';
 
-  var state = { area: '*', grp: '*', flags: [], sort: 'default' };
+  var state = { area: '*', grp: '*', flags: [], sort: 'default', selected: '' };
+  /* 予約ボタン行（サーバー出力。#hcm-book-src から取り出して選択中のカードへ移す。href はここで組み立てない） */
+  var BOOK = {};
   var leafletMap, markers = {};
   var initialized = false;
 
@@ -308,8 +326,8 @@
       ? '<div class="hcm-card-flags">' + flagsHtml + '</div>'
       : '';
 
-    return '<div class="hcm-card" id="hcm-card-' + h.id
-      + '" data-id="' + h.id + '" onclick="hcmCardClick(\'' + h.id + '\')">'
+    return '<div class="hcm-card' + (state.selected === h.id ? ' is-highlighted' : '') + '" id="hcm-card-' + h.id
+      + '" data-id="' + h.id + '" onclick="hcmCardClick(\'' + h.id + '\', event)">'
       + '<div class="hcm-card-head">'
       + '<div class="hcm-card-name">' + nameHtml + '</div>'
       + priceHtml
@@ -378,6 +396,7 @@
     } else {
       listEl.innerHTML = sorted.map(buildCard).join('');
     }
+    attachBook();
 
     syncMarkers(sorted.map(function (h) { return h.id; }));
     updateChips();
@@ -385,21 +404,39 @@
 
   /* ── カードクリック ── */
 
+  /* 選択中カードに予約ボタン行を移す（同じ要素を移動するので、Drive 等の実行時書き換え後の href も保たれる） */
+  var shownRow = null;
+  function attachBook() {
+    var row = BOOK[state.selected] || null;
+    var card = state.selected ? document.getElementById('hcm-card-' + state.selected) : null;
+    if (shownRow && shownRow !== row) {
+      var src = document.getElementById('hcm-book-src');
+      if (src) src.appendChild(shownRow);
+      shownRow = null;
+    }
+    if (row && card) { if (row.parentNode !== card) card.appendChild(row); shownRow = row; }
+  }
+
   function highlightCard(id) {
     document.querySelectorAll('.hcm-card').forEach(function (el) {
       el.classList.remove('is-highlighted');
     });
+    state.selected = id;
     var card = document.getElementById('hcm-card-' + id);
     if (card) {
       card.classList.add('is-highlighted');
+      attachBook();
       card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   }
 
-  window.hcmCardClick = function (id) {
+  /* カード内のリンク（ホテル名・予約ボタン）はそのまま遷移させる。
+     stopPropagation は使わない（affiliate-tracking.html は document で click を受けるため） */
+  window.hcmCardClick = function (id, ev) {
+    if (ev && ev.target && ev.target.closest && ev.target.closest('a')) return;
     var hotel = HOTELS_DATA.find(function (h) { return h.id === id; });
-    if (!hotel || !hotel.lat) return;
-    if (markers[id]) {
+    if (!hotel) return;
+    if (hotel.lat && markers[id]) {
       leafletMap.setView([hotel.lat, hotel.lng], 15, { animate: true });
       markers[id].openPopup();
     }
@@ -483,6 +520,9 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#hcm-book-src [data-book-for]').forEach(function (el) {
+      BOOK[el.getAttribute('data-book-for')] = el;
+    });
     initMap();
     render();
   });

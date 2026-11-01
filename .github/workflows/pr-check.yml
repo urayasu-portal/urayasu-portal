@@ -71,6 +71,10 @@ jobs:
       - name: Check FAQPage matches visible FAQ
         run: node scripts/validate/faq-audit.mjs --public public --data data/faq_jsonld.yaml
 
+      # ホテル比較マップの予約ボタン（cta_pos=hotel_compare）の属性・置き場・PR 表記を確認する（工程2 Phase 2B-2）
+      - name: Check hotel compare booking buttons
+        run: node scripts/validate/compare-cta-audit.mjs --public public --hotels data/hotels.yaml
+
       - name: Build search index (Pagefind)
         run: npx --yes pagefind@${{ env.PAGEFIND_VERSION }} --site public
 
