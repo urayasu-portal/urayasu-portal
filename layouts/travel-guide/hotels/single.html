@@ -193,6 +193,9 @@
           </a>
           {{- end }}
         </div>
+        {{- /* 近隣と並べて比べたい読者向けに、比較マップ（全ホテルを地図と条件で絞り込む）へ（工程2 Phase 2B-2b）。
+               $related はホテル個別ページでだけ作るので、柱記事には出ない */}}
+        {{ partial "hotel-compare-banner.html" (dict "style" "margin:14px 0 0") }}
       </div>
       {{- end }}
 

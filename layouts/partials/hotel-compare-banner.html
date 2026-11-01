@@ -1,0 +1,16 @@
+{{- /* ホテル比較マップ（/travel-guide/hotels/compare/）への誘導バナー（工程2 Phase 2B-2b）。
+       見た目はホテルハブ（travel-guide/hotels/list.html）のバナーと同じ .hcm-list-banner、文言も同じ i18n（hl_compare_*）。
+       呼び出し: ホテル個別ページの「近隣の似たホテル」の下（travel-guide/hotels/single.html）、
+                 柱記事の厳選ホテルブロックの末尾（partials/hotel-pick-cards.html）
+       引数: dict "style"（任意。外側の余白だけ。CSS ファイルは変えない）
+       内部リンクだけ。予約ボタン・アフィリエイト・data-* の計測属性は付けない。 */ -}}
+<a href="{{ "/travel-guide/hotels/compare/" | absLangURL }}" class="hcm-list-banner"{{ with .style }} style="{{ . | safeCSS }}"{{ end }}>
+  <span class="hcm-list-banner-left">
+    <i class="ti ti-map-2" aria-hidden="true"></i>
+    <span>
+      <strong>{{ i18n "hl_compare_title" }}</strong>
+      <span class="hcm-list-banner-sub">{{ i18n "hl_compare_sub" }}</span>
+    </span>
+  </span>
+  <span class="hcm-list-banner-cta">{{ i18n "hl_compare_cta" }}</span>
+</a>
