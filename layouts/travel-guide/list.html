@@ -194,15 +194,9 @@
     <div class="tg-purpose-desc">{{ if $isEN }}14 picks by purpose — relax, family, Japan culture, explore{{ else if $isZH }}按目的选：放松·亲子·日本文化·探索东京{{ else if $isKO }}목적별 14곳: 휴식·가족·일본 문화·도쿄 탐방{{ else if $isZHTW }}依目的選：放鬆·親子·日本文化·探索東京{{ else }}癒やす・家族・日本文化・都心探訪の14スポット{{ end }}</div>
   </a>
   {{- end }}
-  {{/* 季節企画。ja / en / zh-tw のみ記事が存在する（zh・ko 未訳）。翻訳を追加したら条件に足す */}}
-  {{- if or (eq .Lang "ja") $isEN $isZHTW }}
-  <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/maihama-halloween/" | absLangURL }}">
-    <i class="ti ti-ghost-2" aria-hidden="true"></i>
-    <div class="tg-purpose-title">{{ if $isEN }}Halloween guide 2026{{ else if $isZHTW }}2026萬聖節攻略{{ else }}ハロウィーンガイド2026{{ end }}</div>
-    <div class="tg-purpose-desc">{{ if $isEN }}Costume rules, where to change, hotel events{{ else if $isZHTW }}變裝規則·換裝地點·飯店企劃{{ else }}仮装の着替え場所・ホテル企画・限定スイーツ{{ end }}</div>
-  </a>
-  {{- end }}
-  {{/* クリスマス。その言語に記事がある場合のみ表示（site.GetPage は現在の言語のページを返す） */}}
+  {{/* 季節企画（クリスマス）。その言語に記事がある場合のみ表示（site.GetPage は現在の言語のページを返す）。
+       ハロウィーン（/travel-guide/maihama-halloween/）のカードは会期終了のため 2026-11-01 に外した（記事は残す）。
+       来年の季節企画では、カードの出し入れをこの位置で行う */}}
   {{- with site.GetPage "/travel-guide/maihama-christmas" }}
   <a class="tg-purpose-card tg-purpose-card--feature" href="{{ "/travel-guide/maihama-christmas/" | absLangURL }}">
     <i class="ti ti-christmas-tree" aria-hidden="true"></i>

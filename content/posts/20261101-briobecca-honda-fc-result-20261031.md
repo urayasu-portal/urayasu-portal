@@ -1,6 +1,7 @@
 ---
 title: "【浦安】ブリオベッカ、Honda FCに3-1勝利で3連勝"
 date: 2026-11-01T19:46:00+09:00
+lastmod: 2026-11-02
 slug: "briobecca-honda-fc-result-20261031"
 categories:
   - "スポーツ"
@@ -12,6 +13,9 @@ tags:
   - "試合結果"
   - "スポーツ"
 description: "ブリオベッカ浦安・市川が2026年10月31日のJFL第10節でHonda FCに3-1で勝利し、リーグ戦3連勝を飾りました。得点者や試合の経過、10月31日更新の順位、次節の青森戦と新浦安での無料PVを紹介します。"
+cover:
+  image: /images/posts/burio.jpg
+  alt: "【浦安】ブリオベッカ、Honda FCに3-1勝利で3連勝"
 draft: false
 ---
 <p>ブリオベッカ浦安・市川は2026年10月31日（土）、第28回日本フットボールリーグ（JFL）第10節でHonda FCと対戦し、3-1で勝利しました。</p>
