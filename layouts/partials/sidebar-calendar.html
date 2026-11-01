@@ -1,21 +1,4 @@
 {{/* ─── サイドバー: 検索 + カレンダー パーシャル ─── */}}
-<script src="/pagefind/pagefind-ui.js" defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  if (window.PagefindUI) {
-    new PagefindUI({
-      element: '#sidebar-search',
-      showImages: false,
-      showEmptyFilters: false,
-      resetStyles: false,
-      translations: {
-        placeholder: 'キーワードを入力…',
-        zero_results: '「[QUERY]」の検索結果はありません',
-      }
-    });
-  }
-});
-</script>
 {{- $cal := partialCached "sidebar-calendar-data.html" site site.Language.Lang }}
 
 {{/* 投稿日・注目の日・月別記事数（集計は partials/sidebar-calendar-data.html。全ページで同じなので言語ごとに1回だけ集計する） */}}
@@ -30,6 +13,55 @@ document.addEventListener('DOMContentLoaded', function() {
     <div id="sidebar-search"></div>
   </div>
 </div>
+{{- /* Pagefind UI は検索欄を操作したときに読み込む（工程7C-B2a）。
+       それまでは同じ class の検索欄を JS で置き、見た目・高さを揃える（JS が無いときは従来どおり何も出さない）。
+       フォーカス・入力・ポインターが乗ったときに pagefind-ui.js を読み込み、入力済みの語とフォーカスを引き継ぐ。
+       索引（pagefind.js・worker・索引ファイル）は従来どおり最初の検索で Pagefind UI が読み込む */}}
+<script>
+(function () {
+  var box = document.getElementById('sidebar-search');
+  if (!box) return;
+  box.innerHTML = '<div class="pagefind-ui"><form class="pagefind-ui__form" role="search" aria-label="このサイトを検索" action="javascript:void(0);">'
+    + '<input class="pagefind-ui__search-input" type="text" placeholder="キーワードを入力…" title="キーワードを入力…" autocapitalize="none" enterkeyhint="search"></form></div>';
+  var stub = box.querySelector('input');
+  var state = 0; /* 0: 未読込 1: 読込中 2: 完了 */
+  var composing = false, waiting = false; /* 日本語入力の変換中は差し替えない（変換中の文字が消えるため） */
+  stub.addEventListener('compositionstart', function () { composing = true; });
+  stub.addEventListener('compositionend', function () { composing = false; if (waiting) { waiting = false; start(); } });
+  function start() {
+    var q = stub.value, focused = document.activeElement === stub;
+    box.innerHTML = '';
+    new PagefindUI({
+      element: '#sidebar-search',
+      showImages: false,
+      showEmptyFilters: false,
+      resetStyles: false,
+      translations: {
+        placeholder: 'キーワードを入力…',
+        zero_results: '「[QUERY]」の検索結果はありません',
+      }
+    });
+    var input = box.querySelector('input');
+    if (!input) return;
+    if (focused) input.focus();
+    if (q) { input.value = q; input.dispatchEvent(new Event('input', { bubbles: true })); }
+  }
+  function load() {
+    if (state) return;
+    state = 1;
+    var s = document.createElement('script');
+    s.src = '/pagefind/pagefind-ui.js';
+    s.onload = function () {
+      state = 2;
+      if (!window.PagefindUI) return;
+      if (composing) waiting = true; else start();
+    };
+    s.onerror = function () { state = 0; };
+    document.head.appendChild(s);
+  }
+  ['focus', 'input', 'pointerenter', 'pointerdown'].forEach(function (t) { stub.addEventListener(t, load); });
+})();
+</script>
 
 {{/* カレンダーウィジェット */}}
 <div class="sidebar-widget">
