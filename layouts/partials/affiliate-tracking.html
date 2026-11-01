@@ -70,7 +70,17 @@
       });
     }
 
-    /* ここから affiliate_click。上の topic_cta_click・related_click は送信済みなので、
+    /* トップの各ブロック（data-home-section）からのクリック（工程4B-1）。同じ行き先へのリンクが複数のブロックにあり、
+       標準の経路ではどのブロックから押されたか分からないため、section だけを送る。内部リンクだけが対象
+       （トップのブロックに外部リンクは置かない。置いた場合も affiliate_click と二重に送らない） */
+    var homeBlock = a.closest ? a.closest('[data-home-section]') : null;
+    if (homeBlock && (a.hostname || '').toLowerCase() === location.hostname) {
+      gtag('event', 'home_section_click', {
+        section: homeBlock.getAttribute('data-home-section')
+      });
+    }
+
+    /* ここから affiliate_click。上の topic_cta_click・related_click・home_section_click は送信済みなので、
        以下の return は affiliate_click だけに効く。内部リンクは affiliate_click の対象外 */
     var host = (a.hostname || '').toLowerCase();
     if (host === location.hostname) return;
