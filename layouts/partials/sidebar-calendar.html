@@ -15,7 +15,8 @@
 </div>
 {{- /* Pagefind UI は検索欄を操作したときに読み込む（工程7C-B2a）。
        それまでは同じ class の検索欄を JS で置き、見た目・高さを揃える（JS が無いときは従来どおり何も出さない）。
-       フォーカス・入力・ポインターが乗ったときに pagefind-ui.js を読み込み、入力済みの語とフォーカスを引き継ぐ。
+       フォーカス・入力・タップ（クリック）のときに pagefind-ui.js を読み込み、入力済みの語とフォーカスを引き継ぐ。
+       カーソルが通り過ぎただけでは読み込まない。読み込みに失敗したときは、次の操作で読み込み直す（3回まで）。
        索引（pagefind.js・worker・索引ファイル）は従来どおり最初の検索で Pagefind UI が読み込む */}}
 <script>
 (function () {
@@ -25,6 +26,7 @@
     + '<input class="pagefind-ui__search-input" type="text" placeholder="キーワードを入力…" title="キーワードを入力…" autocapitalize="none" enterkeyhint="search"></form></div>';
   var stub = box.querySelector('input');
   var state = 0; /* 0: 未読込 1: 読込中 2: 完了 */
+  var tries = 0;
   var composing = false, waiting = false; /* 日本語入力の変換中は差し替えない（変換中の文字が消えるため） */
   stub.addEventListener('compositionstart', function () { composing = true; });
   stub.addEventListener('compositionend', function () { composing = false; if (waiting) { waiting = false; start(); } });
@@ -47,8 +49,9 @@
     if (q) { input.value = q; input.dispatchEvent(new Event('input', { bubbles: true })); }
   }
   function load() {
-    if (state) return;
+    if (state || tries >= 3) return;
     state = 1;
+    tries++;
     var s = document.createElement('script');
     s.src = '/pagefind/pagefind-ui.js';
     s.onload = function () {
@@ -56,10 +59,10 @@
       if (!window.PagefindUI) return;
       if (composing) waiting = true; else start();
     };
-    s.onerror = function () { state = 0; };
+    s.onerror = function () { state = 0; s.remove(); };
     document.head.appendChild(s);
   }
-  ['focus', 'input', 'pointerenter', 'pointerdown'].forEach(function (t) { stub.addEventListener(t, load); });
+  ['focus', 'input', 'pointerdown'].forEach(function (t) { stub.addEventListener(t, load); });
 })();
 </script>
 
