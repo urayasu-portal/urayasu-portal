@@ -9,6 +9,7 @@
 | `static/tools/post-rules.js` | **検証ルールの単一ソース**。投稿ツール（ブラウザ）と CI（Node）の両方が読む。外部ライブラリなし |
 | `static/tools/post-tool.html` | 投稿ツール。投稿前に post-rules.js で検証し、既存記事との URL 重複を GitHub API と公開ページで確認する |
 | `scripts/validate/validate-content.mjs` | CI 用。全記事を検証し、Hugo が実際に作る URL（`hugo list all`）で衝突を調べる |
+| `scripts/validate/post-checks.mjs` | CI だけの追加検査（P0-B）。公開されない date・新規記事の必須項目・出典と広告リンク・本文のリンク・重複記事・URL 衝突の説明（下の「日次 posts の追加検査」） |
 | `scripts/validate/known-issues.json` | **既存の不備リスト**。ここに載っている不備は失敗にしない（新しい不備だけを失敗にする） |
 | `scripts/validate/test/run-tests.mjs` | ルールのテスト（BOM・CRLF・インライン配列・日付・衝突など）と既存記事の回帰テスト |
 | `scripts/validate/test/event-dates-hugo.mjs` | 表示側の日付解釈（`layouts/partials/event-dates.html` ほか、工程1a PR 3）のテスト。最小の Hugo サイトで85通りを確かめる。Hugo が必要。`pr-check.yml`（Pull Request 時）で実行する |
@@ -98,11 +99,50 @@ Event 構造化データは `eventLocation` が書かれた記事にだけ出し
 
 `data/openclose.yaml`（年表のキュレーション）も CI が検証する: `status`・`type` の語彙外・`date` の形式不正（`OPENCLOSE_STATUS_INVALID`・`OPENCLOSE_DATE_INVALID`）、`unconfirmed`・`count` が真偽値でない（`OPENCLOSE_BOOL`）、`year` が "YYYY" でない（`OPENCLOSE_YEAR_INVALID`）はエラー。記事の無いキー（`OPENCLOSE_ORPHAN`）、`year` と `date` の年の食い違い（`OPENCLOSE_YEAR_MISMATCH`）は警告。`status` が予定で `date` を過ぎたものは「店舗の予定日経過・未確認」に出す。
 
+### 日次 posts の追加検査（P0-B、2026-11-01）
+
+記事は別環境から main へ直接 push されるため、品質の確認は CI だけが頼り（pre-commit フックは投稿元で動かない）。
+`static/tools/post-rules.js` が見ていない項目を `scripts/validate/post-checks.mjs`（CI 専用）に追加した。post-rules.js は `static/` 配下で公開サイトにも出力されるため変更していない（投稿ツールの挙動・公開サイトは不変）。同じ不備を二重に報告しないよう、既存ルールにある検査は足していない。
+
+**既存記事の扱い（legacy 例外）**: 新規記事向けのルールは、`date`（日本時間の日付）が `STRICT_FROM`（**2026-11-01**）以降の記事だけに適用する。それより前の記事には出さない（内部リンク切れ・期限切れだけは警告）。`date` が読めない記事は新規扱い。
+差分（このコミットで変わった記事）ではなく日付で区別しているのは、`validate` ジョブが浅い clone で動き、ワークフローを変えずに確実な差分が取れないため。既存記事を後から書き換えた場合は厳格ルールの対象にならない（下表の「全記事」の項目は対象）。
+2026-11-01 時点で既存 896 本への影響は**エラー 0 件**（開始日を設けず全記事に適用すると `DESCRIPTION_MISSING` 169・`TAGS_MISSING` 169 本＝初期の記事。`run-tests.mjs` の回帰テストで毎回表示）。
+
+| 区分 | コード | 対象 | 内容 |
+|---|---|---|---|
+| エラー | `FM_LEADING_WHITESPACE` | 全ファイル | 1行目の `---` より前に空行・空白（「1行目より前に空白があります」）。Hugo は読み飛ばして公開するが、post-rules.js は `FM_NO_START` と誤った原因を出し、ほかの検査がすべて止まっていた。空白を除いて残りの検査を続ける |
+| エラー | `DATE_NOT_PUBLISHED` | 全記事 | `date`（`publishDate` があればそちら）が検証時刻より未来で、その日付（日本時間）が今日以前（「date が公開時刻より未来です（buildFuture なしのため公開されません）」）。下の「CI での意味」参照 |
+| エラー | `PUBLISHDATE_FORMAT`・`EXPIRYDATE_FORMAT` | 全記事 | `publishDate`・`expiryDate` が日時として読めない |
+| エラー（既存は警告） | `EXPIRYDATE_PASSED` | 全記事 | `expiryDate` を過ぎて公開されない（`buildExpired` なし） |
+| エラー | `DESCRIPTION_MISSING` | 新規 | `description` が無い・空 |
+| エラー | `TAGS_MISSING`・`TAGS_FORMAT` | 新規（ja） | `tags` が無い・空・リストでない（guide_map.yaml のガイドカード連携のため） |
+| エラー | `SHOPSTATUS_MISSING`・`SHOP_FIELDS_WITHOUT_STATUS`・`SHOP_CONFIRMED_FUTURE` | 新規 | post-rules.js の警告を**エラーに昇格**（同じコード・同じ文言＋注記）。2026-10-07〜10-31 の記事は従来どおり警告。`SHOP_PLANNED_PASSED`（時間の経過で必ず起きる）は昇格しない |
+| エラー | `LASTMOD_FORMAT`・`LASTMOD_BEFORE_DATE` | 新規 | `lastmod` が読めない・`date` より前の日 |
+| 警告 | `LASTMOD_FUTURE` | 新規 | `lastmod` が今日（日本時間）より先 |
+| 警告 | `EVENTKIND_WITHOUT_DATE` | 新規 | `eventKind` があるのに `eventDate`・`eventDates` が無い（`eventKind` の値の検査は post-rules.js の `EVENTKIND_INVALID`） |
+| 警告 | `EVENT_ENDED_BEFORE_POST`・`EVENT_FAR_AFTER_POST` | 新規 | 開催日の最終日が `date` より30日以上前／開始日が1年以上先（年・月の誤入力の疑い。`eventOngoing: true` は前者の対象外） |
+| エラー | `SOURCES_AFFILIATE` | 新規 | 出典（`sources` の `url`）が広告リンク（A8・バリューコマース・もしも・楽天・Travelpayouts 等、または Trip.com の `Allianceid` などの提携パラメータ付き） |
+| エラー | `SOURCES_URL_INVALID`・`SOURCES_FORMAT` | 新規 | 出典の url が http(s) でない／文字列だけのリスト・name も url も無い（name だけの資料は可） |
+| エラー | `LINK_EMPTY`・`LINK_PLACEHOLDER` | 新規 | 本文の空リンク（`href=""`・`#`・`[x]()`）・仮の URL（localhost・example.com 等） |
+| エラー（既存は警告） | `LINK_INTERNAL_BROKEN` | 全記事 | 本文の内部リンク（`/…`・`https://urayasu-portal.com/…`）が `hugo list all` のページにも aliases にも無い／static の画像・PDF が無い。タクソノミー（`/tags/`・`/categories/`）と ref・relref は対象外 |
+| 警告 | `AFFILIATE_LINK_IN_POST` | 新規 | 本文に広告リンク（PR 表記の要否と、出典と分けることの確認） |
+| エラー | `DUPLICATE_TITLE`・`DUPLICATE_BODY` | 新規 | 同じ言語の他の記事とタイトルが同じ／本文がほぼ同じ（4文字単位の一致率 0.9 以上） |
+| 警告 | `SIMILAR_POST` | 新規 | タイトル（【】の地域名を除く）の一致率 0.85 以上、または本文 0.6 以上。既存記事どうしの類似は出さない（2026-11-01 時点、開始日なしで 16 組） |
+
+**URL 衝突（slug・url・aliases の重複）の文言**: 検出の仕組みは従来どおり（Hugo の実 URL＋aliases、`known-issues.json` との照合）。新しい衝突は、後から加わったファイルごとに「slug が既存記事（content/posts/xxx.md）と重複しています（URL: …）」と、続報向けの slug 案（`<元の slug>-<YYYYMMDD>`、使用中なら `-2` …。使用中の URL と照合済み）を出す。どちらが既存記事かは、既知の衝突ならそのファイル、そうでなければ `date` の古い方。
+
+**`DATE_NOT_PUBLISHED` の CI での意味**: `validate` ジョブは push の直後に動くので、検証時刻 ≒ push 時刻 ≒ 本番ビルドの時刻。`date` がそれより未来の記事はそのビルドから落ち、次に公開されるのは schedule（不安定）か手動実行のとき。
+- **エラー**: push（とローカル実行）で、`date` の日付が今日以前（当日の記事を未来の時刻で書いた＝旧 22:00 ルールの事故）。失敗通知が「記事が反映されない」ことの早期警報になる
+- **通知のまま**: 翌日以降の日付は従来どおり「予約投稿」（post-rules.js の `DATE_FUTURE`）。CLAUDE.md の「意図的な予約投稿」はこちら
+- **警告に下げる**: `pull_request`（マージ時刻が未定）・`schedule`・`workflow_dispatch`（予約投稿の当日の再ビルドで誤ってエラーにしないため）
+- 2026-11-01 時点で該当する既存記事は 0 本
+
 ## CI の動き（公開は止めない）
 
 - `validate` ジョブは `build`／`deploy` と**独立**している。不備があっても公開は従来どおり進む
 - 新しい不備があると `validate` ジョブだけが失敗し、GitHub から失敗通知が届く。Actions の実行結果ページ（Summary）に一覧が出る
-- 予約投稿は失敗にせず、Summary に「予約投稿」として一覧表示する
+- 予約投稿は失敗にせず、Summary に「予約投稿」として一覧表示する（当日の未来時刻は `DATE_NOT_PUBLISHED` として失敗。上の「日次 posts の追加検査」）
+- 追加検査の警告は、Summary の「記事の注意」と Actions の注釈（warning）に出す（失敗にはしない）
 - frontmatter が壊れて Hugo 自体が失敗した場合（これは以前から公開が止まる）も、`validate` は frontmatter から推定した範囲で検査を続け、壊れているファイルを示す
 
 ### 失敗したときの対応

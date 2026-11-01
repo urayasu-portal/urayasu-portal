@@ -2,7 +2,7 @@
 /*
  * validate-content.mjs — posts の frontmatter 検証と URL 衝突検出（CI 用）
  *
- * ルール本体は static/tools/post-rules.js（投稿ツールと共通）。このスクリプトはそれを全記事に適用し、
+ * ルール本体は static/tools/post-rules.js（投稿ツールと共通）。CI だけの追加検査（P0-B）は scripts/validate/post-checks.mjs。このスクリプトはそれを全記事に適用し、
  * scripts/validate/known-issues.json に記録済みの「既存の不備」と照合して、新たに発生した不備だけを失敗として扱う。
  *
  * 使い方（リポジトリ直下で実行）:
@@ -16,6 +16,8 @@
  *   --known FILE       既存の不備リスト（既定 scripts/validate/known-issues.json）
  *   --write-known      現在の不備を既存リストとして書き出す（初回・解消後の更新用。衝突の id/plan は引き継ぐ）
  *   --now ISO          現在時刻の上書き（テスト用）
+ *   --strict-from YMD  新規記事の厳格ルールの開始日の上書き（既定は post-checks.mjs の STRICT_FROM。影響件数の測定用）
+ *   --event NAME       GitHub のイベント名の上書き（既定は GITHUB_EVENT_NAME。push・空＝ローカルのときだけ「公開されない date」をエラーにする）
  *   --json FILE        結果を JSON で保存
  *   --summary FILE     Markdown の結果を追記（GitHub Actions の $GITHUB_STEP_SUMMARY）
  *
@@ -25,6 +27,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createRequire } from 'node:module';
+import * as PC from './post-checks.mjs';
 
 const require = createRequire(import.meta.url);
 const ROOT = process.cwd();
@@ -37,6 +40,16 @@ const flag = (name) => args.includes(name);
 const KNOWN_FILE = opt('--known') || 'scripts/validate/known-issues.json';
 const NOW = opt('--now') ? Date.parse(opt('--now')) : Date.now();
 const isGha = !!process.env.GITHUB_ACTIONS;
+/* 新規記事の厳格ルールの開始日（post-checks.mjs の STRICT_FROM。テスト用に上書き可） */
+const STRICT_FROM = opt('--strict-from') || PC.STRICT_FROM;
+/* push・schedule・pull_request などの区別（公開されない date の判定に使う）。--event で上書き可（テスト用） */
+const EVENT_NAME = opt('--event') || process.env.GITHUB_EVENT_NAME || '';
+/* 新規記事（STRICT_FROM 以降）ではエラーに上げる post-rules.js の警告（P0-B）。値は文言の末尾に付ける注記 */
+const PROMOTE_IF_STRICT = {
+  SHOPSTATUS_MISSING: `（${STRICT_FROM} 以降の開店・閉店の記事は必須）`,
+  SHOP_FIELDS_WITHOUT_STATUS: `（${STRICT_FROM} 以降の記事は必須）`,
+  SHOP_CONFIRMED_FUTURE: `（${STRICT_FROM} 以降の記事はエラー）`
+};
 
 const nfc = (s) => String(s).normalize('NFC');
 const rel = (p) => nfc(path.relative(ROOT, p).split(path.sep).join('/'));
@@ -117,15 +130,21 @@ const hugoList = loadHugoList();
 const hugoDups = loadHugoDuplicates();
 const issues = [];            /* { rule, path, msg, severity } */
 const urlEntries = [];
-const stats = { posts: 0, files: allMd.length, futurePosts: [], shopPlannedPassed: [] };
+const stats = { posts: 0, files: allMd.length, futurePosts: [], shopPlannedPassed: [], strictPosts: 0 };
+const fileInfo = {};          /* path → { data, dp, lang }（URL 衝突の説明・slug の提案用） */
+const postCtx = [];           /* 追加検査（post-checks.mjs）用。URL の一覧がそろってから実行する */
 
 for (const f of allMd) {
-  const text = fs.readFileSync(f.abs, 'utf8');
+  let text = fs.readFileSync(f.abs, 'utf8');
+  /* 先頭の空白（P0-B）: Hugo は読み飛ばして公開するが、ここでは原因を示してエラーにし、空白を除いて検査を続ける */
+  const lw = PC.leadingWhitespace(text);
+  if (lw.found) { issues.push({ rule: 'FM_LEADING_WHITESPACE', path: f.rel, msg: lw.msg, severity: 'error' }); text = lw.stripped; }
   const lang = R.langOfPath(f.rel);
   const fm = R.parseFrontmatter(text);
   const hl = hugoList ? hugoList.get(f.rel) : null;
   const url = hl ? hl.url : R.expectedUrl(f.rel, fm.data);
   urlEntries.push({ path: f.rel, url, aliases: R.aliasesOf(fm.data, lang) });
+  fileInfo[f.rel] = { data: fm.data, dp: R.parseDate(fm.data.date), lang };
 
   if (!isPost(f.rel)) {
     if (!fm.ok) fm.errors.forEach((e) => issues.push({ rule: e.code, path: f.rel, msg: e.msg, severity: 'error' }));
@@ -133,13 +152,37 @@ for (const f of allMd) {
   }
   stats.posts++;
   const v = R.validatePost(text, { path: f.rel, isNew: true, now: NOW, skipBodyChecks: true, skipLastmodChecks: true });
+  const dp = fileInfo[f.rel].dp;
+  const strict = PC.isStrict(dp, STRICT_FROM);
+  if (strict) stats.strictPosts++;
   v.errors.forEach((e) => issues.push({ rule: e.code, path: f.rel, msg: e.msg, severity: 'error' }));
   v.warnings.forEach((w) => {
     if (w.code === 'DATE_FUTURE' || w.code === 'DATE_FAR_FUTURE') stats.futurePosts.push({ path: f.rel, msg: w.msg });
     if (w.code === 'SHOP_PLANNED_PASSED') stats.shopPlannedPassed.push({ path: f.rel, msg: w.msg });
+    /* 新規記事（STRICT_FROM 以降）では店舗の状態の欠落・食い違いをエラーにする（P0-B）。それより前の記事は従来どおり警告 */
+    if (strict && PROMOTE_IF_STRICT[w.code]) { issues.push({ rule: w.code, path: f.rel, msg: w.msg + PROMOTE_IF_STRICT[w.code], severity: 'error' }); return; }
     issues.push({ rule: w.code, path: f.rel, msg: w.msg, severity: 'warning' });
   });
   if (hugoList && !hl) issues.push({ rule: 'NOT_IN_HUGO_LIST', path: f.rel, msg: 'hugo list に出てこない記事です（Hugo が読み込めていない可能性）', severity: 'error' });
+  postCtx.push({ path: f.rel, lang, fm, dp, strict, bodyLineOffset: fm.fmText.split('\n').length + 2 + (lw.found ? lw.line - 1 : 0) });
+}
+
+/* ── 追加検査（scripts/validate/post-checks.mjs、P0-B）: 公開されない date・必須項目・lastmod・開催日の食い違い・出典・本文のリンク・重複 ── */
+const siteUrls = hugoList ? new Set([...hugoList.values()].map((x) => x.url).concat(urlEntries.flatMap((e) => e.aliases.map(R.normUrl)))) : null;
+const staticExists = PC.staticChecker(ROOT);
+const pcWarnings = [];        /* 追加検査の警告（Summary に一覧で出す） */
+const pushPc = (x) => {
+  issues.push(x);
+  if (x.severity === 'warning') pcWarnings.push(x);
+};
+for (const p of postCtx) {
+  if (!p.fm.ok && !Object.keys(p.fm.data).length) continue; /* frontmatter が読めない記事は post-rules.js のエラーだけにする */
+  PC.checkPost({ ...p, now: NOW, siteUrls, staticExists, eventName: EVENT_NAME })
+    .forEach((x) => pushPc({ rule: x.rule, path: p.path, msg: x.msg, severity: x.severity }));
+}
+if (postCtx.some((p) => p.strict)) {
+  const profiles = postCtx.map((p) => PC.dupProfile({ path: p.path, lang: p.lang, title: p.fm.data.title, body: p.fm.body, epoch: p.dp && p.dp.ok ? p.dp.epochMs : Infinity, strict: p.strict }));
+  PC.findDuplicates(profiles).forEach((x) => pushPc({ rule: x.rule, path: x.path, msg: x.msg, severity: x.severity }));
 }
 
 /* data/openclose.yaml（開店・閉店年表のキュレーション）の検証（工程1a PR 5）
@@ -229,6 +272,9 @@ const resolvedCollisions = hugoList ? (known.collisions || []).filter((c) => !cu
 /* 既知の衝突 URL に後から加わったファイル＝修正すべき側 */
 const knownFilesByUrl = new Map((known.collisions || []).map((c) => [R.normUrl(c.url), new Set(c.files.map(nfc))]));
 const markNew = (c) => c.files.map((f) => '`' + f + '`' + (knownFilesByUrl.has(c.url) && !knownFilesByUrl.get(c.url).has(f) ? '（新たに追加）' : '')).join(' / ');
+/* 新しい衝突の具体的な文言（どちらが既存記事か・どの項目が重複したか・続報向けの slug 案。P0-B） */
+const takenUrls = new Set(Object.keys(idx));
+const collisionDetails = new Map(newCollisions.map((c) => [c, PC.describeCollision(c, fileInfo, knownFilesByUrl.get(c.url), takenUrls)]));
 const resolvedDups = hugoDups ? [...knownDup].filter((d) => !hugoDups.includes(d)) : [];
 
 /* ── 既存リストの書き出し ── */
@@ -267,8 +313,13 @@ const esc = (s) => String(s).replace(/%/g, '%25').replace(/\r/g, '%0D').replace(
 console.log(`検査対象: content 配下 ${stats.files} ファイル（うち posts ${stats.posts} 本）`);
 if (isGha) {
   newErrors.forEach((e) => console.log(`::error file=${e.path},title=${e.rule}::${esc(e.msg)}`));
-  newCollisions.forEach((c) => console.log(`::error file=${c.files[c.files.length - 1]},title=URL_COLLISION::${esc(c.url + ' を複数のファイルが使っています: ' + c.files.join(' / '))}`));
+  newCollisions.forEach((c) => {
+    const det = collisionDetails.get(c);
+    if (det.length) det.forEach((x) => console.log(`::error file=${x.path},title=URL_COLLISION::${esc(x.msg)}`));
+    else console.log(`::error file=${c.files[c.files.length - 1]},title=URL_COLLISION::${esc(c.url + ' を複数のファイルが使っています: ' + c.files.join(' / '))}`);
+  });
   newDups.forEach((d) => console.log(`::error title=HUGO_DUPLICATE_PATH::${esc(d + ' に複数のページが出力されています（Hugo の警告）')}`));
+  pcWarnings.forEach((w) => console.log(`::warning file=${w.path},title=${w.rule}::${esc(w.msg)}`));
   stats.futurePosts.forEach((f) => console.log(`::notice file=${f.path},title=予約投稿::${esc(f.msg)}`));
   stats.shopPlannedPassed.forEach((f) => console.log(`::notice file=${f.path.replace(/#.*$/, '')},title=予定日経過・未確認::${esc(f.msg)}`));
 }
@@ -282,6 +333,7 @@ lines.push(`- 検査対象: content 配下 ${stats.files} ファイル（posts $
 lines.push(`- 新しい不備: ${newErrors.length} 件 / 新しい URL 衝突: ${newCollisions.length} 件 / 新しい重複出力パス: ${hugoDups ? newDups.length + ' 件' : '未検査（--hugo-log なし）'}`);
 lines.push(`- 既知の不備（known-issues.json で許容中）: ${knownErrors.length} 件 / 既知の URL 衝突: ${knownCollisions.length} 件`);
 lines.push(`- 予約投稿（未来の date）: ${stats.futurePosts.length} 本`);
+lines.push(`- 新規記事ルールの対象（date が ${STRICT_FROM} 以降の posts）: ${stats.strictPosts} 本 / 記事の注意（警告）: ${pcWarnings.length} 件`);
 lines.push(`- 店舗の予定日経過・未確認（開店・閉店を確認したら更新）: ${stats.shopPlannedPassed.length} 件`);
 if (resolvedIssues.length || resolvedCollisions.length || resolvedDups.length) lines.push(`- 解消済み（known-issues.json から削除できます）: 不備 ${resolvedIssues.length} 件 / 衝突 ${resolvedCollisions.length} 件 / 重複パス ${resolvedDups.length} 件`);
 lines.push('');
@@ -293,7 +345,16 @@ if (newErrors.length) {
 }
 if (newCollisions.length) {
   lines.push('### 新しい URL 衝突（後から追加した記事の slug を変えてください）');
-  newCollisions.forEach((c) => lines.push(`- \`${c.url}\` ← ${markNew(c)}`));
+  newCollisions.forEach((c) => {
+    lines.push(`- \`${c.url}\` ← ${markNew(c)}`);
+    collisionDetails.get(c).forEach((x) => lines.push(`  - \`${x.path}\`: ${x.msg}`));
+  });
+  lines.push('');
+}
+if (pcWarnings.length) {
+  /* P0-B の追加検査の警告（公開されない date の警告・類似記事・開催日の食い違い・リンクなど）。失敗にはしない */
+  lines.push('### 記事の注意（警告。失敗にはしません）');
+  pcWarnings.forEach((w) => lines.push(`- \`${w.path}\`（${w.rule}）: ${w.msg}`));
   lines.push('');
 }
 if (newDups.length) {
@@ -336,7 +397,9 @@ if (opt('--summary')) fs.appendFileSync(opt('--summary'), md);
 if (opt('--json')) {
   fs.writeFileSync(opt('--json'), JSON.stringify({
     failed, newErrors, newCollisions, newDups, knownErrors: knownErrors.length, knownCollisions: knownCollisions.map((c) => ({ url: c.url, files: c.files, id: c.meta.id })),
-    resolvedIssues, resolvedCollisions, resolvedDups, futurePosts: stats.futurePosts, shopPlannedPassed: stats.shopPlannedPassed, warnings: warnCount, collisions
+    resolvedIssues, resolvedCollisions, resolvedDups, futurePosts: stats.futurePosts, shopPlannedPassed: stats.shopPlannedPassed, warnings: warnCount, collisions,
+    strictFrom: STRICT_FROM, strictPosts: stats.strictPosts, postWarnings: pcWarnings,
+    collisionDetails: newCollisions.map((c) => ({ url: c.url, details: collisionDetails.get(c) }))
   }, null, 2));
 }
 process.exit(failed ? 1 : 0);
