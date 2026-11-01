@@ -71,6 +71,10 @@ jobs:
       - name: Check FAQPage matches visible FAQ
         run: node scripts/validate/faq-audit.mjs --public public --data data/faq_jsonld.yaml
 
+      # 冒頭写真の width・height が実寸どおりで、fetchpriority="high" が1ページ1枚までかを確認する（工程7C-B1）
+      - name: Check hero image attributes
+        run: node scripts/validate/hero-img-audit.mjs --public public
+
       - name: Build search index (Pagefind)
         run: npx --yes pagefind@${{ env.PAGEFIND_VERSION }} --site public
 
