@@ -1,7 +1,7 @@
 ---
 title: "Christmas in Urayasu & Maihama 2026 | Disney Christmas Tips, Hotel Christmas Cakes, Dinners & Free Illuminations"
 date: 2026-10-09T09:50:00+09:00
-lastmod: 2026-11-01
+lastmod: 2026-11-02
 factChecked: "2026-10-09"
 slug: "maihama-christmas"
 badge: "Christmas"
@@ -34,7 +34,7 @@ faq:
     a: "Yes. For Christmas 2026, six Official Hotels including Hilton Tokyo Bay sell stay plans that come with a limited-edition windowed pouch. The plans cover stays from November 11 to December 25, and include the right to purchase a 1-Day Passport (the ticket itself costs extra)."
 ---
 
-{{< note >}}ℹ️ Please note　This page is based on information published as of October 9, 2026, and the Disney Resort Line section reflects the official announcement of October 20. The Urayasu Brighton Hotel Tokyo Bay Christmas cakes reflect information checked on October 28. Dates, prices and content are subject to change. Always check the official websites of each facility and Tokyo Disney Resort before booking or visiting.{{< /note >}}
+{{< note >}}ℹ️ Please note　This page is based on information published as of October 9, 2026, and the Disney Resort Line section reflects the official announcement of October 20. Hotel dessert buffets, afternoon teas and course dinners reflect information checked on October 21, and the Urayasu Brighton Hotel Tokyo Bay Christmas cakes information checked on October 28. The Disney Christmas dates, short-hours days, ticket prices and the Disney Resort Line Christmas events were rechecked against official sources on November 2. Dates, prices and content are subject to change. Always check the official websites of each facility and Tokyo Disney Resort before booking or visiting.{{< /note >}}
 
 In winter, Urayasu and Maihama fill with Christmas spirit to match Tokyo Disney Resort's "Disney Christmas," from the hotels to the station plazas and cultural venues. This guide covers how to enjoy Christmas 2026 in Urayasu and Maihama, organized around five kinds of visitor: people going to the parks, people who want to order a Christmas cake, people looking for a festive meal, people looking for a hotel, and people who are not going into the parks at all.
 
@@ -72,7 +72,7 @@ For the full program and menus, see the official Disney Christmas pages for [Tok
 
 ### Ticket prices
 
-Park tickets use variable pricing. On the official calendar, a 1-Day Passport (adult) in December costs 10,900 yen on weekdays, 11,900 yen on Sundays and 12,400 yen on Saturdays; Thursday, December 24 is 11,900 yen and Friday, December 25 is 12,400 yen. Ticket types and where to buy them are explained in our [Tokyo Disney ticket guide](/en/travel-guide/disney-tickets/).
+Park tickets use variable pricing. On the official calendar, a 1-Day Passport (adult) from December 1 to 23 costs 10,900 yen on weekdays, 11,900 yen on Sundays and 12,400 yen on Saturdays; Thursday, December 24 is 11,900 yen and Friday, December 25 is 12,400 yen. Ticket types and where to buy them are explained in our [Tokyo Disney ticket guide](/en/travel-guide/disney-tickets/).
 
 ### Costume rules
 
@@ -129,9 +129,9 @@ Every station has stamp stands, so you can start from any of them. To cover all 
 
 From Tuesday, November 10 to Friday, December 25, Christmas-design Free Tickets are sold at the ticket machines at each station.
 
-In 2026 there are two designs: one featuring Mickey Mouse and friends, and one featuring Li'l RingRing, a Christmas fairy.
+In 2026 there are two designs: one featuring Mickey Mouse and friends, and one featuring the Christmas fairy "Riru Rinrin" (リルリンリン in Japanese).
 
-They cost the same as a regular Free Ticket: the 1-day ticket is 700 yen for adults and 350 yen for children. The limited designs end when sold out.
+The official announcement does not give a price for the limited designs. A regular 1-day Free Ticket is 700 yen for adults and 350 yen for children. The limited designs end when sold out.
 
 #### Four souvenir medals
 
@@ -361,6 +361,7 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 
 ## Update history
 
+- November 2, 2026: Rechecked official sources. Clarified that the 10,900-yen weekday 1-Day Passport price applies from December 1 to 23 (weekdays from December 28 to 31 are 11,900 yen). Reworded the Christmas Free Ticket price, which the official announcement does not state, and gave the character on the second design by her Japanese name
 - October 28, 2026: Added Urayasu Brighton Hotel Tokyo Bay to the Christmas cake table and line-up. Added the Christmas buffet at Sheraton Grande Tokyo Bay Hotel's "Grand Café" to the dinner buffet table and text
 - October 21, 2026: Corrected the price of Maihama View Hotel's afternoon tea to the official 4,700 yen and added Grand Nikko Tokyo Bay Maihama's Christmas afternoon tea to the table
 - October 21, 2026: Updated the Disney Resort Line section based on the official announcement of October 20 (two limited Free Ticket designs, stamp rally rules, Christmas Liner and medal details)
@@ -384,10 +385,13 @@ Yes. For Christmas, six Official Hotels including Hilton Tokyo Bay are included.
 - [Urayasu Brighton Hotel Tokyo Bay, sweets corner "Lanes" (Japanese)](https://urayasu.brightonhotels.co.jp/restaurant/lanes/)
 - [Urayasu Brighton Hotel Tokyo Bay Christmas cakes, Brighton Hotels announcement of October 19, 2026 (Japanese)](https://www.value-press.com/pressrelease/382128)
 - [Hilton Tokyo Bay Christmas dessert buffet (Japanese)](https://tokyobay.hiltonjapan.co.jp/restaurants/lp/sweetsbuffet-christmas)
+- [Maihama View Hotel by HULIC afternoon tea "Snow Globe Christmas" (Japanese)](https://www.viewhotels.co.jp/maihama/news/2026/snowglobechristmas.html)
+- [Grand Nikko Tokyo Bay Maihama Christmas afternoon tea, Okura Nikko Hotel Management press release (Japanese)](https://prtimes.jp/main/html/rd/p/000004412.000002213.html)
+- [Hotel Okura Tokyo Bay Christmas restaurants (Japanese)](https://www.okuratokyobay.net/lp/christmas/restaurant/)
 - [Oriental Hotel Tokyo Bay Christmas cakes (Japanese)](https://www.oriental-hotel.co.jp/news/detail.php?id=664)
 - [Pure White Christmas Concert 17 (Urayasu Foundation, Japanese)](https://www.urayasu-zaidan.or.jp/urayasu-bunka/1001543/1006233.html)
 - [Shin-Urayasu Station illumination (Urayasu City, Japanese)](https://www.city.urayasu.lg.jp/events/shogai/shogai/1049155.html)
 
 {{< map q="イクスピアリ 千葉県浦安市舞浜1-4" >}}
 
-*This guide is based on information published as of October 9, 2026, with the Disney Resort Line section reflecting the official announcement of October 20 and the Urayasu Brighton Hotel Tokyo Bay Christmas cakes reflecting information checked on October 28. Dates, prices and content are subject to change. Please check each facility's official website for the latest information.*
+*This guide is based on information published as of October 9, 2026, with the Disney Resort Line section reflecting the official announcement of October 20, hotel dessert buffets, afternoon teas and course dinners reflecting information checked on October 21, and the Urayasu Brighton Hotel Tokyo Bay Christmas cakes reflecting information checked on October 28. The Disney Christmas dates, short-hours days, ticket prices and the Disney Resort Line Christmas events were rechecked against official sources on November 2. Dates, prices and content are subject to change. Please check each facility's official website for the latest information.*
