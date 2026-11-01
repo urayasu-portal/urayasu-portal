@@ -1,7 +1,7 @@
 ---
 title: "东京迪士尼周边游览指南 | 舞滨·浦安·新浦安的观光景点"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-10-17
+lastmod: 2026-11-01
 factChecked: "2026-10-17"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -527,6 +527,13 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
+    <a class="rg-card" href="/zh/travel-guide/maihama-christmas/">
+      <span class="rg-emoji">🎄</span>
+      <span class="rg-body">
+        <span class="rg-title">2026浦安·舞滨圣诞节攻略</span>
+        <span class="rg-go">酒店圣诞蛋糕·晚餐·免费灯饰 →</span>
+      </span>
+    </a>
     <a class="rg-card" href="/zh/travel-guide/urayasu-maihama-access-guide/">
       <span class="rg-emoji">🚃</span>
       <span class="rg-body">

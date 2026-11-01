@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 볼거리 가이드 | 마이하마·우라야스·신우라야스 관광"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-10-17
+lastmod: 2026-11-01
 factChecked: "2026-10-17"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
@@ -527,6 +527,13 @@ faq:
 
 <div class="related-guides">
   <div class="rg-list">
+    <a class="rg-card" href="/ko/travel-guide/maihama-christmas/">
+      <span class="rg-emoji">🎄</span>
+      <span class="rg-body">
+        <span class="rg-title">2026 우라야스·마이하마 크리스마스 가이드</span>
+        <span class="rg-go">호텔 크리스마스 케이크·디너·무료 일루미네이션 →</span>
+      </span>
+    </a>
     <a class="rg-card" href="/ko/travel-guide/urayasu-maihama-access-guide/">
       <span class="rg-emoji">🚃</span>
       <span class="rg-body">
