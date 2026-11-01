@@ -88,8 +88,10 @@
 
       <header class="post-header">
         <nav class="post-breadcrumb" aria-label="{{ i18n "breadcrumb" }}">
+          {{- if eq $lang "ja" }}
           <a href="{{ "/" | relLangURL }}">{{ i18n "nav_home" }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+          {{- end }}
           <a href="{{ "/travel-guide/" | relLangURL }}">{{ i18n "nav_travel_guide" }}</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
           <a class="hg-bc" href="{{ "/travel-guide/hotels/" | relLangURL }}">{{ i18n "nav_hotels" }}</a>

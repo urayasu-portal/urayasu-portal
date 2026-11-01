@@ -42,8 +42,10 @@
 
       <header class="post-header">
         <nav class="post-breadcrumb" aria-label="{{ if $isEN }}Breadcrumb{{ else if $isZH }}面包屑导航{{ else if $isKO }}탐색 경로{{ else if $isZHTW }}麵包屑導覽{{ else }}パンくずリスト{{ end }}">
-          <a href="{{ "/" | absLangURL }}">{{ if $isEN }}Home{{ else if $isZH }}首页{{ else if $isKO }}홈{{ else if $isZHTW }}首頁{{ else }}ホーム{{ end }}</a>
+          {{- if eq .Lang "ja" }}
+          <a href="{{ "/" | absLangURL }}">ホーム</a>
           <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
+          {{- end }}
           <a href="{{ "/travel-guide/" | absLangURL }}">{{ if $isEN }}Travel Guide{{ else if $isZH }}旅行指南{{ else if $isKO }}여행 가이드{{ else if $isZHTW }}旅遊指南{{ else }}旅行ガイド{{ end }}</a>
           {{- /* ピラー構造: guideParent を持つ子ページは、まとめ(ハブ)ページを中間階層に挟む（生活ガイドの breadcrumbs.html と同じ仕組み） */ -}}
           {{- with .Params.guideParent }}{{ with site.GetPage . }}

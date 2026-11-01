@@ -6,6 +6,9 @@
        site.Params.schema.logo → site.Params.images[0] の順で参照。
        ※ 正方形ロゴ画像（推奨 512×512px PNG）が用意できたら
          hugo.yaml の params.schema.logo に設定すること。
+    2. BlogPosting author.url（工程6B-1B）:
+       運営主体（サイト全体）を指すので、言語ごとのトップ（site.Home.Permalink）ではなく
+       サイトのトップ "/"（https://urayasu-portal.com/）にする。多言語トップ /xx/ は旅行ガイドへの転送ページのため。
   テーマ更新時は元ファイルと diff を取り、変更点だけ再適用する。
 */ -}}
 {{- $logoURL := site.Params.schema.logo | default (index site.Params.images 0) | absURL -}}
@@ -39,7 +42,9 @@
 </script>
 {{- else if (or .IsPage .IsSection) }}
 {{/* BreadcrumbList */}}
-{{- if and .IsSection .Parent.IsHome }}
+{{- if and .IsSection .Parent.IsHome (ne .Lang "ja") (eq .Section "travel-guide") }}
+{{- /* 非日本語の /xx/travel-guide/ は言語のトップ。転送ページ /xx/ を Home として出さない */ -}}
+{{- else if and .IsSection .Parent.IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,7 +54,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": {{ site.Title }},
-      "item": {{ site.Home.Permalink | safeHTML }}
+      "item": {{ cond (eq .Lang "ja") site.Home.Permalink ("travel-guide/" | absLangURL) | safeHTML }}
     },
     {
       "@type": "ListItem",
@@ -140,7 +145,7 @@
   "author": {
     "@type": "Organization",
     "name": {{ site.Title }},
-    "url": {{ site.Home.Permalink }}
+    "url": {{ "/" | absURL }}
   },
   "mainEntityOfPage": {
     "@type": "WebPage",

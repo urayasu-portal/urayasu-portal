@@ -67,6 +67,10 @@ jobs:
           hugo list all > "$RUNNER_TEMP/hugo-list.csv"
           hugo --minify --baseURL "https://urayasu-portal.com/" --printPathWarnings 2>&1 | tee "$RUNNER_TEMP/hugo-build.log"
 
+      # 多言語トップ /xx/ の転送ページ・sitemap・hreflang・内部リンクを全ページで確認する（工程6 Phase 6B-1B）
+      - name: Check language root pages and hreflang
+        run: node scripts/validate/langroot-audit.mjs --public public
+
       # 生成した全ページで、FAQPage の質問・回答が画面の FAQ と一致するかを確認する（工程6 Phase 6B-1A）
       - name: Check FAQPage matches visible FAQ
         run: node scripts/validate/faq-audit.mjs --public public --data data/faq_jsonld.yaml
