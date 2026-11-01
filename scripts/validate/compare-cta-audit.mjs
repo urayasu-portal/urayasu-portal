@@ -52,11 +52,13 @@ for (const l of LANGS) {
   if (/https?:\/\//.test(dm[1])) fail(`${rel}: HOTELS_DATA に URL がある（予約 URL を JS に複製しない）`);
   for (const n of nameOnly) if (data.some((h) => h.name === n)) fail(`${rel}: 名称のみ掲載のホテル「${n}」が HOTELS_DATA にある`);
 
-  const hm = html.match(/<div id="hcm-book-src"([^>]*)>([\s\S]*?)\n\s*<\/div>/);
-  if (!hm) { fail(`${rel}: #hcm-book-src が無い`); continue; }
+  // 置き場は「開始タグ → 行（空白だけを挟んで連続）→ 閉じタグ」の形。行の中身（ボタン）は div を含まない
+  const hm = html.match(/<div id="hcm-book-src"([^>]*)>((?:\s*<div class="tg-pick-actions hcm-book"[^>]*>[\s\S]*?<\/div>)*)\s*<\/div>/);
+  if (!hm) { fail(`${rel}: #hcm-book-src が無い（または行以外のものが入っている）`); continue; }
   if (!/\shidden(\s|$)/.test(hm[1] + ' ')) fail(`${rel}: #hcm-book-src に hidden が無い`);
   if (!/\sdata-pagefind-ignore(\s|=|$)/.test(hm[1] + ' ')) fail(`${rel}: #hcm-book-src に data-pagefind-ignore が無い`);
   const rows = [...hm[2].matchAll(/<div class="tg-pick-actions hcm-book" data-book-for="([^"]+)"([^>]*)>([\s\S]*?)<\/div>/g)];
+  if (rows.length !== (html.match(/class="tg-pick-actions hcm-book"/g) || []).length) fail(`${rel}: 置き場の外に予約ボタン行がある`);
   const seen = new Set();
   const asp = {};
   for (const [, slug, rest, inner] of rows) {
