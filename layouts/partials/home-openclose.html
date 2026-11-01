@@ -1,0 +1,37 @@
+{{- /*
+  トップの「最近の開店・閉店」（工程4B-1）。layouts/index.html（日本語）から呼ぶ。引数なし
+  - カテゴリ「開店・閉店」の新しい記事3件と、年表（/open-close/）への導線。年表そのものはトップで再現しない
+  - 状態のラベルは年表と同じ partials/shop-status.html の値を、年表（layouts/_default/openclose.html）と同じ表記で出す。
+    状態が取れない記事はラベルなし
+  - 1行の見た目は年表の oc-row を使い回す。店名ではなく記事のタイトルを出す
+  - 0件ならブロックごと出さない
+*/ -}}
+{{- $label := dict
+    "open" "オープン" "open_planned" "オープン予定" "close" "閉店" "close_planned" "閉店予定"
+    "temp_close" "休業" "reopen" "営業再開" "renewal" "リニューアル" "move" "移転"
+    "feature" "まとめ" "popup" "期間限定出店" }}
+{{- $labelUnconf := dict "open" "オープン（未確認）" "open_planned" "出店予定（未確認）" "close" "閉店（未確認）" "close_planned" "閉店予定（未確認）" }}
+{{- $posts := where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" (slice "開店・閉店") }}
+{{- with first 3 $posts }}
+<section class="home-block" data-home-section="openclose" aria-labelledby="home-openclose-title">
+  <div class="section-head">
+    <h2 id="home-openclose-title">最近の開店・閉店</h2>
+    <a class="section-more" href="/open-close/">開店・閉店 年表へ →</a>
+  </div>
+  <div class="oc-group">
+    {{- range . }}
+    {{- $s := partialCached "shop-status.html" . .RelPermalink }}
+    <a class="oc-row" href="{{ .RelPermalink }}">
+      {{- with $s.status }}
+        {{- $lb := index $label . }}
+        {{- if $s.unconfirmed }}{{ $lb = index $labelUnconf . | default (printf "%s（未確認）" $lb) }}{{ end }}
+      <span class="oc-badge oc-{{ replace . "_" "-" }}{{ if $s.unconfirmed }} oc-unconfirmed{{ end }}">{{ $lb }}</span>
+      {{- end }}
+      <span class="oc-body"><span class="oc-shop">{{ .Title }}</span></span>
+      <span class="oc-pub">{{ .Date.Format "2006/1/2" }}掲載</span>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+{{- /* 末尾の改行を出力しない */ -}}
