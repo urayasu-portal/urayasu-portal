@@ -1,0 +1,12 @@
+{{- /* 非日本語トップ /xx/ を Hugo の alias と同じ最小 HTML にする（工程6 Phase 6B-1B）。
+       転送先は /xx/travel-guide/。robots・hreflang・GA は出さない。 */ -}}
+{{- $d := "/travel-guide/" | absLangURL -}}
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang }}">
+	<head>
+		<title>{{ $d }}</title>
+		<link rel="canonical" href="{{ $d }}">
+		<meta charset="utf-8">
+		<meta http-equiv="refresh" content="0; url={{ $d }}">
+	</head>
+</html>

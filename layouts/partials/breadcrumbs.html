@@ -18,7 +18,7 @@
 {{- $cat := index .Params.categories 0 | default "" }}
 {{- $cls := index $catClass $cat | default "" }}
 <nav class="post-breadcrumb" aria-label="{{ i18n "breadcrumb" }}">
-  <a href="{{ "" | absLangURL }}">{{ i18n "nav_home" }}</a>
+  <a href="{{ if eq .Lang "ja" }}{{ "" | absLangURL }}{{ else }}{{ "travel-guide/" | absLangURL }}{{ end }}">{{ i18n "nav_home" }}</a>
   {{- if and (eq .Section "posts") $cat }}
   <i class="ti ti-chevron-right bc-sep" aria-hidden="true"></i>
   <a class="bc-cat {{ $cls }}" href="/categories/{{ $cat | urlize }}/">{{ $cat }}</a>

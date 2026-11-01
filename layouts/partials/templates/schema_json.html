@@ -39,7 +39,9 @@
 </script>
 {{- else if (or .IsPage .IsSection) }}
 {{/* BreadcrumbList */}}
-{{- if and .IsSection .Parent.IsHome }}
+{{- if and .IsSection .Parent.IsHome (ne .Lang "ja") (eq .Section "travel-guide") }}
+{{- /* 非日本語の /xx/travel-guide/ は言語のトップ。転送ページ /xx/ を Home として出さない */ -}}
+{{- else if and .IsSection .Parent.IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,7 +51,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": {{ site.Title }},
-      "item": {{ site.Home.Permalink | safeHTML }}
+      "item": {{ cond (eq .Lang "ja") site.Home.Permalink ("travel-guide/" | absLangURL) | safeHTML }}
     },
     {
       "@type": "ListItem",
