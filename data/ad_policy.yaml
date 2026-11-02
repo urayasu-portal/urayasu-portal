@@ -1,0 +1,23 @@
+# Google AdSense の広告コードを読み込まないページの一覧。layouts/partials/extend_head.html が読む（2026-11-03）。
+#
+# - CLAUDE.md の収益ルール「子育て・介護・急病・防災には広告を置かない」をテンプレート側で守るための一覧
+# - キーはページの RelPermalink（言語別に分かれている場合は各言語のパスをそれぞれ書く）。値は分類（メモ用）
+# - 該当する生活ガイドを新設したら、ここに追加する
+# - ここで外すのは AdSense の広告コード（adsbygoogle.js）だけ。アフィリエイトの扱いは別（これらのページにはもともと置かない）
+no_adsense:
+  # 子育て
+  /life-guide/urayasu-kosodate-shien-matome/: kosodate
+  /life-guide/urayasu-ninshin-shussan-shien/: kosodate
+  /life-guide/urayasu-nyuyoji-shien/: kosodate
+  /life-guide/urayasu-hoiku-youchien/: kosodate
+  /life-guide/urayasu-shougakusei-chuugakusei/: kosodate
+  /life-guide/urayasu-kodomo-iryohi/: kosodate
+  /life-guide/urayasu-jido-teate/: kosodate
+  /life-guide/urayasu-hitorioya-shogai/: kosodate
+  # 介護
+  /life-guide/urayasu-koreisha-kaigo/: kaigo
+  /life-guide/kaigo-first-steps/: kaigo
+  # 急病
+  /life-guide/holiday-night-medical/: kyubyo
+  # 防災
+  /life-guide/disaster-prevention/: bosai
