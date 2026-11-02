@@ -2,7 +2,7 @@
 #
 # - CLAUDE.md の収益ルール「子育て・介護・急病・防災には広告を置かない」をテンプレート側で守るための一覧
 # - キーはページの RelPermalink（言語別に分かれている場合は各言語のパスをそれぞれ書く）。値は分類（メモ用）
-# - 該当する生活ガイドを新設したら、ここに追加する
+# - 該当するガイド（生活ガイド・旅行ガイドとも）を新設したら、ここに追加する
 # - ここで外すのは AdSense の広告コード（adsbygoogle.js）だけ。アフィリエイトの扱いは別（これらのページにはもともと置かない）
 no_adsense:
   # 子育て
@@ -21,3 +21,9 @@ no_adsense:
   /life-guide/holiday-night-medical/: kyubyo
   # 防災
   /life-guide/disaster-prevention/: bosai
+  # 急病（旅行ガイド・5言語）
+  /travel-guide/kids-emergency/: kyubyo
+  /en/travel-guide/kids-emergency/: kyubyo
+  /zh/travel-guide/kids-emergency/: kyubyo
+  /zh-tw/travel-guide/kids-emergency/: kyubyo
+  /ko/travel-guide/kids-emergency/: kyubyo
