@@ -403,34 +403,40 @@
 {{/* 全記事 (新しい順) */}}
 {{- $allPosts := where site.RegularPages "Section" "posts" }}
 
+{{/* 並び（工程4B-1）: ファーストビュー（目的別の入口）→ 近日のイベント → 新着トピックス（大3＋6）→ 最近の開店・閉店
+     → 旅行・ホテル → 暮らし → 情報提供。各ブロックの data-home-section は GA4 の home_section_click
+     （partials/affiliate-tracking.html）がどのブロックから押されたかを記録するのに使う */}}
+
 {{/* ═══ 1. ファーストビュー ═══ */}}
-<div class="portal-hero">
+<div class="portal-hero" data-home-section="entry">
   <div class="portal-hero-text">
     <span class="portal-hero-label">街のトピックス</span>
     <h1 class="portal-hero-title">浦安の、いまを知る。</h1>
     <p class="portal-hero-subtitle">開店・閉店、イベント、グルメ、子育て、スポーツまで。浦安と周辺エリアの気になる話題を地域密着でお届けします。</p>
-    <nav class="portal-quick-links" aria-label="カテゴリから探す">
-      <a class="portal-quick-link" href="/categories/開店閉店/"><i class="ti ti-building-store" aria-hidden="true"></i>開店・閉店</a>
-      <a class="portal-quick-link" href="/categories/ニュース/"><i class="ti ti-news" aria-hidden="true"></i>ニュース</a>
-      <a class="portal-quick-link" href="/categories/イベント/"><i class="ti ti-calendar-event" aria-hidden="true"></i>イベント</a>
-      <a class="portal-quick-link" href="/categories/グルメカフェ/"><i class="ti ti-coffee" aria-hidden="true"></i>グルメ・カフェ</a>
-      <a class="portal-quick-link" href="/categories/子育て教育/"><i class="ti ti-school" aria-hidden="true"></i>子育て・教育</a>
+    <nav class="portal-quick-links portal-quick-links--purpose" aria-label="目的から探す">
+      <a class="portal-quick-link" href="/events/"><i class="ti ti-calendar-event" aria-hidden="true"></i>イベント</a>
+      <a class="portal-quick-link" href="/open-close/"><i class="ti ti-building-store" aria-hidden="true"></i>開店・閉店</a>
+      <a class="portal-quick-link" href="/travel-guide/hotels/"><i class="ti ti-bed" aria-hidden="true"></i>ホテル・旅行</a>
+      <a class="portal-quick-link" href="/life-guide/"><i class="ti ti-home-2" aria-hidden="true"></i>暮らし</a>
       <a class="portal-quick-link" href="/categories/スポーツ/"><i class="ti ti-ball-football" aria-hidden="true"></i>スポーツ</a>
+      <a class="portal-quick-link" href="/categories/ニュース/"><i class="ti ti-news" aria-hidden="true"></i>ニュース</a>
     </nav>
   </div>
-  <a class="hero-contact-link" href="/contact/" aria-label="地域情報の提供フォームへ">情報提供はこちら</a>
 </div>
 
-{{/* ═══ 2. 新着トピックス見出し ═══ */}}
-<div class="section-head">
+{{/* ═══ 2. 近日のイベント（0件ならブロックごと出さない） ═══ */}}
+{{- partial "home-events.html" . }}
+
+{{/* ═══ 3. 新着トピックス見出し ═══ */}}
+<div class="section-head" data-home-section="topics">
   <h2>新着トピックス</h2>
   <a class="section-more" href="/posts/">一覧を見る →</a>
 </div>
 
-{{/* ═══ 3. 注目記事 (ヒーローカード 3枚) ═══ */}}
+{{/* ═══ 4. 注目記事 (ヒーローカード 3枚) ═══ */}}
 {{- $heroPosts := first 3 $allPosts }}
 {{- if ge (len $heroPosts) 1 }}
-<div class="home-hero">
+<div class="home-hero" data-home-section="topics">
   {{/* メイン (左大) — ファーストビュー内のため eager loading */}}
   {{- with (index $heroPosts 0) }}
   {{- $cat := index .Params.categories 0 | default "" }}
@@ -465,57 +471,63 @@
 <div class="home-layout">
   <div class="home-main">
 
-    {{- $latestPosts := first 12 (after 3 $allPosts) }}
+    {{- $latestPosts := first 6 (after 3 $allPosts) }}
 
-    {{/* ─ 4. 最新記事 ─ */}}
-    <div class="article-grid">
+    {{/* ─ 5. 最新記事（工程4B-1 で12本→6本。ヒーローと合わせて新着9本） ─ */}}
+    <div class="article-grid" data-home-section="topics">
       {{- range $latestPosts }}
       {{- partial "article-card.html" . }}
       {{- end }}
     </div>
 
-    {{/* ─ 3つの入口から探す ─ */}}
-    <div class="section-head" style="margin-top:36px;">
-      <h2>3つの入口から探す</h2>
-    </div>
-    <div class="top-guide-cards top-guide-cards--3">
-      <a class="top-guide-card tg-topics" href="/posts/">
-        <span class="top-guide-card-icon" style="color:#1A5C8A"><i class="ti ti-news" aria-hidden="true"></i></span>
-        <div class="top-guide-card-body">
-          <div class="top-guide-card-title">街のトピックス</div>
-          <div class="top-guide-card-desc">毎日の地域ニュース・イベント・グルメ</div>
-        </div>
-      </a>
-      <a class="top-guide-card tg-life" href="/life-guide/">
-        <span class="top-guide-card-icon" style="color:#0D9A88"><i class="ti ti-home-2" aria-hidden="true"></i></span>
-        <div class="top-guide-card-body">
-          <div class="top-guide-card-title">生活ガイド</div>
-          <div class="top-guide-card-desc">医療・防災・ごみ・子育ての保存版</div>
-        </div>
-      </a>
-      <a class="top-guide-card tg-travel" href="/travel-guide/">
-        <span class="top-guide-card-icon" style="color:#E05535"><i class="ti ti-plane" aria-hidden="true"></i></span>
-        <div class="top-guide-card-body">
-          <div class="top-guide-card-title">旅行ガイド</div>
-          <div class="top-guide-card-desc">ホテル・アクセス・モデルコース</div>
-        </div>
-      </a>
-    </div>
+    {{/* ─ 6. 最近の開店・閉店（0件ならブロックごと出さない） ─ */}}
+    {{- partial "home-openclose.html" . }}
 
-    {{/* 生活・買い物マップへの導線（訪日客・来訪者向け） */}}
-    <a href="/travel-guide/urayasu-map/" class="hcm-list-banner" style="margin-top:16px;">
-      <span class="hcm-list-banner-left">
-        <i class="ti ti-map-pin-check" aria-hidden="true"></i>
-        <span>
-          <strong>浦安 生活・買い物マップ</strong>
-          <span class="hcm-list-banner-sub">コンビニ・薬局・ATM・コインランドリーを、ニーズ別・ホテル別に地図で探す</span>
+    {{/* ─ 7. 旅行・ホテル（入口だけ。予約ボタンは置かない） ─ */}}
+    <section class="home-block" data-home-section="travel" aria-labelledby="home-travel-title">
+      <div class="section-head">
+        <h2 id="home-travel-title">旅行・ホテル</h2>
+        <a class="section-more" href="/travel-guide/">旅行ガイドへ →</a>
+      </div>
+      <div class="home-links">
+        <a class="home-link" href="/travel-guide/"><i class="ti ti-plane" aria-hidden="true"></i><span class="home-link-body"><span class="home-link-title">旅行ガイド</span><span class="home-link-desc">観光と滞在の準備</span></span></a>
+        <a class="home-link" href="/travel-guide/hotels/"><i class="ti ti-bed" aria-hidden="true"></i><span class="home-link-body"><span class="home-link-title">ホテル選び</span><span class="home-link-desc">エリア・価格帯から探す</span></span></a>
+        <a class="home-link" href="/travel-guide/urayasu-maihama-access-guide/"><i class="ti ti-train" aria-hidden="true"></i><span class="home-link-body"><span class="home-link-title">アクセス</span><span class="home-link-desc">目的地別の行き方</span></span></a>
+        <a class="home-link" href="/travel-guide/luggage/"><i class="ti ti-luggage" aria-hidden="true"></i><span class="home-link-body"><span class="home-link-title">荷物預かり・配送</span><span class="home-link-desc">チェックイン前・帰る日に</span></span></a>
+      </div>
+      {{/* 生活・買い物マップへの導線（訪日客・来訪者向け） */}}
+      <a href="/travel-guide/urayasu-map/" class="hcm-list-banner" style="margin-top:12px;">
+        <span class="hcm-list-banner-left">
+          <i class="ti ti-map-pin-check" aria-hidden="true"></i>
+          <span>
+            <strong>浦安 生活・買い物マップ</strong>
+            <span class="hcm-list-banner-sub">コンビニ・薬局・ATM・コインランドリーを、ニーズ別・ホテル別に地図で探す</span>
+          </span>
         </span>
-      </span>
-      <span class="hcm-list-banner-cta">地図を開く →</span>
-    </a>
+        <span class="hcm-list-banner-cta">地図を開く →</span>
+      </a>
+    </section>
 
-    {{/* ─ 10. 情報提供CTA ─ */}}
-    <div class="top-info-cta">
+    {{/* ─ 8. 暮らし（急病・防災・ごみは data/lifeguides.yaml の urgent をそのまま使う） ─ */}}
+    <section class="home-block" data-home-section="life" aria-labelledby="home-life-title">
+      <div class="section-head">
+        <h2 id="home-life-title">暮らし</h2>
+        <a class="section-more" href="/life-guide/">生活ガイドへ →</a>
+      </div>
+      <a class="home-link home-link--wide" href="/life-guide/"><i class="ti ti-home-2" aria-hidden="true"></i><span class="home-link-body"><span class="home-link-title">生活ガイド</span><span class="home-link-desc">医療・防災・ごみ・子育ての保存版</span></span></a>
+      {{- with site.Data.lifeguides.urgent }}
+      <div class="lg-urgent-chips home-urgent">
+        {{- range . }}
+        <a class="lg-urgent-chip lg-tone-{{ .tone | default "danger" }}" href="{{ .url }}">
+          <i class="ti {{ .icon | default "ti-alert-circle" }}" aria-hidden="true"></i>{{ .short | default .text }}
+        </a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </section>
+
+    {{/* ─ 9. 情報提供CTA ─ */}}
+    <div class="top-info-cta" data-home-section="contact">
       <div class="top-info-cta-text">
         <p class="top-info-cta-title">地域の情報をお持ちですか？</p>
         <p class="top-info-cta-desc">開店・閉店、イベント、地域のニュースなど、情報提供をお待ちしています。</p>
@@ -556,21 +568,7 @@
       </ul>
     </div>
 
-    {{/* 最近の記事 */}}
-    <div class="sidebar-widget">
-      <div class="widget-title"><i class="ti ti-clock" aria-hidden="true"></i> 最近の記事</div>
-      <div class="recent-list">
-        {{- range first 5 $allPosts }}
-        <a class="recent-item" href="{{ .RelPermalink }}">
-          {{- partial "article-thumb.html" (dict "page" . "size" "thumb" "wrap" "recent-thumb") }}
-          <div class="recent-body">
-            <h4>{{ .Title }}</h4>
-            {{ partial "card-dates.html" (dict "page" .) }}
-          </div>
-        </a>
-        {{- end }}
-      </div>
-    </div>
+    {{/* 「最近の記事」はトップでは出さない（新着トピックスと同じ記事になるため。工程4B-1） */}}
 
     {{/* タグクラウド (3件以上のみ表示) */}}
     {{- if site.Taxonomies.tags }}
