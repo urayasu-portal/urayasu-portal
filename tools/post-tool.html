@@ -493,6 +493,10 @@ function buildAutoFilename(role, ext, seq) {
 window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('patDetails').open = true;
   document.getElementById('content').addEventListener('input', updateParsedInfo);
+  /* 「使う」のあとに入力欄を書き換えたら、使用中のトークンは無効にする（次の投稿で入力欄の値を使い直す） */
+  document.getElementById('patInput').addEventListener('input', () => {
+    if (patMem && document.getElementById('patInput').value.trim() !== patMem) { patMem = ''; syncPatUi(); }
+  });
 });
 
 /* ── PAT ──
@@ -501,6 +505,7 @@ window.addEventListener('DOMContentLoaded', () => {
    localStorage はオリジン単位で、同じオリジンの通常ページ（広告・解析スクリプトが動く）から読めたため。 */
 const LEGACY_PAT_KEY = 'urayasu_gh_pat';
 let patMem = '';
+const PAT_USE_MSG = '✅ トークンを使える状態にしました（保存はしません。このページを閉じると消えます）';
 try { localStorage.removeItem(LEGACY_PAT_KEY); } catch (e) { /* ストレージが使えない環境では何もしない */ }
 
 function usePat() {
@@ -510,30 +515,53 @@ function usePat() {
   patMem = v;
   document.getElementById('patOk').style.display = 'block';
   document.getElementById('patDetails').open = false;
-  showStatus('success','✅ トークンを使える状態にしました（保存はしません。このページを閉じると消えます）');
+  showStatus('success', PAT_USE_MSG);
   return true;
 }
 function clearPat() {
   patMem = '';
   document.getElementById('patInput').value = '';
-  document.getElementById('patOk').style.display = 'none';
-  document.getElementById('patDetails').open = true;
+  syncPatUi();
   showStatus('success','✅ トークンを消去しました');
 }
+/* 「使用中」表示と設定欄の開閉を、実際の状態（patMem）に合わせる */
+function syncPatUi() {
+  const ok = document.getElementById('patOk'), d = document.getElementById('patDetails');
+  if (!ok || !d) return;
+  ok.style.display = patMem ? 'block' : 'none';
+  if (!patMem) {
+    d.open = true;
+    /* 「使える状態にしました」の案内が残っていれば消す（実際にはもう使えないため） */
+    const s = document.getElementById('status');
+    if (s && s.textContent === PAT_USE_MSG) { s.className = ''; s.innerHTML = ''; }
+  }
+}
+/* 401（トークンが無効）のとき: 使用中のトークンと入力欄を消し、入れ直しを促す */
+const AUTH_ERROR_MSG = '❌ 認証エラー：トークンが無効か期限切れです。入力し直してください（入力されていたトークンは消去しました）';
+function invalidatePat() {
+  patMem = '';
+  const input = document.getElementById('patInput');
+  if (input) input.value = '';
+  syncPatUi();
+}
+function authError(status, message) { const e = new Error(`${status}: ${message || '不明'}`); e.status = status; return e; }
 /* 投稿・画像アップロード時に使う。「使う」を押さずに入力欄に入れたままでも使えるようにする */
 function getPat() {
   if (!patMem) {
     const v = document.getElementById('patInput').value.trim();
-    if (v) { patMem = v; document.getElementById('patOk').style.display = 'block'; }
+    if (v) { patMem = v; syncPatUi(); }
   }
   return patMem;
 }
-/* ページを離れたら（bfcache に入る場合も）メモリから消す */
+/* ページを離れたら（bfcache に入る場合も）メモリから消し、表示も合わせる。
+   bfcache から戻ったとき（pageshow）にも表示を実際の状態に合わせる */
 window.addEventListener('pagehide', () => {
   patMem = '';
   const input = document.getElementById('patInput');
   if (input) input.value = '';
+  syncPatUi();
 });
+window.addEventListener('pageshow', syncPatUi);
 
 /* ── フロントマターパース（post-rules.js の解析器を使用。BOM・CRLF・インライン配列に対応） ── */
 function rulesReady() { return typeof window.PostRules === 'object' && window.PostRules; }
@@ -816,7 +844,8 @@ async function uploadInline(id) {
     ok.textContent = `✅ ${path}`; ok.style.display = 'block';
     btn.textContent = '✅ 挿入済み';
   } catch(e) {
-    showStatus('error', `❌ ${escHtml(e.message)}`);
+    if (e.status === 401) { invalidatePat(); showStatus('error', AUTH_ERROR_MSG); }
+    else showStatus('error', `❌ ${escHtml(e.message)}`);
     btn.disabled = false; btn.textContent = '⬆️ アップロードして本文に挿入';
   }
 }
@@ -830,13 +859,14 @@ async function uploadImage(pat, filename, b64) {
   const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
   const hdrs   = ghHeaders(pat);
   let sha; const c = await fetch(apiUrl,{headers:hdrs}); if(c.ok) sha=(await c.json()).sha;
+  if (c.status === 401) throw authError(401, 'Bad credentials');
   if (sha && !confirm(`同名の画像ファイルが既に存在します（${filename}）。上書きしますか？`)) {
     throw new Error('画像アップロードをキャンセルしました');
   }
   const body = {message:`feat: 画像を追加 (${filename})`,content:b64,branch:BRANCH};
   if(sha) body.sha=sha;
   const r = await fetch(apiUrl,{method:'PUT',headers:hdrs,body:JSON.stringify(body)});
-  if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(`${r.status}: ${e.message||'不明'}`);}
+  if(!r.ok){const e=await r.json().catch(()=>({}));if(r.status===401) throw authError(401, e.message);throw new Error(`${r.status}: ${e.message||'不明'}`);}
   return `/images/posts/${filename}`;
 }
 
@@ -948,6 +978,8 @@ async function submitArticle() {
 
     let sha, existing = null;
     const c = await fetch(apiUrl,{headers:hdrs, cache:'no-store'});
+    /* トークンが無効なら、新規扱いで先へ進めずにここで止める */
+    if (c.status === 401) { invalidatePat(); showStatus('error', AUTH_ERROR_MSG); return; }
     if (c.ok) { const j = await c.json(); sha = j.sha; try { existing = { text: b64ToUtf8(j.content || '') }; } catch (e) { existing = { text: '' }; } }
     const isUpdate = !!sha;
 
@@ -1024,11 +1056,13 @@ async function submitArticle() {
       document.getElementById('inlineImgList').innerHTML = '';
     } else {
       const e = await res.json().catch(()=>({}));
-      const msgs = {401:'❌ 認証エラー：トークンを確認してください',403:'❌ 権限エラー：Contents: Read and write 権限を確認してください',404:'❌ 404：リポジトリ名・権限を確認してください'};
+      if (res.status === 401) invalidatePat();
+      const msgs = {401:AUTH_ERROR_MSG,403:'❌ 権限エラー：Contents: Read and write 権限を確認してください',404:'❌ 404：リポジトリ名・権限を確認してください'};
       showStatus('error', msgs[res.status] || `❌ エラー（${res.status}）：${escHtml(e.message||'')}`);
     }
   } catch(e) {
-    showStatus('error',`❌ 通信エラー：${escHtml(e.message)}`);
+    if (e.status === 401) { invalidatePat(); showStatus('error', AUTH_ERROR_MSG); }
+    else showStatus('error',`❌ 通信エラー：${escHtml(e.message)}`);
   } finally {
     btn.disabled = false;
   }
