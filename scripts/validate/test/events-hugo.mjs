@@ -14,6 +14,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import vm from 'node:vm';
 
 const ROOT = process.cwd();
 const HUGO = process.env.HUGO || 'hugo';
@@ -21,12 +22,14 @@ const DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'events-'));
 const w = (rel, text) => { const p = path.join(DIR, rel); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, text); };
 
 w('hugo.toml', 'baseURL = "https://example.test/"\ndefaultContentLanguage = "ja"\ndisableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "home", "section"]\n');
-const PARTIALS = ['date-ymd.html', 'date-jst.html', 'event-dates.html', 'event-dates-text.html', 'event-calendar-eligible.html', 'event-calendar-status.html', 'event-jsonld-eligible.html', 'event-jsonld.html'];
+const PARTIALS = ['date-ymd.html', 'date-jst.html', 'event-dates.html', 'event-dates-text.html', 'event-calendar-eligible.html', 'event-calendar-status.html', 'event-jsonld-eligible.html', 'event-jsonld.html', 'ev-row.html'];
 for (const f of PARTIALS) {
   w('layouts/partials/' + f, fs.readFileSync(path.join(ROOT, 'layouts/partials', f), 'utf8'));
 }
 w('layouts/partials/cover-image.html', '{{- return "" -}}\n'); // 画像は扱わない
 w('layouts/_default/events.html', fs.readFileSync(path.join(ROOT, 'layouts/_default/events.html'), 'utf8'));
+const FILTER_JS = fs.readFileSync(path.join(ROOT, 'assets/js/events-filter.js'), 'utf8');
+w('assets/js/events-filter.js', FILTER_JS);
 w('layouts/_default/baseof.html', '<html><body>{{ block "main" . }}{{ end }}</body></html>\n');
 w('layouts/_default/single.html', '{{- define "main" }}<div id="jsonld">{{ partial "event-jsonld.html" . }}</div>{{ end }}\n');
 w('content/events.md', '---\ntitle: "イベントカレンダー"\nlayout: "events"\n---\n本文\n');
@@ -62,6 +65,8 @@ c('duplicate-schedule', 'eventDate: "2099-11-01"\neventDates:\n  - "2099-11-01"\
 c('out-of-city-no-location', 'eventDate: "2099-11-02"', { cal: 'upcoming', ld: [] }, 'イベント', '【行徳】市外のイベント');
 c('empty-location', 'eventDate: "2099-11-03"\neventLocation: ""', { cal: 'upcoming', ld: [] });
 c('shop-open', 'eventDate: "2099-11-04"\n' + LOC, { cal: 'none', ld: [] }, '開店・閉店');
+// 連続する単日だけの日程は1つの期間にまとまる（data-spans も groups と同じ1期間）
+c('consecutive-days', 'eventDates:\n  - "2099-12-05"\n  - "2099-12-06"', { cal: 'upcoming', date: '12/5', ld: [] });
 
 C.forEach((k) => {
   w('content/posts/' + k.slug + '.md', '---\ntitle: "' + k.title + '"\ndate: 2020-01-01T10:00:00+09:00\nslug: "' + k.slug + '"\ncategories:\n  - "' + k.cat + '"\n' + k.fm + '\nhideEventBox: true\n---\n本文\n');
@@ -74,12 +79,12 @@ console.log('  ok   ' + C.length + ' 本の記事（不正な値を含む）で�
 // ---- /events/ の解析 ----
 const ev = fs.readFileSync(path.join(DIR, 'public/events/index.html'), 'utf8');
 const strip = (s) => s.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-const section = {}, rowText = {}, rowHtml = {}, order = [];
+const section = {}, rowText = {}, rowHtml = {}, rowAttr = {}, order = [];
 let cur = '';
-for (const m of ev.matchAll(/<h2 class="ev-month">([^<]*)<\/h2>|<a class="ev-row( is-past)?" href="\/posts\/([^/]+)\/">([\s\S]*?)<\/a>/g)) {
+for (const m of ev.matchAll(/<h2 class="ev-month">([^<]*)<\/h2>|<a class="ev-row( is-past)?" href="\/posts\/([^/]+)\/"([^>]*)>([\s\S]*?)<\/a>/g)) {
   if (m[1] !== undefined) { cur = m[1] === '開催中' ? 'ongoing' : 'upcoming'; continue; }
   const slug = m[3];
-  section[slug] = m[2] ? 'past' : cur; rowText[slug] = strip(m[4]); rowHtml[slug] = m[4]; order.push(slug);
+  section[slug] = m[2] ? 'past' : cur; rowText[slug] = strip(m[5]); rowHtml[slug] = m[5]; rowAttr[slug] = m[4]; order.push(slug);
 }
 const itemList = (/"@type":"ItemList"[\s\S]*?<\/script>/.exec(ev) || [''])[0];
 
@@ -132,6 +137,78 @@ check('開催予定の並び: 次回の開催日順', (e) => {
   if (JSON.stringify(up.slice(0, first.length)) !== JSON.stringify(first)) e.push('期待 ' + first.join(', ') + ' … 実際 ' + up.slice(0, first.length).join(', '));
 });
 
+// ---- 開催日の絞り込み（工程5B-1） ----
+// 判定の関数（assets/js/events-filter.js）をページなしで読み込む。document が無いので画面の処理は動かない
+const F = (() => { const ctx = {}; vm.createContext(ctx); vm.runInContext(FILTER_JS, ctx); return ctx.EvFilter; })();
+const attrOf = (slug, name) => (new RegExp(' ' + name + '="([^"]*)"').exec(rowAttr[slug] || '') || [])[1];
+// data-spans は event-dates の groups と同じ（日付順・連続する単日は1期間）。終わった日程も含める（判定は JS で行う）
+const SPANS = {
+  'single-future': '2099-06-01/2099-06-01', 'period-ongoing': '2020-01-01/2099-12-31',
+  'dates-only': '2099-03-01/2099-03-01 2099-03-08/2099-03-08', 'multi-session': '2099-04-01/2099-04-03 2099-05-01/2099-05-03',
+  'rest-with-current-period': '2020-01-01/2099-12-31 2020-05-01/2020-05-01 2099-06-01/2099-06-01',
+  'ongoing-before': '2099-08-01/2099-08-01', 'ongoing-after': '2020-03-01/2020-03-01', 'consecutive-days': '2099-12-05/2099-12-06',
+};
+check('data-spans: 掲載中の全行にあり、書式どおりで解釈できない値が0', (e) => {
+  for (const s of order.filter((x) => section[x] !== 'past')) {
+    const v = attrOf(s, 'data-spans');
+    if (v === undefined) { e.push(s + ': data-spans が無い'); continue; }
+    if (F.parseSpans(v).length !== v.split(' ').length) e.push(s + ': 解釈できない値がある: ' + v);
+    const open = /data-open="1"/.test(rowAttr[s]);
+    if (open !== !!(C.find((k) => k.slug === s) || { expect: {} }).expect.openEnd) e.push(s + ': data-open が終了日未定と合わない');
+  }
+  for (const s of order.filter((x) => section[x] === 'past')) if (/data-spans/.test(rowAttr[s])) e.push(s + ': 終了した行に data-spans がある');
+});
+check('data-spans: 日程が event-dates の groups と一致', (e) => {
+  for (const [s, want] of Object.entries(SPANS)) if (attrOf(s, 'data-spans') !== want) e.push(s + ': 期待 ' + want + ' 実際 ' + attrOf(s, 'data-spans'));
+});
+check('絞り込みのボタン: JS 無効時は出さない（hidden）・4つの順番・初期は「すべて」', (e) => {
+  const box = (/<div class="ev-filter"([^>]*)>([\s\S]*?)<\/div>/.exec(ev) || []);
+  if (!box[0]) { e.push('.ev-filter が無い'); return; }
+  if (!/ hidden/.test(box[1])) e.push('.ev-filter に hidden が無い（JS が動かないときもボタンが見える）');
+  const whens = [...box[2].matchAll(/data-when="([^"]+)" aria-pressed="([^"]+)"/g)].map((m) => m[1] + ':' + m[2]);
+  if (JSON.stringify(whens) !== JSON.stringify(['all:true', 'today:false', 'weekend:false', 'month:false'])) e.push('ボタン: ' + JSON.stringify(whens));
+  if (!/<p class="ev-filter-status"[^>]* hidden>/.test(ev)) e.push('件数の表示が hidden でない');
+  if (!/<p class="ev-empty ev-filter-empty" hidden>/.test(ev)) e.push('0件の表示が hidden でない');
+  if (!/<script src="\/js\/events-filter\.min\.[0-9a-f]+\.js" integrity="sha256-[^"]+" defer><\/script>/.test(ev)) e.push('events-filter.js の読み込みが無い');
+  const list = ev.indexOf('<div class="ev-list">'), past = ev.indexOf('<details class="ev-past">');
+  if (list < 0 || past < list) e.push('.ev-list が無いか、終了したイベントより後にある');
+});
+check('日本時間の今日: UTC 14:59／15:01 の境目と年の境目', (e) => {
+  const T2 = [['2026-10-04T14:59:59Z', '2026-10-04'], ['2026-10-04T15:00:01Z', '2026-10-05'], ['2026-10-05T10:30:00-04:00', '2026-10-05'], ['2026-12-31T15:00:00Z', '2027-01-01']];
+  for (const [at, want] of T2) if (F.jstToday(new Date(at)) !== want) e.push(at + ': 期待 ' + want + ' 実際 ' + F.jstToday(new Date(at)));
+  // 閲覧者の端末のタイムゾーンが違っても同じ結果になる（別プロセスで TZ を変えて確かめる）
+  const prog = 'const vm=require("vm");const c={};vm.createContext(c);vm.runInContext(require("fs").readFileSync(process.argv[1],"utf8"),c);'
+    + 'console.log(' + JSON.stringify(T2.map((t) => t[0])) + '.map(a=>c.EvFilter.jstToday(new Date(a))).join(","))';
+  for (const tz of ['UTC', 'Asia/Tokyo', 'America/Los_Angeles', 'Pacific/Kiritimati']) {
+    const rr = spawnSync(process.execPath, ['-e', prog, path.join(ROOT, 'assets/js/events-filter.js')], { encoding: 'utf8', env: { ...process.env, TZ: tz } });
+    if ((rr.stdout || '').trim() !== T2.map((t) => t[1]).join(',')) e.push('TZ=' + tz + ': ' + (rr.stdout || rr.stderr).trim());
+  }
+});
+check('判定する期間: 今日・今週末（平日／土曜／日曜／月またぎ）・今月（月末・うるう年）・すべて', (e) => {
+  const R = [
+    ['today', '2026-11-04', ['2026-11-04', '2026-11-04']], ['weekend', '2026-11-04', ['2026-11-07', '2026-11-08']],
+    ['weekend', '2026-11-07', ['2026-11-07', '2026-11-08']], ['weekend', '2026-11-08', ['2026-11-08', '2026-11-08']],
+    ['weekend', '2026-10-30', ['2026-10-31', '2026-11-01']], ['month', '2026-11-04', ['2026-11-04', '2026-11-30']],
+    ['month', '2027-02-10', ['2027-02-10', '2027-02-28']], ['month', '2028-02-10', ['2028-02-10', '2028-02-29']],
+    ['month', '2026-12-31', ['2026-12-31', '2026-12-31']], ['all', '2026-11-04', null],
+  ];
+  for (const [w, t, want] of R) { const got = F.range(w, t); if (JSON.stringify(got) !== JSON.stringify(want)) e.push(w + ' ' + t + ': 期待 ' + JSON.stringify(want) + ' 実際 ' + JSON.stringify(got)); }
+  if (JSON.stringify(F.WHENS) !== JSON.stringify(['all', 'today', 'weekend', 'month'])) e.push('?when= に使える値: ' + JSON.stringify(F.WHENS));
+});
+check('行の判定: このページの行を 2099-03-04（水）・03-05 に絞り込むと期待どおり', (e) => {
+  const shown = (when, today) => order.filter((s) => section[s] !== 'past'
+    && F.matches(F.parseSpans(attrOf(s, 'data-spans')), /data-open="1"/.test(rowAttr[s]), F.range(when, today))).sort();
+  const want = {
+    'weekend 2099-03-04': ['dates-only', 'ongoing-after', 'period-ongoing', 'rest-four-plus', 'rest-with-current-period'],
+    'month 2099-03-04': ['dates-only', 'ongoing-after', 'period-ongoing', 'rest-four-plus', 'rest-with-current-period'],
+    'today 2099-03-05': ['ongoing-after', 'period-ongoing', 'rest-four-plus', 'rest-with-current-period'],
+    'today 2099-03-04': ['ongoing-after', 'period-ongoing', 'rest-with-current-period'],
+  };
+  for (const [k, v] of Object.entries(want)) { const [w, t] = k.split(' '); const got = shown(w, t); if (JSON.stringify(got) !== JSON.stringify(v)) e.push(k + ': 期待 ' + v.join(', ') + ' 実際 ' + got.join(', ')); }
+  if (shown('all', '2099-03-04').length !== order.filter((s) => section[s] !== 'past').length) e.push('「すべて」で全行にならない');
+  if (F.parseSpans('2099-01-01/2099-01-02 x 2099-03-02/2099-03-01 2099-1-1/2099-1-2').length !== 1) e.push('不正な値を読んでいる');
+});
+
 // ---- 日本時間の日付の境目（判定する時刻を固定した別のサイト） ----
 const DIR2 = fs.mkdtempSync(path.join(os.tmpdir(), 'events-jst-'));
 const w2 = (rel, text) => { const p = path.join(DIR2, rel); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, text); };
@@ -173,7 +250,7 @@ for (const [at, label, jst, s1004, s1005, s1006, s0101] of T) {
       if (got !== jst) e.push('TZ=' + tz + ' 日本時間の日付: 期待 ' + jst + ' 実際 ' + got);
       const html = fs.readFileSync(path.join(out, 'events/index.html'), 'utf8');
       const sec = {}; let cur2 = '';
-      for (const m of html.matchAll(/<h2 class="ev-month">([^<]*)<\/h2>|<a class="ev-row( is-past)?" href="\/posts\/([^/]+)\/">/g)) {
+      for (const m of html.matchAll(/<h2 class="ev-month">([^<]*)<\/h2>|<a class="ev-row( is-past)?" href="\/posts\/([^/]+)\/"[^>]*>/g)) {
         if (m[1] !== undefined) { cur2 = m[1] === '開催中' ? O : U; continue; }
         sec[m[3]] = m[2] ? P : cur2;
       }
@@ -181,7 +258,7 @@ for (const [at, label, jst, s1004, s1005, s1006, s0101] of T) {
       for (const [slug, st] of Object.entries(want)) if (sec[slug] !== st) e.push('TZ=' + tz + ' ' + slug + ': 期待 ' + st + ' 実際 ' + sec[slug]);
       if (at === '2026-10-05T06:00:00Z') {
         // 5日程（9/1・9/15・10/10・10/20・11/3）を 10/5 に見ると、今後の日程は 10/10・10/20・11/3
-        const row = (/<a class="ev-row" href="\/posts\/b-five\/">([\s\S]*?)<\/a>/.exec(html) || [])[1] || '';
+        const row = (/<a class="ev-row" href="\/posts\/b-five\/"[^>]*>([\s\S]*?)<\/a>/.exec(html) || [])[1] || '';
         const sched = (/今後の日程：([\s\S]*?)<\/span>/.exec(row) || [])[1] || '';
         const dts = [...sched.matchAll(/datetime="([^"]+)"/g)].map((x) => x[1]);
         if (JSON.stringify(dts) !== JSON.stringify(['2026-10-10', '2026-10-20', '2026-11-03'])) e.push('TZ=' + tz + ' b-five の今後の日程: ' + JSON.stringify(dts));

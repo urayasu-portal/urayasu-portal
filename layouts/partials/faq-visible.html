@@ -4,12 +4,12 @@
   faq-jsonld.html が出す FAQPage JSON-LD と同じ内容をページ上でも読めるようにするため
   （構造化データの内容はページ上で可視である必要がある）。
   - 本文に既に FAQ 見出し（## よくある質問 / ## FAQ / id="faq" 等）がある記事は二重表示を避けて出さない
-  - a は Markdown リンク等を含みうるので markdownify で描画（JSON-LD 側の出力は変えない）
+    （判定は faq-items.html。JSON-LD と同じ判定を使う。mode "block" のときだけ表示）
+  - a は Markdown リンク等を含みうるので markdownify で描画
   - JS 不使用の静的リスト（JS 無効でも全文が読める）
 */ -}}
 {{- with .Params.faq }}
-{{- $hasBodyFAQ := findRE `(?is)<h2[^>]*(id="faq"|>\s*(FAQ|よくある質問|常见问题|常見問題|자주 묻는 질문))` $.Content 1 }}
-{{- if not $hasBodyFAQ }}
+{{- if eq (partial "faq-items.html" $).mode "block" }}
 {{- $isEN := eq $.Lang "en" }}
 {{- $isZH := eq $.Lang "zh" }}
 {{- $isKO := eq $.Lang "ko" }}

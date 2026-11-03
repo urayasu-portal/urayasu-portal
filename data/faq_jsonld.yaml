@@ -1,0 +1,94 @@
+# 本文に独自の FAQ 節があるページ（frontmatter faq: を可視ブロックで出さないページ）で、FAQPage JSON-LD に出してよい質問の一覧。
+# layouts/partials/faq-items.html が読む（工程6 Phase 6B-1A、2026-10-16）。
+#
+# - キーはページの RelPermalink。値は "all"（frontmatter faq: の全質問）か、質問文（frontmatter の q と完全一致）のリスト
+# - 載せてよいのは、frontmatter の質問・回答が本文の FAQ 節の質問・回答と全文一致する（Markdown 記法・空白の差だけ）ものだけ
+# - ここに無いページ・質問は JSON-LD に出さない（画面と食い違う質問を構造化データに出さないため）。本文・frontmatter は消さない
+# - 本文の FAQ と frontmatter を揃えたら、ここに追加する。一致しているかは scripts/validate/faq-audit.mjs（PR Check）が全文照合する
+body_faq_verified:
+  /en/travel-guide/maihama-halloween/:  # 1/6 問
+    - "Can men use the changing spaces?"
+  /en/travel-guide/maihama-station-bus-stops/: all
+  /en/travel-guide/shin-urayasu-station-bus-stops/: all
+  /en/travel-guide/station-bus-stops/:  # 2/3 問
+    - "Which station in Urayasu has the most confusing bus stops?"
+    - "Which stop do I use to travel between stations by bus?"
+  /en/travel-guide/urayasu-maihama-shinurayasu-tourism/:  # 2/6 問
+    - "How do I get from Maihama Station to Urayasu Station?"
+    - "Can I buy Disney goods without park admission?"
+  /en/travel-guide/urayasu-station-bus-stops/: all
+  /ko/travel-guide/maihama-station-bus-stops/: all
+  /ko/travel-guide/shin-urayasu-station-bus-stops/: all
+  /ko/travel-guide/station-bus-stops/:  # 2/3 問
+    - "우라야스시의 역 중 버스 승차장을 찾기 어려운 곳은 어디인가요?"
+    - "역에서 역으로 버스로 이동할 때는 어느 승차장에서 타나요?"
+  /ko/travel-guide/urayasu-maihama-shinurayasu-tourism/:  # 2/6 問
+    - "입장하지 않고 디즈니 상품을 살 수 있나요?"
+    - "식사·기념품 가이드가 있나요?"
+  /ko/travel-guide/urayasu-station-bus-stops/: all
+  /life-guide/bus-noriba/: all
+  /life-guide/city-hall-procedures/:  # 3/4 問
+    - "行政サービスセンターで転入届はできますか？"
+    - "住民票は土日でも取れますか？"
+    - "本人以外でも証明書を取れますか？"
+  /life-guide/disaster-prevention/:  # 3/4 問
+    - "避難所と避難場所は違いますか？"
+    - "マンションに住んでいる場合も避難所へ行く必要がありますか？"
+    - "ペットと一緒に避難できますか？"
+  /life-guide/holiday-night-medical/: all
+  /life-guide/indoor-playgrounds/:  # 2/3 問
+    - "浦安市の児童センターは何歳まで利用できますか？"
+    - "つどいの広場と児童センターは何が違いますか？"
+  /life-guide/kaigo-first-steps/:  # 1/3 問
+    - "相談やサービスにお金はかかりますか？"
+  /life-guide/libraries-public-facilities/:  # 3/4 問
+    - "浦安市で自習できる図書館はどこですか？"
+    - "公民館の会議室は誰でも借りられますか？"
+    - "公共施設の予約はどこからできますか？"
+  /life-guide/maihama-station-bus-noriba/: all
+  /life-guide/parks-playgrounds/:  # 2/4 問
+    - "雨の日でも遊べる屋内施設はありますか？"
+    - "公園でバーベキューはできますか？"
+  /life-guide/shinurayasu-station-bus-noriba/: all
+  /life-guide/single-couple-life/:  # 1/3 問
+    - "車がなくても浦安で暮らせますか？"
+  /life-guide/sports-teams/: all
+  /life-guide/station-life/: all
+  /life-guide/trash-recycling/: all
+  /life-guide/urayasu-bus-kotsu/: all
+  /life-guide/urayasu-hoken-nenkin-zei/: all
+  /life-guide/urayasu-koreisha-kaigo/: all
+  /life-guide/urayasu-pet/: all
+  /life-guide/urayasu-station-bus-noriba/: all
+  /life-guide/urayasu-sumai-hikkoshi/:  # 3/4 問
+    - "浦安市の家賃は高いですか？"
+    - "賃貸の初期費用はどのくらいかかりますか？"
+    - "浦安市に引っ越したら、まず何の手続きが必要ですか？"
+  /travel-guide/maihama-halloween/:  # 1/6 問
+    - "パークチケットがなくてもハロウィーンを楽しめますか？"
+  /travel-guide/urayasu-maihama-shinurayasu-tourism/:  # 4/6 問
+    - "ディズニーパーク以外に半日過ごせる場所はありますか？"
+    - "舞浜駅から浦安駅への移動方法は？"
+    - "パーク入場なしでディズニーグッズを購入できますか？"
+    - "子連れで行きやすいエリアはどこですか？"
+  /travel-guide/urayasu-taxi-airport-flat-rate-guide/:  # 5/8 問
+    - "浦安駅・新浦安駅・舞浜駅にタクシー乗り場はありますか？"
+    - "浦安市内から羽田空港へ定額タクシーで行けますか？"
+    - "浦安市内から成田空港へ定額タクシーで行けますか？"
+    - "羽田空港・成田空港から浦安市内へ戻る場合も定額になりますか？"
+    - "舞浜駅で閉園後にタクシーはすぐ乗れますか？"
+  /zh-tw/travel-guide/maihama-halloween/:  # 2/6 問
+    - "不能全身變裝的10月1日〜15日，可以穿什麼入園？"
+    - "男性也能使用換裝空間嗎？"
+  /zh-tw/travel-guide/maihama-station-bus-stops/: all
+  /zh-tw/travel-guide/shin-urayasu-station-bus-stops/: all
+  /zh-tw/travel-guide/station-bus-stops/:  # 2/3 問
+    - "浦安市的車站中，哪一站的公車乘車處最難找？"
+    - "搭公車從一個車站到另一個車站，要在哪個乘車處上車？"
+  /zh-tw/travel-guide/urayasu-station-bus-stops/: all
+  /zh/travel-guide/maihama-station-bus-stops/: all
+  /zh/travel-guide/shin-urayasu-station-bus-stops/: all
+  /zh/travel-guide/station-bus-stops/:  # 2/3 問
+    - "浦安市的车站中，哪个站的公交乘车处比较难找？"
+    - "乘公交巴士在车站之间移动时，从哪个乘车处上车？"
+  /zh/travel-guide/urayasu-station-bus-stops/: all

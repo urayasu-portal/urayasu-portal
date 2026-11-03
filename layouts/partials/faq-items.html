@@ -1,0 +1,32 @@
+{{- /*
+  frontmatter faq:（{ q, a } のリスト）のうち「画面に表示される質問」を返す共通判定（工程6 Phase 6B-1A）。
+  可視ブロック（faq-visible.html）と FAQPage JSON-LD（faq-jsonld.html）の両方がこれを使い、判定を1か所にそろえる。
+
+  戻り値: dict "mode" "items"
+    mode "none"  … faq: が無い。items は空
+    mode "block" … 本文に FAQ 見出しが無い。faq-visible.html が faq: を全件表示するので items は faq: 全件
+    mode "body"  … 本文に独自の FAQ 節がある（faq-visible.html は二重表示を避けて出さない）。
+                   画面の FAQ は本文側なので、frontmatter と本文の一致を確認済みの質問だけを返す。
+                   確認済みの一覧は data/faq_jsonld.yaml の body_faq_verified（ページの RelPermalink → "all" か質問文のリスト）。
+                   一覧に無いページ・質問は返さない（確認できない質問を構造化データに出さない）。
+                   一覧が本文と食い違っていないかは scripts/validate/faq-audit.mjs が生成 HTML で全文照合する。
+  本文 FAQ 見出しの判定（正規表現）は PR #38 の faq-visible.html から移したもので、条件は変えていない。
+*/ -}}
+{{- $mode := "none" }}
+{{- $items := slice }}
+{{- with .Params.faq }}
+  {{- $hasBodyFAQ := findRE `(?is)<h2[^>]*(id="faq"|>\s*(FAQ|よくある質問|常见问题|常見問題|자주 묻는 질문))` $.Content 1 }}
+  {{- if not $hasBodyFAQ }}
+    {{- $mode = "block" }}
+    {{- $items = . }}
+  {{- else }}
+    {{- $mode = "body" }}
+    {{- $ok := index (hugo.Data.faq_jsonld.body_faq_verified | default dict) $.RelPermalink }}
+    {{- if eq $ok "all" }}
+      {{- $items = . }}
+    {{- else if reflect.IsSlice $ok }}
+      {{- range . }}{{ if in $ok .q }}{{ $items = $items | append . }}{{ end }}{{ end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- return dict "mode" $mode "items" $items }}

@@ -2,8 +2,13 @@
   FAQ 構造化データ (schema.org/FAQPage)
   フロントマターに faq: リストがある記事に JSON-LD を出力。
   各項目: { q: "質問文", a: "回答文" }
+  出すのは画面に表示される質問だけ（判定は faq-items.html。工程6 Phase 6B-1A）。
+  回答は可視ブロック（faq-visible.html）と同じく markdownify してからテキスト化する
+  （Markdown 記法を JSON-LD に残さず、画面の文言と一致させる）。
+  データを組み立ててから jsonify で1回だけ JSON にする。jsonify は < > & を Unicode エスケープするので、
+  safeJS で script 内に置いても </script> で閉じられない。
 */ -}}
-{{- with .Params.faq }}
+{{- with (partial "faq-items.html" .).items }}
   {{- $items := slice }}
   {{- range . }}
     {{- $items = $items | append (dict
@@ -11,7 +16,7 @@
         "name" .q
         "acceptedAnswer" (dict
             "@type" "Answer"
-            "text" .a)) }}
+            "text" (.a | markdownify | plainify | htmlUnescape | strings.TrimSpace))) }}
   {{- end }}
   {{- $schema := dict
       "@context" "https://schema.org"
