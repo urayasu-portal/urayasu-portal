@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 投稿ツールは検索結果に出さない。外部スクリプトは読まない（読み込みは同一オリジンの post-rules.js とインラインだけ）。
+       通信は GitHub API と同一オリジン（公開ページの重複確認 HEAD）だけ。画像のプレビューは data: と本番の画像。
+       インラインの onclick を使っているため script-src に 'unsafe-inline' が要る。
+       meta の CSP では frame-ancestors・report-uri・sandbox は効かない（GitHub Pages ではヘッダを付けられない）。 -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data: blob: https://urayasu-portal.com; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="robots" content="noindex, nofollow">
   <title>浦安ぽーたる 記事投稿ツール</title>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -102,15 +108,22 @@
     <details id="patDetails">
       <summary>⚙️ GitHub トークン設定</summary>
       <div class="pat-body">
-        <label class="card-title" style="margin-bottom:8px;">Personal Access Token</label>
-        <div class="row">
-          <input type="password" id="patInput" placeholder="github_pat_xxxx または ghp_xxxx">
-          <button class="btn btn-blue" onclick="savePat()">保存</button>
-        </div>
-        <p class="hint">GitHub → Settings → Developer settings → Personal access tokens (Fine-grained) で発行。<br>権限：<strong>Contents: Read and write</strong> のみ必要。</p>
-        <div class="pat-ok" id="patOk">✅ トークンが保存されています</div>
+        <label class="card-title" style="margin-bottom:8px;" for="patInput">Personal Access Token</label>
+        <!-- form はパスワードマネージャーの保存・自動入力のためだけ。送信はしない（onsubmit で止める。CSP でも form-action 'none'） -->
+        <form class="row" id="patForm" onsubmit="usePat(); return false;" autocomplete="on">
+          <input type="text" name="username" autocomplete="username" value="urayasu-portal-github" hidden>
+          <input type="password" id="patInput" name="password" autocomplete="current-password" placeholder="github_pat_xxxx または ghp_xxxx">
+          <button type="submit" class="btn btn-blue">使う</button>
+          <button type="button" class="btn btn-ghost" onclick="clearPat()">消去</button>
+        </form>
+        <p class="hint">トークンはブラウザに<strong>保存しません</strong>。このページを開いている間だけ使い、閉じる・再読み込みする・別のページへ移ると消えます。毎回の入力はパスワードマネージャーの自動入力が便利です。<br>
+          GitHub → Settings → Developer settings → Personal access tokens (Fine-grained) で発行。<br>権限：<strong>Contents: Read and write</strong> のみ必要。</p>
       </div>
     </details>
+    <!-- 設定欄を閉じていても消去できるよう、使用中の表示と消去ボタンは details の外に置く -->
+    <div class="pat-ok" id="patOk">✅ トークンを使える状態です（このページを閉じると消えます）
+      <button type="button" class="btn btn-ghost" style="margin-left:8px;padding:4px 10px;font-size:.78rem;" onclick="clearPat()">消去</button>
+    </div>
   </div>
 
   <!-- .md内容 -->
@@ -478,25 +491,49 @@ function buildAutoFilename(role, ext, seq) {
 
 /* ── 初期化 ── */
 window.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('urayasu_gh_pat');
-  if (saved) {
-    document.getElementById('patInput').value = saved;
-    document.getElementById('patOk').style.display = 'block';
-  } else {
-    document.getElementById('patDetails').open = true;
-  }
+  document.getElementById('patDetails').open = true;
   document.getElementById('content').addEventListener('input', updateParsedInfo);
 });
 
-/* ── PAT ── */
-function savePat() {
-  const pat = document.getElementById('patInput').value.trim();
-  if (!pat) { showStatus('error','⚠️ トークンを入力してください'); return; }
-  localStorage.setItem('urayasu_gh_pat', pat);
+/* ── PAT ──
+   トークンはこのページの変数（patMem）にだけ置き、localStorage・sessionStorage・cookie には書かない。
+   以前の版は localStorage の LEGACY_PAT_KEY に保存していたため、起動時に値を読まずに削除する。
+   localStorage はオリジン単位で、同じオリジンの通常ページ（広告・解析スクリプトが動く）から読めたため。 */
+const LEGACY_PAT_KEY = 'urayasu_gh_pat';
+let patMem = '';
+try { localStorage.removeItem(LEGACY_PAT_KEY); } catch (e) { /* ストレージが使えない環境では何もしない */ }
+
+function usePat() {
+  const input = document.getElementById('patInput');
+  const v = input.value.trim();
+  if (!v) { showStatus('error','⚠️ トークンを入力してください'); return false; }
+  patMem = v;
   document.getElementById('patOk').style.display = 'block';
   document.getElementById('patDetails').open = false;
-  showStatus('success','✅ トークンを保存しました');
+  showStatus('success','✅ トークンを使える状態にしました（保存はしません。このページを閉じると消えます）');
+  return true;
 }
+function clearPat() {
+  patMem = '';
+  document.getElementById('patInput').value = '';
+  document.getElementById('patOk').style.display = 'none';
+  document.getElementById('patDetails').open = true;
+  showStatus('success','✅ トークンを消去しました');
+}
+/* 投稿・画像アップロード時に使う。「使う」を押さずに入力欄に入れたままでも使えるようにする */
+function getPat() {
+  if (!patMem) {
+    const v = document.getElementById('patInput').value.trim();
+    if (v) { patMem = v; document.getElementById('patOk').style.display = 'block'; }
+  }
+  return patMem;
+}
+/* ページを離れたら（bfcache に入る場合も）メモリから消す */
+window.addEventListener('pagehide', () => {
+  patMem = '';
+  const input = document.getElementById('patInput');
+  if (input) input.value = '';
+});
 
 /* ── フロントマターパース（post-rules.js の解析器を使用。BOM・CRLF・インライン配列に対応） ── */
 function rulesReady() { return typeof window.PostRules === 'object' && window.PostRules; }
@@ -761,7 +798,7 @@ async function addInlineItem(file) {
   reader.readAsDataURL(result.file);
 }
 async function uploadInline(id) {
-  const pat  = localStorage.getItem('urayasu_gh_pat');
+  const pat  = getPat();
   const fn   = document.getElementById(`inlineFn${id}`).value.trim();
   const item = document.getElementById(`inlineItem${id}`);
   const btn  = document.getElementById(`inlineBtn${id}`);
@@ -891,7 +928,7 @@ async function checkArticleQuality(content, path, hdrs, existing) {
 }
 /* ── 記事投稿 ── */
 async function submitArticle() {
-  const pat     = localStorage.getItem('urayasu_gh_pat');
+  const pat     = getPat();
   /* BOM・CRLF を正規化してから検証・投稿する（以前は BOM 付きの貼り付けが「--- で囲まれていません」でブロックされていた） */
   let   content = normalizeContent(document.getElementById('content').value);
   const fn      = document.getElementById('filename').value.trim();
@@ -976,8 +1013,8 @@ async function submitArticle() {
       showStatus('success',
         (title ? `📌 <strong>${escHtml(title)}</strong>\n` : '') +
         `✅ ${action}しました！\n📄 <strong>${escHtml(fn)}</strong>\n` +
-        `🔗 <a href="https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}" target="_blank">GitHubで確認</a>\n` +
-        `🌐 ビルド完了後：<a href="${BASE}${encodeURI(pageUrl)}" target="_blank">記事ページを開く</a>` + sched
+        `🔗 <a href="https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}" target="_blank" rel="noopener noreferrer">GitHubで確認</a>\n` +
+        `🌐 ビルド完了後：<a href="${BASE}${encodeURI(pageUrl)}" target="_blank" rel="noopener noreferrer">記事ページを開く</a>` + sched
       );
       // リセット
       document.getElementById('filename').value = '';
