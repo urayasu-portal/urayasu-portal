@@ -1,0 +1,43 @@
+{{- /*
+  トップの「近日のイベント」（工程4B-1）。layouts/index.html（日本語）から呼ぶ。引数なし
+  - 掲載・日程・開催状態は /events/ と同じ部品（event-calendar-eligible／event-dates／event-calendar-status）で判定し、ここでは並べるだけ
+  - 開催中・開催予定から4件。会期の短いもの（14日以内）を先に、その中は開催中（終了日の近い順）→開催予定（開始日の近い順）。
+    会期15日以上・終了日未定の長期開催は後ろに回す
+  - 1行の表示は /events/ と同じ partials/ev-row.html
+  - ビルドした時点の情報なので「今日」とは書かない（今日の判定は /events/ の絞り込みが閲覧時に行う）
+  - 0件ならブロックごと出さない
+  - 今日は日本時間（partials/date-jst.html）。site.Params.eventsNow はテスト専用（判定する時刻を固定する）
+*/ -}}
+{{- $now := now }}
+{{- with site.Params.eventsNow }}{{ $now = time.AsTime . }}{{ end }}
+{{- $today := partial "date-jst.html" $now }}
+{{- $wdays := slice "日" "月" "火" "水" "木" "金" "土" }}
+{{- $rows := slice }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- if partialCached "event-calendar-eligible.html" . .RelPermalink }}
+    {{- $ev := partialCached "event-dates.html" . .RelPermalink }}
+    {{- $st := partial "event-calendar-status.html" (dict "ev" $ev "today" $today) }}
+    {{- if in (slice "ongoing" "upcoming") $st.status }}
+      {{- $long := $ev.ongoing }}
+      {{- if and (not $long) $st.end }}{{ $long = ge ((time.AsTime $st.end).Sub (time.AsTime $st.start)).Hours 336.0 }}{{ end }}
+      {{- $rows = $rows | append (dict
+            "key" (printf "%d|%d|%s" (cond $long 1 0) (cond (eq $st.status "ongoing") 0 1) $st.sortKey)
+            "now" (eq $st.status "ongoing")
+            "start" $st.start "end" $st.end "openEnd" $ev.ongoing
+            "title" .Title "href" .RelPermalink "kind" $ev.kind "summary" "" "spans" $ev.groups
+            "loc" (.Params.eventLocation | default "")) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- with first 4 (sort $rows "key" "asc") }}
+<section class="home-block" data-home-section="events" aria-labelledby="home-events-title">
+  <div class="section-head">
+    <h2 id="home-events-title">近日のイベント</h2>
+    <a class="section-more" href="/events/">イベントカレンダーへ →</a>
+  </div>
+  <div class="ev-group">
+    {{- range . }}{{ partial "ev-row.html" (dict "row" . "wdays" $wdays "now" .now) }}{{ end }}
+  </div>
+</section>
+{{- end }}
+{{- /* 末尾の改行を出力しない */ -}}
