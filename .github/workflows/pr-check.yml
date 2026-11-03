@@ -60,6 +60,10 @@ jobs:
       - name: Test FAQ display and FAQPage JSON-LD
         run: node scripts/validate/test/faq-hugo.mjs
 
+      # トップの「近日のイベント」「最近の開店・閉店」と home_section_click のテスト（工程4B-1）。同じく最小サイトで確認する
+      - name: Test home page blocks and home_section_click
+        run: node scripts/validate/test/home-hugo.mjs
+
       - name: Build (same options as production)
         env:
           HUGO_ENVIRONMENT: production
