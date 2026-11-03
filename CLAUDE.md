@@ -285,4 +285,5 @@ og:image の優先順位: `cover.image` frontmatter → `images:` frontmatter �
 ### 収益ルール（Step 0 決定・永続）
 
 - アフィリエイト設置面は**転入・住まい系のみ**（sumai-hikkoshi・station-life）。表記は PR バッジ＋affiliate-box＋注記の akippa 方式
+- Travelpayouts Drive・ValueCommerce LinkSwitch のスクリプトは全ページ共通（`extend_head.html`）。下の「広告を置かない」ページでは `data/affiliate_script_policy.yaml` の `no_affiliate_scripts` で読み込みを止めている（リンクの自動書き換えを防ぐため）。該当するガイドを新設したら一覧に追加する
 - **子育て・介護・急病・防災には広告を置かない**（信頼が資産。将来も置かない）
