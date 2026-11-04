@@ -1,7 +1,7 @@
 ---
 title: "도쿄 디즈니 주변 볼거리 가이드 | 마이하마·우라야스·신우라야스 관광"
 date: 2026-06-30T00:00:00+09:00
-lastmod: 2026-11-01
+lastmod: 2026-11-04
 factChecked: "2026-10-17"
 slug: "urayasu-maihama-shinurayasu-tourism"
 tags:
