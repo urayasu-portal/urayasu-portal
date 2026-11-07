@@ -26,6 +26,10 @@ sources:
   - name: "ENSEI NAVITIME｜ブラックラムズ東京戦の会場"
     url: "https://ensei.navitime.co.jp/ja/match/urayasu-d-rocks-vs-ricoh-blackrams-tokyo"
 notableDate: "2026-11-09"
+cover:
+  image: /images/posts/d-rocks.png
+  alt: "浦安D-Rocksのロゴ"
+lastmod: 2026-11-07T11:44:03+09:00
 draft: false
 ---
 <p>浦安D-Rocksは2026年11月6日（金）、NTTジャパンラグビー リーグワン2026-27のホストゲームチケット第1弾を案内しました。11月9日（月）正午に、公式ファンクラブ「Club D-Rockers」のプラチナ会員向け先行販売が始まります。</p>
