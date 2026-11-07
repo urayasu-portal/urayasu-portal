@@ -55,7 +55,7 @@
 
       {{- if $coverReal }}
       <div class="post-cover">
-        <img src="{{ $coverReal }}" alt="{{ .Title }}" loading="lazy">
+        {{ $d := partial "img-dims.html" $coverReal }}<img src="{{ $coverReal }}" alt="{{ .Title }}"{{ with $d.w }} width="{{ . }}" height="{{ $d.h }}" style="height:auto"{{ end }} loading="eager" fetchpriority="high">
       </div>
       {{- else }}
       {{- /* 代替カバーはアイコンのみ（カテゴリ名は見出し上のバッジにあるため繰り返さない。工程1b） */}}

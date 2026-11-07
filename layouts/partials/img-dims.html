@@ -1,0 +1,18 @@
+{{- /*
+  img-dims.html — 冒頭写真の実寸（幅・高さ）を返す（工程7C-B1）
+  呼び出し: {{ $d := partial "img-dims.html" $src }}  →  dict "w" 幅 "h" 高さ。取れないときは空の dict
+    src : "/images/..." のようなサイト内の絶対パス（static/ 配下のファイル）
+  - 外部 URL（"//"・"http"）、クエリ付き、対象外の拡張子、static/ に無いファイル、読み取れない画像は空を返す。
+    呼び出し側は空なら width・height を出さず、従来の表示のままにする（寸法を決め打ちしない）
+*/ -}}
+{{- $src := . -}}
+{{- $r := dict -}}
+{{- if and $src (strings.HasPrefix $src "/") (not (strings.HasPrefix $src "//")) (not (strings.Contains $src "?")) -}}
+  {{- if in (slice ".jpg" ".jpeg" ".png" ".webp" ".gif") (lower (path.Ext $src)) -}}
+    {{- $p := path.Join "static" $src -}}
+    {{- if fileExists $p -}}
+      {{- with try (images.Config $p) -}}{{- with .Value -}}{{- $r = dict "w" .Width "h" .Height -}}{{- end -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $r -}}
