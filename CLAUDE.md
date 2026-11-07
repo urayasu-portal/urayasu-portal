@@ -286,3 +286,4 @@ og:image の優先順位: `cover.image` frontmatter → `images:` frontmatter �
 
 - アフィリエイト設置面は**転入・住まい系のみ**（sumai-hikkoshi・station-life）。表記は PR バッジ＋affiliate-box＋注記の akippa 方式
 - **子育て・介護・急病・防災には広告を置かない**（信頼が資産。将来も置かない）
+- Google AdSense の広告コードは全ページ共通（`extend_head.html`）。上記のページは `data/ad_policy.yaml` の `no_adsense` で除外している。該当するガイドを新設したら一覧に追加する
