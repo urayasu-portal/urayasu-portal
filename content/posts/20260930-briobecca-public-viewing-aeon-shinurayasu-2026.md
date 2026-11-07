@@ -16,7 +16,7 @@ eventDates:
   - "2026-11-08"
 eventKind: "event"
 hideEventBox: true
-lastmod: 2026-11-04T21:08:00+09:00
+lastmod: 2026-11-07T19:59:00+09:00
 draft: false
 ---
 
@@ -35,7 +35,7 @@ draft: false
 <tr><th>観覧</th><td>無料</td></tr>
 </table>
 
-<p>クラブは選手による解説を予定しており、担当選手は未定です。先着30人に応援ハリセンを配布します。試合終了まで観覧した人は、クラブのマスコット「べか彦」のぬいぐるみなどが当たるじゃんけん大会に参加できます。</p>
+<p>クラブは選手による解説を予定しており、担当選手は未定です。先着30人に応援ハリセンを配布します。試合終了まで観覧した人は、クラブのマスコット「べか彦」のグッズが当たるじゃんけん大会に参加できます。景品はぬいぐるみ1人分と、ぬいぐるみキーホルダー2人分です。</p>
 
 <h2>10月4日は沖縄SV戦を上映</h2>
 
@@ -54,5 +54,6 @@ draft: false
 <li><a href="https://briobecca.jp/news/pickup/46492/" target="_blank" rel="noopener">ブリオベッカ浦安・市川｜11月8日の試合・パブリックビューイング情報</a></li>
 <li><a href="https://briobecca.jp/news/topteam/45532/" target="_blank" rel="noopener">ブリオベッカ浦安・市川｜パブリックビューイング開催のお知らせ</a></li>
 <li><a href="https://www.aeon.jp/sc/shinurayasu/" target="_blank" rel="noopener">イオン新浦安ショッピングセンター</a></li>
+<li><a href="https://reinmeer-aomori.jp/post-47795/" target="_blank" rel="noopener">ラインメール青森FC｜11月8日のホームゲーム情報</a></li>
 <li><a href="https://www.jfl.or.jp/" target="_blank" rel="noopener">日本フットボールリーグ</a></li>
 </ul>
