@@ -9,7 +9,8 @@
   {{- range .Data.Pages }}
   {{- $isThinTag := and (eq .Kind "term") (eq .Data.Plural "tags") (lt (len .Pages) 3) }}
   {{- $isNoIndex := .Params.robotsNoIndex }}
-  {{- if not (or $isThinTag $isNoIndex) }}
+  {{- $isLangRoot := and .IsHome (ne .Lang "ja") }}
+  {{- if not (or $isThinTag $isNoIndex $isLangRoot) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
