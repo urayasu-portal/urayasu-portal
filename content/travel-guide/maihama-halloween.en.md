@@ -1,7 +1,7 @@
 ---
 title: "Halloween in Urayasu & Maihama 2026 | Costume Rules, Where to Change, Hotel Events & Sweets"
 date: 2026-08-30T06:00:00+09:00
-lastmod: 2026-10-20
+lastmod: 2026-11-02
 factChecked: "2026-09-25"
 slug: "maihama-halloween"
 badge: "Halloween"
@@ -32,6 +32,10 @@ faq:
   - q: "Are there stay plans with limited-edition Halloween merchandise?"
     a: "Yes. Five Tokyo Disney Resort Official Hotels (Sheraton Grande Tokyo Bay, Hotel Okura Tokyo Bay, Grand Nikko Tokyo Bay Maihama, Maihama View Hotel by HULIC and Tokyo Bay Maihama Hotel First Resort) offer stay plans from September 16 to October 31 that include a Halloween-exclusive pouch with a handle. Oriental Hotel Tokyo Bay also offers a limited-time stay plan with Halloween perks."
 ---
+
+{{< warn >}}**[Halloween 2026 has ended]**
+
+This page is an archive of information on the 2026 Halloween events. The dates, prices and programs shown here are those that applied in 2026.{{< /warn >}}
 
 <div class="tg-notice-warn">
   <strong>ℹ️ Please note</strong>　This page was compiled on September 8, 2026 from official information published by each facility and Tokyo Disney Resort. On September 16 we added Sheraton Grande Tokyo Bay's new Halloween offerings, and on September 25 Oriental Hotel Tokyo Bay's "Pumpkin Gate." Dates, prices and content are subject to change. Always check the official websites before booking or visiting.
