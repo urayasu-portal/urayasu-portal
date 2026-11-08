@@ -31,7 +31,7 @@
 
   {{- $coverReal := partial "cover-image.html" (dict "page" . "size" "full" "real" true) }}
   {{- if $coverReal }}
-  <div class="post-cover"><img src="{{ $coverReal }}" alt="{{ .Title }}" loading="lazy"></div>
+  <div class="post-cover">{{ $d := partial "img-dims.html" $coverReal }}<img src="{{ $coverReal }}" alt="{{ .Title }}"{{ with $d.w }} width="{{ . }}" height="{{ $d.h }}" style="height:auto"{{ end }} loading="eager" fetchpriority="high"></div>
   {{- end }}
 
   <div class="post-content md-content">
