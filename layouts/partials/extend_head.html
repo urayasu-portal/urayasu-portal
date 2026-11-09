@@ -1,6 +1,9 @@
 <meta name="naver-site-verification" content="c46bc88462ed934b0e72eb6d6b0724e4192469c8" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3372468923504472" crossorigin="anonymous"></script>
 {{- /* Travelpayouts Drive トラッキングスクリプト（全ページ共通） */}}
+{{- /* data/affiliate_script_policy.yaml の no_affiliate_scripts に載せたページ（子育て・介護・急病・防災）では、この Drive と下の LinkSwitch を読み込まない（CLAUDE.md 収益ルール） */}}
+{{- $noAffScripts := index (hugo.Data.affiliate_script_policy.no_affiliate_scripts | default dict) .RelPermalink }}
+{{- if not $noAffScripts }}
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
   (function () {
     var script = document.createElement("script");
@@ -9,6 +12,7 @@
     document.head.appendChild(script);
   })();
 </script>
+{{- end }}
 {{- /* リニューアル: Tablerアイコン webfont（モックアップ準拠の統一アイコン）。font-display:swapで描画ブロックを回避。 */}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
@@ -19,7 +23,7 @@
        本文中の提携広告主（booking.com / agoda.com 等）リンクをクリック時に自動でアフィリ化する。
        PID未設定 or 非productionでは何も出力しない（誤計測・開発環境での発火を防ぐ）。 */ -}}
 {{- $vcPid := site.Params.affiliate.valuecommercePid }}
-{{- if and $vcPid (hugo.IsProduction | or (eq site.Params.env "production")) }}
+{{- if and $vcPid (not $noAffScripts) (hugo.IsProduction | or (eq site.Params.env "production")) }}
 <script type="text/javascript" language="javascript">var vc_pid = "{{ $vcPid }}";</script>
 <script type="text/javascript" src="//aml.valuecommerce.com/vcdal.js" async></script>
 {{- end }}
