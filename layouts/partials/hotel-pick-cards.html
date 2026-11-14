@@ -57,6 +57,8 @@
     </li>
     {{- end }}
   </ul>
+  {{- /* 厳選以外も含めて比べたい読者向けに、比較マップへ（工程2 Phase 2B-2b） */}}
+  {{ partial "hotel-compare-banner.html" (dict "style" "margin:14px 0 0") }}
 </section>
 {{- end }}
 {{- end -}}
