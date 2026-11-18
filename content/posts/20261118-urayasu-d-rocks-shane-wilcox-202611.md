@@ -1,6 +1,7 @@
 ---
 title: "【浦安】D-Rocksにシェーン・ウィルコックス選手が加入"
 date: 2026-11-18T21:31:00+09:00
+lastmod: 2026-11-18T21:44:38+09:00
 slug: "urayasu-d-rocks-shane-wilcox-202611"
 categories:
   - "スポーツ"
@@ -10,6 +11,9 @@ tags:
   - "リーグワン"
   - "浦安Dパーク"
 description: "浦安D-Rocksは11月18日、2026–27シーズンにシェーン・ウィルコックス選手が加入すると発表しました。21歳で、ポジションはウイングとフルバック。前所属クラブや次の浦安Dパークでの試合を紹介します。"
+cover:
+  image: /images/posts/d-rocks.png
+  alt: "浦安D-Rocksのロゴ"
 checkDate: "2026-11"
 sources:
   - name: "浦安D-Rocks｜2026-27シーズン新加入選手（追加）"
