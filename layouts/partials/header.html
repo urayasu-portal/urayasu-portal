@@ -1,12 +1,14 @@
 {{- /* リニューアル: PaperMod header をオーバーライド。旧メニューを 3本柱スイッチャーに置換。
-       ロゴ前の錨はCSS擬似要素 .logo a::before で付与（テーマ更新時はこの差分のみ再適用）。 */ -}}
+       ロゴ前の錨はCSS擬似要素 .logo a::before で付与（テーマ更新時はこの差分のみ再適用）。
+       非日本語のロゴと、言語切替でホームの翻訳を指すリンクは /xx/travel-guide/ へ直接向ける
+       （/xx/ は転送ページ。工程6 Phase 6B-1B）。 */ -}}
 <header class="header">
     <nav class="header-nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if eq .Lang "en" }}{{ $label_text = "Urayasu Portal" }}{{ else if eq .Lang "zh" }}{{ $label_text = "浦安门户" }}{{ else if eq .Lang "ko" }}{{ $label_text = "우라야스 포털" }}{{ else if eq .Lang "zh-tw" }}{{ $label_text = "浦安門戶" }}{{ end }}
             {{- if site.Title }}
-            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+            <a href="{{ if eq .Lang "ja" }}{{ "" | absLangURL }}{{ else }}{{ "travel-guide/" | absLangURL }}{{ end }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if hasPrefix site.Params.label.iconSVG "<svg" }}
                     {{ site.Params.label.iconSVG | safeHTML }}
                 {{- end -}}
@@ -57,7 +59,7 @@
                     </summary>
                     <div class="hdr-lang-menu">
                         {{- range .AllTranslations }}
-                        <a class="hdr-lang-item{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }} hreflang="{{ if eq .Lang "zh" }}zh-Hans{{ else if eq .Lang "zh-tw" }}zh-Hant-TW{{ else }}{{ .Lang }}{{ end }}">{{ .Language.Label }}</a>
+                        <a class="hdr-lang-item{{ if eq .Lang $.Lang }} is-active{{ end }}" href="{{ if and .IsHome (ne .Lang "ja") }}{{ printf "/%s/travel-guide/" .Lang }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if eq .Lang $.Lang }} aria-current="page"{{ end }} hreflang="{{ if eq .Lang "zh" }}zh-Hans{{ else if eq .Lang "zh-tw" }}zh-Hant-TW{{ else }}{{ .Lang }}{{ end }}">{{ .Language.Label }}</a>
                         {{- end }}
                     </div>
                 </details>
