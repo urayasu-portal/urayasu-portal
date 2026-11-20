@@ -185,3 +185,11 @@ draft: false
 [k4]: https://www.city.urayasu.lg.jp/_res/projects/default_project/_page_/001/005/649/kyukanmihama2026.pdf
 [k5]: https://www.city.urayasu.lg.jp/_res/projects/default_project/_page_/001/005/648/2025kyukanbi.pdf
 [k6]: https://www.city.urayasu.lg.jp/_res/projects/default_project/_page_/001/005/645/karennda.pdf
+
+<style>
+@media (max-width: 640px) {
+  .post-content #日付別の早見表 ~ .table-scroll table { display: table; table-layout: fixed; }
+  .post-content #日付別の早見表 ~ .table-scroll :is(th, td) { min-width: 0; padding: 6px; overflow-wrap: anywhere; }
+  .post-content #日付別の早見表 + .table-scroll th:first-child { width: 31%; }
+}
+</style>
