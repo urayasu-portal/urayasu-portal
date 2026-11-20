@@ -1,6 +1,7 @@
 ---
 title: "【浦安】イクスピアリに「立ち喰い梅干し屋」11月1日から限定出店"
 date: 2026-10-22T18:00:00+09:00
+lastmod: 2026-11-01
 slug: "ikspiari-tachigui-umeboshiya-202611"
 categories:
   - "開店・閉店"
@@ -11,6 +12,8 @@ tags:
   - "梅干し"
   - "期間限定ショップ"
 description: "舞浜のイクスピアリ2階トレイダーズ・パッセージに、全国各地の梅干しを扱う「立ち喰い梅干し屋」が2026年11月1日から15日まで期間限定出店。梅干しや梅酒を取り扱う専門店で、舞浜での買い物や観光の途中にも立ち寄れる新しいグルメスポットです。"
+shopStatus: "popup"
+shopDate: "2026-11-01"
 eventDate: "2026-11-01/2026-11-15"
 eventKind: "fair"
 hideEventBox: true
