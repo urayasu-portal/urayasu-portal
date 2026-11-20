@@ -1,5 +1,8 @@
 <meta name="naver-site-verification" content="c46bc88462ed934b0e72eb6d6b0724e4192469c8" />
+{{- /* Google AdSense。data/ad_policy.yaml の no_adsense に載せたページ（子育て・介護・急病・防災）には読み込まない（CLAUDE.md 収益ルール） */}}
+{{- if not (index (site.Data.ad_policy.no_adsense | default dict) .RelPermalink) }}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3372468923504472" crossorigin="anonymous"></script>
+{{- end }}
 {{- /* Travelpayouts Drive トラッキングスクリプト（全ページ共通） */}}
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
   (function () {
