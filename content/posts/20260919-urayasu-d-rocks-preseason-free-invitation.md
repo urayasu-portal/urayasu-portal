@@ -10,7 +10,7 @@ tags:
   - "ラグビー"
   - "高洲"
   - "プレシーズンマッチ"
-description: "浦安D-Rocksのプレシーズンマッチ、11月21日の東芝ブレイブルーパス武蔵戦は浦安Dパークで13時開始。観戦応募は終了しており、一般入場は12時からです。公式アンバサダーOWVの来場が発表され、ラグビー体験などが予定されています。"
+description: "浦安D-Rocksが11月21日の東芝ブレイブルーパス武蔵戦と22日の清水建設江東ブルーシャークス戦のメンバーを発表しました。21日は浦安Dパークで13時開始、観戦応募は終了。翌日は江東区の夢の島競技場で14時30分開始です。"
 eventDates:
   - "2026-10-10"
   - "2026-10-17"
@@ -36,13 +36,21 @@ sources:
     url: "https://urayasu-d-rocks.com/news/game/index_2058.html"
   - name: "浦安D-Rocks｜11月21日東芝戦ホストゲーム情報（11月16日更新）"
     url: "https://urayasu-d-rocks.com/news/game/index_2071.html"
-lastmod: 2026-11-17T20:46:00+09:00
+  - name: "浦安D-Rocks｜11月21日東芝戦メンバー"
+    url: "https://urayasu-d-rocks.com/news/game/index_2094.html"
+  - name: "浦安D-Rocks｜11月22日江東戦メンバー"
+    url: "https://urayasu-d-rocks.com/news/game/index_2098.html"
+  - name: "清水建設江東ブルーシャークス｜11月22日プレシーズンマッチの案内"
+    url: "https://blue-sharks.jp/event/2026/11/26625/"
+lastmod: 2026-11-20T19:18:00+09:00
 cover:
   image: /images/posts/d-rocks.png
   alt: "【浦安】D-Rocks、Dパーク5試合を抽選で無料招待"
 draft: false
 ---
 <p>浦安D-Rocksは、2026-27シーズンのプレシーズンマッチのうち<strong>浦安Dパークで開催するホストゲーム全5試合</strong>について、抽選制の無料招待を実施しています。</p>
+
+{{< note >}}【2026年11月20日追記】浦安D-Rocksが11月21日・22日のプレシーズンマッチの出場メンバーを発表しました。21日は浦安Dパーク、22日は東京都江東区の夢の島競技場で行われます。{{< /note >}}
 
 {{< note >}}【2026年11月17日追記】11月21日（土）の東芝ブレイブルーパス武蔵戦に、公式アンバサダーのOWVが来場します。観戦応募は終了しており、当選者の一般入場は12:00、キックオフは13:00です。{{< /note >}}
 
@@ -59,6 +67,12 @@ draft: false
 </table>
 
 <p>各試合で応募締切や当選連絡日が異なります。観戦したい試合の募集状況を確認してください。</p>
+
+<h2>11月21日・22日の出場メンバーと会場</h2>
+
+<p>21日（土）の東芝ブレイブルーパス武蔵戦は、浦安Dパークで13時キックオフです。浦安はブロディ・マクカラン選手が主将を務め、10番にオテレ・ブラック選手が入ります。観戦応募は終了しており、当日券の受付はありません。<a href="https://urayasu-d-rocks.com/news/game/index_2094.html" target="_blank" rel="noopener">東芝戦の全メンバー</a>をご覧ください。</p>
+
+<p>22日（日）はビジターとして清水建設江東ブルーシャークスと対戦します。会場は江東区の夢の島競技場で、14時30分開始。浦安は竹内柊平選手が主将を務め、植田和磨選手が10番に入ります。<a href="https://urayasu-d-rocks.com/news/game/index_2098.html" target="_blank" rel="noopener">江東戦の全メンバー</a>と<a href="https://blue-sharks.jp/event/2026/11/26625/" target="_blank" rel="noopener">ホストチームの観戦案内</a>を確認できます。</p>
 
 <h2>11月21日東芝戦は観戦応募を終了</h2>
 
