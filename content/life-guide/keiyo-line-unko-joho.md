@@ -87,6 +87,11 @@ faq:
   <li><strong>昨日・それ以前の分：</strong>同じページの「遅延証明書履歴」で、利用日の行から時間帯を選びます。日付が見当たらないときは「もっと見る」を押してください。</li>
 </ul>
 
+<figure style="margin:1rem 0;max-width:36rem">
+  <img src="/images/life-guide/keiyo-delay-history.webp" alt="操作例。履歴表で利用日と時間帯の交点にある分数を選びます。図では10時〜16時の「10分」です。" width="1080" height="519" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+  <figcaption>利用した日の行で、時間帯に表示された分数を押すと、証明書が開きます。</figcaption>
+</figure>
+
 <p>表示されるのは、京葉線のその時間帯で最も大きかった遅れです。個々の列車の遅れや、ご自身が乗車したことを証明するものではありません。</p>
 
 <div class="lg-art-table-wrap">
@@ -108,6 +113,11 @@ faq:
 <p>浦安市内には、京葉線とは別に<strong>東京メトロ東西線の浦安駅</strong>があります。京葉線が止まっていても東西線が動いていれば、浦安駅から日本橋・大手町方面へ出られます。</p>
 
 <h3>新浦安駅・舞浜駅から浦安駅へ</h3>
+
+<figure style="margin:1rem 0;max-width:36rem">
+  <img src="/images/life-guide/keiyo-bus-to-tozai.webp" alt="新浦安駅または舞浜駅から路線バスで「浦安駅入口」に向かい、停留所から徒歩で東京メトロ東西線の浦安駅に乗り換えます。" width="1080" height="768" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:8px">
+  <figcaption>路線バスで東西線の浦安駅へ向かう例</figcaption>
+</figure>
 
 <p>舞浜駅と浦安駅の間は京成バスが結んでいます。当サイトで確認している運賃・所要時間は次のとおりです。</p>
 
