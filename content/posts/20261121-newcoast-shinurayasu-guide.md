@@ -13,6 +13,15 @@ hideEventBox: true
 draft: false
 ---
 
+<style>
+@media (max-width: 700px) {
+  .post-content #新浦安駅からの行き方と駐車場,
+  .post-content #買い物と食事は何階へ-朝の開店と夜の最終注文 { scroll-margin-top: 200px; }
+  .post-content #買い物と食事は何階へ-朝の開店と夜の最終注文 + .table-scroll table { display: table; width: 100%; min-width: 0; table-layout: fixed; }
+  .post-content #買い物と食事は何階へ-朝の開店と夜の最終注文 + .table-scroll :is(th, td) { white-space: normal; overflow-wrap: anywhere; padding: 8px; }
+}
+</style>
+
 ニューコースト新浦安は、浦安市明海4丁目1番1号にある商業施設です。JR新浦安駅から歩いて約17分。バスなら南口のD乗り場から11系統に乗り、「日の出公民館」で降りると徒歩約1分です。
 
 朝の食料品の買い出しは、9時に開く1階のヤオコーへ。週末に親子で出かけるなら、11月22日（日）は2階の書店で予約不要のおはなし会、11月28日（土）・29日（日）は1階でアクセサリーや雑貨のものづくり体験があります。
