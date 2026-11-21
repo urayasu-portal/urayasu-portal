@@ -5,7 +5,7 @@ lastmod: 2026-11-21
 slug: "urayasu-winter-family-guide-2026-2027"
 categories: ["子育て・教育"]
 tags: ["冬休み", "親子", "書初め", "読み聞かせ"]
-description: "浦安市で冬休みに参加できる親子の体験を、年齢・開催日・予約の要否から選べます。公民館の書初め教室の締切と持ち物、中央図書館の読み聞かせ、うらっこ広場の外遊びを紹介します。"
+description: "冬休みに浦安市で参加できる親子体験を、年齢・開催日・予約の要否から選べます。書初め教室の締切、読み聞かせ、外遊びを紹介します。"
 cover:
   image: "/images/posts/urayasu-winter-family-guide-2026-2027-cover.webp"
 calendar: false
