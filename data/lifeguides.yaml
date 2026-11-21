@@ -174,8 +174,8 @@ categories:
         icon: "ti-bus"
         url: "/life-guide/urayasu-bus-kotsu/"
         published: true
-      - title: "京葉線の運行情報・遅延の調べ方"
-        desc: "公式の確認先、遅延証明書の取り方、止まったときの代替ルート。"
+      - title: "京葉線の遅延証明書・運行情報"
+        desc: "今日・過去の遅延証明書の取り方と、新浦安・舞浜から東西線への迂回ルート。"
         icon: "ti-train"
         url: "/life-guide/keiyo-line-unko-joho/"
         published: true
