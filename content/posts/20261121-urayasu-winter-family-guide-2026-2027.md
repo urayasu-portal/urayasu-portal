@@ -38,7 +38,7 @@ draft: false
 
 事前申込は不要です。施設の予定表では「自由参加」で、当日先着の表示はありません。入場は無料です。**飴づくりの開始・終了時刻、材料費、会場内の受付場所、専用の持ち物は11月21日時点で案内を確認できていません。** 参加を目当てに出かける場合は、広場（047-350-1010）へ。初回は入口で利用カードを作り、2回目以降はカードを提示します。汚れてよい服と靴が向いています。
 
-雨や風で変更・中止の場合は、当日に広場の公式Instagramで確認できます。[12月のイベント予定](https://kodomonohiroba.com/info/event12.html)・[利用方法と持ち物](https://kodomonohiroba.com/guide/)・[当日の公式Instagram（@urakko_hiroba）](https://www.instagram.com/urakko_hiroba/)（2026年11月21日確認）
+雨や風で変更・中止の場合は、当日に広場の公式Instagramで確認できます。[12月のイベント予定](https://kodomonohiroba.com/info/eventcal.html)・[利用方法と持ち物](https://kodomonohiroba.com/guide/)・[当日の公式Instagram（@urakko_hiroba）](https://www.instagram.com/urakko_hiroba/)（2026年11月21日確認）
 
 ### 1月1日（金・祝）〜5日（火）　舞浜でお正月のパレードを見る
 
@@ -93,4 +93,4 @@ draft: false
 
 ## 1月の公共施設の体験を探すには
 
-1月1日（金・祝）〜5日（火）の読み聞かせ・公民館の親子講座・郷土博物館の体験は、11月21日時点でこの期間の開催日を明記した案内を確認できていません。1月5日は火曜日ですが、中央図書館の読み聞かせは1月分の案内を確かめてからお出かけください。うらっこ広場は12月29日（火）〜1月6日（水）が臨時休場で、1月5日も遊べません。[市立図書館のイベント](https://library.city.urayasu.chiba.jp/event/event/index.html)・[公民館のイベント・講座](https://www.urayasu.manabi365.net/event/)・[郷土博物館の催し](https://www.city.urayasu.lg.jp/events/shogai/kyodo/index.html)・[うらっこ広場の休場告知](https://kodomonohiroba.com/info/event12.html)（2026年11月21日確認）
+1月1日（金・祝）〜5日（火）の読み聞かせ・公民館の親子講座・郷土博物館の体験は、11月21日時点でこの期間の開催日を明記した案内を確認できていません。1月5日は火曜日ですが、中央図書館の読み聞かせは1月分の案内を確かめてからお出かけください。うらっこ広場は12月29日（火）〜1月6日（水）が臨時休場で、1月5日も遊べません。[市立図書館のイベント](https://library.city.urayasu.chiba.jp/event/event/index.html)・[公民館のイベント・講座](https://www.urayasu.manabi365.net/event/)・[郷土博物館の催し](https://www.city.urayasu.lg.jp/events/shogai/kyodo/index.html)・[うらっこ広場の休場告知](https://kodomonohiroba.com/info/eventcal.html)（2026年11月21日確認）
