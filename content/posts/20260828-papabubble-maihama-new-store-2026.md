@@ -1,5 +1,5 @@
 ---
-title: "【浦安】舞浜に「PAPABUBBLE」出店予定か、求人で判明"
+title: "【舞浜】パパブブレがイクスピアリに開店、11月30日まで飴作り体験"
 date: "2026-08-28T22:00:00+09:00"
 slug: "papabubble-maihama-new-store-2026"
 categories:
@@ -11,10 +11,12 @@ tags:
   - "新店舗"
   - "開店"
 description: "パパブブレが2026年11月21日、舞浜のイクスピアリ2階にオープン。11月30日まで、5歳以上が予約不要で参加できるキャンディカット体験を実施します。営業時間、売場の場所、店舗限定ミックスも紹介します。"
-shopStatus: "open_planned"
+shopStatus: "open"
 shopDate: "2026-11-21"
 checkDate: "2026-11"
 sources:
+  - name: "イクスピアリ｜オープン・リニューアル"
+    url: "https://www.ikspiari.com/newshop/"
   - name: "PAPABUBBLE公式｜イクスピアリ店の開店・体験案内"
     url: "https://papabubble.co.jp/blogs/blog/ikspiari_papabubble"
   - name: "株式会社PAPABUBBLE｜11月5日の開店記念企画発表"
@@ -29,10 +31,12 @@ sources:
     url: "https://prtimes.jp/main/html/rd/p/000000176.000034414.html"
   - name: "株式会社PAPABUBBLE｜採用情報"
     url: "https://arwrk.net/recruit/papabubble/12178536/"
-lastmod: 2026-11-07T19:59:00+09:00
+lastmod: 2026-11-21T18:31:00+09:00
 draft: false
 ---
-<p>スペイン・バルセロナ発祥のアートキャンディ専門店「PAPABUBBLE（パパブブレ）」が、2026年11月21日（土）に舞浜のイクスピアリ2階へオープンします。店内では職人によるキャンディづくりを間近で見られます。</p>
+<p>スペイン・バルセロナ発祥のアートキャンディ専門店「PAPABUBBLE（パパブブレ）」が、2026年11月21日（土）に舞浜のイクスピアリ2階ミュージアム・レーンに開店しました。店内では職人によるキャンディづくりを間近で見られます。</p>
+
+{{< note >}}【2026年11月21日追記】イクスピアリが本日の開店を案内しました。営業時間は10時〜20時です。{{< /note >}}
 
 {{< note >}}【2026年11月6日追記】運営会社が11月5日、キャンディカット体験の日程・料金と開店記念企画を発表しました。{{< /note >}}
 
