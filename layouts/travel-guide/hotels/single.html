@@ -127,7 +127,7 @@
       </header>
 
       {{- if $hotelPhoto }}
-      <div class="post-cover"><img src="{{ $hotelPhoto }}" alt="{{ .Title }}" loading="lazy"></div>
+      <div class="post-cover">{{ $d := partial "img-dims.html" $hotelPhoto }}<img src="{{ $hotelPhoto }}" alt="{{ .Title }}"{{ with $d.w }} width="{{ . }}" height="{{ $d.h }}" style="height:auto"{{ end }} loading="eager" fetchpriority="high"></div>
       {{- else }}
       <div class="hg-hero" aria-hidden="true"><i class="ti ti-photo"></i></div>
       {{- end }}
