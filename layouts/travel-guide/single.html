@@ -68,7 +68,7 @@
       </header>
 
       {{- with $cover }}
-      <div class="post-cover"><img src="{{ . }}" alt="{{ $.Title }}" loading="lazy"></div>
+      <div class="post-cover">{{ $d := partial "img-dims.html" . }}<img src="{{ . }}" alt="{{ $.Title }}"{{ with $d.w }} width="{{ . }}" height="{{ $d.h }}" style="height:auto"{{ end }} loading="eager" fetchpriority="high"></div>
       {{- end }}
 
       {{- if $content }}
