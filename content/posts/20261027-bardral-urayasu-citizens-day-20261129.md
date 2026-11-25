@@ -1,36 +1,43 @@
 ---
-title: "【浦安】11月29日は浦安市民DAY！バルドラール男女2試合に無料招待"
-date: 2026-10-27T18:07:00+09:00
-lastmod: 2026-11-15T21:22:00+09:00
-slug: "bardral-urayasu-citizens-day-20261129"
+title: 【浦安】11月29日は浦安市民DAY！バルドラール男女2試合に無料招待
+date: "2026-10-27T18:07:00+09:00"
+lastmod: "2026-11-25T20:06:31+09:00"
+slug: bardral-urayasu-citizens-day-20261129
 categories:
-  - "スポーツ"
+  - スポーツ
 tags:
-  - "浦安"
-  - "舞浜"
-  - "バルドラール浦安"
-  - "浦安市民DAY"
-  - "フットサル"
-description: "11月29日、舞浜のバルドラール浦安アリーナで男女2試合に無料招待。市内在住・在勤・在学の方が先着500人で、11月28日23時59分までLivePocketで受け付けます。女子は12時30分、男子は15時キックオフです。"
+  - 浦安
+  - 舞浜
+  - バルドラール浦安
+  - 浦安市民DAY
+  - フットサル
+description: 11月29日の浦安市民DAYは、女子・男子のホームゲームに加え、ラス・ボニータスの選手による手作りマルシェも開催。市内在住・在勤・在学者の無料招待は先着500人で、申込期限は11月28日23時59分です。
 eventDate: "2026-11-29"
-eventKind: "match"
-eventLocation: "バルドラール浦安アリーナ"
+eventKind: match
+eventLocation: バルドラール浦安アリーナ
 hideEventBox: true
 notableDate: "2026-11-28"
-checkDate: "2026-11"
+checkDate: 2026-11
 sources:
-  - name: "浦安市｜ホームゲーム市民無料招待"
-    url: "https://www.city.urayasu.lg.jp/shogaigakushu/sports/event/1049589.html"
-  - name: "バルドラール浦安公式サイト"
-    url: "https://www.bardral-urayasu.com/"
-  - name: "浦安経済新聞｜浦安市民DAYで男女2試合に無料招待"
-    url: "https://urayasu.keizai.biz/headline/556/"
+  - name: 浦安市｜ホームゲーム市民無料招待
+    url: https://www.city.urayasu.lg.jp/shogaigakushu/sports/event/1049589.html
+  - name: バルドラール浦安公式サイト
+    url: https://www.bardral-urayasu.com/
+  - name: 浦安経済新聞｜浦安市民DAYで男女2試合に無料招待
+    url: https://urayasu.keizai.biz/headline/556/
+  - name: クラブ公式｜選手企画ブース
+    url: https://www.bardral-urayasu.com/news/news-23343/
+  - name: クラブ公式｜当日の試合情報
+    url: https://www.bardral-urayasu.com/news/news-23319/
 cover:
   image: /images/posts/bardral.jpg
-  alt: "【浦安】11月29日は浦安市民DAY！バルドラール男女2試合に無料招待"
+  alt: 【浦安】11月29日は浦安市民DAY！バルドラール男女2試合に無料招待
 draft: false
 ---
 <p>2026年11月29日（日）、舞浜の「バルドラール浦安アリーナ」で、フットサルクラブ「バルドラール浦安」が市内在住・在勤・在学の方を対象とした無料招待企画「浦安市民DAY」を実施します。</p>
+
+{{< note >}}【2026年11月25日追記】女子選手の手作りミニマルシェと来場特典が発表されました。{{< /note >}}
+
 <p>当日は女子チームと男子チームのホームゲームが行われ、男女2試合を観戦できる企画です。事前の申し込みが必要で、応募締切は11月28日（土）23:59です。</p>
 
 {{< note >}}【2026年11月15日追記】浦安市が招待枠を先着500人と案内しました。市内在勤・在学の方も対象で、LivePocketから申し込めます。{{< /note >}}
@@ -41,6 +48,9 @@ draft: false
 <li>15:00開始：バルドラール浦安プリメーロ（男子）対 しながわシティ</li>
 </ul>
 <p>会場はバルドラール浦安アリーナ（浦安市総合体育館、浦安市舞浜2丁目27番地）です。</p>
+
+<h2>ロビーでは選手の手作り品を販売</h2>
+<p>エントランスロビーにはラス・ボニータスの選手が企画したブースが登場します。選手が考えた応援グッズのほか、選手自身が作った品が並びます。一般入場口では先着400人に来場記念のシューズバッグを配ります。無料招待の500人枠とは人数が異なります。</p>
 
 <h2>無料招待の対象と申込期限</h2>
 <ul>
