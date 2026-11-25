@@ -1,21 +1,21 @@
 ---
 title: 【浦安市】姉妹都市オーランドの高校生が市長を訪問、約1週間滞在
-date: '2026-11-25T20:06:31+09:00'
+date: "2026-11-25T20:06:31+09:00"
 slug: orlando-dr-phillips-urayasu-202611
 categories:
-- 子育て・教育
+  - 子育て・教育
 tags:
-- 浦安市
-- オーランド
-- 姉妹都市
-- 国際交流
+  - 浦安市
+  - オーランド
+  - 姉妹都市
+  - 国際交流
 description: 米国フロリダ州の姉妹都市オーランドからDr.Phillips高校の生徒らが浦安を訪れ、11月24日に市長と記念品を交換しました。滞在は約1週間。市内の学生やホストファミリーとの交流が予定されています。
 checkDate: 2026-11
 sources:
-- name: 浦安市｜高校生の市長訪問
-  url: https://www.city.urayasu.lg.jp/shisei/koho/topics/1047507/1049708/1049887.html
-- name: 浦安市｜姉妹都市の歩み
-  url: https://www.city.urayasu.lg.jp/shogaigakushu/koryu/1009016/1009057.html
+  - name: 浦安市｜高校生の市長訪問
+    url: https://www.city.urayasu.lg.jp/shisei/koho/topics/1047507/1049708/1049887.html
+  - name: 浦安市｜姉妹都市の歩み
+    url: https://www.city.urayasu.lg.jp/shogaigakushu/koryu/1009016/1009057.html
 draft: false
 ---
 <p>米国フロリダ州オーランド市のDr.Phillips高校の生徒らが11月24日（火）、浦安市長を訪問しました。浦安市が25日に訪問の様子を公表しました。生徒たちは約1週間、市内に滞在し、地元の学生やホストファミリーと交流する予定です。</p>

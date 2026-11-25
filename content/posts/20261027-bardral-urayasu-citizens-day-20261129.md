@@ -1,34 +1,34 @@
 ---
 title: 【浦安】11月29日は浦安市民DAY！バルドラール男女2試合に無料招待
-date: '2026-10-27T18:07:00+09:00'
-lastmod: '2026-11-25T20:06:31+09:00'
+date: "2026-10-27T18:07:00+09:00"
+lastmod: "2026-11-25T20:06:31+09:00"
 slug: bardral-urayasu-citizens-day-20261129
 categories:
-- スポーツ
+  - スポーツ
 tags:
-- 浦安
-- 舞浜
-- バルドラール浦安
-- 浦安市民DAY
-- フットサル
+  - 浦安
+  - 舞浜
+  - バルドラール浦安
+  - 浦安市民DAY
+  - フットサル
 description: 11月29日の浦安市民DAYは、女子・男子のホームゲームに加え、ラス・ボニータスの選手による手作りマルシェも開催。市内在住・在勤・在学者の無料招待は先着500人で、申込期限は11月28日23時59分です。
-eventDate: '2026-11-29'
+eventDate: "2026-11-29"
 eventKind: match
 eventLocation: バルドラール浦安アリーナ
 hideEventBox: true
-notableDate: '2026-11-28'
+notableDate: "2026-11-28"
 checkDate: 2026-11
 sources:
-- name: 浦安市｜ホームゲーム市民無料招待
-  url: https://www.city.urayasu.lg.jp/shogaigakushu/sports/event/1049589.html
-- name: バルドラール浦安公式サイト
-  url: https://www.bardral-urayasu.com/
-- name: 浦安経済新聞｜浦安市民DAYで男女2試合に無料招待
-  url: https://urayasu.keizai.biz/headline/556/
-- name: クラブ公式｜選手企画ブース
-  url: https://www.bardral-urayasu.com/news/news-23343/
-- name: クラブ公式｜当日の試合情報
-  url: https://www.bardral-urayasu.com/news/news-23319/
+  - name: 浦安市｜ホームゲーム市民無料招待
+    url: https://www.city.urayasu.lg.jp/shogaigakushu/sports/event/1049589.html
+  - name: バルドラール浦安公式サイト
+    url: https://www.bardral-urayasu.com/
+  - name: 浦安経済新聞｜浦安市民DAYで男女2試合に無料招待
+    url: https://urayasu.keizai.biz/headline/556/
+  - name: クラブ公式｜選手企画ブース
+    url: https://www.bardral-urayasu.com/news/news-23343/
+  - name: クラブ公式｜当日の試合情報
+    url: https://www.bardral-urayasu.com/news/news-23319/
 cover:
   image: /images/posts/bardral.jpg
   alt: 【浦安】11月29日は浦安市民DAY！バルドラール男女2試合に無料招待

@@ -1,37 +1,37 @@
 ---
 title: 【浦安市】東野児童センターの12月親子サロン、9日に助産師相談
-date: '2026-11-25T20:06:31+09:00'
+date: "2026-11-25T20:06:31+09:00"
 slug: higashino-baby-salon-december-2026
 categories:
-- 子育て・教育
+  - 子育て・教育
 tags:
-- 浦安市
-- 東野
-- 東野児童センター
-- 赤ちゃんサロン
-- よちよちタイム
+  - 浦安市
+  - 東野
+  - 東野児童センター
+  - 赤ちゃんサロン
+  - よちよちタイム
 description: 東野児童センターが12月の乳幼児向け親子遊びの日程を公開しました。火曜はよちよちタイム、水曜と19日土曜は赤ちゃんサロン。9日は助産師、15日は管理栄養士に相談できます。いずれも無料で、事前申し込みは不要です。
 eventDates:
-- '2026-12-01'
-- '2026-12-02'
-- '2026-12-08'
-- '2026-12-09'
-- '2026-12-15'
-- '2026-12-16'
-- '2026-12-19'
-- '2026-12-22'
-- '2026-12-23'
+  - "2026-12-01"
+  - "2026-12-02"
+  - "2026-12-08"
+  - "2026-12-09"
+  - "2026-12-15"
+  - "2026-12-16"
+  - "2026-12-19"
+  - "2026-12-22"
+  - "2026-12-23"
 eventKind: event
 eventLocation: 東野児童センター
 hideEventBox: true
 checkDate: 2026-11
 sources:
-- name: 赤ちゃんサロン
-  url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049767.html
-- name: 土曜日の赤ちゃんサロン
-  url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049766.html
-- name: よちよちタイム
-  url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049764.html
+  - name: 赤ちゃんサロン
+    url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049767.html
+  - name: 土曜日の赤ちゃんサロン
+    url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049766.html
+  - name: よちよちタイム
+    url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049764.html
 draft: false
 ---
 <p>浦安市の東野児童センターが、12月の「赤ちゃんサロン」と「よちよちタイム」の日程を公開しました。子どもの発達段階に合わせて参加でき、平日に出かけにくい家庭には12月19日（土）の赤ちゃんサロンもあります。</p>

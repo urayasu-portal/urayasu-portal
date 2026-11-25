@@ -1,25 +1,25 @@
 ---
 title: 【舞浜】ミラコスタにダッフィーの常設客室、宿泊プランは12月予約開始へ
-date: '2026-11-25T20:06:31+09:00'
+date: "2026-11-25T20:06:31+09:00"
 slug: miracosta-duffy-ricordo-2027
 categories:
-- ニュース
+  - ニュース
 tags:
-- 舞浜
-- ホテルミラコスタ
-- ダッフィー
-- ディズニーホテル
+  - 舞浜
+  - ホテルミラコスタ
+  - ダッフィー
+  - ディズニーホテル
 description: ホテルミラコスタにダッフィー＆フレンズをテーマにした常設客室が登場します。宿泊開始は2027年5月12日。宿泊プランは12月10日から、客室のみは翌年1月12日からと、初日分の予約開始が異なります。
 notableDates:
-- '2026-12-10'
-- '2027-01-12'
-- '2027-05-12'
+  - "2026-12-10"
+  - "2027-01-12"
+  - "2027-05-12"
 checkDate: 2026-11
 sources:
-- name: ホテル公式｜客室と予約案内
-  url: https://www.tokyodisneyresort.jp/hotel/memory/dhm/duffy/
-- name: 運営会社の発表資料
-  url: https://www.olc.co.jp/ja/news/news_tdr/20261125/main/0/link/20261125.pdf
+  - name: ホテル公式｜客室と予約案内
+    url: https://www.tokyodisneyresort.jp/hotel/memory/dhm/duffy/
+  - name: 運営会社の発表資料
+    url: https://www.olc.co.jp/ja/news/news_tdr/20261125/main/0/link/20261125.pdf
 draft: false
 ---
 <p>東京ディズニーシー・ホテルミラコスタに、2027年5月12日（水）から「ダッフィー＆フレンズ・スーペリアルーム・リコルド」が登場します。ミリアルリゾートホテルズが11月25日に発表しました。ダッフィーと仲間たちをテーマにした常設客室は、東京ディズニーリゾートで初めてです。</p>

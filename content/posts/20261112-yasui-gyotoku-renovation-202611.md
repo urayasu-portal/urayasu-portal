@@ -1,28 +1,28 @@
 ---
 title: 【行徳】ヤスイ本店が改装休業、11月下旬ごろ再開予定
-date: '2026-11-12T23:09:00+09:00'
+date: "2026-11-12T23:09:00+09:00"
 slug: yasui-gyotoku-renovation-202611
 categories:
-- 開店・閉店
+  - 開店・閉店
 tags:
-- 行徳
-- 行徳駅前
-- ヤスイ本店
-- ドラッグストア
-- リニューアル
+  - 行徳
+  - 行徳駅前
+  - ヤスイ本店
+  - ドラッグストア
+  - リニューアル
 description: 市川市行徳駅前1丁目のヤスイ本店は改装を終え、11月21日に物販売場がマツモトキヨシとして営業を再開しました。営業時間は9時から22時までで年中無休。同じ建物の調剤薬局はヤスイ薬局本店として営業しています。
 shopStatus: renewal
-shopDate: '2026-11-21'
+shopDate: "2026-11-21"
 checkDate: 2026-11
 sources:
-- name: 株式会社ヤスイ｜ドラッグストア店舗案内
-  url: https://www.e-kusuri.info/drugstore
-- name: 株式会社ヤスイ｜調剤薬局店舗案内
-  url: https://www.e-kusuri.info/dispensing-pharmacy
-- name: 市川にゅ～す｜ヤスイ本店の改装
-  url: https://ichi-24.jp/archives/58644
+  - name: 株式会社ヤスイ｜ドラッグストア店舗案内
+    url: https://www.e-kusuri.info/drugstore
+  - name: 株式会社ヤスイ｜調剤薬局店舗案内
+    url: https://www.e-kusuri.info/dispensing-pharmacy
+  - name: 市川にゅ～す｜ヤスイ本店の改装
+    url: https://ichi-24.jp/archives/58644
 draft: false
-lastmod: '2026-11-25T20:06:31+09:00'
+lastmod: "2026-11-25T20:06:31+09:00"
 ---
 <p>東京メトロ東西線・行徳駅近くのヤスイ本店で、改装していた物販の売場が11月21日（土）に「マツモトキヨシ行徳駅前1丁目店」として営業を再開しました。</p>
 {{< note >}}【2026年11月25日追記】11月12日の記事でお伝えした改装が完了しました。運営会社の店舗案内に、新しい店名と営業時間が掲載されています。{{< /note >}}
