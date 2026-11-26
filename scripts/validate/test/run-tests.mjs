@@ -8,8 +8,13 @@
  * 新しいルールが従来の正しい記事を不必要にブロックしないことを確認する。
  */
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
+/* CI だけの追加検査（P0-B）。validate-content.mjs が post-rules.js の結果に加えて使う */
+import * as PC from '../post-checks.mjs';
 
 const require = createRequire(import.meta.url);
 const ROOT = process.cwd();
@@ -482,6 +487,288 @@ t('多言語版は URL が別なので衝突しない', () => {
   eq(R.aliasesOf({ aliases: ['/travel-guide/pool/'] }, 'en'), ['/en/travel-guide/pool/']);
 });
 
+/* ── CI だけの追加検査（scripts/validate/post-checks.mjs、P0-B 2026-11-01） ── */
+console.log('■ 追加検査（P0-B）: 先頭の空白・新規記事の判定');
+const NOW_B = Date.parse('2026-11-01T20:30:00+09:00');
+const NB = (date, extra) => [
+  '---',
+  'title: "【浦安市】新規テスト記事、11月10日に開催"',
+  'date: ' + date,
+  'slug: "new-test"',
+  'categories:',
+  '  - "イベント"',
+  'tags:',
+  '  - "浦安市"',
+  'description: "説明文です。"',
+  'eventDate: "2026-11-10"',
+  'eventKind: "event"',
+  'hideEventBox: true',
+  'sources:',
+  '  - name: "浦安市公式"',
+  '    url: "https://www.city.urayasu.lg.jp/"',
+  'draft: false',
+  '---',
+  '<p>本文 <a href="/posts/old/">前回の記事</a></p>',
+  ''
+].join('\n').replace('draft: false', (extra || '') + 'draft: false');
+const NEW_OK = NB('2026-11-01T18:00:00+09:00');
+const LEGACY = NB('2026-10-31T18:00:00+09:00');
+const SITE = new Set(['/posts/old/', '/travel-guide/', '/en/posts/old/']);
+const pc = (text, o = {}) => {
+  const p = o.path || 'content/posts/20261101-new-test.md';
+  const fm = R.parseFrontmatter(text);
+  const dp = R.parseDate(fm.data.date);
+  return PC.checkPost({
+    path: p, lang: R.langOfPath(p), fm, dp, strict: PC.isStrict(dp), now: o.now == null ? NOW_B : o.now,
+    siteUrls: o.siteUrls === undefined ? SITE : o.siteUrls, staticExists: (s) => s === '/images/ok.png',
+    eventName: o.eventName || '', bodyLineOffset: fm.fmText.split('\n').length + 2
+  });
+};
+const rl = (list, sev) => list.filter((x) => !sev || x.severity === sev).map((x) => x.rule).sort();
+const msgOf = (list, rule) => (list.find((x) => x.rule === rule) || { msg: '' }).msg;
+const withBody = (text, body) => text.replace(/---\n<p>[\s\S]*$/, '---\n' + body + '\n');
+
+t('正常な新規記事は追加検査でエラー・警告なし', () => { eq(rl(pc(NEW_OK)), []); });
+t('空行のあとに --- → 「1行目より前に空白があります」（--- の行番号つき）', () => {
+  const r = PC.leadingWhitespace('\n\n' + NEW_OK);
+  eq(r.found, true); eq(r.line, 3);
+  if (!/^1行目より前に空白があります（frontmatter の --- が 3 行目にあります）/.test(r.msg)) throw new Error(r.msg);
+  eq(r.stripped, NEW_OK);
+});
+t('--- の前の空白（字下げ）・空白だけの行・CRLF も検出、BOM だけは対象外', () => {
+  eq(PC.leadingWhitespace('  ' + NEW_OK).line, 1);
+  eq(PC.leadingWhitespace(' \t\n' + NEW_OK).line, 2);
+  eq(PC.leadingWhitespace('\r\n' + NEW_OK.replace(/\n/g, '\r\n')).found, true);
+  eq(PC.leadingWhitespace('﻿' + NEW_OK).found, false);
+  eq(PC.leadingWhitespace(NEW_OK).found, false);
+});
+t('--- が無い・前置きの文章がある場合は対象外（post-rules.js の FM_NO_START に任せる）', () => {
+  eq(PC.leadingWhitespace('\n■ 内容\n' + NEW_OK).found, false);
+  eq(PC.leadingWhitespace('\ntitle: x\n').found, false);
+});
+t('新規記事の判定は date の日本時間の日付（2026-11-01 以降）。読めない date は新規扱い', () => {
+  eq(PC.isStrict(R.parseDate('2026-10-31T23:59:00+09:00')), false);
+  eq(PC.isStrict(R.parseDate('2026-11-01T00:00:00+09:00')), true);
+  eq(PC.isStrict(R.parseDate('2026-10-31T15:00:00Z')), true);
+  eq(PC.isStrict(R.parseDate('2026-10-31T14:59:00Z')), false);
+  eq(PC.isStrict(R.parseDate('令和8年11月1日')), true);
+  eq(PC.isStrict(R.parseDate('2026-09-15T10:00:00+09:00'), '2026-09-01'), true);
+});
+
+console.log('■ 追加検査（P0-B）: 公開されない date（buildFuture なし）');
+const TODAY_LATE = replaceLine(NEW_OK, 'date:', 'date: 2026-11-01T22:00:00+09:00');
+t('当日の未来時刻（旧 22:00 ルール）→ DATE_NOT_PUBLISHED エラー', () => {
+  const r = pc(TODAY_LATE);
+  eq(rl(r, 'error'), ['DATE_NOT_PUBLISHED']);
+  if (!/^date が公開時刻より未来です（buildFuture なしのため公開されません）。date は日本時間 2026-11-01 22:00、検証時刻は 2026-11-01 20:30/.test(msgOf(r, 'DATE_NOT_PUBLISHED'))) throw new Error(msgOf(r, 'DATE_NOT_PUBLISHED'));
+});
+t('push 以外（schedule・pull_request・workflow_dispatch）は警告に下げる', () => {
+  ['schedule', 'pull_request', 'workflow_dispatch'].forEach((e) => eq(rl(pc(TODAY_LATE, { eventName: e }), 'warning'), ['DATE_NOT_PUBLISHED'], e));
+  eq(rl(pc(TODAY_LATE, { eventName: 'push' }), 'error'), ['DATE_NOT_PUBLISHED']);
+});
+t('翌日以降の日付は予約投稿として対象外（従来どおり post-rules.js の DATE_FUTURE 通知）・過去は対象外', () => {
+  eq(rl(pc(replaceLine(NEW_OK, 'date:', 'date: 2026-11-02T07:00:00+09:00'))), []);
+  eq(rl(pc(replaceLine(NEW_OK, 'date:', 'date: 2026-11-01T20:29:00+09:00'))), []);
+});
+t('UTC 表記・タイムゾーン無しでも Hugo と同じ解釈で判定する', () => {
+  eq(rl(pc(replaceLine(NEW_OK, 'date:', 'date: 2026-11-01T12:00:00Z'))), ['DATE_NOT_PUBLISHED']);
+  /* タイムゾーン無しは UTC 扱い（日本時間 2026-11-02 02:00 = 翌日なので予約投稿扱い） */
+  eq(rl(pc(replaceLine(NEW_OK, 'date:', 'date: 2026-11-01T17:00:00'))), []);
+});
+t('publishDate があればそちらで判定し、既存記事にも適用する', () => {
+  const r = pc(NB('2026-10-31T18:00:00+09:00', 'publishDate: 2026-11-01T23:00:00+09:00\n'));
+  eq(rl(r, 'error'), ['DATE_NOT_PUBLISHED']);
+  if (!/^publishDate が公開時刻より未来です/.test(r[0].msg)) throw new Error(r[0].msg);
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'publishDate: "あした"\n')), 'error'), ['PUBLISHDATE_FORMAT']);
+});
+t('expiryDate を過ぎた記事（buildExpired なし）→ 新規はエラー・既存は警告、形式不正はエラー', () => {
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'expiryDate: 2026-11-01T19:00:00+09:00\n')), 'error'), ['EXPIRYDATE_PASSED']);
+  eq(rl(pc(NB('2026-10-31T18:00:00+09:00', 'expiryDate: 2026-11-01T19:00:00+09:00\n')), 'warning'), ['EXPIRYDATE_PASSED']);
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'expiryDate: 2026-12-01T00:00:00+09:00\n'))), []);
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'expiryDate: "12月"\n'))), ['EXPIRYDATE_FORMAT']);
+});
+
+console.log('■ 追加検査（P0-B）: 必須項目・lastmod（新規記事だけ）');
+t('description なし → DESCRIPTION_MISSING（新規）／既存記事は対象外', () => {
+  eq(rl(pc(NEW_OK.replace('description: "説明文です。"\n', ''))), ['DESCRIPTION_MISSING']);
+  eq(rl(pc(NEW_OK.replace('description: "説明文です。"', 'description: ""'))), ['DESCRIPTION_MISSING']);
+  eq(rl(pc(LEGACY.replace('description: "説明文です。"\n', ''), { path: 'content/posts/20261031-new-test.md' })), []);
+});
+t('tags なし → TAGS_MISSING（ja の新規だけ。翻訳版・既存記事は対象外）、文字列は TAGS_FORMAT', () => {
+  const noTags = NEW_OK.replace('tags:\n  - "浦安市"\n', '');
+  eq(rl(pc(noTags)), ['TAGS_MISSING']);
+  eq(rl(pc(NEW_OK.replace('tags:\n  - "浦安市"\n', 'tags: []\n'))), ['TAGS_MISSING']);
+  eq(rl(pc(NEW_OK.replace('tags:\n  - "浦安市"\n', 'tags: "浦安市"\n'))), ['TAGS_FORMAT']);
+  eq(rl(pc(noTags, { path: 'content/posts/20261101-new-test.en.md' })), []);
+  eq(rl(pc(LEGACY.replace('tags:\n  - "浦安市"\n', ''))), []);
+  if (!/data\/guide_map\.yaml/.test(msgOf(pc(noTags), 'TAGS_MISSING'))) throw new Error('guide_map の案内が無い');
+});
+t('lastmod: 形式不正・date より前の日はエラー、今日より先は警告、同じ日の日付だけは可', () => {
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'lastmod: "11月1日"\n'))), ['LASTMOD_FORMAT']);
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'lastmod: 2026-10-31\n'))), ['LASTMOD_BEFORE_DATE']);
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'lastmod: 2026-11-03\n'))), ['LASTMOD_FUTURE']);
+  eq(rl(pc(NB('2026-11-01T18:00:00+09:00', 'lastmod: 2026-11-01\n'))), []);
+  eq(rl(pc(NB('2026-10-31T18:00:00+09:00', 'lastmod: 2026-10-30\n'))), []);
+});
+
+console.log('■ 追加検査（P0-B）: 開催日と記事の date の食い違い（警告）');
+t('eventKind だけで開催日なし → EVENTKIND_WITHOUT_DATE（警告）', () => {
+  eq(rl(pc(NEW_OK.replace('eventDate: "2026-11-10"\n', '')), 'warning'), ['EVENTKIND_WITHOUT_DATE']);
+});
+t('開催日の最終日が date より30日以上前 → EVENT_ENDED_BEFORE_POST（警告。eventOngoing は対象外）', () => {
+  eq(rl(pc(NEW_OK.replace('"2026-11-10"', '"2025-11-10"'))), ['EVENT_ENDED_BEFORE_POST']);
+  eq(rl(pc(NEW_OK.replace('"2026-11-10"', '"2026-09-01/2026-10-15"'))), []);
+  eq(rl(pc(NEW_OK.replace('"2026-11-10"', '"2026-09-01"').replace('hideEventBox: true', 'eventOngoing: true\nhideEventBox: true'))), []);
+  if (!/2025-11-10.*2026-11-01.*年・月の誤入力/.test(msgOf(pc(NEW_OK.replace('"2026-11-10"', '"2025-11-10"')), 'EVENT_ENDED_BEFORE_POST'))) throw new Error('文言');
+});
+t('開催日が date より1年以上先 → EVENT_FAR_AFTER_POST（警告）、eventDates も見る', () => {
+  eq(rl(pc(NEW_OK.replace('"2026-11-10"', '"2027-11-10"'))), ['EVENT_FAR_AFTER_POST']);
+  eq(rl(pc(NEW_OK.replace('eventDate: "2026-11-10"', 'eventDates:\n  - "2027-12-01"\n  - "2027-12-08"'))), ['EVENT_FAR_AFTER_POST']);
+  eq(rl(pc(NEW_OK.replace('"2026-11-10"', '"2027-03-01"'))), []);
+});
+t('既存記事（2026-11-01 より前）には開催日の食い違いを出さない', () => {
+  eq(rl(pc(LEGACY.replace('"2026-11-10"', '"2025-11-10"'))), []);
+});
+
+console.log('■ 追加検査（P0-B）: 出典と広告リンク・本文のリンク');
+const srcLine = (u) => NEW_OK.replace('"https://www.city.urayasu.lg.jp/"', '"' + u + '"');
+t('出典に広告（アフィリエイト）リンク → SOURCES_AFFILIATE', () => {
+  eq(rl(pc(srcLine('https://px.a8.net/svt/ejp?a8mat=XXXX'))), ['SOURCES_AFFILIATE']);
+  eq(rl(pc(srcLine('https://hb.afl.rakuten.co.jp/hgc/xxx/'))), ['SOURCES_AFFILIATE']);
+  eq(rl(pc(srcLine('https://www.trip.com/things-to-do/detail/1/?Allianceid=8989807&SID=1'))), ['SOURCES_AFFILIATE']);
+  if (!/Allianceid/.test(msgOf(pc(srcLine('https://www.trip.com/x/?Allianceid=1')), 'SOURCES_AFFILIATE'))) throw new Error('理由が無い');
+});
+t('提携パラメータの無い同じサイトの URL・一般の URL は出典として可', () => {
+  eq(rl(pc(srcLine('https://www.trip.com/events/2634402-2025-urayasu-collection/'))), []);
+  eq(rl(pc(srcLine('https://www.city.urayasu.lg.jp/a/b.html?cid=1'))), []);
+});
+t('出典の URL が http(s) でない → SOURCES_URL_INVALID、文字列だけのリスト → SOURCES_FORMAT、name だけは可', () => {
+  eq(rl(pc(srcLine('www.city.urayasu.lg.jp/'))), ['SOURCES_URL_INVALID']);
+  eq(rl(pc(NEW_OK.replace('  - name: "浦安市公式"\n    url: "https://www.city.urayasu.lg.jp/"', '  - "https://www.city.urayasu.lg.jp/"'))), ['SOURCES_FORMAT']);
+  eq(rl(pc(NEW_OK.replace('\n    url: "https://www.city.urayasu.lg.jp/"', ''))), []);
+  eq(rl(pc(NEW_OK.replace('  - name: "浦安市公式"\n    url: "https://www.city.urayasu.lg.jp/"', '  - name: ""'))), ['SOURCES_FORMAT']);
+});
+t('既存記事の出典は対象外', () => { eq(rl(pc(LEGACY.replace('"https://www.city.urayasu.lg.jp/"', '"https://px.a8.net/x"'))), []); });
+t('本文の空リンク・仮の URL → LINK_EMPTY・LINK_PLACEHOLDER（行番号つき）', () => {
+  const r = pc(withBody(NEW_OK, '<p><a href="">a</a></p>\n<p><a href="http://localhost:1313/posts/x/">b</a> [c]()</p>'));
+  eq(rl(r), ['LINK_EMPTY', 'LINK_EMPTY', 'LINK_PLACEHOLDER']);
+  if (!/^18 行目のリンク/.test(msgOf(r, 'LINK_EMPTY'))) throw new Error(msgOf(r, 'LINK_EMPTY'));
+  eq(rl(pc(withBody(NEW_OK, '<a href="https://example.com/">x</a>'))), ['LINK_PLACEHOLDER']);
+});
+t('内部リンク切れ → LINK_INTERNAL_BROKEN（新規はエラー・既存は警告）。サイトの絶対 URL・Markdown も見る', () => {
+  eq(rl(pc(withBody(NEW_OK, '<a href="/posts/nope/">x</a>')), 'error'), ['LINK_INTERNAL_BROKEN']);
+  eq(rl(pc(withBody(NEW_OK, '[x](https://urayasu-portal.com/posts/nope/)')), 'error'), ['LINK_INTERNAL_BROKEN']);
+  eq(rl(pc(withBody(LEGACY, '<a href="/posts/nope/">x</a>')), 'warning'), ['LINK_INTERNAL_BROKEN']);
+  eq(rl(pc(withBody(NEW_OK, '<a href="/posts/old/#map">x</a> <a href="/travel-guide">y</a> <a href="https://urayasu-portal.com/en/posts/old/">z</a>'))), []);
+});
+t('タクソノミー・ショートコード・外部・相対・mailto は内部リンク検査の対象外、URL 一覧が無ければ検査しない', () => {
+  eq(rl(pc(withBody(NEW_OK, '<a href="/tags/浦安市/">a</a> <a href="{{< relref "x.md" >}}">b</a> <a href="https://www.city.urayasu.lg.jp/">c</a> <a href="mailto:a@b.jp">d</a> <a href="x/">e</a>'))), []);
+  eq(rl(pc(withBody(NEW_OK, '<a href="/posts/nope/">x</a>'), { siteUrls: null })), []);
+});
+t('static のファイル（画像・PDF）が無い → LINK_INTERNAL_BROKEN、生成物（.xml）は対象外', () => {
+  eq(rl(pc(withBody(NEW_OK, '<img src="/images/missing.png" alt="a">'))), ['LINK_INTERNAL_BROKEN']);
+  eq(rl(pc(withBody(NEW_OK, '<img src="/images/ok.png" alt="a"> <a href="/index.xml">rss</a>'))), []);
+});
+t('本文の広告リンク → AFFILIATE_LINK_IN_POST（警告・1記事1件）', () => {
+  const r = pc(withBody(NEW_OK, '<a href="https://px.a8.net/a">x</a><a href="https://px.a8.net/b">y</a>'));
+  eq(rl(r, 'warning'), ['AFFILIATE_LINK_IN_POST']); eq(rl(r, 'error'), []);
+});
+
+console.log('■ 追加検査（P0-B）: 重複・類似の記事');
+const prof = (p, title, body, date, lang) => PC.dupProfile({ path: p, lang: lang || 'ja', title, body, epoch: Date.parse(date), strict: PC.isStrict(R.parseDate(date)) });
+const LONG = '浦安市の若潮公園で子育て応援メッセが開催されます。'.repeat(3) + '体験ブースや警察・消防の企画、チーバくんとの交流などを予定しています。参加は無料で申し込みは不要です。雨天の場合は中止となります。会場は体験学習施設を含む若潮公園一帯で、当日は駐車場が混雑するため公共交通機関の利用を呼びかけています。'.repeat(2);
+t('同じタイトルの新規記事 → DUPLICATE_TITLE（新規側だけ・エラー）', () => {
+  const r = PC.findDuplicates([prof('content/posts/old.md', '【浦安市】A祭り開催', '<p>旧</p>', '2026-10-01T10:00:00+09:00'), prof('content/posts/new.md', '【浦安市】A祭り開催', '<p>新</p>', '2026-11-01T10:00:00+09:00')]);
+  eq(r.map((x) => x.path + ':' + x.rule + ':' + x.severity), ['content/posts/new.md:DUPLICATE_TITLE:error']);
+  if (!/既存記事（content\/posts\/old\.md）と同じです/.test(r[0].msg)) throw new Error(r[0].msg);
+});
+t('本文がほぼ同じ → DUPLICATE_BODY（エラー）、タイトルが似ている → SIMILAR_POST（警告）', () => {
+  eq(PC.findDuplicates([prof('content/posts/old.md', '旧タイトル', LONG, '2026-10-01T10:00:00+09:00'), prof('content/posts/new.md', '全然ちがう見出し', LONG + '追記。', '2026-11-01T10:00:00+09:00')]).map((x) => x.rule), ['DUPLICATE_BODY']);
+  eq(PC.findDuplicates([prof('content/posts/old.md', '【浦安】ホテルのクリスマスアフタヌーンティー2026', '<p>a</p>', '2026-10-01T10:00:00+09:00'), prof('content/posts/new.md', '【舞浜】ホテルのクリスマスアフタヌーンティー2026！', '<p>b</p>', '2026-11-01T10:00:00+09:00')]).map((x) => x.rule + ':' + x.severity), ['SIMILAR_POST:warning']);
+});
+t('既存記事どうし・別言語・別の話題は対象外、新規どうしは後の記事だけ指摘', () => {
+  eq(PC.findDuplicates([prof('content/posts/a.md', 'X祭り', LONG, '2026-09-01T10:00:00+09:00'), prof('content/posts/b.md', 'X祭り', LONG, '2026-10-01T10:00:00+09:00')]), []);
+  eq(PC.findDuplicates([prof('content/posts/a.md', 'X祭り', LONG, '2026-09-01T10:00:00+09:00'), prof('content/posts/a.en.md', 'X祭り', LONG, '2026-11-01T10:00:00+09:00', 'en')]), []);
+  eq(PC.findDuplicates([prof('content/posts/a.md', '浦安の図書館が休館', '<p>a</p>', '2026-09-01T10:00:00+09:00'), prof('content/posts/b.md', '新浦安駅前でマルシェ', '<p>b</p>', '2026-11-01T10:00:00+09:00')]), []);
+  eq(PC.findDuplicates([prof('content/posts/n2.md', 'Y祭り', '<p>a</p>', '2026-11-02T10:00:00+09:00'), prof('content/posts/n1.md', 'Y祭り', '<p>b</p>', '2026-11-01T10:00:00+09:00')]).map((x) => x.path), ['content/posts/n2.md']);
+});
+
+console.log('■ 追加検査（P0-B）: URL 衝突の説明と slug の提案');
+const infoOf = (o) => Object.fromEntries(Object.entries(o).map(([p, v]) => [p, { data: v.data, dp: R.parseDate(v.date), lang: R.langOfPath(p) }]));
+t('slug の重複 → 「slug が既存記事（…）と重複しています」と続報用の slug 案（<slug>-<YYYYMMDD>）', () => {
+  const info = infoOf({ 'content/posts/20261001-foo.md': { data: { slug: 'foo' }, date: '2026-10-01T10:00:00+09:00' }, 'content/posts/20261101-foo.md': { data: { slug: 'foo' }, date: '2026-11-01T10:00:00+09:00' } });
+  const r = PC.describeCollision({ url: '/posts/foo/', files: ['content/posts/20261001-foo.md', 'content/posts/20261101-foo.md'], via: ['content/posts/20261001-foo.md:url', 'content/posts/20261101-foo.md:url'] }, info, undefined, new Set(['/posts/foo/']));
+  eq(r.map((x) => x.path), ['content/posts/20261101-foo.md']); eq(r[0].suggestion, 'foo-20261101');
+  if (!/^slug が既存記事（content\/posts\/20261001-foo\.md）と重複しています（URL: \/posts\/foo\/）。.*slug: "foo-20261101"/.test(r[0].msg)) throw new Error(r[0].msg);
+});
+t('slug 案が使用中なら -2 を付ける。元の slug の末尾の日付は付け直す・翻訳版は言語の URL で確かめる', () => {
+  eq(PC.suggestSlug('content/posts/20261101-foo.md', { data: { slug: 'foo' }, dp: R.parseDate('2026-11-01T10:00:00+09:00'), lang: 'ja' }, new Set(['/posts/foo-20261101/'])), 'foo-20261101-2');
+  eq(PC.suggestSlug('content/posts/20261101-foo.md', { data: { slug: 'foo-20261101' }, dp: R.parseDate('2026-11-01T10:00:00+09:00'), lang: 'ja' }, new Set()), 'foo-20261101-2');
+  eq(PC.suggestSlug('content/posts/20261101-foo.en.md', { data: { slug: 'foo' }, dp: R.parseDate('2026-11-01T10:00:00+09:00'), lang: 'en' }, new Set(['/en/posts/foo-20261101/'])), 'foo-20261101-2');
+});
+t('既知の衝突に加わったファイル・aliases による衝突・ファイル名由来の URL も具体的に示す', () => {
+  const info = infoOf({ 'content/posts/a.md': { data: { slug: 'x' }, date: '2026-11-05T10:00:00+09:00' }, 'content/posts/b.md': { data: { slug: 'y', aliases: ['/posts/x/'] }, date: '2026-09-01T10:00:00+09:00' } });
+  /* known に a.md があれば、日付に関係なく b.md が後から加わった側 */
+  const r = PC.describeCollision({ url: '/posts/x/', files: ['content/posts/a.md', 'content/posts/b.md'], via: ['content/posts/a.md:url', 'content/posts/b.md:alias'] }, info, new Set(['content/posts/a.md']), new Set());
+  eq(r.map((x) => x.path), ['content/posts/b.md']);
+  if (!/^aliases の「\/posts\/x\/」が既存記事（content\/posts\/a\.md）と重複しています.*aliases から「\/posts\/x\/」を外してください$/.test(r[0].msg)) throw new Error(r[0].msg);
+  const info2 = infoOf({ 'content/posts/old.md': { data: { slug: 'abc' }, date: '2026-09-01T10:00:00+09:00' }, 'content/posts/abc.md': { data: {}, date: '2026-11-01T10:00:00+09:00' } });
+  const r2 = PC.describeCollision({ url: '/posts/abc/', files: ['content/posts/abc.md', 'content/posts/old.md'], via: ['content/posts/old.md:url', 'content/posts/abc.md:url'] }, info2, undefined, new Set());
+  if (!/^ファイル名から決まる URL が既存記事（content\/posts\/old\.md）と重複しています/.test(r2[0].msg)) throw new Error(r2[0].msg);
+});
+
+console.log('■ 追加検査（P0-B）: validate-content.mjs の結合（最小サイト・Hugo 不要）');
+/* 一時ディレクトリに content と post-rules.js だけを置き、validate-content.mjs をそのまま実行する（hugo list は手書きの CSV） */
+const VC = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../validate-content.mjs');
+const runVc = (files, extraArgs) => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'vc-p0b-'));
+  try {
+    fs.mkdirSync(path.join(dir, 'static/tools'), { recursive: true });
+    fs.copyFileSync(path.join(ROOT, 'static/tools/post-rules.js'), path.join(dir, 'static/tools/post-rules.js'));
+    const csv = ['path,slug,title,date,expiryDate,publishDate,draft,permalink,kind,section'];
+    for (const [p, body] of Object.entries(files)) {
+      fs.mkdirSync(path.join(dir, path.dirname(p)), { recursive: true });
+      fs.writeFileSync(path.join(dir, p), body);
+      const slug = (/^slug: "([^"]+)"/m.exec(body) || [])[1];
+      csv.push([p, slug || '', 't', '', '', '', 'false', 'https://urayasu-portal.com/posts/' + (slug || path.basename(p, '.md')) + '/', 'page', 'posts'].join(','));
+    }
+    fs.writeFileSync(path.join(dir, 'list.csv'), csv.join('\n') + '\n');
+    let code = 0, out = '';
+    try { out = execFileSync(process.execPath, [VC, '--hugo-list', 'list.csv', '--now', '2026-11-01T20:30:00+09:00', '--json', 'out.json', '--known', 'none.json'].concat(extraArgs || []), { cwd: dir, encoding: 'utf8', env: { ...process.env, GITHUB_ACTIONS: '', GITHUB_EVENT_NAME: '' } }); }
+    catch (e) { code = e.status; out = String(e.stdout); }
+    return { code, out, json: JSON.parse(fs.readFileSync(path.join(dir, 'out.json'), 'utf8')) };
+  } finally { fs.rmSync(dir, { recursive: true, force: true }); }
+};
+const SHOP_NEW = NEW_OK.replace('  - "イベント"', '  - "開店・閉店"').replace('eventDate: "2026-11-10"\neventKind: "event"\nhideEventBox: true\n', '');
+const OLD_POST = NB('2026-10-20T10:00:00+09:00').replace('slug: "new-test"', 'slug: "old"').replace('title: "【浦安市】新規テスト記事、11月10日に開催"', 'title: "【浦安市】以前の記事"');
+const vcRules = (j) => j.newErrors.map((e) => e.path.split('/').pop() + ':' + e.rule).sort();
+t('既存記事だけなら新しい不備 0 件（既存の店舗記事の shopStatus 無しは警告のまま）', () => {
+  const r = runVc({ 'content/posts/20261020-old.md': OLD_POST, 'content/posts/20261020-shop.md': SHOP_NEW.replace('2026-11-01T18:00', '2026-10-20T18:00').replace('"new-test"', '"shop-old"').replace('新規テスト記事', '店舗の記事') });
+  eq(r.code, 0); eq(vcRules(r.json), []); eq(r.json.warnings.SHOPSTATUS_MISSING, 1); eq(r.json.strictPosts, 0);
+});
+t('新規記事: 先頭の空白・shopStatus 無し（エラーに昇格）・公開されない date・slug 重複をまとめて検出し、終了コード 1', () => {
+  const r = runVc({
+    'content/posts/20261020-old.md': OLD_POST,
+    'content/posts/20261101-ws.md': '\n' + NEW_OK.replace('"new-test"', '"ws-test"').replace('新規テスト記事', '空白の記事'),
+    'content/posts/20261101-shop.md': SHOP_NEW.replace('"new-test"', '"shop-new"').replace('新規テスト記事', '新しい店舗'),
+    'content/posts/20261101-late.md': TODAY_LATE.replace('"new-test"', '"late"').replace('新規テスト記事', '遅い記事'),
+    'content/posts/20261101-dup.md': NEW_OK.replace('"new-test"', '"old"').replace('新規テスト記事', '重複の記事')
+  });
+  eq(r.code, 1);
+  eq(vcRules(r.json), ['20261101-late.md:DATE_NOT_PUBLISHED', '20261101-shop.md:SHOPSTATUS_MISSING', '20261101-ws.md:FM_LEADING_WHITESPACE']);
+  eq(r.json.newCollisions.length, 1);
+  const det = r.json.collisionDetails[0].details;
+  eq(det.map((x) => x.path), ['content/posts/20261101-dup.md']); eq(det[0].suggestion, 'old-20261101');
+  if (!/slug が既存記事（content\/posts\/20261020-old\.md）と重複しています/.test(r.out)) throw new Error('Summary に衝突の説明が無い');
+  if (!/shopStatus がありません.*2026-11-01 以降の開店・閉店の記事は必須/.test(r.json.newErrors.find((e) => e.rule === 'SHOPSTATUS_MISSING').msg)) throw new Error('昇格の注記が無い');
+  if (!/新規記事ルールの対象（date が 2026-11-01 以降の posts）: 4 本/.test(r.out)) throw new Error('対象本数の行が無い');
+});
+t('--event schedule では公開されない date を警告にし、Summary の「記事の注意」に出す', () => {
+  const r = runVc({ 'content/posts/20261020-old.md': OLD_POST, 'content/posts/20261101-late.md': TODAY_LATE.replace('"new-test"', '"late"') }, ['--event', 'schedule']);
+  eq(r.code, 0); eq(r.json.postWarnings.map((w) => w.rule), ['DATE_NOT_PUBLISHED']);
+  if (!/### 記事の注意（警告。失敗にはしません）/.test(r.out)) throw new Error('記事の注意の節が無い');
+});
+
 /* ── 既存記事の回帰テスト（--unit-only では省略。CI は既存不備の扱いを validate-content.mjs に任せる） ── */
 if (!process.argv.includes('--unit-only')) {
 console.log('■ 既存記事の回帰（content/posts 全件）');
@@ -565,6 +852,26 @@ for (const f of files) {
 }
 t('既存記事に、会場・主催者の規則でエラー・警告になる値が無い', () => { if (tfFound.length) throw new Error(tfFound.length + ' 件: ' + tfFound.slice(0, 5).join(' / ')); });
 console.log('       （参考）会場・主催者を持つ既存記事: ' + (Object.entries(tfUsing).map(([k, n]) => k + ' ' + n).join('、') || 'なし'));
+
+/* 追加検査（P0-B）: 既存記事（date が STRICT_FROM より前）に新しいエラーが出ないこと。
+   参考として、開始日を設けなかった場合に何本が当たるかも表示する（内部リンクの検査は URL 一覧が要るので CI の validate-content.mjs で確認） */
+const p0b = [], p0bAll = {};
+const profs = [];
+for (const f of files) {
+  const text = fs.readFileSync(path.join(dir, f), 'utf8');
+  const p = 'content/posts/' + f;
+  const lw = PC.leadingWhitespace(text);
+  if (lw.found) p0b.push(f + ' → FM_LEADING_WHITESPACE');
+  const fm = R.parseFrontmatter(lw.found ? lw.stripped : text);
+  const dp = R.parseDate(fm.data.date);
+  const base = { path: p, lang: R.langOfPath(p), fm, dp, now: Date.now(), siteUrls: null, staticExists: PC.staticChecker(ROOT), eventName: 'push', bodyLineOffset: 0 };
+  PC.checkPost({ ...base, strict: PC.isStrict(dp) }).filter((x) => x.severity === 'error').forEach((x) => p0b.push(f + ' → ' + x.rule));
+  PC.checkPost({ ...base, strict: true }).filter((x) => x.severity === 'error').forEach((x) => { p0bAll[x.rule] = (p0bAll[x.rule] || 0) + 1; });
+  profs.push(PC.dupProfile({ path: p, lang: base.lang, title: fm.data.title, body: fm.body, epoch: dp.ok ? dp.epochMs : Infinity, strict: PC.isStrict(dp) }));
+}
+PC.findDuplicates(profs).filter((x) => x.severity === 'error').forEach((x) => p0b.push(x.path + ' → ' + x.rule));
+t('既存記事に、追加検査（P0-B）で新たにエラーになるものが無い', () => { if (p0b.length) throw new Error(p0b.length + ' 件: ' + p0b.slice(0, 5).join(' / ')); });
+console.log('       （参考）開始日（' + PC.STRICT_FROM + '）を設けずに全記事へ適用した場合のエラー: ' + (Object.entries(p0bAll).map(([k, n]) => k + ' ' + n).join('、') || 'なし'));
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);
