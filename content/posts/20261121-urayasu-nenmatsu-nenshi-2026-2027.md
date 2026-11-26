@@ -36,7 +36,7 @@ draft: false
 | 1月5日（火） | 中央図書館・6分館、郷土博物館、屋内スポーツ3施設が再開。交通公園も通常規定による見込みで再開します。**うらっこ広場は休場**です。 |
 | 1月6日（水）・7日（木） | 6日は総合体育館と屋内水泳プールが再び休館。中央武道館は開館します。うらっこ広場は7日に再開します。 |
 
-確認日　2026年11月21日。 [市の地区別収集日][trash]・[図書館カレンダー][cal]・[公民館別の案内][kom]・[郷土博物館の開館日][museum]・[うらっこ広場の休場日][park]・[総合体育館の休館日][arena]・[JR東日本の冬の運転計画][jr]。[東京メトロの年末年始の運行案内][metro]は11月25日確認。行政窓口、持ち込み、交通公園などの通常規定と、各施設の出典は以下の該当欄に掲載しています。
+確認日　2026年11月21日。 [市の地区別収集日][trash]・[図書館カレンダー][cal]・[公民館別の案内][kom]・[郷土博物館の開館日][museum]・[うらっこ広場の休場日][park]・[総合体育館の休館日][arena]・[JR東日本の冬の運転計画][jr]。[東京メトロの年末年始の運行案内][metro]は11月25日、うらっこ広場の休場日は11月26日確認。行政窓口、持ち込み、交通公園などの通常規定と、各施設の出典は以下の該当欄に掲載しています。
 
 ## ごみ収集日
 
@@ -141,7 +141,7 @@ draft: false
 |---|---|
 | 交通公園 | 12月27日（日）→ 1月5日（火）。通常規定による見込み。11月25日時点で当年の発表を確認できず、年末年始の追加休園・遊具制限は未確定です。 [交通公園][trafficpark] |
 | 郷土博物館 | 12月27日（日）→ 1月5日（火）。年末の12月25日（金）は館内整理日で休館、26日（土）と27日（日）は開館します。 [令和8年度開館カレンダー][museum] |
-| こどもの広場（うらっこ広場） | 12月27日（日）→ **1月7日（木）**。12月28日（月）の通常休場に続き、1月6日（水）まで臨時休場。**1月5日（火）は遊べません。** [施設の12月カレンダー][park] |
+| こどもの広場（うらっこ広場） | 12月27日（日）→ **1月7日（木）**。12月28日（月）の通常休場に続き、1月6日（水）まで臨時休場。**1月5日（火）は遊べません。** [施設の12月カレンダー][park]（11月26日確認） |
 
 交通公園の小学生向けインラインスケートと、郷土博物館の三軒長屋の駄菓子屋は、通常は土日だけです。年内最終の12月27日（日）は実施曜日ですが、年始の1月5日（火）は対象外です。交通公園の遊具は天候などで変更があります。 [交通公園の遊具利用時間（PDF）](https://www.city.urayasu.lg.jp/_res/projects/default_project/_page_/001/005/633/goriyouzikan8.7.pdf)・[郷土博物館の利用案内](https://www.city.urayasu.lg.jp/kanko/kyodo/1002079.html)
 
@@ -164,7 +164,7 @@ draft: false
 [book]: https://library.city.urayasu.chiba.jp/service/mare/index.html
 [kom]: https://www.city.urayasu.lg.jp/shisetsu/bunka/kouminkan/index.html
 [museum]: https://www.city.urayasu.lg.jp/_res/projects/default_project/_page_/001/002/043/r8calender.pdf
-[park]: https://kodomonohiroba.com/info/event12.html
+[park]: https://kodomonohiroba.com/info/eventcal.html
 [arena]: https://www.urayasu-zaidan.or.jp/taiikukan/close.html
 [pool]: https://www.urayasu-zaidan.or.jp/pool/close.html
 [budo]: https://www.urayasu-zaidan.or.jp/budokan/close.html
