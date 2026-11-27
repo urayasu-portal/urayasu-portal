@@ -3,20 +3,20 @@ title: 【新浦安】日の出の子ども図書館、3工事の契約案は計
 date: '2026-11-27T21:56:28+09:00'
 slug: hinode-childrens-library-construction-bids-202611
 categories:
-- ニュース
+  - ニュース
 tags:
-- 浦安市
-- 日の出
-- 子ども図書館
-- 子育て支援
-- 市議会
+  - 浦安市
+  - 日の出
+  - 子ども図書館
+  - 子育て支援
+  - 市議会
 description: 浦安市は11月27日、日の出公民館の南側に計画する子ども・子育て支援複合施設について、建築・電気・機械の3工事の契約案を市議会に提出しました。契約額は合わせて34億2,430万円。計画地と、親子が利用できる施設の機能を紹介します。
 checkDate: 2026-11
 sources:
-- name: 浦安市議会・第4回定例会の議案第20～22号
-  url: https://www.city.urayasu.lg.jp/shisei/johokoukai/1045840/1049918.html
-- name: 浦安市・複合施設の基本計画
-  url: https://www.city.urayasu.lg.jp/shogaigakushu/gakushu/torikumi/1046176/1046199.html
+  - name: 浦安市議会・第4回定例会の議案第20～22号
+    url: https://www.city.urayasu.lg.jp/shisei/johokoukai/1045840/1049918.html
+  - name: 浦安市・複合施設の基本計画
+    url: https://www.city.urayasu.lg.jp/shogaigakushu/gakushu/torikumi/1046176/1046199.html
 draft: false
 ---
 <p>日の出公民館の南側に子ども図書館と子育て支援の機能を備えた施設を整備する計画で、浦安市は11月27日、3件の工事契約案を市議会に提出しました。議会に示した契約額は合わせて34億2,430万円です。</p>

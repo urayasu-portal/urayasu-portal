@@ -3,20 +3,20 @@ title: 【南行徳】駅前の居酒屋「寄り道」が麻辣湯専門店に
 date: '2026-11-27T21:56:28+09:00'
 slug: yorimichi-malatang-minamigyotoku-renewal
 categories:
-- 開店・閉店
+  - 開店・閉店
 tags:
-- 南行徳
-- 南行徳駅
-- 麻辣湯
-- リニューアル
+  - 南行徳
+  - 南行徳駅
+  - 麻辣湯
+  - リニューアル
 description: 南行徳駅から徒歩約1分の居酒屋「寄り道」が、具材を量り売りする「寄り道麻辣湯」に変わりました。具材は1グラム3.8円で、スープは牛骨・麻辣・トマトの3種類。浦安駅から東西線で1駅、南行徳駅前のお店です。
 shopStatus: renewal
 checkDate: 2026-11
 sources:
-- name: ベイちばinfo・11月27日のリニューアル報道
-  url: https://www.baychiba.info/blog/news/91166/
-- name: 市川にゅ～す・11月22日の店頭取材
-  url: https://ichi-24.jp/archives/59792
+  - name: ベイちばinfo・11月27日のリニューアル報道
+    url: https://www.baychiba.info/blog/news/91166/
+  - name: 市川にゅ～す・11月22日の店頭取材
+    url: https://ichi-24.jp/archives/59792
 draft: false
 ---
 <p>東京メトロ東西線・南行徳駅近くの居酒屋「寄り道」が、麻辣湯の専門店「寄り道麻辣湯」に変わりました。ベイちばinfoは11月27日付で、11月20日（金）にリニューアルオープンしたと伝えています。</p>

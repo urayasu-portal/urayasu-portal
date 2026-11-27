@@ -3,20 +3,20 @@ title: 【新浦安】美浜北認定こども園、来年4月廃止へ条例案
 date: '2026-11-27T21:56:28+09:00'
 slug: mihamakita-kodomoen-abolition-bill-202611
 categories:
-- 子育て・教育
+  - 子育て・教育
 tags:
-- 浦安市
-- 美浜
-- 認定こども園
-- 発達支援
-- 市議会
+  - 浦安市
+  - 美浜
+  - 認定こども園
+  - 発達支援
+  - 市議会
 description: 休園中の浦安市立美浜北認定こども園を市の条例から削除する改正案が、11月27日の市議会に提出されました。施行予定日は2027年4月1日。市は園の建物を活用し、就学に向けた発達支援の拠点を整備する計画です。
 checkDate: 2026-11
 sources:
-- name: 浦安市議会・議案第13号
-  url: https://www.city.urayasu.lg.jp/shisei/johokoukai/1045840/1049918.html
-- name: 浦安市・美浜北こども発達ステーション整備事業
-  url: https://www.city.urayasu.lg.jp/kodomo/kosodate/joho/1047923.html
+  - name: 浦安市議会・議案第13号
+    url: https://www.city.urayasu.lg.jp/shisei/johokoukai/1045840/1049918.html
+  - name: 浦安市・美浜北こども発達ステーション整備事業
+    url: https://www.city.urayasu.lg.jp/kodomo/kosodate/joho/1047923.html
 draft: false
 ---
 <p>浦安市は11月27日、現在休園している市立美浜北認定こども園を廃止する条例改正案を市議会に提出しました。改正案が定める施行日は2027年4月1日（木）です。</p>

@@ -3,28 +3,28 @@ title: 【浦安市】東野の親子遊び、12月はサンタやひつじの�
 date: '2026-11-27T21:56:28+09:00'
 slug: higashino-fruits-candy-202612
 categories:
-- 子育て・教育
+  - 子育て・教育
 tags:
-- 浦安市
-- 東野
-- 東野児童センター
-- フルーツキャンディー
-- 親子工作
+  - 浦安市
+  - 東野
+  - 東野児童センター
+  - フルーツキャンディー
+  - 親子工作
 description: 東野児童センターで、12月3日・10日・12日・17日に未就学児と保護者の「フルーツキャンディー」が開かれます。木曜はサンタとトナカイ、土曜はひつじの工作。市内在住の親子が対象で、各回とも無料、事前申し込みは不要です。
 eventDates:
-- '2026-12-03'
-- '2026-12-10'
-- '2026-12-12'
-- '2026-12-17'
+  - '2026-12-03'
+  - '2026-12-10'
+  - '2026-12-12'
+  - '2026-12-17'
 eventKind: event
 eventLocation: 東野児童センター
 hideEventBox: true
 checkDate: 2026-11
 sources:
-- name: 東野児童センター・木曜のフルーツキャンディー
-  url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049723.html
-- name: 東野児童センター・土曜日のフルーツキャンディー
-  url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049756.html
+  - name: 東野児童センター・木曜のフルーツキャンディー
+    url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049723.html
+  - name: 東野児童センター・土曜日のフルーツキャンディー
+    url: https://www.city.urayasu.lg.jp/events/kodomo/touno/1049756.html
 draft: false
 ---
 <p>東野児童センターが、12月に親子で遊べる「フルーツキャンディー」を4回開きます。浦安市内に住む未就学児と保護者が対象です。いずれも午前10時20分から11時30分まで、時間内は自由に出入りできます。</p>

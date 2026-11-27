@@ -3,21 +3,21 @@ title: 【浦安】D-Rocks選手のバーガー3種、当代島で12月1日か�
 date: '2026-11-27T21:56:28+09:00'
 slug: urayasu-diner-drocks-burgers-202612
 categories:
-- グルメ・カフェ
+  - グルメ・カフェ
 tags:
-- 浦安駅
-- 当代島
-- 浦安D-Rocks
-- URAYASU Diner
-- ハンバーガー
+  - 浦安駅
+  - 当代島
+  - 浦安D-Rocks
+  - URAYASU Diner
+  - ハンバーガー
 description: 浦安駅から徒歩約3分のURAYASU Dinerで、12月1日から浦安D-Rocksの選手3人が考案したバーガーを販売します。エビやチーズを使った3品があり、単品は1,600円から。選手ごとのメニューとセット価格を紹介します。
 eventDate: 2026-12-01/2027-06-30
 eventKind: fair
 hideEventBox: true
 checkDate: 2026-11
 sources:
-- name: 浦安D-Rocks・コラボバーガー販売案内
-  url: https://urayasu-d-rocks.com/news/event/index_2104.html
+  - name: 浦安D-Rocks・コラボバーガー販売案内
+    url: https://urayasu-d-rocks.com/news/event/index_2104.html
 draft: false
 ---
 <p>浦安D-Rocksの選手3人が考案したハンバーガーが、12月1日（火）から当代島の「URAYASU Diner」に登場します。選手が自分で食べたい一品を形にした企画で、販売は2027年6月30日（水）までの予定です。</p>
