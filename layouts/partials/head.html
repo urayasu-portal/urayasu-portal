@@ -3,6 +3,7 @@
   変更点:
     1. <title> 行: site.Params.homeTitle でホームを上書き（★SEO参照）
     2. robots: 薄いタグページ（記事2件以下）は noindex, follow に設定
+    3. hreflang・x-default: 非日本語のホーム /xx/（/xx/travel-guide/ への転送ページ。layouts/index.<lang>.html）を出さない（工程6 Phase 6B-1B）
   テーマ更新時は元ファイルと diff を取り、これらの変更点だけ再適用する。
 */ -}}
 <meta charset="utf-8">
@@ -112,12 +113,12 @@
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ .Name }}">
 {{ end -}}
-{{- range .AllTranslations -}}
+{{- range .AllTranslations -}}{{- if not (and .IsHome (ne .Lang "ja")) }}
 {{- $hreflang := .Lang }}{{ if eq $hreflang "zh" }}{{ $hreflang = "zh-Hans" }}{{ else if eq $hreflang "zh-tw" }}{{ $hreflang = "zh-Hant-TW" }}{{ end -}}
 <link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}">
-{{ end -}}
+{{ end }}{{ end -}}
 {{- /* x-default: 対応4言語圏以外からの検索者には英語版を既定として提示（英訳が存在するページのみ） */ -}}
-{{- range .AllTranslations -}}{{ if eq .Lang "en" -}}
+{{- range .AllTranslations -}}{{ if and (eq .Lang "en") (not .IsHome) -}}
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
 {{ end }}{{ end -}}
 
